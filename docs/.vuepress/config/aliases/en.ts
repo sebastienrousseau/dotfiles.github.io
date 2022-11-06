@@ -13,6 +13,7 @@ export const aliases = {
     ["/aliases/git/", "❯ Git aliases"],
     ["/aliases/gnu/", "❯ GNU Core Utilities aliases"],
     ["/aliases/heroku/", "❯ Heroku aliases"],
+    ["/aliases/interactive/", "❯ Interactive aliases"],
     ["/aliases/jekyll/", "❯ Jekyll aliases"],
     ["/aliases/pnpm/", "❯ PNPM aliases"],
     ["/aliases/subversion/", "❯ Subversion aliases"],
