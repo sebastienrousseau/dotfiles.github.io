@@ -2,6 +2,7 @@ export const aliases = {
   ariaLabel: 'Aliases',
   children: [
     ["/aliases/archives/", "❯ Archives Aliases"],
+    ["/aliases/clear/", "❯ Clear Aliases"],
     ["/aliases/default/", "❯ Default Aliases"],
     ["/aliases/gcloud/", "❯ GCloud Aliases"],
     ["/aliases/git/", "❯ Git Aliases"],
