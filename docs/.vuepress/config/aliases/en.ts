@@ -20,6 +20,7 @@ export const aliases = {
     ["/aliases/mkdir/", "❯ Mkdir aliases"],
     ["/aliases/navigation/", "❯ Navigation aliases"],
     ["/aliases/npm/", "❯ NPM aliases"],
+    ["/aliases/permission/", "❯ Permission aliases"],
     ["/aliases/pnpm/", "❯ PNPM aliases"],
     ["/aliases/subversion/", "❯ Subversion aliases"],
     ["/aliases/tmux/", "❯ Tmux aliases"],
