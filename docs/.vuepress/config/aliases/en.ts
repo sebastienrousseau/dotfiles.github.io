@@ -25,6 +25,7 @@ export const aliases = {
     ["/aliases/rsync/", "❯ Rsync aliases"],
     ["/aliases/rust/", "❯ Rust aliases"],
     ["/aliases/subversion/", "❯ Subversion aliases"],
+    ["/aliases/sudo/", "❯ Sudo aliases"],
     ["/aliases/tmux/", "❯ Tmux aliases"],
   ],
   collapsable: false,
