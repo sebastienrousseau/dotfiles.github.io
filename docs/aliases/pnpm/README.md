@@ -10,36 +10,36 @@ is fast, disk space efficient, and reliable.
 
 | Alias | Command | Description |
 | ----- | ----- | ----- |
-| pa | `pnpm add` | Add a package to the project |
-| pad | `pnpm add --save-dev` | Add a package to the project as a development dependency |
-| pap | `pnpm add --save-peer` | Add a package to the project as a peer dependency |
-| pau | `pnpm audit` | Audit the project for vulnerabilities |
-| pb | `pnpm run build` | Build the project |
-| pc | `pnpm create` | Create a new project |
-| pd | `pnpm run dev` | Run the project in development mode |
-| pdoc | `pnpm run doc` | Generate documentation for the project |
-| pga | `pnpm add --global` | Add a package to the global store |
-| pgls | `pnpm list --global` | List packages in the global store |
-| pgrm | `pnpm remove --global` | Remove a package from the global store |
-| pgu | `pnpm update --global` | Update a package in the global store |
-| ph | `pnpm help` | Show help for a command |
-| pi | `pnpm init` | Initialize a new project |
-| pin | `pnpm install` | Install the project's dependencies |
-| pln | `pnpm run lint` | Runs `pnpm run lint` |
-| pls | `pnpm list` | List packages in the project |
-| pn | `pnpm` | Run a PNpm command |
-| pout | `pnpm outdated` | Check for outdated packages |
-| ppub | `pnpm publish` | Publish the project |
-| prm | `pnpm remove` | Remove a package from the project |
-| prun | `pnpm run` | Run a script in the project |
-| ps | `pnpm run serve` | Run the project in production mode |
-| pst | `pnpm start` | Start the project |
-| psv | `pnpm server` | Start the project's development server |
-| pt | `pnpm test` | Run the project's tests |
-| ptc | `pnpm test --coverage` | Run the project's tests with coverage |
-| pui | `pnpm update --interactive` | Update packages interactively |
-| puil | `pnpm update --interactive --latest` | Update packages interactively to the latest version |
-| pun | `pnpm uninstall` | Remove a package from the project |
-| pup | `pnpm update` | Update packages in the project |
-| pwhy | `pnpm why` | Show why a package is installed |
-| px | `pnpx` | Run a PNpx command |
+| pna | `pnpm add` | Add a package to the project |
+| pnad | `pnpm add --save-dev` | Add a package to the project as a development dependency |
+| pnap | `pnpm add --save-peer` | Add a package to the project as a peer dependency |
+| pnau | `pnpm audit` | Audit the project for vulnerabilities |
+| pnb | `pnpm run build` | Build the project |
+| pnc | `pnpm create` | Create a new project |
+| pnd | `pnpm run dev` | Run the project in development mode |
+| pndoc | `pnpm run doc` | Generate documentation for the project |
+| pnga | `pnpm add --global` | Add a package to the global store |
+| pngls | `pnpm list --global` | List packages in the global store |
+| pngrm | `pnpm remove --global` | Remove a package from the global store |
+| pngu | `pnpm update --global` | Update a package in the global store |
+| pnh | `pnpm help` | Show help for a command |
+| pni | `pnpm init` | Initialize a new project |
+| pnin | `pnpm install` | Install the project's dependencies |
+| pnln | `pnpm run lint` | Runs `pnpm run lint` |
+| pnls | `pnpm list` | List packages in the project |
+| pnout | `pnpm outdated` | Check for outdated packages |
+| pnp | `pnpm` | Run a PNpm command |
+| pnpub | `pnpm publish` | Publish the project |
+| pnrm | `pnpm remove` | Remove a package from the project |
+| pnrun | `pnpm run` | Run a script in the project |
+| pns | `pnpm run serve` | Run the project in production mode |
+| pnst | `pnpm start` | Start the project |
+| pnsv | `pnpm server` | Start the project's development server |
+| pnt | `pnpm test` | Run the project's tests |
+| pntc | `pnpm test --coverage` | Run the project's tests with coverage |
+| pnui | `pnpm update --interactive` | Update packages interactively |
+| pnuil | `pnpm update --interactive --latest` | Update packages interactively to the latest version |
+| pnun | `pnpm uninstall` | Remove a package from the project |
+| pnup | `pnpm update` | Update packages in the project |
+| pnwhy | `pnpm why` | Show why a package is installed |
+| pnx | `pnpx` | Run a PNpx command |

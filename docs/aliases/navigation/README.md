@@ -3,7 +3,7 @@
 The `navigation.aliases.sh` file creates helpful shortcut aliases for
 navigating the terminal.
 
-## 🚀 Navigation
+## 🧭 Navigation
 
 The cd command, also known as chdir (change directory), is a command-line shell
 command used to change the current working directory in various operating
