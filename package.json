@@ -1,7 +1,8 @@
 {
 	"scripts": {
-		"dev": "vuepress dev",
-		"build": "vuepress build",
+		"dev": "vuepress dev docs --debug",
+		"build": "vuepress build docs",
+		"docs:dev": "vuepress dev docs --debug",
 		"docs:build": "vuepress build docs",
 		"deploy": "vuepress build && gh-pages -d .vuepress/dist"
 	},

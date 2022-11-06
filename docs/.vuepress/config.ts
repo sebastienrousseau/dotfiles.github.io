@@ -5,6 +5,7 @@ import { frSidebar } from './config/sidebar'; // Import French sidebar
 import { headers } from './config/head'; // Import Headers for SEO
 
 module.exports = {
+  base: '/dotfiles.github.io/',
   locales: {
     "/": {
       lang: 'en-GB', // English
