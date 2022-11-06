@@ -23,6 +23,7 @@ export const aliases = {
     ["/aliases/permission/", "❯ Permission aliases"],
     ["/aliases/pnpm/", "❯ PNPM aliases"],
     ["/aliases/rsync/", "❯ Rsync aliases"],
+    ["/aliases/rust/", "❯ Rust aliases"],
     ["/aliases/subversion/", "❯ Subversion aliases"],
     ["/aliases/tmux/", "❯ Tmux aliases"],
   ],
