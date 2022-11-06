@@ -1,9 +1,12 @@
-# Dotfiles aliases
+# PNpm aliases
 
 This `pnpm.aliases.zsh` file creates helpful shortcut aliases for many
 commonly used [PNpm](https://pnpm.io) commands.
 
-## PNpm development aliases
+## 📦 PNpm
+
+[PNpm](https://pnpm.io) is a package manager for JavaScript and Node.js. It
+is fast, disk space efficient, and reliable.
 
 | Alias | Command | Description |
 | ----- | ----- | ----- |
