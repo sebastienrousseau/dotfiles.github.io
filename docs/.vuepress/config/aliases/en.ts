@@ -28,6 +28,7 @@ export const aliases = {
     ["/aliases/sudo/", "❯ Sudo aliases"],
     ["/aliases/tmux/", "❯ Tmux aliases"],
     ["/aliases/uuid/", "❯ UUID aliases"],
+    ["/aliases/wget/", "❯ Wget aliases"],
   ],
   collapsable: false,
   path: '/aliases/',
