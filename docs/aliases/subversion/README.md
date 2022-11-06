@@ -1,9 +1,13 @@
-# Subversion core aliases
+# Subversion aliases
 
 This `subversion.aliases.zsh` file creates helpful shortcut aliases for many
 commonly used [Subversion](https://subversion.apache.org) commands.
 
-## Subversion development aliases
+## 📦 Subversion
+
+[Subversion](https://subversion.apache.org) is a version control system that
+tracks changes to files and directories. It is used to manage source code for
+software projects.
 
 | Alias | Command | Description |
 | ----- | ----- | ----- |
