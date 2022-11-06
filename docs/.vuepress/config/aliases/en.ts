@@ -19,6 +19,7 @@ export const aliases = {
     ["/aliases/make/", "❯ Make aliases"],
     ["/aliases/mkdir/", "❯ Mkdir aliases"],
     ["/aliases/navigation/", "❯ Navigation aliases"],
+    ["/aliases/npm/", "❯ NPM aliases"],
     ["/aliases/pnpm/", "❯ PNPM aliases"],
     ["/aliases/subversion/", "❯ Subversion aliases"],
     ["/aliases/tmux/", "❯ Tmux aliases"],
