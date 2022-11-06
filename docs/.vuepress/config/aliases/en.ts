@@ -28,6 +28,7 @@ export const aliases = {
     ["/aliases/subversion/", "❯ Subversion aliases"],
     ["/aliases/sudo/", "❯ Sudo aliases"],
     ["/aliases/tmux/", "❯ Tmux aliases"],
+    ["/aliases/update/", "❯ Update aliases"],
     ["/aliases/uuid/", "❯ UUID aliases"],
     ["/aliases/wget/", "❯ Wget aliases"],
   ],
