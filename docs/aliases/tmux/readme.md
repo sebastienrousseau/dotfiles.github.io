@@ -1,9 +1,13 @@
-# Tmux core aliases
+# Tmux aliases
 
 This `tmux.aliases.zsh` file creates helpful shortcut aliases for many
 commonly used [tmux](https://github.com/tmux/tmux/wiki) commands.
 
-## Tmux development aliases
+## 💻 Tmux
+
+[Tmux](https://github.com/tmux/tmux/wiki) is a terminal multiplexer. It lets you
+switch easily between several programs in one terminal, detach them (they keep
+running in the background) and reattach them to a different terminal.
 
 | Alias | Command | Description |
 | ----- | ----- | ----- |
