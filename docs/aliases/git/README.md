@@ -3,7 +3,7 @@
 The `git.aliases.zsh` file creates helpful shortcut aliases for many commonly
 [Git](https://www.heroku.com/) commands.
 
-## Aliases to work on the current change
+## 🗃️ Work on the current change
 
 | Alias | Command | Description |
 | ----- | ----- | ----- |
@@ -18,14 +18,14 @@ The `git.aliases.zsh` file creates helpful shortcut aliases for many commonly
 | grs | `git restore` | Restore working tree files. |
 | gsc | `git sparse-checkout` | Initialize and modify the sparse-checkout. |
 
-## Aliases to start a working area
+## 🏁 Start a working area
 
 | Alias | Command | Description |
 | ----- | ----- | ----- |
 | gcl | `git clone` | Clone a repository into a new directory. |
 | gin | `git init` | Create an empty Git repository or reinitialize an existing one. |
 
-## Aliases to examine the history and state
+## 🔬 Examine the history and state
 
 | Alias | Command | Description |
 | ----- | ----- | ----- |
@@ -36,7 +36,7 @@ The `git.aliases.zsh` file creates helpful shortcut aliases for many commonly
 | glg | `git log --oneline --graph --full-history --all --color --decorate` | Show commit logs and Draw a text-based graphical representation of the commit history on the left hand side of the output. |
 | gs | `git show` | Show various types of objects. |
 
-## Aliases to list, create, or delete branches
+## 🛒 List, create, or delete branches
 
 | Alias | Command | Description |
 | ----- | ----- | ----- |
@@ -52,7 +52,7 @@ The `git.aliases.zsh` file creates helpful shortcut aliases for many commonly
 | grs | `git reset` | Reset current HEAD to the specified state. |
 | gswb | `git switch` | Switch branches. |
 
-## Aliases to collaborate
+## 🏫 Collaborate
 
 | Alias | Command | Description |
 | ----- | ----- | ----- |
@@ -61,7 +61,7 @@ The `git.aliases.zsh` file creates helpful shortcut aliases for many commonly
 | gp | `git pull` | Fetch from and integrate with another repository or a local branch. |
 | gpu | `git push` | Update remote refs along with associated objects. |
 
-## Aliases to record changes to the repository
+## ⏺️ Record changes to the repository
 
 | Alias | Command | Description |
 | ----- | ----- | ----- |
@@ -73,7 +73,7 @@ The `git.aliases.zsh` file creates helpful shortcut aliases for many commonly
 | gcint | `git commit --interactive` | Commit interactive. |
 | gcm | `git commit --message` | Commit with a message. |
 
-## Aliases to show changes between commits, commit and working tree, etc
+## 🎪 Show changes between commits, commit and working tree, etc
 
 | Alias | Command | Description |
 | ----- | ----- | ----- |
@@ -84,7 +84,7 @@ The `git.aliases.zsh` file creates helpful shortcut aliases for many commonly
 | gdstaged | `git diff --staged` | Show changes to files in the "staged" area. |
 | gdstat | `git diff --stat --ignore-space-change -r` | Generate a diffstat. |
 
-## Aliases to show commit logs
+## 🪵 Show commit logs
 
 | Alias | Command | Description |
 | ----- | ----- | ----- |
@@ -104,7 +104,7 @@ The `git.aliases.zsh` file creates helpful shortcut aliases for many commonly
 | glw | `git log --since=1-week-ago` | Show the log of the recent week |
 | gly | `git log --since=1-year-ago` | Show the log of the recent year |
 
-## Aliases to switch branches or restore working tree files
+## 🌴 Switch branches or restore working tree files
 
 | Alias | Command | Description |
 | ----- | ----- | ----- |
@@ -114,7 +114,7 @@ The `git.aliases.zsh` file creates helpful shortcut aliases for many commonly
 | gcode | `git checkout main && git branch --merged | xargs git branch --delete` | Delete all local branches that have been merged into the local main branch. |
 | gcom | `git checkout main && git fetch origin --prune && git reset --hard origin/main` | Ensure local is like the main branch. |
 
-## Aliases to update remote refs along with associated objects
+## 🚚 Update remote refs along with associated objects
 
 | Alias | Command | Description |
 | ----- | ----- | ----- |
@@ -131,7 +131,7 @@ The `git.aliases.zsh` file creates helpful shortcut aliases for many commonly
 | gpushr | `git remote | xargs -I% -n1 git push %` | git remotes-push - For each remote branch, push it. |
 | gunpub | `git push origin :$(git current-branch)` | Un-publish the current branch by deleting the remote version of the current branch. |
 
-## Aliases to manage set of tracked repositories
+## 👨🏻‍💼 Manage set of tracked repositories
 
 | Alias | Command | Description |
 | ----- | ----- | ----- |
@@ -153,14 +153,14 @@ The `git.aliases.zsh` file creates helpful shortcut aliases for many commonly
 | grv | `git remote -v` | Shows URLs of remote repositories when listing your current remote connections. |
 | gru | `git remote update` | Fetch updates for a named set of remotes in the repository as defined by remotes. |
 
-## Aliases to revert some existing commits
+## ⛬ Revert some existing commits
 
 | Alias | Command | Description |
 | ----- | ----- | ----- |
 | grev | `git revert` | Undo the changes from some existing commits. |
 | grevnc | `git revert --no-commit` | Revert without autocommit; useful when you're reverting more than one commits' effect to your index in a row. |
 
-## Aliases to initialize, update or inspect submodules
+## 🧐 Initialize, update or inspect submodules
 
 | Alias | Command | Description |
 | ----- | ----- | ----- |
@@ -172,7 +172,7 @@ The `git.aliases.zsh` file creates helpful shortcut aliases for many commonly
 | gsmui | `git submodule update --init` | Submodule update with initialize. |
 | gsmuir | `git submodule update --init --recursive` | Submodule update with initialize and recursive; this is useful to bring a submodule fully up to datec. |
 
-## Aliases to show the working tree status
+## 🌴 Show the working tree status
 
 | Alias | Command | Description |
 | ----- | ----- | ----- |
@@ -181,7 +181,7 @@ The `git.aliases.zsh` file creates helpful shortcut aliases for many commonly
 | gsts | `git status --short` | Status with short format instead of full details. |
 | gstsb | `git status --short --branch` | Status with short format and showing branch and tracking info. |
 
-## Aliases to create, list, delete or verify a tag object signed with GPG
+## 🏷️ Create, list, delete or verify a tag object signed with GPG
 
 | Alias | Command | Description |
 | ----- | ----- | ----- |
@@ -191,7 +191,7 @@ The `git.aliases.zsh` file creates helpful shortcut aliases for many commonly
 | gtl | `git describe --tags --abbrev=0` | gtl: Last tag in the current branch. |
 | gtrm | `for t in`git tag`do; git push origin :$t; git tag -d $t; done` | gtrm: Delete all tags. |
 
-## Aliases to show various types of objects
+## 🧱 Show various types of objects
 
 | Alias | Command | Description |
 | ----- | ----- | ----- |
@@ -201,7 +201,7 @@ The `git.aliases.zsh` file creates helpful shortcut aliases for many commonly
 | gshnp | `git show --no-patch --pretty="tformat:%h (%s, %ad)" --date=short` | Given any git object, try to show it briefly. |
 | gshwho | `git shortlog --summary --numbered --no-merges` | Show who contributed, in descending order by number of commits. |
 
-## Aliases to reset current HEAD to the specified state
+## 🧢 Reset current HEAD to the specified state
 
 | Alias | Command | Description |
 | ----- | ----- | ----- |
@@ -211,7 +211,7 @@ The `git.aliases.zsh` file creates helpful shortcut aliases for many commonly
 | gress | `git reset --soft HEAD~1` | Reset commit. |
 | gresu | `git reset --hard $(git upstream-branch)` | Reset to upstream. |
 
-## Aliases to pick out and massage parameters
+## 📨 Pick out and massage parameters
 
 | Alias | Command | Description |
 | ----- | ----- | ----- |
@@ -219,7 +219,7 @@ The `git.aliases.zsh` file creates helpful shortcut aliases for many commonly
 | gcb | `git rev-parse --abbrev-ref HEAD` | Get the current branch name. |
 | gub | `git for-each-ref --format='%(upstream:short)' $(git symbolic-ref -q HEAD)` | Get the upstream branch name. |
 
-## Aliases to remove files from the working tree and from the index
+## 🗑️ Remove files from the working tree and from the index
 
 | Alias | Command | Description |
 | ----- | ----- | ----- |
@@ -231,7 +231,7 @@ The `git.aliases.zsh` file creates helpful shortcut aliases for many commonly
 | grmn | `for file in $(git status | grep "new file" | sed "s/#\tnew file://"); do git rm --cached $file; done` | Remove all new files. |
 | grmx | `git ls-files -z -d | xargs -0 git rm --` | Remove for all deleted files, including those with space/quote/unprintable characters in their filename/path. |
 
-## Aliases to show what revision and author last modified each line of a file
+## 🎤 Show what revision and author last modified each line of a file
 
 | Alias | Command | Description |
 | ----- | ----- | ----- |
@@ -239,7 +239,7 @@ The `git.aliases.zsh` file creates helpful shortcut aliases for many commonly
 | gblc | `git blame --line-porcelain "$1" | sed -n 's/^author //p' | sort | uniq -c | sort -rn` | Count the number of lines attributed to each author. |
 | gblau | `git ls-files | xargs -n1 git blame --line-porcelain | sed -n 's/^author //p' | sort -f | uniq -ic | sort -nr` | Prints per-line contribution per author for a GIT repository. |
 
-## Aliases to get and set repository or global options
+## 🤔 Get and set repository or global options
 
 | Alias | Command | Description |
 | ----- | ----- | ----- |
