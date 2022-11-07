@@ -1,6 +1,6 @@
-# Permission aliases
+# Chmod aliases
 
-The `permission.aliases.sh` file creates helpful shortcut aliases for changing
+The `chmod.aliases.sh` file creates helpful shortcut aliases for changing
 file permissions.
 
 ## 🔑 Permission
