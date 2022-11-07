@@ -1,9 +1,9 @@
-# Google Cloud Aliases
+# Google Cloud aliases
 
 The `gcloud.aliases.zsh` file creates helpful shortcut aliases for many commonly
 [Google Cloud](https://cloud.google.com/) commands.
 
-## Command-line tool
+## 🧰 Command-line tool
 
 | Alias | Command | Description |
 | ----- | ----- | ----- |
@@ -14,7 +14,7 @@ The `gcloud.aliases.zsh` file creates helpful shortcut aliases for many commonly
 | gcinf | `gcloud info` | Display current gcloud tool environment details. |
 | gcv  | `gcloud version` | Display version and installed components. |
 
-## Custom
+## ☁ Custom
 
 | Alias | Command | Description |
 | ----- | ----- | ----- |
@@ -25,7 +25,7 @@ The `gcloud.aliases.zsh` file creates helpful shortcut aliases for many commonly
 | gccl | `gcloud config list` | Display all the properties for the current configuration. |
 | gccs | `gcloud config set` | Define a property (like compute/zone) for the current configuration. |
 
-## Authorization
+## 🚔 Authorization
 
 | Alias | Command | Description |
 | ----- | ----- | ----- |
@@ -36,7 +36,7 @@ The `gcloud.aliases.zsh` file creates helpful shortcut aliases for many commonly
 | gcapat | `gcloud auth print-access-token` | Display the current account's access token. |
 | gcar  | `gcloud auth revoke` | Remove access credentials for an account. |
 
-## Cloud Identity & Access Management (IAM)
+## ☁ Cloud Identity & Access Management (IAM)
 
 | Alias | Command | Description |
 | ----- | ----- | ----- |
@@ -47,14 +47,14 @@ The `gcloud.aliases.zsh` file creates helpful shortcut aliases for many commonly
 | gciams | `gcloud iam service-accounts set-iam-policy` | Replace existing IAM policy binding. |
 | gciamv | `gcloud iam service-accounts create` | Create a service account for a project. |
 
-## Access policies
+## 🚪 Access policies
 
 | Alias | Command | Description |
 | ----- | ----- | ----- |
 | gcpa | `gcloud projects add-iam-policy-binding` | Add an IAM policy binding to a specified project. |
 | gcpd | `gcloud projects describe` | Display metadata for a project (including its ID). |
 
-## Kubernetes
+## ☁ Kubernetes
 
 | Alias | Command | Description |
 | ----- | ----- | ----- |
@@ -63,7 +63,7 @@ The `gcloud.aliases.zsh` file creates helpful shortcut aliases for many commonly
 | gcccl | `gcloud container clusters list` | List clusters for running GKE containers. |
 | gccil | `gcloud container images list-tags` | List tag and digest metadata for a container image. |
 
-## VMs
+## ☁ VMs
 
 | Alias | Command | Description |
 | ----- | ----- | ----- |
@@ -78,7 +78,7 @@ The `gcloud.aliases.zsh` file creates helpful shortcut aliases for many commonly
 | gcpup   | `gcloud compute instances start` | Start instance. |
 | gcpzl   | `gcloud compute zones list` | List Compute Engine zones. |
 
-## gcloud aliases to build highly scalable applications on a fully managed serverless platform
+## ☁ gcloud aliases to build highly scalable applications on a fully managed serverless platform
 
 | Alias | Command | Description |
 | ----- | ----- | ----- |
@@ -88,7 +88,7 @@ The `gcloud.aliases.zsh` file creates helpful shortcut aliases for many commonly
 | gcapl | `gcloud app logs read` | Display the latest App Engine app logs. |
 | gcapv | `gcloud app versions list` | List all versions of all services deployed to the App Engine server. |
 
-## gcloud aliases to commands that might come in handy
+## ☁ gcloud aliases to commands that might come in handy
 
 | Alias | Command | Description |
 | ----- | ----- | ----- |
