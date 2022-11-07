@@ -1,6 +1,6 @@
 # Disk usage aliases
 
-The `diskusage.aliases.sh` file creates helpful shortcut aliases for the `du` command.
+The `du.aliases.sh` file creates helpful shortcut aliases for the `du` command.
 
 ## 💾 Disk usage
 
