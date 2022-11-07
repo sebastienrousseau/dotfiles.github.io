@@ -7,7 +7,7 @@ export const aliases = {
     ["/aliases/configuration/", "❯ Configuration aliases"],
     ["/aliases/default/", "❯ Default aliases"],
     ["/aliases/dig/", "❯ Dig aliases"],
-    ["/aliases/diskusage/", "❯ Disk usage aliases"],
+    ["/aliases/du/", "❯ Disk usage aliases"],
     ["/aliases/editor/", "❯ Editor aliases"],
     ["/aliases/find/", "❯ Find aliases"],
     ["/aliases/gcloud/", "❯ GCloud aliases"],
