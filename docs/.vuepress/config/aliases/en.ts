@@ -2,6 +2,7 @@ export const aliases = {
   ariaLabel: 'Aliases',
   children: [
     ["/aliases/archives/", "Archives aliases"],
+    ["/aliases/cd/", "Cd aliases"],
     ["/aliases/chmod/", "Chmod aliases"],
     ["/aliases/clear/", "Clear aliases"],
     ["/aliases/configuration/", "Configuration aliases"],
@@ -19,7 +20,6 @@ export const aliases = {
     ["/aliases/list/", "List aliases"],
     ["/aliases/make/", "Make aliases"],
     ["/aliases/mkdir/", "Mkdir aliases"],
-    ["/aliases/navigation/", "Navigation aliases"],
     ["/aliases/npm/", "NPM aliases"],
     ["/aliases/pnpm/", "PNPM aliases"],
     ["/aliases/ps/", "PS aliases"],

@@ -1,9 +1,34 @@
+---
+description: The NPM aliases are a collection of aliases that allow you to interact with the `npm` command line tool. Npm is a package manager for the JavaScript programming language.
+lang: en-GB
+metaTitle: The NPM aliases - Dotfiles (UK)
+permalink: /aliases/npm/
+
+meta:
+  - name: keywords
+    content: aliases, npm, node, node package manager, package manager, linux, macos, shell, terminal, windows
+  - name: twitter:card
+    content: The NPM aliases are a collection of aliases that allow you to interact with the `npm` command line tool. Npm is a package manager for the JavaScript programming language.
+  - name: twitter:creator
+    content: "@wwdseb"
+  - name: twitter:description
+    content: The NPM aliases are a collection of aliases that allow you to interact with the `npm` command line tool. Npm is a package manager for the JavaScript programming language.
+  - name: og:title
+    content: The NPM aliases - Dotfiles (UK)
+  - name: og:description
+    content: The NPM aliases are a collection of aliases that allow you to interact with the `npm` command line tool. Npm is a package manager for the JavaScript programming language.
+  - name: og:image:alt
+    content: Dotfiles - Simply designed to fit your shell life
+  - name: og:locale
+    content: en_GB
+---
+
 # NPM aliases
 
 The `npm.aliases.sh` file creates helpful shortcut aliases
 for [npm](https://www.npmjs.com/).
 
-## 📦 NPM
+## NPM
 
 [npm](https://www.npmjs.com/) is a package manager for the JavaScript
 programming language. It is the default package manager for the JavaScript

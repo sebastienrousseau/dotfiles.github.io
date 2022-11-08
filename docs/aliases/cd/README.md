@@ -1,9 +1,38 @@
-# Navigation aliases
+---
+description: The Change Directory aliases are a collection of aliases that allow you to interact with the `cd` command line tool. Cd is a tool which changes the current directory.
+lang: en-GB
+metaTitle: The Change Directory aliases - Dotfiles (UK)
+permalink: /aliases/cd/
 
-The `navigation.aliases.sh` file creates helpful shortcut aliases for
+meta:
+  - name: keywords
+    content: aliases, cd, chdir, change directory, directory, linux, macos, shell, terminal, windows
+  - name: twitter:card
+    content: The Change Directory aliases are a collection of aliases that allow you to interact with the `cd` command line tool. Cd is a tool which changes the current directory.
+  - name: twitter:creator
+    content: "@wwdseb"
+  - name: twitter:description
+    content: The Change Directory aliases are a collection of aliases that allow you to interact with the `cd` command line tool. Cd is a tool which changes the current directory.
+  - name: og:title
+    content: The Change Directory aliases - Dotfiles (UK)
+  - name: og:description
+    content: The Change Directory aliases are a collection of aliases that allow you to interact with the `cd` command line tool. Cd is a tool which changes the current directory.
+  - name: og:image:alt
+    content: Dotfiles - Simply designed to fit your shell life
+  - name: og:locale
+    content: en_GB
+---
+
+# Change Directory aliases
+
+The `cd.aliases.sh` file creates helpful shortcut aliases for
 navigating the terminal.
 
-## 🧭 Navigation
+The Change Directory aliases are a collection of aliases that allow you to
+interact with the `cd` command line tool. Cd is a tool which changes the current
+directory.
+
+## Navigation
 
 The cd command, also known as chdir (change directory), is a command-line shell
 command used to change the current working directory in various operating
