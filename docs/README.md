@@ -4,11 +4,11 @@ heroImage: /logo.svg
 heroText: Simply designed to fit your shell life
 home: true
 lang: en-GB
-metaTitle: Dotfiles - Simply designed to fit your shell life (United Kingdom)
+metaTitle: Dotfiles - Simply designed to fit your shell life (UK)
 permalink: /
 subtitle: The next generation of Bash configuration files for macOS, Linux and Windows. Dotfiles gives you new ways to do more than ever with your shell.
 tagline: The next generation of Bash configuration files for macOS, Linux and Windows. Dotfiles gives you new ways to do more than ever with your shell.
-title: Dotfiles - Simply designed to fit your shell life (United Kingdom)
+title: Dotfiles - Simply designed to fit your shell life (UK)
 actionText: Read more →
 actionLink: /about/
 features:
@@ -30,7 +30,7 @@ meta:
   - name: twitter:description
     content: The next generation of Bash configuration files for macOS, Linux and Windows. Dotfiles gives you new ways to do more than ever with your shell.
   - name: og:title
-    content: Dotfiles - Simply designed to fit your shell life (United Kingdom)
+    content: Dotfiles - Simply designed to fit your shell life (UK)
   - name: og:description
     content: The next generation of Bash configuration files for macOS, Linux and Windows. Dotfiles gives you new ways to do more than ever with your shell.
   - name: og:image:alt
