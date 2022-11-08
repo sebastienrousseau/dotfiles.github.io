@@ -1,8 +1,8 @@
-import { enNavbar } from './config/nav'; // Import English navbar
+import { enNavbar } from './config/nav';      // Import English navbar
 import { enSidebar } from './config/sidebar'; // Import English sidebar
-import { frNavbar } from './config/nav'; // Import French navbar
+import { frNavbar } from './config/nav';      // Import French navbar
 import { frSidebar } from './config/sidebar'; // Import French sidebar
-import { headers } from './config/head'; // Import Headers for SEO
+import { headers } from './config/head';      // Import Headers for SEO
 
 module.exports = {
   base: '/',
@@ -10,12 +10,12 @@ module.exports = {
     "/": {
       lang: 'en-GB', // English
       title: "Dotfiles",
-      description: "A set of macOS / Linux and Windows configuration files, simply designed to fit your shell life!",
+      description: "The next generation of Bash configuration files for macOS, Linux and Windows. Dotfiles gives you new ways to do more than ever with your shell.",
     },
     "/fr/": {
       lang: "fr-FR", // French
       title: "Dotfiles",
-      description: "Des fichiers de configuration Bash pour macOS, Linux et Windows. Adaptés à vos besoins et pour vous servir.",
+      description: "La prochaine génération de fichiers de configuration Bash pour macOS, Linux et Windows. Avec Dotfiles, vous pouvez en faire toujours plus avec votre shell.",
     }
   },
   // Enable evergreen browsers support

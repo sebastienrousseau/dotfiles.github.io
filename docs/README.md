@@ -1,13 +1,13 @@
 ---
-description: Bash configuration files for macOS, Linux and Windows. Tailored to your needs and at your service
+description: The next generation of Bash configuration files for macOS, Linux and Windows. Dotfiles gives you new ways to do more than ever with your shell.
 heroImage: /logo.svg
 heroText: Simply designed to fit your shell life
 home: true
 lang: en-GB
 metaTitle: Dotfiles (United Kingdom)
 permalink: /
-subtitle: Bash configuration files for macOS, Linux and Windows. Tailored to your needs and at your service
-tagline: Bash configuration files for macOS, Linux and Windows. Tailored to your needs and at your service
+subtitle: The next generation of Bash configuration files for macOS, Linux and Windows. Dotfiles gives you new ways to do more than ever with your shell.
+tagline: The next generation of Bash configuration files for macOS, Linux and Windows. Dotfiles gives you new ways to do more than ever with your shell.
 title: Dotfiles (United Kingdom)
 actionText: Read more →
 actionLink: /about/
@@ -22,15 +22,15 @@ footer: Copyright © Sebastien Rousseau 2015-2022. All rights reserved.
 
 meta:
   - name: twitter:card
-    content: Bash configuration files for macOS, Linux and Windows. Tailored to your needs and at your service
+    content: The next generation of Bash configuration files for macOS, Linux and Windows. Dotfiles gives you new ways to do more than ever with your shell.
   - name: twitter:creator
     content: "@wwdseb"
   - name: twitter:description
-    content: Bash configuration files for macOS, Linux and Windows. Tailored to your needs and at your service
+    content: The next generation of Bash configuration files for macOS, Linux and Windows. Dotfiles gives you new ways to do more than ever with your shell.
   - name: og:title
     content: Dotfiles (United Kingdom)
   - name: og:description
-    content: Bash configuration files for macOS, Linux and Windows. Tailored to your needs and at your service
+    content: The next generation of Bash configuration files for macOS, Linux and Windows. Dotfiles gives you new ways to do more than ever with your shell.
   - name: og:image:alt
     content: Dotfiles - Simply designed to fit your shell life
   - name: og:locale

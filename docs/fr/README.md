@@ -1,13 +1,13 @@
 ---
-description: Des fichiers de configuration Bash pour macOS, Linux et Windows. Adaptés à vos besoins et pour vous servir
+description: La prochaine génération de fichiers de configuration Bash pour macOS, Linux et Windows. Avec Dotfiles, vous pouvez en faire toujours plus avec votre shell.
 heroImage: /logo.svg
 heroText: Conçus pour s'adapter à votre vie de shell
 home: true
 lang: fr-FR
 metaTitle: Dotfiles (France)
 permalink: /
-subtitle: Des fichiers de configuration Bash pour macOS, Linux et Windows. Adaptés à vos besoins et pour vous servir
-tagline: Des fichiers de configuration Bash pour macOS, Linux et Windows. Adaptés à vos besoins et pour vous servir
+subtitle: La prochaine génération de fichiers de configuration Bash pour macOS, Linux et Windows. Avec Dotfiles, vous pouvez en faire toujours plus avec votre shell.
+tagline: La prochaine génération de fichiers de configuration Bash pour macOS, Linux et Windows. Avec Dotfiles, vous pouvez en faire toujours plus avec votre shell.
 title: Dotfiles (France)
 actionText: En savoir plus →
 actionLink: /fr/apropos/
@@ -22,15 +22,15 @@ footer: Copyright © Sebastien Rousseau 2015-2022. Tous droits réservés.
 
 meta:
   - name: twitter:card
-    content: "Des fichiers de configuration Bash pour macOS, Linux et Windows. Adaptés à vos besoins et pour vous servir"
+    content: "La prochaine génération de fichiers de configuration Bash pour macOS, Linux et Windows. Avec Dotfiles, vous pouvez en faire toujours plus avec votre shell."
   - name: twitter:creator
     content: "@wwdseb"
   - name: twitter:description
-    content: "Des fichiers de configuration Bash pour macOS, Linux et Windows. Adaptés à vos besoins et pour vous servir"
+    content: "La prochaine génération de fichiers de configuration Bash pour macOS, Linux et Windows. Avec Dotfiles, vous pouvez en faire toujours plus avec votre shell."
   - name: og:title
     content: "Dotfiles (France)"
   - name: og:description
-    content: "Des fichiers de configuration Bash pour macOS, Linux et Windows. Adaptés à vos besoins et pour vous servir"
+    content: "La prochaine génération de fichiers de configuration Bash pour macOS, Linux et Windows. Avec Dotfiles, vous pouvez en faire toujours plus avec votre shell."
   - name: og:image:alt
     content: "Conçus pour s'adapter à votre vie de shell"
   - name: og:locale
