@@ -1,8 +1,37 @@
+---
+description: The Mkdir aliases are a collection of aliases that allow you to interact with the `mkdir` command line tool. Mkdir is a tool which creates a directory.
+lang: en-GB
+metaTitle: The Mkdir aliases - Dotfiles (UK)
+permalink: /aliases/mkdir/
+
+meta:
+  - name: keywords
+    content: aliases, mkdir, linux, macos, shell, terminal, windows
+  - name: twitter:card
+    content: The Mkdir aliases are a collection of aliases that allow you to interact with the `mkdir` command line tool. Mkdir is a tool which creates a directory.
+  - name: twitter:creator
+    content: "@wwdseb"
+  - name: twitter:description
+    content: The Mkdir aliases are a collection of aliases that allow you to interact with the `mkdir` command line tool. Mkdir is a tool which creates a directory.
+  - name: og:title
+    content: The Mkdir aliases - Dotfiles (UK)
+  - name: og:description
+    content: The Mkdir aliases are a collection of aliases that allow you to interact with the `mkdir` command line tool. Mkdir is a tool which creates a directory.
+  - name: og:image:alt
+    content: Dotfiles - Simply designed to fit your shell life
+  - name: og:locale
+    content: en_GB
+---
+
 # Mkdir aliases
 
-The `mkdir.aliases.sh` file creates helpful shortcut aliases for creating directories.
+The `mkdir.aliases.sh` file creates helpful shortcut aliases for creating
+directories.
 
-## 📁 Mkdir
+The Mkdir aliases are a collection of aliases that allow you to interact with
+the `mkdir` command line tool. Mkdir is a tool which creates a directory.
+
+## Mkdir
 
 [Mkdir](https://en.wikipedia.org/wiki/Mkdir) is a command that creates a
 directory. The mkdir utility creates the directories named as operands, in the
