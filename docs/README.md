@@ -1,5 +1,5 @@
 ---
-description: The next generation of Bash configuration files for macOS, Linux and Windows. Dotfiles gives you new ways to do more than ever with your shell.
+description: The next generation of Bash configuration files for macOS, Linux and Windows. The Dotfiles gives you new ways to do more than ever with your shell and terminal. It's a collection of scripts, aliases, functions, and more that you can use to customize your shell and terminal.
 heroImage: /logo.svg
 heroText: Simply designed to fit your shell life
 home: true
