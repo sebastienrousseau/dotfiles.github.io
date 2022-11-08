@@ -1,9 +1,38 @@
+---
+description: The Rust aliases are a collection of aliases that allow you to interact with the `rustup` and `cargo` commands. They are designed to be used with the `rustup` toolchain manager and the `cargo` package manager.
+lang: en-GB
+metaTitle: The Rust aliases - Dotfiles (UK)
+permalink: /aliases/rust/
+
+meta:
+  - name: keywords
+    content: aliases, cargo, rust, rustup, linux, macos, shell, terminal, windows
+  - name: twitter:card
+    content: The Rust aliases are a collection of aliases that allow you to interact with the `rustup` and `cargo` commands. They are designed to be used with the `rustup` toolchain manager and the `cargo` package manager.
+  - name: twitter:creator
+    content: "@wwdseb"
+  - name: twitter:description
+    content: The Rust aliases are a collection of aliases that allow you to interact with the `rustup` and `cargo` commands. They are designed to be used with the `rustup` toolchain manager and the `cargo` package manager.
+  - name: og:title
+    content: The Rust aliases - Dotfiles (UK)
+  - name: og:description
+    content: The Rust aliases are a collection of aliases that allow you to interact with the `rustup` and `cargo` commands. They are designed to be used with the `rustup` toolchain manager and the `cargo` package manager.
+  - name: og:image:alt
+    content: Dotfiles - Simply designed to fit your shell life
+  - name: og:locale
+    content: en_GB
+---
+
 # Rust aliases
 
 The `rust.aliases.sh` file creates helpful shortcut aliases for
 [Rust](https://www.rust-lang.org/).
 
-## 🦀 Rust
+The Rust aliases are a collection of aliases that allow you to interact with the
+`rustup` and `cargo` commands. They are designed to be used with the `rustup`
+toolchain manager and the `cargo` package manager.
+
+## Rust
 
 [Rust](https://www.rust-lang.org/) is a programming language that is focused on
 performance and safety, especially safe concurrency. Rust is syntactically
@@ -28,7 +57,7 @@ maintaining high performance.
 | ruc | `rustup update nightly` | Update rustup nightly. |
 | rus | `rustup update stable` | Update rustup stable. |
 
-## 🦀 Cargo
+## Cargo
 
 [Cargo](https://doc.rust-lang.org/cargo/) is the Rust package manager. It is
 used to build, test, and package Rust projects. Cargo is included with Rustup.
