@@ -1,14 +1,42 @@
+---
+description: The GNU Core Utilities aliases, provide powerful commands that create shortcuts to frequently used Core utilities commands. All of these functions and aliases are wrappers around the GNU Core Utilities which are the basic, fundamental tools of a GNU/Linux system.
+lang: en-GB
+metaTitle: The GNU Core Utilities aliases - Dotfiles (UK)
+permalink: /aliases/gnu/
+
+meta:
+  - name: keywords
+    content: aliases, git, gitconfig, gitconfig, git, configuration, dotfiles, linux, macos, shell, windows, bash, zsh
+  - name: twitter:card
+    content: The GNU Core Utilities aliases, provide powerful commands that create shortcuts to frequently used Core utilities commands. All of these functions and aliases are wrappers around the GNU Core Utilities which are the basic, fundamental tools of a GNU/Linux system.
+  - name: twitter:creator
+    content: "@wwdseb"
+  - name: twitter:description
+    content: The GNU Core Utilities aliases, provide powerful commands that create shortcuts to frequently used Core utilities commands. All of these functions and aliases are wrappers around the GNU Core Utilities which are the basic, fundamental tools of a GNU/Linux system.
+  - name: og:title
+    content: The GNU Core Utilities aliases - Dotfiles (UK)
+  - name: og:description
+    content: The GNU Core Utilities aliases, provide powerful commands that create shortcuts to frequently used Core utilities commands. All of these functions and aliases are wrappers around the GNU Core Utilities which are the basic, fundamental tools of a GNU/Linux system.
+  - name: og:image:alt
+    content: Dotfiles - Simply designed to fit your shell life
+  - name: og:locale
+    content: en_GB
+---
+
 # GNU Core Utilities Aliases
 
 The `gnucoreutils-aliases.sh` file creates helpful shortcut aliases for many
-commonly used [GNU coreutils][coreutils] commands. The GNU Core Utilities are
-the basic file, shell and text manipulation utilities of the GNU operating
-system.
+commonly used [GNU coreutils][coreutils] commands.
+
+The GNU Core Utilities aliases, provide powerful commands that create shortcuts
+to frequently used Core utilities commands. All of these functions and aliases
+are wrappers around the GNU Core Utilities which are the basic, fundamental
+tools of a GNU/Linux system.
 
 These are the core utilities which are expected to exist on every operating
 system.
 
-## 🆕 GNU coreutils aliases
+## GNU coreutils aliases
 
 | Alias | Command | Description |
 |---|---|---|
