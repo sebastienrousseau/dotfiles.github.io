@@ -2,7 +2,7 @@
 description: The PS aliases are a collection of aliases that allow you to interact with the `ps` command line tool. Ps is a tool which reports a snapshot of the current processes.
 lang: en-GB
 metaTitle: The PS aliases - Dotfiles (UK)
-permalink: /aliases/pnpm/
+permalink: /aliases/ps/
 
 meta:
   - name: keywords
