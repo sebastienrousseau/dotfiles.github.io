@@ -1,7 +1,36 @@
+---
+description: The List aliases are a collection of aliases that allow you to interact with the `ls` command in a more interactive way in order to display the content of a directory.
+lang: en-GB
+metaTitle: The List (ls) aliases - Dotfiles (UK)
+permalink: /aliases/list/
+
+meta:
+  - name: keywords
+    content: aliases, ls, list, linux, macos, shell, terminal, windows
+  - name: twitter:card
+    content: The List aliases are a collection of aliases that allow you to interact with the `ls` command in a more interactive way in order to display the content of a directory.
+  - name: twitter:creator
+    content: "@wwdseb"
+  - name: twitter:description
+    content: The List aliases are a collection of aliases that allow you to interact with the `ls` command in a more interactive way in order to display the content of a directory.
+  - name: og:title
+    content: The List (ls) aliases - Dotfiles (UK)
+  - name: og:description
+    content: The List aliases are a collection of aliases that allow you to interact with the `ls` command in a more interactive way in order to display the content of a directory.
+  - name: og:image:alt
+    content: Dotfiles - Simply designed to fit your shell life
+  - name: og:locale
+    content: en_GB
+---
+
 # List aliases
 
 The `list.aliases.sh` file creates helpful shortcut aliases for listing files
 and directories.
+
+The List aliases are a collection of aliases that allow you to interact with
+the `ls` command in a more interactive way in order to display the content of a
+directory.
 
 For each operand that names a file of a type other than directory, `ls` displays
 its name as well as any requested, associated information.  For each operand
