@@ -1,9 +1,37 @@
+---
+description: The PNpm aliases are a collection of aliases that allow you to interact with the `pnpm` command line tool. Pnpm is a fast, disk space efficient package manager.
+lang: en-GB
+metaTitle: The PNpm aliases - Dotfiles (UK)
+permalink: /aliases/pnpm/
+
+meta:
+  - name: keywords
+    content: aliases, npm, node, node package manager, package manager, linux, macos, shell, terminal, windows
+  - name: twitter:card
+    content: The PNpm aliases are a collection of aliases that allow you to interact with the `pnpm` command line tool. Pnpm is a fast, disk space efficient package manager.
+  - name: twitter:creator
+    content: "@wwdseb"
+  - name: twitter:description
+    content: The PNpm aliases are a collection of aliases that allow you to interact with the `pnpm` command line tool. Pnpm is a fast, disk space efficient package manager.
+  - name: og:title
+    content: The PNpm aliases - Dotfiles (UK)
+  - name: og:description
+    content: The PNpm aliases are a collection of aliases that allow you to interact with the `pnpm` command line tool. Pnpm is a fast, disk space efficient package manager.
+  - name: og:image:alt
+    content: Dotfiles - Simply designed to fit your shell life
+  - name: og:locale
+    content: en_GB
+---
+
 # PNpm aliases
 
 This `pnpm.aliases.zsh` file creates helpful shortcut aliases for many
 commonly used [PNpm](https://pnpm.io) commands.
 
-## 📦 PNpm
+The PNpm aliases are a collection of aliases that allow you to interact with the
+`pnpm` command line tool. Pnpm is a fast, disk space efficient package manager.
+
+## PNpm
 
 [PNpm](https://pnpm.io) is a package manager for JavaScript and Node.js. It
 is fast, disk space efficient, and reliable.
