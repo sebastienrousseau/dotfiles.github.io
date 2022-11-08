@@ -2,7 +2,7 @@
 description: The Interactive aliases are a collection of aliases that allow you to interact with your shell and terminal in a more interactive way.
 lang: en-GB
 metaTitle: Interactive aliases - Dotfiles (UK)
-permalink: /aliases/editor/
+permalink: /aliases/interactive/
 
 meta:
   - name: keywords
