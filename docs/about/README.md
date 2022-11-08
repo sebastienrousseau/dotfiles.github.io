@@ -5,6 +5,8 @@ metaTitle: About Dotfiles - Dotfiles (UK)
 permalink: /about/
 
 meta:
+  - name: keywords
+    content: bash, best performance, compatibility, configuration, dotfiles, linux, macos, security, shell, standalone, windows
   - name: twitter:card
     content: A set of Bash configuration files for macOS, Linux and Windows, that you can use to customize your shell and applications. All in one place and ready to use.
   - name: twitter:creator
@@ -21,10 +23,9 @@ meta:
     content: en_GB
 ---
 
+# Welcome to Dotfiles v0.2.462
 
-# :wave: Welcome to Dotfiles v0.2.462
-
-## :beginner: Introduction
+## Introduction
 
 A set of Bash configuration files for macOS, Linux and Windows, that you can use
 to customize your shell and applications. All in one place and ready to use.
@@ -40,7 +41,7 @@ and high performance for your shell.
 Try them out and let us know what you think of Dotfiles. We are always looking
 for ways to improve our products and services.
 
-## :rocket: Getting Started
+## Getting Started
 
 We are so delighted that you have decided to try Dotfiles, and are sure that you
 will find them unique and helpful.
@@ -97,7 +98,7 @@ supports a wide range of programming languages.
   sudo apt install fonts-jetbrains-mono
   ```
 
-## :wrench: How to Install
+## How to Install
 
 ### :one: Back Up Your Existing Data
 
@@ -201,7 +202,7 @@ restart your terminal.
 If the installation is successful, you should be able to see the new Dotfiles
 interface in your terminal and you can start using it right away.
 
-## :question: What's included
+## What's included
 
 Dotfiles contains core elements that are used to configure your shell, and
 other components catered for your environment setup.
@@ -338,31 +339,31 @@ files:
 
 ```
 
-## :link: Releases
+## Releases
 
 Releases are available on the [GitHub releases page][releases-url].
 
-## :traffic_light: Semantic versioning policy
+## Semantic versioning policy
 
 For transparency into our release cycle and in striving to maintain backward
 compatibility, `Dotfiles` follows [Semantic Versioning][semver-url].
 
-## :white_check_mark: Changelog
+## Changelog
 
 - [GitHub Releases][releases-url] are used for changelogs.
 
-## :book: Code of Conduct
+## Code of Conduct
 
 We are committed to preserving and fostering a diverse, welcoming community.
 Please read our [Code of Conduct][code-of-conduct-url].
 
-## :star: Our Values
+## Our Values
 
 - We believe perfection must consider everything.
 - We take our passion beyond code into our daily practices.
 - We are just obsessed about creating and delivering exceptional solutions.
 
-## :handshake: Contributing
+## Contributing
 
 Thank you for using Dotfiles! If you like the library, it would be
 great if you can give it a star ⭐ on [Github][github-url].
@@ -379,13 +380,13 @@ Please read carefully through our
 [Contributing Guidelines][contributing-url]
 for further details on the process for submitting pull requests to us.
 
-## 🥂 License
+## License
 
 This project is licensed under the [MIT License][license-url] file for details.
 
 [![FOSSA Status][fossa]][fossa-url]
 
-## :blue_heart: Acknowledgements
+## Acknowledgements
 
 [Dotfiles][website-url] is beautifully crafted by these people and a bunch of
 awesome [contributors][contributors-url]

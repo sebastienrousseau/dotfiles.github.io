@@ -1,9 +1,32 @@
+---
+description: The Chmod aliases allow to change the permissions (or access mode) of a file or directory.
+lang: en-GB
+metaTitle: Chmod aliases - Dotfiles (UK)
+permalink: /aliases/chmod/
+
+meta:
+  - name: twitter:card
+    content: The Chmod aliases allow to change the permissions (or access mode) of a file or directory.
+  - name: twitter:creator
+    content: "@wwdseb"
+  - name: twitter:description
+    content: The Chmod aliases allow to change the permissions (or access mode) of a file or directory.
+  - name: og:title
+    content: Chmod aliases - Dotfiles (UK)
+  - name: og:description
+    content: The Chmod aliases allow to change the permissions (or access mode) of a file or directory.
+  - name: og:image:alt
+    content: Dotfiles - Simply designed to fit your shell life
+  - name: og:locale
+    content: en_GB
+---
+
 # Chmod aliases
 
 The `chmod.aliases.sh` file creates helpful shortcut aliases for changing
 file permissions.
 
-## 🔑 Permission
+## Permission
 
 The chmod utility modifies the file mode bits of the listed files as specified
 by the mode operand. It may also be used to modify the Access Control Lists

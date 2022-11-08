@@ -1,3 +1,26 @@
+---
+description: The Dig aliases, allow to query information about various DNS records, including host addresses, mail exchanges, and name servers.
+lang: en-GB
+metaTitle: Dig aliases - Dotfiles (UK)
+permalink: /aliases/dig/
+
+meta:
+  - name: twitter:card
+    content: The Dig aliases, allow to query information about various DNS records, including host addresses, mail exchanges, and name servers.
+  - name: twitter:creator
+    content: "@wwdseb"
+  - name: twitter:description
+    content: The Dig aliases, allow to query information about various DNS records, including host addresses, mail exchanges, and name servers.
+  - name: og:title
+    content: Dig aliases - Dotfiles (UK)
+  - name: og:description
+    content: The Dig aliases, allow to query information about various DNS records, including host addresses, mail exchanges, and name servers.
+  - name: og:image:alt
+    content: Dotfiles - Simply designed to fit your shell life
+  - name: og:locale
+    content: en_GB
+---
+
 # Dig aliases
 
 The `dig.aliases.sh` file creates helpful shortcut aliases for the `dig`
@@ -8,7 +31,7 @@ name servers. It performs DNS lookups and displays the answers that are returned
 from the name server(s) that were queried. It is mostly used to troubleshoot DNS
 issues and to find information about a domain such the IP address.
 
-## 🕵️‍♂️ Dig
+## Dig
 
 [Dig](https://en.wikipedia.org/wiki/Dig_(command)) is a command that performs
 DNS lookups and displays the answers that are returned from the name server(s)

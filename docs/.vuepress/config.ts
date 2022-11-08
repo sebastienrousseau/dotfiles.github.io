@@ -8,13 +8,13 @@ module.exports = {
   base: '/',
   locales: {
     "/": {
-      lang: 'en-GB', // English
+      lang: 'en-GB',
       title: "Dotfiles",
       description: "The next generation of Bash configuration files for macOS, Linux and Windows. Dotfiles gives you new ways to do more than ever with your shell.",
     },
     "/fr/": {
       lang: "fr-FR", // French
-      title: "Dotfiles",
+      title: "Les Dotfiles",
       description: "La prochaine génération de fichiers de configuration Bash pour macOS, Linux et Windows. Avec Dotfiles, vous pouvez en faire toujours plus avec votre shell.",
     }
   },

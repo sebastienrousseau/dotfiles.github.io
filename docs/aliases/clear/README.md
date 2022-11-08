@@ -1,10 +1,35 @@
+---
+description: The clear aliases are able to clear the screen in a variety of ways.
+lang: en-GB
+metaTitle: Clear aliases - Dotfiles (UK)
+permalink: /aliases/clear/
+
+meta:
+  - name: twitter:card
+    content: The clear aliases are able to clear the screen in a variety of ways.
+  - name: twitter:creator
+    content: "@wwdseb"
+  - name: twitter:description
+    content: The clear aliases are able to clear the screen in a variety of ways.
+  - name: og:title
+    content: Clear aliases - Dotfiles (UK)
+  - name: og:description
+    content: The clear aliases are able to clear the screen in a variety of ways.
+  - name: og:image:alt
+    content: Dotfiles - Simply designed to fit your shell life
+  - name: og:locale
+    content: en_GB
+---
+
 # Clear aliases
 
-The `clear.aliases.sh` file creates helpful shortcut aliases for clearing the terminal screen. The aliases are able to clear the screen in a variety of ways.
+The `clear.aliases.sh` file creates helpful shortcut aliases for clearing the
+terminal screen. The aliases are able to clear the screen in a variety of ways.
 
-## 🧹 Clear
+## Clear
 
-[Clear](https://en.wikipedia.org/wiki/Clear_(command)) is a command that clears the terminal screen.
+[Clear](https://en.wikipedia.org/wiki/Clear_(command)) is a command that clears
+the terminal screen.
 
 | Alias | Command | Description |
 | ----- | ----- | ----- |

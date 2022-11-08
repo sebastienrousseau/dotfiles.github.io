@@ -1,9 +1,32 @@
+---
+description: The Default aliases are aliases that are not specific to any particular command. They are common aliases that are used in many different contexts and are listed here for convenience.
+lang: en-GB
+metaTitle: Default aliases - Dotfiles (UK)
+permalink: /aliases/default/
+
+meta:
+  - name: twitter:card
+    content: The Default aliases are aliases that are not specific to any particular command. They are common aliases that are used in many different contexts and are listed here for convenience.
+  - name: twitter:creator
+    content: "@wwdseb"
+  - name: twitter:description
+    content: The Default aliases are aliases that are not specific to any particular command. They are common aliases that are used in many different contexts and are listed here for convenience.
+  - name: og:title
+    content: Default aliases - Dotfiles (UK)
+  - name: og:description
+    content: The Default aliases are aliases that are not specific to any particular command. They are common aliases that are used in many different contexts and are listed here for convenience.
+  - name: og:image:alt
+    content: Dotfiles - Simply designed to fit your shell life
+  - name: og:locale
+    content: en_GB
+---
+
 # Default aliases
 
 The `default.aliases.sh` file creates helpful shortcut aliases for many commonly
 used commands.
 
-## 💠 Default
+## Default
 
 The Default aliases are aliases that are not specific to any particular command.
 They are common aliases that are used in many different contexts and are listed

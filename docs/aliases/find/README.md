@@ -1,3 +1,28 @@
+---
+description: The Find aliases, are designed to search for files in a directory hierarchy and perform actions on the files that are found.
+lang: en-GB
+metaTitle: Find aliases - Dotfiles (UK)
+permalink: /aliases/find/
+
+meta:
+  - name: keywords
+    content: aliases, code, editor, environment, gedit, nano, notepad++, text, vi, vim
+  - name: twitter:card
+    content: The Find aliases, are designed to search for files in a directory hierarchy and perform actions on the files that are found.
+  - name: twitter:creator
+    content: "@wwdseb"
+  - name: twitter:description
+    content: The Find aliases, are designed to search for files in a directory hierarchy and perform actions on the files that are found.
+  - name: og:title
+    content: Find aliases - Dotfiles (UK)
+  - name: og:description
+    content: The Find aliases, are designed to search for files in a directory hierarchy and perform actions on the files that are found.
+  - name: og:image:alt
+    content: Dotfiles - Simply designed to fit your shell life
+  - name: og:locale
+    content: en_GB
+---
+
 # Find aliases
 
 The `find.aliases.sh` file creates helpful shortcut aliases for the `fd` command
@@ -9,7 +34,7 @@ hierarchy and perform actions on the files that are found.
 We decided to substitute the `find` command with the `fd` command which is
 simpler, fast and user-friendly alternative to `find`.
 
-## 🔍 Find
+## Find
 
 [fd](https://github.com/sharkdp/fd) is a simple, fast and user-friendly
 alternative to `find`. While it does not aim to support all of find's powerful
