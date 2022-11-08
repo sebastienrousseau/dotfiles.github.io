@@ -6,7 +6,7 @@ permalink: /aliases/pnpm/
 
 meta:
   - name: keywords
-    content: aliases, npm, node, node package manager, package manager, linux, macos, shell, terminal, windows
+    content: aliases, pnpm, package manager, node, npm, yarn, linux, macos, shell, terminal, windows
   - name: twitter:card
     content: The PNpm aliases are a collection of aliases that allow you to interact with the `pnpm` command line tool. Pnpm is a fast, disk space efficient package manager.
   - name: twitter:creator
