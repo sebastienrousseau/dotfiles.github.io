@@ -37,7 +37,7 @@ its name as well as any requested, associated information.  For each operand
 that names a file of type directory, `ls` displays the names of files contained
 within that directory, as well as any requested, associated information.
 
-## 📂 ls
+## ls
 
 [ls](https://en.wikipedia.org/wiki/Ls) is a command that lists the contents of
 a directory.
