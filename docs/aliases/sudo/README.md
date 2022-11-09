@@ -2,7 +2,7 @@
 description: The Sudo aliases are a collection of aliases that allow you to interact with the `sudo` command. Sudo is a tool which allows you to run commands as another user.
 lang: en-GB
 metaTitle: The Sudo aliases - Dotfiles (UK)
-permalink: /aliases/subversion/
+permalink: /aliases/sudo/
 
 meta:
   - name: keywords
