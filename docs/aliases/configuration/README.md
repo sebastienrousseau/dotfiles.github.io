@@ -28,7 +28,7 @@ meta:
 The `configuration.aliases.sh` file creates helpful shortcut aliases for opening
 the configuration files for the terminal and the shell.
 
-## 🛠 Configuration
+## Configuration
 
 | Alias | Command | Description |
 | ----- | ----- | ----- |
