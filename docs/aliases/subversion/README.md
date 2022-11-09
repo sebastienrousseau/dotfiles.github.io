@@ -1,9 +1,39 @@
+---
+description: The Subversion aliases are a collection of aliases that allow you to interact with the `svn` command. Subversion is a version control system, which allows you to keep old versions of files and directories (usually source code), keep a log of who, when, and why changes occurred.
+lang: en-GB
+metaTitle: The Subversion aliases - Dotfiles (UK)
+permalink: /aliases/subversion/
+
+meta:
+  - name: keywords
+    content: aliases, subversion, svn, linux, macos, shell, terminal, windows
+  - name: twitter:card
+    content: The Subversion aliases are a collection of aliases that allow you to interact with the `svn` command. Subversion is a version control system, which allows you to keep old versions of files and directories (usually source code), keep a log of who, when, and why changes occurred.
+  - name: twitter:description
+    content: The Subversion aliases are a collection of aliases that allow you to interact with the `svn` command. Subversion is a version control system, which allows you to keep old versions of files and directories (usually source code), keep a log of who, when, and why changes occurred.
+  - name: twitter:title
+    content: The Subversion aliases - Dotfiles (UK)
+  - name: og:title
+    content: The Subversion aliases - Dotfiles (UK)
+  - name: og:description
+    content: The Subversion aliases are a collection of aliases that allow you to interact with the `svn` command. Subversion is a version control system, which allows you to keep old versions of files and directories (usually source code), keep a log of who, when, and why changes occurred.
+  - name: og:image:alt
+    content: Dotfiles - Simply designed to fit your shell life
+  - name: og:locale
+    content: en_GB
+---
+
 # Subversion aliases
 
 This `subversion.aliases.zsh` file creates helpful shortcut aliases for many
 commonly used [Subversion](https://subversion.apache.org) commands.
 
-## 📦 Subversion
+The Subversion aliases are a collection of aliases that allow you to interact
+with the `svn` command. Subversion is a version control system, which allows you
+to keep old versions of files and directories (usually source code), keep a log
+of who, when, and why changes occurred.
+
+## Subversion
 
 [Subversion](https://subversion.apache.org) is a version control system that
 tracks changes to files and directories. It is used to manage source code for
@@ -24,7 +54,7 @@ software projects.
 | sdl | `svn delete` | Remove files and directories from version control |
 | shp | `svn help` | Describe the usage of this program or its subcommands |
 | sin | `svn info` | Display information about a local or remote item |
-| sip | `svn import`  | Commit an unversioned file or tree into the repository |
+| sip | `svn import`  | Commit an un-versioned file or tree into the repository |
 | slg | `svn log` | Show the log messages for a set of revision(s) and/or path(s)|
 | slk | `svn lock` | Lock working copy paths or URLs in the repository, no other user can commit changes to them |
 | sls | `svn list` | List directory entries in the repository |
@@ -47,4 +77,4 @@ software projects.
 | sulk | `svn unlock` | Unlock working copy paths or URLs. |
 | sup | `svn update` | Bring changes from the repository into the working copy |
 | supg | `svn upgrade` | Upgrade the metadata storage format for a working copy |
-| sxp | `svn export` | Create an unversioned copy of a tree |
+| sxp | `svn export` | Create an un-versioned copy of a tree |
