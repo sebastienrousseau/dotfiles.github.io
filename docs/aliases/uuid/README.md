@@ -32,7 +32,7 @@ The UUID aliases create helpful shortcut aliases for the `uuidgen` command.
 The uuidgen command generates a Universally Unique IDentifier (UUID), a
 128-bit value guaranteed to be unique over both space and time.
 
-## 🔗 UUID
+## UUID
 
 [UUID](https://en.wikipedia.org/wiki/Universally_unique_identifier) is a 128-bit
 number used to identify information in computer systems.
