@@ -17,7 +17,6 @@ export const headers: string[] = [
   ["meta", { name: "msapplication-tap-highlight", content: "no" },],
   ["meta", { name: "robots", content: "index, follow" }],
   ["meta", { name: "og:image:height", content: "627" }],
-  ["meta", { name: "og:image:secureUrl", content: "https://dotfiles.io/logo.png" }],
   ["meta", { name: "og:image:type", content: "image/png" }],
   ["meta", { name: "og:image:width", content: "1200" }],
   ["meta", { name: "og:image", content: "https://dotfiles.io/logo.png" }],
@@ -27,5 +26,6 @@ export const headers: string[] = [
   ["meta", { name: "og:url", content: "https://dotfiles.io/" }],
   ["meta", { name: "twitter:creator", content: "@wwdseb" }],
   ["meta", { name: "twitter:site", content: "@wwdseb" }],
-  ["meta", { name: "twitter:image", content: "https://github.com/sebastienrousseau/dotfiles/raw/master/assets/dotfiles.svg" }]
+  ["meta", { name: "twitter:url", content: "https://dotfiles.io/" }],
+  ["meta", { name: "twitter:image", content: "https://dotfiles.io/logo.png" }]
 ];
