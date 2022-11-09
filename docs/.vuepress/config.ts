@@ -31,7 +31,7 @@ module.exports = {
     // Logo configuration
     logo: "/dotfiles.png",
     // The GitHub repo path
-    repo: "sebastienrousseau/dotfiles",
+    repo: "sebastienrousseau/dotfiles.github.io",
     // The label linking to the repo
     repoLabel: "GitHub",
     // if your docs are not at the root of the repo:
