@@ -177,7 +177,7 @@ Git command line tools. Git aliases improve speed and efficiency.
 | grp | `git remote | xargs -I% -n1 git push %` | For each remote branch, push it. |
 | grpa | `for i in`git remote`; do git push $i; done;` | Push all remotes. |
 | grprint | `git remote -v` | | Print the url for the current repo. |
-| grs | `git show` | Gives some information about the remote <name>. |
+| grs | `git show` | Show various types of objects. |
 | grso | `git remote show origin` | Display where the origin resides. |
 | grv | `git remote -v` | Shows URLs of remote repositories when listing your current remote connections. |
 | gru | `git remote update` | Fetch updates for a named set of remotes in the repository as defined by remotes. |
