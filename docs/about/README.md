@@ -9,10 +9,10 @@ meta:
     content: bash, best performance, compatibility, configuration, dotfiles, linux, macos, security, shell, standalone, windows
   - name: twitter:card
     content: A set of Bash configuration files for macOS, Linux and Windows, that you can use to customize your shell and applications. All in one place and ready to use.
-  - name: twitter:creator
-    content: "@wwdseb"
   - name: twitter:description
     content: A set of Bash configuration files for macOS, Linux and Windows, that you can use to customize your shell and applications. All in one place and ready to use.
+  - name: twitter:title
+    content: About Dotfiles - Dotfiles (UK)
   - name: og:title
     content: About Dotfiles - Dotfiles (UK)
   - name: og:description
