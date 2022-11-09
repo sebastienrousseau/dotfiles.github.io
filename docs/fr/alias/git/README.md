@@ -141,7 +141,7 @@ The `git.aliases.zsh` file creates helpful shortcut aliases for many commonly
 | grallo | `git remote -v | grep "(fetch)" | | Git remote all remotes except origin. |
 | grao | `git remote add origin` | Add a new remote 'origin' if it doesn't exist. |
 | grbk | `git reset --soft HEAD^` | Rollback to stage. |
-| grcl | `git remote prune` | Deletes all stale remote-tracking branches under <name>. |
+| grcl | `git remote prune` | Remove stale remote-tracking branches. |
 | grf | `find . -maxdepth 1 -type d \( ! -name . \) -exec bash -c "cd '{}' && echo '{}' && git config --get remote.origin.url" \;` | Show GIT Remote Origin for each immediate subfolder. |
 | grfall | `git branch -r | awk -F'/' '{print "git fetch "$1,$2}' | xargs -I {} sh -c {}` | Fetch all git remotes for a repo. |
 | gro | `open`git remote -v | awk '/fetch/{print $2}' | sed -Ee 's#(git@|git://)#http://#' -e 's@com:@com/@'`| head -n1` | Open current Git repository URL. |
