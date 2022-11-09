@@ -8,12 +8,12 @@ This is a great way to save time and reduce considerably the amount of typing
 you have to do when using the terminal on a daily basis which helps you to be
 more productive and efficient.
 
-## 💻 Presets
+## Presets
 
 Dotfiles has a collection of configuration presets and diverse recipes that you
 can use to get started with.
 
-### ❯ Automatic System detection
+### Automatic System detection
 
 Dotfiles contains a utility function for detecting the current `ls` flavor that
 is in use in order to help setting up the right `LS_COLORS` environment
@@ -22,7 +22,7 @@ variables to your system.
 The `LS_COLORS` environment variable is used by the `ls` command to colorize the
 output of the command.
 
-### ❯ Check built-in aliases
+### Check built-in aliases
 
 Type the following alias command in your terminal:
 
@@ -30,7 +30,7 @@ Type the following alias command in your terminal:
 alias
 ```
 
-### ❯ GNU Find utilities aliases
+### GNU Find utilities aliases
 
 macOS systems are based on BSD, rather than on GNU/Linux like RedHat, Debian,
 and Ubuntu. As a result, a lot of the command line tools that ship with macOS
@@ -57,7 +57,7 @@ Type the following alias command in your terminal:
 brew install findutils
 ```
 
-### ❯ The Dotfiles aliases
+### The Dotfiles aliases
 
 The files provided in Dotfiles contain a few opinionated aliases that you might
 find useful. These are defined in the `./dist/lib/aliases` directory and loaded
@@ -68,23 +68,64 @@ shell, or in the `~/.zshrc` file if you are using the Zsh shell.
 
 They have been grouped by logical categories:
 
+- [archives][archives] - Aliases for working with archives.
+- [cd][cd] - Aliases for working with directories.
+- [chmod][chmod] - Aliases for working with file permissions.
+- [clear][clear] - Aliases for clearing the terminal screen.
 - [default][default] - The default aliases that are loaded for all users,
   regardless of the shell they are using, and of the operating system they are
   on,
-- [gcloud][gcloud] - The aliases for the Google Cloud SDK,
-- [git][git] - The aliases for the Git version control system,
-- [heroku][heroku] - The aliases for the Heroku Platform,
-- [jekyll][jekyll] - The aliases for the Jekyll static site generator,
-- [pnpm][pnpm] - The aliases for the pnpm package manager,
-- [subversion][subversion] - The aliases for the Subversion version control
-  system,
-- [tmux][tmux] - The aliases for the tmux terminal multiplexer.
+- [dig][dig] - Aliases for working with DNS.
+- [du][du] - Aliases for working with disk usage.
+- [editor][editor] - Aliases for working with the editor.
+- [find][find] - Aliases for working with the `fd` command.
+- [gcloud][gcloud] - Aliases for working with the `gcloud` command.
+- [git][git] - Aliases for working with Git.
+- [gnu][gnu] - Aliases for working with GNU Core utilities.
+- [heroku][heroku] - Aliases for working with the Heroku CLI.
+- [interactive][interactive] - Aliases for working with interactive commands.
+- [jekyll][jekyll] - Aliases for working with Jekyll.
+- [list][list] - Aliases for working with the `ls` command.
+- [make][make] - Aliases for working with the `make` command.
+- [mkdir][mkdir] - Aliases for working with the `mkdir` command.
+- [npm][npm] - Aliases for working with the `npm` command.
+- [pnpm][pnpm] - Aliases for working with the `pnpm` command.
+- [ps][ps] - Aliases for working with the `ps` command.
+- [rsync][rsync] - Aliases for working with the `rsync` command.
+- [rust][rust] - Aliases for working with the Rust programming language.
+- [subversion][subversion] - Aliases for working with Subversion.
+- [sudo][sudo] - Aliases for working with the `sudo` command.
+- [tmux][tmux] - Aliases for working with the `tmux` command.
+- [update][update] - Aliases for working with the `update` command.
+- [uuid][uuid] - Aliases for working with the `uuid` command.
+- [wget][wget] - Aliases for working with the `wget` command.
 
+[archives]: ./archives/
+[cd]: ./cd/
+[chmod]: ./chmod/
+[clear]: ./clear/
 [default]: ./default/
+[dig]: ./dig/
+[du]: ./du/
+[editor]: ./editor/
+[find]: ./find/
 [gcloud]: ./gcloud/
 [git]: ./git/
+[gnu]: ./gnu/
 [heroku]: ./heroku/
+[interactive]: ./interactive/
 [jekyll]: ./jekyll/
+[list]: ./list/
+[make]: ./make/
+[mkdir]: ./mkdir/
+[npm]: ./npm/
 [pnpm]: ./pnpm/
+[ps]: ./ps/
+[rsync]: ./rsync/
+[rust]: ./rust/
 [subversion]: ./subversion/
+[sudo]: ./sudo/
 [tmux]: ./tmux/
+[update]: ./update/
+[uuid]: ./uuid/
+[wget]: ./wget/
