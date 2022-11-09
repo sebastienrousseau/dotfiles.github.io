@@ -9,10 +9,10 @@ meta:
     content: aliases, npm, node, node package manager, package manager, linux, macos, shell, terminal, windows
   - name: twitter:card
     content: The NPM aliases are a collection of aliases that allow you to interact with the `npm` command line tool. Npm is a package manager for the JavaScript programming language.
-  - name: twitter:creator
-    content: "@wwdseb"
   - name: twitter:description
     content: The NPM aliases are a collection of aliases that allow you to interact with the `npm` command line tool. Npm is a package manager for the JavaScript programming language.
+  - name: twitter:title
+    content: The NPM aliases - Dotfiles (UK)
   - name: og:title
     content: The NPM aliases - Dotfiles (UK)
   - name: og:description

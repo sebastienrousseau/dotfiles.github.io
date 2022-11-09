@@ -9,10 +9,10 @@ meta:
     content: aliases, ps, process, processes, linux, macos, shell, terminal, windows
   - name: twitter:card
     content: The PS aliases are a collection of aliases that allow you to interact with the `ps` command line tool. Ps is a tool which reports a snapshot of the current processes.
-  - name: twitter:creator
-    content: "@wwdseb"
   - name: twitter:description
     content: The PS aliases are a collection of aliases that allow you to interact with the `ps` command line tool. Ps is a tool which reports a snapshot of the current processes.
+  - name: twitter:title
+    content: The PS aliases - Dotfiles (UK)
   - name: og:title
     content: The PS aliases - Dotfiles (UK)
   - name: og:description

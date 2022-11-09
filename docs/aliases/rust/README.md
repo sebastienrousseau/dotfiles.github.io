@@ -9,10 +9,10 @@ meta:
     content: aliases, cargo, rust, rustup, linux, macos, shell, terminal, windows
   - name: twitter:card
     content: The Rust aliases are a collection of aliases that allow you to interact with the `rustup` and `cargo` commands. They are designed to be used with the `rustup` toolchain manager and the `cargo` package manager.
-  - name: twitter:creator
-    content: "@wwdseb"
   - name: twitter:description
     content: The Rust aliases are a collection of aliases that allow you to interact with the `rustup` and `cargo` commands. They are designed to be used with the `rustup` toolchain manager and the `cargo` package manager.
+  - name: twitter:title
+    content: The Rust aliases - Dotfiles (UK)
   - name: og:title
     content: The Rust aliases - Dotfiles (UK)
   - name: og:description

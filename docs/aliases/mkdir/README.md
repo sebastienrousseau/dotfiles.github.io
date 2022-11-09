@@ -9,10 +9,10 @@ meta:
     content: aliases, mkdir, linux, macos, shell, terminal, windows
   - name: twitter:card
     content: The Mkdir aliases are a collection of aliases that allow you to interact with the `mkdir` command line tool. Mkdir is a tool which creates a directory.
-  - name: twitter:creator
-    content: "@wwdseb"
   - name: twitter:description
     content: The Mkdir aliases are a collection of aliases that allow you to interact with the `mkdir` command line tool. Mkdir is a tool which creates a directory.
+  - name: twitter:title
+    content: The Mkdir aliases - Dotfiles (UK)
   - name: og:title
     content: The Mkdir aliases - Dotfiles (UK)
   - name: og:description

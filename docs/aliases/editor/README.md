@@ -9,10 +9,10 @@ meta:
     content: aliases, code, editor, environment, gedit, nano, notepad++, text, vi, vim
   - name: twitter:card
     content: The editor aliases will open the file in the editor list that is set in the `editor` environment variable.
-  - name: twitter:creator
-    content: "@wwdseb"
   - name: twitter:description
     content: The editor aliases will open the file in the editor list that is set in the `editor` environment variable.
+  - name: twitter:title
+    content: Editor aliases - Dotfiles (UK)
   - name: og:title
     content: Editor aliases - Dotfiles (UK)
   - name: og:description

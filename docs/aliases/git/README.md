@@ -9,10 +9,10 @@ meta:
     content: aliases, git, gitconfig, gitconfig, git, configuration, dotfiles, linux, macos, shell, windows, bash, zsh
   - name: twitter:card
     content: The Git aliases, provide powerful commands that create shortcuts to frequently used Git commands. All of these functions and aliases are wrappers around the Git command line tools. Git aliases improve speed and efficiency.
-  - name: twitter:creator
-    content: "@wwdseb"
   - name: twitter:description
     content: The Git aliases, provide powerful commands that create shortcuts to frequently used Git commands. All of these functions and aliases are wrappers around the Git command line tools. Git aliases improve speed and efficiency.
+  - name: twitter:title
+    content: The Git aliases - Dotfiles (UK)
   - name: og:title
     content: The Git aliases - Dotfiles (UK)
   - name: og:description

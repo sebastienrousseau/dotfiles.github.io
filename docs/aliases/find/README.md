@@ -9,10 +9,10 @@ meta:
     content: aliases, code, editor, environment, gedit, nano, notepad++, text, vi, vim
   - name: twitter:card
     content: The Find aliases, are designed to search for files in a directory hierarchy and perform actions on the files that are found.
-  - name: twitter:creator
-    content: "@wwdseb"
   - name: twitter:description
     content: The Find aliases, are designed to search for files in a directory hierarchy and perform actions on the files that are found.
+  - name: twitter:title
+    content: Find aliases - Dotfiles (UK)
   - name: og:title
     content: Find aliases - Dotfiles (UK)
   - name: og:description

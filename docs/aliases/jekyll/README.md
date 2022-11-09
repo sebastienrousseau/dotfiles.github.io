@@ -9,10 +9,10 @@ meta:
     content: aliases, bash, jekyll, linux, macos, shell, terminal, windows
   - name: twitter:card
     content: The Jekyll aliases are a collection of aliases that allow you to interact with Jekyll in a more interactive way. Jekyll is a static site generator. It takes text written in your favorite markup language and uses layouts to create a static website.
-  - name: twitter:creator
-    content: "@wwdseb"
   - name: twitter:description
     content: The Jekyll aliases are a collection of aliases that allow you to interact with Jekyll in a more interactive way. Jekyll is a static site generator. It takes text written in your favorite markup language and uses layouts to create a static website.
+  - name: twitter:title
+    content: Jekyll aliases - Dotfiles (UK)
   - name: og:title
     content: Jekyll aliases - Dotfiles (UK)
   - name: og:description

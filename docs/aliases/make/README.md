@@ -9,10 +9,10 @@ meta:
     content: aliases, make, makefile, linux, macos, shell, terminal, windows
   - name: twitter:card
     content: The Make aliases are a collection of aliases that allow you to interact with the `make` command line tool. Make is a tool which controls the generation of executables and other non-source files of a program from the program's source files.
-  - name: twitter:creator
-    content: "@wwdseb"
   - name: twitter:description
     content: The Make aliases are a collection of aliases that allow you to interact with the `make` command line tool. Make is a tool which controls the generation of executables and other non-source files of a program from the program's source files.
+  - name: twitter:title
+    content: The Make aliases - Dotfiles (UK)
   - name: og:title
     content: The Make aliases - Dotfiles (UK)
   - name: og:description

@@ -9,10 +9,10 @@ meta:
     content: aliases, gcloud, googlecloud, google, cloud, sdk, command line, cli, bash, configuration, dotfiles, linux, macos, shell, windows
   - name: twitter:card
     content: The Google Cloud aliases, provide memorable commands for operating on the Google Cloud platform. All of these functions and aliases are wrappers around the Google Cloud SDK command line tools.
-  - name: twitter:creator
-    content: "@wwdseb"
   - name: twitter:description
     content: The Google Cloud aliases, provide memorable commands for operating on the Google Cloud platform. All of these functions and aliases are wrappers around the Google Cloud SDK command line tools.
+  - name: twitter:title
+    content: The Google Cloud aliases - Dotfiles (UK)
   - name: og:title
     content: The Google Cloud aliases - Dotfiles (UK)
   - name: og:description

@@ -9,10 +9,10 @@ meta:
     content: aliases, bash, cp, interactive, linux, ln, macos, mv, rm, shell, terminal, windows
   - name: twitter:card
     content: The Interactive aliases are a collection of aliases that allow you to interact with your shell and terminal in a more interactive way.
-  - name: twitter:creator
-    content: "@wwdseb"
   - name: twitter:description
     content: The Interactive aliases are a collection of aliases that allow you to interact with your shell and terminal in a more interactive way.
+  - name: twitter:title
+    content: Interactive aliases - Dotfiles (UK)
   - name: og:title
     content: Interactive aliases - Dotfiles (UK)
   - name: og:description

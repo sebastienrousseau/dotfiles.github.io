@@ -7,10 +7,10 @@ permalink: /aliases/chmod/
 meta:
   - name: twitter:card
     content: The Chmod aliases allow to change the permissions (or access mode) of a file or directory.
-  - name: twitter:creator
-    content: "@wwdseb"
   - name: twitter:description
     content: The Chmod aliases allow to change the permissions (or access mode) of a file or directory.
+  - name: twitter:title
+    content: Chmod aliases - Dotfiles (UK)
   - name: og:title
     content: Chmod aliases - Dotfiles (UK)
   - name: og:description

@@ -7,10 +7,10 @@ permalink: /aliases/clear/
 meta:
   - name: twitter:card
     content: The clear aliases are able to clear the screen in a variety of ways.
-  - name: twitter:creator
-    content: "@wwdseb"
   - name: twitter:description
     content: The clear aliases are able to clear the screen in a variety of ways.
+  - name: twitter:title
+    content: Clear aliases - Dotfiles (UK)
   - name: og:title
     content: Clear aliases - Dotfiles (UK)
   - name: og:description

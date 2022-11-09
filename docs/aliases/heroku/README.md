@@ -9,10 +9,10 @@ meta:
     content: aliases, heroku, cli, api, configuration, dotfiles, linux, macos, shell, windows, bash, zsh
   - name: twitter:card
     content: The Heroku aliases, provide powerful commands that create shortcuts to frequently used Heroku commands. All of these functions and aliases are wrappers around the Heroku CLI which is the basic, fundamental tools of a Heroku system.
-  - name: twitter:creator
-    content: "@wwdseb"
   - name: twitter:description
     content: The Heroku aliases, provide powerful commands that create shortcuts to frequently used Heroku commands. All of these functions and aliases are wrappers around the Heroku CLI which is the basic, fundamental tools of a Heroku system.
+  - name: twitter:title
+    content: The Heroku aliases - Dotfiles (UK)
   - name: og:title
     content: The Heroku aliases - Dotfiles (UK)
   - name: og:description

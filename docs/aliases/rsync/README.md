@@ -9,10 +9,10 @@ meta:
     content: aliases, rsync, linux, macos, shell, terminal, windows
   - name: twitter:card
     content: The Rsync aliases are a collection of aliases that allow you to interact with the `rsync` command line tool. Rsync is a tool which synchronises files and directories between two locations.
-  - name: twitter:creator
-    content: "@wwdseb"
   - name: twitter:description
     content: The Rsync aliases are a collection of aliases that allow you to interact with the `rsync` command line tool. Rsync is a tool which synchronises files and directories between two locations.
+  - name: twitter:title
+    content: The Rsync aliases - Dotfiles (UK)
   - name: og:title
     content: The Rsync aliases - Dotfiles (UK)
   - name: og:description

@@ -7,10 +7,10 @@ permalink: /aliases/du/
 meta:
   - name: twitter:card
     content: The Disk usage aliases, are designed to display disk usage statistics. They are used to calculate and print the disk space used by files or directories.
-  - name: twitter:creator
-    content: "@wwdseb"
   - name: twitter:description
     content: The Disk usage aliases, are designed to display disk usage statistics. They are used to calculate and print the disk space used by files or directories.
+  - name: twitter:title
+    content: Disk usage aliases - Dotfiles (UK)
   - name: og:title
     content: Disk usage aliases - Dotfiles (UK)
   - name: og:description

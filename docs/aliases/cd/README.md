@@ -1,7 +1,7 @@
 ---
 description: The Change Directory aliases are a collection of aliases that allow you to interact with the `cd` command line tool. Cd is a tool which changes the current directory.
 lang: en-GB
-metaTitle: The Change Directory aliases - Dotfiles (UK)
+metaTitle: Change Directory aliases - Dotfiles (UK)
 permalink: /aliases/cd/
 
 meta:
@@ -9,12 +9,12 @@ meta:
     content: aliases, cd, chdir, change directory, directory, linux, macos, shell, terminal, windows
   - name: twitter:card
     content: The Change Directory aliases are a collection of aliases that allow you to interact with the `cd` command line tool. Cd is a tool which changes the current directory.
-  - name: twitter:creator
-    content: "@wwdseb"
   - name: twitter:description
     content: The Change Directory aliases are a collection of aliases that allow you to interact with the `cd` command line tool. Cd is a tool which changes the current directory.
+  - name: twitter:title
+    content: Change Directory aliases - Dotfiles (UK)
   - name: og:title
-    content: The Change Directory aliases - Dotfiles (UK)
+    content: Change Directory aliases - Dotfiles (UK)
   - name: og:description
     content: The Change Directory aliases are a collection of aliases that allow you to interact with the `cd` command line tool. Cd is a tool which changes the current directory.
   - name: og:image:alt

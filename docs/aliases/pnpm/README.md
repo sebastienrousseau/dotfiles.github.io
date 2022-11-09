@@ -9,10 +9,10 @@ meta:
     content: aliases, pnpm, package manager, node, npm, yarn, linux, macos, shell, terminal, windows
   - name: twitter:card
     content: The PNpm aliases are a collection of aliases that allow you to interact with the `pnpm` command line tool. Pnpm is a fast, disk space efficient package manager.
-  - name: twitter:creator
-    content: "@wwdseb"
   - name: twitter:description
     content: The PNpm aliases are a collection of aliases that allow you to interact with the `pnpm` command line tool. Pnpm is a fast, disk space efficient package manager.
+  - name: twitter:title
+    content: The PNpm aliases - Dotfiles (UK)
   - name: og:title
     content: The PNpm aliases - Dotfiles (UK)
   - name: og:description

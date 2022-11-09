@@ -9,10 +9,10 @@ meta:
     content: aliases, git, gitconfig, gitconfig, git, configuration, dotfiles, linux, macos, shell, windows, bash, zsh
   - name: twitter:card
     content: The GNU Core Utilities aliases, provide powerful commands that create shortcuts to frequently used Core utilities commands. All of these functions and aliases are wrappers around the GNU Core Utilities which are the basic, fundamental tools of a GNU/Linux system.
-  - name: twitter:creator
-    content: "@wwdseb"
   - name: twitter:description
     content: The GNU Core Utilities aliases, provide powerful commands that create shortcuts to frequently used Core utilities commands. All of these functions and aliases are wrappers around the GNU Core Utilities which are the basic, fundamental tools of a GNU/Linux system.
+  - name: twitter:title
+    content: The GNU Core Utilities aliases - Dotfiles (UK)
   - name: og:title
     content: The GNU Core Utilities aliases - Dotfiles (UK)
   - name: og:description

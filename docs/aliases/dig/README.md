@@ -7,10 +7,10 @@ permalink: /aliases/dig/
 meta:
   - name: twitter:card
     content: The Dig aliases, allow to query information about various DNS records, including host addresses, mail exchanges, and name servers.
-  - name: twitter:creator
-    content: "@wwdseb"
   - name: twitter:description
     content: The Dig aliases, allow to query information about various DNS records, including host addresses, mail exchanges, and name servers.
+  - name: twitter:title
+    content: Dig aliases - Dotfiles (UK)
   - name: og:title
     content: Dig aliases - Dotfiles (UK)
   - name: og:description

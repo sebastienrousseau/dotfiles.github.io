@@ -9,10 +9,10 @@ meta:
     content: 7-zip, aliases, archives, bash, bzip2, dotfiles, gzip, jar, linux, macos, shell, tar, unzip, windows, xz, zip, zstd
   - name: twitter:card
     content: The archives aliases are able to create and handle archives in a variety of formats.
-  - name: twitter:creator
-    content: "@wwdseb"
   - name: twitter:description
     content: The archives aliases are able to create and handle archives in a variety of formats.
+  - name: twitter:title
+    content: Archives aliases - Dotfiles (UK)
   - name: og:title
     content: Archives aliases - Dotfiles (UK)
   - name: og:description

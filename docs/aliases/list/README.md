@@ -9,10 +9,10 @@ meta:
     content: aliases, ls, list, linux, macos, shell, terminal, windows
   - name: twitter:card
     content: The List aliases are a collection of aliases that allow you to interact with the `ls` command in a more interactive way in order to display the content of a directory.
-  - name: twitter:creator
-    content: "@wwdseb"
   - name: twitter:description
     content: The List aliases are a collection of aliases that allow you to interact with the `ls` command in a more interactive way in order to display the content of a directory.
+  - name: twitter:title
+    content: The List (ls) aliases - Dotfiles (UK)
   - name: og:title
     content: The List (ls) aliases - Dotfiles (UK)
   - name: og:description
