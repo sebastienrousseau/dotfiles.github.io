@@ -22,7 +22,7 @@ footer: Copyright © Sebastien Rousseau 2015-2022. All rights reserved.
 
 meta:
   - name: keywords
-    content: bash, configuration, dotfiles, linux, macos, readytouse, shell, windows
+    content: bash, configuration, dotfiles, linux, macos, shell, terminal, windows
   - name: twitter:card
     content: The next generation of Bash configuration files for macOS, Linux and Windows. Dotfiles gives you new ways to do more than ever with your shell.
   - name: twitter:creator
@@ -34,7 +34,7 @@ meta:
   - name: og:description
     content: The next generation of Bash configuration files for macOS, Linux and Windows. Dotfiles gives you new ways to do more than ever with your shell.
   - name: og:image:alt
-    content: Dotfiles - Simply designed to fit your shell life
+    content: Dotfiles - Simply designed to fit your shell life.
   - name: og:locale
     content: en_GB
 ---
