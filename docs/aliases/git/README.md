@@ -165,7 +165,7 @@ Git command line tools. Git aliases improve speed and efficiency.
 | Alias | Command | Description |
 | ----- | ----- | ----- |
 | gr | `git remote` | Manage set of tracked repositories. |
-| gra | `git remote add` | Add a remote named <name> for the repository at <url>. |
+| gra | `git remote add` | Add a remote named name for the repository at url. |
 | grall | `git remote | xargs -L1 git push --all` | Push all branches to all remotes. |
 | grallo | `git remote -v | grep "(fetch)" | | Git remote all remotes except origin. |
 | grao | `git remote add origin` | Add a new remote 'origin' if it doesn't exist. |
