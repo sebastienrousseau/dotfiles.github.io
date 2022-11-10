@@ -384,8 +384,6 @@ for further details on the process for submitting pull requests to us.
 
 This project is licensed under the [MIT License][license-url] file for details.
 
-[![FOSSA Status][fossa]][fossa-url]
-
 ## Acknowledgements
 
 [Dotfiles][website-url] is beautifully crafted by these people and a bunch of
@@ -400,7 +398,6 @@ awesome [contributors][contributors-url]
 [contributing-url]: https://github.com/sebastienrousseau/dotfiles/blob/master/.github/CONTRIBUTING.md
 [curl-url]: https://curl.se/
 [docs-url]: https://github.com/sebastienrousseau/dotfiles/tree/master/docs
-[fossa-url]: https://app.fossa.io/projects/git%2Bgithub.com%2Freedia%2Fdotfiles?ref=badge_large
 [git-url]: https://git-scm.com/
 [github-url]: https://github.com/sebastienrousseau/dotfiles
 [gr-url]: https://github.com/gramtech
@@ -416,6 +413,5 @@ awesome [contributors][contributors-url]
 [zsh-url]: https://www.zsh.org/
 
 [contributors-url]: https://github.com/sebastienrousseau/dotfiles/graphs/contributors "List of contributors"
-[fossa]: https://app.fossa.io/api/projects/git%2Bgithub.com%2Freedia%2Fdotfiles.svg?type=large "FOSSA"
 [gr]: https://avatars0.githubusercontent.com/u/35816108?s=117 "Graham Colgate"
 [sr]: https://avatars0.githubusercontent.com/u/1394998?s=117 "Sebastien Rousseau"
