@@ -1,32 +1,37 @@
 {
 	"background_color": "#000",
-	"description": "Skeletonic CSS is a lightweight, intuitive and ultra-responsive CSS framework designed for any platform, browser or device.",
+	"description": "The next generation of Bash configuration files for macOS, Linux and Windows. A collection of scripts, aliases, functions you can use to customize your shell.",
 	"display": "fullscreen",
 	"lang": "en_gb",
-	"name": "Skeletonic CSS - A lightweight, intuitive, accessible and ultra-responsive CSS Framework",
+	"name": "Dotfiles - Simply designed to fit your shell life (UK)",
 	"scope": "/",
 	"start_url": "/",
-	"short_name": "Simply designed to fit your cascading web life.",
+	"short_name": "Dotfiles",
 	"theme_color": "#fff",
 	"icons": [
 		{
 			"purpose": "any maskable",
+			"sizes": "192x192",
+			"src": "/icons/icon-192x192.png",
+			"type": "image/png"
+		},
+		{
 			"sizes": "196x196",
-			"src": "/assets/icons/icon-192x192.png",
+			"src": "/icons/icon-196x196.png",
 			"type": "image/png"
 		},
 		{
 			"sizes": "256x256",
-			"src": "/assets/icons/icon-256x256.png",
+			"src": "/icons/icon-256x256.png",
 			"type": "image/png"
 		},
 		{
-			"src": "/assets/icons/icon-384x384.png",
+			"src": "/icons/icon-384x384.png",
 			"sizes": "384x384",
 			"type": "image/png"
 		},
 		{
-			"src": "/assets/icons/icon-512x512.png",
+			"src": "/icons/icon-512x512.png",
 			"sizes": "512x512",
 			"type": "image/png"
 		}

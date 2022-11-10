@@ -71,6 +71,25 @@ module.exports = {
         sidebar: frSidebar,
       },
     },
+    chainWebpack: config => {
+      config
+        .plugin('html')
+        .tap(args => {
+          args[0].minify = {
+            minifyCSS: true,
+            minifyJS: true,
+            minifyURLs: true,
+            removeComments: true,
+            collapseWhitespace: true,
+            collapseBooleanAttributes: true,
+            removeScriptTypeAttributes: true,
+            removeAttributeQuotes: true,
+            removeEmptyAttributes: true,
+            removeStyleLinkTypeAttributes: true
+          };
+          return args;
+        })
+    },
   },
   plugins: [
     [

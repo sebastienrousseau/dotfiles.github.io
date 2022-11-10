@@ -1,8 +1,11 @@
 export const headers: string[] = [
-  ["link", { rel: "icon", href: "/icon.png" }],
+  ["link", { rel: "icon", href: "/dotfiles.png" }],
+  ["link", { rel: "icon", href: "/favicon.ico" }],
+  ["link", { rel: "apple-touch-icon", href: "/icons/icon-192x192.png" }],
   ["link", { rel: "manifest", href: "/manifest.json" }],
   ["link", { rel: "stylesheet", href: "https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,700%7CRoboto+Mono&display=fallback" }],
-  ["meta", { name: "theme-color", content: "#F0F" }],
+  ["meta", { name: "theme-color", content: "#9e00a3" }],
+  ["meta", { name: "viewport", content: "width=device-width, initial-scale=1" }],
   ["meta", { itemprop: "accessibilityAPI", content: "ARIA" }],
   ["meta", { itemprop: "accessibilityControl", content: "fullKeyboardControl" }],
   ["meta", { itemprop: "accessibilityControl", content: "fullMouseControl" }],
@@ -19,7 +22,7 @@ export const headers: string[] = [
   ["meta", { name: "og:image:height", content: "627" }],
   ["meta", { name: "og:image:type", content: "image/png" }],
   ["meta", { name: "og:image:width", content: "1200" }],
-  ["meta", { name: "og:image", content: "https://dotfiles.io/logo.png" }],
+  ["meta", { name: "og:image", content: "/logo.png" }],
   ["meta", { name: "og:robots", content: "index, follow" }],
   ["meta", { name: "og:site_name", content: "Dotfiles (v0.2.462)" }],
   ["meta", { name: "og:type", content: "website" }],
@@ -27,5 +30,5 @@ export const headers: string[] = [
   ["meta", { name: "twitter:creator", content: "@wwdseb" }],
   ["meta", { name: "twitter:site", content: "@wwdseb" }],
   ["meta", { name: "twitter:url", content: "https://dotfiles.io/" }],
-  ["meta", { name: "twitter:image", content: "https://dotfiles.io/logo.png" }]
+  ["meta", { name: "twitter:image", content: "/logo.png" }]
 ];
