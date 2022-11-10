@@ -1,7 +1,8 @@
 {
+	"$schema": "https://json.schemastore.org/web-manifest-combined.json",
 	"background_color": "#000",
 	"description": "The next generation of Bash configuration files for macOS, Linux and Windows. A collection of scripts, aliases, functions you can use to customize your shell.",
-	"display": "fullscreen",
+	"display": "standalone",
 	"lang": "en_gb",
 	"name": "Dotfiles - Simply designed to fit your shell life (UK)",
 	"scope": "/",

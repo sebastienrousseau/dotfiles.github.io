@@ -104,6 +104,13 @@ module.exports = {
         hostname: "https://dotfiles.io",
       },
     ],
+    [
+      '@vuepress/pwa',
+      {
+        serviceWorker: true,
+        updatePopup: true
+      }
+    ],
     ["vuepress-plugin-code-copy", true],
   ],
 };
