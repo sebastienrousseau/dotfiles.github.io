@@ -26,10 +26,10 @@ meta:
 Le fichier `clear.aliases.sh` crée des alias de raccourcis pour la commande
 `clear`. Ils sont utilisés pour effacer le contenu de la console.
 
-## La commande `clear`
-
 [Clear](https://en.wikipedia.org/wiki/Clear_(command)) est une commande qui est
 utilisée pour effacer le contenu de la console.
+
+## Raccourcis
 
 | Alias | Commande | Description |
 | ----- | ----- | ----- |

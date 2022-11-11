@@ -27,12 +27,12 @@ Le fichier `chmod.aliases.sh` crée des alias de raccourcis pour la commande
 `chmod`. Ils vous permettent de changer les permissions d'un fichier ou d'un
 répertoire.
 
-## Les permissions
-
 L'utilitaire `chmod` modifie les bits de mode des fichiers répertoriés, comme
 indiqué par l'opérande mode. Il peut également être utilisé pour modifier les
 listes de contrôle d'accès (ACL) associées aux fichiers répertoriés. (ACL)
 associées aux fichiers répertoriés.
+
+## Raccourcis
 
 | Alias | Commandes | Description |
 | ----- | ----- | ----- |

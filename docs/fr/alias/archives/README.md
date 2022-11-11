@@ -29,7 +29,9 @@ Le fichier `archives.aliases.sh` crée des alias de raccourcis utiles pour
 pouvoir archiver des fichiers et des répertoires. Les alias sont capables de
 créer et de gérer des fichiers d'archives dans une variété de formats.
 
-## 7-Zip
+## Raccourcis
+
+### 7-Zip
 
 [7-Zip](http://www.7-zip.org/) est un programme d'archivage de fichiers avec un
 taux de compression élevé.
@@ -39,7 +41,7 @@ taux de compression élevé.
 | c7z |`7z a` | Compresse un répertoire entier (y compris les sous-répertoires) dans un fichier 7z. |
 | e7z |`7z x` | Extrait un répertoire complet (y compris les sous-répertoires) d'un fichier 7z. |
 
-## Bzip2
+### Bzip2
 
 [Bzip2](http://www.bzip.org/) est un programme de compression de données de
 haute qualité, disponible gratuitement et sans brevet.
@@ -49,7 +51,7 @@ haute qualité, disponible gratuitement et sans brevet.
 | cbz2 |`bzip2` | Compresse un fichier en un fichier bz2. |
 | ebz2 |`bunzip2` | Extrait un fichier à partir d'un fichier bz2. |
 
-## Gzip
+### Gzip
 
 [Gzip](https://www.gnu.org/software/gzip/) est un programme populaire de
 compression de données en remplacement de compress.
@@ -59,7 +61,7 @@ compression de données en remplacement de compress.
 | cgz |`gzip` | Compresse un fichier en un fichier gz. |
 | egz |`gunzip` | Extrait un fichier d'un fichier gz. |
 
-## Jar
+### Jar
 
 [Jar](https://docs.oracle.com/javase/tutorial/deployment/jar/) est un format de
 fichier utilisé pour regrouper plusieurs fichiers en un seul afin de distribuer
@@ -70,7 +72,7 @@ des logiciels d'application ou des bibliothèques sur la plate-forme Java.
 | cjar |`jar -cvf` | Compresse un répertoire entier (y compris les sous-répertoires) dans un fichier jar. |
 | ejar |`jar -xvf` | Extrait un répertoire entier (y compris les sous-répertoires) d'un fichier jar. |
 
-## Tar
+### Tar
 
 [Tar](https://www.gnu.org/software/tar/) est un logiciel utilisé pour stocker
 plusieurs fichiers regroupés dans un seul fichier.
@@ -82,7 +84,7 @@ plusieurs fichiers regroupés dans un seul fichier.
 | ctgz |`tar -cvzf` | Compresse un répertoire entier (y compris les sous-répertoires) dans un fichier tar.gz. |
 | etgz |`tar -xvzf` | Extrait un répertoire entier (y compris les sous-répertoires) d'un fichier tar.gz. |
 
-## Xz
+### Xz
 
 [Xz](https://tukaani.org/xz/) est un logiciel de compression de données à usage
 général avec un ratio de compression élevé.
@@ -92,7 +94,7 @@ général avec un ratio de compression élevé.
 | cxz |`xz -zcvf` | Compresse un répertoire entier (y compris les sous-répertoires) dans un fichier xz. |
 | exz |`xz -zxvf` | Extrait un répertoire entier (y compris les sous-répertoires) d'un fichier xz. |
 
-## Zip
+### Zip
 
 [Zip](https://en.wikipedia.org/wiki/Zip_(file_format)) est un format de fichier
 utilisé pour produire un fichier qui contient un ou plusieurs fichiers.
@@ -102,7 +104,7 @@ utilisé pour produire un fichier qui contient un ou plusieurs fichiers.
 | cz |`zip -r` | Compresse un répertoire entier (y compris les sous-répertoires) dans un fichier zip. |
 | ez |`unzip`  | Extrait un répertoire entier (y compris les sous-répertoires) d'un fichier zip. |
 
-## Zstd
+### Zstd
 
 [Zstd](https://facebook.github.io/zstd/) est un algorithme de compression rapide
 et sans aucune perte, visant à des scénarios de compression en temps réel au

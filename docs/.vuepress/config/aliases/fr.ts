@@ -5,6 +5,7 @@ export const alias = {
     ["/fr/alias/cd/", "Alias cd"],
     ["/fr/alias/chmod/", "Alias chmod"],
     ["/fr/alias/clear/", "Alias clear"],
+    ["/fr/alias/configuration/", "Alias configuration"],
     ["/fr/alias/default/", "Alias de base"],
     ["/fr/alias/gcloud/", "Alias GCloud"],
     ["/fr/alias/git/", "Alias Git"],

@@ -32,11 +32,11 @@ Les alias cd sont une collection d'alias qui vous
 permettent d'interagir avec l'outil de ligne de commande `cd` qui permet de
 changer le répertoire courant.
 
-## Changer de répertoire
-
 La commande `cd`, également connue sous le nom de chdir (changer de répertoire),
 est une instruction de l'interpréteur de commandes utilisée pour changer le
 répertoire de travail actuel dans plusieurs systèmes d'exploitation.
+
+## Raccourcis
 
 | Alias | Command | Description |
 | ----- | ----- | ----- |
