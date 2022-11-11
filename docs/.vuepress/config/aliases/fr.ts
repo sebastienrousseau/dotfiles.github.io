@@ -1,6 +1,7 @@
 export const alias = {
   ariaLabel: 'Alias',
   children: [
+    ["/fr/alias/archives/", "Alias d'archives"],
     ["/fr/alias/default/", "Alias de base"],
     ["/fr/alias/gcloud/", "Alias GCloud"],
     ["/fr/alias/git/", "Alias Git"],
