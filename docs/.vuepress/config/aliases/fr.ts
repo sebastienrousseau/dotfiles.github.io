@@ -3,6 +3,7 @@ export const alias = {
   children: [
     ["/fr/alias/archives/", "Alias d'archives"],
     ["/fr/alias/cd/", "Alias cd"],
+    ["/fr/alias/chmod/", "Alias chmod"],
     ["/fr/alias/default/", "Alias de base"],
     ["/fr/alias/gcloud/", "Alias GCloud"],
     ["/fr/alias/git/", "Alias Git"],
