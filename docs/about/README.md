@@ -66,14 +66,17 @@ and compatibility with the latest Dotfiles features.
 
 The latest version of the following software is required to install Dotfiles:
 
-1. A command line shell ([**Bash**][bash-url] or [**Zsh**][zsh-url]), which is
-  installed by default on macOS and Linux.
-1. [**Git**][git-url] (2.0 or higher), for cloning the Dotfiles source code
+1. A command line shell ([**Bash**][bash-url] or [**Zsh**][zsh-url]), to run
+   configuration scripts and functions.
+2. [**Git**][git-url] (2.0 or higher), for cloning the Dotfiles source code
    repository.
-1. [**Curl**][curl-url] (7.0 or higher) or [**Wget**][wget-url] (1.0 or higher),
+3. [**Curl**][curl-url] (7.0 or higher) or [**Wget**][wget-url] (1.0 or higher),
    for downloading the Dotfiles installer.
-1. [**Make**][make-url] (3.0 or higher), for installing the Dotfiles.
-1. [**PnPM**][pnpm-url] (6.0 or higher), for installing the Dotfiles.
+4. [**Make**][make-url] (3.0 or higher), or [**PnPM**][pnpm-url] (6.0 or higher)
+   , for running the Dotfiles installer with the `make` or `pnpm` commands.
+5. [**Tmux**][tmux-url] (3.0 or higher), a terminal multiplexer. It lets you
+   switch easily between several programs in one terminal, detach them (they
+   keep running in the background) and reattach them to a different terminal.
 
 ### :three: Font Requirements
 
@@ -408,6 +411,7 @@ awesome [contributors][contributors-url]
 [releases-url]: https://github.com/sebastienrousseau/dotfiles/releases
 [semver-url]: http://semver.org/
 [sr-url]: https://github.com/sebastienrousseau
+[tmux-url]: https://github.com/tmux/tmux/wiki
 [website-url]: https://dotfiles.io
 [wget-url]: https://www.gnu.org/software/wget/
 [zsh-url]: https://www.zsh.org/

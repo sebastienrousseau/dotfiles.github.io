@@ -1,20 +1,22 @@
 ---
-description: Les Dotfiles sont un ensemble de fichiers de configuration Bash pour macOS, Linux et Windows, que vous pouvez utiliser pour personnaliser votre shell et vos applications.
+description: Un ensemble de fichiers de configuration Bash pour macOS, Linux et Windows, que vous pouvez utiliser pour personnaliser votre shell et vos applications. Tous ces fichiers sont réunis dans un seul endroit, et prêts à l'emploi.
 lang: fr-FR
 metaTitle: À propos - Dotfiles (FR)
 permalink: /apropos/
 
 meta:
+  - name: keywords
+    content: bash, configuration, macos, linux, windows, shell, applications, fichiers, prêts
   - name: twitter:card
-    content: Les Dotfiles sont un ensemble de fichiers de configuration Bash pour macOS, Linux et Windows, que vous pouvez utiliser pour personnaliser votre shell et vos applications.
-  - name: twitter:creator
-    content: "@wwdseb"
+    content: Un ensemble de fichiers de configuration Bash pour macOS, Linux et Windows, que vous pouvez utiliser pour personnaliser votre shell et vos applications. Tous ces fichiers sont réunis dans un seul endroit, et prêts à l'emploi.
   - name: twitter:description
-    content: Les Dotfiles sont un ensemble de fichiers de configuration Bash pour macOS, Linux et Windows, que vous pouvez utiliser pour personnaliser votre shell et vos applications.
+    content: Un ensemble de fichiers de configuration Bash pour macOS, Linux et Windows, que vous pouvez utiliser pour personnaliser votre shell et vos applications. Tous ces fichiers sont réunis dans un seul endroit, et prêts à l'emploi.
+  - name: twitter:title
+    content: À propos - Dotfiles (FR)
   - name: og:title
     content: À propos - Dotfiles (FR)
   - name: og:description
-    content: Les Dotfiles sont un ensemble de fichiers de configuration Bash pour macOS, Linux et Windows, que vous pouvez utiliser pour personnaliser votre shell et vos applications.
+    content: Un ensemble de fichiers de configuration Bash pour macOS, Linux et Windows, que vous pouvez utiliser pour personnaliser votre shell et vos applications. Tous ces fichiers sont réunis dans un seul endroit, et prêts à l'emploi.
   - name: og:image:alt
     content: Les fichiers de configuration Dotfiles - Conçus pour s'adapter à votre vie de shell
   - name: og:locale
@@ -22,38 +24,41 @@ meta:
 ---
 
 
-# :wave: Bienvenue sur le site des Dotfiles v0.2.462
+# Bienvenue à Dotfiles v0.2.462
 
-## :beginner: Introduction
+## Introduction
 
 Les Dotfiles sont un ensemble de fichiers de configuration Bash pour macOS,
 Linux et Windows, que vous pouvez utiliser pour personnaliser votre shell et vos
 applications. Tous ces fichiers sont réunis dans un seul endroit, et prêts à
 l'emploi.
 
-Ils sont situés dans votre répertoire personnel dans un dossier caché
-`$HOME/.dotfiles/`. Le contenu de ce dossier consiste en un ensemble de fichiers
-alias, des fonctions Bash ainsi que des paramètres de configuration, pour vous
-aider à travailler plus efficacement et obtenir de meilleurs résultats avec
-votre shell.
+Les Dotfiles se trouvent dans votre répertoire personnel, ce qui vous permet de
+les garder sous contrôle de version, et vous pouvez les utiliser sur n'importe
+quel ordinateur, n'importe où.
 
-Nous sommes ravis que vous ayez décidé d'installer les Dotfiles, et espérons que
-vous les trouverez accessibles et d'une aisance incomparable.
+Ils regroupent un ensemble de fichiers combinés en un seul répertoire `lib`. Ils
+offrent des alias très pratiques, des fonctions et quelques configurations
+prêtes à l'emploi, conçus pour obtenir de meilleurs résultats avec votre shell.
 
 Essayez-les dès maintenant, et faites-nous savoir ce que vous en pensez. Nous
 sommes toujours à la recherche de commentaires et de suggestions pour améliorer
 nos produits et services.
 
-## :rocket: Démarrage
+## Démarrage
 
-Les Dotfiles fournissent un ensemble de méthodes d'installation pour vous aider
-à démarrer rapidement. Vous pouvez choisir celle qui correspond le mieux à vos
-besoins et à vos préférences. Plus d'informations sur les méthodes
-d'installation sont disponibles dans la section [Installation](#installation).
+Nous sommes ravis que vous ayez décidé d'essayer les Dotfiles, et nous sommes
+confiants que vous les trouverez utiles et uniques.
+
+Nous vous proposons une série de méthodes d'installation pour vous aider à
+commencer. Nous vous recommandons de choisir celle qui correspond le mieux à
+vos besoins.
 
 ::: tip
-Avant de commencer cependant, veuillez lire les instructions ci-dessous pour
-vous assurer que vous avez les prérequis nécessaires.
+Avant de commencer votre installation, veuillez consulter les instructions
+ci-dessous pour vous assurer que vous répondez à toutes les exigences
+matérielles, logicielles et de système pour installer les Dotfiles sur votre
+ordinateur et sauvegarder tout fichier de configuration que vous pourriez avoir.
 :::
 
 ### :one: Configuration matérielle requise
@@ -67,23 +72,24 @@ compatibilité.
 Les Dotfiles ont des dépendances logicielles qui doivent être installées avant
 de pouvoir les utiliser. Ces dépendances sont listées ci-dessous.
 
-1. ([**Bash**][bash-url] ou [**Zsh**][zsh-url]), pour exécuter les scripts de
-   configuration et les fonctions.
-2. [**Git**][git-url] (2.0 ou plus), si vous souhaitez installer les Dotfiles
-   via Git.
+1. Un interpréteur de commandes en ligne ([**Bash**][bash-url] ou
+   [**Zsh**][zsh-url]), pour exécuter les scripts de configuration et les
+   fonctions.
+2. [**Git**][git-url] (2.0 ou plus), pour cloner le code source et mettre à jour
+   les Dotfiles.
 3. [**Curl**][curl-url] (7.0 ou plus) or [**Wget**][wget-url] (1.0 ou plus),
    pour télécharger les fichiers de configuration depuis les scripts
    d'installation.
-4. [**Make**][make-url] (3.0 ou plus) or [**PnPM**][pnpm-url] (6.0 ou plus),
+4. [**Make**][make-url] (3.0 ou plus) ou [**PnPM**][pnpm-url] (6.0 ou plus),
    pour installer les Dotfiles via Make ou PnPM.
 5. [**Tmux**][tmux-url] (2.0 ou plus), un outil vous permettant de manipuler
    plusieurs terminaux virtuels au sein d'une même fenêtre de terminal.
 
-### :three: Polices de caractères
+### :three: La Police de caractères recommandée
 
-Vous pouvez également utiliser une police de caractères open source telle que
-[**JetBrains Mono**][font-url] pour une meilleure expérience sur votre shell,
-IDE ou éditeur de texte.
+Nous recommandons également d'utiliser une police de caractères open source
+telle que [**JetBrains Mono**][font-url] pour une meilleure expérience sur votre
+terminal, IDE ou éditeur de texte.
 
 - Sur macOS, vous pouvez installer la police en exécutant la commande suivante
   dans votre terminal :
@@ -99,7 +105,7 @@ IDE ou éditeur de texte.
   sudo apt install fonts-jetbrains-mono
   ```
 
-## :wrench: Installation
+## Installation
 
 ### :one: Sauvegardez vos données
 
@@ -205,10 +211,11 @@ Vérifier que les dotfiles sont bien installés dans le répertoire
 Si l'installation est réussie, vous devriez voir la nouvelle interface Dotfiles
 dans votre shell.
 
-## :question: Contenu
+## Contenu
 
-Dotfiles contient des éléments de base qui sont utilisés pour configurer votre
-shell, et d'autres composants adaptés à la configuration de votre environnement.
+Les Dotfiles contiennent des éléments de base qui sont utilisés pour configurer
+votre shell, et d'autres composants adaptés à la configuration de votre
+environnement.
 
 Dans le dossier `$HOME/.dotfiles`, vous trouverez les répertoires et fichiers
 suivants :
@@ -338,38 +345,38 @@ suivants :
     ├── history.sh
     └── paths.sh
 
-36 répertoires, 86 fichiers
+36 directories, 86 files
 
 ```
 
-## :link: Publication
+## Les Publications
 
 Les publications des Dotfiles sont disponibles sur [GitHub][releases-url].
 
-## :traffic_light: Versionnage sémantique
+## Versionnage sémantique
 
 Dans un souci de transparence de notre cycle de publication et dans le but de
 maintenir les Dotfiles suivent les principes de
 [versionnage sémantique][semver-url].
 
-## :white_check_mark: Liste des modifications
+## Liste des modifications
 
 - [Le Journal des modifications GitHub][releases-url] est utilisé pour suivre
   les différentes versions des Dotfiles et leurs changements.
 
-## :book: Code de conduite
+## Code de conduite
 
 Nous nous engageons à préserver et à favoriser une communauté diversifiée et
 accueillante. Vous pouvez lire notre [Code de conduite][code-of-conduct-url]
 pour en savoir plus.
 
-## :star: Nos valeurs
+## Nos valeurs
 
 - Nous pensons que la perfection fait partie de tout.
 - Notre passion va au-delà du code et s’intègre dans notre vie quotidienne.
 - Nous cherchons toujours à fournir des solutions exceptionnelles et innovantes.
 
-## :handshake: Contribution
+## Contribution
 
 Merci d'utiliser Dotfiles ! Si vous aimez ce projet, n'hésitez pas à nous donner
 un coup de pouce en le notant sur [GitHub][github-url] ou en le partageant avec
@@ -388,13 +395,11 @@ Veuillez lire attentivement nos [guides de contribution][contributing-url]
 pour de plus amples informations sur notre processus de développement et sur
 la façon de soumettre des demandes de fonctionnalités ou des rapports de bogues.
 
-## 🥂 Licence d'utilisation
+## Licence d'utilisation
 
 Ce projet est soumis à la licence [MIT][license-url].
 
-[![FOSSA Status][fossa]][fossa-url]
-
-## :blue_heart: Remerciements
+## Remerciements
 
 [Dotfiles][website-url] est conçu par ces personnes et par un groupe de
 [collaborateurs][contributors-url] extraordinaires.
@@ -410,7 +415,6 @@ Ce projet est soumis à la licence [MIT][license-url].
 [docs-url]: https://github.com/sebastienrousseau/dotfiles/tree/master/docs
 [donate-url]: https://paypal.me/wwdseb
 [font-url]: https://www.jetbrains.com/lp/mono/#intro
-[fossa-url]: https://app.fossa.io/projects/git%2Bgithub.com%2Freedia%2Fdotfiles?ref=badge_large
 [git-url]: https://git-scm.com/
 [github-url]: https://github.com/sebastienrousseau/dotfiles
 [gr-url]: https://github.com/gramtech
@@ -427,6 +431,5 @@ Ce projet est soumis à la licence [MIT][license-url].
 [zsh-url]: https://www.zsh.org/
 
 [contributors-url]: https://github.com/sebastienrousseau/dotfiles/graphs/contributors "List of contributors"
-[fossa]: https://app.fossa.io/api/projects/git%2Bgithub.com%2Freedia%2Fdotfiles.svg?type=large "FOSSA"
 [gr]: https://avatars0.githubusercontent.com/u/35816108?s=117 "Graham Colgate"
 [sr]: https://avatars0.githubusercontent.com/u/1394998?s=117 "Sebastien Rousseau"
