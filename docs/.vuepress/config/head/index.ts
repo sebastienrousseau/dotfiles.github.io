@@ -2,7 +2,7 @@ export const headers: string[] = [
   ["link", { rel: "icon", href: "/favicon.ico" }],
   ["link", { rel: "apple-touch-icon", href: "/icons/icon-192x192.png" }],
   ["link", { rel: "manifest", href: "/manifest.json" }],
-  ["link", { rel: "stylesheet", href: "https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,700%7CRoboto+Mono&display=fallback" }],
+  ["link", { rel: "stylesheet", href: "https://unpkg.com/skeletonic-stylus@1.0.5/css/skeletonic-fonts.min.css" }],
   ["meta", { name: "charset", content: "utf-8" }],
   ["meta", { name: "theme-color", content: "#9e00a3" }],
   ["meta", { name: "viewport", content: "width=device-width, initial-scale=1" }],
