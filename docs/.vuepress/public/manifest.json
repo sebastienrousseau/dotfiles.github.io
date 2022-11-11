@@ -3,12 +3,6 @@
 	"background_color": "#000",
 	"description": "The next generation of Bash configuration files for macOS, Linux and Windows. A collection of scripts, aliases, functions you can use to customize your shell.",
 	"display": "standalone",
-	"lang": "en_gb",
-	"name": "Dotfiles - Simply designed to fit your shell life (UK)",
-	"scope": "/",
-	"start_url": "/",
-	"short_name": "Dotfiles",
-	"theme_color": "#fff",
 	"icons": [
 		{
 			"purpose": "any maskable",
@@ -27,14 +21,20 @@
 			"type": "image/png"
 		},
 		{
-			"src": "/icons/icon-384x384.png",
 			"sizes": "384x384",
+			"src": "/icons/icon-384x384.png",
 			"type": "image/png"
 		},
 		{
-			"src": "/icons/icon-512x512.png",
 			"sizes": "512x512",
+			"src": "/icons/icon-512x512.png",
 			"type": "image/png"
 		}
-	]
+	],
+	"lang": "en_gb",
+	"name": "Dotfiles - Simply designed to fit your shell life (UK)",
+	"scope": "https://dotfiles.io/",
+	"short_name": "Dotfiles",
+	"start_url": "https://dotfiles.io/",
+	"theme_color": "#fff"
 }
