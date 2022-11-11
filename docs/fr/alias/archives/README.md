@@ -2,7 +2,7 @@
 description: Les alias d'archives sont capables de créer et de gérer des fichiers d'archives dans une variété de formats.
 lang: fr-FR
 metaTitle: Les alias d'archives - Dotfiles (FR)
-permalink: /alias/archives/
+permalink: /fr/alias/archives/
 
 meta:
   - name: keywords
