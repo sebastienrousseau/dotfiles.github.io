@@ -1,8 +1,34 @@
+---
+description: Aliases allow you to create shortcuts for shell commands that you use frequently. This allows you to be more productive and efficient by reducing the amount of typing you have to do when using the shell regularly.
+lang: en-GB
+metaTitle: Aliases - Dotfiles (UK)
+permalink: /aliases/
+
+meta:
+  - name: keywords
+    content: aliases, archives, cd, chmod, clear, commands, default, dig, dotfiles, du, editor, find, gcloud, git, gnu, heroku, interactive, jekyll, list, make, mkdir, npm, pnpm, ps, rsync, rust, shell, subversion, sudo, tmux, typing, update, uuid, wget
+  - name: twitter:card
+    content: Aliases allow you to create shortcuts for shell commands that you use frequently. This allows you to be more productive and efficient by reducing the amount of typing you have to do when using the shell regularly.
+  - name: twitter:description
+    content: Aliases allow you to create shortcuts for shell commands that you use frequently. This allows you to be more productive and efficient by reducing the amount of typing you have to do when using the shell regularly.
+  - name: twitter:title
+    content: Aliases - Dotfiles (UK)
+  - name: og:title
+    content: Aliases - Dotfiles (UK)
+  - name: og:description
+    content: Aliases allow you to create shortcuts for shell commands that you use frequently. This allows you to be more productive and efficient by reducing the amount of typing you have to do when using the shell regularly.
+  - name: og:image:alt
+    content: Dotfiles - Simply designed to fit your shell life
+  - name: og:locale
+    content: en_GB
+---
+
 # Aliases
 
 Aliases allow you to create shortcuts for shell commands that you use
-frequently. As an example, instead of typing `git status` you could type `gst`
-to obtain the same result.
+frequently. This allows you to be more productive and efficient by reducing the
+amount of typing you have to do when using the shell regularly. As an example,
+instead of typing `git status` you could type `gst` to obtain the same result.
 
 This is a great way to save time and reduce considerably the amount of typing
 you have to do when using the terminal on a daily basis which helps you to be
