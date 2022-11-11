@@ -105,7 +105,7 @@ supports a wide range of programming languages.
 
 ### :one: Back Up Your Existing Data
 
-::: tip
+::: warning
 Before installing Dotfiles, we strongly recommend that you back up your existing
 data. It is always a good idea to backup as there might be situations in which
 you could be required to restore your previous installation.

@@ -109,7 +109,7 @@ terminal, IDE ou éditeur de texte.
 
 ### :one: Sauvegardez vos données
 
-::: tip
+::: warning
 Nous vous recommandons vivement de sauvegarder vos données. C'est toujours une
 bonne idée de faire une sauvegarde car il peut y avoir des situations dans
 lesquelles vous pourriez être amené à restaurer votre installation précédente.
