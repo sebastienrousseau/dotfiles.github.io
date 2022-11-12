@@ -23,7 +23,7 @@ meta:
     content: fr_FR
 ---
 
-# Chmod aliases
+# Les alias chmod
 
 Le fichier `chmod.aliases.sh` crée des alias de raccourcis pour la commande
 `chmod`. Ils vous permettent de changer les permissions d'un fichier ou d'un
