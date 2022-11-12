@@ -1,7 +1,38 @@
-# Jekyll Core aliases
+---
+description: The Jekyll aliases are a collection of aliases that allow you to interact with Jekyll in a more interactive way. Jekyll is a static site generator. It takes text written in your favorite markup language and uses layouts to create a static website.
+lang: en-GB
+metaTitle: Jekyll aliases - Dotfiles (UK)
+permalink: /aliases/jekyll/
+
+meta:
+  - name: keywords
+    content: aliases, bash, jekyll, linux, macos, shell, terminal, windows
+  - name: twitter:card
+    content: The Jekyll aliases are a collection of aliases that allow you to interact with Jekyll in a more interactive way. Jekyll is a static site generator. It takes text written in your favorite markup language and uses layouts to create a static website.
+  - name: twitter:description
+    content: The Jekyll aliases are a collection of aliases that allow you to interact with Jekyll in a more interactive way. Jekyll is a static site generator. It takes text written in your favorite markup language and uses layouts to create a static website.
+  - name: twitter:title
+    content: Jekyll aliases - Dotfiles (UK)
+  - name: og:title
+    content: Jekyll aliases - Dotfiles (UK)
+  - name: og:description
+    content: The Jekyll aliases are a collection of aliases that allow you to interact with Jekyll in a more interactive way. Jekyll is a static site generator. It takes text written in your favorite markup language and uses layouts to create a static website.
+  - name: og:image:alt
+    content: Dotfiles - Simply designed to fit your shell life
+  - name: og:locale
+    content: en_GB
+---
+
+# Jekyll aliases
 
 This `jekyll.aliases.zsh` file creates helpful shortcut aliases for many
 commonly used [Jekyll](https://jekyllrb.com/) commands.
+
+The Jekyll aliases are a collection of aliases that allow you to interact with
+Jekyll in a more interactive way. Jekyll is a static site generator. It takes
+text written in your favorite markup language and uses layouts to create a
+static website. You can tweak the site’s look and feel, URLs, the data displayed
+on the page, and more.
 
 ## Jekyll development aliases
 

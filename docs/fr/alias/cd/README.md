@@ -2,7 +2,7 @@
 description: Les alias cd sont une collection d'alias qui vous permettent d'interagir avec l'outil de ligne de commande `cd` qui permet de changer le répertoire courant.
 lang: fr-FR
 metaTitle:  Les alias cd - Dotfiles (FR)
-permalink: /fr/alias/cd/
+permalink: /alias/cd/
 
 meta:
   - name: keywords

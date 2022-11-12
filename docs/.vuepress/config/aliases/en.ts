@@ -1,5 +1,5 @@
 export const aliases = {
-  ariaLabel: 'Aliases',
+  ariaLabel: 'Aliases - Dotfiles',
   children: [
     ["/aliases/archives/", "Archives aliases"],
     ["/aliases/cd/", "Cd aliases"],

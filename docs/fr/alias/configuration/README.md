@@ -2,9 +2,11 @@
 description: Les alias de configuration sont des alias pour ouvrir les fichiers de configuration depuis la console. Ils sont utilisés pour modifier les paramètres de votre shell et de vos applications.
 lang: fr-FR
 metaTitle: Les alias de configuration - Dotfiles (FR)
-permalink: /fr/aliases/configuration/
+permalink: /aliases/configuration/
 
 meta:
+  - name: keywords
+    content: alias, configuration, config, dotfiles, dotfiles-fr
   - name: twitter:card
     content: Les alias de configuration sont des alias pour ouvrir les fichiers de configuration depuis la console.Ils sont utilisés pour modifier les paramètres de votre shell et de vos applications.
   - name: twitter:description

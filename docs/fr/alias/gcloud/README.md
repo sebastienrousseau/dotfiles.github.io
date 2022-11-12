@@ -1,7 +1,36 @@
-# Google Cloud Aliases
+---
+description: The Google Cloud aliases, provide memorable commands for operating on the Google Cloud platform. All of these functions and aliases are wrappers around the Google Cloud SDK command line tools.
+lang: en-GB
+metaTitle: The Google Cloud aliases - Dotfiles (UK)
+permalink: /aliases/gcloud/
+
+meta:
+  - name: keywords
+    content: aliases, gcloud, googlecloud, google, cloud, sdk, command line, cli, bash, configuration, dotfiles, linux, macos, shell, windows
+  - name: twitter:card
+    content: The Google Cloud aliases, provide memorable commands for operating on the Google Cloud platform. All of these functions and aliases are wrappers around the Google Cloud SDK command line tools.
+  - name: twitter:description
+    content: The Google Cloud aliases, provide memorable commands for operating on the Google Cloud platform. All of these functions and aliases are wrappers around the Google Cloud SDK command line tools.
+  - name: twitter:title
+    content: The Google Cloud aliases - Dotfiles (UK)
+  - name: og:title
+    content: The Google Cloud aliases - Dotfiles (UK)
+  - name: og:description
+    content: The Google Cloud aliases, provide memorable commands for operating on the Google Cloud platform. All of these functions and aliases are wrappers around the Google Cloud SDK command line tools.
+  - name: og:image:alt
+    content: Dotfiles - Simply designed to fit your shell life
+  - name: og:locale
+    content: en_GB
+---
+
+# Google Cloud aliases
 
 The `gcloud.aliases.zsh` file creates helpful shortcut aliases for many commonly
 [Google Cloud](https://cloud.google.com/) commands.
+
+The Google Cloud aliases, provide memorable commands for operating on the Google
+Cloud platform. All of these functions and aliases are wrappers around the
+Google Cloud SDK command line tools.
 
 ## Command-line tool
 

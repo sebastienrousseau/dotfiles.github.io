@@ -1,32 +1,32 @@
 ---
-description: Les alias de base sont des alias qui ne sont pas spécifiques à une ligne de commande spécifique. Ce sont des alias courants qui sont utilisés dans de nombreux contextes différents et qui sont répertoriés dans cette section pour des raisons de commodité.
+description: Les alias par défaut sont des alias qui ne sont pas spécifiques à une ligne de commande spécifique. Ce sont des alias courants qui sont utilisés dans de nombreux contextes différents et qui sont répertoriés dans cette section pour des raisons de commodité.
 lang: fr-FR
-metaTitle: Les alias de base - Dotfiles (FR)
-permalink: /fr/aliases/default/
+metaTitle: Les alias par défaut - Dotfiles (FR)
+permalink: /aliases/default/
 
 meta:
   - name: twitter:card
-    content: Les alias de base sont des alias qui ne sont pas spécifiques à une ligne de commande spécifique. Ce sont des alias courants qui sont utilisés dans de nombreux contextes différents et qui sont répertoriés dans cette section pour des raisons de commodité.
+    content: Les alias par défaut sont des alias qui ne sont pas spécifiques à une ligne de commande spécifique. Ce sont des alias courants qui sont utilisés dans de nombreux contextes différents et qui sont répertoriés dans cette section pour des raisons de commodité.
   - name: twitter:description
-    content: Les alias de base sont des alias qui ne sont pas spécifiques à une ligne de commande spécifique. Ce sont des alias courants qui sont utilisés dans de nombreux contextes différents et qui sont répertoriés dans cette section pour des raisons de commodité.
+    content: Les alias par défaut sont des alias qui ne sont pas spécifiques à une ligne de commande spécifique. Ce sont des alias courants qui sont utilisés dans de nombreux contextes différents et qui sont répertoriés dans cette section pour des raisons de commodité.
   - name: twitter:title
-    content: Les alias de base - Dotfiles (FR)
+    content: Les alias par défaut - Dotfiles (FR)
   - name: og:title
-    content: Les alias de base - Dotfiles (FR)
+    content: Les alias par défaut - Dotfiles (FR)
   - name: og:description
-    content: Les alias de base sont des alias qui ne sont pas spécifiques à une ligne de commande spécifique. Ce sont des alias courants qui sont utilisés dans de nombreux contextes différents et qui sont répertoriés dans cette section pour des raisons de commodité.
+    content: Les alias par défaut sont des alias qui ne sont pas spécifiques à une ligne de commande spécifique. Ce sont des alias courants qui sont utilisés dans de nombreux contextes différents et qui sont répertoriés dans cette section pour des raisons de commodité.
   - name: og:image:alt
     content: Les Dotfiles - Conçus pour s'adapter à votre vie de shell
   - name: og:locale
     content: fr_FR
 ---
 
-# Les alias de base
+# Les alias par défaut
 
 Le fichier `default.aliases.sh` crée des alias de raccourcis pour plusieurs
 commandes courantes.
 
-Les raccourcis de base sont des alias qui ne sont pas associés à une ligne de
+Les raccourcis par défaut sont des alias qui ne sont pas associés à une ligne de
 commande particulière. Ils sont utilisés dans de nombreux contextes et
 répertoriés dans cette section pour des raisons de commodité. Ils sont classés
 par ordre alphabétique pour faciliter leur utilisation.

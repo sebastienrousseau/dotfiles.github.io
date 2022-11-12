@@ -2,9 +2,11 @@
 description: Les alias chmod sont des raccourcis pour la commande chmod. Ils vous permettent de changer les permissions d'un fichier ou d'un répertoire.
 lang: fr-FR
 metaTitle: Les alias chmod - Dotfiles (FR)
-permalink: /fr/aliases/chmod/
+permalink: /aliases/chmod/
 
 meta:
+  - name: keywords
+    content: alias, chmod, raccourcis, commandes, shell, bash, zsh, fish, permissions, fichiers, répertoires, droits, dossiers
   - name: twitter:card
     content: Les alias chmod sont des raccourcis pour la commande chmod. Ils vous permettent de changer les permissions d'un fichier ou d'un répertoire.
   - name: twitter:description

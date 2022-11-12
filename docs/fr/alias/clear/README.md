@@ -2,9 +2,11 @@
 description: Les alias clear sont des alias de la commande `clear`. Ils sont utilisés pour effacer le contenu de la console.
 lang: fr-FR
 metaTitle: Les alias clear - Dotfiles (FR)
-permalink: /fr/aliases/clear/
+permalink: /aliases/clear/
 
 meta:
+  - name: keywords
+    content: alias, clear, effacer, console, terminal, shell, bash, zsh, fish, dotfiles, dotfiles-fr
   - name: twitter:card
     content: Les alias clear sont des alias de la commande `clear`. Ils sont utilisés pour effacer le contenu de la console.
   - name: twitter:description
