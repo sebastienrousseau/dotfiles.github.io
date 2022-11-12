@@ -1,29 +1,29 @@
 ---
-description: Les alias de gestion d'archives sont capables de créer et de gérer des fichiers d'archives dans une variété de formats.
+description: Les alias d'archivage sont capables de créer et de gérer des fichiers d'archives dans une variété de formats.
 lang: fr-FR
-metaTitle: Les alias de gestion d'archives - Dotfiles (FR)
+metaTitle: Les alias d'archivage - Dotfiles (FR)
 permalink: /alias/archives/
 
 meta:
   - name: keywords
     content: 7-zip, aliases, archives, bash, bzip2, dotfiles, gzip, jar, linux, macos, shell, tar, unzip, windows, xz, zip, zstd
   - name: twitter:card
-    content: Les alias de gestion d'archives sont capables de créer et de gérer des fichiers d'archives dans une variété de formats.
+    content: Les alias d'archivage sont capables de créer et de gérer des fichiers d'archives dans une variété de formats.
   - name: twitter:description
-    content: Les alias de gestion d'archives sont capables de créer et de gérer des fichiers d'archives dans une variété de formats.
+    content: Les alias d'archivage sont capables de créer et de gérer des fichiers d'archives dans une variété de formats.
   - name: twitter:title
-    content: Les alias de gestion d'archives - Dotfiles (FR)
+    content: Les alias d'archivage - Dotfiles (FR)
   - name: og:title
-    content: Les alias de gestion d'archives - Dotfiles (FR)
+    content: Les alias d'archivage - Dotfiles (FR)
   - name: og:description
-    content: Les alias de gestion d'archives sont capables de créer et de gérer des fichiers d'archives dans une variété de formats.
+    content: Les alias d'archivage sont capables de créer et de gérer des fichiers d'archives dans une variété de formats.
   - name: og:image:alt
     content: Les Dotfiles - Conçus pour s'adapter à votre vie de shell
   - name: og:locale
     content: fr_FR
 ---
 
-# Les alias de gestion d'archives
+# Les alias d'archivage
 
 Le fichier `archives.aliases.sh` crée des alias de raccourcis utiles pour
 pouvoir archiver des fichiers et des répertoires. Les alias sont capables de

@@ -1,11 +1,11 @@
 export const alias = {
   ariaLabel: 'Les alias Dotfiles',
   children: [
-    ["/fr/alias/archives/", "Les alias de gestion d'archives"],
+    ["/fr/alias/archives/", "Les alias d'archivage"],
     ["/fr/alias/cd/", "Les alias cd"],
     ["/fr/alias/chmod/", "Les alias chmod"],
     ["/fr/alias/clear/", "Les alias clear"],
-    ["/fr/alias/configuration/", "Les alias configuration"],
+    ["/fr/alias/configuration/", "Les alias de configuration"],
     ["/fr/alias/default/", "Les alias par défaut"],
     ["/fr/alias/dig/", "Les alias dig"],
     ["/fr/alias/du/", "Les alias du"],
