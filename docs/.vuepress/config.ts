@@ -29,7 +29,7 @@ module.exports = {
     // Search bar configuration
     search: false,
     // Logo configuration
-    logo: "/dotfiles.png",
+    logo: "/dotfiles.webp",
     // The GitHub repo path
     repo: "sebastienrousseau/dotfiles.github.io",
     // The label linking to the repo
@@ -102,6 +102,8 @@ module.exports = {
       "vuepress-plugin-sitemap",
       {
         hostname: "https://dotfiles.io",
+        outFile: "sitemap.xml",
+        exclude: ['/404.html']
       },
     ],
     [
