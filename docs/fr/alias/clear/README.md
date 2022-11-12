@@ -23,7 +23,7 @@ meta:
     content: fr_FR
 ---
 
-# Les alias Clear
+# Les alias clear
 
 Le fichier `clear.aliases.sh` crée des alias de raccourcis pour la commande
 `clear`. Ils sont utilisés pour effacer le contenu de la console.
