@@ -1,5 +1,4 @@
 export const headers: string[] = [
-  ["link", { rel: "shortcut icon", href: "/favicon.ico" }],
   ["link", { rel: "apple-touch-icon", href: "/apple-touch-icon.png" }],
   ["link", { rel: "apple-touch-icon", href: "/icons/dotfiles-180x180.png", sizes: "180x180" }],
   ["link", { rel: "icon", type: "image/png", href: "/favicon-32x32.png", sizes: "32x32" }],
