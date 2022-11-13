@@ -15,6 +15,11 @@
 			"type": "image/png"
 		},
 		{
+			"sizes": "130x130",
+			"src": "/icons/dotfiles-130x130.png",
+			"type": "image/png"
+		},
+		{
 			"sizes": "144x144",
 			"src": "/icons/dotfiles-144x144.png",
 			"type": "image/png"
