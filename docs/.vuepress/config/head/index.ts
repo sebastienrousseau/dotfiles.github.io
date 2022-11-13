@@ -1,7 +1,8 @@
 export const headers: string[] = [
-  ["link", { rel: "shortcut icon", href: "/icons/dotfiles.ico" }],
+  ["link", { rel: "shortcut icon", href: "/favicon.ico" }],
   ["link", { rel: "apple-touch-icon", href: "/apple-touch-icon.png" }],
   ["link", { rel: "apple-touch-icon", href: "/icons/dotfiles-180x180.png", sizes: "180x180" }],
+  ["link", { rel: "icon", type: "image/png", href: "/icons/dotfiles-48x48.png", sizes: "48x48" }],
   ["link", { rel: "icon", type: "image/png", href: "/icons/dotfiles-32x32.png", sizes: "32x32" }],
   ["link", { rel: "icon", type: "image/png", href: "/icons/dotfiles-16x16.png", sizes: "16x16" }],
   ["link", { rel: "mask-icon", href: "/icons/dotfiles.svg", color: "#ffffff" }],

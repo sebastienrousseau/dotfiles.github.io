@@ -5,44 +5,13 @@
 	"display": "standalone",
 	"icons": [
 		{
-			"sizes": "114x114",
-			"src": "/icons/dotfiles-114x114.png",
-			"type": "image/png"
-		},
-		{
-			"sizes": "120x120",
-			"src": "/icons/dotfiles-120x120.png",
-			"type": "image/png"
-		},
-		{
-			"sizes": "130x130",
-			"src": "/icons/dotfiles-130x130.png",
-			"type": "image/png"
-		},
-		{
 			"sizes": "144x144",
 			"src": "/icons/dotfiles-144x144.png",
 			"type": "image/png"
 		},
 		{
-			"sizes": "152x152",
-			"src": "/icons/dotfiles-152x152.png",
-			"type": "image/png"
-		},
-		{
-			"sizes": "180x180",
-			"src": "/icons/dotfiles-180x180.png",
-			"type": "image/png"
-		},
-		{
 			"sizes": "192x192",
 			"src": "/icons/dotfiles-192x192.png",
-			"type": "image/png"
-		},
-		{
-			"purpose": "maskable",
-			"sizes": "196x196",
-			"src": "/icons/dotfiles-196x196.png",
 			"type": "image/png"
 		},
 		{
@@ -66,23 +35,8 @@
 			"type": "image/png"
 		},
 		{
-			"sizes": "57x57",
-			"src": "/icons/dotfiles-57x57.png",
-			"type": "image/png"
-		},
-		{
-			"sizes": "60x60",
-			"src": "/icons/dotfiles-60x60.png",
-			"type": "image/png"
-		},
-		{
 			"sizes": "72x72",
 			"src": "/icons/dotfiles-72x72.png",
-			"type": "image/png"
-		},
-		{
-			"sizes": "76x76",
-			"src": "/icons/dotfiles-76x76.png",
 			"type": "image/png"
 		},
 		{
