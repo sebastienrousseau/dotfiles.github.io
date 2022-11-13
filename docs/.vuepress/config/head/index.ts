@@ -1,6 +1,6 @@
 export const headers: string[] = [
   ["link", { rel: "icon", href: "/favicon.ico" }],
-  ["link", { rel: "apple-touch-icon", href: "/icons/icon-192x192.png" }],
+  ["link", { rel: "apple-touch-icon", href: "/icons/dotfiles-192x192.png" }],
   ["link", { rel: "manifest", href: "/manifest.json" }],
   ["link", { rel: "preload", href: "https://unpkg.com/skeletonic-stylus@1.0.5/css/skeletonic-fonts.min.css", as: "style", onload: "this.onload=null;this.rel='stylesheet'" }],
   ["meta", { name: "charset", content: "utf-8" }],
@@ -24,7 +24,7 @@ export const headers: string[] = [
   ["meta", { name: "format-detection", content: "telephone=no" },],
   ["meta", { name: "msapplication-tap-highlight", content: "no" },],
   ["meta", { name: "msapplication-TileColor", content: "#9e00a3" },],
-  ["meta", { name: "msapplication-TileImage", content: "/icons/icon-192x192.png" },],
+  ["meta", { name: "msapplication-TileImage", content: "/icons/dotfiles-192x192.png" },],
   ["meta", { name: "robots", content: "all" }],
   ["meta", { name: "og:image:height", content: "627" }],
   ["meta", { name: "og:image:type", content: "image/png" }],

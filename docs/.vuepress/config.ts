@@ -114,5 +114,19 @@ module.exports = {
       }
     ],
     ["vuepress-plugin-code-copy", true],
+    ["html-webpack-plugin", {
+      minify: {
+        minifyCSS: true,
+        minifyJS: true,
+        minifyURLs: true,
+        removeComments: true,
+        collapseWhitespace: true,
+        collapseBooleanAttributes: true,
+        removeScriptTypeAttributes: true,
+        removeAttributeQuotes: true,
+        removeEmptyAttributes: true,
+        removeStyleLinkTypeAttributes: true
+      }
+    }],
   ],
 };
