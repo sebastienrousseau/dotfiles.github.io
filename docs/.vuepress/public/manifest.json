@@ -33,8 +33,9 @@
 	],
 	"lang": "en_gb",
 	"name": "Dotfiles - Simply designed to fit your shell life (UK)",
+	"orientation": "portrait-primary",
 	"scope": "https://dotfiles.io/",
-	"short_name": "Dotfiles",
+	"short_name": "Dotfiles v0.2.462",
 	"start_url": "https://dotfiles.io/",
-	"theme_color": "#fff"
+	"theme_color": "#9e00a3"
 }
