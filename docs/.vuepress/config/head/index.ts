@@ -1,6 +1,8 @@
 export const headers: string[] = [
   ["link", { rel: "shortcut icon", href: "/icons/favicon.ico" }],
-  ["link", { rel: "apple-touch-icon", href: "/icons/dotfiles-192x192.png" }],
+  ["link", { rel: "apple-touch-icon", href: "/icons/apple-touch-icon-152x152.png", sizes: "152x152" }],
+  ["link", { rel: "apple-touch-icon", href: "/icons/apple-touch-icon.png", sizes: "180x180" }],
+  ["link", { rel: "apple-touch-icon", href: "/icons/apple-touch-icon-192x192.png", sizes: "192x192" }],
   ["link", { rel: "manifest", href: "/manifest.json" }],
   ["link", { rel: "preload", href: "https://unpkg.com/skeletonic-stylus@1.0.5/css/skeletonic-fonts.min.css", as: "style", onload: "this.onload=null;this.rel='stylesheet'" }],
   ["meta", { name: "charset", content: "utf-8" }],
