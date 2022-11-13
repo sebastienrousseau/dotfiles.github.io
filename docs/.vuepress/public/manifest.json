@@ -1,7 +1,7 @@
 {
 	"$schema": "https://json.schemastore.org/web-manifest-combined.json",
 	"background_color": "#000",
-	"description": "The next generation of Bash configuration files for macOS, Linux and Windows. A collection of scripts, aliases, functions you can use to customize your shell.",
+	"description": "The next generation of Bash configuration files for macOS, Linux and Windows. Dotfiles gives you new ways to do more than ever with your shell.",
 	"display": "standalone",
 	"icons": [
 		{
@@ -92,10 +92,10 @@
 		}
 	],
 	"lang": "en_gb",
-	"name": "Dotfiles - Simply designed to fit your shell life (UK)",
+	"name": "Dotfiles - Simply designed to fit your shell life",
 	"orientation": "portrait-primary",
 	"scope": "https://dotfiles.io/",
-	"short_name": "Dotfiles v0.2.462",
+	"short_name": "Dotfiles",
 	"start_url": "https://dotfiles.io/",
 	"theme_color": "#9e00a3"
 }
