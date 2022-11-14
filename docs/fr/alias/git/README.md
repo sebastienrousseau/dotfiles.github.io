@@ -67,7 +67,7 @@ de haut niveau et un accès complet aux éléments internes.
 | glg | `git log --oneline --graph --full-history --all --color --decorate` | Afficher les logs sous forme de graphique |
 | gs | `git show` | Afficher les modifications de fichiers indexées |
 
-## Gestion des branches
+### Gestion des branches
 
 | Alias | Commande | Description |
 | ----- | ----- | ----- |
@@ -241,7 +241,7 @@ de haut niveau et un accès complet aux éléments internes.
 | gtp | `git rev-parse --show-toplevel` | Obtient le nom du répertoire supérieur du dépôt courant |
 | gcb | `git rev-parse --abbrev-ref HEAD` | Obtient le nom de la branche courante |
 
-## Supprimer les fichiers du répertoire de travail et de l'index
+### Supprimer les fichiers du répertoire de travail et de l'index
 
 | Alias | Commande | Description |
 | ----- | ----- | ----- |
