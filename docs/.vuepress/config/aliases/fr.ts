@@ -12,7 +12,7 @@ export const alias = {
     ["/fr/alias/editor/", "Les alias editor"],
     ["/fr/alias/recherche/", "Les alias de recherche"],
     ["/fr/alias/gcloud/", "Les alias gcloud"],
-    // ["/fr/alias/git/", "Les alias git"],
+    ["/fr/alias/git/", "Les alias git"],
     // ["/fr/alias/gnu/", "Les alias gnu"],
     // ["/fr/alias/heroku/", "Les alias heroku"],
     // ["/fr/alias/interactive/", "Les alias interactif"],
