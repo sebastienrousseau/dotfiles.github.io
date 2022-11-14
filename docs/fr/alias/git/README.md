@@ -56,18 +56,16 @@ de haut niveau et un accès complet aux éléments internes.
 | gcl | `git clone` | Clone un dépôt dans un nouveau répertoire. |
 | gin | `git init` | Crée un nouveau dépôt git. |
 
-###
-
-Examine the history and state
+### Regarder l'historique des changements
 
 | Alias | Commande | Description |
 | ----- | ----- | ----- |
-| gbs | `git bisect` | Use binary search to find the commit that introduced a bug. |
-| gd | `git diff` | Show changes between commits, commit and working tree, etc.|
-| gg | `git grep` | Print lines matching a pattern. |
-| gl | `git log --since="last month" --oneline` | Show commit logs this month. |
-| glg | `git log --oneline --graph --full-history --all --color --decorate` | Show commit logs and Draw a text-based graphical representation of the commit history on the left hand side of the output. |
-| gs | `git show` | Show various types of objects. |
+| gbs | `git bisect` | Utiliser la recherche binaire pour trouver la source d'un bogue |
+| gd | `git diff` | Afficher les modifications de fichiers non indexées |
+| gg | `git grep` | Imprimer les lignes correspondant à un motif |
+| gl | `git log --since="last month" --oneline` | Afficher les commits du mois dernier |
+| glg | `git log --oneline --graph --full-history --all --color --decorate` | Afficher les logs sous forme de graphique |
+| gs | `git show` | Afficher les modifications de fichiers indexées |
 
 ## Gestion des branches
 
@@ -152,7 +150,6 @@ Examine the history and state
 | Alias | Commande | Description |
 | ----- | ----- | ----- |
 | gpb | `git push --set-upstream origin $(git current-branch)` | Pousser la branche courante et la configurer pour suivre la branche distante |
-| gpcb | `git push origin "$(git branch|grep '\*'|tr -d '* \n')"` | Pousser la branche courante |
 | gpo | `git push origin` | Pousser la branche vers le dépôt distant origin |
 | gpoll | `git push origin --all` | Pousser toutes les branches vers le dépôt distant origin |
 | gpt | `git push --tags` | Pousser les tags vers le dépôt distant origin |
@@ -171,13 +168,9 @@ Examine the history and state
 | gr | `git remote` | Gérer les dépôts distants |
 | gra | `git remote add` | Ajouter un dépôt distant |
 | grall | `git remote | xargs -L1 git push --all` | Pousser toutes les branches vers tous les dépôts distants |
-| grallo | `git remote -v | grep "(fetch)"` | Afficher tous les dépôts distants sauf origin |
 | grao | `git remote add origin` | Ajouter le dépôt distant origin s'il n'existe pas |
 | grbk | `git reset --soft HEAD^` | Supprimer le dernier commit sur la branche courante |
 | grcl | `git remote prune` | Supprimer les branches distantes zombies |
-| grf | `find . -maxdepth 1 -type d \( ! -name . \) -exec bash -c "cd '{}' && echo '{}' && git config --get remote.origin.url" \;` | Afficher les dépôts distants pour tous les sous-dossiers |
-| grfall | `git branch -r | awk -F'/' '{print "git fetch "$1,$2}' | xargs -I {} sh -c {}` | Récupérer toutes les branches distantes |
-| gro | `open`git remote -v | awk '/fetch/{print $2}' | sed -Ee 's#(git@|git://)#http://#' -e 's@com:@com/@'`| head -n1` | Ouvrir le dépôt distant origin dans le navigateur |
 | grp | `git remote | xargs -I% -n1 git push %` | Pousser toutes les branches vers tous les dépôts distants |
 | grpa | `for i in`git remote`; do git push $i; done;` | Pousser toutes les branches vers tous les dépôts distants |
 | grprint | `git remote -v` | Afficher l'url du dépôt courant |
@@ -210,7 +203,6 @@ Examine the history and state
 | Alias | Commande | Description |
 | ----- | ----- | ----- |
 | gst | `git status` | Afficher l'état du dépôt courant |
-| gstrmu | `git status -su | cut -d' ' -f2- | tr '\n' '\0' | xargs -0 rm` | Supprimer tous les fichiers non suivis |
 | gsts | `git status --short` | Afficher l'état du dépôt courant en mode court |
 | gstsb | `git status --short --branch` | Afficher l'état du dépôt courant en mode court et la branche courante |
 
@@ -219,64 +211,59 @@ Examine the history and state
 | Alias | Commande | Description |
 | ----- | ----- | ----- |
 | gt | `git tag` | Afficher les tags |
-See all tags. |
-| gta | `git tag -a $1 -m $2` | gta: Add a tag. |
-| gtg | `git tag` | gtg: Create, list, delete or verify a tag object signed with GPG. |
-| gtl | `git describe --tags --abbrev=0` | gtl: Last tag in the current branch. |
-| gtrm | `for t in`git tag`do; git push origin :$t; git tag -d $t; done` | gtrm: Delete all tags. |
+| gta | `git tag -a $1 -m $2` | Créer un tag annoté |
+| gtg | `git tag` | Afficher les tags signés avec GPG |
+| gtl | `git describe --tags --abbrev=0` | Afficher le dernier tag |
+| gtrm | `for t in`git tag`do; git push origin :$t; git tag -d $t; done` | Supprimer tous les tags |
 
-## Show various types of objects
-
-| Alias | Commande | Description |
-| ----- | ----- | ----- |
-| gshab | `for k in ``git branch|perl -pe s/^..//``;do echo  ``git show --pretty=format:"%Cgreen%ci %Cblue%cr%Creset" $k|head -n 1``\\t$k;done|sort -r` | Show git branches by date - useful for showing active branches. |
-| gshf | | Find the nearest parent branch of the current git branch. |
-| gshls | `git show --relative --pretty=format:''` | Show list of files changed by commit. |
-| gshnp | `git show --no-patch --pretty="tformat:%h (%s, %ad)" --date=short` | Given any git object, try to show it briefly. |
-| gshwho | `git shortlog --summary --numbered --no-merges` | Show who contributed, in descending order by number of commits. |
-
-## Reset current HEAD to the specified state
+### Afficher diverses informations sur les objets Git
 
 | Alias | Commande | Description |
 | ----- | ----- | ----- |
-| grescl | `git reset --hard HEAD~1 && git clean -fd` | Reset commit clean. |
-| gresh | `git reset --hard HEAD~1` | Reset commit hard. |
-| gresp | `git reset --hard && git clean -ffdx` | Reset pristine. |
-| gress | `git reset --soft HEAD~1` | Reset commit. |
-| gresu | `git reset --hard $(git upstream-branch)` | Reset to upstream. |
+| gshls | `git show --relative --pretty=format:''` | Afficher les fichiers modifiés |
+| gshnp | `git show --no-patch --pretty="tformat:%h (%s, %ad)" --date=short` | Afficher les informations sur le dernier commit |
+| gshwho | `git shortlog --summary --numbered --no-merges` | Afficher les auteurs des commits |
 
-## Pick out and massage parameters
+### Rétablir la branch courante
 
 | Alias | Commande | Description |
 | ----- | ----- | ----- |
-| gtp | `git rev-parse --show-toplevel` | Get the top level directory name. |
-| gcb | `git rev-parse --abbrev-ref HEAD` | Get the current branch name. |
-| gub | `git for-each-ref --format='%(upstream:short)' $(git symbolic-ref -q HEAD)` | Get the upstream branch name. |
+| grescl | `git reset --hard HEAD~1 && git clean -fd` | Rétablir la branche courante et supprimer les fichiers non suivis |
+| gresh | `git reset --hard HEAD~1` | Rétablir la branche courante |
+| gresp | `git reset --hard && git clean -ffdx` | Rétablir la branche courante et supprimer les fichiers non suivis |
+| gress | `git reset --soft HEAD~1` | Rétablir la branche courante sans supprimer les fichiers non suivis |
+| gresu | `git reset --hard $(git upstream-branch)` | Rétablir la branche courante avec la branche upstream |
 
-## Remove files from the working tree and from the index
-
-| Alias | Commande | Description |
-| ----- | ----- | ----- |
-| grm | `git rm` | Remove files from the working tree and from the index.
-| grmc | `git rm --cached` | Unstage and remove paths only from the index.
-| grmd | `git ls-files -z --deleted | xargs -0 git rm` | git remove files which have been deleted. |
-| grmd2 | `git rm $(git ls-files --deleted)` | git remove files which have been deleted. |
-| grmds | `find . -name .DS_Store -exec git rm --ignore-unmatch --cached {} +` | Remove .DS_Store from the repository. |
-| grmn | `for file in $(git status | grep "new file" | sed "s/#\tnew file://"); do git rm --cached $file; done` | Remove all new files. |
-| grmx | `git ls-files -z -d | xargs -0 git rm --` | Remove for all deleted files, including those with space/quote/unprintable characters in their filename/path. |
-
-## Show what revision and author last modified each line of a file
+### Prendre en compte les modifications
 
 | Alias | Commande | Description |
 | ----- | ----- | ----- |
-| gbl | `git blame --date short "$1"` | Specifies a format used to output short dates. |
-| gblc | `git blame --line-porcelain "$1" | sed -n 's/^author //p' | sort | uniq -c | sort -rn` | Count the number of lines attributed to each author. |
-| gblau | `git ls-files | xargs -n1 git blame --line-porcelain | sed -n 's/^author //p' | sort -f | uniq -ic | sort -nr` | Prints per-line contribution per author for a GIT repository. |
+| gtp | `git rev-parse --show-toplevel` | Obtient le nom du répertoire supérieur du dépôt courant |
+| gcb | `git rev-parse --abbrev-ref HEAD` | Obtient le nom de la branche courante |
 
-## Get and set repository or global options
+## Supprimer les fichiers du répertoire de travail et de l'index
 
 | Alias | Commande | Description |
 | ----- | ----- | ----- |
-| gconfdiff | `git config alias.dcolor "diff --color-words"` | Better git diff, word delimited and colorized. |
-| gconfl | `git config --list` | List all the settings. |
-| gconfr | `git config --local --get remote.origin.url` | Output remote origin from within a local repository. |
+| grm | `git rm` | Supprimer les fichiers du répertoire de travail et de l'index |
+| grmc | `git rm --cached` | Supprimer les fichiers de l'index |
+| grmd | `git ls-files -z --deleted | xargs -0 git rm` | Supprimer les fichiers supprimés du répertoire de travail et de l'index |
+| grmd2 | `git rm $(git ls-files --deleted)` | Supprimer les fichiers supprimés du répertoire de travail et de l'index |
+| grmds | `find . -name .DS_Store -exec git rm --ignore-unmatch --cached {} +` | Supprimer les fichiers .DS_Store du répertoire de travail et de l'index |
+| grmn | `for file in $(git status | grep "new file" | sed "s/#\tnew file://"); do git rm --cached $file; done` |
+Supprimer tous les fichiers. |
+| grmx | `git ls-files -z -d | xargs -0 git rm --` | Supprimer les fichiers supprimés du répertoire de travail et de l'index |
+
+### Afficher quelles révisions ont introduit des modifications dans un fichier
+
+| Alias | Commande | Description |
+| ----- | ----- | ----- |
+| gbl | `git blame --date short "$1"` | Spécifie un format de date court |
+
+### Options de configuration globales
+
+| Alias | Commande | Description |
+| ----- | ----- | ----- |
+| gconfdiff | `git config alias.dcolor "diff --color-words"` | Afficher les différences avec des mots colorés |
+| gconfl | `git config --list` | Afficher la liste des options de configuration |
+| gconfr | `git config --local --get remote.origin.url` | Afficher l'URL du dépôt distant |
