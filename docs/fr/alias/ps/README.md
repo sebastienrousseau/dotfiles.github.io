@@ -1,44 +1,41 @@
 ---
-description: The PS aliases are a collection of aliases that allow you to interact with the `ps` command line tool. Ps is a tool which reports a snapshot of the current processes.
-lang: en-GB
-metaTitle: The PS aliases - Dotfiles (UK)
+description: Les alias PS sont des alias qui vous permettent de simplifier l'utilisation de la commande PS. PS est une commande qui affiche des informations sur les processus en cours d'exécution.
+lang: fr-FR
+metaTitle: Les alias PS - Dotfiles (FR)
 permalink: /aliases/ps/
 
 meta:
   - name: keywords
-    content: aliases, ps, process, processes, linux, macos, shell, terminal, windows
+    content: alias, commandes, dotfiles, ps, shell
   - name: twitter:card
-    content: The PS aliases are a collection of aliases that allow you to interact with the `ps` command line tool. Ps is a tool which reports a snapshot of the current processes.
+    content: Les alias PS sont des alias qui vous permettent de simplifier l'utilisation de la commande PS. PS est une commande qui affiche des informations sur les processus en cours d'exécution.
   - name: twitter:description
-    content: The PS aliases are a collection of aliases that allow you to interact with the `ps` command line tool. Ps is a tool which reports a snapshot of the current processes.
+    content: Les alias PS sont des alias qui vous permettent de simplifier l'utilisation de la commande PS. PS est une commande qui affiche des informations sur les processus en cours d'exécution.
   - name: twitter:title
-    content: The PS aliases - Dotfiles (UK)
+    content: Les alias PS - Dotfiles (FR)
   - name: og:title
-    content: The PS aliases - Dotfiles (UK)
+    content: Les alias PS - Dotfiles (FR)
   - name: og:description
-    content: The PS aliases are a collection of aliases that allow you to interact with the `ps` command line tool. Ps is a tool which reports a snapshot of the current processes.
+    content: Les alias PS sont des alias qui vous permettent de simplifier l'utilisation de la commande PS. PS est une commande qui affiche des informations sur les processus en cours d'exécution.
   - name: og:image:alt
-    content: Dotfiles - Simply designed to fit your shell life
+    content: Les Dotfiles - Conçus pour s'adapter à votre vie de shell
   - name: og:locale
-    content: en_GB
+    content: fr_FR
 ---
 
 # PS aliases
 
-The `ps.aliases.sh` file creates helpful shortcut aliases for working with
-processes.
+Le fichier `ps.aliases.sh` crée des raccourcis utiles pour travailler avec les
+processus.
 
-The PS aliases are a collection of aliases that allow you to interact with the
-`ps` command line tool. Ps is a tool which reports a snapshot of the current
-processes.
+Les alias PS sont une collection d'alias qui vous permettent d'interagir avec
+l'outil de ligne de commande `ps`. [PS](https://en.wikipedia.org/wiki/Ps_(Unix))
+est un outil qui affiche un instantané des processus en cours d'exécution.
 
-## PS
-
-[PS](https://en.wikipedia.org/wiki/Ps_(Unix)) is a command that lists the
-processes running on the system.
+## Raccourcis PS
 
 | Alias | Command | Description |
 | ----- | ----- | ----- |
-| pid | `ps -f` | Display the uid, pid, parent pid, recent CPU usage, process start time, controlling tty, elapsed CPU usage, and the associated command. |
-| ps | `ps -ef` | Display all processes. |
-| psa | `ps aux` | List all processes. |
+| pid | `ps -f` | Affiche les processus en cours d'exécution |
+| ps | `ps -ef` | Affiche les processus en cours d'exécution |
+| psa | `ps aux` | Liste tous les processus en cours d'exécution |
