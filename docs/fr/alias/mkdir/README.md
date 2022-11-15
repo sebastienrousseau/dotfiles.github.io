@@ -6,7 +6,7 @@ permalink: /aliases/mkdir/
 
 meta:
   - name: keywords
-    content: , alias, commandes, dotfiles, mcd, mcdp, md, mdd, mdp, mdt, mkdir, shell
+    content: alias, commandes, dotfiles, mcd, mcdp, md, mdd, mdp, mdt, mkdir, shell
   - name: twitter:card
     content: Les alias mkdir sont des alias qui vous permettent de simplifier l'utilisation de la commande mkdir. Mkdir est une commande qui permet de créer des répertoires dans le système de fichiers.
   - name: twitter:description
