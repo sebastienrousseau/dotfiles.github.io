@@ -1,29 +1,29 @@
 ---
-description: Les alias editor sont des alias pour ouvrir des fichiers dans votre éditeur de texte préféré.
+description: Les alias de l'éditeur système sont des alias pour ouvrir des fichiers dans votre éditeur de texte préféré. Ils facilitent l'ouverture rapide de ces fichiers depuis la console. Ils facilitent l'ouverture rapide de ces fichiers depuis la console.
 lang: fr-FR
-metaTitle: Les alias editor - Dotfiles (FR)
+metaTitle: Les alias de l'éditeur système - Dotfiles (FR)
 permalink: /aliases/editor/
 
 meta:
   - name: keywords
-    content: alias, editor, dotfiles, dotfiles-fr
+    content: alias, code, dotfiles, éditeur, gedit, nano, notepad++, raccourcis, shell, système, terminal, vi, vim, visualstudio, vscode
   - name: twitter:card
-    content: Les alias editor sont des alias pour ouvrir des fichiers dans votre éditeur de texte préféré.
+    content: Les alias de l'éditeur système sont des alias pour ouvrir des fichiers dans votre éditeur de texte préféré. Ils facilitent l'ouverture rapide de ces fichiers depuis la console.
   - name: twitter:description
-    content: Les alias editor sont des alias pour ouvrir des fichiers dans votre éditeur de texte préféré.
+    content: Les alias de l'éditeur système sont des alias pour ouvrir des fichiers dans votre éditeur de texte préféré. Ils facilitent l'ouverture rapide de ces fichiers depuis la console.
   - name: twitter:title
-    content: Les alias editor - Dotfiles (FR)
+    content: Les alias de l'éditeur système - Dotfiles (FR)
   - name: og:title
-    content: Les alias editor - Dotfiles (FR)
+    content: Les alias de l'éditeur système - Dotfiles (FR)
   - name: og:description
-    content: Les alias editor sont des alias pour ouvrir des fichiers dans votre éditeur de texte préféré.
+    content: Les alias de l'éditeur système sont des alias pour ouvrir des fichiers dans votre éditeur de texte préféré. Ils facilitent l'ouverture rapide de ces fichiers depuis la console.
   - name: og:image:alt
     content: Les Dotfiles - Conçus pour s'adapter à votre vie de shell
   - name: og:locale
     content: fr_FR
 ---
 
-# Les alias editor
+# Les alias de l'éditeur système
 
 Le fichier `editor.aliases.sh` crée des alias de raccourcis pour ouvrir des
 fichiers dans votre éditeur de texte préféré. Il utilise la variable modifier
@@ -36,11 +36,11 @@ variable d'environnement `editor` dans le fichier `editor.aliases.sh` :
 - [nano][nn],
 - [vim][vi],
 - [vi][vi],
-- [code][cod],
+- [code, visual studio code, vscode][cod],
 - [gedit][gdt],
 - [notepad++][np++],
 
-## Raccourcis
+## Raccourcis de l'éditeur système
 
 | Alias | Commande | Description |
 | ----- | ----- | ----- |

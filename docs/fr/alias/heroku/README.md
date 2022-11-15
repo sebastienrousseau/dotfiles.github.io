@@ -1,479 +1,479 @@
 ---
-description: The Heroku aliases, provide powerful commands that create shortcuts to frequently used Heroku commands. All of these functions and aliases are wrappers around the Heroku CLI which is the basic, fundamental tools of a Heroku system.
-lang: en-GB
-metaTitle: The Heroku aliases - Dotfiles (UK)
+description: Les alias Heroku sont des enveloppes autour de la CLI Heroku. Heroku est une plateforme de cloud computing qui permet de déployer des applications web.
+lang: fr-FR
+metaTitle: Les alias Heroku - Dotfiles (FR)
 permalink: /aliases/heroku/
 
 meta:
   - name: keywords
-    content: aliases, heroku, cli, api, configuration, dotfiles, linux, macos, shell, windows, bash, zsh
+    content: aliases, bash, heroku, cli, command line, configuration, dotfiles, linux, macos, shell, windows
   - name: twitter:card
-    content: The Heroku aliases, provide powerful commands that create shortcuts to frequently used Heroku commands. All of these functions and aliases are wrappers around the Heroku CLI which is the basic, fundamental tools of a Heroku system.
+    content: Les alias Heroku sont des enveloppes autour de la CLI Heroku. Heroku est une plateforme de cloud computing qui permet de déployer des applications web.
   - name: twitter:description
-    content: The Heroku aliases, provide powerful commands that create shortcuts to frequently used Heroku commands. All of these functions and aliases are wrappers around the Heroku CLI which is the basic, fundamental tools of a Heroku system.
+    content: Les alias Heroku sont des enveloppes autour de la CLI Heroku. Heroku est une plateforme de cloud computing qui permet de déployer des applications web.
   - name: twitter:title
-    content: The Heroku aliases - Dotfiles (UK)
+    content: Les alias Heroku - Dotfiles (FR)
   - name: og:title
-    content: The Heroku aliases - Dotfiles (UK)
+    content: Les alias Heroku - Dotfiles (FR)
   - name: og:description
-    content: The Heroku aliases, provide powerful commands that create shortcuts to frequently used Heroku commands. All of these functions and aliases are wrappers around the Heroku CLI which is the basic, fundamental tools of a Heroku system.
+    content: Les alias Heroku sont des enveloppes autour de la CLI Heroku. Heroku est une plateforme de cloud computing qui permet de déployer des applications web.
   - name: og:image:alt
-    content: Dotfiles - Simply designed to fit your shell life
+    content: Les Dotfiles - Conçus pour s'adapter à votre vie de shell
   - name: og:locale
-    content: en_GB
+    content: fr_FR
 ---
 
 # Heroku aliases
 
-The `heroku.aliases.zsh` file creates helpful shortcut aliases for many commonly
-[Heroku](https://www.heroku.com/) commands.
+Le fichier `heroku.aliases.zsh` crée des raccourcis utiles pour de nombreuses
+commandes courantes de [Heroku](https://www.heroku.com/).
 
-The Heroku aliases, provide powerful commands that create shortcuts to
-frequently used Heroku commands. All of these functions and aliases are
-wrappers around the Heroku CLI which is the basic, fundamental tools of a
-Heroku system.
+Les alias Heroku sont des enveloppes autour de la CLI Heroku. Heroku est une
+plateforme de cloud computing qui permet de déployer des applications web.
 
-## Heroku Access aliases
+## Raccourcis Heroku
 
-| Alias | Command | Description |
+### Commandes de base
+
+| Alias | Commande | Description |
 | ----- | ----- | ----- |
-| hk | `heroku` | Heroku CLI command shortcut. |
-| hka | `heroku access:add` | Add new users to your app. |
-| hkau | `heroku access:update`| Update existing collaborators on an team app. |
-| hkh | `heroku help` | Display help for heroku. |
-| hkj | `heroku join` | Add yourself to a team app. |
-| hkl | `heroku commands` | List all the commands. |
-| hkla | `heroku access` | List who has access to an app. |
-| hklg | `heroku logs` | Display recent log output. |
-| hkn | `heroku notifications`| Display notifications. |
-| hko | `heroku orgs` | List the teams that you are a member of.|
-| hkoo | `heroku orgs:open` | Open the team interface in a browser. |
-| hkp | `heroku psql` | Open a psql shell to the database. |
-| hkq | `heroku leave` | Remove yourself from a team app. |
-| hkr | `heroku access:remove`| Remove users from a team app. |
-| hkrg | `heroku regions` | List available regions for deployment. |
-| hks | `heroku status` | Display current status of the Heroku platform. |
-| hkt | `heroku teams` | List the teams that you are a member of. |
-| hku | `heroku update` | Update the heroku CLI. |
-| hkulk | `heroku unlock` | Unlock an app so any team member can join. |
-| hkw | `heroku which` | Show which plugin a command is in. |
+| hk | `heroku` | Exécute la CLI Heroku |
+| hka | `heroku access:add` | Ajoute un utilisateur à l'application |
+| hkau | `heroku access:update`| Met à jour les permissions d'un utilisateur |
+| hkh | `heroku help` | Affiche l'aide de la CLI Heroku |
+| hkj | `heroku join` | Rejoint une organisation |
+| hkl | `heroku commands` | Liste les commandes de la CLI Heroku |
+| hkla | `heroku access` | Liste les utilisateurs de l'application |
+| hklg | `heroku logs` | Affiche les logs de l'application |
+| hkn | `heroku notifications`| Affiche les notifications de l'application |
+| hko | `heroku orgs` | Liste les organisations |
+| hkoo | `heroku orgs:open` | Ouvre l'organisation dans le navigateur |
+| hkp | `heroku psql` | Ouvre une session Postgres |
+| hkq | `heroku leave` | Quitte une organisation |
+| hkr | `heroku access:remove`| Supprime un utilisateur de l'application |
+| hkrg | `heroku regions` | Liste les régions disponibles |
+| hks | `heroku status` | Affiche le statut de Heroku |
+| hkt | `heroku teams` | Liste les équipes |
+| hku | `heroku update` | Met à jour la CLI Heroku |
+| hkulk | `heroku unlock` | Déverrouille une application |
+| hkw | `heroku which` | Affiche le chemin d'accès à la commande Heroku |
 
-## Heroku Add-ons aliases
+### Commandes sur les add-on
 
-| Alias | Command | Description |
+| Alias | Commande | Description |
 | ----- | ----- | ----- |
-| hkada | `heroku addons:attach` | Attach an existing add-on resource to an app. |
-| hkadc | `heroku addons:create` | Create a new add-on resource. |
-| hkadd | `heroku addons:detach` | Detach an existing add-on resource from an app. |
-| hkaddoc | `heroku addons:docs` | Open an add-on's Dev Center documentation in your browser. |
-| hkaddown | `heroku addons:downgrade`| Change add-on plan. |
-| hkadi | `heroku addons:info` | Show detailed add-on resource and attachment information. |
-| hkadk | `heroku addons:destroy` | Permanently destroy an add-on resource. |
-| hkadl | `heroku addons` | Lists your add-ons and attachments. |
-| hkado | `heroku addons:open` | Open an add-on's dashboard in your browser. |
-| hkadp | `heroku addons:plans` | List all available plans for an add-on services. |
-| hkadr | `heroku addons:rename` | Rename an add-on. |
-| hkads | `heroku addons:services` | List all available add-on services. |
-| hkadu | `heroku addons:upgrade` | Change add-on plan. |
-| hkadw | `heroku addons:wait` | Show provisioning status of the add-ons on the app. |
+| hkada | `heroku addons:attach` | Attache un add-on à une application |
+| hkadc | `heroku addons:create` | Crée un add-on |
+| hkadd | `heroku addons:detach` | Détache un add-on d'une application |
+| hkaddoc | `heroku addons:docs` | Affiche la documentation d'un add-on |
+| hkaddown | `heroku addons:downgrade`| Baisse la version d'un add-on |
+| hkadi | `heroku addons:info` | Affiche les informations d'un add-on |
+| hkadk | `heroku addons:destroy` | Détruit un add-on |
+| hkadl | `heroku addons` | Liste les add-on d'une application |
+| hkado | `heroku addons:open` | Ouvre un add-on dans le navigateur |
+| hkadp | `heroku addons:plans` | Liste les plans d'un add-on |
+| hkadr | `heroku addons:rename` | Renomme un add-on |
+| hkads | `heroku addons:services` | Liste les services d'un add-on |
+| hkadu | `heroku addons:upgrade` | Augmente la version d'un add-on |
+| hkadw | `heroku addons:wait` | Attends que l'add-on soit prêt |
 
-## Heroku Apps aliases
+### Les alias des applications Heroku
 
-| Alias | Command | Description |
+| Alias | Commande | Description |
 | ----- | ----- | ----- |
-| hkapc | `heroku apps:create` | Creates a new app. |
-| hkape | `heroku apps:errors` | View app errors.|
-| hkapfav | `heroku apps:favorites` | List favorites apps. |
-| hkapfava | `heroku apps:favorites:add` | Favorites an app. |
-| hkapunfav| `heroku apps:favorites:remove`| Unfavorite an app. |
-| hkapi | `heroku apps:info` | Show detailed app information. |
-| hkapj | `heroku apps:join` | Add yourself to a team app. |
-| hkapk | `heroku apps:destroy` | Permanently destroy an app. |
-| hkapl | `heroku apps` | List your apps. |
-| hkaplk | `heroku apps:lock` | Prevent team members from joining an app. |
-| hkapo | `heroku apps:open` | Open the app in a web browser. |
-| hkapq | `heroku apps:leave` | Remove yourself from a team app. |
-| hkapr | `heroku apps:rename` | Rename an app. |
-| hkaps | `heroku apps:stacks` | Show the list of available stacks. |
-| hkapss | `heroku apps:stacks:set` | Set the stack of an app. |
-| hkapt | `heroku apps:transfer` | Transfer applications to another user or team. |
-| hkapulck | `heroku apps:unlock` | unlock an app so any team member can join. |
+| hkapc | `heroku apps:create` | Crée une application Heroku |
+| hkape | `heroku apps:errors` | Affiche les erreurs de l'application |
+| hkapfav | `heroku apps:favorites` | Liste les applications favorites |
+| hkapfava | `heroku apps:favorites:add` | Ajoute une application aux favoris |
+| hkapunfav| `heroku apps:favorites:remove`| Supprime une application des favoris |
+| hkapi | `heroku apps:info` | Affiche les informations de l'application |
+| hkapj | `heroku apps:join` | Rejoint une application |
+| hkapk | `heroku apps:destroy` | Détruit une application |
+| hkapl | `heroku apps` | Liste les applications |
+| hkaplk | `heroku apps:lock` | Verrouille une application |
+| hkapo | `heroku apps:open` | Ouvre l'application dans le navigateur |
+| hkapq | `heroku apps:leave` | Quitte une application |
+| hkapr | `heroku apps:rename` | Renomme une application |
+| hkaps | `heroku apps:stacks` | Liste les stacks disponibles |
+| hkapss | `heroku apps:stacks:set` | Change la stack de l'application |
+| hkapt | `heroku apps:transfer` | Transfère une application |
+| hkapulck | `heroku apps:unlock` | Déverrouille une application |
 
-## Heroku Auth 2fa aliases
+### Les alias 2FA (Authentification à deux facteurs) Heroku
 
-| Alias | Command | Description |
+| Alias | Commande | Description |
 | ----- | ----- | ----- |
-| hk2fa | `heroku auth:whoami` | Display the current logged in user. |
-| hk2fad | `heroku auth:2fa:disable`| Disables 2fa on account. |
-| hk2fain | `heroku auth:login` | Login with your Heroku credentials. |
-| hk2faout | `heroku auth:logout` | Clears local login credentials and invalidates API session. |
-| hk2fas | `heroku auth:2fa` | Check 2fa status. |
-| hk2fat | `heroku auth:token` | Outputs current CLI authentication token. |
+| hk2fa | `heroku auth:whoami` | Affiche les informations de l'utilisateur |
+| hk2fad | `heroku auth:2fa:disable`| Désactive l'authentification à deux facteurs |
+| hk2fain | `heroku auth:login` | Connecte l'utilisateur à Heroku |
+| hk2faout | `heroku auth:logout` | Déconnecte l'utilisateur de Heroku |
+| hk2fas | `heroku auth:2fa` | Active l'authentification à deux facteurs |
+| hk2fat | `heroku auth:token` | Affiche le token de l'utilisateur |
 
-## Heroku Authorizations aliases
+### Les alias d'authentification Heroku
 
-| Alias | Command | Description |
+| Alias | Commande | Description |
 | ----- | ----- | ----- |
-| hkauc | `heroku authorizations:create`| Create a new OAuth authorization. |
-| hkaui | `heroku authorizations:info` | Show an existing OAuth authorization. |
-| hkaul | `heroku authorizations` | List OAuth authorizations. |
-| hkaur | `heroku authorizations:revoke` | Revoke OAuth authorization. |
-| hkauro| `heroku authorizations:rotate` | Updates an OAuth authorization token. |
-| hkauu | `heroku authorizations:update` | Updates an OAuth authorization. |
+| hkauc | `heroku authorizations:create`| Crée une autorisation |
+| hkaui | `heroku authorizations:info` | Affiche les informations d'une autorisation |
+| hkaul | `heroku authorizations` | Liste les autorisations |
+| hkaur | `heroku authorizations:revoke` | Révoque une autorisation |
+| hkauro| `heroku authorizations:rotate` | Révoque toutes les autorisations |
+| hkauu | `heroku authorizations:update` | Met à jour une autorisation |
 
-## Heroku Build packs aliases
+### Les alias de buildpack Heroku
 
-| Alias | Command | Description |
+| Alias | Commande | Description |
 | ----- | ----- | ----- |
-| hkbpac | `heroku autocomplete` | Display autocomplete installation instructions. |
-| hkbpad | `heroku buildpacks:add` | Add new app build-pack, inserting into list of build-packs if necessary. |
-| hkbpcl | `heroku buildpacks:clear` | Clear all build-packs set on the app. |
-| hkbpi | `heroku buildpacks:info` | Fetch info about a build-pack. |
-| hkbpl | `heroku buildpacks` | Display the build-packs for an app. |
-| hkbpr | `heroku buildpacks:remove` | Remove a build-pack set on the app. |
-| hkbps | `heroku buildpacks:search` | Search for build-packs. |
-| hkbpv | `heroku buildpacks:versions`| List versions of a build-pack. |
+| hkbpac | `heroku autocomplete` | Active l'autocomplétion |
+| hkbpad | `heroku buildpacks:add` | Ajoute un buildpack |
+| hkbpcl | `heroku buildpacks:clear` | Supprime tous les buildpacks |
+| hkbpi | `heroku buildpacks:info` | Affiche les informations du buildpack |
+| hkbpl | `heroku buildpacks` | Liste les buildpacks |
+| hkbpr | `heroku buildpacks:remove` | Supprime un buildpack |
+| hkbps | `heroku buildpacks:search` | Recherche un buildpack |
+| hkbpv | `heroku buildpacks:versions`| Liste les versions d'un buildpack |
 
-## Heroku Certs aliases
+### Les alias certificats SSL Heroku
 
-| Alias | Command | Description |
+| Alias | Commande | Description |
 | ----- | ----- | ----- |
-| hkca | `heroku certs:auto` | Show ACM status for an app. |
-| hkcad | `heroku certs:add` | Add an SSL certificate to an app. |
-| hkcae | `heroku certs:auto:enable` | Enable ACM status for an app. |
-| hkcak | `heroku certs:auto:disable` | Disable ACM for an app. |
-| hkcar | `heroku certs:auto:refresh` | Refresh ACM for an app. |
-| hkcc | `heroku certs:chain` | Print an ordered & complete chain for a certificate. |
-| hkcg | `heroku certs:generate` | Generate a key and a CSR or self-signed certificate. |
-| hkci | `heroku certs:info` | Show certificate information for an SSL certificate. |
-| hkck | `heroku certs:key` | Print the correct key for the given certificate. |
-| hkcl | `heroku certs` | List SSL certificates for an app. |
-| hkcr | `heroku certs:remove` | Remove an SSL certificate from an app. |
-| hkcu | `heroku certs:update` | Update an SSL certificate on an app. |
+| hkca | `heroku certs:auto` | Active le renouvellement automatique des certificats SSL |
+| hkcad | `heroku certs:add` | Ajoute un certificat SSL |
+| hkcae | `heroku certs:auto:enable` | Active le renouvellement automatique des certificats SSL |
+| hkcak | `heroku certs:auto:disable` | Désactive le renouvellement automatique des certificats SSL |
+| hkcar | `heroku certs:auto:refresh` | Force le renouvellement des certificats SSL |
+| hkcc | `heroku certs:chain` | Affiche la chaîne de certificats |
+| hkcg | `heroku certs:generate` | Génère un certificat SSL |
+| hkci | `heroku certs:info` | Affiche les informations d'un certificat SSL |
+| hkck | `heroku certs:key` | Affiche la clé privée d'un certificat SSL |
+| hkcl | `heroku certs` | Liste les certificats SSL |
+| hkcr | `heroku certs:remove` | Supprime un certificat SSL |
+| hkcu | `heroku certs:update` | Met à jour un certificat SSL |
 
-## Heroku ci aliases
+### Les alias lignes de commande Heroku
 
-| Alias | Command | Description |
+| Alias | Commande | Description |
 | ----- | ----- | ----- |
-| hkcicg | `heroku ci:config:get` | Get a CI config var. |
-| hkcics | `heroku ci:config:set` | Set CI config vars. |
-| hkcicu | `heroku ci:config:unset` | Unset CI config vars. |
-| hkcicv | `ci:config` | Display CI config vars. |
-| hkcid | `heroku ci:debug` | Opens an interactive test debugging session with the contents of the current directory. |
-| hkcie | `heroku ci:last` | Looks for the most recent run and returns the output of that run. |
-| hkcii | `heroku ci:info` | Show the status of a specific test run. |
-| hkcil | `heroku ci` | Display the most recent CI runs for the given pipeline. |
-| hkcim | `heroku ci:migrate-manifest` | `app-ci.json` is deprecated. Run this command to migrate to app.json with an environments key. |
-| hkcio | `heroku ci:open` | Open the Dashboard version of Heroku CI. |
-| hkcir | `heroku ci:run` | Run tests against current directory. |
-| hkcir2 | `heroku ci:rerun` | Rerun tests against current directory. |
+| hkcicg | `heroku ci:config:get` | Affiche la configuration de l'environnement de test |
+| hkcics | `heroku ci:config:set` | Définit la configuration de l'environnement de test |
+| hkcicu | `heroku ci:config:unset` | Supprime la configuration de l'environnement de test |
+| hkcicv | `ci:config` | Affiche la configuration de l'environnement de test |
+| hkcid | `heroku ci:debug` | Démarre un shell interactif pour déboguer un build |
+| hkcie | `heroku ci:last` | Affiche les informations du dernier build |
+| hkcii | `heroku ci:info` | Affiche les informations d'un build |
+| hkcil | `heroku ci` | Liste les builds |
+| hkcim | `heroku ci:migrate-manifest` | Migrate un manifeste de build |
+| hkcio | `heroku ci:open` | Ouvre le build dans le navigateur |
+| hkcir | `heroku ci:run` | Exécute une commande dans un environnement de test |
+| hkcir2 | `heroku ci:rerun` | Exécute une commande dans un environnement de test |
 
-## Heroku config aliases
+### Les alias clients Heroku
 
-| Alias | Command | Description |
+| Alias | Commande | Description |
 | ----- | ----- | ----- |
-| hkclc | `heroku clients:create` | Create a new OAuth client. |
-| hkcli | `heroku clients:info` | Show details of an oauth client. |
-| hkclk | `heroku clients:destroy`| Delete client by ID. |
-| hkcll | `heroku clients` | List your OAuth clients. |
-| hkcls | `heroku clients:rotate` | Rotate OAuth client secret. |
-| hkclu | `heroku clients:update` | Update OAuth client. |
+| hkclc | `heroku clients:create` | Crée un client |
+| hkcli | `heroku clients:info` | Affiche les informations d'un client |
+| hkclk | `heroku clients:destroy`| Supprime un client |
+| hkcll | `heroku clients` | Liste les clients |
+| hkcls | `heroku clients:rotate` | Révoque tous les clients |
+| hkclu | `heroku clients:update` | Met à jour un client |
 
-## Heroku Configuration aliases
+### Les alias de configuration Heroku
 
-| Alias | Command | Description |
+| Alias | Commande | Description |
 | ----- | ----- | ----- |
-| hkcfe | `heroku config:edit` | Interactively edit config vars. |
-| hkcfg | `heroku config:get` | Display a single config value for an app. |
-| hkcfs | `heroku config:set` | Set one or more config vars. |
-| hkcfu | `heroku config:unset` | Unset one or more config vars. |
-| hkcfv | `heroku config` | Display the config vars for an app. |
+| hkcfe | `heroku config:edit` | Édite la configuration |
+| hkcfg | `heroku config:get` | Affiche la valeur d'une variable d'environnement |
+| hkcfs | `heroku config:set` | Définit une variable d'environnement |
+| hkcfu | `heroku config:unset` | Supprime une variable d'environnement |
+| hkcfv | `heroku config` | Affiche la configuration |
 
-## Heroku Container aliases
+### Les alias conteneurs Heroku
 
-| Alias | Command | Description |
+| Alias | Commande | Description |
 | ----- | ----- | ----- |
-| hkct | `heroku container` | Use containers to build and deploy Heroku apps. |
-| hkctin | `heroku container:login` | Log in to Heroku Container Registry. |
-| hkctout | `heroku container:logout` | Log out from Heroku Container Registry. |
-| hkctpull | `heroku container:pull` | Pulls an image from an app's process type. |
-| hkctpush | `heroku container:push` | Builds, then pushes Docker images to deploy your Heroku app. |
-| hkctrelease | `heroku container:release`| Releases previously pushed Docker images to your Heroku app. |
-| hkctrm | `heroku container:rm` | Remove the process type from your app. |
-| hkctrun | `heroku container:run` | Builds, then runs the docker image locally. |
+| hkct | `heroku container` | Affiche les commandes de conteneurs |
+| hkctin | `heroku container:login` | Connecte le client à un registre de conteneurs |
+| hkctout | `heroku container:logout` | Déconnecte le client d'un registre de conteneurs |
+| hkctpull | `heroku container:pull` | Télécharge une image de conteneur |
+| hkctpush | `heroku container:push` | Publie une image de conteneur |
+| hkctrelease | `heroku container:release`| Publie une release de conteneur |
+| hkctrm | `heroku container:rm` | Supprime une image de conteneur |
+| hkctrun | `heroku container:run` | Exécute une commande dans un conteneur |
 
-## Heroku Domains aliases
+### Les alias domaines Heroku
 
-| Alias | Command | Description |
+| Alias | Commande | Description |
 | ----- | ----- | ----- |
-| hkdo | `heroku domains` | List domains for an app. |
-| hkdoa | `heroku domains:add` | Add a domain to an app. |
-| hkdoc | `heroku domains:clear` | Remove all domains from an app. |
-| hkdoi | `heroku domains:info` | Show detailed information for a domain on an app. |
-| hkdor | `heroku domains:remove` | Remove a domain from an app. |
-| hkdou | `heroku domains:update` | Update a domain to use a different SSL certificate on an app. |
-| hkdow | `heroku domains:wait` | Wait for domain to be active for an app. |
+| hkdo | `heroku domains` | Liste les domaines |
+| hkdoa | `heroku domains:add` | Ajoute un domaine |
+| hkdoc | `heroku domains:clear` | Supprime tous les domaines |
+| hkdoi | `heroku domains:info` | Affiche les informations d'un domaine |
+| hkdor | `heroku domains:remove` | Supprime un domaine |
+| hkdou | `heroku domains:update` | Met à jour un domaine |
+| hkdow | `heroku domains:wait` | Attends que le domaine soit résolu |
 
-## Heroku Drains aliases
+### Les alias drains Heroku
 
-| Alias | Command | Description |
+| Alias | Commande | Description |
 | ----- | ----- | ----- |
-| hkdr | `heroku drains` | Display the log drains of an app. |
-| hkdra | `heroku drains:add` | Adds a log drain to an app. |
-| hkdrr | `heroku drains:remove` | Removes a log drain from an app. |
+| hkdr | `heroku drains` | Liste les drains |
+| hkdra | `heroku drains:add` | Ajoute un drain |
+| hkdrr | `heroku drains:remove` | Supprime un drain |
 
-## Heroku Dyno aliases
+### Les alias dynos Heroku
 
-| Alias | Command | Description |
+| Alias | Commande | Description |
 | ----- | ----- | ----- |
-| hkdyk | `heroku dyno:kill` | Stop app dyno. |
-| hkdyrz | `heroku dyno:resize` | Manage dyno sizes. |
-| hkdyrs | `heroku dyno:restart` | Restart app dynos. |
-| hkdysc | `heroku dyno:scale` | Scale dyno quantity up or down. |
-| hkdyst | `heroku dyno:stop` | Stop app dyno. |
+| hkdyk | `heroku dyno:kill` | Arrête un dyno |
+| hkdyrz | `heroku dyno:resize` | Redimensionne un dyno |
+| hkdyrs | `heroku dyno:restart` | Redémarre un dyno |
+| hkdysc | `heroku dyno:scale` | Redimensionne les dynos |
+| hkdyst | `heroku dyno:stop` | Arrête un dyno |
 
-## Heroku Features aliases
+### Les alias de fonctionnalités Heroku
 
-| Alias | Command | Description |
+| Alias | Commande | Description |
 | ----- | ----- | ----- |
-| hkfeat | `heroku features` | List available app features. |
-| hkfeatd | `heroku features:disable` | Disables an app feature. |
-| hkfeate | `heroku features:enable`  | Enables an app feature. |
-| hkfeati | `heroku features:info` | Display information about a feature. |
+| hkfeat | `heroku features` | Liste les fonctionnalités |
+| hkfeatd | `heroku features:disable` | Désactive une fonctionnalité |
+| hkfeate | `heroku features:enable`  | Active une fonctionnalité |
+| hkfeati | `heroku features:info` | Affiche les informations d'une fonctionnalité |
 
-## Heroku Git aliases
+### Les alias Git Heroku
 
-| Alias | Command | Description |
+| Alias | Commande | Description |
 | ----- | ----- | ----- |
-| hkgitc | `heroku git:clone` | Clones a heroku app to your local machine at DIRECTORY (defaults to app name). |
-| hkgitr | `heroku git:remote` | Adds a git remote to an app repo. |
+| hkgitc | `heroku git:clone` | Clone un dépôt Git |
+| hkgitr | `heroku git:remote` | Ajoute un remote Git |
 
-## Heroku Keys aliases
+### Les alias de clés Heroku
 
-| Alias | Command | Description |
+| Alias | Commande | Description |
 | ----- | ----- | ----- |
-| hkk | `heroku keys` | Display your SSH keys. |
-| hkk:a | `heroku keys:add` | Add an SSH key for a user. |
-| hkk:cl | `heroku keys:clear` | Remove all SSH keys for current user. |
-| hkk:r | `heroku keys:remove`| Remove an SSH key from the user. |
+| hkk | `heroku keys` | Liste les clés |
+| hkk:a | `heroku keys:add` | Ajoute une clé |
+| hkk:cl | `heroku keys:clear` | Supprime toutes les clés |
+| hkk:r | `heroku keys:remove`| Supprime une clé |
 
-## Heroku Labs aliases
+### Les alias labs Heroku
 
-| Alias | Command | Description |
+| Alias | Commande | Description |
 | ----- | ----- | ----- |
-| hklab | `heroku labs` | List experimental features. |
-| hklab:d | `heroku labs:disable`| Disables an experimental feature. |
-| hklab:e | `heroku labs:enable` | Enables an experimental feature. |
-| hklab:i | `heroku labs:info` | Show feature info. |
+| hklab | `heroku labs` | Liste les fonctionnalités expérimentales |
+| hklab:d | `heroku labs:disable`| Désactive une fonctionnalité expérimentale |
+| hklab:e | `heroku labs:enable` | Active une fonctionnalité expérimentale |
+| hklab:i | `heroku labs:info` | Affiche les informations d'une fonctionnalité expérimentale |
 
-## Heroku Local aliases
+### Les alias local Heroku
 
-| Alias | Command | Description |
+| Alias | Commande | Description |
 | ----- | ----- | ----- |
-| hkloc | `heroku local` | Run heroku app locally. |
-| hklocr | `heroku local:run` | Run a one-off command. |
-| hklocv | `heroku local:version`| Display node-foreman version. |
-| hkloclck | `heroku lock` | Prevent team members from joining an app. |
+| hkloc | `heroku local` | Exécute l'application locale |
+| hklocr | `heroku local:run` | Exécute une commande locale |
+| hklocv | `heroku local:version`| Affiche la version locale |
+| hkloclck | `heroku lock` | Verrouille une application |
 
-## Heroku Maintenance aliases
+### Les alias de maintenance Heroku
 
-| Alias | Command | Description |
+| Alias | Commande | Description |
 | ----- | ----- | ----- |
-| hkmt | `heroku maintenance` | Display the current maintenance status of app. |
-| hkmtoff | `heroku maintenance:off` | take the app out of maintenance mode. |
-| hkmton | `heroku maintenance:on` | Put the app into maintenance mode. |
+| hkmt | `heroku maintenance` | Affiche l'état de maintenance |
+| hkmtoff | `heroku maintenance:off` | Désactive la maintenance |
+| hkmton | `heroku maintenance:on` | Active la maintenance |
 
-## Heroku Members aliases
+### Les alias membres Heroku
 
-| Alias | Command | Description |
+| Alias | Commande | Description |
 | ----- | ----- | ----- |
-| hkmb | `heroku members` | List members of a team. |
-| hkmba | `heroku members:add` | Adds a user to a team. |
-| hkmbr | `heroku members:remove` | Removes a user from a team. |
-| hkmbs | `heroku members:set` | Sets a members role in a team. |
+| hkmb | `heroku members` | Liste les membres |
+| hkmba | `heroku members:add` | Ajoute un membre |
+| hkmbr | `heroku members:remove` | Supprime un membre |
+| hkmbs | `heroku members:set` | Définit le rôle d'un membre |
 
-## Heroku Postgres aliases
+### Les alias PostgreSQL Heroku
 
-| Alias | Command | Description |
+| Alias | Commande | Description |
 | ----- | ----- | ----- |
-| hkpg | `heroku pg` | Show database information. |
-| hkpgb | `heroku pg:bloat`| Show table and index bloat in your database ordered by most wasteful. |
-| hkpgbk | `heroku pg:backups` | List database backups. |
-| hkpgbkcl | `heroku pg:backups:cancel` | Cancel an in-progress backup or restore (default newest). |
-| hkpgbkc | `heroku pg:backups:capture` | Capture a new backup. |
-| hkpgbkdl | `heroku pg:backups:delete` | Delete a backup. |
-| hkpgbkdw | `heroku pg:backups:download` | Downloads database backup. |
-| hkpgbki | `heroku pg:backups:info` | Get information about a specific backup. |
-| hkpgbkr | `heroku pg:backups:restore` | Restore a backup (default latest) to a database. |
-| hkpgbks | `heroku pg:backups:schedule` | Schedule daily backups for given database. |
-| hkpgbksh | `heroku pg:backups:schedules` | List backup schedule. |
-| hkpgbkurl | `heroku pg:backups:url` | Get secret but publicly accessible URL of a backup. |
-| hkpgbkk | `heroku pg:backups:unschedule` | Stop daily backups. |
-| hkpgblk | `heroku pg:blocking` | Display queries holding locks other queries are waiting to be released. |
-| hkpgc | `heroku pg:copy` | Copy all data from source db to target. |
-| hkpgcpa | `heroku pg:connection-pooling:attach` | Add an attachment to a database using connection pooling. |
-| hkpgcr | `heroku pg:credentials` | Show information on credentials in the database. |
-| hkpgcrc | `heroku pg:credentials:create` | Create credential within database. |
-| hkpgcrd | `heroku pg:credentials:destroy` | Destroy credential within database. |
-| hkpgcrr | `heroku pg:credentials:rotate` | Rotate the database credentials. |
-| hkpgcrrd | `heroku pg:credentials:repair-default` | Repair the permissions of the default credential within database. |
-| hkpgcrurl | `heroku pg:credentials:url` | Show information on a database credential. |
-| hkpgdg | `heroku pg:diagnose` | Run or view diagnostics report.|
-| hkpgi | `heroku pg:info` | Show database information. |
-| hkpgk | `heroku pg:kill` | Kill a query. |
-| hkpgka | `heroku pg:killall` | Terminates all connections for all credentials. |
-| hkpglks | `heroku pg:locks`| Display queries with active locks. |
-| hkpglnk | `heroku pg:links`| Lists all databases and information on link. |
-| hkpglnkc | `heroku pg:links:create` | Create a link between data stores. |
-| hkpglnkd | `heroku pg:links:destroy` | Destroys a link between data stores. |
-| hkpgmt | `heroku pg:maintenance` | Show current maintenance information. |
-| hkpgmtr | `heroku pg:maintenance:run` | Start maintenance. |
-| hkpgmtw | `heroku pg:maintenance:window` | Set weekly maintenance window. |
-| hkpgo | `heroku pg:outliers` | Show 10 queries that have longest execution time in aggregate.|
-| hkpgp | `heroku pg:promote` | Sets DATABASE as your DATABASE_URL. |
-| hkpgps | `heroku pg:ps` | View active queries with execution time. |
-| hkpgpsql | `heroku pg:psql` | Open a psql shell to the database.|
-| hkpgpull | `heroku pg:pull` | Pull Heroku database into local or remote database.|
-| hkpgpush | `heroku pg:push` | Push local or remote into Heroku database. |
-| hkpgreset | `heroku pg:reset`| Delete all data in DATABASE. |
-| hkpgset | `heroku pg:settings` | Show your current database settings. |
-| hkpgsetllw | `heroku pg:settings:log-lock-waits` | Controls whether a log message is produced when a session waits longer than the deadlock_timeout to acquire a lock.|
-| hkpgsetlmds | `heroku pg:settings:log-min-duration-statement` | The duration of each completed statement will be logged if the statement completes after the time specified by VALUE. |
-| hkpgsetlgs | `heroku pg:settings:log-statement` | `log_statement` controls which SQL statements are logged. |
-| hkpguf | `heroku pg:unfollow` | Stop a replica from following and make it a writeable database. |
-| hkpgup | `heroku pg:upgrade` | Unfollow a database and upgrade it to the latest stable PostgreSQL version. |
-| hkpgvs | `heroku pg:vacuum-stats` | Show dead rows and whether an automatic vacuum is expected to be triggered. |
-| hkpgww | `heroku pg:wait` | Blocks until database is available. |
+| hkpg | `heroku pg` | Affiche les commandes PostgreSQL |
+| hkpgb | `heroku pg:bloat`| Affiche les tables les plus encombrées |
+| hkpgbk | `heroku pg:backups` | Affiche les commandes de sauvegarde |
+| hkpgbkcl | `heroku pg:backups:cancel` | Annule une sauvegarde |
+| hkpgbkc | `heroku pg:backups:capture` | Capture une sauvegarde |
+| hkpgbkdl | `heroku pg:backups:delete` | Supprime une sauvegarde |
+| hkpgbkdw | `heroku pg:backups:download` | Télécharge une sauvegarde |
+| hkpgbki | `heroku pg:backups:info` | Affiche les informations d'une sauvegarde |
+| hkpgbkr | `heroku pg:backups:restore` | Restaure une sauvegarde |
+| hkpgbks | `heroku pg:backups:schedule` | Planifie une sauvegarde |
+| hkpgbksh | `heroku pg:backups:schedules` | Affiche les commandes de planification de sauvegarde |
+| hkpgbkurl | `heroku pg:backups:url` | Affiche l'URL d'une sauvegarde |
+| hkpgbkk | `heroku pg:backups:unschedule` | Annule la planification d'une sauvegarde |
+| hkpgblk | `heroku pg:blocking` | Affiche les requêtes bloquantes |
+| hkpgc | `heroku pg:copy` | Copie une base de données |
+| hkpgcpa | `heroku pg:connection-pooling:attach` | Attache un pool de connexions |
+| hkpgcr | `heroku pg:credentials` | Affiche les commandes de gestion des identifiants |
+| hkpgcrc | `heroku pg:credentials:create` | Crée un identifiant |
+| hkpgcrd | `heroku pg:credentials:destroy` | Supprime un identifiant |
+| hkpgcrr | `heroku pg:credentials:rotate` | Réinitialise un identifiant |
+| hkpgcrrd | `heroku pg:credentials:repair-default` | Répare l'identifiant par défaut |
+| hkpgcrurl | `heroku pg:credentials:url` | Affiche l'URL d'un identifiant |
+| hkpgdg | `heroku pg:diagnose` | Diagnostique une base de données |
+| hkpgi | `heroku pg:info` | Affiche les informations d'une base de données |
+| hkpgk | `heroku pg:kill` | Supprime une requête |
+| hkpgka | `heroku pg:killall` | Supprime toutes les requêtes |
+| hkpglks | `heroku pg:locks`| Affiche les verrous |
+| hkpglnk | `heroku pg:links`| Affiche les liens |
+| hkpglnkc | `heroku pg:links:create` | Crée un lien |
+| hkpglnkd | `heroku pg:links:destroy` | Supprime un lien |
+| hkpgmt | `heroku pg:maintenance` | Affiche les commandes de maintenance
+| hkpgmtr | `heroku pg:maintenance:run` | Exécute une maintenance |
+| hkpgmtw | `heroku pg:maintenance:window` | Affiche les commandes de fenêtre de maintenance |
+| hkpgo | `heroku pg:outliers` | Affiche les requêtes atypiques |
+| hkpgp | `heroku pg:promote` | Promouvoie une base de données |
+| hkpgps | `heroku pg:ps` | Affiche les requêtes en cours d'exécution |
+| hkpgpsql | `heroku pg:psql` | Exécute une requête SQL |
+| hkpgpull | `heroku pg:pull` | Télécharge une base de données |
+| hkpgpush | `heroku pg:push` | Publie une base de données |
+| hkpgreset | `heroku pg:reset`| Réinitialise une base de données |
+| hkpgset | `heroku pg:settings` | Affiche les commandes de paramètres |
+| hkpgsetllw | `heroku pg:settings:log-lock-waits` | Active l'enregistrement des verrous |
+| hkpgsetlmds | `heroku pg:settings:log-min-duration-statement` | Active l'enregistrement des requêtes |
+| hkpgsetlgs | `heroku pg:settings:log-statement` | Active l'enregistrement des requêtes |
+| hkpguf | `heroku pg:unfollow` | Arrête de suivre une base de données |
+| hkpgup | `heroku pg:upgrade` | Met à jour une base de données |
+| hkpgvs | `heroku pg:vacuum-stats` | Affiche les statistiques de vidage |
+| hkpgww | `heroku pg:wait` | Attend la disponibilité d'une base de données |
 
-## Heroku Pipelines aliases
+### Les alias de pipelines Heroku
 
-| Alias | Command | Description |
+| Alias | Commande | Description |
 | ----- | ----- | ----- |
-| hkpipe | `heroku pipelines` | List pipelines you have access to. |
-| hkpipea | `heroku pipelines:add` | Add this app to a pipeline. |
-| hkpipec | `heroku pipelines:create` | Create a new pipeline. |
-| hkpipect | `heroku pipelines:connect` | Connect a github repo to an existing pipeline. |
-| hkpipediff | `heroku pipelines:diff` | Compares the latest release of this app to its downstream app(s). |
-| hkpipei | `heroku pipelines:info` | Show list of apps in a pipeline.|
-| hkpipek | `heroku pipelines:destroy` | Destroy a pipeline. |
-| hkpipeo | `heroku pipelines:open` | Open a pipeline in dashboard. |
-| hkpipep | `heroku pipelines:promote` | Promote the latest release of this app to its downstream app(s). |
-| hkpiper | `heroku pipelines:remove` | Remove this app from its pipeline. |
-| hkpipern | `heroku pipelines:rename` | Rename a pipeline. |
-| hkpipes | `heroku pipelines:setup` | Bootstrap a new pipeline with common settings and create a production and staging app (requires a fully formed app.json in the repo). |
-| hkpipett | `heroku pipelines:transfer`| Transfer ownership of a pipeline. |
-| hkpipeu | `heroku pipelines:update` | Update the app's stage in a pipeline. |
+| hkpipe | `heroku pipelines` | Affiche les commandes de pipelines |
+| hkpipea | `heroku pipelines:add` | Ajoute une application à un pipeline |
+| hkpipec | `heroku pipelines:create` | Crée un pipeline |
+| hkpipect | `heroku pipelines:connect` | Connecte un pipeline à un dépôt |
+| hkpipediff | `heroku pipelines:diff` | Affiche les différences entre deux déploiements |
+| hkpipei | `heroku pipelines:info` | Affiche les informations d'un pipeline |
+| hkpipek | `heroku pipelines:destroy` | Supprime un pipeline |
+| hkpipeo | `heroku pipelines:open` | Ouvre un pipeline |
+| hkpipep | `heroku pipelines:promote` | Promouvoie une application |
+| hkpiper | `heroku pipelines:remove` | Supprime une application d'un pipeline |
+| hkpipern | `heroku pipelines:rename` | Renomme un pipeline |
+| hkpipes | `heroku pipelines:setup` | Configure un pipeline |
+| hkpipett | `heroku pipelines:transfer`| Transfère un pipeline |
+| hkpipeu | `heroku pipelines:update` | Met à jour un pipeline |
 
-## Heroku Plugins aliases
+### Les alias plugins Heroku
 
-| Alias | Command | Description |
+| Alias | Commande | Description |
 | ----- | ----- | ----- |
-| hkplugs | `heroku plugins` | List installed plugins. |
-| hkplugsi | `heroku plugins:install` | Installs a plugin into the CLI. |
-| hkplugslk | `heroku plugins:link` | Links a plugin into the CLI for development. |
-| hkplugsui | `heroku plugins:uninstall` | Removes a plugin from the CLI. |
-| hkplugsu | `heroku plugins:update` | Update installed plugins. |
+| hkplugs | `heroku plugins` | Affiche les commandes de plugins |
+| hkplugsi | `heroku plugins:install` | Installe un plugin |
+| hkplugslk | `heroku plugins:link` | Lie un plugin |
+| hkplugsui | `heroku plugins:uninstall` | Désinstalle un plugin |
+| hkplugsu | `heroku plugins:update` | Met à jour un plugin |
 
-## Heroku `ps` aliases
+### Les alias ps Heroku
 
-| Alias | Command | Description |
+| Alias | Commande | Description |
 | ----- | ----- | ----- |
-| hkps | `heroku ps` | List dynos for an app. |
-| hkpsad | `heroku ps:autoscale:disable` | Disable web dyno autoscaling. |
-| hkpsae | `heroku ps:autoscale:enable` | Enable web dyno autoscaling. |
-| hkpsc | `heroku ps:copy` | Copy a file from a dyno to the local filesystem. |
-| hkpse | `heroku ps:exec` | Create an SSH session to a dyno. |
-| hkpsf | `heroku ps:forward` | Forward traffic on a local port to a dyno. |
-| hkpsk | `heroku ps:kill` | Stop app dyno. |
-| hkpsr | `heroku ps:restart` | Restart app dynos. |
-| hkpsrs | `heroku ps:resize` | Manage dyno sizes. |
-| hkpss | `heroku ps:stop` | Stop app dyno. |
-| hkpssc | `heroku ps:scale` | Scale dyno quantity up or down. |
-| hkpssck | `heroku ps:socks` | Launch a SOCKS proxy into a dyno. |
-| hkpst | `heroku ps:type` | Manage dyno sizes. |
-| hkpsw | `heroku ps:wait` | Wait for all dynos to be running latest version after a release. |
+| hkps | `heroku ps` | Affiche les commandes de processus |
+| hkpsad | `heroku ps:autoscale:disable` | Désactive l'auto-échelle |
+| hkpsae | `heroku ps:autoscale:enable` | Active l'auto-échelle |
+| hkpsc | `heroku ps:copy` | Copie un processus |
+| hkpse | `heroku ps:exec` | Exécute une commande dans un processus |
+| hkpsf | `heroku ps:forward` | Transfère un port |
+| hkpsk | `heroku ps:kill` | Supprime un processus |
+| hkpsr | `heroku ps:restart` | Redémarre un processus |
+| hkpsrs | `heroku ps:resize` | Redimensionne un processus |
+| hkpss | `heroku ps:stop` | Arrête un processus |
+| hkpssc | `heroku ps:scale` | Redimensionne les processus |
+| hkpssck | `heroku ps:socks` | Crée un tunnel SOCKS |
+| hkpst | `heroku ps:type` | Modifie le type de processus |
+| hkpsw | `heroku ps:wait` | Attend la disponibilité d'un processus |
 
-## Heroku redis aliases
+### Les alias redis Heroku
 
-| Alias | Command | Description |
+| Alias | Commande | Description |
 | ----- | ----- | ----- |
-| hkred | `heroku redis` | Gets information about redis. |
-| hkredcli | `heroku redis:cli` | Opens a redis prompt. |
-| hkredcr | `heroku redis:credentials` | Display credentials information. |
-| hkredi | `heroku redis:info` | Gets information about redis. |
-| hkredkn | `heroku redis:keyspace-notifications` | Set the keyspace notifications configuration. |
-| hkredmm | `heroku redis:maxmemory` | Set the key eviction policy. |
-| hkredmt | `heroku redis:maintenance` | Manage maintenance windows. |
-| hkredp | `heroku redis:promote` | Sets DATABASE as your REDIS_URL. |
-| hkredsr | `heroku redis:stats-reset` | Reset all stats covered by RESETSTAT (<https://redis.io/commands/config-resetstat>). |
-| hkredt | `heroku redis:timeout` | Set the number of seconds to wait before killing idle connections. |
-| hkredw | `heroku redis:wait` | Wait for Redis instance to be available. |
+| hkred | `heroku redis` | Affiche les commandes Redis |
+| hkredcli | `heroku redis:cli` | Exécute une commande Redis |
+| hkredcr | `heroku redis:credentials` | Affiche les commandes de connexion |
+| hkredi | `heroku redis:info` | Affiche les informations d'une base Redis |
+| hkredkn | `heroku redis:keyspace-notifications` | Active les notifications de clés |
+| hkredmm | `heroku redis:maxmemory` | Modifie la taille maximale de la mémoire |
+| hkredmt | `heroku redis:maintenance` | Affiche les commandes de maintenance |
+| hkredp | `heroku redis:promote` | Promouvoie une base Redis |
+| hkredsr | `heroku redis:stats-reset` | Réinitialise les statistiques d'une base Redis |
+| hkredt | `heroku redis:timeout` | Modifie le délai d'expiration |
+| hkredw | `heroku redis:wait` | Attend la disponibilité d'une base Redis |
 
-## Heroku Releases aliases
+### Les alias releases Heroku
 
-| Alias | Command | Description |
+| Alias | Commande | Description |
 | ----- | ----- | ----- |
-| hkrel | `heroku releases` | Display the releases for an app.|
-| hkreli | `heroku releases:info` | View detailed information for a release. |
-| hkrelo | `heroku releases:output` | View the release command output. |
-| hkrelr | `heroku releases:rollback` | Rollback to a previous release. |
+| hkrel | `heroku releases` | Affiche les commandes de déploiements |
+| hkreli | `heroku releases:info` | Affiche les informations d'un déploiement |
+| hkrelo | `heroku releases:output` | Affiche la sortie d'un déploiement |
+| hkrelr | `heroku releases:rollback` | Annule un déploiement |
 
-## Heroku Spaces aliases
+### Les alias espace de travail Heroku
 
-| Alias | Command | Description |
+| Alias | Commande | Description |
 | ----- | ----- | ----- |
-| hkrvad | `heroku reviewapps:disable` | Disable review apps and/or settings on an existing pipeline. |
-| hkrvae | `heroku reviewapps:enable` | Enable review apps and/or settings on an existing pipeline. |
+| hkrvad | `heroku reviewapps:disable` | Désactive les applications de revue |
+| hkrvae | `heroku reviewapps:enable` | Active les applications de revue |
 
-## Heroku Run aliases
+### Les alias run Heroku
 
-| Alias | Command | Description |
+| Alias | Commande | Description |
 | ----- | ----- | ----- |
-| hkrun | `heroku run` | Run a one-off process inside a heroku dyno. |
-| hkrund | `heroku run:detached` | Run a detached dyno, where output is sent to your logs. |
+| hkrun | `heroku run` | Exécute une commande dans un processus |
+| hkrund | `heroku run:detached` | Exécute une commande dans un processus détaché |
 
-## Heroku Sessions aliases
+### Les alias sessions Heroku
 
-| Alias | Command | Description |
+| Alias | Commande | Description |
 | ----- | ----- | ----- |
-| hksessions | `heroku sessions` | List your OAuth sessions. |
-| hksessionsd | `heroku sessions:destroy` | Delete (logout) OAuth session by ID. |
+| hksessions | `heroku sessions` | Affiche les commandes de sessions |
+| hksessionsd | `heroku sessions:destroy` | Supprime une session |
 
-## Heroku Spaces aliases
+### Les alias espaces de stockage Heroku
 
-| Alias | Command | Description |
+| Alias | Commande | Description |
 | ----- | ----- | ----- |
-| hksp | `heroku spaces` | List available spaces. |
-| hkspc | `heroku spaces:create` | Create a new space. |
-| hkspd | `heroku spaces:destroy`| Destroy a space. |
-| hkspi | `heroku spaces:info` | Show info about a space. |
-| hksppi | `heroku spaces:peering:info` | Display the information necessary to initiate a peering connection. |
-| hkspp | `heroku spaces:peerings` | List peering connections for a space. |
-| hksppa | `heroku spaces:peerings:accept` | Accepts a pending peering request for a private space. |
-| hksppd | `heroku spaces:peerings:destroy` | Destroys an active peering connection in a private space. |
-| hkspps | `heroku spaces:ps` | List dynos for a space. |
-| hkspr | `heroku spaces:rename` | Renames a space. |
-| hksptop | `heroku spaces:topology` | Show space topology. |
-| hkspt | `heroku spaces:transfer` | Transfer a space to another team. |
-| hkspconf | `heroku spaces:vpn:config` | Display the configuration information for VPN. |
-| hkspvc | `heroku spaces:vpn:connect` | Create VPN. |
-| hkspvcs | `heroku spaces:vpn:connections` | List the VPN Connections for a space. |
-| hkspvk | `heroku spaces:vpn:destroy` | Destroys VPN in a private space. |
-| hkspvi | `heroku spaces:vpn:info` | Display the information for VPN. |
-| hkspvu | `heroku spaces:vpn:update` | Update VPN. |
-| hkspvw | `heroku spaces:vpn:wait` | Wait for VPN Connection to be created. |
-| hkspw | `heroku spaces:wait` | Wait for a space to be created. |
+| hksp | `heroku spaces` | Affiche les commandes d'espaces de stockage |
+| hkspc | `heroku spaces:create` | Crée un espace de stockage |
+| hkspd | `heroku spaces:destroy`| Supprime un espace de stockage |
+| hkspi | `heroku spaces:info` | Affiche les informations d'un espace de stockage |
+| hksppi | `heroku spaces:peering:info` | Affiche les informations d'un peering |
+| hkspp | `heroku spaces:peerings` | Affiche les commandes de peering |
+| hksppa | `heroku spaces:peerings:accept` | Accepte un peering |
+| hksppd | `heroku spaces:peerings:destroy` | Supprime un peering |
+| hkspps | `heroku spaces:ps` | Affiche les commandes de processus |
+| hkspr | `heroku spaces:rename` | Renomme un espace de stockage |
+| hksptop | `heroku spaces:topology` | Affiche les commandes de topologie |
+| hkspt | `heroku spaces:transfer` | Transfère un espace de stockage |
+| hkspconf | `heroku spaces:vpn:config` | Affiche les commandes de configuration VPN |
+| hkspvc | `heroku spaces:vpn:connect` | Connecte un espace de stockage à un VPN |
+| hkspvcs | `heroku spaces:vpn:connections` | Affiche les commandes de connexion VPN |
+| hkspvk | `heroku spaces:vpn:destroy` | Supprime une connexion VPN |
+| hkspvi | `heroku spaces:vpn:info` | Affiche les informations d'une connexion VPN |
+| hkspvu | `heroku spaces:vpn:update` | Met à jour une connexion VPN |
+| hkspvw | `heroku spaces:vpn:wait` | Attend la disponibilité d'une connexion VPN |
+| hkspw | `heroku spaces:wait` | Attend la disponibilité d'un espace de stockage |
 
-## Heroku Webhooks aliases
+### Les alias webhooks Heroku
 
-| Alias | Command | Description |
+| Alias | Commande | Description |
 | ----- | ----- | ----- |
-| hkwh | `heroku webhooks`| list webhooks on an app. |
-| hkwha | `heroku webhooks:add` | add a webhook to an app. |
-| hkwhdv | `heroku webhooks:deliveries` | list webhook deliveries on an app. |
-| hkwhdvi | `heroku webhooks:deliveries:info`| info for a webhook event on an app. |
-| hkwhev | `heroku webhooks:events` | list webhook events on an app. |
-| hkwhevi | `heroku webhooks:events:info` | info for a webhook event on an app. |
-| hkwhi | `heroku webhooks:info` | info for a webhook on an app. |
-| hkwhr | `heroku webhooks:remove` | removes a webhook from an app. |
-| hkwhu | `heroku webhooks:update` | updates a webhook in an app. |
+| hkwh | `heroku webhooks`| Affiche les commandes de webhooks |
+| hkwha | `heroku webhooks:add` | Ajoute un webhook |
+| hkwhdv | `heroku webhooks:deliveries` | Affiche les commandes de livraisons |
+| hkwhdvi | `heroku webhooks:deliveries:info`| Affiche les informations d'une livraison |
+| hkwhev | `heroku webhooks:events` | Affiche les commandes d'événements |
+| hkwhevi | `heroku webhooks:events:info` | Affiche les informations d'un événement |
+| hkwhi | `heroku webhooks:info` | Affiche les informations d'un webhook |
+| hkwhr | `heroku webhooks:remove` | Supprime un webhook |
+| hkwhu | `heroku webhooks:update` | Met à jour un webhook |

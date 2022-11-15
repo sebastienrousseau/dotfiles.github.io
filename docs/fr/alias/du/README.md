@@ -6,7 +6,7 @@ permalink: /aliases/du/
 
 meta:
   - name: keywords
-    content: alias, du, espace disque, taille, taille des fichiers, taille des dossiers, dotfiles, dotfiles-fr
+    content: alias, du, espace disque, taille, taille des fichiers, taille des dossiers, dotfiles
   - name: twitter:card
     content: Les alias du sont des alias de la commande `du`. Ils sont utilisés pour afficher l'espace disque utilisé par les fichiers et les dossiers.
   - name: twitter:description
@@ -33,7 +33,7 @@ Le [du](https://en.wikipedia.org/wiki/Du_(Unix)) (disk usage) est un
 outil de ligne de commande qui permet de voir l'espace disque utilisé par les
 fichiers et les dossiers.
 
-## Raccourcis
+## Raccourcis du
 
 | Alias | Command | Description |
 | ----- | ----- | ----- |

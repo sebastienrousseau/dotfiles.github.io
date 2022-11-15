@@ -5,6 +5,8 @@ metaTitle: Les alias par défaut - Dotfiles (FR)
 permalink: /aliases/default/
 
 meta:
+  - name: keywords
+    content: aliases, défaut, raccourcis, shell, terminal
   - name: twitter:card
     content: Les alias par défaut sont des alias qui ne sont pas spécifiques à une ligne de commande spécifique. Ce sont des alias courants qui sont utilisés dans de nombreux contextes différents et qui sont répertoriés dans cette section pour des raisons de commodité.
   - name: twitter:description
@@ -31,7 +33,7 @@ commande particulière. Ils sont utilisés dans de nombreux contextes et
 répertoriés dans cette section pour des raisons de commodité. Ils sont classés
 par ordre alphabétique pour faciliter leur utilisation.
 
-## Raccourcis
+## Raccourcis par défaut
 
 | Alias | Command | Description |
 | ----- | ----- | ----- |

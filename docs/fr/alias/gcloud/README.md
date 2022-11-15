@@ -1,29 +1,29 @@
 ---
-description: Les alias gcloud fournissent des raccourcis pour les commandes CLI de Google Cloud.
+description: Les alias GCloud fournissent des raccourcis pour les commandes CLI de Google Cloud.
 lang: fr-FR
-metaTitle: Les alias gcloud - Dotfiles (FR)
+metaTitle: Les alias GCloud - Dotfiles (FR)
 permalink: /aliases/gcloud/
 
 meta:
   - name: keywords
     content: aliases, gcloud, googlecloud, google, cloud, sdk, command line, cli, bash, configuration, dotfiles, linux, macos, shell, windows
   - name: twitter:card
-    content: Les alias gcloud fournissent des raccourcis pour les commandes CLI de Google Cloud.
+    content: Les alias GCloud fournissent des raccourcis pour les commandes CLI de Google Cloud.
   - name: twitter:description
-    content: Les alias gcloud fournissent des raccourcis pour les commandes CLI de Google Cloud.
+    content: Les alias GCloud fournissent des raccourcis pour les commandes CLI de Google Cloud.
   - name: twitter:title
-    content: Les alias gcloud - Dotfiles (FR)
+    content: Les alias GCloud - Dotfiles (FR)
   - name: og:title
-    content: Les alias gcloud - Dotfiles (FR)
+    content: Les alias GCloud - Dotfiles (FR)
   - name: og:description
-    content: Les alias gcloud fournissent des raccourcis pour les commandes CLI de Google Cloud.
+    content: Les alias GCloud fournissent des raccourcis pour les commandes CLI de Google Cloud.
   - name: og:image:alt
     content: Les Dotfiles - Conçus pour s'adapter à votre vie de shell
   - name: og:locale
     content: fr_FR
 ---
 
-# Les alias gcloud
+# Les alias GCloud
 
 Le fichier `gcloud.aliases.bash` contient des alias pour les commandes du
 [Google Cloud CLI][gcloud]. Ils sont utilisés pour effectuer des tâches
@@ -32,7 +32,7 @@ courantes à partir de la ligne de commande.
 Google Cloud CLI est un ensemble d'outils permettant de créer et de gérer les
 ressources Google Cloud.
 
-## Raccourcis
+## Raccourcis GCloud
 
 ### Commandes de base
 

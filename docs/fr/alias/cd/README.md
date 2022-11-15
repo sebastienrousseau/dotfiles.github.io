@@ -6,7 +6,7 @@ permalink: /alias/cd/
 
 meta:
   - name: keywords
-    content: alias, app, bash, cd, cd, cod, des, dot, dotfiles, dow, hom, linux, macos, mus, pic, shell, vid, windows
+    content: alias, app, bash, cd, cd, cod, des, dot, dotfiles, dow, hom, linux, macos, mus, pic, raccourcis, shell, vid, windows
   - name: twitter:card
     content: Les alias cd sont une collection d'alias qui vous permettent d'interagir avec l'outil de ligne de commande `cd` qui permet de changer le répertoire courant.
   - name: twitter:description
@@ -36,7 +36,7 @@ La commande `cd`, également connue sous le nom de chdir (changer de répertoire
 est une instruction de l'interpréteur de commandes utilisée pour changer le
 répertoire de travail actuel dans plusieurs systèmes d'exploitation.
 
-## Raccourcis
+## Raccourcis cd
 
 | Alias | Command | Description |
 | ----- | ----- | ----- |

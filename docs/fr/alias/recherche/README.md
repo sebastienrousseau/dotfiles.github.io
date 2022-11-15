@@ -6,7 +6,7 @@ permalink: /alias/recherche/
 
 meta:
   - name: keywords
-    content: alias, commandes, dossiers, dotfiles, dotfiles-fr, fd, fichiers, nom, recherche, trouver
+    content: alias, commandes, dossiers, dotfiles,  fd, fichiers, nom, recherche, trouver
   - name: twitter:card
     content: Les alias de recherche sont des commandes qui vous permettent de trouver des fichiers ou des dossiers en fonction de leur nom. Ils sont très utiles pour les utilisateurs qui passent beaucoup de temps à naviguer dans les dossiers.
   - name: twitter:description

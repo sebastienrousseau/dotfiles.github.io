@@ -6,7 +6,7 @@ permalink: /aliases/configuration/
 
 meta:
   - name: keywords
-    content: alias, configuration, config, dotfiles, dotfiles-fr
+    content: alias, config, configuration, dotfiles, raccourcis, shell, terminal
   - name: twitter:card
     content: Les alias de configuration sont des alias pour ouvrir les fichiers de configuration depuis la console.Ils sont utilisés pour modifier les paramètres de votre shell et de vos applications.
   - name: twitter:description
@@ -29,7 +29,7 @@ Le fichier `configuration.aliases.sh` crée des alias de raccourcis pour ouvrir
 les fichiers de configuration depuis la console. Ils sont utilisés pour modifier
 les paramètres de votre shell et de vos applications.
 
-## Raccourcis
+## Raccourcis de configuration
 
 | Alias | Commande | Description |
 | ----- | ----- | ----- |

@@ -35,7 +35,7 @@ réponses renvoyées par le(s) du ou des serveurs de noms qui ont été interrog
 Il est surtout utilisé pour résoudre les problèmes de DNS et pour trouver des
 informations sur un domaine, comme l'adresse IP.
 
-## Raccourcis
+## Raccourcis dig
 
 | Alias | Commande | Description |
 | ----- | ----- | ----- |

@@ -6,7 +6,7 @@ permalink: /alias/archives/
 
 meta:
   - name: keywords
-    content: 7-zip, aliases, archives, bash, bzip2, dotfiles, gzip, jar, linux, macos, shell, tar, unzip, windows, xz, zip, zstd
+    content: 7-zip, aliases, archives, bash, bzip2, dotfiles, gzip, jar, linux, macos, raccourcis, shell, tar, unzip, windows, xz, zip, zstd
   - name: twitter:card
     content: Les alias d'archivage sont capables de créer et de gérer des fichiers d'archives dans une variété de formats.
   - name: twitter:description
@@ -29,7 +29,7 @@ Le fichier `archives.aliases.sh` crée des alias de raccourcis utiles pour
 pouvoir archiver des fichiers et des répertoires. Les alias sont capables de
 créer et de gérer des fichiers d'archives dans une variété de formats.
 
-## Raccourcis
+## Raccourcis d'archivage
 
 ### 7-Zip
 

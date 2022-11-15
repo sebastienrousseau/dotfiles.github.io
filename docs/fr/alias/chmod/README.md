@@ -6,7 +6,7 @@ permalink: /aliases/chmod/
 
 meta:
   - name: keywords
-    content: alias, chmod, raccourcis, commandes, shell, bash, zsh, fish, permissions, fichiers, répertoires, droits, dossiers
+    content: alias, bash, chmod, commandes, dossiers, droits, fichiers, fish, permissions, raccourcis, répertoires, shell, zsh
   - name: twitter:card
     content: Les alias chmod sont des raccourcis pour la commande chmod. Ils vous permettent de changer les permissions d'un fichier ou d'un répertoire.
   - name: twitter:description
@@ -34,7 +34,7 @@ indiqué par l'opérande mode. Il peut également être utilisé pour modifier l
 listes de contrôle d'accès (ACL) associées aux fichiers répertoriés. (ACL)
 associées aux fichiers répertoriés.
 
-## Raccourcis
+## Raccourcis chmod
 
 | Alias | Commandes | Description |
 | ----- | ----- | ----- |

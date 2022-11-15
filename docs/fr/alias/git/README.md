@@ -6,7 +6,7 @@ permalink: /aliases/git/
 
 meta:
   - name: keywords
-    content: aliases, git,
+    content: aliases, bash, configuration, dotfiles, git, gitconfig, linux, macos, shell, windows, zsh
   - name: twitter:card
     content: Les alias git sont des raccourcis pour les commandes de git. Git est un système de contrôle de révision rapide et efficace.
   - name: twitter:description
@@ -32,7 +32,7 @@ Git est un système de contrôle de révision rapide, évolutif et distribué av
 jeu de commandes exceptionnellement riche qui fournit à la fois des opérations
 de haut niveau et un accès complet aux éléments internes.
 
-## Raccourcis
+## Raccourcis Git
 
 ### Travailler sur des changement en cours
 
