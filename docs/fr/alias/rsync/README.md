@@ -1,39 +1,39 @@
 ---
-description: The Rsync aliases are a collection of aliases that allow you to interact with the `rsync` command line tool. Rsync is a tool which synchronises files and directories between two locations.
-lang: en-GB
-metaTitle: The Rsync aliases - Dotfiles (UK)
+description: Les alias Rsync sont des alias qui vous permettent de simplifier l'utilisation de la commande Rsync.Rsync est une commande qui permet de synchroniser des fichiers et des répertoires entre des ordinateurs.
+lang: fr-FR
+metaTitle: Les alias Rsync - Dotfiles (FR)
 permalink: /aliases/rsync/
 
 meta:
   - name: keywords
-    content: aliases, rsync, linux, macos, shell, terminal, windows
+    content: alias, commandes, dotfiles, rsync, shell
   - name: twitter:card
-    content: The Rsync aliases are a collection of aliases that allow you to interact with the `rsync` command line tool. Rsync is a tool which synchronises files and directories between two locations.
+    content: Les alias Rsync sont des alias qui vous permettent de simplifier l'utilisation de la commande Rsync.Rsync est une commande qui permet de synchroniser des fichiers et des répertoires entre des ordinateurs.
   - name: twitter:description
-    content: The Rsync aliases are a collection of aliases that allow you to interact with the `rsync` command line tool. Rsync is a tool which synchronises files and directories between two locations.
+    content: Les alias Rsync sont des alias qui vous permettent de simplifier l'utilisation de la commande Rsync.Rsync est une commande qui permet de synchroniser des fichiers et des répertoires entre des ordinateurs.
   - name: twitter:title
-    content: The Rsync aliases - Dotfiles (UK)
+    content: Les alias Rsync - Dotfiles (FR)
   - name: og:title
-    content: The Rsync aliases - Dotfiles (UK)
+    content: Les alias Rsync - Dotfiles (FR)
   - name: og:description
-    content: The Rsync aliases are a collection of aliases that allow you to interact with the `rsync` command line tool. Rsync is a tool which synchronises files and directories between two locations.
+    content: Les alias Rsync sont des alias qui vous permettent de simplifier l'utilisation de la commande Rsync.Rsync est une commande qui permet de synchroniser des fichiers et des répertoires entre des ordinateurs.
   - name: og:image:alt
-    content: Dotfiles - Simply designed to fit your shell life
+    content: Les Dotfiles - Conçus pour s'adapter à votre vie de shell
   - name: og:locale
-    content: en_GB
+    content: fr_FR
 ---
 
-# Rsync aliases
+# Les alias Rsync
 
-The `rsync.aliases.sh` file creates helpful shortcut aliases for
-[rsync](https://en.wikipedia.org/wiki/Rsync).
+Le fichier `rsync.aliases.sh` crée des raccourcis utiles pour travailler avec
+les commandes [rsync](https://en.wikipedia.org/wiki/Rsync).
 
-## Rsync
+Rsync est une commande qui permet de synchroniser des fichiers et des
+répertoires entre des ordinateurs.
 
-[Rsync](https://en.wikipedia.org/wiki/Rsync) is a command that copies files and
-directories to another location.
+## Raccourcis Rsync
 
 | Alias | Command | Description |
 | ----- | ----- | ----- |
-| rs | `rsync -avz` | Rsync with verbose and progress. |
-| rsync | `rs` | Rsync with verbose and progress. |
+| rs | `rsync -avz` | Rsync avec des options par défaut |
+| rsync | `rs` | Rsync avec des options par défaut |

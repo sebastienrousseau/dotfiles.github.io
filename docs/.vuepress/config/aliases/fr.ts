@@ -23,7 +23,7 @@ export const alias = {
     ["/fr/alias/npm/", "Les alias NPM"],
     ["/fr/alias/pnpm/", "Les alias pnpm"],
     ["/fr/alias/ps/", "Les alias PS"],
-    // ["/fr/alias/rsync/", "Les alias rsync"],
+    ["/fr/alias/rsync/", "Les alias Rsync"],
     // ["/fr/alias/rust/", "Les alias rust"],
     // ["/fr/alias/subversion/", "Les alias subversion"],
     // ["/fr/alias/sudo/", "Les alias sudo"],
