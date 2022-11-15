@@ -23,7 +23,7 @@ meta:
     content: fr_FR
 ---
 
-# Heroku aliases
+# Les alias Heroku
 
 Le fichier `heroku.aliases.zsh` crée des raccourcis utiles pour de nombreuses
 commandes courantes de [Heroku](https://www.heroku.com/).

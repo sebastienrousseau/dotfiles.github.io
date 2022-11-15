@@ -14,7 +14,7 @@ export const alias = {
     ["/fr/alias/gcloud/", "Les alias GCloud"],
     ["/fr/alias/git/", "Les alias Git"],
     ["/fr/alias/gnu/", "Les alias GNU Coreutils"],
-    ["/fr/alias/heroku/", "Les alias heroku"],
+    ["/fr/alias/heroku/", "Les alias Heroku"],
     ["/fr/alias/mode-interactif/", "Les alias en mode interactif"],
     ["/fr/alias/jekyll/", "Les alias Jekyll"],
     ["/fr/alias/liste/", "Les alias de liste"],

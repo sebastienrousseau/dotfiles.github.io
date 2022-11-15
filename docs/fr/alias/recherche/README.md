@@ -39,7 +39,7 @@ et performe une recherche récursive dans le dossier courant.
 Nous avons décidé d'utiliser `fd` pour les alias de recherche car ils sont plus
 rapides et plus faciles à utiliser.
 
-## Raccourcis
+## Raccourcis de recherche
 
 | Alias | Commande | Description |
 | ----- | ----- | ----- |
