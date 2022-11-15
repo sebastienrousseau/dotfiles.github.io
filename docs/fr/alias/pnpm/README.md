@@ -1,73 +1,70 @@
 ---
-description: The PNpm aliases are a collection of aliases that allow you to interact with the `pnpm` command line tool. Pnpm is a fast, disk space efficient package manager.
-lang: en-GB
-metaTitle: The PNpm aliases - Dotfiles (UK)
+description: Les alias pnpm sont des alias qui vous permettent de simplifier l'utilisation de la commande pnpm. pnpm est une commande qui permet de gérer les paquets npm.
+lang: fr-FR
+metaTitle: Les alias pnpm - Dotfiles (FR)
 permalink: /aliases/pnpm/
 
 meta:
   - name: keywords
-    content: aliases, pnpm, package manager, node, npm, yarn, linux, macos, shell, terminal, windows
+    content: alias, commandes, dotfiles, npm, pnpm, pnpx, shell
   - name: twitter:card
-    content: The PNpm aliases are a collection of aliases that allow you to interact with the `pnpm` command line tool. Pnpm is a fast, disk space efficient package manager.
+    content: Les alias pnpm sont des alias qui vous permettent de simplifier l'utilisation de la commande pnpm. pnpm est une commande qui permet de gérer les paquets npm.
   - name: twitter:description
-    content: The PNpm aliases are a collection of aliases that allow you to interact with the `pnpm` command line tool. Pnpm is a fast, disk space efficient package manager.
+    content: Les alias pnpm sont des alias qui vous permettent de simplifier l'utilisation de la commande pnpm. pnpm est une commande qui permet de gérer les paquets npm.
   - name: twitter:title
-    content: The PNpm aliases - Dotfiles (UK)
+    content: Les alias pnpm - Dotfiles (FR)
   - name: og:title
-    content: The PNpm aliases - Dotfiles (UK)
+    content: Les alias pnpm - Dotfiles (FR)
   - name: og:description
-    content: The PNpm aliases are a collection of aliases that allow you to interact with the `pnpm` command line tool. Pnpm is a fast, disk space efficient package manager.
+    content: Les alias pnpm sont des alias qui vous permettent de simplifier l'utilisation de la commande pnpm. pnpm est une commande qui permet de gérer les paquets npm.
   - name: og:image:alt
-    content: Dotfiles - Simply designed to fit your shell life
+    content: Les Dotfiles - Conçus pour s'adapter à votre vie de shell
   - name: og:locale
-    content: en_GB
+    content: fr_FR
 ---
 
-# PNpm aliases
+# Les alias pnpm
 
-This `pnpm.aliases.zsh` file creates helpful shortcut aliases for many
-commonly used [PNpm](https://pnpm.io) commands.
+Le fichier `pnpm.aliases.zsh` crée des raccourcis utiles pour de nombreuses
+commandes [pnpm](https://pnpm.io) couramment utilisées.
 
-The PNpm aliases are a collection of aliases that allow you to interact with the
-`pnpm` command line tool. Pnpm is a fast, disk space efficient package manager.
+pnpm est une commande qui permet de gérer les paquets npm. pnpm est rapide et
+utilise peu d'espace disque.
 
-## PNpm
+## Raccourcis pnpm
 
-[PNpm](https://pnpm.io) is a package manager for JavaScript and Node.js. It
-is fast, disk space efficient, and reliable.
-
-| Alias | Command | Description |
+| Alias | Commande | Description |
 | ----- | ----- | ----- |
-| pna | `pnpm add` | Add a package to the project |
-| pnad | `pnpm add --save-dev` | Add a package to the project as a development dependency |
-| pnap | `pnpm add --save-peer` | Add a package to the project as a peer dependency |
-| pnau | `pnpm audit` | Audit the project for vulnerabilities |
-| pnb | `pnpm run build` | Build the project |
-| pnc | `pnpm create` | Create a new project |
-| pnd | `pnpm run dev` | Run the project in development mode |
-| pndoc | `pnpm run doc` | Generate documentation for the project |
-| pnga | `pnpm add --global` | Add a package to the global store |
-| pngls | `pnpm list --global` | List packages in the global store |
-| pngrm | `pnpm remove --global` | Remove a package from the global store |
-| pngu | `pnpm update --global` | Update a package in the global store |
-| pnh | `pnpm help` | Show help for a command |
-| pni | `pnpm init` | Initialize a new project |
-| pnin | `pnpm install` | Install the project's dependencies |
-| pnln | `pnpm run lint` | Runs `pnpm run lint` |
-| pnls | `pnpm list` | List packages in the project |
-| pnout | `pnpm outdated` | Check for outdated packages |
-| pnp | `pnpm` | Run a PNpm command |
-| pnpub | `pnpm publish` | Publish the project |
-| pnrm | `pnpm remove` | Remove a package from the project |
-| pnrun | `pnpm run` | Run a script in the project |
-| pns | `pnpm run serve` | Run the project in production mode |
-| pnst | `pnpm start` | Start the project |
-| pnsv | `pnpm server` | Start the project's development server |
-| pnt | `pnpm test` | Run the project's tests |
-| pntc | `pnpm test --coverage` | Run the project's tests with coverage |
-| pnui | `pnpm update --interactive` | Update packages interactively |
-| pnuil | `pnpm update --interactive --latest` | Update packages interactively to the latest version |
-| pnun | `pnpm uninstall` | Remove a package from the project |
-| pnup | `pnpm update` | Update packages in the project |
-| pnwhy | `pnpm why` | Show why a package is installed |
-| pnx | `pnpx` | Run a PNpx command |
+  | pna | `pnpm add` | Installe un paquet |
+  | pnad | `pnpm add --save-dev` | Installe un paquet en tant que dépendance de développement |
+  | pnap | `pnpm add --save-peer` | Installe un paquet en tant que dépendance de pair |
+  | pnau | `pnpm audit` | Exécute un audit de sécurité |
+  | pnb | `pnpm run build` | Exécute la commande `build` |
+  | pnc | `pnpm create` | Crée un nouveau projet |
+  | pnd | `pnpm run dev` | Exécute la commande `dev` |
+  | pndoc | `pnpm run doc` | Exécute la commande `doc` |
+  | pnga | `pnpm add --global` | Installe un paquet en tant que paquet global |
+  | pngls | `pnpm list --global` | Liste les paquets globaux |
+  | pngrm | `pnpm remove --global` | Supprime un paquet global |
+  | pngu | `pnpm update --global` | Met à jour un paquet global |
+  | pnh | `pnpm help` | Affiche l'aide |
+  | pni | `pnpm init` | Initialise un projet |
+  | pnin | `pnpm install` | Installe les dépendances du projet |
+  | pnln | `pnpm run lint` | Exécute la commande `lint` |
+  | pnls | `pnpm list` | Liste les paquets locaux |
+  | pnout | `pnpm outdated` | Liste les paquets obsolètes |
+  | pnp | `pnpm` | Exécute la commande `pnpm` |
+  | pnpub | `pnpm publish` | Publie le projet |
+  | pnrm | `pnpm remove` | Supprime un paquet |
+  | pnrun | `pnpm run` | Exécute une commande |
+  | pns | `pnpm run serve` | Exécute la commande `serve` |
+  | pnst | `pnpm start` | Exécute la commande `start` |
+  | pnsv | `pnpm server` | Exécute la commande `server` |
+  | pnt | `pnpm test` | Exécute la commande `test` |
+  | pntc | `pnpm test --coverage` | Exécute la commande `test --coverage` |
+  | pnui | `pnpm update --interactive` | Met à jour les paquets interactivement |
+  | pnuil | `pnpm update --interactive --latest` | Met à jour les paquets interactivement vers la dernière version |
+  | pnun | `pnpm uninstall` | Supprime un paquet |
+  | pnup | `pnpm update` | Met à jour les paquets |
+  | pnwhy | `pnpm why` | Affiche la raison pour laquelle un paquet est installé |
+  | pnx | `pnpx` | Exécute la commande `pnpx` |

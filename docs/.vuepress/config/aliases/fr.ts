@@ -21,7 +21,7 @@ export const alias = {
     ["/fr/alias/mode-interactif/", "Les alias en mode interactif"],
     ["/fr/alias/recherche/", "Les alias de recherche"],
     ["/fr/alias/npm/", "Les alias NPM"],
-    // ["/fr/alias/pnpm/", "Les alias pnpm"],
+    ["/fr/alias/pnpm/", "Les alias pnpm"],
     // ["/fr/alias/ps/", "Les alias ps"],
     // ["/fr/alias/rsync/", "Les alias rsync"],
     // ["/fr/alias/rust/", "Les alias rust"],

@@ -21,7 +21,7 @@ export const aliases = {
     ["/aliases/make/", "Make aliases"],
     ["/aliases/mkdir/", "Mkdir aliases"],
     ["/aliases/npm/", "NPM aliases"],
-    ["/aliases/pnpm/", "PNPM aliases"],
+    ["/aliases/pnpm/", "pnpm aliases"],
     ["/aliases/ps/", "PS aliases"],
     ["/aliases/rsync/", "Rsync aliases"],
     ["/aliases/rust/", "Rust aliases"],
