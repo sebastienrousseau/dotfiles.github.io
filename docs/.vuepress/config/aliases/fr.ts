@@ -26,7 +26,7 @@ export const alias = {
     ["/fr/alias/rsync/", "Les alias Rsync"],
     ["/fr/alias/rust/", "Les alias Rust"],
     ["/fr/alias/subversion/", "Les alias Subversion"],
-    // ["/fr/alias/sudo/", "Les alias sudo"],
+    ["/fr/alias/sudo/", "Les alias Sudo"],
     // ["/fr/alias/tmux/", "Les alias tmux"],
     // ["/fr/alias/update/", "Les alias update"],
     // ["/fr/alias/uuid/", "Les alias uuid"],
