@@ -1,47 +1,44 @@
 ---
-description: The Mkdir aliases are a collection of aliases that allow you to interact with the `mkdir` command line tool. Mkdir is a tool which creates a directory.
-lang: en-GB
-metaTitle: The Mkdir aliases - Dotfiles (UK)
+description: Les alias mkdir sont des alias qui vous permettent de simplifier l'utilisation de la commande mkdir. Mkdir est une commande qui permet de créer des répertoires dans le système de fichiers.
+lang: fr-FR
+metaTitle: Les alias mkdir - Dotfiles (FR)
 permalink: /aliases/mkdir/
 
 meta:
   - name: keywords
-    content: aliases, mkdir, linux, macos, shell, terminal, windows
+    content: , alias, commandes, dotfiles, mcd, mcdp, md, mdd, mdp, mdt, mkdir, shell
   - name: twitter:card
-    content: The Mkdir aliases are a collection of aliases that allow you to interact with the `mkdir` command line tool. Mkdir is a tool which creates a directory.
+    content: Les alias mkdir sont des alias qui vous permettent de simplifier l'utilisation de la commande mkdir. Mkdir est une commande qui permet de créer des répertoires dans le système de fichiers.
   - name: twitter:description
-    content: The Mkdir aliases are a collection of aliases that allow you to interact with the `mkdir` command line tool. Mkdir is a tool which creates a directory.
+    content: Les alias mkdir sont des alias qui vous permettent de simplifier l'utilisation de la commande mkdir. Mkdir est une commande qui permet de créer des répertoires dans le système de fichiers.
   - name: twitter:title
-    content: The Mkdir aliases - Dotfiles (UK)
+    content: Les alias mkdir - Dotfiles (FR)
   - name: og:title
-    content: The Mkdir aliases - Dotfiles (UK)
+    content: Les alias mkdir - Dotfiles (FR)
   - name: og:description
-    content: The Mkdir aliases are a collection of aliases that allow you to interact with the `mkdir` command line tool. Mkdir is a tool which creates a directory.
+    content: Les alias mkdir sont des alias qui vous permettent de simplifier l'utilisation de la commande mkdir. Mkdir est une commande qui permet de créer des répertoires dans le système de fichiers.
   - name: og:image:alt
-    content: Dotfiles - Simply designed to fit your shell life
+    content: Les Dotfiles - Conçus pour s'adapter à votre vie de shell
   - name: og:locale
-    content: en_GB
+    content: fr_FR
 ---
 
-# Mkdir aliases
+# Les alias mkdir
 
-The `mkdir.aliases.sh` file creates helpful shortcut aliases for creating
-directories.
+Le fichier `mkdir.aliases.sh` crée des raccourcis utiles pour créer des
+répertoires.
 
-The Mkdir aliases are a collection of aliases that allow you to interact with
-the `mkdir` command line tool. Mkdir is a tool which creates a directory.
+Les alias mkdir sont des alias qui vous permettent de simplifier l'utilisation
+de la commande `mkdir`. Mkdir est une commande qui permet de créer des répertoires
+dans le système de fichiers.
 
-## Mkdir
+## Raccourcis mkdir
 
-[Mkdir](https://en.wikipedia.org/wiki/Mkdir) is a command that creates a
-directory. The mkdir utility creates the directories named as operands, in the
-order specified, using mode “rwxrwxrwx” (0777).
-
-| Alias | Command | Description |
+| Alias | Commande | Description |
 | ----- | ----- | ----- |
-| mcd | `mkdir -pv && cd` | Make directory and cd into it. |
-| mcdp | `mkdir -pv && cd` | Make directory and parents and cd into it. |
-| md | `mkd` | Make directory. |
-| mdd | `mkdir -pv $(date +%Y%m%d)` | Make directory with date. |
-| mdp | `mkdir -pv` | Make directory and parents. |
-| mdt | `mkdir -pv $(date +%h%m%s)` | Make directory with time. |
+| mcd | `mkdir -pv && cd` | Crée un répertoire et se déplace dedans |
+| mcdp | `mkdir -pv && cd` | Crée un répertoire et se déplace dedans |
+| md | `mkd` | Crée un répertoire |
+| mdd | `mkdir -pv $(date +%Y%m%d)` | Crée un répertoire avec la date du jour |
+| mdp | `mkdir -pv` | Crée un répertoire et ses parents |
+| mdt | `mkdir -pv $(date +%h%m%s)` | Crée un répertoire avec l'heure actuelle |
