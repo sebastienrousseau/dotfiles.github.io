@@ -2,7 +2,7 @@
 description: Les alias Rust sont des alias qui vous permettent de simplifier l'utilisation de la commande Rust.Rust est un langage de programmation qui permet de créer des programmes plus rapidement et plus efficacement.
 lang: fr-FR
 metaTitle: Les alias Rust - Dotfiles (FR)
-permalink: /aliases/rsync/
+permalink: /aliases/rust/
 
 meta:
   - name: keywords

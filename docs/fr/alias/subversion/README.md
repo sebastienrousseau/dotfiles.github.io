@@ -1,80 +1,77 @@
 ---
-description: The Subversion aliases are a collection of aliases that allow you to interact with the `svn` command. Subversion is a version control system, which allows you to keep old versions of files and directories (usually source code), keep a log of who, when, and why changes occurred.
-lang: en-GB
-metaTitle: The Subversion aliases - Dotfiles (UK)
+description: Les alias Subversion sont des alias qui vous permettent de simplifier l'utilisation de la commande Subversion. Subversion est une commande qui permet de gérer des dépôts de code.
+lang: fr-FR
+metaTitle: Les alias Subversion - Dotfiles (FR)
 permalink: /aliases/subversion/
 
 meta:
   - name: keywords
-    content: aliases, subversion, svn, linux, macos, shell, terminal, windows
+    content: alias, commandes, dotfiles, gestion, gestionnaire, gestionnairedeversion, gestionnairedeversions, shell, subversion, svn, version, versioning
   - name: twitter:card
-    content: The Subversion aliases are a collection of aliases that allow you to interact with the `svn` command. Subversion is a version control system, which allows you to keep old versions of files and directories (usually source code), keep a log of who, when, and why changes occurred.
+    content: Les alias Subversion sont des alias qui vous permettent de simplifier l'utilisation de la commande Subversion. Subversion est une commande qui permet de gérer des dépôts de code.
   - name: twitter:description
-    content: The Subversion aliases are a collection of aliases that allow you to interact with the `svn` command. Subversion is a version control system, which allows you to keep old versions of files and directories (usually source code), keep a log of who, when, and why changes occurred.
+    content: Les alias Subversion sont des alias qui vous permettent de simplifier l'utilisation de la commande Subversion. Subversion est une commande qui permet de gérer des dépôts de code.
   - name: twitter:title
-    content: The Subversion aliases - Dotfiles (UK)
+    content: Les alias Subversion - Dotfiles (FR)
   - name: og:title
-    content: The Subversion aliases - Dotfiles (UK)
+    content: Les alias Subversion - Dotfiles (FR)
   - name: og:description
-    content: The Subversion aliases are a collection of aliases that allow you to interact with the `svn` command. Subversion is a version control system, which allows you to keep old versions of files and directories (usually source code), keep a log of who, when, and why changes occurred.
+    content: Les alias Subversion sont des alias qui vous permettent de simplifier l'utilisation de la commande Subversion. Subversion est une commande qui permet de gérer des dépôts de code.
   - name: og:image:alt
-    content: Dotfiles - Simply designed to fit your shell life
+    content: Les Dotfiles - Conçus pour s'adapter à votre vie de shell
   - name: og:locale
-    content: en_GB
+    content: fr_FR
 ---
 
-# Subversion aliases
+# Les alias Subversion
 
-This `subversion.aliases.zsh` file creates helpful shortcut aliases for many
-commonly used [Subversion](https://subversion.apache.org) commands.
+Le fichier `subversion.aliases.sh` crée des raccourcis utiles pour travailler
+avec les commandes [Subversion](https://subversion.apache.org).
 
-The Subversion aliases are a collection of aliases that allow you to interact
-with the `svn` command. Subversion is a version control system, which allows you
-to keep old versions of files and directories (usually source code), keep a log
-of who, when, and why changes occurred.
+Les alias Subversion sont une collection d'alias qui vous permettent d'interagir
+avec la commande `svn`. Subversion est un système de contrôle de version, qui
+vous permet de garder des anciennes versions de fichiers et de répertoires
+(généralement du code source), de garder un journal de qui, quand et pourquoi
+les modifications ont eu lieu.
 
-## Subversion
-
-[Subversion](https://subversion.apache.org) is a version control system that
-tracks changes to files and directories. It is used to manage source code for
-software projects.
+## Raccourcis Subversion
 
 | Alias | Command | Description |
 | ----- | ----- | ----- |
-| sad | `svn add` | Put new files and directories under version control  |
-| sau | `svn auth` | Manage cached authentication credentials  |
-| sbl | `svn blame` | Show when each line of a file was last (or next) changed |
-| scg | `svn changelist` | Associate (or dissociate) changelist CLNAME with the named files |
-| sco | `svn checkout` | Check out a working copy from a repository  |
-| scl | `svn cleanup` | Either recover from an interrupted operation that left the working copy locked, or remove unwanted file |
-| sci | `svn commit` | Send changes from your working copy to the repository |
-| scp | `svn copy` | Copy files and directories in a working copy or repository |
-| sct | `svn cat` | Output the content of specified files or URLs |
-| sdi | `svn diff` | Display local changes or differences between two revisions or paths |
-| sdl | `svn delete` | Remove files and directories from version control |
-| shp | `svn help` | Describe the usage of this program or its subcommands |
-| sin | `svn info` | Display information about a local or remote item |
-| sip | `svn import`  | Commit an un-versioned file or tree into the repository |
-| slg | `svn log` | Show the log messages for a set of revision(s) and/or path(s)|
-| slk | `svn lock` | Lock working copy paths or URLs in the repository, no other user can commit changes to them |
-| sls | `svn list` | List directory entries in the repository |
-| smd | `svn mkdir` | Create a new directory under version control |
-| smg | `svn merge` | Merge changes into a working copy |
-| smgi | `svn mergeinfo` | Display merge-related information  |
-| smv | `svn move` | Move (rename) an item in a working copy or repository |
-| sp | `svn propset` | Set the value of a property on files, dirs, or revisions |
-| spdl | `svn propdel` | Remove a property from files, dirs, or revisions |
-| spdt | `svn propedit` | Edit a property with an external editor |
-| spgt | `svn propget` | Print the value of a property on files, dirs, or revisions |
-| sph | `svn patch` | Apply a patch to a working copy |
-| spls | `svn proplist` | List all properties on files, dirs, or revisions |
-| srl | `svn relocate` | Relocate the working copy to point to a different repository root URL |
-| srs | `svn resolve` | Resolve conflicts on working copy files or directories  |
-| srsd | `svn resolved` | Remove 'conflicted' state on working copy files or directories |
-| srv | `svn revert` | Restore pristine working copy state (undo local changes) |
-| sst | `svn status` | Print the status of working copy files and directories  |
-| ssw | `svn switch` | Update the working copy to a different URL within the same repository |
-| sulk | `svn unlock` | Unlock working copy paths or URLs. |
-| sup | `svn update` | Bring changes from the repository into the working copy |
-| supg | `svn upgrade` | Upgrade the metadata storage format for a working copy |
-| sxp | `svn export` | Create an un-versioned copy of a tree |
+| sad | `svn add` | Ajoute un fichier ou un répertoire au dépôt |
+| sau | `svn auth` | Affiche les informations d'authentification |
+| sbl | `svn blame` | Affiche les informations de modification |
+| scg | `svn changelist` | Affiche ou modifie la liste de changement |
+| sco | `svn checkout` | Télécharge un dépôt |
+| scl | `svn cleanup` | Nettoie le répertoire de travail |
+| sci | `svn commit` | Envoie les modifications au dépôt |
+| scp | `svn copy` | Copie un fichier ou un répertoire |
+| sct | `svn cat` | Affiche le contenu d'un fichier |
+| sdi | `svn diff` | Affiche les différences entre les fichiers |
+| sdl | `svn delete` | Supprime un fichier ou un répertoire |
+| shp | `svn help` | Affiche l'aide de la commande |
+| sin | `svn info` | Affiche les informations du dépôt |
+| sip | `svn import` | Importe un répertoire dans le dépôt |
+| slg | `svn log` | Affiche le journal des modifications |
+| slk | `svn lock` | Verrouille un fichier ou un répertoire |
+| sls | `svn list` | Affiche la liste des fichiers et répertoires |
+| smd | `svn mkdir` | Crée un répertoire dans le dépôt |
+| smg | `svn merge` | Fusionne les modifications |
+| smgi | `svn mergeinfo` | Affiche les informations de fusion |
+| smv | `svn move` | Déplace un fichier ou un répertoire |
+| sp | `svn propset` | Définit une propriété |
+| spdl | `svn propdel` | Supprime une propriété |
+| spdt | `svn propedit` | Edite une propriété |
+| spgt | `svn propget` | Affiche une propriété |
+| sph | `svn patch` | Applique un patch |
+| spls | `svn proplist` | Affiche la liste des propriétés |
+| srl | `svn relocate` | Déplace un dépôt |
+| srs | `svn resolve` | Résout les conflits |
+| srsd | `svn resolved` | Marque un fichier comme résolu |
+| srv | `svn revert` | Annule les modifications |
+| sst | `svn status` | Affiche l'état du dépôt |
+| ssw | `svn switch` | Change de dépôt |
+| sulk | `svn unlock` | Déverrouille un fichier ou un répertoire |
+| sup | `svn update` | Met à jour le dépôt |
+| supg | `svn upgrade` | Met à jour le dépôt |
+| sxp | `svn export` | Exporte un dépôt |
