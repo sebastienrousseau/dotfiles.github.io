@@ -1,53 +1,50 @@
 ---
-description: The NPM aliases are a collection of aliases that allow you to interact with the `npm` command line tool. Npm is a package manager for the JavaScript programming language.
-lang: en-GB
-metaTitle: The NPM aliases - Dotfiles (UK)
+description: Les alias NPM sont des alias qui vous permettent de simplifier l'utilisation de la commande NPM. NPM est un gestionnaire de paquets pour le langage de programmation JavaScript.
+lang: fr-FR
+metaTitle: Les alias NPM - Dotfiles (FR)
 permalink: /aliases/npm/
 
 meta:
   - name: keywords
-    content: aliases, npm, node, node package manager, package manager, linux, macos, shell, terminal, windows
+    content: alias, commandes, dotfiles, npb, npc, npd, npg, npi, npl, npm, npp, npr, nprw, nps, nps, npt, npu, npx, npy, shell
   - name: twitter:card
-    content: The NPM aliases are a collection of aliases that allow you to interact with the `npm` command line tool. Npm is a package manager for the JavaScript programming language.
+    content: Les alias NPM sont des alias qui vous permettent de simplifier l'utilisation de la commande NPM. NPM est un gestionnaire de paquets pour le langage de programmation JavaScript.
   - name: twitter:description
-    content: The NPM aliases are a collection of aliases that allow you to interact with the `npm` command line tool. Npm is a package manager for the JavaScript programming language.
+    content: Les alias NPM sont des alias qui vous permettent de simplifier l'utilisation de la commande NPM. NPM est un gestionnaire de paquets pour le langage de programmation JavaScript.
   - name: twitter:title
-    content: The NPM aliases - Dotfiles (UK)
+    content: Les alias NPM - Dotfiles (FR)
   - name: og:title
-    content: The NPM aliases - Dotfiles (UK)
+    content: Les alias NPM - Dotfiles (FR)
   - name: og:description
-    content: The NPM aliases are a collection of aliases that allow you to interact with the `npm` command line tool. Npm is a package manager for the JavaScript programming language.
+    content: Les alias NPM sont des alias qui vous permettent de simplifier l'utilisation de la commande NPM. NPM est un gestionnaire de paquets pour le langage de programmation JavaScript.
   - name: og:image:alt
-    content: Dotfiles - Simply designed to fit your shell life
+    content: Les Dotfiles - Conçus pour s'adapter à votre vie de shell
   - name: og:locale
-    content: en_GB
+    content: fr_FR
 ---
 
-# NPM aliases
+# Les alias NPM
 
-The `npm.aliases.sh` file creates helpful shortcut aliases
-for [npm](https://www.npmjs.com/).
+Le fichier `npm.aliases.sh` crée des raccourcis utiles pour
+[npm](https://www.npmjs.com/). NPM est un gestionnaire de paquets pour le
+langage de programmation JavaScript.
 
-## NPM
+## Raccourcis NPM
 
-[npm](https://www.npmjs.com/) is a package manager for the JavaScript
-programming language. It is the default package manager for the JavaScript
-runtime environment Node.js.
-
-| Alias | Command | Description |
+| Alias | Commande | Description |
 | ----- | ----- | ----- |
-| npb   | `npm build` | Build npm script. |
-| npc   | `npm cache` | Cache npm package. |
-| npd   | `npm dev` | Dev npm script. |
-| npg   | `npm global` | Global npm package. |
-| npi   | `npm install` | Install npm package. |
-| npl   | `npm list` | List npm packages. |
-| npp   | `npm publish` | Publish npm package. |
-| npr   | `npm run` | Run npm script. |
-| nprw  | `npm run watch` | Run npm script watch. |
-| nps   | `npm start` | Start npm script. |
-| npsv  | `npm serve` | Serve npm script. |
-| npt   | `npm test` | Test npm script. |
-| npu   | `npm update` | Update npm package. |
-| npx   | `npm exec` | Exec npm package. |
-| npy   | `npm why` | Why npm package. |
+| npb   | `npm build` | Lance la commande `npm build` |
+| npc   | `npm cache` | Lance la commande `npm cache` |
+| npd   | `npm dev` | Lance la commande `npm dev` |
+| npg   | `npm global` | Lance la commande `npm global` |
+| npi   | `npm install` | Lance la commande `npm install` |
+| npl   | `npm list` | Lance la commande `npm list` |
+| npp   | `npm publish` | Lance la commande `npm publish` |
+| npr   | `npm run` | Lance la commande `npm run` |
+| nprw  | `npm run watch` | Lance la commande `npm run watch` |
+| nps   | `npm start` | Lance la commande `npm start` |
+| npsv  | `npm serve` | Lance la commande `npm serve` |
+| npt   | `npm test` | Lance la commande `npm test` |
+| npu   | `npm update` | Lance la commande `npm update` |
+| npx   | `npm exec` | Lance la commande `npm exec` |
+| npy   | `npm why` | Lance la commande `npm why` |

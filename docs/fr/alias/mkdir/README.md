@@ -29,8 +29,8 @@ Le fichier `mkdir.aliases.sh` crée des raccourcis utiles pour créer des
 répertoires.
 
 Les alias mkdir sont des alias qui vous permettent de simplifier l'utilisation
-de la commande `mkdir`. Mkdir est une commande qui permet de créer des répertoires
-dans le système de fichiers.
+de la commande `mkdir`. Mkdir est une commande qui permet de créer des
+répertoires dans le système de fichiers.
 
 ## Raccourcis mkdir
 
