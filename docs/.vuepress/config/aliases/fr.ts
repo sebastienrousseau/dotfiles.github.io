@@ -18,7 +18,7 @@ export const alias = {
     ["/fr/alias/mode-interactif/", "Les alias en mode interactif"],
     ["/fr/alias/jekyll/", "Les alias Jekyll"],
     ["/fr/alias/liste/", "Les alias de liste"],
-    // ["/fr/alias/make/", "Les alias make"],
+    ["/fr/alias/make/", "Les alias make"],
     // ["/fr/alias/mkdir/", "Les alias mkdir"],
     // ["/fr/alias/npm/", "Les alias npm"],
     // ["/fr/alias/pnpm/", "Les alias pnpm"],

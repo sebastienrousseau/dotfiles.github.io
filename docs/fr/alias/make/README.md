@@ -1,50 +1,47 @@
 ---
-description: The Make aliases are a collection of aliases that allow you to interact with the `make` command line tool. Make is a tool which controls the generation of executables and other non-source files of a program from the program's source files.
-lang: en-GB
-metaTitle: The Make aliases - Dotfiles (UK)
+description: Les alias make sont des alias qui vous permettent de simplifier l'utilisation de la commande make. Les alias make sont utiles pour les projets qui utilisent la commande make.
+lang: fr-FR
+metaTitle: Les alias make - Dotfiles (FR)
 permalink: /aliases/make/
 
 meta:
   - name: keywords
-    content: aliases, make, makefile, linux, macos, shell, terminal, windows
+    content: alias, commandes, make, makefile, zsh, bash, fish, shell, dotfiles
   - name: twitter:card
-    content: The Make aliases are a collection of aliases that allow you to interact with the `make` command line tool. Make is a tool which controls the generation of executables and other non-source files of a program from the program's source files.
+    content: Les alias make sont des alias qui vous permettent de simplifier l'utilisation de la commande make. Les alias make sont utiles pour les projets qui utilisent la commande make.
   - name: twitter:description
-    content: The Make aliases are a collection of aliases that allow you to interact with the `make` command line tool. Make is a tool which controls the generation of executables and other non-source files of a program from the program's source files.
+    content: Les alias make sont des alias qui vous permettent de simplifier l'utilisation de la commande make. Les alias make sont utiles pour les projets qui utilisent la commande make.
   - name: twitter:title
-    content: The Make aliases - Dotfiles (UK)
+    content: Les alias make - Dotfiles (FR)
   - name: og:title
-    content: The Make aliases - Dotfiles (UK)
+    content: Les alias make - Dotfiles (FR)
   - name: og:description
-    content: The Make aliases are a collection of aliases that allow you to interact with the `make` command line tool. Make is a tool which controls the generation of executables and other non-source files of a program from the program's source files.
+    content: Les alias make sont des alias qui vous permettent de simplifier l'utilisation de la commande make. Les alias make sont utiles pour les projets qui utilisent la commande make.
   - name: og:image:alt
-    content: Dotfiles - Simply designed to fit your shell life
+    content: Les Dotfiles - Conçus pour s'adapter à votre vie de shell
   - name: og:locale
-    content: en_GB
+    content: fr_FR
 ---
 
-# Make aliases
+# Les alias make
 
-The `make.aliases.sh` file creates helpful shortcut aliases for running `make`
-commands.
+Le fichier `make.aliases.sh` crée des raccourcis utiles pour exécuter des
+commandes `make`. Les alias make sont utiles pour les projets qui utilisent la
+commande make.
 
-## Make
+## Raccourcis de make
 
-[Make](https://en.wikipedia.org/wiki/Make_(software)) is a tool which controls
-the generation of executables and other non-source files of a program from the
-program's source files.
-
-Make gets its knowledge of how to build your program from a file called the
-`Makefile`, which lists each of the non-source files and how to compute it from
-other files.
+Make reçoit ses connaissances sur la façon de construire votre programme à
+partir d'un fichier appelé `Makefile`, qui liste chacun des fichiers non-source
+et comment les calculer à partir d'autres fichiers.
 
 | Alias | Command | Description |
 | ----- | ----- | ----- |
-| mk | `make` | Run `make` with no arguments. |
-| mkc | `make clean` | Run `make clean`. |
-| mkd | `make doc` | Run `make doc`. |
-| mkf | `make format` | Run `make format`. |
-| mkh | `make help` | Run `make help`. |
-| mki | `make install` | Run `make install`. |
-| mkr | `make run` | Run `make run`. |
-| mkt | `make test` | Run `make test`. |
+| mk | `make` | Exécute la commande make |
+| mkc | `make clean` | Exécute la commande make clean |
+| mkd | `make doc` | Exécute la commande make doc |
+| mkf | `make format` | Exécute la commande make format |
+| mkh | `make help` | Exécute la commande make help |
+| mki | `make install` | Exécute la commande make install |
+| mkr | `make run` | Exécute la commande make run |
+| mkt | `make test` | Exécute la commande make test |
