@@ -1,42 +1,39 @@
 ---
-description: The UUID aliases create helpful shortcut aliases for the `uuidgen` command. The uuidgen command generates a Universally Unique IDentifier (UUID), a 128-bit value guaranteed to be unique over both space and time.
-lang: en-GB
-metaTitle: The UUID aliases - Dotfiles (UK)
+description: Les alias UUID sont des alias qui vous permettent de simplifier l'utilisation de la commande UUID. UUID est une commande qui permet de générer des UUID.
+lang: fr-FR
+metaTitle: Les alias UUID - Dotfiles (FR)
 permalink: /aliases/uuid/
 
 meta:
   - name: keywords
-    content: aliases, uuid, linux, macos, shell, terminal, windows
+    content: alias, commandes, dotfiles, shell, universal unique identifier, uuid, uuidgen
   - name: twitter:card
-    content: The UUID aliases create helpful shortcut aliases for the `uuidgen` command. The uuidgen command generates a Universally Unique IDentifier (UUID), a 128-bit value guaranteed to be unique over both space and time.
+    content: Les alias UUID sont des alias qui vous permettent de simplifier l'utilisation de la commande UUID. UUID est une commande qui permet de générer des UUID.
   - name: twitter:description
-    content: The UUID aliases create helpful shortcut aliases for the `uuidgen` command. The uuidgen command generates a Universally Unique IDentifier (UUID), a 128-bit value guaranteed to be unique over both space and time.
+    content: Les alias UUID sont des alias qui vous permettent de simplifier l'utilisation de la commande UUID. UUID est une commande qui permet de générer des UUID.
   - name: twitter:title
-    content: The UUID aliases - Dotfiles (UK)
+    content: Les alias UUID - Dotfiles (FR)
   - name: og:title
-    content: The UUID aliases - Dotfiles (UK)
+    content: Les alias UUID - Dotfiles (FR)
   - name: og:description
-    content: The UUID aliases create helpful shortcut aliases for the `uuidgen` command. The uuidgen command generates a Universally Unique IDentifier (UUID), a 128-bit value guaranteed to be unique over both space and time.
+    content: Les alias UUID sont des alias qui vous permettent de simplifier l'utilisation de la commande UUID.UUID est une commande qui permet de générer des UUID.
   - name: og:image:alt
-    content: Dotfiles - Simply designed to fit your shell life
+    content: Les Dotfiles - Conçus pour s'adapter à votre vie de shell
   - name: og:locale
-    content: en_GB
+    content: fr_FR
 ---
 
-# UUID aliases
+# Les alias UUID
 
-The `uuid.aliases.zsh` file creates helpful shortcut aliases for generating
-[UUIDs](https://en.wikipedia.org/wiki/Universally_unique_identifier).
+Le fichier `uuid.aliases.sh` crée des raccourcis utiles pour générer des
+[UUIDs](https://fr.wikipedia.org/wiki/Universally_unique_identifier).
 
-The UUID aliases create helpful shortcut aliases for the `uuidgen` command.
-The uuidgen command generates a Universally Unique IDentifier (UUID), a
-128-bit value guaranteed to be unique over both space and time.
+Les alias UUID créent des raccourcis utiles pour la commande `uuidgen`. La
+commande uuidgen génère un Universally Unique IDentifier (UUID), une valeur de
+128 bits garantie d'être unique dans l'espace et le temps.
 
-## UUID
-
-[UUID](https://en.wikipedia.org/wiki/Universally_unique_identifier) is a 128-bit
-number used to identify information in computer systems.
+## Raccourcis UUID
 
 | Alias | Command | Description |
 | ----- | ----- | ----- |
-| uuid | `uuidgen \| tr -d '\n' \| tr '[:upper:]' '[:lower:]' \| pbcopy && pbpaste && echo` | Generate a UUID and copy it to the clipboard. |
+| uuid | `uuidgen \| tr -d '\n' \| tr '[:upper:]' '[:lower:]' \| pbcopy && pbpaste && echo` | Génère un UUID et le copie dans le presse-papier |

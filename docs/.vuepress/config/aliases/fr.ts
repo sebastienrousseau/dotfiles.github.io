@@ -29,7 +29,7 @@ export const alias = {
     ["/fr/alias/sudo/", "Les alias Sudo"],
     ["/fr/alias/tmux/", "Les alias Tmux"],
     ["/fr/alias/mise-a-jour/", "Les alias de mise à jour"],
-    // ["/fr/alias/uuid/", "Les alias uuid"],
+    ["/fr/alias/uuid/", "Les alias UUID"],
     // ["/fr/alias/wget/", "Les alias wget"],
   ],
   collapsable: false,
