@@ -1,45 +1,43 @@
 ---
-description: The Wget aliases create helpful shortcut aliases for the `wget` command. Wget is a tool which downloads files from the internet.
-lang: en-GB
-metaTitle: The Wget aliases - Dotfiles (UK)
+description: Les alias wget sont des alias qui vous permettent de simplifier l'utilisation de la commande wget.wget est une commande qui permet de télécharger des fichiers depuis des serveurs web.
+lang: fr-FR
+metaTitle: Les alias wget - Dotfiles (FR)
 permalink: /aliases/wget/
 
 meta:
   - name: keywords
-    content: aliases, wget, linux, macos, shell, terminal, windows
+    content: alias, commandes, dotfiles, wget, shell
   - name: twitter:card
-    content: The Wget aliases create helpful shortcut aliases for the `wget` command. Wget is a tool which downloads files from the internet.
+    content: Les alias wget sont des alias qui vous permettent de simplifier l'utilisation de la commande wget.wget est une commande qui permet de télécharger des fichiers depuis des serveurs web.
   - name: twitter:description
-    content: The Wget aliases create helpful shortcut aliases for the `wget` command. Wget is a tool which downloads files from the internet.
+    content: Les alias wget sont des alias qui vous permettent de simplifier l'utilisation de la commande wget.wget est une commande qui permet de télécharger des fichiers depuis des serveurs web.
   - name: twitter:title
-    content: The Wget aliases - Dotfiles (UK)
+    content: Les alias wget - Dotfiles (FR)
   - name: og:title
-    content: The Wget aliases - Dotfiles (UK)
+    content: Les alias wget - Dotfiles (FR)
   - name: og:description
-    content: The Wget aliases create helpful shortcut aliases for the `wget` command. Wget is a tool which downloads files from the internet.
+    content: Les alias wget sont des alias qui vous permettent de simplifier l'utilisation de la commande wget.wget est une commande qui permet de télécharger des fichiers depuis des serveurs web.
   - name: og:image:alt
-    content: Dotfiles - Simply designed to fit your shell life
+    content: Les Dotfiles - Conçus pour s'adapter à votre vie de shell
   - name: og:locale
-    content: en_GB
+    content: fr_FR
 ---
 
-# Wget aliases
+# Les alias wget
 
-This `wget.aliases.zsh` file creates helpful shortcut aliases for many commonly
-used [wget](https://www.gnu.org/software/wget/) commands.
+Le fichier `wget.aliases.sh` crée des raccourcis utiles pour de nombreuses
+commandes wget couramment utilisées. wget est une commande qui permet de
+télécharger des fichiers depuis des serveurs web.
 
-The Wget aliases create helpful shortcut aliases for the `wget` command. Wget is
-a tool which downloads files from the internet.
+GNU Wget est un logiciel libre et gratuit pour télécharger des fichiers à
+partir d'Internet. Il supporte le protocole HTTP, HTTPS, et FTP, ainsi que les
+proxies HTTP.
 
-## Wget
+## Raccourcis wget
 
- GNU [Wget](https://www.gnu.org/software/wget/) is a free utility for
- non-interactive download of files from the Web.  It supports HTTP, HTTPS, and
- FTP protocols, as well as retrieval through HTTP proxies.
-
-| Alias | Command | Description |
+ | Alias | Commande | Description |
 | ----- | ----- | ----- |
-| wg | `wget` | Download a file. |
-| wgc | `wg` | Continue a partially-downloaded file. |
-| wge | `wg -e robots=off` | Download a file, ignoring robots.txt. |
-| wget | `wget -c` | Continue a partially-downloaded file. |
+| wg | `wget` | Télécharge un fichier depuis un serveur web |
+| wgc | `wg` | Télécharge un fichier depuis un serveur web |
+| wge | `wg -e robots=off` | Télécharge un fichier depuis un serveur web en désactivant le robot |
+| wget | `wget -c` | Télécharge un fichier depuis un serveur web en continuant |
