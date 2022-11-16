@@ -23,8 +23,7 @@ meta:
     content: fr_FR
 ---
 
-
-# Les Alias
+# Les Alias Dotfiles
 
 Les alias vous donnent la possibilité de créer des raccourcis pour les commandes
 du shell que vous utilisez fréquemment. Cela vous permettra d'être plus
