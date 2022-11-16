@@ -28,7 +28,7 @@ export const alias = {
     ["/fr/alias/subversion/", "Les alias Subversion"],
     ["/fr/alias/sudo/", "Les alias Sudo"],
     ["/fr/alias/tmux/", "Les alias Tmux"],
-    // ["/fr/alias/update/", "Les alias update"],
+    ["/fr/alias/mise-a-jour/", "Les alias de mise à jour"],
     // ["/fr/alias/uuid/", "Les alias uuid"],
     // ["/fr/alias/wget/", "Les alias wget"],
   ],
