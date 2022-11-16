@@ -1,22 +1,22 @@
 ---
-description: Les alias vous donnent la possibilité de créer des raccourcis pour les commandes du shell que vous utilisez fréquemment. Cela vous permettra d'être plus productif et efficace en réduisant le nombre de frappes que vous devez effectuer lorsque vous utilisez régulièrement le shell.
+description: Les Alias Dotfiles vous donnent la possibilité de créer des raccourcis pour les commandes du shell que vous utilisez fréquemment. Cela vous permettra d'être plus productif et efficace en réduisant le nombre de frappes que vous devez effectuer lorsque vous utilisez régulièrement le shell.
 lang: fr-FR
-metaTitle: Les Alias - Dotfiles (FR)
+metaTitle: Les Alias Dotfiles - Dotfiles (FR)
 permalink: /alias/
 
 meta:
   - name: keywords
     content: alias, archives, cd, chmod, clear, commands, default, dig, dotfiles, du, editor, find, gcloud, git, gnu, heroku, interactive, jekyll, list, make, mkdir, npm, pnpm, ps, rsync, rust, shell, subversion, sudo, tmux, typing, update, uuid, wget
   - name: twitter:card
-    content: Les alias vous donnent la possibilité de créer des raccourcis pour les commandes du shell que vous utilisez fréquemment. Cela vous permettra d'être plus productif et efficace en réduisant le nombre de frappes que vous devez effectuer lorsque vous utilisez régulièrement le shell.
+    content: Les Alias Dotfiles vous donnent la possibilité de créer des raccourcis pour les commandes du shell que vous utilisez fréquemment. Cela vous permettra d'être plus productif et efficace en réduisant le nombre de frappes que vous devez effectuer lorsque vous utilisez régulièrement le shell.
   - name: twitter:description
-    content: Les alias vous donnent la possibilité de créer des raccourcis pour les commandes du shell que vous utilisez fréquemment. Cela vous permettra d'être plus productif et efficace en réduisant le nombre de frappes que vous devez effectuer lorsque vous utilisez régulièrement le shell.
+    content: Les Alias Dotfiles vous donnent la possibilité de créer des raccourcis pour les commandes du shell que vous utilisez fréquemment. Cela vous permettra d'être plus productif et efficace en réduisant le nombre de frappes que vous devez effectuer lorsque vous utilisez régulièrement le shell.
   - name: twitter:title
-    content: Les Alias - Dotfiles (FR)
+    content: Les Alias Dotfiles - Dotfiles (FR)
   - name: og:title
-    content: Les Alias - Dotfiles (FR)
+    content: Les Alias Dotfiles - Dotfiles (FR)
   - name: og:description
-    content: Les alias vous donnent la possibilité de créer des raccourcis pour les commandes du shell que vous utilisez fréquemment. Cela vous permettra d'être plus productif et efficace en réduisant le nombre de frappes que vous devez effectuer lorsque vous utilisez régulièrement le shell.
+    content: Les Alias Dotfiles vous donnent la possibilité de créer des raccourcis pour les commandes du shell que vous utilisez fréquemment. Cela vous permettra d'être plus productif et efficace en réduisant le nombre de frappes que vous devez effectuer lorsque vous utilisez régulièrement le shell.
   - name: og:image:alt
     content: Les Dotfiles - Conçus pour s'adapter à votre vie de shell
   - name: og:locale
