@@ -100,56 +100,56 @@ shell Bash ou dans le fichier `~/.zshrc` si vous utilisez le shell Zsh.
 
 Ils ont été regroupés par catégories logiques :
 
-- [archives][archives] - Les alias pour travailler avec les fichiers d'archives.
-- [cd][cd] - Les alias pour naviguer rapidement dans les répertoires.
-- [chmod][chmod] - Les alias pour changer les permissions des fichiers.
-- [clear][clear] - Les alias pour effacer le contenu de la console.
-- [default][default] - Les alias par défaut.
-- [dig][dig] - Les alias pour effectuer des requêtes DNS.
-- [du][du] - Les alias pour afficher l'espace disque utilisé.
-- [editor][editor] - Les alias pour ouvrir les fichiers dans votre éditeur
-  préféré.
-- [find][find] - Les alias pour rechercher des fichiers.
-- [gcloud][gcloud] - Les alias pour gcloud.
-- [git][git] - Les alias pour git.
-- [gnu][gnu] - Les alias pour les utilitaires de recherche GNU.
-- [heroku][heroku] - Les alias pour heroku.
-- [interactive][interactive] - Les alias pour les commandes interactives.
-- [jekyll][jekyll] - Les alias pour jekyll.
-- [list][list] - Les alias pour lister les fichiers.
-- [make][make] - Les alias pour make.
-- [mkdir][mkdir] - Les alias pour créer des répertoires.
-- [npm][npm] - Les alias pour npm.
-- [pnpm][pnpm] - Les alias pour pnpm.
-- [ps][ps] - Les alias pour afficher les processus.
-- [rsync][rsync] - Les alias pour rsync.
-- [rust][rust] - Les alias pour rust.
-- [subversion][subversion] - Les alias pour subversion.
-- [sudo][sudo] - Les alias pour sudo.
-- [tmux][tmux] - Les alias pour tmux.
-- [update][update] - Les alias pour mettre à jour les outils système.
-- [uuid][uuid] - Les alias pour générer des UUID.
-- [wget][wget] - Les alias pour wget.
+- [Les alias cd][cd] - Les alias cd vous permettent de naviguer rapidement dans votre système de fichiers.
+- [Les alias chmod][chmod] - Les alias chmod vous permettent de modifier rapidement les permissions des fichiers.
+- [Les alias clear][clear] - Les alias clear vous permettent de nettoyer rapidement votre terminal.
+- [Les alias d'archivage][archives]  Les alias d'archivage vous permettent de créer rapidement des archives.
+- [Les alias de l'éditeur système][editeur] - Les alias de l'éditeur système vous permettent d'éditer rapidement des fichiers.
+- [Les alias de liste][liste] - Les alias de liste vous permettent de lister rapidement des fichiers.
+- [Les alias de mise à jour][mise-a-jour] - Les alias de mise à jour vous permettent de mettre à jour rapidement votre système.
+- [Les alias de recherche][recherche] - Les alias de recherche vous permettent de rechercher rapidement des fichiers.
+- [Les alias dig][dig] - Les alias dig vous permettent de rechercher rapidement des informations DNS.
+- [Les alias du][du] - Les alias du vous permettent de rechercher rapidement l'espace disque utilisé.
+- [Les alias en mode interactif][mode-interactif] - Les alias en mode interactif vous permettent de lancer rapidement des commandes interactives.
+- [Les alias gcloud][gcloud] - Les alias gcloud vous permettent de lancer rapidement des commandes gcloud.
+- [Les alias git][git] - Les alias git vous permettent de lancer rapidement des commandes git.
+- [Les alias GNU Coreutils][gnu] - Les alias GNU Coreutils vous permettent de lancer rapidement des commandes GNU.
+- [Les alias heroku][heroku] - Les alias heroku vous permettent de lancer rapidement des commandes heroku.
+- [Les alias jekyll][jekyll] - Les alias jekyll vous permettent de lancer rapidement des commandes jekyll.
+- [Les alias make][make] - Les alias pour make.
+- [Les alias mkdir][mkdir] - Les alias mkdir vous permettent de créer rapidement des répertoires.
+- [Les alias npm][npm] - Les alias npm vous permettent de lancer rapidement des commandes npm.
+- [Les alias par défaut][default] - Les alias par défaut vous permettent de lancer rapidement des commandes.
+- [Les alias pnpm][pnpm] - Les alias pnpm vous permettent de lancer rapidement des commandes pnpm.
+- [Les alias ps][ps] - Les alias ps vous permettent de rechercher rapidement des processus.
+- [Les alias rsync][rsync] - Les alias rsync vous permettent de synchroniser rapidement des répertoires.
+- [Les alias rust][rust] - Les alias rust vous permettent de lancer rapidement des commandes rust.
+- [Les alias subversion][subversion] - Les alias subversion vous permettent de lancer rapidement des commandes subversion.
+- [Les alias sudo][sudo] - Les alias sudo vous permettent de lancer rapidement des commandes sudo.
+- [Les alias tmux][tmux] - Les alias tmux vous permettent de lancer rapidement des commandes tmux.
+- [Les alias uuid][uuid] - Les alias uuid vous permettent de générer rapidement des UUID.
+- [Les alias wget][wget] - Les alias wget vous permettent de télécharger rapidement des fichiers.
 
 [archives]: ./archives/
 [cd]: ./cd/
 [chmod]: ./chmod/
 [clear]: ./clear/
-[default]: ./default/
+[editeur]: ./editeur/
+[liste]: ./liste/
+[mise-a-jour]: ./mise-a-jour/
+[recherche]: ./recherche/
 [dig]: ./dig/
 [du]: ./du/
-[editor]: ./editor/
-[find]: ./find/
+[mode-interactif]: ./mode-interactif/
 [gcloud]: ./gcloud/
 [git]: ./git/
 [gnu]: ./gnu/
 [heroku]: ./heroku/
-[interactive]: ./interactive/
 [jekyll]: ./jekyll/
-[list]: ./list/
 [make]: ./make/
 [mkdir]: ./mkdir/
 [npm]: ./npm/
+[default]: ./default/
 [pnpm]: ./pnpm/
 [ps]: ./ps/
 [rsync]: ./rsync/
@@ -157,6 +157,5 @@ Ils ont été regroupés par catégories logiques :
 [subversion]: ./subversion/
 [sudo]: ./sudo/
 [tmux]: ./tmux/
-[update]: ./update/
 [uuid]: ./uuid/
 [wget]: ./wget/
