@@ -1,8 +1,367 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
   <url>
     <loc>https://dotfiles.io/</loc>
-    <lastmod>2022-10-16T20:30:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
+    <changefreq>daily</changefreq>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://dotfiles.io/" />
+    <xhtml:link rel="alternate" hreflang="fr-FR" href="https://dotfiles.io/fr/" />
+  </url>
+  <url>
+    <loc>https://dotfiles.io/about/</loc>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://dotfiles.io/aliases/</loc>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://dotfiles.io/aliases/archives/</loc>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://dotfiles.io/aliases/cd/</loc>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://dotfiles.io/aliases/chmod/</loc>
+    <changefreq>daily</changefreq>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://dotfiles.io/aliases/chmod/" />
+    <xhtml:link rel="alternate" hreflang="fr-FR" href="https://dotfiles.io/fr/aliases/chmod/" />
+  </url>
+  <url>
+    <loc>https://dotfiles.io/aliases/clear/</loc>
+    <changefreq>daily</changefreq>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://dotfiles.io/aliases/clear/" />
+    <xhtml:link rel="alternate" hreflang="fr-FR" href="https://dotfiles.io/fr/aliases/clear/" />
+  </url>
+  <url>
+    <loc>https://dotfiles.io/aliases/configuration/</loc>
+    <changefreq>daily</changefreq>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://dotfiles.io/aliases/configuration/" />
+    <xhtml:link rel="alternate" hreflang="fr-FR" href="https://dotfiles.io/fr/aliases/configuration/" />
+  </url>
+  <url>
+    <loc>https://dotfiles.io/aliases/default/</loc>
+    <changefreq>daily</changefreq>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://dotfiles.io/aliases/default/" />
+    <xhtml:link rel="alternate" hreflang="fr-FR" href="https://dotfiles.io/fr/aliases/default/" />
+  </url>
+  <url>
+    <loc>https://dotfiles.io/aliases/dig/</loc>
+    <changefreq>daily</changefreq>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://dotfiles.io/aliases/dig/" />
+    <xhtml:link rel="alternate" hreflang="fr-FR" href="https://dotfiles.io/fr/aliases/dig/" />
+  </url>
+  <url>
+    <loc>https://dotfiles.io/aliases/du/</loc>
+    <changefreq>daily</changefreq>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://dotfiles.io/aliases/du/" />
+    <xhtml:link rel="alternate" hreflang="fr-FR" href="https://dotfiles.io/fr/aliases/du/" />
+  </url>
+  <url>
+    <loc>https://dotfiles.io/aliases/editor/</loc>
+    <changefreq>daily</changefreq>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://dotfiles.io/aliases/editor/" />
+    <xhtml:link rel="alternate" hreflang="fr-FR" href="https://dotfiles.io/fr/aliases/editor/" />
+  </url>
+  <url>
+    <loc>https://dotfiles.io/aliases/find/</loc>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://dotfiles.io/aliases/gcloud/</loc>
+    <changefreq>daily</changefreq>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://dotfiles.io/aliases/gcloud/" />
+    <xhtml:link rel="alternate" hreflang="fr-FR" href="https://dotfiles.io/fr/aliases/gcloud/" />
+  </url>
+  <url>
+    <loc>https://dotfiles.io/aliases/git/</loc>
+    <changefreq>daily</changefreq>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://dotfiles.io/aliases/git/" />
+    <xhtml:link rel="alternate" hreflang="fr-FR" href="https://dotfiles.io/fr/aliases/git/" />
+  </url>
+  <url>
+    <loc>https://dotfiles.io/aliases/gnu/</loc>
+    <changefreq>daily</changefreq>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://dotfiles.io/aliases/gnu/" />
+    <xhtml:link rel="alternate" hreflang="fr-FR" href="https://dotfiles.io/fr/aliases/gnu/" />
+  </url>
+  <url>
+    <loc>https://dotfiles.io/aliases/heroku/</loc>
+    <changefreq>daily</changefreq>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://dotfiles.io/aliases/heroku/" />
+    <xhtml:link rel="alternate" hreflang="fr-FR" href="https://dotfiles.io/fr/aliases/heroku/" />
+  </url>
+  <url>
+    <loc>https://dotfiles.io/aliases/interactive/</loc>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://dotfiles.io/aliases/jekyll/</loc>
+    <changefreq>daily</changefreq>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://dotfiles.io/aliases/jekyll/" />
+    <xhtml:link rel="alternate" hreflang="fr-FR" href="https://dotfiles.io/fr/aliases/jekyll/" />
+  </url>
+  <url>
+    <loc>https://dotfiles.io/aliases/list/</loc>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://dotfiles.io/aliases/make/</loc>
+    <changefreq>daily</changefreq>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://dotfiles.io/aliases/make/" />
+    <xhtml:link rel="alternate" hreflang="fr-FR" href="https://dotfiles.io/fr/aliases/make/" />
+  </url>
+  <url>
+    <loc>https://dotfiles.io/aliases/mkdir/</loc>
+    <changefreq>daily</changefreq>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://dotfiles.io/aliases/mkdir/" />
+    <xhtml:link rel="alternate" hreflang="fr-FR" href="https://dotfiles.io/fr/aliases/mkdir/" />
+  </url>
+  <url>
+    <loc>https://dotfiles.io/aliases/npm/</loc>
+    <changefreq>daily</changefreq>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://dotfiles.io/aliases/npm/" />
+    <xhtml:link rel="alternate" hreflang="fr-FR" href="https://dotfiles.io/fr/aliases/npm/" />
+  </url>
+  <url>
+    <loc>https://dotfiles.io/aliases/pnpm/</loc>
+    <changefreq>daily</changefreq>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://dotfiles.io/aliases/pnpm/" />
+    <xhtml:link rel="alternate" hreflang="fr-FR" href="https://dotfiles.io/fr/aliases/pnpm/" />
+  </url>
+  <url>
+    <loc>https://dotfiles.io/aliases/ps/</loc>
+    <changefreq>daily</changefreq>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://dotfiles.io/aliases/ps/" />
+    <xhtml:link rel="alternate" hreflang="fr-FR" href="https://dotfiles.io/fr/aliases/ps/" />
+  </url>
+  <url>
+    <loc>https://dotfiles.io/aliases/rsync/</loc>
+    <changefreq>daily</changefreq>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://dotfiles.io/aliases/rsync/" />
+    <xhtml:link rel="alternate" hreflang="fr-FR" href="https://dotfiles.io/fr/aliases/rsync/" />
+  </url>
+  <url>
+    <loc>https://dotfiles.io/aliases/rust/</loc>
+    <changefreq>daily</changefreq>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://dotfiles.io/aliases/rust/" />
+    <xhtml:link rel="alternate" hreflang="fr-FR" href="https://dotfiles.io/fr/aliases/rust/" />
+  </url>
+  <url>
+    <loc>https://dotfiles.io/aliases/subversion/</loc>
+    <changefreq>daily</changefreq>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://dotfiles.io/aliases/subversion/" />
+    <xhtml:link rel="alternate" hreflang="fr-FR" href="https://dotfiles.io/fr/aliases/subversion/" />
+  </url>
+  <url>
+    <loc>https://dotfiles.io/aliases/sudo/</loc>
+    <changefreq>daily</changefreq>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://dotfiles.io/aliases/sudo/" />
+    <xhtml:link rel="alternate" hreflang="fr-FR" href="https://dotfiles.io/fr/aliases/sudo/" />
+  </url>
+  <url>
+    <loc>https://dotfiles.io/aliases/tmux/</loc>
+    <changefreq>daily</changefreq>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://dotfiles.io/aliases/tmux/" />
+    <xhtml:link rel="alternate" hreflang="fr-FR" href="https://dotfiles.io/fr/aliases/tmux/" />
+  </url>
+  <url>
+    <loc>https://dotfiles.io/aliases/update/</loc>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://dotfiles.io/aliases/uuid/</loc>
+    <changefreq>daily</changefreq>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://dotfiles.io/aliases/uuid/" />
+    <xhtml:link rel="alternate" hreflang="fr-FR" href="https://dotfiles.io/fr/aliases/uuid/" />
+  </url>
+  <url>
+    <loc>https://dotfiles.io/aliases/wget/</loc>
+    <changefreq>daily</changefreq>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://dotfiles.io/aliases/wget/" />
+    <xhtml:link rel="alternate" hreflang="fr-FR" href="https://dotfiles.io/fr/aliases/wget/" />
+  </url>
+  <url>
+    <loc>https://dotfiles.io/fr/alias/</loc>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://dotfiles.io/fr/alias/archives/</loc>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://dotfiles.io/fr/</loc>
+    <changefreq>daily</changefreq>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://dotfiles.io/" />
+    <xhtml:link rel="alternate" hreflang="fr-FR" href="https://dotfiles.io/fr/" />
+  </url>
+  <url>
+    <loc>https://dotfiles.io/fr/alias/cd/</loc>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://dotfiles.io/fr/aliases/chmod/</loc>
+    <changefreq>daily</changefreq>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://dotfiles.io/aliases/chmod/" />
+    <xhtml:link rel="alternate" hreflang="fr-FR" href="https://dotfiles.io/fr/aliases/chmod/" />
+  </url>
+  <url>
+    <loc>https://dotfiles.io/fr/aliases/clear/</loc>
+    <changefreq>daily</changefreq>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://dotfiles.io/aliases/clear/" />
+    <xhtml:link rel="alternate" hreflang="fr-FR" href="https://dotfiles.io/fr/aliases/clear/" />
+  </url>
+  <url>
+    <loc>https://dotfiles.io/fr/aliases/configuration/</loc>
+    <changefreq>daily</changefreq>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://dotfiles.io/aliases/configuration/" />
+    <xhtml:link rel="alternate" hreflang="fr-FR" href="https://dotfiles.io/fr/aliases/configuration/" />
+  </url>
+  <url>
+    <loc>https://dotfiles.io/fr/aliases/default/</loc>
+    <changefreq>daily</changefreq>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://dotfiles.io/aliases/default/" />
+    <xhtml:link rel="alternate" hreflang="fr-FR" href="https://dotfiles.io/fr/aliases/default/" />
+  </url>
+  <url>
+    <loc>https://dotfiles.io/fr/aliases/dig/</loc>
+    <changefreq>daily</changefreq>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://dotfiles.io/aliases/dig/" />
+    <xhtml:link rel="alternate" hreflang="fr-FR" href="https://dotfiles.io/fr/aliases/dig/" />
+  </url>
+  <url>
+    <loc>https://dotfiles.io/fr/aliases/du/</loc>
+    <changefreq>daily</changefreq>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://dotfiles.io/aliases/du/" />
+    <xhtml:link rel="alternate" hreflang="fr-FR" href="https://dotfiles.io/fr/aliases/du/" />
+  </url>
+  <url>
+    <loc>https://dotfiles.io/fr/aliases/editor/</loc>
+    <changefreq>daily</changefreq>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://dotfiles.io/aliases/editor/" />
+    <xhtml:link rel="alternate" hreflang="fr-FR" href="https://dotfiles.io/fr/aliases/editor/" />
+  </url>
+  <url>
+    <loc>https://dotfiles.io/fr/aliases/gcloud/</loc>
+    <changefreq>daily</changefreq>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://dotfiles.io/aliases/gcloud/" />
+    <xhtml:link rel="alternate" hreflang="fr-FR" href="https://dotfiles.io/fr/aliases/gcloud/" />
+  </url>
+  <url>
+    <loc>https://dotfiles.io/fr/aliases/liste/</loc>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://dotfiles.io/fr/aliases/jekyll/</loc>
+    <changefreq>daily</changefreq>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://dotfiles.io/aliases/jekyll/" />
+    <xhtml:link rel="alternate" hreflang="fr-FR" href="https://dotfiles.io/fr/aliases/jekyll/" />
+  </url>
+  <url>
+    <loc>https://dotfiles.io/fr/aliases/make/</loc>
+    <changefreq>daily</changefreq>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://dotfiles.io/aliases/make/" />
+    <xhtml:link rel="alternate" hreflang="fr-FR" href="https://dotfiles.io/fr/aliases/make/" />
+  </url>
+  <url>
+    <loc>https://dotfiles.io/fr/aliases/mise-a-jour/</loc>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://dotfiles.io/fr/aliases/mkdir/</loc>
+    <changefreq>daily</changefreq>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://dotfiles.io/aliases/mkdir/" />
+    <xhtml:link rel="alternate" hreflang="fr-FR" href="https://dotfiles.io/fr/aliases/mkdir/" />
+  </url>
+  <url>
+    <loc>https://dotfiles.io/fr/aliases/mode-interactif/</loc>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://dotfiles.io/fr/aliases/npm/</loc>
+    <changefreq>daily</changefreq>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://dotfiles.io/aliases/npm/" />
+    <xhtml:link rel="alternate" hreflang="fr-FR" href="https://dotfiles.io/fr/aliases/npm/" />
+  </url>
+  <url>
+    <loc>https://dotfiles.io/fr/aliases/pnpm/</loc>
+    <changefreq>daily</changefreq>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://dotfiles.io/aliases/pnpm/" />
+    <xhtml:link rel="alternate" hreflang="fr-FR" href="https://dotfiles.io/fr/aliases/pnpm/" />
+  </url>
+  <url>
+    <loc>https://dotfiles.io/fr/aliases/ps/</loc>
+    <changefreq>daily</changefreq>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://dotfiles.io/aliases/ps/" />
+    <xhtml:link rel="alternate" hreflang="fr-FR" href="https://dotfiles.io/fr/aliases/ps/" />
+  </url>
+  <url>
+    <loc>https://dotfiles.io/fr/alias/recherche/</loc>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://dotfiles.io/fr/aliases/rsync/</loc>
+    <changefreq>daily</changefreq>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://dotfiles.io/aliases/rsync/" />
+    <xhtml:link rel="alternate" hreflang="fr-FR" href="https://dotfiles.io/fr/aliases/rsync/" />
+  </url>
+  <url>
+    <loc>https://dotfiles.io/fr/aliases/rust/</loc>
+    <changefreq>daily</changefreq>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://dotfiles.io/aliases/rust/" />
+    <xhtml:link rel="alternate" hreflang="fr-FR" href="https://dotfiles.io/fr/aliases/rust/" />
+  </url>
+  <url>
+    <loc>https://dotfiles.io/fr/aliases/subversion/</loc>
+    <changefreq>daily</changefreq>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://dotfiles.io/aliases/subversion/" />
+    <xhtml:link rel="alternate" hreflang="fr-FR" href="https://dotfiles.io/fr/aliases/subversion/" />
+  </url>
+  <url>
+    <loc>https://dotfiles.io/fr/aliases/sudo/</loc>
+    <changefreq>daily</changefreq>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://dotfiles.io/aliases/sudo/" />
+    <xhtml:link rel="alternate" hreflang="fr-FR" href="https://dotfiles.io/fr/aliases/sudo/" />
+  </url>
+  <url>
+    <loc>https://dotfiles.io/fr/aliases/tmux/</loc>
+    <changefreq>daily</changefreq>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://dotfiles.io/aliases/tmux/" />
+    <xhtml:link rel="alternate" hreflang="fr-FR" href="https://dotfiles.io/fr/aliases/tmux/" />
+  </url>
+  <url>
+    <loc>https://dotfiles.io/fr/aliases/uuid/</loc>
+    <changefreq>daily</changefreq>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://dotfiles.io/aliases/uuid/" />
+    <xhtml:link rel="alternate" hreflang="fr-FR" href="https://dotfiles.io/fr/aliases/uuid/" />
+  </url>
+  <url>
+    <loc>https://dotfiles.io/fr/aliases/wget/</loc>
+    <changefreq>daily</changefreq>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://dotfiles.io/aliases/wget/" />
+    <xhtml:link rel="alternate" hreflang="fr-FR" href="https://dotfiles.io/fr/aliases/wget/" />
+  </url>
+  <url>
+    <loc>https://dotfiles.io/fr/apropos/</loc>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://dotfiles.io/fr/aliases/heroku/</loc>
+    <changefreq>daily</changefreq>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://dotfiles.io/aliases/heroku/" />
+    <xhtml:link rel="alternate" hreflang="fr-FR" href="https://dotfiles.io/fr/aliases/heroku/" />
+  </url>
+  <url>
+    <loc>https://dotfiles.io/fr/aliases/gnu/</loc>
+    <changefreq>daily</changefreq>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://dotfiles.io/aliases/gnu/" />
+    <xhtml:link rel="alternate" hreflang="fr-FR" href="https://dotfiles.io/fr/aliases/gnu/" />
+  </url>
+  <url>
+    <loc>https://dotfiles.io/fr/aliases/git/</loc>
+    <changefreq>daily</changefreq>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://dotfiles.io/aliases/git/" />
+    <xhtml:link rel="alternate" hreflang="fr-FR" href="https://dotfiles.io/fr/aliases/git/" />
   </url>
 </urlset>
