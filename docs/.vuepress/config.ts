@@ -1,22 +1,24 @@
-import { enNavbar } from './config/nav';      // Import English navbar
-import { enSidebar } from './config/sidebar'; // Import English sidebar
-import { frNavbar } from './config/nav';      // Import French navbar
-import { frSidebar } from './config/sidebar'; // Import French sidebar
-import { headers } from './config/head';      // Import Headers for SEO
+import { enNavbar } from "./config/nav"; // Import English navbar
+import { enSidebar } from "./config/sidebar"; // Import English sidebar
+import { frNavbar } from "./config/nav"; // Import French navbar
+import { frSidebar } from "./config/sidebar"; // Import French sidebar
+import { headers } from "./config/head"; // Import Headers for SEO
 
 module.exports = {
-  base: '/',
+  base: "/",
   locales: {
     "/": {
-      lang: 'en-GB',
+      lang: "en-GB",
       title: "Dotfiles",
-      description: "The next generation of Bash configuration files for macOS, Linux and Windows. Dotfiles gives you new ways to do more than ever with your shell.",
+      description:
+        "The next generation of Bash configuration files for macOS, Linux and Windows. Dotfiles gives you new ways to do more than ever with your shell.",
     },
     "/fr/": {
       lang: "fr-FR", // French
       title: "Les Dotfiles",
-      description: "La prochaine génération de fichiers de configuration Bash pour macOS, Linux et Windows. Avec Dotfiles, vous pouvez en faire toujours plus avec votre shell.",
-    }
+      description:
+        "La prochaine génération de fichiers de configuration Bash pour macOS, Linux et Windows. Avec Dotfiles, vous pouvez en faire toujours plus avec votre shell.",
+    },
   },
   // Enable evergreen browsers support
   evergreen: true,
@@ -37,7 +39,7 @@ module.exports = {
     // if your docs are not at the root of the repo:
     docsDir: "docs",
     // if your docs are in a specific branch (defaults to 'master'):
-    docsBranch: 'main',
+    docsBranch: "main",
     // defaults to false, set to true to enable
     editLinks: true,
     // locale for edit link text
@@ -46,7 +48,7 @@ module.exports = {
         // text for the language dropdown
         selectText: "Languages",
         // Aria Label for locale in the dropdown
-        ariaLabel: 'Languages',
+        ariaLabel: "Languages",
         // label for this locale in the language dropdown
         label: "English",
         // Custom text for edit link. Defaults to "Edit this page"
@@ -60,7 +62,7 @@ module.exports = {
         // text for the language dropdown
         selectText: "Langues",
         // Aria Label for locale in the dropdown
-        ariaLabel: 'Langues',
+        ariaLabel: "Langues",
         // label for this locale in the language dropdown
         label: "Français",
         // Custom text for edit link. Defaults to "Edit this page"
@@ -71,24 +73,22 @@ module.exports = {
         sidebar: frSidebar,
       },
     },
-    chainWebpack: config => {
-      config
-        .plugin('html')
-        .tap(args => {
-          args[0].minify = {
-            minifyCSS: true,
-            minifyJS: true,
-            minifyURLs: true,
-            removeComments: true,
-            collapseWhitespace: true,
-            collapseBooleanAttributes: true,
-            removeScriptTypeAttributes: true,
-            removeAttributeQuotes: true,
-            removeEmptyAttributes: true,
-            removeStyleLinkTypeAttributes: true
-          };
-          return args;
-        })
+    chainWebpack: (config) => {
+      config.plugin("html").tap((args) => {
+        args[0].minify = {
+          minifyCSS: true,
+          minifyJS: true,
+          minifyURLs: true,
+          removeComments: true,
+          collapseWhitespace: true,
+          collapseBooleanAttributes: true,
+          removeScriptTypeAttributes: true,
+          removeAttributeQuotes: true,
+          removeEmptyAttributes: true,
+          removeStyleLinkTypeAttributes: true,
+        };
+        return args;
+      });
     },
   },
   plugins: [
@@ -103,30 +103,33 @@ module.exports = {
       {
         hostname: "https://dotfiles.io",
         outFile: "sitemap.xml",
-        exclude: ['/404.html']
+        exclude: ["/404.html"],
       },
     ],
     [
-      '@vuepress/pwa',
+      "@vuepress/pwa",
       {
         serviceWorker: true,
-        updatePopup: true
-      }
+        updatePopup: true,
+      },
     ],
     ["vuepress-plugin-code-copy", true],
-    ["html-webpack-plugin", {
-      minify: {
-        minifyCSS: true,
-        minifyJS: true,
-        minifyURLs: true,
-        removeComments: true,
-        collapseWhitespace: true,
-        collapseBooleanAttributes: true,
-        removeScriptTypeAttributes: true,
-        removeAttributeQuotes: true,
-        removeEmptyAttributes: true,
-        removeStyleLinkTypeAttributes: true
-      }
-    }],
+    [
+      "html-webpack-plugin",
+      {
+        minify: {
+          minifyCSS: true,
+          minifyJS: true,
+          minifyURLs: true,
+          removeComments: true,
+          collapseWhitespace: true,
+          collapseBooleanAttributes: true,
+          removeScriptTypeAttributes: true,
+          removeAttributeQuotes: true,
+          removeEmptyAttributes: true,
+          removeStyleLinkTypeAttributes: true,
+        },
+      },
+    ],
   ],
 };

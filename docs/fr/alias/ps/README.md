@@ -29,13 +29,13 @@ Le fichier `ps.aliases.sh` crée des raccourcis utiles pour travailler avec les
 processus.
 
 Les alias PS sont une collection d'alias qui vous permettent d'interagir avec
-l'outil de ligne de commande `ps`. [PS](https://en.wikipedia.org/wiki/Ps_(Unix))
+l'outil de ligne de commande `ps`. [PS](<https://en.wikipedia.org/wiki/Ps_(Unix)>)
 est un outil qui affiche un instantané des processus en cours d'exécution.
 
 ## Raccourcis PS
 
-| Alias | Command | Description |
-| ----- | ----- | ----- |
-| pid | `ps -f` | Affiche les processus en cours d'exécution |
-| ps | `ps -ef` | Affiche les processus en cours d'exécution |
-| psa | `ps aux` | Liste tous les processus en cours d'exécution |
+| Alias | Command  | Description                                   |
+| ----- | -------- | --------------------------------------------- |
+| pid   | `ps -f`  | Affiche les processus en cours d'exécution    |
+| ps    | `ps -ef` | Affiche les processus en cours d'exécution    |
+| psa   | `ps aux` | Liste tous les processus en cours d'exécution |

@@ -34,6 +34,6 @@ commande uuidgen génère un Universally Unique IDentifier (UUID), une valeur de
 
 ## Raccourcis UUID
 
-| Alias | Command | Description |
-| ----- | ----- | ----- |
-| uuid | `uuidgen \| tr -d '\n' \| tr '[:upper:]' '[:lower:]' \| pbcopy && pbpaste && echo` | Génère un UUID et le copie dans le presse-papier |
+| Alias | Command                                                                            | Description                                      |
+| ----- | ---------------------------------------------------------------------------------- | ------------------------------------------------ |
+| uuid  | `uuidgen \| tr -d '\n' \| tr '[:upper:]' '[:lower:]' \| pbcopy && pbpaste && echo` | Génère un UUID et le copie dans le presse-papier |

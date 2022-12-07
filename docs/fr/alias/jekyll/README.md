@@ -39,11 +39,11 @@ page, etc.
 
 ## Les raccourcis Jekyll
 
-| Alias | Command | Description |
-| ----- | ----- | ----- |
-| jkb | `JEKYLL_ENV=development bundle exec jekyll build` | Construit le site web statique en mode développement. |
-| jkc | `JEKYLL_ENV=development bundle exec jekyll clean` | Supprime les fichiers générés par Jekyll. |
-| jkd | `JEKYLL_ENV=development bundle exec jekyll serve --watch --trace` | Démarre le serveur de développement Jekyll. |
-| jkl | `JEKYLL_ENV=development bundle exec jekyll serve --livereload` | Démarre le serveur de développement Jekyll avec le rechargement automatique. |
-| jko | `open http://localhost:4000/` | Ouvre le site web statique dans le navigateur par défaut. |
-| jkp | `JEKYLL_ENV=production bundle exec jekyll serve --watch --trace` | Démarre le serveur de production Jekyll. |
+| Alias | Command                                                           | Description                                                                  |
+| ----- | ----------------------------------------------------------------- | ---------------------------------------------------------------------------- |
+| jkb   | `JEKYLL_ENV=development bundle exec jekyll build`                 | Construit le site web statique en mode développement.                        |
+| jkc   | `JEKYLL_ENV=development bundle exec jekyll clean`                 | Supprime les fichiers générés par Jekyll.                                    |
+| jkd   | `JEKYLL_ENV=development bundle exec jekyll serve --watch --trace` | Démarre le serveur de développement Jekyll.                                  |
+| jkl   | `JEKYLL_ENV=development bundle exec jekyll serve --livereload`    | Démarre le serveur de développement Jekyll avec le rechargement automatique. |
+| jko   | `open http://localhost:4000/`                                     | Ouvre le site web statique dans le navigateur par défaut.                    |
+| jkp   | `JEKYLL_ENV=production bundle exec jekyll serve --watch --trace`  | Démarre le serveur de production Jekyll.                                     |

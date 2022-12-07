@@ -1,5 +1,5 @@
 export const alias = {
-  ariaLabel: 'Les alias Dotfiles',
+  ariaLabel: "Les alias Dotfiles",
   children: [
     ["/fr/alias/archives/", "les alias d'archivage"],
     ["/fr/alias/cd/", "les alias cd"],
@@ -33,7 +33,6 @@ export const alias = {
     ["/fr/alias/wget/", "les alias wget"],
   ],
   collapsable: false,
-  path: '/fr/alias/',
-  title: 'Les alias Dotfiles',
-
-}
+  path: "/fr/alias/",
+  title: "Les alias Dotfiles",
+};

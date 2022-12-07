@@ -34,13 +34,13 @@ terminal multiples sur un serveur distant.
 
 ## Raccourcis Tmux
 
-| Alias | Commande | Description |
-| ----- | ----- | ----- |
-| tm |`tmux` | Lance Tmux |
-| tma |`tmux attach-session` | Attache une session Tmux |
-| tmat |`tmux attach-session -t` | Attache une session Tmux avec un nom spécifique |
-| tmks |`tmux kill-session -a` | Tuer toutes les sessions Tmux |
-| tml |`tmux list-sessions` | Liste les sessions Tmux |
-| tmn |`tmux new-session` | Crée une nouvelle session Tmux |
-| tmns |`tmux new -s` | Crée une nouvelle session Tmux avec un nom spécifique |
-| tms |`tmux new-session -s` | Crée une nouvelle session Tmux avec un nom spécifique |
+| Alias | Commande                 | Description                                           |
+| ----- | ------------------------ | ----------------------------------------------------- |
+| tm    | `tmux`                   | Lance Tmux                                            |
+| tma   | `tmux attach-session`    | Attache une session Tmux                              |
+| tmat  | `tmux attach-session -t` | Attache une session Tmux avec un nom spécifique       |
+| tmks  | `tmux kill-session -a`   | Tuer toutes les sessions Tmux                         |
+| tml   | `tmux list-sessions`     | Liste les sessions Tmux                               |
+| tmn   | `tmux new-session`       | Crée une nouvelle session Tmux                        |
+| tmns  | `tmux new -s`            | Crée une nouvelle session Tmux avec un nom spécifique |
+| tms   | `tmux new-session -s`    | Crée une nouvelle session Tmux avec un nom spécifique |

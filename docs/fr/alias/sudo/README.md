@@ -34,9 +34,9 @@ vous permet d'exécuter des commandes en tant qu'un autre utilisateur.
 
 ## Raccourcis Sudo
 
-| Alias | Commande | Description |
-| ----- | ----- | ----- |
-| root | `s` | Exécute une commande en tant qu'utilisateur root |
-| s | `sudo -i` | Exécute une commande en tant qu'utilisateur root |
-| su | `sudo su` | Exécute une commande en tant qu'utilisateur root |
-| sudo | `s` | Exécute une commande en tant qu'utilisateur root |
+| Alias | Commande  | Description                                      |
+| ----- | --------- | ------------------------------------------------ |
+| root  | `s`       | Exécute une commande en tant qu'utilisateur root |
+| s     | `sudo -i` | Exécute une commande en tant qu'utilisateur root |
+| su    | `sudo su` | Exécute une commande en tant qu'utilisateur root |
+| sudo  | `s`       | Exécute une commande en tant qu'utilisateur root |

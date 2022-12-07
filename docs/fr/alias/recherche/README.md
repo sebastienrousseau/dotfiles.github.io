@@ -41,22 +41,22 @@ rapides et plus faciles à utiliser.
 
 ## Raccourcis de recherche
 
-| Alias | Commande | Description |
-| ----- | ----- | ----- |
-| fd | `fd --color always` | Toujours afficher les résultats avec des couleurs. |
-| fda | `fd --absolute-path` | Afficher les résultats avec des chemins absolus. |
-| fdc | `fd --ignore-case` | Ignorer la casse. |
-| fdd | `fd  --list-details` | Afficher les résultats avec des détails. |
-| fde | `fd --extension` | Rechercher des fichiers avec une extension spécifique. |
-| fdf | `fd --follow` | Suivre les liens symboliques. |
-| fdh | `fd --help` | Afficher l'aide. |
-| fdh | `fd --hidden` | Rechercher des fichiers cachés. |
-| fdn | `fd --glob` | Rechercher des fichiers avec un motif de nom. |
-| fdo | `fd --owner` | Rechercher des fichiers avec un propriétaire spécifique. |
-| fds | `fd --size` | Rechercher des fichiers avec une taille spécifique. |
-| fdu | `fd --exclude` | Exclure des fichiers ou des dossiers. |
-| fdv | `fd --version` | Afficher la version. |
-| fdx | `fd --exec` | Exécuter une commande pour chaque résultat. |
-| find | `fd` | Rechercher des fichiers et des dossiers. |
+| Alias | Commande             | Description                                              |
+| ----- | -------------------- | -------------------------------------------------------- |
+| fd    | `fd --color always`  | Toujours afficher les résultats avec des couleurs.       |
+| fda   | `fd --absolute-path` | Afficher les résultats avec des chemins absolus.         |
+| fdc   | `fd --ignore-case`   | Ignorer la casse.                                        |
+| fdd   | `fd --list-details`  | Afficher les résultats avec des détails.                 |
+| fde   | `fd --extension`     | Rechercher des fichiers avec une extension spécifique.   |
+| fdf   | `fd --follow`        | Suivre les liens symboliques.                            |
+| fdh   | `fd --help`          | Afficher l'aide.                                         |
+| fdh   | `fd --hidden`        | Rechercher des fichiers cachés.                          |
+| fdn   | `fd --glob`          | Rechercher des fichiers avec un motif de nom.            |
+| fdo   | `fd --owner`         | Rechercher des fichiers avec un propriétaire spécifique. |
+| fds   | `fd --size`          | Rechercher des fichiers avec une taille spécifique.      |
+| fdu   | `fd --exclude`       | Exclure des fichiers ou des dossiers.                    |
+| fdv   | `fd --version`       | Afficher la version.                                     |
+| fdx   | `fd --exec`          | Exécuter une commande pour chaque résultat.              |
+| find  | `fd`                 | Rechercher des fichiers et des dossiers.                 |
 
-[fd]:https://github.com/sharkdp/fd
+[fd]: https://github.com/sharkdp/fd

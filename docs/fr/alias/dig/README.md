@@ -28,7 +28,7 @@ meta:
 Le fichier `dig.aliases.sh` crée des alias de raccourcis pour la commande `dig`.
 Ils sont utilisés pour afficher les informations DNS.
 
-Le [Dig](https://en.wikipedia.org/wiki/Dig_(command))
+Le [Dig](<https://en.wikipedia.org/wiki/Dig_(command)>)
 (domain information groper) est un outil flexible pour interroger les
 serveurs de noms DNS de noms. Il effectue des recherches DNS et affiche les
 réponses renvoyées par le(s) du ou des serveurs de noms qui ont été interrogés.
@@ -37,15 +37,15 @@ informations sur un domaine, comme l'adresse IP.
 
 ## Raccourcis dig
 
-| Alias | Commande | Description |
-| ----- | ----- | ----- |
-| d | `$(which dig)` | Exécute la commande `dig` |
-| d4 | `$(which dig) +short -4` | Exécute la commande `dig` avec l'option `+short -4` |
-| d6 | `$(which dig) +short -6` | Exécute la commande `dig` avec l'option `+short -6` |
-| dga | `$(which dig) +all ANY` | Exécute la commande `dig` avec l'option `+all ANY` |
-| dgs | `$(which dig) +short` | Exécute la commande `dig` avec l'option `+short` |
-| digg | `$(which dig) @8.8.8.8 +nocmd any +multiline +noall +answer` | Exécute la commande `dig` avec Google DNS |
-| ip4 | `$(which dig) +short myip.opendns.com @resolver1.opendns.com -4` | Exécute la commande `dig` pour récupérer l'adresse IP publique IPv4 |
-| ip6 | `$(which dig) -6 AAAA +short myip.opendns.com. @resolver1.opendns.com.` | Exécute la commande `dig` pour récupérer l'adresse IP publique IPv6 |
-| ips | `ip4; ip6` | Exécute les commandes `ip4` et `ip6` |
-| wip | `$(which dig) +short myip.opendns.com @resolver1.opendns.com` | Exécute la commande `dig` pour récupérer l'adresse IP publique |
+| Alias | Commande                                                                | Description                                                         |
+| ----- | ----------------------------------------------------------------------- | ------------------------------------------------------------------- |
+| d     | `$(which dig)`                                                          | Exécute la commande `dig`                                           |
+| d4    | `$(which dig) +short -4`                                                | Exécute la commande `dig` avec l'option `+short -4`                 |
+| d6    | `$(which dig) +short -6`                                                | Exécute la commande `dig` avec l'option `+short -6`                 |
+| dga   | `$(which dig) +all ANY`                                                 | Exécute la commande `dig` avec l'option `+all ANY`                  |
+| dgs   | `$(which dig) +short`                                                   | Exécute la commande `dig` avec l'option `+short`                    |
+| digg  | `$(which dig) @8.8.8.8 +nocmd any +multiline +noall +answer`            | Exécute la commande `dig` avec Google DNS                           |
+| ip4   | `$(which dig) +short myip.opendns.com @resolver1.opendns.com -4`        | Exécute la commande `dig` pour récupérer l'adresse IP publique IPv4 |
+| ip6   | `$(which dig) -6 AAAA +short myip.opendns.com. @resolver1.opendns.com.` | Exécute la commande `dig` pour récupérer l'adresse IP publique IPv6 |
+| ips   | `ip4; ip6`                                                              | Exécute les commandes `ip4` et `ip6`                                |
+| wip   | `$(which dig) +short myip.opendns.com @resolver1.opendns.com`           | Exécute la commande `dig` pour récupérer l'adresse IP publique      |

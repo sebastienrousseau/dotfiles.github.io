@@ -45,14 +45,14 @@ variable in order of preference. This list can be changed by editing the
 [Editor](https://en.wikipedia.org/wiki/Text_editor) is a program for editing
 plain text files.
 
-| Alias | Command | Description |
-| ----- | ----- | ----- |
-| e | `${editor}` | Edit a file. |
-| edit | `${editor}` | Edit a file. |
+| Alias  | Command     | Description  |
+| ------ | ----------- | ------------ |
+| e      | `${editor}` | Edit a file. |
+| edit   | `${editor}` | Edit a file. |
 | editor | `${editor}` | Edit a file. |
-| mate | `${editor}` | Edit a file. |
-| n | `${editor}` | Edit a file. |
-| v | `${editor}` | Edit a file. |
+| mate   | `${editor}` | Edit a file. |
+| n      | `${editor}` | Edit a file. |
+| v      | `${editor}` | Edit a file. |
 
 [np++]: https://notepad-plus-plus.org/
 [gdt]: https://wiki.gnome.org/Apps/Gedit
