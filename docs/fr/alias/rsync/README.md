@@ -33,7 +33,7 @@ répertoires entre des ordinateurs.
 
 ## Raccourcis Rsync
 
-| Alias | Command | Description |
-| ----- | ----- | ----- |
-| rs | `rsync -avz` | Rsync avec des options par défaut |
-| rsync | `rs` | Rsync avec des options par défaut |
+| Alias | Command      | Description                       |
+| ----- | ------------ | --------------------------------- |
+| rs    | `rsync -avz` | Rsync avec des options par défaut |
+| rsync | `rs`         | Rsync avec des options par défaut |

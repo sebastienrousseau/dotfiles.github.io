@@ -1,2 +1,2 @@
-export { enSidebar } from './en'
-export { frSidebar } from './fr'
+export { enSidebar } from "./en";
+export { frSidebar } from "./fr";

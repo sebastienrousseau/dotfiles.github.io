@@ -31,10 +31,10 @@ les paramètres de votre shell et de vos applications.
 
 ## Raccourcis de configuration
 
-| Alias | Commande | Description |
-| ----- | ----- | ----- |
-| bshp | `${=EDITOR} $HOME/.bash_profile` | Ouvre le fichier de configuration de profile Bash avec l'éditeur par défaut. |
-| bshrc | `${=EDITOR} $HOME/.bashrc` | Ouvre le fichier de configuration de Bash avec l'éditeur par défaut. |
-| gcfg | `${=EDITOR} $HOME/.gitconfig` | Ouvre le fichier de configuration de Git avec l'éditeur par défaut. |
-| gign | `${=EDITOR} $HOME/.gitignore` | Ouvre le fichier de configuration de Git avec l'éditeur par défaut. |
-| zshrc | `${=EDITOR} $HOME/.zshrc` | Ouvre le fichier de configuration de Zsh avec l'éditeur par défaut. |
+| Alias | Commande                         | Description                                                                  |
+| ----- | -------------------------------- | ---------------------------------------------------------------------------- |
+| bshp  | `${=EDITOR} $HOME/.bash_profile` | Ouvre le fichier de configuration de profile Bash avec l'éditeur par défaut. |
+| bshrc | `${=EDITOR} $HOME/.bashrc`       | Ouvre le fichier de configuration de Bash avec l'éditeur par défaut.         |
+| gcfg  | `${=EDITOR} $HOME/.gitconfig`    | Ouvre le fichier de configuration de Git avec l'éditeur par défaut.          |
+| gign  | `${=EDITOR} $HOME/.gitignore`    | Ouvre le fichier de configuration de Git avec l'éditeur par défaut.          |
+| zshrc | `${=EDITOR} $HOME/.zshrc`        | Ouvre le fichier de configuration de Zsh avec l'éditeur par défaut.          |

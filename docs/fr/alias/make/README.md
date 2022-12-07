@@ -39,13 +39,13 @@ Par exemple, si vous avez un fichier `main.c` qui inclut `foo.h`, vous pouvez
 
 ## Raccourcis de make
 
-| Alias | Command | Description |
-| ----- | ----- | ----- |
-| mk | `make` | Exécute la commande make |
-| mkc | `make clean` | Exécute la commande make clean |
-| mkd | `make doc` | Exécute la commande make doc |
-| mkf | `make format` | Exécute la commande make format |
-| mkh | `make help` | Exécute la commande make help |
-| mki | `make install` | Exécute la commande make install |
-| mkr | `make run` | Exécute la commande make run |
-| mkt | `make test` | Exécute la commande make test |
+| Alias | Command        | Description                      |
+| ----- | -------------- | -------------------------------- |
+| mk    | `make`         | Exécute la commande make         |
+| mkc   | `make clean`   | Exécute la commande make clean   |
+| mkd   | `make doc`     | Exécute la commande make doc     |
+| mkf   | `make format`  | Exécute la commande make format  |
+| mkh   | `make help`    | Exécute la commande make help    |
+| mki   | `make install` | Exécute la commande make install |
+| mkr   | `make run`     | Exécute la commande make run     |
+| mkt   | `make test`    | Exécute la commande make test    |

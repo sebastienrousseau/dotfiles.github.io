@@ -35,9 +35,9 @@ proxies HTTP.
 
 ## Raccourcis wget
 
- | Alias | Commande | Description |
-| ----- | ----- | ----- |
-| wg | `wget` | Télécharge un fichier depuis un serveur web |
-| wgc | `wg` | Télécharge un fichier depuis un serveur web |
-| wge | `wg -e robots=off` | Télécharge un fichier depuis un serveur web en désactivant le robot |
-| wget | `wget -c` | Télécharge un fichier depuis un serveur web en continuant |
+| Alias | Commande           | Description                                                         |
+| ----- | ------------------ | ------------------------------------------------------------------- |
+| wg    | `wget`             | Télécharge un fichier depuis un serveur web                         |
+| wgc   | `wg`               | Télécharge un fichier depuis un serveur web                         |
+| wge   | `wg -e robots=off` | Télécharge un fichier depuis un serveur web en désactivant le robot |
+| wget  | `wget -c`          | Télécharge un fichier depuis un serveur web en continuant           |

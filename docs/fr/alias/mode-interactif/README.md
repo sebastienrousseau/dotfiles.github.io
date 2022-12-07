@@ -36,12 +36,12 @@ mode interactif qui vous permet de vérifier la commande avant de continuer.
 
 ## Raccourcis en mode interactif
 
-| Alias | Command | Description |
-| ----- | ----- | ----- |
-| bin | `rm -fr ${HOME}/.Trash` | Vide la corbeille |
-| cp  | `cp -vi` | Copie un fichier avec confirmation |
-| del | `rm -rfvi` | Supprime un fichier avec confirmation |
-| ln  | `ln -vi` | Crée un lien symbolique avec confirmation |
-| mv  | `mv -vi` | Déplace un fichier avec confirmation |
-| rm  | `rm -vi` | Supprime un fichier avec confirmation |
-| zap | `rm -vi` | Supprime un fichier avec confirmation |
+| Alias | Command                 | Description                               |
+| ----- | ----------------------- | ----------------------------------------- |
+| bin   | `rm -fr ${HOME}/.Trash` | Vide la corbeille                         |
+| cp    | `cp -vi`                | Copie un fichier avec confirmation        |
+| del   | `rm -rfvi`              | Supprime un fichier avec confirmation     |
+| ln    | `ln -vi`                | Crée un lien symbolique avec confirmation |
+| mv    | `mv -vi`                | Déplace un fichier avec confirmation      |
+| rm    | `rm -vi`                | Supprime un fichier avec confirmation     |
+| zap   | `rm -vi`                | Supprime un fichier avec confirmation     |

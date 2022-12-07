@@ -40,7 +40,7 @@ seule commande qui :
 1. Met à jour le système d'exploitation et les paquets logiciels
 2. Met à jour les Dotfiles
 3. Met à jour le fichier `update.aliases.sh` pour inclure les dernières
-    modifications
+   modifications
 
 ### Plateformes prises en charge
 
@@ -50,9 +50,9 @@ L'alias `upd` a été adapté pour fonctionner sur Linux. Il mettra à jour les
 distributions Linux basées sur Debian, via le gestionnaire de paquets `apt` et
 d'autres dépendances via pnpm, rustup (Rust) et gem (Ruby).
 
-| Alias | Commande | Description |
-| ----- | ----- | ----- |
-| upd | `sudo apt update && sudo apt upgrade -y && pnpm up && rustup update stable && sudo gem update && sudo gem cleanup` | Met à jour le système d'exploitation et les paquets logiciels |
+| Alias | Commande                                                                                                           | Description                                                   |
+| ----- | ------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------- |
+| upd   | `sudo apt update && sudo apt upgrade -y && pnpm up && rustup update stable && sudo gem update && sudo gem cleanup` | Met à jour le système d'exploitation et les paquets logiciels |
 
 ### macOS
 
@@ -60,6 +60,6 @@ L'alias `upd` est également disponible pour macOS. Il mettra à jour macOS, via
 la ligne de commande `softwareupdate`, et gérera ses dépendances à l'aide des
 gestionnaires de paquets pnpm, Homebrew, mas, rustup et gem.
 
-| Alias | Command | Description |
-| ----- | ----- | ----- |
-| upd | `sudo softwareupdate -i -a && pnpm up && rustup update stable && brew cu -ayi && brew doctor && brew update && brew upgrade && brew cleanup && mas upgrade && sudo gem update && sudo gem cleanup` | Met à jour le système d'exploitation et les paquets logiciels |
+| Alias | Command                                                                                                                                                                                            | Description                                                   |
+| ----- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------- |
+| upd   | `sudo softwareupdate -i -a && pnpm up && rustup update stable && brew cu -ayi && brew doctor && brew update && brew upgrade && brew cleanup && mas upgrade && sudo gem update && sudo gem cleanup` | Met à jour le système d'exploitation et les paquets logiciels |

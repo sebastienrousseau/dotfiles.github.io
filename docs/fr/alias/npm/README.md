@@ -31,20 +31,20 @@ langage de programmation JavaScript.
 
 ## Raccourcis NPM
 
-| Alias | Commande | Description |
-| ----- | ----- | ----- |
-| npb   | `npm build` | Lance la commande `npm build` |
-| npc   | `npm cache` | Lance la commande `npm cache` |
-| npd   | `npm dev` | Lance la commande `npm dev` |
-| npg   | `npm global` | Lance la commande `npm global` |
-| npi   | `npm install` | Lance la commande `npm install` |
-| npl   | `npm list` | Lance la commande `npm list` |
-| npp   | `npm publish` | Lance la commande `npm publish` |
-| npr   | `npm run` | Lance la commande `npm run` |
+| Alias | Commande        | Description                       |
+| ----- | --------------- | --------------------------------- |
+| npb   | `npm build`     | Lance la commande `npm build`     |
+| npc   | `npm cache`     | Lance la commande `npm cache`     |
+| npd   | `npm dev`       | Lance la commande `npm dev`       |
+| npg   | `npm global`    | Lance la commande `npm global`    |
+| npi   | `npm install`   | Lance la commande `npm install`   |
+| npl   | `npm list`      | Lance la commande `npm list`      |
+| npp   | `npm publish`   | Lance la commande `npm publish`   |
+| npr   | `npm run`       | Lance la commande `npm run`       |
 | nprw  | `npm run watch` | Lance la commande `npm run watch` |
-| nps   | `npm start` | Lance la commande `npm start` |
-| npsv  | `npm serve` | Lance la commande `npm serve` |
-| npt   | `npm test` | Lance la commande `npm test` |
-| npu   | `npm update` | Lance la commande `npm update` |
-| npx   | `npm exec` | Lance la commande `npm exec` |
-| npy   | `npm why` | Lance la commande `npm why` |
+| nps   | `npm start`     | Lance la commande `npm start`     |
+| npsv  | `npm serve`     | Lance la commande `npm serve`     |
+| npt   | `npm test`      | Lance la commande `npm test`      |
+| npu   | `npm update`    | Lance la commande `npm update`    |
+| npx   | `npm exec`      | Lance la commande `npm exec`      |
+| npy   | `npm why`       | Lance la commande `npm why`       |

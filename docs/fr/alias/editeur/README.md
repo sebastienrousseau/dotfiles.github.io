@@ -42,14 +42,14 @@ variable d'environnement `editor` dans le fichier `editor.aliases.sh` :
 
 ## Raccourcis de l'éditeur système
 
-| Alias | Commande | Description |
-| ----- | ----- | ----- |
-| e | `${editor}` | Ouvre un fichier dans l'éditeur de texte. |
-| edit | `${editor}` | Ouvre un fichier dans l'éditeur de texte. |
+| Alias  | Commande    | Description                               |
+| ------ | ----------- | ----------------------------------------- |
+| e      | `${editor}` | Ouvre un fichier dans l'éditeur de texte. |
+| edit   | `${editor}` | Ouvre un fichier dans l'éditeur de texte. |
 | editor | `${editor}` | Ouvre un fichier dans l'éditeur de texte. |
-| mate | `${editor}` | Ouvre un fichier dans l'éditeur de texte. |
-| n | `${editor}` | Ouvre un fichier dans l'éditeur de texte. |
-| v | `${editor}` | Ouvre un fichier dans l'éditeur de texte. |
+| mate   | `${editor}` | Ouvre un fichier dans l'éditeur de texte. |
+| n      | `${editor}` | Ouvre un fichier dans l'éditeur de texte. |
+| v      | `${editor}` | Ouvre un fichier dans l'éditeur de texte. |
 
 [np++]: https://notepad-plus-plus.org/
 [gdt]: https://wiki.gnome.org/Apps/Gedit

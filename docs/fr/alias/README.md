@@ -102,7 +102,7 @@ Ils ont été regroupés par catégories logiques :
 - [Les alias cd][cd] - Les alias cd vous permettent de naviguer rapidement dans votre système de fichiers.
 - [Les alias chmod][chmod] - Les alias chmod vous permettent de modifier rapidement les permissions des fichiers.
 - [Les alias clear][clear] - Les alias clear vous permettent de nettoyer rapidement votre terminal.
-- [Les alias d'archivage][archives]  Les alias d'archivage vous permettent de créer rapidement des archives.
+- [Les alias d'archivage][archives] Les alias d'archivage vous permettent de créer rapidement des archives.
 - [Les alias de l'éditeur système][editeur] - Les alias de l'éditeur système vous permettent d'éditer rapidement des fichiers.
 - [Les alias de liste][liste] - Les alias de liste vous permettent de lister rapidement des fichiers.
 - [Les alias de mise à jour][mise-a-jour] - Les alias de mise à jour vous permettent de mettre à jour rapidement votre système.

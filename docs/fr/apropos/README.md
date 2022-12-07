@@ -23,7 +23,6 @@ meta:
     content: fr_FR
 ---
 
-
 # Bienvenue à Dotfiles v0.2.462
 
 ## Introduction
@@ -404,9 +403,9 @@ Ce projet est soumis à la licence [MIT][license-url].
 [Dotfiles][website-url] est conçu par ces personnes et par un groupe de
 [collaborateurs][contributors-url] extraordinaires.
 
-| [![sr]][sr-url] | [![gr]][gr-url] |
-|:-----------------:|:------------------------------------:|
-| [Sebastien Rousseau][sr-url]| [Graham Colgate][gr-url] |
+|       [![sr]][sr-url]        |     [![gr]][gr-url]      |
+| :--------------------------: | :----------------------: |
+| [Sebastien Rousseau][sr-url] | [Graham Colgate][gr-url] |
 
 [bash-url]: https://www.gnu.org/software/bash/
 [code-of-conduct-url]: https://github.com/sebastienrousseau/dotfiles/blob/master/.github/CODE-OF-CONDUCT.md
@@ -429,7 +428,6 @@ Ce projet est soumis à la licence [MIT][license-url].
 [website-url]: https://dotfiles.io
 [wget-url]: https://www.gnu.org/software/wget/
 [zsh-url]: https://www.zsh.org/
-
 [contributors-url]: https://github.com/sebastienrousseau/dotfiles/graphs/contributors "List of contributors"
 [gr]: https://avatars0.githubusercontent.com/u/35816108?s=117 "Graham Colgate"
 [sr]: https://avatars0.githubusercontent.com/u/1394998?s=117 "Sebastien Rousseau"

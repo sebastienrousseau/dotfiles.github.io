@@ -375,9 +375,9 @@ There are also many ways in which you can participate in this project, for
 example:
 
 - [Submit bugs and feature requests][issues-url], and help us verify as they are
-checked in,
+  checked in,
 - Review the [documentation][docs-url] and make pull requests for anything from
-typos to additional and new content.
+  typos to additional and new content.
 
 Please read carefully through our
 [Contributing Guidelines][contributing-url]
@@ -392,9 +392,9 @@ This project is licensed under the [MIT License][license-url] file for details.
 [Dotfiles][website-url] is beautifully crafted by these people and a bunch of
 awesome [contributors][contributors-url]
 
-| [![sr]][sr-url] | [![gr]][gr-url] |
-|:-----------------:|:------------------------------------:|
-| [Sebastien Rousseau][sr-url]| [Graham Colgate][gr-url] |
+|       [![sr]][sr-url]        |     [![gr]][gr-url]      |
+| :--------------------------: | :----------------------: |
+| [Sebastien Rousseau][sr-url] | [Graham Colgate][gr-url] |
 
 [bash-url]: https://www.gnu.org/software/bash/
 [code-of-conduct-url]: https://github.com/sebastienrousseau/dotfiles/blob/master/.github/CODE-OF-CONDUCT.md
@@ -415,7 +415,6 @@ awesome [contributors][contributors-url]
 [website-url]: https://dotfiles.io
 [wget-url]: https://www.gnu.org/software/wget/
 [zsh-url]: https://www.zsh.org/
-
 [contributors-url]: https://github.com/sebastienrousseau/dotfiles/graphs/contributors "List of contributors"
 [gr]: https://avatars0.githubusercontent.com/u/35816108?s=117 "Graham Colgate"
 [sr]: https://avatars0.githubusercontent.com/u/1394998?s=117 "Sebastien Rousseau"

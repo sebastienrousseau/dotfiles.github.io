@@ -37,11 +37,11 @@ the `mkdir` command line tool. Mkdir is a tool which creates a directory.
 directory. The mkdir utility creates the directories named as operands, in the
 order specified, using mode “rwxrwxrwx” (0777).
 
-| Alias | Command | Description |
-| ----- | ----- | ----- |
-| mcd | `mkdir -pv && cd` | Make directory and cd into it. |
-| mcdp | `mkdir -pv && cd` | Make directory and parents and cd into it. |
-| md | `mkd` | Make directory. |
-| mdd | `mkdir -pv $(date +%Y%m%d)` | Make directory with date. |
-| mdp | `mkdir -pv` | Make directory and parents. |
-| mdt | `mkdir -pv $(date +%h%m%s)` | Make directory with time. |
+| Alias | Command                     | Description                                |
+| ----- | --------------------------- | ------------------------------------------ |
+| mcd   | `mkdir -pv && cd`           | Make directory and cd into it.             |
+| mcdp  | `mkdir -pv && cd`           | Make directory and parents and cd into it. |
+| md    | `mkd`                       | Make directory.                            |
+| mdd   | `mkdir -pv $(date +%Y%m%d)` | Make directory with date.                  |
+| mdp   | `mkdir -pv`                 | Make directory and parents.                |
+| mdt   | `mkdir -pv $(date +%h%m%s)` | Make directory with time.                  |

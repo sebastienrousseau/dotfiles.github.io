@@ -34,11 +34,11 @@ répertoires dans le système de fichiers.
 
 ## Raccourcis mkdir
 
-| Alias | Commande | Description |
-| ----- | ----- | ----- |
-| mcd | `mkdir -pv && cd` | Crée un répertoire et se déplace dedans |
-| mcdp | `mkdir -pv && cd` | Crée un répertoire et se déplace dedans |
-| md | `mkd` | Crée un répertoire |
-| mdd | `mkdir -pv $(date +%Y%m%d)` | Crée un répertoire avec la date du jour |
-| mdp | `mkdir -pv` | Crée un répertoire et ses parents |
-| mdt | `mkdir -pv $(date +%h%m%s)` | Crée un répertoire avec l'heure actuelle |
+| Alias | Commande                    | Description                              |
+| ----- | --------------------------- | ---------------------------------------- |
+| mcd   | `mkdir -pv && cd`           | Crée un répertoire et se déplace dedans  |
+| mcdp  | `mkdir -pv && cd`           | Crée un répertoire et se déplace dedans  |
+| md    | `mkd`                       | Crée un répertoire                       |
+| mdd   | `mkdir -pv $(date +%Y%m%d)` | Crée un répertoire avec la date du jour  |
+| mdp   | `mkdir -pv`                 | Crée un répertoire et ses parents        |
+| mdt   | `mkdir -pv $(date +%h%m%s)` | Crée un répertoire avec l'heure actuelle |
