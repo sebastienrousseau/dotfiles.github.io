@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>About Dotfiles - Dotfiles (UK)</title>
+    <meta name="generator" content="VuePress 1.9.8">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <link rel="apple-touch-icon" href="/icons/dotfiles-180x180.png" sizes="180x180">
+    <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+    <link rel="mask-icon" href="/icons/dotfiles.svg" color="#ffffff">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="preload" href="https://unpkg.com/skeletonic-stylus@1.0.5/css/skeletonic-fonts.min.css" as="style" onload="this.onload=null;this.rel=&#39;stylesheet&#39;">
+    <script>
+        (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "ejvjin4amu");
+    </script>
+    <meta name="description" content="A set of Bash configuration files for macOS, Linux and Windows, that you can use to customize your shell and applications. All in one place and ready to use.">
+    <meta name="keywords" content="bash, best performance, compatibility, configuration, dotfiles, linux, macos, security, shell, standalone, windows">
+    <meta name="twitter:card" content="A set of Bash configuration files for macOS, Linux and Windows, that you can use to customize your shell and applications. All in one place and ready to use.">
+    <meta name="twitter:description" content="A set of Bash configuration files for macOS, Linux and Windows, that you can use to customize your shell and applications. All in one place and ready to use.">
+    <meta name="twitter:title" content="About Dotfiles - Dotfiles (UK)">
+    <meta name="og:title" content="About Dotfiles - Dotfiles (UK)">
+    <meta name="og:description" content="A set of Bash configuration files for macOS, Linux and Windows, that you can use to customize your shell and applications. All in one place and ready to use.">
+    <meta name="og:image:alt" content="Dotfiles - Simply designed to fit your shell life">
+    <meta name="og:locale" content="en_GB">
+    <meta name="charset" content="utf-8">
+    <meta name="theme-color" content="#9e00a3">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta itemprop="accessibilityAPI" content="ARIA">
+    <meta itemprop="accessibilityControl" content="fullKeyboardControl">
+    <meta itemprop="accessibilityHazard" content="noFlashingHazard">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Dotfiles">
+    <meta name="application-name" content="Dotfiles">
+    <meta name="author" content="Sebastien Rousseau">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="msapplication-config" content="/browserconfig.xml">
+    <meta name="robots" content="all">
+    <meta name="og:image:height" content="627">
+    <meta name="og:image:type" content="image/png">
+    <meta name="og:image:width" content="1200">
+    <meta name="og:image" content="/logo.png">
+    <meta name="og:robots" content="all">
+    <meta name="og:site_name" content="Dotfiles">
+    <meta name="og:type" content="website">
+    <meta name="og:url" content="https://dotfiles.io/">
+    <meta name="twitter:creator" content="@wwdseb">
+    <meta name="twitter:site" content="@wwdseb">
+    <meta name="twitter:url" content="https://dotfiles.io/">
+    <meta name="twitter:image" content="/logo.png">
+    
+    <link rel="preload" href="/assets/css/0.styles.07a989c6.css" as="style"><link rel="preload" href="/assets/js/app.0ee2fa2b.js" as="script"><link rel="preload" href="/assets/js/2.d4221d0b.js" as="script"><link rel="preload" href="/assets/js/9.10d42bed.js" as="script"><link rel="preload" href="/assets/js/3.d41db229.js" as="script"><link rel="prefetch" href="/assets/js/10.152bdaec.js"><link rel="prefetch" href="/assets/js/11.f400aa37.js"><link rel="prefetch" href="/assets/js/12.717f8ba1.js"><link rel="prefetch" href="/assets/js/13.ff8715f3.js"><link rel="prefetch" href="/assets/js/14.ddf90e14.js"><link rel="prefetch" href="/assets/js/15.2d160496.js"><link rel="prefetch" href="/assets/js/16.ff6c58cb.js"><link rel="prefetch" href="/assets/js/17.8557a727.js"><link rel="prefetch" href="/assets/js/18.07c948c1.js"><link rel="prefetch" href="/assets/js/19.b7aa746c.js"><link rel="prefetch" href="/assets/js/20.0096d098.js"><link rel="prefetch" href="/assets/js/21.35d7e3e9.js"><link rel="prefetch" href="/assets/js/22.68096c02.js"><link rel="prefetch" href="/assets/js/23.a22e2bf1.js"><link rel="prefetch" href="/assets/js/24.7f4f69d9.js"><link rel="prefetch" href="/assets/js/25.3ed00bff.js"><link rel="prefetch" href="/assets/js/26.204b5749.js"><link rel="prefetch" href="/assets/js/27.a9eea087.js"><link rel="prefetch" href="/assets/js/28.d775b2b1.js"><link rel="prefetch" href="/assets/js/29.22faa1a3.js"><link rel="prefetch" href="/assets/js/30.8f4953ac.js"><link rel="prefetch" href="/assets/js/31.12c18a88.js"><link rel="prefetch" href="/assets/js/32.84838c1e.js"><link rel="prefetch" href="/assets/js/33.6547d53b.js"><link rel="prefetch" href="/assets/js/34.5b68336f.js"><link rel="prefetch" href="/assets/js/35.f88f6fb5.js"><link rel="prefetch" href="/assets/js/36.1dadf857.js"><link rel="prefetch" href="/assets/js/37.b00da68c.js"><link rel="prefetch" href="/assets/js/38.8df19e19.js"><link rel="prefetch" href="/assets/js/39.b08aee64.js"><link rel="prefetch" href="/assets/js/4.0e04e5ba.js"><link rel="prefetch" href="/assets/js/40.22fe752a.js"><link rel="prefetch" href="/assets/js/41.ffff7792.js"><link rel="prefetch" href="/assets/js/42.ab017111.js"><link rel="prefetch" href="/assets/js/43.911cc13f.js"><link rel="prefetch" href="/assets/js/44.dd1cab70.js"><link rel="prefetch" href="/assets/js/45.3da96d5e.js"><link rel="prefetch" href="/assets/js/46.c5b00cfa.js"><link rel="prefetch" href="/assets/js/47.baf18850.js"><link rel="prefetch" href="/assets/js/48.9021fb5f.js"><link rel="prefetch" href="/assets/js/49.c929d273.js"><link rel="prefetch" href="/assets/js/5.d391dc9b.js"><link rel="prefetch" href="/assets/js/50.862fa221.js"><link rel="prefetch" href="/assets/js/51.5ec6fb78.js"><link rel="prefetch" href="/assets/js/52.779e4250.js"><link rel="prefetch" href="/assets/js/53.842fdc83.js"><link rel="prefetch" href="/assets/js/54.a0804ea3.js"><link rel="prefetch" href="/assets/js/55.5250aa75.js"><link rel="prefetch" href="/assets/js/56.4b894a4a.js"><link rel="prefetch" href="/assets/js/57.02ce5c38.js"><link rel="prefetch" href="/assets/js/58.4888a880.js"><link rel="prefetch" href="/assets/js/59.acb3c4b7.js"><link rel="prefetch" href="/assets/js/6.e0d9cc7e.js"><link rel="prefetch" href="/assets/js/60.535ad319.js"><link rel="prefetch" href="/assets/js/61.e0350965.js"><link rel="prefetch" href="/assets/js/62.ebd5d6b9.js"><link rel="prefetch" href="/assets/js/63.f4b55d8c.js"><link rel="prefetch" href="/assets/js/64.b8fe8882.js"><link rel="prefetch" href="/assets/js/65.1168a339.js"><link rel="prefetch" href="/assets/js/66.b6c8512e.js"><link rel="prefetch" href="/assets/js/67.dc4ac858.js"><link rel="prefetch" href="/assets/js/68.9774be4e.js"><link rel="prefetch" href="/assets/js/69.31cd7f3d.js"><link rel="prefetch" href="/assets/js/7.f3e5287e.js"><link rel="prefetch" href="/assets/js/70.e0ab6ec7.js"><link rel="prefetch" href="/assets/js/71.147f7be2.js"><link rel="prefetch" href="/assets/js/72.df5d23e5.js"><link rel="prefetch" href="/assets/js/73.74a9703e.js"><link rel="prefetch" href="/assets/js/74.628c0ba2.js"><link rel="prefetch" href="/assets/js/8.6d1c2138.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.07a989c6.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/dotfiles.webp" alt="Dotfiles" class="logo"> <span class="site-name can-hide">Dotfiles</span></a> <div class="links"><!----> <nav class="nav-links can-hide"><div class="nav-item"><a href="/aliases/" class="nav-link">
+  Aliases
+</a></div><div class="nav-item"><a href="/about/" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  About
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Languages" class="dropdown-title"><span class="title">Languages</span> <span class="arrow down"></span></button> <button type="button" aria-label="Languages" class="mobile-dropdown-title"><span class="title">Languages</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/about/" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  English
+</a></li><li class="dropdown-item"><!----> <a href="/fr/" class="nav-link">
+  Français
+</a></li></ul></div></div> <a href="https://github.com/sebastienrousseau/dotfiles.github.io" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/aliases/" class="nav-link">
+  Aliases
+</a></div><div class="nav-item"><a href="/about/" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  About
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Languages" class="dropdown-title"><span class="title">Languages</span> <span class="arrow down"></span></button> <button type="button" aria-label="Languages" class="mobile-dropdown-title"><span class="title">Languages</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/about/" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  English
+</a></li><li class="dropdown-item"><!----> <a href="/fr/" class="nav-link">
+  Français
+</a></li></ul></div></div> <a href="https://github.com/sebastienrousseau/dotfiles.github.io" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav>  <ul class="sidebar-links"><li><a href="/about/" aria-current="page" class="active sidebar-link">About Dotfiles</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/about/#introduction" class="sidebar-link">Introduction</a></li><li class="sidebar-sub-header"><a href="/about/#getting-started" class="sidebar-link">Getting Started</a></li><li class="sidebar-sub-header"><a href="/about/#how-to-install" class="sidebar-link">How to Install</a></li><li class="sidebar-sub-header"><a href="/about/#what-s-included" class="sidebar-link">What's included</a></li><li class="sidebar-sub-header"><a href="/about/#releases" class="sidebar-link">Releases</a></li><li class="sidebar-sub-header"><a href="/about/#semantic-versioning-policy" class="sidebar-link">Semantic versioning policy</a></li><li class="sidebar-sub-header"><a href="/about/#changelog" class="sidebar-link">Changelog</a></li><li class="sidebar-sub-header"><a href="/about/#code-of-conduct" class="sidebar-link">Code of Conduct</a></li><li class="sidebar-sub-header"><a href="/about/#our-values" class="sidebar-link">Our Values</a></li><li class="sidebar-sub-header"><a href="/about/#contributing" class="sidebar-link">Contributing</a></li><li class="sidebar-sub-header"><a href="/about/#license" class="sidebar-link">License</a></li><li class="sidebar-sub-header"><a href="/about/#acknowledgements" class="sidebar-link">Acknowledgements</a></li></ul></li><li><section class="sidebar-group depth-0"><a href="/aliases/" class="sidebar-heading clickable"><span>Aliases</span> <!----></a> <ul class="sidebar-links sidebar-group-items"><li><a href="/aliases/archives/" class="sidebar-link">Archives aliases</a></li><li><a href="/aliases/cd/" class="sidebar-link">Cd aliases</a></li><li><a href="/aliases/chmod/" class="sidebar-link">Chmod aliases</a></li><li><a href="/aliases/clear/" class="sidebar-link">Clear aliases</a></li><li><a href="/aliases/configuration/" class="sidebar-link">Configuration aliases</a></li><li><a href="/aliases/default/" class="sidebar-link">Default aliases</a></li><li><a href="/aliases/dig/" class="sidebar-link">Dig aliases</a></li><li><a href="/aliases/du/" class="sidebar-link">Disk usage aliases</a></li><li><a href="/aliases/editor/" class="sidebar-link">Editor aliases</a></li><li><a href="/aliases/find/" class="sidebar-link">Find aliases</a></li><li><a href="/aliases/gcloud/" class="sidebar-link">GCloud aliases</a></li><li><a href="/aliases/git/" class="sidebar-link">Git aliases</a></li><li><a href="/aliases/gnu/" class="sidebar-link">GNU Core Utilities aliases</a></li><li><a href="/aliases/heroku/" class="sidebar-link">Heroku aliases</a></li><li><a href="/aliases/interactive/" class="sidebar-link">Interactive aliases</a></li><li><a href="/aliases/jekyll/" class="sidebar-link">Jekyll aliases</a></li><li><a href="/aliases/list/" class="sidebar-link">List aliases</a></li><li><a href="/aliases/make/" class="sidebar-link">Make aliases</a></li><li><a href="/aliases/mkdir/" class="sidebar-link">Mkdir aliases</a></li><li><a href="/aliases/npm/" class="sidebar-link">NPM aliases</a></li><li><a href="/aliases/pnpm/" class="sidebar-link">pnpm aliases</a></li><li><a href="/aliases/ps/" class="sidebar-link">PS aliases</a></li><li><a href="/aliases/rsync/" class="sidebar-link">Rsync aliases</a></li><li><a href="/aliases/rust/" class="sidebar-link">Rust aliases</a></li><li><a href="/aliases/subversion/" class="sidebar-link">Subversion aliases</a></li><li><a href="/aliases/sudo/" class="sidebar-link">Sudo aliases</a></li><li><a href="/aliases/tmux/" class="sidebar-link">Tmux aliases</a></li><li><a href="/aliases/update/" class="sidebar-link">Update aliases</a></li><li><a href="/aliases/uuid/" class="sidebar-link">UUID aliases</a></li><li><a href="/aliases/wget/" class="sidebar-link">Wget aliases</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="welcome-to-dotfiles-v0-2-462"><a href="#welcome-to-dotfiles-v0-2-462" class="header-anchor">#</a> Welcome to Dotfiles v0.2.462</h1> <h2 id="introduction"><a href="#introduction" class="header-anchor">#</a> Introduction</h2> <p>A set of Bash configuration files for macOS, Linux and Windows, that you can use
+to customize your shell and applications. All in one place and ready to use.</p> <p>The Dotfiles live right in your home directory, so you can keep them under
+version control, and you can use them on any computer, anywhere.</p> <p>They aggregates a collection of standalone dotfiles combined into a single <code>lib</code>
+directory located in your home directory <code>~/.dotfiles/lib</code>. They provide
+convenient aliases, functions, and a few ready-to-use settings built for speed
+and high performance for your shell.</p> <p>Try them out and let us know what you think of Dotfiles. We are always looking
+for ways to improve our products and services.</p> <h2 id="getting-started"><a href="#getting-started" class="header-anchor">#</a> Getting Started</h2> <p>We are so delighted that you have decided to try Dotfiles, and are sure that you
+will find them unique and helpful.</p> <p>We have provided a range of installation methods to help you get started. We
+recommend that you choose the one that best suits your needs.</p> <div class="custom-block tip"><p class="custom-block-title">TIP</p> <p>But before you begin your installation, please use the below instructions to
+ensure that you meet all the hardware, software, and system requirements for
+installing Dotfiles on your computer and backup any current configuration files
+you may have.</p></div> <h3 id="system-requirements"><a href="#system-requirements" class="header-anchor">#</a> 1️⃣ System Requirements</h3> <p>You need a modern operating system to install Dotfiles and we recommend that you
+use the latest version of macOS, Linux or Windows for best performance, security
+and compatibility with the latest Dotfiles features.</p> <h3 id="software-requirements"><a href="#software-requirements" class="header-anchor">#</a> 2️⃣ Software Requirements</h3> <p>The latest version of the following software is required to install Dotfiles:</p> <ol><li>A command line shell (<a href="https://www.gnu.org/software/bash/" target="_blank" rel="noopener noreferrer"><strong>Bash</strong><span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> or <a href="https://www.zsh.org/" target="_blank" rel="noopener noreferrer"><strong>Zsh</strong><span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>), to run
+configuration scripts and functions.</li> <li><a href="https://git-scm.com/" target="_blank" rel="noopener noreferrer"><strong>Git</strong><span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> (2.0 or higher), for cloning the Dotfiles source code
+repository.</li> <li><a href="https://curl.se/" target="_blank" rel="noopener noreferrer"><strong>Curl</strong><span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> (7.0 or higher) or <a href="https://www.gnu.org/software/wget/" target="_blank" rel="noopener noreferrer"><strong>Wget</strong><span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> (1.0 or higher),
+for downloading the Dotfiles installer.</li> <li><a href="https://www.gnu.org/software/make/" target="_blank" rel="noopener noreferrer"><strong>Make</strong><span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> (3.0 or higher), or <a href="https://pnpm.io" target="_blank" rel="noopener noreferrer"><strong>PnPM</strong><span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> (6.0 or higher)
+, for running the Dotfiles installer with the <code>make</code> or <code>pnpm</code> commands.</li> <li><a href="https://github.com/tmux/tmux/wiki" target="_blank" rel="noopener noreferrer"><strong>Tmux</strong><span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> (3.0 or higher), a terminal multiplexer. It lets you
+switch easily between several programs in one terminal, detach them (they
+keep running in the background) and reattach them to a different terminal.</li></ol> <h3 id="font-requirements"><a href="#font-requirements" class="header-anchor">#</a> 3️⃣ Font Requirements</h3> <p>We also recommend using an open-source typeface such as <code>JetBrains Mono</code> for
+configuring your terminal, and any IDEs or editors you may use.</p> <p>JetBrains Mono is a free and open source typeface for developers designed to be
+comfortable to read. It is available in a wide range of weights and styles, and
+supports a wide range of programming languages.</p> <ul><li><p>On macOS, you can install the font by simply typing the following command in
+your terminal:</p> <div class="language-bash extra-class"><pre class="language-bash"><code>brew tap homebrew/cask-fonts <span class="token operator">&amp;&amp;</span> brew <span class="token function">install</span> <span class="token parameter variable">--cask</span> font-jetbrains-mono
+</code></pre></div></li> <li><p>On Debian based Linux distributions, you can install the font using the
+following command:</p> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token function">sudo</span> <span class="token function">apt</span> <span class="token function">install</span> fonts-jetbrains-mono
+</code></pre></div></li></ul> <h2 id="how-to-install"><a href="#how-to-install" class="header-anchor">#</a> How to Install</h2> <h3 id="back-up-your-existing-data"><a href="#back-up-your-existing-data" class="header-anchor">#</a> 1️⃣ Back Up Your Existing Data</h3> <div class="custom-block warning"><p class="custom-block-title">WARNING</p> <p>Before installing Dotfiles, we strongly recommend that you back up your existing
+data. It is always a good idea to backup as there might be situations in which
+you could be required to restore your previous installation.</p></div> <p>The Dotfiles installer will try to automatically backup any previous
+installation of known dotfiles into a backup directory <code>$HOME/dotfiles_backup</code>.</p> <p>The list of files that will be backed up are listed below. This list is not
+exhaustive and may change over time as Dotfiles evolves.</p> <div class="language-bash extra-class"><pre class="language-bash"><code>.alias
+.bash_aliases
+.bash_profile
+.bash_prompt
+.bashrc
+.curlrc
+.dir_colors
+.exports
+.functions
+.gitattributes
+.gitconfig
+.gitignore
+.gitmessage
+.inputrc
+.npmrc
+.path
+.profile
+.tmux.conf
+.vimrc
+.wgetrc
+.yarnrc
+.zshenv
+.zshrc
+cacert.pem
+</code></pre></div><h3 id="download-dotfiles"><a href="#download-dotfiles" class="header-anchor">#</a> 2️⃣ Download Dotfiles</h3> <p>Download the latest version of Dotfiles (v0.2.462) through any of these methods:</p> <ul><li><a href="https://github.com/sebastienrousseau/dotfiles/releases" target="_blank" rel="noopener noreferrer"><strong>Manual Download</strong><span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> - Install Dotfiles by downloading the
+source code archive.</li> <li><a href="https://github.com/sebastienrousseau/dotfiles" target="_blank" rel="noopener noreferrer"><strong>Using PnPM</strong><span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> - Install Dotfiles using PnPM
+<code>pnpm i @sebastienrousseau/dotfiles</code>,</li> <li><a href="https://github.com/sebastienrousseau/dotfiles" target="_blank" rel="noopener noreferrer"><strong>Using Npm</strong><span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> - Install Dotfiles using Npm
+<code>npm install @sebastienrousseau/dotfiles</code>,</li> <li><a href="https://github.com/sebastienrousseau/dotfiles" target="_blank" rel="noopener noreferrer"><strong>Using Yarn</strong><span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> - Install Dotfiles using Yarn
+<code>yarn add @sebastienrousseau/dotfiles</code>,</li> <li><a href="https://git-scm.com/" target="_blank" rel="noopener noreferrer"><strong>Using Git</strong><span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> - Clone the Dotfiles repository from GitHub
+<code>git clone https://github.com/sebastienrousseau/dotfiles.git</code>.</li></ul> <h3 id="installation-using-make"><a href="#installation-using-make" class="header-anchor">#</a> 3️⃣ Installation using Make</h3> <p>The easiest way to install Dotfiles is to use the <code>make</code> command in your shell.
+This will install the latest version of the dotfiles and will automatically try
+to backup any existing dotfiles you may have into a dedicated backup directory
+<code>$HOME/dotfiles_backup</code>.</p> <p>Switch to the <code>dotfiles-0.2.462</code> directory that you have downloaded and run:</p> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token function">make</span> build
+</code></pre></div><p>You can also just check the installer options, by simply running:</p> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token function">make</span> <span class="token builtin class-name">help</span>
+</code></pre></div><h3 id="installation-using-node-js"><a href="#installation-using-node-js" class="header-anchor">#</a> 4️⃣ Installation using Node.js</h3> <p>If you want to install Dotfiles using Node.js, switch to the <code>dotfiles-0.2.462</code>
+directory and run:</p> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token function">node</span> <span class="token builtin class-name">.</span>
+</code></pre></div><h3 id="installation-using-pnpm"><a href="#installation-using-pnpm" class="header-anchor">#</a> 5️⃣ Installation using PnPM</h3> <p>If you want to install Dotfiles using PnPM, switch to the <code>dotfiles-0.2.462</code>
+directory and run:</p> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token function">pnpm</span> run build
+</code></pre></div><h3 id="post-installation"><a href="#post-installation" class="header-anchor">#</a> 6️⃣ Post installation</h3> <p>Following the installation, you can now verify that the dotfiles are installed
+in the following directory <code>$HOME/.dotfiles</code>. To complete the setup, just
+restart your terminal.</p> <p>If the installation is successful, you should be able to see the new Dotfiles
+interface in your terminal and you can start using it right away.</p> <h2 id="what-s-included"><a href="#what-s-included" class="header-anchor">#</a> What's included</h2> <p>Dotfiles contains core elements that are used to configure your shell, and
+other components catered for your environment setup.</p> <p>Within the <code>$HOME/.dotfiles</code> folder, you will find the following directories and
+files:</p> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token builtin class-name">.</span>
+└── lib
+    ├── aliases
+    │   ├── default
+    │   │   └── default.aliases.sh
+    │   ├── gcloud
+    │   │   └── gcloud.aliases.sh
+    │   ├── <span class="token function">git</span>
+    │   │   └── git.aliases.sh
+    │   ├── heroku
+    │   │   └── heroku.aliases.sh
+    │   ├── jekyll
+    │   │   └── jekyll.aliases.sh
+    │   ├── <span class="token function">pnpm</span>
+    │   │   └── pnpm.aliases.sh
+    │   ├── subversion
+    │   │   └── subversion.aliases.sh
+    │   └── tmux
+    │       └── tmux.aliases.sh
+    ├── configurations
+    │   ├── <span class="token function">bash</span>
+    │   │   └── bashrc
+    │   ├── <span class="token function">curl</span>
+    │   │   ├── cacert.pem
+    │   │   └── curlrc
+    │   ├── default
+    │   │   ├── color.sh
+    │   │   ├── constants.sh
+    │   │   ├── editor.sh
+    │   │   └── prompt.sh
+    │   ├── gem
+    │   │   └── gemrc
+    │   ├── input
+    │   │   └── inputrc
+    │   ├── jshint
+    │   │   └── jshintrc
+    │   ├── <span class="token function">nano</span>
+    │   │   └── nanorc
+    │   ├── profile
+    │   │   └── profile
+    │   ├── tmux
+    │   │   ├── default
+    │   │   ├── display
+    │   │   ├── linux
+    │   │   ├── navigation
+    │   │   ├── panes
+    │   │   ├── theme
+    │   │   ├── tmux
+    │   │   └── <span class="token function">vi</span>
+    │   ├── <span class="token function">vim</span>
+    │   │   └── vimrc
+    │   ├── <span class="token function">wget</span>
+    │   │   └── wgetrc
+    │   ├── <span class="token function">zsh</span>
+    │   │   └── zshrc
+    │   └── README.md
+    ├── functions
+    │   ├── README.md
+    │   ├── cdls.sh
+    │   ├── curlheader.sh
+    │   ├── curltime.sh
+    │   ├── encode64.sh
+    │   ├── environment.sh
+    │   ├── extract.sh
+    │   ├── filehead.sh
+    │   ├── genpwd.sh
+    │   ├── goto.sh
+    │   ├── hidehiddenfiles.sh
+    │   ├── hostinfo.sh
+    │   ├── hstats.sh
+    │   ├── httpdebug.sh
+    │   ├── keygen.sh
+    │   ├── last.sh
+    │   ├── logout.sh
+    │   ├── lowercase.sh
+    │   ├── macos.sh
+    │   ├── matrix.sh
+    │   ├── mcd.sh
+    │   ├── mount_read_only.sh
+    │   ├── myproc.sh
+    │   ├── prependpath.sh
+    │   ├── ql.sh
+    │   ├── rd.sh
+    │   ├── remove_disk.sh
+    │   ├── ren.sh
+    │   ├── showhiddenfiles.sh
+    │   ├── size.sh
+    │   ├── stopwatch.sh
+    │   ├── uppercase.sh
+    │   ├── view-source.sh
+    │   ├── vscode.sh
+    │   ├── whoisport.sh
+    │   └── zipf.sh
+    ├── paths
+    │   ├── ant
+    │   │   └── ant.paths.sh
+    │   ├── default
+    │   │   └── default.paths.sh
+    │   ├── homebrew
+    │   │   └── homebrew.paths.sh
+    │   ├── <span class="token function">java</span>
+    │   │   └── java.paths.sh
+    │   ├── maven
+    │   │   └── maven.paths.sh
+    │   ├── <span class="token function">node</span>
+    │   │   └── node.paths.sh
+    │   ├── nvm
+    │   │   └── nvm.paths.sh
+    │   ├── <span class="token function">pnpm</span>
+    │   │   └── pnpm.paths.sh
+    │   ├── python
+    │   │   └── python.paths.sh
+    │   ├── ruby
+    │   │   └── ruby.paths.sh
+    │   └── tmux
+    │       └── tmux.paths.sh
+    ├── README.md
+    ├── aliases.sh
+    ├── configurations.sh
+    ├── exit.sh
+    ├── functions.sh
+    ├── history.sh
+    └── paths.sh
+
+<span class="token number">36</span> directories, <span class="token number">86</span> files
+
+</code></pre></div><h2 id="releases"><a href="#releases" class="header-anchor">#</a> Releases</h2> <p>Releases are available on the <a href="https://github.com/sebastienrousseau/dotfiles/releases" target="_blank" rel="noopener noreferrer">GitHub releases page<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>.</p> <h2 id="semantic-versioning-policy"><a href="#semantic-versioning-policy" class="header-anchor">#</a> Semantic versioning policy</h2> <p>For transparency into our release cycle and in striving to maintain backward
+compatibility, <code>Dotfiles</code> follows <a href="http://semver.org/" target="_blank" rel="noopener noreferrer">Semantic Versioning<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>.</p> <h2 id="changelog"><a href="#changelog" class="header-anchor">#</a> Changelog</h2> <ul><li><a href="https://github.com/sebastienrousseau/dotfiles/releases" target="_blank" rel="noopener noreferrer">GitHub Releases<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> are used for changelogs.</li></ul> <h2 id="code-of-conduct"><a href="#code-of-conduct" class="header-anchor">#</a> Code of Conduct</h2> <p>We are committed to preserving and fostering a diverse, welcoming community.
+Please read our <a href="https://github.com/sebastienrousseau/dotfiles/blob/master/.github/CODE-OF-CONDUCT.md" target="_blank" rel="noopener noreferrer">Code of Conduct<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>.</p> <h2 id="our-values"><a href="#our-values" class="header-anchor">#</a> Our Values</h2> <ul><li>We believe perfection must consider everything.</li> <li>We take our passion beyond code into our daily practices.</li> <li>We are just obsessed about creating and delivering exceptional solutions.</li></ul> <h2 id="contributing"><a href="#contributing" class="header-anchor">#</a> Contributing</h2> <p>Thank you for using Dotfiles! If you like the library, it would be
+great if you can give it a star ⭐ on <a href="https://github.com/sebastienrousseau/dotfiles" target="_blank" rel="noopener noreferrer">Github<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>.</p> <p>There are also many ways in which you can participate in this project, for
+example:</p> <ul><li><a href="https://github.com/sebastienrousseau/dotfiles/issues" target="_blank" rel="noopener noreferrer">Submit bugs and feature requests<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>, and help us verify as they are
+checked in,</li> <li>Review the <a href="https://github.com/sebastienrousseau/dotfiles/tree/master/docs" target="_blank" rel="noopener noreferrer">documentation<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> and make pull requests for anything from
+typos to additional and new content.</li></ul> <p>Please read carefully through our
+<a href="https://github.com/sebastienrousseau/dotfiles/blob/master/.github/CONTRIBUTING.md" target="_blank" rel="noopener noreferrer">Contributing Guidelines<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>
+for further details on the process for submitting pull requests to us.</p> <h2 id="license"><a href="#license" class="header-anchor">#</a> License</h2> <p>This project is licensed under the <a href="https://opensource.org/licenses/MIT" target="_blank" rel="noopener noreferrer">MIT License<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> file for details.</p> <h2 id="acknowledgements"><a href="#acknowledgements" class="header-anchor">#</a> Acknowledgements</h2> <p><a href="https://dotfiles.io" target="_blank" rel="noopener noreferrer">Dotfiles<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> is beautifully crafted by these people and a bunch of
+awesome <a href="https://github.com/sebastienrousseau/dotfiles/graphs/contributors" title="List of contributors" target="_blank" rel="noopener noreferrer">contributors<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <table><thead><tr><th style="text-align:center;"><a href="https://github.com/sebastienrousseau" target="_blank" rel="noopener noreferrer"><img src="https://avatars0.githubusercontent.com/u/1394998?s=117" alt="sr" title="Sebastien Rousseau"><span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></th> <th style="text-align:center;"><a href="https://github.com/gramtech" target="_blank" rel="noopener noreferrer"><img src="https://avatars0.githubusercontent.com/u/35816108?s=117" alt="gr" title="Graham Colgate"><span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></th></tr></thead> <tbody><tr><td style="text-align:center;"><a href="https://github.com/sebastienrousseau" target="_blank" rel="noopener noreferrer">Sebastien Rousseau<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></td> <td style="text-align:center;"><a href="https://github.com/gramtech" target="_blank" rel="noopener noreferrer">Graham Colgate<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></td></tr></tbody></table></div> <footer class="page-edit"><div class="edit-link"><a href="https://github.com/sebastienrousseau/dotfiles.github.io/edit/main/docs/about/README.md" target="_blank" rel="noopener noreferrer">Edit this page on GitHub</a> <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></div> <!----></footer> <div class="page-nav"><p class="inner"><!----> <span class="next"><a href="/aliases/archives/">
+        Archives aliases
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"><!----></div></div>
+    <script src="/assets/js/app.0ee2fa2b.js" defer></script><script src="/assets/js/2.d4221d0b.js" defer></script><script src="/assets/js/9.10d42bed.js" defer></script><script src="/assets/js/3.d41db229.js" defer></script>
+  </body>
+</html>
