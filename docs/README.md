@@ -1,6 +1,6 @@
 ---
 description: The next generation of Bash configuration files for macOS, Linux and Windows. A collection of scripts, aliases, functions you can use to customize your shell.
-heroImage: /logo.svg
+heroImage: https://raw.githubusercontent.com/sebastienrousseau/vault/main/assets/dotfiles/banners/banner-dotfiles.svg
 heroText: Simply designed to fit your shell life.
 home: true
 lang: en-GB
