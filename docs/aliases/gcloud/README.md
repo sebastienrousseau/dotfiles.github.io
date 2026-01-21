@@ -25,7 +25,7 @@ meta:
 
 # Google Cloud aliases
 
-The `gcloud.aliases.zsh` file creates helpful shortcut aliases for many commonly
+The `gcloud.aliases.sh` file creates helpful shortcut aliases for many commonly
 [Google Cloud](https://cloud.google.com/) commands.
 
 The Google Cloud aliases, provide memorable commands for operating on the Google

@@ -25,12 +25,16 @@ meta:
 
 # Tmux aliases
 
-This `tmux.aliases.zsh` file creates helpful shortcut aliases for many
+This `tmux.aliases.sh` file creates helpful shortcut aliases for many
 commonly used [tmux](https://github.com/tmux/tmux/wiki) commands.
 
 The Tmux aliases are a collection of aliases that allow you to interact with the
 `tmux` command. Tmux is a tool which allows you to run multiple terminal
 sessions in a single window.
+
+> [!NOTE]
+> **Modern Core**: In v0.2.471+, we introduced [Zellij](/aliases/modern-core/#zellij) as a modern, Rust-based alternative to Tmux.
+> Tmux is still supported, but Zellij is recommended for new users.
 
 ## Tmux
 

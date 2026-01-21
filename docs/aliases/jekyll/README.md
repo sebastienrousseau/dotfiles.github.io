@@ -25,7 +25,7 @@ meta:
 
 # Jekyll aliases
 
-This `jekyll.aliases.zsh` file creates helpful shortcut aliases for many
+This `jekyll.aliases.sh` file creates helpful shortcut aliases for many
 commonly used [Jekyll](https://jekyllrb.com/) commands.
 
 The Jekyll aliases are a collection of aliases that allow you to interact with

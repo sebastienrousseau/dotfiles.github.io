@@ -108,15 +108,17 @@ Ils ont été regroupés par catégories logiques :
 - [Les alias de mise à jour][mise-a-jour] - Les alias de mise à jour vous permettent de mettre à jour rapidement votre système.
 - [Les alias de recherche][recherche] - Les alias de recherche vous permettent de rechercher rapidement des fichiers.
 - [Les alias dig][dig] - Les alias dig vous permettent de rechercher rapidement des informations DNS.
+- [La commande dot][dot] - L'interface unifiée pour gérer vos dotfiles.
 - [Les alias du][du] - Les alias du vous permettent de rechercher rapidement l'espace disque utilisé.
 - [Les alias en mode interactif][mode-interactif] - Les alias en mode interactif vous permettent de lancer rapidement des commandes interactives.
 - [Les alias gcloud][gcloud] - Les alias gcloud vous permettent de lancer rapidement des commandes gcloud.
 - [Les alias git][git] - Les alias git vous permettent de lancer rapidement des commandes git.
 - [Les alias GNU Coreutils][gnu] - Les alias GNU Coreutils vous permettent de lancer rapidement des commandes GNU.
-- [Les alias heroku][heroku] - Les alias heroku vous permettent de lancer rapidement des commandes heroku.
+
 - [Les alias jekyll][jekyll] - Les alias jekyll vous permettent de lancer rapidement des commandes jekyll.
 - [Les alias make][make] - Les alias pour make.
 - [Les alias mkdir][mkdir] - Les alias mkdir vous permettent de créer rapidement des répertoires.
+- [Le Noyau Moderne][modern-core] - Outils haute performance (Atuin, Yazi, Zellij).
 - [Les alias npm][npm] - Les alias npm vous permettent de lancer rapidement des commandes npm.
 - [Les alias par défaut][default] - Les alias par défaut vous permettent de lancer rapidement des commandes.
 - [Les alias pnpm][pnpm] - Les alias pnpm vous permettent de lancer rapidement des commandes pnpm.
@@ -138,15 +140,16 @@ Ils ont été regroupés par catégories logiques :
 [mise-a-jour]: ./mise-a-jour/
 [recherche]: ./recherche/
 [dig]: ./dig/
+[dot]: ./dot/
 [du]: ./du/
 [mode-interactif]: ./mode-interactif/
 [gcloud]: ./gcloud/
 [git]: ./git/
 [gnu]: ./gnu/
-[heroku]: ./heroku/
 [jekyll]: ./jekyll/
 [make]: ./make/
 [mkdir]: ./mkdir/
+[modern-core]: ./modern-core/
 [npm]: ./npm/
 [default]: ./default/
 [pnpm]: ./pnpm/

@@ -29,6 +29,10 @@ Le fichier `configuration.aliases.sh` crée des alias de raccourcis pour ouvrir
 les fichiers de configuration depuis la console. Ils sont utilisés pour modifier
 les paramètres de votre shell et de vos applications.
 
+> [!TIP]
+> **Nouveau dans v0.2.471** : Vous pouvez désormais utiliser la commande `dot` pour gérer votre configuration.
+> Essayez `dot learn` pour une visite interactive ou `dot doctor` pour vérifier votre installation.
+
 ## Raccourcis de configuration
 
 | Alias | Commande                         | Description                                                                  |
