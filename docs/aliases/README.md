@@ -112,7 +112,7 @@ They have been grouped by logical categories:
 - [gcloud][gcloud] - Aliases for working with the `gcloud` command.
 - [git][git] - Aliases for working with Git.
 - [gnu][gnu] - Aliases for working with GNU Core utilities.
-- [heroku][heroku] - Aliases for working with the Heroku CLI.
+
 - [interactive][interactive] - Aliases for working with interactive commands.
 - [jekyll][jekyll] - Aliases for working with Jekyll.
 - [list][list] - Aliases for working with the `ls` command.
@@ -144,7 +144,7 @@ They have been grouped by logical categories:
 [gcloud]: ./gcloud/
 [git]: ./git/
 [gnu]: ./gnu/
-[heroku]: ./heroku/
+
 [interactive]: ./interactive/
 [jekyll]: ./jekyll/
 [list]: ./list/

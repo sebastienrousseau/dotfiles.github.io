@@ -26,7 +26,7 @@ meta:
 # Git Aliases
 
 The `git.aliases.sh` file creates helpful shortcut aliases for many commonly
-[Git](https://www.heroku.com/) commands.
+[Git](https://git-scm.com/) commands.
 
 The Git aliases, provide powerful commands that create shortcuts to frequently
 used Git commands. All of these functions and aliases are wrappers around the

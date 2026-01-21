@@ -25,7 +25,7 @@ meta:
 
 # Alias de Git
 
-El archivo `git.aliases.sh` crea atajos útiles para muchos comandos comunes de [Git](https://www.heroku.com/).
+El archivo `git.aliases.sh` crea atajos útiles para muchos comandos comunes de [Git](https://git-scm.com/).
 
 Los alias de Git proporcionan comandos potentes que crean atajos para los comandos de Git utilizados con frecuencia. Todas estas funciones y alias son envoltorios (wrappers) alrededor de las herramientas de línea de comandos de Git. Los alias de Git mejoran la velocidad y la eficiencia.
 

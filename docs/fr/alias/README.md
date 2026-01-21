@@ -114,7 +114,7 @@ Ils ont été regroupés par catégories logiques :
 - [Les alias gcloud][gcloud] - Les alias gcloud vous permettent de lancer rapidement des commandes gcloud.
 - [Les alias git][git] - Les alias git vous permettent de lancer rapidement des commandes git.
 - [Les alias GNU Coreutils][gnu] - Les alias GNU Coreutils vous permettent de lancer rapidement des commandes GNU.
-- [Les alias heroku][heroku] - Les alias heroku vous permettent de lancer rapidement des commandes heroku.
+
 - [Les alias jekyll][jekyll] - Les alias jekyll vous permettent de lancer rapidement des commandes jekyll.
 - [Les alias make][make] - Les alias pour make.
 - [Les alias mkdir][mkdir] - Les alias mkdir vous permettent de créer rapidement des répertoires.
@@ -146,7 +146,7 @@ Ils ont été regroupés par catégories logiques :
 [gcloud]: ./gcloud/
 [git]: ./git/
 [gnu]: ./gnu/
-[heroku]: ./heroku/
+
 [jekyll]: ./jekyll/
 [make]: ./make/
 [mkdir]: ./mkdir/
