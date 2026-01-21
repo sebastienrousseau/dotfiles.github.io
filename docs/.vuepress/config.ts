@@ -134,7 +134,9 @@ module.exports = {
         sidebar: ptSidebar,
       },
     },
+    // @ts-ignore
     chainWebpack: (config: any) => {
+      // @ts-ignore
       config.plugin("html").tap((args: any[]) => {
         args[0].minify = {
           minifyCSS: true,

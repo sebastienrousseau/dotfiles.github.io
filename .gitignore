@@ -12,6 +12,7 @@ dist
 /build/
 /doc/
 /node_modules/
+docs/.vuepress/config.bundled_*.mjs
 
 # Logs
 logs
