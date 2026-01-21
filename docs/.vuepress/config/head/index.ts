@@ -1,5 +1,4 @@
-// @ts-expect-error: suppress implicit any for headers array
-export const headers: any[] = [
+export const headers = [
   ["link", { rel: "apple-touch-icon", href: "/apple-touch-icon.png" }],
   [
     "link",
