@@ -23,7 +23,7 @@ meta:
     content: en_GB
 ---
 
-# Welcome to Dotfiles v0.2.462
+# Welcome to Dotfiles v0.2.471
 
 ## Introduction
 
@@ -146,7 +146,7 @@ cacert.pem
 
 ### :two: Download Dotfiles
 
-Download the latest version of Dotfiles (v0.2.462) through any of these methods:
+Download the latest version of Dotfiles (v0.2.471) through any of these methods:
 
 - [**Manual Download**][releases-url] - Install Dotfiles by downloading the
   source code archive.
@@ -166,7 +166,7 @@ This will install the latest version of the dotfiles and will automatically try
 to backup any existing dotfiles you may have into a dedicated backup directory
 `$HOME/dotfiles_backup`.
 
-Switch to the `dotfiles-0.2.462` directory that you have downloaded and run:
+Switch to the `dotfiles-0.2.471` directory that you have downloaded and run:
 
 ```bash
 make build
@@ -180,7 +180,7 @@ make help
 
 ### :four: Installation using Node.js
 
-If you want to install Dotfiles using Node.js, switch to the `dotfiles-0.2.462`
+If you want to install Dotfiles using Node.js, switch to the `dotfiles-0.2.471`
 directory and run:
 
 ```bash
@@ -189,7 +189,7 @@ node .
 
 ### :five: Installation using PnPM
 
-If you want to install Dotfiles using PnPM, switch to the `dotfiles-0.2.462`
+If you want to install Dotfiles using PnPM, switch to the `dotfiles-0.2.471`
 directory and run:
 
 ```bash
