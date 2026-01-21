@@ -5,7 +5,7 @@ metaTitle: compliance aliases - Dotfiles
 permalink: /es/aliases/compliance/
 ---
 
-# Compliance Aliases
+# Alias de Compliance
 
 Tools for regulatory compliance and privacy enforcement.
 

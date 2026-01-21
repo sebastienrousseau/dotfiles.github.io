@@ -5,7 +5,7 @@ metaTitle: security aliases - Dotfiles
 permalink: /zh/aliases/security/
 ---
 
-# Security Aliases
+# Security 别名
 
 Tools for hardening the environment and managing configuration immutability.
 

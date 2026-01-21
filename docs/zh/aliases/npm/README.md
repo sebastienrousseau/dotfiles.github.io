@@ -34,7 +34,7 @@ for [npm](https://www.npmjs.com/).
 programming language. It is the default package manager for the JavaScript
 runtime environment Node.js.
 
-| Alias | Command         | Description           |
+| 别名  | 命令                   | 描述                                                                       |
 | ----- | --------------- | --------------------- |
 | npb   | `npm build`     | Build npm script.     |
 | npc   | `npm cache`     | Cache npm package.    |

@@ -49,7 +49,7 @@ The `upd` alias has been adapted to work on Linux. It will update Debian-based
 Linux distributions, via the `apt` package manager and other dependencies via
 pnpm, rustup (Rust), and gem (Ruby).
 
-| Alias | Command                                                                                                            | Description                                              |
+| Alias | Comando               | Descrição                                                                  |
 | ----- | ------------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------- |
 | upd   | `sudo apt update && sudo apt upgrade -y && pnpm up && rustup update stable && sudo gem update && sudo gem cleanup` | Update command for Debian-based Linux operating systems. |
 
@@ -59,6 +59,6 @@ The `upd` alias is also available for macOS. It will update macOS, via the
 `softwareupdate` command line tool, and manage its dependencies using pnpm,
 Homebrew, mas, rustup, and gem package managers.
 
-| Alias | Command                                                                                                                                                                                            | Description        |
+| Alias | Comando               | Descrição                                                                  |
 | ----- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------ |
 | upd   | `sudo softwareupdate -i -a && pnpm up && rustup update stable && brew cu -ayi && brew doctor && brew update && brew upgrade && brew cleanup && mas upgrade && sudo gem update && sudo gem cleanup` | Update the system. |

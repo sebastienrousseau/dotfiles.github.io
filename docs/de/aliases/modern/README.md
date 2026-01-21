@@ -5,18 +5,18 @@ metaTitle: modern aliases - Dotfiles
 permalink: /de/aliases/modern/
 ---
 
-# Modern Tooling Aliases
+# Modern Tooling-Aliase
 
-Manage Modern Tooling aliases. Part of the **Universal Dotfiles** configuration.
+Verwalten Sie Modern Tooling-Aliase. Part of the **Universal Dotfiles** configuration.
 
 ![Dotfiles banner][banner]
 
-## 📖 Description
+## 📖 Beschreibung
 
-These aliases are defined in `modern.aliases.sh` and are automatically loaded by `chezmoi`.
+Diese Aliase sind in `modern.aliases.sh` definiert und werden automatisch von `chezmoi` geladen.
 They provide modern replacements for legacy Unix tools (Rust-based).
 
-## ⚡ Aliases
+## ⚡ Aliase
 
 ### File Listing (eza)
 If `eza` is installed (replacing `ls`):

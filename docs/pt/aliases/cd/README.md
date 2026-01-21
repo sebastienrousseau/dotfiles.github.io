@@ -38,7 +38,7 @@ The cd command, also known as chdir (change directory), is a command-line shell
 command used to change the current working directory in various operating
 systems.
 
-| Alias | Command                       | Description                                                      |
+| Alias | Comando               | Descrição                                                                  |
 | ----- | ----------------------------- | ---------------------------------------------------------------- |
 | -     | `cd -`                        | Shortcut to go to previous directory.                            |
 | ..    | `cd ..`                       | Shortcut to go to parent directory.                              |

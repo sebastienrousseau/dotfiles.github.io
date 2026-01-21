@@ -39,7 +39,7 @@ of who, when, and why changes occurred.
 tracks changes to files and directories. It is used to manage source code for
 software projects.
 
-| Alias | Command          | Description                                                                                             |
+| Alias | Befehl                | Beschreibung                                                               |
 | ----- | ---------------- | ------------------------------------------------------------------------------------------------------- |
 | sad   | `svn add`        | Put new files and directories under version control                                                     |
 | sau   | `svn auth`       | Manage cached authentication credentials                                                                |

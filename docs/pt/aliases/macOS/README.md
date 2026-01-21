@@ -5,15 +5,15 @@ metaTitle: macOS aliases - Dotfiles
 permalink: /pt/aliases/macOS/
 ---
 
-# macOS Aliases
+# Aliases de macOS
 
-Manage macOS aliases. Part of the **Universal Dotfiles** configuration.
+Gerenciar aliases de macOS. Part of the **Universal Dotfiles** configuration.
 
 ![Dotfiles banner][banner]
 
-## 📖 Description
+## 📖 Descrição
 
-These aliases are defined in `macOS.aliases.sh` and are automatically loaded by `chezmoi`.
+Estes aliases são definidos em `macOS.aliases.sh` e são carregados automaticamente por `chezmoi`.
 
 ## ⚡ Aliases
 

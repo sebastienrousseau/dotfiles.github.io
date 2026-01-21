@@ -33,7 +33,7 @@ The `rsync.aliases.sh` file creates helpful shortcut aliases for
 [Rsync](https://en.wikipedia.org/wiki/Rsync) is a command that copies files and
 directories to another location.
 
-| Alias | Command      | Description                      |
+| 别名  | 命令                   | 描述                                                                       |
 | ----- | ------------ | -------------------------------- |
 | rs    | `rsync -avz` | Rsync with verbose and progress. |
 | rsync | `rs`         | Rsync with verbose and progress. |

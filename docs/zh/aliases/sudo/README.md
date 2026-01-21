@@ -37,7 +37,7 @@ user.
 [Sudo](https://en.wikipedia.org/wiki/Sudo) is a command that allows users to
 execute commands as another user.
 
-| Alias | Command   | Description                         |
+| 别名  | 命令                   | 描述                                                                       |
 | ----- | --------- | ----------------------------------- |
 | root  | `s`       | Execute a command as the superuser. |
 | s     | `sudo -i` | Execute a command as the superuser. |

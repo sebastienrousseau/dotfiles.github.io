@@ -33,7 +33,7 @@ variety of formats.
 
 [7-Zip](http://www.7-zip.org/) is a file archiver with a high compression ratio.
 
-| Alias | Command | Description                                                          |
+| 别名  | 命令                   | 描述                                                                       |
 | ----- | ------- | -------------------------------------------------------------------- |
 | c7z   | `7z a`  | Compress a whole directory (including subdirectories) to a 7z file.  |
 | e7z   | `7z x`  | Extract a whole directory (including subdirectories) from a 7z file. |
@@ -43,7 +43,7 @@ variety of formats.
 [Bzip2](http://www.bzip.org/) is a freely available, patent free, high-quality
 data compressor.
 
-| Alias | Command   | Description                     |
+| 别名  | 命令                   | 描述                                                                       |
 | ----- | --------- | ------------------------------- |
 | cbz2  | `bzip2`   | Compress a file to a bz2 file.  |
 | ebz2  | `bunzip2` | Extract a file from a bz2 file. |
@@ -53,7 +53,7 @@ data compressor.
 [Gzip](https://www.gnu.org/software/gzip/) is a popular data compression program
 as a replacement for compress.
 
-| Alias | Command  | Description                    |
+| 别名  | 命令                   | 描述                                                                       |
 | ----- | -------- | ------------------------------ |
 | cgz   | `gzip`   | Compress a file to a gz file.  |
 | egz   | `gunzip` | Extract a file from a gz file. |
@@ -64,7 +64,7 @@ as a replacement for compress.
 used to aggregate many files into one file to distribute application software or
 libraries on the Java platform.
 
-| Alias | Command    | Description                                                           |
+| 别名  | 命令                   | 描述                                                                       |
 | ----- | ---------- | --------------------------------------------------------------------- |
 | cjar  | `jar -cvf` | Compress a whole directory (including subdirectories) to a jar file.  |
 | ejar  | `jar -xvf` | Extract a whole directory (including subdirectories) from a jar file. |
@@ -74,7 +74,7 @@ libraries on the Java platform.
 [Tar](https://www.gnu.org/software/tar/) is a computer program used to store
 many files together in a single file.
 
-| Alias | Command     | Description                                                              |
+| 别名  | 命令                   | 描述                                                                       |
 | ----- | ----------- | ------------------------------------------------------------------------ |
 | ctar  | `tar -cvf`  | Compress a whole directory (including subdirectories) to a tar file.     |
 | etar  | `tar -xvf`  | Extract a whole directory (including subdirectories) from a tar file.    |
@@ -86,7 +86,7 @@ many files together in a single file.
 [Xz](https://tukaani.org/xz/) is a general-purpose data compression software
 with a high compression ratio.
 
-| Alias | Command    | Description                                                          |
+| 别名  | 命令                   | 描述                                                                       |
 | ----- | ---------- | -------------------------------------------------------------------- |
 | cxz   | `xz -zcvf` | Compress a whole directory (including subdirectories) to a xz file.  |
 | exz   | `xz -zxvf` | Extract a whole directory (including subdirectories) from a xz file. |
@@ -96,7 +96,7 @@ with a high compression ratio.
 [Zip](<https://en.wikipedia.org/wiki/Zip_(file_format)>) is a file format used to
 output a single file containing one or more files.
 
-| Alias | Command  | Description                                                           |
+| 别名  | 命令                   | 描述                                                                       |
 | ----- | -------- | --------------------------------------------------------------------- |
 | cz    | `zip -r` | Compress a whole directory (including subdirectories) to a zip file.  |
 | ez    | `unzip`  | Extract a whole directory (including subdirectories) from a zip file. |
@@ -107,7 +107,7 @@ output a single file containing one or more files.
 algorithm, targeting real-time compression scenarios at zlib-level and better
 compression ratios.
 
-| Alias | Command      | Description                                                           |
+| 别名  | 命令                   | 描述                                                                       |
 | ----- | ------------ | --------------------------------------------------------------------- |
 | czstd | `zstd -zcvf` | Compress a whole directory (including subdirectories) to a zst file.  |
 | ezstd | `zstd -zxvf` | Extract a whole directory (including subdirectories) from a zst file. |

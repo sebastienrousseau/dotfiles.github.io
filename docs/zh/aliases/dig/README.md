@@ -37,7 +37,7 @@ issues and to find information about a domain such the IP address.
 DNS lookups and displays the answers that are returned from the name server(s)
 that were queried.
 
-| Alias | Command                                                                 | Description                                   |
+| 别名  | 命令                   | 描述                                                                       |
 | ----- | ----------------------------------------------------------------------- | --------------------------------------------- |
 | d     | `$(which dig)`                                                          | Run the dig command with the default options. |
 | d4    | `$(which dig) +short -4`                                                | Perform a DNS lookup for an IPv4 address.     |

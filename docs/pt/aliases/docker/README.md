@@ -5,27 +5,27 @@ metaTitle: docker aliases - Dotfiles
 permalink: /pt/aliases/docker/
 ---
 
-# Docker Aliases
+# Aliases de Docker
 
-Manage Docker aliases. Part of the **Universal Dotfiles** configuration.
+Gerenciar aliases de Docker. Part of the **Universal Dotfiles** configuration.
 
 ![Dotfiles banner][banner]
 
-## 📖 Description
+## 📖 Descrição
 
-These aliases are defined in `docker.aliases.sh` and are automatically loaded by `chezmoi`.
+Estes aliases são definidos em `docker.aliases.sh` e são carregados automaticamente por `chezmoi`.
 
 ## ⚡ Aliases
 
 This code provides a comprehensive set of aliases for Docker development
 using `docker`, `docker-compose`, and Docker Swarm commands.
-#### Basic Commands
+#### Comandos Básicos
 - `dk` - Docker shortcut
 - `dkv` - Show Docker version
 - `dki` - Display system-wide information
 - `dkl` - Login to Docker registry
 - `dklo` - Logout from Docker registry
-#### Container Operations
+#### Operações de Contêiner
 - `dkps` - List running containers
 - `dkpsa` - List all containers
 - `dkr` - Run a command in new container
@@ -49,7 +49,7 @@ using `docker`, `docker-compose`, and Docker Swarm commands.
 - `dkpl` - Pull image from registry
 - `dkex` - Execute command in container
 - `dkeit` - Execute interactive command
-#### Images
+#### Imagens
 - `dki` - List images
 - `dkia` - List all images
 - `dkb` - Build an image

@@ -39,7 +39,7 @@ performance and safety, especially safe concurrency. Rust is syntactically
 similar to C++, but is designed to provide better memory safety while
 maintaining high performance.
 
-| Alias | Command                      | Description                 |
+| 别名  | 命令                   | 描述                                                                       |
 | ----- | ---------------------------- | --------------------------- |
 | ru    | `rustup update`              | Rustup update.              |
 | rca   | `rustup component add`       | Rustup component add.       |

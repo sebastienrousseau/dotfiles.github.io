@@ -5,27 +5,27 @@ metaTitle: docker aliases - Dotfiles
 permalink: /es/aliases/docker/
 ---
 
-# Docker Aliases
+# Alias de Docker
 
-Manage Docker aliases. Part of the **Universal Dotfiles** configuration.
+Gestionar alias de Docker. Part of the **Universal Dotfiles** configuration.
 
 ![Dotfiles banner][banner]
 
-## 📖 Description
+## 📖 Descripción
 
-These aliases are defined in `docker.aliases.sh` and are automatically loaded by `chezmoi`.
+Estos alias están definidos en `docker.aliases.sh` y son cargados automáticamente por `chezmoi`.
 
-## ⚡ Aliases
+## ⚡ Alias
 
 This code provides a comprehensive set of aliases for Docker development
 using `docker`, `docker-compose`, and Docker Swarm commands.
-#### Basic Commands
+#### Comandos Básicos
 - `dk` - Docker shortcut
 - `dkv` - Show Docker version
 - `dki` - Display system-wide information
 - `dkl` - Login to Docker registry
 - `dklo` - Logout from Docker registry
-#### Container Operations
+#### Operaciones de Contenedor
 - `dkps` - List running containers
 - `dkpsa` - List all containers
 - `dkr` - Run a command in new container
@@ -49,7 +49,7 @@ using `docker`, `docker-compose`, and Docker Swarm commands.
 - `dkpl` - Pull image from registry
 - `dkex` - Execute command in container
 - `dkeit` - Execute interactive command
-#### Images
+#### Imágenes
 - `dki` - List images
 - `dkia` - List all images
 - `dkb` - Build an image
@@ -62,7 +62,7 @@ using `docker`, `docker-compose`, and Docker Swarm commands.
 - `dkprune` - Remove unused data
 - `dkprunea` - Remove all unused data
 - `dkrmi_dangling` - Remove dangling images
-#### Volumes
+#### Volúmenes
 - `dkv` - Volume shortcut
 - `dkvls` - List volumes
 - `dkvc` - Create volume

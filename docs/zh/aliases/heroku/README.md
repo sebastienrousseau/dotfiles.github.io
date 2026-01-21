@@ -35,7 +35,7 @@ Heroku system.
 
 ## Heroku Access aliases
 
-| Alias | Command                | Description                                    |
+| 别名  | 命令                   | 描述                                                                       |
 | ----- | ---------------------- | ---------------------------------------------- |
 | hk    | `heroku`               | Heroku CLI command shortcut.                   |
 | hka   | `heroku access:add`    | Add new users to your app.                     |
@@ -136,7 +136,7 @@ Heroku system.
 
 ## Heroku Certs aliases
 
-| Alias | Command                     | Description                                          |
+| 别名  | 命令                   | 描述                                                                       |
 | ----- | --------------------------- | ---------------------------------------------------- |
 | hkca  | `heroku certs:auto`         | Show ACM status for an app.                          |
 | hkcad | `heroku certs:add`          | Add an SSL certificate to an app.                    |
@@ -170,7 +170,7 @@ Heroku system.
 
 ## Heroku config aliases
 
-| Alias | Command                  | Description                      |
+| 别名  | 命令                   | 描述                                                                       |
 | ----- | ------------------------ | -------------------------------- |
 | hkclc | `heroku clients:create`  | Create a new OAuth client.       |
 | hkcli | `heroku clients:info`    | Show details of an oauth client. |
@@ -181,7 +181,7 @@ Heroku system.
 
 ## Heroku Configuration aliases
 
-| Alias | Command               | Description                               |
+| 别名  | 命令                   | 描述                                                                       |
 | ----- | --------------------- | ----------------------------------------- |
 | hkcfe | `heroku config:edit`  | Interactively edit config vars.           |
 | hkcfg | `heroku config:get`   | Display a single config value for an app. |
@@ -204,7 +204,7 @@ Heroku system.
 
 ## Heroku Domains aliases
 
-| Alias | Command                 | Description                                                   |
+| 别名  | 命令                   | 描述                                                                       |
 | ----- | ----------------------- | ------------------------------------------------------------- |
 | hkdo  | `heroku domains`        | List domains for an app.                                      |
 | hkdoa | `heroku domains:add`    | Add a domain to an app.                                       |
@@ -216,7 +216,7 @@ Heroku system.
 
 ## Heroku Drains aliases
 
-| Alias | Command                | Description                       |
+| 别名  | 命令                   | 描述                                                                       |
 | ----- | ---------------------- | --------------------------------- |
 | hkdr  | `heroku drains`        | Display the log drains of an app. |
 | hkdra | `heroku drains:add`    | Adds a log drain to an app.       |
@@ -285,7 +285,7 @@ Heroku system.
 
 ## Heroku Members aliases
 
-| Alias | Command                 | Description                    |
+| 别名  | 命令                   | 描述                                                                       |
 | ----- | ----------------------- | ------------------------------ |
 | hkmb  | `heroku members`        | List members of a team.        |
 | hkmba | `heroku members:add`    | Adds a user to a team.         |

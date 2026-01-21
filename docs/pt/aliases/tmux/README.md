@@ -42,7 +42,7 @@ sessions in a single window.
 switch easily between several programs in one terminal, detach them (they keep
 running in the background) and reattach them to a different terminal.
 
-| Alias | Command                  | Description                         |
+| Alias | Comando               | Descrição                                                                  |
 | ----- | ------------------------ | ----------------------------------- |
 | tm    | `tmux`                   | Start tmux.                         |
 | tma   | `tmux attach-session`    | Attach to a tmux session.           |

@@ -36,7 +36,7 @@ on the page, and more.
 
 ## Jekyll development aliases
 
-| Alias | Command                                                           | Description                                                                             |
+| Alias | Befehl                | Beschreibung                                                               |
 | ----- | ----------------------------------------------------------------- | --------------------------------------------------------------------------------------- |
 | jkb   | `JEKYLL_ENV=development bundle exec jekyll build`                 | Performs a one off build your site to ./\_site.                                         |
 | jkc   | `JEKYLL_ENV=development bundle exec jekyll clean`                 | Removes all generated files: destination folder, metadata file, Sass and Jekyll caches. |
@@ -46,6 +46,6 @@ on the page, and more.
 
 ## Jekyll release aliases
 
-| Alias | Command                                                          | Description                                                                          |
+| Alias | Befehl                | Beschreibung                                                               |
 | ----- | ---------------------------------------------------------------- | ------------------------------------------------------------------------------------ |
 | jkp   | `JEKYLL_ENV=production bundle exec jekyll serve --watch --trace` | Does a production build of the site to '\_site' and runs a local development server. |

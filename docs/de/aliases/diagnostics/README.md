@@ -5,7 +5,7 @@ metaTitle: diagnostics aliases - Dotfiles
 permalink: /de/aliases/diagnostics/
 ---
 
-# Diagnostics Aliases
+# Diagnostics-Aliase
 
 Tools for self-healing and system health checks.
 

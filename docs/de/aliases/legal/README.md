@@ -5,7 +5,7 @@ metaTitle: legal aliases - Dotfiles
 permalink: /de/aliases/legal/
 ---
 
-# Legal & Licensing Aliases
+# Legal & Licensing-Aliase
 
 Tools for managing open source compliance, license scanning, and attribution.
 

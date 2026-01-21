@@ -5,15 +5,15 @@ metaTitle: yarn aliases - Dotfiles
 permalink: /pt/aliases/yarn/
 ---
 
-# Yarn Aliases
+# Aliases de Yarn
 
-Manage Yarn (JavaScript) aliases. Part of the **Universal Dotfiles** configuration.
+Gerenciar aliases de Yarn (JavaScript). Part of the **Universal Dotfiles** configuration.
 
 ![Dotfiles banner][banner]
 
-## 📖 Description
+## 📖 Descrição
 
-These aliases are defined in `yarn.aliases.sh` and are automatically loaded by `chezmoi`.
+Estes aliases são definidos em `yarn.aliases.sh` e são carregados automaticamente por `chezmoi`.
 
 ## ⚡ Aliases
 

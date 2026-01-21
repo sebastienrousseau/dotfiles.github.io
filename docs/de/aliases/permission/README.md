@@ -5,17 +5,17 @@ metaTitle: permission aliases - Dotfiles
 permalink: /de/aliases/permission/
 ---
 
-# Permission Aliases
+# Permission-Aliase
 
-Manage Permission aliases. Part of the **Universal Dotfiles** configuration.
+Verwalten Sie Permission-Aliase. Part of the **Universal Dotfiles** configuration.
 
 ![Dotfiles banner][banner]
 
-## 📖 Description
+## 📖 Beschreibung
 
-These aliases are defined in `permission.aliases.sh` and are automatically loaded by `chezmoi`.
+Diese Aliase sind in `permission.aliases.sh` definiert und werden automatisch von `chezmoi` geladen.
 
-## ⚡ Aliases
+## ⚡ Aliase
 
 This code provides a set of aliases for file permissions.
 - `000` Set permissions to no read, write, or execute for user, group,

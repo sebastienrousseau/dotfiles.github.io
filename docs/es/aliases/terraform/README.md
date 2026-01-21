@@ -5,17 +5,17 @@ metaTitle: terraform aliases - Dotfiles
 permalink: /es/aliases/terraform/
 ---
 
-# Terraform Aliases
+# Alias de Terraform
 
-Manage Infrastructure as Code aliases (Terraform, OpenTofu, Ansible). Part of the **Universal Dotfiles** configuration.
+Manage Infrastructure as Code aliases (Terraform, OpenTofu, Ansible). Parte de la configuración de **Universal Dotfiles**.
 
 ![Dotfiles banner][banner]
 
-## 📖 Description
+## 📖 Descripción
 
-These aliases are defined in `terraform.aliases.sh` and are automatically loaded by `chezmoi`.
+Estos alias están definidos en `terraform.aliases.sh` y son cargados automáticamente por `chezmoi`.
 
-## ⚡ Aliases
+## ⚡ Alias
 
 ### terraform
 - `tf` - Terraform shortcut

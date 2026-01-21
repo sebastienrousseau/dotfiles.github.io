@@ -23,7 +23,7 @@ meta:
     content: en_GB
 ---
 
-# GNU Core Utilities Aliases
+# GNU Core Utilities-Aliase
 
 The `gnucoreutils-aliases.sh` file creates helpful shortcut aliases for many
 commonly used [GNU coreutils][coreutils] commands.

@@ -37,7 +37,7 @@ GNU [Wget](https://www.gnu.org/software/wget/) is a free utility for
 non-interactive download of files from the Web. It supports HTTP, HTTPS, and
 FTP protocols, as well as retrieval through HTTP proxies.
 
-| Alias | Command            | Description                           |
+| 别名  | 命令                   | 描述                                                                       |
 | ----- | ------------------ | ------------------------------------- |
 | wg    | `wget`             | Download a file.                      |
 | wgc   | `wg`               | Continue a partially-downloaded file. |

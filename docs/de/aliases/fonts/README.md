@@ -5,7 +5,7 @@ metaTitle: fonts aliases - Dotfiles
 permalink: /de/aliases/fonts/
 ---
 
-# Font Aliases
+# Font-Aliase
 
 Aliases for managing system fonts and caches.
 

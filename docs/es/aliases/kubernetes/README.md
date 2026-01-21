@@ -5,17 +5,17 @@ metaTitle: kubernetes aliases - Dotfiles
 permalink: /es/aliases/kubernetes/
 ---
 
-# Kubernetes Aliases
+# Alias de Kubernetes
 
-Manage Kubernetes aliases. Part of the **Universal Dotfiles** configuration.
+Gestionar alias de Kubernetes. Part of the **Universal Dotfiles** configuration.
 
 ![Dotfiles banner][banner]
 
-## 📖 Description
+## 📖 Descripción
 
-These aliases are defined in `kubernetes.aliases.sh` and are automatically loaded by `chezmoi`.
+Estos alias están definidos en `kubernetes.aliases.sh` y son cargados automáticamente por `chezmoi`.
 
-## ⚡ Aliases
+## ⚡ Alias
 
 ### core
 - `k` - kubectl shortcut

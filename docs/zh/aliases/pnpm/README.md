@@ -36,7 +36,7 @@ The PNpm aliases are a collection of aliases that allow you to interact with the
 [PNpm](https://pnpm.io) is a package manager for JavaScript and Node.js. It
 is fast, disk space efficient, and reliable.
 
-| Alias | Command                              | Description                                              |
+| 别名  | 命令                   | 描述                                                                       |
 | ----- | ------------------------------------ | -------------------------------------------------------- |
 | pna   | `pnpm add`                           | Add a package to the project                             |
 | pnad  | `pnpm add --save-dev`                | Add a package to the project as a development dependency |

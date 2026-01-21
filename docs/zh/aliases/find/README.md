@@ -41,7 +41,7 @@ alternative to `find`. While it does not aim to support all of find's powerful
 functionality, it provides sensible (opinionated) defaults for a majority of
 use cases.
 
-| Alias | Command              | Description                                                 |
+| 别名  | 命令                   | 描述                                                                       |
 | ----- | -------------------- | ----------------------------------------------------------- |
 | fd    | `fd --color always`  | always colorize output by default.                          |
 | fda   | `fd --absolute-path` | list all files with absolute path.                          |

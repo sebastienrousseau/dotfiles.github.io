@@ -5,17 +5,17 @@ metaTitle: ai aliases - Dotfiles
 permalink: /de/aliases/ai/
 ---
 
-# AI Aliases
+# AI-Aliase
 
-Manage AI & LLM aliases (GitHub Copilot, Ollama). Part of the **Universal Dotfiles** configuration.
+Manage AI & LLM aliases (GitHub Copilot, Ollama). Teil der **Universal Dotfiles**-Konfiguration.
 
 ![Dotfiles banner][banner]
 
-## 📖 Description
+## 📖 Beschreibung
 
-These aliases are defined in `ai.aliases.sh` and are automatically loaded by `chezmoi`.
+Diese Aliase sind in `ai.aliases.sh` definiert und werden automatisch von `chezmoi` geladen.
 
-## ⚡ Aliases
+## ⚡ Aliase
 
 ### GitHub Copilot
 - `ghcp` - Copilot shortcut

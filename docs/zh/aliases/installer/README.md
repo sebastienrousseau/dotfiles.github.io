@@ -5,7 +5,7 @@ metaTitle: installer aliases - Dotfiles
 permalink: /zh/aliases/installer/
 ---
 
-# Installer Aliases
+# Installer 别名
 
 Tools for bootstrapping and remote deployment.
 

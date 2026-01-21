@@ -34,7 +34,7 @@ Google Cloud SDK command line tools.
 
 ## Command-line tool
 
-| Alias | Command                     | Description                                           |
+| Alias | Befehl                | Beschreibung                                                               |
 | ----- | --------------------------- | ----------------------------------------------------- |
 | gcci  | `gcloud components install` | Install specific components.                          |
 | gccsp | `gcloud config set project` | Set a default Google Cloud project to work on.        |
@@ -45,7 +45,7 @@ Google Cloud SDK command line tools.
 
 ## Custom
 
-| Alias | Command                                 | Description                                                          |
+| Alias | Befehl                | Beschreibung                                                               |
 | ----- | --------------------------------------- | -------------------------------------------------------------------- |
 | gccca | `gcloud config configurations activate` | Switch to an existing named configuration.                           |
 | gcccc | `gcloud config configurations create`   | Create a new named configuration.                                    |
@@ -78,14 +78,14 @@ Google Cloud SDK command line tools.
 
 ## Access policies
 
-| Alias | Command                                  | Description                                        |
+| Alias | Befehl                | Beschreibung                                                               |
 | ----- | ---------------------------------------- | -------------------------------------------------- |
 | gcpa  | `gcloud projects add-iam-policy-binding` | Add an IAM policy binding to a specified project.  |
 | gcpd  | `gcloud projects describe`               | Display metadata for a project (including its ID). |
 
 ## Kubernetes
 
-| Alias | Command                                     | Description                                            |
+| Alias | Befehl                | Beschreibung                                                               |
 | ----- | ------------------------------------------- | ------------------------------------------------------ |
 | gcccc | `gcloud container clusters create`          | Create a cluster to run GKE containers.                |
 | gcccg | `gcloud container clusters get-credentials` | Update kubeconfig to get kubectl to use a GKE cluster. |
@@ -109,7 +109,7 @@ Google Cloud SDK command line tools.
 
 ## gcloud aliases to build highly scalable applications on a fully managed serverless platform
 
-| Alias | Command                    | Description                                                          |
+| Alias | Befehl                | Beschreibung                                                               |
 | ----- | -------------------------- | -------------------------------------------------------------------- |
 | gcapb | `gcloud app browse`        | Open the current app in a web browser.                               |
 | gcapc | `gcloud app create`        | Create an App Engine app within your current project.                |

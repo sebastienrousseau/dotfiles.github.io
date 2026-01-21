@@ -36,7 +36,7 @@ usage. The space used by each file is shown in kilobytes. The space used by each
 directory is shown in kilobytes, along with the total space used by all files in
 that directory and its subdirectories.
 
-| Alias | Command      | Description                                                                 |
+| Alias | Comando               | Descrição                                                                  |
 | ----- | ------------ | --------------------------------------------------------------------------- | -------------------------------------------------------- | ---------------------------------------------------------- |
 | du    | `du -h`      | Show the disk usage of the current directory.                               |
 | du1   | `du -hxd 1   | sort -h`                                                                    | File size of files and directories in current directory. |

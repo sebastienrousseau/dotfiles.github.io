@@ -37,7 +37,7 @@ the `mkdir` command line tool. Mkdir is a tool which creates a directory.
 directory. The mkdir utility creates the directories named as operands, in the
 order specified, using mode “rwxrwxrwx” (0777).
 
-| Alias | Command                     | Description                                |
+| Alias | Comando               | Descrição                                                                  |
 | ----- | --------------------------- | ------------------------------------------ |
 | mcd   | `mkdir -pv && cd`           | Make directory and cd into it.             |
 | mcdp  | `mkdir -pv && cd`           | Make directory and parents and cd into it. |

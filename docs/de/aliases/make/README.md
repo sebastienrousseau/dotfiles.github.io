@@ -38,7 +38,7 @@ Make gets its knowledge of how to build your program from a file called the
 `Makefile`, which lists each of the non-source files and how to compute it from
 other files.
 
-| Alias | Command        | Description                   |
+| Alias | Befehl                | Beschreibung                                                               |
 | ----- | -------------- | ----------------------------- |
 | mk    | `make`         | Run `make` with no arguments. |
 | mkc   | `make clean`   | Run `make clean`.             |

@@ -23,7 +23,7 @@ meta:
     content: en_GB
 ---
 
-# Git Aliases
+# Alias de Git
 
 The `git.aliases.sh` file creates helpful shortcut aliases for many commonly
 [Git](https://www.heroku.com/) commands.
@@ -32,9 +32,9 @@ The Git aliases, provide powerful commands that create shortcuts to frequently
 used Git commands. All of these functions and aliases are wrappers around the
 Git command line tools. Git aliases improve speed and efficiency.
 
-## Work on the current change
+## Trabajar en el cambio actual
 
-| Alias | Command               | Description                                                                |
+| Alias | Comando               | Descripción                                                                |
 | ----- | --------------------- | -------------------------------------------------------------------------- |
 | g     | `git`                 | Short-form git commands.                                                   |
 | ga    | `git add`             | Add file contents to the index.                                            |
@@ -47,16 +47,16 @@ Git command line tools. Git aliases improve speed and efficiency.
 | grs   | `git restore`         | Restore working tree files.                                                |
 | gsc   | `git sparse-checkout` | Initialize and modify the sparse-checkout.                                 |
 
-## Start a working area
+## Iniciar un área de trabajo
 
-| Alias | Command     | Description                                                     |
+| Alias | Comando               | Descripción                                                                |
 | ----- | ----------- | --------------------------------------------------------------- |
 | gcl   | `git clone` | Clone a repository into a new directory.                        |
 | gin   | `git init`  | Create an empty Git repository or reinitialize an existing one. |
 
 ## Examine the history and state
 
-| Alias | Command                                                             | Description                                                                                                                |
+| Alias | Comando               | Descripción                                                                |
 | ----- | ------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------- |
 | gbs   | `git bisect`                                                        | Use binary search to find the commit that introduced a bug.                                                                |
 | gd    | `git diff`                                                          | Show changes between commits, commit and working tree, etc.                                                                |
@@ -67,7 +67,7 @@ Git command line tools. Git aliases improve speed and efficiency.
 
 ## List, create, or delete branches
 
-| Alias | Command            | Description                                      |
+| Alias | Comando               | Descripción                                                                |
 | ----- | ------------------ | ------------------------------------------------ |
 | gb    | `git branch`       | Create a branch.                                 |
 | gbd   | `git branch -d`    | Delete a branch.                                 |
@@ -83,7 +83,7 @@ Git command line tools. Git aliases improve speed and efficiency.
 
 ## Collaborate
 
-| Alias | Command     | Description                                                         |
+| Alias | Comando               | Descripción                                                                |
 | ----- | ----------- | ------------------------------------------------------------------- |
 | gf    | `git fetch` | Download objects and refs from another repository.                  |
 | gi    | `git init`  | Create an empty Git repository or reinitialize an existing one.     |
@@ -92,7 +92,7 @@ Git command line tools. Git aliases improve speed and efficiency.
 
 ## Record changes to the repository
 
-| Alias | Command                        | Description                                                            |
+| Alias | Comando               | Descripción                                                                |
 | ----- | ------------------------------ | ---------------------------------------------------------------------- |
 | gc    | `git commit -a`                | Commit command to automatically "add" changes from all known files.    |
 | gca   | `git commit --amend`           | Amend the tip of the current branch rather than creating a new commit. |
@@ -115,7 +115,7 @@ Git command line tools. Git aliases improve speed and efficiency.
 
 ## Show commit logs
 
-| Alias | Command                                                                                                                                                                                                           | Description                                                                                         |
+| Alias | Comando               | Descripción                                                                |
 | ----- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------- |
 | gclc  | `git log --oneline --reverse`                                                                                                                                                                                     | Show log of changes, most recent first.                                                             |
 | gld   | `git log --since=1-day-ago`                                                                                                                                                                                       | Show the log of the recent day                                                                      |
@@ -212,7 +212,7 @@ Git command line tools. Git aliases improve speed and efficiency.
 
 ## Create, list, delete or verify a tag object signed with GPG
 
-| Alias | Command                                                         | Description                                                       |
+| Alias | Comando               | Descripción                                                                |
 | ----- | --------------------------------------------------------------- | ----------------------------------------------------------------- |
 | gt    | `git tag`                                                       | gt: See all tags.                                                 |
 | gta   | `git tag -a $1 -m $2`                                           | gta: Add a tag.                                                   |
@@ -242,7 +242,7 @@ Git command line tools. Git aliases improve speed and efficiency.
 
 ## Pick out and massage parameters
 
-| Alias | Command                                                                     | Description                       |
+| Alias | Comando               | Descripción                                                                |
 | ----- | --------------------------------------------------------------------------- | --------------------------------- |
 | gtp   | `git rev-parse --show-toplevel`                                             | Get the top level directory name. |
 | gcb   | `git rev-parse --abbrev-ref HEAD`                                           | Get the current branch name.      |
@@ -250,7 +250,7 @@ Git command line tools. Git aliases improve speed and efficiency.
 
 ## Remove files from the working tree and from the index
 
-| Alias | Command                                                              | Description                                            |
+| Alias | Comando               | Descripción                                                                |
 | ----- | -------------------------------------------------------------------- | ------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------- | --------------------- |
 | grm   | `git rm`                                                             | Remove files from the working tree and from the index. |
 | grmc  | `git rm --cached`                                                    | Unstage and remove paths only from the index.          |
@@ -262,7 +262,7 @@ Git command line tools. Git aliases improve speed and efficiency.
 
 ## Show what revision and author last modified each line of a file
 
-| Alias | Command                          | Description                                    |
+| Alias | Comando               | Descripción                                                                |
 | ----- | -------------------------------- | ---------------------------------------------- | ---------------------- | ------- | --------- | ---------------------------------------------------- | ------------------------------------------------------------- |
 | gbl   | `git blame --date short "$1"`    | Specifies a format used to output short dates. |
 | gblc  | `git blame --line-porcelain "$1" | sed -n 's/^author //p'                         | sort                   | uniq -c | sort -rn` | Count the number of lines attributed to each author. |

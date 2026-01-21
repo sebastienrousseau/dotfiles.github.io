@@ -5,17 +5,17 @@ metaTitle: macOS aliases - Dotfiles
 permalink: /zh/aliases/macOS/
 ---
 
-# macOS Aliases
+# macOS 别名
 
-Manage macOS aliases. Part of the **Universal Dotfiles** configuration.
+管理 macOS 别名。 Part of the **Universal Dotfiles** configuration.
 
 ![Dotfiles banner][banner]
 
-## 📖 Description
+## 📖 描述
 
-These aliases are defined in `macOS.aliases.sh` and are automatically loaded by `chezmoi`.
+这些别名定义在 `macOS.aliases.sh` 中，并由 `chezmoi` 自动加载。
 
-## ⚡ Aliases
+## ⚡ 别名
 
 This code provides a set of aliases for macOS.
 - `clds` Recursively delete .DS_Store files.

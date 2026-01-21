@@ -5,17 +5,17 @@ metaTitle: python aliases - Dotfiles
 permalink: /zh/aliases/python/
 ---
 
-# Python Aliases
+# Python 别名
 
-Manage Python aliases. Part of the **Universal Dotfiles** configuration.
+管理 Python 别名。 Part of the **Universal Dotfiles** configuration.
 
 ![Dotfiles banner][banner]
 
-## 📖 Description
+## 📖 描述
 
-These aliases are defined in `python.aliases.sh` and are automatically loaded by `chezmoi`.
+这些别名定义在 `python.aliases.sh` 中，并由 `chezmoi` 自动加载。
 
-## ⚡ Aliases
+## ⚡ 别名
 
 - `py` - python
 - `pip` - pip3

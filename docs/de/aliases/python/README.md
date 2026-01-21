@@ -5,17 +5,17 @@ metaTitle: python aliases - Dotfiles
 permalink: /de/aliases/python/
 ---
 
-# Python Aliases
+# Python-Aliase
 
-Manage Python aliases. Part of the **Universal Dotfiles** configuration.
+Verwalten Sie Python-Aliase. Part of the **Universal Dotfiles** configuration.
 
 ![Dotfiles banner][banner]
 
-## 📖 Description
+## 📖 Beschreibung
 
-These aliases are defined in `python.aliases.sh` and are automatically loaded by `chezmoi`.
+Diese Aliase sind in `python.aliases.sh` definiert und werden automatisch von `chezmoi` geladen.
 
-## ⚡ Aliases
+## ⚡ Aliase
 
 - `py` - python
 - `pip` - pip3
