@@ -144,7 +144,6 @@ They have been grouped by logical categories:
 [gcloud]: ./gcloud/
 [git]: ./git/
 [gnu]: ./gnu/
-
 [interactive]: ./interactive/
 [jekyll]: ./jekyll/
 [list]: ./list/

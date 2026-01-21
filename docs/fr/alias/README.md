@@ -146,7 +146,6 @@ Ils ont été regroupés par catégories logiques :
 [gcloud]: ./gcloud/
 [git]: ./git/
 [gnu]: ./gnu/
-
 [jekyll]: ./jekyll/
 [make]: ./make/
 [mkdir]: ./mkdir/
