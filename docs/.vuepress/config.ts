@@ -1,7 +1,5 @@
-import { enNavbar } from "./config/nav"; // Import English navbar
-import { enSidebar } from "./config/sidebar"; // Import English sidebar
-import { frNavbar } from "./config/nav"; // Import French navbar
-import { frSidebar } from "./config/sidebar"; // Import French sidebar
+import { enNavbar, frNavbar } from "./config/nav";
+import { enSidebar, frSidebar } from "./config/sidebar";
 import { esNavbar } from "./config/nav/es";
 import { esSidebar } from "./config/sidebar/es";
 import { deNavbar } from "./config/nav/de";
