@@ -15,6 +15,6 @@ Los alias de UUID crean atajos útiles para el comando `uuidgen`. El comando uui
 
 [UUID](https://es.wikipedia.org/wiki/Identificador_%C3%BAnico_universal) es un número de 128 bits utilizado para identificar información en sistemas informáticos.
 
-| Alias | Comando                                                                            | Descripción                                   |
-| ----- | ---------------------------------------------------------------------------------- | --------------------------------------------- |
+| Alias | Comando                                                                            | Descripción                                 |
+| ----- | ---------------------------------------------------------------------------------- | ------------------------------------------- |
 | uuid  | `uuidgen \| tr -d '\n' \| tr '[:upper:]' '[:lower:]' \| pbcopy && pbpaste && echo` | Generar un UUID y copiarlo al portapapeles. |

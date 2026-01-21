@@ -25,14 +25,14 @@ permalink: /zh/aliases/update/
 
 `upd` 别名已适应在 Linux 上工作。它将通过 `apt` 包管理器更新基于 Debian 的 Linux 发行版，并通过 pnpm、rustup (Rust) 和 gem (Ruby) 更新其他依赖项。
 
-| 别名  | 命令                                                                                                               | 描述                                         |
-| ----- | ------------------------------------------------------------------------------------------------------------------ | -------------------------------------------- |
-| upd   | `sudo apt update && sudo apt upgrade -y && pnpm up && rustup update stable && sudo gem update && sudo gem cleanup` | 基于 Debian 的 Linux 操作系统的更新命令。    |
+| 别名 | 命令                                                                                                               | 描述                                      |
+| ---- | ------------------------------------------------------------------------------------------------------------------ | ----------------------------------------- |
+| upd  | `sudo apt update && sudo apt upgrade -y && pnpm up && rustup update stable && sudo gem update && sudo gem cleanup` | 基于 Debian 的 Linux 操作系统的更新命令。 |
 
 ### macOS
 
 `upd` 别名也可用于 macOS。它将通过 `softwareupdate` 命令行工具更新 macOS，并使用 pnpm、Homebrew、mas、rustup 和 gem 包管理器管理其依赖项。
 
-| 别名  | 命令                                                                                                                                                                                               | 描述           |
-| ----- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------- |
-| upd   | `sudo softwareupdate -i -a && pnpm up && rustup update stable && brew cu -ayi && brew doctor && brew update && brew upgrade && brew cleanup && mas upgrade && sudo gem update && sudo gem cleanup` | 更新系统。     |
+| 别名 | 命令                                                                                                                                                                                               | 描述       |
+| ---- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------- |
+| upd  | `sudo softwareupdate -i -a && pnpm up && rustup update stable && brew cu -ayi && brew doctor && brew update && brew upgrade && brew cleanup && mas upgrade && sudo gem update && sudo gem cleanup` | 更新系统。 |

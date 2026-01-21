@@ -11,7 +11,7 @@ Herramientas para bootstrapping y despliegue remoto.
 
 ## 🚀 Comandos
 
-| Alias          | Descripción                                                         |
-| -------------- | ------------------------------------------------------------------- |
-| `dot-install`  | Ejecutar el script `install.sh` de bootstrap localmente.                      |
+| Alias          | Descripción                                                                          |
+| -------------- | ------------------------------------------------------------------------------------ |
+| `dot-install`  | Ejecutar el script `install.sh` de bootstrap localmente.                             |
 | `dot-teleport` | Teletransportar tu configuración a un servidor remoto (`dot-teleport usuario@host`). |

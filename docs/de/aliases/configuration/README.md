@@ -16,10 +16,10 @@ der Konfigurationsdateien für das Terminal und die Shell.
 
 ## Konfiguration
 
-| Alias | Befehl                           | Beschreibung                                                  |
-| ----- | -------------------------------- | ------------------------------------------------------------- |
-| bshp  | `${=EDITOR} $HOME/.bash_profile` | Öffne das Bash-Profil im Standard-Texteditor.                 |
-| bshrc | `${=EDITOR} $HOME/.bashrc`       | Öffne die Bash-Konfigurationsdatei im Standard-Texteditor.    |
-| gcfg  | `${=EDITOR} $HOME/.gitconfig`    | Öffne die Git-Konfigurationsdatei im Standard-Texteditor.     |
-| gign  | `${=EDITOR} $HOME/.gitignore`    | Öffne die Git-Ignore-Datei im Standard-Texteditor.            |
-| zshrc | `${=EDITOR} $HOME/.zshrc`        | Öffne die Zsh-Konfigurationsdatei im Standard-Texteditor.     |
+| Alias | Befehl                           | Beschreibung                                               |
+| ----- | -------------------------------- | ---------------------------------------------------------- |
+| bshp  | `${=EDITOR} $HOME/.bash_profile` | Öffne das Bash-Profil im Standard-Texteditor.              |
+| bshrc | `${=EDITOR} $HOME/.bashrc`       | Öffne die Bash-Konfigurationsdatei im Standard-Texteditor. |
+| gcfg  | `${=EDITOR} $HOME/.gitconfig`    | Öffne die Git-Konfigurationsdatei im Standard-Texteditor.  |
+| gign  | `${=EDITOR} $HOME/.gitignore`    | Öffne die Git-Ignore-Datei im Standard-Texteditor.         |
+| zshrc | `${=EDITOR} $HOME/.zshrc`        | Öffne die Zsh-Konfigurationsdatei im Standard-Texteditor.  |

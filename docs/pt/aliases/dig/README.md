@@ -20,15 +20,15 @@ problemas de DNS e encontrar informações sobre um domínio, como o endereço I
 pesquisas DNS e exibe as respostas que são retornadas do(s) servidor(es) de nomes
 consultados.
 
-| Alias | Comando                                                                 | Descrição                                         |
-| ----- | ----------------------------------------------------------------------- | ------------------------------------------------- |
-| d     | `$(which dig)`                                                          | Executar o comando dig com as opções padrão.      |
-| d4    | `$(which dig) +short -4`                                                | Realizar uma pesquisa DNS para um endereço IPv4.  |
-| d6    | `$(which dig) +short -6`                                                | Realizar uma pesquisa DNS para um endereço IPv6.  |
-| dga   | `$(which dig) +all ANY`                                                 | Realizar uma pesquisa DNS para todos os registros.|
-| dgs   | `$(which dig) +short`                                                   | Realizar uma pesquisa DNS para uma resposta curta.|
-| digg  | `$(which dig) @8.8.8.8 +nocmd any +multiline +noall +answer`            | Dig com o DNS do Google.                          |
-| ip4   | `$(which dig) +short myip.opendns.com @resolver1.opendns.com -4`        | Obter seu endereço IPv4 público.                  |
-| ip6   | `$(which dig) -6 AAAA +short myip.opendns.com. @resolver1.opendns.com.` | Obter seu endereço IPv6 público.                  |
-| ips   | `ip4; ip6`                                                              | Obter seus endereços IPv4 e IPv6 públicos.        |
-| wip   | `$(which dig) +short myip.opendns.com @resolver1.opendns.com`           | Obter seu endereço IP público.                    |
+| Alias | Comando                                                                 | Descrição                                          |
+| ----- | ----------------------------------------------------------------------- | -------------------------------------------------- |
+| d     | `$(which dig)`                                                          | Executar o comando dig com as opções padrão.       |
+| d4    | `$(which dig) +short -4`                                                | Realizar uma pesquisa DNS para um endereço IPv4.   |
+| d6    | `$(which dig) +short -6`                                                | Realizar uma pesquisa DNS para um endereço IPv6.   |
+| dga   | `$(which dig) +all ANY`                                                 | Realizar uma pesquisa DNS para todos os registros. |
+| dgs   | `$(which dig) +short`                                                   | Realizar uma pesquisa DNS para uma resposta curta. |
+| digg  | `$(which dig) @8.8.8.8 +nocmd any +multiline +noall +answer`            | Dig com o DNS do Google.                           |
+| ip4   | `$(which dig) +short myip.opendns.com @resolver1.opendns.com -4`        | Obter seu endereço IPv4 público.                   |
+| ip6   | `$(which dig) -6 AAAA +short myip.opendns.com. @resolver1.opendns.com.` | Obter seu endereço IPv6 público.                   |
+| ips   | `ip4; ip6`                                                              | Obter seus endereços IPv4 e IPv6 públicos.         |
+| wip   | `$(which dig) +short myip.opendns.com @resolver1.opendns.com`           | Obter seu endereço IP público.                     |

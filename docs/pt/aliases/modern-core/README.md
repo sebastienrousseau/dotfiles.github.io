@@ -11,12 +11,12 @@ Na **v0.2.471**, introduzimos o "Modern Core" — um conjunto de ferramentas de 
 
 ## Visão Geral das Ferramentas
 
-| Ferramenta  | Substitui       | Descrição                                               | Atalho          |
-| :---------- | :-------------- | :------------------------------------------------------ | :-------------- |
-| **Atuin**   | `history`       | Histórico de shell criptografado e sincronizável com pesquisa difusa. | `Ctrl+R` / `Up` |
+| Ferramenta  | Substitui       | Descrição                                                                            | Atalho          |
+| :---------- | :-------------- | :----------------------------------------------------------------------------------- | :-------------- |
+| **Atuin**   | `history`       | Histórico de shell criptografado e sincronizável com pesquisa difusa.                | `Ctrl+R` / `Up` |
 | **Yazi**    | `ranger` / `ls` | Gerenciador de arquivos de terminal extremamente rápido com visualização de imagens. | `yy` (alias)    |
-| **Zellij**  | `tmux`          | Multiplexador de terminal moderno com layouts intuitivos. | `Alt+n`         |
-| **Ghostty** | `Terminal.app`  | Emulador de terminal acelerado por GPU e multiplataforma. | N/A             |
+| **Zellij**  | `tmux`          | Multiplexador de terminal moderno com layouts intuitivos.                            | `Alt+n`         |
+| **Ghostty** | `Terminal.app`  | Emulador de terminal acelerado por GPU e multiplataforma.                            | N/A             |
 
 ## Atuin (Histórico Mágico)
 

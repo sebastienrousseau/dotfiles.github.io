@@ -11,10 +11,10 @@ Alias para gestionar caché y fuentes del sistema.
 
 ## 🔡 Comandos
 
-| Alias          | Descripción                                     |
-| -------------- | ----------------------------------------------- |
+| Alias          | Descripción                                                 |
+| -------------- | ----------------------------------------------------------- |
 | `update-fonts` | Actualiza la caché de fuentes del sistema (`fc-cache -fv`). |
-| `list-fonts`   | Lista todas las familias de fuentes instaladas.              |
+| `list-fonts`   | Lista todas las familias de fuentes instaladas.             |
 
 ## 📦 Fuentes Instaladas
 

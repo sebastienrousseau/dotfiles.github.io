@@ -20,30 +20,30 @@ Aderimos a uma hierarquia estrita para garantir consistência entre macOS e Linu
 Da prioridade mais alta (verificada primeiro) para a mais baixa:
 
 1.  **Binários Locais** (`~/.local/bin`)
-    *   **Prioridade**: 1
-    *   **Objetivo**: Scripts de usuário personalizados, CLI `dot` e ferramentas instaladas via `pipx` ou outros gerenciadores de pacotes de nível de usuário.
-    *   **Motivo**: Permite substituir ferramentas do sistema ou Homebrew por suas próprias versões.
+    - **Prioridade**: 1
+    - **Objetivo**: Scripts de usuário personalizados, CLI `dot` e ferramentas instaladas via `pipx` ou outros gerenciadores de pacotes de nível de usuário.
+    - **Motivo**: Permite substituir ferramentas do sistema ou Homebrew por suas próprias versões.
 
 2.  **Binários de Aplicativos** (macOS)
-    *   **Prioridade**: 2
-    *   **Objetivo**: Binários de aplicativos instalados (por exemplo, VS Code, iTerm).
+    - **Prioridade**: 2
+    - **Objetivo**: Binários de aplicativos instalados (por exemplo, VS Code, iTerm).
 
 3.  **Runtimes de Linguagem**
-    *   **Node.js**: `~/.node_modules/bin`
-    *   **Go**: `~/go/bin`
-    *   **Rust (Cargo)**: `~/.cargo/bin`
-    *   **Ruby (User Gems)**: `~/.gem/ruby/bin`
-    *   **Python (Pipx)**: `~/.local/share/pipx`
+    - **Node.js**: `~/.node_modules/bin`
+    - **Go**: `~/go/bin`
+    - **Rust (Cargo)**: `~/.cargo/bin`
+    - **Ruby (User Gems)**: `~/.gem/ruby/bin`
+    - **Python (Pipx)**: `~/.local/share/pipx`
 
 4.  **Homebrew** (`/opt/homebrew/bin`)
-    *   **Prioridade**: 3
-    *   **Objetivo**: Gerenciador de pacotes principal para macOS/Linux.
-    *   **Nota**: Carregamos o Homebrew propositalmente *antes* dos caminhos do sistema para permitir a atualização de ferramentas do sistema (como `git` or `curl`).
+    - **Prioridade**: 3
+    - **Objetivo**: Gerenciador de pacotes principal para macOS/Linux.
+    - **Nota**: Carregamos o Homebrew propositalmente _antes_ dos caminhos do sistema para permitir a atualização de ferramentas do sistema (como `git` or `curl`).
 
 5.  **Caminhos do Sistema** (`/usr/bin`, `/bin`)
-    *   **Prioridade**: Mais baixa
-    *   **Objetivo**: Ferramentas padrão do sistema operacional.
-    *   **Motivo**: Fallback para utilitários fundamentais.
+    - **Prioridade**: Mais baixa
+    - **Objetivo**: Ferramentas padrão do sistema operacional.
+    - **Motivo**: Fallback para utilitários fundamentais.
 
 ## Deduplicação
 

@@ -19,11 +19,11 @@ dem `mkdir` Kommandozeilen-Tool zu interagieren. Mkdir ist ein Tool, das ein Ver
 Verzeichnis erstellt. Das mkdir-Dienstprogramm erstellt die als Operanden benannten Verzeichnisse in der
 angegebenen Reihenfolge unter Verwendung des Modus „rwxrwxrwx“ (0777).
 
-| Alias | Befehl                      | Beschreibung                               |
-| ----- | --------------------------- | ------------------------------------------ |
-| mcd   | `mkdir -pv && cd`           | Erstelle Verzeichnis und wechsle hinein.   |
+| Alias | Befehl                      | Beschreibung                                        |
+| ----- | --------------------------- | --------------------------------------------------- |
+| mcd   | `mkdir -pv && cd`           | Erstelle Verzeichnis und wechsle hinein.            |
 | mcdp  | `mkdir -pv && cd`           | Erstelle Verzeichnis und Eltern und wechsle hinein. |
-| md    | `mkd`                       | Erstelle Verzeichnis.                      |
-| mdd   | `mkdir -pv $(date +%Y%m%d)` | Erstelle Verzeichnis mit Datum.            |
-| mdp   | `mkdir -pv`                 | Erstelle Verzeichnis und Eltern.           |
-| mdt   | `mkdir -pv $(date +%h%m%s)` | Erstelle Verzeichnis mit Uhrzeit.          |
+| md    | `mkd`                       | Erstelle Verzeichnis.                               |
+| mdd   | `mkdir -pv $(date +%Y%m%d)` | Erstelle Verzeichnis mit Datum.                     |
+| mdp   | `mkdir -pv`                 | Erstelle Verzeichnis und Eltern.                    |
+| mdt   | `mkdir -pv $(date +%h%m%s)` | Erstelle Verzeichnis mit Uhrzeit.                   |

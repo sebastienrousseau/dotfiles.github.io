@@ -20,12 +20,12 @@ zu schätzen. Der von jeder Datei verwendete Platz wird in Kilobyte angezeigt. D
 Verzeichnis verwendete Platz wird in Kilobyte angezeigt, zusammen mit dem gesamten Platz, der von allen Dateien in
 diesem Verzeichnis und seinen Unterverzeichnissen verwendet wird.
 
-| Alias | Befehl       | Beschreibung                                                                |
-| ----- | ------------ | --------------------------------------------------------------------------- |
-| du    | `du -h`      | Zeige die Speicherplatzbelegung des aktuellen Verzeichnisses an.            |
-| du1   | `du -hxd 1   | sort -h`                                                                    | Dateigröße von Dateien und Verzeichnissen im aktuellen Verzeichnis. |
-| ducks | `du -cks _._ | sort -rn                                                                    | head -n 10`                                                 | Top 10 der größten Dateien und Verzeichnisse im aktuellen Verzeichnis. |
-| duh   | `du`         | Dateigröße von Dateien und Verzeichnissen.                                  |
-| dus   | `du -hs *`   | Dateigröße menschenlesbare Ausgabe sortiert nach Größe.                     |
+| Alias | Befehl       | Beschreibung                                                                           |
+| ----- | ------------ | -------------------------------------------------------------------------------------- | ------------------------------------------------------------------- | ---------------------------------------------------------------------- |
+| du    | `du -h`      | Zeige die Speicherplatzbelegung des aktuellen Verzeichnisses an.                       |
+| du1   | `du -hxd 1   | sort -h`                                                                               | Dateigröße von Dateien und Verzeichnissen im aktuellen Verzeichnis. |
+| ducks | `du -cks _._ | sort -rn                                                                               | head -n 10`                                                         | Top 10 der größten Dateien und Verzeichnisse im aktuellen Verzeichnis. |
+| duh   | `du`         | Dateigröße von Dateien und Verzeichnissen.                                             |
+| dus   | `du -hs *`   | Dateigröße menschenlesbare Ausgabe sortiert nach Größe.                                |
 | dusym | `du * -hsLc` | Dateigröße von Dateien und Verzeichnissen im aktuellen Verzeichnis inklusive Symlinks. |
-| dut   | `dus`        | Gesamte Dateigröße des aktuellen Verzeichnisses.                            |
+| dut   | `dus`        | Gesamte Dateigröße des aktuellen Verzeichnisses.                                       |

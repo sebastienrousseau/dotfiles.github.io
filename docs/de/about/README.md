@@ -20,10 +20,10 @@ Im Gegensatz zu alten Dotfiles, die auf komplexen Makefiles oder Symlink-Skripte
 ## Was ist neu in v0.2.471
 
 - **Moderner Kern**: Wir haben alte Unix-Tools durch leistungsstarke Rust-Alternativen ersetzt:
-    - **Atuin** (ersetzt `history`)
-    - **Yazi** (ersetzt `ls`/`ranger`)
-    - **Zellij** (ersetzt `tmux`)
-    - **Ghostty** (Modernes GPU-beschleunigtes Terminal)
+  - **Atuin** (ersetzt `history`)
+  - **Yazi** (ersetzt `ls`/`ranger`)
+  - **Zellij** (ersetzt `tmux`)
+  - **Ghostty** (Modernes GPU-beschleunigtes Terminal)
 - **Native Sicherheit**: Vollständig native SSH-Signierung (schlüssellos/ohne Eigentümer) ohne Drittanbieter-Agenten.
 - **Interaktiver Modus**: Neuer Befehl `dot learn`, um Sie durch die Funktionen zu führen.
 
@@ -44,6 +44,7 @@ sh -c "$(curl -fsLS get.chezmoi.io)" -- init --apply sebastienrousseau
 ```
 
 Dieser Befehl wird:
+
 1.  Die `chezmoi`-Binärdatei installieren.
 2.  Das Repository nach `~/.local/share/chezmoi` klonen.
 3.  Die Differenz zwischen Ihrem aktuellen Zustand und dem gewünschten Zustand berechnen.

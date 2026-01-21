@@ -15,8 +15,8 @@ Los alias de PS son una colección de alias que te permiten interactuar con la h
 
 [PS](<https://es.wikipedia.org/wiki/Ps_(Unix)>) es un comando que lista los procesos que se ejecutan en el sistema.
 
-| Alias | Comando  | Descripción                                                                                                                             |
-| ----- | -------- | --------------------------------------------------------------------------------------------------------------------------------------- |
+| Alias | Comando  | Descripción                                                                                                                                     |
+| ----- | -------- | ----------------------------------------------------------------------------------------------------------------------------------------------- |
 | pid   | `ps -f`  | Muestra el uid, pid, pid padre, uso reciente de CPU, hora de inicio del proceso, tty de control, uso de CPU transcurrido y el comando asociado. |
-| ps    | `ps -ef` | Mostrar todos los procesos.                                                                                                                  |
-| psa   | `ps aux` | Listar todos los procesos (formato extendido).                                                                                                                     |
+| ps    | `ps -ef` | Mostrar todos los procesos.                                                                                                                     |
+| psa   | `ps aux` | Listar todos los procesos (formato extendido).                                                                                                  |

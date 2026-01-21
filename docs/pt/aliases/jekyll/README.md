@@ -18,16 +18,16 @@ na página e muito mais.
 
 ## Aliases de desenvolvimento Jekyll
 
-| Alias | Comando                                                           | Descrição                                                                               |
-| ----- | ----------------------------------------------------------------- | --------------------------------------------------------------------------------------- |
-| jkb   | `JEKYLL_ENV=development bundle exec jekyll build`                 | Realiza uma construção única do seu site para ./\_site.                                 |
-| jkc   | `JEKYLL_ENV=development bundle exec jekyll clean`                 | Remove todos os arquivos gerados: pasta de destino, arquivo de metadados, caches Sass e Jekyll. |
+| Alias | Comando                                                           | Descrição                                                                                                   |
+| ----- | ----------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- |
+| jkb   | `JEKYLL_ENV=development bundle exec jekyll build`                 | Realiza uma construção única do seu site para ./\_site.                                                     |
+| jkc   | `JEKYLL_ENV=development bundle exec jekyll clean`                 | Remove todos os arquivos gerados: pasta de destino, arquivo de metadados, caches Sass e Jekyll.             |
 | jkd   | `JEKYLL_ENV=development bundle exec jekyll serve --watch --trace` | Faz uma construção de desenvolvimento do site para '\_site' e executa um servidor de desenvolvimento local. |
 | jkl   | `JEKYLL_ENV=development bundle exec jekyll serve --livereload`    | Faz uma construção de desenvolvimento do site para '\_site' e executa um servidor de desenvolvimento local. |
-| jko   | `open http://localhost:4000/`                                     | Abrir servidor de desenvolvimento local.                                                |
+| jko   | `open http://localhost:4000/`                                     | Abrir servidor de desenvolvimento local.                                                                    |
 
 ## Aliases de lançamento Jekyll
 
-| Alias | Comando                                                          | Descrição                                                                            |
-| ----- | ---------------------------------------------------------------- | ------------------------------------------------------------------------------------ |
+| Alias | Comando                                                          | Descrição                                                                                            |
+| ----- | ---------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- |
 | jkp   | `JEKYLL_ENV=production bundle exec jekyll serve --watch --trace` | Faz uma construção de produção do site para '\_site' e executa um servidor de desenvolvimento local. |

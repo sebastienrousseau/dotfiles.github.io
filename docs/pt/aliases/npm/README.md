@@ -16,20 +16,20 @@ para [npm](https://www.npmjs.com/).
 programação JavaScript. É o gerenciador de pacotes padrão para o ambiente de
 execução JavaScript Node.js.
 
-| Alias | Comando         | Descrição             |
-| ----- | --------------- | --------------------- |
-| npb   | `npm build`     | Script de build npm.  |
-| npc   | `npm cache`     | Cache de pacote npm.  |
-| npd   | `npm dev`       | Script dev npm.       |
-| npg   | `npm global`    | Pacote npm global.    |
-| npi   | `npm install`   | Instalar pacote npm.  |
-| npl   | `npm list`      | Listar pacotes npm.   |
-| npp   | `npm publish`   | Publicar pacote npm.  |
-| npr   | `npm run`       | Executar script npm.  |
+| Alias | Comando         | Descrição                  |
+| ----- | --------------- | -------------------------- |
+| npb   | `npm build`     | Script de build npm.       |
+| npc   | `npm cache`     | Cache de pacote npm.       |
+| npd   | `npm dev`       | Script dev npm.            |
+| npg   | `npm global`    | Pacote npm global.         |
+| npi   | `npm install`   | Instalar pacote npm.       |
+| npl   | `npm list`      | Listar pacotes npm.        |
+| npp   | `npm publish`   | Publicar pacote npm.       |
+| npr   | `npm run`       | Executar script npm.       |
 | nprw  | `npm run watch` | Executar script npm watch. |
-| nps   | `npm start`     | Iniciar script npm.   |
-| npsv  | `npm serve`     | Servir script npm.    |
-| npt   | `npm test`      | Testar script npm.    |
-| npu   | `npm update`    | Atualizar pacote npm. |
-| npx   | `npm exec`      | Executar pacote npm.  |
-| npy   | `npm why`       | Por que pacote npm.   |
+| nps   | `npm start`     | Iniciar script npm.        |
+| npsv  | `npm serve`     | Servir script npm.         |
+| npt   | `npm test`      | Testar script npm.         |
+| npu   | `npm update`    | Atualizar pacote npm.      |
+| npx   | `npm exec`      | Executar pacote npm.       |
+| npy   | `npm why`       | Por que pacote npm.        |

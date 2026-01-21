@@ -19,9 +19,9 @@ GNU [Wget](https://www.gnu.org/software/wget/) ist ein freies Dienstprogramm fü
 den nicht-interaktiven Download von Dateien aus dem Web. Es unterstützt HTTP, HTTPS und
 FTP-Protokolle sowie den Abruf über HTTP-Proxies.
 
-| Alias | Befehl             | Beschreibung                          |
-| ----- | ------------------ | ------------------------------------- |
-| wg    | `wget`             | Lade eine Datei herunter.             |
+| Alias | Befehl             | Beschreibung                                      |
+| ----- | ------------------ | ------------------------------------------------- |
+| wg    | `wget`             | Lade eine Datei herunter.                         |
 | wgc   | `wg`               | Setze eine teilweise heruntergeladene Datei fort. |
-| wge   | `wg -e robots=off` | Lade eine Datei herunter, ignoriere robots.txt. |
+| wge   | `wg -e robots=off` | Lade eine Datei herunter, ignoriere robots.txt.   |
 | wget  | `wget -c`          | Setze eine teilweise heruntergeladene Datei fort. |

@@ -11,9 +11,9 @@ permalink: /zh/aliases/diagnostics/
 
 ## 🩺 健康与修复
 
-| 别名                 | 描述                                             |
-| -------------------- | ------------------------------------------------ |
-| `doc`, `dot-doctor`  | 运行系统健康检查脚本 (`doctor.sh`)。             |
+| 别名                 | 描述                                                |
+| -------------------- | --------------------------------------------------- |
+| `doc`, `dot-doctor`  | 运行系统健康检查脚本 (`doctor.sh`)。                |
 | `drift`, `dot-drift` | 验证本地文件是否偏离了托管状态 (`chezmoi verify`)。 |
-| `heal`, `dot-heal`   | 应用托管状态以修复偏差 (`chezmoi apply`)。       |
-| `doc-full`           | 运行带有扩展路径调试信息的 doctor。              |
+| `heal`, `dot-heal`   | 应用托管状态以修复偏差 (`chezmoi apply`)。          |
+| `doc-full`           | 运行带有扩展路径调试信息的 doctor。                 |

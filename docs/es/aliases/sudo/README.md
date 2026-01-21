@@ -15,9 +15,9 @@ Los alias de Sudo son una colección de alias que te permiten interactuar con el
 
 [Sudo](https://es.wikipedia.org/wiki/Sudo) es un comando que permite a los usuarios ejecutar comandos como otro usuario (normalmente el superusuario o root).
 
-| Alias | Comando   | Descripción                         |
-| ----- | --------- | ----------------------------------- |
-| root  | `s`       | Ejecutar un comando como superusuario. |
+| Alias | Comando   | Descripción                                                |
+| ----- | --------- | ---------------------------------------------------------- |
+| root  | `s`       | Ejecutar un comando como superusuario.                     |
 | s     | `sudo -i` | Ejecutar un comando como superusuario (shell interactiva). |
-| su    | `sudo su` | Ejecutar un comando como superusuario (cambiar usuario). |
-| sudo  | `s`       | Ejecutar un comando como superusuario. |
+| su    | `sudo su` | Ejecutar un comando como superusuario (cambiar usuario).   |
+| sudo  | `s`       | Ejecutar un comando como superusuario.                     |

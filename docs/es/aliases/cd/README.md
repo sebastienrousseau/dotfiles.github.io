@@ -33,21 +33,21 @@ Los alias de Change Directory son una colección de atajos que te permiten inter
 
 El comando cd, también conocido como chdir (change directory), es un comando de línea de comandos utilizado para cambiar el directorio de trabajo actual en varios sistemas operativos.
 
-| Alias | Comando               | Descripción                                                                |
-| ----- | ----------------------------- | ---------------------------------------------------------------- |
-| -     | `cd -`                        | Atajo para ir al directorio anterior.                            |
-| ..    | `cd ..`                       | Atajo para ir al directorio padre.                              |
-| ...   | `cd ../..`                    | Atajo para ir al directorio abuelo.                         |
-| ....  | `cd ../../..`                 | Atajo para ir al directorio bisabuelo.                   |
-| ..... | `cd ../../../..`              | Atajo para ir al directorio tatarabuelo.             |
-| ~     | `cd ~`                        | Atajo para ir al directorio de inicio (home).                                |
+| Alias | Comando                       | Descripción                                                  |
+| ----- | ----------------------------- | ------------------------------------------------------------ |
+| -     | `cd -`                        | Atajo para ir al directorio anterior.                        |
+| ..    | `cd ..`                       | Atajo para ir al directorio padre.                           |
+| ...   | `cd ../..`                    | Atajo para ir al directorio abuelo.                          |
+| ....  | `cd ../../..`                 | Atajo para ir al directorio bisabuelo.                       |
+| ..... | `cd ../../../..`              | Atajo para ir al directorio tatarabuelo.                     |
+| ~     | `cd ~`                        | Atajo para ir al directorio de inicio (home).                |
 | app   | `cd ${HOME}/Applications; ls` | Atajo para ir al directorio Applications.                    |
 | cod   | `cd ${HOME}/Code; ls`         | Atajo para ir al directorio Code y listar su contenido.      |
 | des   | `cd ${HOME}/Desktop; ls`      | Atajo para ir al directorio Desktop y listar su contenido.   |
 | doc   | `cd ${HOME}/Documents; ls`    | Atajo para ir al directorio Documents y listar su contenido. |
-| dot   | `cd ${HOME}/.dotfiles; ls`    | Atajo para ir al directorio .dotfiles.                        |
+| dot   | `cd ${HOME}/.dotfiles; ls`    | Atajo para ir al directorio .dotfiles.                       |
 | dow   | `cd ${HOME}/Downloads; ls`    | Atajo para ir al directorio Downloads y listar su contenido. |
-| hom   | `cd ${HOME}/; ls`             | Atajo para ir al directorio home y listar su contenido.          |
+| hom   | `cd ${HOME}/; ls`             | Atajo para ir al directorio home y listar su contenido.      |
 | mus   | `cd ${HOME}/Music; ls`        | Atajo para ir al directorio Music y listar su contenido.     |
 | pic   | `cd ${HOME}/Pictures; ls`     | Atajo para ir al directorio Pictures y listar su contenido.  |
 | vid   | `cd ${HOME}/Videos; ls`       | Atajo para ir al directorio Videos y listar su contenido.    |

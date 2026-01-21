@@ -13,7 +13,7 @@ permalink: /zh/aliases/rsync/
 
 [Rsync](https://zh.wikipedia.org/wiki/Rsync) 是一个将文件和目录复制到另一个位置的命令。
 
-| 别名  | 命令         | 描述                             |
-| ----- | ------------ | -------------------------------- |
-| rs    | `rsync -avz` | 带有详细信息和进度的 Rsync。     |
-| rsync | `rs`         | 带有详细信息和进度的 Rsync。     |
+| 别名  | 命令         | 描述                         |
+| ----- | ------------ | ---------------------------- |
+| rs    | `rsync -avz` | 带有详细信息和进度的 Rsync。 |
+| rsync | `rs`         | 带有详细信息和进度的 Rsync。 |

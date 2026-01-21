@@ -15,7 +15,7 @@ O arquivo `rsync.aliases.sh` cria aliases de atalho úteis para
 [Rsync](https://pt.wikipedia.org/wiki/Rsync) é um comando que copia arquivos e
 diretórios para outro local.
 
-| Alias | Comando      | Descrição                                |
-| ----- | ------------ | ---------------------------------------- |
-| rs    | `rsync -avz` | Rsync com modo verbose e progresso.      |
-| rsync | `rs`         | Rsync com modo verbose e progresso.      |
+| Alias | Comando      | Descrição                           |
+| ----- | ------------ | ----------------------------------- |
+| rs    | `rsync -avz` | Rsync com modo verbose e progresso. |
+| rsync | `rs`         | Rsync com modo verbose e progresso. |

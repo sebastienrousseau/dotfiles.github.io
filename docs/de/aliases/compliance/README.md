@@ -11,10 +11,10 @@ Tools für die Einhaltung gesetzlicher Vorschriften und Datenschutzdurchsetzung.
 
 ## 🛡️ Kontrollen
 
-| Alias          | Beschreibung                                                                           |
-| -------------- | -------------------------------------------------------------------------------------- |
+| Alias          | Beschreibung                                                                                   |
+| -------------- | ---------------------------------------------------------------------------------------------- |
 | `privacy-mode` | Deaktiviert Telemetrie für CLI-Tools (Homebrew, Dotnet, Azure, usw.) für die aktuelle Sitzung. |
-| `dot-audit`    | Zeigt den aktuellen Konfigurations-Audit-Trail an (Git-Verlauf oder Audit-Log).        |
+| `dot-audit`    | Zeigt den aktuellen Konfigurations-Audit-Trail an (Git-Verlauf oder Audit-Log).                |
 
 ## 📚 Dokumentation
 

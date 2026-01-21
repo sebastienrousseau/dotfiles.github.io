@@ -30,12 +30,14 @@ module.exports = {
     "/es/": {
       lang: "es-ES",
       title: "Dotfiles",
-      description: "La próxima generación de archivos de configuración Bash para macOS, Linux y Windows.",
+      description:
+        "La próxima generación de archivos de configuración Bash para macOS, Linux y Windows.",
     },
     "/de/": {
       lang: "de-DE",
       title: "Dotfiles",
-      description: "Die nächste Generation von Bash-Konfigurationsdateien für macOS, Linux und Windows.",
+      description:
+        "Die nächste Generation von Bash-Konfigurationsdateien für macOS, Linux und Windows.",
     },
     "/zh/": {
       lang: "zh-CN",
@@ -45,7 +47,8 @@ module.exports = {
     "/pt/": {
       lang: "pt-BR",
       title: "Dotfiles",
-      description: "A próxima geração de arquivos de configuração Bash para macOS, Linux e Windows.",
+      description:
+        "A próxima geração de arquivos de configuração Bash para macOS, Linux e Windows.",
     },
   },
   // Enable evergreen browsers support

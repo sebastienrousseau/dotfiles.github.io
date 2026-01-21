@@ -21,12 +21,12 @@ dem der Benutzer zur Eingabe aufgefordert wird, bevor der Befehl ausgeführt wir
 Dies ist eine nützliche Funktion für Befehle wie `cp`, `mv`, `rm` und `ln`, die
 verwendet werden können, um Dateien oder Verzeichnisse zu überschreiben.
 
-| Alias | Befehl                  | Beschreibung                                                 |
-| ----- | ----------------------- | ------------------------------------------------------------ |
-| bin   | `rm -fr ${HOME}/.Trash` | Entferne alle Dateien im Papierkorb.                         |
-| cp    | `cp -vi`                | Kopiere Dateien und Verzeichnisse.                           |
-| del   | `rm -rfvi`              | Entferne eine Datei oder ein Verzeichnis.                    |
-| ln    | `ln -vi`                | Interaktiver symbolischer Link.                              |
+| Alias | Befehl                  | Beschreibung                                                                 |
+| ----- | ----------------------- | ---------------------------------------------------------------------------- |
+| bin   | `rm -fr ${HOME}/.Trash` | Entferne alle Dateien im Papierkorb.                                         |
+| cp    | `cp -vi`                | Kopiere Dateien und Verzeichnisse.                                           |
+| del   | `rm -rfvi`              | Entferne eine Datei oder ein Verzeichnis.                                    |
+| ln    | `ln -vi`                | Interaktiver symbolischer Link.                                              |
 | mv    | `mv -vi`                | Verschiebe Dateien interaktiv (frage vor dem Überschreiben) und ausführlich. |
-| rm    | `rm -vi`                | Fragt bei jeder Datei nach, bevor sie entfernt wird.         |
-| zap   | `rm -vi`                | Entferne Dateien interaktiv (frage vor dem Überschreiben).   |
+| rm    | `rm -vi`                | Fragt bei jeder Datei nach, bevor sie entfernt wird.                         |
+| zap   | `rm -vi`                | Entferne Dateien interaktiv (frage vor dem Überschreiben).                   |

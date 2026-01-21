@@ -24,13 +24,13 @@ de terminal em uma única janela.
 alterne facilmente entre vários programas em um terminal, desconecte-os (eles continuam
 rodando em segundo plano) e reconecte-os a um terminal diferente.
 
-| Alias | Comando                  | Descrição                                 |
-| ----- | ------------------------ | ----------------------------------------- |
-| tm    | `tmux`                   | Iniciar o tmux.                           |
-| tma   | `tmux attach-session`    | Anexar a uma sessão tmux.                 |
-| tmat  | `tmux attach-session -t` | Anexar a uma sessão tmux com nome.        |
-| tmks  | `tmux kill-session -a`   | Matar todas as sessões tmux.              |
-| tml   | `tmux list-sessions`     | Listar sessões tmux.                      |
-| tmn   | `tmux new-session`       | Iniciar uma nova sessão tmux.             |
-| tmns  | `tmux new -s`            | Iniciar uma nova sessão tmux com nome.    |
-| tms   | `tmux new-session -s`    | Iniciar uma nova sessão tmux.             |
+| Alias | Comando                  | Descrição                              |
+| ----- | ------------------------ | -------------------------------------- |
+| tm    | `tmux`                   | Iniciar o tmux.                        |
+| tma   | `tmux attach-session`    | Anexar a uma sessão tmux.              |
+| tmat  | `tmux attach-session -t` | Anexar a uma sessão tmux com nome.     |
+| tmks  | `tmux kill-session -a`   | Matar todas as sessões tmux.           |
+| tml   | `tmux list-sessions`     | Listar sessões tmux.                   |
+| tmn   | `tmux new-session`       | Iniciar uma nova sessão tmux.          |
+| tmns  | `tmux new -s`            | Iniciar uma nova sessão tmux com nome. |
+| tms   | `tmux new-session -s`    | Iniciar uma nova sessão tmux.          |

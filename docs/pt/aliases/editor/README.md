@@ -27,8 +27,8 @@ variável de ambiente `editor` no arquivo `editor.aliases.sh`.:
 [Editor](https://pt.wikipedia.org/wiki/Editor_de_texto) é um programa para editar
 arquivos de texto simples.
 
-| Alias  | Comando     | Descrição       |
-| ------ | ----------- | --------------- |
+| Alias  | Comando     | Descrição          |
+| ------ | ----------- | ------------------ |
 | e      | `${editor}` | Editar um arquivo. |
 | edit   | `${editor}` | Editar um arquivo. |
 | editor | `${editor}` | Editar um arquivo. |

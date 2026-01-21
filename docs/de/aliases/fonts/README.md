@@ -11,10 +11,10 @@ Aliase zur Verwaltung von Systemschriftarten und Caches.
 
 ## 🔡 Befehle
 
-| Alias          | Beschreibung                                    |
-| -------------- | ----------------------------------------------- |
+| Alias          | Beschreibung                                                 |
+| -------------- | ------------------------------------------------------------ |
 | `update-fonts` | Aktualisiert den System-Schriftarten-Cache (`fc-cache -fv`). |
-| `list-fonts`   | Listet alle installierten Schriftfamilien auf.  |
+| `list-fonts`   | Listet alle installierten Schriftfamilien auf.               |
 
 ## 📦 Installierte Schriftarten
 

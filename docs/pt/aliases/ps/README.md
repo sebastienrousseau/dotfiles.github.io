@@ -18,8 +18,8 @@ a ferramenta de linha de comando `ps`. Ps é uma ferramenta que relata um instan
 [PS](<https://pt.wikipedia.org/wiki/Ps_(Unix)>) é um comando que lista os
 processos em execução no sistema.
 
-| Alias | Comando  | Descrição                                                                                                                               |
-| ----- | -------- | --------------------------------------------------------------------------------------------------------------------------------------- |
+| Alias | Comando  | Descrição                                                                                                                                |
+| ----- | -------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
 | pid   | `ps -f`  | Exibir o uid, pid, pid pai, uso recente da CPU, hora de início do processo, tty de controle, uso decorrido da CPU e o comando associado. |
-| ps    | `ps -ef` | Exibir todos os processos.                                                                                                              |
-| psa   | `ps aux` | Listar todos os processos.                                                                                                              |
+| ps    | `ps -ef` | Exibir todos os processos.                                                                                                               |
+| psa   | `ps aux` | Listar todos os processos.                                                                                                               |

@@ -24,13 +24,13 @@ Sitzungen in einem einzigen Fenster auszuführen.
 einfach zwischen mehreren Programmen in einem Terminal wechseln, sie abtrennen (sie laufen
 im Hintergrund weiter) und sie an einem anderen Terminal wieder anhängen.
 
-| Alias | Befehl                   | Beschreibung                        |
-| ----- | ------------------------ | ----------------------------------- |
-| tm    | `tmux`                   | Starte tmux.                        |
-| tma   | `tmux attach-session`    | Hänge an eine tmux-Sitzung an.      |
+| Alias | Befehl                   | Beschreibung                             |
+| ----- | ------------------------ | ---------------------------------------- |
+| tm    | `tmux`                   | Starte tmux.                             |
+| tma   | `tmux attach-session`    | Hänge an eine tmux-Sitzung an.           |
 | tmat  | `tmux attach-session -t` | Hänge an eine tmux-Sitzung mit Namen an. |
-| tmks  | `tmux kill-session -a`   | Beende alle tmux-Sitzungen.         |
-| tml   | `tmux list-sessions`     | Liste tmux-Sitzungen auf.           |
-| tmn   | `tmux new-session`       | Starte eine neue tmux-Sitzung.      |
+| tmks  | `tmux kill-session -a`   | Beende alle tmux-Sitzungen.              |
+| tml   | `tmux list-sessions`     | Liste tmux-Sitzungen auf.                |
+| tmn   | `tmux new-session`       | Starte eine neue tmux-Sitzung.           |
 | tmns  | `tmux new -s`            | Starte eine neue tmux-Sitzung mit Namen. |
-| tms   | `tmux new-session -s`    | Starte eine neue tmux-Sitzung.      |
+| tms   | `tmux new-session -s`    | Starte eine neue tmux-Sitzung.           |

@@ -13,7 +13,7 @@ El archivo `rsync.aliases.sh` crea atajos útiles para [rsync](https://es.wikipe
 
 [Rsync](https://es.wikipedia.org/wiki/Rsync) es un comando que copia archivos y directorios a otra ubicación.
 
-| Alias | Comando      | Descripción                      |
-| ----- | ------------ | -------------------------------- |
+| Alias | Comando      | Descripción                                    |
+| ----- | ------------ | ---------------------------------------------- |
 | rs    | `rsync -avz` | Rsync con modo detallado (verbose) y progreso. |
 | rsync | `rs`         | Rsync con modo detallado (verbose) y progreso. |

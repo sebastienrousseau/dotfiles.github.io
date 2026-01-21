@@ -30,8 +30,8 @@ O alias `upd` foi adaptado para funcionar no Linux. Ele atualizará distribuiç�
 baseadas em Debian, via o gerenciador de pacotes `apt` e outras dependências via
 pnpm, rustup (Rust) e gem (Ruby).
 
-| Alias | Comando                                                                                                            | Descrição                                                |
-| ----- | ------------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------- |
+| Alias | Comando                                                                                                            | Descrição                                                                   |
+| ----- | ------------------------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------- |
 | upd   | `sudo apt update && sudo apt upgrade -y && pnpm up && rustup update stable && sudo gem update && sudo gem cleanup` | Comando de atualização para sistemas operacionais Linux baseados em Debian. |
 
 ### macOS
@@ -40,6 +40,6 @@ O alias `upd` também está disponível para macOS. Ele atualizará o macOS, via
 ferramenta de linha de comando `softwareupdate`, e gerenciará suas dependências usando
 os gerenciadores de pacotes pnpm, Homebrew, mas, rustup e gem.
 
-| Alias | Comando                                                                                                                                                                                            | Descrição          |
-| ----- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------ |
+| Alias | Comando                                                                                                                                                                                            | Descrição            |
+| ----- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------- |
 | upd   | `sudo softwareupdate -i -a && pnpm up && rustup update stable && brew cu -ayi && brew doctor && brew update && brew upgrade && brew cleanup && mas upgrade && sudo gem update && sudo gem cleanup` | Atualizar o sistema. |

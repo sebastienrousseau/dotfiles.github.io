@@ -11,12 +11,12 @@ In **v0.2.471** haben wir den "Modern Core" eingeführt – eine Suite von leist
 
 ## Tools Übersicht
 
-| Tool        | Ersetzt         | Beschreibung                                            | Tastenkombination |
-| :---------- | :-------------- | :------------------------------------------------------ | :---------------- |
+| Tool        | Ersetzt         | Beschreibung                                                       | Tastenkombination |
+| :---------- | :-------------- | :----------------------------------------------------------------- | :---------------- |
 | **Atuin**   | `history`       | Synchronisierbarer, verschlüsselter Shell-Verlauf mit Fuzzy-Suche. | `Ctrl+R` / `Up`   |
-| **Yazi**    | `ranger` / `ls` | Pfeilschneller Terminal-Dateimanager mit Bildvorschau.  | `yy` (Alias)      |
-| **Zellij**  | `tmux`          | Moderner Terminal-Multiplexer mit intuitiven Layouts.   | `Alt+n`           |
-| **Ghostty** | `Terminal.app`  | GPU-beschleunigter, plattformübergreifender Terminal-Emulator. | N/A               |
+| **Yazi**    | `ranger` / `ls` | Pfeilschneller Terminal-Dateimanager mit Bildvorschau.             | `yy` (Alias)      |
+| **Zellij**  | `tmux`          | Moderner Terminal-Multiplexer mit intuitiven Layouts.              | `Alt+n`           |
+| **Ghostty** | `Terminal.app`  | GPU-beschleunigter, plattformübergreifender Terminal-Emulator.     | N/A               |
 
 ## Atuin (Magischer Verlauf)
 

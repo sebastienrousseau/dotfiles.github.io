@@ -15,10 +15,10 @@ permalink: /zh/aliases/configuration/
 
 ## 配置
 
-| 别名  | 命令                             | 描述                                         |
-| ----- | -------------------------------- | -------------------------------------------- |
-| bshp  | `${=EDITOR} $HOME/.bash_profile` | 在默认文本编辑器中打开 Bash profile。        |
-| bshrc | `${=EDITOR} $HOME/.bashrc`       | 在默认文本编辑器中打开 Bash 配置文件。       |
-| gcfg  | `${=EDITOR} $HOME/.gitconfig`    | 在默认文本编辑器中打开 Git 配置文件。        |
-| gign  | `${=EDITOR} $HOME/.gitignore`    | 在默认文本编辑器中打开 Git 忽略文件。        |
-| zshrc | `${=EDITOR} $HOME/.zshrc`        | 在默认文本编辑器中打开 Zsh 配置文件。        |
+| 别名  | 命令                             | 描述                                   |
+| ----- | -------------------------------- | -------------------------------------- |
+| bshp  | `${=EDITOR} $HOME/.bash_profile` | 在默认文本编辑器中打开 Bash profile。  |
+| bshrc | `${=EDITOR} $HOME/.bashrc`       | 在默认文本编辑器中打开 Bash 配置文件。 |
+| gcfg  | `${=EDITOR} $HOME/.gitconfig`    | 在默认文本编辑器中打开 Git 配置文件。  |
+| gign  | `${=EDITOR} $HOME/.gitignore`    | 在默认文本编辑器中打开 Git 忽略文件。  |
+| zshrc | `${=EDITOR} $HOME/.zshrc`        | 在默认文本编辑器中打开 Zsh 配置文件。  |

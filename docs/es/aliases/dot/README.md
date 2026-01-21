@@ -20,12 +20,12 @@ dot [comando]
 
 ## Comandos
 
-| Comando      | Descripción                                                                                                                      |
-| :----------- | :------------------------------------------------------------------------------------------------------------------------------- |
-| `dot learn`  | **Modo Interactivo**: Inicia un recorrido por las herramientas del Núcleo Moderno (Atuin, Yazi, Zellij) y funciones de IA.                            |
+| Comando      | Descripción                                                                                                                                                  |
+| :----------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `dot learn`  | **Modo Interactivo**: Inicia un recorrido por las herramientas del Núcleo Moderno (Atuin, Yazi, Zellij) y funciones de IA.                                   |
 | `dot doctor` | **Comprobación de Salud**: Verifica que tu sistema esté configurado correctamente y que todas las dependencias estén instaladas. (Envuelve `chezmoi doctor`) |
-| `dot update` | **Actualizar Sistema**: Obtiene los últimos cambios del repositorio y los vuelve a aplicar. (Envuelve `chezmoi update`)                     |
-| `dot help`   | **Ayuda**: Muestra información de uso.                                                                                            |
+| `dot update` | **Actualizar Sistema**: Obtiene los últimos cambios del repositorio y los vuelve a aplicar. (Envuelve `chezmoi update`)                                      |
+| `dot help`   | **Ayuda**: Muestra información de uso.                                                                                                                       |
 
 ## Ejemplos
 

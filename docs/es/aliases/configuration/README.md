@@ -32,10 +32,10 @@ El archivo `configuration.aliases.sh` crea atajos útiles para abrir los archivo
 
 ## Configuración
 
-| Alias | Comando                          | Descripción                                                  |
-| ----- | -------------------------------- | ------------------------------------------------------------ |
-| bshp  | `${=EDITOR} $HOME/.bash_profile` | Abrir el perfil de Bash en el editor de texto predeterminado.            |
+| Alias | Comando                          | Descripción                                                                     |
+| ----- | -------------------------------- | ------------------------------------------------------------------------------- |
+| bshp  | `${=EDITOR} $HOME/.bash_profile` | Abrir el perfil de Bash en el editor de texto predeterminado.                   |
 | bshrc | `${=EDITOR} $HOME/.bashrc`       | Abrir el archivo de configuración de Bash en el editor de texto predeterminado. |
 | gcfg  | `${=EDITOR} $HOME/.gitconfig`    | Abrir el archivo de configuración de Git en el editor de texto predeterminado.  |
-| gign  | `${=EDITOR} $HOME/.gitignore`    | Abrir el archivo gitignore en el editor de texto predeterminado.         |
+| gign  | `${=EDITOR} $HOME/.gitignore`    | Abrir el archivo gitignore en el editor de texto predeterminado.                |
 | zshrc | `${=EDITOR} $HOME/.zshrc`        | Abrir el archivo de configuración de Zsh en el editor de texto predeterminado.  |

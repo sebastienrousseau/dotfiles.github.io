@@ -15,7 +15,7 @@ Die Datei `rsync.aliases.sh` erstellt hilfreiche Shortcut-Aliase für
 [Rsync](https://de.wikipedia.org/wiki/Rsync) ist ein Befehl, der Dateien und
 Verzeichnisse an einen anderen Ort kopiert.
 
-| Alias | Befehl       | Beschreibung                        |
-| ----- | ------------ | ----------------------------------- |
-| rs    | `rsync -avz` | Rsync mit Verbose und Fortschritt.  |
-| rsync | `rs`         | Rsync mit Verbose und Fortschritt.  |
+| Alias | Befehl       | Beschreibung                       |
+| ----- | ------------ | ---------------------------------- |
+| rs    | `rsync -avz` | Rsync mit Verbose und Fortschritt. |
+| rsync | `rs`         | Rsync mit Verbose und Fortschritt. |

@@ -32,13 +32,13 @@ El archivo `make.aliases.sh` crea atajos útiles para ejecutar comandos `make`.
 
 Make obtiene su conocimiento de cómo construir tu programa de un archivo llamado `Makefile`, que lista cada uno de los archivos no fuente y cómo computarlo a partir de otros archivos.
 
-| Alias | Comando        | Descripción                   |
-| ----- | -------------- | ----------------------------- |
+| Alias | Comando        | Descripción                     |
+| ----- | -------------- | ------------------------------- |
 | mk    | `make`         | Ejecutar `make` sin argumentos. |
-| mkc   | `make clean`   | Ejecutar `make clean`.             |
-| mkd   | `make doc`     | Ejecutar `make doc`.               |
-| mkf   | `make format`  | Ejecutar `make format`.            |
-| mkh   | `make help`    | Ejecutar `make help`.              |
-| mki   | `make install` | Ejecutar `make install`.           |
-| mkr   | `make run`     | Ejecutar `make run`.               |
-| mkt   | `make test`    | Ejecutar `make test`.              |
+| mkc   | `make clean`   | Ejecutar `make clean`.          |
+| mkd   | `make doc`     | Ejecutar `make doc`.            |
+| mkf   | `make format`  | Ejecutar `make format`.         |
+| mkh   | `make help`    | Ejecutar `make help`.           |
+| mki   | `make install` | Ejecutar `make install`.        |
+| mkr   | `make run`     | Ejecutar `make run`.            |
+| mkt   | `make test`    | Ejecutar `make test`.           |

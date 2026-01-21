@@ -39,8 +39,8 @@ A día de hoy, los siguientes editores están listados en la variable de entorno
 
 [Editor](https://es.wikipedia.org/wiki/Editor_de_texto) es un programa para editar archivos de texto plano.
 
-| Alias  | Comando     | Descripción  |
-| ------ | ----------- | ------------ |
+| Alias  | Comando     | Descripción        |
+| ------ | ----------- | ------------------ |
 | e      | `${editor}` | Editar un archivo. |
 | edit   | `${editor}` | Editar un archivo. |
 | editor | `${editor}` | Editar un archivo. |

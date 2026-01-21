@@ -21,23 +21,23 @@ desempenho e segurança, especialmente concorrência segura. Rust é sintaticame
 semelhante a C++, mas é projetado para fornecer melhor segurança de memória enquanto
 mantém alto desempenho.
 
-| Alias | Comando                      | Descrição                   |
-| ----- | ---------------------------- | --------------------------- |
-| ru    | `rustup update`              | Atualização do Rustup.      |
-| rca   | `rustup component add`       | Adicionar componente Rustup.|
-| rcl   | `rustup component list`      | Listar componentes Rustup.  |
-| rcr   | `rustup component remove`    | Remover componente Rustup.  |
-| rde   | `rustup default`             | Padrão do Rustup.           |
-| rnn   | `rustup run nightly`         | Executar rustup nightly.    |
-| rns   | `rustup run stable`          | Executar rustup stable.     |
-| rtaa  | `rustup target add`          | Adicionar alvo Rustup.      |
-| rtal  | `rustup target list`         | Listar alvos Rustup.        |
-| rtar  | `rustup target remove`       | Remover alvo Rustup.        |
-| rti   | `rustup toolchain install`   | Instalar toolchain Rustup.  |
-| rtl   | `rustup toolchain list`      | Listar toolchains Rustup.   |
-| rtu   | `rustup toolchain uninstall` | Desinstalar toolchain Rustup.|
-| ruc   | `rustup update nightly`      | Atualizar rustup nightly.   |
-| rus   | `rustup update stable`       | Atualizar rustup stable.    |
+| Alias | Comando                      | Descrição                     |
+| ----- | ---------------------------- | ----------------------------- |
+| ru    | `rustup update`              | Atualização do Rustup.        |
+| rca   | `rustup component add`       | Adicionar componente Rustup.  |
+| rcl   | `rustup component list`      | Listar componentes Rustup.    |
+| rcr   | `rustup component remove`    | Remover componente Rustup.    |
+| rde   | `rustup default`             | Padrão do Rustup.             |
+| rnn   | `rustup run nightly`         | Executar rustup nightly.      |
+| rns   | `rustup run stable`          | Executar rustup stable.       |
+| rtaa  | `rustup target add`          | Adicionar alvo Rustup.        |
+| rtal  | `rustup target list`         | Listar alvos Rustup.          |
+| rtar  | `rustup target remove`       | Remover alvo Rustup.          |
+| rti   | `rustup toolchain install`   | Instalar toolchain Rustup.    |
+| rtl   | `rustup toolchain list`      | Listar toolchains Rustup.     |
+| rtu   | `rustup toolchain uninstall` | Desinstalar toolchain Rustup. |
+| ruc   | `rustup update nightly`      | Atualizar rustup nightly.     |
+| rus   | `rustup update stable`       | Atualizar rustup stable.      |
 
 ## Cargo
 

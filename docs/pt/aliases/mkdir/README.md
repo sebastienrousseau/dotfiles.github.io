@@ -19,11 +19,11 @@ a ferramenta de linha de comando `mkdir`. Mkdir é uma ferramenta que cria um di
 diretório. O utilitário mkdir cria os diretórios nomeados como operandos, na
 ordem especificada, usando o modo “rwxrwxrwx” (0777).
 
-| Alias | Comando                     | Descrição                                  |
-| ----- | --------------------------- | ------------------------------------------ |
-| mcd   | `mkdir -pv && cd`           | Criar diretório e entrar nele.             |
-| mcdp  | `mkdir -pv && cd`           | Criar diretório e pais e entrar nele.      |
-| md    | `mkd`                       | Criar diretório.                           |
-| mdd   | `mkdir -pv $(date +%Y%m%d)` | Criar diretório com data.                  |
-| mdp   | `mkdir -pv`                 | Criar diretório e pais.                    |
-| mdt   | `mkdir -pv $(date +%h%m%s)` | Criar diretório com hora.                  |
+| Alias | Comando                     | Descrição                             |
+| ----- | --------------------------- | ------------------------------------- |
+| mcd   | `mkdir -pv && cd`           | Criar diretório e entrar nele.        |
+| mcdp  | `mkdir -pv && cd`           | Criar diretório e pais e entrar nele. |
+| md    | `mkd`                       | Criar diretório.                      |
+| mdd   | `mkdir -pv $(date +%Y%m%d)` | Criar diretório com data.             |
+| mdp   | `mkdir -pv`                 | Criar diretório e pais.               |
+| mdt   | `mkdir -pv $(date +%h%m%s)` | Criar diretório com hora.             |

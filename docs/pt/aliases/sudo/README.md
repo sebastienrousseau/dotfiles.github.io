@@ -19,8 +19,8 @@ usuário.
 [Sudo](https://pt.wikipedia.org/wiki/Sudo) é um comando que permite que usuários
 executem comandos como outro usuário.
 
-| Alias | Comando   | Descrição                           |
-| ----- | --------- | ----------------------------------- |
+| Alias | Comando   | Descrição                                |
+| ----- | --------- | ---------------------------------------- |
 | root  | `s`       | Executar um comando como o superusuário. |
 | s     | `sudo -i` | Executar um comando como o superusuário. |
 | su    | `sudo su` | Executar um comando como o superusuário. |

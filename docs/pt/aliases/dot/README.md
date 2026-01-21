@@ -17,12 +17,12 @@ dot [comando]
 
 ## Comandos
 
-| Comando      | Descrição                                                                                                                        |
-| :----------- | :------------------------------------------------------------------------------------------------------------------------------- |
-| `dot learn`  | **Modo Interativo**: Lança um tour pelas ferramentas Modern Core (Atuin, Yazi, Zellij) e recursos de IA.                         |
+| Comando      | Descrição                                                                                                                                               |
+| :----------- | :------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `dot learn`  | **Modo Interativo**: Lança um tour pelas ferramentas Modern Core (Atuin, Yazi, Zellij) e recursos de IA.                                                |
 | `dot doctor` | **Verificação de Saúde**: Verifica se seu sistema está configurado corretamente e se todas as dependências estão instaladas. (Envolve `chezmoi doctor`) |
-| `dot update` | **Atualizar Sistema**: Puxa as alterações mais recentes do repositório e as reaplica. (Envolve `chezmoi update`)                 |
-| `dot help`   | **Ajuda**: Exibe informações de uso.                                                                                             |
+| `dot update` | **Atualizar Sistema**: Puxa as alterações mais recentes do repositório e as reaplica. (Envolve `chezmoi update`)                                        |
+| `dot help`   | **Ajuda**: Exibe informações de uso.                                                                                                                    |
 
 ## Exemplos
 

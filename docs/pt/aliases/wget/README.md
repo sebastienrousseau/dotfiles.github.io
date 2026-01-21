@@ -19,9 +19,9 @@ GNU [Wget](https://www.gnu.org/software/wget/) é um utilitário gratuito para
 download não interativo de arquivos da Web. Ele suporta protocolos HTTP, HTTPS e
 FTP, bem como recuperação através de proxies HTTP.
 
-| Alias | Comando            | Descrição                             |
-| ----- | ------------------ | ------------------------------------- |
-| wg    | `wget`             | Baixar um arquivo.                    |
+| Alias | Comando            | Descrição                                  |
+| ----- | ------------------ | ------------------------------------------ |
+| wg    | `wget`             | Baixar um arquivo.                         |
 | wgc   | `wg`               | Continuar um arquivo parcialmente baixado. |
-| wge   | `wg -e robots=off` | Baixar um arquivo, ignorando robots.txt. |
+| wge   | `wg -e robots=off` | Baixar um arquivo, ignorando robots.txt.   |
 | wget  | `wget -c`          | Continuar um arquivo parcialmente baixado. |

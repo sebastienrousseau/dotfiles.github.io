@@ -17,12 +17,12 @@ dot [command]
 
 ## Befehle
 
-| Befehl       | Beschreibung                                                                                                                      |
-| :----------- | :------------------------------------------------------------------------------------------------------------------------------- |
-| `dot learn`  | **Interaktiver Modus**: Startet eine Tour durch die Modern Core Tools (Atuin, Yazi, Zellij) und KI-Funktionen.                   |
+| Befehl       | Beschreibung                                                                                                                                 |
+| :----------- | :------------------------------------------------------------------------------------------------------------------------------------------- |
+| `dot learn`  | **Interaktiver Modus**: Startet eine Tour durch die Modern Core Tools (Atuin, Yazi, Zellij) und KI-Funktionen.                               |
 | `dot doctor` | **Gesundheitscheck**: Überprüft, ob Ihr System korrekt konfiguriert ist und alle Abhängigkeiten installiert sind. (Kapselt `chezmoi doctor`) |
-| `dot update` | **System aktualisieren**: Lädt die neuesten Änderungen aus dem Repository und wendet sie erneut an. (Kapselt `chezmoi update`)    |
-| `dot help`   | **Hilfe**: Zeigt Informationen zur Verwendung an.                                                                                |
+| `dot update` | **System aktualisieren**: Lädt die neuesten Änderungen aus dem Repository und wendet sie erneut an. (Kapselt `chezmoi update`)               |
+| `dot help`   | **Hilfe**: Zeigt Informationen zur Verwendung an.                                                                                            |
 
 ## Beispiele
 

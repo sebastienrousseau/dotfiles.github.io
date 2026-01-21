@@ -11,11 +11,11 @@ Ferramentas para fortalecer o ambiente e gerenciar a imutabilidade da configura�
 
 ## 🔒 Imutabilidade
 
-| Alias            | Descrição                                                                                     |
-| ---------------- | --------------------------------------------------------------------------------------------- |
+| Alias            | Descrição                                                                                            |
+| ---------------- | ---------------------------------------------------------------------------------------------------- |
 | `lock-configs`   | Bloqueia arquivos críticos (`.zshrc`, etc.) para evitar modificações (`chflags uchg` / `chattr +i`). |
-| `unlock-configs` | Desbloqueia arquivos críticos para edição.                                                    |
-| `check-locks`    | Verifica o status de bloqueio de arquivos críticos.                                           |
+| `unlock-configs` | Desbloqueia arquivos críticos para edição.                                                           |
+| `check-locks`    | Verifica o status de bloqueio de arquivos críticos.                                                  |
 
 ## 🔑 Assinatura Git
 

@@ -41,6 +41,6 @@ Der `upd` Alias ist auch für macOS verfügbar. Er aktualisiert macOS über das
 `softwareupdate` Befehlszeilentool und verwaltet seine Abhängigkeiten mit pnpm,
 Homebrew, mas, rustup und gem Paketmanagern.
 
-| Alias | Befehl                                                                                                                                                                                             | Beschreibung        |
-| ----- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------- |
+| Alias | Befehl                                                                                                                                                                                             | Beschreibung             |
+| ----- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------ |
 | upd   | `sudo softwareupdate -i -a && pnpm up && rustup update stable && brew cu -ayi && brew doctor && brew update && brew upgrade && brew cleanup && mas upgrade && sudo gem update && sudo gem cleanup` | Aktualisiere das System. |

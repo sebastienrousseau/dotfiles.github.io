@@ -21,10 +21,10 @@ usado por cada diretório é mostrado em kilobytes, juntamente com o espaço tot
 usado por todos os arquivos nesse diretório e seus subdiretórios.
 
 | Alias | Comando      | Descrição                                                                       |
-| ----- | ------------ | ------------------------------------------------------------------------------- |
+| ----- | ------------ | ------------------------------------------------------------------------------- | -------------------------------------------------------- |
 | du    | `du -h`      | Mostrar o uso de disco do diretório atual.                                      |
-| du1   | `du -hxd 1   | sort -h`                                                                        | Tamanho de arquivos e diretórios no diretório atual. |
-| ducks | `du -cks *   | sort -rn \| head -n 10`                                                         | Top 10 maiores arquivos e diretórios no diretório atual. |
+| du1   | `du -hxd 1   | sort -h`                                                                        | Tamanho de arquivos e diretórios no diretório atual.     |
+| ducks | `du -cks \*  | sort -rn \| head -n 10`                                                         | Top 10 maiores arquivos e diretórios no diretório atual. |
 | duh   | `du`         | Tamanho de arquivos e diretórios.                                               |
 | dus   | `du -hs *`   | Tamanho de arquivo com saída legível por humanos ordenado por tamanho.          |
 | dusym | `du * -hsLc` | Tamanho de arquivos e diretórios no diretório atual incluindo links simbólicos. |

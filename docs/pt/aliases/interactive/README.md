@@ -21,12 +21,12 @@ qual o usuário é solicitado a fornecer entrada antes que o comando seja execut
 Este é um recurso útil para comandos como `cp`, `mv`, `rm` e `ln` que
 podem ser usados para substituir arquivos ou diretórios.
 
-| Alias | Comando                 | Descrição                                                    |
-| ----- | ----------------------- | ------------------------------------------------------------ |
-| bin   | `rm -fr ${HOME}/.Trash` | Remover todos os arquivos na lixeira.                        |
-| cp    | `cp -vi`                | Copiar arquivos e diretórios.                                |
-| del   | `rm -rfvi`              | Remover um arquivo ou diretório.                             |
-| ln    | `ln -vi`                | Link simbólico interativo.                                   |
+| Alias | Comando                 | Descrição                                                                     |
+| ----- | ----------------------- | ----------------------------------------------------------------------------- |
+| bin   | `rm -fr ${HOME}/.Trash` | Remover todos os arquivos na lixeira.                                         |
+| cp    | `cp -vi`                | Copiar arquivos e diretórios.                                                 |
+| del   | `rm -rfvi`              | Remover um arquivo ou diretório.                                              |
+| ln    | `ln -vi`                | Link simbólico interativo.                                                    |
 | mv    | `mv -vi`                | Mover arquivos interativamente (perguntar antes de sobrescrever) e detalhado. |
-| rm    | `rm -vi`                | Solicita confirmação para cada arquivo antes de remover.     |
-| zap   | `rm -vi`                | Remover arquivos interativamente (perguntar antes de sobrescrever). |
+| rm    | `rm -vi`                | Solicita confirmação para cada arquivo antes de remover.                      |
+| zap   | `rm -vi`                | Remover arquivos interativamente (perguntar antes de sobrescrever).           |

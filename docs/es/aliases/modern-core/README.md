@@ -14,12 +14,12 @@ En **v0.2.471**, introdujimos el "Núcleo Moderno" (Modern Core), un conjunto de
 
 ## Resumen de Herramientas
 
-| Herramienta | Reemplaza a      | Descripción                                             | Atajo de Teclado |
-| :---------- | :-------------- | :------------------------------------------------------ | :-------------- |
-| **Atuin**   | `history`       | Historial de shell sincronizable y cifrado con búsqueda difusa.    | `Ctrl+R` / `Up` |
-| **Yazi**    | `ranger` / `ls` | Gestor de archivos de terminal ultrarrápido con vistas previas de imágenes. | `yy` (alias)    |
-| **Zellij**  | `tmux`          | Multiplexor de terminal moderno con diseños intuitivos.     | `Alt+n`         |
-| **Ghostty** | `Terminal.app`  | Emulador de terminal multiplataforma acelerado por GPU.      | N/A             |
+| Herramienta | Reemplaza a     | Descripción                                                                 | Atajo de Teclado |
+| :---------- | :-------------- | :-------------------------------------------------------------------------- | :--------------- |
+| **Atuin**   | `history`       | Historial de shell sincronizable y cifrado con búsqueda difusa.             | `Ctrl+R` / `Up`  |
+| **Yazi**    | `ranger` / `ls` | Gestor de archivos de terminal ultrarrápido con vistas previas de imágenes. | `yy` (alias)     |
+| **Zellij**  | `tmux`          | Multiplexor de terminal moderno con diseños intuitivos.                     | `Alt+n`          |
+| **Ghostty** | `Terminal.app`  | Emulador de terminal multiplataforma acelerado por GPU.                     | N/A              |
 
 ## Atuin (Historial Mágico)
 

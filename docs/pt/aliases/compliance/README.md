@@ -11,8 +11,8 @@ Ferramentas para conformidade regulatória e aplicação de privacidade.
 
 ## 🛡️ Controles
 
-| Alias          | Descrição                                                                               |
-| -------------- | --------------------------------------------------------------------------------------- |
+| Alias          | Descrição                                                                                       |
+| -------------- | ----------------------------------------------------------------------------------------------- |
 | `privacy-mode` | Desativa a telemetria para ferramentas CLI (Homebrew, Dotnet, Azure, etc.) para a sessão atual. |
 | `dot-audit`    | Exibe a trilha de auditoria de configuração recente (histórico do Git ou log de auditoria).     |
 

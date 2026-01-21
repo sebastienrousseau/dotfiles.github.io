@@ -19,8 +19,8 @@ Benutzer auszuführen.
 [Sudo](https://de.wikipedia.org/wiki/Sudo) ist ein Befehl, der es Benutzern ermöglicht,
 Befehle als ein anderer Benutzer auszuführen.
 
-| Alias | Befehl    | Beschreibung                         |
-| ----- | --------- | ----------------------------------- |
+| Alias | Befehl    | Beschreibung                          |
+| ----- | --------- | ------------------------------------- |
 | root  | `s`       | Führe einen Befehl als Superuser aus. |
 | s     | `sudo -i` | Führe einen Befehl als Superuser aus. |
 | su    | `sudo su` | Führe einen Befehl als Superuser aus. |

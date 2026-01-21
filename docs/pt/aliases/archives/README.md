@@ -15,29 +15,29 @@ variedade de formatos.
 
 [7-Zip](http://www.7-zip.org/) é um compactador de arquivos com uma alta taxa de compressão.
 
-| Alias | Comando | Descrição                                                            |
-| ----- | ------- | -------------------------------------------------------------------- |
+| Alias | Comando | Descrição                                                                    |
+| ----- | ------- | ---------------------------------------------------------------------------- |
 | c7z   | `7z a`  | Compactar um diretório inteiro (incluindo subdiretórios) para um arquivo 7z. |
-| e7z   | `7z x`  | Extrair um diretório inteiro (incluindo subdiretórios) de um arquivo 7z. |
+| e7z   | `7z x`  | Extrair um diretório inteiro (incluindo subdiretórios) de um arquivo 7z.     |
 
 ## Bzip2
 
 [Bzip2](http://www.bzip.org/) é um compressor de dados de alta qualidade, livremente disponível e sem patentes.
 
-| Alias | Comando   | Descrição                       |
-| ----- | --------- | ------------------------------- |
+| Alias | Comando   | Descrição                                 |
+| ----- | --------- | ----------------------------------------- |
 | cbz2  | `bzip2`   | Compactar um arquivo para um arquivo bz2. |
-| ebz2  | `bunzip2` | Extrair um arquivo de um arquivo bz2. |
+| ebz2  | `bunzip2` | Extrair um arquivo de um arquivo bz2.     |
 
 ## Gzip
 
 [Gzip](https://www.gnu.org/software/gzip/) é um programa popular de compressão de dados
 como um substituto para o compress.
 
-| Alias | Comando  | Descrição                      |
-| ----- | -------- | ------------------------------ |
+| Alias | Comando  | Descrição                                |
+| ----- | -------- | ---------------------------------------- |
 | cgz   | `gzip`   | Compactar um arquivo para um arquivo gz. |
-| egz   | `gunzip` | Extrair um arquivo de um arquivo gz. |
+| egz   | `gunzip` | Extrair um arquivo de um arquivo gz.     |
 
 ## Jar
 
@@ -45,42 +45,42 @@ como um substituto para o compress.
 usado para agregar muitos arquivos em um arquivo para distribuir software de aplicação ou
 bibliotecas na plataforma Java.
 
-| Alias | Comando    | Descrição                                                             |
-| ----- | ---------- | --------------------------------------------------------------------- |
+| Alias | Comando    | Descrição                                                                     |
+| ----- | ---------- | ----------------------------------------------------------------------------- |
 | cjar  | `jar -cvf` | Compactar um diretório inteiro (incluindo subdiretórios) para um arquivo jar. |
-| ejar  | `jar -xvf` | Extrair um diretório inteiro (incluindo subdiretórios) de um arquivo jar. |
+| ejar  | `jar -xvf` | Extrair um diretório inteiro (incluindo subdiretórios) de um arquivo jar.     |
 
 ## Tar
 
 [Tar](https://www.gnu.org/software/tar/) é um programa de computador usado para armazenar
 muitos arquivos juntos em um único arquivo.
 
-| Alias | Comando     | Descrição                                                                |
-| ----- | ----------- | ------------------------------------------------------------------------ |
-| ctar  | `tar -cvf`  | Compactar um diretório inteiro (incluindo subdiretórios) para um arquivo tar. |
-| etar  | `tar -xvf`  | Extrair um diretório inteiro (incluindo subdiretórios) de um arquivo tar. |
+| Alias | Comando     | Descrição                                                                        |
+| ----- | ----------- | -------------------------------------------------------------------------------- |
+| ctar  | `tar -cvf`  | Compactar um diretório inteiro (incluindo subdiretórios) para um arquivo tar.    |
+| etar  | `tar -xvf`  | Extrair um diretório inteiro (incluindo subdiretórios) de um arquivo tar.        |
 | ctgz  | `tar -cvzf` | Compactar um diretório inteiro (incluindo subdiretórios) para um arquivo tar.gz. |
-| etgz  | `tar -xvzf` | Extrair um diretório inteiro (incluindo subdiretórios) de um arquivo tar.gz. |
+| etgz  | `tar -xvzf` | Extrair um diretório inteiro (incluindo subdiretórios) de um arquivo tar.gz.     |
 
 ## Xz
 
 [Xz](https://tukaani.org/xz/) é um software de compressão de dados de uso geral
 com uma alta taxa de compressão.
 
-| Alias | Comando    | Descrição                                                            |
-| ----- | ---------- | -------------------------------------------------------------------- |
+| Alias | Comando    | Descrição                                                                    |
+| ----- | ---------- | ---------------------------------------------------------------------------- |
 | cxz   | `xz -zcvf` | Compactar um diretório inteiro (incluindo subdiretórios) para um arquivo xz. |
-| exz   | `xz -zxvf` | Extrair um diretório inteiro (incluindo subdiretórios) de um arquivo xz. |
+| exz   | `xz -zxvf` | Extrair um diretório inteiro (incluindo subdiretórios) de um arquivo xz.     |
 
 ## Zip
 
-[Zip](<https://pt.wikipedia.org/wiki/ZIP>) é um formato de arquivo usado para
+[Zip](https://pt.wikipedia.org/wiki/ZIP) é um formato de arquivo usado para
 gerar um único arquivo contendo um ou mais arquivos.
 
-| Alias | Comando  | Descrição                                                             |
-| ----- | -------- | --------------------------------------------------------------------- |
+| Alias | Comando  | Descrição                                                                     |
+| ----- | -------- | ----------------------------------------------------------------------------- |
 | cz    | `zip -r` | Compactar um diretório inteiro (incluindo subdiretórios) para um arquivo zip. |
-| ez    | `unzip`  | Extrair um diretório inteiro (incluindo subdiretórios) de um arquivo zip. |
+| ez    | `unzip`  | Extrair um diretório inteiro (incluindo subdiretórios) de um arquivo zip.     |
 
 ## Zstd
 
@@ -88,7 +88,7 @@ gerar um único arquivo contendo um ou mais arquivos.
 visando cenários de compressão em tempo real no nível zlib e melhores
 taxas de compressão.
 
-| Alias | Comando      | Descrição                                                             |
-| ----- | ------------ | --------------------------------------------------------------------- |
+| Alias | Comando      | Descrição                                                                     |
+| ----- | ------------ | ----------------------------------------------------------------------------- |
 | czstd | `zstd -zcvf` | Compactar um diretório inteiro (incluindo subdiretórios) para um arquivo zst. |
-| ezstd | `zstd -zxvf` | Extrair um diretório inteiro (incluindo subdiretórios) de um arquivo zst. |
+| ezstd | `zstd -zxvf` | Extrair um diretório inteiro (incluindo subdiretórios) de um arquivo zst.     |

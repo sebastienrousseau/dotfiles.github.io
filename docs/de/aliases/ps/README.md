@@ -19,8 +19,8 @@ Prozesse berichtet.
 [PS](<https://de.wikipedia.org/wiki/Ps_(Unix)>) ist ein Befehl, der die
 auf dem System laufenden Prozesse auflistet.
 
-| Alias | Befehl   | Beschreibung                                                                                                                                              |
-| ----- | -------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Alias | Befehl   | Beschreibung                                                                                                                                    |
+| ----- | -------- | ----------------------------------------------------------------------------------------------------------------------------------------------- |
 | pid   | `ps -f`  | Zeige die UID, PID, Eltern-PID, aktuelle CPU-Nutzung, Prozessstartzeit, steuerndes TTY, verstrichene CPU-Nutzung und den zugehörigen Befehl an. |
-| ps    | `ps -ef` | Zeige alle Prozesse an.                                                                                                                                   |
-| psa   | `ps aux` | Liste alle Prozesse auf.                                                                                                                                  |
+| ps    | `ps -ef` | Zeige alle Prozesse an.                                                                                                                         |
+| psa   | `ps aux` | Liste alle Prozesse auf.                                                                                                                        |

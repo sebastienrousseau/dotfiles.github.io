@@ -24,14 +24,14 @@ permalink: /zh/aliases/editor/
 
 [编辑器](https://zh.wikipedia.org/wiki/文本编辑器) 是一个用于编辑纯文本文件的程序。
 
-| 别名   | 命令        | 描述         |
-| ------ | ----------- | ------------ |
-| e      | `${editor}` | 编辑文件。   |
-| edit   | `${editor}` | 编辑文件。   |
-| editor | `${editor}` | 编辑文件。   |
-| mate   | `${editor}` | 编辑文件。   |
-| n      | `${editor}` | 编辑文件。   |
-| v      | `${editor}` | 编辑文件。   |
+| 别名   | 命令        | 描述       |
+| ------ | ----------- | ---------- |
+| e      | `${editor}` | 编辑文件。 |
+| edit   | `${editor}` | 编辑文件。 |
+| editor | `${editor}` | 编辑文件。 |
+| mate   | `${editor}` | 编辑文件。 |
+| n      | `${editor}` | 编辑文件。 |
+| v      | `${editor}` | 编辑文件。 |
 
 [np++]: https://notepad-plus-plus.org/
 [gdt]: https://wiki.gnome.org/Apps/Gedit

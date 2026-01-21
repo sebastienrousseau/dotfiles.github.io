@@ -20,30 +20,30 @@ Dotfiles 最关键的角色之一是管理您的 `$PATH` 环境变量。这决�
 从最高优先级（首先检查）到最低：
 
 1.  **本地二进制文件** (`~/.local/bin`)
-    *   **优先级**: 1
-    *   **目的**: 自定义用户脚本，`dot` CLI，以及通过 `pipx` 或其他用户级包管理器安装的工具。
-    *   **原因**: 允许您用自己的版本覆盖系统或 Homebrew 工具。
+    - **优先级**: 1
+    - **目的**: 自定义用户脚本，`dot` CLI，以及通过 `pipx` 或其他用户级包管理器安装的工具。
+    - **原因**: 允许您用自己的版本覆盖系统或 Homebrew 工具。
 
 2.  **应用程序二进制文件** (macOS)
-    *   **优先级**: 2
-    *   **目的**: 来自已安装应用程序的二进制文件（例如，VS Code，iTerm）。
+    - **优先级**: 2
+    - **目的**: 来自已安装应用程序的二进制文件（例如，VS Code，iTerm）。
 
 3.  **语言运行时**
-    *   **Node.js**: `~/.node_modules/bin`
-    *   **Go**: `~/go/bin`
-    *   **Rust (Cargo)**: `~/.cargo/bin`
-    *   **Ruby (用户 Gems)**: `~/.gem/ruby/bin`
-    *   **Python (Pipx)**: `~/.local/share/pipx`
+    - **Node.js**: `~/.node_modules/bin`
+    - **Go**: `~/go/bin`
+    - **Rust (Cargo)**: `~/.cargo/bin`
+    - **Ruby (用户 Gems)**: `~/.gem/ruby/bin`
+    - **Python (Pipx)**: `~/.local/share/pipx`
 
 4.  **Homebrew** (`/opt/homebrew/bin`)
-    *   **优先级**: 3
-    *   **目的**: macOS/Linux 的主要包管理器。
-    *   **注意**: 我们特意在系统路径*之前*加载 Homebrew，以允许升级系统工具（如 `git` 或 `curl`）。
+    - **优先级**: 3
+    - **目的**: macOS/Linux 的主要包管理器。
+    - **注意**: 我们特意在系统路径*之前*加载 Homebrew，以允许升级系统工具（如 `git` 或 `curl`）。
 
 5.  **系统路径** (`/usr/bin`, `/bin`)
-    *   **优先级**: 最低
-    *   **目的**: 默认操作系统工具。
-    *   **原因**: 基本实用程序的后备。
+    - **优先级**: 最低
+    - **目的**: 默认操作系统工具。
+    - **原因**: 基本实用程序的后备。
 
 ## 去重
 

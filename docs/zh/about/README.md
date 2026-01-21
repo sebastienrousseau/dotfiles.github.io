@@ -20,10 +20,10 @@ Dotfiles 代表了环境配置的现代标准。它建立在 **Chezmoi** 之上�
 ## v0.2.471 的新功能
 
 - **现代核心**：我们将旧的 Unix 工具替换为高性能的 Rust 替代品：
-    - **Atuin** (替换 `history`)
-    - **Yazi** (替换 `ls`/`ranger`)
-    - **Zellij** (替换 `tmux`)
-    - **Ghostty** (现代 GPU 加速终端)
+  - **Atuin** (替换 `history`)
+  - **Yazi** (替换 `ls`/`ranger`)
+  - **Zellij** (替换 `tmux`)
+  - **Ghostty** (现代 GPU 加速终端)
 - **原生安全**：完全原生 SSH 签名（无密钥/无专有）无需第三方代理。
 - **交互模式**：新的 `dot learn` 命令引导您了解功能。
 
@@ -44,6 +44,7 @@ sh -c "$(curl -fsLS get.chezmoi.io)" -- init --apply sebastienrousseau
 ```
 
 此命令将：
+
 1.  安装 `chezmoi` 二进制文件。
 2.  克隆存储库到 `~/.local/share/chezmoi`。
 3.  计算您当前状态与所需状态之间的差异。

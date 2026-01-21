@@ -19,6 +19,6 @@ valor de 128 bits garantido como único no espaço e no tempo.
 [UUID](https://pt.wikipedia.org/wiki/Universally_unique_identifier) é um número de 128 bits
 usado para identificar informações em sistemas de computador.
 
-| Alias | Comando                                                                            | Descrição                                     |
-| ----- | ---------------------------------------------------------------------------------- | --------------------------------------------- |
+| Alias | Comando                                                                            | Descrição                                              |
+| ----- | ---------------------------------------------------------------------------------- | ------------------------------------------------------ |
 | uuid  | `uuidgen \| tr -d '\n' \| tr '[:upper:]' '[:lower:]' \| pbcopy && pbpaste && echo` | Gerar um UUID e copiá-lo para a área de transferência. |

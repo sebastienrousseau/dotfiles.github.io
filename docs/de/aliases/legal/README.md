@@ -13,28 +13,28 @@ Tools zur Verwaltung von Open-Source-Compliance, Lizenz-Scans und Attribution.
 
 ### Lizenz-Scanning
 
-| Alias             | Beschreibung                                  | Typ    |
-| ----------------- | --------------------------------------------- | ------ |
-| `fossology-start` | Starte lokalen FOSSology-Server auf Port 8081 | Docker |
-| `fossology-stop`  | Stoppe FOSSology-Server                       | Docker |
+| Alias             | Beschreibung                                                  | Typ    |
+| ----------------- | ------------------------------------------------------------- | ------ |
+| `fossology-start` | Starte lokalen FOSSology-Server auf Port 8081                 | Docker |
+| `fossology-stop`  | Stoppe FOSSology-Server                                       | Docker |
 | `license-scan`    | Schneller Lizenzscan des aktuellen Verzeichnisses (via Trivy) | Binary |
 
 ### Copyright-Header
 
-| Alias         | Beschreibung                                            | Typ                        |
-| ------------- | ------------------------------------------------------- | -------------------------- |
+| Alias         | Beschreibung                                               | Typ                        |
+| ------------- | ---------------------------------------------------------- | -------------------------- |
 | `add-headers` | Füge rekursiv MIT-Lizenzheader zu allen Quelldateien hinzu | Docker (google/addlicense) |
 
 ### Attribution
 
-| Alias        | Beschreibung                                                     | Typ    |
-| ------------ | ---------------------------------------------------------------- | ------ |
+| Alias        | Beschreibung                                                                   | Typ    |
+| ------------ | ------------------------------------------------------------------------------ | ------ |
 | `gen-notice` | Generiere eine `NOTICE`-Datei für Abhängigkeiten (Go-Unterstützung anfänglich) | Docker |
 
 ### Beitrag
 
-| Alias       | Beschreibung                           | Typ        |
-| ----------- | -------------------------------------- | ---------- |
+| Alias       | Beschreibung                               | Typ        |
+| ----------- | ------------------------------------------ | ---------- |
 | `check-cla` | Überwache GitHub PR-Checks (inklusive CLA) | CLI (`gh`) |
 
 ## 📦 Anforderungen

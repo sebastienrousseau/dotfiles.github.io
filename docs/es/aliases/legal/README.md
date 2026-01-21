@@ -13,28 +13,28 @@ Herramientas para gestionar el cumplimiento de código abierto, escaneo de licen
 
 ### Escaneo de Licencias
 
-| Alias             | Descripción                                   | Tipo   |
-| ----------------- | --------------------------------------------- | ------ |
-| `fossology-start` | Iniciar servidor local FOSSology en el puerto 8081     | Docker |
-| `fossology-stop`  | Detener servidor FOSSology                         | Docker |
+| Alias             | Descripción                                                   | Tipo    |
+| ----------------- | ------------------------------------------------------------- | ------- |
+| `fossology-start` | Iniciar servidor local FOSSology en el puerto 8081            | Docker  |
+| `fossology-stop`  | Detener servidor FOSSology                                    | Docker  |
 | `license-scan`    | Escaneo rápido de licencias del directorio actual (vía Trivy) | Binario |
 
 ### Cabeceras de Copyright
 
-| Alias         | Descripción                                             | Tipo                       |
-| ------------- | ------------------------------------------------------- | -------------------------- |
+| Alias         | Descripción                                                                  | Tipo                       |
+| ------------- | ---------------------------------------------------------------------------- | -------------------------- |
 | `add-headers` | Agregar recursivamente cabeceras de licencia MIT a todos los archivos fuente | Docker (google/addlicense) |
 
 ### Atribución
 
-| Alias        | Descripción                                                      | Tipo   |
-| ------------ | ---------------------------------------------------------------- | ------ |
+| Alias        | Descripción                                                             | Tipo   |
+| ------------ | ----------------------------------------------------------------------- | ------ |
 | `gen-notice` | Generar un archivo `NOTICE` para dependencias (soporte inicial para Go) | Docker |
 
 ### Contribución
 
-| Alias       | Descripción                            | Tipo       |
-| ----------- | -------------------------------------- | ---------- |
+| Alias       | Descripción                                              | Tipo       |
+| ----------- | -------------------------------------------------------- | ---------- |
 | `check-cla` | Observar comprobaciones de PR en GitHub (incluyendo CLA) | CLI (`gh`) |
 
 ## 📦 Requisitos

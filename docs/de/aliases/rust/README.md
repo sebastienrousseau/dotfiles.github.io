@@ -21,23 +21,23 @@ Leistung und Sicherheit fokussiert ist, insbesondere sichere Nebenläufigkeit. R
 ähnlich wie C++, wurde aber entwickelt, um eine bessere Speichersicherheit zu bieten und gleichzeitig
 eine hohe Leistung beizubehalten.
 
-| Alias | Befehl                       | Beschreibung                |
-| ----- | ---------------------------- | --------------------------- |
-| ru    | `rustup update`              | Rustup update.              |
-| rca   | `rustup component add`       | Rustup Komponente hinzufügen.       |
-| rcl   | `rustup component list`      | Rustup Komponenten auflisten.      |
-| rcr   | `rustup component remove`    | Rustup Komponente entfernen.    |
-| rde   | `rustup default`             | Rustup Standard.             |
-| rnn   | `rustup run nightly`         | Führe rustup nightly aus.         |
-| rns   | `rustup run stable`          | Führe rustup stable aus.          |
-| rtaa  | `rustup target add`          | Rustup Target hinzufügen.          |
-| rtal  | `rustup target list`         | Rustup Targets auflisten.         |
-| rtar  | `rustup target remove`       | Rustup Target entfernen.       |
+| Alias | Befehl                       | Beschreibung                     |
+| ----- | ---------------------------- | -------------------------------- |
+| ru    | `rustup update`              | Rustup update.                   |
+| rca   | `rustup component add`       | Rustup Komponente hinzufügen.    |
+| rcl   | `rustup component list`      | Rustup Komponenten auflisten.    |
+| rcr   | `rustup component remove`    | Rustup Komponente entfernen.     |
+| rde   | `rustup default`             | Rustup Standard.                 |
+| rnn   | `rustup run nightly`         | Führe rustup nightly aus.        |
+| rns   | `rustup run stable`          | Führe rustup stable aus.         |
+| rtaa  | `rustup target add`          | Rustup Target hinzufügen.        |
+| rtal  | `rustup target list`         | Rustup Targets auflisten.        |
+| rtar  | `rustup target remove`       | Rustup Target entfernen.         |
 | rti   | `rustup toolchain install`   | Rustup Toolchain installieren.   |
-| rtl   | `rustup toolchain list`      | Rustup Toolchains auflisten.      |
+| rtl   | `rustup toolchain list`      | Rustup Toolchains auflisten.     |
 | rtu   | `rustup toolchain uninstall` | Rustup Toolchain deinstallieren. |
-| ruc   | `rustup update nightly`      | Aktualisiere rustup nightly.      |
-| rus   | `rustup update stable`       | Aktualisiere rustup stable.       |
+| ruc   | `rustup update nightly`      | Aktualisiere rustup nightly.     |
+| rus   | `rustup update stable`       | Aktualisiere rustup stable.      |
 
 ## Cargo
 

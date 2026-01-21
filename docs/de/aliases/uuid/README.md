@@ -19,6 +19,6 @@ Der uuidgen Befehl generiert einen Universally Unique IDentifier (UUID), einen
 [UUID](https://de.wikipedia.org/wiki/Universally_Unique_Identifier) ist eine 128-Bit
 Zahl, die verwendet wird, um Informationen in Computersystemen zu identifizieren.
 
-| Alias | Befehl                                                                             | Beschreibung                                  |
-| ----- | ---------------------------------------------------------------------------------- | --------------------------------------------- |
+| Alias | Befehl                                                                             | Beschreibung                                               |
+| ----- | ---------------------------------------------------------------------------------- | ---------------------------------------------------------- |
 | uuid  | `uuidgen \| tr -d '\n' \| tr '[:upper:]' '[:lower:]' \| pbcopy && pbpaste && echo` | Generiere eine UUID und kopiere sie in die Zwischenablage. |
