@@ -18,7 +18,7 @@ features:
     details: "Native SSH Signing and XDG Compliance out of the box. No proprietary dependencies."
   - title: Customizable
     details: "Discover all the details of the Dotfiles and choose the ones you prefer according to your desires"
-footer: Copyright © Sebastien Rousseau 2015-2022. All rights reserved.
+footer: Copyright © Sebastien Rousseau 2015-2026. All rights reserved.
 
 meta:
   - name: keywords

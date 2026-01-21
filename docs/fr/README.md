@@ -18,7 +18,7 @@ features:
     details: "Signature SSH Native et conformité XDG dès l'installation. Aucune dépendance propriétaire."
   - title: Personnalisable
     details: "Découvrez tous les détails des fichiers Dotfiles et choisissez ceux que vous préférez suivant vos envies"
-footer: Copyright © Sebastien Rousseau 2015-2022. Tous droits réservés.
+footer: Copyright © Sebastien Rousseau 2015-2026. Tous droits réservés.
 
 meta:
   - name: keywords
