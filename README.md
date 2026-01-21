@@ -6,12 +6,14 @@
 The official documentation site for the [Trusted Shell Platform](https://github.com/sebastienrousseau/dotfiles). Built with VuePress, it serves as the comprehensive guide for installation, configuration, and advanced usage of the dotfiles ecosystem.
 
 ## Features
+
 - **Multi-Language Support**: Documentation available in English, French, Spanish, German, Chinese, and Portuguese.
 - **Search Optimized**: Integrated Algolia search and SEO best practices (JSON-LD, Meta Tags).
 - **PWA Ready**: Progressive Web App support for offline access.
 - **DeepSource Verified**: Codebase continuously analyzed for security and quality issues.
 
 ## Prerequisites
+
 - Node.js (v18+)
 - pnpm
 
