@@ -1,43 +1,24 @@
 ---
-description: The Configuration aliases are aliases for opening the configuration files for the terminal and the shell.
+description: 配置别名用于打开终端和 shell 的配置文件。
 lang: zh-CN
-metaTitle: The Configuration aliases - Dotfiles (CN)
+metaTitle: 配置别名 - Dotfiles (CN)
 permalink: /zh/aliases/configuration/
-
-meta:
-  - name: keywords
-    content: aliases, configuration, dotfiles, linux, macos, shell, terminal, windows
-  - name: twitter:card
-    content: The Configuration aliases are aliases for opening the configuration files for the terminal and the shell.
-  - name: twitter:description
-    content: The Configuration aliases are aliases for opening the configuration files for the terminal and the shell.
-  - name: twitter:title
-    content: The Configuration aliases - Dotfiles (CN)
-  - name: og:title
-    content: The Configuration aliases - Dotfiles (CN)
-  - name: og:description
-    content: The Configuration aliases are aliases for opening the configuration files for the terminal and the shell.
-  - name: og:image:alt
-    content: Dotfiles - Simply designed to fit your shell life
-  - name: og:locale
-    content: en_GB
 ---
 
-# Configuration aliases
+# 配置别名
 
-The `configuration.aliases.sh` file creates helpful shortcut aliases for opening
-the configuration files for the terminal and the shell.
+`configuration.aliases.sh` 文件创建了有用的快捷别名，用于打开终端和 shell 的配置文件。
 
 > [!TIP]
-> **New in v0.2.471**: You can now use the `dot` command to manage your configuration.
-> Try `dot learn` for an interactive tour or `dot doctor` to verify your setup.
+> **v0.2.471 新功能**: 您现在可以使用 `dot` 命令来管理您的配置。
+> 尝试 `dot learn`进行交互式导览，或 `dot doctor` 验证您的设置。
 
-## Configuration
+## 配置
 
-| 别名  | 命令                   | 描述                                                                       |
-| ----- | -------------------------------- | ------------------------------------------------------------ |
-| bshp  | `${=EDITOR} $HOME/.bash_profile` | 打开 the Bash profile in the default text editor.            |
-| bshrc | `${=EDITOR} $HOME/.bashrc`       | 打开 the Bash configuration 文件 in the default text editor. |
-| gcfg  | `${=EDITOR} $HOME/.gitconfig`    | 打开 the Git configuration 文件 in the default text editor.  |
-| gign  | `${=EDITOR} $HOME/.gitignore`    | 打开 the Git ignore 文件 in the default text editor.         |
-| zshrc | `${=EDITOR} $HOME/.zshrc`        | 打开 the Zsh configuration 文件 in the default text editor.  |
+| 别名  | 命令                             | 描述                                         |
+| ----- | -------------------------------- | -------------------------------------------- |
+| bshp  | `${=EDITOR} $HOME/.bash_profile` | 在默认文本编辑器中打开 Bash profile。        |
+| bshrc | `${=EDITOR} $HOME/.bashrc`       | 在默认文本编辑器中打开 Bash 配置文件。       |
+| gcfg  | `${=EDITOR} $HOME/.gitconfig`    | 在默认文本编辑器中打开 Git 配置文件。        |
+| gign  | `${=EDITOR} $HOME/.gitignore`    | 在默认文本编辑器中打开 Git 忽略文件。        |
+| zshrc | `${=EDITOR} $HOME/.zshrc`        | 在默认文本编辑器中打开 Zsh 配置文件。        |

@@ -1,13 +1,13 @@
 ---
-description: macOS aliases for Dotfiles
+description: macOS Aliase für Dotfiles
 lang: de-DE
-metaTitle: macOS aliases - Dotfiles
+metaTitle: macOS Aliase - Dotfiles (DE)
 permalink: /de/aliases/macOS/
 ---
 
-# macOS-Aliase
+# macOS Aliase
 
-Verwalten Sie macOS-Aliase. Part of the **Universal Dotfiles** configuration.
+Verwalten Sie macOS-Aliase. Teil der **Universal Dotfiles** Konfiguration.
 
 ![Dotfiles banner][banner]
 
@@ -17,25 +17,25 @@ Diese Aliase sind in `macOS.aliases.sh` definiert und werden automatisch von `ch
 
 ## ⚡ Aliase
 
-This code provides a set of aliases for macOS.
-- `clds` Recursively delete .DS_Store files.
-- `clls`  Clean up LaunchServices to remove duplicates in the
-  'Open With' menu.
-- `finderHideHidden` Hide hidden files in Finder.
-- `finderShowHidden` Show hidden files in Finder.
-- `hideDesktopIcons` Hide all icons on the Desktop.
-- `iphone` Open the device simulators.
-- `lockScreen` Lock the screen of the mac.
-- `ofd` Open the current directory in a Finder window.
-- `purge` Purging Xcode DerivedData.
-- `safariSafeMode` Launch Safari in Safe Mode.
-- `showDesktopIcons` Show all icons on the Desktop.
-- `screensaverDesktop` Run a screensaver on the Desktop.
-- `trash` Empty the Trash on all mounted volumes and the main HDD.
-- `vp` Verify macOS Permissions.
-- `vv` Verify macOS Volume.
-- `wifiOn` Turn on Wi-Fi.
-- `wifiOff` Turn off Wi-Fi.
-- `xcode` Launch XCode app in macOS.
+Dieser Code stellt eine Reihe von Aliasen für macOS bereit.
+
+- `clds` Lösche rekursiv .DS_Store Dateien.
+- `clls` Bereinige LaunchServices, um Duplikate im 'Öffnen mit' Menü zu entfernen.
+- `finderHideHidden` Verstecke versteckte Dateien im Finder.
+- `finderShowHidden` Zeige versteckte Dateien im Finder.
+- `hideDesktopIcons` Verstecke alle Icons auf dem Desktop.
+- `iphone` Öffne die Gerätesimulatoren.
+- `lockScreen` Sperre den Bildschirm des Macs.
+- `ofd` Öffne das aktuelle Verzeichnis in einem Finder-Fenster.
+- `purge` Bereinige Xcode DerivedData.
+- `safariSafeMode` Starte Safari im abgesicherten Modus.
+- `showDesktopIcons` Zeige alle Icons auf dem Desktop.
+- `screensaverDesktop` Führe einen Bildschirmschoner auf dem Desktop aus.
+- `trash` Leere den Papierkorb auf allen gemounteten Volumes und der Hauptfestplatte.
+- `vp` Überprüfe macOS-Berechtigungen.
+- `vv` Überprüfe macOS-Volume.
+- `wifiOn` Schalte Wi-Fi ein.
+- `wifiOff` Schalte Wi-Fi aus.
+- `xcode` Starte die Xcode-App in macOS.
 
 [banner]: https://kura.pro/dotfiles/v2/images/titles/title-dotfiles.svg

@@ -24,7 +24,7 @@ meta:
   - name: keywords
     content: bash, configuration, dotfiles, linux, macos, shell, terminal, windows
   - name: twitter:card
-    content: Dotfiles - Simply designed to fit your shell life.
+    content: summary_large_image
   - name: twitter:description
     content: The next generation of Bash configuration files for macOS, Linux and Windows. Dotfiles gives you new ways to do more than ever with your shell.
   - name: twitter:title

@@ -1,60 +1,42 @@
 ---
-description: The Find aliases, are designed to search for files in a directory hierarchy and perform actions on the files that are found.
+description: Die Find-Aliase sind dazu konzipiert, nach Dateien in einer Verzeichnishierarchie zu suchen und Aktionen an den gefundenen Dateien durchzuführen.
 lang: de-DE
-metaTitle: Find aliases - Dotfiles (DE)
+metaTitle: Find Aliase - Dotfiles (DE)
 permalink: /de/aliases/find/
-
-meta:
-  - name: keywords
-    content: aliases, code, editor, environment, gedit, nano, notepad++, text, vi, vim
-  - name: twitter:card
-    content: The Find aliases, are designed to search for files in a directory hierarchy and perform actions on the files that are found.
-  - name: twitter:description
-    content: The Find aliases, are designed to search for files in a directory hierarchy and perform actions on the files that are found.
-  - name: twitter:title
-    content: Find aliases - Dotfiles (DE)
-  - name: og:title
-    content: Find aliases - Dotfiles (DE)
-  - name: og:description
-    content: The Find aliases, are designed to search for files in a directory hierarchy and perform actions on the files that are found.
-  - name: og:image:alt
-    content: Dotfiles - Simply designed to fit your shell life
-  - name: og:locale
-    content: en_GB
 ---
 
-# Find aliases
+# Find Aliase
 
-The `find.aliases.sh` file creates helpful shortcut aliases for the `fd` command
-. The `fd` command is a cross-platform alternative to `find`.
+Die Datei `find.aliases.sh` erstellt hilfreiche Shortcut-Aliase für den Befehl `fd`
+. Der Befehl `fd` ist eine plattformübergreifende Alternative zu `find`.
 
-Traditionally, the `find` command is used to search for files in a directory
-hierarchy and perform actions on the files that are found.
+Traditionell wird der Befehl `find` verwendet, um nach Dateien in einer
+Verzeichnishierarchie zu suchen und Aktionen an den gefundenen Dateien durchzuführen.
 
-We decided to substitute the `find` command with the `fd` command which is
-simpler, fast and user-friendly alternative to `find`.
+Wir haben uns entschieden, den Befehl `find` durch den Befehl `fd` zu ersetzen, der eine
+einfachere, schnellere und benutzerfreundlichere Alternative zu `find` ist.
 
 ## Find
 
-[fd](https://github.com/sharkdp/fd) is a simple, fast and user-friendly
-alternative to `find`. While it does not aim to support all of find's powerful
-functionality, it provides sensible (opinionated) defaults for a majority of
-use cases.
+[fd](https://github.com/sharkdp/fd) ist eine einfache, schnelle und benutzerfreundliche
+Alternative zu `find`. Während es nicht darauf abzielt, alle leistungsstarken
+Funktionen von find zu unterstützen, bietet es vernünftige (meine Meinung nach) Standardwerte für die Mehrheit der
+Anwendungsfälle.
 
-| Alias | Befehl                | Beschreibung                                                               |
+| Alias | Befehl               | Beschreibung                                                |
 | ----- | -------------------- | ----------------------------------------------------------- |
-| fd    | `fd --color always`  | always colorize output by default.                          |
-| fda   | `fd --absolute-path` | Auflisten all Dateien with absolute path.                          |
-| fdc   | `fd --ignore-case`   | Auflisten all Dateien with case insensitive Suchen.                |
-| fdd   | `fd --list-details`  | Auflisten all Dateien with details.                                |
-| fde   | `fd --extension`     | Auflisten all Dateien with extension.                              |
-| fdf   | `fd --follow`        | Auflisten all Dateien with follow symlinks.                        |
-| fdh   | `fd --help`          | Auflisten all Dateien with help.                                   |
-| fdh   | `fd --hidden`        | Auflisten all Dateien with hidden Dateien.                           |
-| fdn   | `fd --glob`          | Auflisten all Dateien with glob.                                   |
-| fdo   | `fd --owner`         | Auflisten all Dateien with owner.                                  |
-| fds   | `fd --size`          | Auflisten all Dateien with size.                                   |
-| fdu   | `fd --exclude`       | Auflisten all Dateien with exclude.                                |
-| fdv   | `fd --version`       | Auflisten all Dateien with version.                                |
-| fdx   | `fd --exec`          | Execute a command for each Suchen result.                   |
-| find  | `fd`                 | fd is a simple, fast and user-friendly alternative to Finden. |
+| fd    | `fd --color always`  | Ausgabe immer standardmäßig einfärben.                      |
+| fda   | `fd --absolute-path` | Alle Dateien mit absolutem Pfad auflisten.                  |
+| fdc   | `fd --ignore-case`   | Alle Dateien mit Groß-/Kleinschreibung ignorieren auflisten.|
+| fdd   | `fd --list-details`  | Alle Dateien mit Details auflisten.                         |
+| fde   | `fd --extension`     | Alle Dateien mit Endung auflisten.                          |
+| fdf   | `fd --follow`        | Alle Dateien auflisten und Symlinks folgen.                 |
+| fdh   | `fd --help`          | Hilfe auflisten.                                            |
+| fdh   | `fd --hidden`        | Alle Dateien mit versteckten Dateien auflisten.             |
+| fdn   | `fd --glob`          | Alle Dateien mit Glob-Muster auflisten.                     |
+| fdo   | `fd --owner`         | Alle Dateien mit Eigentümer auflisten.                      |
+| fds   | `fd --size`          | Alle Dateien mit Größe auflisten.                           |
+| fdu   | `fd --exclude`       | Alle Dateien mit Ausschluss auflisten.                      |
+| fdv   | `fd --version`       | Version auflisten.                                          |
+| fdx   | `fd --exec`          | Einen Befehl für jedes Suchergebnis ausführen.              |
+| find  | `fd`                 | fd ist eine einfache, schnelle und benutzerfreundliche Alternative zu find. |

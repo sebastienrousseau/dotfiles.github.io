@@ -1,13 +1,13 @@
 ---
-description: terraform aliases for Dotfiles
+description: Terraform Aliase für Dotfiles
 lang: de-DE
-metaTitle: terraform aliases - Dotfiles
+metaTitle: Terraform Aliase - Dotfiles (DE)
 permalink: /de/aliases/terraform/
 ---
 
-# Terraform-Aliase
+# Terraform Aliase
 
-Manage Infrastructure as Code aliases (Terraform, OpenTofu, Ansible). Teil der **Universal Dotfiles**-Konfiguration.
+Verwalten Sie Infrastructure as Code Aliase (Terraform, OpenTofu, Ansible). Teil der **Universal Dotfiles** Konfiguration.
 
 ![Dotfiles banner][banner]
 
@@ -17,18 +17,20 @@ Diese Aliase sind in `terraform.aliases.sh` definiert und werden automatisch von
 
 ## ⚡ Aliase
 
-### terraform
-- `tf` - Terraform shortcut
+### Terraform
+
+- `tf` - Terraform Kurzbefehl
 - `tfi` - Init
 - `tfp` - Plan
 - `tfa` - Apply
-- `tfaa` - Apply (auto-approve)
+- `tfaa` - Apply (automatisch genehmigen)
 - `tfd` - Destroy
 - `tff` - Format
 - `tfv` - Validate
 
-### ansible
-- `ans` - Ansible shortcut
+### Ansible
+
+- `ans` - Ansible Kurzbefehl
 - `ansp` - Ansible Playbook
 - `anslint` - Ansible Lint
 

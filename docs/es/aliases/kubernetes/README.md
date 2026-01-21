@@ -1,15 +1,15 @@
 ---
-description: kubernetes aliases for Dotfiles
+description: Alias de Kubernetes para Dotfiles
 lang: es-ES
-metaTitle: kubernetes aliases - Dotfiles
+metaTitle: Alias de Kubernetes - Dotfiles (ES)
 permalink: /es/aliases/kubernetes/
 ---
 
 # Alias de Kubernetes
 
-Gestionar alias de Kubernetes. Part of the **Universal Dotfiles** configuration.
+Gestiona alias de Kubernetes. Parte de la configuración de **Universal Dotfiles**.
 
-![Dotfiles banner][banner]
+![Banner de Dotfiles][banner]
 
 ## 📖 Descripción
 
@@ -17,8 +17,9 @@ Estos alias están definidos en `kubernetes.aliases.sh` y son cargados automáti
 
 ## ⚡ Alias
 
-### core
-- `k` - kubectl shortcut
+### Core
+
+- `k` - Atajo para kubectl
 - `kg` - `kubectl get`
 - `kgp` - `kubectl get pods`
 - `kga` - `kubectl get all`
@@ -27,17 +28,20 @@ Estos alias están definidos en `kubernetes.aliases.sh` y son cargados automáti
 - `kl` - `kubectl logs`
 - `kex` - `kubectl exec -it`
 
-### context
-- `kcx` - List contexts
-- `kuse` - Switch context
-- `kns` - Switch namespace
+### Contexto
 
-### helm
-- `h` - Helm shortcut
-- `hls` - List releases
-- `hi` - Install chart
+- `kcx` - Listar contextos
+- `kuse` - Cambiar contexto
+- `kns` - Cambiar namespace
 
-### ui
-- `k9` - k9s terminal UI
+### Helm
+
+- `h` - Atajo para Helm
+- `hls` - Listar releases
+- `hi` - Instalar chart
+
+### UI
+
+- `k9` - Interfaz de terminal k9s
 
 [banner]: https://kura.pro/dotfiles/v2/images/titles/title-dotfiles.svg

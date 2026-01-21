@@ -1,44 +1,22 @@
 ---
-description: The PS aliases are a collection of aliases that allow you to interact with the `ps` command line tool. Ps is a tool which reports a snapshot of the current processes.
+description: PS 别名是一组别名，允许您与 `ps` 命令行工具交互。Ps 是一个报告当前进程快照的工具。
 lang: zh-CN
-metaTitle: The PS aliases - Dotfiles (CN)
+metaTitle: PS 别名 - Dotfiles (CN)
 permalink: /zh/aliases/ps/
-
-meta:
-  - name: keywords
-    content: aliases, ps, process, processes, linux, macos, shell, terminal, windows
-  - name: twitter:card
-    content: The PS aliases are a collection of aliases that allow you to interact with the `ps` command line tool. Ps is a tool which reports a snapshot of the current processes.
-  - name: twitter:description
-    content: The PS aliases are a collection of aliases that allow you to interact with the `ps` command line tool. Ps is a tool which reports a snapshot of the current processes.
-  - name: twitter:title
-    content: The PS aliases - Dotfiles (CN)
-  - name: og:title
-    content: The PS aliases - Dotfiles (CN)
-  - name: og:description
-    content: The PS aliases are a collection of aliases that allow you to interact with the `ps` command line tool. Ps is a tool which reports a snapshot of the current processes.
-  - name: og:image:alt
-    content: Dotfiles - Simply designed to fit your shell life
-  - name: og:locale
-    content: en_GB
 ---
 
-# PS aliases
+# PS 别名
 
-The `ps.aliases.sh` file creates helpful shortcut aliases for working with
-processes.
+`ps.aliases.sh` 文件为处理进程创建了有用的快捷别名。
 
-The PS aliases are a collection of aliases that allow you to interact with the
-`ps` command line tool. Ps is a tool which reports a snapshot of the current
-processes.
+PS 别名是一组别名，允许您与 `ps` 命令行工具交互。Ps 是一个报告当前进程快照的工具。
 
 ## PS
 
-[PS](<https://en.wikipedia.org/wiki/Ps_(Unix)>) is a command that lists the
-processes running on the system.
+[PS](<https://zh.wikipedia.org/wiki/Ps_(Unix)>) 是一个列出系统上运行的进程的命令。
 
-| 别名  | 命令                   | 描述                                                                       |
-| ----- | -------- | --------------------------------------------------------------------------------------------------------------------------------------- |
-| pid   | `ps -f`  | Display the uid, pid, parent pid, recent CPU usage, process 开始 time, controlling tty, elapsed CPU usage, and the associated command. |
-| ps    | `ps -ef` | Display all processes.                                                                                                                  |
-| psa   | `ps aux` | 列出 all processes.                                                                                                                     |
+| 别名 | 命令     | 描述                                                                                          |
+| ---- | -------- | --------------------------------------------------------------------------------------------- |
+| pid  | `ps -f`  | 显示 uid、pid、父 pid、最近的 CPU 使用率、进程开始时间、控制 tty、经过的 CPU 使用率和关联的命令。 |
+| ps   | `ps -ef` | 显示所有进程。                                                                                |
+| psa  | `ps aux` | 列出所有进程。                                                                                |

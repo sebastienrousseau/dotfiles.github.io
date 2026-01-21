@@ -1,50 +1,32 @@
 ---
-description: The Make aliases are a collection of aliases that allow you to interact with the `make` command line tool. Make is a tool which controls the generation of executables and other non-source files of a program from the program's source files.
+description: Die Make Aliase sind eine Sammlung von Aliasen, die es Ihnen ermöglichen, mit dem `make` Kommandozeilen-Tool zu interagieren.
 lang: de-DE
-metaTitle: The Make aliases - Dotfiles (DE)
+metaTitle: Make Aliase - Dotfiles (DE)
 permalink: /de/aliases/make/
-
-meta:
-  - name: keywords
-    content: aliases, make, makefile, linux, macos, shell, terminal, windows
-  - name: twitter:card
-    content: The Make aliases are a collection of aliases that allow you to interact with the `make` command line tool. Make is a tool which controls the generation of executables and other non-source files of a program from the program's source files.
-  - name: twitter:description
-    content: The Make aliases are a collection of aliases that allow you to interact with the `make` command line tool. Make is a tool which controls the generation of executables and other non-source files of a program from the program's source files.
-  - name: twitter:title
-    content: The Make aliases - Dotfiles (DE)
-  - name: og:title
-    content: The Make aliases - Dotfiles (DE)
-  - name: og:description
-    content: The Make aliases are a collection of aliases that allow you to interact with the `make` command line tool. Make is a tool which controls the generation of executables and other non-source files of a program from the program's source files.
-  - name: og:image:alt
-    content: Dotfiles - Simply designed to fit your shell life
-  - name: og:locale
-    content: en_GB
 ---
 
-# Make aliases
+# Make Aliase
 
-The `make.aliases.sh` file creates helpful shortcut aliases for running `make`
-commands.
+Die Datei `make.aliases.sh` erstellt hilfreiche Shortcut-Aliase zum Ausführen von `make`
+Befehlen.
 
 ## Make
 
-[Make](<https://en.wikipedia.org/wiki/Make_(software)>) is a tool which controls
-the generation of executables and other non-source files of a program from the
-program's source files.
+[Make](<https://de.wikipedia.org/wiki/Make>) ist ein Werkzeug, das die
+Erzeugung von ausführbaren Dateien und anderen Nicht-Quelldateien eines Programms aus den
+Quelldateien des Programms steuert.
 
-Make gets its knowledge of how to build your program from a file called the
-`Makefile`, which lists each of the non-source files and how to compute it from
-other files.
+Make erhält sein Wissen darüber, wie Ihr Programm gebaut wird, aus einer Datei namens
+`Makefile`, die jede der Nicht-Quelldateien auflistet und wie sie aus
+anderen Dateien berechnet wird.
 
-| Alias | Befehl                | Beschreibung                                                               |
+| Alias | Befehl         | Beschreibung                  |
 | ----- | -------------- | ----------------------------- |
-| mk    | `make`         | Run `make` with no arguments. |
-| mkc   | `make clean`   | Run `make clean`.             |
-| mkd   | `make doc`     | Run `make doc`.               |
-| mkf   | `make format`  | Run `make format`.            |
-| mkh   | `make help`    | Run `make help`.              |
-| mki   | `make install` | Run `make Installieren`.           |
-| mkr   | `make run`     | Run `make run`.               |
-| mkt   | `make test`    | Run `make test`.              |
+| mk    | `make`         | Führe `make` ohne Argumente aus. |
+| mkc   | `make clean`   | Führe `make clean` aus.             |
+| mkd   | `make doc`     | Führe `make doc` aus.               |
+| mkf   | `make format`  | Führe `make format` aus.            |
+| mkh   | `make help`    | Führe `make help` aus.              |
+| mki   | `make install` | Führe `make install` aus.           |
+| mkr   | `make run`     | Führe `make run` aus.               |
+| mkt   | `make test`    | Führe `make test` aus.              |

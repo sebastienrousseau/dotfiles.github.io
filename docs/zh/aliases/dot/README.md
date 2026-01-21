@@ -1,46 +1,42 @@
 ---
-description: The dot command is the unified entry point for managing your dotfiles, learning features, and verifying system health.
+description: dot 命令是管理 dotfiles、学习功能和验证系统健康的统一入口点。
 lang: zh-CN
-metaTitle: The dot command - Dotfiles (CN)
+metaTitle: dot 命令 - Dotfiles (CN)
 permalink: /zh/aliases/dot/
-
-meta:
-  - name: keywords
-    content: dot, cli, learn, doctor, update, dotfiles
 ---
 
-# The `dot` Command
+# `dot` 命令
 
-The `dot` command is the new, unified interface for interacting with your dotfiles. It wraps `chezmoi` and other utilities to provide a seamless experience.
+`dot` 命令是用于与您的 dotfiles 交互的新的统一接口。它封装了 `chezmoi` 和其他实用程序，以提供无缝体验。
 
-## Usage
+## 用法
 
 ```bash
 dot [command]
 ```
 
-## Commands
+## 命令
 
-| Command      | Description                                                                                                                      |
-| :----------- | :------------------------------------------------------------------------------------------------------------------------------- |
-| `dot learn`  | **Interactive Mode**: Launches a tour of the Modern Core tools (Atuin, Yazi, Zellij) and AI features.                            |
-| `dot doctor` | **Health 检查**: Verifies that your system is correctly configured and all dependencies are installed. (Wraps `chezmoi doctor`) |
-| `dot update` | **更新 System**: Pulls the latest changes from the repository and reapplies them. (Wraps `chezmoi 更新`)                     |
-| `dot help`   | **Help**: Displays usage information.                                                                                            |
+| 命令         | 描述                                                                                   |
+| :----------- | :------------------------------------------------------------------------------------- |
+| `dot learn`  | **交互模式**: 启动 Modern Core 工具 (Atuin, Yazi, Zellij) 和 AI 功能的导览。           |
+| `dot doctor` | **健康检查**: 验证您的系统配置是否正确以及所有依赖项是否已安装。（封装 `chezmoi doctor`） |
+| `dot update` | **更新系统**: 从存储库中拉取最新更改并重新应用它们。（封装 `chezmoi update`）          |
+| `dot help`   | **帮助**: 显示用法信息。                                                               |
 
-## Examples
+## 示例
 
-### Interactive Learning
+### 交互式学习
 
-Start the guided tour to learn new keybindings:
+开始指导导览以学习新的按键绑定：
 
 ```bash
 dot learn
 ```
 
-### System Verification
+### 系统验证
 
-Check if everything is running smoothly:
+检查一切是否运行顺利：
 
 ```bash
 dot doctor

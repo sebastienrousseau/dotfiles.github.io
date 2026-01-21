@@ -1,151 +1,133 @@
 ---
-description: The GNU Core Utilities aliases, provide powerful commands that create shortcuts to frequently used Core utilities commands. All of these functions and aliases are wrappers around the GNU Core Utilities which are the basic, fundamental tools of a GNU/Linux system.
+description: Os aliases do GNU Core Utilities fornecem comandos poderosos que criam atalhos para comandos Core utilities frequentemente usados. Todas essas funções e aliases são wrappers em torno dos Utilitários GNU Core, que são as ferramentas básicas e fundamentais de um sistema GNU/Linux.
 lang: pt-BR
-metaTitle: The GNU Core Utilities aliases - Dotfiles (BR)
+metaTitle: Aliases do GNU Core Utilities - Dotfiles (BR)
 permalink: /pt/aliases/gnu/
-
-meta:
-  - name: keywords
-    content: aliases, git, gitconfig, gitconfig, git, configuration, dotfiles, linux, macos, shell, windows, bash, zsh
-  - name: twitter:card
-    content: The GNU Core Utilities aliases, provide powerful commands that create shortcuts to frequently used Core utilities commands. All of these functions and aliases are wrappers around the GNU Core Utilities which are the basic, fundamental tools of a GNU/Linux system.
-  - name: twitter:description
-    content: The GNU Core Utilities aliases, provide powerful commands that create shortcuts to frequently used Core utilities commands. All of these functions and aliases are wrappers around the GNU Core Utilities which are the basic, fundamental tools of a GNU/Linux system.
-  - name: twitter:title
-    content: The GNU Core Utilities aliases - Dotfiles (BR)
-  - name: og:title
-    content: The GNU Core Utilities aliases - Dotfiles (BR)
-  - name: og:description
-    content: The GNU Core Utilities aliases, provide powerful commands that create shortcuts to frequently used Core utilities commands. All of these functions and aliases are wrappers around the GNU Core Utilities which are the basic, fundamental tools of a GNU/Linux system.
-  - name: og:image:alt
-    content: Dotfiles - Simply designed to fit your shell life
-  - name: og:locale
-    content: en_GB
 ---
 
-# Aliases de GNU Core Utilities
+# Aliases do GNU Core Utilities
 
-The `gnucoreutils-aliases.sh` file creates helpful shortcut aliases for many
-commonly used [GNU coreutils][coreutils] commands.
+O arquivo `gnucoreutils-aliases.sh` cria aliases de atalho úteis para muitos
+comandos [GNU coreutils][coreutils] comumente usados.
 
-The GNU Core Utilities aliases, provide powerful commands that create shortcuts
-to frequently used Core utilities commands. All of these functions and aliases
-are wrappers around the GNU Core Utilities which are the basic, fundamental
-tools of a GNU/Linux system.
+Os aliases do GNU Core Utilities fornecem comandos poderosos que criam atalhos
+para comandos Core utilities frequentemente usados. Todas essas funções e aliases
+são wrappers em torno dos Utilitários GNU Core, que são as ferramentas básicas e fundamentais
+de um sistema GNU/Linux.
 
-These are the core utilities which are expected to exist on every operating
-system.
+Esses são os utilitários principais que se espera que existam em todos os sistemas
+operacionais.
 
-## GNU coreutils aliases
+## Aliases GNU coreutils
 
-| Alias     | Command      | Description                                                                                                                                                                              |
+| Alias     | Comando      | Descrição                                                                                                                                                                                |
 | --------- | ------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| b2sum     | `gb2sum`     | Imprimir or Verificar BLAKE2b (512-bit) checksums.                                                                                                                                              |
-| base32    | `gbase32`    | Base32 encode or decode arquivo, or standard input, to standard output.                                                                                                                     |
-| base64    | `gbase64`    | Base64 encode or decode arquivo, or standard input, to standard output.                                                                                                                     |
-| basename  | `gbasename`  | Imprimir NAME with any leading diretório components removed.                                                                                                                                |
-| basenc    | `gbasenc`    | Encode or decode arquivo, or standard input, to standard output.                                                                                                                            |
-| cat       | `gcat`       | Concatenate arquivo(s), or standard input, to standard output.                                                                                                                              |
-| chcon     | `gchcon`     | Change the SELinux security context of each arquivo to CONTEXT.                                                                                                                             |
-| chgrp     | `gchgrp`     | Change the group of each arquivo to GROUP.                                                                                                                                                  |
-| chmod     | `gchmod`     | Change the mode of each arquivo to MODE.                                                                                                                                                    |
-| chown     | `gchownn`    | Change the owner and/or group of each arquivo to OWNER and/or GROUP.                                                                                                                        |
-| chroot    | `gchroot`    | Run COMMAND with root diretório set to NEWROOT.                                                                                                                                          |
-| cksum     | `gcksum`     | Imprimir CRC checksum and byte counts.                                                                                                                                                      |
-| comm      | `gcomm`      | Compare two sorted arquivos line by line.                                                                                                                                                   |
-| cp        | `gcp`        | Copiar SOURCE to DEST, or multiple SOURCE(s) to diretório.                                                                                                                                 |
-| csplit    | `gcsplit`    | Split a arquivo into sections determined by context lines.                                                                                                                                  |
-| cut       | `gcut`       | Imprimir selected parts of lines from each arquivo to standard output.                                                                                                                         |
-| date      | `gdate`      | Imprimir or set the system date and time.                                                                                                                                                   |
-| dd        | `gdd`        | Copiar a arquivo, converting and formatting according to the operands.                                                                                                                        |
-| df        | `gdf`        | Report arquivo system disk space usage.                                                                                                                                                     |
-| dir       | `gdir`       | Listar diretório contents.                                                                                                                                                                 |
-| dircolors | `gdircolors` | Convert ls' output colors to dircolors' format.                                                                                                                                          |
-| dirname   | `gdirname`   | Imprimir NAME with its last non-slash component and trailing slashes removed.                                                                                                               |
-| du        | `gdu`        | Estimate arquivo space usage.                                                                                                                                                               |
-| echo      | `gecho`      | Display a line of text.                                                                                                                                                                  |
-| env       | `genv`       | Imprimir the current environment.                                                                                                                                                           |
-| expand    | `gexpand`    | Convert tabs in each arquivo to spaces, writing to standard output.                                                                                                                         |
-| expr      | `gexpr`      | Evaluate EXPRESSION.                                                                                                                                                                     |
-| factor    | `gfactor`    | Imprimir prime factors of each given number.                                                                                                                                                |
-| false     | `gfalse`     | Do nothing, unsuccessfully.                                                                                                                                                              |
-| fmt       | `gfmt`       | Reformat paragraph text.                                                                                                                                                                 |
-| fold      | `gfold`      | Wrap each input line to fit in specified width.                                                                                                                                          |
-| grep      | `ggrep`      | Imprimir lines matching a pattern.                                                                                                                                                          |
-| groups    | `ggroups`    | Imprimir the groups a user is in.                                                                                                                                                           |
-| head      | `ghead`      | Imprimir the first 10 lines of each arquivo to standard output.                                                                                                                                |
-| hostid    | `ghostid`    | Imprimir the hostid.                                                                                                                                                                        |
-| id        | `gid`        | Imprimir real and effective user and group IDs.                                                                                                                                             |
-| install   | `ginstall`   | Copiar arquivos and set attributes.                                                                                                                                                           |
-| join      | `gjoin`      | Join lines of two arquivos on a common field.                                                                                                                                               |
-| kill      | `gkill`      | Send a signal to a process.                                                                                                                                                              |
-| link      | `glink`      | Criar a link to a arquivo.                                                                                                                                                                 |
-| ln        | `gln`        | Make links between arquivos.                                                                                                                                                                |
-| logname   | `glogname`   | Imprimir the user name associated with the current effective user ID.                                                                                                                       |
-| ls        | `gls`        | Listar diretório contents.                                                                                                                                                                 |
-| md5sum    | `gmd5sum`    | Imprimir or Verificar MD5 (128-bit) checksums.                                                                                                                                                  |
-| mkdir     | `gmkdir`     | Criar the diretório(ies), if they do not already exist.                                                                                                                                 |
-| mkfifo    | `gmkfifo`    | Criar named pipes (FIFOs) named PIPE.                                                                                                                                                   |
-| mknod     | `gmknod`     | Criar special arquivos.                                                                                                                                                                    |
-| mktemp    | `gmktemp`    | Criar a temporary arquivo or diretório, safely.                                                                                                                                            |
-| mv        | `gmv`        | Mover SOURCE to DEST, or multiple SOURCE(s) to diretório.                                                                                                                                 |
-| nice      | `gnice`      | Run a utility with modified scheduling priority.                                                                                                                                         |
-| nl        | `gnl`        | Number lines of arquivos, writing to standard output.                                                                                                                                       |
-| nohup     | `gnohup`     | Run a command immune to hangups, with output to a non-tty.                                                                                                                               |
-| nproc     | `gnproc`     | Imprimir the number of processing units available.                                                                                                                                          |
-| numfmt    | `gnumfmt`    | Reformat numbers.                                                                                                                                                                        |
-| od        | `god`        | Dump a arquivo in octal and other formats.                                                                                                                                                  |
-| paste     | `gpaste`     | Merge lines of arquivos.                                                                                                                                                                    |
-| pathchk   | `gpathchk`   | Verificar whether a arquivo name is valid or portable.                                                                                                                                          |
-| pinky     | `gpinky`     | Imprimir information about users.                                                                                                                                                           |
-| pr        | `gpr`        | Paginate arquivo for printing.                                                                                                                                                              |
-| printenv  | `gprintenv`  | Imprimir the current environment.                                                                                                                                                           |
-| printf    | `gprintf`    | Format and Imprimir data.                                                                                                                                                                   |
-| ptx       | `gptx`       | Display the contents of a terminal control arquivo.                                                                                                                                         |
-| pwd       | `gpwd`       | Imprimir the name of the current working diretório.                                                                                                                                         |
-| readlink  | `greadlink`  | Imprimir value of a symbolic link or canonical arquivo name.                                                                                                                                   |
-| realpath  | `grealpath`  | Canonicalize existing arquivo names.                                                                                                                                                        |
-| rm        | `grm`        | Remover (unlink) the arquivo(s).                                                                                                                                                             |
-| rmdir     | `grmdir`     | Remover the diretório(ies), if they are empty.                                                                                                                                            |
-| runcon    | `gruncon`    | Run a command with a different SELinux security context.                                                                                                                                 |
-| sed       | `gsed`       | Stream editor for filtering and transforming text.                                                                                                                                       |
-| seq       | `gseq`       | Imprimir a sequence of numbers.                                                                                                                                                             |
-| sha1sum   | `gsha1sum`   | Imprimir or Verificar SHA1 (160-bit) checksums.                                                                                                                                                 |
-| sha224sum | `gsha224sum` | Imprimir or Verificar SHA224 (224-bit) checksums.                                                                                                                                               |
-| sha256sum | `gsha256sum` | Imprimir or Verificar SHA256 (256-bit) checksums.                                                                                                                                               |
-| sha384sum | `gsha384sum` | Imprimir or Verificar SHA384 (384-bit) checksums.                                                                                                                                               |
-| sha512sum | `gsha512sum` | Imprimir or Verificar SHA512 (512-bit) checksums.                                                                                                                                               |
-| shred     | `gshred`     | Overwrite a arquivo to hide its contents, and optionally Excluir it.                                                                                                                         |
-| shuf      | `gshuf`      | Output a random permutation of the input lines.                                                                                                                                          |
-| sleep     | `gsleep`     | Pause for NUMBER seconds.                                                                                                                                                                |
-| sort      | `gsort`      | Sort lines of text arquivos.                                                                                                                                                                |
-| split     | `gsplit`     | Split a arquivo into pieces.                                                                                                                                                                |
-| stat      | `gstat`      | Display arquivo or arquivo system status.                                                                                                                                                      |
-| stdbuf    | `gstdbuf`    | Run COMMAND with modified buffering operations for its standard streams.                                                                                                                 |
-| stty      | `gstty`      | Get and set terminal attributes.                                                                                                                                                         |
-| sum       | `gsum`       | Imprimir CRC checksum and byte counts.                                                                                                                                                      |
-| sync      | `gsync`      | Invoke sync to flush filesystem buffers.                                                                                                                                                 |
-| tac       | `gtac`       | Concatenate and Imprimir arquivos in reverse.                                                                                                                                                  |
-| tail      | `gtail`      | Output the last part of arquivos.                                                                                                                                                           |
-| tee       | `gtee`       | Read from standard input and write to standard output and arquivos.                                                                                                                         |
-| test      | `gtest`      | Evaluate conditional expression.                                                                                                                                                         |
-| timeout   | `gtimeout`   | Run a command with a time limit.                                                                                                                                                         |
-| touch     | `gtouch`     | Change arquivo timestamps.                                                                                                                                                                  |
-| tr        | `gtr`        | Translate, squeeze, and/or Excluir characters.                                                                                                                                            |
-| true      | `gtrue`      | Do nothing, successfully.                                                                                                                                                                |
-| truncate  | `gtruncate`  | truncate: Shrink or extend the size of a arquivo to the specified size.                                                                                                                     |
-| tsort     | `gtsort`     | Topological sort.                                                                                                                                                                        |
-| tty       | `gtty`       | Imprimir arquivo name of terminal connected to standard input.                                                                                                                                 |
-| uname     | `guname`     | Imprimir certain system information.                                                                                                                                                        |
-| unexpand  | `gunexpand`  | unexpand: Convert spaces in each arquivo to tabs, writing to standard output.                                                                                                               |
-| uniq      | `guniq`      | Filter adjacent matching lines from INPUT (or standard input), writing to OUTPUT (or standard output).                                                                                   |
-| unlink    | `gunlink`    | Call the unlink function to Remover the specified arquivo.                                                                                                                                   |
-| uptime    | `guptime`    | Imprimir the current time, the length of time the system has been up, the number of users on the system, and the average number of jobs in the run queue over the last 1, 5 and 15 minutes. |
-| users     | `gusers`     | Output who is currently logged in.                                                                                                                                                       |
-| vdir      | `gvdir`      | Listar information about the arquivos (the current diretório by default).                                                                                                                     |
-| wc        | `gwc`        | Imprimir newline, word, and byte counts for each arquivo, and a total line if more than one arquivo is specified.                                                                                 |
-| who       | `gwho`       | Imprimir information about users who are currently logged in.                                                                                                                               |
-| whoami    | `gwhoami`    | Imprimir the user name associated with the current effective user ID.                                                                                                                       |
-| yes       | `gyes`       | Repeatedly output a line with all specified STRING(s), or 'y'.                                                                                                                           |
+| b2sum     | `gb2sum`     | Imprimir ou verificar somas de verificação BLAKE2b (512 bits).                                                                                                                           |
+| base32    | `gbase32`    | Codificar ou decodificar Base32 de ARQUIVO, ou entrada padrão, para saída padrão.                                                                                                        |
+| base64    | `gbase64`    | Codificar ou decodificar Base64 de ARQUIVO, ou entrada padrão, para saída padrão.                                                                                                        |
+| basename  | `gbasename`  | Imprimir NOME com quaisquer componentes de diretório principais removidos.                                                                                                               |
+| basenc    | `gbasenc`    | Codificar ou decodificar ARQUIVO, ou entrada padrão, para saída padrão.                                                                                                                  |
+| cat       | `gcat`       | Concatenar ARQUIVO(s), ou entrada padrão, para saída padrão.                                                                                                                             |
+| chcon     | `gchcon`     | Alterar o contexto de segurança SELinux de cada ARQUIVO para CONTEXTO.                                                                                                                   |
+| chgrp     | `gchgrp`     | Alterar o grupo de cada ARQUIVO para GRUPO.                                                                                                                                              |
+| chmod     | `gchmod`     | Alterar o modo de cada ARQUIVO para MODO.                                                                                                                                                |
+| chown     | `gchownn`    | Alterar o proprietário e/ou grupo de cada ARQUIVO para PROPRIETÁRIO e/ou GRUPO.                                                                                                          |
+| chroot    | `gchroot`    | Executar COMANDO com o diretório raiz definido para NOVORAIZ.                                                                                                                            |
+| cksum     | `gcksum`     | Imprimir contagem de bytes e soma de verificação CRC.                                                                                                                                    |
+| comm      | `gcomm`      | Comparar dois arquivos classificados linha por linha.                                                                                                                                    |
+| cp        | `gcp`        | Copiar ORIGEM para DESTINO, ou múltiplas ORIGEM(s) para DIRETÓRIO.                                                                                                                       |
+| csplit    | `gcsplit`    | Dividir um arquivo em seções determinadas por linhas de contexto.                                                                                                                        |
+| cut       | `gcut`       | Imprimir partes selecionadas de linhas de cada ARQUIVO para saída padrão.                                                                                                                |
+| date      | `gdate`      | Imprimir ou definir a data e hora do sistema.                                                                                                                                            |
+| dd        | `gdd`        | Copiar um arquivo, convertendo e formatando de acordo com os operandos.                                                                                                                  |
+| df        | `gdf`        | Relatar uso de espaço em disco do sistema de arquivos.                                                                                                                                   |
+| dir       | `gdir`       | Listar conteúdo do diretório.                                                                                                                                                            |
+| dircolors | `gdircolors` | Converter cores de saída do ls para o formato dircolors.                                                                                                                                 |
+| dirname   | `gdirname`   | Imprimir NOME com seu último componente não-barra e barras finais removidas.                                                                                                             |
+| du        | `gdu`        | Estimar uso de espaço em arquivo.                                                                                                                                                        |
+| echo      | `gecho`      | Exibir uma linha de texto.                                                                                                                                                               |
+| env       | `genv`       | Imprimir o ambiente atual.                                                                                                                                                               |
+| expand    | `gexpand`    | Converter guias em cada ARQUIVO para espaços, escrevendo na saída padrão.                                                                                                                |
+| expr      | `gexpr`      | Avaliar EXPRESSÃO.                                                                                                                                                                       |
+| factor    | `gfactor`    | Imprimir fatores primos de cada número dado.                                                                                                                                             |
+| false     | `gfalse`     | Não fazer nada, sem sucesso.                                                                                                                                                             |
+| fmt       | `gfmt`       | Reformatar texto de parágrafo.                                                                                                                                                           |
+| fold      | `gfold`      | Envolver cada linha de entrada para caber na largura especificada.                                                                                                                       |
+| grep      | `ggrep`      | Imprimir linhas correspondentes a um padrão.                                                                                                                                             |
+| groups    | `ggroups`    | Imprimir os grupos em que um usuário está.                                                                                                                                               |
+| head      | `ghead`      | Imprimir as primeiras 10 linhas de cada ARQUIVO para saída padrão.                                                                                                                       |
+| hostid    | `ghostid`    | Imprimir o hostid.                                                                                                                                                                       |
+| id        | `gid`        | Imprimir IDs de usuário e grupo reais e efetivos.                                                                                                                                        |
+| install   | `ginstall`   | Copiar arquivos e definir atributos.                                                                                                                                                     |
+| join      | `gjoin`      | Juntar linhas de dois arquivos em um campo comum.                                                                                                                                        |
+| kill      | `gkill`      | Enviar um sinal para um processo.                                                                                                                                                        |
+| link      | `glink`      | Criar um link para um arquivo.                                                                                                                                                           |
+| ln        | `gln`        | Fazer links entre arquivos.                                                                                                                                                              |
+| logname   | `glogname`   | Imprimir o nome de usuário associado ao ID de usuário efetivo atual.                                                                                                                     |
+| ls        | `gls`        | Listar conteúdo do diretório.                                                                                                                                                            |
+| md5sum    | `gmd5sum`    | Imprimir ou verificar somas de verificação MD5 (128 bits).                                                                                                                               |
+| mkdir     | `gmkdir`     | Criar o(s) DIRETÓRIO(s), se eles ainda não existirem.                                                                                                                                    |
+| mkfifo    | `gmkfifo`    | Criar pipes nomeados (FIFOs) chamados PIPE.                                                                                                                                              |
+| mknod     | `gmknod`     | Criar arquivos especiais.                                                                                                                                                                |
+| mktemp    | `gmktemp`    | Criar um arquivo ou diretório temporário, com segurança.                                                                                                                                 |
+| mv        | `gmv`        | Mover ORIGEM para DESTINO, ou múltiplas ORIGEM(s) para DIRETÓRIO.                                                                                                                        |
+| nice      | `gnice`      | Executar um utilitário com prioridade de agendamento modificada.                                                                                                                         |
+| nl        | `gnl`        | Numerar linhas de arquivos, escrevendo na saída padrão.                                                                                                                                  |
+| nohup     | `gnohup`     | Executar um comando imune a desligamentos, com saída para um não-tty.                                                                                                                    |
+| nproc     | `gnproc`     | Imprimir o número de unidades de processamento disponíveis.                                                                                                                              |
+| numfmt    | `gnumfmt`    | Reformatar números.                                                                                                                                                                      |
+| od        | `god`        | Despejar um arquivo em octal e outros formatos.                                                                                                                                          |
+| paste     | `gpaste`     | Mesclar linhas de arquivos.                                                                                                                                                              |
+| pathchk   | `gpathchk`   | Verificar se um nome de arquivo é válido ou portátil.                                                                                                                                    |
+| pinky     | `gpinky`     | Imprimir informações sobre usuários.                                                                                                                                                     |
+| pr        | `gpr`        | Paginar ARQUIVO para impressão.                                                                                                                                                          |
+| printenv  | `gprintenv`  | Imprimir o ambiente atual.                                                                                                                                                               |
+| printf    | `gprintf`    | Formatar e imprimir dados.                                                                                                                                                               |
+| ptx       | `gptx`       | Exibir o conteúdo de um arquivo de controle de terminal.                                                                                                                                 |
+| pwd       | `gpwd`       | Imprimir o nome do diretório de trabalho atual.                                                                                                                                          |
+| readlink  | `greadlink`  | Imprimir valor de um link simbólico ou nome de arquivo canônico.                                                                                                                         |
+| realpath  | `grealpath`  | Canonicalizar nomes de arquivos existentes.                                                                                                                                              |
+| rm        | `grm`        | Remover (desvincular) o(s) ARQUIVO(s).                                                                                                                                                   |
+| rmdir     | `grmdir`     | Remover o(s) DIRETÓRIO(s), se estiverem vazios.                                                                                                                                          |
+| runcon    | `gruncon`    | Executar um comando com um contexto de segurança SELinux diferente.                                                                                                                      |
+| sed       | `gsed`       | Editor de fluxo para filtrar e transformar texto.                                                                                                                                        |
+| seq       | `gseq`       | Imprimir uma sequência de números.                                                                                                                                                       |
+| sha1sum   | `gsha1sum`   | Imprimir ou verificar somas de verificação SHA1 (160 bits).                                                                                                                              |
+| sha224sum | `gsha224sum` | Imprimir ou verificar somas de verificação SHA224 (224 bits).                                                                                                                            |
+| sha256sum | `gsha256sum` | Imprimir ou verificar somas de verificação SHA256 (256 bits).                                                                                                                            |
+| sha384sum | `gsha384sum` | Imprimir ou verificar somas de verificação SHA384 (384 bits).                                                                                                                            |
+| sha512sum | `gsha512sum` | Imprimir ou verificar somas de verificação SHA512 (512 bits).                                                                                                                            |
+| shred     | `gshred`     | Sobrescrever um arquivo para ocultar seu conteúdo e, opcionalmente, excluí-lo.                                                                                                           |
+| shuf      | `gshuf`      | Emitir uma permutação aleatória das linhas de entrada.                                                                                                                                   |
+| sleep     | `gsleep`     | Pausar por NÚMERO segundos.                                                                                                                                                              |
+| sort      | `gsort`      | Classificar linhas de arquivos de texto.                                                                                                                                                 |
+| split     | `gsplit`     | Dividir um arquivo em pedaços.                                                                                                                                                           |
+| stat      | `gstat`      | Exibir status do arquivo ou sistema de arquivos.                                                                                                                                         |
+| stdbuf    | `gstdbuf`    | Executar COMANDO com operações de buffer modificadas para seus fluxos padrão.                                                                                                            |
+| stty      | `gstty`      | Obter e definir atributos de terminal.                                                                                                                                                   |
+| sum       | `gsum`       | Imprimir contagem de bytes e soma de verificação CRC.                                                                                                                                    |
+| sync      | `gsync`      | Invocar sync para liberar buffers do sistema de arquivos.                                                                                                                                |
+| tac       | `gtac`       | Concatenar e imprimir arquivos em reverso.                                                                                                                                               |
+| tail      | `gtail`      | Saída da última parte dos arquivos.                                                                                                                                                      |
+| tee       | `gtee`       | Ler da entrada padrão e escrever na saída padrão e arquivos.                                                                                                                             |
+| test      | `gtest`      | Avaliar expressão condicional.                                                                                                                                                           |
+| timeout   | `gtimeout`   | Executar um comando com um limite de tempo.                                                                                                                                              |
+| touch     | `gtouch`     | Alterar carimbos de data/hora do arquivo.                                                                                                                                                |
+| tr        | `gtr`        | Traduzir, apertar e/ou excluir caracteres.                                                                                                                                               |
+| true      | `gtrue`      | Não fazer nada, com sucesso.                                                                                                                                                             |
+| truncate  | `gtruncate`  | truncar: Encolher ou estender o tamanho de um arquivo para o tamanho especificado.                                                                                                       |
+| tsort     | `gtsort`     | Classificação topológica.                                                                                                                                                                |
+| tty       | `gtty`       | Imprimir nome do arquivo do terminal conectado à entrada padrão.                                                                                                                         |
+| uname     | `guname`     | Imprimir certas informações do sistema.                                                                                                                                                  |
+| unexpand  | `gunexpand`  | unexpand: Converter espaços em cada ARQUIVO para guias, escrevendo na saída padrão.                                                                                                      |
+| uniq      | `guniq`      | Filtrar linhas correspondentes adjacentes da ENTRADA (ou entrada padrão), escrevendo na SAÍDA (ou saída padrão).                                                                         |
+| unlink    | `gunlink`    | Chamar a função unlink para remover o ARQUIVO especificado.                                                                                                                              |
+| uptime    | `guptime`    | Imprimir a hora atual, o tempo que o sistema está ligado, o número de usuários no sistema e o número médio de trabalhos na fila de execução nos últimos 1, 5 e 15 minutos.               |
+| users     | `gusers`     | Exibir quem está logado atualmente.                                                                                                                                                      |
+| vdir      | `gvdir`      | Listar informações sobre os ARQUIVOS (o diretório atual por padrão).                                                                                                                     |
+| wc        | `gwc`        | Imprimir contagem de nova linha, palavra e byte para cada ARQUIVO, e uma linha total se mais de um ARQUIVO for especificado.                                                             |
+| who       | `gwho`       | Imprimir informações sobre usuários que estão logados atualmente.                                                                                                                        |
+| whoami    | `gwhoami`    | Imprimir o nome de usuário associado ao ID de usuário efetivo atual.                                                                                                                     |
+| yes       | `gyes`       | Repetidamente emitir uma linha com todas as STRING(s) especificadas, ou 'y'.                                                                                                             |
 
 [coreutils]: https://www.gnu.org/software/coreutils/

@@ -1,50 +1,32 @@
 ---
-description: The Interactive aliases are a collection of aliases that allow you to interact with your shell and terminal in a more interactive way.
+description: Os aliases Interativos são uma coleção de aliases que permitem interagir com seu shell e terminal de uma maneira mais interativa.
 lang: pt-BR
-metaTitle: Interactive aliases - Dotfiles (BR)
+metaTitle: Aliases Interativos - Dotfiles (BR)
 permalink: /pt/aliases/interactive/
-
-meta:
-  - name: keywords
-    content: aliases, bash, cp, interactive, linux, ln, macos, mv, rm, shell, terminal, windows
-  - name: twitter:card
-    content: The Interactive aliases are a collection of aliases that allow you to interact with your shell and terminal in a more interactive way.
-  - name: twitter:description
-    content: The Interactive aliases are a collection of aliases that allow you to interact with your shell and terminal in a more interactive way.
-  - name: twitter:title
-    content: Interactive aliases - Dotfiles (BR)
-  - name: og:title
-    content: Interactive aliases - Dotfiles (BR)
-  - name: og:description
-    content: The Interactive aliases are a collection of aliases that allow you to interact with your shell and terminal in a more interactive way.
-  - name: og:image:alt
-    content: Dotfiles - Simply designed to fit your shell life
-  - name: og:locale
-    content: en_GB
 ---
 
-# Interactive aliases
+# Aliases Interativos
 
-The `interactive.aliases.sh` file creates helpful shortcut aliases for enabling
-interactive mode to critical common functionality in the terminal.
+O arquivo `interactive.aliases.sh` cria aliases de atalho úteis para habilitar
+o modo interativo para funcionalidades comuns críticas no terminal.
 
-The Interactive aliases are a collection of aliases that allow you to interact
-with your shell and terminal in a more interactive way.
+Os aliases Interativos são uma coleção de aliases que permitem interagir
+com seu shell e terminal de uma maneira mais interativa.
 
-## Interactive mode
+## Modo interativo
 
-[Interactive mode](https://en.wikipedia.org/wiki/Interactive_mode) is a mode in
-which the user is prompted for input before the command is executed.
+[Modo interativo](https://pt.wikipedia.org/wiki/Interatividade) é um modo no
+qual o usuário é solicitado a fornecer entrada antes que o comando seja executado.
 
-This is a useful feature for commands such as `cp`, `mv`, `rm`, and `ln` that
-can be used to overwrite files or directories.
+Este é um recurso útil para comandos como `cp`, `mv`, `rm` e `ln` que
+podem ser usados para substituir arquivos ou diretórios.
 
-| Alias | Comando               | Descrição                                                                  |
+| Alias | Comando                 | Descrição                                                    |
 | ----- | ----------------------- | ------------------------------------------------------------ |
-| bin   | `rm -fr ${HOME}/.Trash` | Remover all arquivos in the trash.                               |
-| cp    | `cp -vi`                | Copiar arquivos and directories.                                  |
-| del   | `rm -rfvi`              | Remover a arquivo or diretório.                                  |
-| ln    | `ln -vi`                | Interactive symbolic link.                                   |
-| mv    | `mv -vi`                | Mover arquivos interactively (ask before overwrite) and verbose. |
-| rm    | `rm -vi`                | Prompts for every arquivo before removing.                      |
-| zap   | `rm -vi`                | Remover arquivos interactively (ask before overwrite).           |
+| bin   | `rm -fr ${HOME}/.Trash` | Remover todos os arquivos na lixeira.                        |
+| cp    | `cp -vi`                | Copiar arquivos e diretórios.                                |
+| del   | `rm -rfvi`              | Remover um arquivo ou diretório.                             |
+| ln    | `ln -vi`                | Link simbólico interativo.                                   |
+| mv    | `mv -vi`                | Mover arquivos interativamente (perguntar antes de sobrescrever) e detalhado. |
+| rm    | `rm -vi`                | Solicita confirmação para cada arquivo antes de remover.     |
+| zap   | `rm -vi`                | Remover arquivos interativamente (perguntar antes de sobrescrever). |

@@ -1,55 +1,37 @@
 ---
-description: The Chmod aliases allow to change the permissions (or access mode) of a file or directory.
+description: Chmod 别名允许更改文件或目录的权限（或访问模式）。
 lang: zh-CN
-metaTitle: Chmod aliases - Dotfiles (CN)
+metaTitle: Chmod 别名 - Dotfiles (CN)
 permalink: /zh/aliases/chmod/
-
-meta:
-  - name: twitter:card
-    content: The Chmod aliases allow to change the permissions (or access mode) of a file or directory.
-  - name: twitter:description
-    content: The Chmod aliases allow to change the permissions (or access mode) of a file or directory.
-  - name: twitter:title
-    content: Chmod aliases - Dotfiles (CN)
-  - name: og:title
-    content: Chmod aliases - Dotfiles (CN)
-  - name: og:description
-    content: The Chmod aliases allow to change the permissions (or access mode) of a file or directory.
-  - name: og:image:alt
-    content: Dotfiles - Simply designed to fit your shell life
-  - name: og:locale
-    content: en_GB
 ---
 
-# Chmod aliases
+# Chmod 别名
 
-The `chmod.aliases.sh` file creates helpful shortcut aliases for changing
-file permissions.
+`chmod.aliases.sh` 文件创建了有用的快捷别名，用于更改文件权限。
 
-## Permission
+## 权限
 
-The chmod utility modifies the file mode bits of the listed files as specified
-by the mode operand. It may also be used to modify the Access Control Lists
-(ACLs) associated with the listed files.
+chmod 实用程序根据 mode 操作数的指定修改列出文件的文件模式位。
+它也可用于修改与列出文件关联的访问控制列表 (ACL)。
 
-| Alias  | Command             | Description                                                                                                                                                                                                          |
+| 别名   | 命令                | 描述                                                                                                                                                                                                                 |
 | ------ | ------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 000    | `chmod -R 000`      | (chmod a-rwx) sets permissions so that, (U)ser / owner can't read, can't write and can't execute. (G)roup can't read, can't write and can't execute. (O)thers can't read, can't write and can't execute.             |
-| 400    | `chmod -R 400`      | (chmod a-rw) sets permissions so that, (U)ser / owner can't read, can't write and can execute. (G)roup can't read, can't write and can execute. (O)thers can't read, can't write and can execute.                    |
-| 444    | `chmod -R 444`      | (chmod a-r) sets permissions so that, (U)ser / owner can't read, can't write and can execute. (G)roup can't read, can't write and can execute. (O)thers can't read, can't write and can execute.                     |
-| 600    | `chmod -R 600`      | (chmod a+rwx,u-x,g-rwx,o-rwx) sets permissions so that, (U)ser / owner can read, can write and can't execute. (G)roup can't read, can't write and can't execute. (O)thers can't read, can't write and can't execute. |
-| 644    | `chmod -R 644`      | (chmod a+rwx,u-x,g-wx,o-wx) sets permissions so that, (U)ser / owner can read, can write and can't execute. (G)roup can read, can't write and can't execute. (O)thers can read, can't write and can't execute.       |
-| 666    | `chmod -R 666`      | (chmod a+rwx,u-x,g-x,o-x) sets permissions so that, (U)ser / owner can read, can write and can't execute. (G)roup can read, can write and can't execute. (O)thers can read, can write and can't execute.             |
-| 755    | `chmod -R 755`      | (chmod a+rwx,g-w,o-w) sets permissions so that, (U)ser / owner can read, can write and can execute. (G)roup can read, can't write and can execute. (O)thers can read, can't write and can execute.                   |
-| 764    | `chmod -R 764`      | (chmod a+rwx,g-x,o-wx) sets permissions so that, (U)ser / owner can read, can write and can execute. (G)roup can read, can write and can't execute. (O)thers can read, can't write and can't execute.                |
-| 777    | `chmod -R 777`      | (chmod a+rwx) sets permissions so that, (U)ser / owner can read, can write and can execute. (G)roup can read, can write and can execute. (O)thers can read, can write and can execute.                               |
-| chgrp  | `chgrp -v`          | Change group ownership of 文件 or directories.                                                                                                                                                                      |
-| chgrpr | `chgrp -Rv`         | Change group ownership of 文件 or directories recursively.                                                                                                                                                          |
-| chgrpu | `chgrp -Rv ${USER}` | Change group ownership of 文件 or directories recursively to the current user.                                                                                                                                      |
-| chmod  | `chmod -v`          | Change 文件 mode bits.                                                                                                                                                                                               |
-| chmodr | `chmod -Rv`         | Change 文件 mode bits recursively.                                                                                                                                                                                   |
-| chmodu | `chmod -Rv u+rwX`   | Change 文件 mode bits recursively to the current user.                                                                                                                                                               |
-| chmox  | `chmod +x`          | Make a 文件 executable.                                                                                                                                                                                              |
-| chown  | `chown -v`          | Change 文件 owner and group.                                                                                                                                                                                         |
-| chownr | `chown -Rv`         | Change 文件 owner and group recursively.                                                                                                                                                                             |
-| chownu | `chown -Rv ${USER}` | Change 文件 owner and group recursively to the current user.                                                                                                                                                         |
+| 000    | `chmod -R 000`      | (chmod a-rwx) 设置权限，以便 (U)ser/所有者无法读取、无法写入且无法执行。(G)roup 无法读取、无法写入且无法执行。(O)thers 无法读取、无法写入且无法执行。                                                                |
+| 400    | `chmod -R 400`      | (chmod a-rw) 设置权限，以便 (U)ser/所有者无法读取、无法写入但可以执行。(G)roup 无法读取、无法写入但可以执行。(O)thers 无法读取、无法写入但可以执行。                                                                 |
+| 444    | `chmod -R 444`      | (chmod a-r) 设置权限，以便 (U)ser/所有者无法读取、无法写入但可以执行。(G)roup 无法读取、无法写入但可以执行。(O)thers 无法读取、无法写入但可以执行。                                                                  |
+| 600    | `chmod -R 600`      | (chmod a+rwx,u-x,g-rwx,o-rwx) 设置权限，以便 (U)ser/所有者可以读取、可以写入但无法执行。(G)roup 无法读取、无法写入且无法执行。(O)thers 无法读取、无法写入且无法执行。                                                |
+| 644    | `chmod -R 644`      | (chmod a+rwx,u-x,g-wx,o-wx) 设置权限，以便 (U)ser/所有者可以读取、可以写入但无法执行。(G)roup 可以读取、无法写入且无法执行。(O)thers 可以读取、无法写入且无法执行。                                                  |
+| 666    | `chmod -R 666`      | (chmod a+rwx,u-x,g-x,o-x) 设置权限，以便 (U)ser/所有者可以读取、可以写入但无法执行。(G)roup 可以读取、可以写入但无法执行。(O)thers 可以读取、可以写入但无法执行。                                                    |
+| 755    | `chmod -R 755`      | (chmod a+rwx,g-w,o-w) 设置权限，以便 (U)ser/所有者可以读取、可以写入且可以执行。(G)roup 可以读取、无法写入但可以执行。(O)thers 可以读取、无法写入但可以执行。                                                        |
+| 764    | `chmod -R 764`      | (chmod a+rwx,g-x,o-wx) 设置权限，以便 (U)ser/所有者可以读取、可以写入且可以执行。(G)roup 可以读取、可以写入但无法执行。(O)thers 可以读取、无法写入且无法执行。                                                       |
+| 777    | `chmod -R 777`      | (chmod a+rwx) 设置权限，以便 (U)ser/所有者可以读取、可以写入且可以执行。(G)roup 可以读取、可以写入且可以执行。(O)thers 可以读取、可以写入且可以执行。                                                                |
+| chgrp  | `chgrp -v`          | 更改文件 or 目录的组所有权。                                                                                                                                                                                         |
+| chgrpr | `chgrp -Rv`         | 递归更改文件或目录的组所有权。                                                                                                                                                                                       |
+| chgrpu | `chgrp -Rv ${USER}` | 递归更改文件或目录的组所有权为当前用户。                                                                                                                                                                             |
+| chmod  | `chmod -v`          | 更改文件模式位。                                                                                                                                                                                                     |
+| chmodr | `chmod -Rv`         | 递归更改文件模式位。                                                                                                                                                                                                 |
+| chmodu | `chmod -Rv u+rwX`   | 递归更改文件模式位为当前用户。                                                                                                                                                                                       |
+| chmox  | `chmod +x`          | 使文件可执行。                                                                                                                                                                                                       |
+| chown  | `chown -v`          | 更改文件所有者和组。                                                                                                                                                                                                 |
+| chownr | `chown -Rv`         | 递归更改文件所有者和组。                                                                                                                                                                                             |
+| chownu | `chown -Rv ${USER}` | 递归更改文件所有者和组为当前用户。                                                                                                                                                                                   |

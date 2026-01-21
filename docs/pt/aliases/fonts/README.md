@@ -1,21 +1,22 @@
 ---
-description: fonts aliases for Dotfiles
+description: Aliases de fontes para Dotfiles
 lang: pt-BR
-metaTitle: fonts aliases - Dotfiles
+metaTitle: Aliases de Fontes - Dotfiles (BR)
 permalink: /pt/aliases/fonts/
 ---
 
-# Aliases de Font
+# Aliases de Fontes
 
-Aliases for managing system fonts and caches.
+Aliases para gerenciar fontes do sistema e caches.
 
-## 🔡 Commands
+## 🔡 Comandos
 
-| Alias | Description |
-|-------|-------------|
-| `update-fonts` | Updates the system font cache (`fc-cache -fv`). |
-| `list-fonts`   | Lists all installed font families. |
+| Alias          | Descrição                                        |
+| -------------- | ------------------------------------------------ |
+| `update-fonts` | Atualiza o cache de fontes do sistema (`fc-cache -fv`). |
+| `list-fonts`   | Lista todas as famílias de fontes instaladas.    |
 
-## 📦 Installed Fonts
-- **JetBrainsMono Nerd Font**: Primary terminal font.
-- **Symbols Nerd Font**: Icon fallback.
+## 📦 Fontes Instaladas
+
+- **JetBrainsMono Nerd Font**: Fonte principal do terminal.
+- **Symbols Nerd Font**: Ícone de fallback.

@@ -1,21 +1,21 @@
 ---
-description: compliance aliases for Dotfiles
+description: Alias de cumplimiento normativo para Dotfiles
 lang: es-ES
-metaTitle: compliance aliases - Dotfiles
+metaTitle: Alias de Cumplimiento - Dotfiles (ES)
 permalink: /es/aliases/compliance/
 ---
 
-# Alias de Compliance
+# Alias de Cumplimiento
 
-Tools for regulatory compliance and privacy enforcement.
+Herramientas para el cumplimiento normativo y la aplicación de la privacidad.
 
-## 🛡️ Controls
+## 🛡️ Controles
 
-| Alias | Description |
-|-------|-------------|
-| `privacy-mode` | Disables telemetry for CLI tools (Homebrew, Dotnet, Azure, etc.) for the current session. |
-| `dot-audit` | Displays the recent configuration audit trail (Git history or Audit log). |
+| Alias          | Descripción                                                                               |
+| -------------- | ----------------------------------------------------------------------------------------- |
+| `privacy-mode` | Deshabilita la telemetría para herramientas CLI (Homebrew, Dotnet, Azure, etc.) en la sesión actual. |
+| `dot-audit`    | Muestra el registro de auditoría de configuración reciente (historial de Git o registro de auditoría).                 |
 
-## 📚 Documentation
+## 📚 Documentación
 
-See [COMPLIANCE.md](../../../COMPLIANCE.md) for full SOC2/ISO control mappings.
+Ver [COMPLIANCE.md](../../../COMPLIANCE.md) para los mapeos completos de control SOC2/ISO.

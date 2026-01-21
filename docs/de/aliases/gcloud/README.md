@@ -1,127 +1,109 @@
 ---
-description: The Google Cloud aliases, provide memorable commands for operating on the Google Cloud platform. All of these functions and aliases are wrappers around the Google Cloud SDK command line tools.
+description: Die Google Cloud Aliase bieten einprägsame Befehle für das Arbeiten auf der Google Cloud Plattform. Alle diese Funktionen und Aliase sind Wrapper um die Google Cloud SDK Kommandozeilen-Tools.
 lang: de-DE
-metaTitle: The Google Cloud aliases - Dotfiles (DE)
+metaTitle: Google Cloud Aliase - Dotfiles (DE)
 permalink: /de/aliases/gcloud/
-
-meta:
-  - name: keywords
-    content: aliases, gcloud, googlecloud, google, cloud, sdk, command line, cli, bash, configuration, dotfiles, linux, macos, shell, windows
-  - name: twitter:card
-    content: The Google Cloud aliases, provide memorable commands for operating on the Google Cloud platform. All of these functions and aliases are wrappers around the Google Cloud SDK command line tools.
-  - name: twitter:description
-    content: The Google Cloud aliases, provide memorable commands for operating on the Google Cloud platform. All of these functions and aliases are wrappers around the Google Cloud SDK command line tools.
-  - name: twitter:title
-    content: The Google Cloud aliases - Dotfiles (DE)
-  - name: og:title
-    content: The Google Cloud aliases - Dotfiles (DE)
-  - name: og:description
-    content: The Google Cloud aliases, provide memorable commands for operating on the Google Cloud platform. All of these functions and aliases are wrappers around the Google Cloud SDK command line tools.
-  - name: og:image:alt
-    content: Dotfiles - Simply designed to fit your shell life
-  - name: og:locale
-    content: en_GB
 ---
 
-# Google Cloud aliases
+# Google Cloud Aliase
 
-The `gcloud.aliases.sh` file creates helpful shortcut aliases for many commonly
-[Google Cloud](https://cloud.google.com/) commands.
+Die Datei `gcloud.aliases.sh` erstellt hilfreiche Shortcut-Aliase für viele häufig
+verwendete [Google Cloud](https://cloud.google.com/) Befehle.
 
-The Google Cloud aliases, provide memorable commands for operating on the Google
-Cloud platform. All of these functions and aliases are wrappers around the
-Google Cloud SDK command line tools.
+Die Google Cloud Aliase bieten einprägsame Befehle für das Arbeiten auf der Google
+Cloud Plattform. Alle diese Funktionen und Aliase sind Wrapper um die
+Google Cloud SDK Kommandozeilen-Tools.
 
-## Command-line tool
+## Kommandozeilen-Tool
 
-| Alias | Befehl                | Beschreibung                                                               |
+| Alias | Befehl                      | Beschreibung                                          |
 | ----- | --------------------------- | ----------------------------------------------------- |
-| gcci  | `gcloud components install` | Installieren specific components.                          |
-| gccsp | `gcloud config set project` | Set a default Google Cloud project to work on.        |
-| gccu  | `gcloud components update`  | Aktualisieren your Cloud SDK to the latest version.          |
-| gci   | `gcloud init`               | Initialisieren, authorize, and configure the gcloud tool. |
-| gcinf | `gcloud info`               | Display current gcloud tool environment details.      |
-| gcv   | `gcloud version`            | Display version and installed components.             |
+| gcci  | `gcloud components install` | Installiere spezifische Komponenten.                  |
+| gccsp | `gcloud config set project` | Setze ein Standard Google Cloud Projekt, an dem gearbeitet wird. |
+| gccu  | `gcloud components update`  | Aktualisiere dein Cloud SDK auf die neueste Version.  |
+| gci   | `gcloud init`               | Initialisiere, autorisiere und konfiguriere das gcloud-Tool. |
+| gcinf | `gcloud info`               | Zeige aktuelle gcloud-Tool Umgebungsdetails an.       |
+| gcv   | `gcloud version`            | Zeige Version und installierte Komponenten an.        |
 
-## Custom
+## Benutzerdefiniert
 
-| Alias | Befehl                | Beschreibung                                                               |
+| Alias | Befehl                                  | Beschreibung                                                         |
 | ----- | --------------------------------------- | -------------------------------------------------------------------- |
-| gccca | `gcloud config configurations activate` | Switch to an existing named configuration.                           |
-| gcccc | `gcloud config configurations create`   | Erstellen a new named configuration.                                    |
-| gcccl | `gcloud config configurations list`     | Display a Auflisten of all available configurations.                      |
-| gccgv | `gcloud config get-value`               | Fetch value of a Cloud SDK property.                                 |
-| gccl  | `gcloud config list`                    | Display all the properties for the current configuration.            |
-| gccs  | `gcloud config set`                     | Define a property (like compute/zone) for the current configuration. |
+| gccca | `gcloud config configurations activate` | Wechsle zu einer bestehenden benannten Konfiguration.                |
+| gcccc | `gcloud config configurations create`   | Erstelle eine neue benannte Konfiguration.                           |
+| gcccl | `gcloud config configurations list`     | Zeige eine Liste aller verfügbaren Konfigurationen an.               |
+| gccgv | `gcloud config get-value`               | Hole den Wert einer Cloud SDK Eigenschaft.                           |
+| gccl  | `gcloud config list`                    | Zeige alle Eigenschaften für die aktuelle Konfiguration an.          |
+| gccs  | `gcloud config set`                     | Definiere eine Eigenschaft (wie compute/zone) für die aktuelle Konfiguration. |
 
-## Authorization
+## Autorisierung
 
-| Alias  | Command                                | Description                                                                                                       |
+| Alias  | Befehl                                 | Beschreibung                                                                                                      |
 | ------ | -------------------------------------- | ----------------------------------------------------------------------------------------------------------------- |
-| gcaasa | `gcloud auth activate-service-account` | Like gcloud auth login but with service account credentials.                                                      |
-| gcacd  | `gcloud auth configure-docker`         | Register the gcloud tool as a Docker credential helper.                                                           |
-| gcal   | `gcloud auth list`                     | Auflisten all credentialed accounts.                                                                                   |
-| gcal   | `gcloud auth login`                    | Authorize Google Cloud access for the gcloud tool with Google user credentials and set current account as active. |
-| gcapat | `gcloud auth print-access-token`       | Display the current account's access token.                                                                       |
-| gcar   | `gcloud auth revoke`                   | Entfernen access credentials for an account.                                                                         |
+| gcaasa | `gcloud auth activate-service-account` | Wie gcloud auth login, aber mit Service-Account-Anmeldeinformationen.                                             |
+| gcacd  | `gcloud auth configure-docker`         | Registriere das gcloud-Tool als Docker Credential Helper.                                                         |
+| gcal   | `gcloud auth list`                     | Liste alle Konten mit Anmeldeinformationen auf.                                                                   |
+| gcal   | `gcloud auth login`                    | Autorisiere Google Cloud Zugriff für das gcloud-Tool mit Google Benutzeranmeldeinformationen und setze aktuelles Konto als aktiv. |
+| gcapat | `gcloud auth print-access-token`       | Zeige das Zugriffstoken des aktuellen Kontos an.                                                                  |
+| gcar   | `gcloud auth revoke`                   | Entferne Zugriffsberechtigungen für ein Konto.                                                                    |
 
 ## Cloud Identity & Access Management (IAM)
 
-| Alias  | Command                                              | Description                                     |
+| Alias  | Befehl                                               | Beschreibung                                    |
 | ------ | ---------------------------------------------------- | ----------------------------------------------- |
-| gciamk | `gcloud iam service-accounts keys list`              | Auflisten a service account's keys.                  |
-| gciaml | `gcloud iam list-grantable-roles`                    | Auflisten IAM grantable roles for a resource.        |
-| gciamp | `gcloud iam service-accounts add-iam-policy-binding` | Hinzufügen an IAM policy binding to a service account. |
-| gciamr | `gcloud iam roles create`                            | Erstellen a custom role for a project or org.      |
-| gciams | `gcloud iam service-accounts set-iam-policy`         | Replace existing IAM policy binding.            |
-| gciamv | `gcloud iam service-accounts create`                 | Erstellen a service account for a project.         |
+| gciamk | `gcloud iam service-accounts keys list`              | Liste die Schlüssel eines Service-Accounts auf. |
+| gciaml | `gcloud iam list-grantable-roles`                    | Liste IAM vergebbare Rollen für eine Ressource auf. |
+| gciamp | `gcloud iam service-accounts add-iam-policy-binding` | Füge eine IAM-Richtlinienbindung zu einem Service-Account hinzu. |
+| gciamr | `gcloud iam roles create`                            | Erstelle eine benutzerdefinierte Rolle für ein Projekt oder eine Organisation. |
+| gciams | `gcloud iam service-accounts set-iam-policy`         | Ersetze bestehende IAM-Richtlinienbindung.      |
+| gciamv | `gcloud iam service-accounts create`                 | Erstelle einen Service-Account für ein Projekt. |
 
-## Access policies
+## Zugriffsrichtlinien
 
-| Alias | Befehl                | Beschreibung                                                               |
+| Alias | Befehl                                   | Beschreibung                                       |
 | ----- | ---------------------------------------- | -------------------------------------------------- |
-| gcpa  | `gcloud projects add-iam-policy-binding` | Hinzufügen an IAM policy binding to a specified project.  |
-| gcpd  | `gcloud projects describe`               | Display metadata for a project (including its ID). |
+| gcpa  | `gcloud projects add-iam-policy-binding` | Füge eine IAM-Richtlinienbindung zu einem angegebenen Projekt hinzu. |
+| gcpd  | `gcloud projects describe`               | Zeige Metadaten für ein Projekt an (einschließlich seiner ID). |
 
 ## Kubernetes
 
-| Alias | Befehl                | Beschreibung                                                               |
-| ----- | ------------------------------------------- | ------------------------------------------------------ |
-| gcccc | `gcloud container clusters create`          | Erstellen a cluster to run GKE containers.                |
-| gcccg | `gcloud container clusters get-credentials` | Aktualisieren kubeconfig to get kubectl to use a GKE cluster. |
-| gcccl | `gcloud container clusters list`            | Auflisten clusters for running GKE containers.              |
-| gccil | `gcloud container images list-tags`         | Auflisten tag and digest metadata for a container image.    |
+| Alias | Befehl                                      | Beschreibung                                            |
+| ----- | ------------------------------------------- | ------------------------------------------------------- |
+| gcccc | `gcloud container clusters create`          | Erstelle einen Cluster, um GKE-Container auszuführen.   |
+| gcccg | `gcloud container clusters get-credentials` | Aktualisiere kubeconfig, damit kubectl einen GKE-Cluster verwendet. |
+| gcccl | `gcloud container clusters list`            | Liste Cluster zum Ausführen von GKE-Containern auf.     |
+| gccil | `gcloud container images list-tags`         | Liste Tag- und Digest-Metadaten für ein Container-Image auf. |
 
 ## VMs
 
-| Alias   | Command                             | Description                            |
+| Alias   | Befehl                              | Beschreibung                           |
 | ------- | ----------------------------------- | -------------------------------------- |
-| gcpc    | `gcloud compute copy-files`         | Kopieren Dateien                             |
-| gcpdown | `gcloud compute instances stop`     | Stoppen instance                          |
-| gcpds   | `gcloud compute disks snapshot`     | Erstellen snapshot of persistent disks.   |
-| gcpid   | `gcloud compute instances describe` | Display a VM instance's details.       |
-| gcpil   | `gcloud compute instances list`     | Auflisten all VM instances in a project.    |
-| gcprm   | `gcloud compute instances delete`   | Löschen instance                        |
-| gcpsk   | `gcloud compute snapshots delete`   | Löschen a snapshot.                     |
-| gcpssh  | `gcloud compute ssh`                | Connect to a VM instance by using SSH. |
-| gcpup   | `gcloud compute instances start`    | Starten instance.                        |
-| gcpzl   | `gcloud compute zones list`         | Auflisten Compute Engine zones.             |
+| gcpc    | `gcloud compute copy-files`         | Kopiere Dateien                        |
+| gcpdown | `gcloud compute instances stop`     | Stoppe Instanz                         |
+| gcpds   | `gcloud compute disks snapshot`     | Erstelle Snapshot von persistenten Festplatten. |
+| gcpid   | `gcloud compute instances describe` | Zeige Details einer VM-Instanz an.     |
+| gcpil   | `gcloud compute instances list`     | Liste alle VM-Instanzen in einem Projekt auf. |
+| gcprm   | `gcloud compute instances delete`   | Lösche Instanz                         |
+| gcpsk   | `gcloud compute snapshots delete`   | Lösche einen Snapshot.                 |
+| gcpssh  | `gcloud compute ssh`                | Verbinde dich mit einer VM-Instanz über SSH. |
+| gcpup   | `gcloud compute instances start`    | Starte Instanz.                        |
+| gcpzl   | `gcloud compute zones list`         | Liste Compute Engine Zonen auf.        |
 
-## gcloud aliases to build highly scalable applications on a fully managed serverless platform
+## gcloud Aliase um hochskalierbare Anwendungen auf einer vollständig verwalteten serverlosen Plattform zu bauen
 
-| Alias | Befehl                | Beschreibung                                                               |
+| Alias | Befehl                     | Beschreibung                                                         |
 | ----- | -------------------------- | -------------------------------------------------------------------- |
-| gcapb | `gcloud app browse`        | Öffnen the current app in a web browser.                               |
-| gcapc | `gcloud app create`        | Erstellen an App Engine app within your current project.                |
-| gcapd | `gcloud app deploy`        | Deploy your app's code and configuration to the App Engine server.   |
-| gcapl | `gcloud app logs read`     | Display the latest App Engine app logs.                              |
-| gcapv | `gcloud app versions list` | Auflisten all versions of all services deployed to the App Engine server. |
+| gcapb | `gcloud app browse`        | Öffne die aktuelle App in einem Webbrowser.                          |
+| gcapc | `gcloud app create`        | Erstelle eine App Engine App innerhalb deines aktuellen Projekts.    |
+| gcapd | `gcloud app deploy`        | Deploye deinen App-Code und die Konfiguration auf den App Engine Server. |
+| gcapl | `gcloud app logs read`     | Zeige die neuesten App Engine App Logs an.                           |
+| gcapv | `gcloud app versions list` | Liste alle Versionen aller Services auf, die auf dem App Engine Server deployt sind. |
 
-## gcloud aliases to commands that might come in handy
+## gcloud Aliase für Befehle, die nützlich sein könnten
 
-| Alias  | Command                       | Description                                                                                    |
+| Alias  | Befehl                        | Beschreibung                                                                                   |
 | ------ | ----------------------------- | ---------------------------------------------------------------------------------------------- |
-| gckmsd | `gcloud kms decrypt`          | Decrypt ciphertext (to a plaintext Datei) using a Cloud Key Management Service (Cloud KMS) key. |
-| gclll  | `gcloud logging logs list`    | Auflisten your project's logs.                                                                      |
-| gcsqlb | `gcloud sql backups describe` | Display info about a Cloud SQL instance backup.                                                |
-| gcsqle | `gcloud sql export sql`       | Export data from a Cloud SQL instance to a SQL Datei.                                           |
+| gckmsd | `gcloud kms decrypt`          | Entschlüssele Chiffretext (in eine Klartextdatei) unter Verwendung eines Cloud Key Management Service (Cloud KMS) Schlüssels. |
+| gclll  | `gcloud logging logs list`    | Liste die Logs deines Projekts auf.                                                            |
+| gcsqlb | `gcloud sql backups describe` | Zeige Infos über ein Cloud SQL Instanz-Backup an.                                              |
+| gcsqle | `gcloud sql export sql`       | Exportiere Daten von einer Cloud SQL Instanz in eine SQL-Datei.                                |

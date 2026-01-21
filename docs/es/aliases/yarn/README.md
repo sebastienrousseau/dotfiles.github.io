@@ -1,15 +1,15 @@
 ---
-description: yarn aliases for Dotfiles
+description: Alias de Yarn para Dotfiles
 lang: es-ES
-metaTitle: yarn aliases - Dotfiles
+metaTitle: Alias de Yarn - Dotfiles (ES)
 permalink: /es/aliases/yarn/
 ---
 
 # Alias de Yarn
 
-Gestionar alias de Yarn (JavaScript). Part of the **Universal Dotfiles** configuration.
+Gestiona alias de Yarn (JavaScript). Parte de la configuración de **Universal Dotfiles**.
 
-![Dotfiles banner][banner]
+![Banner de Dotfiles][banner]
 
 ## 📖 Descripción
 
@@ -17,11 +17,11 @@ Estos alias están definidos en `yarn.aliases.sh` y son cargados automáticament
 
 ## ⚡ Alias
 
-- `y` - Yarn shortcut
-- `yi` - Install
-- `ya` - Add dependency
-- `yad` - Add dev dependency
-- `yrun` - Run script
-- `ystem` - Start
+- `y` - Atajo de Yarn
+- `yi` - Install (Instalar)
+- `ya` - Add dependency (Agregar dependencia)
+- `yad` - Add dev dependency (Agregar dependencia de desarrollo)
+- `yrun` - Run script (Ejecutar script)
+- `ystem` - Start (Iniciar)
 
 [banner]: https://kura.pro/dotfiles/v2/images/titles/title-dotfiles.svg

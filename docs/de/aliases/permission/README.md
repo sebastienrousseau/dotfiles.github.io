@@ -1,13 +1,13 @@
 ---
-description: permission aliases for Dotfiles
+description: Berechtigungs-Aliase für Dotfiles
 lang: de-DE
-metaTitle: permission aliases - Dotfiles
+metaTitle: Berechtigungs-Aliase - Dotfiles (DE)
 permalink: /de/aliases/permission/
 ---
 
-# Permission-Aliase
+# Berechtigungs-Aliase
 
-Verwalten Sie Permission-Aliase. Part of the **Universal Dotfiles** configuration.
+Verwalten Sie Berechtigungs-Aliase. Teil der **Universal Dotfiles** Konfiguration.
 
 ![Dotfiles banner][banner]
 
@@ -17,30 +17,30 @@ Diese Aliase sind in `permission.aliases.sh` definiert und werden automatisch vo
 
 ## ⚡ Aliase
 
-This code provides a set of aliases for file permissions.
-- `000` Set permissions to no read, write, or execute for user, group,
-  and others.
-- `400` Set permissions to no read or write, but allow execute for user
-  only.
-- `444` Set permissions to no write or execute, but allow read for all.
-- `600` Set permissions to read and write for user only.
-- `644` Set permissions to read for all, but write only for user.
-- `666` Set permissions to read and write for all.
-- `755` Set permissions to read, write, and execute for user, but only
-  read and execute for group and others.
-- `764` Set permissions to read and write for user and group, but only
-  read for others.
-- `777` Set permissions to read, write, and execute for all.
-- `chgrp` Change group ownership of files or directories.
-- `chgrpr` Change group ownership of files or directories recursively.
-- `chgrpu` Change group ownership of files or directories recursively to
-  the current user.
-- `chmod` Change file mode bits.
-- `chmodr` Change file mode bits recursively.
-- `chmodu` Change file mode bits recursively to the current user.
-- `chmox` Make a file executable.
-- `chown` Change file owner and group.
-- `chownr` Change file owner and group recursively.
-- `chownu` Change file owner and group recursively to the current user.
+Dieser Code stellt eine Reihe von Aliasen für Dateiberechtigungen bereit.
+
+- `000` Setze Berechtigungen auf kein Lesen, Schreiben oder Ausführen für Benutzer, Gruppe
+  und andere.
+- `400` Setze Berechtigungen auf kein Lesen oder Schreiben, aber erlaube Ausführen nur für den Benutzer.
+- `444` Setze Berechtigungen auf kein Schreiben oder Ausführen, aber erlaube Lesen für alle.
+- `600` Setze Berechtigungen auf Lesen und Schreiben nur für den Benutzer.
+- `644` Setze Berechtigungen auf Lesen für alle, aber Schreiben nur für den Benutzer.
+- `666` Setze Berechtigungen auf Lesen und Schreiben für alle.
+- `755` Setze Berechtigungen auf Lesen, Schreiben und Ausführen für den Benutzer, aber nur
+  Lesen und Ausführen für Gruppe und andere.
+- `764` Setze Berechtigungen auf Lesen und Schreiben für Benutzer und Gruppe, aber nur
+  Lesen für andere.
+- `777` Setze Berechtigungen auf Lesen, Schreiben und Ausführen für alle.
+- `chgrp` Ändere die Gruppenzugehörigkeit von Dateien oder Verzeichnissen.
+- `chgrpr` Ändere die Gruppenzugehörigkeit von Dateien oder Verzeichnissen rekursiv.
+- `chgrpu` Ändere die Gruppenzugehörigkeit von Dateien oder Verzeichnissen rekursiv auf
+  den aktuellen Benutzer.
+- `chmod` Ändere Dateimodus-Bits.
+- `chmodr` Ändere Dateimodus-Bits rekursiv.
+- `chmodu` Ändere Dateimodus-Bits rekursiv auf den aktuellen Benutzer.
+- `chmox` Mache eine Datei ausführbar.
+- `chown` Ändere Dateieigentümer und Gruppe.
+- `chownr` Ändere Dateieigentümer und Gruppe rekursiv.
+- `chownu` Ändere Dateieigentümer und Gruppe rekursiv auf den aktuellen Benutzer.
 
 [banner]: https://kura.pro/dotfiles/v2/images/titles/title-dotfiles.svg

@@ -1,47 +1,29 @@
 ---
-description: The Mkdir aliases are a collection of aliases that allow you to interact with the `mkdir` command line tool. Mkdir is a tool which creates a directory.
+description: Os aliases do Mkdir são uma coleção de aliases que permitem interagir com a ferramenta de linha de comando `mkdir`. Mkdir é uma ferramenta que cria um diretório.
 lang: pt-BR
-metaTitle: The Mkdir aliases - Dotfiles (BR)
+metaTitle: Aliases do Mkdir - Dotfiles (BR)
 permalink: /pt/aliases/mkdir/
-
-meta:
-  - name: keywords
-    content: aliases, mkdir, linux, macos, shell, terminal, windows
-  - name: twitter:card
-    content: The Mkdir aliases are a collection of aliases that allow you to interact with the `mkdir` command line tool. Mkdir is a tool which creates a directory.
-  - name: twitter:description
-    content: The Mkdir aliases are a collection of aliases that allow you to interact with the `mkdir` command line tool. Mkdir is a tool which creates a directory.
-  - name: twitter:title
-    content: The Mkdir aliases - Dotfiles (BR)
-  - name: og:title
-    content: The Mkdir aliases - Dotfiles (BR)
-  - name: og:description
-    content: The Mkdir aliases are a collection of aliases that allow you to interact with the `mkdir` command line tool. Mkdir is a tool which creates a directory.
-  - name: og:image:alt
-    content: Dotfiles - Simply designed to fit your shell life
-  - name: og:locale
-    content: en_GB
 ---
 
-# Mkdir aliases
+# Aliases do Mkdir
 
-The `mkdir.aliases.sh` file creates helpful shortcut aliases for creating
-directories.
+O arquivo `mkdir.aliases.sh` cria aliases de atalho úteis para criar
+diretórios.
 
-The Mkdir aliases are a collection of aliases that allow you to interact with
-the `mkdir` command line tool. Mkdir is a tool which creates a directory.
+Os aliases do Mkdir são uma coleção de aliases que permitem interagir com
+a ferramenta de linha de comando `mkdir`. Mkdir é uma ferramenta que cria um diretório.
 
 ## Mkdir
 
-[Mkdir](https://en.wikipedia.org/wiki/Mkdir) is a command that creates a
-directory. The mkdir utility creates the directories named as operands, in the
-order specified, using mode “rwxrwxrwx” (0777).
+[Mkdir](https://pt.wikipedia.org/wiki/Mkdir) é um comando que cria um
+diretório. O utilitário mkdir cria os diretórios nomeados como operandos, na
+ordem especificada, usando o modo “rwxrwxrwx” (0777).
 
-| Alias | Comando               | Descrição                                                                  |
+| Alias | Comando                     | Descrição                                  |
 | ----- | --------------------------- | ------------------------------------------ |
-| mcd   | `mkdir -pv && cd`           | Make diretório and cd into it.             |
-| mcdp  | `mkdir -pv && cd`           | Make diretório and parents and cd into it. |
-| md    | `mkd`                       | Make diretório.                            |
-| mdd   | `mkdir -pv $(date +%Y%m%d)` | Make diretório with date.                  |
-| mdp   | `mkdir -pv`                 | Make diretório and parents.                |
-| mdt   | `mkdir -pv $(date +%h%m%s)` | Make diretório with time.                  |
+| mcd   | `mkdir -pv && cd`           | Criar diretório e entrar nele.             |
+| mcdp  | `mkdir -pv && cd`           | Criar diretório e pais e entrar nele.      |
+| md    | `mkd`                       | Criar diretório.                           |
+| mdd   | `mkdir -pv $(date +%Y%m%d)` | Criar diretório com data.                  |
+| mdp   | `mkdir -pv`                 | Criar diretório e pais.                    |
+| mdt   | `mkdir -pv $(date +%h%m%s)` | Criar diretório com hora.                  |

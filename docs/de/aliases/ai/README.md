@@ -1,13 +1,13 @@
 ---
-description: ai aliases for Dotfiles
+description: AI Aliase für Dotfiles
 lang: de-DE
-metaTitle: ai aliases - Dotfiles
+metaTitle: AI Aliase - Dotfiles (DE)
 permalink: /de/aliases/ai/
 ---
 
-# AI-Aliase
+# AI Aliase
 
-Manage AI & LLM aliases (GitHub Copilot, Ollama). Teil der **Universal Dotfiles**-Konfiguration.
+Verwalten Sie KI (AI) & LLM Aliase (GitHub Copilot, Ollama). Teil der **Universal Dotfiles** Konfiguration.
 
 ![Dotfiles banner][banner]
 
@@ -18,12 +18,14 @@ Diese Aliase sind in `ai.aliases.sh` definiert und werden automatisch von `chezm
 ## ⚡ Aliase
 
 ### GitHub Copilot
-- `ghcp` - Copilot shortcut
-- `ghs` - Suggest code
-- `ghe` - Explain code
 
-### Ollama (Local LLM)
-- `ol` - Ollama shortcut
-- `olr` - Run model
+- `ghcp` - Copilot Kurzbefehl
+- `ghs` - Code vorschlagen
+- `ghe` - Code erklären
+
+### Ollama (Lokales LLM)
+
+- `ol` - Ollama Kurzbefehl
+- `olr` - Modell ausführen
 
 [banner]: https://kura.pro/dotfiles/v2/images/titles/title-dotfiles.svg

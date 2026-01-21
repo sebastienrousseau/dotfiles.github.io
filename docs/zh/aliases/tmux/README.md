@@ -1,54 +1,31 @@
 ---
-description: The Tmux aliases are a collection of aliases that allow you to interact with the `tmux` command. Tmux is a tool which allows you to run multiple terminal sessions in a single window.
+description: Tmux 别名是一组别名，允许您与 `tmux` 命令交互。Tmux 是一个工具，允许您在单个窗口中运行多个终端会话。
 lang: zh-CN
-metaTitle: The Tmux aliases - Dotfiles (CN)
+metaTitle: Tmux 别名 - Dotfiles (CN)
 permalink: /zh/aliases/tmux/
-
-meta:
-  - name: keywords
-    content: aliases, tmux, linux, macos, shell, terminal, windows
-  - name: twitter:card
-    content: The Tmux aliases are a collection of aliases that allow you to interact with the `tmux` command. Tmux is a tool which allows you to run multiple terminal sessions in a single window.
-  - name: twitter:description
-    content: The Tmux aliases are a collection of aliases that allow you to interact with the `tmux` command. Tmux is a tool which allows you to run multiple terminal sessions in a single window.
-  - name: twitter:title
-    content: The Tmux aliases - Dotfiles (CN)
-  - name: og:title
-    content: The Tmux aliases - Dotfiles (CN)
-  - name: og:description
-    content: The Tmux aliases are a collection of aliases that allow you to interact with the `tmux` command. Tmux is a tool which allows you to run multiple terminal sessions in a single window.
-  - name: og:image:alt
-    content: Dotfiles - Simply designed to fit your shell life
-  - name: og:locale
-    content: en_GB
 ---
 
-# Tmux aliases
+# Tmux 别名
 
-This `tmux.aliases.sh` file creates helpful shortcut aliases for many
-commonly used [tmux](https://github.com/tmux/tmux/wiki) commands.
+`tmux.aliases.sh` 文件为许多常用的 [tmux](https://github.com/tmux/tmux/wiki) 命令创建了有用的快捷别名。
 
-The Tmux aliases are a collection of aliases that allow you to interact with the
-`tmux` command. Tmux is a tool which allows you to run multiple terminal
-sessions in a single window.
+Tmux 别名是一组别名，允许您与 `tmux` 命令交互。Tmux 是一个工具，允许您在单个窗口中运行多个终端会话。
 
 > [!NOTE]
-> **Modern Core**: In v0.2.471+, we introduced [Zellij](/aliases/modern-core/#zellij) as a modern, Rust-based alternative to Tmux.
-> Tmux is still supported, but Zellij is recommended for new users.
+> **Modern Core**: 在 v0.2.471+ 中，我们引入了 [Zellij](/zh/aliases/modern-core/#zellij) 作为 Tmux 的现代、基于 Rust 的替代品。
+> Tmux 仍然受支持，但建议新用户使用 Zellij。
 
 ## Tmux
 
-[Tmux](https://github.com/tmux/tmux/wiki) is a terminal multiplexer. It lets you
-switch easily between several programs in one terminal, detach them (they keep
-running in the background) and reattach them to a different terminal.
+[Tmux](https://github.com/tmux/tmux/wiki) 是一个终端复用器。它允许您在一个终端中轻松地在多个程序之间切换，分离它们（它们在后台保持运行）并将它们重新附加到不同的终端。
 
-| 别名  | 命令                   | 描述                                                                       |
-| ----- | ------------------------ | ----------------------------------- |
-| tm    | `tmux`                   | 开始 tmux.                         |
-| tma   | `tmux attach-session`    | Attach to a tmux session.           |
-| tmat  | `tmux attach-session -t` | Attach to a tmux session with name. |
-| tmks  | `tmux kill-session -a`   | Kill all tmux sessions.             |
-| tml   | `tmux list-sessions`     | 列出 tmux sessions.                 |
-| tmn   | `tmux new-session`       | 开始 a new tmux session.           |
-| tmns  | `tmux new -s`            | 开始 a new tmux session with name. |
-| tms   | `tmux new-session -s`    | 开始 a new tmux session.           |
+| 别名  | 命令                     | 描述                               |
+| ----- | ------------------------ | ---------------------------------- |
+| tm    | `tmux`                   | 启动 tmux。                        |
+| tma   | `tmux attach-session`    | 附加到 tmux 会话。                 |
+| tmat  | `tmux attach-session -t` | 附加到指定名称的 tmux 会话。       |
+| tmks  | `tmux kill-session -a`   | 终止所有 tmux 会话。               |
+| tml   | `tmux list-sessions`     | 列出 tmux 会话。                   |
+| tmn   | `tmux new-session`       | 启动新的 tmux 会话。               |
+| tmns  | `tmux new -s`            | 启动指定名称的新 tmux 会话。       |
+| tms   | `tmux new-session -s`    | 启动新的 tmux 会话。               |

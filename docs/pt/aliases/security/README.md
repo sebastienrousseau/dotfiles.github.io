@@ -1,22 +1,22 @@
 ---
-description: security aliases for Dotfiles
+description: Aliases de segurança para Dotfiles
 lang: pt-BR
-metaTitle: security aliases - Dotfiles
+metaTitle: Aliases de segurança - Dotfiles (BR)
 permalink: /pt/aliases/security/
 ---
 
-# Aliases de Security
+# Aliases de Segurança
 
-Tools for hardening the environment and managing configuration immutability.
+Ferramentas para fortalecer o ambiente e gerenciar a imutabilidade da configuração.
 
-## 🔒 Immutability
+## 🔒 Imutabilidade
 
-| Alias | Description |
-|-------|-------------|
-| `lock-configs` | Locks critical arquivos (`.zshrc`, etc.) to prevent modification (`chflags uchg` / `chattr +i`). |
-| `unlock-configs` | Unlocks critical arquivos for editing. |
-| `check-locks` | Checks the lock status of critical arquivos. |
+| Alias            | Descrição                                                                                     |
+| ---------------- | --------------------------------------------------------------------------------------------- |
+| `lock-configs`   | Bloqueia arquivos críticos (`.zshrc`, etc.) para evitar modificações (`chflags uchg` / `chattr +i`). |
+| `unlock-configs` | Desbloqueia arquivos críticos para edição.                                                    |
+| `check-locks`    | Verifica o status de bloqueio de arquivos críticos.                                           |
 
-## 🔑 Git Signing
+## 🔑 Assinatura Git
 
-(See [Git Aliases](../git/README.md) for signing configuration)
+(Veja [Aliases do Git](../git/README.md) para configuração de assinatura)

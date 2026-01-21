@@ -1,39 +1,21 @@
 ---
-description: The Rsync aliases are a collection of aliases that allow you to interact with the `rsync` command line tool. Rsync is a tool which synchronises files and directories between two locations.
+description: Os aliases do Rsync são uma coleção de aliases que permitem interagir com a ferramenta de linha de comando `rsync`. Rsync é uma ferramenta que sincroniza arquivos e diretórios entre dois locais.
 lang: pt-BR
-metaTitle: The Rsync aliases - Dotfiles (BR)
+metaTitle: Aliases do Rsync - Dotfiles (BR)
 permalink: /pt/aliases/rsync/
-
-meta:
-  - name: keywords
-    content: aliases, rsync, linux, macos, shell, terminal, windows
-  - name: twitter:card
-    content: The Rsync aliases are a collection of aliases that allow you to interact with the `rsync` command line tool. Rsync is a tool which synchronises files and directories between two locations.
-  - name: twitter:description
-    content: The Rsync aliases are a collection of aliases that allow you to interact with the `rsync` command line tool. Rsync is a tool which synchronises files and directories between two locations.
-  - name: twitter:title
-    content: The Rsync aliases - Dotfiles (BR)
-  - name: og:title
-    content: The Rsync aliases - Dotfiles (BR)
-  - name: og:description
-    content: The Rsync aliases are a collection of aliases that allow you to interact with the `rsync` command line tool. Rsync is a tool which synchronises files and directories between two locations.
-  - name: og:image:alt
-    content: Dotfiles - Simply designed to fit your shell life
-  - name: og:locale
-    content: en_GB
 ---
 
-# Rsync aliases
+# Aliases do Rsync
 
-The `rsync.aliases.sh` file creates helpful shortcut aliases for
-[rsync](https://en.wikipedia.org/wiki/Rsync).
+O arquivo `rsync.aliases.sh` cria aliases de atalho úteis para
+[rsync](https://pt.wikipedia.org/wiki/Rsync).
 
 ## Rsync
 
-[Rsync](https://en.wikipedia.org/wiki/Rsync) is a command that copies files and
-directories to another location.
+[Rsync](https://pt.wikipedia.org/wiki/Rsync) é um comando que copia arquivos e
+diretórios para outro local.
 
-| Alias | Comando               | Descrição                                                                  |
-| ----- | ------------ | -------------------------------- |
-| rs    | `rsync -avz` | Rsync with verbose and progress. |
-| rsync | `rs`         | Rsync with verbose and progress. |
+| Alias | Comando      | Descrição                                |
+| ----- | ------------ | ---------------------------------------- |
+| rs    | `rsync -avz` | Rsync com modo verbose e progresso.      |
+| rsync | `rs`         | Rsync com modo verbose e progresso.      |

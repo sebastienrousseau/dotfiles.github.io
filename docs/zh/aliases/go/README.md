@@ -1,23 +1,23 @@
 ---
-description: go aliases for Dotfiles
+description: Dotfiles 的 Go 别名
 lang: zh-CN
-metaTitle: go aliases - Dotfiles
+metaTitle: Go 别名 - Dotfiles (CN)
 permalink: /zh/aliases/go/
 ---
 
 # Go 别名
 
-管理 Go language 别名。 Part of the **Universal Dotfiles** configuration.
+管理 Go 语言别名。**Universal Dotfiles** 配置的一部分。
 
 ![Dotfiles banner][banner]
 
 ## 📖 描述
 
-这些别名定义在 `go.aliases.sh` 中，并由 `chezmoi` 自动加载。
+这些别名在 `go.aliases.sh` 中定义，并由 `chezmoi` 自动加载。
 
 ## ⚡ 别名
 
-- `go` - Go shortcut
+- `go` - Go 快捷方式
 - `gor` - `go run`
 - `gob` - `go build`
 - `got` - `go test`

@@ -1,54 +1,36 @@
 ---
-description: The Tmux aliases are a collection of aliases that allow you to interact with the `tmux` command. Tmux is a tool which allows you to run multiple terminal sessions in a single window.
+description: Os aliases do Tmux são uma coleção de aliases que permitem interagir com o comando `tmux`. Tmux é uma ferramenta que permite executar múltiplas sessões de terminal em uma única janela.
 lang: pt-BR
-metaTitle: The Tmux aliases - Dotfiles (BR)
+metaTitle: Aliases do Tmux - Dotfiles (BR)
 permalink: /pt/aliases/tmux/
-
-meta:
-  - name: keywords
-    content: aliases, tmux, linux, macos, shell, terminal, windows
-  - name: twitter:card
-    content: The Tmux aliases are a collection of aliases that allow you to interact with the `tmux` command. Tmux is a tool which allows you to run multiple terminal sessions in a single window.
-  - name: twitter:description
-    content: The Tmux aliases are a collection of aliases that allow you to interact with the `tmux` command. Tmux is a tool which allows you to run multiple terminal sessions in a single window.
-  - name: twitter:title
-    content: The Tmux aliases - Dotfiles (BR)
-  - name: og:title
-    content: The Tmux aliases - Dotfiles (BR)
-  - name: og:description
-    content: The Tmux aliases are a collection of aliases that allow you to interact with the `tmux` command. Tmux is a tool which allows you to run multiple terminal sessions in a single window.
-  - name: og:image:alt
-    content: Dotfiles - Simply designed to fit your shell life
-  - name: og:locale
-    content: en_GB
 ---
 
-# Tmux aliases
+# Aliases do Tmux
 
-This `tmux.aliases.sh` file creates helpful shortcut aliases for many
-commonly used [tmux](https://github.com/tmux/tmux/wiki) commands.
+Este arquivo `tmux.aliases.sh` cria aliases de atalho úteis para muitos
+comandos [tmux](https://github.com/tmux/tmux/wiki) comumente usados.
 
-The Tmux aliases are a collection of aliases that allow you to interact with the
-`tmux` command. Tmux is a tool which allows you to run multiple terminal
-sessions in a single window.
+Os aliases do Tmux são uma coleção de aliases que permitem interagir com o
+comando `tmux`. Tmux é uma ferramenta que permite executar múltiplas sessões
+de terminal em uma única janela.
 
 > [!NOTE]
-> **Modern Core**: In v0.2.471+, we introduced [Zellij](/aliases/modern-core/#zellij) as a modern, Rust-based alternative to Tmux.
-> Tmux is still supported, but Zellij is recommended for new users.
+> **Modern Core**: Na v0.2.471+, introduzimos o [Zellij](/pt/aliases/modern-core/#zellij) como uma alternativa moderna baseada em Rust ao Tmux.
+> O Tmux ainda é suportado, mas o Zellij é recomendado para novos usuários.
 
 ## Tmux
 
-[Tmux](https://github.com/tmux/tmux/wiki) is a terminal multiplexer. It lets you
-switch easily between several programs in one terminal, detach them (they keep
-running in the background) and reattach them to a different terminal.
+[Tmux](https://github.com/tmux/tmux/wiki) é um multiplexador de terminal. Ele permite que você
+alterne facilmente entre vários programas em um terminal, desconecte-os (eles continuam
+rodando em segundo plano) e reconecte-os a um terminal diferente.
 
-| Alias | Comando               | Descrição                                                                  |
-| ----- | ------------------------ | ----------------------------------- |
-| tm    | `tmux`                   | Iniciar tmux.                         |
-| tma   | `tmux attach-session`    | Attach to a tmux session.           |
-| tmat  | `tmux attach-session -t` | Attach to a tmux session with name. |
-| tmks  | `tmux kill-session -a`   | Kill all tmux sessions.             |
-| tml   | `tmux list-sessions`     | Listar tmux sessions.                 |
-| tmn   | `tmux new-session`       | Iniciar a new tmux session.           |
-| tmns  | `tmux new -s`            | Iniciar a new tmux session with name. |
-| tms   | `tmux new-session -s`    | Iniciar a new tmux session.           |
+| Alias | Comando                  | Descrição                                 |
+| ----- | ------------------------ | ----------------------------------------- |
+| tm    | `tmux`                   | Iniciar o tmux.                           |
+| tma   | `tmux attach-session`    | Anexar a uma sessão tmux.                 |
+| tmat  | `tmux attach-session -t` | Anexar a uma sessão tmux com nome.        |
+| tmks  | `tmux kill-session -a`   | Matar todas as sessões tmux.              |
+| tml   | `tmux list-sessions`     | Listar sessões tmux.                      |
+| tmn   | `tmux new-session`       | Iniciar uma nova sessão tmux.             |
+| tmns  | `tmux new -s`            | Iniciar uma nova sessão tmux com nome.    |
+| tms   | `tmux new-session -s`    | Iniciar uma nova sessão tmux.             |

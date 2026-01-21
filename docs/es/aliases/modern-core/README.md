@@ -1,60 +1,59 @@
 ---
-description: The Modern Core is a suite of Rust-powered tools that replace legacy Unix utilities with faster, smarter alternatives.
+description: El Núcleo Moderno (Modern Core) es un conjunto de herramientas impulsadas por Rust que reemplazan las utilidades Unix heredadas con alternativas más rápidas e inteligentes.
 lang: es-ES
-metaTitle: Modern Core - Dotfiles (ES)
+metaTitle: Núcleo Moderno - Dotfiles (ES)
 permalink: /es/aliases/modern-core/
-
 meta:
   - name: keywords
-    content: modern core, atuin, yazi, zellij, ghostty, rust, shell, tools
+    content: modern core, atuin, yazi, zellij, ghostty, rust, shell, herramientas
 ---
 
-# Modern Core Tools
+# Herramientas del Núcleo Moderno
 
-In **v0.2.471**, we introduced the "Modern Core" — a suite of high-performance, Rust-powered tools designed to replace legacy Unix utilities.
+En **v0.2.471**, introdujimos el "Núcleo Moderno" (Modern Core), un conjunto de herramientas de alto rendimiento impulsadas por Rust diseñadas para reemplazar las utilidades Unix heredadas.
 
-## Tools Overview
+## Resumen de Herramientas
 
-| Tool        | Replaces        | Description                                             | Keybinding      |
+| Herramienta | Reemplaza a      | Descripción                                             | Atajo de Teclado |
 | :---------- | :-------------- | :------------------------------------------------------ | :-------------- |
-| **Atuin**   | `history`       | Syncable, encrypted shell history with fuzzy search.    | `Ctrl+R` / `Up` |
-| **Yazi**    | `ranger` / `ls` | Blazing fast terminal file manager with image previews. | `yy` (alias)    |
-| **Zellij**  | `tmux`          | Modern terminal multiplexer with intuitive layouts.     | `Alt+n`         |
-| **Ghostty** | `Terminal.app`  | GPU-accelerated, cross-platform terminal emulator.      | N/A             |
+| **Atuin**   | `history`       | Historial de shell sincronizable y cifrado con búsqueda difusa.    | `Ctrl+R` / `Up` |
+| **Yazi**    | `ranger` / `ls` | Gestor de archivos de terminal ultrarrápido con vistas previas de imágenes. | `yy` (alias)    |
+| **Zellij**  | `tmux`          | Multiplexor de terminal moderno con diseños intuitivos.     | `Alt+n`         |
+| **Ghostty** | `Terminal.app`  | Emulador de terminal multiplataforma acelerado por GPU.      | N/A             |
 
-## Atuin (Magical History)
+## Atuin (Historial Mágico)
 
-Atuin replaces your existing shell history with a SQLite database.
+Atuin reemplaza tu historial de shell existente con una base de datos SQLite.
 
-- **Search**: Press `Ctrl+R` or `Up Arrow` to open the search UI.
-- **Filter**: Type natural language queries or specific exit codes.
-- **Sync**: Your history is encrypted and synced across your devices.
+- **Búsqueda**: Presiona `Ctrl+R` o `Flecha Arriba` para abrir la interfaz de búsqueda.
+- **Filtro**: Escribe consultas en lenguaje natural o códigos de salida específicos.
+- **Sincronización**: Tu historial está cifrado y sincronizado en todos tus dispositivos.
 
-## Yazi (File Manager)
+## Yazi (Gestor de Archivos)
 
-Yazi is a terminal file manager written in Rust, based on async I/O.
+Yazi es un gestor de archivos de terminal escrito en Rust, basado en I/O asíncrono.
 
-- **Launch**: Type `yy` in your terminal.
-- **Features**:
-  - Instant startup.
-  - Sixel/Kitty image preview support.
-  - Lua plugin system.
+- **Lanzamiento**: Escribe `yy` en tu terminal.
+- **Características**:
+  - Inicio instantáneo.
+  - Soporte de vista previa de imágenes Sixel/Kitty.
+  - Sistema de plugins Lua.
 
-## Zellij (Multiplexer)
+## Zellij (Multiplexor)
 
-Zellij is a terminal workspace with batteries included.
+Zellij es un espacio de trabajo de terminal con oaterías incluidas.
 
-- **Launch**: Type `zellij` (or use your configured alias).
-- **Features**:
-  - Layout engine (save/restore workspace layouts).
-  - Floating panes.
-  - User-friendly keybindings (shown on screen).
+- **Lanzamiento**: Escribe `zellij` (o usa tu alias configurado).
+- **Características**:
+  - Motor de diseño (guardar/restaurar diseños de espacio de trabajo).
+  - Paneles flotantes.
+  - Atajos de teclado fáciles de usar (mostrados en pantalla).
 
 ## Ghostty (Terminal)
 
-Ghostty is the default terminal emulator for the Modern Core.
+Ghostty es el emulador de terminal predeterminado para el Núcleo Moderno.
 
-- **Features**:
-  - Native performance (GPU accelerated).
-  - Ligatures and modern font support.
-  - Zero-flicker rendering.
+- **Características**:
+  - Rendimiento nativo (acelerado por GPU).
+  - Ligaduras y soporte de fuentes modernas.
+  - Renderizado sin parpadeos.

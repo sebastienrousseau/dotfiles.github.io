@@ -1,47 +1,31 @@
 ---
-description: The Disk usage aliases, are designed to display disk usage statistics. They are used to calculate and print the disk space used by files or directories.
+description: Die Speicherplatzbelegungs-Aliase (Disk usage) sind dazu konzipiert, Speicherplatzbelegungsstatistiken anzuzeigen. Sie werden verwendet, um den von Dateien oder Verzeichnissen verwendeten Speicherplatz zu berechnen und auszugeben.
 lang: de-DE
-metaTitle: Disk usage aliases - Dotfiles (DE)
+metaTitle: Speicherplatzbelegung (du) Aliase - Dotfiles (DE)
 permalink: /de/aliases/du/
-
-meta:
-  - name: twitter:card
-    content: The Disk usage aliases, are designed to display disk usage statistics. They are used to calculate and print the disk space used by files or directories.
-  - name: twitter:description
-    content: The Disk usage aliases, are designed to display disk usage statistics. They are used to calculate and print the disk space used by files or directories.
-  - name: twitter:title
-    content: Disk usage aliases - Dotfiles (DE)
-  - name: og:title
-    content: Disk usage aliases - Dotfiles (DE)
-  - name: og:description
-    content: The Disk usage aliases, are designed to display disk usage statistics. They are used to calculate and print the disk space used by files or directories.
-  - name: og:image:alt
-    content: Dotfiles - Simply designed to fit your shell life
-  - name: og:locale
-    content: en_GB
 ---
 
-# Disk usage aliases
+# Speicherplatzbelegung (Disk usage) Aliase
 
-The `du.aliases.sh` file creates helpful shortcut aliases for the `du` command.
+Die Datei `du.aliases.sh` erstellt hilfreiche Shortcut-Aliase für den Befehl `du`.
 
-The Disk usage aliases, are designed to display disk usage statistics. They are
-used to calculate and print the disk space used by files or directories.
+Die Speicherplatzbelegungs-Aliase sind dazu konzipiert, Speicherplatzbelegungsstatistiken anzuzeigen. Sie werden
+verwendet, um den von Dateien oder Verzeichnissen verwendeten Speicherplatz zu berechnen und auszugeben.
 
 ## Disk usage
 
-[Disk usage](<https://en.wikipedia.org/wiki/Du_(Unix)>) is a command that
-estimates file space usage. The `du` command is used to estimate file space
-usage. The space used by each file is shown in kilobytes. The space used by each
-directory is shown in kilobytes, along with the total space used by all files in
-that directory and its subdirectories.
+[Disk usage](<https://de.wikipedia.org/wiki/Du_(Unix)>) ist ein Befehl, der
+die Dateisystembelegung schätzt. Der Befehl `du` wird verwendet, um die Dateisystembelegung
+zu schätzen. Der von jeder Datei verwendete Platz wird in Kilobyte angezeigt. Der von jedem
+Verzeichnis verwendete Platz wird in Kilobyte angezeigt, zusammen mit dem gesamten Platz, der von allen Dateien in
+diesem Verzeichnis und seinen Unterverzeichnissen verwendet wird.
 
-| Alias | Befehl                | Beschreibung                                                               |
-| ----- | ------------ | --------------------------------------------------------------------------- | -------------------------------------------------------- | ---------------------------------------------------------- |
-| du    | `du -h`      | Zeigen the disk usage of the current Verzeichnis.                               |
-| du1   | `du -hxd 1   | sort -h`                                                                    | Datei size of Dateien and directories in current Verzeichnis. |
-| ducks | `du -cks _._ | sort -rn                                                                    | head -n 10`                                              | Top 10 largest Dateien and directories in current Verzeichnis. |
-| duh   | `du`         | Datei size of Dateien and directories.                                         |
-| dus   | `du -hs *`   | Datei size human readable output sorted by size.                             |
-| dusym | `du * -hsLc` | Datei size of Dateien and directories in current Verzeichnis including symlinks. |
-| dut   | `dus`        | Total Datei size of current Verzeichnis.                                       |
+| Alias | Befehl       | Beschreibung                                                                |
+| ----- | ------------ | --------------------------------------------------------------------------- |
+| du    | `du -h`      | Zeige die Speicherplatzbelegung des aktuellen Verzeichnisses an.            |
+| du1   | `du -hxd 1   | sort -h`                                                                    | Dateigröße von Dateien und Verzeichnissen im aktuellen Verzeichnis. |
+| ducks | `du -cks _._ | sort -rn                                                                    | head -n 10`                                                 | Top 10 der größten Dateien und Verzeichnisse im aktuellen Verzeichnis. |
+| duh   | `du`         | Dateigröße von Dateien und Verzeichnissen.                                  |
+| dus   | `du -hs *`   | Dateigröße menschenlesbare Ausgabe sortiert nach Größe.                     |
+| dusym | `du * -hsLc` | Dateigröße von Dateien und Verzeichnissen im aktuellen Verzeichnis inklusive Symlinks. |
+| dut   | `dus`        | Gesamte Dateigröße des aktuellen Verzeichnisses.                            |

@@ -1,21 +1,22 @@
 ---
-description: fonts aliases for Dotfiles
+description: Font Aliase für Dotfiles
 lang: de-DE
-metaTitle: fonts aliases - Dotfiles
+metaTitle: Font Aliase - Dotfiles (DE)
 permalink: /de/aliases/fonts/
 ---
 
-# Font-Aliase
+# Font Aliase
 
-Aliases for managing system fonts and caches.
+Aliase zur Verwaltung von Systemschriftarten und Caches.
 
-## 🔡 Commands
+## 🔡 Befehle
 
-| Alias | Description |
-|-------|-------------|
-| `update-fonts` | Updates the system font cache (`fc-cache -fv`). |
-| `list-fonts`   | Lists all installed font families. |
+| Alias          | Beschreibung                                    |
+| -------------- | ----------------------------------------------- |
+| `update-fonts` | Aktualisiert den System-Schriftarten-Cache (`fc-cache -fv`). |
+| `list-fonts`   | Listet alle installierten Schriftfamilien auf.  |
 
-## 📦 Installed Fonts
-- **JetBrainsMono Nerd Font**: Primary terminal font.
-- **Symbols Nerd Font**: Icon fallback.
+## 📦 Installierte Schriftarten
+
+- **JetBrainsMono Nerd Font**: Primäre Terminal-Schriftart.
+- **Symbols Nerd Font**: Symbol-Fallback.

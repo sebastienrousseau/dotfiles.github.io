@@ -1,37 +1,19 @@
 ---
-description: The editor aliases will open the file in the editor list that is set in the `editor` environment variable.
+description: Die Editor-Aliase öffnen die Datei in der Editor-Liste, die in der Umgebungsvariable `editor` festgelegt ist.
 lang: de-DE
-metaTitle: Editor aliases - Dotfiles (DE)
+metaTitle: Editor Aliase - Dotfiles (DE)
 permalink: /de/aliases/editor/
-
-meta:
-  - name: keywords
-    content: aliases, code, editor, environment, gedit, nano, notepad++, text, vi, vim
-  - name: twitter:card
-    content: The editor aliases will open the file in the editor list that is set in the `editor` environment variable.
-  - name: twitter:description
-    content: The editor aliases will open the file in the editor list that is set in the `editor` environment variable.
-  - name: twitter:title
-    content: Editor aliases - Dotfiles (DE)
-  - name: og:title
-    content: Editor aliases - Dotfiles (DE)
-  - name: og:description
-    content: The editor aliases will open the file in the editor list that is set in the `editor` environment variable.
-  - name: og:image:alt
-    content: Dotfiles - Simply designed to fit your shell life
-  - name: og:locale
-    content: en_GB
 ---
 
-# Editor aliases
+# Editor Aliase
 
-The `editor.aliases.sh` file creates helpful shortcut aliases for opening files
-in your preferred text editor. The aliases will open the file in the editor list
-that is set in the `editor` environment variable.
+Die Datei `editor.aliases.sh` erstellt hilfreiche Shortcut-Aliase zum Öffnen von Dateien
+in Ihrem bevorzugten Texteditor. Die Aliase öffnen die Datei in der Editor-Liste,
+die in der Umgebungsvariable `editor` festgelegt ist.
 
-As of today the following editors are listed in the `editor` environment
-variable in order of preference. This list can be changed by editing the
-`editor` environment variable in the `editor.aliases.sh` file.:
+Stand heute sind die folgenden Editoren in der Umgebungsvariable `editor` in der
+Reihenfolge ihrer Präferenz aufgeführt. Diese Liste kann durch Bearbeiten der
+Umgebungsvariable `editor` in der Datei `editor.aliases.sh` geändert werden:
 
 - [nano][nn],
 - [vim][vi],
@@ -42,17 +24,17 @@ variable in order of preference. This list can be changed by editing the
 
 ## Editor
 
-[Editor](https://en.wikipedia.org/wiki/Text_editor) is a program for editing
-plain text files.
+[Editor](https://de.wikipedia.org/wiki/Texteditor) ist ein Programm zum Bearbeiten
+von reinen Textdateien.
 
-| Alias  | Command     | Description  |
-| ------ | ----------- | ------------ |
-| e      | `${editor}` | Edit a Datei. |
-| edit   | `${editor}` | Edit a Datei. |
-| editor | `${editor}` | Edit a Datei. |
-| mate   | `${editor}` | Edit a Datei. |
-| n      | `${editor}` | Edit a Datei. |
-| v      | `${editor}` | Edit a Datei. |
+| Alias  | Befehl      | Beschreibung       |
+| ------ | ----------- | ------------------ |
+| e      | `${editor}` | Datei bearbeiten.  |
+| edit   | `${editor}` | Datei bearbeiten.  |
+| editor | `${editor}` | Datei bearbeiten.  |
+| mate   | `${editor}` | Datei bearbeiten.  |
+| n      | `${editor}` | Datei bearbeiten.  |
+| v      | `${editor}` | Datei bearbeiten.  |
 
 [np++]: https://notepad-plus-plus.org/
 [gdt]: https://wiki.gnome.org/Apps/Gedit

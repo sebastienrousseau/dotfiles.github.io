@@ -1,51 +1,34 @@
 ---
-description: The Dig aliases, allow to query information about various DNS records, including host addresses, mail exchanges, and name servers.
+description: Die Dig-Aliase ermöglichen das Abfragen von Informationen über verschiedene DNS-Datensätze, einschließlich Host-Adressen, Mail-Exchanges und Nameserver.
 lang: de-DE
-metaTitle: Dig aliases - Dotfiles (DE)
+metaTitle: Dig Aliase - Dotfiles (DE)
 permalink: /de/aliases/dig/
-
-meta:
-  - name: twitter:card
-    content: The Dig aliases, allow to query information about various DNS records, including host addresses, mail exchanges, and name servers.
-  - name: twitter:description
-    content: The Dig aliases, allow to query information about various DNS records, including host addresses, mail exchanges, and name servers.
-  - name: twitter:title
-    content: Dig aliases - Dotfiles (DE)
-  - name: og:title
-    content: Dig aliases - Dotfiles (DE)
-  - name: og:description
-    content: The Dig aliases, allow to query information about various DNS records, including host addresses, mail exchanges, and name servers.
-  - name: og:image:alt
-    content: Dotfiles - Simply designed to fit your shell life
-  - name: og:locale
-    content: en_GB
 ---
 
-# Dig aliases
+# Dig Aliase
 
-The `dig.aliases.sh` file creates helpful shortcut aliases for the `dig`
-command.
+Die Datei `dig.aliases.sh` erstellt hilfreiche Shortcut-Aliase für den Befehl `dig`.
 
-The `dig` (domain information groper) is a flexible tool for interrogating DNS
-name servers. It performs DNS lookups and displays the answers that are returned
-from the name server(s) that were queried. It is mostly used to troubleshoot DNS
-issues and to find information about a domain such the IP address.
+`dig` (domain information groper) ist ein flexibles Werkzeug zum Abfragen von DNS-
+Nameservern. Es führt DNS-Lookups durch und zeigt die Antworten an, die von den
+abgefragten Nameservern zurückgegeben wurden. Es wird hauptsächlich verwendet, um DNS-
+Probleme zu beheben und Informationen über eine Domain wie die IP-Adresse zu finden.
 
 ## Dig
 
-[Dig](<https://en.wikipedia.org/wiki/Dig_(command)>) is a command that performs
-DNS lookups and displays the answers that are returned from the name server(s)
-that were queried.
+[Dig](<https://de.wikipedia.org/wiki/Dig_(Unix)>) ist ein Befehl, der DNS-
+Lookups durchführt und die Antworten anzeigt, die von den abgefragten Nameservern
+zurückgegeben wurden.
 
-| Alias | Befehl                | Beschreibung                                                               |
+| Alias | Befehl                                                                  | Beschreibung                                  |
 | ----- | ----------------------------------------------------------------------- | --------------------------------------------- |
-| d     | `$(which dig)`                                                          | Run the dig command with the default options. |
-| d4    | `$(which dig) +short -4`                                                | Perform a DNS lookup for an IPv4 address.     |
-| d6    | `$(which dig) +short -6`                                                | Perform a DNS lookup for an IPv6 address.     |
-| dga   | `$(which dig) +all ANY`                                                 | Perform a DNS lookup for all records.         |
-| dgs   | `$(which dig) +short`                                                   | Perform a DNS lookup for a short answer.      |
-| digg  | `$(which dig) @8.8.8.8 +nocmd any +multiline +noall +answer`            | Dig with Google's DNS.                        |
-| ip4   | `$(which dig) +short myip.opendns.com @resolver1.opendns.com -4`        | Get your public IPv4 address.                 |
-| ip6   | `$(which dig) -6 AAAA +short myip.opendns.com. @resolver1.opendns.com.` | Get your public IPv6 address.                 |
-| ips   | `ip4; ip6`                                                              | Get your public IPv4 and IPv6 addresses.      |
-| wip   | `$(which dig) +short myip.opendns.com @resolver1.opendns.com`           | Get your public IP address.                   |
+| d     | `$(which dig)`                                                          | Führe den dig-Befehl mit den Standardoptionen aus. |
+| d4    | `$(which dig) +short -4`                                                | Führe einen DNS-Lookup für eine IPv4-Adresse durch.     |
+| d6    | `$(which dig) +short -6`                                                | Führe einen DNS-Lookup für eine IPv6-Adresse durch.     |
+| dga   | `$(which dig) +all ANY`                                                 | Führe einen DNS-Lookup für alle Datensätze durch.         |
+| dgs   | `$(which dig) +short`                                                   | Führe einen DNS-Lookup für eine kurze Antwort durch.      |
+| digg  | `$(which dig) @8.8.8.8 +nocmd any +multiline +noall +answer`            | Dig mit Googles DNS.                        |
+| ip4   | `$(which dig) +short myip.opendns.com @resolver1.opendns.com -4`        | Hole deine öffentliche IPv4-Adresse.                 |
+| ip6   | `$(which dig) -6 AAAA +short myip.opendns.com. @resolver1.opendns.com.` | Hole deine öffentliche IPv6-Adresse.                 |
+| ips   | `ip4; ip6`                                                              | Hole deine öffentlichen IPv4- und IPv6-Adressen.      |
+| wip   | `$(which dig) +short myip.opendns.com @resolver1.opendns.com`           | Hole deine öffentliche IP-Adresse.                   |

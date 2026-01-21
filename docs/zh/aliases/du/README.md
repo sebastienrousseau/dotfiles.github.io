@@ -1,47 +1,28 @@
 ---
-description: The Disk usage aliases, are designed to display disk usage statistics. They are used to calculate and print the disk space used by files or directories.
+description: 磁盘使用别名旨在显示磁盘使用情况统计信息。它们用于计算并打印文件或目录使用的磁盘空间。
 lang: zh-CN
-metaTitle: Disk usage aliases - Dotfiles (CN)
+metaTitle: 磁盘使用 (Du) 别名 - Dotfiles (CN)
 permalink: /zh/aliases/du/
-
-meta:
-  - name: twitter:card
-    content: The Disk usage aliases, are designed to display disk usage statistics. They are used to calculate and print the disk space used by files or directories.
-  - name: twitter:description
-    content: The Disk usage aliases, are designed to display disk usage statistics. They are used to calculate and print the disk space used by files or directories.
-  - name: twitter:title
-    content: Disk usage aliases - Dotfiles (CN)
-  - name: og:title
-    content: Disk usage aliases - Dotfiles (CN)
-  - name: og:description
-    content: The Disk usage aliases, are designed to display disk usage statistics. They are used to calculate and print the disk space used by files or directories.
-  - name: og:image:alt
-    content: Dotfiles - Simply designed to fit your shell life
-  - name: og:locale
-    content: en_GB
 ---
 
-# Disk usage aliases
+# 磁盘使用别名
 
-The `du.aliases.sh` file creates helpful shortcut aliases for the `du` command.
+`du.aliases.sh` 文件为 `du` 命令创建了有用的快捷别名。
 
-The Disk usage aliases, are designed to display disk usage statistics. They are
-used to calculate and print the disk space used by files or directories.
+磁盘使用别名旨在显示磁盘使用情况统计信息。它们用于计算并打印文件或目录使用的磁盘空间。
 
-## Disk usage
+## 磁盘使用 (Disk usage)
 
-[Disk usage](<https://en.wikipedia.org/wiki/Du_(Unix)>) is a command that
-estimates file space usage. The `du` command is used to estimate file space
-usage. The space used by each file is shown in kilobytes. The space used by each
-directory is shown in kilobytes, along with the total space used by all files in
-that directory and its subdirectories.
+[磁盘使用](<https://zh.wikipedia.org/wiki/Du_(Unix)>) 是一个估计文件空间使用情况的命令。
+`du` 命令用于估计文件空间使用情况。每个文件使用的空间以千字节为单位显示。
+每个目录使用的空间也以千字节为单位显示，以及该目录及其子目录中所有文件使用的总空间。
 
-| 别名  | 命令                   | 描述                                                                       |
-| ----- | ------------ | --------------------------------------------------------------------------- | -------------------------------------------------------- | ---------------------------------------------------------- |
-| du    | `du -h`      | 显示 the disk usage of the current 目录.                               |
-| du1   | `du -hxd 1   | sort -h`                                                                    | 文件 size of 文件 and directories in current 目录. |
-| ducks | `du -cks _._ | sort -rn                                                                    | head -n 10`                                              | Top 10 largest 文件 and directories in current 目录. |
-| duh   | `du`         | 文件 size of 文件 and directories.                                         |
-| dus   | `du -hs *`   | 文件 size human readable output sorted by size.                             |
-| dusym | `du * -hsLc` | 文件 size of 文件 and directories in current 目录 including symlinks. |
-| dut   | `dus`        | Total 文件 size of current 目录.                                       |
+| 别名  | 命令                   | 描述                                             |
+| ----- | ---------------------- | ------------------------------------------------ |
+| du    | `du -h`                | 显示当前目录的磁盘使用情况。                     |
+| du1   | `du -hxd 1 sort -h`    | 当前目录中文件和目录的文件大小。                 |
+| ducks | `du -cks * sort -rn head -n 10` | 当前目录中最大的 10 个文件和目录。      |
+| duh   | `du`                   | 文件和目录的文件大小。                           |
+| dus   | `du -hs *`             | 文件大小人类可读输出，按大小排序。               |
+| dusym | `du * -hsLc`           | 当前目录中文件和目录的文件大小，包括符号链接。   |
+| dut   | `dus`                  | 当前目录的总文件大小。                           |

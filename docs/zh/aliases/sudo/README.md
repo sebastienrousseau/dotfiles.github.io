@@ -1,45 +1,23 @@
 ---
-description: The Sudo aliases are a collection of aliases that allow you to interact with the `sudo` command. Sudo is a tool which allows you to run commands as another user.
+description: Sudo 别名是一组别名，允许您与 `sudo` 命令交互。Sudo 是一个允许您以另一个用户身份运行命令的工具。
 lang: zh-CN
-metaTitle: The Sudo aliases - Dotfiles (CN)
+metaTitle: Sudo 别名 - Dotfiles (CN)
 permalink: /zh/aliases/sudo/
-
-meta:
-  - name: keywords
-    content: aliases, sudo, linux, macos, shell, terminal, windows
-  - name: twitter:card
-    content: The Sudo aliases are a collection of aliases that allow you to interact with the `sudo` command. Sudo is a tool which allows you to run commands as another user.
-  - name: twitter:description
-    content: The Sudo aliases are a collection of aliases that allow you to interact with the `sudo` command. Sudo is a tool which allows you to run commands as another user.
-  - name: twitter:title
-    content: The Sudo aliases - Dotfiles (CN)
-  - name: og:title
-    content: The Sudo aliases - Dotfiles (CN)
-  - name: og:description
-    content: The Sudo aliases are a collection of aliases that allow you to interact with the `sudo` command. Sudo is a tool which allows you to run commands as another user.
-  - name: og:image:alt
-    content: Dotfiles - Simply designed to fit your shell life
-  - name: og:locale
-    content: en_GB
 ---
 
-# Sudo aliases
+# Sudo 别名
 
-The `sudo.aliases.sh` file creates helpful shortcut aliases for using `sudo`
-with commands.
+`sudo.aliases.sh` 文件为使用 `sudo` 命令创建了有用的快捷别名。
 
-The Sudo aliases are a collection of aliases that allow you to interact with
-the `sudo` command. Sudo is a tool which allows you to run commands as another
-user.
+Sudo 别名是一组别名，允许您与 `sudo` 命令交互。Sudo 是一个允许您以另一个用户身份运行命令的工具。
 
 ## Sudo
 
-[Sudo](https://en.wikipedia.org/wiki/Sudo) is a command that allows users to
-execute commands as another user.
+[Sudo](https://zh.wikipedia.org/wiki/Sudo) 是一个允许用户以另一个用户身份执行命令的命令。
 
-| 别名  | 命令                   | 描述                                                                       |
-| ----- | --------- | ----------------------------------- |
-| root  | `s`       | Execute a command as the superuser. |
-| s     | `sudo -i` | Execute a command as the superuser. |
-| su    | `sudo su` | Execute a command as the superuser. |
-| sudo  | `s`       | Execute a command as the superuser. |
+| 别名  | 命令      | 描述                       |
+| ----- | --------- | -------------------------- |
+| root  | `s`       | 以超级用户身份执行命令。   |
+| s     | `sudo -i` | 以超级用户身份执行命令。   |
+| su    | `sudo su` | 以超级用户身份执行命令。   |
+| sudo  | `s`       | 以超级用户身份执行命令。   |

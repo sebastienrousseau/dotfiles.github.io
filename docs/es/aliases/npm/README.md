@@ -1,53 +1,32 @@
 ---
-description: The NPM aliases are a collection of aliases that allow you to interact with the `npm` command line tool. Npm is a package manager for the JavaScript programming language.
+description: Los alias de NPM son una colección de alias que te permiten interactuar con el comando `npm`. NPM es un gestor de paquetes para el lenguaje JavaScript.
 lang: es-ES
-metaTitle: The NPM aliases - Dotfiles (ES)
+metaTitle: Alias de NPM - Dotfiles (ES)
 permalink: /es/aliases/npm/
-
-meta:
-  - name: keywords
-    content: aliases, npm, node, node package manager, package manager, linux, macos, shell, terminal, windows
-  - name: twitter:card
-    content: The NPM aliases are a collection of aliases that allow you to interact with the `npm` command line tool. Npm is a package manager for the JavaScript programming language.
-  - name: twitter:description
-    content: The NPM aliases are a collection of aliases that allow you to interact with the `npm` command line tool. Npm is a package manager for the JavaScript programming language.
-  - name: twitter:title
-    content: The NPM aliases - Dotfiles (ES)
-  - name: og:title
-    content: The NPM aliases - Dotfiles (ES)
-  - name: og:description
-    content: The NPM aliases are a collection of aliases that allow you to interact with the `npm` command line tool. Npm is a package manager for the JavaScript programming language.
-  - name: og:image:alt
-    content: Dotfiles - Simply designed to fit your shell life
-  - name: og:locale
-    content: en_GB
 ---
 
-# NPM aliases
+# Alias de NPM
 
-The `npm.aliases.sh` file creates helpful shortcut aliases
-for [npm](https://www.npmjs.com/).
+El archivo `npm.aliases.sh` crea atajos útiles para [npm](https://www.npmjs.com/).
 
 ## NPM
 
-[npm](https://www.npmjs.com/) is a package manager for the JavaScript
-programming language. It is the default package manager for the JavaScript
-runtime environment Node.js.
+[npm](https://www.npmjs.com/) es un gestor de paquetes para el lenguaje de programación JavaScript. Es el gestor de paquetes predeterminado para el entorno de ejecución JavaScript Node.js.
 
-| Alias | Comando               | Descripción                                                                |
+| Alias | Comando         | Descripción           |
 | ----- | --------------- | --------------------- |
-| npb   | `npm build`     | Construir npm script.     |
-| npc   | `npm cache`     | Cache npm package.    |
-| npd   | `npm dev`       | Dev npm script.       |
-| npg   | `npm global`    | Global npm package.   |
-| npi   | `npm install`   | Instalar npm package.  |
-| npl   | `npm list`      | Listar npm packages.    |
-| npp   | `npm publish`   | Publish npm package.  |
-| npr   | `npm run`       | Run npm script.       |
-| nprw  | `npm run watch` | Run npm script watch. |
-| nps   | `npm start`     | Iniciar npm script.     |
-| npsv  | `npm serve`     | Serve npm script.     |
-| npt   | `npm test`      | Test npm script.      |
-| npu   | `npm update`    | Actualizar npm package.   |
-| npx   | `npm exec`      | Exec npm package.     |
-| npy   | `npm why`       | Why npm package.      |
+| npb   | `npm build`     | Script de compilación npm.     |
+| npc   | `npm cache`     | Caché de paquetes npm.    |
+| npd   | `npm dev`       | Script de desarrollo npm.       |
+| npg   | `npm global`    | Paquete npm global.   |
+| npi   | `npm install`   | Instalar paquete npm.  |
+| npl   | `npm list`      | Listar paquetes npm.    |
+| npp   | `npm publish`   | Publicar paquete npm.  |
+| npr   | `npm run`       | Ejecutar script npm.       |
+| nprw  | `npm run watch` | Ejecutar script npm en modo watch. |
+| nps   | `npm start`     | Iniciar script npm.     |
+| npsv  | `npm serve`     | Servir script npm.     |
+| npt   | `npm test`      | Probar script npm.      |
+| npu   | `npm update`    | Actualizar paquete npm.   |
+| npx   | `npm exec`      | Ejecutar paquete npm.     |
+| npy   | `npm why`       | Explicar por qué se instala un paquete npm.      |

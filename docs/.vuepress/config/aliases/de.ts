@@ -21,7 +21,6 @@ export const aliases = {
     ["/de/aliases/git/", "Git Aliase"],
     ["/de/aliases/gnu/", "Gnu Aliase"],
     ["/de/aliases/go/", "Go Aliase"],
-    ["/de/aliases/heroku/", "Heroku Aliase"],
     ["/de/aliases/installer/", "Installer Aliase"],
     ["/de/aliases/interactive/", "Interactive Aliase"],
     ["/de/aliases/jekyll/", "Jekyll Aliase"],

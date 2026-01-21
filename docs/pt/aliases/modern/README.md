@@ -1,38 +1,44 @@
 ---
-description: modern aliases for Dotfiles
+description: Aliases modernos para Dotfiles
 lang: pt-BR
-metaTitle: modern aliases - Dotfiles
+metaTitle: Aliases Modernos - Dotfiles (BR)
 permalink: /pt/aliases/modern/
 ---
 
-# Aliases de Modern Tooling
+# Aliases de Ferramentas Modernas
 
-Gerenciar aliases de Modern Tooling. Part of the **Universal Dotfiles** configuration.
+Gerencie aliases de Ferramentas Modernas. Parte da configuração **Universal Dotfiles**.
 
 ![Dotfiles banner][banner]
 
 ## 📖 Descrição
 
-Estes aliases são definidos em `modern.aliases.sh` e são carregados automaticamente por `chezmoi`.
-They provide modern replacements for legacy Unix tools (Rust-based).
+Esses aliases são definidos em `modern.aliases.sh` e são carregados automaticamente pelo `chezmoi`.
+Eles fornecem substituições modernas para ferramentas Unix legadas (baseadas em Rust).
 
 ## ⚡ Aliases
 
-### File Listing (eza)
-If `eza` is installed (replacing `ls`):
-- `ls` - List files (`eza --icons`)
-- `ll` - Long list (`eza -alF`)
-- `la` - List all (`eza -a`)
-- `lt` - List tree (`eza --tree`)
+### Listagem de Arquivos (eza)
 
-*(Falls back to standard `ls` if `eza` is missing)*
+Se `eza` estiver instalado (substituindo `ls`):
 
-### File Content (bat)
-If `bat` is installed (replacing `cat`):
-- `cat` - Display file content with syntax highlighting
+- `ls` - Listar arquivos (`eza --icons`)
+- `ll` - Lista longa (`eza -alF`)
+- `la` - Listar tudo (`eza -a`)
+- `lt` - Listar árvore (`eza --tree`)
 
-### Searching (rg)
-If `rg` is installed (replacing `grep`):
-- `grep` - Search with Ripgrep
+_(Recorre ao `ls` padrão se `eza` estiver ausente)_
+
+### Conteúdo de Arquivo (bat)
+
+Se `bat` estiver instalado (substituindo `cat`):
+
+- `cat` - Exibir conteúdo de arquivo com destaque de sintaxe
+
+### Pesquisa (rg)
+
+Se `rg` estiver instalado (substituindo `grep`):
+
+- `grep` - Pesquisar com Ripgrep
 
 [banner]: https://kura.pro/dotfiles/v2/images/titles/title-dotfiles.svg

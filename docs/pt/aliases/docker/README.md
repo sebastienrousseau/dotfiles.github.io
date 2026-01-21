@@ -1,184 +1,153 @@
 ---
-description: docker aliases for Dotfiles
+description: Aliases do Docker para Dotfiles
 lang: pt-BR
-metaTitle: docker aliases - Dotfiles
+metaTitle: Aliases do Docker - Dotfiles (BR)
 permalink: /pt/aliases/docker/
 ---
 
-# Aliases de Docker
+# Aliases do Docker
 
-Gerenciar aliases de Docker. Part of the **Universal Dotfiles** configuration.
+Gerencie aliases do Docker. Parte da configuração **Universal Dotfiles**.
 
 ![Dotfiles banner][banner]
 
 ## 📖 Descrição
 
-Estes aliases são definidos em `docker.aliases.sh` e são carregados automaticamente por `chezmoi`.
+Esses aliases são definidos em `docker.aliases.sh` e são carregados automaticamente pelo `chezmoi`.
 
 ## ⚡ Aliases
 
-This code provides a comprehensive set of aliases for Docker development
-using `docker`, `docker-compose`, and Docker Swarm commands.
+Este código fornece um conjunto abrangente de aliases para desenvolvimento Docker
+usando comandos `docker`, `docker-compose` e Docker Swarm.
+
 #### Comandos Básicos
-- `dk` - Docker shortcut
-- `dkv` - Show Docker version
-- `dki` - Display system-wide information
-- `dkl` - Login to Docker registry
-- `dklo` - Logout from Docker registry
+
+- `dk` - Atalho para Docker
+- `dkv` - Mostrar versão do Docker
+- `dki` - Exibir informações de todo o sistema
+- `dkl` - Login no registro Docker
+- `dklo` - Logout do registro Docker
+
 #### Operações de Contêiner
-- `dkps` - List running containers
-- `dkpsa` - List all containers
-- `dkr` - Run a command in new container
-- `dkri` - Run interactive container
-- `dkrd` - Run container in background
-- `dks` - Start container
-- `dkst` - Stop container
-- `dkrs` - Restart container
-- `dkp` - Pause container
-- `dkup` - Unpause container
-- `dkrm` - Remove container
-- `dkrma` - Remove all containers
-- `dkrmf` - Force remove container
-#### Container Inspection
-- `dkin` - Inspect container
-- `dkl` - Show container logs
-- `dklf` - Follow container logs
-- `dkt` - Show running processes in container
-- `dkst` - Show container resource usage
-- `dkdf` - Show container filesystem changes
-- `dkpl` - Pull image from registry
-- `dkex` - Execute command in container
-- `dkeit` - Execute interactive command
+
+- `dkps` - Listar contêineres em execução
+- `dkpsa` - Listar todos os contêineres
+- `dkr` - Executar um comando em um novo contêiner
+- `dkri` - Executar contêiner interativo
+- `dkrd` - Executar contêiner em segundo plano
+- `dks` - Iniciar contêiner
+- `dkst` - Parar contêiner
+- `dkrs` - Reiniciar contêiner
+- `dkp` - Pausar contêiner
+- `dkup` - Despausar contêiner
+- `dkrm` - Remover contêiner
+- `dkrma` - Remover todos os contêineres
+- `dkrmf` - Forçar remoção de contêiner
+
+#### Inspeção de Contêiner
+
+- `dkin` - Inspecionar contêiner
+- `dkl` - Mostrar logs do contêiner
+- `dklf` - Acompanhar logs do contêiner
+- `dkt` - Mostrar processos em execução no contêiner
+- `dkst` - Mostrar uso de recursos do contêiner
+- `dkdf` - Mostrar alterações no sistema de arquivos do contêiner
+- `dkpl` - Baixar imagem do registro
+- `dkex` - Executar comando no contêiner
+- `dkeit` - Executar comando interativo
+
 #### Imagens
-- `dki` - List images
-- `dkia` - List all images
-- `dkb` - Build an image
-- `dkbt` - Build and tag an image
-- `dkpu` - Push image to registry
-- `dkrmi` - Remove image
-- `dkh` - Show image history
-- `dksv` - Save image to tar archive
-- `dkld` - Load image from tar archive
-- `dkprune` - Remove unused data
-- `dkprunea` - Remove all unused data
-- `dkrmi_dangling` - Remove dangling images
+
+- `dki` - Listar imagens
+- `dkia` - Listar todas as imagens
+- `dkb` - Construir uma imagem
+- `dkbt` - Construir e marcar uma imagem
+- `dkpu` - Enviar imagem para o registro
+- `dkrmi` - Remover imagem
+- `dkh` - Mostrar histórico da imagem
+- `dksv` - Salvar imagem em arquivo tar
+- `dkld` - Carregar imagem de arquivo tar
+- `dkprune` - Remover dados não utilizados
+- `dkprunea` - Remover todos os dados não utilizados
+- `dkrmi_dangling` - Remover imagens pendentes
+
 #### Volumes
-- `dkv` - Volume shortcut
-- `dkvls` - List volumes
-- `dkvc` - Create volume
-- `dkvi` - Inspect volume
-- `dkvrm` - Remove volume
-- `dkvp` - Remove unused volumes
-#### Networks
-- `dkn` - Network shortcut
-- `dknls` - List networks
-- `dknc` - Create network
-- `dkni` - Inspect network
-- `dknrm` - Remove network
-- `dknp` - Remove unused networks
-- `dkncon` - Connect container to network
-- `dkndis` - Disconnect container from network
-#### System
-- `dks` - System shortcut
-- `dksdf` - Show Docker disk usage
-- `dksev` - Get real-time events from Docker
-- `dksi` - Display system-wide information
-- `dksp` - Remove unused data
-- `dkspa` - Remove all unused data
-- `dkcon` - Context management
-#### Miscellaneous
-- `dkcp` - Copy files between container and local filesystem
-- `dkw` - Block until container stops
-- `dkk` - Kill container
-- `dkatt` - Attach to container
-- `dkd` - Inspect changes on container's filesystem
-- `dkcom` - Create image from container
-- `dktag` - Tag an image
-- `dkexp` - Export container's filesystem
-- `dkimp` - Import container filesystem
-- `dkscan` - Scan image for vulnerabilities
-- `dc` - Docker Compose shortcut
-- `dcu` - Create and start containers
-- `dcud` - Create and start containers in background
-- `dcd` - Stop and remove containers
-- `dcdv` - Stop and remove containers and volumes
-- `dcr` - Restart services
-- `dcs` - Stop services
-- `dcsta` - Start services
-- `dcp` - Pause services
-- `dcup` - Unpause services
-- `dcps` - List containers
-- `dcl` - View logs
-- `dclf` - Follow logs
-- `dcex` - Execute command in container
-- `dcb` - Build services
-- `dcpull` - Pull service images
-- `dcpush` - Push service images
-- `dcrm` - Remove stopped containers
-- `dcrun` - Run one-off command
-- `dci` - List images
-- `dck` - Kill containers
-- `dccfg` - Validate and show compose config
-- `dcev` - Receive events from containers
-- `dctop` - Display running processes
-- `dcv` - Show Docker Compose version
-#### Swarm Management
-- `dksw` - Swarm shortcut
-- `dkswi` - Initialize Docker Swarm
-- `dkswj` - Join Docker Swarm
-- `dkswjt` - Manage join tokens
-- `dkswl` - Leave the Swarm
-- `dkswu` - Update Swarm
-- `dkswunl` - Unlock Swarm
-- `dkswunk` - Manage unlock keys
-#### Services
-- `dksrv` - Service shortcut
-- `dksrvls` - List services
-- `dksrvc` - Create service
-- `dksrvi` - Inspect service
-- `dksrvps` - List tasks of service
-- `dksrvl` - View service logs
-- `dksrvlf` - Follow service logs
-- `dksrvrm` - Remove service
-- `dksrvsc` - Scale service
-- `dksrvu` - Update service
-- `dksrvrl` - Rollback service
-#### Stacks
-- `dkstk` - Stack shortcut
-- `dkstkls` - List stacks
-- `dkstkd` - Deploy stack
-- `dkstkps` - List tasks in stack
-- `dkstksrv` - List services in stack
-- `dkstkrm` - Remove stack
-#### Nodes
-- `dkn` - Node shortcut
-- `dknls` - List nodes
-- `dkni` - Inspect node
-- `dknp` - Promote node to manager
-- `dknd` - Demote node to worker
-- `dknrm` - Remove node
-- `dknu` - Update node
-- `dknps` - List tasks running on node
-### Common Workflows
-#### Container Development Workflow
-```bash
-# Start a development container
-dkri --name dev-container -v $(pwd):/app -p 3000:3000 node:latest bash
-```
-#### Docker Compose Development
-```bash
-# Start services, rebuild if needed, in background
-dcb && dcud
-```
-#### Cleanup Workflow
-```bash
-# Remove all stopped containers, unused networks, and dangling images
-dkrm $(dk ps -aq --filter status=exited) && dknp && dkrmi_dangling
-```
-#### Deployment to Swarm
-```bash
-# Deploy or update a stack from a compose file
-dkstkd -c docker-compose.yml my-stack
-```
+
+- `dkv` - Atalho para Volume
+- `dkvls` - Listar volumes
+- `dkvc` - Criar volume
+- `dkvi` - Inspecionar volume
+- `dkvrm` - Remover volume
+- `dkvp` - Remover volumes não utilizados
+
+#### Redes
+
+- `dkn` - Atalho para Rede
+- `dknls` - Listar redes
+- `dknc` - Criar rede
+- `dkni` - Inspecionar rede
+- `dknrm` - Remover rede
+- `dknp` - Remover redes não utilizadas
+- `dkncon` - Conectar contêiner à rede
+- `dkndis` - Desconectar contêiner da rede
+
+#### Sistema
+
+- `dks` - Atalho para Sistema
+- `dksdf` - Mostrar uso de disco do Docker
+- `dksev` - Obter eventos em tempo real do Docker
+- `dksi` - Exibir informações de todo o sistema
+- `dksp` - Remover dados não utilizados
+- `dkspa` - Remover todos os dados não utilizados
+- `dkcon` - Gerenciamento de contexto
+
+#### Diversos
+
+- `dkcp` - Copiar arquivos entre contêiner e sistema de arquivos local
+- `dkw` - Bloquear até que o contêiner pare
+- `dkk` - Matar contêiner
+- `dkatt` - Anexar ao contêiner
+- `dkd` - Inspecionar alterações no sistema de arquivos do contêiner
+- `dkcom` - Criar imagem a partir do contêiner
+- `dktag` - Marcar uma imagem
+- `dkexp` - Exportar sistema de arquivos do contêiner
+- `dkimp` - Importar sistema de arquivos do contêiner
+- `dkscan` - Verificar vulnerabilidades na imagem
+- `dc` - Atalho para Docker Compose
+- `dcu` - Criar e iniciar contêineres
+- `dcud` - Criar e iniciar contêineres em segundo plano
+- `dcd` - Parar e remover contêineres
+- `dcdv` - Parar e remover contêineres e volumes
+- `dcr` - Reiniciar serviços
+- `dcs` - Parar serviços
+- `dcsta` - Iniciar serviços
+- `dcp` - Pausar serviços
+- `dcup` - Despausar serviços
+- `dcps` - Listar contêineres
+- `dcl` - Ver logs
+- `dclf` - Acompanhar logs
+- `dcex` - Executar comando no contêiner
+- `dcb` - Construir serviços
+- `dcpull` - Baixar imagens de serviço
+- `dcpush` - Enviar imagens de serviço
+- `dcrm` - Remover contêineres parados
+- `dcrun` - Executar comando único
+- `dci` - Listar imagens
+- `dck` - Matar contêineres
+- `dccfg` - Validar e mostrar configuração do compose
+- `dcev` - Receber eventos de contêineres
+- `dctop` - Exibir processos em execução
+- `dcv` - Mostrar versão do Docker Compose
+
+#### Gerenciamento de Swarm
+
+- `dksw` - Atalho para Swarm
+- `dkswi` - Inicializar Docker Swarm
+- `dkswj` - Juntar-se ao Docker Swarm
+- `dkswjt` - Gerenciar tokens de adesão
+- `dkswl` - Sair do Swarm
+- `dkswu` - Atualizar Swarm
+- `dkswunl` - Desbloquear Swarm
+- `dkswunk` - Gerenciar chaves de desbloqueio
 
 [banner]: https://kura.pro/dotfiles/v2/images/titles/title-dotfiles.svg

@@ -1,51 +1,33 @@
 ---
-description: The clear aliases are able to clear the screen in a variety of ways.
+description: 清除别名能够以多种方式清除屏幕。
 lang: zh-CN
-metaTitle: Clear aliases - Dotfiles (CN)
+metaTitle: 清除别名 - Dotfiles (CN)
 permalink: /zh/aliases/clear/
-
-meta:
-  - name: twitter:card
-    content: The clear aliases are able to clear the screen in a variety of ways.
-  - name: twitter:description
-    content: The clear aliases are able to clear the screen in a variety of ways.
-  - name: twitter:title
-    content: Clear aliases - Dotfiles (CN)
-  - name: og:title
-    content: Clear aliases - Dotfiles (CN)
-  - name: og:description
-    content: The clear aliases are able to clear the screen in a variety of ways.
-  - name: og:image:alt
-    content: Dotfiles - Simply designed to fit your shell life
-  - name: og:locale
-    content: en_GB
 ---
 
-# Clear aliases
+# 清除 (Clear) 别名
 
-The `clear.aliases.sh` file creates helpful shortcut aliases for clearing the
-terminal screen. The aliases are able to clear the screen in a variety of ways.
+`clear.aliases.sh` 文件为清除终端屏幕创建了有用的快捷别名。这些别名能够以多种方式清除屏幕。
 
-## Clear
+## 清除
 
-[Clear](<https://en.wikipedia.org/wiki/Clear_(command)>) is a command that clears
-the terminal screen.
+[Clear](<https://zh.wikipedia.org/wiki/Clear_(Unix)>) 是一个清除终端屏幕的命令。
 
-| Alias  | Command                                         | Description                                                                                                  |
-| ------ | ----------------------------------------------- | ------------------------------------------------------------------------------------------------------------ |
-| c      | `clear`                                         | Clear the terminal screen.                                                                                   |
-| cl     | `c`                                             | Clear the terminal screen.                                                                                   |
-| clc    | `clear && cat`                                  | Clear the terminal screen and 打印 the contents of the current 目录.                                   |
-| clcat  | `clc`                                           | Clear the terminal screen and 打印 the contents of the current 目录.                                   |
-| clh    | `clear && history`                              | Clear the terminal screen and 打印 the command history.                                                     |
-| clhist | `clh`                                           | Clear the terminal screen and 打印 the command history.                                                     |
-| clp    | `clear && pwd`                                  | Clear the terminal screen and 打印 the current working 目录.                                           |
-| clpwd  | `clp`                                           | Clear the terminal screen and 打印 the current working 目录.                                           |
-| clr    | `c`                                             | Clear the terminal screen.                                                                                   |
-| cls    | `c`                                             | Clear the terminal screen.                                                                                   |
-| clt    | `clear && tree`                                 | Clear the terminal screen and 打印 the 目录 tree.                                                      |
-| cltree | `clt`                                           | Clear the terminal screen and 打印 the 目录 tree.                                                      |
-| ct     | `clear && tree ./`                              | Clear the terminal screen and 打印 the 目录 tree.                                                      |
-| ctree  | `ct`                                            | Clear the terminal screen and 打印 the 目录 tree.                                                      |
-| cpl    | `clear && pwd && echo '' && ls -a && echo ''`   | Clear the terminal screen and 打印 the current working 目录 and the contents of the current 目录. |
-| cplt   | `clear && pwd && echo '' && tree ./ && echo ''` | Clear the terminal screen and 打印 the current working 目录 and the 目录 tree.                    |
+| 别名   | 命令                                            | 描述                                                     |
+| ------ | ----------------------------------------------- | -------------------------------------------------------- |
+| c      | `clear`                                         | 清除终端屏幕。                                           |
+| cl     | `c`                                             | 清除终端屏幕。                                           |
+| clc    | `clear && cat`                                  | 清除终端屏幕并打印当前目录的内容。                       |
+| clcat  | `clc`                                           | 清除终端屏幕并打印当前目录的内容。                       |
+| clh    | `clear && history`                              | 清除终端屏幕并打印命令历史记录。                         |
+| clhist | `clh`                                           | 清除终端屏幕并打印命令历史记录。                         |
+| clp    | `clear && pwd`                                  | 清除终端屏幕并打印当前工作目录。                         |
+| clpwd  | `clp`                                           | 清除终端屏幕并打印当前工作目录。                         |
+| clr    | `c`                                             | 清除终端屏幕。                                           |
+| cls    | `c`                                             | 清除终端屏幕。                                           |
+| clt    | `clear && tree`                                 | 清除终端屏幕并打印目录树。                               |
+| cltree | `clt`                                           | 清除终端屏幕并打印目录树。                               |
+| ct     | `clear && tree ./`                              | 清除终端屏幕并打印目录树。                               |
+| ctree  | `ct`                                            | 清除终端屏幕并打印目录树。                               |
+| cpl    | `clear && pwd && echo '' && ls -a && echo ''`   | 清除终端屏幕并打印当前工作目录和当前目录的内容。         |
+| cplt   | `clear && pwd && echo '' && tree ./ && echo ''` | 清除终端屏幕并打印当前工作目录和目录树。                 |

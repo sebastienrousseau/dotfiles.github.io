@@ -1,50 +1,32 @@
 ---
-description: The Make aliases are a collection of aliases that allow you to interact with the `make` command line tool. Make is a tool which controls the generation of executables and other non-source files of a program from the program's source files.
+description: Os aliases do Make são uma coleção de aliases que permitem interagir com a ferramenta de linha de comando `make`. Make é uma ferramenta que controla a geração de executáveis e outros arquivos não-fonte de um programa a partir dos arquivos fonte do programa.
 lang: pt-BR
-metaTitle: The Make aliases - Dotfiles (BR)
+metaTitle: Aliases do Make - Dotfiles (BR)
 permalink: /pt/aliases/make/
-
-meta:
-  - name: keywords
-    content: aliases, make, makefile, linux, macos, shell, terminal, windows
-  - name: twitter:card
-    content: The Make aliases are a collection of aliases that allow you to interact with the `make` command line tool. Make is a tool which controls the generation of executables and other non-source files of a program from the program's source files.
-  - name: twitter:description
-    content: The Make aliases are a collection of aliases that allow you to interact with the `make` command line tool. Make is a tool which controls the generation of executables and other non-source files of a program from the program's source files.
-  - name: twitter:title
-    content: The Make aliases - Dotfiles (BR)
-  - name: og:title
-    content: The Make aliases - Dotfiles (BR)
-  - name: og:description
-    content: The Make aliases are a collection of aliases that allow you to interact with the `make` command line tool. Make is a tool which controls the generation of executables and other non-source files of a program from the program's source files.
-  - name: og:image:alt
-    content: Dotfiles - Simply designed to fit your shell life
-  - name: og:locale
-    content: en_GB
 ---
 
-# Make aliases
+# Aliases do Make
 
-The `make.aliases.sh` file creates helpful shortcut aliases for running `make`
-commands.
+O arquivo `make.aliases.sh` cria aliases de atalho úteis para executar comandos
+`make`.
 
 ## Make
 
-[Make](<https://en.wikipedia.org/wiki/Make_(software)>) is a tool which controls
-the generation of executables and other non-source files of a program from the
-program's source files.
+[Make](<https://en.wikipedia.org/wiki/Make_(software)>) é uma ferramenta que controla
+a geração de executáveis e outros arquivos não-fonte de um programa a partir dos
+arquivos fonte do programa.
 
-Make gets its knowledge of how to build your program from a file called the
-`Makefile`, which lists each of the non-source files and how to compute it from
-other files.
+Make obtém seu conhecimento de como construir seu programa de um arquivo chamado
+`Makefile`, que lista cada um dos arquivos não-fonte e como calculá-lo a partir de
+outros arquivos.
 
-| Alias | Comando               | Descrição                                                                  |
+| Alias | Comando        | Descrição                     |
 | ----- | -------------- | ----------------------------- |
-| mk    | `make`         | Run `make` with no arguments. |
-| mkc   | `make clean`   | Run `make clean`.             |
-| mkd   | `make doc`     | Run `make doc`.               |
-| mkf   | `make format`  | Run `make format`.            |
-| mkh   | `make help`    | Run `make help`.              |
-| mki   | `make install` | Run `make Instalar`.           |
-| mkr   | `make run`     | Run `make run`.               |
-| mkt   | `make test`    | Run `make test`.              |
+| mk    | `make`         | Executar `make` sem argumentos. |
+| mkc   | `make clean`   | Executar `make clean`.        |
+| mkd   | `make doc`     | Executar `make doc`.          |
+| mkf   | `make format`  | Executar `make format`.       |
+| mkh   | `make help`    | Executar `make help`.         |
+| mki   | `make install` | Executar `make install`.      |
+| mkr   | `make run`     | Executar `make run`.          |
+| mkt   | `make test`    | Executar `make test`.         |

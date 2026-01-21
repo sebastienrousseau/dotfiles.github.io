@@ -1,40 +1,44 @@
 ---
-description: legal aliases for Dotfiles
+description: Rechtliche Aliase für Dotfiles
 lang: de-DE
-metaTitle: legal aliases - Dotfiles
+metaTitle: Rechtliche Aliase - Dotfiles (DE)
 permalink: /de/aliases/legal/
 ---
 
-# Legal & Licensing-Aliase
+# Rechtliche & Lizenzierungs-Aliase
 
-Tools for managing open source compliance, license scanning, and attribution.
+Tools zur Verwaltung von Open-Source-Compliance, Lizenz-Scans und Attribution.
 
-## ⚖️ Aliases
+## ⚖️ Aliase
 
-### License Scanning
-| Alias | Description | Type |
-|-------|-------------|------|
-| `fossology-start` | Start local FOSSology server on port 8081 | Docker |
-| `fossology-stop` | Stop FOSSology server | Docker |
-| `license-scan` | Quick license scan of current dir (via Trivy) | Binary |
+### Lizenz-Scanning
 
-### Copyright Headers
-| Alias | Description | Type |
-|-------|-------------|------|
-| `add-headers` | recursively add MIT license headers to all source files | Docker (google/addlicense) |
+| Alias             | Beschreibung                                  | Typ    |
+| ----------------- | --------------------------------------------- | ------ |
+| `fossology-start` | Starte lokalen FOSSology-Server auf Port 8081 | Docker |
+| `fossology-stop`  | Stoppe FOSSology-Server                       | Docker |
+| `license-scan`    | Schneller Lizenzscan des aktuellen Verzeichnisses (via Trivy) | Binary |
+
+### Copyright-Header
+
+| Alias         | Beschreibung                                            | Typ                        |
+| ------------- | ------------------------------------------------------- | -------------------------- |
+| `add-headers` | Füge rekursiv MIT-Lizenzheader zu allen Quelldateien hinzu | Docker (google/addlicense) |
 
 ### Attribution
-| Alias | Description | Type |
-|-------|-------------|------|
-| `gen-notice` | Generate a `NOTICE` file for dependencies (Go support initially) | Docker |
 
-### Contribution
-| Alias | Description | Type |
-|-------|-------------|------|
-| `check-cla` | Watch GitHub PR checks (including CLA) | CLI (`gh`) |
+| Alias        | Beschreibung                                                     | Typ    |
+| ------------ | ---------------------------------------------------------------- | ------ |
+| `gen-notice` | Generiere eine `NOTICE`-Datei für Abhängigkeiten (Go-Unterstützung anfänglich) | Docker |
 
-## 📦 Requirements
+### Beitrag
 
-- **Docker**: For isolation of compliance tools.
-- **GitHub CLI (`gh`)**: For PR/CLA checking.
-- **Trivy**: Automatically installed/suggested for fast scanning.
+| Alias       | Beschreibung                           | Typ        |
+| ----------- | -------------------------------------- | ---------- |
+| `check-cla` | Überwache GitHub PR-Checks (inklusive CLA) | CLI (`gh`) |
+
+## 📦 Anforderungen
+
+- **Docker**: Zur Isolierung von Compliance-Tools.
+- **GitHub CLI (`gh`)**: Für PR/CLA-Überprüfung.
+- **Trivy**: Automatisch installiert/vorgeschlagen für schnelles Scannen.

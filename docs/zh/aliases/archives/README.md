@@ -1,113 +1,85 @@
 ---
-description: The archives aliases are able to create and handle archives in a variety of formats.
+description: 归档别名能够创建和处理各种格式的归档。
 lang: zh-CN
-metaTitle: Archives aliases - Dotfiles (CN)
+metaTitle: 归档别名 - Dotfiles (CN)
 permalink: /zh/aliases/archives/
-
-meta:
-  - name: keywords
-    content: 7-zip, aliases, archives, bash, bzip2, dotfiles, gzip, jar, linux, macos, shell, tar, unzip, windows, xz, zip, zstd
-  - name: twitter:card
-    content: The archives aliases are able to create and handle archives in a variety of formats.
-  - name: twitter:description
-    content: The archives aliases are able to create and handle archives in a variety of formats.
-  - name: twitter:title
-    content: Archives aliases - Dotfiles (CN)
-  - name: og:title
-    content: Archives aliases - Dotfiles (CN)
-  - name: og:description
-    content: The archives aliases are able to create and handle archives in a variety of formats.
-  - name: og:image:alt
-    content: Dotfiles - Simply designed to fit your shell life
-  - name: og:locale
-    content: en_GB
 ---
 
-# Archives aliases
+# 归档别名
 
-The `archives.aliases.sh` file creates helpful shortcut aliases for archiving
-files and directories. The aliases are able to create and handle archives in a
-variety of formats.
+`archives.aliases.sh` 文件创建了有用的快捷别名，用于归档文件和目录。
+这些别名能够创建和处理各种格式的归档。
 
 ## 7-Zip
 
-[7-Zip](http://www.7-zip.org/) is a file archiver with a high compression ratio.
+[7-Zip](http://www.7-zip.org/) 是一个具有高压缩比的文件归档器。
 
-| 别名  | 命令                   | 描述                                                                       |
-| ----- | ------- | -------------------------------------------------------------------- |
-| c7z   | `7z a`  | Compress a whole 目录 (including subdirectories) to a 7z 文件.  |
-| e7z   | `7z x`  | Extract a whole 目录 (including subdirectories) from a 7z 文件. |
+| 别名  | 命令    | 描述                                             |
+| ----- | ------- | ------------------------------------------------ |
+| c7z   | `7z a`  | 将整个目录（包括子目录）压缩为 7z 文件。         |
+| e7z   | `7z x`  | 从 7z 文件中提取整个目录（包括子目录）。         |
 
 ## Bzip2
 
-[Bzip2](http://www.bzip.org/) is a freely available, patent free, high-quality
-data compressor.
+[Bzip2](http://www.bzip.org/) 是一个免费可用、无专利、高质量的数据压缩器。
 
-| 别名  | 命令                   | 描述                                                                       |
-| ----- | --------- | ------------------------------- |
-| cbz2  | `bzip2`   | Compress a 文件 to a bz2 文件.  |
-| ebz2  | `bunzip2` | Extract a 文件 from a bz2 文件. |
+| 别名  | 命令      | 描述                             |
+| ----- | --------- | -------------------------------- |
+| cbz2  | `bzip2`   | 将文件压缩为 bz2 文件。          |
+| ebz2  | `bunzip2` | 从 bz2 文件中提取文件。          |
 
 ## Gzip
 
-[Gzip](https://www.gnu.org/software/gzip/) is a popular data compression program
-as a replacement for compress.
+[Gzip](https://www.gnu.org/software/gzip/) 是一个流行的数据压缩程序，作为 compress 的替代品。
 
-| 别名  | 命令                   | 描述                                                                       |
+| 别名  | 命令     | 描述                           |
 | ----- | -------- | ------------------------------ |
-| cgz   | `gzip`   | Compress a 文件 to a gz 文件.  |
-| egz   | `gunzip` | Extract a 文件 from a gz 文件. |
+| cgz   | `gzip`   | 将文件压缩为 gz 文件。         |
+| egz   | `gunzip` | 从 gz 文件中提取文件。         |
 
 ## Jar
 
-[Jar](https://docs.oracle.com/javase/tutorial/deployment/jar/) is a file format
-used to aggregate many files into one file to distribute application software or
-libraries on the Java platform.
+[Jar](https://docs.oracle.com/javase/tutorial/deployment/jar/) 是一种文件格式，用于将许多文件聚合到一个文件中，以便在 Java 平台上分发应用软件或库。
 
-| 别名  | 命令                   | 描述                                                                       |
-| ----- | ---------- | --------------------------------------------------------------------- |
-| cjar  | `jar -cvf` | Compress a whole 目录 (including subdirectories) to a jar 文件.  |
-| ejar  | `jar -xvf` | Extract a whole 目录 (including subdirectories) from a jar 文件. |
+| 别名  | 命令       | 描述                                             |
+| ----- | ---------- | ------------------------------------------------ |
+| cjar  | `jar -cvf` | 将整个目录（包括子目录）压缩为 jar 文件。        |
+| ejar  | `jar -xvf` | 从 jar 文件中提取整个目录（包括子目录）。        |
 
 ## Tar
 
-[Tar](https://www.gnu.org/software/tar/) is a computer program used to store
-many files together in a single file.
+[Tar](https://www.gnu.org/software/tar/) 是一个用于将许多文件存储在单个文件中的计算机程序。
 
-| 别名  | 命令                   | 描述                                                                       |
-| ----- | ----------- | ------------------------------------------------------------------------ |
-| ctar  | `tar -cvf`  | Compress a whole 目录 (including subdirectories) to a tar 文件.     |
-| etar  | `tar -xvf`  | Extract a whole 目录 (including subdirectories) from a tar 文件.    |
-| ctgz  | `tar -cvzf` | Compress a whole 目录 (including subdirectories) to a tar.gz 文件.  |
-| etgz  | `tar -xvzf` | Extract a whole 目录 (including subdirectories) from a tar.gz 文件. |
+| 别名  | 命令        | 描述                                                 |
+| ----- | ----------- | ---------------------------------------------------- |
+| ctar  | `tar -cvf`  | 将整个目录（包括子目录）压缩为 tar 文件。            |
+| etar  | `tar -xvf`  | 从 tar 文件中提取整个目录（包括子目录）。            |
+| ctgz  | `tar -cvzf` | 将整个目录（包括子目录）压缩为 tar.gz 文件。         |
+| etgz  | `tar -xvzf` | 从 tar.gz 文件中提取整个目录（包括子目录）。         |
 
 ## Xz
 
-[Xz](https://tukaani.org/xz/) is a general-purpose data compression software
-with a high compression ratio.
+[Xz](https://tukaani.org/xz/) 是一个通用的数据压缩软件，具有高压缩比。
 
-| 别名  | 命令                   | 描述                                                                       |
-| ----- | ---------- | -------------------------------------------------------------------- |
-| cxz   | `xz -zcvf` | Compress a whole 目录 (including subdirectories) to a xz 文件.  |
-| exz   | `xz -zxvf` | Extract a whole 目录 (including subdirectories) from a xz 文件. |
+| 别名  | 命令       | 描述                                             |
+| ----- | ---------- | ------------------------------------------------ |
+| cxz   | `xz -zcvf` | 将整个目录（包括子目录）压缩为 xz 文件。         |
+| exz   | `xz -zxvf` | 从 xz 文件中提取整个目录（包括子目录）。         |
 
 ## Zip
 
-[Zip](<https://en.wikipedia.org/wiki/Zip_(file_format)>) is a file format used to
-output a single file containing one or more files.
+[Zip](<https://zh.wikipedia.org/wiki/Zip>) 是一种文件格式，用于输出包含一个或多个文件的单个文件。
 
-| 别名  | 命令                   | 描述                                                                       |
-| ----- | -------- | --------------------------------------------------------------------- |
-| cz    | `zip -r` | Compress a whole 目录 (including subdirectories) to a zip 文件.  |
-| ez    | `unzip`  | Extract a whole 目录 (including subdirectories) from a zip 文件. |
+| 别名  | 命令     | 描述                                             |
+| ----- | -------- | ------------------------------------------------ |
+| cz    | `zip -r` | 将整个目录（包括子目录）压缩为 zip 文件。        |
+| ez    | `unzip`  | 从 zip 文件中提取整个目录（包括子目录）。        |
 
 ## Zstd
 
-[Zstd](https://facebook.github.io/zstd/) is a fast lossless compression
-algorithm, targeting real-time compression scenarios at zlib-level and better
-compression ratios.
+[Zstd](https://facebook.github.io/zstd/) 是一种快速无损压缩算法，针对 zlib 级别的实时压缩场景和更好的压缩比。
 
-| 别名  | 命令                   | 描述                                                                       |
-| ----- | ------------ | --------------------------------------------------------------------- |
-| czstd | `zstd -zcvf` | Compress a whole 目录 (including subdirectories) to a zst 文件.  |
-| ezstd | `zstd -zxvf` | Extract a whole 目录 (including subdirectories) from a zst 文件. |
+| 别名  | 命令         | 描述                                             |
+| ----- | ------------ | ------------------------------------------------ |
+| czstd | `zstd -zcvf` | 将整个目录（包括子目录）压缩为 zst 文件。        |
+| ezstd | `zstd -zxvf` | 从 zst 文件中提取整个目录（包括子目录）。        |

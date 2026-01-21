@@ -1,53 +1,32 @@
 ---
-description: The NPM aliases are a collection of aliases that allow you to interact with the `npm` command line tool. Npm is a package manager for the JavaScript programming language.
+description: NPM 别名是一组别名，允许您与 `npm` 命令行工具交互。Npm 是 JavaScript 编程语言的包管理器。
 lang: zh-CN
-metaTitle: The NPM aliases - Dotfiles (CN)
+metaTitle: NPM 别名 - Dotfiles (CN)
 permalink: /zh/aliases/npm/
-
-meta:
-  - name: keywords
-    content: aliases, npm, node, node package manager, package manager, linux, macos, shell, terminal, windows
-  - name: twitter:card
-    content: The NPM aliases are a collection of aliases that allow you to interact with the `npm` command line tool. Npm is a package manager for the JavaScript programming language.
-  - name: twitter:description
-    content: The NPM aliases are a collection of aliases that allow you to interact with the `npm` command line tool. Npm is a package manager for the JavaScript programming language.
-  - name: twitter:title
-    content: The NPM aliases - Dotfiles (CN)
-  - name: og:title
-    content: The NPM aliases - Dotfiles (CN)
-  - name: og:description
-    content: The NPM aliases are a collection of aliases that allow you to interact with the `npm` command line tool. Npm is a package manager for the JavaScript programming language.
-  - name: og:image:alt
-    content: Dotfiles - Simply designed to fit your shell life
-  - name: og:locale
-    content: en_GB
 ---
 
-# NPM aliases
+# NPM 别名
 
-The `npm.aliases.sh` file creates helpful shortcut aliases
-for [npm](https://www.npmjs.com/).
+`npm.aliases.sh` 文件为 [npm](https://www.npmjs.com/) 创建了有用的快捷别名。
 
 ## NPM
 
-[npm](https://www.npmjs.com/) is a package manager for the JavaScript
-programming language. It is the default package manager for the JavaScript
-runtime environment Node.js.
+[npm](https://www.npmjs.com/) 是 JavaScript 编程语言的包管理器。它是 JavaScript 运行时环境 Node.js 的默认包管理器。
 
-| 别名  | 命令                   | 描述                                                                       |
-| ----- | --------------- | --------------------- |
-| npb   | `npm build`     | 构建 npm script.     |
-| npc   | `npm cache`     | Cache npm package.    |
-| npd   | `npm dev`       | Dev npm script.       |
-| npg   | `npm global`    | Global npm package.   |
-| npi   | `npm install`   | 安装 npm package.  |
-| npl   | `npm list`      | 列出 npm packages.    |
-| npp   | `npm publish`   | Publish npm package.  |
-| npr   | `npm run`       | Run npm script.       |
-| nprw  | `npm run watch` | Run npm script watch. |
-| nps   | `npm start`     | 开始 npm script.     |
-| npsv  | `npm serve`     | Serve npm script.     |
-| npt   | `npm test`      | Test npm script.      |
-| npu   | `npm update`    | 更新 npm package.   |
-| npx   | `npm exec`      | Exec npm package.     |
-| npy   | `npm why`       | Why npm package.      |
+| 别名  | 命令            | 描述                |
+| ----- | --------------- | ------------------- |
+| npb   | `npm build`     | 构建 npm 脚本。     |
+| npc   | `npm cache`     | 缓存 npm 包。       |
+| npd   | `npm dev`       | 开发 npm 脚本。     |
+| npg   | `npm global`    | 全局 npm 包。       |
+| npi   | `npm install`   | 安装 npm 包。       |
+| npl   | `npm list`      | 列出 npm 包。       |
+| npp   | `npm publish`   | 发布 npm 包。       |
+| npr   | `npm run`       | 运行 npm 脚本。     |
+| nprw  | `npm run watch` | 运行 npm 脚本监视。 |
+| nps   | `npm start`     | 启动 npm 脚本。     |
+| npsv  | `npm serve`     | 服务 npm 脚本。     |
+| npt   | `npm test`      | 测试 npm 脚本。     |
+| npu   | `npm update`    | 更新 npm 包。       |
+| npx   | `npm exec`      | 执行 npm 包。       |
+| npy   | `npm why`       | 为什么 npm 包。     |

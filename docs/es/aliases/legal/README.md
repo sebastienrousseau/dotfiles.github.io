@@ -1,40 +1,44 @@
 ---
-description: legal aliases for Dotfiles
+description: Alias legales para Dotfiles
 lang: es-ES
-metaTitle: legal aliases - Dotfiles
+metaTitle: Alias Legales - Dotfiles (ES)
 permalink: /es/aliases/legal/
 ---
 
-# Alias de Legal & Licensing
+# Alias Legales y de Licencias
 
-Tools for managing open source compliance, license scanning, and attribution.
+Herramientas para gestionar el cumplimiento de código abierto, escaneo de licencias y atribución.
 
-## ⚖️ Aliases
+## ⚖️ Alias
 
-### License Scanning
-| Alias | Description | Type |
-|-------|-------------|------|
-| `fossology-start` | Start local FOSSology server on port 8081 | Docker |
-| `fossology-stop` | Stop FOSSology server | Docker |
-| `license-scan` | Quick license scan of current dir (via Trivy) | Binary |
+### Escaneo de Licencias
 
-### Copyright Headers
-| Alias | Description | Type |
-|-------|-------------|------|
-| `add-headers` | recursively add MIT license headers to all source files | Docker (google/addlicense) |
+| Alias             | Descripción                                   | Tipo   |
+| ----------------- | --------------------------------------------- | ------ |
+| `fossology-start` | Iniciar servidor local FOSSology en el puerto 8081     | Docker |
+| `fossology-stop`  | Detener servidor FOSSology                         | Docker |
+| `license-scan`    | Escaneo rápido de licencias del directorio actual (vía Trivy) | Binario |
 
-### Attribution
-| Alias | Description | Type |
-|-------|-------------|------|
-| `gen-notice` | Generate a `NOTICE` file for dependencies (Go support initially) | Docker |
+### Cabeceras de Copyright
 
-### Contribution
-| Alias | Description | Type |
-|-------|-------------|------|
-| `check-cla` | Watch GitHub PR checks (including CLA) | CLI (`gh`) |
+| Alias         | Descripción                                             | Tipo                       |
+| ------------- | ------------------------------------------------------- | -------------------------- |
+| `add-headers` | Agregar recursivamente cabeceras de licencia MIT a todos los archivos fuente | Docker (google/addlicense) |
 
-## 📦 Requirements
+### Atribución
 
-- **Docker**: For isolation of compliance tools.
-- **GitHub CLI (`gh`)**: For PR/CLA checking.
-- **Trivy**: Automatically installed/suggested for fast scanning.
+| Alias        | Descripción                                                      | Tipo   |
+| ------------ | ---------------------------------------------------------------- | ------ |
+| `gen-notice` | Generar un archivo `NOTICE` para dependencias (soporte inicial para Go) | Docker |
+
+### Contribución
+
+| Alias       | Descripción                            | Tipo       |
+| ----------- | -------------------------------------- | ---------- |
+| `check-cla` | Observar comprobaciones de PR en GitHub (incluyendo CLA) | CLI (`gh`) |
+
+## 📦 Requisitos
+
+- **Docker**: Para el aislamiento de herramientas de cumplimiento.
+- **GitHub CLI (`gh`)**: Para comprobar PR/CLA.
+- **Trivy**: Instalado/sugerido automáticamente para escaneo rápido.

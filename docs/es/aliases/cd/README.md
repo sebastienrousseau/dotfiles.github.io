@@ -1,58 +1,53 @@
 ---
-description: The Change Directory aliases are a collection of aliases that allow you to interact with the `cd` command line tool. Cd is a tool which changes the current directory.
+description: Los alias de Change Directory son una colección de atajos que te permiten interactuar con la herramienta de línea de comandos `cd`. Cd es una herramienta que cambia el directorio actual.
 lang: es-ES
-metaTitle: Change Directory aliases - Dotfiles (ES)
+metaTitle: Alias de Change Directory - Dotfiles (ES)
 permalink: /es/aliases/cd/
 
 meta:
   - name: keywords
-    content: aliases, cd, chdir, change directory, directory, linux, macos, shell, terminal, windows
+    content: alias, cd, chdir, cambiar directorio, directorio, linux, macos, shell, terminal, windows
   - name: twitter:card
-    content: The Change Directory aliases are a collection of aliases that allow you to interact with the `cd` command line tool. Cd is a tool which changes the current directory.
+    content: Los alias de Change Directory son una colección de atajos que te permiten interactuar con la herramienta de línea de comandos `cd`. Cd es una herramienta que cambia el directorio actual.
   - name: twitter:description
-    content: The Change Directory aliases are a collection of aliases that allow you to interact with the `cd` command line tool. Cd is a tool which changes the current directory.
+    content: Los alias de Change Directory son una colección de atajos que te permiten interactuar con la herramienta de línea de comandos `cd`. Cd es una herramienta que cambia el directorio actual.
   - name: twitter:title
-    content: Change Directory aliases - Dotfiles (ES)
+    content: Alias de Change Directory - Dotfiles (ES)
   - name: og:title
-    content: Change Directory aliases - Dotfiles (ES)
+    content: Alias de Change Directory - Dotfiles (ES)
   - name: og:description
-    content: The Change Directory aliases are a collection of aliases that allow you to interact with the `cd` command line tool. Cd is a tool which changes the current directory.
+    content: Los alias de Change Directory son una colección de atajos que te permiten interactuar con la herramienta de línea de comandos `cd`. Cd es una herramienta que cambia el directorio actual.
   - name: og:image:alt
-    content: Dotfiles - Simply designed to fit your shell life
+    content: Dotfiles - Simplemente diseñado para adaptarse a tu vida en el shell
   - name: og:locale
-    content: en_GB
+    content: es_ES
 ---
 
-# Change Directory aliases
+# Alias de Change Directory
 
-The `cd.aliases.sh` file creates helpful shortcut aliases for
-navigating the terminal.
+El archivo `cd.aliases.sh` crea atajos útiles para navegar por la terminal.
 
-The Change Directory aliases are a collection of aliases that allow you to
-interact with the `cd` command line tool. Cd is a tool which changes the current
-directory.
+Los alias de Change Directory son una colección de atajos que te permiten interactuar con la herramienta de línea de comandos `cd`. Cd es una herramienta que cambia el directorio actual.
 
-## Navigation
+## Navegación
 
-The cd command, also known as chdir (change directory), is a command-line shell
-command used to change the current working directory in various operating
-systems.
+El comando cd, también conocido como chdir (change directory), es un comando de línea de comandos utilizado para cambiar el directorio de trabajo actual en varios sistemas operativos.
 
 | Alias | Comando               | Descripción                                                                |
 | ----- | ----------------------------- | ---------------------------------------------------------------- |
-| -     | `cd -`                        | Shortcut to go to previous directorio.                            |
-| ..    | `cd ..`                       | Shortcut to go to parent directorio.                              |
-| ...   | `cd ../..`                    | Shortcut to go to grandparent directorio.                         |
-| ....  | `cd ../../..`                 | Shortcut to go to great-grandparent directorio.                   |
-| ..... | `cd ../../../..`              | Shortcut to go to great-great-grandparent directorio.             |
-| ~     | `cd ~`                        | Shortcut to go to home directorio.                                |
-| app   | `cd ${HOME}/Applications; ls` | Shortcut to go to the Applications directorio.                    |
-| cod   | `cd ${HOME}/Code; ls`         | Shortcut to go to the Code directorio and Listar its contents.      |
-| des   | `cd ${HOME}/Desktop; ls`      | Shortcut to go to the Desktop directorio and Listar its contents.   |
-| doc   | `cd ${HOME}/Documents; ls`    | Shortcut to go to the Documents directorio and Listar its contents. |
-| dot   | `cd ${HOME}/.dotfiles; ls`    | Shortcut to go to the dotfiles directorio.                        |
-| dow   | `cd ${HOME}/Downloads; ls`    | Shortcut to go to the Downloads directorio and Listar its contents. |
-| hom   | `cd ${HOME}/; ls`             | Shortcut to go to home directorio and Listar its contents.          |
-| mus   | `cd ${HOME}/Music; ls`        | Shortcut to go to the Music directorio and Listar its contents.     |
-| pic   | `cd ${HOME}/Pictures; ls`     | Shortcut to go to the Pictures directorio and Listar its contents.  |
-| vid   | `cd ${HOME}/Videos; ls`       | Shortcut to go to the Videos directorio and Listar its contents.    |
+| -     | `cd -`                        | Atajo para ir al directorio anterior.                            |
+| ..    | `cd ..`                       | Atajo para ir al directorio padre.                              |
+| ...   | `cd ../..`                    | Atajo para ir al directorio abuelo.                         |
+| ....  | `cd ../../..`                 | Atajo para ir al directorio bisabuelo.                   |
+| ..... | `cd ../../../..`              | Atajo para ir al directorio tatarabuelo.             |
+| ~     | `cd ~`                        | Atajo para ir al directorio de inicio (home).                                |
+| app   | `cd ${HOME}/Applications; ls` | Atajo para ir al directorio Applications.                    |
+| cod   | `cd ${HOME}/Code; ls`         | Atajo para ir al directorio Code y listar su contenido.      |
+| des   | `cd ${HOME}/Desktop; ls`      | Atajo para ir al directorio Desktop y listar su contenido.   |
+| doc   | `cd ${HOME}/Documents; ls`    | Atajo para ir al directorio Documents y listar su contenido. |
+| dot   | `cd ${HOME}/.dotfiles; ls`    | Atajo para ir al directorio .dotfiles.                        |
+| dow   | `cd ${HOME}/Downloads; ls`    | Atajo para ir al directorio Downloads y listar su contenido. |
+| hom   | `cd ${HOME}/; ls`             | Atajo para ir al directorio home y listar su contenido.          |
+| mus   | `cd ${HOME}/Music; ls`        | Atajo para ir al directorio Music y listar su contenido.     |
+| pic   | `cd ${HOME}/Pictures; ls`     | Atajo para ir al directorio Pictures y listar su contenido.  |
+| vid   | `cd ${HOME}/Videos; ls`       | Atajo para ir al directorio Videos y listar su contenido.    |

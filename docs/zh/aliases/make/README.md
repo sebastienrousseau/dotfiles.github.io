@@ -1,50 +1,27 @@
 ---
-description: The Make aliases are a collection of aliases that allow you to interact with the `make` command line tool. Make is a tool which controls the generation of executables and other non-source files of a program from the program's source files.
+description: Make 别名是一组别名，允许您与 `make` 命令行工具有更方便的交互。Make 是一个从程序的源文件控制生成可执行文件和其他非源文件的工具。
 lang: zh-CN
-metaTitle: The Make aliases - Dotfiles (CN)
+metaTitle: Make 别名 - Dotfiles (CN)
 permalink: /zh/aliases/make/
-
-meta:
-  - name: keywords
-    content: aliases, make, makefile, linux, macos, shell, terminal, windows
-  - name: twitter:card
-    content: The Make aliases are a collection of aliases that allow you to interact with the `make` command line tool. Make is a tool which controls the generation of executables and other non-source files of a program from the program's source files.
-  - name: twitter:description
-    content: The Make aliases are a collection of aliases that allow you to interact with the `make` command line tool. Make is a tool which controls the generation of executables and other non-source files of a program from the program's source files.
-  - name: twitter:title
-    content: The Make aliases - Dotfiles (CN)
-  - name: og:title
-    content: The Make aliases - Dotfiles (CN)
-  - name: og:description
-    content: The Make aliases are a collection of aliases that allow you to interact with the `make` command line tool. Make is a tool which controls the generation of executables and other non-source files of a program from the program's source files.
-  - name: og:image:alt
-    content: Dotfiles - Simply designed to fit your shell life
-  - name: og:locale
-    content: en_GB
 ---
 
-# Make aliases
+# Make 别名
 
-The `make.aliases.sh` file creates helpful shortcut aliases for running `make`
-commands.
+`make.aliases.sh` 文件为运行 `make` 命令创建了有用的快捷别名。
 
 ## Make
 
-[Make](<https://en.wikipedia.org/wiki/Make_(software)>) is a tool which controls
-the generation of executables and other non-source files of a program from the
-program's source files.
+[Make](<https://zh.wikipedia.org/wiki/Make>) 是一个从程序的源文件控制生成可执行文件和其他非源文件的工具。
 
-Make gets its knowledge of how to build your program from a file called the
-`Makefile`, which lists each of the non-source files and how to compute it from
-other files.
+Make 从一个名为 `Makefile` 的文件中获取如何构建程序的知识，该文件列出了每个非源文件以及如何从其他文件计算它。
 
-| 别名  | 命令                   | 描述                                                                       |
-| ----- | -------------- | ----------------------------- |
-| mk    | `make`         | Run `make` with no arguments. |
-| mkc   | `make clean`   | Run `make clean`.             |
-| mkd   | `make doc`     | Run `make doc`.               |
-| mkf   | `make format`  | Run `make format`.            |
-| mkh   | `make help`    | Run `make help`.              |
-| mki   | `make install` | Run `make 安装`.           |
-| mkr   | `make run`     | Run `make run`.               |
-| mkt   | `make test`    | Run `make test`.              |
+| 别名  | 命令           | 描述                       |
+| ----- | -------------- | -------------------------- |
+| mk    | `make`         | 运行不带参数的 `make`。    |
+| mkc   | `make clean`   | 运行 `make clean`。        |
+| mkd   | `make doc`     | 运行 `make doc`。          |
+| mkf   | `make format`  | 运行 `make format`。       |
+| mkh   | `make help`    | 运行 `make help`。         |
+| mki   | `make install` | 运行 `make install`。      |
+| mkr   | `make run`     | 运行 `make run`。          |
+| mkt   | `make test`    | 运行 `make test`。         |

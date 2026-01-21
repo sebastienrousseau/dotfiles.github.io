@@ -1,19 +1,19 @@
 ---
-description: diagnostics aliases for Dotfiles
+description: Dotfiles 的诊断别名
 lang: zh-CN
-metaTitle: diagnostics aliases - Dotfiles
+metaTitle: 诊断别名 - Dotfiles (CN)
 permalink: /zh/aliases/diagnostics/
 ---
 
-# Diagnostics 别名
+# 诊断别名
 
-Tools for self-healing and system health checks.
+用于自我修复和系统健康检查的工具。
 
-## 🩺 Health & Repair
+## 🩺 健康与修复
 
-| Alias | Description |
-|-------|-------------|
-| `doc`, `dot-doctor` | Run the system health 检查 script (`doctor.sh`). |
-| `drift`, `dot-drift` | 验证 if local 文件 have drifted from the managed state (`chezmoi 验证`). |
-| `heal`, `dot-heal` | Apply the managed state to repair drift (`chezmoi apply`). |
-| `doc-full` | Run doctor with extended path debugging info. |
+| 别名                 | 描述                                             |
+| -------------------- | ------------------------------------------------ |
+| `doc`, `dot-doctor`  | 运行系统健康检查脚本 (`doctor.sh`)。             |
+| `drift`, `dot-drift` | 验证本地文件是否偏离了托管状态 (`chezmoi verify`)。 |
+| `heal`, `dot-heal`   | 应用托管状态以修复偏差 (`chezmoi apply`)。       |
+| `doc-full`           | 运行带有扩展路径调试信息的 doctor。              |

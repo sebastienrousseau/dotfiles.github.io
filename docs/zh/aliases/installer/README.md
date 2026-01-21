@@ -1,17 +1,17 @@
 ---
-description: installer aliases for Dotfiles
+description: Dotfiles 的安装程序别名
 lang: zh-CN
-metaTitle: installer aliases - Dotfiles
+metaTitle: 安装程序别名 - Dotfiles (CN)
 permalink: /zh/aliases/installer/
 ---
 
-# Installer 别名
+# 安装程序别名
 
-Tools for bootstrapping and remote deployment.
+用于引导和远程部署的工具。
 
-## 🚀 Commands
+## 🚀 命令
 
-| Alias | Description |
-|-------|-------------|
-| `dot-install` | Run the `安装.sh` bootstrap script locally. |
-| `dot-teleport` | Teleport your config to a remote server (`dot-teleport user@host`). |
+| 别名           | 描述                                                         |
+| -------------- | ------------------------------------------------------------ |
+| `dot-install`  | 本地运行 `install.sh` 引导脚本。                             |
+| `dot-teleport` | 将您的配置传送到远程服务器 (`dot-teleport user@host`)。      |

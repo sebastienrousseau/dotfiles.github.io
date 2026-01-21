@@ -1,19 +1,19 @@
 ---
-description: diagnostics aliases for Dotfiles
+description: Diagnose Aliase für Dotfiles
 lang: de-DE
-metaTitle: diagnostics aliases - Dotfiles
+metaTitle: Diagnose Aliase - Dotfiles (DE)
 permalink: /de/aliases/diagnostics/
 ---
 
-# Diagnostics-Aliase
+# Diagnose Aliase
 
-Tools for self-healing and system health checks.
+Tools für Selbstheilung und Systemintegritätsprüfungen.
 
-## 🩺 Health & Repair
+## 🩺 Gesundheit & Reparatur
 
-| Alias | Description |
-|-------|-------------|
-| `doc`, `dot-doctor` | Run the system health Prüfen script (`doctor.sh`). |
-| `drift`, `dot-drift` | Überprüfen if local Dateien have drifted from the managed state (`chezmoi Überprüfen`). |
-| `heal`, `dot-heal` | Apply the managed state to repair drift (`chezmoi apply`). |
-| `doc-full` | Run doctor with extended path debugging info. |
+| Alias                | Beschreibung                                                                  |
+| -------------------- | ----------------------------------------------------------------------------- |
+| `doc`, `dot-doctor`  | Führe das Systemgesundheitsprüfskript aus (`doctor.sh`).                      |
+| `drift`, `dot-drift` | Überprüfe, ob lokale Dateien vom verwalteten Zustand abgewichen sind (`chezmoi verify`). |
+| `heal`, `dot-heal`   | Wende den verwalteten Zustand an, um Abweichungen zu reparieren (`chezmoi apply`).    |
+| `doc-full`           | Führe Doktor mit erweiterten Pfad-Debugging-Informationen aus.                |

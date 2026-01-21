@@ -1,39 +1,21 @@
 ---
-description: The Rsync aliases are a collection of aliases that allow you to interact with the `rsync` command line tool. Rsync is a tool which synchronises files and directories between two locations.
+description: Die Rsync-Aliase sind eine Sammlung von Aliasen, die es Ihnen ermöglichen, mit dem `rsync` Kommandozeilen-Tool zu interagieren. Rsync ist ein Tool, das Dateien und Verzeichnisse zwischen zwei Orten synchronisiert.
 lang: de-DE
-metaTitle: The Rsync aliases - Dotfiles (DE)
+metaTitle: Rsync Aliase - Dotfiles (DE)
 permalink: /de/aliases/rsync/
-
-meta:
-  - name: keywords
-    content: aliases, rsync, linux, macos, shell, terminal, windows
-  - name: twitter:card
-    content: The Rsync aliases are a collection of aliases that allow you to interact with the `rsync` command line tool. Rsync is a tool which synchronises files and directories between two locations.
-  - name: twitter:description
-    content: The Rsync aliases are a collection of aliases that allow you to interact with the `rsync` command line tool. Rsync is a tool which synchronises files and directories between two locations.
-  - name: twitter:title
-    content: The Rsync aliases - Dotfiles (DE)
-  - name: og:title
-    content: The Rsync aliases - Dotfiles (DE)
-  - name: og:description
-    content: The Rsync aliases are a collection of aliases that allow you to interact with the `rsync` command line tool. Rsync is a tool which synchronises files and directories between two locations.
-  - name: og:image:alt
-    content: Dotfiles - Simply designed to fit your shell life
-  - name: og:locale
-    content: en_GB
 ---
 
-# Rsync aliases
+# Rsync Aliase
 
-The `rsync.aliases.sh` file creates helpful shortcut aliases for
-[rsync](https://en.wikipedia.org/wiki/Rsync).
+Die Datei `rsync.aliases.sh` erstellt hilfreiche Shortcut-Aliase für
+[rsync](https://de.wikipedia.org/wiki/Rsync).
 
 ## Rsync
 
-[Rsync](https://en.wikipedia.org/wiki/Rsync) is a command that copies files and
-directories to another location.
+[Rsync](https://de.wikipedia.org/wiki/Rsync) ist ein Befehl, der Dateien und
+Verzeichnisse an einen anderen Ort kopiert.
 
-| Alias | Befehl                | Beschreibung                                                               |
-| ----- | ------------ | -------------------------------- |
-| rs    | `rsync -avz` | Rsync with verbose and progress. |
-| rsync | `rs`         | Rsync with verbose and progress. |
+| Alias | Befehl       | Beschreibung                        |
+| ----- | ------------ | ----------------------------------- |
+| rs    | `rsync -avz` | Rsync mit Verbose und Fortschritt.  |
+| rsync | `rs`         | Rsync mit Verbose und Fortschritt.  |

@@ -1,41 +1,41 @@
 ---
-description: macOS aliases for Dotfiles
+description: Dotfiles 的 macOS 别名
 lang: zh-CN
-metaTitle: macOS aliases - Dotfiles
+metaTitle: macOS 别名 - Dotfiles (CN)
 permalink: /zh/aliases/macOS/
 ---
 
 # macOS 别名
 
-管理 macOS 别名。 Part of the **Universal Dotfiles** configuration.
+管理 macOS 别名。**Universal Dotfiles** 配置的一部分。
 
 ![Dotfiles banner][banner]
 
 ## 📖 描述
 
-这些别名定义在 `macOS.aliases.sh` 中，并由 `chezmoi` 自动加载。
+这些别名在 `macOS.aliases.sh` 中定义，并由 `chezmoi` 自动加载。
 
 ## ⚡ 别名
 
-This code provides a set of aliases for macOS.
-- `clds` Recursively delete .DS_Store files.
-- `clls`  Clean up LaunchServices to remove duplicates in the
-  'Open With' menu.
-- `finderHideHidden` Hide hidden files in Finder.
-- `finderShowHidden` Show hidden files in Finder.
-- `hideDesktopIcons` Hide all icons on the Desktop.
-- `iphone` Open the device simulators.
-- `lockScreen` Lock the screen of the mac.
-- `ofd` Open the current directory in a Finder window.
-- `purge` Purging Xcode DerivedData.
-- `safariSafeMode` Launch Safari in Safe Mode.
-- `showDesktopIcons` Show all icons on the Desktop.
-- `screensaverDesktop` Run a screensaver on the Desktop.
-- `trash` Empty the Trash on all mounted volumes and the main HDD.
-- `vp` Verify macOS Permissions.
-- `vv` Verify macOS Volume.
-- `wifiOn` Turn on Wi-Fi.
-- `wifiOff` Turn off Wi-Fi.
-- `xcode` Launch XCode app in macOS.
+此代码提供了一组 macOS 的别名。
+
+- `clds` 递归删除 .DS_Store 文件。
+- `clls` 清理 LaunchServices 以删除“打开方式”菜单中的重复项。
+- `finderHideHidden` 在 Finder 中隐藏隐藏文件。
+- `finderShowHidden` 在 Finder 中显示隐藏文件。
+- `hideDesktopIcons` 隐藏桌面上的所有图标。
+- `iphone` 打开设备模拟器。
+- `lockScreen` 锁定 mac 屏幕。
+- `ofd` 在 Finder 窗口中打开当前目录。
+- `purge` 清除 Xcode DerivedData。
+- `safariSafeMode` 在安全模式下启动 Safari。
+- `showDesktopIcons` 显示桌面上的所有图标。
+- `screensaverDesktop` 在桌面上运行屏幕保护程序。
+- `trash` 清空所有已挂载卷和主硬盘上的废纸篓。
+- `vp` 验证 macOS 权限。
+- `vv` 验证 macOS 卷。
+- `wifiOn` 打开 Wi-Fi。
+- `wifiOff` 关闭 Wi-Fi。
+- `xcode` 在 macOS 中启动 XCode 应用程序。
 
 [banner]: https://kura.pro/dotfiles/v2/images/titles/title-dotfiles.svg

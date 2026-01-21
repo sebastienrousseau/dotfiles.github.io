@@ -1,39 +1,19 @@
 ---
-description: The Rsync aliases are a collection of aliases that allow you to interact with the `rsync` command line tool. Rsync is a tool which synchronises files and directories between two locations.
+description: Rsync 别名是一组别名，允许您与 `rsync` 命令行工具交互。Rsync 是一个在两个位置之间同步文件和目录的工具。
 lang: zh-CN
-metaTitle: The Rsync aliases - Dotfiles (CN)
+metaTitle: Rsync 别名 - Dotfiles (CN)
 permalink: /zh/aliases/rsync/
-
-meta:
-  - name: keywords
-    content: aliases, rsync, linux, macos, shell, terminal, windows
-  - name: twitter:card
-    content: The Rsync aliases are a collection of aliases that allow you to interact with the `rsync` command line tool. Rsync is a tool which synchronises files and directories between two locations.
-  - name: twitter:description
-    content: The Rsync aliases are a collection of aliases that allow you to interact with the `rsync` command line tool. Rsync is a tool which synchronises files and directories between two locations.
-  - name: twitter:title
-    content: The Rsync aliases - Dotfiles (CN)
-  - name: og:title
-    content: The Rsync aliases - Dotfiles (CN)
-  - name: og:description
-    content: The Rsync aliases are a collection of aliases that allow you to interact with the `rsync` command line tool. Rsync is a tool which synchronises files and directories between two locations.
-  - name: og:image:alt
-    content: Dotfiles - Simply designed to fit your shell life
-  - name: og:locale
-    content: en_GB
 ---
 
-# Rsync aliases
+# Rsync 别名
 
-The `rsync.aliases.sh` file creates helpful shortcut aliases for
-[rsync](https://en.wikipedia.org/wiki/Rsync).
+`rsync.aliases.sh` 文件为 [rsync](https://zh.wikipedia.org/wiki/Rsync) 创建了有用的快捷别名。
 
 ## Rsync
 
-[Rsync](https://en.wikipedia.org/wiki/Rsync) is a command that copies files and
-directories to another location.
+[Rsync](https://zh.wikipedia.org/wiki/Rsync) 是一个将文件和目录复制到另一个位置的命令。
 
-| 别名  | 命令                   | 描述                                                                       |
+| 别名  | 命令         | 描述                             |
 | ----- | ------------ | -------------------------------- |
-| rs    | `rsync -avz` | Rsync with verbose and progress. |
-| rsync | `rs`         | Rsync with verbose and progress. |
+| rs    | `rsync -avz` | 带有详细信息和进度的 Rsync。     |
+| rsync | `rs`         | 带有详细信息和进度的 Rsync。     |

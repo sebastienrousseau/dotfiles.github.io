@@ -1,43 +1,41 @@
 ---
-description: The Configuration aliases are aliases for opening the configuration files for the terminal and the shell.
+description: Los alias de Configuración son alias para abrir los archivos de configuración para la terminal y el shell.
 lang: es-ES
-metaTitle: The Configuration aliases - Dotfiles (ES)
+metaTitle: Alias de Configuración - Dotfiles (ES)
 permalink: /es/aliases/configuration/
-
 meta:
   - name: keywords
-    content: aliases, configuration, dotfiles, linux, macos, shell, terminal, windows
+    content: alias, configuración, dotfiles, linux, macos, shell, terminal, windows
   - name: twitter:card
-    content: The Configuration aliases are aliases for opening the configuration files for the terminal and the shell.
+    content: Los alias de Configuración son alias para abrir los archivos de configuración para la terminal y el shell.
   - name: twitter:description
-    content: The Configuration aliases are aliases for opening the configuration files for the terminal and the shell.
+    content: Los alias de Configuración son alias para abrir los archivos de configuración para la terminal y el shell.
   - name: twitter:title
-    content: The Configuration aliases - Dotfiles (ES)
+    content: Alias de Configuración - Dotfiles (ES)
   - name: og:title
-    content: The Configuration aliases - Dotfiles (ES)
+    content: Alias de Configuración - Dotfiles (ES)
   - name: og:description
-    content: The Configuration aliases are aliases for opening the configuration files for the terminal and the shell.
+    content: Los alias de Configuración son alias para abrir los archivos de configuración para la terminal y el shell.
   - name: og:image:alt
-    content: Dotfiles - Simply designed to fit your shell life
+    content: Dotfiles - Simplemente diseñado para adaptarse a tu vida en el shell
   - name: og:locale
-    content: en_GB
+    content: es_ES
 ---
 
-# Configuration aliases
+# Alias de Configuración
 
-The `configuration.aliases.sh` file creates helpful shortcut aliases for opening
-the configuration files for the terminal and the shell.
+El archivo `configuration.aliases.sh` crea atajos útiles para abrir los archivos de configuración para la terminal y el shell.
 
 > [!TIP]
-> **New in v0.2.471**: You can now use the `dot` command to manage your configuration.
-> Try `dot learn` for an interactive tour or `dot doctor` to verify your setup.
+> **Nuevo en v0.2.471**: Ahora puedes usar el comando `dot` para gestionar tu configuración.
+> Prueba `dot learn` para un recorrido interactivo o `dot doctor` para verificar tu configuración.
 
-## Configuration
+## Configuración
 
-| Alias | Comando               | Descripción                                                                |
+| Alias | Comando                          | Descripción                                                  |
 | ----- | -------------------------------- | ------------------------------------------------------------ |
-| bshp  | `${=EDITOR} $HOME/.bash_profile` | Abrir the Bash profile in the default text editor.            |
-| bshrc | `${=EDITOR} $HOME/.bashrc`       | Abrir the Bash configuration archivo in the default text editor. |
-| gcfg  | `${=EDITOR} $HOME/.gitconfig`    | Abrir the Git configuration archivo in the default text editor.  |
-| gign  | `${=EDITOR} $HOME/.gitignore`    | Abrir the Git ignore archivo in the default text editor.         |
-| zshrc | `${=EDITOR} $HOME/.zshrc`        | Abrir the Zsh configuration archivo in the default text editor.  |
+| bshp  | `${=EDITOR} $HOME/.bash_profile` | Abrir el perfil de Bash en el editor de texto predeterminado.            |
+| bshrc | `${=EDITOR} $HOME/.bashrc`       | Abrir el archivo de configuración de Bash en el editor de texto predeterminado. |
+| gcfg  | `${=EDITOR} $HOME/.gitconfig`    | Abrir el archivo de configuración de Git en el editor de texto predeterminado.  |
+| gign  | `${=EDITOR} $HOME/.gitignore`    | Abrir el archivo gitignore en el editor de texto predeterminado.         |
+| zshrc | `${=EDITOR} $HOME/.zshrc`        | Abrir el archivo de configuración de Zsh en el editor de texto predeterminado.  |

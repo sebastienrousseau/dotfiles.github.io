@@ -1,21 +1,22 @@
 ---
-description: fonts aliases for Dotfiles
+description: Dotfiles 的字体别名
 lang: zh-CN
-metaTitle: fonts aliases - Dotfiles
+metaTitle: 字体别名 - Dotfiles (CN)
 permalink: /zh/aliases/fonts/
 ---
 
-# Font 别名
+# 字体别名
 
-Aliases for managing system fonts and caches.
+用于管理系统字体和缓存的别名。
 
-## 🔡 Commands
+## 🔡 命令
 
-| Alias | Description |
-|-------|-------------|
-| `update-fonts` | Updates the system font cache (`fc-cache -fv`). |
-| `list-fonts`   | Lists all installed font families. |
+| 别名           | 描述                                     |
+| -------------- | ---------------------------------------- |
+| `update-fonts` | 更新系统字体缓存 (`fc-cache -fv`)。      |
+| `list-fonts`   | 列出所有已安装的字体系列。               |
 
-## 📦 Installed Fonts
-- **JetBrainsMono Nerd Font**: Primary terminal font.
-- **Symbols Nerd Font**: Icon fallback.
+## 📦 已安装字体
+
+- **JetBrainsMono Nerd Font**: 主要终端字体。
+- **Symbols Nerd Font**: 图标回退字体。

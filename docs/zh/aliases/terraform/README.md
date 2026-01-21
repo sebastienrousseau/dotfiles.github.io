@@ -1,34 +1,36 @@
 ---
-description: terraform aliases for Dotfiles
+description: Dotfiles 的 Terraform 别名
 lang: zh-CN
-metaTitle: terraform aliases - Dotfiles
+metaTitle: Terraform 别名 - Dotfiles (CN)
 permalink: /zh/aliases/terraform/
 ---
 
 # Terraform 别名
 
-Manage Infrastructure as Code aliases (Terraform, OpenTofu, Ansible). **Universal Dotfiles** 配置的一部分。
+管理基础设施即代码别名 (Terraform, OpenTofu, Ansible)。**Universal Dotfiles** 配置的一部分。
 
 ![Dotfiles banner][banner]
 
 ## 📖 描述
 
-这些别名定义在 `terraform.aliases.sh` 中，并由 `chezmoi` 自动加载。
+这些别名在 `terraform.aliases.sh` 中定义，并由 `chezmoi` 自动加载。
 
 ## ⚡ 别名
 
 ### terraform
-- `tf` - Terraform shortcut
-- `tfi` - Init
-- `tfp` - Plan
-- `tfa` - Apply
-- `tfaa` - Apply (auto-approve)
-- `tfd` - Destroy
-- `tff` - Format
-- `tfv` - Validate
+
+- `tf` - Terraform 快捷方式
+- `tfi` - 初始化 (Init)
+- `tfp` - 计划 (Plan)
+- `tfa` - 应用 (Apply)
+- `tfaa` - 应用 (自动批准)
+- `tfd` -目前销毁 (Destroy)
+- `tff` - 格式化 (Format)
+- `tfv` - 验证 (Validate)
 
 ### ansible
-- `ans` - Ansible shortcut
+
+- `ans` - Ansible 快捷方式
 - `ansp` - Ansible Playbook
 - `anslint` - Ansible Lint
 

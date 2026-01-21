@@ -1,72 +1,56 @@
 ---
-description: The Default aliases are aliases that are not specific to any particular command. They are common aliases that are used in many different contexts and are listed here for convenience.
+description: Die Standard-Aliase sind Aliase, die nicht spezifisch für einen bestimmten Befehl sind. Es sind allgemeine Aliase, die in vielen verschiedenen Kontexten verwendet werden und hier der Bequemlichkeit halber aufgeführt sind.
 lang: de-DE
-metaTitle: Default aliases - Dotfiles (DE)
+metaTitle: Standard Aliase - Dotfiles (DE)
 permalink: /de/aliases/default/
-
-meta:
-  - name: twitter:card
-    content: The Default aliases are aliases that are not specific to any particular command. They are common aliases that are used in many different contexts and are listed here for convenience.
-  - name: twitter:description
-    content: The Default aliases are aliases that are not specific to any particular command. They are common aliases that are used in many different contexts and are listed here for convenience.
-  - name: twitter:title
-    content: Default aliases - Dotfiles (DE)
-  - name: og:title
-    content: Default aliases - Dotfiles (DE)
-  - name: og:description
-    content: The Default aliases are aliases that are not specific to any particular command. They are common aliases that are used in many different contexts and are listed here for convenience.
-  - name: og:image:alt
-    content: Dotfiles - Simply designed to fit your shell life
-  - name: og:locale
-    content: en_GB
 ---
 
-# Default aliases
+# Standard Aliase
 
-The `default.aliases.sh` file creates helpful shortcut aliases for many commonly
-used commands.
+Die Datei `default.aliases.sh` erstellt hilfreiche Shortcut-Aliase für viele häufig
+verwendete Befehle.
 
-## Default
+## Standard
 
-The Default aliases are aliases that are not specific to any particular command.
-They are common aliases that are used in many different contexts and are listed
-here for convenience. The aliases are listed in alphabetical order for easy use.
+Die Standard-Aliase sind Aliase, die nicht spezifisch für einen bestimmten Befehl sind.
+Es sind allgemeine Aliase, die in vielen verschiedenen Kontexten verwendet werden und
+hier der Bequemlichkeit halber aufgeführt sind. Die Aliase sind zur einfachen Verwendung in alphabetischer Reihenfolge aufgeführt.
 
-| Alias    | Command                              | Description                                                                                                                             |
-| -------- | ------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------- |
-| :q       | `quit`                               | Shortcut for the `exit` command.                                                                                                        |
-| bye      | `quit`                               | Shortcut for the `exit` command.                                                                                                        |
-| ctf      | `echo $(ls -1                        | wc -l)`                                                                                                                                 | Count the number of Dateien in the current Verzeichnis. |
-| curl     | `curl --compressed`                  | Use compression when transferring data.                                                                                                 |
-| da       | `date "+%Y-%m-%d %A %T %Z"`          | Display the current date and time.                                                                                                      |
-| h        | `history`                            | Lists all recently used commands.                                                                                                       |
-| halt     | `sudo /sbin/halt`                    | Shutdown the system.                                                                                                                    |
-| ifconfig | `sudo ifconfig`                      | Append sudo to ifconfig (configure network interface parameters) command.                                                               |
-| ipinfo   | `ipconfig getpacket en0`             | Get network interface parameters for en0.                                                                                               |
-| moon     | `curl -s "wttr.in/?format=%m"`       | Get the moon phase.                                                                                                                     |
-| nls      | `sudo lsof -i -P                     | grep LISTEN`                                                                                                                            | how only active network listeners.                  |
-| now      | `date +"%T"`                         | Zeigen the current time.                                                                                                                  |
-| op       | `sudo lsof -i -P`                    | Auflisten of Öffnen ports.                                                                                                                     |
-| p        | `pwd`                                | Shortcut for `pwd` which returns working Verzeichnis name.                                                                                |
-| path     | `echo ${PATH//:/\\n}`                | Display the $PATH variable on newlines.                                                                                                 |
-| pid      | `ps -f`                              | Display the uid, pid, parent pid, recent CPU usage, process Starten time, controlling tty, elapsed CPU usage, and the associated command. |
-| ping     | `ping -c 5`                          | Limit Ping to 5 ECHO_REQUEST packets.                                                                                                   |
-| please   | `sudo -`                             | Execute a command as the superuser.                                                                                                     |
-| ports    | `netstat -tulan`                     | Auflisten all listening ports.                                                                                                               |
-| poweroff | `sudo /sbin/shutdown`                | Power off the system.                                                                                                                   |
-| ps       | `ps auxwww`                          | Getting full path of executables.                                                                                                       |
-| q        | `quit`                               | Shortcut for the `exit` command.                                                                                                        |
-| qfind    | `find . -name`                       | Quickly Suchen for Datei.                                                                                                                |
-| quit     | `exit`                               | Shortcut for the`exit` command.                                                                                                         |
-| r        | `reload`                             | Reload the shell.                                                                                                                       |
-| reboot   | `sudo /sbin/reboot`                  | Reboot the system.                                                                                                                      |
-| reload   | `exec $SHELL -l`                     | Reload the shell.                                                                                                                       |
-| shutdown | `sudo shutdown -h now'`              | Shutdown the system.                                                                                                                    |
-| spd      | `sudo rm -rf /private/var/log/asl/*` | Entfernen all log Dateien in /private/var/log/asl.                                                                                           |
-| srv      | `python3 -m http.server`             | Starten a simple HTTP server.                                                                                                             |
-| t        | `tail -f`                            | Prints the last 10 lines of a text or log Datei, and then waits for new additions to the Datei to Drucken it in real time.                  |
-| top      | `sudo btop`                          | Allows the user to interactively monitor the system's vital resources or server's processes in real time.                               |
-| tree     | `tree --dirsfirst`                   | Display a Verzeichnis tree.                                                                                                               |
-| wk       | `date +%V`                           | Zeigen the current week number.                                                                                                           |
-| wth      | `curl -s "wttr.in/?format=3"`        | Get the weather.                                                                                                                        |
-| x        | `quit`                               | Shortcut for the`exit` command.                                                                                                         |
+| Alias    | Befehl                               | Beschreibung                                                                                                                            |
+| -------- | ------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------- |
+| :q       | `quit`                               | Kurzbefehl für den `exit`-Befehl.                                                                                                       |
+| bye      | `quit`                               | Kurzbefehl für den `exit`-Befehl.                                                                                                       |
+| ctf      | `echo $(ls -1                        | wc -l)`                                                                                                                                 | Zähle die Anzahl der Dateien im aktuellen Verzeichnis. |
+| curl     | `curl --compressed`                  | Verwende Kompression beim Übertragen von Daten.                                                                                         |
+| da       | `date "+%Y-%m-%d %A %T %Z"`          | Zeige das aktuelle Datum und die Uhrzeit an.                                                                                            |
+| h        | `history`                            | Listet alle kürzlich verwendeten Befehle auf.                                                                                           |
+| halt     | `sudo /sbin/halt`                    | Fahre das System herunter (Halt).                                                                                                       |
+| ifconfig | `sudo ifconfig`                      | Hänge sudo an den ifconfig-Befehl (Netzwerkschnittstellenparameter konfigurieren) an.                                                   |
+| ipinfo   | `ipconfig getpacket en0`             | Hole Netzwerkschnittstellenparameter für en0.                                                                                           |
+| moon     | `curl -s "wttr.in/?format=%m"`       | Hole die Mondphase.                                                                                                                     |
+| nls      | `sudo lsof -i -P                     | grep LISTEN`                                                                                                                            | Zeige nur aktive Netzwerk-Listener.                 |
+| now      | `date +"%T"`                         | Zeige die aktuelle Uhrzeit.                                                                                                             |
+| op       | `sudo lsof -i -P`                    | Liste der offenen Ports.                                                                                                                |
+| p        | `pwd`                                | Kurzbefehl für `pwd`, der den Namen des Arbeitsverzeichnisses zurückgibt.                                                               |
+| path     | `echo ${PATH//:/\\n}`                | Zeige die $PATH-Variable auf neuen Zeilen an.                                                                                           |
+| pid      | `ps -f`                              | Zeige uid, pid, parent pid, aktuelle CPU-Nutzung, Prozessstartzeit, steuerndes tty, verstrichene CPU-Nutzung und den zugehörigen Befehl.|
+| ping     | `ping -c 5`                          | Begrenze Ping auf 5 ECHO_REQUEST-Pakete.                                                                                                |
+| please   | `sudo -`                             | Führe einen Befehl als Superuser aus.                                                                                                   |
+| ports    | `netstat -tulan`                     | Liste alle lauschenden Ports auf.                                                                                                       |
+| poweroff | `sudo /sbin/shutdown`                | Schalte das System aus (Power off).                                                                                                     |
+| ps       | `ps auxwww`                          | Hole den vollen Pfad von ausführbaren Dateien.                                                                                          |
+| q        | `quit`                               | Kurzbefehl für den `exit`-Befehl.                                                                                                       |
+| qfind    | `find . -name`                       | Suche schnell nach Datei.                                                                                                               |
+| quit     | `exit`                               | Kurzbefehl für den `exit`-Befehl.                                                                                                       |
+| r        | `reload`                             | Lade die Shell neu.                                                                                                                     |
+| reboot   | `sudo /sbin/reboot`                  | Starte das System neu.                                                                                                                  |
+| reload   | `exec $SHELL -l`                     | Lade die Shell neu.                                                                                                                     |
+| shutdown | `sudo shutdown -h now'`              | Fahre das System herunter.                                                                                                              |
+| spd      | `sudo rm -rf /private/var/log/asl/*` | Entferne alle Logdateien in /private/var/log/asl.                                                                                       |
+| srv      | `python3 -m http.server`             | Starte einen einfachen HTTP-Server.                                                                                                     |
+| t        | `tail -f`                            | Druckt die letzten 10 Zeilen einer Text- oder Logdatei und wartet dann auf neue Ergänzungen, um sie in Echtzeit zu drucken.             |
+| top      | `sudo btop`                          | Ermöglicht dem Benutzer, die vitalen Ressourcen des Systems oder Serverprozesse in Echtzeit interaktiv zu überwachen.                   |
+| tree     | `tree --dirsfirst`                   | Zeige einen Verzeichnisbaum an.                                                                                                         |
+| wk       | `date +%V`                           | Zeige die aktuelle Wochennummer.                                                                                                        |
+| wth      | `curl -s "wttr.in/?format=3"`        | Hole das Wetter.                                                                                                                        |
+| x        | `quit`                               | Kurzbefehl für den `exit`-Befehl.                                                                                                       |

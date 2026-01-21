@@ -1,37 +1,32 @@
 ---
-description: The editor aliases will open the file in the editor list that is set in the `editor` environment variable.
+description: Los alias de editor abrirán el archivo en el editor establecido en la variable de entorno `editor`.
 lang: es-ES
-metaTitle: Editor aliases - Dotfiles (ES)
+metaTitle: Alias de Editor - Dotfiles (ES)
 permalink: /es/aliases/editor/
-
 meta:
   - name: keywords
-    content: aliases, code, editor, environment, gedit, nano, notepad++, text, vi, vim
+    content: alias, código, editor, entorno, gedit, nano, notepad++, texto, vi, vim
   - name: twitter:card
-    content: The editor aliases will open the file in the editor list that is set in the `editor` environment variable.
+    content: Los alias de editor abrirán el archivo en el editor establecido en la variable de entorno `editor`.
   - name: twitter:description
-    content: The editor aliases will open the file in the editor list that is set in the `editor` environment variable.
+    content: Los alias de editor abrirán el archivo en el editor establecido en la variable de entorno `editor`.
   - name: twitter:title
-    content: Editor aliases - Dotfiles (ES)
+    content: Alias de Editor - Dotfiles (ES)
   - name: og:title
-    content: Editor aliases - Dotfiles (ES)
+    content: Alias de Editor - Dotfiles (ES)
   - name: og:description
-    content: The editor aliases will open the file in the editor list that is set in the `editor` environment variable.
+    content: Los alias de editor abrirán el archivo en el editor establecido en la variable de entorno `editor`.
   - name: og:image:alt
-    content: Dotfiles - Simply designed to fit your shell life
+    content: Dotfiles - Simplemente diseñado para adaptarse a tu vida en el shell
   - name: og:locale
-    content: en_GB
+    content: es_ES
 ---
 
-# Editor aliases
+# Alias de Editor
 
-The `editor.aliases.sh` file creates helpful shortcut aliases for opening files
-in your preferred text editor. The aliases will open the file in the editor list
-that is set in the `editor` environment variable.
+El archivo `editor.aliases.sh` crea atajos útiles para abrir archivos en tu editor de texto preferido. Los alias abrirán el archivo en la lista de editores que está configurada en la variable de entorno `editor`.
 
-As of today the following editors are listed in the `editor` environment
-variable in order of preference. This list can be changed by editing the
-`editor` environment variable in the `editor.aliases.sh` file.:
+A día de hoy, los siguientes editores están listados en la variable de entorno `editor` en orden de preferencia. Esta lista puede ser modificada editando la variable de entorno `editor` en el archivo `editor.aliases.sh`:
 
 - [nano][nn],
 - [vim][vi],
@@ -42,17 +37,16 @@ variable in order of preference. This list can be changed by editing the
 
 ## Editor
 
-[Editor](https://en.wikipedia.org/wiki/Text_editor) is a program for editing
-plain text files.
+[Editor](https://es.wikipedia.org/wiki/Editor_de_texto) es un programa para editar archivos de texto plano.
 
-| Alias  | Command     | Description  |
+| Alias  | Comando     | Descripción  |
 | ------ | ----------- | ------------ |
-| e      | `${editor}` | Edit a archivo. |
-| edit   | `${editor}` | Edit a archivo. |
-| editor | `${editor}` | Edit a archivo. |
-| mate   | `${editor}` | Edit a archivo. |
-| n      | `${editor}` | Edit a archivo. |
-| v      | `${editor}` | Edit a archivo. |
+| e      | `${editor}` | Editar un archivo. |
+| edit   | `${editor}` | Editar un archivo. |
+| editor | `${editor}` | Editar un archivo. |
+| mate   | `${editor}` | Editar un archivo. |
+| n      | `${editor}` | Editar un archivo. |
+| v      | `${editor}` | Editar un archivo. |
 
 [np++]: https://notepad-plus-plus.org/
 [gdt]: https://wiki.gnome.org/Apps/Gedit

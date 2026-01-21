@@ -1,236 +1,233 @@
 ---
-description: The Git aliases, provide powerful commands that create shortcuts to frequently used Git commands. All of these functions and aliases are wrappers around the Git command line tools. Git aliases improve speed and efficiency.
+description: Los alias de Git proporcionan comandos potentes que crean atajos para los comandos de Git utilizados con frecuencia. Todas estas funciones y alias son envoltorios (wrappers) alrededor de las herramientas de línea de comandos de Git. Los alias de Git mejoran la velocidad y la eficiencia.
 lang: es-ES
-metaTitle: The Git aliases - Dotfiles (ES)
+metaTitle: Alias de Git - Dotfiles (ES)
 permalink: /es/aliases/git/
 
 meta:
   - name: keywords
-    content: aliases, git, gitconfig, gitconfig, git, configuration, dotfiles, linux, macos, shell, windows, bash, zsh
+    content: alias, git, gitconfig, configuración, dotfiles, linux, macos, shell, windows, bash, zsh
   - name: twitter:card
-    content: The Git aliases, provide powerful commands that create shortcuts to frequently used Git commands. All of these functions and aliases are wrappers around the Git command line tools. Git aliases improve speed and efficiency.
+    content: Los alias de Git proporcionan comandos potentes que crean atajos para los comandos de Git utilizados con frecuencia. Todas estas funciones y alias son envoltorios alrededor de las herramientas de línea de comandos de Git. Los alias de Git mejoran la velocidad y la eficiencia.
   - name: twitter:description
-    content: The Git aliases, provide powerful commands that create shortcuts to frequently used Git commands. All of these functions and aliases are wrappers around the Git command line tools. Git aliases improve speed and efficiency.
+    content: Los alias de Git proporcionan comandos potentes que crean atajos para los comandos de Git utilizados con frecuencia. Todas estas funciones y alias son envoltorios alrededor de las herramientas de línea de comandos de Git. Los alias de Git mejoran la velocidad y la eficiencia.
   - name: twitter:title
-    content: The Git aliases - Dotfiles (ES)
+    content: Alias de Git - Dotfiles (ES)
   - name: og:title
-    content: The Git aliases - Dotfiles (ES)
+    content: Alias de Git - Dotfiles (ES)
   - name: og:description
-    content: The Git aliases, provide powerful commands that create shortcuts to frequently used Git commands. All of these functions and aliases are wrappers around the Git command line tools. Git aliases improve speed and efficiency.
+    content: Los alias de Git proporcionan comandos potentes que crean atajos para los comandos de Git utilizados con frecuencia. Todas estas funciones y alias son envoltorios alrededor de las herramientas de línea de comandos de Git. Los alias de Git mejoran la velocidad y la eficiencia.
   - name: og:image:alt
-    content: Dotfiles - Simply designed to fit your shell life
+    content: Dotfiles - Simplemente diseñado para adaptarse a tu vida en el shell
   - name: og:locale
-    content: en_GB
+    content: es_ES
 ---
 
 # Alias de Git
 
-The `git.aliases.sh` file creates helpful shortcut aliases for many commonly
-[Git](https://www.heroku.com/) commands.
+El archivo `git.aliases.sh` crea atajos útiles para muchos comandos comunes de [Git](https://www.heroku.com/).
 
-The Git aliases, provide powerful commands that create shortcuts to frequently
-used Git commands. All of these functions and aliases are wrappers around the
-Git command line tools. Git aliases improve speed and efficiency.
+Los alias de Git proporcionan comandos potentes que crean atajos para los comandos de Git utilizados con frecuencia. Todas estas funciones y alias son envoltorios (wrappers) alrededor de las herramientas de línea de comandos de Git. Los alias de Git mejoran la velocidad y la eficiencia.
 
 ## Trabajar en el cambio actual
 
 | Alias | Comando               | Descripción                                                                |
 | ----- | --------------------- | -------------------------------------------------------------------------- |
-| g     | `git`                 | Short-form git commands.                                                   |
-| ga    | `git add`             | Añadir archivo contents to the index.                                            |
-| gaa   | `git add --all`       | Añadir archivo contents to the index.                                            |
-| gad   | `git add .`           | Añadir current directorio archivo contents to the index.                          |
-| gau   | `git add --update`    | Añadir archivo contents and Actualizar the index with changes from the working tree. |
-| gco   | `git checkout`        | deshacer to last commit.                                                       |
-| gdis  | `git checkout --`     | Discard changes in a (Listar of) archivo(s) in working tree.                    |
-| gmv   | `git mv`              | Mover or Renombrar a archivo, a directorio, or a symlink.                          |
-| grs   | `git restore`         | Restore working tree archivos.                                                |
-| gsc   | `git sparse-checkout` | Inicializar and modify the sparse-checkout.                                 |
+| g     | `git`                 | Comandos de Git en forma abreviada.                                                   |
+| ga    | `git add`             | Añadir contenido del archivo al índice.                                            |
+| gaa   | `git add --all`       | Añadir todo el contenido del archivo al índice.                                            |
+| gad   | `git add .`           | Añadir el contenido del archivo del directorio actual al índice.                          |
+| gau   | `git add --update`    | Añadir contenido del archivo y actualizar el índice con cambios del árbol de trabajo. |
+| gco   | `git checkout`        | Deshacer hasta el último commit.                                                       |
+| gdis  | `git checkout --`     | Descartar cambios en un archivo (o lista de archivos) en el árbol de trabajo.                    |
+| gmv   | `git mv`              | Mover o renombrar un archivo, un directorio o un enlace simbólico.                          |
+| grs   | `git restore`         | Restaurar archivos del árbol de trabajo.                                                |
+| gsc   | `git sparse-checkout` | Inicializar y modificar el sparse-checkout.                                 |
 
 ## Iniciar un área de trabajo
 
 | Alias | Comando               | Descripción                                                                |
 | ----- | ----------- | --------------------------------------------------------------- |
-| gcl   | `git clone` | Clone a repository into a new directorio.                        |
-| gin   | `git init`  | Crear an empty Git repository or reinitialize an existing one. |
+| gcl   | `git clone` | Clonar un repositorio en un nuevo directorio.                        |
+| gin   | `git init`  | Crear un repositorio Git vacío o reinicializar uno existente. |
 
-## Examine the history and state
+## Examinar el historial y el estado
 
 | Alias | Comando               | Descripción                                                                |
 | ----- | ------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------- |
-| gbs   | `git bisect`                                                        | Use binary Buscar to Encontrar the commit that introduced a bug.                                                                |
-| gd    | `git diff`                                                          | Mostrar changes between commits, commit and working tree, etc.                                                                |
-| gg    | `git grep`                                                          | Imprimir lines matching a pattern.                                                                                            |
-| gl    | `git log --since="last month" --oneline`                            | Mostrar commit logs this month.                                                                                               |
-| glg   | `git log --oneline --graph --full-history --all --color --decorate` | Mostrar commit logs and Draw a text-based graphical representation of the commit history on the left hand side of the output. |
-| gs    | `git show`                                                          | Mostrar various types of objects.                                                                                             |
+| gbs   | `git bisect`                                                        | Usar búsqueda binaria para encontrar el commit que introdujo un error.                                                                |
+| gd    | `git diff`                                                          | Mostrar cambios entre commits, commit y árbol de trabajo, etc.                                                                |
+| gg    | `git grep`                                                          | Imprimir líneas que coincidan con un patrón.                                                                                            |
+| gl    | `git log --since="last month" --oneline`                            | Mostrar registros de commit de este mes.                                                                                               |
+| glg   | `git log --oneline --graph --full-history --all --color --decorate` | Mostrar registros de commit y dibujar una representación gráfica basada en texto del historial de commits a la izquierda de la salida. |
+| gs    | `git show`                                                          | Mostrar varios tipos de objetos.                                                                                             |
 
-## List, create, or delete branches
+## Listar, crear o borrar ramas
 
 | Alias | Comando               | Descripción                                                                |
 | ----- | ------------------ | ------------------------------------------------ |
-| gb    | `git branch`       | Crear a branch.                                 |
-| gbd   | `git branch -d`    | Borrar a branch.                                 |
-| gbl   | `git branch -l`    | Listar branches.                                   |
-| gbr   | `git branch -r`    | Listar the remote-tracking branches.               |
-| gbrd  | `git branch -d -r` | Borrar the remote-tracking branches.             |
-| gbrsb | `git show-branch`  | Imprimir a Listar of branches and their commits.      |
-| gct   | `git commit`       | Record changes to the repository.                |
-| gmg   | `git merge`        | Join two or more development histories together. |
-| grb   | `git rebase`       | Reapply commits on top of another base tip.      |
-| grs   | `git reset`        | Reset current HEAD to the specified state.       |
-| gswb  | `git switch`       | Switch branches.                                 |
+| gb    | `git branch`       | Crear una rama.                                 |
+| gbd   | `git branch -d`    | Borrar una rama.                                 |
+| gbl   | `git branch -l`    | Listar ramas.                                   |
+| gbr   | `git branch -r`    | Listar las ramas de seguimiento remoto.               |
+| gbrd  | `git branch -d -r` | Borrar las ramas de seguimiento remoto.             |
+| gbrsb | `git show-branch`  | Imprimir una lista de ramas y sus commits.      |
+| gct   | `git commit`       | Registrar cambios en el repositorio.                |
+| gmg   | `git merge`        | Unir dos o más historiales de desarrollo. |
+| grb   | `git rebase`       | Reaplicar commits sobre otra base.      |
+| grs   | `git reset`        | Restablecer el HEAD actual al estado especificado.       |
+| gswb  | `git switch`       | Cambiar de rama.                                 |
 
-## Collaborate
+## Colaborar
 
 | Alias | Comando               | Descripción                                                                |
 | ----- | ----------- | ------------------------------------------------------------------- |
-| gf    | `git fetch` | Download objects and refs from another repository.                  |
-| gi    | `git init`  | Crear an empty Git repository or reinitialize an existing one.     |
-| gp    | `git pull`  | Fetch from and integrate with another repository or a local branch. |
-| gpu   | `git push`  | Actualizar remote refs along with associated objects.                   |
+| gf    | `git fetch` | Descargar objetos y referencias de otro repositorio.                  |
+| gi    | `git init`  | Crear un repositorio Git vacío o reinicializar uno existente.     |
+| gp    | `git pull`  | Obtener de e integrar con otro repositorio o una rama local. |
+| gpu   | `git push`  | Actualizar referencias remotas junto con los objetos asociados.                   |
 
-## Record changes to the repository
+## Registrar cambios en el repositorio
 
 | Alias | Comando               | Descripción                                                                |
 | ----- | ------------------------------ | ---------------------------------------------------------------------- |
-| gc    | `git commit -a`                | Commit command to automatically "Añadir" changes from all known archivos.    |
-| gca   | `git commit --amend`           | Amend the tip of the current branch rather than creating a new commit. |
-| gcall | `git add -A && git commit -av` | Commit all changes.                                                    |
-| gcam  | `git commit --amend --message` | Amend the tip of the current branch, and edit the message.             |
-| gcane | `git commit --amend --no-edit` | Amend the tip of the current branch, and do not edit the message.      |
-| gcint | `git commit --interactive`     | Commit interactive.                                                    |
-| gcm   | `git commit --message`         | Commit with a message.                                                 |
+| gc    | `git commit -a`                | Comando de commit para "añadir" automáticamente cambios de todos los archivos conocidos.    |
+| gca   | `git commit --amend`           | Enmendar la punta de la rama actual en lugar de crear un nuevo commit. |
+| gcall | `git add -A && git commit -av` | Confirmar (commit) todos los cambios.                                                    |
+| gcam  | `git commit --amend --message` | Enmendar la punta de la rama actual y editar el mensaje.             |
+| gcane | `git commit --amend --no-edit` | Enmendar la punta de la rama actual y no editar el mensaje.      |
+| gcint | `git commit --interactive`     | Commit interactivo.                                                    |
+| gcm   | `git commit --message`         | Commit con un mensaje.                                                 |
 
-## Show changes between commits, commit and working tree, etc
+## Mostrar cambios entre commits, commit y árbol de trabajo, etc
 
 | Alias    | Command                                    | Description                                                                                 |
 | -------- | ------------------------------------------ | ------------------------------------------------------------------------------------------- |
-| gd       | `git diff`                                 | Mostrar changes between the working tree and the index or a tree.                              |
-| gdcached | `git diff --cached`                        | Shows the changes between the index and the HEAD (which is the last commit on this branch). |
-| gdch     | `git diff --name-status`                   | Mostrar only names and status of changed archivos.                                                |
-| gdh      | `git diff HEAD`                            | Mostrar all changes of tracked archivos which are present in working directorio and staging area.  |
-| gdstaged | `git diff --staged`                        | Mostrar changes to archivos in the "staged" area.                                                 |
-| gdstat   | `git diff --stat --ignore-space-change -r` | Generate a diffstat.                                                                        |
+| gd       | `git diff`                                 | Mostrar cambios entre el árbol de trabajo y el índice o un árbol.                              |
+| gdcached | `git diff --cached`                        | Muestra los cambios entre el índice y el HEAD (que es el último commit en esta rama). |
+| gdch     | `git diff --name-status`                   | Mostrar solo nombres y estado de los archivos modificados.                                                |
+| gdh      | `git diff HEAD`                            | Mostrar todos los cambios de archivos rastreados presentes en el directorio de trabajo y el área de preparación.  |
+| gdstaged | `git diff --staged`                        | Mostrar cambios en los archivos en el área "staged" (preparada).                                                 |
+| gdstat   | `git diff --stat --ignore-space-change -r` | Generar un diffstat.                                                                        |
 
-## Show commit logs
+## Mostrar registros de commit
 
 | Alias | Comando               | Descripción                                                                |
 | ----- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------- |
-| gclc  | `git log --oneline --reverse`                                                                                                                                                                                     | Mostrar log of changes, most recent first.                                                             |
-| gld   | `git log --since=1-day-ago`                                                                                                                                                                                       | Mostrar the log of the recent day                                                                      |
-| gldc  | `git log -1 --date-order --format=%cI`                                                                                                                                                                            | Mostrar the date of the latest commit, in strict ISO 8601 format.                                      |
-| gldl  | `git log --date=local`                                                                                                                                                                                            | Mostrar log with dates in our local timezone.                                                          |
-| glf   | `git log ORIG_HEAD.. --stat --no-merges`                                                                                                                                                                          | Mostrar log of new commits after you fetched, with stats, excluding merges.                            |
-| glfd  | `!"git log --date-order --format=%cI                                                                                                                                                                              | tail -1"`                                                                                           | Mostrar the date of the earliest commit, in strict ISO 8601 format. |
-| glfh  | `git log --graph --full-history --all --color`                                                                                                                                                                    | Visualization of branch topology.                                                                   |
-| glg   | `git log --graph --all --oneline --decorate`                                                                                                                                                                      | Mostrar log as a graph.                                                                                |
-| glh   | `git log --since=1-hour-ago`                                                                                                                                                                                      | Mostrar the log of the recent hour                                                                     |
-| gll   | `git log --graph --topo-order --date=short --abbrev-commit --decorate --all --boundary --pretty=format:"%Cgreen%ad %Cred%h%Creset -%C(yellow)%d%Creset %s %Cblue[%cn]%Creset %Cblue%G?%Creset"`                   | Mostrar log in our preferred format for our key performance indicators. A.k.a. `ll`.                   |
-| glll  | `git log --graph --topo-order --date=iso8601-strict --no-abbrev-commit --decorate --all --boundary --pretty=format:"%Cgreen%ad %Cred%h%Creset -%C(yellow)%d%Creset %s %Cblue[%cn <%ce>]%Creset %Cblue%G?%Creset"` | Mostrar log in our preferred format for our key performance indicators, with long items. A.k.a. `lll`. |
-| glm   | `git log --since=1-month-ago`                                                                                                                                                                                     | Mostrar the log of the recent month                                                                    |
-| glmy  | `!git log --author $(git config user.email)`                                                                                                                                                                      | Mostrar the log for my own commits by my own user email.                                               |
-| glw   | `git log --since=1-week-ago`                                                                                                                                                                                      | Mostrar the log of the recent week                                                                     |
-| gly   | `git log --since=1-year-ago`                                                                                                                                                                                      | Mostrar the log of the recent year                                                                     |
+| gclc  | `git log --oneline --reverse`                                                                                                                                                                                     | Mostrar registro de cambios, los más recientes primero.                                                             |
+| gld   | `git log --since=1-day-ago`                                                                                                                                                                                       | Mostrar el registro del día reciente.                                                                      |
+| gldc  | `git log -1 --date-order --format=%cI`                                                                                                                                                                            | Mostrar la fecha del último commit, en formato estricto ISO 8601.                                      |
+| gldl  | `git log --date=local`                                                                                                                                                                                            | Mostrar registro con fechas en nuestra zona horaria local.                                                          |
+| glf   | `git log ORIG_HEAD.. --stat --no-merges`                                                                                                                                                                          | Mostrar registro de nuevos commits después de hacer fetch, con estadísticas, excluyendo merges.                            |
+| glfd  | `!"git log --date-order --format=%cI                                                                                                                                                                              | tail -1"`                                                                                           | Mostrar la fecha del commit más antiguo, en formato estricto ISO 8601. |
+| glfh  | `git log --graph --full-history --all --color`                                                                                                                                                                    | Visualización de la topología de ramas.                                                                   |
+| glg   | `git log --graph --all --oneline --decorate`                                                                                                                                                                      | Mostrar registro como un gráfico.                                                                                |
+| glh   | `git log --since=1-hour-ago`                                                                                                                                                                                      | Mostrar el registro de la hora reciente.                                                                     |
+| gll   | `git log --graph --topo-order --date=short --abbrev-commit --decorate --all --boundary --pretty=format:"%Cgreen%ad %Cred%h%Creset -%C(yellow)%d%Creset %s %Cblue[%cn]%Creset %Cblue%G?%Creset"`                   | Mostrar registro en nuestro formato preferido para indicadores clave de rendimiento. También conocido como `ll`.                   |
+| glll  | `git log --graph --topo-order --date=iso8601-strict --no-abbrev-commit --decorate --all --boundary --pretty=format:"%Cgreen%ad %Cred%h%Creset -%C(yellow)%d%Creset %s %Cblue[%cn <%ce>]%Creset %Cblue%G?%Creset"` | Mostrar registro en nuestro formato preferido, con ítems largos. También conocido como `lll`. |
+| glm   | `git log --since=1-month-ago`                                                                                                                                                                                     | Mostrar el registro del mes reciente.                                                                    |
+| glmy  | `!git log --author $(git config user.email)`                                                                                                                                                                      | Mostrar el registro de mis propios commits por mi propio correo de usuario.                                               |
+| glw   | `git log --since=1-week-ago`                                                                                                                                                                                      | Mostrar el registro de la semana reciente.                                                                     |
+| gly   | `git log --since=1-year-ago`                                                                                                                                                                                      | Mostrar el registro del año reciente.                                                                     |
 
-## Switch branches or restore working tree files
+## Cambiar ramas o restaurar archivos del árbol de trabajo
 
 | Alias  | Command                                                                         | Description                                                           |
 | ------ | ------------------------------------------------------------------------------- | --------------------------------------------------------------------- | --------------------------------------------------------------------------- |
-| gclout | `git clean -df && git checkout -- .`                                            | Clean and discard changes and un-tracked archivos in working tree.       |
-| gco    | `git checkout`                                                                  | Switch branches or restore working tree archivos.                        |
-| gcob   | `git checkout -b`                                                               | Crear a new branch named <new_branch> and Iniciar it at <start_point>. |
-| gcode  | `git checkout main && git branch --merged                                       | xargs git branch --delete`                                            | Borrar all local branches that have been merged into the local main branch. |
-| gcom   | `git checkout main && git fetch origin --prune && git reset --hard origin/main` | Ensure local is like the main branch.                                 |
+| gclout | `git clean -df && git checkout -- .`                                            | Limpiar y descartar cambios y archivos no rastreados en el árbol de trabajo.       |
+| gco    | `git checkout`                                                                  | Cambiar ramas o restaurar archivos del árbol de trabajo.                        |
+| gcob   | `git checkout -b`                                                               | Crear una nueva rama llamada <new_branch> e iniciarla en <start_point>. |
+| gcode  | `git checkout main && git branch --merged                                       | xargs git branch --delete`                                            | Borrar todas las ramas locales que han sido fusionadas en la rama main local. |
+| gcom   | `git checkout main && git fetch origin --prune && git reset --hard origin/main` | Asegurar que local es como la rama main.                                 |
 
-## Update remote refs along with associated objects
+## Actualizar referencias remotas junto con los objetos asociados
 
 | Alias  | Command                                                | Description                                                                                                                   |
 | ------ | ------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------- | ------------------- |
-| gpb    | `git push --set-upstream origin $(git current-branch)` | Publish the current branch by pushing it to the remote "origin", and setting the current branch to track the upstream branch. |
-| gpcb   | `git push origin "$(git branch                         | grep '\*'                                                                                                                     | tr -d '\* \n')"`                                    | Push current branch |
-| gpo    | `git push origin`                                      | Push local changes to the online repository.                                                                                  |
-| gpoll  | `git push origin --all`                                | Push each of your local git branches to the remote repository                                                                 |
-| gpt    | `git push --tags`                                      | Push local tags.                                                                                                              |
-| gpull  | `git pull`                                             | Fetch from and integrate with another repository or a local branch.                                                           |
-| gpullo | `git pull origin $(git current-branch)`                | Do a pull for just one branch.                                                                                                |
-| gpullm | `git pull origin master`                               | Pull changes from the locally stored branch origin/master and merge that to the local checked-out branch.                     |
-| gpush  | `git push`                                             | Actualizar remote refs along with associated objects.                                                                             |
-| gpusho | `git push origin $(git current-branch)`                | Do a push for just one branch.                                                                                                |
-| gpushr | `git remote                                            | xargs -I% -n1 git push %`                                                                                                     | git remotes-push - For each remote branch, push it. |
-| gunpub | `git push origin :$(git current-branch)`               | Un-publish the current branch by deleting the remote version of the current branch.                                           |
+| gpb    | `git push --set-upstream origin $(git current-branch)` | Publicar la rama actual empujándola al remoto "origin" y configurando la rama actual para rastrear la rama upstream. |
+| gpcb   | `git push origin "$(git branch                         | grep '\*'                                                                                                                     | tr -d '\* \n')"`                                    | Empujar (Push) rama actual. |
+| gpo    | `git push origin`                                      | Empujar cambios locales al repositorio en línea.                                                                                  |
+| gpoll  | `git push origin --all`                                | Empujar cada una de tus ramas locales de git al repositorio remoto.                                                                 |
+| gpt    | `git push --tags`                                      | Empujar etiquetas locales.                                                                                                              |
+| gpull  | `git pull`                                             | Obtener de e integrar con otro repositorio o una rama local.                                                           |
+| gpullo | `git pull origin $(git current-branch)`                | Hacer un pull para solo una rama.                                                                                                |
+| gpullm | `git pull origin master`                               | Hacer pull de cambios de la rama origin/master almacenada localmente y fusionarla a la rama local actual.                     |
+| gpush  | `git push`                                             | Actualizar referencias remotas junto con los objetos asociados.                                                                             |
+| gpusho | `git push origin $(git current-branch)`                | Hacer un push para solo una rama.                                                                                                |
+| gpushr | `git remote                                            | xargs -I% -n1 git push %`                                                                                                     | git remotes-push - Para cada rama remota, empujarla. |
+| gunpub | `git push origin :$(git current-branch)`               | Dejar de publicar la rama actual borrando la versión remota de la rama actual.                                           |
 
-## Manage set of tracked repositories
+## Gestionar conjunto de repositorios rastreados
 
 | Alias   | Command                                                                                                                    | Description                                                                       |
 | ------- | -------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------- | ----------------------------------- | ------------------------------------- | --------- | -------------------------------- |
-| gr      | `git remote`                                                                                                               | Gestionar set of tracked repositories.                                               |
-| gra     | `git remote add`                                                                                                           | Añadir a remote named name for the repository at url.                                |
-| grall   | `git remote                                                                                                                | xargs -L1 git push --all`                                                         | Push all branches to all remotes.   |
-| grallo  | `git remote -v                                                                                                             | grep "(fetch)"                                                                    |                                     | Git remote all remotes except origin. |
-| grao    | `git remote add origin`                                                                                                    | Añadir a new remote 'origin' if it doesn't exist.                                    |
-| grbk    | `git reset --soft HEAD^`                                                                                                   | Rollback to stage.                                                                |
-| grcl    | `git remote prune`                                                                                                         | Eliminar stale remote-tracking branches.                                            |
-| grf     | `find . -maxdepth 1 -type d \( ! -name . \) -exec bash -c "cd '{}' && echo '{}' && git config --get remote.origin.url" \;` | Mostrar GIT Remote Origin for each immediate subfolder.                              |
-| grfall  | `git branch -r                                                                                                             | awk -F'/' '{print "git fetch "$1,$2}'                                             | xargs -I {} sh -c {}`               | Fetch all git remotes for a repo.     |
-| gro     | `open`git remote -v                                                                                                        | awk '/fetch/{print $2}'                                                           | sed -Ee 's#(git@                    | git://)#http://#' -e 's@com:@com/@'`  | head -n1` | Abrir current Git repository URL. |
-| grp     | `git remote                                                                                                                | xargs -I% -n1 git push %`                                                         | For each remote branch, push it.    |
-| grpa    | `for i in`git remote`; do git push $i; done;`                                                                              | Push all remotes.                                                                 |
-| grprint | `git remote -v`                                                                                                            |                                                                                   | Imprimir the url for the current repo. |
-| grs     | `git show`                                                                                                                 | Mostrar various types of objects.                                                    |
-| grso    | `git remote show origin`                                                                                                   | Display where the origin resides.                                                 |
-| grv     | `git remote -v`                                                                                                            | Shows URLs of remote repositories when listing your current remote connections.   |
-| gru     | `git remote update`                                                                                                        | Fetch updates for a named set of remotes in the repository as defined by remotes. |
+| gr      | `git remote`                                                                                                               | Gestionar conjunto de repositorios rastreados.                                               |
+| gra     | `git remote add`                                                                                                           | Añadir un remoto llamado name para el repositorio en url.                                |
+| grall   | `git remote                                                                                                                | xargs -L1 git push --all`                                                         | Empujar todas las ramas a todos los remotos.   |
+| grallo  | `git remote -v                                                                                                             | grep "(fetch)"                                                                    |                                     | Git remote todos los remotos excepto origin. |
+| grao    | `git remote add origin`                                                                                                    | Añadir un nuevo remoto 'origin' si no existe.                                    |
+| grbk    | `git reset --soft HEAD^`                                                                                                   | Retroceder (Rollback) a stage.                                                                |
+| grcl    | `git remote prune`                                                                                                         | Eliminar ramas de seguimiento remoto obsoletas.                                            |
+| grf     | `find . -maxdepth 1 -type d \( ! -name . \) -exec bash -c "cd '{}' && echo '{}' && git config --get remote.origin.url" \;` | Mostrar GIT Remote Origin para cada subcarpeta inmediata.                              |
+| grfall  | `git branch -r                                                                                                             | awk -F'/' '{print "git fetch "$1,$2}'                                             | xargs -I {} sh -c {}`               | Fetch todos los git remotos para un repo.     |
+| gro     | `open`git remote -v                                                                                                        | awk '/fetch/{print $2}'                                                           | sed -Ee 's#(git@                    | git://)#http://#' -e 's@com:@com/@'`  | head -n1` | Abrir URL del repositorio Git actual. |
+| grp     | `git remote                                                                                                                | xargs -I% -n1 git push %`                                                         | Para cada rama remota, empujarla.    |
+| grpa    | `for i in`git remote`; do git push $i; done;`                                                                              | Empujar todos los remotos.                                                                 |
+| grprint | `git remote -v`                                                                                                            |                                                                                   | Imprimir la url para el repo actual. |
+| grs     | `git show`                                                                                                                 | Mostrar varios tipos de objetos.                                                    |
+| grso    | `git remote show origin`                                                                                                   | Mostrar dónde reside el origin.                                                 |
+| grv     | `git remote -v`                                                                                                            | Muestra URLs de repositorios remotos al listar tus conexiones remotas actuales.   |
+| gru     | `git remote update`                                                                                                        | Obtener actualizaciones para un conjunto de remotos nombrados en el repositorio según definido por remotes. |
 
-## Revert some existing commits
+## Revertir algunos commits existentes
 
 | Alias  | Command                  | Description                                                                                                   |
 | ------ | ------------------------ | ------------------------------------------------------------------------------------------------------------- |
-| grev   | `git revert`             | deshacer the changes from some existing commits.                                                                  |
-| grevnc | `git revert --no-commit` | Revert without autocommit; useful when you're reverting more than one commits' effect to your index in a row. |
+| grev   | `git revert`             | Deshacer los cambios de algunos commits existentes.                                                                  |
+| grevnc | `git revert --no-commit` | Revertir sin autocommit; útil cuando estás revirtiendo el efecto de más de un commit a tu índice en una fila. |
 
-## Initialize, update or inspect submodules
+## Inicializar, actualizar o inspeccionar submódulos
 
 | Alias  | Command                                   | Description                                                                                                                                                                                    |
 | ------ | ----------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| gsmi   | `git submodule init`                      | Inicializar the submodules recorded in the index.                                                                                                                                               |
-| gsma   | `git submodule add`                       | Añadir the given repository as a Submodule at the given path to the changeset to be committed next to the current project: the current project is termed the "superproject".                      |
-| gsm    | `git submodule`                           | Enables foreign repositories to be embedded within a dedicated subdirectory of the source tree.                                                                                                |
-| gsms   | `git submodule sync`                      | Synchronizes submodules' remote URL configuration setting to the value specified in .gitmodules.                                                                                               |
-| gsmu   | `git submodule update`                    | Actualizar the registered submodules to match what the superproject expects by cloning missing submodules, fetching missing commits in submodules and updating the working tree of the submodules. |
-| gsmui  | `git submodule update --init`             | Submodule Actualizar with Inicializar.                                                                                                                                                              |
-| gsmuir | `git submodule update --init --recursive` | Submodule Actualizar with Inicializar and recursive; this is useful to bring a submodule fully up to datec.                                                                                         |
+| gsmi   | `git submodule init`                      | Inicializar los submódulos registrados en el índice.                                                                                                                                               |
+| gsma   | `git submodule add`                       | Añadir el repositorio dado como un Submódulo en la ruta dada al changeset para ser confirmado junto al proyecto actual: el proyecto actual se denomina "superproyecto".                      |
+| gsm    | `git submodule`                           | Permite incrustar repositorios foráneos dentro de un subdirectorio dedicado del árbol de fuentes.                                                                                                |
+| gsms   | `git submodule sync`                      | Sincroniza la configuración de URL remota de los submódulos al valor especificado en .gitmodules.                                                                                               |
+| gsmu   | `git submodule update`                    | Actualizar los submódulos registrados para que coincidan con lo que el superproyecto espera clonando submódulos faltantes, obteniendo commits faltantes en submódulos y actualizando el árbol de trabajo de los submódulos. |
+| gsmui  | `git submodule update --init`             | Actualización de Submódulo con Inicializar.                                                                                                                                                              |
+| gsmuir | `git submodule update --init --recursive` | Actualización de Submódulo con Inicializar y recursivo; esto es útil para traer un submódulo completamente al día.                                                                                         |
 
-## Show the working tree status
+## Mostrar el estado del árbol de trabajo
 
 | Alias  | Command                       | Description                                                    |
 | ------ | ----------------------------- | -------------------------------------------------------------- | ------------ | ------------ | ------------------------------------------- |
-| gst    | `git status`                  | Mostrar the working tree status.                                  |
-| gstrmu | `git status -su               | cut -d' ' -f2-                                                 | tr '\n' '\0' | xargs -0 rm` | Eliminar untracked archivos in a git repository. |
-| gsts   | `git status --short`          | Status with short format instead of full details.              |
-| gstsb  | `git status --short --branch` | Status with short format and showing branch and tracking info. |
+| gst    | `git status`                  | Mostrar el estado del árbol de trabajo.                                  |
+| gstrmu | `git status -su               | cut -d' ' -f2-                                                 | tr '\n' '\0' | xargs -0 rm` | Eliminar archivos no rastreados en un repositorio git. |
+| gsts   | `git status --short`          | Estado con formato corto en lugar de detalles completos.              |
+| gstsb  | `git status --short --branch` | Estado con formato corto y mostrando rama e información de seguimiento. |
 
-## Create, list, delete or verify a tag object signed with GPG
+## Crear, listar, borrar o verificar un objeto etiqueta firmado con GPG
 
 | Alias | Comando               | Descripción                                                                |
 | ----- | --------------------------------------------------------------- | ----------------------------------------------------------------- |
-| gt    | `git tag`                                                       | gt: See all tags.                                                 |
-| gta   | `git tag -a $1 -m $2`                                           | gta: Añadir a tag.                                                   |
-| gtg   | `git tag`                                                       | gtg: Crear, Listar, Borrar or Verificar a tag object signed with GPG. |
-| gtl   | `git describe --tags --abbrev=0`                                | gtl: Last tag in the current branch.                              |
-| gtrm  | `for t in`git tag`do; git push origin :$t; git tag -d $t; done` | gtrm: Borrar all tags.                                            |
+| gt    | `git tag`                                                       | gt: Ver todas las etiquetas.                                                 |
+| gta   | `git tag -a $1 -m $2`                                           | gta: Añadir una etiqueta.                                                   |
+| gtg   | `git tag`                                                       | gtg: Crear, Listar, Borrar o Verificar un objeto etiqueta (tag) firmado con GPG. |
+| gtl   | `git describe --tags --abbrev=0`                                | gtl: Última etiqueta en la rama actual.                              |
+| gtrm  | `for t in`git tag`do; git push origin :$t; git tag -d $t; done` | gtrm: Borrar todas las etiquetas.                                            |
 
-## Show various types of objects
+## Mostrar varios tipos de objetos
 
 | Alias  | Command                                                            | Description                                                                          |
 | ------ | ------------------------------------------------------------------ | ------------------------------------------------------------------------------------ | --------------------- | -------- | --------------------------------------------------------------- |
-| gshab  | `for k in ``git branch                                             | perl -pe s/^..//`;do echo `git show --pretty=format:"%Cgreen%ci %Cblue%cr%Creset" $k | head -n 1``\\t$k;done | sort -r` | Mostrar git branches by date - useful for showing active branches. |
-| gshf   |                                                                    | Encontrar the nearest parent branch of the current git branch.                            |
-| gshls  | `git show --relative --pretty=format:''`                           | Mostrar Listar of archivos changed by commit.                                                |
-| gshnp  | `git show --no-patch --pretty="tformat:%h (%s, %ad)" --date=short` | Given any git object, try to Mostrar it briefly.                                        |
-| gshwho | `git shortlog --summary --numbered --no-merges`                    | Mostrar who contributed, in descending order by number of commits.                      |
+| gshab  | `for k in ``git branch                                             | perl -pe s/^..//`;do echo `git show --pretty=format:"%Cgreen%ci %Cblue%cr%Creset" $k | head -n 1``\\t$k;done | sort -r` | Mostrar ramas git por fecha - útil para mostrar ramas activas. |
+| gshf   |                                                                    | Encontrar la rama padre más cercana de la rama git actual.                            |
+| gshls  | `git show --relative --pretty=format:''`                           | Mostrar lista de archivos cambiados por commit.                                                |
+| gshnp  | `git show --no-patch --pretty="tformat:%h (%s, %ad)" --date=short` | Dado cualquier objeto git, intentar mostrarlo brevemente.                                        |
+| gshwho | `git shortlog --summary --numbered --no-merges`                    | Mostrar quién contribuyó, en orden descendente por número de commits.                      |
 
-## Reset current HEAD to the specified state
+## Restablecer el HEAD actual al estado especificado
 
 | Alias  | Command                                    | Description         |
 | ------ | ------------------------------------------ | ------------------- |
@@ -240,38 +237,38 @@ Git command line tools. Git aliases improve speed and efficiency.
 | gress  | `git reset --soft HEAD~1`                  | Reset commit.       |
 | gresu  | `git reset --hard $(git upstream-branch)`  | Reset to upstream.  |
 
-## Pick out and massage parameters
+## Elegir y masajear parámetros
 
 | Alias | Comando               | Descripción                                                                |
 | ----- | --------------------------------------------------------------------------- | --------------------------------- |
-| gtp   | `git rev-parse --show-toplevel`                                             | Get the top level directorio name. |
-| gcb   | `git rev-parse --abbrev-ref HEAD`                                           | Get the current branch name.      |
-| gub   | `git for-each-ref --format='%(upstream:short)' $(git symbolic-ref -q HEAD)` | Get the upstream branch name.     |
+| gtp   | `git rev-parse --show-toplevel`                                             | Obtener el nombre del directorio de nivel superior. |
+| gcb   | `git rev-parse --abbrev-ref HEAD`                                           | Obtener el nombre de la rama actual.      |
+| gub   | `git for-each-ref --format='%(upstream:short)' $(git symbolic-ref -q HEAD)` | Obtener el nombre de la rama upstream.     |
 
-## Remove files from the working tree and from the index
+## Eliminar archivos del árbol de trabajo y del índice
 
 | Alias | Comando               | Descripción                                                                |
 | ----- | -------------------------------------------------------------------- | ------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------- | --------------------- |
-| grm   | `git rm`                                                             | Eliminar archivos from the working tree and from the index. |
-| grmc  | `git rm --cached`                                                    | Unstage and Eliminar paths only from the index.          |
-| grmd  | `git ls-files -z --deleted                                           | xargs -0 git rm`                                       | git Eliminar archivos which have been deleted.                                                                     |
-| grmd2 | `git rm $(git ls-files --deleted)`                                   | git Eliminar archivos which have been deleted.              |
-| grmds | `find . -name .DS_Store -exec git rm --ignore-unmatch --cached {} +` | Eliminar .DS_Store from the repository.                  |
-| grmn  | `for file in $(git status                                            | grep "new file"                                        | sed "s/#\tnew file://"); do git rm --cached $file; done`                                                      | Eliminar all new archivos. |
-| grmx  | `git ls-files -z -d                                                  | xargs -0 git rm --`                                    | Eliminar for all deleted archivos, including those with space/quote/unprintable characters in their filename/path. |
+| grm   | `git rm`                                                             | Eliminar archivos del árbol de trabajo y del índice. |
+| grmc  | `git rm --cached`                                                    | Unstage y eliminar rutas solo del índice.          |
+| grmd  | `git ls-files -z --deleted                                           | xargs -0 git rm`                                       | git eliminar archivos que han sido borrados.                                                                     |
+| grmd2 | `git rm $(git ls-files --deleted)`                                   | git eliminar archivos que han sido borrados.              |
+| grmds | `find . -name .DS_Store -exec git rm --ignore-unmatch --cached {} +` | Eliminar .DS_Store del repositorio.                  |
+| grmn  | `for file in $(git status                                            | grep "new file"                                        | sed "s/#\tnew file://"); do git rm --cached $file; done`                                                      | Eliminar todos los archivos nuevos. |
+| grmx  | `git ls-files -z -d                                                  | xargs -0 git rm --`                                    | Eliminar para todos los archivos borrados, incluyendo aquellos con espacio/comillas/caracteres no imprimibles en su nombre de archivo/ruta. |
 
-## Show what revision and author last modified each line of a file
+## Mostrar qué revisión y autor modificó por última vez cada línea de un archivo
 
 | Alias | Comando               | Descripción                                                                |
 | ----- | -------------------------------- | ---------------------------------------------- | ---------------------- | ------- | --------- | ---------------------------------------------------- | ------------------------------------------------------------- |
-| gbl   | `git blame --date short "$1"`    | Specifies a format used to output short dates. |
-| gblc  | `git blame --line-porcelain "$1" | sed -n 's/^author //p'                         | sort                   | uniq -c | sort -rn` | Count the number of lines attributed to each author. |
-| gblau | `git ls-files                    | xargs -n1 git blame --line-porcelain           | sed -n 's/^author //p' | sort -f | uniq -ic  | sort -nr`                                            | Prints per-line contribution per author for a GIT repository. |
+| gbl   | `git blame --date short "$1"`    | Especifica un formato usado para mostrar fechas cortas. |
+| gblc  | `git blame --line-porcelain "$1" | sed -n 's/^author //p'                         | sort                   | uniq -c | sort -rn` | Contar el número de líneas atribuidas a cada autor. |
+| gblau | `git ls-files                    | xargs -n1 git blame --line-porcelain           | sed -n 's/^author //p' | sort -f | uniq -ic  | sort -nr`                                            | Imprime contribución por línea por autor para un repositorio GIT. |
 
-## Get and set repository or global options
+## Obtener y establecer opciones de repositorio o globales
 
 | Alias     | Command                                        | Description                                          |
 | --------- | ---------------------------------------------- | ---------------------------------------------------- |
-| gconfdiff | `git config alias.dcolor "diff --color-words"` | Better git diff, word delimited and colorized.       |
-| gconfl    | `git config --list`                            | Listar all the settings.                               |
-| gconfr    | `git config --local --get remote.origin.url`   | Output remote origin from within a local repository. |
+| gconfdiff | `git config alias.dcolor "diff --color-words"` | Mejor git diff, delimitado por palabras y coloreado.       |
+| gconfl    | `git config --list`                            | Listar todas las configuraciones.                               |
+| gconfr    | `git config --local --get remote.origin.url`   | Mostrar origen remoto desde dentro de un repositorio local. |

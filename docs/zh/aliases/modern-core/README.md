@@ -1,60 +1,56 @@
 ---
-description: The Modern Core is a suite of Rust-powered tools that replace legacy Unix utilities with faster, smarter alternatives.
+description: Modern Core 是一套 Rust 驱动的工具，用更快、更智能的替代品取代了旧版 Unix 实用程序。
 lang: zh-CN
 metaTitle: Modern Core - Dotfiles (CN)
 permalink: /zh/aliases/modern-core/
-
-meta:
-  - name: keywords
-    content: modern core, atuin, yazi, zellij, ghostty, rust, shell, tools
 ---
 
-# Modern Core Tools
+# Modern Core 工具
 
-In **v0.2.471**, we introduced the "Modern Core" — a suite of high-performance, Rust-powered tools designed to replace legacy Unix utilities.
+在 **v0.2.471** 中，我们引入了“Modern Core”——一套高性能、Rust 驱动的工具，旨在取代旧版 Unix 实用程序。
 
-## Tools Overview
+## 工具概述
 
-| Tool        | Replaces        | Description                                             | Keybinding      |
-| :---------- | :-------------- | :------------------------------------------------------ | :-------------- |
-| **Atuin**   | `history`       | Syncable, encrypted shell history with fuzzy search.    | `Ctrl+R` / `Up` |
-| **Yazi**    | `ranger` / `ls` | Blazing fast terminal file manager with image previews. | `yy` (alias)    |
-| **Zellij**  | `tmux`          | Modern terminal multiplexer with intuitive layouts.     | `Alt+n`         |
-| **Ghostty** | `Terminal.app`  | GPU-accelerated, cross-platform terminal emulator.      | N/A             |
+| 工具        | 替换对象        | 描述                                     | 快捷键          |
+| :---------- | :-------------- | :--------------------------------------- | :-------------- |
+| **Atuin**   | `history`       | 可同步、加密的 shell 历史记录，带模糊搜索。 | `Ctrl+R` / `Up` |
+| **Yazi**    | `ranger` / `ls` | 极速终端文件管理器，带图像预览。         | `yy` (别名)     |
+| **Zellij**  | `tmux`          | 具有直观布局的现代终端多路复用器。       | `Alt+n`         |
+| **Ghostty** | `Terminal.app`  | GPU 加速、跨平台终端模拟器。             | N/A             |
 
-## Atuin (Magical History)
+## Atuin (神奇历史)
 
-Atuin replaces your existing shell history with a SQLite database.
+Atuin 将现有的 shell 历史记录替换为 SQLite 数据库。
 
-- **Search**: Press `Ctrl+R` or `Up Arrow` to open the search UI.
-- **Filter**: Type natural language queries or specific exit codes.
-- **Sync**: Your history is encrypted and synced across your devices.
+- **搜索**: 按 `Ctrl+R` 或 `向上箭头` 打开搜索 UI。
+- **过滤**: 输入自然语言查询或特定退出代码。
+- **同步**: 您的历史记录经过加密并在您的设备之间同步。
 
-## Yazi (File Manager)
+## Yazi (文件管理器)
 
-Yazi is a terminal file manager written in Rust, based on async I/O.
+Yazi 是一个用 Rust 编写的终端文件管理器，基于异步 I/O。
 
-- **Launch**: Type `yy` in your terminal.
-- **Features**:
-  - Instant startup.
-  - Sixel/Kitty image preview support.
-  - Lua plugin system.
+- **启动**: 在终端中输入 `yy`。
+- **功能**:
+  - 即时启动。
+  - Sixel/Kitty 图像预览支持。
+  - Lua 插件系统。
 
-## Zellij (Multiplexer)
+## Zellij (多路复用器)
 
-Zellij is a terminal workspace with batteries included.
+Zellij 是一个包含电池的终端工作区。
 
-- **Launch**: Type `zellij` (or use your configured alias).
-- **Features**:
-  - Layout engine (save/restore workspace layouts).
-  - Floating panes.
-  - User-friendly keybindings (shown on screen).
+- **启动**: 输入 `zellij`（或使用您配置的别名）。
+- **功能**:
+  - 布局引擎（保存/恢复工作区布局）。
+  - 浮动窗格。
+  - 用户友好的快捷键（显示在屏幕上）。
 
-## Ghostty (Terminal)
+## Ghostty (终端)
 
-Ghostty is the default terminal emulator for the Modern Core.
+Ghostty 是 Modern Core 的默认终端模拟器。
 
-- **Features**:
-  - Native performance (GPU accelerated).
-  - Ligatures and modern font support.
-  - Zero-flicker rendering.
+- **功能**:
+  - 原生性能（GPU 加速）。
+  - 连字和现代字体支持。
+  - 零闪烁渲染。

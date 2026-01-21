@@ -1,45 +1,27 @@
 ---
-description: The Sudo aliases are a collection of aliases that allow you to interact with the `sudo` command. Sudo is a tool which allows you to run commands as another user.
+description: Die Sudo-Aliase sind eine Sammlung von Aliasen, die es Ihnen ermöglichen, mit dem `sudo` Befehl zu interagieren. Sudo ist ein Tool, das es Ihnen ermöglicht, Befehle als ein anderer Benutzer auszuführen.
 lang: de-DE
-metaTitle: The Sudo aliases - Dotfiles (DE)
+metaTitle: Sudo Aliase - Dotfiles (DE)
 permalink: /de/aliases/sudo/
-
-meta:
-  - name: keywords
-    content: aliases, sudo, linux, macos, shell, terminal, windows
-  - name: twitter:card
-    content: The Sudo aliases are a collection of aliases that allow you to interact with the `sudo` command. Sudo is a tool which allows you to run commands as another user.
-  - name: twitter:description
-    content: The Sudo aliases are a collection of aliases that allow you to interact with the `sudo` command. Sudo is a tool which allows you to run commands as another user.
-  - name: twitter:title
-    content: The Sudo aliases - Dotfiles (DE)
-  - name: og:title
-    content: The Sudo aliases - Dotfiles (DE)
-  - name: og:description
-    content: The Sudo aliases are a collection of aliases that allow you to interact with the `sudo` command. Sudo is a tool which allows you to run commands as another user.
-  - name: og:image:alt
-    content: Dotfiles - Simply designed to fit your shell life
-  - name: og:locale
-    content: en_GB
 ---
 
-# Sudo aliases
+# Sudo Aliase
 
-The `sudo.aliases.sh` file creates helpful shortcut aliases for using `sudo`
-with commands.
+Die Datei `sudo.aliases.sh` erstellt hilfreiche Shortcut-Aliase für die Verwendung von `sudo`
+mit Befehlen.
 
-The Sudo aliases are a collection of aliases that allow you to interact with
-the `sudo` command. Sudo is a tool which allows you to run commands as another
-user.
+Die Sudo-Aliase sind eine Sammlung von Aliasen, die es Ihnen ermöglichen, mit
+dem `sudo` Befehl zu interagieren. Sudo ist ein Tool, das es Ihnen ermöglicht, Befehle als ein anderer
+Benutzer auszuführen.
 
 ## Sudo
 
-[Sudo](https://en.wikipedia.org/wiki/Sudo) is a command that allows users to
-execute commands as another user.
+[Sudo](https://de.wikipedia.org/wiki/Sudo) ist ein Befehl, der es Benutzern ermöglicht,
+Befehle als ein anderer Benutzer auszuführen.
 
-| Alias | Befehl                | Beschreibung                                                               |
+| Alias | Befehl    | Beschreibung                         |
 | ----- | --------- | ----------------------------------- |
-| root  | `s`       | Execute a command as the superuser. |
-| s     | `sudo -i` | Execute a command as the superuser. |
-| su    | `sudo su` | Execute a command as the superuser. |
-| sudo  | `s`       | Execute a command as the superuser. |
+| root  | `s`       | Führe einen Befehl als Superuser aus. |
+| s     | `sudo -i` | Führe einen Befehl als Superuser aus. |
+| su    | `sudo su` | Führe einen Befehl als Superuser aus. |
+| sudo  | `s`       | Führe einen Befehl als Superuser aus. |

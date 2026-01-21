@@ -1,23 +1,23 @@
 ---
-description: go aliases for Dotfiles
+description: Aliases de go para Dotfiles
 lang: pt-BR
-metaTitle: go aliases - Dotfiles
+metaTitle: Aliases de Go - Dotfiles (BR)
 permalink: /pt/aliases/go/
 ---
 
 # Aliases de Go
 
-Gerenciar aliases de Go language. Part of the **Universal Dotfiles** configuration.
+Gerencie aliases da linguagem Go. Parte da configuração **Universal Dotfiles**.
 
 ![Dotfiles banner][banner]
 
 ## 📖 Descrição
 
-Estes aliases são definidos em `go.aliases.sh` e são carregados automaticamente por `chezmoi`.
+Esses aliases são definidos em `go.aliases.sh` e são carregados automaticamente pelo `chezmoi`.
 
 ## ⚡ Aliases
 
-- `go` - Go shortcut
+- `go` - Atalho para Go
 - `gor` - `go run`
 - `gob` - `go build`
 - `got` - `go test`

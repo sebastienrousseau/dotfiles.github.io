@@ -1,88 +1,70 @@
 ---
-description: The Rust aliases are a collection of aliases that allow you to interact with the `rustup` and `cargo` commands. They are designed to be used with the `rustup` toolchain manager and the `cargo` package manager.
+description: Os aliases do Rust são uma coleção de aliases que permitem interagir com os comandos `rustup` e `cargo`. Eles são projetados para serem usados com o gerenciador de toolchain `rustup` e o gerenciador de pacotes `cargo`.
 lang: pt-BR
-metaTitle: The Rust aliases - Dotfiles (BR)
+metaTitle: Aliases do Rust - Dotfiles (BR)
 permalink: /pt/aliases/rust/
-
-meta:
-  - name: keywords
-    content: aliases, cargo, rust, rustup, linux, macos, shell, terminal, windows
-  - name: twitter:card
-    content: The Rust aliases are a collection of aliases that allow you to interact with the `rustup` and `cargo` commands. They are designed to be used with the `rustup` toolchain manager and the `cargo` package manager.
-  - name: twitter:description
-    content: The Rust aliases are a collection of aliases that allow you to interact with the `rustup` and `cargo` commands. They are designed to be used with the `rustup` toolchain manager and the `cargo` package manager.
-  - name: twitter:title
-    content: The Rust aliases - Dotfiles (BR)
-  - name: og:title
-    content: The Rust aliases - Dotfiles (BR)
-  - name: og:description
-    content: The Rust aliases are a collection of aliases that allow you to interact with the `rustup` and `cargo` commands. They are designed to be used with the `rustup` toolchain manager and the `cargo` package manager.
-  - name: og:image:alt
-    content: Dotfiles - Simply designed to fit your shell life
-  - name: og:locale
-    content: en_GB
 ---
 
-# Rust aliases
+# Aliases do Rust
 
-The `rust.aliases.sh` file creates helpful shortcut aliases for
-[Rust](https://www.rust-lang.org/).
+O arquivo `rust.aliases.sh` cria aliases de atalho úteis para
+[Rust](https://www.rust-lang.org/pt-BR).
 
-The Rust aliases are a collection of aliases that allow you to interact with the
-`rustup` and `cargo` commands. They are designed to be used with the `rustup`
-toolchain manager and the `cargo` package manager.
+Os aliases do Rust são uma coleção de aliases que permitem interagir com
+os comandos `rustup` e `cargo`. Eles são projetados para serem usados com o gerenciador de toolchain `rustup`
+e o gerenciador de pacotes `cargo`.
 
 ## Rust
 
-[Rust](https://www.rust-lang.org/) is a programming language that is focused on
-performance and safety, especially safe concurrency. Rust is syntactically
-similar to C++, but is designed to provide better memory safety while
-maintaining high performance.
+[Rust](https://www.rust-lang.org/pt-BR) é uma linguagem de programação focada em
+desempenho e segurança, especialmente concorrência segura. Rust é sintaticamente
+semelhante a C++, mas é projetado para fornecer melhor segurança de memória enquanto
+mantém alto desempenho.
 
-| Alias | Comando               | Descrição                                                                  |
+| Alias | Comando                      | Descrição                   |
 | ----- | ---------------------------- | --------------------------- |
-| ru    | `rustup update`              | Rustup Atualizar.              |
-| rca   | `rustup component add`       | Rustup component Adicionar.       |
-| rcl   | `rustup component list`      | Rustup component Listar.      |
-| rcr   | `rustup component remove`    | Rustup component Remover.    |
-| rde   | `rustup default`             | Rustup default.             |
-| rnn   | `rustup run nightly`         | Run rustup nightly.         |
-| rns   | `rustup run stable`          | Run rustup stable.          |
-| rtaa  | `rustup target add`          | Rustup target Adicionar.          |
-| rtal  | `rustup target list`         | Rustup target Listar.         |
-| rtar  | `rustup target remove`       | Rustup target Remover.       |
-| rti   | `rustup toolchain install`   | Rustup toolchain Instalar.   |
-| rtl   | `rustup toolchain list`      | Rustup toolchain Listar.      |
-| rtu   | `rustup toolchain uninstall` | Rustup toolchain uninstall. |
-| ruc   | `rustup update nightly`      | Atualizar rustup nightly.      |
-| rus   | `rustup update stable`       | Atualizar rustup stable.       |
+| ru    | `rustup update`              | Atualização do Rustup.      |
+| rca   | `rustup component add`       | Adicionar componente Rustup.|
+| rcl   | `rustup component list`      | Listar componentes Rustup.  |
+| rcr   | `rustup component remove`    | Remover componente Rustup.  |
+| rde   | `rustup default`             | Padrão do Rustup.           |
+| rnn   | `rustup run nightly`         | Executar rustup nightly.    |
+| rns   | `rustup run stable`          | Executar rustup stable.     |
+| rtaa  | `rustup target add`          | Adicionar alvo Rustup.      |
+| rtal  | `rustup target list`         | Listar alvos Rustup.        |
+| rtar  | `rustup target remove`       | Remover alvo Rustup.        |
+| rti   | `rustup toolchain install`   | Instalar toolchain Rustup.  |
+| rtl   | `rustup toolchain list`      | Listar toolchains Rustup.   |
+| rtu   | `rustup toolchain uninstall` | Desinstalar toolchain Rustup.|
+| ruc   | `rustup update nightly`      | Atualizar rustup nightly.   |
+| rus   | `rustup update stable`       | Atualizar rustup stable.    |
 
 ## Cargo
 
-[Cargo](https://doc.rust-lang.org/cargo/) is the Rust package manager. It is
-used to build, test, and package Rust projects. Cargo is included with Rustup.
+[Cargo](https://doc.rust-lang.org/cargo/) é o gerenciador de pacotes do Rust. Ele
+é usado para construir, testar e empacotar projetos Rust. O Cargo está incluído no Rustup.
 
-| Alias  | Command              | Description          |
+| Alias  | Comando              | Descrição            |
 | ------ | -------------------- | -------------------- |
-| cg     | `cargo`              | Cargo shortcut.      |
-| cgb    | `cg build`           | Cargo Construir.         |
+| cg     | `cargo`              | Atalho do Cargo.     |
+| cgb    | `cg build`           | Cargo build.         |
 | cgbh   | `cg bench`           | Cargo bench.         |
-| cgbr   | `cg build --release` | Cargo Construir release. |
-| cgc    | `cg check`           | Cargo Verificar.         |
+| cgbr   | `cg build --release` | Cargo build release. |
+| cgc    | `cg check`           | Cargo check.         |
 | cgcl   | `cg clean`           | Cargo clean.         |
 | cgcy   | `cg clippy`          | Cargo clippy.        |
 | cgd    | `cg doc --open`      | Cargo doc.           |
 | cgdr   | `cg doc --release`   | Cargo doc release.   |
 | cgf    | `cg fmt`             | Cargo format.        |
-| cgi    | `cg install`         | Cargo Instalar.       |
+| cgi    | `cg install`         | Cargo install.       |
 | cginit | `cg init`            | Cargo init.          |
 | cgn    | `cg new`             | Cargo new.           |
 | cgp    | `cg publish`         | Cargo publish.       |
 | cgr    | `cg run`             | Cargo run.           |
 | cgrr   | `cg run --release`   | Cargo run release.   |
-| cgs    | `cg search`          | Cargo Pesquisar.        |
+| cgs    | `cg search`          | Cargo search.        |
 | cgt    | `cg test`            | Cargo test.          |
 | cgtr   | `cg test --release`  | Cargo test release.  |
 | cgtt   | `cg tree`            | Cargo tree.          |
-| cgu    | `cg update`          | Cargo Atualizar.        |
+| cgu    | `cg update`          | Cargo update.        |
 | cgun   | `cg uninstall`       | Cargo uninstall.     |

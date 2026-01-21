@@ -1,47 +1,41 @@
 ---
-description: The Disk usage aliases, are designed to display disk usage statistics. They are used to calculate and print the disk space used by files or directories.
+description: Los alias de Uso de Disco están diseñados para mostrar estadísticas de uso del disco. Se utilizan para calcular e imprimir el espacio en disco utilizado por archivos o directorios.
 lang: es-ES
-metaTitle: Disk usage aliases - Dotfiles (ES)
+metaTitle: Alias de Uso de Disco - Dotfiles (ES)
 permalink: /es/aliases/du/
-
 meta:
   - name: twitter:card
-    content: The Disk usage aliases, are designed to display disk usage statistics. They are used to calculate and print the disk space used by files or directories.
+    content: Los alias de Uso de Disco están diseñados para mostrar estadísticas de uso del disco. Se utilizan para calcular e imprimir el espacio en disco utilizado por archivos o directorios.
   - name: twitter:description
-    content: The Disk usage aliases, are designed to display disk usage statistics. They are used to calculate and print the disk space used by files or directories.
+    content: Los alias de Uso de Disco están diseñados para mostrar estadísticas de uso del disco. Se utilizan para calcular e imprimir el espacio en disco utilizado por archivos o directorios.
   - name: twitter:title
-    content: Disk usage aliases - Dotfiles (ES)
+    content: Alias de Uso de Disco - Dotfiles (ES)
   - name: og:title
-    content: Disk usage aliases - Dotfiles (ES)
+    content: Alias de Uso de Disco - Dotfiles (ES)
   - name: og:description
-    content: The Disk usage aliases, are designed to display disk usage statistics. They are used to calculate and print the disk space used by files or directories.
+    content: Los alias de Uso de Disco están diseñados para mostrar estadísticas de uso del disco. Se utilizan para calcular e imprimir el espacio en disco utilizado por archivos o directorios.
   - name: og:image:alt
-    content: Dotfiles - Simply designed to fit your shell life
+    content: Dotfiles - Simplemente diseñado para adaptarse a tu vida en el shell
   - name: og:locale
-    content: en_GB
+    content: es_ES
 ---
 
-# Disk usage aliases
+# Alias de Uso de Disco
 
-The `du.aliases.sh` file creates helpful shortcut aliases for the `du` command.
+El archivo `du.aliases.sh` crea atajos útiles para el comando `du`.
 
-The Disk usage aliases, are designed to display disk usage statistics. They are
-used to calculate and print the disk space used by files or directories.
+Los alias de Uso de Disco están diseñados para mostrar estadísticas de uso del disco. Se utilizan para calcular e imprimir el espacio en disco utilizado por archivos o directorios.
 
-## Disk usage
+## Uso de Disco
 
-[Disk usage](<https://en.wikipedia.org/wiki/Du_(Unix)>) is a command that
-estimates file space usage. The `du` command is used to estimate file space
-usage. The space used by each file is shown in kilobytes. The space used by each
-directory is shown in kilobytes, along with the total space used by all files in
-that directory and its subdirectories.
+[Uso de disco (Disk usage)](<https://es.wikipedia.org/wiki/Du_(Unix)>) es un comando que estima el uso de espacio de archivos. El comando `du` se utiliza para estimar el uso de espacio de archivos. El espacio utilizado por cada archivo se muestra en kilobytes. El espacio utilizado por cada directorio se muestra en kilobytes, junto con el espacio total utilizado por todos los archivos en ese directorio y sus subdirectorios.
 
-| Alias | Comando               | Descripción                                                                |
-| ----- | ------------ | --------------------------------------------------------------------------- | -------------------------------------------------------- | ---------------------------------------------------------- |
-| du    | `du -h`      | Mostrar the disk usage of the current directorio.                               |
-| du1   | `du -hxd 1   | sort -h`                                                                    | archivo size of archivos and directories in current directorio. |
-| ducks | `du -cks _._ | sort -rn                                                                    | head -n 10`                                              | Top 10 largest archivos and directories in current directorio. |
-| duh   | `du`         | archivo size of archivos and directories.                                         |
-| dus   | `du -hs *`   | archivo size human readable output sorted by size.                             |
-| dusym | `du * -hsLc` | archivo size of archivos and directories in current directorio including symlinks. |
-| dut   | `dus`        | Total archivo size of current directorio.                                       |
+| Alias | Comando      | Descripción                                                                 |
+| ----- | ------------ | --------------------------------------------------------------------------- |
+| du    | `du -h`      | Mostrar el uso de disco del directorio actual.                               |
+| du1   | `du -hxd 1   | sort -h`                                                                    | Tamaño de archivos y directorios en el directorio actual. |
+| ducks | `du -cks _._ | sort -rn                                                                    | head -n 10`                                              | Los 10 archivos y directorios más grandes en el directorio actual. |
+| duh   | `du`         | Tamaño de archivos y directorios.                                         |
+| dus   | `du -hs *`   | Tamaño de archivo legible por humanos ordenado por tamaño.                             |
+| dusym | `du * -hsLc` | Tamaño de archivos y directorios en el directorio actual incluyendo enlaces simbólicos. |
+| dut   | `dus`        | Tamaño total de archivo del directorio actual.                                       |

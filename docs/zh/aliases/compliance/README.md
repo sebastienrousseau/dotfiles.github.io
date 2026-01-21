@@ -1,21 +1,21 @@
 ---
-description: compliance aliases for Dotfiles
+description: Dotfiles 的合规别名
 lang: zh-CN
-metaTitle: compliance aliases - Dotfiles
+metaTitle: 合规别名 - Dotfiles (CN)
 permalink: /zh/aliases/compliance/
 ---
 
-# Compliance 别名
+# 合规别名
 
-Tools for regulatory compliance and privacy enforcement.
+用于监管合规和隐私执行的工具。
 
-## 🛡️ Controls
+## 🛡️ 控制
 
-| Alias | Description |
-|-------|-------------|
-| `privacy-mode` | Disables telemetry for CLI tools (Homebrew, Dotnet, Azure, etc.) for the current session. |
-| `dot-audit` | Displays the recent configuration audit trail (Git history or Audit log). |
+| 别名           | 描述                                                       |
+| -------------- | ---------------------------------------------------------- |
+| `privacy-mode` | 为当前会话禁用 CLI 工具（Homebrew, Dotnet, Azure 等）的遥测。 |
+| `dot-audit`    | 显示最近的配置审计跟踪（Git 历史记录或审计日志）。         |
 
-## 📚 Documentation
+## 📚 文档
 
-See [COMPLIANCE.md](../../../COMPLIANCE.md) for full SOC2/ISO control mappings.
+有关完整的 SOC2/ISO 控制映射，请参阅 [COMPLIANCE.md](../../../COMPLIANCE.md)。

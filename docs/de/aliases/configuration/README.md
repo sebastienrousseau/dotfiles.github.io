@@ -1,43 +1,25 @@
 ---
-description: The Configuration aliases are aliases for opening the configuration files for the terminal and the shell.
+description: Die Konfigurations-Aliase sind Aliase zum Öffnen der Konfigurationsdateien für das Terminal und die Shell.
 lang: de-DE
-metaTitle: The Configuration aliases - Dotfiles (DE)
+metaTitle: Konfigurations-Aliase - Dotfiles (DE)
 permalink: /de/aliases/configuration/
-
-meta:
-  - name: keywords
-    content: aliases, configuration, dotfiles, linux, macos, shell, terminal, windows
-  - name: twitter:card
-    content: The Configuration aliases are aliases for opening the configuration files for the terminal and the shell.
-  - name: twitter:description
-    content: The Configuration aliases are aliases for opening the configuration files for the terminal and the shell.
-  - name: twitter:title
-    content: The Configuration aliases - Dotfiles (DE)
-  - name: og:title
-    content: The Configuration aliases - Dotfiles (DE)
-  - name: og:description
-    content: The Configuration aliases are aliases for opening the configuration files for the terminal and the shell.
-  - name: og:image:alt
-    content: Dotfiles - Simply designed to fit your shell life
-  - name: og:locale
-    content: en_GB
 ---
 
-# Configuration aliases
+# Konfigurations-Aliase
 
-The `configuration.aliases.sh` file creates helpful shortcut aliases for opening
-the configuration files for the terminal and the shell.
+Die Datei `configuration.aliases.sh` erstellt hilfreiche Shortcut-Aliase zum Öffnen
+der Konfigurationsdateien für das Terminal und die Shell.
 
 > [!TIP]
-> **New in v0.2.471**: You can now use the `dot` command to manage your configuration.
-> Try `dot learn` for an interactive tour or `dot doctor` to verify your setup.
+> **Neu in v0.2.471**: Sie können jetzt den `dot`-Befehl verwenden, um Ihre Konfiguration zu verwalten.
+> Versuchen Sie `dot learn` für eine interaktive Tour oder `dot doctor` um Ihr Setup zu überprüfen.
 
-## Configuration
+## Konfiguration
 
-| Alias | Befehl                | Beschreibung                                                               |
-| ----- | -------------------------------- | ------------------------------------------------------------ |
-| bshp  | `${=EDITOR} $HOME/.bash_profile` | Öffnen the Bash profile in the default text editor.            |
-| bshrc | `${=EDITOR} $HOME/.bashrc`       | Öffnen the Bash configuration Datei in the default text editor. |
-| gcfg  | `${=EDITOR} $HOME/.gitconfig`    | Öffnen the Git configuration Datei in the default text editor.  |
-| gign  | `${=EDITOR} $HOME/.gitignore`    | Öffnen the Git ignore Datei in the default text editor.         |
-| zshrc | `${=EDITOR} $HOME/.zshrc`        | Öffnen the Zsh configuration Datei in the default text editor.  |
+| Alias | Befehl                           | Beschreibung                                                  |
+| ----- | -------------------------------- | ------------------------------------------------------------- |
+| bshp  | `${=EDITOR} $HOME/.bash_profile` | Öffne das Bash-Profil im Standard-Texteditor.                 |
+| bshrc | `${=EDITOR} $HOME/.bashrc`       | Öffne die Bash-Konfigurationsdatei im Standard-Texteditor.    |
+| gcfg  | `${=EDITOR} $HOME/.gitconfig`    | Öffne die Git-Konfigurationsdatei im Standard-Texteditor.     |
+| gign  | `${=EDITOR} $HOME/.gitignore`    | Öffne die Git-Ignore-Datei im Standard-Texteditor.            |
+| zshrc | `${=EDITOR} $HOME/.zshrc`        | Öffne die Zsh-Konfigurationsdatei im Standard-Texteditor.     |

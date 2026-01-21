@@ -1,41 +1,42 @@
 ---
-description: macOS aliases for Dotfiles
+description: Aliases de macOS para Dotfiles
 lang: pt-BR
-metaTitle: macOS aliases - Dotfiles
+metaTitle: Aliases de macOS - Dotfiles (BR)
 permalink: /pt/aliases/macOS/
 ---
 
 # Aliases de macOS
 
-Gerenciar aliases de macOS. Part of the **Universal Dotfiles** configuration.
+Gerencie aliases do macOS. Parte da configuração **Universal Dotfiles**.
 
 ![Dotfiles banner][banner]
 
 ## 📖 Descrição
 
-Estes aliases são definidos em `macOS.aliases.sh` e são carregados automaticamente por `chezmoi`.
+Esses aliases são definidos em `macOS.aliases.sh` e são carregados automaticamente pelo `chezmoi`.
 
 ## ⚡ Aliases
 
-This code provides a set of aliases for macOS.
-- `clds` Recursively delete .DS_Store files.
-- `clls`  Clean up LaunchServices to remove duplicates in the
-  'Open With' menu.
-- `finderHideHidden` Hide hidden files in Finder.
-- `finderShowHidden` Show hidden files in Finder.
-- `hideDesktopIcons` Hide all icons on the Desktop.
-- `iphone` Open the device simulators.
-- `lockScreen` Lock the screen of the mac.
-- `ofd` Open the current directory in a Finder window.
-- `purge` Purging Xcode DerivedData.
-- `safariSafeMode` Launch Safari in Safe Mode.
-- `showDesktopIcons` Show all icons on the Desktop.
-- `screensaverDesktop` Run a screensaver on the Desktop.
-- `trash` Empty the Trash on all mounted volumes and the main HDD.
-- `vp` Verify macOS Permissions.
-- `vv` Verify macOS Volume.
-- `wifiOn` Turn on Wi-Fi.
-- `wifiOff` Turn off Wi-Fi.
-- `xcode` Launch XCode app in macOS.
+Este código fornece um conjunto de aliases para macOS.
+
+- `clds` Excluir recursivamente arquivos .DS_Store.
+- `clls` Limpar LaunchServices para remover duplicatas no
+  menu 'Abrir com'.
+- `finderHideHidden` Ocultar arquivos ocultos no Finder.
+- `finderShowHidden` Mostrar arquivos ocultos no Finder.
+- `hideDesktopIcons` Ocultar todos os ícones na área de trabalho.
+- `iphone` Abrir os simuladores de dispositivos.
+- `lockScreen` Bloquear a tela do mac.
+- `ofd` Abrir o diretório atual em uma janela do Finder.
+- `purge` Purgar Xcode DerivedData.
+- `safariSafeMode` Iniciar Safari em modo seguro.
+- `showDesktopIcons` Mostrar todos os ícones na área de trabalho.
+- `screensaverDesktop` Executar um protetor de tela na área de trabalho.
+- `trash` Esvaziar a lixeira em todos os volumes montados e no HDD principal.
+- `vp` Verificar permissões do macOS.
+- `vv` Verificar volume do macOS.
+- `wifiOn` Ligar Wi-Fi.
+- `wifiOff` Desligar Wi-Fi.
+- `xcode` Iniciar o aplicativo XCode no macOS.
 
 [banner]: https://kura.pro/dotfiles/v2/images/titles/title-dotfiles.svg

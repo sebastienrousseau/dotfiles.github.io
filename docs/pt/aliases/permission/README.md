@@ -1,46 +1,42 @@
 ---
-description: permission aliases for Dotfiles
+description: Aliases de permissão para Dotfiles
 lang: pt-BR
-metaTitle: permission aliases - Dotfiles
+metaTitle: Aliases de Permissão - Dotfiles (BR)
 permalink: /pt/aliases/permission/
 ---
 
-# Aliases de Permission
+# Aliases de Permissão
 
-Gerenciar aliases de Permission. Part of the **Universal Dotfiles** configuration.
+Gerencie aliases de Permissão. Parte da configuração **Universal Dotfiles**.
 
 ![Dotfiles banner][banner]
 
 ## 📖 Descrição
 
-Estes aliases são definidos em `permission.aliases.sh` e são carregados automaticamente por `chezmoi`.
+Esses aliases são definidos em `permission.aliases.sh` e são carregados automaticamente pelo `chezmoi`.
 
 ## ⚡ Aliases
 
-This code provides a set of aliases for file permissions.
-- `000` Set permissions to no read, write, or execute for user, group,
-  and others.
-- `400` Set permissions to no read or write, but allow execute for user
-  only.
-- `444` Set permissions to no write or execute, but allow read for all.
-- `600` Set permissions to read and write for user only.
-- `644` Set permissions to read for all, but write only for user.
-- `666` Set permissions to read and write for all.
-- `755` Set permissions to read, write, and execute for user, but only
-  read and execute for group and others.
-- `764` Set permissions to read and write for user and group, but only
-  read for others.
-- `777` Set permissions to read, write, and execute for all.
-- `chgrp` Change group ownership of files or directories.
-- `chgrpr` Change group ownership of files or directories recursively.
-- `chgrpu` Change group ownership of files or directories recursively to
-  the current user.
-- `chmod` Change file mode bits.
-- `chmodr` Change file mode bits recursively.
-- `chmodu` Change file mode bits recursively to the current user.
-- `chmox` Make a file executable.
-- `chown` Change file owner and group.
-- `chownr` Change file owner and group recursively.
-- `chownu` Change file owner and group recursively to the current user.
+Este código fornece um conjunto de aliases para permissões de arquivos.
+
+- `000` Definir permissões para sem leitura, escrita ou execução para usuário, grupo e outros.
+- `400` Definir permissões para sem leitura ou escrita, mas permitir execução apenas para usuário.
+- `444` Definir permissões para sem escrita ou execução, mas permitir leitura para todos.
+- `600` Definir permissões de leitura e escrita apenas para usuário.
+- `644` Definir permissões de leitura para todos, mas escrita apenas para usuário.
+- `666` Definir permissões de leitura e escrita para todos.
+- `755` Definir permissões de leitura, escrita e execução para usuário, mas apenas leitura e execução para grupo e outros.
+- `764` Definir permissões de leitura e escrita para usuário e grupo, mas apenas leitura para outros.
+- `777` Definir permissões de leitura, escrita e execução para todos.
+- `chgrp` Alterar propriedade do grupo de arquivos ou diretórios.
+- `chgrpr` Alterar propriedade do grupo de arquivos ou diretórios recursivamente.
+- `chgrpu` Alterar propriedade do grupo de arquivos ou diretórios recursivamente para o usuário atual.
+- `chmod` Alterar bits de modo de arquivo.
+- `chmodr` Alterar bits de modo de arquivo recursivamente.
+- `chmodu` Alterar bits de modo de arquivo recursivamente para o usuário atual.
+- `chmox` Tornar um arquivo executável.
+- `chown` Alterar proprietário e grupo do arquivo.
+- `chownr` Alterar proprietário e grupo do arquivo recursivamente.
+- `chownu` Alterar proprietário e grupo do arquivo recursivamente para o usuário atual.
 
 [banner]: https://kura.pro/dotfiles/v2/images/titles/title-dotfiles.svg

@@ -1,42 +1,21 @@
 ---
-description: The UUID aliases create helpful shortcut aliases for the `uuidgen` command. The uuidgen command generates a Universally Unique IDentifier (UUID), a 128-bit value guaranteed to be unique over both space and time.
+description: UUID 别名可以为 `uuidgen` 命令创建有用的快捷方式。uuidgen 命令生成通用唯一标识符 (UUID)，这是一个在空间和时间上保证唯一的 128 位值。
 lang: zh-CN
-metaTitle: The UUID aliases - Dotfiles (CN)
+metaTitle: UUID 别名 - Dotfiles (CN)
 permalink: /zh/aliases/uuid/
-
-meta:
-  - name: keywords
-    content: aliases, uuid, linux, macos, shell, terminal, windows
-  - name: twitter:card
-    content: The UUID aliases create helpful shortcut aliases for the `uuidgen` command. The uuidgen command generates a Universally Unique IDentifier (UUID), a 128-bit value guaranteed to be unique over both space and time.
-  - name: twitter:description
-    content: The UUID aliases create helpful shortcut aliases for the `uuidgen` command. The uuidgen command generates a Universally Unique IDentifier (UUID), a 128-bit value guaranteed to be unique over both space and time.
-  - name: twitter:title
-    content: The UUID aliases - Dotfiles (CN)
-  - name: og:title
-    content: The UUID aliases - Dotfiles (CN)
-  - name: og:description
-    content: The UUID aliases create helpful shortcut aliases for the `uuidgen` command. The uuidgen command generates a Universally Unique IDentifier (UUID), a 128-bit value guaranteed to be unique over both space and time.
-  - name: og:image:alt
-    content: Dotfiles - Simply designed to fit your shell life
-  - name: og:locale
-    content: en_GB
 ---
 
-# UUID aliases
+# UUID 别名
 
-The `uuid.aliases.sh` file creates helpful shortcut aliases for generating
-[UUIDs](https://en.wikipedia.org/wiki/Universally_unique_identifier).
+`uuid.aliases.sh` 文件为生成 [UUID](https://zh.wikipedia.org/wiki/通用唯一识别码) 创建了有用的快捷别名。
 
-The UUID aliases create helpful shortcut aliases for the `uuidgen` command.
-The uuidgen command generates a Universally Unique IDentifier (UUID), a
-128-bit value guaranteed to be unique over both space and time.
+UUID 别名为 `uuidgen` 命令创建了有用的快捷别名。
+`uuidgen` 命令生成通用唯一标识符 (UUID)，这是一个在空间和时间上保证唯一的 128 位值。
 
 ## UUID
 
-[UUID](https://en.wikipedia.org/wiki/Universally_unique_identifier) is a 128-bit
-number used to identify information in computer systems.
+[UUID](https://zh.wikipedia.org/wiki/通用唯一识别码) 是一个 128 位数字，用于识别计算机系统中的信息。
 
-| 别名  | 命令                   | 描述                                                                       |
-| ----- | ---------------------------------------------------------------------------------- | --------------------------------------------- |
-| uuid  | `uuidgen \| tr -d '\n' \| tr '[:upper:]' '[:lower:]' \| pbcopy && pbpaste && echo` | Generate a UUID and 复制 it to the clipboard. |
+| 别名 | 命令                                                                               | 描述                     |
+| ---- | ---------------------------------------------------------------------------------- | ------------------------ |
+| uuid | `uuidgen \| tr -d '\n' \| tr '[:upper:]' '[:lower:]' \| pbcopy && pbpaste && echo` | 生成 UUID 并将其复制到剪贴板。 |

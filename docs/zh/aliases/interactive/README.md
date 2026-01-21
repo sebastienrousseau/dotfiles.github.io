@@ -1,50 +1,28 @@
 ---
-description: The Interactive aliases are a collection of aliases that allow you to interact with your shell and terminal in a more interactive way.
+description: 交互式别名是一组别名，允许您以更具交互性的方式与 shell 和终端进行交互。
 lang: zh-CN
-metaTitle: Interactive aliases - Dotfiles (CN)
+metaTitle: 交互式别名 - Dotfiles (CN)
 permalink: /zh/aliases/interactive/
-
-meta:
-  - name: keywords
-    content: aliases, bash, cp, interactive, linux, ln, macos, mv, rm, shell, terminal, windows
-  - name: twitter:card
-    content: The Interactive aliases are a collection of aliases that allow you to interact with your shell and terminal in a more interactive way.
-  - name: twitter:description
-    content: The Interactive aliases are a collection of aliases that allow you to interact with your shell and terminal in a more interactive way.
-  - name: twitter:title
-    content: Interactive aliases - Dotfiles (CN)
-  - name: og:title
-    content: Interactive aliases - Dotfiles (CN)
-  - name: og:description
-    content: The Interactive aliases are a collection of aliases that allow you to interact with your shell and terminal in a more interactive way.
-  - name: og:image:alt
-    content: Dotfiles - Simply designed to fit your shell life
-  - name: og:locale
-    content: en_GB
 ---
 
-# Interactive aliases
+# 交互式别名
 
-The `interactive.aliases.sh` file creates helpful shortcut aliases for enabling
-interactive mode to critical common functionality in the terminal.
+`interactive.aliases.sh` 文件为在终端中启用关键常用功能的交互模式创建了有用的快捷别名。
 
-The Interactive aliases are a collection of aliases that allow you to interact
-with your shell and terminal in a more interactive way.
+交互式别名是一组别名，允许您以更具交互性的方式与 shell 和终端进行交互。
 
-## Interactive mode
+## 交互模式
 
-[Interactive mode](https://en.wikipedia.org/wiki/Interactive_mode) is a mode in
-which the user is prompted for input before the command is executed.
+[交互模式](<https://zh.wikipedia.org/wiki/交互式计算>) 是一种模式，其中在执行命令之前提示用户输入。
 
-This is a useful feature for commands such as `cp`, `mv`, `rm`, and `ln` that
-can be used to overwrite files or directories.
+对于诸如 `cp`、`mv`、`rm` 和 `ln` 之类的命令，这是一个有用的功能，这些命令可用于覆盖文件或目录。
 
-| 别名  | 命令                   | 描述                                                                       |
-| ----- | ----------------------- | ------------------------------------------------------------ |
-| bin   | `rm -fr ${HOME}/.Trash` | 移除 all 文件 in the trash.                               |
-| cp    | `cp -vi`                | 复制 文件 and directories.                                  |
-| del   | `rm -rfvi`              | 移除 a 文件 or 目录.                                  |
-| ln    | `ln -vi`                | Interactive symbolic link.                                   |
-| mv    | `mv -vi`                | 移动 文件 interactively (ask before overwrite) and verbose. |
-| rm    | `rm -vi`                | Prompts for every 文件 before removing.                      |
-| zap   | `rm -vi`                | 移除 文件 interactively (ask before overwrite).           |
+| 别名  | 命令                    | 描述                                         |
+| ----- | ----------------------- | -------------------------------------------- |
+| bin   | `rm -fr ${HOME}/.Trash` | 删除废纸篓中的所有文件。                     |
+| cp    | `cp -vi`                | 复制文件和目录。                             |
+| del   | `rm -rfvi`              | 删除文件或目录。                             |
+| ln    | `ln -vi`                | 交互式符号链接。                             |
+| mv    | `mv -vi`                | 交互式移动文件（覆盖前询问）并显示详细信息。 |
+| rm    | `rm -vi`                | 删除前提示每个文件。                         |
+| zap   | `rm -vi`                | 交互式删除文件（覆盖前询问）。               |

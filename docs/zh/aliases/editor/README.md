@@ -1,37 +1,17 @@
 ---
-description: The editor aliases will open the file in the editor list that is set in the `editor` environment variable.
+description: 编辑器别名将在 `editor` 环境变量中设置的编辑器列表中打开文件。
 lang: zh-CN
-metaTitle: Editor aliases - Dotfiles (CN)
+metaTitle: 编辑器别名 - Dotfiles (CN)
 permalink: /zh/aliases/editor/
-
-meta:
-  - name: keywords
-    content: aliases, code, editor, environment, gedit, nano, notepad++, text, vi, vim
-  - name: twitter:card
-    content: The editor aliases will open the file in the editor list that is set in the `editor` environment variable.
-  - name: twitter:description
-    content: The editor aliases will open the file in the editor list that is set in the `editor` environment variable.
-  - name: twitter:title
-    content: Editor aliases - Dotfiles (CN)
-  - name: og:title
-    content: Editor aliases - Dotfiles (CN)
-  - name: og:description
-    content: The editor aliases will open the file in the editor list that is set in the `editor` environment variable.
-  - name: og:image:alt
-    content: Dotfiles - Simply designed to fit your shell life
-  - name: og:locale
-    content: en_GB
 ---
 
-# Editor aliases
+# 编辑器别名
 
-The `editor.aliases.sh` file creates helpful shortcut aliases for opening files
-in your preferred text editor. The aliases will open the file in the editor list
-that is set in the `editor` environment variable.
+`editor.aliases.sh` 文件创建了有用的快捷别名，用于在您首选的文本编辑器中打开文件。
+这些别名将在 `editor` 环境变量中设置的编辑器列表中打开文件。
 
-As of today the following editors are listed in the `editor` environment
-variable in order of preference. This list can be changed by editing the
-`editor` environment variable in the `editor.aliases.sh` file.:
+截至目前，以下编辑器按优先顺序列在 `editor` 环境变量中。
+可以通过编辑 `editor.aliases.sh` 文件中的 `editor` 环境变量来更改此列表：
 
 - [nano][nn],
 - [vim][vi],
@@ -40,19 +20,18 @@ variable in order of preference. This list can be changed by editing the
 - [gedit][gdt],
 - [notepad++][np++],
 
-## Editor
+## 编辑器
 
-[Editor](https://en.wikipedia.org/wiki/Text_editor) is a program for editing
-plain text files.
+[编辑器](https://zh.wikipedia.org/wiki/文本编辑器) 是一个用于编辑纯文本文件的程序。
 
-| Alias  | Command     | Description  |
+| 别名   | 命令        | 描述         |
 | ------ | ----------- | ------------ |
-| e      | `${editor}` | Edit a 文件. |
-| edit   | `${editor}` | Edit a 文件. |
-| editor | `${editor}` | Edit a 文件. |
-| mate   | `${editor}` | Edit a 文件. |
-| n      | `${editor}` | Edit a 文件. |
-| v      | `${editor}` | Edit a 文件. |
+| e      | `${editor}` | 编辑文件。   |
+| edit   | `${editor}` | 编辑文件。   |
+| editor | `${editor}` | 编辑文件。   |
+| mate   | `${editor}` | 编辑文件。   |
+| n      | `${editor}` | 编辑文件。   |
+| v      | `${editor}` | 编辑文件。   |
 
 [np++]: https://notepad-plus-plus.org/
 [gdt]: https://wiki.gnome.org/Apps/Gedit

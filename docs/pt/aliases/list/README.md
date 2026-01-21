@@ -1,72 +1,49 @@
 ---
-description: The List aliases are a collection of aliases that allow you to interact with the `ls` command in a more interactive way in order to display the content of a directory.
+description: Os aliases de List são uma coleção de aliases que permitem interagir com o comando `ls` de uma maneira mais interativa para exibir o conteúdo de um diretório.
 lang: pt-BR
-metaTitle: The List (ls) aliases - Dotfiles (BR)
+metaTitle: Aliases de List (ls) - Dotfiles (BR)
 permalink: /pt/aliases/list/
-
-meta:
-  - name: keywords
-    content: aliases, ls, list, linux, macos, shell, terminal, windows
-  - name: twitter:card
-    content: The List aliases are a collection of aliases that allow you to interact with the `ls` command in a more interactive way in order to display the content of a directory.
-  - name: twitter:description
-    content: The List aliases are a collection of aliases that allow you to interact with the `ls` command in a more interactive way in order to display the content of a directory.
-  - name: twitter:title
-    content: The List (ls) aliases - Dotfiles (BR)
-  - name: og:title
-    content: The List (ls) aliases - Dotfiles (BR)
-  - name: og:description
-    content: The List aliases are a collection of aliases that allow you to interact with the `ls` command in a more interactive way in order to display the content of a directory.
-  - name: og:image:alt
-    content: Dotfiles - Simply designed to fit your shell life
-  - name: og:locale
-    content: en_GB
 ---
 
-# List aliases
+# Aliases de List
 
-The `list.aliases.sh` file creates helpful shortcut aliases for listing files
-and directories.
+O arquivo `list.aliases.sh` cria aliases de atalho úteis para listar arquivos
+e diretórios.
 
-The List aliases are a collection of aliases that allow you to interact with
-the `ls` command in a more interactive way in order to display the content of a
-directory.
-
-For each operand that names a file of a type other than directory, `ls` displays
-its name as well as any requested, associated information. For each operand
-that names a file of type directory, `ls` displays the names of files contained
-within that directory, as well as any requested, associated information.
+Os aliases de List são uma coleção de aliases que permitem interagir com o
+comando `ls` de uma maneira mais interativa para exibir o conteúdo de um
+diretório.
 
 ## ls
 
-[ls](https://en.wikipedia.org/wiki/Ls) is a command that lists the contents of
-a directory.
+[ls](https://pt.wikipedia.org/wiki/Ls) é um comando que lista o conteúdo de
+um diretório.
 
-| Alias  | Command              | Description                                            |
-| ------ | -------------------- | ------------------------------------------------------ | --------------------------- |
-| l.     | `ls -dlhF .\*        | grep -v "^d"`                                          | Listar hidden arquivos.          |
-| l      | `ls -lFh`            | Size, Mostrar type, human readable.                       |
-| l1     | `ls -1`              | Display one arquivo per line.                             |
-| la     | `ls -lAFh`           | All arquivos, Mostrar type, human readable.                  |
-| labc   | `ls -lap`            | Listar all arquivos in alphabetical order.                  |
-| lc     | `wc -l`              | Count the number of lines in the arquivo.                 |
-| lct    | `ls -lcrh`           | Listar arquivos by time, newest first.                      |
-| ld     | `ls -ltrh`           | Sort by date, oldest first.                            |
-| ldir   | `ls -l               | egrep '^d'`                                            | Listar directories only.      |
-| ldot   | `l.`                 | Listar hidden arquivos.                                     |
-| left   | `ls -t -1`           | Listar arquivos by date, most recent last.                  |
-| right  | `ls -t -1r`          | Listar arquivos by date, most recent first.                 |
-| lf     | `ls -l               | egrep -v '^d'`                                         | Listar arquivos only.            |
-| lk     | `ls -lSrh`           | Sort by size, largest first.                           |
-| ll     | `la`                 | Long Listar, Mostrar almost all, Mostrar type, human readable. |
-| lla    | `ls -l -d $PWD/*`    | Listar full path of all arquivos in current diretório.      |
-| locale | `locale -a           | grep UTF-8`                                            | Listar all available locales. |
-| lp     | `sudo lsof -i -T -n` | Listar all Abrir ports.                                   |
-| lr     | `ls -lRh`            | Recursive Listar, Mostrar type, human readable.             |
-| ls     | `ls --color`         | Colorize the output.                                   |
-| lS     | `ls -1FSsh`          | Order arquivos Based on Last Modified Time and size.      |
-| lt     | `tree`               | Listar contents of directories in a tree-like format.    |
-| lu     | `ls -lurh`           | Sort by date, oldest first.                            |
-| lw     | `ls -xAh`            | Wide Listar, Mostrar almost all, Mostrar type, human readable. |
-| lx     | `ls                  | sort -k 1,1 -t .`                                      | Sort by extension.          |
-| lz     | `ls -lSr`            | Sort by size, smallest first.                          |
+| Alias  | Comando              | Descrição                                              |
+| ------ | -------------------- | ------------------------------------------------------ |
+| l.     | `ls -dlhF .\*        | grep -v "^d"`                                          | Listar arquivos ocultos.                               |
+| l      | `ls -lFh`            | Tamanho, mostrar tipo, legível por humanos.            |
+| l1     | `ls -1`              | Exibir um arquivo por linha.                           |
+| la     | `ls -lAFh`           | Todos os arquivos, mostrar tipo, legível por humanos.  |
+| labc   | `ls -lap`            | Listar todos os arquivos em ordem alfabética.          |
+| lc     | `wc -l`              | Contar o número de linhas no arquivo.                  |
+| lct    | `ls -lcrh`           | Listar arquivos por tempo, mais novos primeiro.        |
+| ld     | `ls -ltrh`           | Classificar por data, mais antigos primeiro.           |
+| ldir   | `ls -l               | egrep '^d'`                                            | Listar apenas diretórios.                              |
+| ldot   | `l.`                 | Listar arquivos ocultos.                               |
+| left   | `ls -t -1`           | Listar arquivos por data, mais recentes por último.    |
+| right  | `ls -t -1r`          | Listar arquivos por data, mais recentes primeiro.      |
+| lf     | `ls -l               | egrep -v '^d'`                                         | Listar apenas arquivos.                                |
+| lk     | `ls -lSrh`           | Classificar por tamanho, maiores primeiro.             |
+| ll     | `la`                 | Lista longa, mostrar quase tudo, mostrar tipo, legível por humanos. |
+| lla    | `ls -l -d $PWD/*`    | Listar caminho completo de todos os arquivos no diretório atual. |
+| locale | `locale -a           | grep UTF-8`                                            | Listar todos os locais disponíveis.                    |
+| lp     | `sudo lsof -i -T -n` | Listar todas as portas abertas.                        |
+| lr     | `ls -lRh`            | Lista recursiva, mostrar tipo, legível por humanos.    |
+| ls     | `ls --color`         | Colorir a saída.                                       |
+| lS     | `ls -1FSsh`          | Ordenar arquivos com base na última modificação e tamanho. |
+| lt     | `tree`               | Listar conteúdo de diretórios em formato de árvore.    |
+| lu     | `ls -lurh`           | Classificar por data, mais antigos primeiro.           |
+| lw     | `ls -xAh`            | Lista ampla, mostrar quase tudo, mostrar tipo, legível por humanos. |
+| lx     | `ls                  | sort -k 1,1 -t .`                                      | Classificar por extensão.                              |
+| lz     | `ls -lSr`            | Classificar por tamanho, menores primeiro.             |

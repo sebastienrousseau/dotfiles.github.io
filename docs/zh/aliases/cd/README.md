@@ -1,58 +1,35 @@
 ---
-description: The Change Directory aliases are a collection of aliases that allow you to interact with the `cd` command line tool. Cd is a tool which changes the current directory.
+description: 切换目录别名是一组别名，允许您与 `cd` 命令行工具有更方便的交互。Cd 是一个更改当前目录的工具。
 lang: zh-CN
-metaTitle: Change Directory aliases - Dotfiles (CN)
+metaTitle: 切换目录别名 - Dotfiles (CN)
 permalink: /zh/aliases/cd/
-
-meta:
-  - name: keywords
-    content: aliases, cd, chdir, change directory, directory, linux, macos, shell, terminal, windows
-  - name: twitter:card
-    content: The Change Directory aliases are a collection of aliases that allow you to interact with the `cd` command line tool. Cd is a tool which changes the current directory.
-  - name: twitter:description
-    content: The Change Directory aliases are a collection of aliases that allow you to interact with the `cd` command line tool. Cd is a tool which changes the current directory.
-  - name: twitter:title
-    content: Change Directory aliases - Dotfiles (CN)
-  - name: og:title
-    content: Change Directory aliases - Dotfiles (CN)
-  - name: og:description
-    content: The Change Directory aliases are a collection of aliases that allow you to interact with the `cd` command line tool. Cd is a tool which changes the current directory.
-  - name: og:image:alt
-    content: Dotfiles - Simply designed to fit your shell life
-  - name: og:locale
-    content: en_GB
 ---
 
-# Change Directory aliases
+# 切换目录别名
 
-The `cd.aliases.sh` file creates helpful shortcut aliases for
-navigating the terminal.
+`cd.aliases.sh` 文件为终端导航创建了有用的快捷别名。
 
-The Change Directory aliases are a collection of aliases that allow you to
-interact with the `cd` command line tool. Cd is a tool which changes the current
-directory.
+切换目录别名是一组别名，允许您与 `cd` 命令行工具有更方便的交互。Cd 是一个更改当前目录的工具。
 
-## Navigation
+## 导航
 
-The cd command, also known as chdir (change directory), is a command-line shell
-command used to change the current working directory in various operating
-systems.
+cd 命令，也称为 chdir（更改目录），是一个命令行 shell 命令，用于在各种操作系统中更改当前工作目录。
 
-| 别名  | 命令                   | 描述                                                                       |
-| ----- | ----------------------------- | ---------------------------------------------------------------- |
-| -     | `cd -`                        | Shortcut to go to previous 目录.                            |
-| ..    | `cd ..`                       | Shortcut to go to parent 目录.                              |
-| ...   | `cd ../..`                    | Shortcut to go to grandparent 目录.                         |
-| ....  | `cd ../../..`                 | Shortcut to go to great-grandparent 目录.                   |
-| ..... | `cd ../../../..`              | Shortcut to go to great-great-grandparent 目录.             |
-| ~     | `cd ~`                        | Shortcut to go to home 目录.                                |
-| app   | `cd ${HOME}/Applications; ls` | Shortcut to go to the Applications 目录.                    |
-| cod   | `cd ${HOME}/Code; ls`         | Shortcut to go to the Code 目录 and 列出 its contents.      |
-| des   | `cd ${HOME}/Desktop; ls`      | Shortcut to go to the Desktop 目录 and 列出 its contents.   |
-| doc   | `cd ${HOME}/Documents; ls`    | Shortcut to go to the Documents 目录 and 列出 its contents. |
-| dot   | `cd ${HOME}/.dotfiles; ls`    | Shortcut to go to the dotfiles 目录.                        |
-| dow   | `cd ${HOME}/Downloads; ls`    | Shortcut to go to the Downloads 目录 and 列出 its contents. |
-| hom   | `cd ${HOME}/; ls`             | Shortcut to go to home 目录 and 列出 its contents.          |
-| mus   | `cd ${HOME}/Music; ls`        | Shortcut to go to the Music 目录 and 列出 its contents.     |
-| pic   | `cd ${HOME}/Pictures; ls`     | Shortcut to go to the Pictures 目录 and 列出 its contents.  |
-| vid   | `cd ${HOME}/Videos; ls`       | Shortcut to go to the Videos 目录 and 列出 its contents.    |
+| 别名  | 命令                          | 描述                                     |
+| ----- | ----------------------------- | ---------------------------------------- |
+| -     | `cd -`                        | 切换到上一个目录的快捷方式。             |
+| ..    | `cd ..`                       | 切换到父目录的快捷方式。                 |
+| ...   | `cd ../..`                    | 切换到祖父母目录的快捷方式。             |
+| ....  | `cd ../../..`                 | 切换到曾祖父母目录的快捷方式。           |
+| ..... | `cd ../../../..`              | 切换到高祖父母目录的快捷方式。           |
+| ~     | `cd ~`                        | 切换到主目录的快捷方式。                 |
+| app   | `cd ${HOME}/Applications; ls` | 切换到应用程序目录的快捷方式。           |
+| cod   | `cd ${HOME}/Code; ls`         | 切换到代码目录并列出其内容的快捷方式。   |
+| des   | `cd ${HOME}/Desktop; ls`      | 切换到桌面目录并列出其内容的快捷方式。   |
+| doc   | `cd ${HOME}/Documents; ls`    | 切换到文档目录并列出其内容的快捷方式。   |
+| dot   | `cd ${HOME}/.dotfiles; ls`    | 切换到 dotfiles 目录的快捷方式。         |
+| dow   | `cd ${HOME}/Downloads; ls`    | 切换到下载目录并列出其内容的快捷方式。   |
+| hom   | `cd ${HOME}/; ls`             | 切换到主目录并列出其内容的快捷方式。     |
+| mus   | `cd ${HOME}/Music; ls`        | 切换到音乐目录并列出其内容的快捷方式。   |
+| pic   | `cd ${HOME}/Pictures; ls`     | 切换到图片目录并列出其内容的快捷方式。   |
+| vid   | `cd ${HOME}/Videos; ls`       | 切换到视频目录并列出其内容的快捷方式。   |

@@ -1,151 +1,129 @@
 ---
-description: The GNU Core Utilities aliases, provide powerful commands that create shortcuts to frequently used Core utilities commands. All of these functions and aliases are wrappers around the GNU Core Utilities which are the basic, fundamental tools of a GNU/Linux system.
+description: GNU Core Utilities 别名提供了强大的命令，可以为常用的 Core utilities 命令创建快捷方式。所有这些函数和别名都是对 GNU Core Utilities 的封装，它们是 GNU/Linux 系统的基本基础工具。
 lang: zh-CN
-metaTitle: The GNU Core Utilities aliases - Dotfiles (CN)
+metaTitle: GNU Core Utilities 别名 - Dotfiles (CN)
 permalink: /zh/aliases/gnu/
-
-meta:
-  - name: keywords
-    content: aliases, git, gitconfig, gitconfig, git, configuration, dotfiles, linux, macos, shell, windows, bash, zsh
-  - name: twitter:card
-    content: The GNU Core Utilities aliases, provide powerful commands that create shortcuts to frequently used Core utilities commands. All of these functions and aliases are wrappers around the GNU Core Utilities which are the basic, fundamental tools of a GNU/Linux system.
-  - name: twitter:description
-    content: The GNU Core Utilities aliases, provide powerful commands that create shortcuts to frequently used Core utilities commands. All of these functions and aliases are wrappers around the GNU Core Utilities which are the basic, fundamental tools of a GNU/Linux system.
-  - name: twitter:title
-    content: The GNU Core Utilities aliases - Dotfiles (CN)
-  - name: og:title
-    content: The GNU Core Utilities aliases - Dotfiles (CN)
-  - name: og:description
-    content: The GNU Core Utilities aliases, provide powerful commands that create shortcuts to frequently used Core utilities commands. All of these functions and aliases are wrappers around the GNU Core Utilities which are the basic, fundamental tools of a GNU/Linux system.
-  - name: og:image:alt
-    content: Dotfiles - Simply designed to fit your shell life
-  - name: og:locale
-    content: en_GB
 ---
 
 # GNU Core Utilities 别名
 
-The `gnucoreutils-aliases.sh` file creates helpful shortcut aliases for many
-commonly used [GNU coreutils][coreutils] commands.
+`gnucoreutils-aliases.sh` 文件为许多常用的 [GNU coreutils][coreutils] 命令创建了有用的快捷别名。
 
-The GNU Core Utilities aliases, provide powerful commands that create shortcuts
-to frequently used Core utilities commands. All of these functions and aliases
-are wrappers around the GNU Core Utilities which are the basic, fundamental
-tools of a GNU/Linux system.
+GNU Core Utilities 别名提供了强大的命令，可以为常用的 Core utilities 命令创建快捷方式。
+所有这些函数和别名都是对 GNU Core Utilities 的封装，它们是 GNU/Linux 系统的基本基础工具。
 
-These are the core utilities which are expected to exist on every operating
-system.
+这些是预期存在于每个操作系统上的核心实用程序。
 
-## GNU coreutils aliases
+## GNU coreutils 别名
 
-| Alias     | Command      | Description                                                                                                                                                                              |
-| --------- | ------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| b2sum     | `gb2sum`     | 打印 or 检查 BLAKE2b (512-bit) checksums.                                                                                                                                              |
-| base32    | `gbase32`    | Base32 encode or decode 文件, or standard input, to standard output.                                                                                                                     |
-| base64    | `gbase64`    | Base64 encode or decode 文件, or standard input, to standard output.                                                                                                                     |
-| basename  | `gbasename`  | 打印 NAME with any leading 目录 components removed.                                                                                                                                |
-| basenc    | `gbasenc`    | Encode or decode 文件, or standard input, to standard output.                                                                                                                            |
-| cat       | `gcat`       | Concatenate 文件(s), or standard input, to standard output.                                                                                                                              |
-| chcon     | `gchcon`     | Change the SELinux security context of each 文件 to CONTEXT.                                                                                                                             |
-| chgrp     | `gchgrp`     | Change the group of each 文件 to GROUP.                                                                                                                                                  |
-| chmod     | `gchmod`     | Change the mode of each 文件 to MODE.                                                                                                                                                    |
-| chown     | `gchownn`    | Change the owner and/or group of each 文件 to OWNER and/or GROUP.                                                                                                                        |
-| chroot    | `gchroot`    | Run COMMAND with root 目录 set to NEWROOT.                                                                                                                                          |
-| cksum     | `gcksum`     | 打印 CRC checksum and byte counts.                                                                                                                                                      |
-| comm      | `gcomm`      | Compare two sorted 文件 line by line.                                                                                                                                                   |
-| cp        | `gcp`        | 复制 SOURCE to DEST, or multiple SOURCE(s) to 目录.                                                                                                                                 |
-| csplit    | `gcsplit`    | Split a 文件 into sections determined by context lines.                                                                                                                                  |
-| cut       | `gcut`       | 打印 selected parts of lines from each 文件 to standard output.                                                                                                                         |
-| date      | `gdate`      | 打印 or set the system date and time.                                                                                                                                                   |
-| dd        | `gdd`        | 复制 a 文件, converting and formatting according to the operands.                                                                                                                        |
-| df        | `gdf`        | Report 文件 system disk space usage.                                                                                                                                                     |
-| dir       | `gdir`       | 列出 目录 contents.                                                                                                                                                                 |
-| dircolors | `gdircolors` | Convert ls' output colors to dircolors' format.                                                                                                                                          |
-| dirname   | `gdirname`   | 打印 NAME with its last non-slash component and trailing slashes removed.                                                                                                               |
-| du        | `gdu`        | Estimate 文件 space usage.                                                                                                                                                               |
-| echo      | `gecho`      | Display a line of text.                                                                                                                                                                  |
-| env       | `genv`       | 打印 the current environment.                                                                                                                                                           |
-| expand    | `gexpand`    | Convert tabs in each 文件 to spaces, writing to standard output.                                                                                                                         |
-| expr      | `gexpr`      | Evaluate EXPRESSION.                                                                                                                                                                     |
-| factor    | `gfactor`    | 打印 prime factors of each given number.                                                                                                                                                |
-| false     | `gfalse`     | Do nothing, unsuccessfully.                                                                                                                                                              |
-| fmt       | `gfmt`       | Reformat paragraph text.                                                                                                                                                                 |
-| fold      | `gfold`      | Wrap each input line to fit in specified width.                                                                                                                                          |
-| grep      | `ggrep`      | 打印 lines matching a pattern.                                                                                                                                                          |
-| groups    | `ggroups`    | 打印 the groups a user is in.                                                                                                                                                           |
-| head      | `ghead`      | 打印 the first 10 lines of each 文件 to standard output.                                                                                                                                |
-| hostid    | `ghostid`    | 打印 the hostid.                                                                                                                                                                        |
-| id        | `gid`        | 打印 real and effective user and group IDs.                                                                                                                                             |
-| install   | `ginstall`   | 复制 文件 and set attributes.                                                                                                                                                           |
-| join      | `gjoin`      | Join lines of two 文件 on a common field.                                                                                                                                               |
-| kill      | `gkill`      | Send a signal to a process.                                                                                                                                                              |
-| link      | `glink`      | 创建 a link to a 文件.                                                                                                                                                                 |
-| ln        | `gln`        | Make links between 文件.                                                                                                                                                                |
-| logname   | `glogname`   | 打印 the user name associated with the current effective user ID.                                                                                                                       |
-| ls        | `gls`        | 列出 目录 contents.                                                                                                                                                                 |
-| md5sum    | `gmd5sum`    | 打印 or 检查 MD5 (128-bit) checksums.                                                                                                                                                  |
-| mkdir     | `gmkdir`     | 创建 the 目录(ies), if they do not already exist.                                                                                                                                 |
-| mkfifo    | `gmkfifo`    | 创建 named pipes (FIFOs) named PIPE.                                                                                                                                                   |
-| mknod     | `gmknod`     | 创建 special 文件.                                                                                                                                                                    |
-| mktemp    | `gmktemp`    | 创建 a temporary 文件 or 目录, safely.                                                                                                                                            |
-| mv        | `gmv`        | 移动 SOURCE to DEST, or multiple SOURCE(s) to 目录.                                                                                                                                 |
-| nice      | `gnice`      | Run a utility with modified scheduling priority.                                                                                                                                         |
-| nl        | `gnl`        | Number lines of 文件, writing to standard output.                                                                                                                                       |
-| nohup     | `gnohup`     | Run a command immune to hangups, with output to a non-tty.                                                                                                                               |
-| nproc     | `gnproc`     | 打印 the number of processing units available.                                                                                                                                          |
-| numfmt    | `gnumfmt`    | Reformat numbers.                                                                                                                                                                        |
-| od        | `god`        | Dump a 文件 in octal and other formats.                                                                                                                                                  |
-| paste     | `gpaste`     | Merge lines of 文件.                                                                                                                                                                    |
-| pathchk   | `gpathchk`   | 检查 whether a 文件 name is valid or portable.                                                                                                                                          |
-| pinky     | `gpinky`     | 打印 information about users.                                                                                                                                                           |
-| pr        | `gpr`        | Paginate 文件 for printing.                                                                                                                                                              |
-| printenv  | `gprintenv`  | 打印 the current environment.                                                                                                                                                           |
-| printf    | `gprintf`    | Format and 打印 data.                                                                                                                                                                   |
-| ptx       | `gptx`       | Display the contents of a terminal control 文件.                                                                                                                                         |
-| pwd       | `gpwd`       | 打印 the name of the current working 目录.                                                                                                                                         |
-| readlink  | `greadlink`  | 打印 value of a symbolic link or canonical 文件 name.                                                                                                                                   |
-| realpath  | `grealpath`  | Canonicalize existing 文件 names.                                                                                                                                                        |
-| rm        | `grm`        | 移除 (unlink) the 文件(s).                                                                                                                                                             |
-| rmdir     | `grmdir`     | 移除 the 目录(ies), if they are empty.                                                                                                                                            |
-| runcon    | `gruncon`    | Run a command with a different SELinux security context.                                                                                                                                 |
-| sed       | `gsed`       | Stream editor for filtering and transforming text.                                                                                                                                       |
-| seq       | `gseq`       | 打印 a sequence of numbers.                                                                                                                                                             |
-| sha1sum   | `gsha1sum`   | 打印 or 检查 SHA1 (160-bit) checksums.                                                                                                                                                 |
-| sha224sum | `gsha224sum` | 打印 or 检查 SHA224 (224-bit) checksums.                                                                                                                                               |
-| sha256sum | `gsha256sum` | 打印 or 检查 SHA256 (256-bit) checksums.                                                                                                                                               |
-| sha384sum | `gsha384sum` | 打印 or 检查 SHA384 (384-bit) checksums.                                                                                                                                               |
-| sha512sum | `gsha512sum` | 打印 or 检查 SHA512 (512-bit) checksums.                                                                                                                                               |
-| shred     | `gshred`     | Overwrite a 文件 to hide its contents, and optionally 删除 it.                                                                                                                         |
-| shuf      | `gshuf`      | Output a random permutation of the input lines.                                                                                                                                          |
-| sleep     | `gsleep`     | Pause for NUMBER seconds.                                                                                                                                                                |
-| sort      | `gsort`      | Sort lines of text 文件.                                                                                                                                                                |
-| split     | `gsplit`     | Split a 文件 into pieces.                                                                                                                                                                |
-| stat      | `gstat`      | Display 文件 or 文件 system status.                                                                                                                                                      |
-| stdbuf    | `gstdbuf`    | Run COMMAND with modified buffering operations for its standard streams.                                                                                                                 |
-| stty      | `gstty`      | Get and set terminal attributes.                                                                                                                                                         |
-| sum       | `gsum`       | 打印 CRC checksum and byte counts.                                                                                                                                                      |
-| sync      | `gsync`      | Invoke sync to flush filesystem buffers.                                                                                                                                                 |
-| tac       | `gtac`       | Concatenate and 打印 文件 in reverse.                                                                                                                                                  |
-| tail      | `gtail`      | Output the last part of 文件.                                                                                                                                                           |
-| tee       | `gtee`       | Read from standard input and write to standard output and 文件.                                                                                                                         |
-| test      | `gtest`      | Evaluate conditional expression.                                                                                                                                                         |
-| timeout   | `gtimeout`   | Run a command with a time limit.                                                                                                                                                         |
-| touch     | `gtouch`     | Change 文件 timestamps.                                                                                                                                                                  |
-| tr        | `gtr`        | Translate, squeeze, and/or 删除 characters.                                                                                                                                            |
-| true      | `gtrue`      | Do nothing, successfully.                                                                                                                                                                |
-| truncate  | `gtruncate`  | truncate: Shrink or extend the size of a 文件 to the specified size.                                                                                                                     |
-| tsort     | `gtsort`     | Topological sort.                                                                                                                                                                        |
-| tty       | `gtty`       | 打印 文件 name of terminal connected to standard input.                                                                                                                                 |
-| uname     | `guname`     | 打印 certain system information.                                                                                                                                                        |
-| unexpand  | `gunexpand`  | unexpand: Convert spaces in each 文件 to tabs, writing to standard output.                                                                                                               |
-| uniq      | `guniq`      | Filter adjacent matching lines from INPUT (or standard input), writing to OUTPUT (or standard output).                                                                                   |
-| unlink    | `gunlink`    | Call the unlink function to 移除 the specified 文件.                                                                                                                                   |
-| uptime    | `guptime`    | 打印 the current time, the length of time the system has been up, the number of users on the system, and the average number of jobs in the run queue over the last 1, 5 and 15 minutes. |
-| users     | `gusers`     | Output who is currently logged in.                                                                                                                                                       |
-| vdir      | `gvdir`      | 列出 information about the 文件 (the current 目录 by default).                                                                                                                     |
-| wc        | `gwc`        | 打印 newline, word, and byte counts for each 文件, and a total line if more than one 文件 is specified.                                                                                 |
-| who       | `gwho`       | 打印 information about users who are currently logged in.                                                                                                                               |
-| whoami    | `gwhoami`    | 打印 the user name associated with the current effective user ID.                                                                                                                       |
-| yes       | `gyes`       | Repeatedly output a line with all specified STRING(s), or 'y'.                                                                                                                           |
+| 别名      | 命令         | 描述                                                     |
+| --------- | ------------ | -------------------------------------------------------- |
+| b2sum     | `gb2sum`     | 打印或检查 BLAKE2b (512-bit) 校验和。                    |
+| base32    | `gbase32`    | Base32 编码或解码 FILE，或标准输入，到标准输出。         |
+| base64    | `gbase64`    | Base64 编码或解码 FILE，或标准输入，到标准输出。         |
+| basename  | `gbasename`  | 打印 NAME，删除任何前导目录组件。                        |
+| basenc    | `gbasenc`    | 编码或解码 FILE，或标准输入，到标准输出。                |
+| cat       | `gcat`       | 连接 FILE(s)，或标准输入，到标准输出。                   |
+| chcon     | `gchcon`     | 将每个 FILE 的 SELinux 安全上下文更改为 CONTEXT。        |
+| chgrp     | `gchgrp`     | 将每个 FILE 的组更改为 GROUP。                           |
+| chmod     | `gchmod`     | 将每个 FILE 的模式更改为 MODE。                          |
+| chown     | `gchownn`    | 将每个 FILE 的所有者和/或组更改为 OWNER 和/或 GROUP。    |
+| chroot    | `gchroot`    | 运行 COMMAND，将根目录设置为 NEWROOT。                   |
+| cksum     | `gcksum`     | 打印 CRC 校验和和字节计数。                              |
+| comm      | `gcomm`      | 逐行比较两个已排序的文件。                               |
+| cp        | `gcp`        | 将 SOURCE 复制到 DEST，或将多个 SOURCE(s) 复制到 DIRECTORY。|
+| csplit    | `gcsplit`    | 将文件分割成由上下文行确定的部分。                       |
+| cut       | `gcut`       | 从每个 FILE 中打印选定的部分行到标准输出。               |
+| date      | `gdate`      | 打印或设置系统日期和时间。                               |
+| dd        | `gdd`        | 复制文件，根据操作数进行转换和格式化。                   |
+| df        | `gdf`        | 报告文件系统磁盘空间使用情况。                           |
+| dir       | `gdir`       | 列出目录内容。                                           |
+| dircolors | `gdircolors` | 将 ls 的输出颜色转换为 dircolors 的格式。                |
+| dirname   | `gdirname`   | 打印 NAME，删除其最后一个非斜杠组件和尾随斜杠。          |
+| du        | `gdu`        | 估计文件空间使用情况。                                   |
+| echo      | `gecho`      | 显示一行文本。                                           |
+| env       | `genv`       | 打印当前环境。                                           |
+| expand    | `gexpand`    | 将每个 FILE 中的制表符转换为控格，写入标准输出。         |
+| expr      | `gexpr`      | 计算 EXPRESSION。                                        |
+| factor    | `gfactor`    | 打印每个给定数字的质因数。                               |
+| false     | `gfalse`     | 什么也不做，不成功。                                     |
+| fmt       | `gfmt`       | 重新格式化段落文本。                                     |
+| fold      | `gfold`      | 换行每个输入行以适应指定的宽度。                         |
+| grep      | `ggrep`      | 打印匹配模式的行。                                       |
+| groups    | `ggroups`    | 打印用户所在的组。                                       |
+| head      | `ghead`      | 将每个 FILE 的前 10 行打印到标准输出。                   |
+| hostid    | `ghostid`    | 打印 hostid。                                            |
+| id        | `gid`        | 打印真实和有效的用户和组 ID。                            |
+| install   | `ginstall`   | 复制文件并设置属性。                                     |
+| join      | `gjoin`      | 在公共字段上连接两个文件的行。                           |
+| kill      | `gkill`      | 向进程发送信号。                                         |
+| link      | `glink`      | 创建指向文件的链接。                                     |
+| ln        | `gln`        | 在文件之间建立链接。                                     |
+| logname   | `glogname`   | 打印与当前有效用户 ID 关联的用户名。                     |
+| ls        | `gls`        | 列出目录内容。                                           |
+| md5sum    | `gmd5sum`    | 打印或检查 MD5 (128-bit) 校验和。                        |
+| mkdir     | `gmkdir`     | 创建 DIRECTORY(ies)，如果它们尚不存在。                  |
+| mkfifo    | `gmkfifo`    | 创建名为 PIPE 的命名管道 (FIFO)。                        |
+| mknod     | `gmknod`     | 创建特殊文件。                                           |
+| mktemp    | `gmktemp`    | 安全地创建临时文件或目录。                               |
+| mv        | `gmv`        | 将 SOURCE 移动到 DEST，或将多个 SOURCE(s) 移动到 DIRECTORY。|
+| nice      | `gnice`      | 以修改后的调度优先级运行实用程序。                       |
+| nl        | `gnl`        | 为文件的行编号，写入标准输出。                           |
+| nohup     | `gnohup`     | 运行一个不受挂断影响的命令，输出到非 tty。               |
+| nproc     | `gnproc`     | 打印可用的处理单元数。                                   |
+| numfmt    | `gnumfmt`    | 重新格式化数字。                                         |
+| od        | `god`        | 以八进制和其他格式转储文件。                             |
+| paste     | `gpaste`     | 合并文件的行。                                           |
+| pathchk   | `gpathchk`   | 检查文件名是否有效或可移植。                             |
+| pinky     | `gpinky`     | 打印有关用户的信息。                                     |
+| pr        | `gpr`        | 对 FILE 进行分页以进行打印。                             |
+| printenv  | `gprintenv`  | 打印当前环境。                                           |
+| printf    | `gprintf`    | 格式化并打印数据。                                       |
+| ptx       | `gptx`       | 显示终端控制文件的内容。                                 |
+| pwd       | `gpwd`       | 打印当前工作目录的名称。                                 |
+| readlink  | `greadlink`  | 打印符号链接的值或规范文件名。                           |
+| realpath  | `grealpath`  | 规范化现有的文件名。                                     |
+| rm        | `grm`        | 删除 (unlink) the FILE(s)。                              |
+| rmdir     | `grmdir`     | 删除 DIRECTORY(ies)，如果它们为空。                      |
+| runcon    | `gruncon`    | 以不同的 SELinux 安全上下文运行命令。                    |
+| sed       | `gsed`       | 用于过滤和转换文本的流编辑器。                           |
+| seq       | `gseq`       | 打印数字序列。                                           |
+| sha1sum   | `gsha1sum`   | 打印或检查 SHA1 (160-bit) 校验和。                       |
+| sha224sum | `gsha224sum` | 打印或检查 SHA224 (224-bit) 校验和。                     |
+| sha256sum | `gsha256sum` | 打印或检查 SHA256 (256-bit) 校验和。                     |
+| sha384sum | `gsha384sum` | 打印或检查 SHA384 (384-bit) 校验和。                     |
+| sha512sum | `gsha512sum` | 打印或检查 SHA512 (512-bit) 校验和。                     |
+| shred     | `gshred`     | 覆盖文件以隐藏其内容，并可选择删除它。                   |
+| shuf      | `gshuf`      | 输出输入行的随机排列。                                   |
+| sleep     | `gsleep`     | 暂停 NUMBER 秒。                                         |
+| sort      | `gsort`      | 对文本文件的行进行排序。                                 |
+| split     | `gsplit`     | 将文件分割成块。                                         |
+| stat      | `gstat`      | 显示文件或文件系统状态。                                 |
+| stdbuf    | `gstdbuf`    | 以修改后的缓冲操作运行 COMMAND 以用于其标准流。          |
+| stty      | `gstty`      | 获取和设置终端属性。                                     |
+| sum       | `gsum`       | 打印 CRC 校验和和字节计数。                              |
+| sync      | `gsync`      | 调用 sync 以刷新文件系统缓冲区。                         |
+| tac       | `gtac`       | 反向连接并打印文件。                                     |
+| tail      | `gtail`      | 输出文件的最后一部分。                                   |
+| tee       | `gtee`       | 从标准输入读取并写入标准输出和文件。                     |
+| test      | `gtest`      | 计算条件表达式。                                         |
+| timeout   | `gtimeout`   | 运行有时间限制的命令。                                   |
+| touch     | `gtouch`     | 更改文件时间戳。                                         |
+| tr        | `gtr`        | 翻译、压缩和/或删除字符。                                |
+| true      | `gtrue`      | 什么也不做，成功。                                       |
+| truncate  | `gtruncate`  | 截断：将文件的大小缩小或扩展到指定的大小。               |
+| tsort     | `gtsort`     | 拓扑排序。                                               |
+| tty       | `gtty`       | 打印连接到标准输入的终端的文件名。                       |
+| uname     | `guname`     | 打印某些系统信息。                                       |
+| unexpand  | `gunexpand`  | 取消扩展：将每个 FILE 中的空格转换为制表符，写入标准输出。|
+| uniq      | `guniq`      | 从 INPUT（或标准输入）中过滤相邻的匹配行，写入 OUTPUT（或标准输出）。|
+| unlink    | `gunlink`    | 调用 unlink 函数以删除指定的 FILE。                      |
+| uptime    | `guptime`    | 打印当前时间、系统已运行的时间长度、系统上的用户数以及过去 1、5 和 15 分钟内运行队列中的平均作业数。|
+| users     | `gusers`     | 输出当前登录的用户。                                     |
+| vdir      | `gvdir`      | 列出有关 FILEs 的信息（默认为当前目录）。                |
+| wc        | `gwc`        | 打印每个 FILE 的换行符、单词和字节计数，如果指定了多个 FILE，则打印总行数。|
+| who       | `gwho`       | 打印有关当前登录的用户的信息。                           |
+| whoami    | `gwhoami`    | 打印与当前有效用户 ID 关联的用户名。                     |
+| yes       | `gyes`       | 重复输出包含所有指定 STRING(s) 的行，或 'y'。            |
 
 [coreutils]: https://www.gnu.org/software/coreutils/

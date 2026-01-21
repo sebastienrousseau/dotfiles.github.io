@@ -1,22 +1,22 @@
 ---
-description: security aliases for Dotfiles
+description: Dotfiles 的安全别名
 lang: zh-CN
-metaTitle: security aliases - Dotfiles
+metaTitle: 安全别名 - Dotfiles (CN)
 permalink: /zh/aliases/security/
 ---
 
-# Security 别名
+# 安全别名
 
-Tools for hardening the environment and managing configuration immutability.
+用于加固环境和管理配置不变性的工具。
 
-## 🔒 Immutability
+## 🔒 不变性 (Immutability)
 
-| Alias | Description |
-|-------|-------------|
-| `lock-configs` | Locks critical 文件 (`.zshrc`, etc.) to prevent modification (`chflags uchg` / `chattr +i`). |
-| `unlock-configs` | Unlocks critical 文件 for editing. |
-| `check-locks` | Checks the lock status of critical 文件. |
+| 别名             | 描述                                                                          |
+| ---------------- | ----------------------------------------------------------------------------- |
+| `lock-configs`   | 锁定关键文件 (`.zshrc` 等) 以防止修改 (`chflags uchg` / `chattr +i`)。        |
+| `unlock-configs` | 解锁关键文件以进行编辑。                                                      |
+| `check-locks`    | 检查关键文件的锁定状态。                                                      |
 
-## 🔑 Git Signing
+## 🔑 Git 签名
 
-(See [Git Aliases](../git/README.md) for signing configuration)
+（有关签名配置，请参见 [Git 别名](../git/README.md)）

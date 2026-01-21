@@ -1,53 +1,38 @@
 ---
-description: The NPM aliases are a collection of aliases that allow you to interact with the `npm` command line tool. Npm is a package manager for the JavaScript programming language.
+description: Die NPM-Aliase sind eine Sammlung von Aliasen, die es Ihnen ermöglichen, mit dem `npm` Kommandozeilen-Tool zu interagieren. Npm ist ein Paketmanager für die Programmiersprache JavaScript.
 lang: de-DE
-metaTitle: The NPM aliases - Dotfiles (DE)
+metaTitle: NPM Aliase - Dotfiles (DE)
 permalink: /de/aliases/npm/
-
-meta:
-  - name: keywords
-    content: aliases, npm, node, node package manager, package manager, linux, macos, shell, terminal, windows
-  - name: twitter:card
-    content: The NPM aliases are a collection of aliases that allow you to interact with the `npm` command line tool. Npm is a package manager for the JavaScript programming language.
-  - name: twitter:description
-    content: The NPM aliases are a collection of aliases that allow you to interact with the `npm` command line tool. Npm is a package manager for the JavaScript programming language.
-  - name: twitter:title
-    content: The NPM aliases - Dotfiles (DE)
-  - name: og:title
-    content: The NPM aliases - Dotfiles (DE)
-  - name: og:description
-    content: The NPM aliases are a collection of aliases that allow you to interact with the `npm` command line tool. Npm is a package manager for the JavaScript programming language.
-  - name: og:image:alt
-    content: Dotfiles - Simply designed to fit your shell life
-  - name: og:locale
-    content: en_GB
 ---
 
-# NPM aliases
+# NPM Aliase
 
-The `npm.aliases.sh` file creates helpful shortcut aliases
-for [npm](https://www.npmjs.com/).
+Die Datei `npm.aliases.sh` erstellt hilfreiche Shortcut-Aliase
+für [npm](https://www.npmjs.com/).
 
 ## NPM
 
-[npm](https://www.npmjs.com/) is a package manager for the JavaScript
-programming language. It is the default package manager for the JavaScript
-runtime environment Node.js.
+[npm](https://www.npmjs.com/) ist ein Paketmanager für die JavaScript-
+Programmiersprache. Er ist der Standard-Paketmanager für die JavaScript-
+Laufzeitumgebung Node.js.
 
-| Alias | Befehl                | Beschreibung                                                               |
+| Alias | Befehl          | Beschreibung          |
 | ----- | --------------- | --------------------- |
-| npb   | `npm build`     | Bauen npm script.     |
+| npb   | `npm build`     | Build npm script.     |
 | npc   | `npm cache`     | Cache npm package.    |
 | npd   | `npm dev`       | Dev npm script.       |
 | npg   | `npm global`    | Global npm package.   |
-| npi   | `npm install`   | Installieren npm package.  |
-| npl   | `npm list`      | Auflisten npm packages.    |
+| npi   | `npm install`   | Install npm package.  |
+| npl   | `npm list`      | List npm packages.    |
 | npp   | `npm publish`   | Publish npm package.  |
 | npr   | `npm run`       | Run npm script.       |
 | nprw  | `npm run watch` | Run npm script watch. |
-| nps   | `npm start`     | Starten npm script.     |
+| nps   | `npm start`     | Start npm script.     |
 | npsv  | `npm serve`     | Serve npm script.     |
 | npt   | `npm test`      | Test npm script.      |
-| npu   | `npm update`    | Aktualisieren npm package.   |
+| npu   | `npm update`    | Update npm package.   |
 | npx   | `npm exec`      | Exec npm package.     |
 | npy   | `npm why`       | Why npm package.      |
+
+> [!NOTE]
+> Die Befehlsbeschreibungen wurden bewusst kurz gehalten oder auf Englisch belassen, da es sich um Standard-NPM-Terminologie handelt.

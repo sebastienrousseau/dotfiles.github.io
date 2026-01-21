@@ -1,45 +1,23 @@
 ---
-description: The Wget aliases create helpful shortcut aliases for the `wget` command. Wget is a tool which downloads files from the internet.
+description: Wget 别名可以为 `wget` 命令创建有用的快捷方式。Wget 是一个从互联网下载文件的工具。
 lang: zh-CN
-metaTitle: The Wget aliases - Dotfiles (CN)
+metaTitle: Wget 别名 - Dotfiles (CN)
 permalink: /zh/aliases/wget/
-
-meta:
-  - name: keywords
-    content: aliases, wget, linux, macos, shell, terminal, windows
-  - name: twitter:card
-    content: The Wget aliases create helpful shortcut aliases for the `wget` command. Wget is a tool which downloads files from the internet.
-  - name: twitter:description
-    content: The Wget aliases create helpful shortcut aliases for the `wget` command. Wget is a tool which downloads files from the internet.
-  - name: twitter:title
-    content: The Wget aliases - Dotfiles (CN)
-  - name: og:title
-    content: The Wget aliases - Dotfiles (CN)
-  - name: og:description
-    content: The Wget aliases create helpful shortcut aliases for the `wget` command. Wget is a tool which downloads files from the internet.
-  - name: og:image:alt
-    content: Dotfiles - Simply designed to fit your shell life
-  - name: og:locale
-    content: en_GB
 ---
 
-# Wget aliases
+# Wget 别名
 
-This `wget.aliases.sh` file creates helpful shortcut aliases for many commonly
-used [wget](https://www.gnu.org/software/wget/) commands.
+`wget.aliases.sh` 文件为许多常用的 [wget](https://www.gnu.org/software/wget/) 命令创建了有用的快捷别名。
 
-The Wget aliases create helpful shortcut aliases for the `wget` command. Wget is
-a tool which downloads files from the internet.
+Wget 别名为 `wget` 命令创建了有用的快捷别名。Wget 是一个从互联网下载文件的工具。
 
 ## Wget
 
-GNU [Wget](https://www.gnu.org/software/wget/) is a free utility for
-non-interactive download of files from the Web. It supports HTTP, HTTPS, and
-FTP protocols, as well as retrieval through HTTP proxies.
+GNU [Wget](https://www.gnu.org/software/wget/) 是一个用于从 Web 非交互式下载文件的免费实用程序。它支持 HTTP、HTTPS 和 FTP 协议，以及通过 HTTP 代理进行检索。
 
-| 别名  | 命令                   | 描述                                                                       |
-| ----- | ------------------ | ------------------------------------- |
-| wg    | `wget`             | Download a 文件.                      |
-| wgc   | `wg`               | Continue a partially-downloaded 文件. |
-| wge   | `wg -e robots=off` | Download a 文件, ignoring robots.txt. |
-| wget  | `wget -c`          | Continue a partially-downloaded 文件. |
+| 别名 | 命令               | 描述                     |
+| ---- | ------------------ | ------------------------ |
+| wg   | `wget`             | 下载文件。               |
+| wgc  | `wg`               | 继续部分下载的文件。     |
+| wge  | `wg -e robots=off` | 下载文件，忽略 robots.txt。 |
+| wget | `wget -c`          | 继续部分下载的文件。     |

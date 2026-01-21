@@ -1,45 +1,27 @@
 ---
-description: The Wget aliases create helpful shortcut aliases for the `wget` command. Wget is a tool which downloads files from the internet.
+description: Os aliases do Wget criam atalhos úteis para o comando `wget`. Wget é uma ferramenta que baixa arquivos da internet.
 lang: pt-BR
-metaTitle: The Wget aliases - Dotfiles (BR)
+metaTitle: Aliases do Wget - Dotfiles (BR)
 permalink: /pt/aliases/wget/
-
-meta:
-  - name: keywords
-    content: aliases, wget, linux, macos, shell, terminal, windows
-  - name: twitter:card
-    content: The Wget aliases create helpful shortcut aliases for the `wget` command. Wget is a tool which downloads files from the internet.
-  - name: twitter:description
-    content: The Wget aliases create helpful shortcut aliases for the `wget` command. Wget is a tool which downloads files from the internet.
-  - name: twitter:title
-    content: The Wget aliases - Dotfiles (BR)
-  - name: og:title
-    content: The Wget aliases - Dotfiles (BR)
-  - name: og:description
-    content: The Wget aliases create helpful shortcut aliases for the `wget` command. Wget is a tool which downloads files from the internet.
-  - name: og:image:alt
-    content: Dotfiles - Simply designed to fit your shell life
-  - name: og:locale
-    content: en_GB
 ---
 
-# Wget aliases
+# Aliases do Wget
 
-This `wget.aliases.sh` file creates helpful shortcut aliases for many commonly
-used [wget](https://www.gnu.org/software/wget/) commands.
+O arquivo `wget.aliases.sh` cria aliases de atalho úteis para muitos comandos
+[wget](https://www.gnu.org/software/wget/) comumente usados.
 
-The Wget aliases create helpful shortcut aliases for the `wget` command. Wget is
-a tool which downloads files from the internet.
+Os aliases do Wget criam atalhos úteis para o comando `wget`. Wget é
+uma ferramenta que baixa arquivos da internet.
 
 ## Wget
 
-GNU [Wget](https://www.gnu.org/software/wget/) is a free utility for
-non-interactive download of files from the Web. It supports HTTP, HTTPS, and
-FTP protocols, as well as retrieval through HTTP proxies.
+GNU [Wget](https://www.gnu.org/software/wget/) é um utilitário gratuito para
+download não interativo de arquivos da Web. Ele suporta protocolos HTTP, HTTPS e
+FTP, bem como recuperação através de proxies HTTP.
 
-| Alias | Comando               | Descrição                                                                  |
+| Alias | Comando            | Descrição                             |
 | ----- | ------------------ | ------------------------------------- |
-| wg    | `wget`             | Download a arquivo.                      |
-| wgc   | `wg`               | Continue a partially-downloaded arquivo. |
-| wge   | `wg -e robots=off` | Download a arquivo, ignoring robots.txt. |
-| wget  | `wget -c`          | Continue a partially-downloaded arquivo. |
+| wg    | `wget`             | Baixar um arquivo.                    |
+| wgc   | `wg`               | Continuar um arquivo parcialmente baixado. |
+| wge   | `wg -e robots=off` | Baixar um arquivo, ignorando robots.txt. |
+| wget  | `wget -c`          | Continuar um arquivo parcialmente baixado. |

@@ -1,113 +1,95 @@
 ---
-description: The archives aliases are able to create and handle archives in a variety of formats.
+description: Die Archiv-Aliase sind in der Lage, Archive in einer Vielzahl von Formaten zu erstellen und zu verarbeiten.
 lang: de-DE
-metaTitle: Archives aliases - Dotfiles (DE)
+metaTitle: Archiv Aliase - Dotfiles (DE)
 permalink: /de/aliases/archives/
-
-meta:
-  - name: keywords
-    content: 7-zip, aliases, archives, bash, bzip2, dotfiles, gzip, jar, linux, macos, shell, tar, unzip, windows, xz, zip, zstd
-  - name: twitter:card
-    content: The archives aliases are able to create and handle archives in a variety of formats.
-  - name: twitter:description
-    content: The archives aliases are able to create and handle archives in a variety of formats.
-  - name: twitter:title
-    content: Archives aliases - Dotfiles (DE)
-  - name: og:title
-    content: Archives aliases - Dotfiles (DE)
-  - name: og:description
-    content: The archives aliases are able to create and handle archives in a variety of formats.
-  - name: og:image:alt
-    content: Dotfiles - Simply designed to fit your shell life
-  - name: og:locale
-    content: en_GB
 ---
 
-# Archives aliases
+# Archiv Aliase
 
-The `archives.aliases.sh` file creates helpful shortcut aliases for archiving
-files and directories. The aliases are able to create and handle archives in a
-variety of formats.
+Die Datei `archives.aliases.sh` erstellt hilfreiche Shortcut-Aliase zum Archivieren
+von Dateien und Verzeichnissen. Die Aliase können Archive in einer Vielzahl von
+Formaten erstellen und verarbeiten.
 
 ## 7-Zip
 
-[7-Zip](http://www.7-zip.org/) is a file archiver with a high compression ratio.
+[7-Zip](http://www.7-zip.org/) ist ein Dateiarchivierer mit einer hohen Kompressionsrate.
 
-| Alias | Befehl                | Beschreibung                                                               |
+| Alias | Befehl  | Beschreibung                                                         |
 | ----- | ------- | -------------------------------------------------------------------- |
-| c7z   | `7z a`  | Compress a whole Verzeichnis (including subdirectories) to a 7z Datei.  |
-| e7z   | `7z x`  | Extract a whole Verzeichnis (including subdirectories) from a 7z Datei. |
+| c7z   | `7z a`  | Komprimiere ein ganzes Verzeichnis (inkl. Unterverzeichnisse) in eine 7z-Datei. |
+| e7z   | `7z x`  | Extrahiere ein ganzes Verzeichnis (inkl. Unterverzeichnisse) aus einer 7z-Datei. |
 
 ## Bzip2
 
-[Bzip2](http://www.bzip.org/) is a freely available, patent free, high-quality
-data compressor.
+[Bzip2](http://www.bzip.org/) ist ein frei verfügbarer, patentfreier, hochwertiger
+Datenkompressor.
 
-| Alias | Befehl                | Beschreibung                                                               |
+| Alias | Befehl    | Beschreibung                     |
 | ----- | --------- | ------------------------------- |
-| cbz2  | `bzip2`   | Compress a Datei to a bz2 Datei.  |
-| ebz2  | `bunzip2` | Extract a Datei from a bz2 Datei. |
+| cbz2  | `bzip2`   | Komprimiere eine Datei in eine bz2-Datei.  |
+| ebz2  | `bunzip2` | Extrahiere eine Datei aus einer bz2-Datei. |
 
 ## Gzip
 
-[Gzip](https://www.gnu.org/software/gzip/) is a popular data compression program
-as a replacement for compress.
+[Gzip](https://www.gnu.org/software/gzip/) ist ein beliebtes Datenkompressionsprogramm
+als Ersatz für compress.
 
-| Alias | Befehl                | Beschreibung                                                               |
+| Alias | Befehl   | Beschreibung                    |
 | ----- | -------- | ------------------------------ |
-| cgz   | `gzip`   | Compress a Datei to a gz Datei.  |
-| egz   | `gunzip` | Extract a Datei from a gz Datei. |
+| cgz   | `gzip`   | Komprimiere eine Datei in eine gz-Datei.  |
+| egz   | `gunzip` | Extrahiere eine Datei aus einer gz-Datei. |
 
 ## Jar
 
-[Jar](https://docs.oracle.com/javase/tutorial/deployment/jar/) is a file format
-used to aggregate many files into one file to distribute application software or
-libraries on the Java platform.
+[Jar](https://docs.oracle.com/javase/tutorial/deployment/jar/) ist ein Dateiformat,
+das verwendet wird, um viele Dateien in einer einzigen Datei zusammenzufassen, um Anwendungssoftware oder
+Bibliotheken auf der Java-Plattform zu verteilen.
 
-| Alias | Befehl                | Beschreibung                                                               |
+| Alias | Befehl     | Beschreibung                                                           |
 | ----- | ---------- | --------------------------------------------------------------------- |
-| cjar  | `jar -cvf` | Compress a whole Verzeichnis (including subdirectories) to a jar Datei.  |
-| ejar  | `jar -xvf` | Extract a whole Verzeichnis (including subdirectories) from a jar Datei. |
+| cjar  | `jar -cvf` | Komprimiere ein ganzes Verzeichnis (inkl. Unterverzeichnisse) in eine jar-Datei.  |
+| ejar  | `jar -xvf` | Extrahiere ein ganzes Verzeichnis (inkl. Unterverzeichnisse) aus einer jar-Datei. |
 
 ## Tar
 
-[Tar](https://www.gnu.org/software/tar/) is a computer program used to store
-many files together in a single file.
+[Tar](https://www.gnu.org/software/tar/) ist ein Computerprogramm, das verwendet wird, um
+viele Dateien zusammen in einer einzigen Datei zu speichern.
 
-| Alias | Befehl                | Beschreibung                                                               |
+| Alias | Befehl      | Beschreibung                                                              |
 | ----- | ----------- | ------------------------------------------------------------------------ |
-| ctar  | `tar -cvf`  | Compress a whole Verzeichnis (including subdirectories) to a tar Datei.     |
-| etar  | `tar -xvf`  | Extract a whole Verzeichnis (including subdirectories) from a tar Datei.    |
-| ctgz  | `tar -cvzf` | Compress a whole Verzeichnis (including subdirectories) to a tar.gz Datei.  |
-| etgz  | `tar -xvzf` | Extract a whole Verzeichnis (including subdirectories) from a tar.gz Datei. |
+| ctar  | `tar -cvf`  | Komprimiere ein ganzes Verzeichnis (inkl. Unterverzeichnisse) in eine tar-Datei.     |
+| etar  | `tar -xvf`  | Extrahiere ein ganzes Verzeichnis (inkl. Unterverzeichnisse) aus einer tar-Datei.    |
+| ctgz  | `tar -cvzf` | Komprimiere ein ganzes Verzeichnis (inkl. Unterverzeichnisse) in eine tar.gz-Datei.  |
+| etgz  | `tar -xvzf` | Extrahiere ein ganzes Verzeichnis (inkl. Unterverzeichnisse) aus einer tar.gz-Datei. |
 
 ## Xz
 
-[Xz](https://tukaani.org/xz/) is a general-purpose data compression software
-with a high compression ratio.
+[Xz](https://tukaani.org/xz/) ist eine Allzweck-Datenkompressionssoftware
+mit einer hohen Kompressionsrate.
 
-| Alias | Befehl                | Beschreibung                                                               |
+| Alias | Befehl     | Beschreibung                                                          |
 | ----- | ---------- | -------------------------------------------------------------------- |
-| cxz   | `xz -zcvf` | Compress a whole Verzeichnis (including subdirectories) to a xz Datei.  |
-| exz   | `xz -zxvf` | Extract a whole Verzeichnis (including subdirectories) from a xz Datei. |
+| cxz   | `xz -zcvf` | Komprimiere ein ganzes Verzeichnis (inkl. Unterverzeichnisse) in eine xz-Datei.  |
+| exz   | `xz -zxvf` | Extrahiere ein ganzes Verzeichnis (inkl. Unterverzeichnisse) aus einer xz-Datei. |
 
 ## Zip
 
-[Zip](<https://en.wikipedia.org/wiki/Zip_(file_format)>) is a file format used to
-output a single file containing one or more files.
+[Zip](<https://de.wikipedia.org/wiki/ZIP_(Dateiformat)>) ist ein Dateiformat, das verwendet wird, um
+eine einzelne Datei auszugeben, die eine oder mehrere Dateien enthält.
 
-| Alias | Befehl                | Beschreibung                                                               |
+| Alias | Befehl   | Beschreibung                                                           |
 | ----- | -------- | --------------------------------------------------------------------- |
-| cz    | `zip -r` | Compress a whole Verzeichnis (including subdirectories) to a zip Datei.  |
-| ez    | `unzip`  | Extract a whole Verzeichnis (including subdirectories) from a zip Datei. |
+| cz    | `zip -r` | Komprimiere ein ganzes Verzeichnis (inkl. Unterverzeichnisse) in eine zip-Datei.  |
+| ez    | `unzip`  | Extrahiere ein ganzes Verzeichnis (inkl. Unterverzeichnisse) aus einer zip-Datei. |
 
 ## Zstd
 
-[Zstd](https://facebook.github.io/zstd/) is a fast lossless compression
-algorithm, targeting real-time compression scenarios at zlib-level and better
-compression ratios.
+[Zstd](https://facebook.github.io/zstd/) ist ein schneller verlustfreier Kompressionsalgorithmus,
+der auf Echtzeit-Kompressionsszenarien auf zlib-Niveau und bessere
+Kompressionsraten abzielt.
 
-| Alias | Befehl                | Beschreibung                                                               |
+| Alias | Befehl       | Beschreibung                                                           |
 | ----- | ------------ | --------------------------------------------------------------------- |
-| czstd | `zstd -zcvf` | Compress a whole Verzeichnis (including subdirectories) to a zst Datei.  |
-| ezstd | `zstd -zxvf` | Extract a whole Verzeichnis (including subdirectories) from a zst Datei. |
+| czstd | `zstd -zcvf` | Komprimiere ein ganzes Verzeichnis (inkl. Unterverzeichnisse) in eine zst-Datei.  |
+| ezstd | `zstd -zxvf` | Extrahiere ein ganzes Verzeichnis (inkl. Unterverzeichnisse) aus einer zst-Datei. |

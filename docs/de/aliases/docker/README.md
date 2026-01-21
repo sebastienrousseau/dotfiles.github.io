@@ -1,13 +1,13 @@
 ---
-description: docker aliases for Dotfiles
+description: Docker Aliase für Dotfiles
 lang: de-DE
-metaTitle: docker aliases - Dotfiles
+metaTitle: Docker Aliase - Dotfiles (DE)
 permalink: /de/aliases/docker/
 ---
 
-# Docker-Aliase
+# Docker Aliase
 
-Verwalten Sie Docker-Aliase. Part of the **Universal Dotfiles** configuration.
+Verwalten Sie Docker Aliase. Teil der **Universal Dotfiles** Konfiguration.
 
 ![Dotfiles banner][banner]
 
@@ -17,167 +17,200 @@ Diese Aliase sind in `docker.aliases.sh` definiert und werden automatisch von `c
 
 ## ⚡ Aliase
 
-This code provides a comprehensive set of aliases for Docker development
-using `docker`, `docker-compose`, and Docker Swarm commands.
+Dieser Code bietet einen umfassenden Satz von Aliasen für die Docker-Entwicklung
+unter Verwendung von `docker`, `docker-compose` und Docker Swarm Befehlen.
+
 #### Grundlegende Befehle
-- `dk` - Docker shortcut
-- `dkv` - Show Docker version
-- `dki` - Display system-wide information
-- `dkl` - Login to Docker registry
-- `dklo` - Logout from Docker registry
-#### Container-Operationen
-- `dkps` - List running containers
-- `dkpsa` - List all containers
-- `dkr` - Run a command in new container
-- `dkri` - Run interactive container
-- `dkrd` - Run container in background
-- `dks` - Start container
-- `dkst` - Stop container
-- `dkrs` - Restart container
-- `dkp` - Pause container
-- `dkup` - Unpause container
-- `dkrm` - Remove container
-- `dkrma` - Remove all containers
-- `dkrmf` - Force remove container
-#### Container Inspection
-- `dkin` - Inspect container
-- `dkl` - Show container logs
-- `dklf` - Follow container logs
-- `dkt` - Show running processes in container
-- `dkst` - Show container resource usage
-- `dkdf` - Show container filesystem changes
-- `dkpl` - Pull image from registry
-- `dkex` - Execute command in container
-- `dkeit` - Execute interactive command
-#### Bilder
-- `dki` - List images
-- `dkia` - List all images
-- `dkb` - Build an image
-- `dkbt` - Build and tag an image
-- `dkpu` - Push image to registry
-- `dkrmi` - Remove image
-- `dkh` - Show image history
-- `dksv` - Save image to tar archive
-- `dkld` - Load image from tar archive
-- `dkprune` - Remove unused data
-- `dkprunea` - Remove all unused data
-- `dkrmi_dangling` - Remove dangling images
-#### Volumen
-- `dkv` - Volume shortcut
-- `dkvls` - List volumes
-- `dkvc` - Create volume
-- `dkvi` - Inspect volume
-- `dkvrm` - Remove volume
-- `dkvp` - Remove unused volumes
-#### Networks
-- `dkn` - Network shortcut
-- `dknls` - List networks
-- `dknc` - Create network
-- `dkni` - Inspect network
-- `dknrm` - Remove network
-- `dknp` - Remove unused networks
-- `dkncon` - Connect container to network
-- `dkndis` - Disconnect container from network
+
+- `dk` - Docker Kurzbefehl
+- `dkv` - Docker Version anzeigen
+- `dki` - Systemweite Informationen anzeigen
+- `dkl` - Login in Docker Registry
+- `dklo` - Logout aus Docker Registry
+
+#### Container Operationen
+
+- `dkps` - Laufende Container auflisten
+- `dkpsa` - Alle Container auflisten
+- `dkr` - Befehl in neuem Container ausführen
+- `dkri` - Interaktiven Container ausführen
+- `dkrd` - Container im Hintergrund ausführen
+- `dks` - Container starten
+- `dkst` - Container stoppen
+- `dkrs` - Container neu starten
+- `dkp` - Container pausieren
+- `dkup` - Container fortsetzen
+- `dkrm` - Container entfernen
+- `dkrma` - Alle Container entfernen
+- `dkrmf` - Container Entfernen erzwingen
+
+#### Container Inspektion
+
+- `dkin` - Container inspizieren
+- `dkl` - Container-Logs anzeigen
+- `dklf` - Container-Logs folgen
+- `dkt` - Laufende Prozesse im Container anzeigen
+- `dkst` - Container-Ressourcennutzung anzeigen
+- `dkdf` - Container-Dateisystemänderungen anzeigen
+- `dkpl` - Image aus Registry ziehen
+- `dkex` - Befehl im Container ausführen
+- `dkeit` - Interaktiven Befehl ausführen
+
+#### Images
+
+- `dki` - Images auflisten
+- `dkia` - Alle Images auflisten
+- `dkb` - Image bauen
+- `dkbt` - Image bauen und taggen
+- `dkpu` - Image zur Registry pushen
+- `dkrmi` - Image entfernen
+- `dkh` - Image-Verlauf anzeigen
+- `dksv` - Image als Tar-Archiv speichern
+- `dkld` - Image aus Tar-Archiv laden
+- `dkprune` - Unbenutzte Daten entfernen
+- `dkprunea` - Alle unbenutzten Daten entfernen
+- `dkrmi_dangling` - Dangling Images entfernen
+
+#### Volumes
+
+- `dkv` - Volume Kurzbefehl
+- `dkvls` - Volumes auflisten
+- `dkvc` - Volume erstellen
+- `dkvi` - Volume inspizieren
+- `dkvrm` - Volume entfernen
+- `dkvp` - Unbenutzte Volumes entfernen
+
+#### Netzwerke
+
+- `dkn` - Netzwerk Kurzbefehl
+- `dknls` - Netzwerke auflisten
+- `dknc` - Netzwerk erstellen
+- `dkni` - Netzwerk inspizieren
+- `dknrm` - Netzwerk entfernen
+- `dknp` - Unbenutzte Netzwerke entfernen
+- `dkncon` - Container mit Netzwerk verbinden
+- `dkndis` - Container von Netzwerk trennen
+
 #### System
-- `dks` - System shortcut
-- `dksdf` - Show Docker disk usage
-- `dksev` - Get real-time events from Docker
-- `dksi` - Display system-wide information
-- `dksp` - Remove unused data
-- `dkspa` - Remove all unused data
-- `dkcon` - Context management
-#### Miscellaneous
-- `dkcp` - Copy files between container and local filesystem
-- `dkw` - Block until container stops
-- `dkk` - Kill container
-- `dkatt` - Attach to container
-- `dkd` - Inspect changes on container's filesystem
-- `dkcom` - Create image from container
-- `dktag` - Tag an image
-- `dkexp` - Export container's filesystem
-- `dkimp` - Import container filesystem
-- `dkscan` - Scan image for vulnerabilities
-- `dc` - Docker Compose shortcut
-- `dcu` - Create and start containers
-- `dcud` - Create and start containers in background
-- `dcd` - Stop and remove containers
-- `dcdv` - Stop and remove containers and volumes
-- `dcr` - Restart services
-- `dcs` - Stop services
-- `dcsta` - Start services
-- `dcp` - Pause services
-- `dcup` - Unpause services
-- `dcps` - List containers
-- `dcl` - View logs
-- `dclf` - Follow logs
-- `dcex` - Execute command in container
-- `dcb` - Build services
-- `dcpull` - Pull service images
-- `dcpush` - Push service images
-- `dcrm` - Remove stopped containers
-- `dcrun` - Run one-off command
-- `dci` - List images
-- `dck` - Kill containers
-- `dccfg` - Validate and show compose config
-- `dcev` - Receive events from containers
-- `dctop` - Display running processes
-- `dcv` - Show Docker Compose version
+
+- `dks` - System Kurzbefehl
+- `dksdf` - Docker Speicherbelegung anzeigen
+- `dksev` - Echtzeit-Events von Docker erhalten
+- `dksi` - Systemweite Informationen anzeigen
+- `dksp` - Unbenutzte Daten entfernen
+- `dkspa` - Alle unbenutzten Daten entfernen
+- `dkcon` - Kontextverwaltung
+
+#### Verschiedenes
+
+- `dkcp` - Dateien zwischen Container und lokalem Dateisystem kopieren
+- `dkw` - Blockieren bis Container stoppt
+- `dkk` - Container killen
+- `dkatt` - An Container anhängen
+- `dkd` - Änderungen am Container-Dateisystem inspizieren
+- `dkcom` - Image aus Container erstellen
+- `dktag` - Image taggen
+- `dkexp` - Container-Dateisystem exportieren
+- `dkimp` - Container-Dateisystem importieren
+- `dkscan` - Image auf Schwachstellen scannen
+- `dc` - Docker Compose Kurzbefehl
+- `dcu` - Container erstellen und starten
+- `dcud` - Container im Hintergrund erstellen und starten
+- `dcd` - Container stoppen und entfernen
+- `dcdv` - Container und Volumes stoppen und entfernen
+- `dcr` - Dienste neu starten
+- `dcs` - Dienste stoppen
+- `dcsta` - Dienste starten
+- `dcp` - Dienste pausieren
+- `dcup` - Dienste fortsetzen
+- `dcps` - Container auflisten
+- `dcl` - Logs anzeigen
+- `dclf` - Logs folgen
+- `dcex` - Befehl im Container ausführen
+- `dcb` - Dienste bauen
+- `dcpull` - Dienst-Images ziehen
+- `dcpush` - Dienst-Images pushen
+- `dcrm` - Gestoppte Container entfernen
+- `dcrun` - Einmaligen Befehl ausführen
+- `dci` - Images auflisten
+- `dck` - Container killen
+- `dccfg` - Compose-Konfiguration validieren und anzeigen
+- `dcev` - Events von Containern empfangen
+- `dctop` - Laufende Prozesse anzeigen
+- `dcv` - Docker Compose Version anzeigen
+
 #### Swarm Management
-- `dksw` - Swarm shortcut
-- `dkswi` - Initialize Docker Swarm
-- `dkswj` - Join Docker Swarm
-- `dkswjt` - Manage join tokens
-- `dkswl` - Leave the Swarm
-- `dkswu` - Update Swarm
-- `dkswunl` - Unlock Swarm
-- `dkswunk` - Manage unlock keys
+
+- `dksw` - Swarm Kurzbefehl
+- `dkswi` - Docker Swarm initialisieren
+- `dkswj` - Docker Swarm beitreten
+- `dkswjt` - Join-Token verwalten
+- `dkswl` - Swarm verlassen
+- `dkswu` - Swarm aktualisieren
+- `dkswunl` - Swarm entsperren
+- `dkswunk` - Entsperrschlüssel verwalten
+
 #### Services
-- `dksrv` - Service shortcut
-- `dksrvls` - List services
-- `dksrvc` - Create service
-- `dksrvi` - Inspect service
-- `dksrvps` - List tasks of service
-- `dksrvl` - View service logs
-- `dksrvlf` - Follow service logs
-- `dksrvrm` - Remove service
-- `dksrvsc` - Scale service
-- `dksrvu` - Update service
-- `dksrvrl` - Rollback service
+
+- `dksrv` - Service Kurzbefehl
+- `dksrvls` - Services auflisten
+- `dksrvc` - Service erstellen
+- `dksrvi` - Service inspizieren
+- `dksrvps` - Aufgaben eines Services auflisten
+- `dksrvl` - Service-Logs anzeigen
+- `dksrvlf` - Service-Logs folgen
+- `dksrvrm` - Service entfernen
+- `dksrvsc` - Service skalieren
+- `dksrvu` - Service aktualisieren
+- `dksrvrl` - Service zurückrollen (Rollback)
+
 #### Stacks
-- `dkstk` - Stack shortcut
-- `dkstkls` - List stacks
-- `dkstkd` - Deploy stack
-- `dkstkps` - List tasks in stack
-- `dkstksrv` - List services in stack
-- `dkstkrm` - Remove stack
+
+- `dkstk` - Stack Kurzbefehl
+- `dkstkls` - Stacks auflisten
+- `dkstkd` - Stack deployen
+- `dkstkps` - Aufgaben im Stack auflisten
+- `dkstksrv` - Services im Stack auflisten
+- `dkstkrm` - Stack entfernen
+
 #### Nodes
-- `dkn` - Node shortcut
-- `dknls` - List nodes
-- `dkni` - Inspect node
-- `dknp` - Promote node to manager
-- `dknd` - Demote node to worker
-- `dknrm` - Remove node
-- `dknu` - Update node
-- `dknps` - List tasks running on node
-### Common Workflows
-#### Container Development Workflow
+
+- `dkn` - Node Kurzbefehl
+- `dknls` - Nodes auflisten
+- `dkni` - Node inspizieren
+- `dknp` - Node zum Manager befördern
+- `dknd` - Node zum Worker degradieren
+- `dknrm` - Node entfernen
+- `dknu` - Node aktualisieren
+- `dknps` - Aufgaben auf Node auflisten
+
+### Gängige Workflows
+
+#### Container-Entwicklungs-Workflow
+
 ```bash
-# Start a development container
+# Starten eines Entwicklungs-Containers
 dkri --name dev-container -v $(pwd):/app -p 3000:3000 node:latest bash
 ```
-#### Docker Compose Development
+
+#### Docker Compose Entwicklung
+
 ```bash
-# Start services, rebuild if needed, in background
+# Dienste starten, bei Bedarf neu bauen, im Hintergrund
 dcb && dcud
 ```
-#### Cleanup Workflow
+
+#### Aufräum-Workflow
+
 ```bash
-# Remove all stopped containers, unused networks, and dangling images
+# Alle gestoppten Container, unbenutzte Netzwerke und Dangling Images entfernen
 dkrm $(dk ps -aq --filter status=exited) && dknp && dkrmi_dangling
 ```
-#### Deployment to Swarm
+
+#### Deployment in Swarm
+
 ```bash
-# Deploy or update a stack from a compose file
+# Einen Stack aus einer Compose-Datei deployen oder aktualisieren
 dkstkd -c docker-compose.yml my-stack
 ```
 

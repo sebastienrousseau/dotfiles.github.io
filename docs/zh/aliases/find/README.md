@@ -1,60 +1,38 @@
 ---
-description: The Find aliases, are designed to search for files in a directory hierarchy and perform actions on the files that are found.
+description: 查找别名旨在搜索目录层次结构中的文件，并对找到的文件执行操作。
 lang: zh-CN
-metaTitle: Find aliases - Dotfiles (CN)
+metaTitle: 查找别名 - Dotfiles (CN)
 permalink: /zh/aliases/find/
-
-meta:
-  - name: keywords
-    content: aliases, code, editor, environment, gedit, nano, notepad++, text, vi, vim
-  - name: twitter:card
-    content: The Find aliases, are designed to search for files in a directory hierarchy and perform actions on the files that are found.
-  - name: twitter:description
-    content: The Find aliases, are designed to search for files in a directory hierarchy and perform actions on the files that are found.
-  - name: twitter:title
-    content: Find aliases - Dotfiles (CN)
-  - name: og:title
-    content: Find aliases - Dotfiles (CN)
-  - name: og:description
-    content: The Find aliases, are designed to search for files in a directory hierarchy and perform actions on the files that are found.
-  - name: og:image:alt
-    content: Dotfiles - Simply designed to fit your shell life
-  - name: og:locale
-    content: en_GB
 ---
 
-# Find aliases
+# 查找别名
 
-The `find.aliases.sh` file creates helpful shortcut aliases for the `fd` command
-. The `fd` command is a cross-platform alternative to `find`.
+`find.aliases.sh` 文件为 `fd` 命令创建了有用的快捷别名。
+`fd` 命令是 `find` 的跨平台替代品。
 
-Traditionally, the `find` command is used to search for files in a directory
-hierarchy and perform actions on the files that are found.
+传统上，`find` 命令用于搜索目录层次结构中的文件，并对找到的文件执行操作。
 
-We decided to substitute the `find` command with the `fd` command which is
-simpler, fast and user-friendly alternative to `find`.
+我们决定用 `fd` 命令替换 `find` 命令，它是 `find` 的一个更简单、更快速且用户友好的替代品。
 
-## Find
+## 查找 (Find)
 
-[fd](https://github.com/sharkdp/fd) is a simple, fast and user-friendly
-alternative to `find`. While it does not aim to support all of find's powerful
-functionality, it provides sensible (opinionated) defaults for a majority of
-use cases.
+[fd](https://github.com/sharkdp/fd) 是 `find` 的一个简单、快速且用户友好的替代品。
+虽然它并不旨在支持 find 的所有强大功能，但它为大多数用例提供了合理的（固执己见的）默认设置。
 
-| 别名  | 命令                   | 描述                                                                       |
-| ----- | -------------------- | ----------------------------------------------------------- |
-| fd    | `fd --color always`  | always colorize output by default.                          |
-| fda   | `fd --absolute-path` | 列出 all 文件 with absolute path.                          |
-| fdc   | `fd --ignore-case`   | 列出 all 文件 with case insensitive 搜索.                |
-| fdd   | `fd --list-details`  | 列出 all 文件 with details.                                |
-| fde   | `fd --extension`     | 列出 all 文件 with extension.                              |
-| fdf   | `fd --follow`        | 列出 all 文件 with follow symlinks.                        |
-| fdh   | `fd --help`          | 列出 all 文件 with help.                                   |
-| fdh   | `fd --hidden`        | 列出 all 文件 with hidden 文件.                           |
-| fdn   | `fd --glob`          | 列出 all 文件 with glob.                                   |
-| fdo   | `fd --owner`         | 列出 all 文件 with owner.                                  |
-| fds   | `fd --size`          | 列出 all 文件 with size.                                   |
-| fdu   | `fd --exclude`       | 列出 all 文件 with exclude.                                |
-| fdv   | `fd --version`       | 列出 all 文件 with version.                                |
-| fdx   | `fd --exec`          | Execute a command for each 搜索 result.                   |
-| find  | `fd`                 | fd is a simple, fast and user-friendly alternative to 查找. |
+| 别名  | 命令                 | 描述                                         |
+| ----- | -------------------- | -------------------------------------------- |
+| fd    | `fd --color always`  | 默认情况下始终着色输出。                     |
+| fda   | `fd --absolute-path` | 列出所有文件的绝对路径。                     |
+| fdc   | `fd --ignore-case`   | 不区分大小写地列出所有文件。                 |
+| fdd   | `fd --list-details`  | 列出所有文件的详细信息。                     |
+| fde   | `fd --extension`     | 列出具有特定扩展名的所有文件。               |
+| fdf   | `fd --follow`        | 列出所有文件并跟随符号链接。                 |
+| fdh   | `fd --help`          | 列出帮助信息。                               |
+| fdh   | `fd --hidden`        | 列出所有文件，包括隐藏文件。                 |
+| fdn   | `fd --glob`          | 使用 glob 模式列出所有文件。                 |
+| fdo   | `fd --owner`         | 列出具有特定所有者的所有文件。               |
+| fds   | `fd --size`          | 列出具有特定大小的所有文件。                 |
+| fdu   | `fd --exclude`       | 列出所有文件，排除特定模式。                 |
+| fdv   | `fd --version`       | 列出版本信息。                               |
+| fdx   | `fd --exec`          | 对每个搜索结果执行命令。                     |
+| find  | `fd`                 | fd 是 find 的一个简单、快速且用户友好的替代品。 |
