@@ -21,23 +21,27 @@ dot [commande]
 
 ## Commandes
 
-| Commande | Description |
-| :--- | :--- |
-| `dot learn` | **Mode Interactif** : Lance une visite guidée des outils du Noyau Moderne (Atuin, Yazi, Zellij) et des fonctionnalités IA. |
+| Commande     | Description                                                                                                                                           |
+| :----------- | :---------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `dot learn`  | **Mode Interactif** : Lance une visite guidée des outils du Noyau Moderne (Atuin, Yazi, Zellij) et des fonctionnalités IA.                            |
 | `dot doctor` | **Bilan de Santé** : Vérifie que votre système est correctement configuré et que toutes les dépendances sont installées. (Encapsule `chezmoi doctor`) |
-| `dot update` | **Mise à jour** : Récupère les dernières modifications du dépôt et les réapplique. (Encapsule `chezmoi update`) |
-| `dot help` | **Aide** : Affiche les informations d'utilisation. |
+| `dot update` | **Mise à jour** : Récupère les dernières modifications du dépôt et les réapplique. (Encapsule `chezmoi update`)                                       |
+| `dot help`   | **Aide** : Affiche les informations d'utilisation.                                                                                                    |
 
 ## Exemples
 
 ### Apprentissage Interactif
+
 Lancez la visite guidée pour apprendre les nouveaux raccourcis :
+
 ```bash
 dot learn
 ```
 
 ### Vérification du Système
+
 Vérifiez que tout fonctionne correctement :
+
 ```bash
 dot doctor
 ```
