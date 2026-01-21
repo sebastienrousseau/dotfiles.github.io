@@ -136,26 +136,28 @@ module.exports = {
     },
     chainWebpack: (
       // @ts-expect-error: suppress implicit any for webpack config
-      config
+      config,
     ) => {
-      config.plugin("html").tap((
-        // @ts-expect-error: suppress implicit any for html plugin args
-        args
-      ) => {
-        args[0].minify = {
-          minifyCSS: true,
-          minifyJS: true,
-          minifyURLs: true,
-          removeComments: true,
-          collapseWhitespace: true,
-          collapseBooleanAttributes: true,
-          removeScriptTypeAttributes: true,
-          removeAttributeQuotes: true,
-          removeEmptyAttributes: true,
-          removeStyleLinkTypeAttributes: true,
-        };
-        return args;
-      });
+      config.plugin("html").tap(
+        (
+          // @ts-expect-error: suppress implicit any for html plugin args
+          args,
+        ) => {
+          args[0].minify = {
+            minifyCSS: true,
+            minifyJS: true,
+            minifyURLs: true,
+            removeComments: true,
+            collapseWhitespace: true,
+            collapseBooleanAttributes: true,
+            removeScriptTypeAttributes: true,
+            removeAttributeQuotes: true,
+            removeEmptyAttributes: true,
+            removeStyleLinkTypeAttributes: true,
+          };
+          return args;
+        },
+      );
     },
   },
   plugins: [
