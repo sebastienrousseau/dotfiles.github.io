@@ -32,6 +32,10 @@ Tmux est une commande qui permet de créer des sessions de terminal multiples, d
 les détacher et de les relier. Il est souvent utilisé pour créer des sessions de
 terminal multiples sur un serveur distant.
 
+> [!NOTE]
+> **Noyau Moderne** : Dans v0.2.471+, nous avons introduit [Zellij](/fr/alias/modern-core/#zellij) comme une alternative moderne, basée sur Rust, à Tmux.
+> Tmux est toujours supporté, mais Zellij est recommandé pour les nouveaux utilisateurs.
+
 ## Raccourcis Tmux
 
 | Alias | Commande                 | Description                                           |

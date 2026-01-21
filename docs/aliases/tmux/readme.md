@@ -32,6 +32,10 @@ The Tmux aliases are a collection of aliases that allow you to interact with the
 `tmux` command. Tmux is a tool which allows you to run multiple terminal
 sessions in a single window.
 
+> [!NOTE]
+> **Modern Core**: In v0.2.471+, we introduced [Zellij](/aliases/modern-core/#zellij) as a modern, Rust-based alternative to Tmux.
+> Tmux is still supported, but Zellij is recommended for new users.
+
 ## Tmux
 
 [Tmux](https://github.com/tmux/tmux/wiki) is a terminal multiplexer. It lets you

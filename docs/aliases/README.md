@@ -101,7 +101,11 @@ They have been grouped by logical categories:
 - [default][default] - The default aliases that are loaded for all users,
   regardless of the shell they are using, and of the operating system they are
   on,
+- [default][default] - The default aliases that are loaded for all users,
+  regardless of the shell they are using, and of the operating system they are
+  on,
 - [dig][dig] - Aliases for working with DNS.
+- [dot][dot] - The unified CLI for managing your dotfiles.
 - [du][du] - Aliases for working with disk usage.
 - [editor][editor] - Aliases for working with the editor.
 - [find][find] - Aliases for working with the `fd` command.
@@ -114,6 +118,7 @@ They have been grouped by logical categories:
 - [list][list] - Aliases for working with the `ls` command.
 - [make][make] - Aliases for working with the `make` command.
 - [mkdir][mkdir] - Aliases for working with the `mkdir` command.
+- [modern-core][modern-core] - High-performance tools (Atuin, Yazi, Zellij).
 - [npm][npm] - Aliases for working with the `npm` command.
 - [pnpm][pnpm] - Aliases for working with the `pnpm` command.
 - [ps][ps] - Aliases for working with the `ps` command.
@@ -132,6 +137,7 @@ They have been grouped by logical categories:
 [clear]: ./clear/
 [default]: ./default/
 [dig]: ./dig/
+[dot]: ./dot/
 [du]: ./du/
 [editor]: ./editor/
 [find]: ./find/
@@ -144,6 +150,7 @@ They have been grouped by logical categories:
 [list]: ./list/
 [make]: ./make/
 [mkdir]: ./mkdir/
+[modern-core]: ./modern-core/
 [npm]: ./npm/
 [pnpm]: ./pnpm/
 [ps]: ./ps/

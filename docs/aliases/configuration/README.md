@@ -28,6 +28,10 @@ meta:
 The `configuration.aliases.sh` file creates helpful shortcut aliases for opening
 the configuration files for the terminal and the shell.
 
+> [!TIP]
+> **New in v0.2.471**: You can now use the `dot` command to manage your configuration.
+> Try `dot learn` for an interactive tour or `dot doctor` to verify your setup.
+
 ## Configuration
 
 | Alias | Command                          | Description                                                  |

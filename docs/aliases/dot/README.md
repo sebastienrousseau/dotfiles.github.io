@@ -1,0 +1,43 @@
+---
+description: The dot command is the unified entry point for managing your dotfiles, learning features, and verifying system health.
+lang: en-GB
+metaTitle: The dot command - Dotfiles (UK)
+permalink: /aliases/dot/
+
+meta:
+  - name: keywords
+    content: dot, cli, learn, doctor, update, dotfiles
+---
+
+# The `dot` Command
+
+The `dot` command is the new, unified interface for interacting with your dotfiles. It wraps `chezmoi` and other utilities to provide a seamless experience.
+
+## Usage
+
+```bash
+dot [command]
+```
+
+## Commands
+
+| Command | Description |
+| :--- | :--- |
+| `dot learn` | **Interactive Mode**: Launches a tour of the Modern Core tools (Atuin, Yazi, Zellij) and AI features. |
+| `dot doctor` | **Health Check**: Verifies that your system is correctly configured and all dependencies are installed. (Wraps `chezmoi doctor`) |
+| `dot update` | **Update System**: Pulls the latest changes from the repository and reapplies them. (Wraps `chezmoi update`) |
+| `dot help` | **Help**: Displays usage information. |
+
+## Examples
+
+### Interactive Learning
+Start the guided tour to learn new keybindings:
+```bash
+dot learn
+```
+
+### System Verification
+Check if everything is running smoothly:
+```bash
+dot doctor
+```
