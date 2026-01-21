@@ -20,30 +20,30 @@ We adhere to a strict hierarchy to ensure consistency across macOS and Linux.
 From highest priority (checked first) to lowest:
 
 1.  **Local Binaries** (`~/.local/bin`)
-    *   **Priority**: 1
-    *   **Purpose**: Custom user scripts, `dot` CLI, and tools installed via `pipx` or other user-level package managers.
-    *   **Reason**: Allows you to override system or Homebrew tools with your own versions.
+    - **Priority**: 1
+    - **Purpose**: Custom user scripts, `dot` CLI, and tools installed via `pipx` or other user-level package managers.
+    - **Reason**: Allows you to override system or Homebrew tools with your own versions.
 
 2.  **Application Binaries** (macOS)
-    *   **Priority**: 2
-    *   **Purpose**: Binaries from installed applications (e.g., VS Code, iTerm).
+    - **Priority**: 2
+    - **Purpose**: Binaries from installed applications (e.g., VS Code, iTerm).
 
 3.  **Language Runtimes**
-    *   **Node.js**: `~/.node_modules/bin`
-    *   **Go**: `~/go/bin`
-    *   **Rust (Cargo)**: `~/.cargo/bin`
-    *   **Ruby (User Gems)**: `~/.gem/ruby/bin`
-    *   **Python (Pipx)**: `~/.local/share/pipx`
+    - **Node.js**: `~/.node_modules/bin`
+    - **Go**: `~/go/bin`
+    - **Rust (Cargo)**: `~/.cargo/bin`
+    - **Ruby (User Gems)**: `~/.gem/ruby/bin`
+    - **Python (Pipx)**: `~/.local/share/pipx`
 
 4.  **Homebrew** (`/opt/homebrew/bin`)
-    *   **Priority**: 3
-    *   **Purpose**: Main package manager for macOS/Linux.
-    *   **Note**: We purposely load Homebrew *before* system paths to allow upgrading system tools (like `git` or `curl`).
+    - **Priority**: 3
+    - **Purpose**: Main package manager for macOS/Linux.
+    - **Note**: We purposely load Homebrew _before_ system paths to allow upgrading system tools (like `git` or `curl`).
 
 5.  **System Paths** (`/usr/bin`, `/bin`)
-    *   **Priority**: Lowest
-    *   **Purpose**: Default operating system tools.
-    *   **Reason**: Fallback for fundamental utilities.
+    - **Priority**: Lowest
+    - **Purpose**: Default operating system tools.
+    - **Reason**: Fallback for fundamental utilities.
 
 ## Deduplication
 

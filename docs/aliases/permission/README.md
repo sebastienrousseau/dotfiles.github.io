@@ -18,6 +18,7 @@ These aliases are defined in `permission.aliases.sh` and are automatically loade
 ## ⚡ Aliases
 
 This code provides a set of aliases for file permissions.
+
 - `000` Set permissions to no read, write, or execute for user, group,
   and others.
 - `400` Set permissions to no read or write, but allow execute for user

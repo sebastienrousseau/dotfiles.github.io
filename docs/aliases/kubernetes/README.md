@@ -18,6 +18,7 @@ These aliases are defined in `kubernetes.aliases.sh` and are automatically loade
 ## ⚡ Aliases
 
 ### core
+
 - `k` - kubectl shortcut
 - `kg` - `kubectl get`
 - `kgp` - `kubectl get pods`
@@ -28,16 +29,19 @@ These aliases are defined in `kubernetes.aliases.sh` and are automatically loade
 - `kex` - `kubectl exec -it`
 
 ### context
+
 - `kcx` - List contexts
 - `kuse` - Switch context
 - `kns` - Switch namespace
 
 ### helm
+
 - `h` - Helm shortcut
 - `hls` - List releases
 - `hi` - Install chart
 
 ### ui
+
 - `k9` - k9s terminal UI
 
 [banner]: https://kura.pro/dotfiles/v2/images/titles/title-dotfiles.svg

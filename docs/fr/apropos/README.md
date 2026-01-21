@@ -20,10 +20,10 @@ Contrairement aux dotfiles hérités qui reposent sur des Makefiles complexes ou
 ## Nouveautés de la v0.2.471
 
 - **Noyau Moderne** : Remplacement des outils Unix hérités par des alternatives Rust haute performance :
-    - **Atuin** (remplace `history`)
-    - **Yazi** (remplace `ls`/`ranger`)
-    - **Zellij** (remplace `tmux`)
-    - **Ghostty** (Terminal moderne accéléré par GPU)
+  - **Atuin** (remplace `history`)
+  - **Yazi** (remplace `ls`/`ranger`)
+  - **Zellij** (remplace `tmux`)
+  - **Ghostty** (Terminal moderne accéléré par GPU)
 - **Sécurité Native** : Signature SSH entièrement native (sans clé/sans propriétaires) sans agents tiers.
 - **Mode Interactif** : Nouvelle commande `dot learn` pour vous guider à travers les fonctionnalités.
 
@@ -44,6 +44,7 @@ sh -c "$(curl -fsLS get.chezmoi.io)" -- init --apply sebastienrousseau
 ```
 
 Cette commande va :
+
 1.  Installer le binaire `chezmoi`.
 2.  Cloner le dépôt vers `~/.local/share/chezmoi`.
 3.  Calculer la différence entre votre état actuel et l'état désiré.

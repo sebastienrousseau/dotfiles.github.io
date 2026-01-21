@@ -20,10 +20,10 @@ Unlike legacy dotfiles that rely on complex Makefiles or symlink scripts, Dotfil
 ## What's New in v0.2.471
 
 - **Modern Core**: We've replaced legacy Unix tools with high-performance Rust alternatives:
-    - **Atuin** (replaces `history`)
-    - **Yazi** (replaces `ls`/`ranger`)
-    - **Zellij** (replaces `tmux`)
-    - **Ghostty** (Modern GPU-accelerated terminal)
+  - **Atuin** (replaces `history`)
+  - **Yazi** (replaces `ls`/`ranger`)
+  - **Zellij** (replaces `tmux`)
+  - **Ghostty** (Modern GPU-accelerated terminal)
 - **Native Security**: Fully native SSH signing (Keyless/Proprietary-free) without 3rd party agents.
 - **Interactive Mode**: New `dot learn` command to guide you through features.
 
@@ -44,6 +44,7 @@ sh -c "$(curl -fsLS get.chezmoi.io)" -- init --apply sebastienrousseau
 ```
 
 This command will:
+
 1.  Install the `chezmoi` binary.
 2.  Clone the repository to `~/.local/share/chezmoi`.
 3.  Calculate the difference between your current state and the desired state.
