@@ -12,12 +12,12 @@ title: Les Dotfiles - Conçus pour s'adapter à votre vie de shell. (FR)
 actionText: En savoir plus →
 actionLink: /fr/apropos/
 features:
-  - title: Facilité d’utilisation
-    details: Très facile à configurer, les fichiers Dotfiles sont prêts à l'emploi et idéals pour personnaliser votre shell et vos applications
-  - title: Découvrez notre collection
-    details: Une collection de fichiers de configuration Bash mise à votre disposition gratuitement
+  - title: Noyau Moderne
+    details: "Propulsé par Rust : Atuin (Historique), Yazi (Fichiers), Zellij (Multiplexeur), et Ghostty (Terminal)."
+  - title: Sécurité Renforcée
+    details: "Signature SSH Native et conformité XDG dès l'installation. Aucune dépendance propriétaire."
   - title: Personnalisable
-    details: Découvrez tous les détails des fichiers Dotfiles et choisissez ceux que vous préférez suivant vos envies
+    details: "Découvrez tous les détails des fichiers Dotfiles et choisissez ceux que vous préférez suivant vos envies"
 footer: Copyright © Sebastien Rousseau 2015-2022. Tous droits réservés.
 
 meta:

@@ -11,13 +11,13 @@ module.exports = {
       lang: "en-GB",
       title: "Dotfiles",
       description:
-        "The next generation of Bash configuration files for macOS, Linux and Windows. Dotfiles gives you new ways to do more than ever with your shell.",
+        "The next generation of Bash configuration files for macOS, Linux and Windows. Featuring a Modern Core (Atuin, Yazi, Zellij) and Native SSH Security.",
     },
     "/fr/": {
       lang: "fr-FR", // French
       title: "Les Dotfiles",
       description:
-        "La prochaine génération de fichiers de configuration Bash pour macOS, Linux et Windows. Avec Dotfiles, vous pouvez en faire toujours plus avec votre shell.",
+        "La prochaine génération de fichiers de configuration Bash pour macOS, Linux et Windows. Avec un Noyau Moderne (Atuin, Yazi, Zellij) et Sécurité SSH Native.",
     },
   },
   // Enable evergreen browsers support
@@ -73,8 +73,8 @@ module.exports = {
         sidebar: frSidebar,
       },
     },
-    chainWebpack: (config) => {
-      config.plugin("html").tap((args) => {
+    chainWebpack: (config: any) => {
+      config.plugin("html").tap((args: any[]) => {
         args[0].minify = {
           minifyCSS: true,
           minifyJS: true,

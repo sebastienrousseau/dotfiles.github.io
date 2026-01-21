@@ -12,12 +12,12 @@ title: Dotfiles - Simply designed to fit your shell life (UK)
 actionText: Read more →
 actionLink: /about/
 features:
-  - title: Ease of use
-    details: Very easy to configure, Dotfiles are ready to use and ideal for customizing your shell and applications
-  - title: Discover our collections
-    details: A collection of Bash configuration files available for free
+  - title: Modern Core
+    details: "Powered by Rust: Atuin (History), Yazi (Files), Zellij (Multiplexer), and Ghostty (Terminal)."
+  - title: Hardened Security
+    details: "Native SSH Signing and XDG Compliance out of the box. No proprietary dependencies."
   - title: Customizable
-    details: Discover all the details of the Dotfiles and choose the ones you prefer according to your desires
+    details: "Discover all the details of the Dotfiles and choose the ones you prefer according to your desires"
 footer: Copyright © Sebastien Rousseau 2015-2022. All rights reserved.
 
 meta:
