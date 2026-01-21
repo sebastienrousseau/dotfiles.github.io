@@ -25,7 +25,7 @@ meta:
 
 # Wget aliases
 
-This `wget.aliases.zsh` file creates helpful shortcut aliases for many commonly
+This `wget.aliases.sh` file creates helpful shortcut aliases for many commonly
 used [wget](https://www.gnu.org/software/wget/) commands.
 
 The Wget aliases create helpful shortcut aliases for the `wget` command. Wget is

@@ -25,7 +25,7 @@ meta:
 
 # UUID aliases
 
-The `uuid.aliases.zsh` file creates helpful shortcut aliases for generating
+The `uuid.aliases.sh` file creates helpful shortcut aliases for generating
 [UUIDs](https://en.wikipedia.org/wiki/Universally_unique_identifier).
 
 The UUID aliases create helpful shortcut aliases for the `uuidgen` command.

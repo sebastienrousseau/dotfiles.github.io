@@ -25,7 +25,7 @@ meta:
 
 # Heroku aliases
 
-The `heroku.aliases.zsh` file creates helpful shortcut aliases for many commonly
+The `heroku.aliases.sh` file creates helpful shortcut aliases for many commonly
 [Heroku](https://www.heroku.com/) commands.
 
 The Heroku aliases, provide powerful commands that create shortcuts to

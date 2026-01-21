@@ -25,7 +25,7 @@ meta:
 
 # Subversion aliases
 
-This `subversion.aliases.zsh` file creates helpful shortcut aliases for many
+This `subversion.aliases.sh` file creates helpful shortcut aliases for many
 commonly used [Subversion](https://subversion.apache.org) commands.
 
 The Subversion aliases are a collection of aliases that allow you to interact

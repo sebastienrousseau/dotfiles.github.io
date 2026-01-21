@@ -25,7 +25,7 @@ meta:
 
 # Tmux aliases
 
-This `tmux.aliases.zsh` file creates helpful shortcut aliases for many
+This `tmux.aliases.sh` file creates helpful shortcut aliases for many
 commonly used [tmux](https://github.com/tmux/tmux/wiki) commands.
 
 The Tmux aliases are a collection of aliases that allow you to interact with the

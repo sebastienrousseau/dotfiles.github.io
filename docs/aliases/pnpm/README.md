@@ -25,7 +25,7 @@ meta:
 
 # PNpm aliases
 
-This `pnpm.aliases.zsh` file creates helpful shortcut aliases for many
+This `pnpm.aliases.sh` file creates helpful shortcut aliases for many
 commonly used [PNpm](https://pnpm.io) commands.
 
 The PNpm aliases are a collection of aliases that allow you to interact with the
