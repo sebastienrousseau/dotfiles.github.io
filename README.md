@@ -3,13 +3,13 @@ This project is a static site generated with VuePress.
 ## Prerequisites
 
 - Node.js
-- NPM
+- pnpm
 
 ## Development
 
 ```bash
-npm install
-npm run dev
+pnpm install
+pnpm run dev
 ```
 
 Open `http://localhost:8080` to view the site.
