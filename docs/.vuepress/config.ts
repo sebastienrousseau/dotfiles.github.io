@@ -134,9 +134,9 @@ module.exports = {
         sidebar: ptSidebar,
       },
     },
-    // @ts-ignore
+    // @ts-expect-error: suppress implicit any for webpack config
     chainWebpack: (config: any) => {
-      // @ts-ignore
+      // @ts-expect-error: suppress implicit any for html plugin args
       config.plugin("html").tap((args: any[]) => {
         args[0].minify = {
           minifyCSS: true,
