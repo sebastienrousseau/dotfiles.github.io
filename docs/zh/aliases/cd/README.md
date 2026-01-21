@@ -40,19 +40,19 @@ systems.
 
 | 别名  | 命令                   | 描述                                                                       |
 | ----- | ----------------------------- | ---------------------------------------------------------------- |
-| -     | `cd -`                        | Shortcut to go to previous directory.                            |
-| ..    | `cd ..`                       | Shortcut to go to parent directory.                              |
-| ...   | `cd ../..`                    | Shortcut to go to grandparent directory.                         |
-| ....  | `cd ../../..`                 | Shortcut to go to great-grandparent directory.                   |
-| ..... | `cd ../../../..`              | Shortcut to go to great-great-grandparent directory.             |
-| ~     | `cd ~`                        | Shortcut to go to home directory.                                |
-| app   | `cd ${HOME}/Applications; ls` | Shortcut to go to the Applications directory.                    |
-| cod   | `cd ${HOME}/Code; ls`         | Shortcut to go to the Code directory and list its contents.      |
-| des   | `cd ${HOME}/Desktop; ls`      | Shortcut to go to the Desktop directory and list its contents.   |
-| doc   | `cd ${HOME}/Documents; ls`    | Shortcut to go to the Documents directory and list its contents. |
-| dot   | `cd ${HOME}/.dotfiles; ls`    | Shortcut to go to the dotfiles directory.                        |
-| dow   | `cd ${HOME}/Downloads; ls`    | Shortcut to go to the Downloads directory and list its contents. |
-| hom   | `cd ${HOME}/; ls`             | Shortcut to go to home directory and list its contents.          |
-| mus   | `cd ${HOME}/Music; ls`        | Shortcut to go to the Music directory and list its contents.     |
-| pic   | `cd ${HOME}/Pictures; ls`     | Shortcut to go to the Pictures directory and list its contents.  |
-| vid   | `cd ${HOME}/Videos; ls`       | Shortcut to go to the Videos directory and list its contents.    |
+| -     | `cd -`                        | Shortcut to go to previous 目录.                            |
+| ..    | `cd ..`                       | Shortcut to go to parent 目录.                              |
+| ...   | `cd ../..`                    | Shortcut to go to grandparent 目录.                         |
+| ....  | `cd ../../..`                 | Shortcut to go to great-grandparent 目录.                   |
+| ..... | `cd ../../../..`              | Shortcut to go to great-great-grandparent 目录.             |
+| ~     | `cd ~`                        | Shortcut to go to home 目录.                                |
+| app   | `cd ${HOME}/Applications; ls` | Shortcut to go to the Applications 目录.                    |
+| cod   | `cd ${HOME}/Code; ls`         | Shortcut to go to the Code 目录 and 列出 its contents.      |
+| des   | `cd ${HOME}/Desktop; ls`      | Shortcut to go to the Desktop 目录 and 列出 its contents.   |
+| doc   | `cd ${HOME}/Documents; ls`    | Shortcut to go to the Documents 目录 and 列出 its contents. |
+| dot   | `cd ${HOME}/.dotfiles; ls`    | Shortcut to go to the dotfiles 目录.                        |
+| dow   | `cd ${HOME}/Downloads; ls`    | Shortcut to go to the Downloads 目录 and 列出 its contents. |
+| hom   | `cd ${HOME}/; ls`             | Shortcut to go to home 目录 and 列出 its contents.          |
+| mus   | `cd ${HOME}/Music; ls`        | Shortcut to go to the Music 目录 and 列出 its contents.     |
+| pic   | `cd ${HOME}/Pictures; ls`     | Shortcut to go to the Pictures 目录 and 列出 its contents.  |
+| vid   | `cd ${HOME}/Videos; ls`       | Shortcut to go to the Videos 目录 and 列出 its contents.    |

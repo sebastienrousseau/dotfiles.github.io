@@ -13,9 +13,9 @@ Tools for hardening the environment and managing configuration immutability.
 
 | Alias | Description |
 |-------|-------------|
-| `lock-configs` | Locks critical files (`.zshrc`, etc.) to prevent modification (`chflags uchg` / `chattr +i`). |
-| `unlock-configs` | Unlocks critical files for editing. |
-| `check-locks` | Checks the lock status of critical files. |
+| `lock-configs` | Locks critical arquivos (`.zshrc`, etc.) to prevent modification (`chflags uchg` / `chattr +i`). |
+| `unlock-configs` | Unlocks critical arquivos for editing. |
+| `check-locks` | Checks the lock status of critical arquivos. |
 
 ## 🔑 Git Signing
 

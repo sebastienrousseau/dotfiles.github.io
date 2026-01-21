@@ -41,10 +41,10 @@ can be used to overwrite files or directories.
 
 | 别名  | 命令                   | 描述                                                                       |
 | ----- | ----------------------- | ------------------------------------------------------------ |
-| bin   | `rm -fr ${HOME}/.Trash` | Remove all files in the trash.                               |
-| cp    | `cp -vi`                | Copy files and directories.                                  |
-| del   | `rm -rfvi`              | Remove a file or directory.                                  |
+| bin   | `rm -fr ${HOME}/.Trash` | 移除 all 文件 in the trash.                               |
+| cp    | `cp -vi`                | 复制 文件 and directories.                                  |
+| del   | `rm -rfvi`              | 移除 a 文件 or 目录.                                  |
 | ln    | `ln -vi`                | Interactive symbolic link.                                   |
-| mv    | `mv -vi`                | Move files interactively (ask before overwrite) and verbose. |
-| rm    | `rm -vi`                | Prompts for every file before removing.                      |
-| zap   | `rm -vi`                | Remove files interactively (ask before overwrite).           |
+| mv    | `mv -vi`                | 移动 文件 interactively (ask before overwrite) and verbose. |
+| rm    | `rm -vi`                | Prompts for every 文件 before removing.                      |
+| zap   | `rm -vi`                | 移除 文件 interactively (ask before overwrite).           |

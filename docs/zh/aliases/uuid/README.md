@@ -39,4 +39,4 @@ number used to identify information in computer systems.
 
 | 别名  | 命令                   | 描述                                                                       |
 | ----- | ---------------------------------------------------------------------------------- | --------------------------------------------- |
-| uuid  | `uuidgen \| tr -d '\n' \| tr '[:upper:]' '[:lower:]' \| pbcopy && pbpaste && echo` | Generate a UUID and copy it to the clipboard. |
+| uuid  | `uuidgen \| tr -d '\n' \| tr '[:upper:]' '[:lower:]' \| pbcopy && pbpaste && echo` | Generate a UUID and 复制 it to the clipboard. |

@@ -36,8 +36,8 @@ the configuration files for the terminal and the shell.
 
 | Alias | Comando               | Descrição                                                                  |
 | ----- | -------------------------------- | ------------------------------------------------------------ |
-| bshp  | `${=EDITOR} $HOME/.bash_profile` | Open the Bash profile in the default text editor.            |
-| bshrc | `${=EDITOR} $HOME/.bashrc`       | Open the Bash configuration file in the default text editor. |
-| gcfg  | `${=EDITOR} $HOME/.gitconfig`    | Open the Git configuration file in the default text editor.  |
-| gign  | `${=EDITOR} $HOME/.gitignore`    | Open the Git ignore file in the default text editor.         |
-| zshrc | `${=EDITOR} $HOME/.zshrc`        | Open the Zsh configuration file in the default text editor.  |
+| bshp  | `${=EDITOR} $HOME/.bash_profile` | Abrir the Bash profile in the default text editor.            |
+| bshrc | `${=EDITOR} $HOME/.bashrc`       | Abrir the Bash configuration arquivo in the default text editor. |
+| gcfg  | `${=EDITOR} $HOME/.gitconfig`    | Abrir the Git configuration arquivo in the default text editor.  |
+| gign  | `${=EDITOR} $HOME/.gitignore`    | Abrir the Git ignore arquivo in the default text editor.         |
+| zshrc | `${=EDITOR} $HOME/.zshrc`        | Abrir the Zsh configuration arquivo in the default text editor.  |

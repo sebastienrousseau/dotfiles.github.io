@@ -47,12 +47,12 @@ plain text files.
 
 | Alias  | Command     | Description  |
 | ------ | ----------- | ------------ |
-| e      | `${editor}` | Edit a file. |
-| edit   | `${editor}` | Edit a file. |
-| editor | `${editor}` | Edit a file. |
-| mate   | `${editor}` | Edit a file. |
-| n      | `${editor}` | Edit a file. |
-| v      | `${editor}` | Edit a file. |
+| e      | `${editor}` | Edit a arquivo. |
+| edit   | `${editor}` | Edit a arquivo. |
+| editor | `${editor}` | Edit a arquivo. |
+| mate   | `${editor}` | Edit a arquivo. |
+| n      | `${editor}` | Edit a arquivo. |
+| v      | `${editor}` | Edit a arquivo. |
 
 [np++]: https://notepad-plus-plus.org/
 [gdt]: https://wiki.gnome.org/Apps/Gedit

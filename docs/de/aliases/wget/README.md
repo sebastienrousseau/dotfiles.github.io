@@ -39,7 +39,7 @@ FTP protocols, as well as retrieval through HTTP proxies.
 
 | Alias | Befehl                | Beschreibung                                                               |
 | ----- | ------------------ | ------------------------------------- |
-| wg    | `wget`             | Download a file.                      |
-| wgc   | `wg`               | Continue a partially-downloaded file. |
-| wge   | `wg -e robots=off` | Download a file, ignoring robots.txt. |
-| wget  | `wget -c`          | Continue a partially-downloaded file. |
+| wg    | `wget`             | Download a Datei.                      |
+| wgc   | `wg`               | Continue a partially-downloaded Datei. |
+| wge   | `wg -e robots=off` | Download a Datei, ignoring robots.txt. |
+| wget  | `wget -c`          | Continue a partially-downloaded Datei. |

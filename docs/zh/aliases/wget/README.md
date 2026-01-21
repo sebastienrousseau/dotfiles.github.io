@@ -39,7 +39,7 @@ FTP protocols, as well as retrieval through HTTP proxies.
 
 | 别名  | 命令                   | 描述                                                                       |
 | ----- | ------------------ | ------------------------------------- |
-| wg    | `wget`             | Download a file.                      |
-| wgc   | `wg`               | Continue a partially-downloaded file. |
-| wge   | `wg -e robots=off` | Download a file, ignoring robots.txt. |
-| wget  | `wget -c`          | Continue a partially-downloaded file. |
+| wg    | `wget`             | Download a 文件.                      |
+| wgc   | `wg`               | Continue a partially-downloaded 文件. |
+| wge   | `wg -e robots=off` | Download a 文件, ignoring robots.txt. |
+| wget  | `wget -c`          | Continue a partially-downloaded 文件. |

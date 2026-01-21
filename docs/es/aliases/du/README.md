@@ -38,10 +38,10 @@ that directory and its subdirectories.
 
 | Alias | Comando               | Descripción                                                                |
 | ----- | ------------ | --------------------------------------------------------------------------- | -------------------------------------------------------- | ---------------------------------------------------------- |
-| du    | `du -h`      | Show the disk usage of the current directory.                               |
-| du1   | `du -hxd 1   | sort -h`                                                                    | File size of files and directories in current directory. |
-| ducks | `du -cks _._ | sort -rn                                                                    | head -n 10`                                              | Top 10 largest files and directories in current directory. |
-| duh   | `du`         | File size of files and directories.                                         |
-| dus   | `du -hs *`   | File size human readable output sorted by size.                             |
-| dusym | `du * -hsLc` | File size of files and directories in current directory including symlinks. |
-| dut   | `dus`        | Total file size of current directory.                                       |
+| du    | `du -h`      | Mostrar the disk usage of the current directorio.                               |
+| du1   | `du -hxd 1   | sort -h`                                                                    | archivo size of archivos and directories in current directorio. |
+| ducks | `du -cks _._ | sort -rn                                                                    | head -n 10`                                              | Top 10 largest archivos and directories in current directorio. |
+| duh   | `du`         | archivo size of archivos and directories.                                         |
+| dus   | `du -hs *`   | archivo size human readable output sorted by size.                             |
+| dusym | `du * -hsLc` | archivo size of archivos and directories in current directorio including symlinks. |
+| dut   | `dus`        | Total archivo size of current directorio.                                       |

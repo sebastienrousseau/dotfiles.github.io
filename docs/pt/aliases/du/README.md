@@ -38,10 +38,10 @@ that directory and its subdirectories.
 
 | Alias | Comando               | Descrição                                                                  |
 | ----- | ------------ | --------------------------------------------------------------------------- | -------------------------------------------------------- | ---------------------------------------------------------- |
-| du    | `du -h`      | Show the disk usage of the current directory.                               |
-| du1   | `du -hxd 1   | sort -h`                                                                    | File size of files and directories in current directory. |
-| ducks | `du -cks _._ | sort -rn                                                                    | head -n 10`                                              | Top 10 largest files and directories in current directory. |
-| duh   | `du`         | File size of files and directories.                                         |
-| dus   | `du -hs *`   | File size human readable output sorted by size.                             |
-| dusym | `du * -hsLc` | File size of files and directories in current directory including symlinks. |
-| dut   | `dus`        | Total file size of current directory.                                       |
+| du    | `du -h`      | Mostrar the disk usage of the current diretório.                               |
+| du1   | `du -hxd 1   | sort -h`                                                                    | arquivo size of arquivos and directories in current diretório. |
+| ducks | `du -cks _._ | sort -rn                                                                    | head -n 10`                                              | Top 10 largest arquivos and directories in current diretório. |
+| duh   | `du`         | arquivo size of arquivos and directories.                                         |
+| dus   | `du -hs *`   | arquivo size human readable output sorted by size.                             |
+| dusym | `du * -hsLc` | arquivo size of arquivos and directories in current diretório including symlinks. |
+| dut   | `dus`        | Total arquivo size of current diretório.                                       |

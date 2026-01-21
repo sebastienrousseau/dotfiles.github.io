@@ -38,36 +38,36 @@ is fast, disk space efficient, and reliable.
 
 | 别名  | 命令                   | 描述                                                                       |
 | ----- | ------------------------------------ | -------------------------------------------------------- |
-| pna   | `pnpm add`                           | Add a package to the project                             |
-| pnad  | `pnpm add --save-dev`                | Add a package to the project as a development dependency |
-| pnap  | `pnpm add --save-peer`               | Add a package to the project as a peer dependency        |
+| pna   | `pnpm add`                           | 添加 a package to the project                             |
+| pnad  | `pnpm add --save-dev`                | 添加 a package to the project as a development dependency |
+| pnap  | `pnpm add --save-peer`               | 添加 a package to the project as a peer dependency        |
 | pnau  | `pnpm audit`                         | Audit the project for vulnerabilities                    |
-| pnb   | `pnpm run build`                     | Build the project                                        |
-| pnc   | `pnpm create`                        | Create a new project                                     |
+| pnb   | `pnpm run build`                     | 构建 the project                                        |
+| pnc   | `pnpm create`                        | 创建 a new project                                     |
 | pnd   | `pnpm run dev`                       | Run the project in development mode                      |
 | pndoc | `pnpm run doc`                       | Generate documentation for the project                   |
-| pnga  | `pnpm add --global`                  | Add a package to the global store                        |
-| pngls | `pnpm list --global`                 | List packages in the global store                        |
-| pngrm | `pnpm remove --global`               | Remove a package from the global store                   |
-| pngu  | `pnpm update --global`               | Update a package in the global store                     |
-| pnh   | `pnpm help`                          | Show help for a command                                  |
-| pni   | `pnpm init`                          | Initialize a new project                                 |
-| pnin  | `pnpm install`                       | Install the project's dependencies                       |
+| pnga  | `pnpm add --global`                  | 添加 a package to the global store                        |
+| pngls | `pnpm list --global`                 | 列出 packages in the global store                        |
+| pngrm | `pnpm remove --global`               | 移除 a package from the global store                   |
+| pngu  | `pnpm update --global`               | 更新 a package in the global store                     |
+| pnh   | `pnpm help`                          | 显示 help for a command                                  |
+| pni   | `pnpm init`                          | 初始化 a new project                                 |
+| pnin  | `pnpm install`                       | 安装 the project's dependencies                       |
 | pnln  | `pnpm run lint`                      | Runs `pnpm run lint`                                     |
-| pnls  | `pnpm list`                          | List packages in the project                             |
-| pnout | `pnpm outdated`                      | Check for outdated packages                              |
+| pnls  | `pnpm list`                          | 列出 packages in the project                             |
+| pnout | `pnpm outdated`                      | 检查 for outdated packages                              |
 | pnp   | `pnpm`                               | Run a PNpm command                                       |
 | pnpub | `pnpm publish`                       | Publish the project                                      |
-| pnrm  | `pnpm remove`                        | Remove a package from the project                        |
+| pnrm  | `pnpm remove`                        | 移除 a package from the project                        |
 | pnrun | `pnpm run`                           | Run a script in the project                              |
 | pns   | `pnpm run serve`                     | Run the project in production mode                       |
-| pnst  | `pnpm start`                         | Start the project                                        |
-| pnsv  | `pnpm server`                        | Start the project's development server                   |
+| pnst  | `pnpm start`                         | 开始 the project                                        |
+| pnsv  | `pnpm server`                        | 开始 the project's development server                   |
 | pnt   | `pnpm test`                          | Run the project's tests                                  |
 | pntc  | `pnpm test --coverage`               | Run the project's tests with coverage                    |
-| pnui  | `pnpm update --interactive`          | Update packages interactively                            |
-| pnuil | `pnpm update --interactive --latest` | Update packages interactively to the latest version      |
-| pnun  | `pnpm uninstall`                     | Remove a package from the project                        |
-| pnup  | `pnpm update`                        | Update packages in the project                           |
-| pnwhy | `pnpm why`                           | Show why a package is installed                          |
+| pnui  | `pnpm update --interactive`          | 更新 packages interactively                            |
+| pnuil | `pnpm update --interactive --latest` | 更新 packages interactively to the latest version      |
+| pnun  | `pnpm uninstall`                     | 移除 a package from the project                        |
+| pnup  | `pnpm update`                        | 更新 packages in the project                           |
+| pnwhy | `pnpm why`                           | 显示 why a package is installed                          |
 | pnx   | `pnpx`                               | Run a PNpx command                                       |

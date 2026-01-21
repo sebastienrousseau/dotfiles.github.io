@@ -38,10 +38,10 @@ that directory and its subdirectories.
 
 | Alias | Befehl                | Beschreibung                                                               |
 | ----- | ------------ | --------------------------------------------------------------------------- | -------------------------------------------------------- | ---------------------------------------------------------- |
-| du    | `du -h`      | Show the disk usage of the current directory.                               |
-| du1   | `du -hxd 1   | sort -h`                                                                    | File size of files and directories in current directory. |
-| ducks | `du -cks _._ | sort -rn                                                                    | head -n 10`                                              | Top 10 largest files and directories in current directory. |
-| duh   | `du`         | File size of files and directories.                                         |
-| dus   | `du -hs *`   | File size human readable output sorted by size.                             |
-| dusym | `du * -hsLc` | File size of files and directories in current directory including symlinks. |
-| dut   | `dus`        | Total file size of current directory.                                       |
+| du    | `du -h`      | Zeigen the disk usage of the current Verzeichnis.                               |
+| du1   | `du -hxd 1   | sort -h`                                                                    | Datei size of Dateien and directories in current Verzeichnis. |
+| ducks | `du -cks _._ | sort -rn                                                                    | head -n 10`                                              | Top 10 largest Dateien and directories in current Verzeichnis. |
+| duh   | `du`         | Datei size of Dateien and directories.                                         |
+| dus   | `du -hs *`   | Datei size human readable output sorted by size.                             |
+| dusym | `du * -hsLc` | Datei size of Dateien and directories in current Verzeichnis including symlinks. |
+| dut   | `dus`        | Total Datei size of current Verzeichnis.                                       |

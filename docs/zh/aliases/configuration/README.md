@@ -36,8 +36,8 @@ the configuration files for the terminal and the shell.
 
 | 别名  | 命令                   | 描述                                                                       |
 | ----- | -------------------------------- | ------------------------------------------------------------ |
-| bshp  | `${=EDITOR} $HOME/.bash_profile` | Open the Bash profile in the default text editor.            |
-| bshrc | `${=EDITOR} $HOME/.bashrc`       | Open the Bash configuration file in the default text editor. |
-| gcfg  | `${=EDITOR} $HOME/.gitconfig`    | Open the Git configuration file in the default text editor.  |
-| gign  | `${=EDITOR} $HOME/.gitignore`    | Open the Git ignore file in the default text editor.         |
-| zshrc | `${=EDITOR} $HOME/.zshrc`        | Open the Zsh configuration file in the default text editor.  |
+| bshp  | `${=EDITOR} $HOME/.bash_profile` | 打开 the Bash profile in the default text editor.            |
+| bshrc | `${=EDITOR} $HOME/.bashrc`       | 打开 the Bash configuration 文件 in the default text editor. |
+| gcfg  | `${=EDITOR} $HOME/.gitconfig`    | 打开 the Git configuration 文件 in the default text editor.  |
+| gign  | `${=EDITOR} $HOME/.gitignore`    | 打开 the Git ignore 文件 in the default text editor.         |
+| zshrc | `${=EDITOR} $HOME/.zshrc`        | 打开 the Zsh configuration 文件 in the default text editor.  |

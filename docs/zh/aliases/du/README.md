@@ -38,10 +38,10 @@ that directory and its subdirectories.
 
 | 别名  | 命令                   | 描述                                                                       |
 | ----- | ------------ | --------------------------------------------------------------------------- | -------------------------------------------------------- | ---------------------------------------------------------- |
-| du    | `du -h`      | Show the disk usage of the current directory.                               |
-| du1   | `du -hxd 1   | sort -h`                                                                    | File size of files and directories in current directory. |
-| ducks | `du -cks _._ | sort -rn                                                                    | head -n 10`                                              | Top 10 largest files and directories in current directory. |
-| duh   | `du`         | File size of files and directories.                                         |
-| dus   | `du -hs *`   | File size human readable output sorted by size.                             |
-| dusym | `du * -hsLc` | File size of files and directories in current directory including symlinks. |
-| dut   | `dus`        | Total file size of current directory.                                       |
+| du    | `du -h`      | 显示 the disk usage of the current 目录.                               |
+| du1   | `du -hxd 1   | sort -h`                                                                    | 文件 size of 文件 and directories in current 目录. |
+| ducks | `du -cks _._ | sort -rn                                                                    | head -n 10`                                              | Top 10 largest 文件 and directories in current 目录. |
+| duh   | `du`         | 文件 size of 文件 and directories.                                         |
+| dus   | `du -hs *`   | 文件 size human readable output sorted by size.                             |
+| dusym | `du * -hsLc` | 文件 size of 文件 and directories in current 目录 including symlinks. |
+| dut   | `dus`        | Total 文件 size of current 目录.                                       |

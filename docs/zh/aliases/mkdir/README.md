@@ -39,9 +39,9 @@ order specified, using mode “rwxrwxrwx” (0777).
 
 | 别名  | 命令                   | 描述                                                                       |
 | ----- | --------------------------- | ------------------------------------------ |
-| mcd   | `mkdir -pv && cd`           | Make directory and cd into it.             |
-| mcdp  | `mkdir -pv && cd`           | Make directory and parents and cd into it. |
-| md    | `mkd`                       | Make directory.                            |
-| mdd   | `mkdir -pv $(date +%Y%m%d)` | Make directory with date.                  |
-| mdp   | `mkdir -pv`                 | Make directory and parents.                |
-| mdt   | `mkdir -pv $(date +%h%m%s)` | Make directory with time.                  |
+| mcd   | `mkdir -pv && cd`           | Make 目录 and cd into it.             |
+| mcdp  | `mkdir -pv && cd`           | Make 目录 and parents and cd into it. |
+| md    | `mkd`                       | Make 目录.                            |
+| mdd   | `mkdir -pv $(date +%Y%m%d)` | Make 目录 with date.                  |
+| mdp   | `mkdir -pv`                 | Make 目录 and parents.                |
+| mdt   | `mkdir -pv $(date +%h%m%s)` | Make 目录 with time.                  |

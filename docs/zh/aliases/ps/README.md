@@ -39,6 +39,6 @@ processes running on the system.
 
 | 别名  | 命令                   | 描述                                                                       |
 | ----- | -------- | --------------------------------------------------------------------------------------------------------------------------------------- |
-| pid   | `ps -f`  | Display the uid, pid, parent pid, recent CPU usage, process start time, controlling tty, elapsed CPU usage, and the associated command. |
+| pid   | `ps -f`  | Display the uid, pid, parent pid, recent CPU usage, process 开始 time, controlling tty, elapsed CPU usage, and the associated command. |
 | ps    | `ps -ef` | Display all processes.                                                                                                                  |
-| psa   | `ps aux` | List all processes.                                                                                                                     |
+| psa   | `ps aux` | 列出 all processes.                                                                                                                     |

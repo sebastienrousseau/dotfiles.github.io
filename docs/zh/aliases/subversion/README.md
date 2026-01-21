@@ -41,40 +41,40 @@ software projects.
 
 | 别名  | 命令                   | 描述                                                                       |
 | ----- | ---------------- | ------------------------------------------------------------------------------------------------------- |
-| sad   | `svn add`        | Put new files and directories under version control                                                     |
-| sau   | `svn auth`       | Manage cached authentication credentials                                                                |
-| sbl   | `svn blame`      | Show when each line of a file was last (or next) changed                                                |
-| scg   | `svn changelist` | Associate (or dissociate) changelist CLNAME with the named files                                        |
-| sco   | `svn checkout`   | Check out a working copy from a repository                                                              |
-| scl   | `svn cleanup`    | Either recover from an interrupted operation that left the working copy locked, or remove unwanted file |
-| sci   | `svn commit`     | Send changes from your working copy to the repository                                                   |
-| scp   | `svn copy`       | Copy files and directories in a working copy or repository                                              |
-| sct   | `svn cat`        | Output the content of specified files or URLs                                                           |
+| sad   | `svn add`        | Put new 文件 and directories under version control                                                     |
+| sau   | `svn auth`       | 管理 cached authentication credentials                                                                |
+| sbl   | `svn blame`      | 显示 when each line of a 文件 was last (or next) changed                                                |
+| scg   | `svn changelist` | Associate (or dissociate) changelist CLNAME with the named 文件                                        |
+| sco   | `svn checkout`   | 检查 out a working 复制 from a repository                                                              |
+| scl   | `svn cleanup`    | Either recover from an interrupted operation that left the working 复制 locked, or 移除 unwanted 文件 |
+| sci   | `svn commit`     | Send changes from your working 复制 to the repository                                                   |
+| scp   | `svn copy`       | 复制 文件 and directories in a working 复制 or repository                                              |
+| sct   | `svn cat`        | Output the content of specified 文件 or URLs                                                           |
 | sdi   | `svn diff`       | Display local changes or differences between two revisions or paths                                     |
-| sdl   | `svn delete`     | Remove files and directories from version control                                                       |
+| sdl   | `svn delete`     | 移除 文件 and directories from version control                                                       |
 | shp   | `svn help`       | Describe the usage of this program or its subcommands                                                   |
 | sin   | `svn info`       | Display information about a local or remote item                                                        |
-| sip   | `svn import`     | Commit an un-versioned file or tree into the repository                                                 |
-| slg   | `svn log`        | Show the log messages for a set of revision(s) and/or path(s)                                           |
-| slk   | `svn lock`       | Lock working copy paths or URLs in the repository, no other user can commit changes to them             |
-| sls   | `svn list`       | List directory entries in the repository                                                                |
-| smd   | `svn mkdir`      | Create a new directory under version control                                                            |
-| smg   | `svn merge`      | Merge changes into a working copy                                                                       |
+| sip   | `svn import`     | Commit an un-versioned 文件 or tree into the repository                                                 |
+| slg   | `svn log`        | 显示 the log messages for a set of revision(s) and/or path(s)                                           |
+| slk   | `svn lock`       | Lock working 复制 paths or URLs in the repository, no other user can commit changes to them             |
+| sls   | `svn list`       | 列出 目录 entries in the repository                                                                |
+| smd   | `svn mkdir`      | 创建 a new 目录 under version control                                                            |
+| smg   | `svn merge`      | Merge changes into a working 复制                                                                       |
 | smgi  | `svn mergeinfo`  | Display merge-related information                                                                       |
-| smv   | `svn move`       | Move (rename) an item in a working copy or repository                                                   |
-| sp    | `svn propset`    | Set the value of a property on files, dirs, or revisions                                                |
-| spdl  | `svn propdel`    | Remove a property from files, dirs, or revisions                                                        |
+| smv   | `svn move`       | 移动 (重命名) an item in a working 复制 or repository                                                   |
+| sp    | `svn propset`    | Set the value of a property on 文件, dirs, or revisions                                                |
+| spdl  | `svn propdel`    | 移除 a property from 文件, dirs, or revisions                                                        |
 | spdt  | `svn propedit`   | Edit a property with an external editor                                                                 |
-| spgt  | `svn propget`    | Print the value of a property on files, dirs, or revisions                                              |
-| sph   | `svn patch`      | Apply a patch to a working copy                                                                         |
-| spls  | `svn proplist`   | List all properties on files, dirs, or revisions                                                        |
-| srl   | `svn relocate`   | Relocate the working copy to point to a different repository root URL                                   |
-| srs   | `svn resolve`    | Resolve conflicts on working copy files or directories                                                  |
-| srsd  | `svn resolved`   | Remove 'conflicted' state on working copy files or directories                                          |
-| srv   | `svn revert`     | Restore pristine working copy state (undo local changes)                                                |
-| sst   | `svn status`     | Print the status of working copy files and directories                                                  |
-| ssw   | `svn switch`     | Update the working copy to a different URL within the same repository                                   |
-| sulk  | `svn unlock`     | Unlock working copy paths or URLs.                                                                      |
-| sup   | `svn update`     | Bring changes from the repository into the working copy                                                 |
-| supg  | `svn upgrade`    | Upgrade the metadata storage format for a working copy                                                  |
-| sxp   | `svn export`     | Create an un-versioned copy of a tree                                                                   |
+| spgt  | `svn propget`    | 打印 the value of a property on 文件, dirs, or revisions                                              |
+| sph   | `svn patch`      | Apply a patch to a working 复制                                                                         |
+| spls  | `svn proplist`   | 列出 all properties on 文件, dirs, or revisions                                                        |
+| srl   | `svn relocate`   | Relocate the working 复制 to point to a different repository root URL                                   |
+| srs   | `svn resolve`    | Resolve conflicts on working 复制 文件 or directories                                                  |
+| srsd  | `svn resolved`   | 移除 'conflicted' state on working 复制 文件 or directories                                          |
+| srv   | `svn revert`     | Restore pristine working 复制 state (撤消 local changes)                                                |
+| sst   | `svn status`     | 打印 the status of working 复制 文件 and directories                                                  |
+| ssw   | `svn switch`     | 更新 the working 复制 to a different URL within the same repository                                   |
+| sulk  | `svn unlock`     | Unlock working 复制 paths or URLs.                                                                      |
+| sup   | `svn update`     | Bring changes from the repository into the working 复制                                                 |
+| supg  | `svn upgrade`    | Upgrade the metadata storage format for a working 复制                                                  |
+| sxp   | `svn export`     | 创建 an un-versioned 复制 of a tree                                                                   |

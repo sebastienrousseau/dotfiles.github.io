@@ -41,40 +41,40 @@ software projects.
 
 | Alias | Befehl                | Beschreibung                                                               |
 | ----- | ---------------- | ------------------------------------------------------------------------------------------------------- |
-| sad   | `svn add`        | Put new files and directories under version control                                                     |
-| sau   | `svn auth`       | Manage cached authentication credentials                                                                |
-| sbl   | `svn blame`      | Show when each line of a file was last (or next) changed                                                |
-| scg   | `svn changelist` | Associate (or dissociate) changelist CLNAME with the named files                                        |
-| sco   | `svn checkout`   | Check out a working copy from a repository                                                              |
-| scl   | `svn cleanup`    | Either recover from an interrupted operation that left the working copy locked, or remove unwanted file |
-| sci   | `svn commit`     | Send changes from your working copy to the repository                                                   |
-| scp   | `svn copy`       | Copy files and directories in a working copy or repository                                              |
-| sct   | `svn cat`        | Output the content of specified files or URLs                                                           |
+| sad   | `svn add`        | Put new Dateien and directories under version control                                                     |
+| sau   | `svn auth`       | Verwalten cached authentication credentials                                                                |
+| sbl   | `svn blame`      | Zeigen when each line of a Datei was last (or next) changed                                                |
+| scg   | `svn changelist` | Associate (or dissociate) changelist CLNAME with the named Dateien                                        |
+| sco   | `svn checkout`   | Prüfen out a working Kopieren from a repository                                                              |
+| scl   | `svn cleanup`    | Either recover from an interrupted operation that left the working Kopieren locked, or Entfernen unwanted Datei |
+| sci   | `svn commit`     | Send changes from your working Kopieren to the repository                                                   |
+| scp   | `svn copy`       | Kopieren Dateien and directories in a working Kopieren or repository                                              |
+| sct   | `svn cat`        | Output the content of specified Dateien or URLs                                                           |
 | sdi   | `svn diff`       | Display local changes or differences between two revisions or paths                                     |
-| sdl   | `svn delete`     | Remove files and directories from version control                                                       |
+| sdl   | `svn delete`     | Entfernen Dateien and directories from version control                                                       |
 | shp   | `svn help`       | Describe the usage of this program or its subcommands                                                   |
 | sin   | `svn info`       | Display information about a local or remote item                                                        |
-| sip   | `svn import`     | Commit an un-versioned file or tree into the repository                                                 |
-| slg   | `svn log`        | Show the log messages for a set of revision(s) and/or path(s)                                           |
-| slk   | `svn lock`       | Lock working copy paths or URLs in the repository, no other user can commit changes to them             |
-| sls   | `svn list`       | List directory entries in the repository                                                                |
-| smd   | `svn mkdir`      | Create a new directory under version control                                                            |
-| smg   | `svn merge`      | Merge changes into a working copy                                                                       |
+| sip   | `svn import`     | Commit an un-versioned Datei or tree into the repository                                                 |
+| slg   | `svn log`        | Zeigen the log messages for a set of revision(s) and/or path(s)                                           |
+| slk   | `svn lock`       | Lock working Kopieren paths or URLs in the repository, no other user can commit changes to them             |
+| sls   | `svn list`       | Auflisten Verzeichnis entries in the repository                                                                |
+| smd   | `svn mkdir`      | Erstellen a new Verzeichnis under version control                                                            |
+| smg   | `svn merge`      | Merge changes into a working Kopieren                                                                       |
 | smgi  | `svn mergeinfo`  | Display merge-related information                                                                       |
-| smv   | `svn move`       | Move (rename) an item in a working copy or repository                                                   |
-| sp    | `svn propset`    | Set the value of a property on files, dirs, or revisions                                                |
-| spdl  | `svn propdel`    | Remove a property from files, dirs, or revisions                                                        |
+| smv   | `svn move`       | Bewegen (Umbenennen) an item in a working Kopieren or repository                                                   |
+| sp    | `svn propset`    | Set the value of a property on Dateien, dirs, or revisions                                                |
+| spdl  | `svn propdel`    | Entfernen a property from Dateien, dirs, or revisions                                                        |
 | spdt  | `svn propedit`   | Edit a property with an external editor                                                                 |
-| spgt  | `svn propget`    | Print the value of a property on files, dirs, or revisions                                              |
-| sph   | `svn patch`      | Apply a patch to a working copy                                                                         |
-| spls  | `svn proplist`   | List all properties on files, dirs, or revisions                                                        |
-| srl   | `svn relocate`   | Relocate the working copy to point to a different repository root URL                                   |
-| srs   | `svn resolve`    | Resolve conflicts on working copy files or directories                                                  |
-| srsd  | `svn resolved`   | Remove 'conflicted' state on working copy files or directories                                          |
-| srv   | `svn revert`     | Restore pristine working copy state (undo local changes)                                                |
-| sst   | `svn status`     | Print the status of working copy files and directories                                                  |
-| ssw   | `svn switch`     | Update the working copy to a different URL within the same repository                                   |
-| sulk  | `svn unlock`     | Unlock working copy paths or URLs.                                                                      |
-| sup   | `svn update`     | Bring changes from the repository into the working copy                                                 |
-| supg  | `svn upgrade`    | Upgrade the metadata storage format for a working copy                                                  |
-| sxp   | `svn export`     | Create an un-versioned copy of a tree                                                                   |
+| spgt  | `svn propget`    | Drucken the value of a property on Dateien, dirs, or revisions                                              |
+| sph   | `svn patch`      | Apply a patch to a working Kopieren                                                                         |
+| spls  | `svn proplist`   | Auflisten all properties on Dateien, dirs, or revisions                                                        |
+| srl   | `svn relocate`   | Relocate the working Kopieren to point to a different repository root URL                                   |
+| srs   | `svn resolve`    | Resolve conflicts on working Kopieren Dateien or directories                                                  |
+| srsd  | `svn resolved`   | Entfernen 'conflicted' state on working Kopieren Dateien or directories                                          |
+| srv   | `svn revert`     | Restore pristine working Kopieren state (rückgängig machen local changes)                                                |
+| sst   | `svn status`     | Drucken the status of working Kopieren Dateien and directories                                                  |
+| ssw   | `svn switch`     | Aktualisieren the working Kopieren to a different URL within the same repository                                   |
+| sulk  | `svn unlock`     | Unlock working Kopieren paths or URLs.                                                                      |
+| sup   | `svn update`     | Bring changes from the repository into the working Kopieren                                                 |
+| supg  | `svn upgrade`    | Upgrade the metadata storage format for a working Kopieren                                                  |
+| sxp   | `svn export`     | Erstellen an un-versioned Kopieren of a tree                                                                   |

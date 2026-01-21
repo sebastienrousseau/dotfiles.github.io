@@ -35,8 +35,8 @@ variety of formats.
 
 | Alias | Comando               | Descrição                                                                  |
 | ----- | ------- | -------------------------------------------------------------------- |
-| c7z   | `7z a`  | Compress a whole directory (including subdirectories) to a 7z file.  |
-| e7z   | `7z x`  | Extract a whole directory (including subdirectories) from a 7z file. |
+| c7z   | `7z a`  | Compress a whole diretório (including subdirectories) to a 7z arquivo.  |
+| e7z   | `7z x`  | Extract a whole diretório (including subdirectories) from a 7z arquivo. |
 
 ## Bzip2
 
@@ -45,8 +45,8 @@ data compressor.
 
 | Alias | Comando               | Descrição                                                                  |
 | ----- | --------- | ------------------------------- |
-| cbz2  | `bzip2`   | Compress a file to a bz2 file.  |
-| ebz2  | `bunzip2` | Extract a file from a bz2 file. |
+| cbz2  | `bzip2`   | Compress a arquivo to a bz2 arquivo.  |
+| ebz2  | `bunzip2` | Extract a arquivo from a bz2 arquivo. |
 
 ## Gzip
 
@@ -55,8 +55,8 @@ as a replacement for compress.
 
 | Alias | Comando               | Descrição                                                                  |
 | ----- | -------- | ------------------------------ |
-| cgz   | `gzip`   | Compress a file to a gz file.  |
-| egz   | `gunzip` | Extract a file from a gz file. |
+| cgz   | `gzip`   | Compress a arquivo to a gz arquivo.  |
+| egz   | `gunzip` | Extract a arquivo from a gz arquivo. |
 
 ## Jar
 
@@ -66,8 +66,8 @@ libraries on the Java platform.
 
 | Alias | Comando               | Descrição                                                                  |
 | ----- | ---------- | --------------------------------------------------------------------- |
-| cjar  | `jar -cvf` | Compress a whole directory (including subdirectories) to a jar file.  |
-| ejar  | `jar -xvf` | Extract a whole directory (including subdirectories) from a jar file. |
+| cjar  | `jar -cvf` | Compress a whole diretório (including subdirectories) to a jar arquivo.  |
+| ejar  | `jar -xvf` | Extract a whole diretório (including subdirectories) from a jar arquivo. |
 
 ## Tar
 
@@ -76,10 +76,10 @@ many files together in a single file.
 
 | Alias | Comando               | Descrição                                                                  |
 | ----- | ----------- | ------------------------------------------------------------------------ |
-| ctar  | `tar -cvf`  | Compress a whole directory (including subdirectories) to a tar file.     |
-| etar  | `tar -xvf`  | Extract a whole directory (including subdirectories) from a tar file.    |
-| ctgz  | `tar -cvzf` | Compress a whole directory (including subdirectories) to a tar.gz file.  |
-| etgz  | `tar -xvzf` | Extract a whole directory (including subdirectories) from a tar.gz file. |
+| ctar  | `tar -cvf`  | Compress a whole diretório (including subdirectories) to a tar arquivo.     |
+| etar  | `tar -xvf`  | Extract a whole diretório (including subdirectories) from a tar arquivo.    |
+| ctgz  | `tar -cvzf` | Compress a whole diretório (including subdirectories) to a tar.gz arquivo.  |
+| etgz  | `tar -xvzf` | Extract a whole diretório (including subdirectories) from a tar.gz arquivo. |
 
 ## Xz
 
@@ -88,8 +88,8 @@ with a high compression ratio.
 
 | Alias | Comando               | Descrição                                                                  |
 | ----- | ---------- | -------------------------------------------------------------------- |
-| cxz   | `xz -zcvf` | Compress a whole directory (including subdirectories) to a xz file.  |
-| exz   | `xz -zxvf` | Extract a whole directory (including subdirectories) from a xz file. |
+| cxz   | `xz -zcvf` | Compress a whole diretório (including subdirectories) to a xz arquivo.  |
+| exz   | `xz -zxvf` | Extract a whole diretório (including subdirectories) from a xz arquivo. |
 
 ## Zip
 
@@ -98,8 +98,8 @@ output a single file containing one or more files.
 
 | Alias | Comando               | Descrição                                                                  |
 | ----- | -------- | --------------------------------------------------------------------- |
-| cz    | `zip -r` | Compress a whole directory (including subdirectories) to a zip file.  |
-| ez    | `unzip`  | Extract a whole directory (including subdirectories) from a zip file. |
+| cz    | `zip -r` | Compress a whole diretório (including subdirectories) to a zip arquivo.  |
+| ez    | `unzip`  | Extract a whole diretório (including subdirectories) from a zip arquivo. |
 
 ## Zstd
 
@@ -109,5 +109,5 @@ compression ratios.
 
 | Alias | Comando               | Descrição                                                                  |
 | ----- | ------------ | --------------------------------------------------------------------- |
-| czstd | `zstd -zcvf` | Compress a whole directory (including subdirectories) to a zst file.  |
-| ezstd | `zstd -zxvf` | Extract a whole directory (including subdirectories) from a zst file. |
+| czstd | `zstd -zcvf` | Compress a whole diretório (including subdirectories) to a zst arquivo.  |
+| ezstd | `zstd -zxvf` | Extract a whole diretório (including subdirectories) from a zst arquivo. |

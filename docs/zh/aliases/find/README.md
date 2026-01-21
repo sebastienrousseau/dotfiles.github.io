@@ -44,17 +44,17 @@ use cases.
 | 别名  | 命令                   | 描述                                                                       |
 | ----- | -------------------- | ----------------------------------------------------------- |
 | fd    | `fd --color always`  | always colorize output by default.                          |
-| fda   | `fd --absolute-path` | list all files with absolute path.                          |
-| fdc   | `fd --ignore-case`   | list all files with case insensitive search.                |
-| fdd   | `fd --list-details`  | list all files with details.                                |
-| fde   | `fd --extension`     | list all files with extension.                              |
-| fdf   | `fd --follow`        | list all files with follow symlinks.                        |
-| fdh   | `fd --help`          | list all files with help.                                   |
-| fdh   | `fd --hidden`        | list all files with hidden files.                           |
-| fdn   | `fd --glob`          | list all files with glob.                                   |
-| fdo   | `fd --owner`         | list all files with owner.                                  |
-| fds   | `fd --size`          | list all files with size.                                   |
-| fdu   | `fd --exclude`       | list all files with exclude.                                |
-| fdv   | `fd --version`       | list all files with version.                                |
-| fdx   | `fd --exec`          | Execute a command for each search result.                   |
-| find  | `fd`                 | fd is a simple, fast and user-friendly alternative to find. |
+| fda   | `fd --absolute-path` | 列出 all 文件 with absolute path.                          |
+| fdc   | `fd --ignore-case`   | 列出 all 文件 with case insensitive 搜索.                |
+| fdd   | `fd --list-details`  | 列出 all 文件 with details.                                |
+| fde   | `fd --extension`     | 列出 all 文件 with extension.                              |
+| fdf   | `fd --follow`        | 列出 all 文件 with follow symlinks.                        |
+| fdh   | `fd --help`          | 列出 all 文件 with help.                                   |
+| fdh   | `fd --hidden`        | 列出 all 文件 with hidden 文件.                           |
+| fdn   | `fd --glob`          | 列出 all 文件 with glob.                                   |
+| fdo   | `fd --owner`         | 列出 all 文件 with owner.                                  |
+| fds   | `fd --size`          | 列出 all 文件 with size.                                   |
+| fdu   | `fd --exclude`       | 列出 all 文件 with exclude.                                |
+| fdv   | `fd --version`       | 列出 all 文件 with version.                                |
+| fdx   | `fd --exec`          | Execute a command for each 搜索 result.                   |
+| find  | `fd`                 | fd is a simple, fast and user-friendly alternative to 查找. |

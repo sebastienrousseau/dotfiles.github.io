@@ -24,8 +24,8 @@ dot [command]
 | Command      | Description                                                                                                                      |
 | :----------- | :------------------------------------------------------------------------------------------------------------------------------- |
 | `dot learn`  | **Interactive Mode**: Launches a tour of the Modern Core tools (Atuin, Yazi, Zellij) and AI features.                            |
-| `dot doctor` | **Health Check**: Verifies that your system is correctly configured and all dependencies are installed. (Wraps `chezmoi doctor`) |
-| `dot update` | **Update System**: Pulls the latest changes from the repository and reapplies them. (Wraps `chezmoi update`)                     |
+| `dot doctor` | **Health Prüfen**: Verifies that your system is correctly configured and all dependencies are installed. (Wraps `chezmoi doctor`) |
+| `dot update` | **Aktualisieren System**: Pulls the latest changes from the repository and reapplies them. (Wraps `chezmoi Aktualisieren`)                     |
 | `dot help`   | **Help**: Displays usage information.                                                                                            |
 
 ## Examples

@@ -44,29 +44,29 @@ a directory.
 
 | Alias  | Command              | Description                                            |
 | ------ | -------------------- | ------------------------------------------------------ | --------------------------- |
-| l.     | `ls -dlhF .\*        | grep -v "^d"`                                          | List hidden files.          |
-| l      | `ls -lFh`            | Size, show type, human readable.                       |
-| l1     | `ls -1`              | Display one file per line.                             |
-| la     | `ls -lAFh`           | All files, show type, human readable.                  |
-| labc   | `ls -lap`            | List all files in alphabetical order.                  |
-| lc     | `wc -l`              | Count the number of lines in the file.                 |
-| lct    | `ls -lcrh`           | List files by time, newest first.                      |
+| l.     | `ls -dlhF .\*        | grep -v "^d"`                                          | 列出 hidden 文件.          |
+| l      | `ls -lFh`            | Size, 显示 type, human readable.                       |
+| l1     | `ls -1`              | Display one 文件 per line.                             |
+| la     | `ls -lAFh`           | All 文件, 显示 type, human readable.                  |
+| labc   | `ls -lap`            | 列出 all 文件 in alphabetical order.                  |
+| lc     | `wc -l`              | Count the number of lines in the 文件.                 |
+| lct    | `ls -lcrh`           | 列出 文件 by time, newest first.                      |
 | ld     | `ls -ltrh`           | Sort by date, oldest first.                            |
-| ldir   | `ls -l               | egrep '^d'`                                            | List directories only.      |
-| ldot   | `l.`                 | List hidden files.                                     |
-| left   | `ls -t -1`           | List files by date, most recent last.                  |
-| right  | `ls -t -1r`          | List files by date, most recent first.                 |
-| lf     | `ls -l               | egrep -v '^d'`                                         | List files only.            |
+| ldir   | `ls -l               | egrep '^d'`                                            | 列出 directories only.      |
+| ldot   | `l.`                 | 列出 hidden 文件.                                     |
+| left   | `ls -t -1`           | 列出 文件 by date, most recent last.                  |
+| right  | `ls -t -1r`          | 列出 文件 by date, most recent first.                 |
+| lf     | `ls -l               | egrep -v '^d'`                                         | 列出 文件 only.            |
 | lk     | `ls -lSrh`           | Sort by size, largest first.                           |
-| ll     | `la`                 | Long list, show almost all, show type, human readable. |
-| lla    | `ls -l -d $PWD/*`    | List full path of all files in current directory.      |
-| locale | `locale -a           | grep UTF-8`                                            | List all available locales. |
-| lp     | `sudo lsof -i -T -n` | List all open ports.                                   |
-| lr     | `ls -lRh`            | Recursive list, show type, human readable.             |
+| ll     | `la`                 | Long 列出, 显示 almost all, 显示 type, human readable. |
+| lla    | `ls -l -d $PWD/*`    | 列出 full path of all 文件 in current 目录.      |
+| locale | `locale -a           | grep UTF-8`                                            | 列出 all available locales. |
+| lp     | `sudo lsof -i -T -n` | 列出 all 打开 ports.                                   |
+| lr     | `ls -lRh`            | Recursive 列出, 显示 type, human readable.             |
 | ls     | `ls --color`         | Colorize the output.                                   |
-| lS     | `ls -1FSsh`          | Order Files Based on Last Modified Time and size.      |
-| lt     | `tree`               | List contents of directories in a tree-like format.    |
+| lS     | `ls -1FSsh`          | Order 文件 Based on Last Modified Time and size.      |
+| lt     | `tree`               | 列出 contents of directories in a tree-like format.    |
 | lu     | `ls -lurh`           | Sort by date, oldest first.                            |
-| lw     | `ls -xAh`            | Wide list, show almost all, show type, human readable. |
+| lw     | `ls -xAh`            | Wide 列出, 显示 almost all, 显示 type, human readable. |
 | lx     | `ls                  | sort -k 1,1 -t .`                                      | Sort by extension.          |
 | lz     | `ls -lSr`            | Sort by size, smallest first.                          |

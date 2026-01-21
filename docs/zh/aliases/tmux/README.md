@@ -44,11 +44,11 @@ running in the background) and reattach them to a different terminal.
 
 | 别名  | 命令                   | 描述                                                                       |
 | ----- | ------------------------ | ----------------------------------- |
-| tm    | `tmux`                   | Start tmux.                         |
+| tm    | `tmux`                   | 开始 tmux.                         |
 | tma   | `tmux attach-session`    | Attach to a tmux session.           |
 | tmat  | `tmux attach-session -t` | Attach to a tmux session with name. |
 | tmks  | `tmux kill-session -a`   | Kill all tmux sessions.             |
-| tml   | `tmux list-sessions`     | List tmux sessions.                 |
-| tmn   | `tmux new-session`       | Start a new tmux session.           |
-| tmns  | `tmux new -s`            | Start a new tmux session with name. |
-| tms   | `tmux new-session -s`    | Start a new tmux session.           |
+| tml   | `tmux list-sessions`     | 列出 tmux sessions.                 |
+| tmn   | `tmux new-session`       | 开始 a new tmux session.           |
+| tmns  | `tmux new -s`            | 开始 a new tmux session with name. |
+| tms   | `tmux new-session -s`    | 开始 a new tmux session.           |

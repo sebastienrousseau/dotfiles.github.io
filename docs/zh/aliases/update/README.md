@@ -51,7 +51,7 @@ pnpm, rustup (Rust), and gem (Ruby).
 
 | 别名  | 命令                   | 描述                                                                       |
 | ----- | ------------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------- |
-| upd   | `sudo apt update && sudo apt upgrade -y && pnpm up && rustup update stable && sudo gem update && sudo gem cleanup` | Update command for Debian-based Linux operating systems. |
+| upd   | `sudo apt update && sudo apt upgrade -y && pnpm up && rustup update stable && sudo gem update && sudo gem cleanup` | 更新 command for Debian-based Linux operating systems. |
 
 ### macOS
 
@@ -61,4 +61,4 @@ Homebrew, mas, rustup, and gem package managers.
 
 | 别名  | 命令                   | 描述                                                                       |
 | ----- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------ |
-| upd   | `sudo softwareupdate -i -a && pnpm up && rustup update stable && brew cu -ayi && brew doctor && brew update && brew upgrade && brew cleanup && mas upgrade && sudo gem update && sudo gem cleanup` | Update the system. |
+| upd   | `sudo softwareupdate -i -a && pnpm up && rustup update stable && brew cu -ayi && brew doctor && brew update && brew upgrade && brew cleanup && mas upgrade && sudo gem update && sudo gem cleanup` | 更新 the system. |

@@ -35,17 +35,17 @@ the terminal screen.
 | ------ | ----------------------------------------------- | ------------------------------------------------------------------------------------------------------------ |
 | c      | `clear`                                         | Clear the terminal screen.                                                                                   |
 | cl     | `c`                                             | Clear the terminal screen.                                                                                   |
-| clc    | `clear && cat`                                  | Clear the terminal screen and print the contents of the current directory.                                   |
-| clcat  | `clc`                                           | Clear the terminal screen and print the contents of the current directory.                                   |
-| clh    | `clear && history`                              | Clear the terminal screen and print the command history.                                                     |
-| clhist | `clh`                                           | Clear the terminal screen and print the command history.                                                     |
-| clp    | `clear && pwd`                                  | Clear the terminal screen and print the current working directory.                                           |
-| clpwd  | `clp`                                           | Clear the terminal screen and print the current working directory.                                           |
+| clc    | `clear && cat`                                  | Clear the terminal screen and 打印 the contents of the current 目录.                                   |
+| clcat  | `clc`                                           | Clear the terminal screen and 打印 the contents of the current 目录.                                   |
+| clh    | `clear && history`                              | Clear the terminal screen and 打印 the command history.                                                     |
+| clhist | `clh`                                           | Clear the terminal screen and 打印 the command history.                                                     |
+| clp    | `clear && pwd`                                  | Clear the terminal screen and 打印 the current working 目录.                                           |
+| clpwd  | `clp`                                           | Clear the terminal screen and 打印 the current working 目录.                                           |
 | clr    | `c`                                             | Clear the terminal screen.                                                                                   |
 | cls    | `c`                                             | Clear the terminal screen.                                                                                   |
-| clt    | `clear && tree`                                 | Clear the terminal screen and print the directory tree.                                                      |
-| cltree | `clt`                                           | Clear the terminal screen and print the directory tree.                                                      |
-| ct     | `clear && tree ./`                              | Clear the terminal screen and print the directory tree.                                                      |
-| ctree  | `ct`                                            | Clear the terminal screen and print the directory tree.                                                      |
-| cpl    | `clear && pwd && echo '' && ls -a && echo ''`   | Clear the terminal screen and print the current working directory and the contents of the current directory. |
-| cplt   | `clear && pwd && echo '' && tree ./ && echo ''` | Clear the terminal screen and print the current working directory and the directory tree.                    |
+| clt    | `clear && tree`                                 | Clear the terminal screen and 打印 the 目录 tree.                                                      |
+| cltree | `clt`                                           | Clear the terminal screen and 打印 the 目录 tree.                                                      |
+| ct     | `clear && tree ./`                              | Clear the terminal screen and 打印 the 目录 tree.                                                      |
+| ctree  | `ct`                                            | Clear the terminal screen and 打印 the 目录 tree.                                                      |
+| cpl    | `clear && pwd && echo '' && ls -a && echo ''`   | Clear the terminal screen and 打印 the current working 目录 and the contents of the current 目录. |
+| cplt   | `clear && pwd && echo '' && tree ./ && echo ''` | Clear the terminal screen and 打印 the current working 目录 and the 目录 tree.                    |

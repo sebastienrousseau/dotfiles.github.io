@@ -38,14 +38,14 @@ on the page, and more.
 
 | 别名  | 命令                   | 描述                                                                       |
 | ----- | ----------------------------------------------------------------- | --------------------------------------------------------------------------------------- |
-| jkb   | `JEKYLL_ENV=development bundle exec jekyll build`                 | Performs a one off build your site to ./\_site.                                         |
-| jkc   | `JEKYLL_ENV=development bundle exec jekyll clean`                 | Removes all generated files: destination folder, metadata file, Sass and Jekyll caches. |
-| jkd   | `JEKYLL_ENV=development bundle exec jekyll serve --watch --trace` | Does a development build of the site to '\_site' and runs a local development server.   |
-| jkl   | `JEKYLL_ENV=development bundle exec jekyll serve --livereload`    | Does a development build of the site to '\_site' and runs a local development server.   |
-| jko   | `open http://localhost:4000/`                                     | Open local development server.                                                          |
+| jkb   | `JEKYLL_ENV=development bundle exec jekyll build`                 | Performs a one off 构建 your site to ./\_site.                                         |
+| jkc   | `JEKYLL_ENV=development bundle exec jekyll clean`                 | Removes all generated 文件: destination folder, metadata 文件, Sass and Jekyll caches. |
+| jkd   | `JEKYLL_ENV=development bundle exec jekyll serve --watch --trace` | Does a development 构建 of the site to '\_site' and runs a local development server.   |
+| jkl   | `JEKYLL_ENV=development bundle exec jekyll serve --livereload`    | Does a development 构建 of the site to '\_site' and runs a local development server.   |
+| jko   | `open http://localhost:4000/`                                     | 打开 local development server.                                                          |
 
 ## Jekyll release aliases
 
 | 别名  | 命令                   | 描述                                                                       |
 | ----- | ---------------------------------------------------------------- | ------------------------------------------------------------------------------------ |
-| jkp   | `JEKYLL_ENV=production bundle exec jekyll serve --watch --trace` | Does a production build of the site to '\_site' and runs a local development server. |
+| jkp   | `JEKYLL_ENV=production bundle exec jekyll serve --watch --trace` | Does a production 构建 of the site to '\_site' and runs a local development server. |

@@ -13,5 +13,5 @@ Tools for bootstrapping and remote deployment.
 
 | Alias | Description |
 |-------|-------------|
-| `dot-install` | Run the `install.sh` bootstrap script locally. |
+| `dot-install` | Run the `安装.sh` bootstrap script locally. |
 | `dot-teleport` | Teleport your config to a remote server (`dot-teleport user@host`). |

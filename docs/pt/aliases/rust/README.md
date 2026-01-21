@@ -41,21 +41,21 @@ maintaining high performance.
 
 | Alias | Comando               | Descrição                                                                  |
 | ----- | ---------------------------- | --------------------------- |
-| ru    | `rustup update`              | Rustup update.              |
-| rca   | `rustup component add`       | Rustup component add.       |
-| rcl   | `rustup component list`      | Rustup component list.      |
-| rcr   | `rustup component remove`    | Rustup component remove.    |
+| ru    | `rustup update`              | Rustup Atualizar.              |
+| rca   | `rustup component add`       | Rustup component Adicionar.       |
+| rcl   | `rustup component list`      | Rustup component Listar.      |
+| rcr   | `rustup component remove`    | Rustup component Remover.    |
 | rde   | `rustup default`             | Rustup default.             |
 | rnn   | `rustup run nightly`         | Run rustup nightly.         |
 | rns   | `rustup run stable`          | Run rustup stable.          |
-| rtaa  | `rustup target add`          | Rustup target add.          |
-| rtal  | `rustup target list`         | Rustup target list.         |
-| rtar  | `rustup target remove`       | Rustup target remove.       |
-| rti   | `rustup toolchain install`   | Rustup toolchain install.   |
-| rtl   | `rustup toolchain list`      | Rustup toolchain list.      |
+| rtaa  | `rustup target add`          | Rustup target Adicionar.          |
+| rtal  | `rustup target list`         | Rustup target Listar.         |
+| rtar  | `rustup target remove`       | Rustup target Remover.       |
+| rti   | `rustup toolchain install`   | Rustup toolchain Instalar.   |
+| rtl   | `rustup toolchain list`      | Rustup toolchain Listar.      |
 | rtu   | `rustup toolchain uninstall` | Rustup toolchain uninstall. |
-| ruc   | `rustup update nightly`      | Update rustup nightly.      |
-| rus   | `rustup update stable`       | Update rustup stable.       |
+| ruc   | `rustup update nightly`      | Atualizar rustup nightly.      |
+| rus   | `rustup update stable`       | Atualizar rustup stable.       |
 
 ## Cargo
 
@@ -65,24 +65,24 @@ used to build, test, and package Rust projects. Cargo is included with Rustup.
 | Alias  | Command              | Description          |
 | ------ | -------------------- | -------------------- |
 | cg     | `cargo`              | Cargo shortcut.      |
-| cgb    | `cg build`           | Cargo build.         |
+| cgb    | `cg build`           | Cargo Construir.         |
 | cgbh   | `cg bench`           | Cargo bench.         |
-| cgbr   | `cg build --release` | Cargo build release. |
-| cgc    | `cg check`           | Cargo check.         |
+| cgbr   | `cg build --release` | Cargo Construir release. |
+| cgc    | `cg check`           | Cargo Verificar.         |
 | cgcl   | `cg clean`           | Cargo clean.         |
 | cgcy   | `cg clippy`          | Cargo clippy.        |
 | cgd    | `cg doc --open`      | Cargo doc.           |
 | cgdr   | `cg doc --release`   | Cargo doc release.   |
 | cgf    | `cg fmt`             | Cargo format.        |
-| cgi    | `cg install`         | Cargo install.       |
+| cgi    | `cg install`         | Cargo Instalar.       |
 | cginit | `cg init`            | Cargo init.          |
 | cgn    | `cg new`             | Cargo new.           |
 | cgp    | `cg publish`         | Cargo publish.       |
 | cgr    | `cg run`             | Cargo run.           |
 | cgrr   | `cg run --release`   | Cargo run release.   |
-| cgs    | `cg search`          | Cargo search.        |
+| cgs    | `cg search`          | Cargo Pesquisar.        |
 | cgt    | `cg test`            | Cargo test.          |
 | cgtr   | `cg test --release`  | Cargo test release.  |
 | cgtt   | `cg tree`            | Cargo tree.          |
-| cgu    | `cg update`          | Cargo update.        |
+| cgu    | `cg update`          | Cargo Atualizar.        |
 | cgun   | `cg uninstall`       | Cargo uninstall.     |

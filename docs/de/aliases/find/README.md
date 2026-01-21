@@ -44,17 +44,17 @@ use cases.
 | Alias | Befehl                | Beschreibung                                                               |
 | ----- | -------------------- | ----------------------------------------------------------- |
 | fd    | `fd --color always`  | always colorize output by default.                          |
-| fda   | `fd --absolute-path` | list all files with absolute path.                          |
-| fdc   | `fd --ignore-case`   | list all files with case insensitive search.                |
-| fdd   | `fd --list-details`  | list all files with details.                                |
-| fde   | `fd --extension`     | list all files with extension.                              |
-| fdf   | `fd --follow`        | list all files with follow symlinks.                        |
-| fdh   | `fd --help`          | list all files with help.                                   |
-| fdh   | `fd --hidden`        | list all files with hidden files.                           |
-| fdn   | `fd --glob`          | list all files with glob.                                   |
-| fdo   | `fd --owner`         | list all files with owner.                                  |
-| fds   | `fd --size`          | list all files with size.                                   |
-| fdu   | `fd --exclude`       | list all files with exclude.                                |
-| fdv   | `fd --version`       | list all files with version.                                |
-| fdx   | `fd --exec`          | Execute a command for each search result.                   |
-| find  | `fd`                 | fd is a simple, fast and user-friendly alternative to find. |
+| fda   | `fd --absolute-path` | Auflisten all Dateien with absolute path.                          |
+| fdc   | `fd --ignore-case`   | Auflisten all Dateien with case insensitive Suchen.                |
+| fdd   | `fd --list-details`  | Auflisten all Dateien with details.                                |
+| fde   | `fd --extension`     | Auflisten all Dateien with extension.                              |
+| fdf   | `fd --follow`        | Auflisten all Dateien with follow symlinks.                        |
+| fdh   | `fd --help`          | Auflisten all Dateien with help.                                   |
+| fdh   | `fd --hidden`        | Auflisten all Dateien with hidden Dateien.                           |
+| fdn   | `fd --glob`          | Auflisten all Dateien with glob.                                   |
+| fdo   | `fd --owner`         | Auflisten all Dateien with owner.                                  |
+| fds   | `fd --size`          | Auflisten all Dateien with size.                                   |
+| fdu   | `fd --exclude`       | Auflisten all Dateien with exclude.                                |
+| fdv   | `fd --version`       | Auflisten all Dateien with version.                                |
+| fdx   | `fd --exec`          | Execute a command for each Suchen result.                   |
+| find  | `fd`                 | fd is a simple, fast and user-friendly alternative to Finden. |

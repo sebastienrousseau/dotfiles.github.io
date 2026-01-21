@@ -35,17 +35,17 @@ the terminal screen.
 | ------ | ----------------------------------------------- | ------------------------------------------------------------------------------------------------------------ |
 | c      | `clear`                                         | Clear the terminal screen.                                                                                   |
 | cl     | `c`                                             | Clear the terminal screen.                                                                                   |
-| clc    | `clear && cat`                                  | Clear the terminal screen and print the contents of the current directory.                                   |
-| clcat  | `clc`                                           | Clear the terminal screen and print the contents of the current directory.                                   |
-| clh    | `clear && history`                              | Clear the terminal screen and print the command history.                                                     |
-| clhist | `clh`                                           | Clear the terminal screen and print the command history.                                                     |
-| clp    | `clear && pwd`                                  | Clear the terminal screen and print the current working directory.                                           |
-| clpwd  | `clp`                                           | Clear the terminal screen and print the current working directory.                                           |
+| clc    | `clear && cat`                                  | Clear the terminal screen and Imprimir the contents of the current diretório.                                   |
+| clcat  | `clc`                                           | Clear the terminal screen and Imprimir the contents of the current diretório.                                   |
+| clh    | `clear && history`                              | Clear the terminal screen and Imprimir the command history.                                                     |
+| clhist | `clh`                                           | Clear the terminal screen and Imprimir the command history.                                                     |
+| clp    | `clear && pwd`                                  | Clear the terminal screen and Imprimir the current working diretório.                                           |
+| clpwd  | `clp`                                           | Clear the terminal screen and Imprimir the current working diretório.                                           |
 | clr    | `c`                                             | Clear the terminal screen.                                                                                   |
 | cls    | `c`                                             | Clear the terminal screen.                                                                                   |
-| clt    | `clear && tree`                                 | Clear the terminal screen and print the directory tree.                                                      |
-| cltree | `clt`                                           | Clear the terminal screen and print the directory tree.                                                      |
-| ct     | `clear && tree ./`                              | Clear the terminal screen and print the directory tree.                                                      |
-| ctree  | `ct`                                            | Clear the terminal screen and print the directory tree.                                                      |
-| cpl    | `clear && pwd && echo '' && ls -a && echo ''`   | Clear the terminal screen and print the current working directory and the contents of the current directory. |
-| cplt   | `clear && pwd && echo '' && tree ./ && echo ''` | Clear the terminal screen and print the current working directory and the directory tree.                    |
+| clt    | `clear && tree`                                 | Clear the terminal screen and Imprimir the diretório tree.                                                      |
+| cltree | `clt`                                           | Clear the terminal screen and Imprimir the diretório tree.                                                      |
+| ct     | `clear && tree ./`                              | Clear the terminal screen and Imprimir the diretório tree.                                                      |
+| ctree  | `ct`                                            | Clear the terminal screen and Imprimir the diretório tree.                                                      |
+| cpl    | `clear && pwd && echo '' && ls -a && echo ''`   | Clear the terminal screen and Imprimir the current working diretório and the contents of the current diretório. |
+| cplt   | `clear && pwd && echo '' && tree ./ && echo ''` | Clear the terminal screen and Imprimir the current working diretório and the diretório tree.                    |

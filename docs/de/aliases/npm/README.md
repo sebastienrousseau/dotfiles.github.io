@@ -36,18 +36,18 @@ runtime environment Node.js.
 
 | Alias | Befehl                | Beschreibung                                                               |
 | ----- | --------------- | --------------------- |
-| npb   | `npm build`     | Build npm script.     |
+| npb   | `npm build`     | Bauen npm script.     |
 | npc   | `npm cache`     | Cache npm package.    |
 | npd   | `npm dev`       | Dev npm script.       |
 | npg   | `npm global`    | Global npm package.   |
-| npi   | `npm install`   | Install npm package.  |
-| npl   | `npm list`      | List npm packages.    |
+| npi   | `npm install`   | Installieren npm package.  |
+| npl   | `npm list`      | Auflisten npm packages.    |
 | npp   | `npm publish`   | Publish npm package.  |
 | npr   | `npm run`       | Run npm script.       |
 | nprw  | `npm run watch` | Run npm script watch. |
-| nps   | `npm start`     | Start npm script.     |
+| nps   | `npm start`     | Starten npm script.     |
 | npsv  | `npm serve`     | Serve npm script.     |
 | npt   | `npm test`      | Test npm script.      |
-| npu   | `npm update`    | Update npm package.   |
+| npu   | `npm update`    | Aktualisieren npm package.   |
 | npx   | `npm exec`      | Exec npm package.     |
 | npy   | `npm why`       | Why npm package.      |

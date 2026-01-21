@@ -38,14 +38,14 @@ on the page, and more.
 
 | Alias | Befehl                | Beschreibung                                                               |
 | ----- | ----------------------------------------------------------------- | --------------------------------------------------------------------------------------- |
-| jkb   | `JEKYLL_ENV=development bundle exec jekyll build`                 | Performs a one off build your site to ./\_site.                                         |
-| jkc   | `JEKYLL_ENV=development bundle exec jekyll clean`                 | Removes all generated files: destination folder, metadata file, Sass and Jekyll caches. |
-| jkd   | `JEKYLL_ENV=development bundle exec jekyll serve --watch --trace` | Does a development build of the site to '\_site' and runs a local development server.   |
-| jkl   | `JEKYLL_ENV=development bundle exec jekyll serve --livereload`    | Does a development build of the site to '\_site' and runs a local development server.   |
-| jko   | `open http://localhost:4000/`                                     | Open local development server.                                                          |
+| jkb   | `JEKYLL_ENV=development bundle exec jekyll build`                 | Performs a one off Bauen your site to ./\_site.                                         |
+| jkc   | `JEKYLL_ENV=development bundle exec jekyll clean`                 | Removes all generated Dateien: destination folder, metadata Datei, Sass and Jekyll caches. |
+| jkd   | `JEKYLL_ENV=development bundle exec jekyll serve --watch --trace` | Does a development Bauen of the site to '\_site' and runs a local development server.   |
+| jkl   | `JEKYLL_ENV=development bundle exec jekyll serve --livereload`    | Does a development Bauen of the site to '\_site' and runs a local development server.   |
+| jko   | `open http://localhost:4000/`                                     | Öffnen local development server.                                                          |
 
 ## Jekyll release aliases
 
 | Alias | Befehl                | Beschreibung                                                               |
 | ----- | ---------------------------------------------------------------- | ------------------------------------------------------------------------------------ |
-| jkp   | `JEKYLL_ENV=production bundle exec jekyll serve --watch --trace` | Does a production build of the site to '\_site' and runs a local development server. |
+| jkp   | `JEKYLL_ENV=production bundle exec jekyll serve --watch --trace` | Does a production Bauen of the site to '\_site' and runs a local development server. |

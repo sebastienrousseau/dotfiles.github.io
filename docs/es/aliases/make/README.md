@@ -45,6 +45,6 @@ other files.
 | mkd   | `make doc`     | Run `make doc`.               |
 | mkf   | `make format`  | Run `make format`.            |
 | mkh   | `make help`    | Run `make help`.              |
-| mki   | `make install` | Run `make install`.           |
+| mki   | `make install` | Run `make Instalar`.           |
 | mkr   | `make run`     | Run `make run`.               |
 | mkt   | `make test`    | Run `make test`.              |

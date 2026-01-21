@@ -44,17 +44,17 @@ use cases.
 | Alias | Comando               | Descripción                                                                |
 | ----- | -------------------- | ----------------------------------------------------------- |
 | fd    | `fd --color always`  | always colorize output by default.                          |
-| fda   | `fd --absolute-path` | list all files with absolute path.                          |
-| fdc   | `fd --ignore-case`   | list all files with case insensitive search.                |
-| fdd   | `fd --list-details`  | list all files with details.                                |
-| fde   | `fd --extension`     | list all files with extension.                              |
-| fdf   | `fd --follow`        | list all files with follow symlinks.                        |
-| fdh   | `fd --help`          | list all files with help.                                   |
-| fdh   | `fd --hidden`        | list all files with hidden files.                           |
-| fdn   | `fd --glob`          | list all files with glob.                                   |
-| fdo   | `fd --owner`         | list all files with owner.                                  |
-| fds   | `fd --size`          | list all files with size.                                   |
-| fdu   | `fd --exclude`       | list all files with exclude.                                |
-| fdv   | `fd --version`       | list all files with version.                                |
-| fdx   | `fd --exec`          | Execute a command for each search result.                   |
-| find  | `fd`                 | fd is a simple, fast and user-friendly alternative to find. |
+| fda   | `fd --absolute-path` | Listar all archivos with absolute path.                          |
+| fdc   | `fd --ignore-case`   | Listar all archivos with case insensitive Buscar.                |
+| fdd   | `fd --list-details`  | Listar all archivos with details.                                |
+| fde   | `fd --extension`     | Listar all archivos with extension.                              |
+| fdf   | `fd --follow`        | Listar all archivos with follow symlinks.                        |
+| fdh   | `fd --help`          | Listar all archivos with help.                                   |
+| fdh   | `fd --hidden`        | Listar all archivos with hidden archivos.                           |
+| fdn   | `fd --glob`          | Listar all archivos with glob.                                   |
+| fdo   | `fd --owner`         | Listar all archivos with owner.                                  |
+| fds   | `fd --size`          | Listar all archivos with size.                                   |
+| fdu   | `fd --exclude`       | Listar all archivos with exclude.                                |
+| fdv   | `fd --version`       | Listar all archivos with version.                                |
+| fdx   | `fd --exec`          | Execute a command for each Buscar result.                   |
+| find  | `fd`                 | fd is a simple, fast and user-friendly alternative to Encontrar. |

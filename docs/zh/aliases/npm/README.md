@@ -36,18 +36,18 @@ runtime environment Node.js.
 
 | 别名  | 命令                   | 描述                                                                       |
 | ----- | --------------- | --------------------- |
-| npb   | `npm build`     | Build npm script.     |
+| npb   | `npm build`     | 构建 npm script.     |
 | npc   | `npm cache`     | Cache npm package.    |
 | npd   | `npm dev`       | Dev npm script.       |
 | npg   | `npm global`    | Global npm package.   |
-| npi   | `npm install`   | Install npm package.  |
-| npl   | `npm list`      | List npm packages.    |
+| npi   | `npm install`   | 安装 npm package.  |
+| npl   | `npm list`      | 列出 npm packages.    |
 | npp   | `npm publish`   | Publish npm package.  |
 | npr   | `npm run`       | Run npm script.       |
 | nprw  | `npm run watch` | Run npm script watch. |
-| nps   | `npm start`     | Start npm script.     |
+| nps   | `npm start`     | 开始 npm script.     |
 | npsv  | `npm serve`     | Serve npm script.     |
 | npt   | `npm test`      | Test npm script.      |
-| npu   | `npm update`    | Update npm package.   |
+| npu   | `npm update`    | 更新 npm package.   |
 | npx   | `npm exec`      | Exec npm package.     |
 | npy   | `npm why`       | Why npm package.      |
