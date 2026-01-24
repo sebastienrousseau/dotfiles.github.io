@@ -1,26 +1,43 @@
 ---
-description: Die PS-Aliase sind eine Sammlung von Aliasen, die es Ihnen ermöglichen, mit dem `ps` Kommandozeilen-Tool zu interagieren. Ps ist ein Tool, das einen Schnappschuss der aktuellen Prozesse berichtet.
+description: Die PS-Aliase sind eine Sammlung von Aliasen, die die Arbeit mit dem `ps` CLI-Tool erleichtern. Ps zeigt eine Momentaufnahme der laufenden Prozesse.
 lang: de-DE
-metaTitle: PS Aliase - Dotfiles (DE)
+metaTitle: Die PS-Aliase - Dotfiles (DE)
 permalink: /de/aliases/ps/
+
+meta:
+  - name: keywords
+    content: aliases, ps, process, processes, linux, macos, shell, terminal, windows
+  - name: twitter:card
+    content: Die PS-Aliase sind eine Sammlung von Aliasen, die die Arbeit mit dem `ps` CLI-Tool erleichtern. Ps zeigt eine Momentaufnahme der laufenden Prozesse.
+  - name: twitter:description
+    content: Die PS-Aliase sind eine Sammlung von Aliasen, die die Arbeit mit dem `ps` CLI-Tool erleichtern. Ps zeigt eine Momentaufnahme der laufenden Prozesse.
+  - name: twitter:title
+    content: Die PS-Aliase - Dotfiles (DE)
+  - name: og:title
+    content: Die PS-Aliase - Dotfiles (DE)
+  - name: og:description
+    content: Die PS-Aliase sind eine Sammlung von Aliasen, die die Arbeit mit dem `ps` CLI-Tool erleichtern. Ps zeigt eine Momentaufnahme der laufenden Prozesse.
+  - name: og:image:alt
+    content: Dotfiles - Einfach entworfen fuer dein Shell-Leben
+  - name: og:locale
+    content: de_DE
 ---
+# Ps-Aliase
 
-# PS Aliase
+Ps-Aliase verwalten. Teil der **Universal Dotfiles** Konfiguration.
 
-Die Datei `ps.aliases.sh` erstellt hilfreiche Shortcut-Aliase für das Arbeiten mit
-Prozessen.
+![Dotfiles banner][banner]
 
-Die PS-Aliase sind eine Sammlung von Aliasen, die es Ihnen ermöglichen, mit dem
-`ps` Kommandozeilen-Tool zu interagieren. Ps ist ein Tool, das einen Schnappschuss der aktuellen
-Prozesse berichtet.
+## 📖 Beschreibung
 
-## PS
+Diese Aliase sind in `ps.aliases.sh` definiert und werden automatisch von `chezmoi` geladen.
 
-[PS](<https://de.wikipedia.org/wiki/Ps_(Unix)>) ist ein Befehl, der die
-auf dem System laufenden Prozesse auflistet.
+## ⚡ Aliase
 
-| Alias | Befehl   | Beschreibung                                                                                                                                    |
-| ----- | -------- | ----------------------------------------------------------------------------------------------------------------------------------------------- |
-| pid   | `ps -f`  | Zeige die UID, PID, Eltern-PID, aktuelle CPU-Nutzung, Prozessstartzeit, steuerndes TTY, verstrichene CPU-Nutzung und den zugehörigen Befehl an. |
-| ps    | `ps -ef` | Zeige alle Prozesse an.                                                                                                                         |
-| psa   | `ps aux` | Liste alle Prozesse auf.                                                                                                                        |
+Dieser Code stellt eine Reihe von Aliasen fuer
+[ps](https://www.gnu.org/software/ps/) bereit.
+- `pid` UID, PID, Parent PID, CPU-Usage, Startzeit, TTY, CPU-Zeit und Befehl anzeigen.
+- `ps` Alle Prozesse anzeigen.
+- `psa` Alle Prozesse auflisten.
+
+[banner]: https://kura.pro/dotfiles/v2/images/titles/title-dotfiles.svg
