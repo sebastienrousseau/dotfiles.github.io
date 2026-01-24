@@ -1,13 +1,12 @@
 ---
-description: macOS Aliase für Dotfiles
+description: macOS-Aliase fuer Dotfiles
 lang: de-DE
-metaTitle: macOS Aliase - Dotfiles (DE)
+metaTitle: macOS-Aliase - Dotfiles
 permalink: /de/aliases/macOS/
 ---
+# macOS-Aliase
 
-# macOS Aliase
-
-Verwalten Sie macOS-Aliase. Teil der **Universal Dotfiles** Konfiguration.
+macOS-Aliase verwalten. Teil der **Universal Dotfiles** Konfiguration.
 
 ![Dotfiles banner][banner]
 
@@ -17,25 +16,24 @@ Diese Aliase sind in `macOS.aliases.sh` definiert und werden automatisch von `ch
 
 ## ⚡ Aliase
 
-Dieser Code stellt eine Reihe von Aliasen für macOS bereit.
-
-- `clds` Lösche rekursiv .DS_Store Dateien.
-- `clls` Bereinige LaunchServices, um Duplikate im 'Öffnen mit' Menü zu entfernen.
-- `finderHideHidden` Verstecke versteckte Dateien im Finder.
-- `finderShowHidden` Zeige versteckte Dateien im Finder.
-- `hideDesktopIcons` Verstecke alle Icons auf dem Desktop.
-- `iphone` Öffne die Gerätesimulatoren.
-- `lockScreen` Sperre den Bildschirm des Macs.
-- `ofd` Öffne das aktuelle Verzeichnis in einem Finder-Fenster.
-- `purge` Bereinige Xcode DerivedData.
-- `safariSafeMode` Starte Safari im abgesicherten Modus.
-- `showDesktopIcons` Zeige alle Icons auf dem Desktop.
-- `screensaverDesktop` Führe einen Bildschirmschoner auf dem Desktop aus.
-- `trash` Leere den Papierkorb auf allen gemounteten Volumes und der Hauptfestplatte.
-- `vp` Überprüfe macOS-Berechtigungen.
-- `vv` Überprüfe macOS-Volume.
-- `wifiOn` Schalte Wi-Fi ein.
-- `wifiOff` Schalte Wi-Fi aus.
-- `xcode` Starte die Xcode-App in macOS.
+Dieser Code stellt eine Reihe von Aliasen fuer macOS bereit.
+- `clds` .DS_Store Dateien rekursiv loeschen.
+- `clls` LaunchServices bereinigen und Duplikate im "Open With" Menu entfernen.
+- `finderHideHidden` Versteckte Dateien im Finder ausblenden.
+- `finderShowHidden` Versteckte Dateien im Finder anzeigen.
+- `hideDesktopIcons` Alle Icons auf dem Desktop ausblenden.
+- `iphone` Device-Simulatoren oeffnen.
+- `lockScreen` Bildschirm sperren.
+- `ofd` Aktuelles Verzeichnis im Finder oeffnen.
+- `purge` Xcode DerivedData bereinigen.
+- `safariSafeMode` Safari im Safe Mode starten.
+- `showDesktopIcons` Alle Icons auf dem Desktop anzeigen.
+- `screensaverDesktop` Screensaver auf dem Desktop starten.
+- `trash` Papierkorb auf allen Volumes und der Hauptplatte leeren.
+- `vp` macOS-Permissions pruefen.
+- `vv` macOS-Volume pruefen.
+- `wifiOn` WLAN einschalten.
+- `wifiOff` WLAN ausschalten.
+- `xcode` XCode App starten.
 
 [banner]: https://kura.pro/dotfiles/v2/images/titles/title-dotfiles.svg

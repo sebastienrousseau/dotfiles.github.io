@@ -1,32 +1,48 @@
 ---
-description: Die Make Aliase sind eine Sammlung von Aliasen, die es Ihnen ermöglichen, mit dem `make` Kommandozeilen-Tool zu interagieren.
+description: Die Make-Aliase sind eine Sammlung von Aliasen, die die Arbeit mit dem `make` CLI-Tool erleichtern. Make steuert die Erzeugung von Executables und anderen Artefakten.
 lang: de-DE
-metaTitle: Make Aliase - Dotfiles (DE)
+metaTitle: Die Make-Aliase - Dotfiles (DE)
 permalink: /de/aliases/make/
+
+meta:
+  - name: keywords
+    content: aliases, make, makefile, linux, macos, shell, terminal, windows
+  - name: twitter:card
+    content: Die Make-Aliase sind eine Sammlung von Aliasen, die die Arbeit mit dem `make` CLI-Tool erleichtern. Make steuert die Erzeugung von Executables und anderen Artefakten.
+  - name: twitter:description
+    content: Die Make-Aliase sind eine Sammlung von Aliasen, die die Arbeit mit dem `make` CLI-Tool erleichtern. Make steuert die Erzeugung von Executables und anderen Artefakten.
+  - name: twitter:title
+    content: Die Make-Aliase - Dotfiles (DE)
+  - name: og:title
+    content: Die Make-Aliase - Dotfiles (DE)
+  - name: og:description
+    content: Die Make-Aliase sind eine Sammlung von Aliasen, die die Arbeit mit dem `make` CLI-Tool erleichtern. Make steuert die Erzeugung von Executables und anderen Artefakten.
+  - name: og:image:alt
+    content: Dotfiles - Einfach entworfen fuer dein Shell-Leben
+  - name: og:locale
+    content: de_DE
 ---
+# Make-Aliase
 
-# Make Aliase
+Make-Aliase verwalten. Teil der **Universal Dotfiles** Konfiguration.
 
-Die Datei `make.aliases.sh` erstellt hilfreiche Shortcut-Aliase zum Ausführen von `make`
-Befehlen.
+![Dotfiles banner][banner]
 
-## Make
+## 📖 Beschreibung
 
-[Make](https://de.wikipedia.org/wiki/Make) ist ein Werkzeug, das die
-Erzeugung von ausführbaren Dateien und anderen Nicht-Quelldateien eines Programms aus den
-Quelldateien des Programms steuert.
+Diese Aliase sind in `make.aliases.sh` definiert und werden automatisch von `chezmoi` geladen.
 
-Make erhält sein Wissen darüber, wie Ihr Programm gebaut wird, aus einer Datei namens
-`Makefile`, die jede der Nicht-Quelldateien auflistet und wie sie aus
-anderen Dateien berechnet wird.
+## ⚡ Aliase
 
-| Alias | Befehl         | Beschreibung                     |
-| ----- | -------------- | -------------------------------- |
-| mk    | `make`         | Führe `make` ohne Argumente aus. |
-| mkc   | `make clean`   | Führe `make clean` aus.          |
-| mkd   | `make doc`     | Führe `make doc` aus.            |
-| mkf   | `make format`  | Führe `make format` aus.         |
-| mkh   | `make help`    | Führe `make help` aus.           |
-| mki   | `make install` | Führe `make install` aus.        |
-| mkr   | `make run`     | Führe `make run` aus.            |
-| mkt   | `make test`    | Führe `make test` aus.           |
+Dieser Code stellt eine Reihe von Aliasen fuer den Befehl `make` bereit.
+- `mk` - Make.
+- `mkc` - Make clean.
+- `mkd` - Make doc.
+- `mkf` - Make format.
+- `mkh` - Make help.
+- `mki` - Make install.
+- `mka` - Make all.
+- `mkr` - Make run.
+- `mkt` - Make test.
+
+[banner]: https://kura.pro/dotfiles/v2/images/titles/title-dotfiles.svg
