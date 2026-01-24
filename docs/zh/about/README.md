@@ -24,6 +24,7 @@ Dotfiles 代表了环境配置的现代标准。它建立在 **Chezmoi** 之上�
   - **Yazi** (替换 `ls`/`ranger`)
   - **Zellij** (替换 `tmux`)
   - **Ghostty** (现代 GPU 加速终端)
+  - **NeoVim**（基于 Vim 的现代编辑器）
 - **原生安全**：完全原生 SSH 签名（无密钥/无专有）无需第三方代理。
 - **交互模式**：新的 `dot learn` 命令引导您了解功能。
 
@@ -31,28 +32,30 @@ Dotfiles 代表了环境配置的现代标准。它建立在 **Chezmoi** 之上�
 
 ### :one:先决条件
 
-- **macOS** 或 **Linux** (Debian/Ubuntu/Fedora/Arch)
-- **Curl** (下载安装程序)
-- **Git** (自动管理)
+- **macOS**、**Linux（Ubuntu/Debian）** 或 **Windows（WSL）**
+- **Curl**（下载安装脚本）
+- **Git**
+- **Chezmoi**（脚本会在缺失时安装）
+- **Nerd Font**（用于终端图标）
 
 ### :two: 安装（单行）
 
 整个套件使用 Chezmoi 通过单个命令安装：
 
 ```bash
-sh -c "$(curl -fsLS get.chezmoi.io)" -- init --apply sebastienrousseau
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/sebastienrousseau/dotfiles/v0.2.471/install.sh)"
 ```
 
 此命令将：
 
 1.  安装 `chezmoi` 二进制文件。
-2.  克隆存储库到 `~/.local/share/chezmoi`。
-3.  计算您当前状态与所需状态之间的差异。
-4.  应用配置（安装包、字体和工具）。
+2.  克隆存储库。
+3.  **自动**安装所需软件包（macOS 使用 Homebrew，Linux 使用 Apt）。
+4.  应用配置。
 
 ### :three: 安装后
 
-安装后，只需输入：
+安装后，先重启终端，然后输入：
 
 ```bash
 dot learn
@@ -66,12 +69,19 @@ dot learn
 
 ```bash
 ~/.local/share/chezmoi
-├── dot_config/          # ~/.config (Ghostty, Zellij, Starship 等)
-├── dot_local/           # ~/.local (自定义脚本, bin)
-├── dot_ssh/             # SSH 安全
-├── dot_zshrc.tmpl       # Zsh 配置
-├── provision/           # 安装脚本 (Darwin/Linux)
-└── docs/                # 文档
+├── dot_zshenv              # Shell 入口（XDG 引导）
+├── dot_config/             # XDG 基础配置（映射到 ~/.config）
+│   ├── atuin/              # Shell 历史（config.toml）
+│   ├── ghostty/            # 终端模拟器（config）
+│   ├── git/                # Git 配置（config）
+│   ├── yazi/               # 文件管理器（yazi.toml）
+│   ├── zellij/             # 复用器（config.kdl）
+│   ├── zsh/                # Zsh 配置（.zshrc）
+│   └── shell/              # 共享 Shell 配置（别名、路径）
+├── provision/              # 生命周期脚本（安装包、字体）
+├── install.sh              # 通用安装脚本
+├── README.md               # 文档
+└── docs/                   # 详细文档
 ```
 
 ## 贡献
