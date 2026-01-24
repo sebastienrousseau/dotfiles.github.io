@@ -129,3 +129,4 @@ yarn.lock
 Gemfile.lock
 tsconfig.tsbuildinfo
 pnpm-lock.yaml
+codex.md
