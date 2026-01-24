@@ -1,27 +1,43 @@
 ---
-description: Os aliases do Sudo são uma coleção de aliases que permitem interagir com o comando `sudo`. Sudo é uma ferramenta que permite executar comandos como outro usuário.
-lang: pt-BR
-metaTitle: Aliases do Sudo - Dotfiles (BR)
+description: Os alias Sudo sao uma colecao de alias que permitem interagir com o comando `sudo`. Sudo e uma ferramenta que permite executar comandos como outro usuario.
+lang: pt-PT
+metaTitle: Alias de Sudo - Dotfiles (PT)
 permalink: /pt/aliases/sudo/
+
+meta:
+  - name: keywords
+    content: aliases, sudo, linux, macos, shell, terminal, windows
+  - name: twitter:card
+    content: Os alias Sudo sao uma colecao de alias que permitem interagir com o comando `sudo`. Sudo e uma ferramenta que permite executar comandos como outro usuario.
+  - name: twitter:description
+    content: Os alias Sudo sao uma colecao de alias que permitem interagir com o comando `sudo`. Sudo e uma ferramenta que permite executar comandos como outro usuario.
+  - name: twitter:title
+    content: Alias de Sudo - Dotfiles (PT)
+  - name: og:title
+    content: Alias de Sudo - Dotfiles (PT)
+  - name: og:description
+    content: Os alias Sudo sao uma colecao de alias que permitem interagir com o comando `sudo`. Sudo e uma ferramenta que permite executar comandos como outro usuario.
+  - name: og:image:alt
+    content: Dotfiles - Simplesmente projetado para sua vida no shell
+  - name: og:locale
+    content: pt_PT
 ---
+# Alias de Sudo
 
-# Aliases do Sudo
+Gerenciar alias de Sudo. Parte da configuracao **Universal Dotfiles**.
 
-O arquivo `sudo.aliases.sh` cria aliases de atalho úteis para usar `sudo`
-com comandos.
+![Dotfiles banner][banner]
 
-Os aliases do Sudo são uma coleção de aliases que permitem interagir com
-o comando `sudo`. Sudo é uma ferramenta que permite executar comandos como outro
-usuário.
+## 📖 Descricao
 
-## Sudo
+Esses alias sao definidos em `sudo.aliases.sh` e sao carregados automaticamente pelo `chezmoi`.
 
-[Sudo](https://pt.wikipedia.org/wiki/Sudo) é um comando que permite que usuários
-executem comandos como outro usuário.
+## ⚡ Alias
 
-| Alias | Comando   | Descrição                                |
-| ----- | --------- | ---------------------------------------- |
-| root  | `s`       | Executar um comando como o superusuário. |
-| s     | `sudo -i` | Executar um comando como o superusuário. |
-| su    | `sudo su` | Executar um comando como o superusuário. |
-| sudo  | `s`       | Executar um comando como o superusuário. |
+Este codigo fornece um conjunto de alias para o comando `sudo`.
+- `root` Executar comando como superusuario.
+- `s` Executar comando como superusuario.
+- `su` Executar comando como superusuario.
+- `sudo` Executar comando como superusuario.
+
+[banner]: https://kura.pro/dotfiles/v2/images/titles/title-dotfiles.svg
