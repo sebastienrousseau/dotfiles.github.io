@@ -1,38 +1,55 @@
 ---
-description: 查找别名旨在搜索目录层次结构中的文件，并对找到的文件执行操作。
+description: Find 别名用于在目录层级中搜索文件并对结果执行操作。
 lang: zh-CN
-metaTitle: 查找别名 - Dotfiles (CN)
+metaTitle: Find 别名 - Dotfiles (ZH)
 permalink: /zh/aliases/find/
+
+meta:
+  - name: keywords
+    content: aliases, code, editor, environment, gedit, nano, notepad++, text, vi, vim
+  - name: twitter:card
+    content: Find 别名用于在目录层级中搜索文件并对结果执行操作。
+  - name: twitter:description
+    content: Find 别名用于在目录层级中搜索文件并对结果执行操作。
+  - name: twitter:title
+    content: Find 别名 - Dotfiles (ZH)
+  - name: og:title
+    content: Find 别名 - Dotfiles (ZH)
+  - name: og:description
+    content: Find 别名用于在目录层级中搜索文件并对结果执行操作。
+  - name: og:image:alt
+    content: Dotfiles - 为你的 Shell 生活而设计
+  - name: og:locale
+    content: zh_CN
 ---
+# Find 别名
 
-# 查找别名
+管理 Find 别名。**Universal Dotfiles** 配置的一部分。
 
-`find.aliases.sh` 文件为 `fd` 命令创建了有用的快捷别名。
-`fd` 命令是 `find` 的跨平台替代品。
+![Dotfiles banner][banner]
 
-传统上，`find` 命令用于搜索目录层次结构中的文件，并对找到的文件执行操作。
+## 📖 描述
 
-我们决定用 `fd` 命令替换 `find` 命令，它是 `find` 的一个更简单、更快速且用户友好的替代品。
+这些别名定义在 `find.aliases.sh` 中，并由 `chezmoi` 自动加载。
 
-## 查找 (Find)
+## ⚡ 别名
 
-[fd](https://github.com/sharkdp/fd) 是 `find` 的一个简单、快速且用户友好的替代品。
-虽然它并不旨在支持 find 的所有强大功能，但它为大多数用例提供了合理的（固执己见的）默认设置。
+此代码提供一组 `fd` 的命令别名，作为 Unix 系统上 `find` 的替代。
+`fd` 简单、快速、易用，可用于搜索文件与目录。
+别名让常用场景更容易记忆与使用。
+- `fd` 默认别名，等同 `fd --color always`，带颜色输出。
+- `fda` 列出带绝对路径的文件。
+- `fdc` 不区分大小写搜索。
+- `fdd` 列出带详情的文件。
+- `fde` 按指定扩展名列出文件。
+- `fdf` 跟随符号链接列出文件。
+- `fdh` 显示 `fd` 帮助。
+- `fdh` 列出包含隐藏文件。
+- `fdn` 列出匹配指定 glob 的文件。
+- `fdo` 列出包含所有者信息的文件。
+- `fds` 列出文件大小。
+- `fdu` 应用排除规则列出文件。
+- `fdv` 显示 `fd` 版本。
+- `fdx` 对每个结果执行命令。
 
-| 别名 | 命令                 | 描述                                            |
-| ---- | -------------------- | ----------------------------------------------- |
-| fd   | `fd --color always`  | 默认情况下始终着色输出。                        |
-| fda  | `fd --absolute-path` | 列出所有文件的绝对路径。                        |
-| fdc  | `fd --ignore-case`   | 不区分大小写地列出所有文件。                    |
-| fdd  | `fd --list-details`  | 列出所有文件的详细信息。                        |
-| fde  | `fd --extension`     | 列出具有特定扩展名的所有文件。                  |
-| fdf  | `fd --follow`        | 列出所有文件并跟随符号链接。                    |
-| fdh  | `fd --help`          | 列出帮助信息。                                  |
-| fdh  | `fd --hidden`        | 列出所有文件，包括隐藏文件。                    |
-| fdn  | `fd --glob`          | 使用 glob 模式列出所有文件。                    |
-| fdo  | `fd --owner`         | 列出具有特定所有者的所有文件。                  |
-| fds  | `fd --size`          | 列出具有特定大小的所有文件。                    |
-| fdu  | `fd --exclude`       | 列出所有文件，排除特定模式。                    |
-| fdv  | `fd --version`       | 列出版本信息。                                  |
-| fdx  | `fd --exec`          | 对每个搜索结果执行命令。                        |
-| find | `fd`                 | fd 是 find 的一个简单、快速且用户友好的替代品。 |
+[banner]: https://kura.pro/dotfiles/v2/images/titles/title-dotfiles.svg

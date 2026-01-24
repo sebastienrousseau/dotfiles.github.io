@@ -1,52 +1,69 @@
 ---
-description: PNpm 别名是一组别名，允许您与 `pnpm` 命令行工具交互。Pnpm 是一个快速，磁盘空间利用率高的包管理器。
+description: PNpm 别名用于与 `pnpm` 命令行工具交互。Pnpm 是快速且节省磁盘空间的包管理器。
 lang: zh-CN
-metaTitle: PNpm 别名 - Dotfiles (CN)
+metaTitle: PNpm 别名 - Dotfiles (ZH)
 permalink: /zh/aliases/pnpm/
+
+meta:
+  - name: keywords
+    content: aliases, pnpm, package manager, node, npm, yarn, linux, macos, shell, terminal, windows
+  - name: twitter:card
+    content: PNpm 别名用于与 `pnpm` 命令行工具交互。Pnpm 是快速且节省磁盘空间的包管理器。
+  - name: twitter:description
+    content: PNpm 别名用于与 `pnpm` 命令行工具交互。Pnpm 是快速且节省磁盘空间的包管理器。
+  - name: twitter:title
+    content: PNpm 别名 - Dotfiles (ZH)
+  - name: og:title
+    content: PNpm 别名 - Dotfiles (ZH)
+  - name: og:description
+    content: PNpm 别名用于与 `pnpm` 命令行工具交互。Pnpm 是快速且节省磁盘空间的包管理器。
+  - name: og:image:alt
+    content: Dotfiles - 为你的 Shell 生活而设计
+  - name: og:locale
+    content: zh_CN
 ---
+# Pnpm 别名
 
-# PNpm 别名
+管理 Pnpm 别名。**Universal Dotfiles** 配置的一部分。
 
-`pnpm.aliases.sh` 文件为许多常用的 [PNpm](https://pnpm.io) 命令创建了有用的快捷别名。
+![Dotfiles banner][banner]
 
-PNpm 别名是一组别名，允许您与 `pnpm` 命令行工具交互。Pnpm 是一个快速，磁盘空间利用率高的包管理器。
+## 📖 描述
 
-## PNpm
+这些别名定义在 `pnpm.aliases.sh` 中，并由 `chezmoi` 自动加载。
 
-[PNpm](https://pnpm.io) 是一个 JavaScript 和 Node.js 的包管理器。它快速、磁盘空间利用率高且可靠。
+## ⚡ 别名
 
-| 别名  | 命令                                 | 描述                         |
-| ----- | ------------------------------------ | ---------------------------- |
-| pna   | `pnpm add`                           | 将包添加到项目               |
-| pnad  | `pnpm add --save-dev`                | 将包作为开发依赖项添加到项目 |
-| pnap  | `pnpm add --save-peer`               | 将包作为对等依赖项添加到项目 |
-| pnau  | `pnpm audit`                         | 审核项目的漏洞               |
-| pnb   | `pnpm run build`                     | 构建项目                     |
-| pnc   | `pnpm create`                        | 创建一个新项目               |
-| pnd   | `pnpm run dev`                       | 在开发模式下运行项目         |
-| pndoc | `pnpm run doc`                       | 为项目生成文档               |
-| pnga  | `pnpm add --global`                  | 将包添加到全局存储           |
-| pngls | `pnpm list --global`                 | 列出全局存储中的包           |
-| pngrm | `pnpm remove --global`               | 从全局存储中删除包           |
-| pngu  | `pnpm update --global`               | 更新全局存储中的包           |
-| pnh   | `pnpm help`                          | 显示命令的帮助               |
-| pni   | `pnpm init`                          | 初始化一个新项目             |
-| pnin  | `pnpm install`                       | 安装项目的依赖项             |
-| pnln  | `pnpm run lint`                      | 运行 `pnpm run lint`         |
-| pnls  | `pnpm list`                          | 列出项目中的包               |
-| pnout | `pnpm outdated`                      | 检查过时的包                 |
-| pnp   | `pnpm`                               | 运行 PNpm 命令               |
-| pnpub | `pnpm publish`                       | 发布项目                     |
-| pnrm  | `pnpm remove`                        | 从项目中删除包               |
-| pnrun | `pnpm run`                           | 在项目中运行脚本             |
-| pns   | `pnpm run serve`                     | 在生产模式下运行项目         |
-| pnst  | `pnpm start`                         | 启动项目                     |
-| pnsv  | `pnpm server`                        | 启动项目的开发服务器         |
-| pnt   | `pnpm test`                          | 运行项目的测试               |
-| pntc  | `pnpm test --coverage`               | 运行带覆盖率的项目测试       |
-| pnui  | `pnpm update --interactive`          | 交互式更新包                 |
-| pnuil | `pnpm update --interactive --latest` | 交互式更新包到最新版本       |
-| pnun  | `pnpm uninstall`                     | 从项目中卸载包               |
-| pnup  | `pnpm update`                        | 更新项目中的包               |
-| pnwhy | `pnpm why`                           | 显示为什么安装了包           |
-| pnx   | `pnpx`                               | 运行 PNpx 命令               |
+此代码提供 [pnpm](https://pnpm.js.org/) 的别名集合。
+- `pni` 初始化新项目。
+- `pnin` 安装项目依赖。
+- `pnb` 构建项目。
+- `pnrun` 运行项目脚本。
+- `pnd` 以 dev 模式运行。
+- `pns` 以 serve 模式运行。
+- `pnst` 启动项目。
+- `pnln` 运行 lint。
+- `pnls` 列出依赖。
+- `pnout` 检查过期依赖。
+- `pnt` 运行测试。
+- `pntc` 运行测试并覆盖率。
+- `pndoc` 生成项目文档。
+- `pnpub` 发布项目。
+- `pnwhy` 查看依赖安装原因。
+- `pnui` 交互式更新依赖。
+- `pnuil` 交互式更新到最新版本。
+- `pnup` 更新依赖。
+- `pnad` 添加开发依赖。
+- `pnap` 添加 peer 依赖。
+- `pnrm` 移除依赖。
+- `pnun` 卸载项目依赖。
+- `pnga` 添加全局依赖。
+- `pngls` 列出全局依赖。
+- `pngrm` 移除全局依赖。
+- `pngu` 更新全局依赖。
+- `pnh` 显示帮助。
+- `pnc` 创建新项目。
+- `pnsv` 以 server 模式运行。
+- `pnx` pnpx 快捷方式。
+
+[banner]: https://kura.pro/dotfiles/v2/images/titles/title-dotfiles.svg

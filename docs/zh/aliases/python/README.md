@@ -1,10 +1,9 @@
 ---
-description: Dotfiles 的 Python 别名
+description: Python 别名用于 Dotfiles
 lang: zh-CN
-metaTitle: Python 别名 - Dotfiles (CN)
+metaTitle: Python 别名 - Dotfiles
 permalink: /zh/aliases/python/
 ---
-
 # Python 别名
 
 管理 Python 别名。**Universal Dotfiles** 配置的一部分。
@@ -13,7 +12,7 @@ permalink: /zh/aliases/python/
 
 ## 📖 描述
 
-这些别名在 `python.aliases.sh` 中定义，并由 `chezmoi` 自动加载。
+这些别名定义在 `python.aliases.sh` 中，并由 `chezmoi` 自动加载。
 
 ## ⚡ 别名
 
@@ -22,5 +21,6 @@ permalink: /zh/aliases/python/
 - `v` - virtualenv
 - `uv` - uv 包管理器
 - `uvpi` - `uv pip install`
+
 
 [banner]: https://kura.pro/dotfiles/v2/images/titles/title-dotfiles.svg
