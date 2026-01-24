@@ -149,17 +149,17 @@ de haut niveau et un accès complet aux éléments internes.
 
 | Alias  | Commande                                               | Description                                                                       |
 | ------ | ------------------------------------------------------ | --------------------------------------------------------------------------------- | --------------------------------------------------------- |
-| gpb    | `git push --set-upstream origin $(git current-branch)` | Pousser la branche courante et la configurer pour suivre la branche distante      |
+| gpb    | `git push --set-upstream origin $(git branch --show-current)` | Pousser la branche courante et la configurer pour suivre la branche distante      |
 | gpo    | `git push origin`                                      | Pousser la branche vers le dépôt distant origin                                   |
 | gpoll  | `git push origin --all`                                | Pousser toutes les branches vers le dépôt distant origin                          |
 | gpt    | `git push --tags`                                      | Pousser les tags vers le dépôt distant origin                                     |
 | gpull  | `git pull`                                             | Récupérer les changements depuis le dépôt distant origin                          |
-| gpullo | `git pull origin $(git current-branch)`                | Récupérer les changements depuis le dépôt distant origin pour la branche courante |
+| gpullo | `git pull origin $(git branch --show-current)`                | Récupérer les changements depuis le dépôt distant origin pour la branche courante |
 | gpullm | `git pull origin master`                               | Récupérer les changements depuis le dépôt distant origin pour la branche master   |
 | gpush  | `git push`                                             | Pousser la branche vers le dépôt distant origin                                   |
-| gpusho | `git push origin $(git current-branch)`                | Pousser la branche courante vers le dépôt distant origin                          |
+| gpusho | `git push origin $(git branch --show-current)`                | Pousser la branche courante vers le dépôt distant origin                          |
 | gpushr | `git remote                                            | xargs -I% -n1 git push %`                                                         | Pousser toutes les branches vers tous les dépôts distants |
-| gunpub | `git push origin :$(git current-branch)`               | Supprimer la branche courante du dépôt distant origin                             |
+| gunpub | `git push origin :$(git branch --show-current)`               | Supprimer la branche courante du dépôt distant origin                             |
 
 ### Gestion des dépôts distants
 

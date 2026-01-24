@@ -147,18 +147,18 @@ Git command line tools. Git aliases improve speed and efficiency.
 
 | Alias  | Command                                                | Description                                                                                                                   |
 | ------ | ------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------- | ------------------- |
-| gpb    | `git push --set-upstream origin $(git current-branch)` | Publish the current branch by pushing it to the remote "origin", and setting the current branch to track the upstream branch. |
+| gpb    | `git push --set-upstream origin $(git branch --show-current)` | Publish the current branch by pushing it to the remote "origin", and setting the current branch to track the upstream branch. |
 | gpcb   | `git push origin "$(git branch                         | grep '\*'                                                                                                                     | tr -d '\* \n')"`                                    | Push current branch |
 | gpo    | `git push origin`                                      | Push local changes to the online repository.                                                                                  |
 | gpoll  | `git push origin --all`                                | Push each of your local git branches to the remote repository                                                                 |
 | gpt    | `git push --tags`                                      | Push local tags.                                                                                                              |
 | gpull  | `git pull`                                             | Fetch from and integrate with another repository or a local branch.                                                           |
-| gpullo | `git pull origin $(git current-branch)`                | Do a pull for just one branch.                                                                                                |
+| gpullo | `git pull origin $(git branch --show-current)`                | Do a pull for just one branch.                                                                                                |
 | gpullm | `git pull origin master`                               | Pull changes from the locally stored branch origin/master and merge that to the local checked-out branch.                     |
 | gpush  | `git push`                                             | Update remote refs along with associated objects.                                                                             |
-| gpusho | `git push origin $(git current-branch)`                | Do a push for just one branch.                                                                                                |
+| gpusho | `git push origin $(git branch --show-current)`                | Do a push for just one branch.                                                                                                |
 | gpushr | `git remote                                            | xargs -I% -n1 git push %`                                                                                                     | git remotes-push - For each remote branch, push it. |
-| gunpub | `git push origin :$(git current-branch)`               | Un-publish the current branch by deleting the remote version of the current branch.                                           |
+| gunpub | `git push origin :$(git branch --show-current)`               | Un-publish the current branch by deleting the remote version of the current branch.                                           |
 
 ## Manage set of tracked repositories
 

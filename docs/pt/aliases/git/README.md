@@ -118,7 +118,7 @@ ferramentas de linha de comando do Git. Os aliases do Git melhoram a velocidade 
 
 | Alias | Comando                                                | Descrição                                                                                                                  |
 | ----- | ------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------- |
-| gpb   | `git push --set-upstream origin $(git current-branch)` | Publicar o branch atual fazendo push para o "origin" remoto e configurando o branch atual para rastrear o branch upstream. |
+| gpb   | `git push --set-upstream origin $(git branch --show-current)` | Publicar o branch atual fazendo push para o "origin" remoto e configurando o branch atual para rastrear o branch upstream. |
 | gpo   | `git push origin`                                      | Enviar alterações locais para o repositório online.                                                                        |
 | gpoll | `git push origin --all`                                | Enviar cada um dos seus branches git locais para o repositório remoto.                                                     |
 | gpull | `git pull`                                             | Buscar e integrar com outro repositório ou um branch local.                                                                |
