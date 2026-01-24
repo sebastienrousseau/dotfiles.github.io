@@ -4,7 +4,6 @@ lang: en-GB
 metaTitle: terraform aliases - Dotfiles
 permalink: /aliases/terraform/
 ---
-
 # Terraform Aliases
 
 Manage Infrastructure as Code aliases (Terraform, OpenTofu, Ansible). Part of the **Universal Dotfiles** configuration.
@@ -18,7 +17,6 @@ These aliases are defined in `terraform.aliases.sh` and are automatically loaded
 ## ⚡ Aliases
 
 ### terraform
-
 - `tf` - Terraform shortcut
 - `tfi` - Init
 - `tfp` - Plan
@@ -29,7 +27,6 @@ These aliases are defined in `terraform.aliases.sh` and are automatically loaded
 - `tfv` - Validate
 
 ### ansible
-
 - `ans` - Ansible shortcut
 - `ansp` - Ansible Playbook
 - `anslint` - Ansible Lint

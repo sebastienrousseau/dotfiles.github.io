@@ -1,53 +1,47 @@
 ---
-description: Les alias clear sont des alias de la commande `clear`. Ils sont utilisés pour effacer le contenu de la console.
+description: Les alias clear permettent de nettoyer l'écran de différentes manières.
 lang: fr-FR
-metaTitle: Les alias clear - Dotfiles (FR)
-permalink: /aliases/clear/
+metaTitle: Alias Clear - Dotfiles (FR)
+permalink: /alias/clear/
 
 meta:
-  - name: keywords
-    content: alias, bash, clear, console, dotfiles, effacer, fish, raccourcis, shell, terminal, zsh
   - name: twitter:card
-    content: Les alias clear sont des alias de la commande `clear`. Ils sont utilisés pour effacer le contenu de la console.
+    content: Les alias clear permettent de nettoyer l'écran de différentes manières.
   - name: twitter:description
-    content: Les alias clear sont des alias de la commande `clear`. Ils sont utilisés pour effacer le contenu de la console.
+    content: Les alias clear permettent de nettoyer l'écran de différentes manières.
   - name: twitter:title
-    content: Les alias clear - Dotfiles (FR)
+    content: Alias Clear - Dotfiles (FR)
   - name: og:title
-    content: Les alias clear - Dotfiles (FR)
+    content: Alias Clear - Dotfiles (FR)
   - name: og:description
-    content: Les alias clear sont des alias de la commande `clear`. Ils sont utilisés pour effacer le contenu de la console.
+    content: Les alias clear permettent de nettoyer l'écran de différentes manières.
   - name: og:image:alt
     content: Les Dotfiles - Conçus pour s'adapter à votre vie de shell
   - name: og:locale
     content: fr_FR
 ---
+# Alias Clear
 
-# Les alias clear
+Gérer les alias Clear. Fait partie de la configuration **Universal Dotfiles**.
 
-Le fichier `clear.aliases.sh` crée des alias de raccourcis pour la commande
-`clear`. Ils sont utilisés pour effacer le contenu de la console.
+![Dotfiles banner][banner]
 
-[Clear](<https://en.wikipedia.org/wiki/Clear_(command)>) est une commande qui est
-utilisée pour effacer le contenu de la console.
+## 📖 Description
 
-## Raccourcis clear
+Ces alias sont définis dans `clear.aliases.sh` et sont chargés automatiquement par `chezmoi`.
 
-| Alias  | Commande                                        | Description                                                                                |
-| ------ | ----------------------------------------------- | ------------------------------------------------------------------------------------------ |
-| c      | `clear`                                         | Efface le contenu de la console.                                                           |
-| cl     | `c`                                             | Efface le contenu de la console.                                                           |
-| clc    | `clear && cat`                                  | Efface le contenu de la console et affiche le contenu.                                     |
-| clcat  | `clc`                                           | Efface le contenu de la console et affiche le contenu.                                     |
-| clh    | `clear && history`                              | Efface le contenu de la console et affiche l'historique.                                   |
-| clhist | `clh`                                           | Efface le contenu de la console et affiche l'historique.                                   |
-| clp    | `clear && pwd`                                  | Efface le contenu de la console et affiche le répertoire courant.                          |
-| clpwd  | `clp`                                           | Efface le contenu de la console et affiche le répertoire courant.                          |
-| clr    | `c`                                             | Efface le contenu de la console.                                                           |
-| cls    | `c`                                             | Efface le contenu de la console.                                                           |
-| clt    | `clear && tree`                                 | Efface le contenu de la console et affiche l'arborescence.                                 |
-| cltree | `clt`                                           | Efface le contenu de la console et affiche l'arborescence.                                 |
-| ct     | `clear && tree ./`                              | Efface le contenu de la console et affiche l'arborescence du répertoire courant.           |
-| ctree  | `ct`                                            | Efface le contenu de la console et affiche l'arborescence du répertoire courant.           |
-| cpl    | `clear && pwd && echo '' && ls -a && echo ''`   | Efface le contenu de la console et affiche le répertoire courant et la liste des fichiers. |
-| cplt   | `clear && pwd && echo '' && tree ./ && echo ''` | Efface le contenu de la console et affiche le répertoire courant et l'arborescence.        |
+## ⚡ Alias
+
+Ce code fournit un ensemble d'alias de commande pour rendre le travail avec le
+terminal plus simple et efficace. Les alias suivants sont inclus :
+- `c` efface l'écran du terminal.
+- `cdw` change le répertoire courant vers le répertoire de travail.
+- `cl` est un alias de `c`, qui efface l'écran du terminal.
+- `clc` efface l'écran du terminal et liste le contenu du répertoire courant.
+- `clh` efface l'écran du terminal et affiche l'historique des commandes.
+- `clp` efface l'écran du terminal et affiche le répertoire de travail courant.
+- `clt` efface l'écran du terminal et affiche l'arborescence des répertoires.
+- `cpl` efface l'écran du terminal et affiche le répertoire courant et le contenu du répertoire courant.
+- `cplt` efface l'écran du terminal et affiche le répertoire courant et l'arborescence.
+
+[banner]: https://kura.pro/dotfiles/v2/images/titles/title-dotfiles.svg

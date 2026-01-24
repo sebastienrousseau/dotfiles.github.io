@@ -22,29 +22,27 @@ meta:
   - name: og:locale
     content: en_GB
 ---
+# Make Aliases
 
-# Make aliases
+Manage Make aliases. Part of the **Universal Dotfiles** configuration.
 
-The `make.aliases.sh` file creates helpful shortcut aliases for running `make`
-commands.
+![Dotfiles banner][banner]
 
-## Make
+## 📖 Description
 
-[Make](<https://en.wikipedia.org/wiki/Make_(software)>) is a tool which controls
-the generation of executables and other non-source files of a program from the
-program's source files.
+These aliases are defined in `make.aliases.sh` and are automatically loaded by `chezmoi`.
 
-Make gets its knowledge of how to build your program from a file called the
-`Makefile`, which lists each of the non-source files and how to compute it from
-other files.
+## ⚡ Aliases
 
-| Alias | Command        | Description                   |
-| ----- | -------------- | ----------------------------- |
-| mk    | `make`         | Run `make` with no arguments. |
-| mkc   | `make clean`   | Run `make clean`.             |
-| mkd   | `make doc`     | Run `make doc`.               |
-| mkf   | `make format`  | Run `make format`.            |
-| mkh   | `make help`    | Run `make help`.              |
-| mki   | `make install` | Run `make install`.           |
-| mkr   | `make run`     | Run `make run`.               |
-| mkt   | `make test`    | Run `make test`.              |
+This code provides a set of aliases for the `make` command.
+- `mk` - Make.
+- `mkc` - Make clean.
+- `mkd` - Make doc.
+- `mkf` - Make format.
+- `mkh` - Make help.
+- `mki` - Make install.
+- `mka` - Make all.
+- `mkr` - Make run.
+- `mkt` - Make test.
+
+[banner]: https://kura.pro/dotfiles/v2/images/titles/title-dotfiles.svg

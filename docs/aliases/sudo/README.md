@@ -22,24 +22,22 @@ meta:
   - name: og:locale
     content: en_GB
 ---
+# Sudo Aliases
 
-# Sudo aliases
+Manage Sudo aliases. Part of the **Universal Dotfiles** configuration.
 
-The `sudo.aliases.sh` file creates helpful shortcut aliases for using `sudo`
-with commands.
+![Dotfiles banner][banner]
 
-The Sudo aliases are a collection of aliases that allow you to interact with
-the `sudo` command. Sudo is a tool which allows you to run commands as another
-user.
+## 📖 Description
 
-## Sudo
+These aliases are defined in `sudo.aliases.sh` and are automatically loaded by `chezmoi`.
 
-[Sudo](https://en.wikipedia.org/wiki/Sudo) is a command that allows users to
-execute commands as another user.
+## ⚡ Aliases
 
-| Alias | Command   | Description                         |
-| ----- | --------- | ----------------------------------- |
-| root  | `s`       | Execute a command as the superuser. |
-| s     | `sudo -i` | Execute a command as the superuser. |
-| su    | `sudo su` | Execute a command as the superuser. |
-| sudo  | `s`       | Execute a command as the superuser. |
+This code provides a set of aliases for the `sudo` command.
+- `root` Execute a command as the superuser.
+- `s` Execute a command as the superuser.
+- `su` Execute a command as the superuser.
+- `sudo` Execute a command as the superuser.
+
+[banner]: https://kura.pro/dotfiles/v2/images/titles/title-dotfiles.svg

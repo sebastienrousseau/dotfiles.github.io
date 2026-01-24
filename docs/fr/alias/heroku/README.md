@@ -1,0 +1,318 @@
+---
+description: alias heroku pour Dotfiles
+lang: fr-FR
+metaTitle: Alias Heroku - Dotfiles (FR)
+permalink: /aliases/heroku/
+---
+
+# Alias Heroku
+
+Gérer les alias Heroku. Fait partie de la configuration **Universal Dotfiles**.
+
+![Dotfiles banner][banner]
+
+## 📖 Description
+
+Ces alias sont définis dans `heroku.aliases.sh` et sont chargés automatiquement par `chezmoi`.
+
+## ⚡ Alias
+
+Ceci est une collection d'alias pour la
+[CLI Heroku](https://devcenter.heroku.com/articles/heroku-cli).
+- `hkk` Raccourci de commande pour la CLI Heroku.
+- `hka` Ajouter de nouveaux utilisateurs à votre application.
+- `hkau` Mettre à jour des collaborateurs existants sur une application d'équipe.
+- `hkh` Afficher l'aide de Heroku.
+- `hkj` Vous ajouter à une application d'équipe.
+- `hkl` Lister toutes les commandes.
+- `hkla` Lister qui a accès à une application.
+- `hklg` Afficher les journaux récents.
+- `hkn` Afficher les notifications.
+- `hko` Lister les équipes dont vous êtes membre.
+- `hkoo` Ouvrir l'interface d'équipe dans un navigateur.
+- `hkp` Ouvrir un shell psql vers la base de données.
+- `hkq` Vous retirer d'une application d'équipe.
+- `hkr` Retirer des utilisateurs d'une application d'équipe.
+- `hkrg` Lister les régions disponibles pour le déploiement.
+- `hks` Afficher l'état actuel de la plateforme Heroku.
+- `hkt` Lister les équipes dont vous êtes membre.
+- `hku` Mettre à jour la CLI Heroku.
+- `hkulk` Déverrouiller une application pour que tout membre de l'équipe puisse rejoindre.
+- `hkw` Indiquer dans quel plugin se trouve une commande
+- `hkada` Attacher une ressource d'add-on existante à une application
+- `hkadc` Créer une nouvelle ressource d'add-on
+- `hkadd` Détacher une ressource d'add-on existante d'une application
+- `hkaddoc` Ouvrir la documentation Dev Center d'un add-on dans le navigateur
+- `hkaddown` Changer le plan de l'add-on
+- `hkadi` Afficher les informations détaillées sur la ressource et les attachements d'add-on
+- `hkadk` Détruire définitivement une ressource d'add-on
+- `hkadl` Lister vos add-ons et leurs attachements
+- `hkado` Ouvrir le tableau de bord de l'add-on dans le navigateur
+- `hkadp` Lister tous les plans disponibles pour un service d'add-on
+- `hkadr` Renommer un add-on
+- `hkads` Lister tous les services d'add-on disponibles
+- `hkadu` Changer le plan de l'add-on
+- `hkadw` Afficher l'état de provisionnement des add-ons sur l'application
+- `hkapc` Créer une nouvelle application
+- `hkape` Voir les erreurs d'application
+- `hkapfav` Lister les applications favorites
+- `hkapfava` Mettre une application en favori
+- `hkapunfav` Retirer une application des favoris
+- `hkapi` Afficher les informations détaillées d'une application
+- `hkapj` Vous ajouter à une application d'équipe
+- `hkapk` Détruire définitivement une application
+- `hkapl` Lister vos applications
+- `hkaplk` Empêcher les membres de l'équipe de rejoindre une application
+- `hkapo` Ouvrir l'application dans un navigateur web
+- `hkapq` Vous retirer d'une application d'équipe
+- `hkapr` Renommer une application
+- `hkaps` Afficher la liste des stacks disponibles
+- `hkapss` Définir le stack d'une application
+- `hkapt` Transférer des applications à un autre utilisateur ou équipe
+- `hkapulk` Déverrouiller une application pour que tout membre de l'équipe puisse rejoindre
+- `hk2fa` Afficher l'utilisateur actuellement connecté
+- `hk2fad` Désactiver la 2FA sur le compte
+- `hk2fain` Se connecter avec vos identifiants Heroku
+- `hk2faout` Effacer les identifiants locaux et invalider la session API
+- `hk2fas` Vérifier l'état de la 2FA
+- `hk2fat` Afficher le jeton d'authentification CLI actuel
+- `hkauc` Créer une nouvelle autorisation OAuth
+- `hkaui` Afficher une autorisation OAuth existante
+- `hkaul` Lister les autorisations OAuth.
+- `hkaur` Révoquer une autorisation OAuth.
+- `hkauro` Mettre à jour un jeton d'autorisation OAuth.
+- `hkauu` Mettre à jour une autorisation OAuth
+- `hkbpac` Afficher les instructions d'installation de l'autocomplétion
+- `hkbpad` Ajouter un nouveau buildpack d'application, en l'insérant dans la liste si nécessaire
+- `hkbpcl` Effacer tous les buildpacks définis sur l'application
+- `hkbpi` Récupérer des infos sur un buildpack
+- `hkbpl` Afficher les buildpacks d'une application
+- `hkbpr` Supprimer un buildpack défini sur l'application
+- `hkbps` Rechercher des buildpacks
+- `hkbpv` Lister les versions d'un buildpack.
+- `hkca` Afficher l'état ACM d'une application
+- `hkcad` Ajouter un certificat SSL à une application
+- `hkcae` Activer le statut ACM pour une application
+- `hkcak` Désactiver l'ACM pour une application
+- `hkcar` Rafraîchir l'ACM pour une application
+- `hkcc` Afficher une chaîne complète et ordonnée pour un certificat
+- `hkcg` Générer une clé et un CSR ou un certificat auto-signé
+- `hkci` Afficher les informations d'un certificat SSL
+- `hkck` Afficher la clé correcte pour le certificat donné
+- `hkcl` Lister les certificats SSL d'une application
+- `hkcr` Supprimer un certificat SSL d'une application
+- `hkcu` Mettre à jour un certificat SSL d'une application
+- `hkcicg` Obtenir une variable de configuration CI
+- `hkcics` Définir des variables de configuration CI
+- `hkcicu` Supprimer des variables de configuration CI
+- `hkcicv`  Afficher les variables de configuration CI
+- `hkcid` Ouvrir une session de débogage interactive avec le contenu du répertoire courant
+- `hkcie` Chercher la dernière exécution et retourner sa sortie
+- `hkcii` Afficher le statut d'une exécution de test spécifique
+- `hkcil` Afficher les exécutions CI les plus récentes du pipeline
+- `hkcim` 'app-ci.json' est obsolète. Exécutez cette commande pour migrer vers app.json avec une clé environments
+- `hkcio` Ouvrir la version Dashboard de Heroku CI
+- `hkcir` Lancer des tests depuis le répertoire courant
+- `hkcir2` Relancer des tests depuis le répertoire courant
+- `hkclc` Créer un nouveau client OAuth
+- `hkcli` Afficher les détails d'un client OAuth
+- `hkclk` Supprimer un client par ID
+- `hkcll` Lister vos clients OAuth
+- `hkcls` Faire tourner le secret du client OAuth
+- `hkclu` Mettre à jour le client OAuth.
+- `hkcfe` Éditer interactivement les variables de configuration
+- `hkcfg` Afficher une valeur de configuration pour une application
+- `hkcfs` Définir une ou plusieurs variables de configuration
+- `hkcfu` Supprimer une ou plusieurs variables de configuration
+- `hkcfv` Afficher les variables de configuration d'une application
+- `hkct` Utiliser des conteneurs pour construire et déployer des apps Heroku
+- `hkctin` Se connecter au registre de conteneurs Heroku
+- `hkctout` Se déconnecter du registre de conteneurs Heroku
+- `hkctpull` Tirer une image depuis un process type d'une application
+- `hkctpush` Construire puis pousser des images Docker pour déployer votre app Heroku
+- `hkctrelease` Publier des images Docker précédemment poussées
+- `hkctrm` Supprimer le process type de votre application
+- `hkctrun` Construire puis exécuter l'image Docker localement
+- `hkdo` Lister les domaines d'une application
+- `hkdoa` Ajouter un domaine à une application
+- `hkdoc` Supprimer tous les domaines d'une application
+- `hkdoi` Afficher les informations détaillées d'un domaine
+- `hkdor` Supprimer un domaine d'une application
+- `hkdou` Mettre à jour un domaine pour utiliser un autre certificat SSL
+- `hkdow` Attendre qu'un domaine devienne actif
+- `hkdr` Afficher les log drains d'une application
+- `hkdra` Ajouter un log drain à une application
+- `hkdrr` Supprimer un log drain d'une application
+- `hkdyk` Arrêter un dyno d'application
+- `hkdyrz` Gérer les tailles de dyno
+- `hkdyrs` Redémarrer les dynos d'une application
+- `hkdysc` Ajuster la quantité de dynos
+- `hkdyst` Arrêter un dyno d'application
+- `hkfeat` Lister les fonctionnalités disponibles d'une application
+- `hkfeatd` Désactiver une fonctionnalité d'application
+- `hkfeate` Activer une fonctionnalité d'application
+- `hkfeati` Afficher les informations d'une fonctionnalité
+- `hkgitc` Cloner une application Heroku sur votre machine locale (répertoire par défaut : nom de l'app)
+- `hkgitr` Ajouter un remote git à un dépôt d'application
+- `hkk` Afficher vos clés SSH
+- `hkka` Ajouter une clé SSH pour un utilisateur
+- `hkkcl` Supprimer toutes les clés SSH de l'utilisateur courant
+- `hkkr` Supprimer une clé SSH de l'utilisateur
+- `hklab` Lister les fonctionnalités expérimentales
+- `hklabd` Désactiver une fonctionnalité expérimentale
+- `hklabe` Activer une fonctionnalité expérimentale
+- `hklabi` Afficher les infos d'une fonctionnalité
+- `hkloc` Exécuter une application Heroku localement
+- `hklocr` Exécuter une commande ponctuelle
+- `hklocv` Afficher la version de node-foreman
+- `hkloclk` Empêcher les membres de l'équipe de rejoindre une application
+- `hkmt` Afficher le statut de maintenance d'une application
+- `hkmtoff` Sortir l'application du mode maintenance
+- `hkmton` Mettre l'application en mode maintenance
+- `hkmb` Lister les membres d'une équipe
+- `hkmba` Ajouter un utilisateur à une équipe
+- `hkmbr` Retirer un utilisateur d'une équipe
+- `hkmbs` Définir le rôle d'un membre dans une équipe.
+- `hkpg` Afficher les informations de la base de données
+- `hkpgb` Afficher le bloat des tables et index ordonné par gaspillage
+- `hkpgbk` Lister les sauvegardes de base de données
+- `hkpgbkcl` Annuler une sauvegarde/restauration en cours (par défaut la plus récente)
+- `hkpgbkc` Capturer une nouvelle sauvegarde
+- `hkpgbkdl` Supprimer une sauvegarde
+- `hkpgbkdw` Télécharger une sauvegarde
+- `hkpgbki` Obtenir des informations sur une sauvegarde spécifique
+- `hkpgbkr` Restaurer une sauvegarde (par défaut la dernière) vers une base
+- `hkpgbks` Planifier des sauvegardes quotidiennes pour une base
+- `hkpgbksh` Lister le planning des sauvegardes
+- `hkpgbkurl` Obtenir une URL secrète mais publiquement accessible d'une sauvegarde
+- `hkpgbkk` Arrêter les sauvegardes quotidiennes
+- `hkpgblk` Afficher les requêtes tenant des verrous que d'autres attendent
+- `hkpgc` Copier toutes les données d'une base source vers une base cible
+- `hkpgcpa` Ajouter un attachement à une base via le pooling de connexions
+- `hkpgcr` Afficher les informations des identifiants de la base
+- `hkpgcrc` Créer un identifiant au sein de la base de données
+- `hkpgcrd` Détruire un identifiant au sein de la base de données
+- `hkpgcrr` Faire tourner les identifiants de la base de données
+- `hkpgcrrd` Réparer les permissions de l'identifiant par défaut dans
+  la base de données
+- `hkpgcrurl` Afficher les informations d'un identifiant de base de données
+- `hkpgdg` Exécuter ou afficher un rapport de diagnostic
+- `hkpgi` Afficher les informations de la base de données
+- `hkpgk` Tuer une requête
+- `hkpgka` Terminer toutes les connexions pour tous les identifiants
+- `hkpglks` Afficher les requêtes avec des verrous actifs
+- `hkpglnk` Lister toutes les bases et les informations de lien
+- `hkpglnkc` Créer un lien entre des magasins de données
+- `hkpglnkd` Détruire un lien entre des magasins de données
+- `hkpgmt` heroku pg:maintenance
+- `hkpgmtr` Démarrer la maintenance
+- `hkpgmtw` Définir la fenêtre de maintenance hebdomadaire
+- `hkpgo` Afficher les 10 requêtes au temps d'exécution agrégé le plus long
+- `hkpgp` Définir DATABASE comme votre DATABASE_URL
+- `hkpgps` Voir les requêtes actives avec le temps d'exécution
+- `hkpgpsql` Ouvrir un shell psql vers la base de données
+- `hkpgpull` Rapatrier la base Heroku vers une base locale ou distante
+- `hkpgpush` Pousser une base locale ou distante vers Heroku
+- `hkpgreset` Supprimer toutes les données de DATABASE
+- `hkpgset` Afficher vos paramètres actuels de base de données
+- `hkpgsetllw` Contrôler si un message de log est produit lorsqu'une
+  session attend plus longtemps que deadlock_timeout pour obtenir un verrou.
+- `hkpgsetlmds` La durée de chaque requête terminée sera journalisée si
+  elle dépasse la durée spécifiée par VALUE
+- `hkpgsetlgs` 'log_statement' contrôle quelles requêtes SQL sont journalisées
+- `hkpguf` Arrêter le suivi d'un réplica et le rendre accessible en écriture
+- `hkpgup` Arrêter de suivre une base et la mettre à niveau vers la dernière
+  version stable de PostgreSQL
+- `hkpgvs` Afficher les lignes mortes et si un vacuum automatique est attendu
+  d'être déclenché
+- `hkpgww` Bloquer jusqu'à ce que la base soit disponible
+- `hkpipe` Lister les pipelines auxquels vous avez accès
+- `hkpipea` Ajouter cette application à un pipeline
+- `hkpipec` Créer un nouveau pipeline
+- `hkpipect` Connecter un dépôt GitHub à un pipeline existant
+- `hkpipediff` Comparer la dernière release de cette app à ses apps aval
+- `hkpipei` Afficher la liste des apps dans un pipeline
+- `hkpipek` Détruire un pipeline
+- `hkpipeo` Ouvrir un pipeline dans le tableau de bord
+- `hkpipep` Promouvoir la dernière release de cette app vers ses apps aval
+- `hkpiper` heroku pipelines:remove Retirer cette app de son pipeline
+- `hkpipern` Renommer un pipeline
+- `hkpipes` Amorcer un nouveau pipeline avec des réglages communs et créer
+  une app de production et de staging (requiert un app.json complet dans
+  le dépôt)
+- `hkpipett` Transférer la propriété d'un pipeline
+- `hkpipeu` Mettre à jour l'étape de l'app dans un pipeline
+- `hkplugs` Lister les plugins installés
+- `hkplugsi` Installer un plugin dans la CLI
+- `hkplugslk` Lier un plugin à la CLI pour le développement
+- `hkplugsui` Supprimer un plugin de la CLI
+- `hkplugsu` Mettre à jour les plugins installés
+- `hkpsad` Désactiver l'autoscaling des dynos web
+- `hkps` Lister les dynos d'une application
+- `hkpsae` Activer l'autoscaling des dynos web
+- `hkpsc` Copier un fichier d'un dyno vers le système local
+- `hkpse` Créer une session SSH vers un dyno
+- `hkpsf` Rediriger le trafic d'un port local vers un dyno
+- `hkpsk` Arrêter un dyno d'application
+- `hkpsr` Redémarrer les dynos d'application
+- `hkpsrs` Gérer la taille des dynos
+- `hkpss` Arrêter un dyno d'application
+- `hkpssc` Ajuster la quantité de dynos
+- `hkpssck` Lancer un proxy SOCKS vers un dyno
+- `hkpst` Gérer la taille des dynos
+- `hkpsw` Attendre que tous les dynos exécutent la dernière version après
+  une release
+- `hkred` Obtenir des informations sur Redis
+- `hkredcli` Ouvrir un prompt Redis
+- `hkredcr` Afficher les informations d'identifiants
+- `hkredi` Obtenir des informations sur Redis
+- `hkredkn` Définir la configuration des notifications de keyspace
+- `hkredmm` Définir la politique d'éviction des clés
+- `hkredmt` Gérer les fenêtres de maintenance
+- `hkredp` Définir DATABASE comme votre REDIS_URL
+- `hkredsr` Réinitialiser toutes les statistiques couvertes par RESETSTAT
+  (<https://redis.io/commands/config-resetstat>)
+- `hkredt` Définir le nombre de secondes avant d'arrêter les connexions inactives
+- `hkredw` Attendre que l'instance Redis soit disponible
+- `hkrel` Afficher les releases d'une application
+- `hkreli` Afficher les informations détaillées d'une release
+- `hkrelo` Afficher la sortie de la commande de release
+- `hkrelr` Revenir à une release précédente
+- `hkrvae` Activer les review apps et/ou paramètres sur un pipeline existant
+- `hkrvad` Désactiver les review apps et/ou paramètres sur un pipeline existant
+- `hkrun` Exécuter un processus ponctuel dans un dyno Heroku
+- `hkrund` Exécuter un dyno détaché, la sortie étant envoyée aux logs
+- `hksessions` Lister vos sessions OAuth
+- `hksessionsd` Supprimer (déconnecter) une session OAuth par ID
+- `hksp` Lister les espaces disponibles
+- `hkspc` Créer un nouvel espace
+- `hkspd` Détruire un espace
+- `hkspi` Afficher les informations sur un espace
+- `hksppi` Afficher les informations nécessaires pour initier une connexion
+  de peering
+- `hkspp` Lister les connexions de peering d'un espace
+- `hksppa` Accepter une demande de peering en attente pour un espace privé
+- `hksppd` Détruire une connexion de peering active dans un espace privé
+- `hkspps` Lister les dynos d'un espace
+- `hkspr` Renommer un espace
+- `hksptop` Afficher la topologie d'un espace
+- `hkspt` Transférer un espace vers une autre équipe
+- `hkspconf` Afficher les informations de configuration pour VPN
+- `hkspvc` Créer un VPN
+- `hkspvcs` Lister les connexions VPN d'un espace
+- `hkspvk` Détruire le VPN dans un espace privé
+- `hkspvi` Afficher les informations pour VPN
+- `hkspvu` Mettre à jour le VPN
+- `hkspvw` Attendre la création de la connexion VPN
+- `hkspw` Attendre la création d'un espace
+- `hkwh` Lister les webhooks d'une application
+- `hkwha` Ajouter un webhook à une application
+- `hkwhdv` Lister les livraisons de webhook d'une application
+- `hkwhdvi` Infos pour un événement webhook d'une application
+- `hkwhev` Lister les événements webhook d'une application
+- `hkwhevi` Infos pour un événement webhook d'une application
+- `hkwhi` Infos pour un webhook d'une application
+- `hkwhr` Supprimer un webhook d'une application
+- `hkwhu` Mettre à jour un webhook dans une application
+
+[banner]: https://kura.pro/dotfiles/v2/images/titles/title-dotfiles.svg

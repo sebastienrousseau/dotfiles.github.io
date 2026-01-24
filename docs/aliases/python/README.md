@@ -4,7 +4,6 @@ lang: en-GB
 metaTitle: python aliases - Dotfiles
 permalink: /aliases/python/
 ---
-
 # Python Aliases
 
 Manage Python aliases. Part of the **Universal Dotfiles** configuration.
@@ -22,5 +21,6 @@ These aliases are defined in `python.aliases.sh` and are automatically loaded by
 - `v` - virtualenv
 - `uv` - uv package manager
 - `uvpi` - `uv pip install`
+
 
 [banner]: https://kura.pro/dotfiles/v2/images/titles/title-dotfiles.svg

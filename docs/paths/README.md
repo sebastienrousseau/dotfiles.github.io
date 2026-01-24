@@ -8,43 +8,50 @@ meta:
   - name: keywords
     content: path, environment, variables, hierarchy, dotfiles, chezmoi
 ---
+<img
+  src="https://kura.pro/dotfiles/v2/images/logos/dotfiles.svg"
+  alt="dotfiles logo"
+  width="66"
+  align="right"
+/>
 
-# Path Management
+# Dotfiles Path Configuration (v0.2.471)
 
-One of the most critical roles of Dotfiles is managing your `$PATH` environment variable. This determines which version of a tool is executed when you type a command.
+Simply designed to fit your shell life 🐚
 
-We adhere to a strict hierarchy to ensure consistency across macOS and Linux.
+![Dotfiles banner][banner]
 
-## The Hierarchy
+This directory manages your system `PATH` variable using modular scripts.
 
-From highest priority (checked first) to lowest:
+## 📖 How it Works
 
-1.  **Local Binaries** (`~/.local/bin`)
-    - **Priority**: 1
-    - **Purpose**: Custom user scripts, `dot` CLI, and tools installed via `pipx` or other user-level package managers.
-    - **Reason**: Allows you to override system or Homebrew tools with your own versions.
+Path configurations are split into priority-based files. `chezmoi` aggregates them alphabetically.
 
-2.  **Application Binaries** (macOS)
-    - **Priority**: 2
-    - **Purpose**: Binaries from installed applications (e.g., VS Code, iTerm).
+1. `dot_config/shell/paths.sh.tmpl` scans this directory.
+2. Content is aggregated into `~/.config/shell/paths.sh`.
+3. Sourced by `.zshrc` at startup.
 
-3.  **Language Runtimes**
-    - **Node.js**: `~/.node_modules/bin`
-    - **Go**: `~/go/bin`
-    - **Rust (Cargo)**: `~/.cargo/bin`
-    - **Ruby (User Gems)**: `~/.gem/ruby/bin`
-    - **Python (Pipx)**: `~/.local/share/pipx`
+## 🔑 Scripts List
 
-4.  **Homebrew** (`/opt/homebrew/bin`)
-    - **Priority**: 3
-    - **Purpose**: Main package manager for macOS/Linux.
-    - **Note**: We purposely load Homebrew _before_ system paths to allow upgrading system tools (like `git` or `curl`).
+| Script | Description |
+| :--- | :--- |
+| `00-default.paths.sh` | Sets base system paths (`/usr/bin`, `/sbin`, etc.) and Homebrew. Loaded first. |
+| `99-custom.paths.sh` | Sets custom user paths (Language SDKs, local bins). Loaded last to ensure precedence. |
 
-5.  **System Paths** (`/usr/bin`, `/bin`)
-    - **Priority**: Lowest
-    - **Purpose**: Default operating system tools.
-    - **Reason**: Fallback for fundamental utilities.
+## 🛠 Usage
 
-## Deduplication
+### Adding a user path
+1. Edit `99-custom.paths.sh` or create a new file (e.g. `50-myproject.paths.sh`).
+2. Add `export PATH="$PATH:/path/to/dir"`.
+3. Apply changes:
+   ```bash
+   chezmoi apply
+   ```
+4. Verify:
+   ```bash
+   echo $PATH
+   ```
 
-Dotfiles automatically deduplicates your `$PATH` while preserving the order of precedence. This prevents the `$PATH` variable from growing indefinitely when spawning nested shells.
+<!-- markdownlint-enable MD013-->
+
+[banner]: https://kura.pro/dotfiles/v2/images/titles/title-dotfiles.svg

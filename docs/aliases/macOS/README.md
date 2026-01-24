@@ -4,7 +4,6 @@ lang: en-GB
 metaTitle: macOS aliases - Dotfiles
 permalink: /aliases/macOS/
 ---
-
 # macOS Aliases
 
 Manage macOS aliases. Part of the **Universal Dotfiles** configuration.
@@ -18,9 +17,8 @@ These aliases are defined in `macOS.aliases.sh` and are automatically loaded by 
 ## ⚡ Aliases
 
 This code provides a set of aliases for macOS.
-
 - `clds` Recursively delete .DS_Store files.
-- `clls` Clean up LaunchServices to remove duplicates in the
+- `clls`  Clean up LaunchServices to remove duplicates in the
   'Open With' menu.
 - `finderHideHidden` Hide hidden files in Finder.
 - `finderShowHidden` Show hidden files in Finder.

@@ -1,50 +1,57 @@
 ---
-description: Comment Dotfiles gère la hiérarchie de votre \$PATH pour garantir que les bons outils sont chargés dans le bon ordre.
+description: Comment Dotfiles gère la hiérarchie de votre variable \$PATH pour charger les bons outils dans le bon ordre.
 lang: fr-FR
-metaTitle: Chemins (Paths) - Dotfiles (FR)
+metaTitle: Chemins - Dotfiles (FR)
 permalink: /fr/paths/
 
 meta:
   - name: keywords
     content: path, environnement, variables, hiérarchie, dotfiles, chezmoi
 ---
+<img
+  src="https://kura.pro/dotfiles/v2/images/logos/dotfiles.svg"
+  alt="logo dotfiles"
+  width="66"
+  align="right"
+/>
 
-# Gestion des Chemins (Paths)
+# Configuration du PATH Dotfiles (v0.2.471)
 
-L'un des rôles les plus critiques de Dotfiles est la gestion de votre variable d'environnement `$PATH`. Cela détermine quelle version d'un outil est exécutée lorsque vous tapez une commande.
+Simplement conçu pour s'adapter à votre vie de shell 🐚
 
-Nous adhérons à une hiérarchie stricte pour assurer la cohérence entre macOS et Linux.
+![Dotfiles banner][banner]
 
-## La Hiérarchie
+Ce répertoire gère votre variable système `PATH` à l'aide de scripts modulaires.
 
-De la priorité la plus élevée (vérifié en premier) à la plus basse :
+## 📖 Fonctionnement
 
-1.  **Binaires Locaux** (`~/.local/bin`)
-    - **Priorité** : 1
-    - **But** : Scripts utilisateur personnalisés, CLI `dot`, et outils installés via `pipx` ou d'autres gestionnaires de paquets niveau utilisateur.
-    - **Raison** : Vous permet de surcharger les outils système ou Homebrew avec vos propres versions.
+Les configurations de chemins sont réparties en fichiers ordonnés par priorité. `chezmoi` les agrège par ordre alphabétique.
 
-2.  **Binaires d'Applications** (macOS)
-    - **Priorité** : 2
-    - **But** : Binaires des applications installées (ex: VS Code, iTerm).
+1. `dot_config/shell/paths.sh.tmpl` parcourt ce répertoire.
+2. Le contenu est agrégé dans `~/.config/shell/paths.sh`.
+3. Ce fichier est sourcé par `.zshrc` au démarrage.
 
-3.  **Runtimes de Langages**
-    - **Node.js** : `~/.node_modules/bin`
-    - **Go** : `~/go/bin`
-    - **Rust (Cargo)** : `~/.cargo/bin`
-    - **Ruby (User Gems)** : `~/.gem/ruby/bin`
-    - **Python (Pipx)** : `~/.local/share/pipx`
+## 🔑 Liste des scripts
 
-4.  **Homebrew** (`/opt/homebrew/bin`)
-    - **Priorité** : 3
-    - **But** : Gestionnaire de paquets principal pour macOS/Linux.
-    - **Note** : Nous chargeons volontairement Homebrew _avant_ les chemins système pour permettre la mise à jour des outils système (comme `git` ou `curl`).
+| Script | Description |
+| :--- | :--- |
+| `00-default.paths.sh` | Définit les chemins système de base (`/usr/bin`, `/sbin`, etc.) et Homebrew. Chargé en premier. |
+| `99-custom.paths.sh` | Définit les chemins utilisateurs (SDKs de langages, binaires locaux). Chargé en dernier pour garantir la priorité. |
 
-5.  **Chemins Système** (`/usr/bin`, `/bin`)
-    - **Priorité** : La plus basse
-    - **But** : Outils par défaut du système d'exploitation.
-    - **Raison** : Repli pour les utilitaires fondamentaux.
+## 🛠 Utilisation
 
-## Déduplication
+### Ajouter un chemin utilisateur
+1. Modifiez `99-custom.paths.sh` ou créez un nouveau fichier (ex. `50-monprojet.paths.sh`).
+2. Ajoutez `export PATH="$PATH:/chemin/vers/repertoire"`.
+3. Appliquez les changements :
+   ```bash
+   chezmoi apply
+   ```
+4. Vérifiez :
+   ```bash
+   echo $PATH
+   ```
 
-Dotfiles déduplique automatiquement votre `$PATH` tout en préservant l'ordre de priorité. Cela empêche la variable `$PATH` de croître indéfiniment lors du lancement de shells imbriqués.
+<!-- markdownlint-enable MD013-->
+
+[banner]: https://kura.pro/dotfiles/v2/images/titles/title-dotfiles.svg

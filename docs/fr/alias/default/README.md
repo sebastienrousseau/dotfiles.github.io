@@ -1,75 +1,50 @@
 ---
-description: Les alias par défaut sont des alias qui ne sont pas spécifiques à une ligne de commande spécifique. Ce sont des alias courants qui sont utilisés dans de nombreux contextes différents et qui sont répertoriés dans cette section pour des raisons de commodité.
+description: Les alias par défaut ne sont pas spécifiques à une commande particulière. Ce sont des alias courants utilisés dans de nombreux contextes, listés ici pour plus de commodité.
 lang: fr-FR
-metaTitle: Les alias par défaut - Dotfiles (FR)
-permalink: /aliases/default/
+metaTitle: Alias par défaut - Dotfiles (FR)
+permalink: /alias/default/
 
 meta:
-  - name: keywords
-    content: aliases, défaut, raccourcis, shell, terminal
   - name: twitter:card
-    content: Les alias par défaut sont des alias qui ne sont pas spécifiques à une ligne de commande spécifique. Ce sont des alias courants qui sont utilisés dans de nombreux contextes différents et qui sont répertoriés dans cette section pour des raisons de commodité.
+    content: Les alias par défaut ne sont pas spécifiques à une commande particulière. Ce sont des alias courants utilisés dans de nombreux contextes, listés ici pour plus de commodité.
   - name: twitter:description
-    content: Les alias par défaut sont des alias qui ne sont pas spécifiques à une ligne de commande spécifique. Ce sont des alias courants qui sont utilisés dans de nombreux contextes différents et qui sont répertoriés dans cette section pour des raisons de commodité.
+    content: Les alias par défaut ne sont pas spécifiques à une commande particulière. Ce sont des alias courants utilisés dans de nombreux contextes, listés ici pour plus de commodité.
   - name: twitter:title
-    content: Les alias par défaut - Dotfiles (FR)
+    content: Alias par défaut - Dotfiles (FR)
   - name: og:title
-    content: Les alias par défaut - Dotfiles (FR)
+    content: Alias par défaut - Dotfiles (FR)
   - name: og:description
-    content: Les alias par défaut sont des alias qui ne sont pas spécifiques à une ligne de commande spécifique. Ce sont des alias courants qui sont utilisés dans de nombreux contextes différents et qui sont répertoriés dans cette section pour des raisons de commodité.
+    content: Les alias par défaut ne sont pas spécifiques à une commande particulière. Ce sont des alias courants utilisés dans de nombreux contextes, listés ici pour plus de commodité.
   - name: og:image:alt
     content: Les Dotfiles - Conçus pour s'adapter à votre vie de shell
   - name: og:locale
     content: fr_FR
 ---
+# Alias par défaut
 
-# Les alias par défaut
+Gérer les alias par défaut. Fait partie de la configuration **Universal Dotfiles**.
 
-Le fichier `default.aliases.sh` crée des alias de raccourcis pour plusieurs
-commandes courantes.
+![Dotfiles banner][banner]
 
-Les raccourcis par défaut sont des alias qui ne sont pas associés à une ligne de
-commande particulière. Ils sont utilisés dans de nombreux contextes et
-répertoriés dans cette section pour des raisons de commodité. Ils sont classés
-par ordre alphabétique pour faciliter leur utilisation.
+## 📖 Description
 
-## Raccourcis par défaut
+Ces alias sont définis dans `default.aliases.sh` et sont chargés automatiquement par `chezmoi`.
 
-| Alias    | Command                              | Description                                                             |
-| -------- | ------------------------------------ | ----------------------------------------------------------------------- | ------------------------------------------------------- |
-| :q       | `quit`                               | Raccourci pour quitter la session actuelle.                             |
-| bye      | `quit`                               | Raccourci pour quitter la session actuelle.                             |
-| ctf      | `echo $(ls -1                        | wc -l)`                                                                 | Compte le nombre de fichiers dans le répertoire actuel. |
-| curl     | `curl --compressed`                  | Raccourci pour `curl` avec compression.                                 |
-| da       | `date "+%Y-%m-%d %A %T %Z"`          | Raccourci pour `date` avec un format personnalisé.                      |
-| h        | `history`                            | Raccourci pour `history`.                                               |
-| halt     | `sudo /sbin/halt`                    | Raccourci pour `halt` avec `sudo`.                                      |
-| ifconfig | `sudo ifconfig`                      | Raccourci pour `ifconfig` avec `sudo`.                                  |
-| ipinfo   | `ipconfig getpacket en0`             | Raccourci pour `ipconfig getpacket en0`.                                |
-| moon     | `curl -s "wttr.in/?format=%m"`       | Raccourci pour `curl` avec `wttr.in` pour afficher la phase de la lune. |
-| nls      | `sudo lsof -i -P                     | grep LISTEN`                                                            | Raccourci pour `lsof` avec `sudo`.                      |
-| now      | `date +"%T"`                         | Raccourci pour `date` avec un format personnalisé.                      |
-| op       | `sudo lsof -i -P`                    | Raccourci pour `lsof` avec `sudo`.                                      |
-| p        | `pwd`                                | Raccourci pour `pwd`.                                                   |
-| path     | `echo ${PATH//:/\\n}`                | Raccourci pour afficher le PATH.                                        |
-| pid      | `ps -f`                              | Raccourci pour `ps` avec un format personnalisé.                        |
-| ping     | `ping -c 5`                          | Raccourci pour `ping` avec 5 paquets.                                   |
-| please   | `sudo -`                             | Raccourci pour `sudo` avec `-`.                                         |
-| ports    | `netstat -tulan`                     | Raccourci pour `netstat` avec un format personnalisé.                   |
-| poweroff | `sudo /sbin/shutdown`                | Raccourci pour `shutdown` avec `sudo`.                                  |
-| ps       | `ps auxwww`                          | Raccourci pour `ps` avec un format personnalisé.                        |
-| q        | `quit`                               | Raccourci pour quitter la session actuelle.                             |
-| qfind    | `find . -name`                       | Raccourci pour `find` avec un format personnalisé.                      |
-| quit     | `exit`                               | Raccourci pour `exit`.                                                  |
-| r        | `reload`                             | Raccourci pour recharger la session actuelle.                           |
-| reboot   | `sudo /sbin/reboot`                  | Raccourci pour `reboot` avec `sudo`.                                    |
-| reload   | `exec $SHELL -l`                     | Raccourci pour quitter la session actuelle.                             |
-| shutdown | `sudo shutdown -h now'`              | Raccourci pour `shutdown` avec `sudo`.                                  |
-| spd      | `sudo rm -rf /private/var/log/asl/*` | Enlève les journaux système.                                            |
-| srv      | `python3 -m http.server`             | Raccourci pour `python3` avec un serveur HTTP.                          |
-| t        | `tail -f`                            | Raccourci pour `tail` avec un format personnalisé.                      |
-| top      | `sudo btop`                          | Raccourci pour `btop` avec `sudo`.                                      |
-| tree     | `tree --dirsfirst`                   | Raccourci pour `tree` avec un format personnalisé.                      |
-| wk       | `date +%V`                           | Raccourci pour `date` avec un format personnalisé.                      |
-| wth      | `curl -s "wttr.in/?format=3"`        | Raccourci pour `curl` avec `wttr.in` pour afficher la météo.            |
-| x        | `quit`                               | Raccourci pour quitter la session actuelle.                             |
+## ⚡ Alias
+
+Ce code fournit un ensemble d'alias de commande pour rendre les tâches et
+commandes courantes plus pratiques et plus rapides à exécuter. Ces alias vont
+du généraliste à la surveillance système et la navigation dans le système de fichiers.
+Parmi les plus utiles :
+- `c` : raccourci pour la commande `clear` afin de nettoyer l'écran du terminal.
+- `p` : raccourci pour la commande `pwd` afin d'afficher le répertoire courant.
+- `h` : lister les commandes récemment utilisées.
+- `path` : afficher la variable `$PATH` sur plusieurs lignes.
+- `quit` : raccourci pour la commande `exit` afin de quitter le shell.
+- `halt`, `poweroff`, `reboot` : commandes d'arrêt et de redémarrage du système.
+- `srv` : démarrer un serveur HTTP simple.
+- `top` : surveiller de manière interactive les ressources système ou les processus en temps réel.
+- `qfind` : rechercher rapidement des fichiers.
+- `clc` : effacer l'écran et afficher le contenu du répertoire courant.
+
+[banner]: https://kura.pro/dotfiles/v2/images/titles/title-dotfiles.svg

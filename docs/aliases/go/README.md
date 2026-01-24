@@ -4,7 +4,6 @@ lang: en-GB
 metaTitle: go aliases - Dotfiles
 permalink: /aliases/go/
 ---
-
 # Go Aliases
 
 Manage Go language aliases. Part of the **Universal Dotfiles** configuration.
