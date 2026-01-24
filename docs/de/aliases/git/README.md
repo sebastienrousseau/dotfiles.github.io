@@ -129,18 +129,18 @@ für die Git-Kommandozeilen-Tools. Git-Aliase verbessern Geschwindigkeit und Eff
 
 | Alias  | Befehl                                                          | Beschreibung                                                                                                                    |
 | ------ | --------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------- |
-| gpb    | `git push --set-upstream origin $(git current-branch)`          | Veröffentliche den aktuellen Branch durch Pushen zum Remote "origin" und setze den aktuellen Branch auf Tracking des Upstreams. |
+| gpb    | `git push --set-upstream origin $(git branch --show-current)`          | Veröffentliche den aktuellen Branch durch Pushen zum Remote "origin" und setze den aktuellen Branch auf Tracking des Upstreams. |
 | gpcb   | `git push origin "$(git branch \| grep '\*' \| tr -d '\* \n')"` | Pushe aktuellen Branch.                                                                                                         |
 | gpo    | `git push origin`                                               | Pushe lokale Änderungen zum Online-Repository.                                                                                  |
 | gpoll  | `git push origin --all`                                         | Pushe jeden deiner lokalen Git-Branches zum Remote-Repository.                                                                  |
 | gpt    | `git push --tags`                                               | Pushe lokale Tags.                                                                                                              |
 | gpull  | `git pull`                                                      | Hole von einem anderen Repository oder lokalen Branch und integriere.                                                           |
-| gpullo | `git pull origin $(git current-branch)`                         | Führe einen Pull nur für einen Branch durch.                                                                                    |
+| gpullo | `git pull origin $(git branch --show-current)`                         | Führe einen Pull nur für einen Branch durch.                                                                                    |
 | gpullm | `git pull origin master`                                        | Ziehe Änderungen vom lokal gespeicherten Branch origin/master und merge diese in den lokal ausgecheckten Branch.                |
 | gpush  | `git push`                                                      | Aktualisiere Remote-Refs zusammen mit zugehörigen Objekten.                                                                     |
-| gpusho | `git push origin $(git current-branch)`                         | Führe einen Push nur für einen Branch durch.                                                                                    |
+| gpusho | `git push origin $(git branch --show-current)`                         | Führe einen Push nur für einen Branch durch.                                                                                    |
 | gpushr | `git remote \| xargs -I% -n1 git push %`                        | git remotes-push - Für jeden Remote-Branch, pushe ihn.                                                                          |
-| gunpub | `git push origin :$(git current-branch)`                        | Veröffentlichung des aktuellen Branch rückgängig machen, indem die Remote-Version gelöscht wird.                                |
+| gunpub | `git push origin :$(git branch --show-current)`                        | Veröffentlichung des aktuellen Branch rückgängig machen, indem die Remote-Version gelöscht wird.                                |
 
 ## Satz verfolgter Repositories verwalten
 

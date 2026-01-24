@@ -126,18 +126,18 @@ Git 别名提供了强大的命令，可以为常用的 Git 命令创建快捷�
 
 | 别名   | 命令                                                      | 描述                                                                         |
 | ------ | --------------------------------------------------------- | ---------------------------------------------------------------------------- |
-| gpb    | `git push --set-upstream origin $(git current-branch)`    | 通过将当前分支推送到远程“origin”并设置当前分支以跟踪上游分支来发布当前分支。 |
+| gpb    | `git push --set-upstream origin $(git branch --show-current)`    | 通过将当前分支推送到远程“origin”并设置当前分支以跟踪上游分支来发布当前分支。 |
 | gpcb   | `git push origin "$(git branch grep '\*' tr -d '\* \n')"` | 推送当前分支。                                                               |
 | gpo    | `git push origin`                                         | 将本地更改推送到在线存储库。                                                 |
 | gpoll  | `git push origin --all`                                   | 将每个本地 git 分支推送到远程存储库。                                        |
 | gpt    | `git push --tags`                                         | 推送本地标签。                                                               |
 | gpull  | `git pull`                                                | 从另一个存储库或本地分支获取并集成。                                         |
-| gpullo | `git pull origin $(git current-branch)`                   | 仅拉取一个分支。                                                             |
+| gpullo | `git pull origin $(git branch --show-current)`                   | 仅拉取一个分支。                                                             |
 | gpullm | `git pull origin master`                                  | 从本地存储的分支 origin/master 拉取更改并将其合并到本地检出的分支。          |
 | gpush  | `git push`                                                | 更新远程引用以及相关对象。                                                   |
-| gpusho | `git push origin $(git current-branch)`                   | 仅推送一个分支。                                                             |
+| gpusho | `git push origin $(git branch --show-current)`                   | 仅推送一个分支。                                                             |
 | gpushr | `git remote xargs -I% -n1 git push %`                     | git remotes-push - 对于每个远程分支，推送它。                                |
-| gunpub | `git push origin :$(git current-branch)`                  | 通过删除当前分支的远程版本来取消发布当前分支。                               |
+| gunpub | `git push origin :$(git branch --show-current)`                  | 通过删除当前分支的远程版本来取消发布当前分支。                               |
 
 ## 管理跟踪存储库集
 

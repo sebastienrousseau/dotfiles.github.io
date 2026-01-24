@@ -144,18 +144,18 @@ Los alias de Git proporcionan comandos potentes que crean atajos para los comand
 
 | Alias  | Command                                                | Description                                                                                                          |
 | ------ | ------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------- | --------------------------- |
-| gpb    | `git push --set-upstream origin $(git current-branch)` | Publicar la rama actual empujándola al remoto "origin" y configurando la rama actual para rastrear la rama upstream. |
+| gpb    | `git push --set-upstream origin $(git branch --show-current)` | Publicar la rama actual empujándola al remoto "origin" y configurando la rama actual para rastrear la rama upstream. |
 | gpcb   | `git push origin "$(git branch                         | grep '\*'                                                                                                            | tr -d '\* \n')"`                                     | Empujar (Push) rama actual. |
 | gpo    | `git push origin`                                      | Empujar cambios locales al repositorio en línea.                                                                     |
 | gpoll  | `git push origin --all`                                | Empujar cada una de tus ramas locales de git al repositorio remoto.                                                  |
 | gpt    | `git push --tags`                                      | Empujar etiquetas locales.                                                                                           |
 | gpull  | `git pull`                                             | Obtener de e integrar con otro repositorio o una rama local.                                                         |
-| gpullo | `git pull origin $(git current-branch)`                | Hacer un pull para solo una rama.                                                                                    |
+| gpullo | `git pull origin $(git branch --show-current)`                | Hacer un pull para solo una rama.                                                                                    |
 | gpullm | `git pull origin master`                               | Hacer pull de cambios de la rama origin/master almacenada localmente y fusionarla a la rama local actual.            |
 | gpush  | `git push`                                             | Actualizar referencias remotas junto con los objetos asociados.                                                      |
-| gpusho | `git push origin $(git current-branch)`                | Hacer un push para solo una rama.                                                                                    |
+| gpusho | `git push origin $(git branch --show-current)`                | Hacer un push para solo una rama.                                                                                    |
 | gpushr | `git remote                                            | xargs -I% -n1 git push %`                                                                                            | git remotes-push - Para cada rama remota, empujarla. |
-| gunpub | `git push origin :$(git current-branch)`               | Dejar de publicar la rama actual borrando la versión remota de la rama actual.                                       |
+| gunpub | `git push origin :$(git branch --show-current)`               | Dejar de publicar la rama actual borrando la versión remota de la rama actual.                                       |
 
 ## Gestionar conjunto de repositorios rastreados
 
