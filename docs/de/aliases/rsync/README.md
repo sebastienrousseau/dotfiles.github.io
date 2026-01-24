@@ -1,21 +1,41 @@
 ---
-description: Die Rsync-Aliase sind eine Sammlung von Aliasen, die es Ihnen ermöglichen, mit dem `rsync` Kommandozeilen-Tool zu interagieren. Rsync ist ein Tool, das Dateien und Verzeichnisse zwischen zwei Orten synchronisiert.
+description: Die Rsync-Aliase sind eine Sammlung von Aliasen, die die Arbeit mit dem `rsync` CLI-Tool erleichtern. Rsync synchronisiert Dateien und Verzeichnisse zwischen zwei Orten.
 lang: de-DE
-metaTitle: Rsync Aliase - Dotfiles (DE)
+metaTitle: Die Rsync-Aliase - Dotfiles (DE)
 permalink: /de/aliases/rsync/
+
+meta:
+  - name: keywords
+    content: aliases, rsync, linux, macos, shell, terminal, windows
+  - name: twitter:card
+    content: Die Rsync-Aliase sind eine Sammlung von Aliasen, die die Arbeit mit dem `rsync` CLI-Tool erleichtern. Rsync synchronisiert Dateien und Verzeichnisse zwischen zwei Orten.
+  - name: twitter:description
+    content: Die Rsync-Aliase sind eine Sammlung von Aliasen, die die Arbeit mit dem `rsync` CLI-Tool erleichtern. Rsync synchronisiert Dateien und Verzeichnisse zwischen zwei Orten.
+  - name: twitter:title
+    content: Die Rsync-Aliase - Dotfiles (DE)
+  - name: og:title
+    content: Die Rsync-Aliase - Dotfiles (DE)
+  - name: og:description
+    content: Die Rsync-Aliase sind eine Sammlung von Aliasen, die die Arbeit mit dem `rsync` CLI-Tool erleichtern. Rsync synchronisiert Dateien und Verzeichnisse zwischen zwei Orten.
+  - name: og:image:alt
+    content: Dotfiles - Einfach entworfen fuer dein Shell-Leben
+  - name: og:locale
+    content: de_DE
 ---
+# Rsync-Aliase
 
-# Rsync Aliase
+Rsync-Aliase verwalten. Teil der **Universal Dotfiles** Konfiguration.
 
-Die Datei `rsync.aliases.sh` erstellt hilfreiche Shortcut-Aliase für
-[rsync](https://de.wikipedia.org/wiki/Rsync).
+![Dotfiles banner][banner]
 
-## Rsync
+## 📖 Beschreibung
 
-[Rsync](https://de.wikipedia.org/wiki/Rsync) ist ein Befehl, der Dateien und
-Verzeichnisse an einen anderen Ort kopiert.
+Diese Aliase sind in `rsync.aliases.sh` definiert und werden automatisch von `chezmoi` geladen.
 
-| Alias | Befehl       | Beschreibung                       |
-| ----- | ------------ | ---------------------------------- |
-| rs    | `rsync -avz` | Rsync mit Verbose und Fortschritt. |
-| rsync | `rs`         | Rsync mit Verbose und Fortschritt. |
+## ⚡ Aliase
+
+Dieser Code stellt eine Reihe von Aliasen fuer den Befehl `rsync` bereit.
+- `rs` Rsync mit verbose und Fortschritt.
+- `rs` Rsync mit verbose und Fortschritt.
+
+[banner]: https://kura.pro/dotfiles/v2/images/titles/title-dotfiles.svg

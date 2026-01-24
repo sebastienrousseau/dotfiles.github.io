@@ -1,39 +1,133 @@
 ---
-description: Die Chmod-Aliase ermöglichen das Ändern der Berechtigungen (oder des Zugriffsmodus) einer Datei oder eines Verzeichnisses.
+description: Die Chmod-Aliase erlauben das Aendern von Berechtigungen (Zugriffsmodus) fuer Dateien und Verzeichnisse.
 lang: de-DE
-metaTitle: Chmod Aliase - Dotfiles (DE)
+metaTitle: Chmod-Aliase - Dotfiles (DE)
 permalink: /de/aliases/chmod/
+meta:
+  - name: twitter:card
+    content: Die Chmod-Aliase erlauben das Aendern von Berechtigungen (Zugriffsmodus) fuer Dateien und Verzeichnisse.
+  - name: twitter:description
+    content: Die Chmod-Aliase erlauben das Aendern von Berechtigungen (Zugriffsmodus) fuer Dateien und Verzeichnisse.
+  - name: twitter:title
+    content: Chmod-Aliase - Dotfiles (DE)
+  - name: og:title
+    content: Chmod-Aliase - Dotfiles (DE)
+  - name: og:description
+    content: Die Chmod-Aliase erlauben das Aendern von Berechtigungen (Zugriffsmodus) fuer Dateien und Verzeichnisse.
+  - name: og:image:alt
+    content: Dotfiles - Einfach entworfen fuer dein Shell-Leben
+  - name: og:locale
+    content: de_DE
 ---
+# Chmod-Aliase
 
-# Chmod Aliase
+Chmod-Aliase verwalten. Teil der **Universal Dotfiles** Konfiguration.
 
-Die Datei `chmod.aliases.sh` erstellt hilfreiche Shortcut-Aliase zum Ändern
-von Dateiberechtigungen.
+![Dotfiles banner][banner]
 
-## Berechtigung
+## 📖 Beschreibung
 
-Das chmod-Dienstprogramm ändert die Dateimodus-Bits der aufgelisteten Dateien wie
-durch den Modus-Operanden angegeben. Es kann auch verwendet werden, um die Access Control Lists
-(ACLs) zu ändern, die mit den aufgelisteten Dateien verknüpft sind.
+Diese Aliase sind in `chmod.aliases.sh` definiert und werden automatisch von `chezmoi` geladen.
 
-| Alias  | Befehl              | Beschreibung                                                                                                                                                                                                                                                  |
-| ------ | ------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 000    | `chmod -R 000`      | (chmod a-rwx) setzt Berechtigungen so, dass (U)ser / Eigentümer nicht lesen, nicht schreiben und nicht ausführen kann. (G)roup nicht lesen, nicht schreiben und nicht ausführen kann. (O)thers nicht lesen, nicht schreiben und nicht ausführen können.       |
-| 400    | `chmod -R 400`      | (chmod a-rw) setzt Berechtigungen so, dass (U)ser / Eigentümer nicht lesen, nicht schreiben, aber ausführen kann. (G)roup nicht lesen, nicht schreiben, aber ausführen kann. (O)thers nicht lesen, nicht schreiben, aber ausführen können.                    |
-| 444    | `chmod -R 444`      | (chmod a-r) setzt Berechtigungen so, dass (U)ser / Eigentümer nicht lesen, nicht schreiben, aber ausführen kann. (G)roup nicht lesen, nicht schreiben, aber ausführen kann. (O)thers nicht lesen, nicht schreiben, aber ausführen können.                     |
-| 600    | `chmod -R 600`      | (chmod a+rwx,u-x,g-rwx,o-rwx) setzt Berechtigungen so, dass (U)ser / Eigentümer lesen, schreiben, aber nicht ausführen kann. (G)roup nicht lesen, nicht schreiben und nicht ausführen kann. (O)thers nicht lesen, nicht schreiben und nicht ausführen können. |
-| 644    | `chmod -R 644`      | (chmod a+rwx,u-x,g-wx,o-wx) setzt Berechtigungen so, dass (U)ser / Eigentümer lesen, schreiben, aber nicht ausführen kann. (G)roup lesen, nicht schreiben und nicht ausführen kann. (O)thers lesen, nicht schreiben und nicht ausführen können.               |
-| 666    | `chmod -R 666`      | (chmod a+rwx,u-x,g-x,o-x) setzt Berechtigungen so, dass (U)ser / Eigentümer lesen, schreiben, aber nicht ausführen kann. (G)roup lesen, schreiben, aber nicht ausführen kann. (O)thers lesen, schreiben, aber nicht ausführen können.                         |
-| 755    | `chmod -R 755`      | (chmod a+rwx,g-w,o-w) setzt Berechtigungen so, dass (U)ser / Eigentümer lesen, schreiben und ausführen kann. (G)roup lesen, nicht schreiben, aber ausführen kann. (O)thers lesen, nicht schreiben, aber ausführen können.                                     |
-| 764    | `chmod -R 764`      | (chmod a+rwx,g-x,o-wx) setzt Berechtigungen so, dass (U)ser / Eigentümer lesen, schreiben und ausführen kann. (G)roup lesen, schreiben, aber nicht ausführen kann. (O)thers lesen, nicht schreiben und nicht ausführen können.                                |
-| 777    | `chmod -R 777`      | (chmod a+rwx) setzt Berechtigungen so, dass (U)ser / Eigentümer lesen, schreiben und ausführen kann. (G)roup lesen, schreiben und ausführen kann. (O)thers lesen, schreiben und ausführen können.                                                             |
-| chgrp  | `chgrp -v`          | Ändere Gruppenzugehörigkeit von Dateien oder Verzeichnissen.                                                                                                                                                                                                  |
-| chgrpr | `chgrp -Rv`         | Ändere Gruppenzugehörigkeit von Dateien oder Verzeichnissen rekursiv.                                                                                                                                                                                         |
-| chgrpu | `chgrp -Rv ${USER}` | Ändere Gruppenzugehörigkeit von Dateien oder Verzeichnissen rekursiv auf den aktuellen Benutzer.                                                                                                                                                              |
-| chmod  | `chmod -v`          | Ändere Dateimodus-Bits.                                                                                                                                                                                                                                       |
-| chmodr | `chmod -Rv`         | Ändere Dateimodus-Bits rekursiv.                                                                                                                                                                                                                              |
-| chmodu | `chmod -Rv u+rwX`   | Ändere Dateimodus-Bits rekursiv auf den aktuellen Benutzer.                                                                                                                                                                                                   |
-| chmox  | `chmod +x`          | Mache eine Datei ausführbar.                                                                                                                                                                                                                                  |
-| chown  | `chown -v`          | Ändere Dateieigentümer und Gruppe.                                                                                                                                                                                                                            |
-| chownr | `chown -Rv`         | Ändere Dateieigentümer und Gruppe rekursiv.                                                                                                                                                                                                                   |
-| chownu | `chown -Rv ${USER}` | Ändere Dateieigentümer und Gruppe rekursiv auf den aktuellen Benutzer.                                                                                                                                                                                        |
+## ⚡ Aliase
+
+---
+## 🚀 Einfuehrung
+Dieses Skript bietet erweiterte Kurzbefehle und Funktionen fuer den
+`chmod`-Befehl, um Berechtigungen einfacher zu verwalten.
+Mit Features wie Eingabevalidierung, rekursiver Bestaetigung und benutzerfreundlichen
+Aliasen kannst du Berechtigungen effizient anpassen.
+---
+## 🛠️ Features
+Schnelles Anwenden gaengiger Berechtigungen mit vordefinierten Aliasen:
+| Alias        | Berechtigungen | Beschreibung                            |
+|--------------|----------------|----------------------------------------|
+| `chmod_000`  | `----------`   | Keine Berechtigungen fuer niemanden    |
+| `chmod_400`  | `r--------`    | Nur Lesen fuer den Besitzer            |
+| `chmod_444`  | `r--r--r--`    | Nur Lesen fuer alle                    |
+| `chmod_600`  | `rw-------`    | Lesen/Schreiben fuer den Besitzer      |
+| `chmod_644`  | `rw-r--r--`    | Lesen/Schreiben Besitzer, Lesen andere |
+| `chmod_666`  | `rw-rw-rw-`    | Lesen/Schreiben fuer alle              |
+| `chmod_755`  | `rwxr-xr-x`    | Voll fuer Besitzer, Lesen/Ausf. andere |
+| `chmod_764`  | `rwxrw-r--`    | Voll Besitzer, Lesen/Schreiben Gruppe  |
+| `chmod_777`  | `rwxrwxrwx`    | Volle Berechtigungen fuer alle         |
+---
+### 🔧 Rekursive Bestaetigung
+Die Funktion `change_permission` kann Berechtigungen rekursiv anwenden
+und zeigt vorab eine Bestaetigung samt Anzahl betroffener Elemente:
+```bash
+change_permission 755 /path/to/directory -R
+```
+---
+### 📂 Kurzbefehle fuer User/Group/Others
+Feintuning fuer Besitzer, Gruppe und andere:
+| Alias         | Beschreibung                               |
+|---------------|-------------------------------------------|
+| `chmod_u+x`   | Ausfuehrrecht fuer Besitzer hinzufuegen   |
+| `chmod_u-x`   | Ausfuehrrecht fuer Besitzer entfernen     |
+| `chmod_u+w`   | Schreibrecht fuer Besitzer hinzufuegen    |
+| `chmod_u-w`   | Schreibrecht fuer Besitzer entfernen      |
+| `chmod_u+r`   | Leserecht fuer Besitzer hinzufuegen       |
+| `chmod_u-r`   | Leserecht fuer Besitzer entfernen         |
+| `chmod_g+x`   | Ausfuehrrecht fuer Gruppe hinzufuegen     |
+| `chmod_g-x`   | Ausfuehrrecht fuer Gruppe entfernen       |
+| `chmod_g+w`   | Schreibrecht fuer Gruppe hinzufuegen      |
+| `chmod_g-w`   | Schreibrecht fuer Gruppe entfernen        |
+| `chmod_g+r`   | Leserecht fuer Gruppe hinzufuegen         |
+| `chmod_g-r`   | Leserecht fuer Gruppe entfernen           |
+| `chmod_o+x`   | Ausfuehrrecht fuer andere hinzufuegen     |
+| `chmod_o-x`   | Ausfuehrrecht fuer andere entfernen       |
+| `chmod_o+w`   | Schreibrecht fuer andere hinzufuegen      |
+| `chmod_o-w`   | Schreibrecht fuer andere entfernen        |
+| `chmod_o+r`   | Leserecht fuer andere hinzufuegen         |
+| `chmod_o-r`   | Leserecht fuer andere entfernen           |
+---
+Berechtigungen fuer bestimmte Dateitypen setzen:
+| Alias        | Beschreibung                                       |
+|--------------|---------------------------------------------------|
+| `chmod_755d` | Berechtigungen aller Verzeichnisse auf `rwxr-xr-x` |
+| `chmod_644f` | Berechtigungen aller Dateien auf `rw-r--r--`       |
+---
+## 📦 Installation
+1. Repository klonen:
+   ```bash
+   git clone https://github.com/sebastienrousseau/dotfiles.git
+   ```
+2. Skript in die Shell-Konfiguration einbinden:
+   ```bash
+   echo 'source /path/to/dotfiles/chmod.sh' >> ~/.bashrc
+   ```
+3. Shell neu laden:
+   ```bash
+   source ~/.bashrc
+   ```
+---
+## 🧑‍💻 Nutzung
+Beispiele fuer die Nutzung der `chmod`-Aliase und Funktionen:
+- Gaengige Berechtigungen setzen:
+  ```bash
+  chmod_644 /path/to/file
+  chmod_755 /path/to/directory
+  ```
+- Berechtigungen fuer User/Group/Others anpassen:
+  ```bash
+  chmod_u+x /path/to/script
+  chmod_g-w /path/to/file
+  chmod_o+r /path/to/file
+  ```
+- Rekursive Berechtigungen mit Bestaetigung setzen:
+  ```bash
+  change_permission 755 /path/to/directory -R
+  ```
+---
+## 🛡️ Lizenz
+Dieses Projekt ist unter der
+[MIT License](https://opensource.org/licenses/MIT) lizenziert. Siehe `LICENSE` fuer
+weitere Informationen.
+---
+## 👨‍💻 Autor
+Erstellt mit ♥ von [Sebastien Rousseau](https://sebastienrousseau.com)
+- Website: [https://sebastienrousseau.com](https://sebastienrousseau.com)
+- GitHub: [https://github.com/sebastienrousseau](https://github.com/sebastienrousseau)
+
+[banner]: https://kura.pro/dotfiles/v2/images/titles/title-dotfiles.svg
