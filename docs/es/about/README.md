@@ -24,6 +24,7 @@ A diferencia de los dotfiles heredados que dependen de Makefiles complejos o scr
   - **Yazi** (reemplaza `ls`/`ranger`)
   - **Zellij** (reemplaza `tmux`)
   - **Ghostty** (Terminal moderno acelerado por GPU)
+  - **NeoVim** (Editor moderno basado en Vim)
 - **Seguridad Nativa**: Firma SSH totalmente nativa (sin clave/sin propietarios) sin agentes de terceros.
 - **Modo Interactivo**: Nuevo comando `dot learn` para guiarte a través de las funciones.
 
@@ -31,28 +32,30 @@ A diferencia de los dotfiles heredados que dependen de Makefiles complejos o scr
 
 ### :one: Prerrequisitos
 
-- **macOS** o **Linux** (Debian/Ubuntu/Fedora/Arch)
+- **macOS**, **Linux (Ubuntu/Debian)** o **Windows (WSL)**
 - **Curl** (para descargar el instalador)
-- **Git** (gestionado automáticamente)
+- **Git**
+- **Chezmoi** (instalado por el script si falta)
+- **Nerd Font** (para iconos en la terminal)
 
 ### :two: Instalación (Una Línea)
 
 La suite completa se instala mediante un solo comando utilizando Chezmoi:
 
 ```bash
-sh -c "$(curl -fsLS get.chezmoi.io)" -- init --apply sebastienrousseau
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/sebastienrousseau/dotfiles/v0.2.471/install.sh)"
 ```
 
 Este comando:
 
 1.  Instalará el binario `chezmoi`.
-2.  Clonará el repositorio en `~/.local/share/chezmoi`.
-3.  Calculará la diferencia entre tu estado actual y el estado deseado.
-4.  Aplicará la configuración (instalando paquetes, fuentes y herramientas).
+2.  Clonará el repositorio.
+3.  **Instalará automáticamente** los paquetes requeridos (vía Homebrew en macOS o Apt en Linux).
+4.  Aplicará la configuración.
 
 ### :three: Post-instalación
 
-Una vez instalado, simplemente escribe:
+Una vez instalado, reinicia tu terminal y luego escribe:
 
 ```bash
 dot learn
@@ -66,12 +69,19 @@ Tu configuración se gestiona en `~/.local/share/chezmoi`.
 
 ```bash
 ~/.local/share/chezmoi
-├── dot_config/          # ~/.config (Ghostty, Zellij, Starship, etc.)
-├── dot_local/           # ~/.local (Scripts personalizados, bin)
-├── dot_ssh/             # Seguridad SSH
-├── dot_zshrc.tmpl       # Configuración Zsh
-├── provision/           # Scripts de instalación (Darwin/Linux)
-└── docs/                # Documentación
+├── dot_zshenv              # Punto de entrada del shell (cargador XDG)
+├── dot_config/             # Configuración base XDG (mapeada a ~/.config)
+│   ├── atuin/              # Historial del shell (config.toml)
+│   ├── ghostty/            # Emulador de terminal (config)
+│   ├── git/                # Configuración de Git (config)
+│   ├── yazi/               # Gestor de archivos (yazi.toml)
+│   ├── zellij/             # Multiplexor (config.kdl)
+│   ├── zsh/                # Configuración de Zsh (.zshrc)
+│   └── shell/              # Configuración compartida del shell (alias, rutas)
+├── provision/              # Scripts de ciclo de vida (paquetes, fuentes)
+├── install.sh              # Instalador universal
+├── README.md               # Documentación
+└── docs/                   # Documentación detallada
 ```
 
 ## Contribuir
