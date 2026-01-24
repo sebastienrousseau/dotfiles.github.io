@@ -1,24 +1,51 @@
 ---
-description: 配置别名用于打开终端和 shell 的配置文件。
+description: Configuration 别名用于打开终端与 shell 的配置文件。
 lang: zh-CN
-metaTitle: 配置别名 - Dotfiles (CN)
+metaTitle: Configuration 别名 - Dotfiles (ZH)
 permalink: /zh/aliases/configuration/
+
+meta:
+  - name: keywords
+    content: aliases, configuration, dotfiles, linux, macos, shell, terminal, windows
+  - name: twitter:card
+    content: Configuration 别名用于打开终端与 shell 的配置文件。
+  - name: twitter:description
+    content: Configuration 别名用于打开终端与 shell 的配置文件。
+  - name: twitter:title
+    content: Configuration 别名 - Dotfiles (ZH)
+  - name: og:title
+    content: Configuration 别名 - Dotfiles (ZH)
+  - name: og:description
+    content: Configuration 别名用于打开终端与 shell 的配置文件。
+  - name: og:image:alt
+    content: Dotfiles - 为你的 Shell 生活而设计
+  - name: og:locale
+    content: zh_CN
 ---
+# Configuration 别名
 
-# 配置别名
+管理 Configuration 别名。**Universal Dotfiles** 配置的一部分。
 
-`configuration.aliases.sh` 文件创建了有用的快捷别名，用于打开终端和 shell 的配置文件。
+![Dotfiles banner][banner]
 
-> [!TIP]
-> **v0.2.471 新功能**: 您现在可以使用 `dot` 命令来管理您的配置。
-> 尝试 `dot learn`进行交互式导览，或 `dot doctor` 验证您的设置。
+## 📖 描述
 
-## 配置
+这些别名定义在 `configuration.aliases.sh` 中，并由 `chezmoi` 自动加载。
 
-| 别名  | 命令                             | 描述                                   |
-| ----- | -------------------------------- | -------------------------------------- |
-| bshp  | `${=EDITOR} $HOME/.bash_profile` | 在默认文本编辑器中打开 Bash profile。  |
-| bshrc | `${=EDITOR} $HOME/.bashrc`       | 在默认文本编辑器中打开 Bash 配置文件。 |
-| gcfg  | `${=EDITOR} $HOME/.gitconfig`    | 在默认文本编辑器中打开 Git 配置文件。  |
-| gign  | `${=EDITOR} $HOME/.gitignore`    | 在默认文本编辑器中打开 Git 忽略文件。  |
-| zshrc | `${=EDITOR} $HOME/.zshrc`        | 在默认文本编辑器中打开 Zsh 配置文件。  |
+## ⚡ 别名
+
+用于快速打开关键配置文件：
+- `apconf` 打开 Apache 配置。
+- `bshrc` 打开 Bash 配置。
+- `bshp` 打开 Bash profile。
+- `dockcomp` 打开 Docker Compose 文件。
+- `eddir` 在编辑器中打开当前目录。
+- `gcfg` 打开 Git 配置。
+- `gign` 打开 Git ignore 文件。
+- `hosts` 打开 hosts 文件。
+- `ngconf` 打开 Nginx 配置。
+- `sshconf` 打开 SSH 配置。
+- `zshrc` 打开 Zsh 配置。
+- `zshp` 打开 Zsh profile。
+
+[banner]: https://kura.pro/dotfiles/v2/images/titles/title-dotfiles.svg

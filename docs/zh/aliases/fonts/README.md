@@ -1,22 +1,20 @@
 ---
-description: Dotfiles 的字体别名
+description: 字体别名用于 Dotfiles
 lang: zh-CN
-metaTitle: 字体别名 - Dotfiles (CN)
+metaTitle: 字体别名 - Dotfiles
 permalink: /zh/aliases/fonts/
 ---
-
 # 字体别名
 
-用于管理系统字体和缓存的别名。
+用于管理系统字体与缓存的别名。
 
 ## 🔡 命令
 
-| 别名           | 描述                                |
-| -------------- | ----------------------------------- |
-| `update-fonts` | 更新系统字体缓存 (`fc-cache -fv`)。 |
-| `list-fonts`   | 列出所有已安装的字体系列。          |
+| Alias | 说明 |
+|-------|------|
+| `update-fonts` | 更新字体缓存（`fc-cache -fv`）。 |
+| `list-fonts`   | 列出已安装字体族。 |
 
 ## 📦 已安装字体
-
-- **JetBrainsMono Nerd Font**: 主要终端字体。
-- **Symbols Nerd Font**: 图标回退字体。
+- **JetBrainsMono Nerd Font**：主要终端字体。
+- **Symbols Nerd Font**：图标 fallback。

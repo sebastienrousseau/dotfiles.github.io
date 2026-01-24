@@ -1,42 +1,38 @@
 ---
-description: Aliases de macOS para Dotfiles
-lang: pt-BR
-metaTitle: Aliases de macOS - Dotfiles (BR)
+description: alias de macOS para Dotfiles
+lang: pt-PT
+metaTitle: alias de macOS - Dotfiles
 permalink: /pt/aliases/macOS/
 ---
+# Alias de macOS
 
-# Aliases de macOS
-
-Gerencie aliases do macOS. Parte da configuração **Universal Dotfiles**.
+Gerenciar alias de macOS. Parte da configuracao **Universal Dotfiles**.
 
 ![Dotfiles banner][banner]
 
-## 📖 Descrição
+## 📖 Descricao
 
-Esses aliases são definidos em `macOS.aliases.sh` e são carregados automaticamente pelo `chezmoi`.
+Esses alias sao definidos em `macOS.aliases.sh` e sao carregados automaticamente pelo `chezmoi`.
 
-## ⚡ Aliases
+## ⚡ Alias
 
-Este código fornece um conjunto de aliases para macOS.
-
-- `clds` Excluir recursivamente arquivos .DS_Store.
-- `clls` Limpar LaunchServices para remover duplicatas no
-  menu 'Abrir com'.
+- `clds` Remover .DS_Store recursivamente.
+- `clls` Limpar LaunchServices para remover duplicados em "Open With".
 - `finderHideHidden` Ocultar arquivos ocultos no Finder.
 - `finderShowHidden` Mostrar arquivos ocultos no Finder.
-- `hideDesktopIcons` Ocultar todos os ícones na área de trabalho.
-- `iphone` Abrir os simuladores de dispositivos.
-- `lockScreen` Bloquear a tela do mac.
-- `ofd` Abrir o diretório atual em uma janela do Finder.
-- `purge` Purgar Xcode DerivedData.
+- `hideDesktopIcons` Ocultar icones no Desktop.
+- `iphone` Abrir simuladores de device.
+- `lockScreen` Bloquear tela do mac.
+- `ofd` Abrir diretorio atual no Finder.
+- `purge` Limpar DerivedData do Xcode.
 - `safariSafeMode` Iniciar Safari em modo seguro.
-- `showDesktopIcons` Mostrar todos os ícones na área de trabalho.
-- `screensaverDesktop` Executar um protetor de tela na área de trabalho.
-- `trash` Esvaziar a lixeira em todos os volumes montados e no HDD principal.
-- `vp` Verificar permissões do macOS.
+- `showDesktopIcons` Mostrar icones no Desktop.
+- `screensaverDesktop` Rodar screensaver no Desktop.
+- `trash` Esvaziar lixeira em todos os volumes.
+- `vp` Verificar permissoes do macOS.
 - `vv` Verificar volume do macOS.
 - `wifiOn` Ligar Wi-Fi.
 - `wifiOff` Desligar Wi-Fi.
-- `xcode` Iniciar o aplicativo XCode no macOS.
+- `xcode` Abrir XCode.
 
 [banner]: https://kura.pro/dotfiles/v2/images/titles/title-dotfiles.svg

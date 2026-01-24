@@ -1,10 +1,9 @@
 ---
-description: Dotfiles 的 Kubernetes 别名
+description: Kubernetes 别名用于 Dotfiles
 lang: zh-CN
-metaTitle: Kubernetes 别名 - Dotfiles (CN)
+metaTitle: Kubernetes 别名 - Dotfiles
 permalink: /zh/aliases/kubernetes/
 ---
-
 # Kubernetes 别名
 
 管理 Kubernetes 别名。**Universal Dotfiles** 配置的一部分。
@@ -13,12 +12,11 @@ permalink: /zh/aliases/kubernetes/
 
 ## 📖 描述
 
-这些别名在 `kubernetes.aliases.sh` 中定义，并由 `chezmoi` 自动加载。
+这些别名定义在 `kubernetes.aliases.sh` 中，并由 `chezmoi` 自动加载。
 
 ## ⚡ 别名
 
-### 核心 (core)
-
+### core
 - `k` - kubectl 快捷方式
 - `kg` - `kubectl get`
 - `kgp` - `kubectl get pods`
@@ -28,20 +26,17 @@ permalink: /zh/aliases/kubernetes/
 - `kl` - `kubectl logs`
 - `kex` - `kubectl exec -it`
 
-### 上下文 (context)
-
-- `kcx` - 列出上下文
-- `kuse` - 切换上下文
-- `kns` - 切换命名空间
+### context
+- `kcx` - 列出 contexts
+- `kuse` - 切换 context
+- `kns` - 切换 namespace
 
 ### helm
-
 - `h` - Helm 快捷方式
-- `hls` - 列出发布
+- `hls` - 列出 releases
 - `hi` - 安装 chart
 
-### 界面 (ui)
-
+### ui
 - `k9` - k9s 终端 UI
 
 [banner]: https://kura.pro/dotfiles/v2/images/titles/title-dotfiles.svg

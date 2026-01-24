@@ -1,56 +1,60 @@
 ---
-description: Modern Core 是一套 Rust 驱动的工具，用更快、更智能的替代品取代了旧版 Unix 实用程序。
+description: Modern Core 是一套 Rust 驱动工具，用于替代传统 Unix 工具。
 lang: zh-CN
-metaTitle: Modern Core - Dotfiles (CN)
+metaTitle: Modern Core - Dotfiles (ZH)
 permalink: /zh/aliases/modern-core/
+
+meta:
+  - name: keywords
+    content: modern core, atuin, yazi, zellij, ghostty, rust, shell, tools
 ---
 
-# Modern Core 工具
+# Modern Core Tools
 
-在 **v0.2.471** 中，我们引入了“Modern Core”——一套高性能、Rust 驱动的工具，旨在取代旧版 Unix 实用程序。
+在 **v0.2.471** 中，我们引入 "Modern Core" — 一套高性能 Rust 工具。
 
-## 工具概述
+## Tools Overview
 
-| 工具        | 替换对象        | 描述                                        | 快捷键          |
-| :---------- | :-------------- | :------------------------------------------ | :-------------- |
-| **Atuin**   | `history`       | 可同步、加密的 shell 历史记录，带模糊搜索。 | `Ctrl+R` / `Up` |
-| **Yazi**    | `ranger` / `ls` | 极速终端文件管理器，带图像预览。            | `yy` (别名)     |
-| **Zellij**  | `tmux`          | 具有直观布局的现代终端多路复用器。          | `Alt+n`         |
-| **Ghostty** | `Terminal.app`  | GPU 加速、跨平台终端模拟器。                | N/A             |
+| Tool        | Replaces        | Description                                             | Keybinding      |
+| :---------- | :-------------- | :------------------------------------------------------ | :-------------- |
+| **Atuin**   | `history`       | 可同步加密的历史记录与模糊搜索。                        | `Ctrl+R` / `Up` |
+| **Yazi**    | `ranger` / `ls` | 超快终端文件管理器，支持图片预览。                      | `yy` (alias)    |
+| **Zellij**  | `tmux`          | 现代终端多路复用器，布局直观。                          | `Alt+n`         |
+| **Ghostty** | `Terminal.app`  | GPU 加速跨平台终端。                                    | N/A             |
 
-## Atuin (神奇历史)
+## Atuin (Magical History)
 
-Atuin 将现有的 shell 历史记录替换为 SQLite 数据库。
+Atuin 使用 SQLite 替代 shell 历史记录。
 
-- **搜索**: 按 `Ctrl+R` 或 `向上箭头` 打开搜索 UI。
-- **过滤**: 输入自然语言查询或特定退出代码。
-- **同步**: 您的历史记录经过加密并在您的设备之间同步。
+- **Search**：`Ctrl+R` 或 `Up Arrow`。
+- **Filter**：自然语言或退出码。
+- **Sync**：加密并跨设备同步。
 
-## Yazi (文件管理器)
+## Yazi (File Manager)
 
-Yazi 是一个用 Rust 编写的终端文件管理器，基于异步 I/O。
+Yazi 是基于 async I/O 的 Rust 终端文件管理器。
 
-- **启动**: 在终端中输入 `yy`。
-- **功能**:
-  - 即时启动。
-  - Sixel/Kitty 图像预览支持。
+- **Launch**：终端输入 `yy`。
+- **Features**：
+  - 启动迅速。
+  - 支持 Sixel/Kitty 图片预览。
   - Lua 插件系统。
 
-## Zellij (多路复用器)
+## Zellij (Multiplexer)
 
-Zellij 是一个包含电池的终端工作区。
+Zellij 是功能齐全的终端工作区。
 
-- **启动**: 输入 `zellij`（或使用您配置的别名）。
-- **功能**:
-  - 布局引擎（保存/恢复工作区布局）。
+- **Launch**：`zellij`（或配置的别名）。
+- **Features**：
+  - 布局引擎（保存/恢复）。
   - 浮动窗格。
-  - 用户友好的快捷键（显示在屏幕上）。
+  - 友好的快捷键提示。
 
-## Ghostty (终端)
+## Ghostty (Terminal)
 
-Ghostty 是 Modern Core 的默认终端模拟器。
+Ghostty 是 Modern Core 的默认终端。
 
-- **功能**:
+- **Features**：
   - 原生性能（GPU 加速）。
-  - 连字和现代字体支持。
+  - 字体连字与现代字体支持。
   - 零闪烁渲染。

@@ -1,22 +1,42 @@
 ---
-description: PS 别名是一组别名，允许您与 `ps` 命令行工具交互。Ps 是一个报告当前进程快照的工具。
+description: PS 别名用于与 `ps` 交互。Ps 输出进程快照。
 lang: zh-CN
-metaTitle: PS 别名 - Dotfiles (CN)
+metaTitle: PS 别名 - Dotfiles (ZH)
 permalink: /zh/aliases/ps/
+
+meta:
+  - name: keywords
+    content: aliases, ps, process, processes, linux, macos, shell, terminal, windows
+  - name: twitter:card
+    content: PS 别名用于与 `ps` 交互。Ps 输出进程快照。
+  - name: twitter:description
+    content: PS 别名用于与 `ps` 交互。Ps 输出进程快照。
+  - name: twitter:title
+    content: PS 别名 - Dotfiles (ZH)
+  - name: og:title
+    content: PS 别名 - Dotfiles (ZH)
+  - name: og:description
+    content: PS 别名用于与 `ps` 交互。Ps 输出进程快照。
+  - name: og:image:alt
+    content: Dotfiles - 为你的 Shell 生活而设计
+  - name: og:locale
+    content: zh_CN
 ---
+# Ps 别名
 
-# PS 别名
+管理 Ps 别名。**Universal Dotfiles** 配置的一部分。
 
-`ps.aliases.sh` 文件为处理进程创建了有用的快捷别名。
+![Dotfiles banner][banner]
 
-PS 别名是一组别名，允许您与 `ps` 命令行工具交互。Ps 是一个报告当前进程快照的工具。
+## 📖 描述
 
-## PS
+这些别名定义在 `ps.aliases.sh` 中，并由 `chezmoi` 自动加载。
 
-[PS](<https://zh.wikipedia.org/wiki/Ps_(Unix)>) 是一个列出系统上运行的进程的命令。
+## ⚡ 别名
 
-| 别名 | 命令     | 描述                                                                                              |
-| ---- | -------- | ------------------------------------------------------------------------------------------------- |
-| pid  | `ps -f`  | 显示 uid、pid、父 pid、最近的 CPU 使用率、进程开始时间、控制 tty、经过的 CPU 使用率和关联的命令。 |
-| ps   | `ps -ef` | 显示所有进程。                                                                                    |
-| psa  | `ps aux` | 列出所有进程。                                                                                    |
+`ps` 相关别名：
+- `pid` 显示 uid、pid、ppid、CPU 使用、启动时间、tty、CPU 时间和命令。
+- `ps` 显示全部进程。
+- `psa` 列出全部进程。
+
+[banner]: https://kura.pro/dotfiles/v2/images/titles/title-dotfiles.svg

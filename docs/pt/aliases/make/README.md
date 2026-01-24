@@ -1,32 +1,47 @@
 ---
-description: Os aliases do Make são uma coleção de aliases que permitem interagir com a ferramenta de linha de comando `make`. Make é uma ferramenta que controla a geração de executáveis e outros arquivos não-fonte de um programa a partir dos arquivos fonte do programa.
-lang: pt-BR
-metaTitle: Aliases do Make - Dotfiles (BR)
+description: Os alias de Make permitem interagir com o comando `make`. Make controla a geracao de executaveis e outros arquivos.
+lang: pt-PT
+metaTitle: Os alias de Make - Dotfiles (PT)
 permalink: /pt/aliases/make/
+
+meta:
+  - name: keywords
+    content: aliases, make, makefile, linux, macos, shell, terminal, windows
+  - name: twitter:card
+    content: Os alias de Make permitem interagir com o comando `make`. Make controla a geracao de executaveis e outros arquivos.
+  - name: twitter:description
+    content: Os alias de Make permitem interagir com o comando `make`. Make controla a geracao de executaveis e outros arquivos.
+  - name: twitter:title
+    content: Os alias de Make - Dotfiles (PT)
+  - name: og:title
+    content: Os alias de Make - Dotfiles (PT)
+  - name: og:description
+    content: Os alias de Make permitem interagir com o comando `make`. Make controla a geracao de executaveis e outros arquivos.
+  - name: og:image:alt
+    content: Dotfiles - Simplesmente projetado para sua vida no shell
+  - name: og:locale
+    content: pt_PT
 ---
+# Alias de Make
 
-# Aliases do Make
+Gerenciar alias de Make. Parte da configuracao **Universal Dotfiles**.
 
-O arquivo `make.aliases.sh` cria aliases de atalho úteis para executar comandos
-`make`.
+![Dotfiles banner][banner]
 
-## Make
+## 📖 Descricao
 
-[Make](<https://en.wikipedia.org/wiki/Make_(software)>) é uma ferramenta que controla
-a geração de executáveis e outros arquivos não-fonte de um programa a partir dos
-arquivos fonte do programa.
+Esses alias sao definidos em `make.aliases.sh` e sao carregados automaticamente pelo `chezmoi`.
 
-Make obtém seu conhecimento de como construir seu programa de um arquivo chamado
-`Makefile`, que lista cada um dos arquivos não-fonte e como calculá-lo a partir de
-outros arquivos.
+## ⚡ Alias
 
-| Alias | Comando        | Descrição                       |
-| ----- | -------------- | ------------------------------- |
-| mk    | `make`         | Executar `make` sem argumentos. |
-| mkc   | `make clean`   | Executar `make clean`.          |
-| mkd   | `make doc`     | Executar `make doc`.            |
-| mkf   | `make format`  | Executar `make format`.         |
-| mkh   | `make help`    | Executar `make help`.           |
-| mki   | `make install` | Executar `make install`.        |
-| mkr   | `make run`     | Executar `make run`.            |
-| mkt   | `make test`    | Executar `make test`.           |
+- `mk` - Make.
+- `mkc` - Make clean.
+- `mkd` - Make doc.
+- `mkf` - Make format.
+- `mkh` - Make help.
+- `mki` - Make install.
+- `mka` - Make all.
+- `mkr` - Make run.
+- `mkt` - Make test.
+
+[banner]: https://kura.pro/dotfiles/v2/images/titles/title-dotfiles.svg
