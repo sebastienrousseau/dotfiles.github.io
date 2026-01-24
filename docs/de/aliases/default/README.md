@@ -1,56 +1,49 @@
 ---
-description: Die Standard-Aliase sind Aliase, die nicht spezifisch für einen bestimmten Befehl sind. Es sind allgemeine Aliase, die in vielen verschiedenen Kontexten verwendet werden und hier der Bequemlichkeit halber aufgeführt sind.
+description: Die Default-Aliase sind nicht an bestimmte Befehle gebunden. Es sind allgemeine Aliase, die in vielen Kontexten verwendet werden.
 lang: de-DE
-metaTitle: Standard Aliase - Dotfiles (DE)
+metaTitle: Default-Aliase - Dotfiles (DE)
 permalink: /de/aliases/default/
+
+meta:
+  - name: twitter:card
+    content: Die Default-Aliase sind nicht an bestimmte Befehle gebunden. Es sind allgemeine Aliase, die in vielen Kontexten verwendet werden.
+  - name: twitter:description
+    content: Die Default-Aliase sind nicht an bestimmte Befehle gebunden. Es sind allgemeine Aliase, die in vielen Kontexten verwendet werden.
+  - name: twitter:title
+    content: Default-Aliase - Dotfiles (DE)
+  - name: og:title
+    content: Default-Aliase - Dotfiles (DE)
+  - name: og:description
+    content: Die Default-Aliase sind nicht an bestimmte Befehle gebunden. Es sind allgemeine Aliase, die in vielen Kontexten verwendet werden.
+  - name: og:image:alt
+    content: Dotfiles - Einfach entworfen fuer dein Shell-Leben
+  - name: og:locale
+    content: de_DE
 ---
+# Default-Aliase
 
-# Standard Aliase
+Default-Aliase verwalten. Teil der **Universal Dotfiles** Konfiguration.
 
-Die Datei `default.aliases.sh` erstellt hilfreiche Shortcut-Aliase für viele häufig
-verwendete Befehle.
+![Dotfiles banner][banner]
 
-## Standard
+## 📖 Beschreibung
 
-Die Standard-Aliase sind Aliase, die nicht spezifisch für einen bestimmten Befehl sind.
-Es sind allgemeine Aliase, die in vielen verschiedenen Kontexten verwendet werden und
-hier der Bequemlichkeit halber aufgeführt sind. Die Aliase sind zur einfachen Verwendung in alphabetischer Reihenfolge aufgeführt.
+Diese Aliase sind in `default.aliases.sh` definiert und werden automatisch von `chezmoi` geladen.
 
-| Alias    | Befehl                               | Beschreibung                                                                                                                             |
-| -------- | ------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------ |
-| :q       | `quit`                               | Kurzbefehl für den `exit`-Befehl.                                                                                                        |
-| bye      | `quit`                               | Kurzbefehl für den `exit`-Befehl.                                                                                                        |
-| ctf      | `echo $(ls -1                        | wc -l)`                                                                                                                                  | Zähle die Anzahl der Dateien im aktuellen Verzeichnis. |
-| curl     | `curl --compressed`                  | Verwende Kompression beim Übertragen von Daten.                                                                                          |
-| da       | `date "+%Y-%m-%d %A %T %Z"`          | Zeige das aktuelle Datum und die Uhrzeit an.                                                                                             |
-| h        | `history`                            | Listet alle kürzlich verwendeten Befehle auf.                                                                                            |
-| halt     | `sudo /sbin/halt`                    | Fahre das System herunter (Halt).                                                                                                        |
-| ifconfig | `sudo ifconfig`                      | Hänge sudo an den ifconfig-Befehl (Netzwerkschnittstellenparameter konfigurieren) an.                                                    |
-| ipinfo   | `ipconfig getpacket en0`             | Hole Netzwerkschnittstellenparameter für en0.                                                                                            |
-| moon     | `curl -s "wttr.in/?format=%m"`       | Hole die Mondphase.                                                                                                                      |
-| nls      | `sudo lsof -i -P                     | grep LISTEN`                                                                                                                             | Zeige nur aktive Netzwerk-Listener.                    |
-| now      | `date +"%T"`                         | Zeige die aktuelle Uhrzeit.                                                                                                              |
-| op       | `sudo lsof -i -P`                    | Liste der offenen Ports.                                                                                                                 |
-| p        | `pwd`                                | Kurzbefehl für `pwd`, der den Namen des Arbeitsverzeichnisses zurückgibt.                                                                |
-| path     | `echo ${PATH//:/\\n}`                | Zeige die $PATH-Variable auf neuen Zeilen an.                                                                                            |
-| pid      | `ps -f`                              | Zeige uid, pid, parent pid, aktuelle CPU-Nutzung, Prozessstartzeit, steuerndes tty, verstrichene CPU-Nutzung und den zugehörigen Befehl. |
-| ping     | `ping -c 5`                          | Begrenze Ping auf 5 ECHO_REQUEST-Pakete.                                                                                                 |
-| please   | `sudo -`                             | Führe einen Befehl als Superuser aus.                                                                                                    |
-| ports    | `netstat -tulan`                     | Liste alle lauschenden Ports auf.                                                                                                        |
-| poweroff | `sudo /sbin/shutdown`                | Schalte das System aus (Power off).                                                                                                      |
-| ps       | `ps auxwww`                          | Hole den vollen Pfad von ausführbaren Dateien.                                                                                           |
-| q        | `quit`                               | Kurzbefehl für den `exit`-Befehl.                                                                                                        |
-| qfind    | `find . -name`                       | Suche schnell nach Datei.                                                                                                                |
-| quit     | `exit`                               | Kurzbefehl für den `exit`-Befehl.                                                                                                        |
-| r        | `reload`                             | Lade die Shell neu.                                                                                                                      |
-| reboot   | `sudo /sbin/reboot`                  | Starte das System neu.                                                                                                                   |
-| reload   | `exec $SHELL -l`                     | Lade die Shell neu.                                                                                                                      |
-| shutdown | `sudo shutdown -h now'`              | Fahre das System herunter.                                                                                                               |
-| spd      | `sudo rm -rf /private/var/log/asl/*` | Entferne alle Logdateien in /private/var/log/asl.                                                                                        |
-| srv      | `python3 -m http.server`             | Starte einen einfachen HTTP-Server.                                                                                                      |
-| t        | `tail -f`                            | Druckt die letzten 10 Zeilen einer Text- oder Logdatei und wartet dann auf neue Ergänzungen, um sie in Echtzeit zu drucken.              |
-| top      | `sudo btop`                          | Ermöglicht dem Benutzer, die vitalen Ressourcen des Systems oder Serverprozesse in Echtzeit interaktiv zu überwachen.                    |
-| tree     | `tree --dirsfirst`                   | Zeige einen Verzeichnisbaum an.                                                                                                          |
-| wk       | `date +%V`                           | Zeige die aktuelle Wochennummer.                                                                                                         |
-| wth      | `curl -s "wttr.in/?format=3"`        | Hole das Wetter.                                                                                                                         |
-| x        | `quit`                               | Kurzbefehl für den `exit`-Befehl.                                                                                                        |
+## ⚡ Aliase
+
+Dieser Code stellt Alias-Befehle bereit, um haeufige Aufgaben schneller auszufuehren.
+Die Aliase reichen von allgemeinem Nutzen bis zu Systemmonitoring und Dateinavigation.
+Einige der nuetzlichsten Aliase:
+- `c`: Kurzbefehl fuer `clear`.
+- `p`: Kurzbefehl fuer `pwd`.
+- `h`: listet kuerzlich verwendete Befehle.
+- `path`: zeigt `$PATH` in neuen Zeilen an.
+- `quit`: Kurzbefehl fuer `exit`.
+- `halt`, `poweroff`, `reboot`: System herunterfahren und neu starten.
+- `srv`: einfachen HTTP-Server starten.
+- `top`: interaktives Monitoring von Systemressourcen/Prozessen.
+- `qfind`: Schnellsuche nach Dateien.
+- `clc`: Bildschirm leeren und Verzeichnisinhalt ausgeben.
+
+[banner]: https://kura.pro/dotfiles/v2/images/titles/title-dotfiles.svg

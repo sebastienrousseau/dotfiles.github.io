@@ -1,35 +1,47 @@
 ---
-description: Die Clear-Aliase können den Bildschirm auf verschiedene Weise löschen.
+description: Die Clear-Aliase koennen den Bildschirm auf verschiedene Arten leeren.
 lang: de-DE
-metaTitle: Clear Aliase - Dotfiles (DE)
+metaTitle: Clear-Aliase - Dotfiles (DE)
 permalink: /de/aliases/clear/
+
+meta:
+  - name: twitter:card
+    content: Die Clear-Aliase koennen den Bildschirm auf verschiedene Arten leeren.
+  - name: twitter:description
+    content: Die Clear-Aliase koennen den Bildschirm auf verschiedene Arten leeren.
+  - name: twitter:title
+    content: Clear-Aliase - Dotfiles (DE)
+  - name: og:title
+    content: Clear-Aliase - Dotfiles (DE)
+  - name: og:description
+    content: Die Clear-Aliase koennen den Bildschirm auf verschiedene Arten leeren.
+  - name: og:image:alt
+    content: Dotfiles - Einfach entworfen fuer dein Shell-Leben
+  - name: og:locale
+    content: de_DE
 ---
+# Clear-Aliase
 
-# Clear Aliase
+Clear-Aliase verwalten. Teil der **Universal Dotfiles** Konfiguration.
 
-Die Datei `clear.aliases.sh` erstellt hilfreiche Shortcut-Aliase zum Löschen des
-Terminal-Bildschirms. Die Aliase können den Bildschirm auf verschiedene Weise löschen.
+![Dotfiles banner][banner]
 
-## Clear
+## 📖 Beschreibung
 
-[Clear](<https://de.wikipedia.org/wiki/Clear_(Unix)>) ist ein Befehl, der
-den Terminal-Bildschirm löscht.
+Diese Aliase sind in `clear.aliases.sh` definiert und werden automatisch von `chezmoi` geladen.
 
-| Alias  | Befehl                                          | Beschreibung                                                                                                 |
-| ------ | ----------------------------------------------- | ------------------------------------------------------------------------------------------------------------ |
-| c      | `clear`                                         | Lösche den Terminal-Bildschirm.                                                                              |
-| cl     | `c`                                             | Lösche den Terminal-Bildschirm.                                                                              |
-| clc    | `clear && cat`                                  | Lösche den Terminal-Bildschirm und drucke den Inhalt des aktuellen Verzeichnisses.                           |
-| clcat  | `clc`                                           | Lösche den Terminal-Bildschirm und drucke den Inhalt des aktuellen Verzeichnisses.                           |
-| clh    | `clear && history`                              | Lösche den Terminal-Bildschirm und drucke den Befehlsverlauf.                                                |
-| clhist | `clh`                                           | Lösche den Terminal-Bildschirm und drucke den Befehlsverlauf.                                                |
-| clp    | `clear && pwd`                                  | Lösche den Terminal-Bildschirm und drucke das aktuelle Arbeitsverzeichnis.                                   |
-| clpwd  | `clp`                                           | Lösche den Terminal-Bildschirm und drucke das aktuelle Arbeitsverzeichnis.                                   |
-| clr    | `c`                                             | Lösche den Terminal-Bildschirm.                                                                              |
-| cls    | `c`                                             | Lösche den Terminal-Bildschirm.                                                                              |
-| clt    | `clear && tree`                                 | Lösche den Terminal-Bildschirm und drucke den Verzeichnisbaum.                                               |
-| cltree | `clt`                                           | Lösche den Terminal-Bildschirm und drucke den Verzeichnisbaum.                                               |
-| ct     | `clear && tree ./`                              | Lösche den Terminal-Bildschirm und drucke den Verzeichnisbaum.                                               |
-| ctree  | `ct`                                            | Lösche den Terminal-Bildschirm und drucke den Verzeichnisbaum.                                               |
-| cpl    | `clear && pwd && echo '' && ls -a && echo ''`   | Lösche den Terminal-Bildschirm und drucke das aktuelle Arbeitsverzeichnis und den Inhalt des Verzeichnisses. |
-| cplt   | `clear && pwd && echo '' && tree ./ && echo ''` | Lösche den Terminal-Bildschirm und drucke das aktuelle Arbeitsverzeichnis und den Verzeichnisbaum.           |
+## ⚡ Aliase
+
+Dieser Code bietet eine Reihe von Aliasen, um die Arbeit im Terminal zu vereinfachen.
+Folgende Aliase sind enthalten:
+- `c` loescht den Terminalbildschirm.
+- `cdw` wechselt ins Workspace-Verzeichnis.
+- `cl` Alias fuer `c`, loescht den Terminalbildschirm.
+- `clc` loescht den Bildschirm und listet den Inhalt des aktuellen Verzeichnisses.
+- `clh` loescht den Bildschirm und gibt die Kommando-Historie aus.
+- `clp` loescht den Bildschirm und gibt das aktuelle Verzeichnis aus.
+- `clt` loescht den Bildschirm und gibt den Verzeichnisbaum aus.
+- `cpl` loescht den Bildschirm und gibt das aktuelle Verzeichnis und dessen Inhalt aus.
+- `cplt` loescht den Bildschirm und gibt das aktuelle Verzeichnis und den Verzeichnisbaum aus.
+
+[banner]: https://kura.pro/dotfiles/v2/images/titles/title-dotfiles.svg

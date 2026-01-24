@@ -1,25 +1,53 @@
 ---
-description: Die Konfigurations-Aliase sind Aliase zum Öffnen der Konfigurationsdateien für das Terminal und die Shell.
+description: Die Configuration-Aliase oeffnen Konfigurationsdateien fuer Terminal und Shell.
 lang: de-DE
-metaTitle: Konfigurations-Aliase - Dotfiles (DE)
+metaTitle: Die Configuration-Aliase - Dotfiles (DE)
 permalink: /de/aliases/configuration/
+
+meta:
+  - name: keywords
+    content: aliases, configuration, dotfiles, linux, macos, shell, terminal, windows
+  - name: twitter:card
+    content: Die Configuration-Aliase oeffnen Konfigurationsdateien fuer Terminal und Shell.
+  - name: twitter:description
+    content: Die Configuration-Aliase oeffnen Konfigurationsdateien fuer Terminal und Shell.
+  - name: twitter:title
+    content: Die Configuration-Aliase - Dotfiles (DE)
+  - name: og:title
+    content: Die Configuration-Aliase - Dotfiles (DE)
+  - name: og:description
+    content: Die Configuration-Aliase oeffnen Konfigurationsdateien fuer Terminal und Shell.
+  - name: og:image:alt
+    content: Dotfiles - Einfach entworfen fuer dein Shell-Leben
+  - name: og:locale
+    content: de_DE
 ---
+# Configuration-Aliase
 
-# Konfigurations-Aliase
+Configuration-Aliase verwalten. Teil der **Universal Dotfiles** Konfiguration.
 
-Die Datei `configuration.aliases.sh` erstellt hilfreiche Shortcut-Aliase zum Öffnen
-der Konfigurationsdateien für das Terminal und die Shell.
+![Dotfiles banner][banner]
 
-> [!TIP]
-> **Neu in v0.2.471**: Sie können jetzt den `dot`-Befehl verwenden, um Ihre Konfiguration zu verwalten.
-> Versuchen Sie `dot learn` für eine interaktive Tour oder `dot doctor` um Ihr Setup zu überprüfen.
+## 📖 Beschreibung
 
-## Konfiguration
+Diese Aliase sind in `configuration.aliases.sh` definiert und werden automatisch von `chezmoi` geladen.
 
-| Alias | Befehl                           | Beschreibung                                               |
-| ----- | -------------------------------- | ---------------------------------------------------------- |
-| bshp  | `${=EDITOR} $HOME/.bash_profile` | Öffne das Bash-Profil im Standard-Texteditor.              |
-| bshrc | `${=EDITOR} $HOME/.bashrc`       | Öffne die Bash-Konfigurationsdatei im Standard-Texteditor. |
-| gcfg  | `${=EDITOR} $HOME/.gitconfig`    | Öffne die Git-Konfigurationsdatei im Standard-Texteditor.  |
-| gign  | `${=EDITOR} $HOME/.gitignore`    | Öffne die Git-Ignore-Datei im Standard-Texteditor.         |
-| zshrc | `${=EDITOR} $HOME/.zshrc`        | Öffne die Zsh-Konfigurationsdatei im Standard-Texteditor.  |
+## ⚡ Aliase
+
+Dieser Code bietet Befehlsaliase zum schnellen Oeffnen wichtiger
+Konfigurationsdateien im Standard-Editor.
+Folgende Aliase sind enthalten:
+- `apconf` oeffnet die Apache-Konfiguration im Standard-Editor.
+- `bshrc` oeffnet die Bash-Konfiguration im Standard-Editor.
+- `bshp` oeffnet das Bash-Profile im Standard-Editor.
+- `dockcomp` oeffnet die Docker-Compose-Datei im Standard-Editor.
+- `eddir` oeffnet das aktuelle Verzeichnis im Standard-Editor.
+- `gcfg` oeffnet die Git-Konfiguration im Standard-Editor.
+- `gign` oeffnet die Git-Ignore-Datei im Standard-Editor.
+- `hosts` oeffnet die hosts-Datei im Standard-Editor.
+- `ngconf` oeffnet die Nginx-Konfiguration im Standard-Editor.
+- `sshconf` oeffnet die SSH-Konfiguration im Standard-Editor.
+- `zshrc` oeffnet die Zsh-Konfiguration im Standard-Editor.
+- `zshp` oeffnet das Zsh-Profile im Standard-Editor.
+
+[banner]: https://kura.pro/dotfiles/v2/images/titles/title-dotfiles.svg
