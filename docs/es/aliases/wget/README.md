@@ -1,23 +1,43 @@
 ---
-description: Los alias de Wget crean atajos útiles para el comando `wget`. Wget es una herramienta que descarga archivos de internet.
+description: Los alias Wget crean atajos utiles para el comando `wget`. Wget es una herramienta que descarga archivos desde Internet.
 lang: es-ES
 metaTitle: Alias de Wget - Dotfiles (ES)
 permalink: /es/aliases/wget/
----
 
+meta:
+  - name: keywords
+    content: aliases, wget, linux, macos, shell, terminal, windows
+  - name: twitter:card
+    content: Los alias Wget crean atajos utiles para el comando `wget`. Wget es una herramienta que descarga archivos desde Internet.
+  - name: twitter:description
+    content: Los alias Wget crean atajos utiles para el comando `wget`. Wget es una herramienta que descarga archivos desde Internet.
+  - name: twitter:title
+    content: Alias de Wget - Dotfiles (ES)
+  - name: og:title
+    content: Alias de Wget - Dotfiles (ES)
+  - name: og:description
+    content: Los alias Wget crean atajos utiles para el comando `wget`. Wget es una herramienta que descarga archivos desde Internet.
+  - name: og:image:alt
+    content: Dotfiles - Simplemente disenado para adaptarse a tu vida en el shell
+  - name: og:locale
+    content: es_ES
+---
 # Alias de Wget
 
-El archivo `wget.aliases.sh` crea atajos útiles para muchos comandos de [wget](https://www.gnu.org/software/wget/) utilizados comúnmente.
+Gestionar los alias de Wget. Parte de la configuracion **Universal Dotfiles**.
 
-Los alias de Wget crean atajos útiles para el comando `wget`. Wget es una herramienta que descarga archivos de internet.
+![Dotfiles banner][banner]
 
-## Wget
+## 📖 Descripcion
 
-GNU [Wget](https://www.gnu.org/software/wget/) es una utilidad gratuita para la descarga no interactiva de archivos de la Web. Soporta los protocolos HTTP, HTTPS y FTP, así como la recuperación a través de proxies HTTP.
+Estos alias estan definidos en `wget.aliases.sh` y se cargan automaticamente por `chezmoi`.
 
-| Alias | Comando            | Descripción                                   |
-| ----- | ------------------ | --------------------------------------------- |
-| wg    | `wget`             | Descargar un archivo.                         |
-| wgc   | `wg`               | Continuar un archivo parcialmente descargado. |
-| wge   | `wg -e robots=off` | Descargar un archivo, ignorando robots.txt.   |
-| wget  | `wget -c`          | Continuar un archivo parcialmente descargado. |
+## ⚡ Alias
+
+Este codigo proporciona un conjunto de alias para el comando `wget`.
+- `wg` wget.
+- `wgc` wget con reanudacion.
+- `wge` wget con robots=off.
+- `wget` wget con reanudacion.
+
+[banner]: https://kura.pro/dotfiles/v2/images/titles/title-dotfiles.svg
