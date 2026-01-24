@@ -1,36 +1,97 @@
 ---
-description: Die Tmux-Aliase sind eine Sammlung von Aliasen, die es Ihnen ermöglichen, mit dem `tmux` Befehl zu interagieren. Tmux ist ein Tool, das es Ihnen ermöglicht, mehrere Terminalsitzungen in einem einzigen Fenster auszuführen.
+description: Die Tmux-Aliase sind eine Sammlung von Aliasen, mit denen du mit dem Befehl `tmux` interagieren kannst. Tmux ist ein Tool, mit dem du mehrere Terminal-Sessions in einem Fenster ausfuehren kannst.
 lang: de-DE
-metaTitle: Tmux Aliase - Dotfiles (DE)
+metaTitle: Die Tmux-Aliase - Dotfiles (DE)
 permalink: /de/aliases/tmux/
+
+meta:
+  - name: keywords
+    content: aliases, tmux, linux, macos, shell, terminal, windows
+  - name: twitter:card
+    content: Die Tmux-Aliase sind eine Sammlung von Aliasen, mit denen du mit dem Befehl `tmux` interagieren kannst. Tmux ist ein Tool, mit dem du mehrere Terminal-Sessions in einem Fenster ausfuehren kannst.
+  - name: twitter:description
+    content: Die Tmux-Aliase sind eine Sammlung von Aliasen, mit denen du mit dem Befehl `tmux` interagieren kannst. Tmux ist ein Tool, mit dem du mehrere Terminal-Sessions in einem Fenster ausfuehren kannst.
+  - name: twitter:title
+    content: Die Tmux-Aliase - Dotfiles (DE)
+  - name: og:title
+    content: Die Tmux-Aliase - Dotfiles (DE)
+  - name: og:description
+    content: Die Tmux-Aliase sind eine Sammlung von Aliasen, mit denen du mit dem Befehl `tmux` interagieren kannst. Tmux ist ein Tool, mit dem du mehrere Terminal-Sessions in einem Fenster ausfuehren kannst.
+  - name: og:image:alt
+    content: Dotfiles - Einfach entworfen fuer dein Shell-Leben
+  - name: og:locale
+    content: de_DE
 ---
+# Tmux-Aliase
 
-# Tmux Aliase
+Tmux-Aliase verwalten. Teil der **Universal Dotfiles** Konfiguration.
 
-Diese `tmux.aliases.sh` Datei erstellt hilfreiche Shortcut-Aliase für viele
-häufig verwendete [tmux](https://github.com/tmux/tmux/wiki) Befehle.
+![Dotfiles banner][banner]
 
-Die Tmux-Aliase sind eine Sammlung von Aliasen, die es Ihnen ermöglichen, mit dem
-`tmux` Befehl zu interagieren. Tmux ist ein Tool, das es Ihnen ermöglicht, mehrere Terminal-
-Sitzungen in einem einzigen Fenster auszuführen.
+## 📖 Beschreibung
 
-> [!NOTE]
-> **Modern Core**: In v0.2.471+ haben wir [Zellij](/aliases/modern-core/#zellij) als moderne, Rust-basierte Alternative zu Tmux eingeführt.
-> Tmux wird weiterhin unterstützt, aber Zellij wird für neue Benutzer empfohlen.
+Diese Aliase sind in `tmux.aliases.sh` definiert und werden automatisch von `chezmoi` geladen.
 
-## Tmux
+## ⚡ Aliase
 
-[Tmux](https://github.com/tmux/tmux/wiki) ist ein Terminal-Multiplexer. Er lässt Sie
-einfach zwischen mehreren Programmen in einem Terminal wechseln, sie abtrennen (sie laufen
-im Hintergrund weiter) und sie an einem anderen Terminal wieder anhängen.
+## 🆃🅼🆄🆇 🅲🅾🅽🅵🅸🅶🆄🆁🅰🆃🅸🅾🅽
+Eine umfassende tmux-Konfiguration, die fuer Produktivitaet und einfache Bedienung entworfen wurde. Die Konfiguration ist in modulare Dateien organisiert, um die Wartbarkeit zu verbessern:
+- **default**: Basis-Settings und Plugin-Konfiguration
+- **display**: Visuelle und Verhaltens-Settings
+- **linux**: Plattform-spezifische Funktionalitaet
+- **navigation**: Umfassende Keybindings
+- **panes**: Pane-spezifische Einstellungen
+- **theme**: Statusleiste und visuelles Styling
+### Schluesselmerkmale
+- Modernes Farbschema mit OS-spezifischer Statusleiste
+- Intuitive Keybindings mit Ctrl+a als Prefix-Taste
+- Umfassende Fenster- und Pane-Verwaltung
+- Session-Persistenz mit tmux-resurrect und tmux-continuum
+- Scrollbares Hilfe-Menue (Ctrl+a ?)
+- Mausunterstuetzung fuer einfache Navigation
+### Navigation & Keybindings
+Druecke `Ctrl+a ?`, um alle Keybindings zu sehen. Wichtige Funktionen:
+- **Fensterverwaltung**: Splitten, erstellen, navigieren und umbenennen
+- **Pane-Navigation**: Zwischen Panes mit Vim-Keys h/j/k/l wechseln
+- **Session-Verwaltung**: Sessions erstellen, umbenennen und wechseln
+- **Copy-Mode**: Vim-aehnliche Auswahl, Suche und Clipboard-Integration
 
-| Alias | Befehl                   | Beschreibung                             |
-| ----- | ------------------------ | ---------------------------------------- |
-| tm    | `tmux`                   | Starte tmux.                             |
-| tma   | `tmux attach-session`    | Hänge an eine tmux-Sitzung an.           |
-| tmat  | `tmux attach-session -t` | Hänge an eine tmux-Sitzung mit Namen an. |
-| tmks  | `tmux kill-session -a`   | Beende alle tmux-Sitzungen.              |
-| tml   | `tmux list-sessions`     | Liste tmux-Sitzungen auf.                |
-| tmn   | `tmux new-session`       | Starte eine neue tmux-Sitzung.           |
-| tmns  | `tmux new -s`            | Starte eine neue tmux-Sitzung mit Namen. |
-| tms   | `tmux new-session -s`    | Starte eine neue tmux-Sitzung.           |
+Praktische Aliase fuer tmux-Operationen:
+| Alias | Beschreibung |
+|-------|-------------|
+| `tm`  | tmux starten |
+| `tma` | Letzte Session anhaengen |
+| `tmat` | Bestimmte Session anhaengen |
+| `tmks` | Alle Sessions ausser der aktuellen beenden |
+| `tmka` | Alle Sessions beenden (Server) |
+| `tml` | Alle Sessions auflisten |
+| `tmn` | Neue unbenannte Session |
+| `tms` | Neue benannte Session |
+| `tmr` | tmux-Konfiguration neu laden |
+| `tmls` | Fenster auflisten |
+| `tmlp` | Panes auflisten |
+| `tmi` | tmux-Info anzeigen |
+## Installation
+1. Repository klonen:
+   ```bash
+   git clone https://github.com/sebastienrousseau/dotfiles.git ~/.dotfiles
+   ```
+2. Installationsskript ausfuehren:
+   ```bash
+   cd ~/.dotfiles && ./install.sh
+   ```
+3. tmux Plugin Manager installieren (falls noch nicht vorhanden):
+   ```bash
+   git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+   ```
+4. tmux oeffnen und `Ctrl+a I` druecken, um Plugins zu installieren
+## Nutzung
+Neue tmux-Session starten mit:
+```bash
+tmux
+```
+Oder nutze einen der Alias-Befehle fuer haeufige Aktionen.
+## Lizenz
+MIT
+
+[banner]: https://kura.pro/dotfiles/v2/images/titles/title-dotfiles.svg
