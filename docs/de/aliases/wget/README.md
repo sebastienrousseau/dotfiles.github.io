@@ -1,27 +1,43 @@
 ---
-description: Die Wget-Aliase erstellen hilfreiche Shortcut-Aliase für den `wget` Befehl. Wget ist ein Tool, das Dateien aus dem Internet herunterlädt.
+description: Die Wget-Aliase erstellen hilfreiche Kurzbefehle fuer den Befehl `wget`. Wget ist ein Tool, das Dateien aus dem Internet herunterlaedt.
 lang: de-DE
-metaTitle: Wget Aliase - Dotfiles (DE)
+metaTitle: Die Wget-Aliase - Dotfiles (DE)
 permalink: /de/aliases/wget/
+
+meta:
+  - name: keywords
+    content: aliases, wget, linux, macos, shell, terminal, windows
+  - name: twitter:card
+    content: Die Wget-Aliase erstellen hilfreiche Kurzbefehle fuer den Befehl `wget`. Wget ist ein Tool, das Dateien aus dem Internet herunterlaedt.
+  - name: twitter:description
+    content: Die Wget-Aliase erstellen hilfreiche Kurzbefehle fuer den Befehl `wget`. Wget ist ein Tool, das Dateien aus dem Internet herunterlaedt.
+  - name: twitter:title
+    content: Die Wget-Aliase - Dotfiles (DE)
+  - name: og:title
+    content: Die Wget-Aliase - Dotfiles (DE)
+  - name: og:description
+    content: Die Wget-Aliase erstellen hilfreiche Kurzbefehle fuer den Befehl `wget`. Wget ist ein Tool, das Dateien aus dem Internet herunterlaedt.
+  - name: og:image:alt
+    content: Dotfiles - Einfach entworfen fuer dein Shell-Leben
+  - name: og:locale
+    content: de_DE
 ---
+# Wget-Aliase
 
-# Wget Aliase
+Wget-Aliase verwalten. Teil der **Universal Dotfiles** Konfiguration.
 
-Diese `wget.aliases.sh` Datei erstellt hilfreiche Shortcut-Aliase für viele häufig
-verwendete [wget](https://www.gnu.org/software/wget/) Befehle.
+![Dotfiles banner][banner]
 
-Die Wget-Aliase erstellen hilfreiche Shortcut-Aliase für den `wget` Befehl. Wget ist
-ein Tool, das Dateien aus dem Internet herunterlädt.
+## 📖 Beschreibung
 
-## Wget
+Diese Aliase sind in `wget.aliases.sh` definiert und werden automatisch von `chezmoi` geladen.
 
-GNU [Wget](https://www.gnu.org/software/wget/) ist ein freies Dienstprogramm für
-den nicht-interaktiven Download von Dateien aus dem Web. Es unterstützt HTTP, HTTPS und
-FTP-Protokolle sowie den Abruf über HTTP-Proxies.
+## ⚡ Aliase
 
-| Alias | Befehl             | Beschreibung                                      |
-| ----- | ------------------ | ------------------------------------------------- |
-| wg    | `wget`             | Lade eine Datei herunter.                         |
-| wgc   | `wg`               | Setze eine teilweise heruntergeladene Datei fort. |
-| wge   | `wg -e robots=off` | Lade eine Datei herunter, ignoriere robots.txt.   |
-| wget  | `wget -c`          | Setze eine teilweise heruntergeladene Datei fort. |
+Dieser Code stellt eine Reihe von Aliasen fuer den Befehl `wget` bereit.
+- `wg` wget.
+- `wgc` wget mit Resume.
+- `wge` wget mit robots=off.
+- `wget` wget mit Resume.
+
+[banner]: https://kura.pro/dotfiles/v2/images/titles/title-dotfiles.svg

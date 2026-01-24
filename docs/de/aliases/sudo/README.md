@@ -1,27 +1,43 @@
 ---
-description: Die Sudo-Aliase sind eine Sammlung von Aliasen, die es Ihnen ermöglichen, mit dem `sudo` Befehl zu interagieren. Sudo ist ein Tool, das es Ihnen ermöglicht, Befehle als ein anderer Benutzer auszuführen.
+description: Die Sudo-Aliase sind eine Sammlung von Aliasen, mit denen du mit dem Befehl `sudo` interagieren kannst. Sudo ist ein Tool, mit dem du Befehle als anderer Benutzer ausfuehren kannst.
 lang: de-DE
-metaTitle: Sudo Aliase - Dotfiles (DE)
+metaTitle: Die Sudo-Aliase - Dotfiles (DE)
 permalink: /de/aliases/sudo/
+
+meta:
+  - name: keywords
+    content: aliases, sudo, linux, macos, shell, terminal, windows
+  - name: twitter:card
+    content: Die Sudo-Aliase sind eine Sammlung von Aliasen, mit denen du mit dem Befehl `sudo` interagieren kannst. Sudo ist ein Tool, mit dem du Befehle als anderer Benutzer ausfuehren kannst.
+  - name: twitter:description
+    content: Die Sudo-Aliase sind eine Sammlung von Aliasen, mit denen du mit dem Befehl `sudo` interagieren kannst. Sudo ist ein Tool, mit dem du Befehle als anderer Benutzer ausfuehren kannst.
+  - name: twitter:title
+    content: Die Sudo-Aliase - Dotfiles (DE)
+  - name: og:title
+    content: Die Sudo-Aliase - Dotfiles (DE)
+  - name: og:description
+    content: Die Sudo-Aliase sind eine Sammlung von Aliasen, mit denen du mit dem Befehl `sudo` interagieren kannst. Sudo ist ein Tool, mit dem du Befehle als anderer Benutzer ausfuehren kannst.
+  - name: og:image:alt
+    content: Dotfiles - Einfach entworfen fuer dein Shell-Leben
+  - name: og:locale
+    content: de_DE
 ---
+# Sudo-Aliase
 
-# Sudo Aliase
+Sudo-Aliase verwalten. Teil der **Universal Dotfiles** Konfiguration.
 
-Die Datei `sudo.aliases.sh` erstellt hilfreiche Shortcut-Aliase für die Verwendung von `sudo`
-mit Befehlen.
+![Dotfiles banner][banner]
 
-Die Sudo-Aliase sind eine Sammlung von Aliasen, die es Ihnen ermöglichen, mit
-dem `sudo` Befehl zu interagieren. Sudo ist ein Tool, das es Ihnen ermöglicht, Befehle als ein anderer
-Benutzer auszuführen.
+## 📖 Beschreibung
 
-## Sudo
+Diese Aliase sind in `sudo.aliases.sh` definiert und werden automatisch von `chezmoi` geladen.
 
-[Sudo](https://de.wikipedia.org/wiki/Sudo) ist ein Befehl, der es Benutzern ermöglicht,
-Befehle als ein anderer Benutzer auszuführen.
+## ⚡ Aliase
 
-| Alias | Befehl    | Beschreibung                          |
-| ----- | --------- | ------------------------------------- |
-| root  | `s`       | Führe einen Befehl als Superuser aus. |
-| s     | `sudo -i` | Führe einen Befehl als Superuser aus. |
-| su    | `sudo su` | Führe einen Befehl als Superuser aus. |
-| sudo  | `s`       | Führe einen Befehl als Superuser aus. |
+Dieser Code stellt eine Reihe von Aliasen fuer den Befehl `sudo` bereit.
+- `root` Befehl als Superuser ausfuehren.
+- `s` Befehl als Superuser ausfuehren.
+- `su` Befehl als Superuser ausfuehren.
+- `sudo` Befehl als Superuser ausfuehren.
+
+[banner]: https://kura.pro/dotfiles/v2/images/titles/title-dotfiles.svg
