@@ -1,17 +1,16 @@
 ---
-description: Alias de instalador para Dotfiles
+description: alias de instalador para Dotfiles
 lang: es-ES
-metaTitle: Alias de Instalador - Dotfiles (ES)
+metaTitle: alias de instalador - Dotfiles
 permalink: /es/aliases/installer/
 ---
-
-# Alias de Instalador
+# Alias de instalador
 
 Herramientas para bootstrapping y despliegue remoto.
 
 ## 🚀 Comandos
 
-| Alias          | Descripción                                                                          |
-| -------------- | ------------------------------------------------------------------------------------ |
-| `dot-install`  | Ejecutar el script `install.sh` de bootstrap localmente.                             |
-| `dot-teleport` | Teletransportar tu configuración a un servidor remoto (`dot-teleport usuario@host`). |
+| Alias | Descripcion |
+|-------|-------------|
+| `dot-install` | Ejecutar el script `install.sh` de bootstrap localmente. |
+| `dot-teleport` | Teletransportar tu configuracion a un servidor remoto (`dot-teleport usuario@host`). |
