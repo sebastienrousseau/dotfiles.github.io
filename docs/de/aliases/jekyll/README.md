@@ -1,33 +1,50 @@
 ---
-description: Die Jekyll-Aliase sind eine Sammlung von Aliasen, die es Ihnen ermöglichen, mit Jekyll auf interaktivere Weise zu interagieren. Jekyll ist ein statischer Seitengenerator.
+description: Die Jekyll-Aliase ermoeglichen eine interaktivere Nutzung von Jekyll. Jekyll ist ein Static-Site-Generator.
 lang: de-DE
-metaTitle: Jekyll Aliase - Dotfiles (DE)
+metaTitle: Jekyll-Aliase - Dotfiles (DE)
 permalink: /de/aliases/jekyll/
+
+meta:
+  - name: keywords
+    content: aliases, bash, jekyll, linux, macos, shell, terminal, windows
+  - name: twitter:card
+    content: Die Jekyll-Aliase ermoeglichen eine interaktivere Nutzung von Jekyll. Jekyll ist ein Static-Site-Generator.
+  - name: twitter:description
+    content: Die Jekyll-Aliase ermoeglichen eine interaktivere Nutzung von Jekyll. Jekyll ist ein Static-Site-Generator.
+  - name: twitter:title
+    content: Jekyll-Aliase - Dotfiles (DE)
+  - name: og:title
+    content: Jekyll-Aliase - Dotfiles (DE)
+  - name: og:description
+    content: Die Jekyll-Aliase ermoeglichen eine interaktivere Nutzung von Jekyll. Jekyll ist ein Static-Site-Generator.
+  - name: og:image:alt
+    content: Dotfiles - Einfach entworfen fuer dein Shell-Leben
+  - name: og:locale
+    content: de_DE
 ---
 
-# Jekyll Aliase
+# Jekyll-Aliase
 
-Diese `jekyll.aliases.sh` Datei erstellt hilfreiche Shortcut-Aliase für viele
-häufig verwendete [Jekyll](https://jekyllrb.com/) Befehle.
+Diese Datei `jekyll.aliases.sh` erstellt hilfreiche Shortcut-Aliase fuer viele
+haeufig genutzte [Jekyll](https://jekyllrb.com/) Befehle.
 
-Die Jekyll-Aliase sind eine Sammlung von Aliasen, die es Ihnen ermöglichen, mit
-Jekyll auf interaktivere Weise zu interagieren. Jekyll ist ein statischer Seitengenerator. Er nimmt
-Text, der in Ihrer bevorzugten Auszeichnungssprache geschrieben ist, und verwendet Layouts, um eine
-statische Website zu erstellen. Sie können das Aussehen und Gefühl der Website, URLs, die angezeigten Daten
-auf der Seite und mehr anpassen.
+Die Jekyll-Aliase ermoeglichen eine interaktivere Nutzung von Jekyll. Jekyll ist
+ein Static-Site-Generator. Er nimmt Text in deinem bevorzugten Markup und erstellt
+mit Layouts eine statische Website. Du kannst Look & Feel, URLs, Daten und mehr
+anpassen.
 
-## Jekyll Entwicklungs-Aliase
+## Jekyll development aliases
 
-| Alias | Befehl                                                            | Beschreibung                                                                                              |
-| ----- | ----------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------- |
-| jkb   | `JEKYLL_ENV=development bundle exec jekyll build`                 | Führt einen einmaligen Build Ihrer Site nach ./\_site durch.                                              |
-| jkc   | `JEKYLL_ENV=development bundle exec jekyll clean`                 | Entfernt alle generierten Dateien: Zielordner, Metadaten-Datei, Sass- und Jekyll-Caches.                  |
-| jkd   | `JEKYLL_ENV=development bundle exec jekyll serve --watch --trace` | Führt einen Entwicklungs-Build der Site nach '\_site' durch und startet einen lokalen Entwicklungsserver. |
-| jkl   | `JEKYLL_ENV=development bundle exec jekyll serve --livereload`    | Führt einen Entwicklungs-Build der Site nach '\_site' durch und startet einen lokalen Entwicklungsserver. |
-| jko   | `open http://localhost:4000/`                                     | Öffne lokalen Entwicklungsserver.                                                                         |
+| Alias | Command                                                           | Description                                                                             |
+| ----- | ----------------------------------------------------------------- | --------------------------------------------------------------------------------------- |
+| jkb   | `JEKYLL_ENV=development bundle exec jekyll build`                 | Einmaliger Build nach ./_site.                                                          |
+| jkc   | `JEKYLL_ENV=development bundle exec jekyll clean`                 | Entfernt generierte Dateien: Zielordner, Metadaten, Sass- und Jekyll-Caches.            |
+| jkd   | `JEKYLL_ENV=development bundle exec jekyll serve --watch --trace` | Dev-Build nach '_site' und lokaler Entwicklungsserver.                                  |
+| jkl   | `JEKYLL_ENV=development bundle exec jekyll serve --livereload`    | Dev-Build nach '_site' und lokaler Entwicklungsserver.                                  |
+| jko   | `open http://localhost:4000/`                                     | Lokalen Entwicklungsserver oeffnen.                                                     |
 
-## Jekyll Release-Aliase
+## Jekyll release aliases
 
-| Alias | Befehl                                                           | Beschreibung                                                                                             |
-| ----- | ---------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------- |
-| jkp   | `JEKYLL_ENV=production bundle exec jekyll serve --watch --trace` | Führt einen Produktions-Build der Site nach '\_site' durch und startet einen lokalen Entwicklungsserver. |
+| Alias | Command                                                          | Description                                                                          |
+| ----- | ---------------------------------------------------------------- | ------------------------------------------------------------------------------------ |
+| jkp   | `JEKYLL_ENV=production bundle exec jekyll serve --watch --trace` | Production-Build nach '_site' und lokaler Entwicklungsserver.                        |
