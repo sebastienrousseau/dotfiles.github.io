@@ -1,24 +1,40 @@
 ---
-description: Os aliases de UUID criam atalhos úteis para o comando `uuidgen`. O comando uuidgen gera um Identificador Único Universal (UUID), um valor de 128 bits garantido como único no espaço e no tempo.
-lang: pt-BR
-metaTitle: Aliases de UUID - Dotfiles (BR)
+description: Os alias UUID criam atalhos uteis para o comando `uuidgen`. O comando uuidgen gera um Universally Unique IDentifier (UUID), um valor de 128 bits garantido como unico no espaco e tempo.
+lang: pt-PT
+metaTitle: Alias de UUID - Dotfiles (PT)
 permalink: /pt/aliases/uuid/
+
+meta:
+  - name: keywords
+    content: aliases, uuid, linux, macos, shell, terminal, windows
+  - name: twitter:card
+    content: Os alias UUID criam atalhos uteis para o comando `uuidgen`. O comando uuidgen gera um Universally Unique IDentifier (UUID), um valor de 128 bits garantido como unico no espaco e tempo.
+  - name: twitter:description
+    content: Os alias UUID criam atalhos uteis para o comando `uuidgen`. O comando uuidgen gera um Universally Unique IDentifier (UUID), um valor de 128 bits garantido como unico no espaco e tempo.
+  - name: twitter:title
+    content: Alias de UUID - Dotfiles (PT)
+  - name: og:title
+    content: Alias de UUID - Dotfiles (PT)
+  - name: og:description
+    content: Os alias UUID criam atalhos uteis para o comando `uuidgen`. O comando uuidgen gera um Universally Unique IDentifier (UUID), um valor de 128 bits garantido como unico no espaco e tempo.
+  - name: og:image:alt
+    content: Dotfiles - Simplesmente projetado para sua vida no shell
+  - name: og:locale
+    content: pt_PT
 ---
+# Alias de Uuid
 
-# Aliases de UUID
+Gerenciar alias de Uuid. Parte da configuracao **Universal Dotfiles**.
 
-O arquivo `uuid.aliases.sh` cria aliases de atalho úteis para gerar
-[UUIDs](https://pt.wikipedia.org/wiki/Universally_unique_identifier).
+![Dotfiles banner][banner]
 
-Os aliases de UUID criam atalhos úteis para o comando `uuidgen`.
-O comando uuidgen gera um Identificador Único Universal (UUID), um
-valor de 128 bits garantido como único no espaço e no tempo.
+## 📖 Descricao
 
-## UUID
+Esses alias sao definidos em `uuid.aliases.sh` e sao carregados automaticamente pelo `chezmoi`.
 
-[UUID](https://pt.wikipedia.org/wiki/Universally_unique_identifier) é um número de 128 bits
-usado para identificar informações em sistemas de computador.
+## ⚡ Alias
 
-| Alias | Comando                                                                            | Descrição                                              |
-| ----- | ---------------------------------------------------------------------------------- | ------------------------------------------------------ |
-| uuid  | `uuidgen \| tr -d '\n' \| tr '[:upper:]' '[:lower:]' \| pbcopy && pbpaste && echo` | Gerar um UUID e copiá-lo para a área de transferência. |
+Este codigo fornece um conjunto de alias para o comando `uuidgen`.
+- `uuid` Gerar um UUID e copiar para a area de transferencia.
+
+[banner]: https://kura.pro/dotfiles/v2/images/titles/title-dotfiles.svg
