@@ -1,21 +1,20 @@
 ---
-description: Compliance Aliase für Dotfiles
+description: Compliance-Aliase fuer Dotfiles
 lang: de-DE
-metaTitle: Compliance Aliase - Dotfiles (DE)
+metaTitle: Compliance-Aliase - Dotfiles
 permalink: /de/aliases/compliance/
 ---
+# Compliance-Aliase
 
-# Compliance Aliase
-
-Tools für die Einhaltung gesetzlicher Vorschriften und Datenschutzdurchsetzung.
+Werkzeuge fuer regulatorische Compliance und Datenschutz.
 
 ## 🛡️ Kontrollen
 
-| Alias          | Beschreibung                                                                                   |
-| -------------- | ---------------------------------------------------------------------------------------------- |
-| `privacy-mode` | Deaktiviert Telemetrie für CLI-Tools (Homebrew, Dotnet, Azure, usw.) für die aktuelle Sitzung. |
-| `dot-audit`    | Zeigt den aktuellen Konfigurations-Audit-Trail an (Git-Verlauf oder Audit-Log).                |
+| Alias | Beschreibung |
+|-------|-------------|
+| `privacy-mode` | Deaktiviert Telemetrie fuer CLI-Tools (Homebrew, Dotnet, Azure, etc.) fuer die aktuelle Sitzung. |
+| `dot-audit` | Zeigt den aktuellen Konfigurations-Audit-Trail (Git-Historie oder Audit-Log). |
 
 ## 📚 Dokumentation
 
-Siehe [COMPLIANCE.md](../../../COMPLIANCE.md) für vollständige SOC2/ISO-Kontrollzuordnungen.
+Siehe [COMPLIANCE.md](../../../COMPLIANCE.md) fuer vollstaendige SOC2/ISO Kontrollen.
