@@ -1,31 +1,97 @@
 ---
-description: Tmux 别名是一组别名，允许您与 `tmux` 命令交互。Tmux 是一个工具，允许您在单个窗口中运行多个终端会话。
+description: Tmux 别名是一组用于与 `tmux` 交互的别名。Tmux 允许在单个窗口中运行多个终端会话。
 lang: zh-CN
-metaTitle: Tmux 别名 - Dotfiles (CN)
+metaTitle: Tmux 别名 - Dotfiles (ZH)
 permalink: /zh/aliases/tmux/
----
 
+meta:
+  - name: keywords
+    content: aliases, tmux, linux, macos, shell, terminal, windows
+  - name: twitter:card
+    content: Tmux 别名是一组用于与 `tmux` 交互的别名。Tmux 允许在单个窗口中运行多个终端会话。
+  - name: twitter:description
+    content: Tmux 别名是一组用于与 `tmux` 交互的别名。Tmux 允许在单个窗口中运行多个终端会话。
+  - name: twitter:title
+    content: Tmux 别名 - Dotfiles (ZH)
+  - name: og:title
+    content: Tmux 别名 - Dotfiles (ZH)
+  - name: og:description
+    content: Tmux 别名是一组用于与 `tmux` 交互的别名。Tmux 允许在单个窗口中运行多个终端会话。
+  - name: og:image:alt
+    content: Dotfiles - 为你的 Shell 生活而设计
+  - name: og:locale
+    content: zh_CN
+---
 # Tmux 别名
 
-`tmux.aliases.sh` 文件为许多常用的 [tmux](https://github.com/tmux/tmux/wiki) 命令创建了有用的快捷别名。
+管理 Tmux 别名。**Universal Dotfiles** 配置的一部分。
 
-Tmux 别名是一组别名，允许您与 `tmux` 命令交互。Tmux 是一个工具，允许您在单个窗口中运行多个终端会话。
+![Dotfiles banner][banner]
 
-> [!NOTE]
-> **Modern Core**: 在 v0.2.471+ 中，我们引入了 [Zellij](/zh/aliases/modern-core/#zellij) 作为 Tmux 的现代、基于 Rust 的替代品。
-> Tmux 仍然受支持，但建议新用户使用 Zellij。
+## 📖 描述
 
-## Tmux
+这些别名定义在 `tmux.aliases.sh` 中，并由 `chezmoi` 自动加载。
 
-[Tmux](https://github.com/tmux/tmux/wiki) 是一个终端复用器。它允许您在一个终端中轻松地在多个程序之间切换，分离它们（它们在后台保持运行）并将它们重新附加到不同的终端。
+## ⚡ 别名
 
-| 别名 | 命令                     | 描述                         |
-| ---- | ------------------------ | ---------------------------- |
-| tm   | `tmux`                   | 启动 tmux。                  |
-| tma  | `tmux attach-session`    | 附加到 tmux 会话。           |
-| tmat | `tmux attach-session -t` | 附加到指定名称的 tmux 会话。 |
-| tmks | `tmux kill-session -a`   | 终止所有 tmux 会话。         |
-| tml  | `tmux list-sessions`     | 列出 tmux 会话。             |
-| tmn  | `tmux new-session`       | 启动新的 tmux 会话。         |
-| tmns | `tmux new -s`            | 启动指定名称的新 tmux 会话。 |
-| tms  | `tmux new-session -s`    | 启动新的 tmux 会话。         |
+## 🆃🅼🆄🆇 🅲🅾🅽🅵🅸🅶🆄🆁🅰🆃🅸🅾🅽
+一套完整的 tmux 配置，面向高效与易用。配置以模块化文件组织：
+- **default**：核心设置与插件配置
+- **display**：视觉与行为设置
+- **linux**：平台相关功能
+- **navigation**：完整快捷键
+- **panes**：面板设置
+- **theme**：状态栏与视觉样式
+### 关键特性
+- 现代配色并针对 OS 设置状态栏
+- 直观快捷键，Ctrl+a 作为前缀键
+- 完整窗口与面板管理
+- tmux-resurrect / tmux-continuum 进行会话持久化
+- 可滚动帮助菜单（Ctrl+a ?）
+- 鼠标支持，便于导航
+### 导航与快捷键
+按 `Ctrl+a ?` 查看所有快捷键，主要功能：
+- **窗口管理**：分割、创建、导航、重命名
+- **面板导航**：使用 Vim 风格 h/j/k/l
+- **会话管理**：创建、重命名、切换会话
+- **复制模式**：Vim 风格选择、搜索与剪贴板集成
+
+常用 tmux 操作别名：
+| Alias | 说明 |
+|-------|------|
+| `tm`  | 启动 tmux |
+| `tma` | 连接最近会话 |
+| `tmat` | 连接指定会话 |
+| `tmks` | 结束除当前外的所有会话 |
+| `tmka` | 结束所有会话（服务端） |
+| `tml` | 列出所有会话 |
+| `tmn` | 新建无名会话 |
+| `tms` | 新建有名会话 |
+| `tmr` | 重新加载 tmux 配置 |
+| `tmls` | 列出窗口 |
+| `tmlp` | 列出面板 |
+| `tmi` | 显示 tmux 信息 |
+## 安装
+1. 克隆仓库：
+   ```bash
+   git clone https://github.com/sebastienrousseau/dotfiles.git ~/.dotfiles
+   ```
+2. 运行安装脚本：
+   ```bash
+   cd ~/.dotfiles && ./install.sh
+   ```
+3. 安装 tmux 插件管理器（如未安装）：
+   ```bash
+   git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+   ```
+4. 打开 tmux，按 `Ctrl+a I` 安装插件
+## 使用
+启动新 tmux 会话：
+```bash
+tmux
+```
+或使用任意别名。
+## 许可证
+MIT
+
+[banner]: https://kura.pro/dotfiles/v2/images/titles/title-dotfiles.svg

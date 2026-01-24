@@ -1,23 +1,43 @@
 ---
-description: Wget 别名可以为 `wget` 命令创建有用的快捷方式。Wget 是一个从互联网下载文件的工具。
+description: Wget 别名为 `wget` 命令提供实用快捷方式。Wget 是用于从互联网下载文件的工具。
 lang: zh-CN
-metaTitle: Wget 别名 - Dotfiles (CN)
+metaTitle: Wget 别名 - Dotfiles (ZH)
 permalink: /zh/aliases/wget/
----
 
+meta:
+  - name: keywords
+    content: aliases, wget, linux, macos, shell, terminal, windows
+  - name: twitter:card
+    content: Wget 别名为 `wget` 命令提供实用快捷方式。Wget 是用于从互联网下载文件的工具。
+  - name: twitter:description
+    content: Wget 别名为 `wget` 命令提供实用快捷方式。Wget 是用于从互联网下载文件的工具。
+  - name: twitter:title
+    content: Wget 别名 - Dotfiles (ZH)
+  - name: og:title
+    content: Wget 别名 - Dotfiles (ZH)
+  - name: og:description
+    content: Wget 别名为 `wget` 命令提供实用快捷方式。Wget 是用于从互联网下载文件的工具。
+  - name: og:image:alt
+    content: Dotfiles - 为你的 Shell 生活而设计
+  - name: og:locale
+    content: zh_CN
+---
 # Wget 别名
 
-`wget.aliases.sh` 文件为许多常用的 [wget](https://www.gnu.org/software/wget/) 命令创建了有用的快捷别名。
+管理 Wget 别名。**Universal Dotfiles** 配置的一部分。
 
-Wget 别名为 `wget` 命令创建了有用的快捷别名。Wget 是一个从互联网下载文件的工具。
+![Dotfiles banner][banner]
 
-## Wget
+## 📖 描述
 
-GNU [Wget](https://www.gnu.org/software/wget/) 是一个用于从 Web 非交互式下载文件的免费实用程序。它支持 HTTP、HTTPS 和 FTP 协议，以及通过 HTTP 代理进行检索。
+这些别名定义在 `wget.aliases.sh` 中，并由 `chezmoi` 自动加载。
 
-| 别名 | 命令               | 描述                        |
-| ---- | ------------------ | --------------------------- |
-| wg   | `wget`             | 下载文件。                  |
-| wgc  | `wg`               | 继续部分下载的文件。        |
-| wge  | `wg -e robots=off` | 下载文件，忽略 robots.txt。 |
-| wget | `wget -c`          | 继续部分下载的文件。        |
+## ⚡ 别名
+
+此代码提供 `wget` 的一组别名。
+- `wg` wget.
+- `wgc` wget 断点续传。
+- `wge` wget 使用 robots=off.
+- `wget` wget 断点续传。
+
+[banner]: https://kura.pro/dotfiles/v2/images/titles/title-dotfiles.svg
