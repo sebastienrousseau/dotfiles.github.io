@@ -1,65 +1,51 @@
 ---
-description: Les alias de mise à jour sont des alias qui vous permettent de simplifier l'utilisation des commandes de mise à jour.
+description: Les alias de mise a jour creent des raccourcis utiles pour mettre a jour le systeme d'exploitation et les logiciels installes. Cela securise et ameliore l'installation actuelle des Dotfiles pour se proteger contre les vulnerabilites de securite, ajouter de nouvelles fonctionnalites et corriger des bogues critiques.
 lang: fr-FR
-metaTitle: Les alias de mise à jour - Dotfiles (FR)
+metaTitle: Les alias de mise a jour - Dotfiles (FR)
 permalink: /aliases/mise-a-jour/
 
 meta:
   - name: keywords
-    content: alias, commandes, dotfiles, mise-a-jour, mettre à jour, système d'exploitation, logiciels,
+    content: aliases, update, linux, macos, shell, terminal, windows
   - name: twitter:card
-    content: Les alias de mise à jour sont des alias qui vous permettent de simplifier l'utilisation des commandes de mise à jour.
+    content: Les alias de mise a jour creent des raccourcis utiles pour mettre a jour le systeme d'exploitation et les logiciels installes. Cela securise et ameliore l'installation actuelle des Dotfiles pour se proteger contre les vulnerabilites de securite, ajouter de nouvelles fonctionnalites et corriger des bogues critiques.
   - name: twitter:description
-    content: Les alias de mise à jour sont des alias qui vous permettent de simplifier l'utilisation des commandes de mise à jour.
+    content: Les alias de mise a jour creent des raccourcis utiles pour mettre a jour le systeme d'exploitation et les logiciels installes. Cela securise et ameliore l'installation actuelle des Dotfiles pour se proteger contre les vulnerabilites de securite, ajouter de nouvelles fonctionnalites et corriger des bogues critiques.
   - name: twitter:title
-    content: Les alias de mise à jour - Dotfiles (FR)
+    content: Les alias de mise a jour - Dotfiles (FR)
   - name: og:title
-    content: Les alias de mise à jour - Dotfiles (FR)
+    content: Les alias de mise a jour - Dotfiles (FR)
   - name: og:description
-    content: Les alias de mise à jour sont des alias qui vous permettent de simplifier l'utilisation des commandes de mise à jour.
+    content: Les alias de mise a jour creent des raccourcis utiles pour mettre a jour le systeme d'exploitation et les logiciels installes. Cela securise et ameliore l'installation actuelle des Dotfiles pour se proteger contre les vulnerabilites de securite, ajouter de nouvelles fonctionnalites et corriger des bogues critiques.
   - name: og:image:alt
-    content: Les Dotfiles - Conçus pour s'adapter à votre vie de shell
+    content: Les Dotfiles - Concus pour s'adapter a votre vie de shell
   - name: og:locale
     content: fr_FR
 ---
+# Alias de mise a jour
 
-# Les alias de mise à jour
+Gerer les alias de mise a jour. Fait partie de la configuration **Universal Dotfiles**.
 
-Le fichier `update.aliases.sh` crée des raccourcis utiles pour mettre à jour le
-système d'exploitation et les logiciels.
+![Dotfiles banner][banner]
 
-Les mises à jour aident à sécuriser et à améliorer l'installation actuelle des
-Dotfiles pour protéger contre les vulnérabilités de sécurité, ajouter de
-nouvelles fonctionnalités et corriger les bogues critiques.
+## 📖 Description
 
-## Raccourcis de mise à jour
+Ces alias sont definis dans `update.aliases.sh` et sont charges automatiquement par `chezmoi`.
 
-Pour un contrôle plus important, le processus de mise à jour est combiné en une
-seule commande qui :
+## ⚡ Alias
 
-1. Met à jour le système d'exploitation et les paquets logiciels
-2. Met à jour les Dotfiles
-3. Met à jour le fichier `update.aliases.sh` pour inclure les dernières
-   modifications
-
-### Plateformes prises en charge
-
-#### Linux
-
-L'alias `upd` a été adapté pour fonctionner sur Linux. Il mettra à jour les
-distributions Linux basées sur Debian, via le gestionnaire de paquets `apt` et
-d'autres dépendances via pnpm, rustup (Rust) et gem (Ruby).
-
-| Alias | Commande                                                                                                           | Description                                                   |
-| ----- | ------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------- |
-| upd   | `sudo apt update && sudo apt upgrade -y && pnpm up && rustup update stable && sudo gem update && sudo gem cleanup` | Met à jour le système d'exploitation et les paquets logiciels |
-
+Ce code fournit un ensemble d'alias pour mettre a jour divers logiciels sur
+macOS et Linux.
 ### macOS
+- `upd` met a jour les logiciels macOS, les paquets Homebrew, les Homebrew Casks, les apps du Mac
+   App Store, la toolchain Rust stable, les gems Ruby, les paquets Python
+   et les paquets Node.js.
+### Linux
+- `open` ouvre un fichier ou une URL dans l'application preferee de l'utilisateur.
+- `pbcopy` copie dans le presse-papiers.
+- `pbpaste` colle depuis le presse-papiers.
+- `upd` met a jour les paquets Linux, nettoie le cache des paquets, met a jour les paquets pnpm,
+  met a jour la toolchain Rust stable, met a jour les gems Ruby, met a jour les paquets Python,
+  et met a jour les paquets Node.js.
 
-L'alias `upd` est également disponible pour macOS. Il mettra à jour macOS, via
-la ligne de commande `softwareupdate`, et gérera ses dépendances à l'aide des
-gestionnaires de paquets pnpm, Homebrew, mas, rustup et gem.
-
-| Alias | Command                                                                                                                                                                                            | Description                                                   |
-| ----- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------- |
-| upd   | `sudo softwareupdate -i -a && pnpm up && rustup update stable && brew cu -ayi && brew doctor && brew update && brew upgrade && brew cleanup && mas upgrade && sudo gem update && sudo gem cleanup` | Met à jour le système d'exploitation et les paquets logiciels |
+[banner]: https://kura.pro/dotfiles/v2/images/titles/title-dotfiles.svg
