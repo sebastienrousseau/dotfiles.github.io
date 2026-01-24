@@ -1,34 +1,49 @@
 ---
-description: Die Dig-Aliase ermöglichen das Abfragen von Informationen über verschiedene DNS-Datensätze, einschließlich Host-Adressen, Mail-Exchanges und Nameserver.
+description: Die Dig-Aliase ermoeglichen Abfragen zu DNS-Records, einschliesslich Hostadressen, Mail-Exchanges und Nameservern.
 lang: de-DE
-metaTitle: Dig Aliase - Dotfiles (DE)
+metaTitle: Dig-Aliase - Dotfiles (DE)
 permalink: /de/aliases/dig/
+
+meta:
+  - name: twitter:card
+    content: Die Dig-Aliase ermoeglichen Abfragen zu DNS-Records, einschliesslich Hostadressen, Mail-Exchanges und Nameservern.
+  - name: twitter:description
+    content: Die Dig-Aliase ermoeglichen Abfragen zu DNS-Records, einschliesslich Hostadressen, Mail-Exchanges und Nameservern.
+  - name: twitter:title
+    content: Dig-Aliase - Dotfiles (DE)
+  - name: og:title
+    content: Dig-Aliase - Dotfiles (DE)
+  - name: og:description
+    content: Die Dig-Aliase ermoeglichen Abfragen zu DNS-Records, einschliesslich Hostadressen, Mail-Exchanges und Nameservern.
+  - name: og:image:alt
+    content: Dotfiles - Einfach entworfen fuer dein Shell-Leben
+  - name: og:locale
+    content: de_DE
 ---
+# Dig-Aliase
 
-# Dig Aliase
+Dig-Aliase verwalten. Teil der **Universal Dotfiles** Konfiguration.
 
-Die Datei `dig.aliases.sh` erstellt hilfreiche Shortcut-Aliase für den Befehl `dig`.
+![Dotfiles banner][banner]
 
-`dig` (domain information groper) ist ein flexibles Werkzeug zum Abfragen von DNS-
-Nameservern. Es führt DNS-Lookups durch und zeigt die Antworten an, die von den
-abgefragten Nameservern zurückgegeben wurden. Es wird hauptsächlich verwendet, um DNS-
-Probleme zu beheben und Informationen über eine Domain wie die IP-Adresse zu finden.
+## 📖 Beschreibung
 
-## Dig
+Diese Aliase sind in `dig.aliases.sh` definiert und werden automatisch von `chezmoi` geladen.
 
-[Dig](<https://de.wikipedia.org/wiki/Dig_(Unix)>) ist ein Befehl, der DNS-
-Lookups durchführt und die Antworten anzeigt, die von den abgefragten Nameservern
-zurückgegeben wurden.
+## ⚡ Aliase
 
-| Alias | Befehl                                                                  | Beschreibung                                         |
-| ----- | ----------------------------------------------------------------------- | ---------------------------------------------------- |
-| d     | `$(which dig)`                                                          | Führe den dig-Befehl mit den Standardoptionen aus.   |
-| d4    | `$(which dig) +short -4`                                                | Führe einen DNS-Lookup für eine IPv4-Adresse durch.  |
-| d6    | `$(which dig) +short -6`                                                | Führe einen DNS-Lookup für eine IPv6-Adresse durch.  |
-| dga   | `$(which dig) +all ANY`                                                 | Führe einen DNS-Lookup für alle Datensätze durch.    |
-| dgs   | `$(which dig) +short`                                                   | Führe einen DNS-Lookup für eine kurze Antwort durch. |
-| digg  | `$(which dig) @8.8.8.8 +nocmd any +multiline +noall +answer`            | Dig mit Googles DNS.                                 |
-| ip4   | `$(which dig) +short myip.opendns.com @resolver1.opendns.com -4`        | Hole deine öffentliche IPv4-Adresse.                 |
-| ip6   | `$(which dig) -6 AAAA +short myip.opendns.com. @resolver1.opendns.com.` | Hole deine öffentliche IPv6-Adresse.                 |
-| ips   | `ip4; ip6`                                                              | Hole deine öffentlichen IPv4- und IPv6-Adressen.     |
-| wip   | `$(which dig) +short myip.opendns.com @resolver1.opendns.com`           | Hole deine öffentliche IP-Adresse.                   |
+Dieser Code bietet eine Reihe von Aliasen, um die DNS-Abfrage (Domain Name System)
+mit dem dig-Befehl zu vereinfachen.
+Die folgenden Aliase sind enthalten:
+- `d`: dig mit Standardoptionen.
+- `d4`: DNS-Abfrage fuer IPv4-Adresse.
+- `d6`: DNS-Abfrage fuer IPv6-Adresse.
+- `dga`: DNS-Abfrage fuer alle Records.
+- `dgs`: DNS-Abfrage mit kurzer Antwort.
+- `digg`: dig mit Google DNS.
+- `ip4`: oeffentliche IPv4-Adresse ermitteln.
+- `ip6`: oeffentliche IPv6-Adresse ermitteln.
+- `ips`: oeffentliche IPv4- und IPv6-Adresse ermitteln.
+- `wip`: oeffentliche IP-Adresse ermitteln.
+
+[banner]: https://kura.pro/dotfiles/v2/images/titles/title-dotfiles.svg

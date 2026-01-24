@@ -1,17 +1,16 @@
 ---
-description: Installer-Aliase für Dotfiles
+description: Installer-Aliase fuer Dotfiles
 lang: de-DE
-metaTitle: Installer Aliase - Dotfiles (DE)
+metaTitle: Installer-Aliase - Dotfiles
 permalink: /de/aliases/installer/
 ---
+# Installer-Aliase
 
-# Installer Aliase
-
-Tools für Bootstrapping und Remote-Deployment.
+Werkzeuge fuer Bootstrapping und Remote-Deployment.
 
 ## 🚀 Befehle
 
-| Alias          | Beschreibung                                                                         |
-| -------------- | ------------------------------------------------------------------------------------ |
-| `dot-install`  | Führe das `install.sh` Bootstrap-Skript lokal aus.                                   |
-| `dot-teleport` | Teleportiere deine Konfiguration auf einen Remote-Server (`dot-teleport user@host`). |
+| Alias | Beschreibung |
+|-------|-------------|
+| `dot-install` | Das `install.sh` Bootstrap-Skript lokal ausfuehren. |
+| `dot-teleport` | Konfiguration auf einen Remote-Server uebertragen (`dot-teleport user@host`). |
