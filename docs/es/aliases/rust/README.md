@@ -1,63 +1,150 @@
 ---
-description: Los alias de Rust son una colección de alias que te permiten interactuar con los comandos `rustup` y `cargo`. Están diseñados para usarse con el gestor de herramientas `rustup` y el gestor de paquetes `cargo`.
+description: Los alias de Rust son una coleccion de alias que permiten interactuar con los comandos `rustup` y `cargo`. Estan disenados para usarse con el gestor de toolchains `rustup` y el gestor de paquetes `cargo`.
 lang: es-ES
-metaTitle: Alias de Rust - Dotfiles (ES)
+metaTitle: Los alias de Rust - Dotfiles (ES)
 permalink: /es/aliases/rust/
----
 
+meta:
+  - name: keywords
+    content: aliases, cargo, rust, rustup, linux, macos, shell, terminal, windows
+  - name: twitter:card
+    content: Los alias de Rust son una coleccion de alias que permiten interactuar con los comandos `rustup` y `cargo`. Estan disenados para usarse con el gestor de toolchains `rustup` y el gestor de paquetes `cargo`.
+  - name: twitter:description
+    content: Los alias de Rust son una coleccion de alias que permiten interactuar con los comandos `rustup` y `cargo`. Estan disenados para usarse con el gestor de toolchains `rustup` y el gestor de paquetes `cargo`.
+  - name: twitter:title
+    content: Los alias de Rust - Dotfiles (ES)
+  - name: og:title
+    content: Los alias de Rust - Dotfiles (ES)
+  - name: og:description
+    content: Los alias de Rust son una coleccion de alias que permiten interactuar con los comandos `rustup` y `cargo`. Estan disenados para usarse con el gestor de toolchains `rustup` y el gestor de paquetes `cargo`.
+  - name: og:image:alt
+    content: Dotfiles - Simplemente disenado para adaptarse a tu vida en el shell
+  - name: og:locale
+    content: es_ES
+---
 # Alias de Rust
 
-El archivo `rust.aliases.sh` crea atajos útiles para [Rust](https://www.rust-lang.org/es).
+Gestionar alias de Rust. Parte de la configuracion **Universal Dotfiles**.
 
-Los alias de Rust son una colección de alias que te permiten interactuar con los comandos `rustup` y `cargo`. Están diseñados para usarse con el gestor de herramientas `rustup` y el gestor de paquetes `cargo`.
+![Dotfiles banner][banner]
 
-## Rust
+## 📖 Descripcion
 
-[Rust](https://www.rust-lang.org/es) es un lenguaje de programación centrado en el rendimiento y la seguridad, especialmente la concurrencia segura. Rust es sintácticamente similar a C++, pero está diseñado para proporcionar una mejor seguridad de memoria manteniendo un alto rendimiento.
+Estos alias estan definidos en `rust.aliases.sh` y se cargan automaticamente por `chezmoi`.
 
-| Alias | Comando                      | Descripción                                   |
-| ----- | ---------------------------- | --------------------------------------------- |
-| ru    | `rustup update`              | Actualizar Rustup.                            |
-| rca   | `rustup component add`       | Agregar componente de Rustup.                 |
-| rcl   | `rustup component list`      | Listar componentes de Rustup.                 |
-| rcr   | `rustup component remove`    | Eliminar componente de Rustup.                |
-| rde   | `rustup default`             | Establecer Rustup predeterminado.             |
-| rnn   | `rustup run nightly`         | Ejecutar Rustup nightly.                      |
-| rns   | `rustup run stable`          | Ejecutar Rustup stable.                       |
-| rtaa  | `rustup target add`          | Agregar objetivo (target) de Rustup.          |
-| rtal  | `rustup target list`         | Listar objetivos de Rustup.                   |
-| rtar  | `rustup target remove`       | Eliminar objetivo de Rustup.                  |
-| rti   | `rustup toolchain install`   | Instalar cadena de herramientas de Rustup.    |
-| rtl   | `rustup toolchain list`      | Listar cadenas de herramientas de Rustup.     |
-| rtu   | `rustup toolchain uninstall` | Desinstalar cadena de herramientas de Rustup. |
-| ruc   | `rustup update nightly`      | Actualizar Rustup nightly.                    |
-| rus   | `rustup update stable`       | Actualizar Rustup stable.                     |
+## ⚡ Alias
 
-## Cargo
+Este codigo proporciona un conjunto completo de alias para el desarrollo en Rust
+usando los comandos `cargo` y `rustup`.
+#### Comandos basicos
+- `cg` - Atajo de Cargo
+- `cgn` - Crear proyecto binario nuevo
+- `cgni` - Crear proyecto de biblioteca nuevo
+- `cginit` - Inicializar proyecto en el directorio actual
+#### Compilacion y ejecucion
+- `cgb` - Compilar debug
+- `cgbr` - Compilar release
+- `cgr` - Ejecutar debug
+- `cgrr` - Ejecutar release
+- `cgw` - Observar y recompilar
+#### Pruebas y benchmarking
+- `cgt` - Ejecutar pruebas
+- `cgtr` - Ejecutar pruebas en modo release
+- `cgbh` - Ejecutar benchmarks
+- `cgta` - Probar todos los targets
+- `cgtt` - Pruebas en un solo hilo
+#### Calidad de codigo
+- `cgc` - Verificar compilacion
+- `cgcl` - Limpiar artefactos de compilacion
+- `cgcy` - Ejecutar lints de clippy
+- `cgf` - Formatear codigo
+- `cgfa` - Formatear todo el codigo
+- `cgfx` - Autocorregir problemas de codigo
+- `cgaud` - Comprobar vulnerabilidades de seguridad
+#### Documentacion
+- `cgd` - Compilar y abrir documentacion
+- `cgdr` - Compilar documentacion release
+- `cgdo` - Documentar items privados
+#### Dependencias
+- `cga` - Agregar dependencia
+- `cgad` - Agregar dependencia de desarrollo
+- `cgu` - Actualizar dependencias
+- `cgo` - Comprobar dependencias desactualizadas
+- `cgv` - Vendor de dependencias
+- `cgtree` - Mostrar arbol de dependencias
+#### Compilacion cruzada
+- `cgx` - Compilar usando Zig
+- `cgxw` - Compilacion cruzada
+- `cgxt` - Target especifico de plataforma
+#### Analisis y perfilado
+- `cgfl` - Generar flamegraph
+- `cgbl` - Analisis de tamano del binario
+- `cgl` - Cobertura de codigo
+- `cgm` - Estructura de modulos
+- `cgex` - Expandir macros
+#### Gestion de paquetes
+- `cgi` - Instalar binario
+- `cgun` - Desinstalar binario
+- `cgp` - Publicar en crates.io
+- `cgs` - Buscar en crates.io
+- `cgcp` - Crear paquete de release
+#### Compilacion avanzada
+- `cgba` - Compilar todos los targets
+- `cgbt` - Compilar con todas las features
+- `cgbp` - Compilar con perfil especifico
+#### Plantillas de proyecto
+- `cgnb` - Nuevo binario desde plantilla
+- `cgnl` - Nueva biblioteca desde plantilla
+- `cgnt` - Nuevo desde plantilla personalizada
+#### Actualizaciones e instalacion
+- `ru` - Actualizar todos los toolchains
+- `rus` - Actualizar toolchain estable
+- `run` - Actualizar toolchain nightly
+- `rti` - Instalar toolchain especifica
+#### Gestion de componentes
+- `rca` - Agregar componente
+- `rcl` - Listar componentes
+- `rcr` - Eliminar componente
+#### Gestion de toolchain
+- `rtl` - Listar toolchains instaladas
+- `rtu` - Desinstalar toolchain
+- `rde` - Establecer toolchain por defecto
+#### Gestion de targets
+- `rtaa` - Agregar target de compilacion
+- `rtal` - Listar targets disponibles
+- `rtar` - Eliminar target de compilacion
+#### Ejecucion de entorno
+- `rns` - Ejecutar comando con estable
+- `rnn` - Ejecutar comando con nightly
+#### Documentacion y ayuda
+- `rdo` - Abrir documentacion de Rust
+#### Gestion de overrides
+- `rpr` - Establecer toolchain para el directorio
+- `rpl` - Listar overrides de directorio
+- `rpn` - Eliminar override de directorio
+#### Informacion de toolchain
+- `rws` - Mostrar ruta activa de rustc
+- `rsh` - Mostrar info de toolchain
+### Flujos de trabajo comunes
+#### Configuracion de proyecto nuevo
+```bash
+# Crear un proyecto nuevo con dependencias comunes
+cgn myproject && cd myproject && cga serde && cgad tokio
+```
+#### Flujo de release
+```bash
+# Verificar, probar y compilar para release
+cgcy && cgt && cgbr && cgaud
+```
+#### Actualizacion de documentacion
+```bash
+# Formatear codigo y actualizar documentacion
+cgfa && cgd && cgdo
+```
+#### Comprobacion de compilacion cruzada
+```bash
+# Comprobar compilacion para una arquitectura distinta
+cgxw check --target aarch64-unknown-linux-gnu
+```
 
-[Cargo](https://doc.rust-lang.org/cargo/) es el gestor de paquetes de Rust. Se utiliza para compilar, probar y empaquetar proyectos de Rust. Cargo se incluye con Rustup.
-
-| Alias  | Comando              | Descripción                                |
-| ------ | -------------------- | ------------------------------------------ |
-| cg     | `cargo`              | Atajo para Cargo.                          |
-| cgb    | `cg build`           | Compilar con Cargo (build).                |
-| cgbh   | `cg bench`           | Ejecutar benchmarks con Cargo.             |
-| cgbr   | `cg build --release` | Compilar versión de lanzamiento (release). |
-| cgc    | `cg check`           | Verificar código con Cargo (check).        |
-| cgcl   | `cg clean`           | Limpiar proyecto con Cargo.                |
-| cgcy   | `cg clippy`          | Ejecutar linter Clippy.                    |
-| cgd    | `cg doc --open`      | Generar y abrir documentación.             |
-| cgdr   | `cg doc --release`   | Generar documentación de lanzamiento.      |
-| cgf    | `cg fmt`             | Formatear código.                          |
-| cgi    | `cg install`         | Instalar binario con Cargo.                |
-| cginit | `cg init`            | Inicializar nuevo proyecto de Cargo.       |
-| cgn    | `cg new`             | Crear nuevo proyecto de Cargo.             |
-| cgp    | `cg publish`         | Publicar paquete con Cargo.                |
-| cgr    | `cg run`             | Ejecutar proyecto con Cargo.               |
-| cgrr   | `cg run --release`   | Ejecutar versión de lanzamiento.           |
-| cgs    | `cg search`          | Buscar paquetes en crates.io.              |
-| cgt    | `cg test`            | Ejecutar pruebas con Cargo.                |
-| cgtr   | `cg test --release`  | Ejecutar pruebas en modo lanzamiento.      |
-| cgtt   | `cg tree`            | Mostrar árbol de dependencias.             |
-| cgu    | `cg update`          | Actualizar dependencias.                   |
-| cgun   | `cg uninstall`       | Desinstalar binario.                       |
+[banner]: https://kura.pro/dotfiles/v2/images/titles/title-dotfiles.svg

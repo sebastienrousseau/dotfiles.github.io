@@ -1,52 +1,69 @@
 ---
-description: Los alias de PNpm son una colección de alias que te permiten interactuar con la herramienta de línea de comandos `pnpm`. Pnpm es un gestor de paquetes rápido y eficiente en espacio de disco.
+description: Los alias de PNpm son una coleccion de alias que permiten interactuar con la herramienta de linea de comandos `pnpm`. Pnpm es un gestor de paquetes rapido y eficiente en espacio de disco.
 lang: es-ES
-metaTitle: Alias de PNpm - Dotfiles (ES)
+metaTitle: Los alias de PNpm - Dotfiles (ES)
 permalink: /es/aliases/pnpm/
+
+meta:
+  - name: keywords
+    content: aliases, pnpm, package manager, node, npm, yarn, linux, macos, shell, terminal, windows
+  - name: twitter:card
+    content: Los alias de PNpm son una coleccion de alias que permiten interactuar con la herramienta de linea de comandos `pnpm`. Pnpm es un gestor de paquetes rapido y eficiente en espacio de disco.
+  - name: twitter:description
+    content: Los alias de PNpm son una coleccion de alias que permiten interactuar con la herramienta de linea de comandos `pnpm`. Pnpm es un gestor de paquetes rapido y eficiente en espacio de disco.
+  - name: twitter:title
+    content: Los alias de PNpm - Dotfiles (ES)
+  - name: og:title
+    content: Los alias de PNpm - Dotfiles (ES)
+  - name: og:description
+    content: Los alias de PNpm son una coleccion de alias que permiten interactuar con la herramienta de linea de comandos `pnpm`. Pnpm es un gestor de paquetes rapido y eficiente en espacio de disco.
+  - name: og:image:alt
+    content: Dotfiles - Simplemente disenado para adaptarse a tu vida en el shell
+  - name: og:locale
+    content: es_ES
 ---
+# Alias de Pnpm
 
-# Alias de PNpm
+Gestionar alias de Pnpm. Parte de la configuracion **Universal Dotfiles**.
 
-El archivo `pnpm.aliases.sh` crea atajos útiles para muchos comandos de [PNpm](https://pnpm.io/es/) utilizados comúnmente.
+![Dotfiles banner][banner]
 
-Los alias de PNpm son una colección de alias que te permiten interactuar con la herramienta de línea de comandos `pnpm`. Pnpm es un gestor de paquetes rápido y eficiente en espacio de disco.
+## 📖 Descripcion
 
-## PNpm
+Estos alias estan definidos en `pnpm.aliases.sh` y se cargan automaticamente por `chezmoi`.
 
-[PNpm](https://pnpm.io/es/) es un gestor de paquetes para JavaScript y Node.js. Es rápido, eficiente en espacio de disco y confiable.
+## ⚡ Alias
 
-| Alias | Comando                              | Descripción                                                   |
-| ----- | ------------------------------------ | ------------------------------------------------------------- |
-| pna   | `pnpm add`                           | Agregar un paquete al proyecto                                |
-| pnad  | `pnpm add --save-dev`                | Agregar un paquete al proyecto como dependencia de desarrollo |
-| pnap  | `pnpm add --save-peer`               | Agregar un paquete al proyecto como dependencia peer          |
-| pnau  | `pnpm audit`                         | Auditar el proyecto en busca de vulnerabilidades              |
-| pnb   | `pnpm run build`                     | Construir el proyecto                                         |
-| pnc   | `pnpm create`                        | Crear un nuevo proyecto                                       |
-| pnd   | `pnpm run dev`                       | Ejecutar el proyecto en modo de desarrollo                    |
-| pndoc | `pnpm run doc`                       | Generar documentación para el proyecto                        |
-| pnga  | `pnpm add --global`                  | Agregar un paquete al almacén global                          |
-| pngls | `pnpm list --global`                 | Listar paquetes en el almacén global                          |
-| pngrm | `pnpm remove --global`               | Eliminar un paquete del almacén global                        |
-| pngu  | `pnpm update --global`               | Actualizar un paquete en el almacén global                    |
-| pnh   | `pnpm help`                          | Mostrar ayuda para un comando                                 |
-| pni   | `pnpm init`                          | Inicializar un nuevo proyecto                                 |
-| pnin  | `pnpm install`                       | Instalar las dependencias del proyecto                        |
-| pnln  | `pnpm run lint`                      | Ejecuta `pnpm run lint`                                       |
-| pnls  | `pnpm list`                          | Listar paquetes en el proyecto                                |
-| pnout | `pnpm outdated`                      | Buscar paquetes desactualizados                               |
-| pnp   | `pnpm`                               | Ejecutar un comando PNpm                                      |
-| pnpub | `pnpm publish`                       | Publicar el proyecto                                          |
-| pnrm  | `pnpm remove`                        | Eliminar un paquete del proyecto                              |
-| pnrun | `pnpm run`                           | Ejecutar un script en el proyecto                             |
-| pns   | `pnpm run serve`                     | Ejecutar el proyecto en modo producción                       |
-| pnst  | `pnpm start`                         | Iniciar el proyecto                                           |
-| pnsv  | `pnpm server`                        | Iniciar el servidor de desarrollo del proyecto                |
-| pnt   | `pnpm test`                          | Ejecutar las pruebas del proyecto                             |
-| pntc  | `pnpm test --coverage`               | Ejecutar las pruebas del proyecto con cobertura               |
-| pnui  | `pnpm update --interactive`          | Actualizar paquetes interactivamente                          |
-| pnuil | `pnpm update --interactive --latest` | Actualizar paquetes interactivamente a la última versión      |
-| pnun  | `pnpm uninstall`                     | Desinstalar un paquete del proyecto                           |
-| pnup  | `pnpm update`                        | Actualizar paquetes en el proyecto                            |
-| pnwhy | `pnpm why`                           | Mostrar por qué está instalado un paquete                     |
-| pnx   | `pnpx`                               | Ejecutar un comando PNpx                                      |
+Este codigo proporciona un conjunto de alias para [pnpm](https://pnpm.js.org/).
+- `pni` Inicializar un proyecto nuevo.
+- `pnin` Instalar las dependencias del proyecto.
+- `pnb` Compilar el proyecto.
+- `pnrun` Ejecutar un script del proyecto.
+- `pnd` Ejecutar el proyecto en modo dev.
+- `pns` Ejecutar el proyecto en modo serve.
+- `pnst` Iniciar el proyecto.
+- `pnln` Lint del proyecto.
+- `pnls` Listar todas las dependencias.
+- `pnout` Comprobar dependencias desactualizadas.
+- `pnt` Probar el proyecto.
+- `pntc` Probar el proyecto con cobertura.
+- `pndoc` Generar documentacion del proyecto.
+- `pnpub` Publicar el proyecto.
+- `pnwhy` Ver por que una dependencia esta instalada.
+- `pnui` Actualizar una dependencia de forma interactiva.
+- `pnuil` Actualizar una dependencia de forma interactiva a la ultima version.
+- `pnup` Actualizar una dependencia.
+- `pnad` Agregar una dependencia de desarrollo al proyecto.
+- `pnap` Agregar una dependencia peer al proyecto.
+- `pnrm` Eliminar una dependencia del proyecto.
+- `pnun` Desinstalar dependencias del proyecto.
+- `pnga` Agregar una dependencia global.
+- `pngls` Listar dependencias globales.
+- `pngrm` Eliminar una dependencia global.
+- `pngu` Actualizar una dependencia global.
+- `pnh` Mostrar la ayuda.
+- `pnc` Crear un proyecto nuevo.
+- `pnsv` Ejecutar el proyecto en modo servidor.
+- `pnx` Atajo para pnpx.
+
+[banner]: https://kura.pro/dotfiles/v2/images/titles/title-dotfiles.svg

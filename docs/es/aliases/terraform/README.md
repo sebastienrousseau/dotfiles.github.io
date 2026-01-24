@@ -1,35 +1,32 @@
 ---
-description: Alias de Terraform para Dotfiles
+description: alias de Terraform para Dotfiles
 lang: es-ES
-metaTitle: Alias de Terraform - Dotfiles (ES)
+metaTitle: alias de Terraform - Dotfiles
 permalink: /es/aliases/terraform/
 ---
-
 # Alias de Terraform
 
-Gestiona alias de Infraestructura como Código (Terraform, OpenTofu, Ansible). Parte de la configuración de **Universal Dotfiles**.
+Gestionar alias de Infraestructura como Codigo (Terraform, OpenTofu, Ansible). Parte de la configuracion **Universal Dotfiles**.
 
-![Banner de Dotfiles][banner]
+![Dotfiles banner][banner]
 
-## 📖 Descripción
+## 📖 Descripcion
 
-Estos alias están definidos en `terraform.aliases.sh` y son cargados automáticamente por `chezmoi`.
+Estos alias estan definidos en `terraform.aliases.sh` y se cargan automaticamente por `chezmoi`.
 
 ## ⚡ Alias
 
-### Terraform
-
+### terraform
 - `tf` - Atajo de Terraform
-- `tfi` - Init (Inicializar)
-- `tfp` - Plan (Planificar)
-- `tfa` - Apply (Aplicar)
-- `tfaa` - Apply auto-approve (Aplicar con aprobación automática)
-- `tfd` - Destroy (Destruir)
-- `tff` - Format (Formatear)
-- `tfv` - Validate (Validar)
+- `tfi` - Init
+- `tfp` - Plan
+- `tfa` - Apply
+- `tfaa` - Apply (auto-approve)
+- `tfd` - Destroy
+- `tff` - Format
+- `tfv` - Validate
 
-### Ansible
-
+### ansible
 - `ans` - Atajo de Ansible
 - `ansp` - Ansible Playbook
 - `anslint` - Ansible Lint
