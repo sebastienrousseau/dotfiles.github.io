@@ -1,34 +1,47 @@
 ---
-description: Os aliases do Dig permitem consultar informações sobre vários registros DNS, incluindo endereços de host, trocas de e-mail e servidores de nomes.
-lang: pt-BR
-metaTitle: Aliases do Dig - Dotfiles (BR)
+description: Os alias de Dig permitem consultar varios registros DNS, incluindo enderecos de host, MX e nameservers.
+lang: pt-PT
+metaTitle: Alias de Dig - Dotfiles (PT)
 permalink: /pt/aliases/dig/
+
+meta:
+  - name: twitter:card
+    content: Os alias de Dig permitem consultar varios registros DNS, incluindo enderecos de host, MX e nameservers.
+  - name: twitter:description
+    content: Os alias de Dig permitem consultar varios registros DNS, incluindo enderecos de host, MX e nameservers.
+  - name: twitter:title
+    content: Alias de Dig - Dotfiles (PT)
+  - name: og:title
+    content: Alias de Dig - Dotfiles (PT)
+  - name: og:description
+    content: Os alias de Dig permitem consultar varios registros DNS, incluindo enderecos de host, MX e nameservers.
+  - name: og:image:alt
+    content: Dotfiles - Simplesmente projetado para sua vida no shell
+  - name: og:locale
+    content: pt_PT
 ---
+# Alias de Dig
 
-# Aliases do Dig
+Gerenciar alias de Dig. Parte da configuracao **Universal Dotfiles**.
 
-O arquivo `dig.aliases.sh` cria aliases de atalho úteis para o comando `dig`.
+![Dotfiles banner][banner]
 
-O `dig` (domain information groper) é uma ferramenta flexível para interrogar
-servidores de nomes DNS. Ele executa pesquisas DNS e exibe as respostas que são
-retornadas do(s) servidor(es) de nomes consultados. É usado principalmente para solucionar
-problemas de DNS e encontrar informações sobre um domínio, como o endereço IP.
+## 📖 Descricao
 
-## Dig
+Esses alias sao definidos em `dig.aliases.sh` e sao carregados automaticamente pelo `chezmoi`.
 
-[Dig](<https://en.wikipedia.org/wiki/Dig_(command)>) é um comando que executa
-pesquisas DNS e exibe as respostas que são retornadas do(s) servidor(es) de nomes
-consultados.
+## ⚡ Alias
 
-| Alias | Comando                                                                 | Descrição                                          |
-| ----- | ----------------------------------------------------------------------- | -------------------------------------------------- |
-| d     | `$(which dig)`                                                          | Executar o comando dig com as opções padrão.       |
-| d4    | `$(which dig) +short -4`                                                | Realizar uma pesquisa DNS para um endereço IPv4.   |
-| d6    | `$(which dig) +short -6`                                                | Realizar uma pesquisa DNS para um endereço IPv6.   |
-| dga   | `$(which dig) +all ANY`                                                 | Realizar uma pesquisa DNS para todos os registros. |
-| dgs   | `$(which dig) +short`                                                   | Realizar uma pesquisa DNS para uma resposta curta. |
-| digg  | `$(which dig) @8.8.8.8 +nocmd any +multiline +noall +answer`            | Dig com o DNS do Google.                           |
-| ip4   | `$(which dig) +short myip.opendns.com @resolver1.opendns.com -4`        | Obter seu endereço IPv4 público.                   |
-| ip6   | `$(which dig) -6 AAAA +short myip.opendns.com. @resolver1.opendns.com.` | Obter seu endereço IPv6 público.                   |
-| ips   | `ip4; ip6`                                                              | Obter seus endereços IPv4 e IPv6 públicos.         |
-| wip   | `$(which dig) +short myip.opendns.com @resolver1.opendns.com`           | Obter seu endereço IP público.                     |
+Este codigo fornece alias para consultas DNS com o comando dig.
+- `d`: executa dig com opcoes padrao.
+- `d4`: consulta DNS para IPv4.
+- `d6`: consulta DNS para IPv6.
+- `dga`: consulta todos os registros.
+- `dgs`: resposta curta.
+- `digg`: dig usando DNS do Google.
+- `ip4`: obter IPv4 publica.
+- `ip6`: obter IPv6 publica.
+- `ips`: obter IPv4 e IPv6 publicas.
+- `wip`: obter IP publico.
+
+[banner]: https://kura.pro/dotfiles/v2/images/titles/title-dotfiles.svg

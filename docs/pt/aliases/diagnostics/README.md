@@ -1,19 +1,18 @@
 ---
-description: Aliases de diagnósticos para Dotfiles
-lang: pt-BR
-metaTitle: Aliases de Diagnósticos - Dotfiles (BR)
+description: alias de diagnostico para Dotfiles
+lang: pt-PT
+metaTitle: alias de diagnostico - Dotfiles
 permalink: /pt/aliases/diagnostics/
 ---
+# Alias de diagnostico
 
-# Aliases de Diagnósticos
+Ferramentas para autocura e verificacao de saude do sistema.
 
-Ferramentas para auto-recuperação e verificações de integridade do sistema.
+## 🩺 Saude e reparo
 
-## 🩺 Saúde & Reparo
-
-| Alias                | Descrição                                                                         |
-| -------------------- | --------------------------------------------------------------------------------- |
-| `doc`, `dot-doctor`  | Executa o script de verificação de integridade do sistema (`doctor.sh`).          |
-| `drift`, `dot-drift` | Verifica se os arquivos locais desviaram do estado gerenciado (`chezmoi verify`). |
-| `heal`, `dot-heal`   | Aplica o estado gerenciado para reparar o desvio (`chezmoi apply`).               |
-| `doc-full`           | Executa doctor com informações estendidas de depuração de caminho.                |
+| Alias | Descricao |
+|-------|-----------|
+| `doc`, `dot-doctor` | Executar verificacao de saude do sistema (`doctor.sh`). |
+| `drift`, `dot-drift` | Verificar desvio do estado gerenciado (`chezmoi verify`). |
+| `heal`, `dot-heal` | Aplicar estado gerenciado para reparar desvio (`chezmoi apply`). |
+| `doc-full` | Executar doctor com informacao extendida de debug de caminhos. |
