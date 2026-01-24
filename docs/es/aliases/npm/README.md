@@ -1,32 +1,57 @@
 ---
-description: Los alias de NPM son una colección de alias que te permiten interactuar con el comando `npm`. NPM es un gestor de paquetes para el lenguaje JavaScript.
+description: Los alias de NPM son una coleccion de alias que permiten interactuar con la herramienta de linea de comandos `npm`. Npm es un gestor de paquetes para el lenguaje JavaScript.
 lang: es-ES
-metaTitle: Alias de NPM - Dotfiles (ES)
+metaTitle: Los alias de NPM - Dotfiles (ES)
 permalink: /es/aliases/npm/
+
+meta:
+  - name: keywords
+    content: aliases, npm, node, node package manager, package manager, linux, macos, shell, terminal, windows
+  - name: twitter:card
+    content: Los alias de NPM son una coleccion de alias que permiten interactuar con la herramienta de linea de comandos `npm`. Npm es un gestor de paquetes para el lenguaje JavaScript.
+  - name: twitter:description
+    content: Los alias de NPM son una coleccion de alias que permiten interactuar con la herramienta de linea de comandos `npm`. Npm es un gestor de paquetes para el lenguaje JavaScript.
+  - name: twitter:title
+    content: Los alias de NPM - Dotfiles (ES)
+  - name: og:title
+    content: Los alias de NPM - Dotfiles (ES)
+  - name: og:description
+    content: Los alias de NPM son una coleccion de alias que permiten interactuar con la herramienta de linea de comandos `npm`. Npm es un gestor de paquetes para el lenguaje JavaScript.
+  - name: og:image:alt
+    content: Dotfiles - Simplemente disenado para adaptarse a tu vida en el shell
+  - name: og:locale
+    content: es_ES
 ---
+# Alias de Npm
 
-# Alias de NPM
+Gestionar alias de Npm. Parte de la configuracion **Universal Dotfiles**.
 
-El archivo `npm.aliases.sh` crea atajos útiles para [npm](https://www.npmjs.com/).
+![Dotfiles banner][banner]
 
-## NPM
+## 📖 Descripcion
 
-[npm](https://www.npmjs.com/) es un gestor de paquetes para el lenguaje de programación JavaScript. Es el gestor de paquetes predeterminado para el entorno de ejecución JavaScript Node.js.
+Estos alias estan definidos en `npm.aliases.sh` y se cargan automaticamente por `chezmoi`.
 
-| Alias | Comando         | Descripción                                 |
-| ----- | --------------- | ------------------------------------------- |
-| npb   | `npm build`     | Script de compilación npm.                  |
-| npc   | `npm cache`     | Caché de paquetes npm.                      |
-| npd   | `npm dev`       | Script de desarrollo npm.                   |
-| npg   | `npm global`    | Paquete npm global.                         |
-| npi   | `npm install`   | Instalar paquete npm.                       |
-| npl   | `npm list`      | Listar paquetes npm.                        |
-| npp   | `npm publish`   | Publicar paquete npm.                       |
-| npr   | `npm run`       | Ejecutar script npm.                        |
-| nprw  | `npm run watch` | Ejecutar script npm en modo watch.          |
-| nps   | `npm start`     | Iniciar script npm.                         |
-| npsv  | `npm serve`     | Servir script npm.                          |
-| npt   | `npm test`      | Probar script npm.                          |
-| npu   | `npm update`    | Actualizar paquete npm.                     |
-| npx   | `npm exec`      | Ejecutar paquete npm.                       |
-| npy   | `npm why`       | Explicar por qué se instala un paquete npm. |
+## ⚡ Alias
+
+Este codigo proporciona un conjunto de alias para el gestor de paquetes
+[npm](https://www.npmjs.com/).
+- `npa` Auditar paquetes npm.
+- `npb` Compilar script npm.
+- `npc` Cache de paquetes npm.
+- `npd` Script de desarrollo npm.
+- `npg` Paquete npm global.
+- `npi` Instalar paquete npm.
+- `npl` Listar paquetes npm.
+- `npp` Publicar paquete npm.
+- `nprm` Eliminar paquete npm.
+- `npr` Ejecutar script npm.
+- `nprw` Ejecutar script npm en modo watch.
+- `nps` Iniciar script npm.
+- `npsv` Servir script npm.
+- `npt` Probar script npm.
+- `npu` Actualizar paquete npm.
+- `npx` Ejecutar paquete npm.
+- `npy` Por que se instala un paquete npm.
+
+[banner]: https://kura.pro/dotfiles/v2/images/titles/title-dotfiles.svg
