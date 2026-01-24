@@ -1,28 +1,53 @@
 ---
-description: 交互式别名是一组别名，允许您以更具交互性的方式与 shell 和终端进行交互。
+description: 交互式别名用于更交互地使用 shell 和终端。
 lang: zh-CN
-metaTitle: 交互式别名 - Dotfiles (CN)
+metaTitle: 交互式别名 - Dotfiles (ZH)
 permalink: /zh/aliases/interactive/
----
 
+meta:
+  - name: keywords
+    content: aliases, bash, cp, interactive, linux, ln, macos, mv, rm, shell, terminal, windows
+  - name: twitter:card
+    content: 交互式别名用于更交互地使用 shell 和终端。
+  - name: twitter:description
+    content: 交互式别名用于更交互地使用 shell 和终端。
+  - name: twitter:title
+    content: 交互式别名 - Dotfiles (ZH)
+  - name: og:title
+    content: 交互式别名 - Dotfiles (ZH)
+  - name: og:description
+    content: 交互式别名用于更交互地使用 shell 和终端。
+  - name: og:image:alt
+    content: Dotfiles - 为你的 Shell 生活而设计
+  - name: og:locale
+    content: zh_CN
+---
 # 交互式别名
 
-`interactive.aliases.sh` 文件为在终端中启用关键常用功能的交互模式创建了有用的快捷别名。
+管理交互式别名。**Universal Dotfiles** 配置的一部分。
 
-交互式别名是一组别名，允许您以更具交互性的方式与 shell 和终端进行交互。
+![Dotfiles banner][banner]
 
-## 交互模式
+## 📖 描述
 
-[交互模式](https://zh.wikipedia.org/wiki/交互式计算) 是一种模式，其中在执行命令之前提示用户输入。
+这些别名定义在 `interactive.aliases.sh` 中，并由 `chezmoi` 自动加载。
 
-对于诸如 `cp`、`mv`、`rm` 和 `ln` 之类的命令，这是一个有用的功能，这些命令可用于覆盖文件或目录。
+## ⚡ 别名
 
-| 别名 | 命令                    | 描述                                         |
-| ---- | ----------------------- | -------------------------------------------- |
-| bin  | `rm -fr ${HOME}/.Trash` | 删除废纸篓中的所有文件。                     |
-| cp   | `cp -vi`                | 复制文件和目录。                             |
-| del  | `rm -rfvi`              | 删除文件或目录。                             |
-| ln   | `ln -vi`                | 交互式符号链接。                             |
-| mv   | `mv -vi`                | 交互式移动文件（覆盖前询问）并显示详细信息。 |
-| rm   | `rm -vi`                | 删除前提示每个文件。                         |
-| zap  | `rm -vi`                | 交互式删除文件（覆盖前询问）。               |
+这些交互式别名用于简化常见命令行操作，在执行潜在破坏性操作前
+提供确认提示。
+* `cp` 交互式复制（覆盖前询问），带详细输出。
+* `del` 交互式删除（每次删除前询问），递归且带详细输出。
+* `ln` 交互式创建符号链接（覆盖前询问），带详细输出。
+* `mv` 交互式移动/重命名（覆盖前询问），带详细输出。
+* `rm` 交互式删除（每次删除前询问），带详细输出。
+* `zap` `rm` 的别名，交互式删除。
+### 垃圾桶相关别名
+* `bin` 强制递归清空垃圾桶（用户 .Trash）。
+* `chmod` 修改权限并输出详细信息。
+* `chown` 修改所有者与组并输出详细信息。
+* `diff` 以 unified 格式显示差异。
+* `grep` 搜索模式，显示行号并忽略大小写。
+* `mkdir` 创建目录并自动创建父目录，带详细输出。
+
+[banner]: https://kura.pro/dotfiles/v2/images/titles/title-dotfiles.svg
