@@ -1,67 +1,65 @@
 ---
-description: Les alias de liste sont des alias qui vous permettent de lister des fichiers et des répertoires.
+description: Les alias List sont une collection d'alias qui permettent d'interagir avec la commande `ls` de manière plus interactive afin d'afficher le contenu d'un répertoire.
 lang: fr-FR
-metaTitle: Les alias de liste - Dotfiles (FR)
-permalink: /aliases/liste/
+metaTitle: Les alias List (ls) - Dotfiles (FR)
+permalink: /alias/list/
 
 meta:
   - name: keywords
-    content: alias, environnement, mode interactif, zsh, bash, fish, shell, dotfiles
+    content: alias, ls, list, linux, macos, shell, terminal, windows
   - name: twitter:card
-    content: Les alias de liste sont des alias qui vous permettent de lister des fichiers et des répertoires.
+    content: Les alias List sont une collection d'alias qui permettent d'interagir avec la commande `ls` de manière plus interactive afin d'afficher le contenu d'un répertoire.
   - name: twitter:description
-    content: Les alias de liste sont des alias qui vous permettent de lister des fichiers et des répertoires.
+    content: Les alias List sont une collection d'alias qui permettent d'interagir avec la commande `ls` de manière plus interactive afin d'afficher le contenu d'un répertoire.
   - name: twitter:title
-    content: Les alias de liste - Dotfiles (FR)
+    content: Les alias List (ls) - Dotfiles (FR)
   - name: og:title
-    content: Les alias de liste - Dotfiles (FR)
+    content: Les alias List (ls) - Dotfiles (FR)
   - name: og:description
-    content: Les alias de liste sont des alias qui vous permettent de lister des fichiers et des répertoires.
+    content: Les alias List sont une collection d'alias qui permettent d'interagir avec la commande `ls` de manière plus interactive afin d'afficher le contenu d'un répertoire.
   - name: og:image:alt
     content: Les Dotfiles - Conçus pour s'adapter à votre vie de shell
   - name: og:locale
     content: fr_FR
 ---
 
-# Les alias de liste
+# Alias List
 
-Le fichier `list.aliases.sh` crée des raccourcis utiles pour lister des fichiers
-et des répertoires.
+Le fichier `list.aliases.sh` crée des alias de raccourcis utiles pour lister les fichiers et répertoires.
 
-Les alias de liste sont des alias qui vous permettent d'interagir avec la
-commande `ls` de manière plus efficace et plus rapide pour lister des fichiers
-et des répertoires.
+Les alias List sont une collection d'alias qui permettent d'interagir avec la commande `ls` de manière plus interactive afin d'afficher le contenu d'un répertoire.
 
-Pour chaque opération qui nomme un fichier d'un type autre qu'un répertoire,
-`ls` affiche son nom ainsi que toute information associée demandée.
+Pour chaque opérande qui nomme un fichier autre qu'un répertoire, `ls` affiche son nom ainsi que toute information associée demandée. Pour chaque opérande qui nomme un répertoire, `ls` affiche les noms des fichiers contenus dans ce répertoire, ainsi que toute information associée demandée.
 
-## Raccourcis de liste
+## ls
 
-| Alias  | Commande             | Description                                                    |
-| ------ | -------------------- | -------------------------------------------------------------- | --------------------------------------------------- |
-| l.     | `ls -dlhF .\*        | grep -v "^d"`                                                  | Liste les fichiers cachés                           |
-| l      | `ls -lFh`            | Taille des fichiers, type de fichier et humainement lisible    |
-| l1     | `ls -1`              | Liste les fichiers et les répertoires sur une seule ligne      |
-| la     | `ls -lAFh`           | Liste les fichiers et les répertoires cachés                   |
-| labc   | `ls -lap`            | Liste les fichiers et les répertoires par ordre alphabétique   |
-| lc     | `wc -l`              | Compte le nombre de lignes                                     |
-| lct    | `ls -lcrh`           | Liste les fichiers et les répertoires par date de création     |
-| ld     | `ls -ltrh`           | Liste les fichiers et les répertoires par date de modification |
-| ldir   | `ls -l               | egrep '^d'`                                                    | Liste les répertoires                               |
-| ldot   | `l.`                 | Liste les fichiers cachés                                      |
-| left   | `ls -t -1`           | Liste les fichiers et les répertoires par date de modification |
-| right  | `ls -t -1r`          | Liste les fichiers et les répertoires par date de modification |
-| lf     | `ls -l               | egrep -v '^d'`                                                 | Liste les fichiers uniquement                       |
-| lk     | `ls -lSrh`           | Liste les fichiers et les répertoires par taille               |
-| ll     | `la`                 | Liste les fichiers et les répertoires cachés                   |
-| lla    | `ls -l -d $PWD/*`    | Liste les fichiers et les répertoires cachés                   |
-| locale | `locale -a           | grep UTF-8`                                                    | Liste les locales                                   |
-| lp     | `sudo lsof -i -T -n` | Liste les processus                                            |
-| lr     | `ls -lRh`            | Liste les fichiers et les répertoires récursivement            |
-| ls     | `ls --color`         | Liste les fichiers et les répertoires avec la couleur          |
-| lS     | `ls -1FSsh`          | Liste les fichiers et les répertoires par taille               |
-| lt     | `tree`               | Liste les fichiers et les répertoires sous forme d'arbre       |
-| lu     | `ls -lurh`           | Liste les fichiers et les répertoires par date d'accès         |
-| lw     | `ls -xAh`            | Liste les fichiers et les répertoires par largeur              |
-| lx     | `ls                  | sort -k 1,1 -t .`                                              | Liste les fichiers et les répertoires par extension |
-| lz     | `ls -lSr`            | Liste les fichiers et les répertoires par taille               |
+[ls](https://en.wikipedia.org/wiki/Ls) est une commande qui liste le contenu d'un répertoire.
+
+| Alias  | Commande | Description |
+| ------ | -------- | ----------- |
+| l.     | `ls -dlhF .* \| grep -v "^d"` | Lister les fichiers cachés. |
+| l      | `ls -lFh` | Taille, type, lisible. |
+| l1     | `ls -1` | Afficher un fichier par ligne. |
+| la     | `ls -lAFh` | Tous les fichiers, type, lisible. |
+| labc   | `ls -lap` | Lister tous les fichiers par ordre alphabétique. |
+| lc     | `wc -l` | Compter le nombre de lignes dans le fichier. |
+| lct    | `ls -lcrh` | Lister par date, plus récent d'abord. |
+| ld     | `ls -ltrh` | Trier par date, plus ancien d'abord. |
+| ldir   | `ls -l \| egrep '^d'` | Lister uniquement les répertoires. |
+| ldot   | `l.` | Lister les fichiers cachés. |
+| left   | `ls -t -1` | Lister par date, le plus récent en dernier. |
+| right  | `ls -t -1r` | Lister par date, le plus récent en premier. |
+| lf     | `ls -l \| egrep -v '^d'` | Lister uniquement les fichiers. |
+| lk     | `ls -lSrh` | Trier par taille, le plus gros d'abord. |
+| ll     | `la` | Liste longue, quasi tout, type, lisible. |
+| lla    | `ls -l -d $PWD/*` | Lister le chemin complet des fichiers du répertoire courant. |
+| locale | `locale -a \| grep UTF-8` | Lister toutes les locales disponibles. |
+| lp     | `sudo lsof -i -T -n` | Lister tous les ports ouverts. |
+| lr     | `ls -lRh` | Liste récursive, type, lisible. |
+| ls     | `ls --color` | Coloriser la sortie. |
+| lS     | `ls -1FSsh` | Trier par date de modification et taille. |
+| lt     | `tree` | Lister le contenu en arborescence. |
+| lu     | `ls -lurh` | Trier par date, plus ancien d'abord. |
+| lw     | `ls -xAh` | Liste large, quasi tout, type, lisible. |
+| lx     | `ls \| sort -k 1,1 -t .` | Trier par extension. |
+| lz     | `ls -lSr` | Trier par taille, plus petit d'abord. |

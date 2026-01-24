@@ -1,50 +1,56 @@
 ---
-description: Les alias NPM sont des alias qui vous permettent de simplifier l'utilisation de la commande NPM. NPM est un gestionnaire de paquets pour le langage de programmation JavaScript.
+description: Les alias NPM sont une collection d'alias permettant d'interagir avec l'outil `npm`. Npm est un gestionnaire de paquets pour le langage JavaScript.
 lang: fr-FR
 metaTitle: Les alias NPM - Dotfiles (FR)
-permalink: /aliases/npm/
+permalink: /alias/npm/
 
 meta:
   - name: keywords
-    content: alias, commandes, dotfiles, npb, npc, npd, npg, npi, npl, npm, npp, npr, nprw, nps, nps, npt, npu, npx, npy, shell
+    content: alias, npm, node, node package manager, package manager, linux, macos, shell, terminal, windows
   - name: twitter:card
-    content: Les alias NPM sont des alias qui vous permettent de simplifier l'utilisation de la commande NPM. NPM est un gestionnaire de paquets pour le langage de programmation JavaScript.
+    content: Les alias NPM sont une collection d'alias permettant d'interagir avec l'outil `npm`. Npm est un gestionnaire de paquets pour le langage JavaScript.
   - name: twitter:description
-    content: Les alias NPM sont des alias qui vous permettent de simplifier l'utilisation de la commande NPM. NPM est un gestionnaire de paquets pour le langage de programmation JavaScript.
+    content: Les alias NPM sont une collection d'alias permettant d'interagir avec l'outil `npm`. Npm est un gestionnaire de paquets pour le langage JavaScript.
   - name: twitter:title
     content: Les alias NPM - Dotfiles (FR)
   - name: og:title
     content: Les alias NPM - Dotfiles (FR)
   - name: og:description
-    content: Les alias NPM sont des alias qui vous permettent de simplifier l'utilisation de la commande NPM. NPM est un gestionnaire de paquets pour le langage de programmation JavaScript.
+    content: Les alias NPM sont une collection d'alias permettant d'interagir avec l'outil `npm`. Npm est un gestionnaire de paquets pour le langage JavaScript.
   - name: og:image:alt
     content: Les Dotfiles - Conçus pour s'adapter à votre vie de shell
   - name: og:locale
     content: fr_FR
 ---
+# Alias Npm
 
-# Les alias NPM
+Gérer les alias Npm. Fait partie de la configuration **Universal Dotfiles**.
 
-Le fichier `npm.aliases.sh` crée des raccourcis utiles pour
-[npm](https://www.npmjs.com/). NPM est un gestionnaire de paquets pour le
-langage de programmation JavaScript.
+![Dotfiles banner][banner]
 
-## Raccourcis NPM
+## 📖 Description
 
-| Alias | Commande        | Description                       |
-| ----- | --------------- | --------------------------------- |
-| npb   | `npm build`     | Lance la commande `npm build`     |
-| npc   | `npm cache`     | Lance la commande `npm cache`     |
-| npd   | `npm dev`       | Lance la commande `npm dev`       |
-| npg   | `npm global`    | Lance la commande `npm global`    |
-| npi   | `npm install`   | Lance la commande `npm install`   |
-| npl   | `npm list`      | Lance la commande `npm list`      |
-| npp   | `npm publish`   | Lance la commande `npm publish`   |
-| npr   | `npm run`       | Lance la commande `npm run`       |
-| nprw  | `npm run watch` | Lance la commande `npm run watch` |
-| nps   | `npm start`     | Lance la commande `npm start`     |
-| npsv  | `npm serve`     | Lance la commande `npm serve`     |
-| npt   | `npm test`      | Lance la commande `npm test`      |
-| npu   | `npm update`    | Lance la commande `npm update`    |
-| npx   | `npm exec`      | Lance la commande `npm exec`      |
-| npy   | `npm why`       | Lance la commande `npm why`       |
+Ces alias sont définis dans `npm.aliases.sh` et sont chargés automatiquement par `chezmoi`.
+
+## ⚡ Alias
+
+Ce code fournit un ensemble d'alias pour le gestionnaire de paquets [npm](https://www.npmjs.com/).
+- `npa` Auditer les paquets npm.
+- `npb` Build npm script.
+- `npc` Mettre en cache un paquet npm.
+- `npd` Dev npm script.
+- `npg` Paquet npm global.
+- `npi` Installer un paquet npm.
+- `npl` Lister les paquets npm.
+- `npp` Publier un paquet npm.
+- `nprm` Supprimer un paquet npm.
+- `npr` Exécuter un script npm.
+- `nprw` Exécuter un script npm en mode watch.
+- `nps` Démarrer un script npm.
+- `npsv` Servir un script npm.
+- `npt` Tester un script npm.
+- `npu` Mettre à jour un paquet npm.
+- `npx` Exécuter un paquet npm.
+- `npy` Pourquoi un paquet npm.
+
+[banner]: https://kura.pro/dotfiles/v2/images/titles/title-dotfiles.svg

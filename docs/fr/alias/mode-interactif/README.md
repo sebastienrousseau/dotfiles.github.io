@@ -1,47 +1,63 @@
 ---
-description: Les alias en mode interactif sont des alias qui vous permettent de vérifier l’exécution des commandes avant de les exécuter.
+description: Les alias interactifs sont une collection d'alias qui permettent d'interagir avec votre shell et votre terminal de manière plus interactive.
 lang: fr-FR
-metaTitle: Les alias en mode interactif - Dotfiles (FR)
-permalink: /aliases/mode-interactif/
+metaTitle: Alias interactifs - Dotfiles (FR)
+permalink: /alias/interactive/
 
 meta:
   - name: keywords
-    content: alias, environnement, mode interactif, zsh, bash, fish, shell, dotfiles
+    content: alias, bash, cp, interactif, linux, ln, macos, mv, rm, shell, terminal, windows
   - name: twitter:card
-    content: Les alias en mode interactif sont des alias qui vous permettent de vérifier l’exécution des commandes avant de les exécuter.
+    content: Les alias interactifs sont une collection d'alias qui permettent d'interagir avec votre shell et votre terminal de manière plus interactive.
   - name: twitter:description
-    content: Les alias en mode interactif sont des alias qui vous permettent de vérifier l’exécution des commandes avant de les exécuter.
+    content: Les alias interactifs sont une collection d'alias qui permettent d'interagir avec votre shell et votre terminal de manière plus interactive.
   - name: twitter:title
-    content: Les alias en mode interactif - Dotfiles (FR)
+    content: Alias interactifs - Dotfiles (FR)
   - name: og:title
-    content: Les alias en mode interactif - Dotfiles (FR)
+    content: Alias interactifs - Dotfiles (FR)
   - name: og:description
-    content: Les alias en mode interactif sont des alias qui vous permettent de vérifier l’exécution des commandes avant de les exécuter.
+    content: Les alias interactifs sont une collection d'alias qui permettent d'interagir avec votre shell et votre terminal de manière plus interactive.
   - name: og:image:alt
     content: Les Dotfiles - Conçus pour s'adapter à votre vie de shell
   - name: og:locale
     content: fr_FR
 ---
+# Alias interactifs
 
-# Les alias en mode interactif
+Gérer les alias interactifs. Fait partie de la configuration **Universal Dotfiles**.
 
-Le fichier `interactive.aliases` contient des alias qui sont exécutés dans un
-mode interactif. Les alias en mode interactif sont des alias qui vous permettent
-de vérifier l’exécution des commandes avant de les exécuter.
+![Dotfiles banner][banner]
 
-Les alias en mode interactif sont utiles pour les commandes qui peuvent être
-dangereuses ou qui peuvent avoir des effets secondaires indésirables. Par
-exemple, `rm` (suppression d'un fichier ou d'un répertoire) est un alias en
-mode interactif qui vous permet de vérifier la commande avant de continuer.
+## 📖 Description
 
-## Raccourcis en mode interactif
+Ces alias sont définis dans `interactive.aliases.sh` et sont chargés automatiquement par `chezmoi`.
 
-| Alias | Command                 | Description                               |
-| ----- | ----------------------- | ----------------------------------------- |
-| bin   | `rm -fr ${HOME}/.Trash` | Vide la corbeille                         |
-| cp    | `cp -vi`                | Copie un fichier avec confirmation        |
-| del   | `rm -rfvi`              | Supprime un fichier avec confirmation     |
-| ln    | `ln -vi`                | Crée un lien symbolique avec confirmation |
-| mv    | `mv -vi`                | Déplace un fichier avec confirmation      |
-| rm    | `rm -vi`                | Supprime un fichier avec confirmation     |
-| zap   | `rm -vi`                | Supprime un fichier avec confirmation     |
+## ⚡ Alias
+
+Ce code fournit un ensemble d'alias interactifs pour des opérations courantes
+en ligne de commande. Ces alias sont conçus pour simplifier et améliorer
+l'expérience utilisateur en ajoutant des invites interactives avant d'exécuter
+des opérations potentiellement destructrices.
+* `cp` Copier des fichiers et répertoires de manière interactive (demande avant d'écraser) avec
+sortie verbeuse.
+* `del` Supprimer des fichiers ou répertoires de manière interactive (demande avant chaque suppression)
+avec sortie verbeuse, de manière récursive.
+* `ln` Créer des liens symboliques de manière interactive (demande avant d'écraser) avec sortie
+verbeuse.
+* `mv` Déplacer ou renommer des fichiers de manière interactive (demande avant d'écraser) avec sortie
+verbeuse.
+* `rm` Supprimer des fichiers ou répertoires de manière interactive (demande avant chaque suppression)
+avec sortie verbeuse.
+* `zap` Alias de 'rm', supprime des fichiers ou répertoires de manière interactive (demande avant
+chaque suppression) avec sortie verbeuse.
+### Alias de manipulation de la corbeille
+* `bin` Supprimer tous les fichiers du répertoire corbeille (utilisateur .Trash) de manière forcée et
+récursive.
+* `chmod` Modifier les permissions de fichiers ou répertoires avec sortie verbeuse.
+* `chown` Modifier le propriétaire et le groupe d'un fichier ou répertoire avec sortie verbeuse.
+* `diff` Comparer et afficher les différences entre deux fichiers en format unifié.
+* `grep` Rechercher un motif dans des fichiers ou une sortie, en affichant les numéros de ligne et
+en ignorant la casse.
+* `mkdir` Créer un nouveau répertoire, en créant les parents si nécessaire, avec sortie verbeuse.
+
+[banner]: https://kura.pro/dotfiles/v2/images/titles/title-dotfiles.svg

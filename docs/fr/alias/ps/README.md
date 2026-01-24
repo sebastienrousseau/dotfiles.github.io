@@ -1,41 +1,44 @@
 ---
-description: Les alias PS sont des alias qui vous permettent de simplifier l'utilisation de la commande PS. PS est une commande qui affiche des informations sur les processus en cours d'exécution.
+description: Les alias PS sont une collection d'alias permettant d'interagir avec l'outil `ps`. Ps rapporte un instantané des processus en cours.
 lang: fr-FR
 metaTitle: Les alias PS - Dotfiles (FR)
-permalink: /aliases/ps/
+permalink: /alias/ps/
 
 meta:
   - name: keywords
-    content: alias, commandes, dotfiles, ps, shell
+    content: alias, ps, processus, linux, macos, shell, terminal, windows
   - name: twitter:card
-    content: Les alias PS sont des alias qui vous permettent de simplifier l'utilisation de la commande PS. PS est une commande qui affiche des informations sur les processus en cours d'exécution.
+    content: Les alias PS sont une collection d'alias permettant d'interagir avec l'outil `ps`. Ps rapporte un instantané des processus en cours.
   - name: twitter:description
-    content: Les alias PS sont des alias qui vous permettent de simplifier l'utilisation de la commande PS. PS est une commande qui affiche des informations sur les processus en cours d'exécution.
+    content: Les alias PS sont une collection d'alias permettant d'interagir avec l'outil `ps`. Ps rapporte un instantané des processus en cours.
   - name: twitter:title
     content: Les alias PS - Dotfiles (FR)
   - name: og:title
     content: Les alias PS - Dotfiles (FR)
   - name: og:description
-    content: Les alias PS sont des alias qui vous permettent de simplifier l'utilisation de la commande PS. PS est une commande qui affiche des informations sur les processus en cours d'exécution.
+    content: Les alias PS sont une collection d'alias permettant d'interagir avec l'outil `ps`. Ps rapporte un instantané des processus en cours.
   - name: og:image:alt
     content: Les Dotfiles - Conçus pour s'adapter à votre vie de shell
   - name: og:locale
     content: fr_FR
 ---
+# Alias Ps
 
-# PS aliases
+Gérer les alias Ps. Fait partie de la configuration **Universal Dotfiles**.
 
-Le fichier `ps.aliases.sh` crée des raccourcis utiles pour travailler avec les
-processus.
+![Dotfiles banner][banner]
 
-Les alias PS sont une collection d'alias qui vous permettent d'interagir avec
-l'outil de ligne de commande `ps`. [PS](<https://en.wikipedia.org/wiki/Ps_(Unix)>)
-est un outil qui affiche un instantané des processus en cours d'exécution.
+## 📖 Description
 
-## Raccourcis PS
+Ces alias sont définis dans `ps.aliases.sh` et sont chargés automatiquement par `chezmoi`.
 
-| Alias | Command  | Description                                   |
-| ----- | -------- | --------------------------------------------- |
-| pid   | `ps -f`  | Affiche les processus en cours d'exécution    |
-| ps    | `ps -ef` | Affiche les processus en cours d'exécution    |
-| psa   | `ps aux` | Liste tous les processus en cours d'exécution |
+## ⚡ Alias
+
+Ce code fournit un ensemble d'alias pour
+[ps](https://www.gnu.org/software/ps/).
+- `pid` Afficher l'uid, le pid, le pid parent, l'usage CPU récent, l'heure de démarrage,
+  le tty de contrôle, l'usage CPU écoulé, et la commande associée.
+- `ps` Afficher tous les processus.
+- `psa` Lister tous les processus.
+
+[banner]: https://kura.pro/dotfiles/v2/images/titles/title-dotfiles.svg
