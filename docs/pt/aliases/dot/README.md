@@ -1,42 +1,43 @@
 ---
-description: O comando dot é o ponto de entrada unificado para gerenciar seus dotfiles, aprender recursos e verificar a integridade do sistema.
-lang: pt-BR
-metaTitle: O comando dot - Dotfiles (BR)
+description: O comando dot e o ponto de entrada unificado para gerenciar dotfiles, aprender recursos e verificar a saude do sistema.
+lang: pt-PT
+metaTitle: O comando dot - Dotfiles (PT)
 permalink: /pt/aliases/dot/
+
+meta:
+  - name: keywords
+    content: dot, cli, learn, doctor, update, dotfiles
 ---
 
-# O Comando `dot`
+# O comando `dot`
 
-O comando `dot` é a nova interface unificada para interagir com seus dotfiles. Ele envolve `chezmoi` e outros utilitários para fornecer uma experiência perfeita.
+O comando `dot` e a interface unificada para interagir com seus dotfiles. Ele envolve `chezmoi`
+e outras utilidades para uma experiencia integrada.
 
 ## Uso
 
 ```bash
-dot [comando]
+dot [command]
 ```
 
 ## Comandos
 
-| Comando      | Descrição                                                                                                                                               |
-| :----------- | :------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| `dot learn`  | **Modo Interativo**: Lança um tour pelas ferramentas Modern Core (Atuin, Yazi, Zellij) e recursos de IA.                                                |
-| `dot doctor` | **Verificação de Saúde**: Verifica se seu sistema está configurado corretamente e se todas as dependências estão instaladas. (Envolve `chezmoi doctor`) |
-| `dot update` | **Atualizar Sistema**: Puxa as alterações mais recentes do repositório e as reaplica. (Envolve `chezmoi update`)                                        |
-| `dot help`   | **Ajuda**: Exibe informações de uso.                                                                                                                    |
+| Command      | Description                                                                                                                      |
+| :----------- | :------------------------------------------------------------------------------------------------------------------------------- |
+| `dot learn`  | **Modo interativo**: Tour de ferramentas Modern Core (Atuin, Yazi, Zellij) e recursos de AI.                                     |
+| `dot doctor` | **Health Check**: Verifica configuracao e dependencias. (Wrapper para `chezmoi doctor`)                                          |
+| `dot update` | **Update System**: Busca as ultimas mudancas e reaplica. (Wrapper para `chezmoi update`)                                         |
+| `dot help`   | **Ajuda**: Exibe informacoes de uso.                                                                                             |
 
 ## Exemplos
 
-### Aprendizagem Interativa
-
-Inicie o tour guiado para aprender novos atalhos de teclado:
+### Aprendizado interativo
 
 ```bash
 dot learn
 ```
 
-### Verificação do Sistema
-
-Verifique se tudo está funcionando perfeitamente:
+### Verificacao do sistema
 
 ```bash
 dot doctor

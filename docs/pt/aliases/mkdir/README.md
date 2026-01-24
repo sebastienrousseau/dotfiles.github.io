@@ -1,29 +1,44 @@
 ---
-description: Os aliases do Mkdir são uma coleção de aliases que permitem interagir com a ferramenta de linha de comando `mkdir`. Mkdir é uma ferramenta que cria um diretório.
-lang: pt-BR
-metaTitle: Aliases do Mkdir - Dotfiles (BR)
+description: Os alias de Mkdir permitem interagir com o comando `mkdir`. Mkdir cria diretorios.
+lang: pt-PT
+metaTitle: Os alias de Mkdir - Dotfiles (PT)
 permalink: /pt/aliases/mkdir/
+
+meta:
+  - name: keywords
+    content: aliases, mkdir, linux, macos, shell, terminal, windows
+  - name: twitter:card
+    content: Os alias de Mkdir permitem interagir com o comando `mkdir`. Mkdir cria diretorios.
+  - name: twitter:description
+    content: Os alias de Mkdir permitem interagir com o comando `mkdir`. Mkdir cria diretorios.
+  - name: twitter:title
+    content: Os alias de Mkdir - Dotfiles (PT)
+  - name: og:title
+    content: Os alias de Mkdir - Dotfiles (PT)
+  - name: og:description
+    content: Os alias de Mkdir permitem interagir com o comando `mkdir`. Mkdir cria diretorios.
+  - name: og:image:alt
+    content: Dotfiles - Simplesmente projetado para sua vida no shell
+  - name: og:locale
+    content: pt_PT
 ---
+# Alias de Mkdir
 
-# Aliases do Mkdir
+Gerenciar alias de Mkdir. Parte da configuracao **Universal Dotfiles**.
 
-O arquivo `mkdir.aliases.sh` cria aliases de atalho úteis para criar
-diretórios.
+![Dotfiles banner][banner]
 
-Os aliases do Mkdir são uma coleção de aliases que permitem interagir com
-a ferramenta de linha de comando `mkdir`. Mkdir é uma ferramenta que cria um diretório.
+## 📖 Descricao
 
-## Mkdir
+Esses alias sao definidos em `mkdir.aliases.sh` e sao carregados automaticamente pelo `chezmoi`.
 
-[Mkdir](https://pt.wikipedia.org/wiki/Mkdir) é um comando que cria um
-diretório. O utilitário mkdir cria os diretórios nomeados como operandos, na
-ordem especificada, usando o modo “rwxrwxrwx” (0777).
+## ⚡ Alias
 
-| Alias | Comando                     | Descrição                             |
-| ----- | --------------------------- | ------------------------------------- |
-| mcd   | `mkdir -pv && cd`           | Criar diretório e entrar nele.        |
-| mcdp  | `mkdir -pv && cd`           | Criar diretório e pais e entrar nele. |
-| md    | `mkd`                       | Criar diretório.                      |
-| mdd   | `mkdir -pv $(date +%Y%m%d)` | Criar diretório com data.             |
-| mdp   | `mkdir -pv`                 | Criar diretório e pais.               |
-| mdt   | `mkdir -pv $(date +%h%m%s)` | Criar diretório com hora.             |
+- `mde` Criar diretorio de exemplo com data atual.
+- `md` Criar diretorio.
+- `mdd` Criar diretorio com data.
+- `mdn` Criar diretorio de notas com data.
+- `mdw` Criar diretorio de trabalho com data.
+- `mdt` Criar diretorio com hora.
+
+[banner]: https://kura.pro/dotfiles/v2/images/titles/title-dotfiles.svg

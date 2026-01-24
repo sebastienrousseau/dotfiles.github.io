@@ -1,33 +1,44 @@
 ---
-description: Os aliases do Jekyll são uma coleção de aliases que permitem interagir com o Jekyll de uma maneira mais interativa. Jekyll é um gerador de site estático.
-lang: pt-BR
-metaTitle: Aliases do Jekyll - Dotfiles (BR)
+description: Os alias de Jekyll permitem interagir com o Jekyll. Jekyll e um gerador de site estatico.
+lang: pt-PT
+metaTitle: Alias de Jekyll - Dotfiles (PT)
 permalink: /pt/aliases/jekyll/
+
+meta:
+  - name: keywords
+    content: aliases, bash, jekyll, linux, macos, shell, terminal, windows
+  - name: twitter:card
+    content: Os alias de Jekyll permitem interagir com o Jekyll. Jekyll e um gerador de site estatico.
+  - name: twitter:description
+    content: Os alias de Jekyll permitem interagir com o Jekyll. Jekyll e um gerador de site estatico.
+  - name: twitter:title
+    content: Alias de Jekyll - Dotfiles (PT)
+  - name: og:title
+    content: Alias de Jekyll - Dotfiles (PT)
+  - name: og:description
+    content: Os alias de Jekyll permitem interagir com o Jekyll. Jekyll e um gerador de site estatico.
+  - name: og:image:alt
+    content: Dotfiles - Simplesmente projetado para sua vida no shell
+  - name: og:locale
+    content: pt_PT
 ---
 
-# Aliases do Jekyll
+# Alias de Jekyll
 
-Este arquivo `jekyll.aliases.sh` cria aliases de atalho úteis para muitos
-comandos [Jekyll](https://jekyllrb.com/) comumente usados.
+O arquivo `jekyll.aliases.sh` cria atalhos para comandos do [Jekyll](https://jekyllrb.com/).
 
-Os aliases do Jekyll são uma coleção de aliases que permitem interagir com o
-Jekyll de uma maneira mais interativa. Jekyll é um gerador de site estático. Ele pega
-texto escrito em sua linguagem de marcação favorita e usa layouts para criar um
-site estático. Você pode ajustar a aparência do site, URLs, os dados exibidos
-na página e muito mais.
+## Alias de desenvolvimento
 
-## Aliases de desenvolvimento Jekyll
+| Alias | Command                                                           | Description                                                                             |
+| ----- | ----------------------------------------------------------------- | --------------------------------------------------------------------------------------- |
+| jkb   | `JEKYLL_ENV=development bundle exec jekyll build`                 | Build unico para ./_site.                                                               |
+| jkc   | `JEKYLL_ENV=development bundle exec jekyll clean`                 | Remove arquivos gerados: destino, metadados, caches.                                    |
+| jkd   | `JEKYLL_ENV=development bundle exec jekyll serve --watch --trace` | Build dev e servidor local.                                                             |
+| jkl   | `JEKYLL_ENV=development bundle exec jekyll serve --livereload`    | Build dev e servidor local.                                                             |
+| jko   | `open http://localhost:4000/`                                     | Abrir servidor local.                                                                   |
 
-| Alias | Comando                                                           | Descrição                                                                                                   |
-| ----- | ----------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- |
-| jkb   | `JEKYLL_ENV=development bundle exec jekyll build`                 | Realiza uma construção única do seu site para ./\_site.                                                     |
-| jkc   | `JEKYLL_ENV=development bundle exec jekyll clean`                 | Remove todos os arquivos gerados: pasta de destino, arquivo de metadados, caches Sass e Jekyll.             |
-| jkd   | `JEKYLL_ENV=development bundle exec jekyll serve --watch --trace` | Faz uma construção de desenvolvimento do site para '\_site' e executa um servidor de desenvolvimento local. |
-| jkl   | `JEKYLL_ENV=development bundle exec jekyll serve --livereload`    | Faz uma construção de desenvolvimento do site para '\_site' e executa um servidor de desenvolvimento local. |
-| jko   | `open http://localhost:4000/`                                     | Abrir servidor de desenvolvimento local.                                                                    |
+## Alias de release
 
-## Aliases de lançamento Jekyll
-
-| Alias | Comando                                                          | Descrição                                                                                            |
-| ----- | ---------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- |
-| jkp   | `JEKYLL_ENV=production bundle exec jekyll serve --watch --trace` | Faz uma construção de produção do site para '\_site' e executa um servidor de desenvolvimento local. |
+| Alias | Command                                                          | Description                                                                          |
+| ----- | ---------------------------------------------------------------- | ------------------------------------------------------------------------------------ |
+| jkp   | `JEKYLL_ENV=production bundle exec jekyll serve --watch --trace` | Build production e servidor local.                                                   |

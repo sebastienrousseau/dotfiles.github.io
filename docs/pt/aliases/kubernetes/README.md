@@ -1,25 +1,23 @@
 ---
-description: Aliases de kubernetes para Dotfiles
-lang: pt-BR
-metaTitle: Aliases de Kubernetes - Dotfiles (BR)
+description: alias de Kubernetes para Dotfiles
+lang: pt-PT
+metaTitle: alias de Kubernetes - Dotfiles
 permalink: /pt/aliases/kubernetes/
 ---
+# Alias de Kubernetes
 
-# Aliases de Kubernetes
-
-Gerencie aliases do Kubernetes. Parte da configuração **Universal Dotfiles**.
+Gerenciar alias de Kubernetes. Parte da configuracao **Universal Dotfiles**.
 
 ![Dotfiles banner][banner]
 
-## 📖 Descrição
+## 📖 Descricao
 
-Esses aliases são definidos em `kubernetes.aliases.sh` e são carregados automaticamente pelo `chezmoi`.
+Esses alias sao definidos em `kubernetes.aliases.sh` e sao carregados automaticamente pelo `chezmoi`.
 
-## ⚡ Aliases
+## ⚡ Alias
 
 ### core
-
-- `k` - Atalho para kubectl
+- `k` - atalho do kubectl
 - `kg` - `kubectl get`
 - `kgp` - `kubectl get pods`
 - `kga` - `kubectl get all`
@@ -28,20 +26,17 @@ Esses aliases são definidos em `kubernetes.aliases.sh` e são carregados automa
 - `kl` - `kubectl logs`
 - `kex` - `kubectl exec -it`
 
-### contexto
-
-- `kcx` - Listar contextos
-- `kuse` - Alternar contexto
-- `kns` - Alternar namespace
+### context
+- `kcx` - listar contextos
+- `kuse` - trocar contexto
+- `kns` - trocar namespace
 
 ### helm
-
-- `h` - Atalho para Helm
-- `hls` - Listar releases
-- `hi` - Instalar chart
+- `h` - atalho do Helm
+- `hls` - listar releases
+- `hi` - instalar chart
 
 ### ui
-
-- `k9` - Interface de terminal k9s
+- `k9` - k9s UI terminal
 
 [banner]: https://kura.pro/dotfiles/v2/images/titles/title-dotfiles.svg

@@ -1,35 +1,46 @@
 ---
-description: Os aliases do Clear são capazes de limpar a tela de várias maneiras.
-lang: pt-BR
-metaTitle: Aliases do Clear - Dotfiles (BR)
+description: Os alias de clear limpam a tela de varias formas.
+lang: pt-PT
+metaTitle: Alias de Clear - Dotfiles (PT)
 permalink: /pt/aliases/clear/
+
+meta:
+  - name: twitter:card
+    content: Os alias de clear limpam a tela de varias formas.
+  - name: twitter:description
+    content: Os alias de clear limpam a tela de varias formas.
+  - name: twitter:title
+    content: Alias de Clear - Dotfiles (PT)
+  - name: og:title
+    content: Alias de Clear - Dotfiles (PT)
+  - name: og:description
+    content: Os alias de clear limpam a tela de varias formas.
+  - name: og:image:alt
+    content: Dotfiles - Simplesmente projetado para sua vida no shell
+  - name: og:locale
+    content: pt_PT
 ---
+# Alias de Clear
 
-# Aliases do Clear
+Gerenciar alias de Clear. Parte da configuracao **Universal Dotfiles**.
 
-O arquivo `clear.aliases.sh` cria aliases de atalho úteis para limpar a
-tela do terminal. Os aliases são capazes de limpar a tela de várias maneiras.
+![Dotfiles banner][banner]
 
-## Clear
+## 📖 Descricao
 
-[Clear](<https://en.wikipedia.org/wiki/Clear_(command)>) é um comando que limpa
-a tela do terminal.
+Esses alias sao definidos em `clear.aliases.sh` e sao carregados automaticamente pelo `chezmoi`.
 
-| Alias  | Comando                                         | Descrição                                                                   |
-| ------ | ----------------------------------------------- | --------------------------------------------------------------------------- |
-| c      | `clear`                                         | Limpar a tela do terminal.                                                  |
-| cl     | `c`                                             | Limpar a tela do terminal.                                                  |
-| clc    | `clear && cat`                                  | Limpar a tela do terminal e imprimir o conteúdo do diretório atual.         |
-| clcat  | `clc`                                           | Limpar a tela do terminal e imprimir o conteúdo do diretório atual.         |
-| clh    | `clear && history`                              | Limpar a tela do terminal e imprimir o histórico de comandos.               |
-| clhist | `clh`                                           | Limpar a tela do terminal e imprimir o histórico de comandos.               |
-| clp    | `clear && pwd`                                  | Limpar a tela do terminal e imprimir o diretório de trabalho atual.         |
-| clpwd  | `clp`                                           | Limpar a tela do terminal e imprimir o diretório de trabalho atual.         |
-| clr    | `c`                                             | Limpar a tela do terminal.                                                  |
-| cls    | `c`                                             | Limpar a tela do terminal.                                                  |
-| clt    | `clear && tree`                                 | Limpar a tela do terminal e imprimir a árvore de diretórios.                |
-| cltree | `clt`                                           | Limpar a tela do terminal e imprimir a árvore de diretórios.                |
-| ct     | `clear && tree ./`                              | Limpar a tela do terminal e imprimir a árvore de diretórios.                |
-| ctree  | `ct`                                            | Limpar a tela do terminal e imprimir a árvore de diretórios.                |
-| cpl    | `clear && pwd && echo '' && ls -a && echo ''`   | Limpar a tela e imprimir o diretório atual e o conteúdo do diretório atual. |
-| cplt   | `clear && pwd && echo '' && tree ./ && echo ''` | Limpar a tela e imprimir o diretório atual e a árvore de diretórios.        |
+## ⚡ Alias
+
+Alias para facilitar o uso do terminal:
+- `c` limpa a tela.
+- `cdw` muda para o diretorio workspace.
+- `cl` alias para `c`.
+- `clc` limpa a tela e lista conteudo do diretorio.
+- `clh` limpa a tela e mostra historico.
+- `clp` limpa a tela e mostra o diretorio atual.
+- `clt` limpa a tela e mostra a arvore.
+- `cpl` limpa a tela e mostra diretorio atual e conteudo.
+- `cplt` limpa a tela e mostra diretorio atual e arvore.
+
+[banner]: https://kura.pro/dotfiles/v2/images/titles/title-dotfiles.svg

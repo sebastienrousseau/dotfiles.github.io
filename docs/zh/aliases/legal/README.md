@@ -1,44 +1,39 @@
 ---
-description: Dotfiles 的法律别名
+description: 法务别名用于 Dotfiles
 lang: zh-CN
-metaTitle: 法律别名 - Dotfiles (CN)
+metaTitle: 法务别名 - Dotfiles
 permalink: /zh/aliases/legal/
 ---
+# 法务与许可别名
 
-# 法律与许可别名
-
-用于管理开源合规性、许可证扫描和归属的工具。
+用于开源合规、许可证扫描与署名归属。
 
 ## ⚖️ 别名
 
-### 许可证扫描 (License Scanning)
+### License Scanning
+| Alias | Description | Type |
+|-------|-------------|------|
+| `fossology-start` | 在 8081 启动本地 FOSSology | Docker |
+| `fossology-stop` | 停止 FOSSology | Docker |
+| `license-scan` | 快速扫描当前目录许可证（Trivy） | Binary |
 
-| 别名              | 描述                                    | 类型   |
-| ----------------- | --------------------------------------- | ------ |
-| `fossology-start` | 在端口 8081 上启动本地 FOSSology 服务器 | Docker |
-| `fossology-stop`  | 停止 FOSSology 服务器                   | Docker |
-| `license-scan`    | 当前目录的快速许可证扫描（通过 Trivy）  | Binary |
+### Copyright Headers
+| Alias | Description | Type |
+|-------|-------------|------|
+| `add-headers` | 递归添加 MIT 许可头 | Docker (google/addlicense) |
 
-### 版权头 (Copyright Headers)
+### Attribution
+| Alias | Description | Type |
+|-------|-------------|------|
+| `gen-notice` | 生成 `NOTICE` 文件 | Docker |
 
-| 别名          | 描述                                  | 类型                       |
-| ------------- | ------------------------------------- | -------------------------- |
-| `add-headers` | 递归地将 MIT 许可证头添加到所有源文件 | Docker (google/addlicense) |
+### Contribution
+| Alias | Description | Type |
+|-------|-------------|------|
+| `check-cla` | 监控 PR 检查（含 CLA） | CLI (`gh`) |
 
-### 归属 (Attribution)
+## 📦 依赖
 
-| 别名         | 描述                                      | 类型   |
-| ------------ | ----------------------------------------- | ------ |
-| `gen-notice` | 为依赖项生成 `NOTICE` 文件（最初支持 Go） | Docker |
-
-### 贡献 (Contribution)
-
-| 别名        | 描述                            | 类型       |
-| ----------- | ------------------------------- | ---------- |
-| `check-cla` | 查看 GitHub PR 检查（包括 CLA） | CLI (`gh`) |
-
-## 📦 要求
-
-- **Docker**: 用于隔离合规工具。
-- **GitHub CLI (`gh`)**: 用于 PR/CLA 检查。
-- **Trivy**: 自动安装/建议用于快速扫描。
+- **Docker**
+- **GitHub CLI (`gh`)**
+- **Trivy**

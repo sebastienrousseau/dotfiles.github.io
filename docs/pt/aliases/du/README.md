@@ -1,31 +1,43 @@
 ---
-description: Os aliases de Uso de Disco são projetados para exibir estatísticas de uso de disco. Eles são usados para calcular e imprimir o espaço em disco usado por arquivos ou diretórios.
-lang: pt-BR
-metaTitle: Aliases de Uso de Disco - Dotfiles (BR)
+description: Os alias de uso de disco exibem estatisticas de uso. Eles calculam e imprimem o espaco usado por arquivos ou diretorios.
+lang: pt-PT
+metaTitle: Alias de uso de disco - Dotfiles (PT)
 permalink: /pt/aliases/du/
+
+meta:
+  - name: twitter:card
+    content: Os alias de uso de disco exibem estatisticas de uso. Eles calculam e imprimem o espaco usado por arquivos ou diretorios.
+  - name: twitter:description
+    content: Os alias de uso de disco exibem estatisticas de uso. Eles calculam e imprimem o espaco usado por arquivos ou diretorios.
+  - name: twitter:title
+    content: Alias de uso de disco - Dotfiles (PT)
+  - name: og:title
+    content: Alias de uso de disco - Dotfiles (PT)
+  - name: og:description
+    content: Os alias de uso de disco exibem estatisticas de uso. Eles calculam e imprimem o espaco usado por arquivos ou diretorios.
+  - name: og:image:alt
+    content: Dotfiles - Simplesmente projetado para sua vida no shell
+  - name: og:locale
+    content: pt_PT
 ---
 
-# Aliases de Uso de Disco
+# Alias de uso de disco
 
-O arquivo `du.aliases.sh` cria aliases de atalho úteis para o comando `du`.
+O arquivo `du.aliases.sh` cria atalhos uteis para o comando `du`.
 
-Os aliases de Uso de Disco são projetados para exibir estatísticas de uso de disco. Eles são
-usados para calcular e imprimir o espaço em disco usado por arquivos ou diretórios.
+Os alias de uso de disco exibem estatisticas de uso. Eles calculam e imprimem
+espaco usado por arquivos ou diretorios.
 
 ## Uso de disco
 
-[Uso de disco](<https://pt.wikipedia.org/wiki/Du_(Unix)>) é um comando que
-estima o uso de espaço em arquivo. O comando `du` é usado para estimar o uso de
-espaço em arquivo. O espaço usado por cada arquivo é mostrado em kilobytes. O espaço
-usado por cada diretório é mostrado em kilobytes, juntamente com o espaço total
-usado por todos os arquivos nesse diretório e seus subdiretórios.
+[Disk usage](<https://en.wikipedia.org/wiki/Du_(Unix)>) estima uso de espaco.
 
-| Alias | Comando      | Descrição                                                                       |
-| ----- | ------------ | ------------------------------------------------------------------------------- | -------------------------------------------------------- |
-| du    | `du -h`      | Mostrar o uso de disco do diretório atual.                                      |
-| du1   | `du -hxd 1   | sort -h`                                                                        | Tamanho de arquivos e diretórios no diretório atual.     |
-| ducks | `du -cks \*  | sort -rn \| head -n 10`                                                         | Top 10 maiores arquivos e diretórios no diretório atual. |
-| duh   | `du`         | Tamanho de arquivos e diretórios.                                               |
-| dus   | `du -hs *`   | Tamanho de arquivo com saída legível por humanos ordenado por tamanho.          |
-| dusym | `du * -hsLc` | Tamanho de arquivos e diretórios no diretório atual incluindo links simbólicos. |
-| dut   | `dus`        | Tamanho total do arquivo do diretório atual.                                    |
+| Alias | Command | Description |
+| ----- | ------- | ----------- |
+| du | `du -h` | Mostrar uso de disco do diretorio atual. |
+| du1 | `du -hxd 1 | sort -h` | Tamanho de arquivos e diretorios do diretorio atual. |
+| ducks | `du -cks * | sort -rn | head -n 10` | Top 10 maiores arquivos e diretorios no diretorio atual. |
+| duh | `du` | Tamanho de arquivos e diretorios. |
+| dus | `du -hs *` | Tamanho legivel ordenado por tamanho. |
+| dusym | `du * -hsLc` | Tamanho incluindo links simbolicos. |
+| dut | `dus` | Tamanho total do diretorio atual. |
