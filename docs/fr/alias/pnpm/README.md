@@ -1,70 +1,69 @@
 ---
-description: Les alias pnpm sont des alias qui vous permettent de simplifier l'utilisation de la commande pnpm. pnpm est une commande qui permet de gérer les paquets npm.
+description: Les alias PNpm sont une collection d'alias permettant d'interagir avec l'outil `pnpm`. Pnpm est un gestionnaire de paquets rapide et économe en espace disque.
 lang: fr-FR
-metaTitle: Les alias pnpm - Dotfiles (FR)
-permalink: /aliases/pnpm/
+metaTitle: Les alias PNpm - Dotfiles (FR)
+permalink: /alias/pnpm/
 
 meta:
   - name: keywords
-    content: alias, commandes, dotfiles, npm, pnpm, pnpx, shell
+    content: alias, pnpm, gestionnaire de paquets, node, npm, yarn, linux, macos, shell, terminal, windows
   - name: twitter:card
-    content: Les alias pnpm sont des alias qui vous permettent de simplifier l'utilisation de la commande pnpm. pnpm est une commande qui permet de gérer les paquets npm.
+    content: Les alias PNpm sont une collection d'alias permettant d'interagir avec l'outil `pnpm`. Pnpm est un gestionnaire de paquets rapide et économe en espace disque.
   - name: twitter:description
-    content: Les alias pnpm sont des alias qui vous permettent de simplifier l'utilisation de la commande pnpm. pnpm est une commande qui permet de gérer les paquets npm.
+    content: Les alias PNpm sont une collection d'alias permettant d'interagir avec l'outil `pnpm`. Pnpm est un gestionnaire de paquets rapide et économe en espace disque.
   - name: twitter:title
-    content: Les alias pnpm - Dotfiles (FR)
+    content: Les alias PNpm - Dotfiles (FR)
   - name: og:title
-    content: Les alias pnpm - Dotfiles (FR)
+    content: Les alias PNpm - Dotfiles (FR)
   - name: og:description
-    content: Les alias pnpm sont des alias qui vous permettent de simplifier l'utilisation de la commande pnpm. pnpm est une commande qui permet de gérer les paquets npm.
+    content: Les alias PNpm sont une collection d'alias permettant d'interagir avec l'outil `pnpm`. Pnpm est un gestionnaire de paquets rapide et économe en espace disque.
   - name: og:image:alt
     content: Les Dotfiles - Conçus pour s'adapter à votre vie de shell
   - name: og:locale
     content: fr_FR
 ---
+# Alias Pnpm
 
-# Les alias pnpm
+Gérer les alias Pnpm. Fait partie de la configuration **Universal Dotfiles**.
 
-Le fichier `pnpm.aliases.zsh` crée des raccourcis utiles pour de nombreuses
-commandes [pnpm](https://pnpm.io) couramment utilisées.
+![Dotfiles banner][banner]
 
-pnpm est une commande qui permet de gérer les paquets npm. pnpm est rapide et
-utilise peu d'espace disque.
+## 📖 Description
 
-## Raccourcis pnpm
+Ces alias sont définis dans `pnpm.aliases.sh` et sont chargés automatiquement par `chezmoi`.
 
-| Alias | Commande                             | Description                                                     |
-| ----- | ------------------------------------ | --------------------------------------------------------------- |
-| pna   | `pnpm add`                           | Installe un paquet                                              |
-| pnad  | `pnpm add --save-dev`                | Installe un paquet en tant que dépendance de développement      |
-| pnap  | `pnpm add --save-peer`               | Installe un paquet en tant que dépendance de pair               |
-| pnau  | `pnpm audit`                         | Exécute un audit de sécurité                                    |
-| pnb   | `pnpm run build`                     | Exécute la commande `build`                                     |
-| pnc   | `pnpm create`                        | Crée un nouveau projet                                          |
-| pnd   | `pnpm run dev`                       | Exécute la commande `dev`                                       |
-| pndoc | `pnpm run doc`                       | Exécute la commande `doc`                                       |
-| pnga  | `pnpm add --global`                  | Installe un paquet en tant que paquet global                    |
-| pngls | `pnpm list --global`                 | Liste les paquets globaux                                       |
-| pngrm | `pnpm remove --global`               | Supprime un paquet global                                       |
-| pngu  | `pnpm update --global`               | Met à jour un paquet global                                     |
-| pnh   | `pnpm help`                          | Affiche l'aide                                                  |
-| pni   | `pnpm init`                          | Initialise un projet                                            |
-| pnin  | `pnpm install`                       | Installe les dépendances du projet                              |
-| pnln  | `pnpm run lint`                      | Exécute la commande `lint`                                      |
-| pnls  | `pnpm list`                          | Liste les paquets locaux                                        |
-| pnout | `pnpm outdated`                      | Liste les paquets obsolètes                                     |
-| pnp   | `pnpm`                               | Exécute la commande `pnpm`                                      |
-| pnpub | `pnpm publish`                       | Publie le projet                                                |
-| pnrm  | `pnpm remove`                        | Supprime un paquet                                              |
-| pnrun | `pnpm run`                           | Exécute une commande                                            |
-| pns   | `pnpm run serve`                     | Exécute la commande `serve`                                     |
-| pnst  | `pnpm start`                         | Exécute la commande `start`                                     |
-| pnsv  | `pnpm server`                        | Exécute la commande `server`                                    |
-| pnt   | `pnpm test`                          | Exécute la commande `test`                                      |
-| pntc  | `pnpm test --coverage`               | Exécute la commande `test --coverage`                           |
-| pnui  | `pnpm update --interactive`          | Met à jour les paquets interactivement                          |
-| pnuil | `pnpm update --interactive --latest` | Met à jour les paquets interactivement vers la dernière version |
-| pnun  | `pnpm uninstall`                     | Supprime un paquet                                              |
-| pnup  | `pnpm update`                        | Met à jour les paquets                                          |
-| pnwhy | `pnpm why`                           | Affiche la raison pour laquelle un paquet est installé          |
-| pnx   | `pnpx`                               | Exécute la commande `pnpx`                                      |
+## ⚡ Alias
+
+Ce code fournit un ensemble d'alias pour [pnpm](https://pnpm.js.org/).
+- `pni` Initialiser un nouveau projet.
+- `pnin` Installer les dépendances du projet.
+- `pnb` Build le projet.
+- `pnrun` Exécuter un script du projet.
+- `pnd` Exécuter le projet en mode dev.
+- `pns` Exécuter le projet en mode serve.
+- `pnst` Démarrer le projet.
+- `pnln` Linter le projet.
+- `pnls` Lister toutes les dépendances.
+- `pnout` Vérifier les dépendances obsolètes.
+- `pnt` Tester le projet.
+- `pntc` Tester le projet avec couverture.
+- `pndoc` Générer la documentation du projet.
+- `pnpub` Publier le projet.
+- `pnwhy` Vérifier pourquoi une dépendance est installée.
+- `pnui` Mettre à jour une dépendance de manière interactive.
+- `pnuil` Mettre à jour une dépendance de manière interactive vers la dernière version.
+- `pnup` Mettre à jour une dépendance.
+- `pnad` Ajouter une dépendance de développement au projet.
+- `pnap` Ajouter une dépendance peer au projet.
+- `pnrm` Supprimer une dépendance du projet.
+- `pnun` Désinstaller les dépendances du projet.
+- `pnga` Ajouter une dépendance globale.
+- `pngls` Lister toutes les dépendances globales.
+- `pngrm` Supprimer une dépendance globale.
+- `pngu` Mettre à jour une dépendance globale.
+- `pnh` Afficher l'aide.
+- `pnc` Créer un nouveau projet.
+- `pnsv` Exécuter le projet en mode serveur.
+- `pnx` Raccourci pour pnpx.
+
+[banner]: https://kura.pro/dotfiles/v2/images/titles/title-dotfiles.svg
