@@ -1,38 +1,57 @@
 ---
-description: Die NPM-Aliase sind eine Sammlung von Aliasen, die es Ihnen ermöglichen, mit dem `npm` Kommandozeilen-Tool zu interagieren. Npm ist ein Paketmanager für die Programmiersprache JavaScript.
+description: Die NPM-Aliase sind eine Sammlung von Aliasen, die die Arbeit mit dem `npm` CLI-Tool erleichtern. Npm ist ein Paketmanager fuer die Programmiersprache JavaScript.
 lang: de-DE
-metaTitle: NPM Aliase - Dotfiles (DE)
+metaTitle: Die NPM-Aliase - Dotfiles (DE)
 permalink: /de/aliases/npm/
+
+meta:
+  - name: keywords
+    content: aliases, npm, node, node package manager, package manager, linux, macos, shell, terminal, windows
+  - name: twitter:card
+    content: Die NPM-Aliase sind eine Sammlung von Aliasen, die die Arbeit mit dem `npm` CLI-Tool erleichtern. Npm ist ein Paketmanager fuer die Programmiersprache JavaScript.
+  - name: twitter:description
+    content: Die NPM-Aliase sind eine Sammlung von Aliasen, die die Arbeit mit dem `npm` CLI-Tool erleichtern. Npm ist ein Paketmanager fuer die Programmiersprache JavaScript.
+  - name: twitter:title
+    content: Die NPM-Aliase - Dotfiles (DE)
+  - name: og:title
+    content: Die NPM-Aliase - Dotfiles (DE)
+  - name: og:description
+    content: Die NPM-Aliase sind eine Sammlung von Aliasen, die die Arbeit mit dem `npm` CLI-Tool erleichtern. Npm ist ein Paketmanager fuer die Programmiersprache JavaScript.
+  - name: og:image:alt
+    content: Dotfiles - Einfach entworfen fuer dein Shell-Leben
+  - name: og:locale
+    content: de_DE
 ---
+# Npm-Aliase
 
-# NPM Aliase
+Npm-Aliase verwalten. Teil der **Universal Dotfiles** Konfiguration.
 
-Die Datei `npm.aliases.sh` erstellt hilfreiche Shortcut-Aliase
-für [npm](https://www.npmjs.com/).
+![Dotfiles banner][banner]
 
-## NPM
+## 📖 Beschreibung
 
-[npm](https://www.npmjs.com/) ist ein Paketmanager für die JavaScript-
-Programmiersprache. Er ist der Standard-Paketmanager für die JavaScript-
-Laufzeitumgebung Node.js.
+Diese Aliase sind in `npm.aliases.sh` definiert und werden automatisch von `chezmoi` geladen.
 
-| Alias | Befehl          | Beschreibung          |
-| ----- | --------------- | --------------------- |
-| npb   | `npm build`     | Build npm script.     |
-| npc   | `npm cache`     | Cache npm package.    |
-| npd   | `npm dev`       | Dev npm script.       |
-| npg   | `npm global`    | Global npm package.   |
-| npi   | `npm install`   | Install npm package.  |
-| npl   | `npm list`      | List npm packages.    |
-| npp   | `npm publish`   | Publish npm package.  |
-| npr   | `npm run`       | Run npm script.       |
-| nprw  | `npm run watch` | Run npm script watch. |
-| nps   | `npm start`     | Start npm script.     |
-| npsv  | `npm serve`     | Serve npm script.     |
-| npt   | `npm test`      | Test npm script.      |
-| npu   | `npm update`    | Update npm package.   |
-| npx   | `npm exec`      | Exec npm package.     |
-| npy   | `npm why`       | Why npm package.      |
+## ⚡ Aliase
 
-> [!NOTE]
-> Die Befehlsbeschreibungen wurden bewusst kurz gehalten oder auf Englisch belassen, da es sich um Standard-NPM-Terminologie handelt.
+Dieser Code stellt eine Reihe von Aliasen fuer den Paketmanager
+[npm](https://www.npmjs.com/) bereit.
+- `npa` npm-Pakete auditieren.
+- `npb` npm Build-Skript.
+- `npc` npm Paket-Cache.
+- `npd` npm Dev-Skript.
+- `npg` Globales npm-Paket.
+- `npi` npm-Paket installieren.
+- `npl` npm-Pakete auflisten.
+- `npp` npm-Paket veroeffentlichen.
+- `nprm` npm-Paket entfernen.
+- `npr` npm-Skript ausfuehren.
+- `nprw` npm-Skript im Watch-Modus ausfuehren.
+- `nps` npm-Skript starten.
+- `npsv` npm-Skript serven.
+- `npt` npm-Skript testen.
+- `npu` npm-Paket aktualisieren.
+- `npx` npm-Paket ausfuehren.
+- `npy` Warum ein npm-Paket installiert ist.
+
+[banner]: https://kura.pro/dotfiles/v2/images/titles/title-dotfiles.svg

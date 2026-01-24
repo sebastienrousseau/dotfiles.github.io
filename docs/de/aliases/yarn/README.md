@@ -1,13 +1,12 @@
 ---
-description: Yarn Aliase für Dotfiles
+description: yarn-Aliase fuer Dotfiles
 lang: de-DE
-metaTitle: Yarn Aliase - Dotfiles (DE)
+metaTitle: yarn-Aliase - Dotfiles
 permalink: /de/aliases/yarn/
 ---
+# Yarn-Aliase
 
-# Yarn Aliase
-
-Verwalten Sie Yarn (JavaScript) Aliase. Teil der **Universal Dotfiles** Konfiguration.
+Yarn-Aliase verwalten. Teil der **Universal Dotfiles** Konfiguration.
 
 ![Dotfiles banner][banner]
 
@@ -17,11 +16,11 @@ Diese Aliase sind in `yarn.aliases.sh` definiert und werden automatisch von `che
 
 ## ⚡ Aliase
 
-- `y` - Yarn Kurzbefehl
+- `y` - Yarn-Kurzbefehl
 - `yi` - Installieren
-- `ya` - Abhängigkeit hinzufügen
-- `yad` - Entwicklungsabhängigkeit hinzufügen (Dev dependency)
-- `yrun` - Skript ausführen
+- `ya` - Abhaengigkeit hinzufuegen
+- `yad` - Dev-Abhaengigkeit hinzufuegen
+- `yrun` - Skript ausfuehren
 - `ystem` - Starten
 
 [banner]: https://kura.pro/dotfiles/v2/images/titles/title-dotfiles.svg
