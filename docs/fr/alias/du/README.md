@@ -1,46 +1,42 @@
 ---
-description: Les alias du sont des alias de la commande `du`. Ils sont utilisés pour afficher l'espace disque utilisé par les fichiers et les dossiers.
+description: Les alias d'utilisation du disque sont conçus pour afficher des statistiques d'utilisation du disque. Ils permettent de calculer et d'afficher l'espace disque utilisé par des fichiers ou des répertoires.
 lang: fr-FR
-metaTitle: Les alias du - Dotfiles (FR)
+metaTitle: Alias d'utilisation du disque - Dotfiles (FR)
 permalink: /aliases/du/
 
 meta:
-  - name: keywords
-    content: alias, du, espace disque, taille, taille des fichiers, taille des dossiers, dotfiles
   - name: twitter:card
-    content: Les alias du sont des alias de la commande `du`. Ils sont utilisés pour afficher l'espace disque utilisé par les fichiers et les dossiers.
+    content: Les alias d'utilisation du disque sont conçus pour afficher des statistiques d'utilisation du disque. Ils permettent de calculer et d'afficher l'espace disque utilisé par des fichiers ou des répertoires.
   - name: twitter:description
-    content: Les alias du sont des alias de la commande `du`. Ils sont utilisés pour afficher l'espace disque utilisé par les fichiers et les dossiers.
+    content: Les alias d'utilisation du disque sont conçus pour afficher des statistiques d'utilisation du disque. Ils permettent de calculer et d'afficher l'espace disque utilisé par des fichiers ou des répertoires.
   - name: twitter:title
-    content: Les alias du - Dotfiles (FR)
+    content: Alias d'utilisation du disque - Dotfiles (FR)
   - name: og:title
-    content: Les alias du - Dotfiles (FR)
+    content: Alias d'utilisation du disque - Dotfiles (FR)
   - name: og:description
-    content: Les alias du sont des alias de la commande `du`. Ils sont utilisés pour afficher l'espace disque utilisé par les fichiers et les dossiers.
+    content: Les alias d'utilisation du disque sont conçus pour afficher des statistiques d'utilisation du disque. Ils permettent de calculer et d'afficher l'espace disque utilisé par des fichiers ou des répertoires.
   - name: og:image:alt
     content: Les Dotfiles - Conçus pour s'adapter à votre vie de shell
   - name: og:locale
     content: fr_FR
 ---
 
-# Les alias du
+# Alias d'utilisation du disque
 
-Le fichier `du.aliases.sh` crée des alias de raccourcis pour la commande `du`.
-Ils sont utilisés pour afficher l'espace disque utilisé par les fichiers et les
-dossiers.
+Le fichier `du.aliases.sh` crée des alias de raccourcis utiles pour la commande `du`.
 
-Le [du](<https://en.wikipedia.org/wiki/Du_(Unix)>) (disk usage) est un
-outil de ligne de commande qui permet de voir l'espace disque utilisé par les
-fichiers et les dossiers.
+Les alias d'utilisation du disque sont conçus pour afficher des statistiques d'utilisation du disque. Ils servent à calculer et afficher l'espace disque utilisé par des fichiers ou des répertoires.
 
-## Raccourcis du
+## Utilisation du disque
 
-| Alias | Command      | Description                                                                                                              |
-| ----- | ------------ | ------------------------------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------- | ------------------------------------------------------------------ |
-| du    | `du -h`      | Affiche l'espace disque utilisé par les fichiers et les dossiers.                                                        |
-| du1   | `du -hxd 1   | sort -h`                                                                                                                 | Affiche l'espace disque utilisé par les fichiers et les dossiers du répertoire courant. |
-| ducks | `du -cks _._ | sort -rn                                                                                                                 | head -n 10`                                                                             | Affiche les 10 fichiers les plus volumineux du répertoire courant. |
-| duh   | `du`         | Affiche l'espace disque utilisé par les fichiers et les dossiers.                                                        |
-| dus   | `du -hs *`   | Affiche l'espace disque utilisé par les fichiers et les dossiers du répertoire courant.                                  |
-| dusym | `du * -hsLc` | Affiche l'espace disque utilisé par les fichiers et les dossiers du répertoire courant en suivant les liens symboliques. |
-| dut   | `dus`        | Affiche l'espace disque total utilisé par les fichiers et les dossiers du répertoire courant.                            |
+[Disk usage](<https://en.wikipedia.org/wiki/Du_(Unix)>) est une commande qui estime l'utilisation de l'espace disque. La commande `du` sert à estimer l'espace utilisé. L'espace utilisé par chaque fichier est affiché en kilooctets. L'espace utilisé par chaque répertoire est affiché en kilooctets, ainsi que l'espace total utilisé par tous les fichiers de ce répertoire et de ses sous-répertoires.
+
+| Alias | Commande | Description |
+| ----- | -------- | ----------- |
+| du | `du -h` | Afficher l'utilisation du disque du répertoire courant. |
+| du1 | `du -hxd 1 | sort -h` | Taille des fichiers et répertoires du répertoire courant. |
+| ducks | `du -cks * | sort -rn | head -n 10` | Top 10 des plus gros fichiers et répertoires du répertoire courant. |
+| duh | `du` | Taille des fichiers et répertoires. |
+| dus | `du -hs *` | Taille lisible triée par taille. |
+| dusym | `du * -hsLc` | Taille des fichiers et répertoires du répertoire courant incluant les liens symboliques. |
+| dut | `dus` | Taille totale du répertoire courant. |

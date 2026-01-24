@@ -1,44 +1,53 @@
 ---
-description: Les alias de configuration sont des alias pour ouvrir les fichiers de configuration depuis la console. Ils sont utilisés pour modifier les paramètres de votre shell et de vos applications.
+description: Les alias de configuration permettent d'ouvrir les fichiers de configuration du terminal et du shell.
 lang: fr-FR
 metaTitle: Les alias de configuration - Dotfiles (FR)
-permalink: /aliases/configuration/
+permalink: /alias/configuration/
 
 meta:
   - name: keywords
-    content: alias, config, configuration, dotfiles, raccourcis, shell, terminal
+    content: alias, configuration, dotfiles, linux, macos, shell, terminal, windows
   - name: twitter:card
-    content: Les alias de configuration sont des alias pour ouvrir les fichiers de configuration depuis la console.Ils sont utilisés pour modifier les paramètres de votre shell et de vos applications.
+    content: Les alias de configuration permettent d'ouvrir les fichiers de configuration du terminal et du shell.
   - name: twitter:description
-    content: Les alias de configuration sont des alias pour ouvrir les fichiers de configuration depuis la console.Ils sont utilisés pour modifier les paramètres de votre shell et de vos applications.
+    content: Les alias de configuration permettent d'ouvrir les fichiers de configuration du terminal et du shell.
   - name: twitter:title
     content: Les alias de configuration - Dotfiles (FR)
   - name: og:title
     content: Les alias de configuration - Dotfiles (FR)
   - name: og:description
-    content: Les alias de configuration sont des alias pour ouvrir les fichiers de configuration depuis la console.Ils sont utilisés pour modifier les paramètres de votre shell et de vos applications.
+    content: Les alias de configuration permettent d'ouvrir les fichiers de configuration du terminal et du shell.
   - name: og:image:alt
     content: Les Dotfiles - Conçus pour s'adapter à votre vie de shell
   - name: og:locale
     content: fr_FR
 ---
+# Alias de configuration
 
-# Les alias de configuration
+Gérer les alias de configuration. Fait partie de la configuration **Universal Dotfiles**.
 
-Le fichier `configuration.aliases.sh` crée des alias de raccourcis pour ouvrir
-les fichiers de configuration depuis la console. Ils sont utilisés pour modifier
-les paramètres de votre shell et de vos applications.
+![Dotfiles banner][banner]
 
-> [!TIP]
-> **Nouveau dans v0.2.471** : Vous pouvez désormais utiliser la commande `dot` pour gérer votre configuration.
-> Essayez `dot learn` pour une visite interactive ou `dot doctor` pour vérifier votre installation.
+## 📖 Description
 
-## Raccourcis de configuration
+Ces alias sont définis dans `configuration.aliases.sh` et sont chargés automatiquement par `chezmoi`.
 
-| Alias | Commande                         | Description                                                                  |
-| ----- | -------------------------------- | ---------------------------------------------------------------------------- |
-| bshp  | `${=EDITOR} $HOME/.bash_profile` | Ouvre le fichier de configuration de profile Bash avec l'éditeur par défaut. |
-| bshrc | `${=EDITOR} $HOME/.bashrc`       | Ouvre le fichier de configuration de Bash avec l'éditeur par défaut.         |
-| gcfg  | `${=EDITOR} $HOME/.gitconfig`    | Ouvre le fichier de configuration de Git avec l'éditeur par défaut.          |
-| gign  | `${=EDITOR} $HOME/.gitignore`    | Ouvre le fichier de configuration de Git avec l'éditeur par défaut.          |
-| zshrc | `${=EDITOR} $HOME/.zshrc`        | Ouvre le fichier de configuration de Zsh avec l'éditeur par défaut.          |
+## ⚡ Alias
+
+Ce code fournit un ensemble d'alias de commande pour ouvrir rapidement
+les fichiers de configuration importants dans l'éditeur de texte par défaut.
+Les alias suivants sont inclus :
+- `apconf` ouvre le fichier de configuration Apache dans l'éditeur par défaut.
+- `bshrc` ouvre le fichier de configuration Bash dans l'éditeur par défaut.
+- `bshp` ouvre le profil Bash dans l'éditeur par défaut.
+- `dockcomp` ouvre le fichier Docker Compose dans l'éditeur par défaut.
+- `eddir` ouvre le répertoire courant dans l'éditeur par défaut.
+- `gcfg` ouvre le fichier de configuration Git dans l'éditeur par défaut.
+- `gign` ouvre le fichier Git ignore dans l'éditeur par défaut.
+- `hosts` ouvre le fichier hosts dans l'éditeur par défaut.
+- `ngconf` ouvre le fichier de configuration Nginx dans l'éditeur par défaut.
+- `sshconf` ouvre le fichier de configuration SSH dans l'éditeur par défaut.
+- `zshrc` ouvre le fichier de configuration Zsh dans l'éditeur par défaut.
+- `zshp` ouvre le profil Zsh dans l'éditeur par défaut.
+
+[banner]: https://kura.pro/dotfiles/v2/images/titles/title-dotfiles.svg

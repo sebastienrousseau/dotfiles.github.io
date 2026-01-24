@@ -22,43 +22,30 @@ meta:
   - name: og:locale
     content: en_GB
 ---
+# Update Aliases
 
-# Update aliases
+Manage Update aliases. Part of the **Universal Dotfiles** configuration.
 
-The `update.aliases.sh` file creates helpful shortcut aliases for updating the
-operating system and software.
+![Dotfiles banner][banner]
 
-The updates help secure and enhance the current Dotfiles installation to protect
-against security vulnerabilities, add new features and fix critical bugs.
+## 📖 Description
 
-## Update
+These aliases are defined in `update.aliases.sh` and are automatically loaded by `chezmoi`.
 
-For greater control, the update process is combined into a single command that
-will:
+## ⚡ Aliases
 
-1. Update the operating system and software packages,
-2. Update to the latest version of Dotfiles.
-3. This will also update the `update.aliases.sh` file, so you will always have
-   the latest version of the updater.
-
-## Platforms
-
-### Linux
-
-The `upd` alias has been adapted to work on Linux. It will update Debian-based
-Linux distributions, via the `apt` package manager and other dependencies via
-pnpm, rustup (Rust), and gem (Ruby).
-
-| Alias | Command                                                                                                            | Description                                              |
-| ----- | ------------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------- |
-| upd   | `sudo apt update && sudo apt upgrade -y && pnpm up && rustup update stable && sudo gem update && sudo gem cleanup` | Update command for Debian-based Linux operating systems. |
-
+This code provides a set of aliases for updating various software on
+macOS and Linux.
 ### macOS
+- `upd` updates macOS software, Homebrew packages, Homebrew Casks, Mac
+   App Store apps, Rust stable toolchain, Ruby gems, Python packages,
+   and Node.js packages.
+### Linux
+- `open` opens a file or URL in the user's preferred application.
+- `pbcopy` copies to clipboard.
+- `pbpaste` pastes from clipboard.
+- `upd` updates Linux packages, cleans up package cache, updates pnpm
+  packages, updates Rust stable toolchain, updates Ruby gems, updates
+  Python packages, and updates Node.js packages.
 
-The `upd` alias is also available for macOS. It will update macOS, via the
-`softwareupdate` command line tool, and manage its dependencies using pnpm,
-Homebrew, mas, rustup, and gem package managers.
-
-| Alias | Command                                                                                                                                                                                            | Description        |
-| ----- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------ |
-| upd   | `sudo softwareupdate -i -a && pnpm up && rustup update stable && brew cu -ayi && brew doctor && brew update && brew upgrade && brew cleanup && mas upgrade && sudo gem update && sudo gem cleanup` | Update the system. |
+[banner]: https://kura.pro/dotfiles/v2/images/titles/title-dotfiles.svg

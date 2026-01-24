@@ -1,51 +1,49 @@
 ---
-description: Les alias dig sont des alias de la commande `dig`. Ils sont utilisés pour afficher les informations DNS.
+description: Les alias Dig permettent d'interroger des informations sur divers enregistrements DNS, notamment les adresses hôtes, les échanges de mail et les serveurs de noms.
 lang: fr-FR
-metaTitle: Les alias dig - Dotfiles (FR)
-permalink: /aliases/dig/
+metaTitle: Alias Dig - Dotfiles (FR)
+permalink: /alias/dig/
 
 meta:
-  - name: keywords
-    content: alias, dig, dns, serveurs, domaine, ip, ipv4, ipv6
   - name: twitter:card
-    content: Les alias dig sont des alias de la commande `dig`. Ils sont utilisés pour afficher les informations DNS.
+    content: Les alias Dig permettent d'interroger des informations sur divers enregistrements DNS, notamment les adresses hôtes, les échanges de mail et les serveurs de noms.
   - name: twitter:description
-    content: Les alias dig sont des alias de la commande `dig`. Ils sont utilisés pour afficher les informations DNS.
+    content: Les alias Dig permettent d'interroger des informations sur divers enregistrements DNS, notamment les adresses hôtes, les échanges de mail et les serveurs de noms.
   - name: twitter:title
-    content: Les alias dig - Dotfiles (FR)
+    content: Alias Dig - Dotfiles (FR)
   - name: og:title
-    content: Les alias dig - Dotfiles (FR)
+    content: Alias Dig - Dotfiles (FR)
   - name: og:description
-    content: Les alias dig sont des alias de la commande `dig`. Ils sont utilisés pour afficher les informations DNS.
+    content: Les alias Dig permettent d'interroger des informations sur divers enregistrements DNS, notamment les adresses hôtes, les échanges de mail et les serveurs de noms.
   - name: og:image:alt
     content: Les Dotfiles - Conçus pour s'adapter à votre vie de shell
   - name: og:locale
     content: fr_FR
 ---
+# Alias Dig
 
-# Les alias dig
+Gérer les alias Dig. Fait partie de la configuration **Universal Dotfiles**.
 
-Le fichier `dig.aliases.sh` crée des alias de raccourcis pour la commande `dig`.
-Ils sont utilisés pour afficher les informations DNS.
+![Dotfiles banner][banner]
 
-Le [Dig](<https://en.wikipedia.org/wiki/Dig_(command)>)
-(domain information groper) est un outil flexible pour interroger les
-serveurs de noms DNS de noms. Il effectue des recherches DNS et affiche les
-réponses renvoyées par le(s) du ou des serveurs de noms qui ont été interrogés.
-Il est surtout utilisé pour résoudre les problèmes de DNS et pour trouver des
-informations sur un domaine, comme l'adresse IP.
+## 📖 Description
 
-## Raccourcis dig
+Ces alias sont définis dans `dig.aliases.sh` et sont chargés automatiquement par `chezmoi`.
 
-| Alias | Commande                                                                | Description                                                         |
-| ----- | ----------------------------------------------------------------------- | ------------------------------------------------------------------- |
-| d     | `$(which dig)`                                                          | Exécute la commande `dig`                                           |
-| d4    | `$(which dig) +short -4`                                                | Exécute la commande `dig` avec l'option `+short -4`                 |
-| d6    | `$(which dig) +short -6`                                                | Exécute la commande `dig` avec l'option `+short -6`                 |
-| dga   | `$(which dig) +all ANY`                                                 | Exécute la commande `dig` avec l'option `+all ANY`                  |
-| dgs   | `$(which dig) +short`                                                   | Exécute la commande `dig` avec l'option `+short`                    |
-| digg  | `$(which dig) @8.8.8.8 +nocmd any +multiline +noall +answer`            | Exécute la commande `dig` avec Google DNS                           |
-| ip4   | `$(which dig) +short myip.opendns.com @resolver1.opendns.com -4`        | Exécute la commande `dig` pour récupérer l'adresse IP publique IPv4 |
-| ip6   | `$(which dig) -6 AAAA +short myip.opendns.com. @resolver1.opendns.com.` | Exécute la commande `dig` pour récupérer l'adresse IP publique IPv6 |
-| ips   | `ip4; ip6`                                                              | Exécute les commandes `ip4` et `ip6`                                |
-| wip   | `$(which dig) +short myip.opendns.com @resolver1.opendns.com`           | Exécute la commande `dig` pour récupérer l'adresse IP publique      |
+## ⚡ Alias
+
+Ce code fournit un ensemble d'alias de commande pour simplifier le travail avec les recherches DNS
+(Domain Name System) via la commande `dig` sur un système Unix.
+Les alias suivants sont inclus :
+- `d` : exécute la commande dig avec les options par défaut.
+- `d4` : effectue une recherche DNS pour une adresse IPv4.
+- `d6` : effectue une recherche DNS pour une adresse IPv6.
+- `dga` : effectue une recherche DNS pour tous les enregistrements.
+- `dgs` : effectue une recherche DNS pour une réponse courte.
+- `digg` : effectue un dig avec le DNS de Google.
+- `ip4` : récupère votre adresse IPv4 publique.
+- `ip6` : récupère votre adresse IPv6 publique.
+- `ips` : récupère vos adresses IPv4 et IPv6 publiques.
+- `wip` : récupère votre adresse IP publique.
+
+[banner]: https://kura.pro/dotfiles/v2/images/titles/title-dotfiles.svg

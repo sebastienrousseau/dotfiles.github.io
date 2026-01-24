@@ -22,32 +22,36 @@ meta:
   - name: og:locale
     content: en_GB
 ---
+# Npm Aliases
 
-# NPM aliases
+Manage Npm aliases. Part of the **Universal Dotfiles** configuration.
 
-The `npm.aliases.sh` file creates helpful shortcut aliases
-for [npm](https://www.npmjs.com/).
+![Dotfiles banner][banner]
 
-## NPM
+## 📖 Description
 
-[npm](https://www.npmjs.com/) is a package manager for the JavaScript
-programming language. It is the default package manager for the JavaScript
-runtime environment Node.js.
+These aliases are defined in `npm.aliases.sh` and are automatically loaded by `chezmoi`.
 
-| Alias | Command         | Description           |
-| ----- | --------------- | --------------------- |
-| npb   | `npm build`     | Build npm script.     |
-| npc   | `npm cache`     | Cache npm package.    |
-| npd   | `npm dev`       | Dev npm script.       |
-| npg   | `npm global`    | Global npm package.   |
-| npi   | `npm install`   | Install npm package.  |
-| npl   | `npm list`      | List npm packages.    |
-| npp   | `npm publish`   | Publish npm package.  |
-| npr   | `npm run`       | Run npm script.       |
-| nprw  | `npm run watch` | Run npm script watch. |
-| nps   | `npm start`     | Start npm script.     |
-| npsv  | `npm serve`     | Serve npm script.     |
-| npt   | `npm test`      | Test npm script.      |
-| npu   | `npm update`    | Update npm package.   |
-| npx   | `npm exec`      | Exec npm package.     |
-| npy   | `npm why`       | Why npm package.      |
+## ⚡ Aliases
+
+This code provides a set of aliases for
+[npm](https://www.npmjs.com/) package manager.
+- `npa` Audit npm packages.
+- `npb` Build npm script.
+- `npc` Cache npm package.
+- `npd` Dev npm script.
+- `npg` Global npm package.
+- `npi` Install npm package.
+- `npl` List npm packages.
+- `npp` Publish npm package.
+- `nprm` Remove npm package.
+- `npr` Run npm script.
+- `nprw` Run npm script watch.
+- `nps` Start npm script.
+- `npsv` Serve npm script.
+- `npt` Test npm script.
+- `npu` Update npm package.
+- `npx` Exec npm package.
+- `npy` Why npm package.
+
+[banner]: https://kura.pro/dotfiles/v2/images/titles/title-dotfiles.svg

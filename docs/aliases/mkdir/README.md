@@ -22,26 +22,24 @@ meta:
   - name: og:locale
     content: en_GB
 ---
+# Mkdir Aliases
 
-# Mkdir aliases
+Manage Mkdir aliases. Part of the **Universal Dotfiles** configuration.
 
-The `mkdir.aliases.sh` file creates helpful shortcut aliases for creating
-directories.
+![Dotfiles banner][banner]
 
-The Mkdir aliases are a collection of aliases that allow you to interact with
-the `mkdir` command line tool. Mkdir is a tool which creates a directory.
+## 📖 Description
 
-## Mkdir
+These aliases are defined in `mkdir.aliases.sh` and are automatically loaded by `chezmoi`.
 
-[Mkdir](https://en.wikipedia.org/wiki/Mkdir) is a command that creates a
-directory. The mkdir utility creates the directories named as operands, in the
-order specified, using mode “rwxrwxrwx” (0777).
+## ⚡ Aliases
 
-| Alias | Command                     | Description                                |
-| ----- | --------------------------- | ------------------------------------------ |
-| mcd   | `mkdir -pv && cd`           | Make directory and cd into it.             |
-| mcdp  | `mkdir -pv && cd`           | Make directory and parents and cd into it. |
-| md    | `mkd`                       | Make directory.                            |
-| mdd   | `mkdir -pv $(date +%Y%m%d)` | Make directory with date.                  |
-| mdp   | `mkdir -pv`                 | Make directory and parents.                |
-| mdt   | `mkdir -pv $(date +%h%m%s)` | Make directory with time.                  |
+This code provides a set of aliases for the `mkdir` command.
+- `mde` Make example directory with current date.
+- `md` Make directory.
+- `mdd` Make directory with date.
+- `mdn` Make notes directory with current date.
+- `mdw` Make work directory with current date.
+- `mdt` Make directory with time.
+
+[banner]: https://kura.pro/dotfiles/v2/images/titles/title-dotfiles.svg

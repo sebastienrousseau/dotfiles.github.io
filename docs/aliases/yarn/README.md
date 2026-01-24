@@ -4,7 +4,6 @@ lang: en-GB
 metaTitle: yarn aliases - Dotfiles
 permalink: /aliases/yarn/
 ---
-
 # Yarn Aliases
 
 Manage Yarn (JavaScript) aliases. Part of the **Universal Dotfiles** configuration.

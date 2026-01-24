@@ -22,142 +22,88 @@ meta:
   - name: og:locale
     content: en_GB
 ---
+<img
+  src="https://kura.pro/dotfiles/v2/images/logos/dotfiles.svg"
+  align="right"
+/>
 
-# Aliases
+# Dotfiles Aliases (v0.2.471)
 
-Aliases allow you to create shortcuts for shell commands that you use
-frequently. This allows you to be more productive and efficient by reducing the
-amount of typing you have to do when using the shell regularly. As an example,
-instead of typing `git status` you could type `gst` to obtain the same result.
+Simply designed to fit your shell life 🐚
 
-This is a great way to save time and reduce considerably the amount of typing
-you have to do when using the terminal on a daily basis which helps you to be
-more productive and efficient.
+![Dotfiles banner][banner]
 
-## Presets
+This directory contains modular alias definitions managed by **chezmoi**.
 
-Dotfiles has a collection of configuration presets and diverse recipes that you
-can use to get started with.
+## 📖 How it Works
 
-### Automatic System detection
+Aliases are split into small, manageable files (e.g., `git/git.aliases.sh`, `docker/docker.aliases.sh`).
 
-Dotfiles contains a utility function for detecting the current `ls` flavor that
-is in use in order to help setting up the right `LS_COLORS` environment
-variables to your system.
+During `chezmoi apply`, the main template `dot_config/shell/aliases.sh.tmpl`:
+1. Scans this directory for `**/*.aliases.sh` files.
+2. Aggregates them into a single `~/.config/shell/aliases.sh` file.
+3. This aggregated file is sourced by your `.zshrc`.
 
-The `LS_COLORS` environment variable is used by the `ls` command to colorize the
-output of the command.
+## 🛠 Usage
 
-### Check built-in aliases
+### Adding a New Alias
+1. Create a new directory or file (e.g., `mytool/mytool.aliases.sh`).
+2. Define your aliases:
+   ```bash
+   alias mycmd="echo 'Hello World'"
+   ```
+3. Apply changes:
+   ```bash
+   chezmoi apply
+   ```
 
-Type the following alias command in your terminal:
+## 🔧 Component List
 
-```bash
-alias
-```
+<!-- markdownlint-disable MD013-->
 
-### GNU Find utilities aliases
+| Directory       | Description                                      | Link                      |
+| :-------------- | :----------------------------------------------- | :------------------------ |
+| `archives`      | Compress and extract files and directories.      | [View README](archives/README.md) |
+| `cd`            | Navigate the file system.                        | [View README](cd/README.md)       |
+| `chmod`         | Change file and directory permissions.           | [View README](chmod/README.md)    |
+| `clear`         | Clear the terminal screen.                       | [View README](clear/README.md)    |
+| `compliance`    | Regulatory compliance (SOC2) and privacy tools.  | [View README](compliance/README.md) |
+| `configuration` | Manage dotfiles and shell configurations.        | [View README](configuration/README.md) |
+| `default`       | Set up default shell aliases and configurations. | [View README](default/README.md)  |
+| `dig`           | Query DNS name servers.                          | [View README](dig/README.md)      |
+| `diagnostics`   | Self-healing and health checks (doctor, drift).  | [View README](diagnostics/README.md) |
+| `disk-usage`    | Display disk usage information.                  | [View README](disk-usage/README.md) |
+| `editor`        | Configure default text editors.                  | [View README](editor/README.md)   |
+| `find`          | Search files and directories using `find`.       | [View README](find/README.md)     |
+| `fonts`         | Font cache management.                           | [View README](fonts/README.md)    |
+| `gcloud`        | Manage Google Cloud SDK tools.                   | [View README](gcloud/README.md)   |
+| `git`           | Manage Git aliases and configurations.           | [View README](git/README.md)      |
+| `gnu`           | Manage GNU core utilities.                       | [View README](gnu/README.md)      |
+| `heroku`        | Manage Heroku CLI.                               | [View README](heroku/README.md)   |
+| `immutability`  | Lock/Unlock critical files (`chflags`/`chattr`). | [View README](immutability/README.md) |
+| `installer`     | Bootstrap and remote deployment tools.           | [View README](installer/README.md) |
+| `interactive`   | Configure interactive shell behavior.            | [View README](interactive/README.md) |
+| `kubernetes`    | Manage Kubernetes, Helm, and K9s aliases.        | [View README](kubernetes/README.md) |
+| `legal`         | License scanning and compliance tools.           | [View README](legal/README.md)      |
+| `macOS`         | Manage macOS-specific shell settings.            | [View README](macOS/README.md)    |
+| `make`          | Manage GNU Make aliases and utilities.           | [View README](make/README.md)     |
+| `mkdir`         | Create directories with custom options.          | [View README](mkdir/README.md)    |
+| `modern`        | Modern Rust-based tool replacements (ls, cat).   | [View README](modern/README.md)   |
+| `npm`           | Manage Node.js package manager aliases.          | [View README](npm/README.md)      |
+| `permission`    | Configure file and directory permissions.         | [View README](permission/README.md) |
+| `pnpm`          | Manage pnpm package manager aliases.             | [View README](pnpm/README.md)     |
+| `ps`            | Manage process status commands.                  | [View README](ps/README.md)       |
+| `python`        | Configure Python aliases and utilities.          | [View README](python/README.md)   |
+| `rsync`         | Configure rsync for efficient file transfers.    | [View README](rsync/README.md)    |
+| `rust`          | Manage Rust programming tools and configurations.| [View README](rust/README.md)     |
+| `security`      | Immutability and signing configuration.          | [View README](security/README.md) |
+| `subversion`    | Configure Subversion (SVN) version control.       | [View README](subversion/README.md) |
+| `sudo`          | Manage superuser operations.                     | [View README](sudo/README.md)     |
+| `tmux`          | Configure tmux terminal multiplexer.             | [View README](tmux/README.md)     |
+| `update`        | Update dotfiles and related configurations.       | [View README](update/README.md)   |
+| `uuid`          | Generate UUIDs for various use cases.            | [View README](uuid/README.md)     |
+| `wget`          | Manage wget command-line tool.                   | [View README](wget/README.md)     |
 
-macOS systems are based on BSD, rather than on GNU/Linux like RedHat, Debian,
-and Ubuntu. As a result, a lot of the command line tools that ship with macOS
-aren’t 100% compatible. For example, the `find` command on macOS doesn’t support
-the `-printf` option, which is used by the `locate` command. This means that the
-`locate` command doesn’t work on macOS. To fix this, you can install the GNU
-versions of these commands, which are fully compatible with the Linux versions.
+<!-- markdownlint-enable MD013-->
 
-The GNU Find Utilities are the basic directory searching utilities of the GNU
-operating system. These programs are typically used in conjunction with other
-programs to provide modular and powerful directory search and file locating
-capabilities to other commands.
-
-The tools supplied with this package are:
-
-- find - search for files in a directory hierarchy
-- locate - list files in databases that match a pattern
-- updatedb - update a file name database
-- xargs - build and execute command lines from standard input
-
-Type the following alias command in your terminal:
-
-```bash
-brew install findutils
-```
-
-### The Dotfiles aliases
-
-The files provided in Dotfiles contain a few opinionated aliases that you might
-find useful. These are defined in the `./dist/lib/aliases` directory and loaded
-automatically when you start a new shell session.
-
-The aliases are loaded either by the `~/.bashrc` file if you are using the Bash
-shell, or in the `~/.zshrc` file if you are using the Zsh shell.
-
-They have been grouped by logical categories:
-
-- [archives][archives] - Aliases for working with archives.
-- [cd][cd] - Aliases for working with directories.
-- [chmod][chmod] - Aliases for working with file permissions.
-- [clear][clear] - Aliases for clearing the terminal screen.
-- [default][default] - The default aliases that are loaded for all users,
-  regardless of the shell they are using, and of the operating system they are
-  on,
-- [default][default] - The default aliases that are loaded for all users,
-  regardless of the shell they are using, and of the operating system they are
-  on,
-- [dig][dig] - Aliases for working with DNS.
-- [dot][dot] - The unified CLI for managing your dotfiles.
-- [du][du] - Aliases for working with disk usage.
-- [editor][editor] - Aliases for working with the editor.
-- [find][find] - Aliases for working with the `fd` command.
-- [gcloud][gcloud] - Aliases for working with the `gcloud` command.
-- [git][git] - Aliases for working with Git.
-- [gnu][gnu] - Aliases for working with GNU Core utilities.
-
-- [interactive][interactive] - Aliases for working with interactive commands.
-- [jekyll][jekyll] - Aliases for working with Jekyll.
-- [list][list] - Aliases for working with the `ls` command.
-- [make][make] - Aliases for working with the `make` command.
-- [mkdir][mkdir] - Aliases for working with the `mkdir` command.
-- [modern-core][modern-core] - High-performance tools (Atuin, Yazi, Zellij).
-- [npm][npm] - Aliases for working with the `npm` command.
-- [pnpm][pnpm] - Aliases for working with the `pnpm` command.
-- [ps][ps] - Aliases for working with the `ps` command.
-- [rsync][rsync] - Aliases for working with the `rsync` command.
-- [rust][rust] - Aliases for working with the Rust programming language.
-- [subversion][subversion] - Aliases for working with Subversion.
-- [sudo][sudo] - Aliases for working with the `sudo` command.
-- [tmux][tmux] - Aliases for working with the `tmux` command.
-- [update][update] - Aliases for working with the `update` command.
-- [uuid][uuid] - Aliases for working with the `uuid` command.
-- [wget][wget] - Aliases for working with the `wget` command.
-
-[archives]: ./archives/
-[cd]: ./cd/
-[chmod]: ./chmod/
-[clear]: ./clear/
-[default]: ./default/
-[dig]: ./dig/
-[dot]: ./dot/
-[du]: ./du/
-[editor]: ./editor/
-[find]: ./find/
-[gcloud]: ./gcloud/
-[git]: ./git/
-[gnu]: ./gnu/
-[interactive]: ./interactive/
-[jekyll]: ./jekyll/
-[list]: ./list/
-[make]: ./make/
-[mkdir]: ./mkdir/
-[modern-core]: ./modern-core/
-[npm]: ./npm/
-[pnpm]: ./pnpm/
-[ps]: ./ps/
-[rsync]: ./rsync/
-[rust]: ./rust/
-[subversion]: ./subversion/
-[sudo]: ./sudo/
-[tmux]: ./tmux/
-[update]: ./update/
-[uuid]: ./uuid/
-[wget]: ./wget/
+[banner]: https://kura.pro/dotfiles/v2/images/titles/title-dotfiles.svg

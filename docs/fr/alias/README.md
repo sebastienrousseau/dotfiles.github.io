@@ -1,163 +1,109 @@
 ---
-description: Les Alias Dotfiles vous donnent la possibilité de créer des raccourcis pour les commandes du shell que vous utilisez fréquemment. Cela vous permettra d'être plus productif et efficace en réduisant le nombre de frappes que vous devez effectuer lorsque vous utilisez régulièrement le shell.
+description: Les alias vous permettent de créer des raccourcis pour les commandes du shell que vous utilisez fréquemment. Cela vous permet d'être plus productif et efficace en réduisant la quantité de frappe nécessaire lors d'un usage régulier du shell.
 lang: fr-FR
-metaTitle: Les Alias Dotfiles - Dotfiles (FR)
+metaTitle: Alias - Dotfiles (FR)
 permalink: /alias/
 
 meta:
   - name: keywords
-    content: alias, archives, cd, chmod, clear, commands, default, dig, dotfiles, du, editor, find, gcloud, git, gnu, heroku, interactive, jekyll, list, make, mkdir, npm, pnpm, ps, rsync, rust, shell, subversion, sudo, tmux, typing, update, uuid, wget
+    content: alias, archives, cd, chmod, clear, commands, default, dig, dotfiles, du, editor, find, gcloud, git, gnu, heroku, interactive, jekyll, list, make, mkdir, npm, pnpm, ps, rsync, rust, shell, subversion, sudo, tmux, typing, update, uuid, wget, compliance, diagnostics, disk-usage, docker, fonts, go, installer, kubernetes, legal, macos, modern, permission, python, security, terraform, yarn, ai
   - name: twitter:card
-    content: Les Alias Dotfiles vous donnent la possibilité de créer des raccourcis pour les commandes du shell que vous utilisez fréquemment. Cela vous permettra d'être plus productif et efficace en réduisant le nombre de frappes que vous devez effectuer lorsque vous utilisez régulièrement le shell.
+    content: Les alias vous permettent de créer des raccourcis pour les commandes du shell que vous utilisez fréquemment. Cela vous permet d'être plus productif et efficace en réduisant la quantité de frappe nécessaire lors d'un usage régulier du shell.
   - name: twitter:description
-    content: Les Alias Dotfiles vous donnent la possibilité de créer des raccourcis pour les commandes du shell que vous utilisez fréquemment. Cela vous permettra d'être plus productif et efficace en réduisant le nombre de frappes que vous devez effectuer lorsque vous utilisez régulièrement le shell.
+    content: Les alias vous permettent de créer des raccourcis pour les commandes du shell que vous utilisez fréquemment. Cela vous permet d'être plus productif et efficace en réduisant la quantité de frappe nécessaire lors d'un usage régulier du shell.
   - name: twitter:title
-    content: Les Alias Dotfiles - Dotfiles (FR)
+    content: Alias - Dotfiles (FR)
   - name: og:title
-    content: Les Alias Dotfiles - Dotfiles (FR)
+    content: Alias - Dotfiles (FR)
   - name: og:description
-    content: Les Alias Dotfiles vous donnent la possibilité de créer des raccourcis pour les commandes du shell que vous utilisez fréquemment. Cela vous permettra d'être plus productif et efficace en réduisant le nombre de frappes que vous devez effectuer lorsque vous utilisez régulièrement le shell.
+    content: Les alias vous permettent de créer des raccourcis pour les commandes du shell que vous utilisez fréquemment. Cela vous permet d'être plus productif et efficace en réduisant la quantité de frappe nécessaire lors d'un usage régulier du shell.
   - name: og:image:alt
     content: Les Dotfiles - Conçus pour s'adapter à votre vie de shell
   - name: og:locale
     content: fr_FR
 ---
+<img
+  src="https://kura.pro/dotfiles/v2/images/logos/dotfiles.svg"
+  align="right"
+/>
 
-# Les Alias Dotfiles
+# Alias Dotfiles (v0.2.471)
 
-Les alias vous donnent la possibilité de créer des raccourcis pour les commandes
-du shell que vous utilisez fréquemment. Cela vous permettra d'être plus
-productif et efficace en réduisant le nombre de frappes que vous devez
-effectuer lorsque vous utilisez régulièrement le shell. Par exemple, au lieu de
-taper `git status`, vous pouvez utiliser le raccourci `gst` pour obtenir le même
-résultat.
+Simplement conçus pour s'adapter à votre vie de shell 🐚
 
-C'est un excellent moyen de gagner du temps et de réduire considérablement la
-quantité de frappe que vous devez faire lorsque vous utilisez le shell
-régulièrement, vous permettant d'être plus productif et efficace.
+![Dotfiles banner][banner]
 
-## Préréglages
+Ce répertoire contient des définitions d'alias modulaires gérées par **chezmoi**.
 
-Les Dotfiles disposent d'une collection de préréglages de configuration et de
-recettes variées que vous pouvez utiliser pour vous aider à démarrer.
+## 📖 Fonctionnement
 
-### Détection automatique du système
+Les alias sont découpés en petits fichiers gérables (ex. `git/git.aliases.sh`, `docker/docker.aliases.sh`).
 
-Les Dotfiles contiennent une fonction utilitaire pour détecter la version de
-`ls` qui est disponible afin d'aider à configurer les variables d'environnement
-`LS_COLORS` appropriées à votre système.
+Lors de `chezmoi apply`, le modèle principal `dot_config/shell/aliases.sh.tmpl` :
+1. Parcourt ce répertoire pour trouver les fichiers `**/*.aliases.sh`.
+2. Les agrège en un fichier unique `~/.config/shell/aliases.sh`.
+3. Ce fichier agrégé est sourcé par votre `.zshrc`.
 
-La variable d'environnement `LS_COLORS` est par la suite utilisée par la
-commande `ls` pour colorer le texte de sortie.
+## 🛠 Utilisation
 
-### Vérifier les alias intégrés
+### Ajouter un nouvel alias
+1. Créez un nouveau répertoire ou fichier (ex. `monoutil/monoutil.aliases.sh`).
+2. Définissez vos alias :
+   ```bash
+   alias moncmd="echo 'Hello World'"
+   ```
+3. Appliquez les changements :
+   ```bash
+   chezmoi apply
+   ```
 
-Tapez la commande alias suivante dans votre terminal :
+## 🔧 Liste des composants
 
-```bash
-alias
-```
+<!-- markdownlint-disable MD013-->
 
-### Les alias utilitaires de recherche GNU
+| Répertoire      | Description                                              | Lien                        |
+| :-------------- | :------------------------------------------------------- | :-------------------------- |
+| `archives`      | Compresser et extraire des fichiers et répertoires.      | [Voir README](archives/README.md) |
+| `cd`            | Naviguer dans le système de fichiers.                    | [Voir README](cd/README.md)       |
+| `chmod`         | Modifier les permissions de fichiers et répertoires.     | [Voir README](chmod/README.md)    |
+| `clear`         | Effacer l'écran du terminal.                             | [Voir README](clear/README.md)    |
+| `compliance`    | Conformité réglementaire (SOC2) et outils de confidentialité. | [Voir README](compliance/README.md) |
+| `configuration` | Gérer les dotfiles et les configurations shell.          | [Voir README](configuration/README.md) |
+| `default`       | Définir les alias et configurations par défaut.          | [Voir README](default/README.md)  |
+| `dig`           | Interroger les serveurs de noms DNS.                     | [Voir README](dig/README.md)      |
+| `diagnostics`   | Auto-réparation et contrôles de santé (doctor, drift).   | [Voir README](diagnostics/README.md) |
+| `disk-usage`    | Afficher les informations d'utilisation du disque.       | [Voir README](disk-usage/README.md) |
+| `editor`        | Configurer l'éditeur de texte par défaut.                | [Voir README](editeur/README.md)  |
+| `find`          | Rechercher des fichiers et répertoires avec `find`.      | [Voir README](recherche/README.md) |
+| `fonts`         | Gestion du cache des polices.                            | [Voir README](fonts/README.md)    |
+| `gcloud`        | Gérer les outils Google Cloud SDK.                       | [Voir README](gcloud/README.md)   |
+| `git`           | Gérer les alias et configurations Git.                   | [Voir README](git/README.md)      |
+| `gnu`           | Gérer les utilitaires GNU core.                          | [Voir README](gnu/README.md)      |
+| `heroku`        | Gérer la CLI Heroku.                                     | [Voir README](heroku/README.md)   |
+| `immutability`  | Verrouiller/déverrouiller les fichiers critiques (`chflags`/`chattr`). | [Voir README](immutability/README.md) |
+| `installer`     | Outils d'amorçage et de déploiement à distance.          | [Voir README](installer/README.md) |
+| `interactive`   | Configurer le comportement interactif du shell.          | [Voir README](mode-interactif/README.md) |
+| `kubernetes`    | Gérer les alias Kubernetes, Helm et K9s.                 | [Voir README](kubernetes/README.md) |
+| `legal`         | Outils de conformité et de scan de licences.             | [Voir README](legal/README.md)      |
+| `macOS`         | Gérer les paramètres shell spécifiques à macOS.          | [Voir README](macOS/README.md)    |
+| `make`          | Gérer les alias et utilitaires GNU Make.                 | [Voir README](make/README.md)     |
+| `mkdir`         | Créer des répertoires avec des options personnalisées.   | [Voir README](mkdir/README.md)    |
+| `modern`        | Remplacements modernes en Rust (ls, cat).                | [Voir README](modern/README.md)   |
+| `npm`           | Gérer les alias du gestionnaire de paquets Node.js.      | [Voir README](npm/README.md)      |
+| `permission`    | Configurer les permissions de fichiers et répertoires.   | [Voir README](permission/README.md) |
+| `pnpm`          | Gérer les alias du gestionnaire de paquets pnpm.         | [Voir README](pnpm/README.md)     |
+| `ps`            | Gérer les commandes d'état des processus.               | [Voir README](ps/README.md)       |
+| `python`        | Configurer les alias et utilitaires Python.              | [Voir README](python/README.md)   |
+| `rsync`         | Configurer rsync pour des transferts efficaces.          | [Voir README](rsync/README.md)    |
+| `rust`          | Gérer les outils et configurations Rust.                 | [Voir README](rust/README.md)     |
+| `security`      | Configuration d'immutabilité et de signature.            | [Voir README](security/README.md) |
+| `subversion`    | Configurer Subversion (SVN).                             | [Voir README](subversion/README.md) |
+| `sudo`          | Gérer les opérations superutilisateur.                   | [Voir README](sudo/README.md)     |
+| `tmux`          | Configurer le multiplexeur de terminal tmux.             | [Voir README](tmux/README.md)     |
+| `update`        | Mettre à jour les dotfiles et configurations associées.  | [Voir README](mise-a-jour/README.md) |
+| `uuid`          | Générer des UUID pour divers usages.                     | [Voir README](uuid/README.md)     |
+| `wget`          | Gérer l'outil en ligne de commande wget.                 | [Voir README](wget/README.md)     |
 
-Les systèmes macOS sont basés sur BSD, plutôt que sur GNU/Linux comme RedHat,
-Debian, et Ubuntu. Par conséquent, de nombreux outils de ligne de commande
-fournis avec macOS ne sont pas 100% compatibles. Par exemple, la commande `find`
-sous macOS ne supporte pas l'option `-printf` qui est utilisée par la commande
-`locate`. Cela signifie que la commande `locate` ne fonctionne pas sous macOS.
-Pour résoudre ce problème, vous pouvez installer les versions GNU de ces
-commandes, qui sont entièrement compatibles avec les versions Linux.
+<!-- markdownlint-enable MD013-->
 
-Les utilitaires de recherche GNU (GNU Find Utilities) sont des utilitaires de
-base de recherche de répertoire du système d'exploitation GNU. Ces programmes
-sont généralement utilisés en conjonction avec d'autres programmes pour fournir
-des capacités de recherche de répertoires modulaires et puissantes.
-
-Les outils fournis avec ce pack sont :
-
-- find - recherche de fichiers dans une hiérarchie de répertoires
-- locate - lister les fichiers des bases de données qui correspondent à un
-  modèle
-- updatedb - mettre à jour une base de données de noms de fichiers
-- xargs - construire et exécuter des lignes de commande à partir de l'entrée
-  standard
-
-Tapez la commande alias suivante dans votre terminal :
-
-```bash
-brew install findutils
-```
-
-### Les Alias Dotfiles
-
-Les fichiers fournis dans Dotfiles contiennent quelques alias qui peuvent vous
-être utiles. Ceux-ci sont définis dans le répertoire `./dist/lib/aliases` et
-sont chargés automatiquement lorsque vous démarrez une nouvelle session shell.
-
-Les alias sont chargés soit par le fichier `~/.bashrc` si vous utilisez le
-shell Bash ou dans le fichier `~/.zshrc` si vous utilisez le shell Zsh.
-
-Ils ont été regroupés par catégories logiques :
-
-- [Les alias cd][cd] - Les alias cd vous permettent de naviguer rapidement dans votre système de fichiers.
-- [Les alias chmod][chmod] - Les alias chmod vous permettent de modifier rapidement les permissions des fichiers.
-- [Les alias clear][clear] - Les alias clear vous permettent de nettoyer rapidement votre terminal.
-- [Les alias d'archivage][archives] Les alias d'archivage vous permettent de créer rapidement des archives.
-- [Les alias de l'éditeur système][editeur] - Les alias de l'éditeur système vous permettent d'éditer rapidement des fichiers.
-- [Les alias de liste][liste] - Les alias de liste vous permettent de lister rapidement des fichiers.
-- [Les alias de mise à jour][mise-a-jour] - Les alias de mise à jour vous permettent de mettre à jour rapidement votre système.
-- [Les alias de recherche][recherche] - Les alias de recherche vous permettent de rechercher rapidement des fichiers.
-- [Les alias dig][dig] - Les alias dig vous permettent de rechercher rapidement des informations DNS.
-- [La commande dot][dot] - L'interface unifiée pour gérer vos dotfiles.
-- [Les alias du][du] - Les alias du vous permettent de rechercher rapidement l'espace disque utilisé.
-- [Les alias en mode interactif][mode-interactif] - Les alias en mode interactif vous permettent de lancer rapidement des commandes interactives.
-- [Les alias gcloud][gcloud] - Les alias gcloud vous permettent de lancer rapidement des commandes gcloud.
-- [Les alias git][git] - Les alias git vous permettent de lancer rapidement des commandes git.
-- [Les alias GNU Coreutils][gnu] - Les alias GNU Coreutils vous permettent de lancer rapidement des commandes GNU.
-
-- [Les alias jekyll][jekyll] - Les alias jekyll vous permettent de lancer rapidement des commandes jekyll.
-- [Les alias make][make] - Les alias pour make.
-- [Les alias mkdir][mkdir] - Les alias mkdir vous permettent de créer rapidement des répertoires.
-- [Le Noyau Moderne][modern-core] - Outils haute performance (Atuin, Yazi, Zellij).
-- [Les alias npm][npm] - Les alias npm vous permettent de lancer rapidement des commandes npm.
-- [Les alias par défaut][default] - Les alias par défaut vous permettent de lancer rapidement des commandes.
-- [Les alias pnpm][pnpm] - Les alias pnpm vous permettent de lancer rapidement des commandes pnpm.
-- [Les alias ps][ps] - Les alias ps vous permettent de rechercher rapidement des processus.
-- [Les alias rsync][rsync] - Les alias rsync vous permettent de synchroniser rapidement des répertoires.
-- [Les alias rust][rust] - Les alias rust vous permettent de lancer rapidement des commandes rust.
-- [Les alias subversion][subversion] - Les alias subversion vous permettent de lancer rapidement des commandes subversion.
-- [Les alias sudo][sudo] - Les alias sudo vous permettent de lancer rapidement des commandes sudo.
-- [Les alias tmux][tmux] - Les alias tmux vous permettent de lancer rapidement des commandes tmux.
-- [Les alias uuid][uuid] - Les alias uuid vous permettent de générer rapidement des UUID.
-- [Les alias wget][wget] - Les alias wget vous permettent de télécharger rapidement des fichiers.
-
-[archives]: ./archives/
-[cd]: ./cd/
-[chmod]: ./chmod/
-[clear]: ./clear/
-[editeur]: ./editeur/
-[liste]: ./liste/
-[mise-a-jour]: ./mise-a-jour/
-[recherche]: ./recherche/
-[dig]: ./dig/
-[dot]: ./dot/
-[du]: ./du/
-[mode-interactif]: ./mode-interactif/
-[gcloud]: ./gcloud/
-[git]: ./git/
-[gnu]: ./gnu/
-[jekyll]: ./jekyll/
-[make]: ./make/
-[mkdir]: ./mkdir/
-[modern-core]: ./modern-core/
-[npm]: ./npm/
-[default]: ./default/
-[pnpm]: ./pnpm/
-[ps]: ./ps/
-[rsync]: ./rsync/
-[rust]: ./rust/
-[subversion]: ./subversion/
-[sudo]: ./sudo/
-[tmux]: ./tmux/
-[uuid]: ./uuid/
-[wget]: ./wget/
+[banner]: https://kura.pro/dotfiles/v2/images/titles/title-dotfiles.svg

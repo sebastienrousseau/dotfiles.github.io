@@ -4,18 +4,17 @@ lang: en-GB
 metaTitle: security aliases - Dotfiles
 permalink: /aliases/security/
 ---
-
 # Security Aliases
 
 Tools for hardening the environment and managing configuration immutability.
 
 ## 🔒 Immutability
 
-| Alias            | Description                                                                                   |
-| ---------------- | --------------------------------------------------------------------------------------------- |
-| `lock-configs`   | Locks critical files (`.zshrc`, etc.) to prevent modification (`chflags uchg` / `chattr +i`). |
-| `unlock-configs` | Unlocks critical files for editing.                                                           |
-| `check-locks`    | Checks the lock status of critical files.                                                     |
+| Alias | Description |
+|-------|-------------|
+| `lock-configs` | Locks critical files (`.zshrc`, etc.) to prevent modification (`chflags uchg` / `chattr +i`). |
+| `unlock-configs` | Unlocks critical files for editing. |
+| `check-locks` | Checks the lock status of critical files. |
 
 ## 🔑 Git Signing
 

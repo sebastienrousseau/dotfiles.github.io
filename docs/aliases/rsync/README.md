@@ -22,18 +22,20 @@ meta:
   - name: og:locale
     content: en_GB
 ---
+# Rsync Aliases
 
-# Rsync aliases
+Manage Rsync aliases. Part of the **Universal Dotfiles** configuration.
 
-The `rsync.aliases.sh` file creates helpful shortcut aliases for
-[rsync](https://en.wikipedia.org/wiki/Rsync).
+![Dotfiles banner][banner]
 
-## Rsync
+## 📖 Description
 
-[Rsync](https://en.wikipedia.org/wiki/Rsync) is a command that copies files and
-directories to another location.
+These aliases are defined in `rsync.aliases.sh` and are automatically loaded by `chezmoi`.
 
-| Alias | Command      | Description                      |
-| ----- | ------------ | -------------------------------- |
-| rs    | `rsync -avz` | Rsync with verbose and progress. |
-| rsync | `rs`         | Rsync with verbose and progress. |
+## ⚡ Aliases
+
+This code provides a set of aliases for the `rsync` command.
+- `rs` Rsync with verbose and progress.
+- `rs` Rsync with verbose and progress.
+
+[banner]: https://kura.pro/dotfiles/v2/images/titles/title-dotfiles.svg

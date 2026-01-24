@@ -22,24 +22,22 @@ meta:
   - name: og:locale
     content: en_GB
 ---
+# Wget Aliases
 
-# Wget aliases
+Manage Wget aliases. Part of the **Universal Dotfiles** configuration.
 
-This `wget.aliases.sh` file creates helpful shortcut aliases for many commonly
-used [wget](https://www.gnu.org/software/wget/) commands.
+![Dotfiles banner][banner]
 
-The Wget aliases create helpful shortcut aliases for the `wget` command. Wget is
-a tool which downloads files from the internet.
+## 📖 Description
 
-## Wget
+These aliases are defined in `wget.aliases.sh` and are automatically loaded by `chezmoi`.
 
-GNU [Wget](https://www.gnu.org/software/wget/) is a free utility for
-non-interactive download of files from the Web. It supports HTTP, HTTPS, and
-FTP protocols, as well as retrieval through HTTP proxies.
+## ⚡ Aliases
 
-| Alias | Command            | Description                           |
-| ----- | ------------------ | ------------------------------------- |
-| wg    | `wget`             | Download a file.                      |
-| wgc   | `wg`               | Continue a partially-downloaded file. |
-| wge   | `wg -e robots=off` | Download a file, ignoring robots.txt. |
-| wget  | `wget -c`          | Continue a partially-downloaded file. |
+This code provides a set of aliases for the `wget` command.
+- `wg` wget.
+- `wgc` wget with continue.
+- `wge` wget with robots=off.
+- `wget` wget with continue.
+
+[banner]: https://kura.pro/dotfiles/v2/images/titles/title-dotfiles.svg
