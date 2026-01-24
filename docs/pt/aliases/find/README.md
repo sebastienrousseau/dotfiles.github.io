@@ -1,41 +1,58 @@
 ---
-description: Os aliases de Find são projetados para procurar arquivos em uma hierarquia de diretórios e executar ações nos arquivos encontrados.
-lang: pt-BR
-metaTitle: Aliases de Find - Dotfiles (BR)
+description: Os alias Find sao projetados para buscar arquivos em uma hierarquia de diretorios e executar acoes sobre os arquivos encontrados.
+lang: pt-PT
+metaTitle: Alias de Find - Dotfiles (PT)
 permalink: /pt/aliases/find/
+
+meta:
+  - name: keywords
+    content: aliases, code, editor, environment, gedit, nano, notepad++, text, vi, vim
+  - name: twitter:card
+    content: Os alias Find sao projetados para buscar arquivos em uma hierarquia de diretorios e executar acoes sobre os arquivos encontrados.
+  - name: twitter:description
+    content: Os alias Find sao projetados para buscar arquivos em uma hierarquia de diretorios e executar acoes sobre os arquivos encontrados.
+  - name: twitter:title
+    content: Alias de Find - Dotfiles (PT)
+  - name: og:title
+    content: Alias de Find - Dotfiles (PT)
+  - name: og:description
+    content: Os alias Find sao projetados para buscar arquivos em uma hierarquia de diretorios e executar acoes sobre os arquivos encontrados.
+  - name: og:image:alt
+    content: Dotfiles - Simplesmente projetado para sua vida no shell
+  - name: og:locale
+    content: pt_PT
 ---
+# Alias de Find
 
-# Aliases de Find
+Gerenciar alias de Find. Parte da configuracao **Universal Dotfiles**.
 
-O arquivo `find.aliases.sh` cria aliases de atalho úteis para o comando `fd`
-. O comando `fd` é uma alternativa multiplataforma ao `find`.
+![Dotfiles banner][banner]
 
-Tradicionalmente, o comando `find` é usado para procurar arquivos em uma hierarquia de diretórios
-e executar ações nos arquivos encontrados.
+## 📖 Descricao
 
-Decidimos substituir o comando `find` pelo comando `fd` que é
-uma alternativa mais simples, rápida e amigável ao usuário para o `find`.
+Esses alias sao definidos em `find.aliases.sh` e sao carregados automaticamente pelo `chezmoi`.
 
-## Find
+## ⚡ Alias
 
-[fd](https://github.com/sharkdp/fd) é uma alternativa simples, rápida e amigável ao usuário
-para o `find`. Embora não pretenda suportar toda a poderosa funcionalidade do find,
-ele fornece padrões sensatos (opinativos) para a maioria dos casos de uso.
+Este codigo fornece um conjunto de alias para a utilidade `fd`,
+uma alternativa ao `find` em sistemas Unix.
+`fd` e uma ferramenta simples, rapida e amigavel para buscar
+arquivos e diretorios. Esses alias tornam o uso do `fd` mais facil
+com comandos simples e memoraveis.
+Alias disponiveis:
+- `fd` alias padrao para `fd --color always`, lista com cores.
+- `fda` lista arquivos com caminhos absolutos.
+- `fdc` busca sem diferenciar maiusculas.
+- `fdd` lista arquivos com detalhes.
+- `fde` lista arquivos com extensao especifica.
+- `fdf` lista arquivos seguindo links simbolicos.
+- `fdh` mostra ajuda do `fd`.
+- `fdh` lista arquivos, incluindo ocultos.
+- `fdn` lista arquivos que combinam com glob.
+- `fdo` lista arquivos com informacao do proprietario.
+- `fds` lista arquivos com tamanho.
+- `fdu` lista arquivos com regras de exclusao.
+- `fdv` mostra versao do `fd`.
+- `fdx` executa um comando para cada resultado.
 
-| Alias | Comando              | Descrição                                                              |
-| ----- | -------------------- | ---------------------------------------------------------------------- |
-| fd    | `fd --color always`  | sempre colorir a saída por padrão.                                     |
-| fda   | `fd --absolute-path` | listar todos os arquivos com caminho absoluto.                         |
-| fdc   | `fd --ignore-case`   | listar todos os arquivos com busca insensível a maiúsculas/minúsculas. |
-| fdd   | `fd --list-details`  | listar todos os arquivos com detalhes.                                 |
-| fde   | `fd --extension`     | listar todos os arquivos com extensão.                                 |
-| fdf   | `fd --follow`        | listar todos os arquivos seguindo links simbólicos.                    |
-| fdh   | `fd --help`          | listar todos os arquivos com ajuda.                                    |
-| fdh   | `fd --hidden`        | listar todos os arquivos com arquivos ocultos.                         |
-| fdn   | `fd --glob`          | listar todos os arquivos com glob.                                     |
-| fdo   | `fd --owner`         | listar todos os arquivos com proprietário.                             |
-| fds   | `fd --size`          | listar todos os arquivos com tamanho.                                  |
-| fdu   | `fd --exclude`       | listar todos os arquivos com exclusão.                                 |
-| fdv   | `fd --version`       | listar todos os arquivos com versão.                                   |
-| fdx   | `fd --exec`          | Executar um comando para cada resultado de pesquisa.                   |
-| find  | `fd`                 | fd é uma alternativa simples, rápida e amigável ao find.               |
+[banner]: https://kura.pro/dotfiles/v2/images/titles/title-dotfiles.svg
