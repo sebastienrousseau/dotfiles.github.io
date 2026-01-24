@@ -1,13 +1,12 @@
 ---
-description: Kubernetes Aliase für Dotfiles
+description: kubernetes-Aliase fuer Dotfiles
 lang: de-DE
-metaTitle: Kubernetes Aliase - Dotfiles (DE)
+metaTitle: kubernetes-Aliase - Dotfiles
 permalink: /de/aliases/kubernetes/
 ---
+# Kubernetes-Aliase
 
-# Kubernetes Aliase
-
-Verwalten Sie Kubernetes-Aliase. Teil der **Universal Dotfiles** Konfiguration.
+Kubernetes-Aliase verwalten. Teil der **Universal Dotfiles** Konfiguration.
 
 ![Dotfiles banner][banner]
 
@@ -17,9 +16,8 @@ Diese Aliase sind in `kubernetes.aliases.sh` definiert und werden automatisch vo
 
 ## ⚡ Aliase
 
-### Core
-
-- `k` - kubectl Kurzbefehl
+### core
+- `k` - kubectl-Kurzbefehl
 - `kg` - `kubectl get`
 - `kgp` - `kubectl get pods`
 - `kga` - `kubectl get all`
@@ -28,20 +26,17 @@ Diese Aliase sind in `kubernetes.aliases.sh` definiert und werden automatisch vo
 - `kl` - `kubectl logs`
 - `kex` - `kubectl exec -it`
 
-### Kontext
-
+### context
 - `kcx` - Kontexte auflisten
 - `kuse` - Kontext wechseln
 - `kns` - Namespace wechseln
 
-### Helm
-
-- `h` - Helm Kurzbefehl
+### helm
+- `h` - Helm-Kurzbefehl
 - `hls` - Releases auflisten
 - `hi` - Chart installieren
 
-### UI
-
-- `k9` - k9s Terminal UI
+### ui
+- `k9` - k9s Terminal-UI
 
 [banner]: https://kura.pro/dotfiles/v2/images/titles/title-dotfiles.svg
