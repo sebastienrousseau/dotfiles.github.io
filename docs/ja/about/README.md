@@ -9,7 +9,7 @@ meta:
     content: chezmoi, dotfiles, 設定, 自動化, macos, linux, rust, zellij
 ---
 
-# Dotfiles v0.2.472 について
+# Dotfiles v0.2.474 について
 
 ## はじめに
 
@@ -17,7 +17,7 @@ Dotfilesは環境設定のモダンスタンダードです。**Chezmoi**上に�
 
 複雑なMakefileやシンボリックリンクスクリプトに依存するレガシーなdotfilesとは異なり、Dotfilesはアトミックで高速なテンプレートベースのアプローチを使用します。
 
-## v0.2.472の新機能
+## v0.2.474の新機能
 
 - **モダンコア**: レガシーUnixツールを高性能Rust代替品に置き換え:
   - **Atuin** (`history`を置換)
