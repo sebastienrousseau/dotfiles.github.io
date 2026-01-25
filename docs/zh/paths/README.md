@@ -1,50 +1,61 @@
 ---
-description: Dotfiles 如何管理您的 \$PATH 层次结构，以确保以正确的顺序加载正确的工具。
+description: Dotfiles 如何管理你的 PATH 层次结构，确保正确的工具按正确的顺序加载。
 lang: zh-CN
-metaTitle: 路径 (Paths) - Dotfiles (CN)
-permalink: /zh/paths/
+metaTitle: 路径 - Dotfiles (CN)
+permalink: /paths/
 
 meta:
   - name: keywords
-    content: 路径, 环境, 变量, 层次结构, dotfiles, chezmoi
+    content: 路径, 环境, 变量, 层次结构, dotfiles, chezmoi, shell, 配置
+  - name: twitter:card
+    content: summary
+  - name: twitter:description
+    content: Dotfiles 如何管理你的 PATH 层次结构，确保正确的工具按正确的顺序加载。
+  - name: twitter:title
+    content: 路径 - Dotfiles
+  - name: og:title
+    content: 路径 - Dotfiles
+  - name: og:description
+    content: Dotfiles 如何管理你的 PATH 层次结构，确保正确的工具按正确的顺序加载。
+  - name: og:image:alt
+    content: Dotfiles - 为你的 Shell 生活精心设计
+  - name: og:locale
+    content: zh_CN
 ---
 
-# 路径管理
+# 路径
 
-Dotfiles 最关键的角色之一是管理您的 `$PATH` 环境变量。这决定了当您输入命令时执行工具的哪个版本。
+模块化 `PATH` 管理。确保正确的工具按正确的顺序加载。
 
-我们遵守严格的层次结构，以确保 macOS 和 Linux 之间的一致性。
+## 发现
 
-## 层次结构
+路径配置被分割成基于优先级的文件。在 `chezmoi apply` 期间：
 
-从最高优先级（首先检查）到最低：
+1. 此目录中的文件按字母顺序扫描
+2. 内容聚合到 `~/.config/shell/paths.sh`
+3. 在启动时由 `.zshrc` 加载
 
-1.  **本地二进制文件** (`~/.local/bin`)
-    - **优先级**: 1
-    - **目的**: 自定义用户脚本，`dot` CLI，以及通过 `pipx` 或其他用户级包管理器安装的工具。
-    - **原因**: 允许您用自己的版本覆盖系统或 Homebrew 工具。
+## 参考
 
-2.  **应用程序二进制文件** (macOS)
-    - **优先级**: 2
-    - **目的**: 来自已安装应用程序的二进制文件（例如，VS Code，iTerm）。
+| 脚本 | 描述 |
+|:---|:---|
+| `00-default.paths.sh` | 基本系统路径（`/usr/bin`、`/sbin`）和 Homebrew。首先加载。 |
+| `99-custom.paths.sh` | 自定义用户路径（语言 SDK、本地 bin）。最后加载以获得优先权。 |
 
-3.  **语言运行时**
-    - **Node.js**: `~/.node_modules/bin`
-    - **Go**: `~/go/bin`
-    - **Rust (Cargo)**: `~/.cargo/bin`
-    - **Ruby (用户 Gems)**: `~/.gem/ruby/bin`
-    - **Python (Pipx)**: `~/.local/share/pipx`
+## 开始使用
 
-4.  **Homebrew** (`/opt/homebrew/bin`)
-    - **优先级**: 3
-    - **目的**: macOS/Linux 的主要包管理器。
-    - **注意**: 我们特意在系统路径*之前*加载 Homebrew，以允许升级系统工具（如 `git` 或 `curl`）。
+### 添加用户路径
 
-5.  **系统路径** (`/usr/bin`, `/bin`)
-    - **优先级**: 最低
-    - **目的**: 默认操作系统工具。
-    - **原因**: 基本实用程序的后备。
-
-## 去重
-
-Dotfiles 在保留优先顺序的同时自动去重您的 `$PATH`。这可以防止 `$PATH` 变量在生成嵌套 Shell 时无限增长。
+1. 编辑 `99-custom.paths.sh` 或创建新文件（例如 `50-myproject.paths.sh`）
+2. 添加你的路径：
+   ```bash
+   export PATH="$PATH:/path/to/dir"
+   ```
+3. 应用更改：
+   ```bash
+   chezmoi apply
+   ```
+4. 验证：
+   ```bash
+   echo $PATH
+   ```

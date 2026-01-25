@@ -1,28 +1,50 @@
 ---
-description: ai-Aliase fuer Dotfiles
+description: KI- und LLM-Shell-Aliase für GitHub Copilot und Ollama. Optimieren Sie Ihren KI-gestützten Entwicklungsworkflow.
 lang: de-DE
-metaTitle: ai-Aliase - Dotfiles
+metaTitle: AI Aliase - Dotfiles (DE)
 permalink: /de/aliases/ai/
+sidebar: true
+
+meta:
+  - name: keywords
+    content: ki, llm, github copilot, ollama, shell aliase, dotfiles, künstliche intelligenz, code assistent
+  - name: twitter:card
+    content: summary
+  - name: twitter:description
+    content: KI- und LLM-Shell-Aliase für GitHub Copilot und Ollama. Optimieren Sie Ihren KI-gestützten Entwicklungsworkflow.
+  - name: twitter:title
+    content: AI Aliase - Dotfiles
+  - name: og:title
+    content: AI Aliase - Dotfiles
+  - name: og:description
+    content: KI- und LLM-Shell-Aliase für GitHub Copilot und Ollama. Optimieren Sie Ihren KI-gestützten Entwicklungsworkflow.
+  - name: og:image:alt
+    content: Dotfiles - Simply designed to fit your shell life
+  - name: og:locale
+    content: de_DE
 ---
-# AI-Aliase
 
-AI- und LLM-Aliase verwalten (GitHub Copilot, Ollama). Teil der **Universal Dotfiles** Konfiguration.
+# AI Aliase
 
-![Dotfiles banner][banner]
+Verknüpfungen für KI- und LLM-Tools. Beschleunigen Sie Ihren KI-gestützten Workflow.
 
-## 📖 Beschreibung
+## Übersicht
 
-Diese Aliase sind in `ai.aliases.sh` definiert und werden automatisch von `chezmoi` geladen.
+Diese Aliase sind in `ai.aliases.sh` definiert und werden automatisch von Chezmoi geladen.
 
-## ⚡ Aliase
+## Referenz
 
 ### GitHub Copilot
-- `ghcp` - Copilot-Kurzbefehl
-- `ghs` - Code vorschlagen
-- `ghe` - Code erklaeren
 
-### Ollama (Lokales LLM)
-- `ol` - Ollama-Kurzbefehl
-- `olr` - Modell ausfuehren
+| Alias | Beschreibung |
+|:---|:---|
+| `ghcp` | Copilot-Verknüpfung |
+| `ghs` | Code vorschlagen |
+| `ghe` | Code erklären |
 
-[banner]: https://kura.pro/dotfiles/v2/images/titles/title-dotfiles.svg
+### Ollama
+
+| Alias | Beschreibung |
+|:---|:---|
+| `ol` | Ollama-Verknüpfung |
+| `olr` | Modell ausführen |

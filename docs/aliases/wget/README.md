@@ -1,43 +1,43 @@
 ---
-description: The Wget aliases create helpful shortcut aliases for the `wget` command. Wget is a tool which downloads files from the internet.
+description: Wget shell aliases for downloading files. Quick shortcuts for web retrieval with resume support.
 lang: en-GB
-metaTitle: The Wget aliases - Dotfiles (UK)
+metaTitle: Wget Aliases - Dotfiles (UK)
 permalink: /aliases/wget/
+sidebar: true
 
 meta:
   - name: keywords
-    content: aliases, wget, linux, macos, shell, terminal, windows
+    content: wget, download, web retrieval, shell aliases, dotfiles
   - name: twitter:card
-    content: The Wget aliases create helpful shortcut aliases for the `wget` command. Wget is a tool which downloads files from the internet.
+    content: summary
   - name: twitter:description
-    content: The Wget aliases create helpful shortcut aliases for the `wget` command. Wget is a tool which downloads files from the internet.
+    content: Wget shell aliases for downloading files. Quick shortcuts for web retrieval with resume support.
   - name: twitter:title
-    content: The Wget aliases - Dotfiles (UK)
+    content: Wget Aliases - Dotfiles
   - name: og:title
-    content: The Wget aliases - Dotfiles (UK)
+    content: Wget Aliases - Dotfiles
   - name: og:description
-    content: The Wget aliases create helpful shortcut aliases for the `wget` command. Wget is a tool which downloads files from the internet.
+    content: Wget shell aliases for downloading files. Quick shortcuts for web retrieval with resume support.
   - name: og:image:alt
     content: Dotfiles - Simply designed to fit your shell life
   - name: og:locale
     content: en_GB
 ---
+
 # Wget Aliases
 
-Manage Wget aliases. Part of the **Universal Dotfiles** configuration.
+Download files from the web with resume support.
 
-![Dotfiles banner][banner]
+## Overview
 
-## 📖 Description
+These aliases are defined in `wget.aliases.sh` and loaded automatically by Chezmoi.
 
-These aliases are defined in `wget.aliases.sh` and are automatically loaded by `chezmoi`.
+## Reference
 
-## ⚡ Aliases
+| Alias | Description |
+|:---|:---|
+| `wg` | Wget shortcut |
+| `wgc` | Wget with continue |
+| `wge` | Wget with robots=off |
+| `wget` | Wget with continue |
 
-This code provides a set of aliases for the `wget` command.
-- `wg` wget.
-- `wgc` wget with continue.
-- `wge` wget with robots=off.
-- `wget` wget with continue.
-
-[banner]: https://kura.pro/dotfiles/v2/images/titles/title-dotfiles.svg

@@ -1,40 +1,40 @@
 ---
-description: The UUID aliases create helpful shortcut aliases for the `uuidgen` command. The uuidgen command generates a Universally Unique IDentifier (UUID), a 128-bit value guaranteed to be unique over both space and time.
+description: UUID shell aliases for generating unique identifiers. Quick shortcut to create and copy UUIDs.
 lang: en-GB
-metaTitle: The UUID aliases - Dotfiles (UK)
+metaTitle: UUID Aliases - Dotfiles (UK)
 permalink: /aliases/uuid/
+sidebar: true
 
 meta:
   - name: keywords
-    content: aliases, uuid, linux, macos, shell, terminal, windows
+    content: uuid, unique identifier, uuidgen, shell aliases, dotfiles
   - name: twitter:card
-    content: The UUID aliases create helpful shortcut aliases for the `uuidgen` command. The uuidgen command generates a Universally Unique IDentifier (UUID), a 128-bit value guaranteed to be unique over both space and time.
+    content: summary
   - name: twitter:description
-    content: The UUID aliases create helpful shortcut aliases for the `uuidgen` command. The uuidgen command generates a Universally Unique IDentifier (UUID), a 128-bit value guaranteed to be unique over both space and time.
+    content: UUID shell aliases for generating unique identifiers. Quick shortcut to create and copy UUIDs.
   - name: twitter:title
-    content: The UUID aliases - Dotfiles (UK)
+    content: UUID Aliases - Dotfiles
   - name: og:title
-    content: The UUID aliases - Dotfiles (UK)
+    content: UUID Aliases - Dotfiles
   - name: og:description
-    content: The UUID aliases create helpful shortcut aliases for the `uuidgen` command. The uuidgen command generates a Universally Unique IDentifier (UUID), a 128-bit value guaranteed to be unique over both space and time.
+    content: UUID shell aliases for generating unique identifiers. Quick shortcut to create and copy UUIDs.
   - name: og:image:alt
     content: Dotfiles - Simply designed to fit your shell life
   - name: og:locale
     content: en_GB
 ---
-# Uuid Aliases
 
-Manage Uuid aliases. Part of the **Universal Dotfiles** configuration.
+# UUID Aliases
 
-![Dotfiles banner][banner]
+Generate universally unique identifiers.
 
-## 📖 Description
+## Overview
 
-These aliases are defined in `uuid.aliases.sh` and are automatically loaded by `chezmoi`.
+These aliases are defined in `uuid.aliases.sh` and loaded automatically by Chezmoi.
 
-## ⚡ Aliases
+## Reference
 
-This code provides a set of aliases for the `uuidgen` command.
-- `uuid` Generate a UUID and copy it to the clipboard.
+| Alias | Description |
+|:---|:---|
+| `uuid` | Generate a UUID and copy to clipboard |
 
-[banner]: https://kura.pro/dotfiles/v2/images/titles/title-dotfiles.svg

@@ -1,41 +1,64 @@
 ---
-description: Alias de macOS para Dotfiles
+title: "Alias macOS: atajos shell para Mac"
+description: "Alias shell para gestión del sistema macOS, control de Finder y tareas de mantenimiento."
 lang: es-ES
-metaTitle: Alias de macOS - Dotfiles (ES)
-permalink: /es/aliases/macOS/
+metaTitle: "Alias macOS | Dotfiles"
+permalink: /aliases/macOS/
+sidebar: true
+meta:
+  - name: keywords
+    content: "alias macOS, atajos shell, alias Finder, terminal Mac, dotfiles"
 ---
 
-# Alias de macOS
+# Alias macOS
 
-Gestiona alias de macOS. Parte de la configuración de **Universal Dotfiles**.
+Atajos de shell para gestión y mantenimiento de macOS.
 
-![Banner de Dotfiles][banner]
+## Descubrir
 
-## 📖 Descripción
+Estos alias se definen en `macOS.aliases.sh` y se cargan automáticamente por chezmoi. Ofrecen acceso rápido a operaciones comunes de macOS: Finder, mantenimiento del sistema y herramientas de desarrollo.
 
-Estos alias están definidos en `macOS.aliases.sh` y son cargados automáticamente por `chezmoi`.
+## Referencia
 
-## ⚡ Alias
+### Gestión del sistema
 
-Este código proporciona un conjunto de alias para macOS.
+| Alias | Descripción |
+|-------|-------------|
+| `lockScreen` | Bloquear la pantalla |
+| `wifiOn` | Activar Wi‑Fi |
+| `wifiOff` | Desactivar Wi‑Fi |
+| `vp` | Verificar permisos de macOS |
+| `vv` | Verificar volumen macOS |
 
-- `clds` Eliminar recursivamente archivos .DS_Store.
-- `clls` Limpiar LaunchServices para eliminar duplicados en el menú 'Abrir con'.
-- `finderHideHidden` Ocultar archivos ocultos en Finder.
-- `finderShowHidden` Mostrar archivos ocultos en Finder.
-- `hideDesktopIcons` Ocultar todos los iconos en el Escritorio.
-- `iphone` Abrir los simuladores de dispositivos.
-- `lockScreen` Bloquear la pantalla del mac.
-- `ofd` Abrir el directorio actual en una ventana de Finder.
-- `purge` Purgar Xcode DerivedData.
-- `safariSafeMode` Iniciar Safari en Modo Seguro.
-- `showDesktopIcons` Mostrar todos los iconos en el Escritorio.
-- `screensaverDesktop` Ejecutar un salvapantallas en el Escritorio.
-- `trash` Vaciar la Papelera en todos los volúmenes montados y el disco duro principal.
-- `vp` Verificar Permisos de macOS.
-- `vv` Verificar Volumen de macOS.
-- `wifiOn` Encender Wi-Fi.
-- `wifiOff` Apagar Wi-Fi.
-- `xcode` Iniciar la aplicación Xcode en macOS.
+### Finder
 
-[banner]: https://kura.pro/dotfiles/v2/images/titles/title-dotfiles.svg
+| Alias | Descripción |
+|-------|-------------|
+| `ofd` | Abrir el directorio actual en Finder |
+| `finderShowHidden` | Mostrar archivos ocultos en Finder |
+| `finderHideHidden` | Ocultar archivos ocultos en Finder |
+| `showDesktopIcons` | Mostrar iconos del Escritorio |
+| `hideDesktopIcons` | Ocultar iconos del Escritorio |
+
+### Limpieza
+
+| Alias | Descripción |
+|-------|-------------|
+| `clds` | Eliminar recursivamente archivos .DS_Store |
+| `clls` | Limpiar LaunchServices para eliminar duplicados en Abrir con |
+| `trash` | Vaciar la papelera en todos los volúmenes montados y el disco principal |
+
+### Herramientas de desarrollo
+
+| Alias | Descripción |
+|-------|-------------|
+| `xcode` | Abrir Xcode |
+| `purge` | Purgar Xcode DerivedData |
+| `iphone` | Abrir simuladores de dispositivos |
+| `safariSafeMode` | Abrir Safari en modo seguro |
+
+### Pantalla
+
+| Alias | Descripción |
+|-------|-------------|
+| `screensaverDesktop` | Ejecutar un salvapantallas en el escritorio |

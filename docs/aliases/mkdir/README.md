@@ -1,45 +1,48 @@
 ---
-description: The Mkdir aliases are a collection of aliases that allow you to interact with the `mkdir` command line tool. Mkdir is a tool which creates a directory.
+title: "Mkdir Aliases: Directory Creation Shortcuts"
+description: "Shell aliases for mkdir that simplify directory creation with date and time naming conventions."
 lang: en-GB
-metaTitle: The Mkdir aliases - Dotfiles (UK)
+metaTitle: "Mkdir Aliases | Dotfiles"
 permalink: /aliases/mkdir/
-
+sidebar: true
 meta:
   - name: keywords
-    content: aliases, mkdir, linux, macos, shell, terminal, windows
+    content: mkdir aliases, directory creation, shell shortcuts, dotfiles, terminal
   - name: twitter:card
-    content: The Mkdir aliases are a collection of aliases that allow you to interact with the `mkdir` command line tool. Mkdir is a tool which creates a directory.
-  - name: twitter:description
-    content: The Mkdir aliases are a collection of aliases that allow you to interact with the `mkdir` command line tool. Mkdir is a tool which creates a directory.
+    content: summary
   - name: twitter:title
-    content: The Mkdir aliases - Dotfiles (UK)
+    content: Mkdir Aliases | Dotfiles
+  - name: twitter:description
+    content: Shell aliases for mkdir that simplify directory creation with date and time naming conventions.
   - name: og:title
-    content: The Mkdir aliases - Dotfiles (UK)
+    content: Mkdir Aliases | Dotfiles
   - name: og:description
-    content: The Mkdir aliases are a collection of aliases that allow you to interact with the `mkdir` command line tool. Mkdir is a tool which creates a directory.
+    content: Shell aliases for mkdir that simplify directory creation with date and time naming conventions.
   - name: og:image:alt
     content: Dotfiles - Simply designed to fit your shell life
   - name: og:locale
     content: en_GB
 ---
+
 # Mkdir Aliases
 
-Manage Mkdir aliases. Part of the **Universal Dotfiles** configuration.
+Streamline directory creation with intelligent naming conventions.
 
 ![Dotfiles banner][banner]
 
-## 📖 Description
+## Overview
 
-These aliases are defined in `mkdir.aliases.sh` and are automatically loaded by `chezmoi`.
+The mkdir aliases provide shortcuts for creating directories with automatic date and time stamps. These aliases are defined in `mkdir.aliases.sh` and loaded automatically by chezmoi.
 
-## ⚡ Aliases
+## Reference
 
-This code provides a set of aliases for the `mkdir` command.
-- `mde` Make example directory with current date.
-- `md` Make directory.
-- `mdd` Make directory with date.
-- `mdn` Make notes directory with current date.
-- `mdw` Make work directory with current date.
-- `mdt` Make directory with time.
+| Alias | Description |
+|-------|-------------|
+| `md` | Make directory |
+| `mdd` | Make directory with date |
+| `mdt` | Make directory with time |
+| `mde` | Make example directory with current date |
+| `mdn` | Make notes directory with current date |
+| `mdw` | Make work directory with current date |
 
 [banner]: https://kura.pro/dotfiles/v2/images/titles/title-dotfiles.svg

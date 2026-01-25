@@ -1,34 +1,47 @@
 ---
-description: disk-usage aliases for Dotfiles
+title: "Disk Usage Aliases: Monitor Storage with Shell Commands"
+description: "Shell aliases for disk usage monitoring. Display file sizes, find large directories, and manage storage efficiently."
 lang: en-GB
-metaTitle: disk-usage aliases - Dotfiles
+metaTitle: Disk Usage Aliases | Dotfiles
 permalink: /aliases/disk-usage/
+sidebar: true
+meta:
+  - name: keywords
+    content: disk usage aliases, du command, storage monitoring, file size, dotfiles, shell, bash, zsh
+  - name: twitter:card
+    content: summary
+  - name: twitter:description
+    content: Shell aliases for disk usage monitoring. Display file sizes, find large directories, and manage storage efficiently.
+  - name: twitter:title
+    content: Disk Usage Aliases | Dotfiles
+  - name: og:title
+    content: Disk Usage Aliases | Dotfiles
+  - name: og:description
+    content: Shell aliases for disk usage monitoring. Display file sizes, find large directories, and manage storage efficiently.
+  - name: og:image:alt
+    content: Dotfiles - Simply designed to fit your shell life
+  - name: og:locale
+    content: en_GB
 ---
 
-# Disk-usage Aliases
+# Disk Usage Aliases
 
-Manage Disk-usage aliases. Part of the **Universal Dotfiles** configuration.
+Quickly monitor and analyse storage consumption across your filesystem.
 
-![Dotfiles banner][banner]
+## Overview
 
-## 📖 Description
+The disk usage aliases provide streamlined commands for monitoring storage consumption on Unix-based systems. Defined in `disk-usage.aliases.sh`, these shortcuts simplify common `du` operations and are automatically loaded by chezmoi as part of the Dotfiles configuration.
 
-These aliases are defined in `disk-usage.aliases.sh` and are automatically loaded by `chezmoi`.
+## Reference
 
-## ⚡ Aliases
+The following table lists all available disk usage aliases and their functions.
 
-This code provides a set of command aliases to help users manage disk
-usage on a Unix-based system.
-The following aliases are provided:
-- `du`: Display the disk usage of the current directory.
-- `du1`: Show the file size of files and directories in the current
-  directory.
-- `duh`: Show the file size of files and directories.
-- `ducks`: Display the top 10 largest files and directories in the
-  current directory.
-- `dus`: Show the file size in human-readable format, sorted by size.
-- `dusym`: Show the file size of files and directories in the current
-  directory, including symlinks.
-- `dut`: Show the total file size of the current directory.
-
-[banner]: https://kura.pro/dotfiles/v2/images/titles/title-dotfiles.svg
+| Alias | Description |
+|-------|-------------|
+| `du` | Display the disk usage of the current directory |
+| `du1` | Show file size of files and directories in the current directory |
+| `duh` | Show file size of files and directories in human-readable format |
+| `ducks` | Display the top 10 largest files and directories in the current directory |
+| `dus` | Show file size in human-readable format, sorted by size |
+| `dusym` | Show file size of files and directories, including symlinks |
+| `dut` | Show the total file size of the current directory |

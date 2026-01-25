@@ -1,26 +1,45 @@
 ---
-description: yarn aliases for Dotfiles
+description: Yarn shell aliases for JavaScript package management. Quick shortcuts for installing and managing dependencies.
 lang: en-GB
-metaTitle: yarn aliases - Dotfiles
+metaTitle: Yarn Aliases - Dotfiles (UK)
 permalink: /aliases/yarn/
+sidebar: true
+
+meta:
+  - name: keywords
+    content: yarn, javascript, package manager, node.js, shell aliases, dotfiles
+  - name: twitter:card
+    content: summary
+  - name: twitter:description
+    content: Yarn shell aliases for JavaScript package management. Quick shortcuts for installing and managing dependencies.
+  - name: twitter:title
+    content: Yarn Aliases - Dotfiles
+  - name: og:title
+    content: Yarn Aliases - Dotfiles
+  - name: og:description
+    content: Yarn shell aliases for JavaScript package management. Quick shortcuts for installing and managing dependencies.
+  - name: og:image:alt
+    content: Dotfiles - Simply designed to fit your shell life
+  - name: og:locale
+    content: en_GB
 ---
+
 # Yarn Aliases
 
-Manage Yarn (JavaScript) aliases. Part of the **Universal Dotfiles** configuration.
+Shortcuts for the Yarn JavaScript package manager.
 
-![Dotfiles banner][banner]
+## Overview
 
-## 📖 Description
+These aliases are defined in `yarn.aliases.sh` and loaded automatically by Chezmoi.
 
-These aliases are defined in `yarn.aliases.sh` and are automatically loaded by `chezmoi`.
+## Reference
 
-## ⚡ Aliases
+| Alias | Description |
+|:---|:---|
+| `y` | Yarn shortcut |
+| `yi` | Install dependencies |
+| `ya` | Add dependency |
+| `yad` | Add dev dependency |
+| `yrun` | Run script |
+| `ystem` | Start project |
 
-- `y` - Yarn shortcut
-- `yi` - Install
-- `ya` - Add dependency
-- `yad` - Add dev dependency
-- `yrun` - Run script
-- `ystem` - Start
-
-[banner]: https://kura.pro/dotfiles/v2/images/titles/title-dotfiles.svg

@@ -1,41 +1,39 @@
 ---
-description: Rsync 别名用于与 `rsync` 交互。Rsync 用于在两个位置之间同步文件和目录。
+description: 用于文件同步的 Rsync shell 别名。在不同位置之间同步文件和目录的快捷方式。
 lang: zh-CN
-metaTitle: Rsync 别名 - Dotfiles (ZH)
-permalink: /zh/aliases/rsync/
+metaTitle: Rsync 别名 - Dotfiles (CN)
+permalink: /aliases/rsync/
+sidebar: true
 
 meta:
   - name: keywords
-    content: aliases, rsync, linux, macos, shell, terminal, windows
+    content: rsync, 同步, 文件传输, shell 别名, dotfiles, 备份
   - name: twitter:card
-    content: Rsync 别名用于与 `rsync` 交互。Rsync 用于在两个位置之间同步文件和目录。
+    content: summary
   - name: twitter:description
-    content: Rsync 别名用于与 `rsync` 交互。Rsync 用于在两个位置之间同步文件和目录。
+    content: 用于文件同步的 Rsync shell 别名。在不同位置之间同步文件和目录的快捷方式。
   - name: twitter:title
-    content: Rsync 别名 - Dotfiles (ZH)
+    content: Rsync 别名 - Dotfiles
   - name: og:title
-    content: Rsync 别名 - Dotfiles (ZH)
+    content: Rsync 别名 - Dotfiles
   - name: og:description
-    content: Rsync 别名用于与 `rsync` 交互。Rsync 用于在两个位置之间同步文件和目录。
+    content: 用于文件同步的 Rsync shell 别名。在不同位置之间同步文件和目录的快捷方式。
   - name: og:image:alt
-    content: Dotfiles - 为你的 Shell 生活而设计
+    content: Dotfiles - 为你的 Shell 生活精心设计
   - name: og:locale
     content: zh_CN
 ---
+
 # Rsync 别名
 
-管理 Rsync 别名。**Universal Dotfiles** 配置的一部分。
+在不同位置之间同步文件和目录，并显示进度。
 
-![Dotfiles banner][banner]
+## 概述
 
-## 📖 描述
+这些别名定义在 `rsync.aliases.sh` 中，由 Chezmoi 自动加载。
 
-这些别名定义在 `rsync.aliases.sh` 中，并由 `chezmoi` 自动加载。
+## 参考
 
-## ⚡ 别名
-
-此代码提供 `rsync` 命令的别名。
-- `rs` 带 verbose 与进度的 rsync。
-- `rs` 带 verbose 与进度的 rsync。
-
-[banner]: https://kura.pro/dotfiles/v2/images/titles/title-dotfiles.svg
+| 别名 | 描述 |
+|:---|:---|
+| `rs` | 带详细输出和进度显示的 Rsync |

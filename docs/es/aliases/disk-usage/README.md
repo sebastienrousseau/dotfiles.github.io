@@ -1,32 +1,47 @@
 ---
-description: alias de Disk Usage para Dotfiles
+title: "Alias Disk Usage: monitoriza almacenamiento con shell"
+description: "Alias shell para monitoreo de uso de disco. Muestra tamaños, encuentra directorios grandes y gestiona el almacenamiento."
 lang: es-ES
-metaTitle: alias de Disk Usage - Dotfiles
-permalink: /es/aliases/disk-usage/
+metaTitle: Alias Disk Usage | Dotfiles
+permalink: /aliases/disk-usage/
+sidebar: true
+meta:
+  - name: keywords
+    content: alias disk usage, comando du, monitoreo almacenamiento, tamaño archivo, dotfiles, shell, bash, zsh
+  - name: twitter:card
+    content: summary
+  - name: twitter:description
+    content: Alias shell para monitoreo de uso de disco. Muestra tamaños, encuentra directorios grandes y gestiona el almacenamiento.
+  - name: twitter:title
+    content: Alias Disk Usage | Dotfiles
+  - name: og:title
+    content: Alias Disk Usage | Dotfiles
+  - name: og:description
+    content: Alias shell para monitoreo de uso de disco. Muestra tamaños, encuentra directorios grandes y gestiona el almacenamiento.
+  - name: og:image:alt
+    content: Dotfiles - Diseñado para tu vida en el shell
+  - name: og:locale
+    content: es_ES
 ---
-# Alias de Disk Usage
 
-Gestionar alias de Disk Usage. Parte de la configuracion **Universal Dotfiles**.
+# Alias Disk Usage
 
-![Dotfiles banner][banner]
+Supervisa rápidamente el consumo de almacenamiento en tu sistema de archivos.
 
-## 📖 Descripcion
+## Descubrir
 
-Estos alias estan definidos en `disk-usage.aliases.sh` y se cargan automaticamente por `chezmoi`.
+Los alias disk usage proporcionan comandos simplificados para monitorear el consumo en sistemas Unix. Definidos en `disk-usage.aliases.sh`, estos atajos simplifican operaciones `du` y se cargan automáticamente por chezmoi en la configuración Dotfiles.
 
-## ⚡ Alias
+## Referencia
 
-Estos alias facilitan la exploracion del uso de disco con variantes de `du`, ordenadas por tamano
-y pensadas para diagnosticos rapidos.
-- `du` ejecutar `du -h` en el directorio actual.
-- `du1` listar el uso de disco del primer nivel, ordenado por tamano.
-- `ducks` mostrar los 10 mayores consumidores de espacio en el directorio actual.
-- `duf` mostrar el uso de disco de archivos con profundidad 1.
-- `dufi` igual que `duf`, ordenado de mayor a menor.
-- `duh` mostrar el uso total del directorio actual, legible.
-- `dui` mostrar uso de disco e inode, ordenado.
-- `dul` listar directorios ordenados por tamano.
-- `duls` listar el uso de disco en el directorio actual, ordenado por tamano.
-- `dus` mostrar el uso de disco del directorio actual, ordenado por tamano.
+La siguiente tabla lista todos los alias de disk usage y sus funciones.
 
-[banner]: https://kura.pro/dotfiles/v2/images/titles/title-dotfiles.svg
+| Alias | Descripción |
+|-------|-------------|
+| `du` | Mostrar el uso de disco del directorio actual |
+| `du1` | Mostrar tamaño de archivos y directorios del directorio actual |
+| `duh` | Mostrar tamaños en formato legible |
+| `ducks` | Mostrar los 10 archivos/directorios más grandes del directorio actual |
+| `dus` | Mostrar tamaños legibles ordenados por tamaño |
+| `dusym` | Mostrar tamaños incluyendo symlinks |
+| `dut` | Mostrar el tamaño total del directorio actual |

@@ -1,62 +1,71 @@
 ---
-description: Los alias interactivos son una coleccion de alias que permiten interactuar con el shell y la terminal de forma mas interactiva.
+title: "Alias Interactivos: comandos seguros con confirmación"
+description: "Alias shell que añaden confirmaciones antes de rm, mv y cp. Evita borrados accidentales."
 lang: es-ES
-metaTitle: Alias interactivos - Dotfiles (ES)
-permalink: /es/aliases/interactive/
-
+metaTitle: "Alias Interactivos | Dotfiles"
+permalink: /aliases/interactive/
+sidebar: true
 meta:
   - name: keywords
-    content: aliases, bash, cp, interactive, linux, ln, macos, mv, rm, shell, terminal, windows
+    content: alias interactivos, seguridad shell, confirmación rm, cp interactivo, prompt mv, dotfiles, alias bash
   - name: twitter:card
-    content: Los alias interactivos son una coleccion de alias que permiten interactuar con el shell y la terminal de forma mas interactiva.
-  - name: twitter:description
-    content: Los alias interactivos son una coleccion de alias que permiten interactuar con el shell y la terminal de forma mas interactiva.
+    content: summary
   - name: twitter:title
-    content: Alias interactivos - Dotfiles (ES)
+    content: Alias Interactivos | Dotfiles
+  - name: twitter:description
+    content: Alias shell que añaden confirmaciones antes de rm, mv y cp.
   - name: og:title
-    content: Alias interactivos - Dotfiles (ES)
+    content: Alias Interactivos | Dotfiles
   - name: og:description
-    content: Los alias interactivos son una coleccion de alias que permiten interactuar con el shell y la terminal de forma mas interactiva.
+    content: Alias shell que añaden confirmaciones antes de rm, mv y cp.
   - name: og:image:alt
-    content: Dotfiles - Simplemente disenado para adaptarse a tu vida en el shell
+    content: Dotfiles - Diseñado para tu vida en el shell
   - name: og:locale
     content: es_ES
 ---
-# Alias interactivos
 
-Gestionar los alias interactivos. Parte de la configuracion **Universal Dotfiles**.
+# Alias Interactivos
+
+Comandos de shell seguros con confirmación antes de operaciones destructivas.
 
 ![Dotfiles banner][banner]
 
-## 📖 Descripcion
+## Descubrir
 
-Estos alias estan definidos en `interactive.aliases.sh` y se cargan automaticamente por `chezmoi`.
+Los alias interactivos añaden confirmaciones a comandos que pueden modificar o eliminar archivos de forma permanente. Definidos en `interactive.aliases.sh` y cargados automáticamente por chezmoi, estos alias ayudan a prevenir pérdidas de datos.
 
-## ⚡ Alias
+## Referencia
 
-Este codigo proporciona un conjunto de alias interactivos para operaciones comunes de
-linea de comandos. Los alias estan disenados para simplificar y mejorar la experiencia
-de usuario agregando avisos interactivos antes de ejecutar operaciones potencialmente
-destructivas.
-* `cp` Copiar archivos y directorios de forma interactiva (preguntar antes de sobrescribir)
-con salida detallada.
-* `del` Eliminar archivos o directorios de forma interactiva (preguntar antes de cada eliminacion)
-con salida detallada, de forma recursiva.
-* `ln` Crear enlaces simbolicos de forma interactiva (preguntar antes de sobrescribir)
-con salida detallada.
-* `mv` Mover o renombrar archivos de forma interactiva (preguntar antes de sobrescribir)
-con salida detallada.
-* `rm` Eliminar archivos o directorios de forma interactiva (preguntar antes de cada eliminacion)
-con salida detallada.
-* `zap` Alias para 'rm', elimina archivos o directorios de forma interactiva (preguntar antes de cada eliminacion)
-con salida detallada.
-### Alias de manipulacion de la papelera
-* `bin` Eliminar todos los archivos en la papelera (directorio .Trash del usuario) de forma forzada y
-recursiva.
-* `chmod` Cambiar permisos de archivos o directorios con salida detallada.
-* `chown` Cambiar el propietario y el grupo de archivos o directorios con salida detallada.
-* `diff` Comparar y mostrar diferencias entre dos archivos en formato unificado.
-* `grep` Buscar un patron en archivos o salida, mostrando numeros de linea y de forma insensible a mayusculas.
-* `mkdir` Crear un nuevo directorio, creando directorios padre segun sea necesario, con salida detallada.
+### Operaciones de archivos
+
+| Alias | Descripción |
+|-------|-------------|
+| `cp` | Copiar archivos y directorios de forma interactiva con salida detallada. Confirma antes de sobrescribir. |
+| `mv` | Mover o renombrar de forma interactiva con salida detallada. Confirma antes de sobrescribir. |
+| `ln` | Crear enlaces simbólicos de forma interactiva con salida detallada. Confirma antes de sobrescribir. |
+
+### Eliminación de archivos
+
+| Alias | Descripción |
+|-------|-------------|
+| `rm` | Eliminar archivos/directorios de forma interactiva con salida detallada. Confirma cada eliminación. |
+| `del` | Eliminar archivos/directorios de forma interactiva y recursiva con salida detallada. |
+| `zap` | Alias de `rm`. Elimina de forma interactiva con salida detallada. |
+
+### Gestión de papelera
+
+| Alias | Descripción |
+|-------|-------------|
+| `bin` | Eliminar todos los archivos de la papelera (`~/.Trash`) de forma forzada y recursiva. |
+
+### Permisos y utilidades
+
+| Alias | Descripción |
+|-------|-------------|
+| `chmod` | Cambiar permisos con salida detallada. |
+| `chown` | Cambiar propietario y grupo con salida detallada. |
+| `diff` | Comparar archivos y mostrar diferencias en formato unificado. |
+| `grep` | Buscar un patrón mostrando números de línea e ignorando mayúsculas. |
+| `mkdir` | Crear directorios con padres y salida detallada. |
 
 [banner]: https://kura.pro/dotfiles/v2/images/titles/title-dotfiles.svg

@@ -1,41 +1,39 @@
 ---
-description: Los alias de Rsync son una coleccion de alias que permiten interactuar con la herramienta de linea de comandos `rsync`. Rsync es una herramienta que sincroniza archivos y directorios entre dos ubicaciones.
+description: Alias rsync para sincronización de archivos. Atajos rápidos para sincronizar archivos y directorios.
 lang: es-ES
-metaTitle: Los alias de Rsync - Dotfiles (ES)
-permalink: /es/aliases/rsync/
+metaTitle: Aliases Rsync - Dotfiles (ES)
+permalink: /aliases/rsync/
+sidebar: true
 
 meta:
   - name: keywords
-    content: aliases, rsync, linux, macos, shell, terminal, windows
+    content: rsync, sincronización, transferencia de archivos, alias shell, dotfiles, backup
   - name: twitter:card
-    content: Los alias de Rsync son una coleccion de alias que permiten interactuar con la herramienta de linea de comandos `rsync`. Rsync es una herramienta que sincroniza archivos y directorios entre dos ubicaciones.
+    content: summary
   - name: twitter:description
-    content: Los alias de Rsync son una coleccion de alias que permiten interactuar con la herramienta de linea de comandos `rsync`. Rsync es una herramienta que sincroniza archivos y directorios entre dos ubicaciones.
+    content: Alias rsync para sincronización de archivos. Atajos rápidos para sincronizar archivos y directorios.
   - name: twitter:title
-    content: Los alias de Rsync - Dotfiles (ES)
+    content: Aliases Rsync - Dotfiles
   - name: og:title
-    content: Los alias de Rsync - Dotfiles (ES)
+    content: Aliases Rsync - Dotfiles
   - name: og:description
-    content: Los alias de Rsync son una coleccion de alias que permiten interactuar con la herramienta de linea de comandos `rsync`. Rsync es una herramienta que sincroniza archivos y directorios entre dos ubicaciones.
+    content: Alias rsync para sincronización de archivos. Atajos rápidos para sincronizar archivos y directorios.
   - name: og:image:alt
-    content: Dotfiles - Simplemente disenado para adaptarse a tu vida en el shell
+    content: Dotfiles - Diseñado para tu vida en el shell
   - name: og:locale
     content: es_ES
 ---
-# Alias de Rsync
 
-Gestionar alias de Rsync. Parte de la configuracion **Universal Dotfiles**.
+# Alias Rsync
 
-![Dotfiles banner][banner]
+Sincroniza archivos y directorios entre ubicaciones con seguimiento de progreso.
 
-## 📖 Descripcion
+## Descubrir
 
-Estos alias estan definidos en `rsync.aliases.sh` y se cargan automaticamente por `chezmoi`.
+Estos alias se definen en `rsync.aliases.sh` y se cargan automáticamente por Chezmoi.
 
-## ⚡ Alias
+## Referencia
 
-Este codigo proporciona un conjunto de alias para el comando `rsync`.
-- `rs` Rsync con modo detallado y progreso.
-- `rs` Rsync con modo detallado y progreso.
-
-[banner]: https://kura.pro/dotfiles/v2/images/titles/title-dotfiles.svg
+| Alias | Descripción |
+|:---|:---|
+| `rs` | Rsync con salida detallada y progreso |

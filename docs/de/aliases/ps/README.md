@@ -1,43 +1,41 @@
 ---
-description: Die PS-Aliase sind eine Sammlung von Aliasen, die die Arbeit mit dem `ps` CLI-Tool erleichtern. Ps zeigt eine Momentaufnahme der laufenden Prozesse.
+description: Shell-Aliase zur Prozessverwaltung und -ueberwachung mit dem ps-Befehl. Laufende Prozesse anzeigen und analysieren.
 lang: de-DE
-metaTitle: Die PS-Aliase - Dotfiles (DE)
+metaTitle: PS Aliase - Dotfiles (DE)
 permalink: /de/aliases/ps/
+sidebar: true
 
 meta:
   - name: keywords
-    content: aliases, ps, process, processes, linux, macos, shell, terminal, windows
+    content: ps aliase, prozessverwaltung, prozessueberwachung, shell aliase, dotfiles
   - name: twitter:card
-    content: Die PS-Aliase sind eine Sammlung von Aliasen, die die Arbeit mit dem `ps` CLI-Tool erleichtern. Ps zeigt eine Momentaufnahme der laufenden Prozesse.
-  - name: twitter:description
-    content: Die PS-Aliase sind eine Sammlung von Aliasen, die die Arbeit mit dem `ps` CLI-Tool erleichtern. Ps zeigt eine Momentaufnahme der laufenden Prozesse.
+    content: summary
   - name: twitter:title
-    content: Die PS-Aliase - Dotfiles (DE)
+    content: PS Aliase - Dotfiles
+  - name: twitter:description
+    content: Shell-Aliase zur Prozessverwaltung und -ueberwachung mit dem ps-Befehl.
   - name: og:title
-    content: Die PS-Aliase - Dotfiles (DE)
+    content: PS Aliase - Dotfiles
   - name: og:description
-    content: Die PS-Aliase sind eine Sammlung von Aliasen, die die Arbeit mit dem `ps` CLI-Tool erleichtern. Ps zeigt eine Momentaufnahme der laufenden Prozesse.
+    content: Shell-Aliase zur Prozessverwaltung und -ueberwachung mit dem ps-Befehl.
   - name: og:image:alt
-    content: Dotfiles - Einfach entworfen fuer dein Shell-Leben
+    content: Dotfiles - Simply designed to fit your shell life
   - name: og:locale
     content: de_DE
 ---
-# Ps-Aliase
 
-Ps-Aliase verwalten. Teil der **Universal Dotfiles** Konfiguration.
+# PS Aliase
 
-![Dotfiles banner][banner]
+Prozessinformationen effizient anzeigen und analysieren.
 
-## 📖 Beschreibung
+## Uebersicht
 
-Diese Aliase sind in `ps.aliases.sh` definiert und werden automatisch von `chezmoi` geladen.
+Diese Aliase sind in `ps.aliases.sh` definiert und werden automatisch von Chezmoi geladen. Sie bieten schnellen Zugriff auf Prozessstatusinformationen und Systemprozessuebersichten.
 
-## ⚡ Aliase
+## Referenz
 
-Dieser Code stellt eine Reihe von Aliasen fuer
-[ps](https://www.gnu.org/software/ps/) bereit.
-- `pid` UID, PID, Parent PID, CPU-Usage, Startzeit, TTY, CPU-Zeit und Befehl anzeigen.
-- `ps` Alle Prozesse anzeigen.
-- `psa` Alle Prozesse auflisten.
-
-[banner]: https://kura.pro/dotfiles/v2/images/titles/title-dotfiles.svg
+| Alias | Beschreibung |
+|:---|:---|
+| `pid` | UID, PID, Parent-PID, CPU-Nutzung, Startzeit, TTY, CPU-Zeit und Befehl anzeigen |
+| `ps` | Alle Prozesse anzeigen |
+| `psa` | Alle Prozesse im detaillierten Format auflisten |

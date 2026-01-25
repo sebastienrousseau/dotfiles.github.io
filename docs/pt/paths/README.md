@@ -2,7 +2,7 @@
 description: Como o Dotfiles gerencia sua hierarquia \$PATH para garantir que as ferramentas certas sejam carregadas na ordem certa.
 lang: pt-BR
 metaTitle: Caminhos (Paths) - Dotfiles (BR)
-permalink: /pt/paths/
+permalink: /paths/
 
 meta:
   - name: keywords

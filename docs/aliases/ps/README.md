@@ -1,45 +1,41 @@
 ---
-description: The PS aliases are a collection of aliases that allow you to interact with the `ps` command line tool. Ps is a tool which reports a snapshot of the current processes.
+description: Process status aliases for monitoring and managing running processes. Quick shortcuts for the ps command.
 lang: en-GB
-metaTitle: The PS aliases - Dotfiles (UK)
+metaTitle: PS Aliases - Dotfiles (UK)
 permalink: /aliases/ps/
+sidebar: true
 
 meta:
   - name: keywords
-    content: aliases, ps, process, processes, linux, macos, shell, terminal, windows
+    content: ps, process, processes, shell aliases, dotfiles, system monitoring
   - name: twitter:card
-    content: The PS aliases are a collection of aliases that allow you to interact with the `ps` command line tool. Ps is a tool which reports a snapshot of the current processes.
+    content: summary
   - name: twitter:description
-    content: The PS aliases are a collection of aliases that allow you to interact with the `ps` command line tool. Ps is a tool which reports a snapshot of the current processes.
+    content: Process status aliases for monitoring and managing running processes. Quick shortcuts for the ps command.
   - name: twitter:title
-    content: The PS aliases - Dotfiles (UK)
+    content: PS Aliases - Dotfiles
   - name: og:title
-    content: The PS aliases - Dotfiles (UK)
+    content: PS Aliases - Dotfiles
   - name: og:description
-    content: The PS aliases are a collection of aliases that allow you to interact with the `ps` command line tool. Ps is a tool which reports a snapshot of the current processes.
+    content: Process status aliases for monitoring and managing running processes. Quick shortcuts for the ps command.
   - name: og:image:alt
     content: Dotfiles - Simply designed to fit your shell life
   - name: og:locale
     content: en_GB
 ---
-# Ps Aliases
 
-Manage Ps aliases. Part of the **Universal Dotfiles** configuration.
+# PS Aliases
 
-![Dotfiles banner][banner]
+Monitor and manage running processes with simple shortcuts.
 
-## 📖 Description
+## Overview
 
-These aliases are defined in `ps.aliases.sh` and are automatically loaded by `chezmoi`.
+These aliases are defined in `ps.aliases.sh` and loaded automatically by Chezmoi.
 
-## ⚡ Aliases
+## Reference
 
-This code provides a set of aliases for
-[ps](https://www.gnu.org/software/ps/).
-- `pid` Display the uid, pid, parent pid, recent CPU usage, process
-  start time, controlling tty, elapsed CPU usage, and the associated
-  command
-- `ps` Display all processes.
-- `psa` List all processes.
-
-[banner]: https://kura.pro/dotfiles/v2/images/titles/title-dotfiles.svg
+| Alias | Description |
+|:---|:---|
+| `pid` | Display UID, PID, parent PID, CPU usage, start time, TTY, and command |
+| `ps` | Display all processes |
+| `psa` | List all processes |

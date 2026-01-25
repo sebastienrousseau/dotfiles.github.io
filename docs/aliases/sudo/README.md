@@ -1,43 +1,43 @@
 ---
-description: The Sudo aliases are a collection of aliases that allow you to interact with the `sudo` command. Sudo is a tool which allows you to run commands as another user.
+description: Sudo shell aliases for running commands as superuser. Quick shortcuts for elevated privileges.
 lang: en-GB
-metaTitle: The Sudo aliases - Dotfiles (UK)
+metaTitle: Sudo Aliases - Dotfiles (UK)
 permalink: /aliases/sudo/
+sidebar: true
 
 meta:
   - name: keywords
-    content: aliases, sudo, linux, macos, shell, terminal, windows
+    content: sudo, superuser, root, shell aliases, dotfiles, privileges
   - name: twitter:card
-    content: The Sudo aliases are a collection of aliases that allow you to interact with the `sudo` command. Sudo is a tool which allows you to run commands as another user.
+    content: summary
   - name: twitter:description
-    content: The Sudo aliases are a collection of aliases that allow you to interact with the `sudo` command. Sudo is a tool which allows you to run commands as another user.
+    content: Sudo shell aliases for running commands as superuser. Quick shortcuts for elevated privileges.
   - name: twitter:title
-    content: The Sudo aliases - Dotfiles (UK)
+    content: Sudo Aliases - Dotfiles
   - name: og:title
-    content: The Sudo aliases - Dotfiles (UK)
+    content: Sudo Aliases - Dotfiles
   - name: og:description
-    content: The Sudo aliases are a collection of aliases that allow you to interact with the `sudo` command. Sudo is a tool which allows you to run commands as another user.
+    content: Sudo shell aliases for running commands as superuser. Quick shortcuts for elevated privileges.
   - name: og:image:alt
     content: Dotfiles - Simply designed to fit your shell life
   - name: og:locale
     content: en_GB
 ---
+
 # Sudo Aliases
 
-Manage Sudo aliases. Part of the **Universal Dotfiles** configuration.
+Execute commands with elevated privileges.
 
-![Dotfiles banner][banner]
+## Overview
 
-## 📖 Description
+These aliases are defined in `sudo.aliases.sh` and loaded automatically by Chezmoi.
 
-These aliases are defined in `sudo.aliases.sh` and are automatically loaded by `chezmoi`.
+## Reference
 
-## ⚡ Aliases
+| Alias | Description |
+|:---|:---|
+| `root` | Execute command as superuser |
+| `s` | Execute command as superuser |
+| `su` | Execute command as superuser |
+| `sudo` | Execute command as superuser |
 
-This code provides a set of aliases for the `sudo` command.
-- `root` Execute a command as the superuser.
-- `s` Execute a command as the superuser.
-- `su` Execute a command as the superuser.
-- `sudo` Execute a command as the superuser.
-
-[banner]: https://kura.pro/dotfiles/v2/images/titles/title-dotfiles.svg

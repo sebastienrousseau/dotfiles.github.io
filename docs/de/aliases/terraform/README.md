@@ -1,34 +1,56 @@
 ---
-description: terraform-Aliase fuer Dotfiles
+description: Shell-Aliase fuer Terraform und Ansible. Infrastructure as Code Workflows mit einpraegsamen Befehlen vereinfachen.
 lang: de-DE
-metaTitle: terraform-Aliase - Dotfiles
+metaTitle: Terraform Aliase - Dotfiles (DE)
 permalink: /de/aliases/terraform/
+sidebar: true
+
+meta:
+  - name: keywords
+    content: terraform aliase, ansible aliase, infrastructure as code, iac aliase, dotfiles, shell
+  - name: twitter:card
+    content: summary
+  - name: twitter:title
+    content: Terraform Aliase - Dotfiles
+  - name: twitter:description
+    content: Shell-Aliase fuer Terraform und Ansible Infrastructure as Code Workflows.
+  - name: og:title
+    content: Terraform Aliase - Dotfiles
+  - name: og:description
+    content: Shell-Aliase fuer Terraform und Ansible Infrastructure as Code Workflows.
+  - name: og:image:alt
+    content: Dotfiles - Simply designed to fit your shell life
+  - name: og:locale
+    content: de_DE
 ---
-# Terraform-Aliase
 
-Terraform-Aliase verwalten. Teil der **Universal Dotfiles** Konfiguration.
+# Terraform Aliase
 
-![Dotfiles banner][banner]
+Optimieren Sie Ihre Infrastructure as Code Workflows mit Terraform und Ansible.
 
-## 📖 Beschreibung
+## Uebersicht
 
-Diese Aliase sind in `terraform.aliases.sh` definiert und werden automatisch von `chezmoi` geladen.
+Diese Aliase sind in `terraform.aliases.sh` definiert und werden automatisch von Chezmoi geladen. Sie bieten schnellen Zugriff auf gaengige Terraform- und Ansible-Operationen.
 
-## ⚡ Aliase
+## Referenz
 
-### terraform
-- `tf` - Terraform-Kurzbefehl
-- `tfi` - Init
-- `tfp` - Plan
-- `tfa` - Apply
-- `tfaa` - Apply (auto-approve)
-- `tfd` - Destroy
-- `tff` - Format
-- `tfv` - Validate
+### Terraform
 
-### ansible
-- `ans` - Ansible-Kurzbefehl
-- `ansp` - Ansible Playbook
-- `anslint` - Ansible Lint
+| Alias | Befehl | Beschreibung |
+|:---|:---|:---|
+| `tf` | `terraform` | Terraform-Verknuepfung |
+| `tfi` | `terraform init` | Arbeitsverzeichnis initialisieren |
+| `tfp` | `terraform plan` | Ausfuehrungsplan anzeigen |
+| `tfa` | `terraform apply` | Aenderungen anwenden |
+| `tfaa` | `terraform apply -auto-approve` | Aenderungen ohne Bestaetigung anwenden |
+| `tfd` | `terraform destroy` | Infrastruktur zerstoeren |
+| `tff` | `terraform fmt` | Konfigurationsdateien formatieren |
+| `tfv` | `terraform validate` | Konfiguration validieren |
 
-[banner]: https://kura.pro/dotfiles/v2/images/titles/title-dotfiles.svg
+### Ansible
+
+| Alias | Befehl | Beschreibung |
+|:---|:---|:---|
+| `ans` | `ansible` | Ansible-Verknuepfung |
+| `ansp` | `ansible-playbook` | Ansible Playbook ausfuehren |
+| `anslint` | `ansible-lint` | Playbooks linten |

@@ -1,2 +1,15 @@
 export { enNavbar } from "./en";
 export { frNavbar } from "./fr";
+export { esNavbar } from "./es";
+export { deNavbar } from "./de";
+export { zhNavbar } from "./zh";
+export { ptNavbar } from "./pt";
+export { jaNavbar } from "./ja";
+export { koNavbar } from "./ko";
+export { ruNavbar } from "./ru";
+export { itNavbar } from "./it";
+export { arNavbar } from "./ar";
+export { heNavbar } from "./he";
+export { hiNavbar } from "./hi";
+export { nlNavbar } from "./nl";
+export { idNavbar } from "./id";

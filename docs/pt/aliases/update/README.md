@@ -1,51 +1,50 @@
 ---
-description: Os alias de Update criam atalhos uteis para atualizar o sistema operacional e o software instalado. Eles ajudam a proteger e melhorar a instalacao atual dos Dotfiles contra vulnerabilidades, adicionando novas funcoes e corrigindo bugs criticos.
-lang: pt-PT
-metaTitle: Alias de Update - Dotfiles (PT)
+title: "Aliases de Update: Atualizacao do Sistema e Software"
+description: "Aliases de shell para atualizar o sistema operacional e software instalado. Mantenha seu sistema seguro e atualizado."
+lang: pt-BR
+metaTitle: "Aliases de Update | Dotfiles"
 permalink: /pt/aliases/update/
-
+sidebar: true
 meta:
   - name: keywords
-    content: aliases, update, linux, macos, shell, terminal, windows
+    content: "aliases update, atualizacao sistema, homebrew, apt, aliases shell, dotfiles"
   - name: twitter:card
-    content: Os alias de Update criam atalhos uteis para atualizar o sistema operacional e o software instalado. Eles ajudam a proteger e melhorar a instalacao atual dos Dotfiles contra vulnerabilidades, adicionando novas funcoes e corrigindo bugs criticos.
+    content: summary
   - name: twitter:description
-    content: Os alias de Update criam atalhos uteis para atualizar o sistema operacional e o software instalado. Eles ajudam a proteger e melhorar a instalacao atual dos Dotfiles contra vulnerabilidades, adicionando novas funcoes e corrigindo bugs criticos.
+    content: Aliases de shell para atualizar o sistema operacional e software instalado. Mantenha seu sistema seguro.
   - name: twitter:title
-    content: Alias de Update - Dotfiles (PT)
+    content: Aliases de Update | Dotfiles
   - name: og:title
-    content: Alias de Update - Dotfiles (PT)
+    content: Aliases de Update | Dotfiles
   - name: og:description
-    content: Os alias de Update criam atalhos uteis para atualizar o sistema operacional e o software instalado. Eles ajudam a proteger e melhorar a instalacao atual dos Dotfiles contra vulnerabilidades, adicionando novas funcoes e corrigindo bugs criticos.
+    content: Aliases de shell para atualizar o sistema operacional e software instalado. Mantenha seu sistema seguro.
   - name: og:image:alt
-    content: Dotfiles - Simplesmente projetado para sua vida no shell
+    content: Dotfiles - Simply designed to fit your shell life
   - name: og:locale
-    content: pt_PT
+    content: pt_BR
 ---
-# Alias de Update
 
-Gerenciar alias de Update. Parte da configuracao **Universal Dotfiles**.
+# Aliases de Update
 
-![Dotfiles banner][banner]
+Mantenha seu sistema atualizado e seguro.
 
-## 📖 Descricao
+## Visao Geral
 
-Esses alias sao definidos em `update.aliases.sh` e sao carregados automaticamente pelo `chezmoi`.
+Estes aliases sao definidos em `update.aliases.sh` e carregados automaticamente pelo Chezmoi.
 
-## ⚡ Alias
+## Referencia
 
-Este codigo fornece um conjunto de alias para atualizar diversos softwares no
-macOS e Linux.
 ### macOS
-- `upd` atualiza o software do macOS, pacotes Homebrew, Homebrew Casks, apps da Mac
-   App Store, toolchain Rust stable, gems Ruby, pacotes Python
-   e pacotes Node.js.
-### Linux
-- `open` abre um arquivo ou URL no app preferido do usuario.
-- `pbcopy` copia para a area de transferencia.
-- `pbpaste` cola da area de transferencia.
-- `upd` atualiza pacotes Linux, limpa cache de pacotes, atualiza pacotes pnpm,
-  atualiza toolchain Rust stable, atualiza gems Ruby, atualiza pacotes Python
-  e atualiza pacotes Node.js.
 
-[banner]: https://kura.pro/dotfiles/v2/images/titles/title-dotfiles.svg
+| Alias | Descricao |
+|-------|-------------|
+| `upd` | Atualiza o software do macOS, pacotes Homebrew, Homebrew Casks, apps da Mac App Store, toolchain Rust stable, gems Ruby, pacotes Python e pacotes Node.js |
+
+### Linux
+
+| Alias | Descricao |
+|-------|-------------|
+| `open` | Abre um arquivo ou URL no app preferido do usuario |
+| `pbcopy` | Copia para a area de transferencia |
+| `pbpaste` | Cola da area de transferencia |
+| `upd` | Atualiza pacotes Linux, limpa cache de pacotes, atualiza pacotes pnpm, atualiza toolchain Rust stable, atualiza gems Ruby, atualiza pacotes Python e atualiza pacotes Node.js |

@@ -1,69 +1,100 @@
 ---
-description: Die PNpm-Aliase sind eine Sammlung von Aliasen, die die Arbeit mit dem `pnpm` CLI-Tool erleichtern. Pnpm ist ein schneller, speichereffizienter Paketmanager.
+description: Shell-Aliase fuer pnpm-Paketverwaltung. Schneller, speichereffizienter Node.js-Paketmanager mit einpraegsamen Befehlen.
 lang: de-DE
-metaTitle: Die PNpm-Aliase - Dotfiles (DE)
+metaTitle: pnpm Aliase - Dotfiles (DE)
 permalink: /de/aliases/pnpm/
+sidebar: true
 
 meta:
   - name: keywords
-    content: aliases, pnpm, package manager, node, npm, yarn, linux, macos, shell, terminal, windows
+    content: pnpm aliase, pnpm verknuepfungen, node paketmanager, javascript dotfiles, shell
   - name: twitter:card
-    content: Die PNpm-Aliase sind eine Sammlung von Aliasen, die die Arbeit mit dem `pnpm` CLI-Tool erleichtern. Pnpm ist ein schneller, speichereffizienter Paketmanager.
-  - name: twitter:description
-    content: Die PNpm-Aliase sind eine Sammlung von Aliasen, die die Arbeit mit dem `pnpm` CLI-Tool erleichtern. Pnpm ist ein schneller, speichereffizienter Paketmanager.
+    content: summary
   - name: twitter:title
-    content: Die PNpm-Aliase - Dotfiles (DE)
+    content: pnpm Aliase - Dotfiles
+  - name: twitter:description
+    content: Shell-Aliase fuer pnpm-Paketverwaltung. Schneller, speichereffizienter Node.js-Paketmanager.
   - name: og:title
-    content: Die PNpm-Aliase - Dotfiles (DE)
+    content: pnpm Aliase - Dotfiles
   - name: og:description
-    content: Die PNpm-Aliase sind eine Sammlung von Aliasen, die die Arbeit mit dem `pnpm` CLI-Tool erleichtern. Pnpm ist ein schneller, speichereffizienter Paketmanager.
+    content: Shell-Aliase fuer pnpm-Paketverwaltung. Schneller, speichereffizienter Node.js-Paketmanager.
   - name: og:image:alt
-    content: Dotfiles - Einfach entworfen fuer dein Shell-Leben
+    content: Dotfiles - Simply designed to fit your shell life
   - name: og:locale
     content: de_DE
 ---
-# Pnpm-Aliase
 
-Pnpm-Aliase verwalten. Teil der **Universal Dotfiles** Konfiguration.
+# pnpm Aliase
 
-![Dotfiles banner][banner]
+Effiziente Paketverwaltung mit dem schnellen, speichereffizienten pnpm-Manager.
 
-## 📖 Beschreibung
+## Uebersicht
 
-Diese Aliase sind in `pnpm.aliases.sh` definiert und werden automatisch von `chezmoi` geladen.
+Diese Aliase sind in `pnpm.aliases.sh` definiert und werden automatisch von Chezmoi geladen. Sie bieten schnellen Zugriff auf [pnpm](https://pnpm.io/)-Operationen fuer Projektverwaltung, Abhaengigkeitsbehandlung und Skriptausfuehrung.
 
-## ⚡ Aliase
+## Referenz
 
-Dieser Code stellt eine Reihe von Aliasen fuer [pnpm](https://pnpm.js.org/) bereit.
-- `pni` Neues Projekt initialisieren.
-- `pnin` Projektabhaengigkeiten installieren.
-- `pnb` Projekt bauen.
-- `pnrun` Skript im Projekt ausfuehren.
-- `pnd` Projekt im Dev-Modus ausfuehren.
-- `pns` Projekt im Serve-Modus ausfuehren.
-- `pnst` Projekt starten.
-- `pnln` Projekt linten.
-- `pnls` Alle Abhaengigkeiten auflisten.
-- `pnout` Veraltete Abhaengigkeiten pruefen.
-- `pnt` Projekt testen.
-- `pntc` Projekt mit Coverage testen.
-- `pndoc` Projektdokumentation generieren.
-- `pnpub` Projekt veroeffentlichen.
-- `pnwhy` Pruefen, warum eine Abhaengigkeit installiert ist.
-- `pnui` Abhaengigkeit interaktiv aktualisieren.
-- `pnuil` Abhaengigkeit interaktiv auf neueste Version aktualisieren.
-- `pnup` Abhaengigkeit aktualisieren.
-- `pnad` Dev-Abhaengigkeit hinzufuegen.
-- `pnap` Peer-Abhaengigkeit hinzufuegen.
-- `pnrm` Abhaengigkeit entfernen.
-- `pnun` Projektabhaengigkeiten deinstallieren.
-- `pnga` Globale Abhaengigkeit hinzufuegen.
-- `pngls` Globale Abhaengigkeiten auflisten.
-- `pngrm` Globale Abhaengigkeit entfernen.
-- `pngu` Globale Abhaengigkeit aktualisieren.
-- `pnh` Hilfe anzeigen.
-- `pnc` Neues Projekt erstellen.
-- `pnsv` Projekt im Server-Modus ausfuehren.
-- `pnx` Kurzform fuer pnpx.
+### Projektinitialisierung
 
-[banner]: https://kura.pro/dotfiles/v2/images/titles/title-dotfiles.svg
+| Alias | Beschreibung |
+|:---|:---|
+| `pni` | Neues Projekt initialisieren |
+| `pnin` | Projektabhaengigkeiten installieren |
+| `pnc` | Neues Projekt erstellen |
+
+### Build und Ausfuehrung
+
+| Alias | Beschreibung |
+|:---|:---|
+| `pnb` | Projekt bauen |
+| `pnrun` | Beliebiges Skript im Projekt ausfuehren |
+| `pnd` | Projekt im Dev-Modus ausfuehren |
+| `pns` | Projekt im Serve-Modus ausfuehren |
+| `pnst` | Projekt starten |
+| `pnsv` | Projekt im Server-Modus ausfuehren |
+
+### Tests und Qualitaet
+
+| Alias | Beschreibung |
+|:---|:---|
+| `pnt` | Projekt testen |
+| `pntc` | Projekt mit Coverage testen |
+| `pnln` | Projekt linten |
+| `pndoc` | Projektdokumentation generieren |
+
+### Abhaengigkeitsverwaltung
+
+| Alias | Beschreibung |
+|:---|:---|
+| `pnad` | Dev-Abhaengigkeit hinzufuegen |
+| `pnap` | Peer-Abhaengigkeit hinzufuegen |
+| `pnrm` | Abhaengigkeit entfernen |
+| `pnun` | Projektabhaengigkeiten deinstallieren |
+| `pnls` | Alle Abhaengigkeiten auflisten |
+| `pnout` | Veraltete Abhaengigkeiten pruefen |
+| `pnwhy` | Pruefen, warum eine Abhaengigkeit installiert ist |
+
+### Updates
+
+| Alias | Beschreibung |
+|:---|:---|
+| `pnui` | Abhaengigkeit interaktiv aktualisieren |
+| `pnuil` | Abhaengigkeit interaktiv auf neueste Version aktualisieren |
+| `pnup` | Abhaengigkeit aktualisieren |
+
+### Globale Pakete
+
+| Alias | Beschreibung |
+|:---|:---|
+| `pnga` | Globale Abhaengigkeit hinzufuegen |
+| `pngls` | Globale Abhaengigkeiten auflisten |
+| `pngrm` | Globale Abhaengigkeit entfernen |
+| `pngu` | Globale Abhaengigkeit aktualisieren |
+
+### Sonstiges
+
+| Alias | Beschreibung |
+|:---|:---|
+| `pnh` | Hilfe anzeigen |
+| `pnpub` | Projekt veroeffentlichen |
+| `pnx` | Kuerzel fuer pnpx |

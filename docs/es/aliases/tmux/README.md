@@ -1,65 +1,42 @@
 ---
-description: Los alias Tmux son una coleccion de alias que permiten interactuar con el comando `tmux`. Tmux es una herramienta que permite ejecutar multiples sesiones de terminal en una sola ventana.
+description: Alias de Tmux para gestion de sesiones de terminal. Atajos para crear, adjuntar, listar y gestionar sesiones, ventanas y paneles.
 lang: es-ES
 metaTitle: Alias de Tmux - Dotfiles (ES)
 permalink: /es/aliases/tmux/
+sidebar: true
 
 meta:
   - name: keywords
-    content: aliases, tmux, linux, macos, shell, terminal, windows
+    content: alias tmux, multiplexor terminal, sesiones, ventanas, paneles, dotfiles, shell
   - name: twitter:card
-    content: Los alias Tmux son una coleccion de alias que permiten interactuar con el comando `tmux`. Tmux es una herramienta que permite ejecutar multiples sesiones de terminal en una sola ventana.
+    content: summary
   - name: twitter:description
-    content: Los alias Tmux son una coleccion de alias que permiten interactuar con el comando `tmux`. Tmux es una herramienta que permite ejecutar multiples sesiones de terminal en una sola ventana.
+    content: Alias de Tmux para gestion de sesiones de terminal. Atajos para crear, adjuntar, listar y gestionar sesiones.
   - name: twitter:title
-    content: Alias de Tmux - Dotfiles (ES)
+    content: Alias de Tmux - Dotfiles
   - name: og:title
-    content: Alias de Tmux - Dotfiles (ES)
+    content: Alias de Tmux - Dotfiles
   - name: og:description
-    content: Los alias Tmux son una coleccion de alias que permiten interactuar con el comando `tmux`. Tmux es una herramienta que permite ejecutar multiples sesiones de terminal en una sola ventana.
+    content: Alias de Tmux para gestion de sesiones de terminal. Atajos para crear, adjuntar, listar y gestionar sesiones.
   - name: og:image:alt
     content: Dotfiles - Simplemente disenado para adaptarse a tu vida en el shell
   - name: og:locale
     content: es_ES
 ---
+
 # Alias de Tmux
 
-Gestionar los alias de Tmux. Parte de la configuracion **Universal Dotfiles**.
+Atajos para el multiplexor de terminal tmux.
 
-![Dotfiles banner][banner]
+## Descripcion
 
-## 📖 Descripcion
+Estos alias estan definidos en `tmux.aliases.sh` y se cargan automaticamente por chezmoi. Proporcionan atajos practicos para operaciones comunes de tmux.
 
-Estos alias estan definidos en `tmux.aliases.sh` y se cargan automaticamente por `chezmoi`.
+## Referencia
 
-## ⚡ Alias
-
-## 🆃🅼🆄🆇 🅲🅾🅽🅵🅸🅶🆄🆁🅰🆃🅸🅾🅽
-Una configuracion tmux completa, disenada para la productividad y la facilidad de uso. La configuracion esta organizada en archivos modulares para una mejor mantenibilidad:
-- **default**: Configuracion base y de plugins
-- **display**: Configuracion visual y de comportamiento
-- **linux**: Funcionalidad especifica de plataforma
-- **navigation**: Atajos de teclado completos
-- **panes**: Configuracion especifica de paneles
-- **theme**: Barra de estado y estilo visual
-### Caracteristicas clave
-- Esquema de colores moderno con barra de estado adaptada al sistema operativo
-- Atajos de teclado intuitivos con Ctrl+a como tecla de prefijo
-- Control completo de ventanas y paneles
-- Persistencia de sesiones con tmux-resurrect y tmux-continuum
-- Menu de ayuda desplazable (presione `Ctrl+a ?` para acceder)
-- Soporte de raton para una navegacion sencilla
-### Navegacion y atajos de teclado
-Presione `Ctrl+a ?` para ver todos los atajos disponibles. Las principales funciones incluyen:
-- **Gestion de ventanas**: Dividir, crear, navegar y renombrar ventanas facilmente
-- **Navegacion de paneles**: Moverse entre paneles con las teclas h/j/k/l de Vim
-- **Gestion de sesiones**: Crear, renombrar y cambiar entre sesiones
-- **Modo de copia**: Seleccion estilo Vim, busqueda e integracion del portapapeles
-
-Alias practicos para operaciones tmux:
 | Alias | Descripcion |
-|-------|-------------|
-| `tm`  | Iniciar tmux |
+|:---|:---|
+| `tm` | Iniciar tmux |
 | `tma` | Adjuntar la ultima sesion |
 | `tmat` | Adjuntar a una sesion especifica |
 | `tmks` | Matar todas las sesiones excepto la actual |
@@ -71,27 +48,23 @@ Alias practicos para operaciones tmux:
 | `tmls` | Listar ventanas |
 | `tmlp` | Listar paneles |
 | `tmi` | Mostrar informacion de tmux |
-## Instalacion
-1. Clonar el repositorio:
-   ```bash
-   git clone https://github.com/sebastienrousseau/dotfiles.git ~/.dotfiles
-   ```
-2. Ejecutar el script de instalacion:
-   ```bash
-   cd ~/.dotfiles && ./install.sh
-   ```
-3. Instalar el gestor de plugins de tmux (si aun no esta instalado):
-   ```bash
-   git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
-   ```
-4. Abrir tmux y presionar `Ctrl+a I` para instalar los plugins
-## Uso
-Inicia una nueva sesion tmux con:
-```bash
-tmux
-```
-O utiliza cualquiera de los alias proporcionados para operaciones comunes.
-## Licencia
-MIT
 
-[banner]: https://kura.pro/dotfiles/v2/images/titles/title-dotfiles.svg
+## Caracteristicas de la configuracion
+
+La configuracion de tmux incluye:
+
+- **default**: Configuracion base y de plugins
+- **display**: Configuracion visual y de comportamiento
+- **linux**: Funcionalidad especifica de plataforma
+- **navigation**: Atajos de teclado completos
+- **panes**: Configuracion especifica de paneles
+- **theme**: Barra de estado y estilo visual
+
+### Caracteristicas clave
+
+- Esquema de colores moderno con barra de estado adaptada al sistema operativo
+- Atajos de teclado intuitivos con Ctrl+a como tecla de prefijo
+- Control completo de ventanas y paneles
+- Persistencia de sesiones con tmux-resurrect y tmux-continuum
+- Menu de ayuda desplazable (presiona `Ctrl+a ?` para acceder)
+- Soporte de raton para una navegacion sencilla

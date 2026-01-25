@@ -1,43 +1,42 @@
 ---
-description: Os alias Wget criam atalhos uteis para o comando `wget`. Wget e uma ferramenta que baixa arquivos da internet.
-lang: pt-PT
-metaTitle: Alias de Wget - Dotfiles (PT)
+title: "Aliases de Wget: Downloader de Linha de Comando"
+description: "Aliases de shell para wget. Baixe arquivos da internet com comandos simples e suporte a retomada."
+lang: pt-BR
+metaTitle: "Aliases de Wget | Dotfiles"
 permalink: /pt/aliases/wget/
-
+sidebar: true
 meta:
   - name: keywords
-    content: aliases, wget, linux, macos, shell, terminal, windows
+    content: "aliases wget, download, http, aliases shell, dotfiles"
   - name: twitter:card
-    content: Os alias Wget criam atalhos uteis para o comando `wget`. Wget e uma ferramenta que baixa arquivos da internet.
+    content: summary
   - name: twitter:description
-    content: Os alias Wget criam atalhos uteis para o comando `wget`. Wget e uma ferramenta que baixa arquivos da internet.
+    content: Aliases de shell para wget. Baixe arquivos da internet com comandos simples e suporte a retomada.
   - name: twitter:title
-    content: Alias de Wget - Dotfiles (PT)
+    content: Aliases de Wget | Dotfiles
   - name: og:title
-    content: Alias de Wget - Dotfiles (PT)
+    content: Aliases de Wget | Dotfiles
   - name: og:description
-    content: Os alias Wget criam atalhos uteis para o comando `wget`. Wget e uma ferramenta que baixa arquivos da internet.
+    content: Aliases de shell para wget. Baixe arquivos da internet com comandos simples e suporte a retomada.
   - name: og:image:alt
-    content: Dotfiles - Simplesmente projetado para sua vida no shell
+    content: Dotfiles - Simply designed to fit your shell life
   - name: og:locale
-    content: pt_PT
+    content: pt_BR
 ---
-# Alias de Wget
 
-Gerenciar alias de Wget. Parte da configuracao **Universal Dotfiles**.
+# Aliases de Wget
 
-![Dotfiles banner][banner]
+Baixe arquivos da internet com comandos simples.
 
-## 📖 Descricao
+## Visao Geral
 
-Esses alias sao definidos em `wget.aliases.sh` e sao carregados automaticamente pelo `chezmoi`.
+Estes aliases sao definidos em `wget.aliases.sh` e carregados automaticamente pelo Chezmoi.
 
-## ⚡ Alias
+## Referencia
 
-Este codigo fornece um conjunto de alias para o comando `wget`.
-- `wg` wget.
-- `wgc` wget com retomada.
-- `wge` wget com robots=off.
-- `wget` wget com retomada.
-
-[banner]: https://kura.pro/dotfiles/v2/images/titles/title-dotfiles.svg
+| Alias | Descricao |
+|-------|-------------|
+| `wg` | wget |
+| `wgc` | wget com retomada |
+| `wge` | wget com robots=off |
+| `wget` | wget com retomada |

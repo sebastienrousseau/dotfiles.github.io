@@ -1,47 +1,47 @@
 ---
-description: Make 别名用于与 `make` 交互。Make 控制可执行文件与其他构建产物生成。
+description: Make 命令的快捷别名。简化构建、测试和项目自动化。
 lang: zh-CN
-metaTitle: Make 别名 - Dotfiles (ZH)
-permalink: /zh/aliases/make/
+metaTitle: Make 别名 - Dotfiles (CN)
+permalink: /aliases/make/
+sidebar: true
 
 meta:
   - name: keywords
-    content: aliases, make, makefile, linux, macos, shell, terminal, windows
+    content: make 别名, makefile 快捷方式, 构建自动化, dotfiles, shell
   - name: twitter:card
-    content: Make 别名用于与 `make` 交互。Make 控制可执行文件与其他构建产物生成。
-  - name: twitter:description
-    content: Make 别名用于与 `make` 交互。Make 控制可执行文件与其他构建产物生成。
+    content: summary
   - name: twitter:title
-    content: Make 别名 - Dotfiles (ZH)
+    content: Make 别名 - Dotfiles
+  - name: twitter:description
+    content: Make 命令的快捷别名。简化构建、测试和项目自动化。
   - name: og:title
-    content: Make 别名 - Dotfiles (ZH)
+    content: Make 别名 - Dotfiles
   - name: og:description
-    content: Make 别名用于与 `make` 交互。Make 控制可执行文件与其他构建产物生成。
+    content: Make 命令的快捷别名。简化构建、测试和项目自动化。
   - name: og:image:alt
-    content: Dotfiles - 为你的 Shell 生活而设计
+    content: Dotfiles - 为你的 Shell 生活精心设计
   - name: og:locale
     content: zh_CN
 ---
+
 # Make 别名
 
-管理 Make 别名。**Universal Dotfiles** 配置的一部分。
+使用 Make 的简写命令简化构建工作流。
 
-![Dotfiles banner][banner]
+## 概述
 
-## 📖 描述
+这些别名提供对常用 Make 目标的快速访问。定义在 `make.aliases.sh` 中，由 chezmoi 自动加载，作为 Universal Dotfiles 配置的一部分。
 
-这些别名定义在 `make.aliases.sh` 中，并由 `chezmoi` 自动加载。
+## 参考
 
-## ⚡ 别名
-
-- `mk` - Make。
-- `mkc` - Make clean。
-- `mkd` - Make doc。
-- `mkf` - Make format。
-- `mkh` - Make help。
-- `mki` - Make install。
-- `mka` - Make all。
-- `mkr` - Make run。
-- `mkt` - Make test。
-
-[banner]: https://kura.pro/dotfiles/v2/images/titles/title-dotfiles.svg
+| 别名 | 命令 | 描述 |
+|:---|:---|:---|
+| `mk` | `make` | 运行默认 Make 目标 |
+| `mka` | `make all` | 构建所有目标 |
+| `mkc` | `make clean` | 清理构建产物 |
+| `mkd` | `make doc` | 生成文档 |
+| `mkf` | `make format` | 格式化源文件 |
+| `mkh` | `make help` | 显示帮助信息 |
+| `mki` | `make install` | 安装项目 |
+| `mkr` | `make run` | 运行项目 |
+| `mkt` | `make test` | 运行测试 |

@@ -1,74 +1,109 @@
 ---
-description: Die Google-Cloud-Aliase bieten merkbare Befehle fuer die Arbeit mit der Google-Cloud-Plattform. Alle Funktionen und Aliase sind Wrapper um die Google-Cloud-SDK CLI.
+description: Verknuepfungs-Aliase fuer Google Cloud SDK. Compute Engine, IAM, Cloud SQL und mehr mit einpraegsamen Befehlen verwalten.
 lang: de-DE
-metaTitle: Die Google-Cloud-Aliase - Dotfiles (DE)
+metaTitle: Google Cloud Aliase - Dotfiles (DE)
 permalink: /de/aliases/gcloud/
+sidebar: true
 
 meta:
   - name: keywords
-    content: aliases, gcloud, googlecloud, google, cloud, sdk, command line, cli, bash, configuration, dotfiles, linux, macos, shell, windows
+    content: gcloud aliase, google cloud cli, gcloud verknuepfungen, cloud sdk befehle, dotfiles, shell aliase
   - name: twitter:card
-    content: Die Google-Cloud-Aliase bieten merkbare Befehle fuer die Arbeit mit der Google-Cloud-Plattform. Alle Funktionen und Aliase sind Wrapper um die Google-Cloud-SDK CLI.
-  - name: twitter:description
-    content: Die Google-Cloud-Aliase bieten merkbare Befehle fuer die Arbeit mit der Google-Cloud-Plattform. Alle Funktionen und Aliase sind Wrapper um die Google-Cloud-SDK CLI.
+    content: summary
   - name: twitter:title
-    content: Die Google-Cloud-Aliase - Dotfiles (DE)
+    content: Google Cloud Aliase - Dotfiles
+  - name: twitter:description
+    content: Verknuepfungs-Aliase fuer Google Cloud SDK. Compute Engine, IAM, Cloud SQL und mehr verwalten.
   - name: og:title
-    content: Die Google-Cloud-Aliase - Dotfiles (DE)
+    content: Google Cloud Aliase - Dotfiles
   - name: og:description
-    content: Die Google-Cloud-Aliase bieten merkbare Befehle fuer die Arbeit mit der Google-Cloud-Plattform. Alle Funktionen und Aliase sind Wrapper um die Google-Cloud-SDK CLI.
+    content: Verknuepfungs-Aliase fuer Google Cloud SDK. Compute Engine, IAM, Cloud SQL und mehr verwalten.
   - name: og:image:alt
-    content: Dotfiles - Einfach entworfen fuer dein Shell-Leben
+    content: Dotfiles - Simply designed to fit your shell life
   - name: og:locale
     content: de_DE
 ---
-# Google-Cloud-Aliase
 
-Google-Cloud-Aliase verwalten. Teil der **Universal Dotfiles** Konfiguration.
+# Google Cloud Aliase
 
-![Dotfiles banner][banner]
+Einpraegsame Verknuepfungen fuer die Google Cloud SDK-Befehlszeile.
 
-## 📖 Beschreibung
+## Uebersicht
 
-Diese Aliase sind in `gcloud.aliases.sh` definiert und werden automatisch von `chezmoi` geladen.
+Diese Aliase sind in `gcloud.aliases.sh` definiert und werden automatisch von Chezmoi geladen. Sie umhuellen gaengige Google Cloud SDK-Befehle, um die Verwaltung von Compute Engine, IAM, Cloud SQL und anderen GCP-Diensten zu vereinfachen.
 
-## ⚡ Aliase
+## Referenz
 
-Dieser Code bietet eine Reihe von Aliasen fuer verschiedene Google-Cloud-Services
-wie Compute Engine, Identity and Access Management und Cloud SQL.
-- `gclb` verwaltet Google Cloud Build.
-- `gcca` verwaltet Compute-Engine-IP-Adressen.
-- `gccc` erstellt eine neue VM-Instanz.
-- `gcco` verbindet per SSH mit einer VM-Instanz.
-- `gcd` setzt das Standardprojekt auf den aktuellen Verzeichnisnamen.
-- `gcdb` verwaltet Google Cloud Datastore.
-- `gcdp` verwaltet Google Cloud Dataproc.
-- `gce` verwaltet Google Cloud Endpoints.
-- `gcem` verwaltet Google Cloud Eventarc.
-- `gcf` verwaltet Google Cloud Functions.
-- `gci` verwaltet Google-Cloud-Compute-Engine-Instanzen.
-- `gcic` verwaltet Google Cloud Identity and Access Management.
-- `gcir` verwaltet Google Cloud IoT Core.
-- `gck` listet alle Konfigurationen.
-- `gcki` verwaltet Google Cloud KMS.
-- `gcla` verwaltet Google Cloud Logging.
-- `gcma` verwaltet Google Cloud Monitoring.
-- `gcn` verwaltet Google Cloud Networks.
-- `gcp` verwaltet Google Cloud Projekte.
-- `gcpd` loescht ein Google-Cloud-Projekt.
-- `gcpha` zeigt Details zu einer Compute-Engine-IP.
-- `gcps` verwaltet Google Cloud Pub/Sub.
-- `gcr` loescht ein Container-Image aus Google Container Registry.
-- `gcrm` verwaltet Google-Cloud-Ressourcen.
-- `gcro` verwaltet Google Cloud Run.
-- `gcs` verwaltet Google Cloud Kubernetes Engine Cluster.
-- `gcsa` setzt das Konto fuer die aktuelle Konfiguration.
-- `gcsc` verwaltet Google Cloud Source Repositories.
-- `gcso` oeffnet die Google-Cloud-Konsole fuer das aktuelle Projekt.
-- `gcsq` verwaltet Google Cloud SQL.
-- `gcss` verwaltet Google Cloud Storage.
-- `gcst` aktiviert oder deaktiviert Google-Cloud-Services.
-- `gct` verwaltet Google Cloud Tasks.
-- `gcu` verwaltet Google Cloud App Engine.
+### Kernbefehle
 
-[banner]: https://kura.pro/dotfiles/v2/images/titles/title-dotfiles.svg
+| Alias | Beschreibung |
+|:---|:---|
+| `gcd` | Standardprojekt auf den Namen des aktuellen Verzeichnisses setzen |
+| `gck` | Alle Konfigurationen auflisten |
+| `gcsa` | Konto fuer aktuelle Konfiguration setzen |
+| `gcso` | Google Cloud Console fuer aktuelles Projekt oeffnen |
+
+### Compute Engine
+
+| Alias | Beschreibung |
+|:---|:---|
+| `gci` | Compute Engine-Instanzen verwalten |
+| `gcca` | Compute Engine-IP-Adressen verwalten |
+| `gccc` | Neue virtuelle Maschinen-Instanz erstellen |
+| `gcco` | Ueber SSH mit virtueller Maschinen-Instanz verbinden |
+| `gcpha` | Details fuer Compute Engine-IP-Adresse anzeigen |
+
+### Speicher und Datenbanken
+
+| Alias | Beschreibung |
+|:---|:---|
+| `gcss` | Cloud Storage verwalten |
+| `gcsq` | Cloud SQL verwalten |
+| `gcdb` | Cloud Datastore verwalten |
+
+### Serverless und Container
+
+| Alias | Beschreibung |
+|:---|:---|
+| `gcf` | Cloud Functions verwalten |
+| `gcro` | Cloud Run verwalten |
+| `gcu` | App Engine verwalten |
+| `gcs` | Kubernetes Engine-Cluster verwalten |
+| `gcr` | Container-Image aus Container Registry loeschen |
+
+### Daten und Analysen
+
+| Alias | Beschreibung |
+|:---|:---|
+| `gcdp` | Cloud Dataproc verwalten |
+| `gcps` | Cloud Pub/Sub verwalten |
+
+### Netzwerk und Sicherheit
+
+| Alias | Beschreibung |
+|:---|:---|
+| `gcn` | Cloud Networks verwalten |
+| `gcic` | Identity and Access Management verwalten |
+| `gcki` | Cloud KMS verwalten |
+
+### Betrieb und Ueberwachung
+
+| Alias | Beschreibung |
+|:---|:---|
+| `gcla` | Cloud Logging verwalten |
+| `gcma` | Cloud Monitoring verwalten |
+| `gclb` | Cloud Build verwalten |
+| `gct` | Cloud Tasks verwalten |
+
+### Zusaetzliche Dienste
+
+| Alias | Beschreibung |
+|:---|:---|
+| `gcp` | Cloud-Projekte verwalten |
+| `gcpd` | Cloud-Projekt loeschen |
+| `gce` | Cloud Endpoints verwalten |
+| `gcem` | Cloud Eventarc verwalten |
+| `gcir` | Cloud IoT Core verwalten |
+| `gcrm` | Cloud-Ressourcen verwalten |
+| `gcsc` | Cloud Source Repositories verwalten |
+| `gcst` | Cloud-Dienste aktivieren oder deaktivieren |

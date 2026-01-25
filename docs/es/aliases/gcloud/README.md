@@ -1,76 +1,113 @@
 ---
-description: Los alias de Google Cloud proporcionan comandos memorables para operar en la plataforma Google Cloud. Todas estas funciones y alias son envoltorios alrededor de las herramientas de linea de comandos del SDK de Google Cloud.
+title: "Alias Google Cloud: simplifica tu flujo de trabajo gcloud"
+description: "Alias de atajo para Google Cloud SDK. Gestiona Compute Engine, IAM, Cloud SQL y más con comandos memorables."
 lang: es-ES
-metaTitle: Los alias de Google Cloud - Dotfiles (ES)
-permalink: /es/aliases/gcloud/
-
+metaTitle: "Alias Google Cloud | Dotfiles"
+permalink: /aliases/gcloud/
+sidebar: true
 meta:
   - name: keywords
-    content: aliases, gcloud, googlecloud, google, cloud, sdk, command line, cli, bash, configuration, dotfiles, linux, macos, shell, windows
+    content: "alias gcloud, google cloud cli, atajos gcloud, comandos cloud sdk, dotfiles, alias shell"
   - name: twitter:card
-    content: Los alias de Google Cloud proporcionan comandos memorables para operar en la plataforma Google Cloud. Todas estas funciones y alias son envoltorios alrededor de las herramientas de linea de comandos del SDK de Google Cloud.
-  - name: twitter:description
-    content: Los alias de Google Cloud proporcionan comandos memorables para operar en la plataforma Google Cloud. Todas estas funciones y alias son envoltorios alrededor de las herramientas de linea de comandos del SDK de Google Cloud.
+    content: summary
   - name: twitter:title
-    content: Los alias de Google Cloud - Dotfiles (ES)
+    content: "Alias Google Cloud | Dotfiles"
+  - name: twitter:description
+    content: "Alias de atajo para Google Cloud SDK. Gestiona Compute Engine, IAM, Cloud SQL y más con comandos memorables."
   - name: og:title
-    content: Los alias de Google Cloud - Dotfiles (ES)
+    content: "Alias Google Cloud | Dotfiles"
   - name: og:description
-    content: Los alias de Google Cloud proporcionan comandos memorables para operar en la plataforma Google Cloud. Todas estas funciones y alias son envoltorios alrededor de las herramientas de linea de comandos del SDK de Google Cloud.
+    content: "Alias de atajo para Google Cloud SDK. Gestiona Compute Engine, IAM, Cloud SQL y más con comandos memorables."
   - name: og:image:alt
-    content: Dotfiles - Simplemente disenado para adaptarse a tu vida en el shell
+    content: Dotfiles - Diseñado para tu vida en el shell
   - name: og:locale
     content: es_ES
 ---
-# Alias de Google Cloud
 
-Gestionar alias de Google Cloud. Parte de la configuracion **Universal Dotfiles**.
+# Alias Google Cloud
+
+Atajos memorables para la línea de comandos de Google Cloud SDK.
 
 ![Dotfiles banner][banner]
 
-## 📖 Descripcion
+## Descubrir
 
-Estos alias estan definidos en `gcloud.aliases.sh` y se cargan automaticamente por `chezmoi`.
+Estos alias se definen en `gcloud.aliases.sh` y se cargan automáticamente por chezmoi. Envoltorios de comandos comunes de Google Cloud SDK para gestionar Compute Engine, IAM, Cloud SQL y otros servicios GCP.
 
-## ⚡ Alias
+## Referencia
 
-Este codigo proporciona un conjunto de alias de comandos para gestionar varios servicios de Google
-Cloud, como Compute Engine, Identity and Access Management y Cloud SQL. Estos alias ayudan a
-agilizar la gestion de recursos de Google Cloud con comandos simples y memorables para casos de uso
-comunes.
-- `gclb` gestiona Google Cloud Build.
-- `gcca` gestiona direcciones IP de Compute Engine.
-- `gccc` crea una nueva instancia de maquina virtual.
-- `gcco` conecta a una instancia de maquina virtual usando SSH.
-- `gcd` establece el proyecto por defecto con el nombre del directorio actual.
-- `gcdb` gestiona Google Cloud Datastore.
-- `gcdp` gestiona Google Cloud Dataproc.
-- `gce` gestiona Google Cloud Endpoints.
-- `gcem` gestiona Google Cloud Eventarc.
-- `gcf` gestiona Google Cloud Functions.
-- `gci` gestiona instancias de Google Cloud Compute Engine.
-- `gcic` gestiona Google Cloud Identity and Access Management.
-- `gcir` gestiona Google Cloud IoT Core.
-- `gck` lista todas las configuraciones.
-- `gcki` gestiona Google Cloud KMS.
-- `gcla` gestiona Google Cloud Logging.
-- `gcma` gestiona Google Cloud Monitoring.
-- `gcn` gestiona Google Cloud Networks.
-- `gcp` gestiona proyectos de Google Cloud.
-- `gcpd` elimina un proyecto de Google Cloud.
-- `gcpha` muestra detalles de una IP de Compute Engine.
-- `gcps` gestiona Google Cloud Pub/Sub.
-- `gcr` elimina una imagen de contenedor de Google Container Registry.
-- `gcrm` gestiona recursos de Google Cloud.
-- `gcro` gestiona Google Cloud Run.
-- `gcs` gestiona clusters de Google Cloud Kubernetes Engine.
-- `gcsa` establece la cuenta para la configuracion actual.
-- `gcsc` gestiona Google Cloud Source Repositories.
-- `gcso` abre la consola de Google Cloud para el proyecto actual.
-- `gcsq` gestiona Google Cloud SQL.
-- `gcss` gestiona Google Cloud Storage.
-- `gcst` habilita o deshabilita servicios de Google Cloud.
-- `gct` gestiona Google Cloud Tasks.
-- `gcu` gestiona Google Cloud App Engine.
+### Comandos principales
+
+| Alias | Descripción |
+|-------|-------------|
+| `gcd` | Establecer el proyecto por defecto al nombre del directorio actual |
+| `gck` | Listar todas las configuraciones |
+| `gcsa` | Establecer la cuenta para la configuración actual |
+| `gcso` | Abrir la Google Cloud Console del proyecto actual |
+
+### Compute Engine
+
+| Alias | Descripción |
+|-------|-------------|
+| `gci` | Gestionar instancias de Compute Engine |
+| `gcca` | Gestionar direcciones IP de Compute Engine |
+| `gccc` | Crear una nueva instancia de VM |
+| `gcco` | Conectar a una instancia por SSH |
+| `gcpha` | Mostrar detalles de una IP de Compute Engine |
+
+### Almacenamiento y bases de datos
+
+| Alias | Descripción |
+|-------|-------------|
+| `gcss` | Gestionar Cloud Storage |
+| `gcsq` | Gestionar Cloud SQL |
+| `gcdb` | Gestionar Cloud Datastore |
+
+### Serverless y contenedores
+
+| Alias | Descripción |
+|-------|-------------|
+| `gcf` | Gestionar Cloud Functions |
+| `gcro` | Gestionar Cloud Run |
+| `gcu` | Gestionar App Engine |
+| `gcs` | Gestionar clusters de Kubernetes Engine |
+| `gcr` | Eliminar una imagen de Container Registry |
+
+### Datos y analítica
+
+| Alias | Descripción |
+|-------|-------------|
+| `gcdp` | Gestionar Cloud Dataproc |
+| `gcps` | Gestionar Cloud Pub/Sub |
+
+### Redes y seguridad
+
+| Alias | Descripción |
+|-------|-------------|
+| `gcn` | Gestionar Cloud Networks |
+| `gcic` | Gestionar Identity and Access Management |
+| `gcki` | Gestionar Cloud KMS |
+
+### Operaciones y monitorización
+
+| Alias | Descripción |
+|-------|-------------|
+| `gcla` | Gestionar Cloud Logging |
+| `gcma` | Gestionar Cloud Monitoring |
+| `gclb` | Gestionar Cloud Build |
+| `gct` | Gestionar Cloud Tasks |
+
+### Servicios adicionales
+
+| Alias | Descripción |
+|-------|-------------|
+| `gcp` | Gestionar proyectos de Cloud |
+| `gcpd` | Eliminar un proyecto de Cloud |
+| `gce` | Gestionar Cloud Endpoints |
+| `gcem` | Gestionar Cloud Eventarc |
+| `gcir` | Gestionar Cloud IoT Core |
+| `gcrm` | Gestionar recursos Cloud |
+| `gcsc` | Gestionar Cloud Source Repositories |
+| `gcst` | Habilitar o deshabilitar servicios Cloud |
 
 [banner]: https://kura.pro/dotfiles/v2/images/titles/title-dotfiles.svg

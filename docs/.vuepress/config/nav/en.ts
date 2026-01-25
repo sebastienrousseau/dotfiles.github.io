@@ -1,9 +1,2 @@
 import type { NavbarConfig } from "@vuepress/theme-default";
-
-import { aliases } from "../aliases/en";
-import { about } from "../about/en";
-
-export const enNavbar: NavbarConfig = [
-  { text: "Aliases", link: "/aliases/", ariaLabel: "Aliases - Dotfiles" },
-  { text: "About", link: "/about/", ariaLabel: "About - Dotfiles" },
-];
+export const enNavbar: NavbarConfig = [];

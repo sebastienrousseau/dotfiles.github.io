@@ -1,26 +1,43 @@
 ---
-description: alias de Python para Dotfiles
+description: Alias Python para intérprete, pip, virtualenv y gestor uv. Simplifica tu flujo de trabajo Python.
 lang: es-ES
-metaTitle: alias de Python - Dotfiles
-permalink: /es/aliases/python/
+metaTitle: Aliases Python - Dotfiles (ES)
+permalink: /aliases/python/
+sidebar: true
+
+meta:
+  - name: keywords
+    content: python, pip, virtualenv, uv, alias shell, dotfiles, gestor de paquetes
+  - name: twitter:card
+    content: summary
+  - name: twitter:description
+    content: Alias Python para intérprete, pip, virtualenv y gestor uv. Simplifica tu flujo de trabajo Python.
+  - name: twitter:title
+    content: Aliases Python - Dotfiles
+  - name: og:title
+    content: Aliases Python - Dotfiles
+  - name: og:description
+    content: Alias Python para intérprete, pip, virtualenv y gestor uv. Simplifica tu flujo de trabajo Python.
+  - name: og:image:alt
+    content: Dotfiles - Diseñado para tu vida en el shell
+  - name: og:locale
+    content: es_ES
 ---
-# Alias de Python
 
-Gestionar alias de Python. Parte de la configuracion **Universal Dotfiles**.
+# Alias Python
 
-![Dotfiles banner][banner]
+Atajos para desarrollo en Python. Intérprete, paquetes y entornos virtuales.
 
-## 📖 Descripcion
+## Descubrir
 
-Estos alias estan definidos en `python.aliases.sh` y se cargan automaticamente por `chezmoi`.
+Estos alias se definen en `python.aliases.sh` y se cargan automáticamente por Chezmoi.
 
-## ⚡ Alias
+## Referencia
 
-- `py` - python
-- `pip` - pip3
-- `v` - virtualenv
-- `uv` - gestor de paquetes uv
-- `uvpi` - `uv pip install`
-
-
-[banner]: https://kura.pro/dotfiles/v2/images/titles/title-dotfiles.svg
+| Alias | Comando | Descripción |
+|:---|:---|:---|
+| `py` | `python` | Intérprete Python |
+| `pip` | `pip3` | Instalador de paquetes |
+| `v` | `virtualenv` | Entorno virtual |
+| `uv` | `uv` | Gestor de paquetes rápido |
+| `uvpi` | `uv pip install` | Instalar con uv |

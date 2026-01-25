@@ -1,42 +1,56 @@
 ---
-description: alias de Kubernetes para Dotfiles
-lang: pt-PT
-metaTitle: alias de Kubernetes - Dotfiles
+title: "Aliases de Kubernetes: Atalhos para kubectl, Helm e K9s"
+description: "Aliases de shell para Kubernetes, Helm e K9s. Gerencie pods, deployments, servicos e clusters com comandos curtos."
+lang: pt-BR
+metaTitle: "Aliases de Kubernetes | Dotfiles"
 permalink: /pt/aliases/kubernetes/
+sidebar: true
+meta:
+  - name: keywords
+    content: "aliases kubernetes, kubectl, helm, k9s, aliases shell, dotfiles"
 ---
-# Alias de Kubernetes
 
-Gerenciar alias de Kubernetes. Parte da configuracao **Universal Dotfiles**.
+# Aliases de Kubernetes
 
-![Dotfiles banner][banner]
+Gerencie clusters Kubernetes com comandos curtos.
 
-## 📖 Descricao
+## Visao Geral
 
-Esses alias sao definidos em `kubernetes.aliases.sh` e sao carregados automaticamente pelo `chezmoi`.
+Estes aliases sao definidos em `kubernetes.aliases.sh` e carregados automaticamente pelo Chezmoi.
 
-## ⚡ Alias
+## Referencia
 
-### core
-- `k` - atalho do kubectl
-- `kg` - `kubectl get`
-- `kgp` - `kubectl get pods`
-- `kga` - `kubectl get all`
-- `kd` - `kubectl describe`
-- `kdel` - `kubectl delete`
-- `kl` - `kubectl logs`
-- `kex` - `kubectl exec -it`
+### Core
 
-### context
-- `kcx` - listar contextos
-- `kuse` - trocar contexto
-- `kns` - trocar namespace
+| Alias | Descricao |
+|-------|-------------|
+| `k` | Atalho do kubectl |
+| `kg` | `kubectl get` |
+| `kgp` | `kubectl get pods` |
+| `kga` | `kubectl get all` |
+| `kd` | `kubectl describe` |
+| `kdel` | `kubectl delete` |
+| `kl` | `kubectl logs` |
+| `kex` | `kubectl exec -it` |
 
-### helm
-- `h` - atalho do Helm
-- `hls` - listar releases
-- `hi` - instalar chart
+### Contexto
 
-### ui
-- `k9` - k9s UI terminal
+| Alias | Descricao |
+|-------|-------------|
+| `kcx` | Listar contextos |
+| `kuse` | Trocar contexto |
+| `kns` | Trocar namespace |
 
-[banner]: https://kura.pro/dotfiles/v2/images/titles/title-dotfiles.svg
+### Helm
+
+| Alias | Descricao |
+|-------|-------------|
+| `h` | Atalho do Helm |
+| `hls` | Listar releases |
+| `hi` | Instalar chart |
+
+### UI
+
+| Alias | Descricao |
+|-------|-------------|
+| `k9` | K9s UI terminal |

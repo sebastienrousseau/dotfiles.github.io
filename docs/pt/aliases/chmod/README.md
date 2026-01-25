@@ -1,132 +1,99 @@
 ---
-description: Os alias de Chmod permitem alterar permissoes (modo de acesso) de arquivos ou diretorios.
-lang: pt-PT
-metaTitle: Alias de Chmod - Dotfiles (PT)
+title: "Aliases de Chmod: Atalhos de Permissao de Arquivo para Shell"
+description: "Simplifique o gerenciamento de permissoes de arquivos e diretorios com aliases de chmod. Atalhos rapidos para padroes comuns de permissao como 755, 644 e mais."
+lang: pt-BR
+metaTitle: "Aliases de Chmod | Dotfiles"
 permalink: /pt/aliases/chmod/
+sidebar: true
 meta:
+  - name: keywords
+    content: "aliases chmod, permissoes de arquivo, atalhos shell, dotfiles, permissoes unix"
   - name: twitter:card
-    content: Os alias de Chmod permitem alterar permissoes (modo de acesso) de arquivos ou diretorios.
-  - name: twitter:description
-    content: Os alias de Chmod permitem alterar permissoes (modo de acesso) de arquivos ou diretorios.
+    content: summary
   - name: twitter:title
-    content: Alias de Chmod - Dotfiles (PT)
+    content: Aliases de Chmod | Dotfiles
+  - name: twitter:description
+    content: Simplifique o gerenciamento de permissoes de arquivos e diretorios com aliases de chmod.
   - name: og:title
-    content: Alias de Chmod - Dotfiles (PT)
+    content: Aliases de Chmod | Dotfiles
   - name: og:description
-    content: Os alias de Chmod permitem alterar permissoes (modo de acesso) de arquivos ou diretorios.
+    content: Simplifique o gerenciamento de permissoes de arquivos e diretorios com aliases de chmod.
   - name: og:image:alt
-    content: Dotfiles - Simplesmente projetado para sua vida no shell
+    content: Dotfiles - Simply designed to fit your shell life
   - name: og:locale
-    content: pt_PT
+    content: pt_BR
 ---
-# Alias de Chmod
 
-Gerenciar alias de Chmod. Parte da configuracao **Universal Dotfiles**.
+# Aliases de Chmod
 
-![Dotfiles banner][banner]
+Atalhos para gerenciar permissoes de arquivos e diretorios.
 
-## 📖 Descricao
+## Visao Geral
 
-Esses alias sao definidos em `chmod.aliases.sh` e sao carregados automaticamente pelo `chezmoi`.
+Os aliases de chmod fornecem uma maneira simplificada de gerenciar permissoes de arquivos e diretorios pela linha de comando. Em vez de lembrar codigos de permissao numericos, use aliases intuitivos como `chmod_755` ou `chmod_u+x` para definir rapidamente o modo de acesso que voce precisa.
 
-## ⚡ Alias
+Estes aliases sao definidos em `chmod.aliases.sh` e sao carregados automaticamente pelo chezmoi.
 
----
-## 🚀 Introducao
-Este script fornece um conjunto aprimorado de atalhos e funcoes para o
-comando `chmod`, facilitando o gerenciamento de permissoes.
-Com validacao de entrada, confirmacao recursiva e alias amigaveis,
-voce pode ajustar permissoes com eficiencia.
----
-## 🛠️ Funcionalidades
-Aplicar permissoes comuns com alias predefinidos:
-| Alias        | Permissoes      | Descricao                               |
-|--------------|------------------|-----------------------------------------|
-| `chmod_000`  | `----------`     | Sem permissoes para todos               |
-| `chmod_400`  | `r--------`      | Somente leitura para o dono             |
-| `chmod_444`  | `r--r--r--`      | Somente leitura para todos              |
-| `chmod_600`  | `rw-------`      | Leitura/escrita para o dono             |
-| `chmod_644`  | `rw-r--r--`      | Leitura/escrita dono, leitura outros    |
-| `chmod_666`  | `rw-rw-rw-`      | Leitura/escrita para todos              |
-| `chmod_755`  | `rwxr-xr-x`      | Total dono, leitura/execucao outros     |
-| `chmod_764`  | `rwxrw-r--`      | Total dono, leitura/escrita grupo       |
-| `chmod_777`  | `rwxrwxrwx`      | Permissoes completas para todos         |
----
-### 🔧 Confirmacao recursiva
-A funcao `change_permission` permite aplicar permissoes recursivamente
-com confirmacao, mostrando o numero de itens afetados:
+## Referencia
+
+### Aliases de Permissao Comuns
+
+| Alias | Permissoes | Descricao |
+|-------|-------------|-------------|
+| `chmod_000` | `----------` | Sem permissoes para ninguem |
+| `chmod_400` | `r--------` | Somente leitura para o proprietario |
+| `chmod_444` | `r--r--r--` | Somente leitura para todos |
+| `chmod_600` | `rw-------` | Leitura/escrita para o proprietario |
+| `chmod_644` | `rw-r--r--` | Leitura/escrita para o proprietario, somente leitura para outros |
+| `chmod_666` | `rw-rw-rw-` | Leitura/escrita para todos |
+| `chmod_755` | `rwxr-xr-x` | Total para proprietario, leitura/execucao para outros |
+| `chmod_764` | `rwxrw-r--` | Total para proprietario, leitura/escrita para o grupo |
+| `chmod_777` | `rwxrwxrwx` | Permissoes totais para todos |
+
+### Aliases de Permissao do Proprietario
+
+| Alias | Descricao |
+|-------|-------------|
+| `chmod_u+x` | Adicionar permissao de execucao para o proprietario |
+| `chmod_u-x` | Remover permissao de execucao para o proprietario |
+| `chmod_u+w` | Adicionar permissao de escrita para o proprietario |
+| `chmod_u-w` | Remover permissao de escrita para o proprietario |
+| `chmod_u+r` | Adicionar permissao de leitura para o proprietario |
+| `chmod_u-r` | Remover permissao de leitura para o proprietario |
+
+### Aliases de Permissao do Grupo
+
+| Alias | Descricao |
+|-------|-------------|
+| `chmod_g+x` | Adicionar permissao de execucao para o grupo |
+| `chmod_g-x` | Remover permissao de execucao para o grupo |
+| `chmod_g+w` | Adicionar permissao de escrita para o grupo |
+| `chmod_g-w` | Remover permissao de escrita para o grupo |
+| `chmod_g+r` | Adicionar permissao de leitura para o grupo |
+| `chmod_g-r` | Remover permissao de leitura para o grupo |
+
+### Aliases de Permissao de Outros
+
+| Alias | Descricao |
+|-------|-------------|
+| `chmod_o+x` | Adicionar permissao de execucao para outros |
+| `chmod_o-x` | Remover permissao de execucao para outros |
+| `chmod_o+w` | Adicionar permissao de escrita para outros |
+| `chmod_o-w` | Remover permissao de escrita para outros |
+| `chmod_o+r` | Adicionar permissao de leitura para outros |
+| `chmod_o-r` | Remover permissao de leitura para outros |
+
+### Aliases de Tipo de Arquivo
+
+| Alias | Descricao |
+|-------|-------------|
+| `chmod_755d` | Definir permissoes de todos os diretorios para `rwxr-xr-x` |
+| `chmod_644f` | Definir permissoes de todos os arquivos para `rw-r--r--` |
+
+### Funcao de Permissao Recursiva
+
+A funcao `change_permission` aplica permissoes recursivamente com um prompt de confirmacao:
+
 ```bash
 change_permission 755 /path/to/directory -R
 ```
----
-### 📂 Atalhos para usuario, grupo e outros
-Ajuste permissoes para grupos especificos:
-| Alias         | Descricao                                |
-|---------------|------------------------------------------|
-| `chmod_u+x`   | Adicionar execucao ao dono               |
-| `chmod_u-x`   | Remover execucao do dono                 |
-| `chmod_u+w`   | Adicionar escrita ao dono                |
-| `chmod_u-w`   | Remover escrita do dono                  |
-| `chmod_u+r`   | Adicionar leitura ao dono                |
-| `chmod_u-r`   | Remover leitura do dono                  |
-| `chmod_g+x`   | Adicionar execucao ao grupo              |
-| `chmod_g-x`   | Remover execucao do grupo                |
-| `chmod_g+w`   | Adicionar escrita ao grupo               |
-| `chmod_g-w`   | Remover escrita do grupo                 |
-| `chmod_g+r`   | Adicionar leitura ao grupo               |
-| `chmod_g-r`   | Remover leitura do grupo                 |
-| `chmod_o+x`   | Adicionar execucao a outros              |
-| `chmod_o-x`   | Remover execucao de outros               |
-| `chmod_o+w`   | Adicionar escrita a outros               |
-| `chmod_o-w`   | Remover escrita de outros                |
-| `chmod_o+r`   | Adicionar leitura a outros               |
-| `chmod_o-r`   | Remover leitura de outros                |
----
-Definir permissoes para tipos de arquivo:
-| Alias        | Descricao                                        |
-|--------------|--------------------------------------------------|
-| `chmod_755d` | Definir diretorios como `rwxr-xr-x`              |
-| `chmod_644f` | Definir arquivos como `rw-r--r--`                |
----
-## 📦 Instalacao
-1. Clonar o repositorio:
-   ```bash
-   git clone https://github.com/sebastienrousseau/dotfiles.git
-   ```
-2. Adicionar o script ao shell:
-   ```bash
-   echo 'source /path/to/dotfiles/chmod.sh' >> ~/.bashrc
-   ```
-3. Recarregar o shell:
-   ```bash
-   source ~/.bashrc
-   ```
----
-## 🧑‍💻 Uso
-Exemplos de uso:
-- Aplicar permissoes comuns:
-  ```bash
-  chmod_644 /path/to/file
-  chmod_755 /path/to/directory
-  ```
-- Ajustar permissoes por grupo:
-  ```bash
-  chmod_u+x /path/to/script
-  chmod_g-w /path/to/file
-  chmod_o+r /path/to/file
-  ```
-- Permissoes recursivas com confirmacao:
-  ```bash
-  change_permission 755 /path/to/directory -R
-  ```
----
-## 🛡️ Licenca
-Este projeto e licenciado sob a
-[MIT License](https://opensource.org/licenses/MIT). Consulte `LICENSE` para mais informacoes.
----
-## 👨‍💻 Autor
-Criado com ♥ por [Sebastien Rousseau](https://sebastienrousseau.com)
-- Website: [https://sebastienrousseau.com](https://sebastienrousseau.com)
-- GitHub: [https://github.com/sebastienrousseau](https://github.com/sebastienrousseau)
-
-[banner]: https://kura.pro/dotfiles/v2/images/titles/title-dotfiles.svg

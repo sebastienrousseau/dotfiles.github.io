@@ -1,53 +1,67 @@
 ---
-description: Die Configuration-Aliase oeffnen Konfigurationsdateien fuer Terminal und Shell.
+description: Öffnen Sie Shell-, Git-, SSH- und Server-Konfigurationsdateien sofort mit diesen Shell-Aliase für Bash und Zsh.
 lang: de-DE
-metaTitle: Die Configuration-Aliase - Dotfiles (DE)
+metaTitle: Configuration Aliase - Dotfiles (DE)
 permalink: /de/aliases/configuration/
+sidebar: true
 
 meta:
   - name: keywords
-    content: aliases, configuration, dotfiles, linux, macos, shell, terminal, windows
+    content: konfiguration aliase, shell config, dotfiles, bash aliase, zsh aliase, git config, ssh config
   - name: twitter:card
-    content: Die Configuration-Aliase oeffnen Konfigurationsdateien fuer Terminal und Shell.
+    content: summary
   - name: twitter:description
-    content: Die Configuration-Aliase oeffnen Konfigurationsdateien fuer Terminal und Shell.
+    content: Öffnen Sie Shell-, Git-, SSH- und Server-Konfigurationsdateien sofort mit diesen Shell-Aliase.
   - name: twitter:title
-    content: Die Configuration-Aliase - Dotfiles (DE)
+    content: Configuration Aliase - Dotfiles
   - name: og:title
-    content: Die Configuration-Aliase - Dotfiles (DE)
+    content: Configuration Aliase - Dotfiles
   - name: og:description
-    content: Die Configuration-Aliase oeffnen Konfigurationsdateien fuer Terminal und Shell.
+    content: Öffnen Sie Shell-, Git-, SSH- und Server-Konfigurationsdateien sofort mit diesen Shell-Aliase.
   - name: og:image:alt
-    content: Dotfiles - Einfach entworfen fuer dein Shell-Leben
+    content: Dotfiles - Simply designed to fit your shell life
   - name: og:locale
     content: de_DE
 ---
-# Configuration-Aliase
 
-Configuration-Aliase verwalten. Teil der **Universal Dotfiles** Konfiguration.
+# Configuration Aliase
 
-![Dotfiles banner][banner]
+Öffnen Sie Konfigurationsdateien mit einem einzigen Befehl in Ihrem Standard-Editor.
 
-## 📖 Beschreibung
+## Übersicht
 
-Diese Aliase sind in `configuration.aliases.sh` definiert und werden automatisch von `chezmoi` geladen.
+Diese Aliase sind in `configuration.aliases.sh` definiert und werden automatisch von Chezmoi geladen.
 
-## ⚡ Aliase
+## Referenz
 
-Dieser Code bietet Befehlsaliase zum schnellen Oeffnen wichtiger
-Konfigurationsdateien im Standard-Editor.
-Folgende Aliase sind enthalten:
-- `apconf` oeffnet die Apache-Konfiguration im Standard-Editor.
-- `bshrc` oeffnet die Bash-Konfiguration im Standard-Editor.
-- `bshp` oeffnet das Bash-Profile im Standard-Editor.
-- `dockcomp` oeffnet die Docker-Compose-Datei im Standard-Editor.
-- `eddir` oeffnet das aktuelle Verzeichnis im Standard-Editor.
-- `gcfg` oeffnet die Git-Konfiguration im Standard-Editor.
-- `gign` oeffnet die Git-Ignore-Datei im Standard-Editor.
-- `hosts` oeffnet die hosts-Datei im Standard-Editor.
-- `ngconf` oeffnet die Nginx-Konfiguration im Standard-Editor.
-- `sshconf` oeffnet die SSH-Konfiguration im Standard-Editor.
-- `zshrc` oeffnet die Zsh-Konfiguration im Standard-Editor.
-- `zshp` oeffnet das Zsh-Profile im Standard-Editor.
+### Shell-Konfiguration
 
-[banner]: https://kura.pro/dotfiles/v2/images/titles/title-dotfiles.svg
+| Alias | Beschreibung |
+|:---|:---|
+| `bshrc` | Bash-Konfigurationsdatei öffnen (~/.bashrc) |
+| `bshp` | Bash-Profil öffnen (~/.bash_profile) |
+| `zshrc` | Zsh-Konfigurationsdatei öffnen (~/.zshrc) |
+| `zshp` | Zsh-Profil öffnen (~/.zprofile) |
+
+### Versionskontrolle
+
+| Alias | Beschreibung |
+|:---|:---|
+| `gcfg` | Git-Konfigurationsdatei öffnen (~/.gitconfig) |
+| `gign` | Git-Ignore-Datei öffnen (~/.gitignore) |
+
+### Netzwerk und Server
+
+| Alias | Beschreibung |
+|:---|:---|
+| `apconf` | Apache-Konfigurationsdatei öffnen |
+| `ngconf` | Nginx-Konfigurationsdatei öffnen |
+| `sshconf` | SSH-Konfigurationsdatei öffnen (~/.ssh/config) |
+| `hosts` | Hosts-Datei öffnen (/etc/hosts) |
+
+### Entwicklungstools
+
+| Alias | Beschreibung |
+|:---|:---|
+| `dockcomp` | Docker-Compose-Datei öffnen |
+| `eddir` | Aktuelles Verzeichnis im Standard-Editor öffnen |

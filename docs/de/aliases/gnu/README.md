@@ -1,93 +1,99 @@
 ---
-description: Die GNU Core Utilities Aliase bieten leistungsstarke Befehle als Kurzbefehle fuer haeufig genutzte Core Utilities. Alle Funktionen und Aliase sind Wrapper um die GNU Core Utilities, die grundlegenden Tools eines GNU/Linux-Systems.
+description: Optimieren Sie Ihren Workflow mit GNU Coreutils-Aliasen fuer Dateiverwaltung, Textverarbeitung und Pruefsummen-Werkzeuge.
 lang: de-DE
-metaTitle: Die GNU Core Utilities Aliase - Dotfiles (DE)
+metaTitle: GNU Coreutils Aliase - Dotfiles (DE)
 permalink: /de/aliases/gnu/
+sidebar: true
 
 meta:
   - name: keywords
-    content: aliases, git, gitconfig, gitconfig, git, configuration, dotfiles, linux, macos, shell, windows, bash, zsh
+    content: gnu coreutils, shell aliase, linux werkzeuge, dateiverwaltung, dotfiles
   - name: twitter:card
-    content: Die GNU Core Utilities Aliase bieten leistungsstarke Befehle als Kurzbefehle fuer haeufig genutzte Core Utilities. Alle Funktionen und Aliase sind Wrapper um die GNU Core Utilities, die grundlegenden Tools eines GNU/Linux-Systems.
-  - name: twitter:description
-    content: Die GNU Core Utilities Aliase bieten leistungsstarke Befehle als Kurzbefehle fuer haeufig genutzte Core Utilities. Alle Funktionen und Aliase sind Wrapper um die GNU Core Utilities, die grundlegenden Tools eines GNU/Linux-Systems.
+    content: summary
   - name: twitter:title
-    content: Die GNU Core Utilities Aliase - Dotfiles (DE)
+    content: GNU Coreutils Aliase - Dotfiles
+  - name: twitter:description
+    content: GNU Coreutils-Aliase fuer Dateiverwaltung, Textverarbeitung und Pruefsummen-Werkzeuge.
   - name: og:title
-    content: Die GNU Core Utilities Aliase - Dotfiles (DE)
+    content: GNU Coreutils Aliase - Dotfiles
   - name: og:description
-    content: Die GNU Core Utilities Aliase bieten leistungsstarke Befehle als Kurzbefehle fuer haeufig genutzte Core Utilities. Alle Funktionen und Aliase sind Wrapper um die GNU Core Utilities, die grundlegenden Tools eines GNU/Linux-Systems.
+    content: GNU Coreutils-Aliase fuer Dateiverwaltung, Textverarbeitung und Pruefsummen-Werkzeuge.
   - name: og:image:alt
-    content: Dotfiles - Einfach entworfen fuer dein Shell-Leben
+    content: Dotfiles - Simply designed to fit your shell life
   - name: og:locale
     content: de_DE
 ---
-# Gnu-Aliase
 
-Gnu-Aliase verwalten. Teil der **Universal Dotfiles** Konfiguration.
+# GNU Coreutils Aliase
 
-![Dotfiles banner][banner]
+Verknuepfungen zu essenziellen Unix-Werkzeugen fuer schnellere Befehlszeilen-Workflows.
 
-## 📖 Beschreibung
+## Uebersicht
 
-Diese Aliase sind in `gnu.aliases.sh` definiert und werden automatisch von `chezmoi` geladen.
+GNU Coreutils-Aliase bieten Kurzform-Befehle fuer Standard-Unix-Werkzeuge. In `gnu.aliases.sh` definiert und automatisch von Chezmoi geladen, vereinfachen diese Aliase Dateioperationen, Textverarbeitung und Datenverifizierungsaufgaben.
 
-## ⚡ Aliase
+## Referenz
 
-Dies ist eine Sammlung von Aliasen fuer das GNU Coreutils Paket, das
-standardmaessig in vielen Linux-Distributionen enthalten ist.
-Diese Aliase erleichtern die Nutzung, indem sie Kurzbefehle bereitstellen.
-Die Sammlung deckt eine breite Palette von Utilities ab, von Dateioperationen
-wie "cp" und "rm" bis zu Textverarbeitung wie "awk" und "sed". Es gibt auch
-Aliase fuer Checksums wie "md5sum" und "sha256sum".
+### Dateiverwaltung
 
-### Grundlegende Dateiverwaltungs-Utilities
-- `basename` Strip directory and suffix from filenames.
-- `cp` Copy files and directories.
-- `dirname` Strip non-directory suffix from filenames.
-- `ln` Create links between files.
-- `loname` Print the name of the link.
-- `ls` List directory contents.
-- `mkdir` Create directories.
-- `mkfifo` Make named pipes (FIFOs).
-- `mknod` Make block or character special files.
-- `mv` Move or rename files or directories.
-- `pathchk` Check file name validity and portability.
-- `pwd` Print working directory name.
-- `readlink` Print resolved symbolic links or canonical file names.
-- `realpath` Print the resolved physical path of the specified path.
-- `rm` Remove files or directories.
-- `rmdir` Remove empty directories.
-- `unlink` Remove files or directories.
-### Utilities zur Dateiinhaltsverarbeitung
-- `awk` Pattern scanning and processing language.
-- `cat` Concatenate and display files.
-- `csplit` Split a file into context-determined pieces.
-- `cut` Remove sections from each line of files.
-- `diff` Compare files line by line.
-- `fold` Wrap each input line to fit in specified width.
-- `grep` Print lines matching a pattern.
-- `head` Output the first part of files.
-- `nl` Number lines of files.
-- `paste` Merge lines of files.
-- `patch` Apply a diff file to an original.
-- `ptx` Produce a permuted index of file contents.
-- `sed` Stream editor for filtering and transforming text.
-- `sort` Sort lines of text files.
-- `split` Split a file into pieces.
-- `tail` Output the last part of files.
-- `tr` Translate or delete characters.
-### Datei-Checksum und Encryption-Utilities
-- `b2sum` Print or check BLAKE2 message digests.
-- `cksum` Print CRC checksum and byte counts.
-- `sha1sum` Print or check SHA1 message digests.
-- `sha224sum` Print or check SHA224 message digests.
-- `sha256sum` Print or check SHA256 message digests.
-- `sha384sum` Print or check SHA384 message digests.
-- `sha512sum` Print or check SHA512 message digests.
-### Andere Datei-Utilities
-- `base32` Print or convert base32 data.
-- `base64` Encode or decode base64 data.
-- `basenc` Encode or decode base64, base32,
+| Alias | Beschreibung |
+|:---|:---|
+| `basename` | Verzeichnis und Suffix von Dateinamen entfernen |
+| `cp` | Dateien und Verzeichnisse kopieren |
+| `dirname` | Nicht-Verzeichnis-Suffix von Dateinamen entfernen |
+| `ln` | Links zwischen Dateien erstellen |
+| `loname` | Namen des Links ausgeben |
+| `ls` | Verzeichnisinhalte auflisten |
+| `mkdir` | Verzeichnisse erstellen |
+| `mkfifo` | Named Pipes (FIFOs) erstellen |
+| `mknod` | Block- oder Zeichen-Spezialdateien erstellen |
+| `mv` | Dateien oder Verzeichnisse verschieben oder umbenennen |
+| `pathchk` | Gueltigkeit und Portabilitaet von Dateinamen pruefen |
+| `pwd` | Name des Arbeitsverzeichnisses ausgeben |
+| `readlink` | Aufgeloeste symbolische Links oder kanonische Dateinamen ausgeben |
+| `realpath` | Aufgeloesten physischen Pfad ausgeben |
+| `rm` | Dateien oder Verzeichnisse entfernen |
+| `rmdir` | Leere Verzeichnisse entfernen |
+| `unlink` | Dateien oder Verzeichnisse entfernen |
 
-[banner]: https://kura.pro/dotfiles/v2/images/titles/title-dotfiles.svg
+### Textverarbeitung
+
+| Alias | Beschreibung |
+|:---|:---|
+| `awk` | Mustersuche und Verarbeitungssprache |
+| `cat` | Dateien verketten und anzeigen |
+| `csplit` | Datei in kontextbestimmte Teile aufteilen |
+| `cut` | Abschnitte aus jeder Zeile entfernen |
+| `diff` | Dateien Zeile fuer Zeile vergleichen |
+| `fold` | Jede Eingabezeile auf bestimmte Breite umbrechen |
+| `grep` | Zeilen ausgeben, die einem Muster entsprechen |
+| `head` | Ersten Teil von Dateien ausgeben |
+| `nl` | Zeilen von Dateien nummerieren |
+| `paste` | Zeilen von Dateien zusammenfuehren |
+| `patch` | Diff-Datei auf Original anwenden |
+| `ptx` | Permutierter Index von Dateiinhalten erstellen |
+| `sed` | Stream-Editor zum Filtern und Transformieren von Text |
+| `sort` | Zeilen von Textdateien sortieren |
+| `split` | Datei in Teile aufteilen |
+| `tail` | Letzten Teil von Dateien ausgeben |
+| `tr` | Zeichen uebersetzen oder loeschen |
+
+### Pruefsummen-Werkzeuge
+
+| Alias | Beschreibung |
+|:---|:---|
+| `b2sum` | BLAKE2-Nachrichten-Digests ausgeben oder pruefen |
+| `cksum` | CRC-Pruefsumme und Byte-Anzahl ausgeben |
+| `sha1sum` | SHA1-Nachrichten-Digests ausgeben oder pruefen |
+| `sha224sum` | SHA224-Nachrichten-Digests ausgeben oder pruefen |
+| `sha256sum` | SHA256-Nachrichten-Digests ausgeben oder pruefen |
+| `sha384sum` | SHA384-Nachrichten-Digests ausgeben oder pruefen |
+| `sha512sum` | SHA512-Nachrichten-Digests ausgeben oder pruefen |
+
+### Kodierungs-Werkzeuge
+
+| Alias | Beschreibung |
+|:---|:---|
+| `base32` | Base32-Daten ausgeben oder konvertieren |
+| `base64` | Base64-Daten kodieren oder dekodieren |
+| `basenc` | Daten in verschiedenen Formaten kodieren oder dekodieren |

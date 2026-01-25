@@ -2,7 +2,7 @@
 description: Wie Dotfiles Ihre \$PATH-Hierarchie verwaltet, um sicherzustellen, dass die richtigen Tools in der richtigen Reihenfolge geladen werden.
 lang: de-DE
 metaTitle: Pfade (Paths) - Dotfiles (DE)
-permalink: /de/paths/
+permalink: /paths/
 
 meta:
   - name: keywords

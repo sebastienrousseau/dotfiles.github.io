@@ -1,59 +1,62 @@
 ---
-description: Os alias interativos permitem interagir com o shell e o terminal de forma mais interativa.
-lang: pt-PT
-metaTitle: Alias interativos - Dotfiles (PT)
+title: "Aliases Interativos: Operacoes Seguras com Confirmacao"
+description: "Aliases de shell interativos para operacoes potencialmente destrutivas. Confirmacao antes de sobrescrever ou remover arquivos."
+lang: pt-BR
+metaTitle: "Aliases Interativos | Dotfiles"
 permalink: /pt/aliases/interactive/
-
+sidebar: true
 meta:
   - name: keywords
-    content: aliases, bash, cp, interactive, linux, ln, macos, mv, rm, shell, terminal, windows
+    content: "aliases interativos, confirmacao, seguranca, cp, mv, rm, aliases shell, dotfiles"
   - name: twitter:card
-    content: Os alias interativos permitem interagir com o shell e o terminal de forma mais interativa.
+    content: summary
   - name: twitter:description
-    content: Os alias interativos permitem interagir com o shell e o terminal de forma mais interativa.
+    content: Aliases de shell interativos para operacoes potencialmente destrutivas. Confirmacao antes de sobrescrever ou remover arquivos.
   - name: twitter:title
-    content: Alias interativos - Dotfiles (PT)
+    content: Aliases Interativos | Dotfiles
   - name: og:title
-    content: Alias interativos - Dotfiles (PT)
+    content: Aliases Interativos | Dotfiles
   - name: og:description
-    content: Os alias interativos permitem interagir com o shell e o terminal de forma mais interativa.
+    content: Aliases de shell interativos para operacoes potencialmente destrutivas. Confirmacao antes de sobrescrever ou remover arquivos.
   - name: og:image:alt
-    content: Dotfiles - Simplesmente projetado para sua vida no shell
+    content: Dotfiles - Simply designed to fit your shell life
   - name: og:locale
-    content: pt_PT
+    content: pt_BR
 ---
-# Alias interativos
 
-Gerenciar alias interativos. Parte da configuracao **Universal Dotfiles**.
+# Aliases Interativos
 
-![Dotfiles banner][banner]
+Aliases interativos para operacoes seguras no terminal.
 
-## 📖 Descricao
+## Visao Geral
 
-Esses alias sao definidos em `interactive.aliases.sh` e sao carregados automaticamente pelo `chezmoi`.
+Estes aliases sao definidos em `interactive.aliases.sh` e carregados automaticamente pelo Chezmoi. Eles adicionam prompts de confirmacao antes de operacoes potencialmente destrutivas.
 
-## ⚡ Alias
+## Referencia
 
-Este codigo fornece alias interativos para operacoes comuns no terminal.
-Eles adicionam prompts antes de operacoes potencialmente destrutivas.
-* `cp` Copiar arquivos e diretorios interativamente (perguntar antes de sobrescrever)
-com saida detalhada.
-* `del` Remover arquivos/diretorios interativamente (perguntar antes de cada remocao)
-com saida detalhada, recursivamente.
-* `ln` Criar links simbolicos interativamente (perguntar antes de sobrescrever)
-com saida detalhada.
-* `mv` Mover/renomear arquivos interativamente (perguntar antes de sobrescrever)
-com saida detalhada.
-* `rm` Remover arquivos/diretorios interativamente (perguntar antes de cada remocao)
-com saida detalhada.
-* `zap` Alias para 'rm', remove interativamente (perguntar antes de cada remocao)
-com saida detalhada.
-### Alias para lixeira
-* `bin` Remover todos os arquivos da lixeira (.Trash) de forma forcada e recursiva.
-* `chmod` Alterar permissoes com saida detalhada.
-* `chown` Alterar proprietario e grupo com saida detalhada.
-* `diff` Comparar e mostrar diferencas em formato unificado.
-* `grep` Buscar padrao com numeros de linha e sem diferenciar maiusculas.
-* `mkdir` Criar diretorio e pais se necessario, com saida detalhada.
+### Operacoes de Arquivo
 
-[banner]: https://kura.pro/dotfiles/v2/images/titles/title-dotfiles.svg
+| Alias | Descricao |
+|-------|-------------|
+| `cp` | Copiar arquivos interativamente (perguntar antes de sobrescrever) |
+| `del` | Remover arquivos/diretorios interativamente com saida detalhada |
+| `ln` | Criar links simbolicos interativamente (perguntar antes de sobrescrever) |
+| `mv` | Mover/renomear arquivos interativamente (perguntar antes de sobrescrever) |
+| `rm` | Remover arquivos interativamente (perguntar antes de cada remocao) |
+| `zap` | Alias para 'rm', remove interativamente |
+
+### Lixeira
+
+| Alias | Descricao |
+|-------|-------------|
+| `bin` | Remover todos os arquivos da lixeira (.Trash) |
+
+### Utilitarios
+
+| Alias | Descricao |
+|-------|-------------|
+| `chmod` | Alterar permissoes com saida detalhada |
+| `chown` | Alterar proprietario e grupo com saida detalhada |
+| `diff` | Comparar e mostrar diferencas em formato unificado |
+| `grep` | Buscar padrao com numeros de linha e sem diferenciar maiusculas |
+| `mkdir` | Criar diretorio e pais se necessario, com saida detalhada |

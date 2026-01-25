@@ -1,33 +1,47 @@
 ---
-description: Los alias de clear permiten limpiar la pantalla de varias formas.
+title: "Alias Clear: gestión de pantalla del terminal"
+description: "Alias shell para limpiar la pantalla y mostrar contenido de directorios, historial y árboles."
 lang: es-ES
-metaTitle: Alias de Clear - Dotfiles (ES)
-permalink: /es/aliases/clear/
+metaTitle: "Alias Clear | Dotfiles"
+permalink: /aliases/clear/
+sidebar: true
+meta:
+  - name: keywords
+    content: "alias clear, limpiar terminal, alias shell, dotfiles, pantalla terminal"
+  - name: twitter:card
+    content: summary
+  - name: twitter:description
+    content: Alias shell para limpiar la pantalla y mostrar contenido de directorios, historial y árboles.
+  - name: twitter:title
+    content: Alias Clear | Dotfiles
+  - name: og:title
+    content: Alias Clear | Dotfiles
+  - name: og:description
+    content: Alias shell para limpiar la pantalla y mostrar contenido de directorios, historial y árboles.
+  - name: og:image:alt
+    content: Dotfiles - Diseñado para tu vida en el shell
+  - name: og:locale
+    content: es_ES
 ---
 
-# Alias de Clear
+# Alias Clear
 
-El archivo `clear.aliases.sh` crea atajos útiles para limpiar la pantalla del terminal.
+Optimiza tu flujo de trabajo en el terminal con atajos de limpieza de pantalla.
 
-## Clear
+## Descubrir
 
-[Clear](<https://es.wikipedia.org/wiki/Clear_(Unix)>) es un comando que limpia la pantalla del terminal.
+Los alias clear permiten reiniciar la pantalla del terminal y, opcionalmente, mostrar contexto útil como el contenido del directorio, el historial de comandos o el árbol de archivos. Estos alias se definen en `clear.aliases.sh` y se cargan automáticamente por chezmoi.
 
-| Alias  | Comando                                         | Descripción                                                                                                       |
-| ------ | ----------------------------------------------- | ----------------------------------------------------------------------------------------------------------------- |
-| c      | `clear`                                         | Limpiar la pantalla del terminal.                                                                                 |
-| cl     | `c`                                             | Limpiar la pantalla del terminal.                                                                                 |
-| clc    | `clear && cat`                                  | Limpiar la pantalla del terminal e imprimir el contenido del directorio actual.                                   |
-| clcat  | `clc`                                           | Limpiar la pantalla del terminal e imprimir el contenido del directorio actual.                                   |
-| clh    | `clear && history`                              | Limpiar la pantalla del terminal e imprimir el historial de comandos.                                             |
-| clhist | `clh`                                           | Limpiar la pantalla del terminal e imprimir el historial de comandos.                                             |
-| clp    | `clear && pwd`                                  | Limpiar la pantalla del terminal e imprimir el directorio de trabajo actual.                                      |
-| clpwd  | `clp`                                           | Limpiar la pantalla del terminal e imprimir el directorio de trabajo actual.                                      |
-| clr    | `c`                                             | Limpiar la pantalla del terminal.                                                                                 |
-| cls    | `c`                                             | Limpiar la pantalla del terminal.                                                                                 |
-| clt    | `clear && tree`                                 | Limpiar la pantalla del terminal e imprimir el árbol de directorios.                                              |
-| cltree | `clt`                                           | Limpiar la pantalla del terminal e imprimir el árbol de directorios.                                              |
-| ct     | `clear && tree ./`                              | Limpiar la pantalla del terminal e imprimir el árbol de directorios.                                              |
-| ctree  | `ct`                                            | Limpiar la pantalla del terminal e imprimir el árbol de directorios.                                              |
-| cpl    | `clear && pwd && echo '' && ls -a && echo ''`   | Limpiar la pantalla del terminal e imprimir el directorio de trabajo actual y el contenido del directorio actual. |
-| cplt   | `clear && pwd && echo '' && tree ./ && echo ''` | Limpiar la pantalla del terminal e imprimir el directorio de trabajo actual y el árbol de directorios.            |
+## Referencia
+
+| Alias | Descripción |
+|-------|-------------|
+| `c` | Limpiar la pantalla del terminal |
+| `cdw` | Cambiar al directorio de trabajo |
+| `cl` | Limpiar la pantalla (alias de `c`) |
+| `clc` | Limpiar y listar contenido del directorio |
+| `clh` | Limpiar y mostrar historial de comandos |
+| `clp` | Limpiar y mostrar el directorio actual |
+| `clt` | Limpiar y mostrar el árbol de directorios |
+| `cpl` | Limpiar y mostrar directorio actual con contenido |
+| `cplt` | Limpiar y mostrar directorio actual con árbol |

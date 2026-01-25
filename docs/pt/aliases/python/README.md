@@ -1,26 +1,29 @@
 ---
-description: alias de Python para Dotfiles
-lang: pt-PT
-metaTitle: alias de Python - Dotfiles
+title: "Aliases de Python: Atalhos para Desenvolvimento Python"
+description: "Aliases de shell para desenvolvimento Python. Atalhos para python, pip, virtualenv e uv."
+lang: pt-BR
+metaTitle: "Aliases de Python | Dotfiles"
 permalink: /pt/aliases/python/
+sidebar: true
+meta:
+  - name: keywords
+    content: "aliases python, pip, virtualenv, uv, aliases shell, dotfiles"
 ---
-# Alias de Python
 
-Gerenciar alias de Python. Parte da configuracao **Universal Dotfiles**.
+# Aliases de Python
 
-![Dotfiles banner][banner]
+Atalhos para desenvolvimento Python.
 
-## 📖 Descricao
+## Visao Geral
 
-Esses alias sao definidos em `python.aliases.sh` e sao carregados automaticamente pelo `chezmoi`.
+Estes aliases sao definidos em `python.aliases.sh` e carregados automaticamente pelo Chezmoi.
 
-## ⚡ Alias
+## Referencia
 
-- `py` - python
-- `pip` - pip3
-- `v` - virtualenv
-- `uv` - gerenciador de pacotes uv
-- `uvpi` - `uv pip install`
-
-
-[banner]: https://kura.pro/dotfiles/v2/images/titles/title-dotfiles.svg
+| Alias | Descricao |
+|-------|-------------|
+| `py` | python |
+| `pip` | pip3 |
+| `v` | virtualenv |
+| `uv` | gerenciador de pacotes uv |
+| `uvpi` | `uv pip install` |

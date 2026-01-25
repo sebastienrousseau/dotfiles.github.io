@@ -1,174 +1,118 @@
 ---
-description: Os alias de Change Directory permitem interagir com o comando `cd`. Cd muda o diretorio atual.
-lang: pt-PT
-metaTitle: Alias de Change Directory - Dotfiles (PT)
+description: Aliases de navegacao de diretorio com favoritos, rastreamento de historico e atalhos inteligentes. Navegue pelo seu sistema de arquivos mais rapido.
+lang: pt-BR
+metaTitle: Aliases de CD - Dotfiles (PT)
 permalink: /pt/aliases/cd/
+sidebar: true
 
 meta:
   - name: keywords
-    content: aliases, cd, chdir, change directory, directory, linux, macos, shell, terminal, windows
+    content: cd, diretorio, navegacao, favoritos, aliases shell, dotfiles, terminal
   - name: twitter:card
-    content: Os alias de Change Directory permitem interagir com o comando `cd`. Cd muda o diretorio atual.
+    content: summary
   - name: twitter:description
-    content: Os alias de Change Directory permitem interagir com o comando `cd`. Cd muda o diretorio atual.
+    content: Aliases de navegacao de diretorio com favoritos, rastreamento de historico e atalhos inteligentes. Navegue pelo seu sistema de arquivos mais rapido.
   - name: twitter:title
-    content: Alias de Change Directory - Dotfiles (PT)
+    content: Aliases de CD - Dotfiles
   - name: og:title
-    content: Alias de Change Directory - Dotfiles (PT)
+    content: Aliases de CD - Dotfiles
   - name: og:description
-    content: Os alias de Change Directory permitem interagir com o comando `cd`. Cd muda o diretorio atual.
+    content: Aliases de navegacao de diretorio com favoritos, rastreamento de historico e atalhos inteligentes. Navegue pelo seu sistema de arquivos mais rapido.
   - name: og:image:alt
-    content: Dotfiles - Simplesmente projetado para sua vida no shell
+    content: Dotfiles - Simply designed to fit your shell life
   - name: og:locale
-    content: pt_PT
+    content: pt_BR
 ---
-# Alias de Cd
 
-Gerenciar alias de Cd. Parte da configuracao **Universal Dotfiles**.
+# Aliases de CD
 
-![Dotfiles banner][banner]
+Navegue pelo seu sistema de arquivos mais rapido. Favoritos, historico e atalhos inteligentes.
 
-## 📖 Descricao
+## Visao Geral
 
-Esses alias sao definidos em `cd.aliases.sh` e sao carregados automaticamente pelo `chezmoi`.
+Estes aliases sao definidos em `cd.aliases.sh` e carregados automaticamente pelo Chezmoi.
 
-## ⚡ Alias
+## Referencia
 
----
-## 🚀 Introducao
-Este repositorio inclui um conjunto robusto de alias e scripts para
-melhorar a navegacao em diretorios:
-- Historico inteligente
-- Bookmarks persistentes
-- Deteccao de raiz do projeto
-- Compatibilidade cross-platform
-- Tratamento dinamico de erros
-- Listagem automatica
-- Otimizacao para diretorios grandes
-- Seguranca e validacao aprimoradas
----
-## 🛠️ Recursos
-### 🌟 Atalhos de navegacao
-| Alias           | Descricao                           |
-|------------------|------------------------------------|
-| `-`             | Voltar ao diretorio anterior        |
-| `..`, `...`     | Subir um ou dois niveis             |
-| `....`, `.....` | Subir tres ou quatro niveis         |
-| `hom`           | Ir para o home (`~`)                |
----
-### 📂 Acesso rapido a diretorios
-| Alias | Caminho                 | Descricao           |
-|-------|--------------------------|--------------------|
-| `app` | `${HOME}/Applications`  | Applications       |
-| `cod` | `${HOME}/Code`          | Code               |
-| `dsk` | `${HOME}/Desktop`       | Desktop            |
-| `doc` | `${HOME}/Documents`     | Documents          |
-| `dot` | `${HOME}/.dotfiles`     | Dotfiles           |
-| `dwn` | `${HOME}/Downloads`     | Downloads          |
-| `mus` | `${HOME}/Music`         | Music              |
-| `pic` | `${HOME}/Pictures`      | Pictures           |
-| `vid` | `${HOME}/Videos`        | Videos             |
----
-### 📌 Bookmarks
-| Command             | Alias | Descricao                       |
-|---------------------|-------|---------------------------------|
-| `bookmark [name]`   | `bm`  | Criar bookmark                  |
-| `bookmark_list`     | `bml` | Listar bookmarks                |
-| `bookmark_update`   | `bmu` | Atualizar bookmark              |
-| `bookmark_remove`   | `bmr` | Remover bookmark                |
-| `goto <name>`       | `bmg` | Ir para bookmark                |
+### Atalhos de navegacao
+
+| Alias | Descricao |
+|:---|:---|
+| `-` | Alternar para diretorio anterior |
+| `..` | Subir um nivel |
+| `...` | Subir dois niveis |
+| `....` | Subir tres niveis |
+| `.....` | Subir quatro niveis |
+| `hom` | Navegar para diretorio home |
+
+### Atalhos de diretorio
+
+| Alias | Caminho | Descricao |
+|:---|:---|:---|
+| `app` | `~/Applications` | Aplicativos |
+| `cod` | `~/Code` | Diretorio de codigo |
+| `dsk` | `~/Desktop` | Area de trabalho |
+| `doc` | `~/Documents` | Documentos |
+| `dot` | `~/.dotfiles` | Dotfiles |
+| `dwn` | `~/Downloads` | Downloads |
+| `mus` | `~/Music` | Musica |
+| `pic` | `~/Pictures` | Imagens |
+| `vid` | `~/Videos` | Videos |
+
+### Diretorios do sistema
+
+| Alias | Caminho | Descricao |
+|:---|:---|:---|
+| `etc` | `/etc` | Configuracao do sistema |
+| `var` | `/var` | Arquivos variaveis |
+| `tmp` | `/tmp` | Arquivos temporarios |
+| `usr` | `/usr` | Programas do usuario |
+
+### Favoritos
+
+| Comando | Alias | Descricao |
+|:---|:---|:---|
+| `bookmark [name]` | `bm` | Criar favorito |
+| `bookmark_list` | `bml` | Listar favoritos |
+| `bookmark_update` | `bmu` | Atualizar favorito |
+| `bookmark_remove` | `bmr` | Excluir favorito |
+| `goto <name>` | `bmg` | Ir para favorito |
+
 ```bash
-bm work-project
-bmg work-project
-bml
+bm work-project      # Criar favorito
+bmg work-project     # Navegar para favorito
+bml                  # Listar todos os favoritos
 ```
----
-### 🕒 Historico de diretorios
-| Command      | Alias | Descricao                         |
-|--------------|-------|-----------------------------------|
-| `dirhistory` | `dh`  | Mostrar e navegar no historico    |
-| `lwd`        | `ld`  | Voltar ao ultimo diretorio        |
----
-### 🏗️ Navegacao avancada
-| Command          | Alias | Descricao                               |
-|------------------|-------|-----------------------------------------|
-| `mkcd <dir>`     | `mcd` | Criar e entrar no diretorio             |
-| `proj`           | `pr`  | Ir para a raiz do projeto               |
-| `pushd`          | `pd`  | Empilhar diretorio                      |
-| `popd`           |       | Desempilhar diretorio                   |
-| `dirs`           |       | Listar pilha de diretorios              |
----
-### 🔧 Diretorios do sistema
-| Alias | Caminho | Descricao                        |
-|-------|--------|----------------------------------|
-| `etc` | `/etc` | Configuracao do sistema           |
-| `var` | `/var` | Arquivos variaveis                |
-| `tmp` | `/tmp` | Temporarios                       |
-| `usr` | `/usr` | Programas do usuario              |
----
-### ⚙️ Customizacao
-- Suporte a macOS/Linux
-- Variaveis de ambiente:
-  ```bash
-  export SHOW_HIDDEN_FILES=true
-  export ENABLE_COLOR_OUTPUT=true
-  export ENABLE_DIR_GROUPING=true
-  export AUTO_LIST_AFTER_CD=true
-  export LARGE_DIR_THRESHOLD=1000
-  export MAX_RECENT_DIRS=15
-  export RESTORE_LAST_DIR=true
-  ```
-- Tab completion
-- Ajuda: `cdhelp`
-- Versao: `cdversion`
----
-## 📦 Instalacao
+
+### Historico
+
+| Comando | Alias | Descricao |
+|:---|:---|:---|
+| `dirhistory` | `dh` | Mostrar historico de diretorios |
+| `lwd` | `ld` | Retornar ao ultimo diretorio |
+
+### Avancado
+
+| Comando | Alias | Descricao |
+|:---|:---|:---|
+| `mkcd <dir>` | `mcd` | Criar e entrar no diretorio |
+| `proj` | `pr` | Ir para raiz do projeto |
+| `pushd` | `pd` | Empurrar diretorio para pilha |
+| `popd` | — | Retirar da pilha |
+| `dirs` | — | Listar pilha de diretorios |
+
+## Configuracao
+
+Personalize o comportamento com variaveis de ambiente:
+
 ```bash
-git clone https://github.com/sebastienrousseau/dotfiles.git
+export SHOW_HIDDEN_FILES=true
+export ENABLE_COLOR_OUTPUT=true
+export AUTO_LIST_AFTER_CD=true
+export MAX_RECENT_DIRS=15
+export RESTORE_LAST_DIR=true
 ```
-```bash
-echo 'source /path/to/dotfiles/cd.aliases.sh' >> ~/.bashrc
-```
-```bash
-source ~/.bashrc
-```
----
-## 🧑‍💻 Exemplos
-```bash
-cd ~/projects/website
-mcd ~/projects/new-project
-bm website
-bml
-bmg website
-pr
-mcd ~/projects/app/src/components
-dh
-ld
-pd ~/downloads
-popd
-cdversion
-cdhelp
-```
----
-## 🛡️ Seguranca
-- Validacao de diretorios
-- Validacao de bookmarks
-- Operacoes seguras
-- Sanitizacao de entrada
----
-## 📋 Performance
-- Ignora listagem em diretorios grandes
-- Armazenamento eficiente de bookmarks
-- Evita duplicatas no historico
-- Operacoes otimizadas
----
-## 📚 Documentacao
-Execute `cdhelp` ou consulte a documentacao oficial.
----
-## 🛡️ License
-[MIT License](https://opensource.org/licenses/MIT).
----
-## 👨‍💻 Author
-Created with ♥ by [Sebastien Rousseau](https://sebastienrousseau.com)
-- Website: [https://sebastienrousseau.com](https://sebastienrousseau.com)
-- GitHub: [https://github.com/sebastienrousseau](https://github.com/sebastienrousseau)
+
+## Ajuda
+
+Execute `cdhelp` para ver todos os comandos ou `cdversion` para informacoes de versao.

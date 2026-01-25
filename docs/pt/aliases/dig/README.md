@@ -1,47 +1,48 @@
 ---
-description: Os alias de Dig permitem consultar varios registros DNS, incluindo enderecos de host, MX e nameservers.
-lang: pt-PT
-metaTitle: Alias de Dig - Dotfiles (PT)
+title: "Aliases de Dig: Consultas DNS Simplificadas"
+description: "Aliases de shell para consultas DNS usando dig. Consulte registros de host, MX, nameservers e endereco IP publico facilmente."
+lang: pt-BR
+metaTitle: "Aliases de Dig | Dotfiles"
 permalink: /pt/aliases/dig/
-
+sidebar: true
 meta:
+  - name: keywords
+    content: "aliases dig, consultas dns, registros mx, nameservers, endereco ip, aliases shell, dotfiles"
   - name: twitter:card
-    content: Os alias de Dig permitem consultar varios registros DNS, incluindo enderecos de host, MX e nameservers.
+    content: summary
   - name: twitter:description
-    content: Os alias de Dig permitem consultar varios registros DNS, incluindo enderecos de host, MX e nameservers.
+    content: Aliases de shell para consultas DNS usando dig. Consulte registros de host, MX, nameservers e endereco IP publico facilmente.
   - name: twitter:title
-    content: Alias de Dig - Dotfiles (PT)
+    content: Aliases de Dig | Dotfiles
   - name: og:title
-    content: Alias de Dig - Dotfiles (PT)
+    content: Aliases de Dig | Dotfiles
   - name: og:description
-    content: Os alias de Dig permitem consultar varios registros DNS, incluindo enderecos de host, MX e nameservers.
+    content: Aliases de shell para consultas DNS usando dig. Consulte registros de host, MX, nameservers e endereco IP publico facilmente.
   - name: og:image:alt
-    content: Dotfiles - Simplesmente projetado para sua vida no shell
+    content: Dotfiles - Simply designed to fit your shell life
   - name: og:locale
-    content: pt_PT
+    content: pt_BR
 ---
-# Alias de Dig
 
-Gerenciar alias de Dig. Parte da configuracao **Universal Dotfiles**.
+# Aliases de Dig
 
-![Dotfiles banner][banner]
+Consulte servidores DNS facilmente com atalhos simples.
 
-## 📖 Descricao
+## Visao Geral
 
-Esses alias sao definidos em `dig.aliases.sh` e sao carregados automaticamente pelo `chezmoi`.
+Estes aliases sao definidos em `dig.aliases.sh` e carregados automaticamente pelo Chezmoi.
 
-## ⚡ Alias
+## Referencia
 
-Este codigo fornece alias para consultas DNS com o comando dig.
-- `d`: executa dig com opcoes padrao.
-- `d4`: consulta DNS para IPv4.
-- `d6`: consulta DNS para IPv6.
-- `dga`: consulta todos os registros.
-- `dgs`: resposta curta.
-- `digg`: dig usando DNS do Google.
-- `ip4`: obter IPv4 publica.
-- `ip6`: obter IPv6 publica.
-- `ips`: obter IPv4 e IPv6 publicas.
-- `wip`: obter IP publico.
-
-[banner]: https://kura.pro/dotfiles/v2/images/titles/title-dotfiles.svg
+| Alias | Descricao |
+|-------|-------------|
+| `d` | Executa dig com opcoes padrao |
+| `d4` | Consulta DNS para IPv4 |
+| `d6` | Consulta DNS para IPv6 |
+| `dga` | Consulta todos os registros |
+| `dgs` | Resposta curta |
+| `digg` | dig usando DNS do Google |
+| `ip4` | Obter IPv4 publica |
+| `ip6` | Obter IPv6 publica |
+| `ips` | Obter IPv4 e IPv6 publicas |
+| `wip` | Obter IP publico |

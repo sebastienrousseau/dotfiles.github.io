@@ -1,89 +1,84 @@
 ---
-description: Os alias GNU Core Utilities fornecem comandos poderosos como atalhos para utilitarios GNU. Sao wrappers das ferramentas basicas de um sistema GNU/Linux.
-lang: pt-PT
-metaTitle: Os alias GNU Core Utilities - Dotfiles (PT)
+title: "Aliases GNU: Atalhos para GNU Coreutils"
+description: "Aliases de shell para GNU Core Utilities. Atalhos para utilitarios basicos de gerenciamento de arquivos, manipulacao de conteudo e checksum."
+lang: pt-BR
+metaTitle: "Aliases GNU | Dotfiles"
 permalink: /pt/aliases/gnu/
-
+sidebar: true
 meta:
   - name: keywords
-    content: aliases, git, gitconfig, gitconfig, git, configuration, dotfiles, linux, macos, shell, windows, bash, zsh
+    content: "aliases gnu, coreutils, utilitarios unix, aliases shell, dotfiles, linux"
   - name: twitter:card
-    content: Os alias GNU Core Utilities fornecem comandos poderosos como atalhos para utilitarios GNU. Sao wrappers das ferramentas basicas de um sistema GNU/Linux.
+    content: summary
   - name: twitter:description
-    content: Os alias GNU Core Utilities fornecem comandos poderosos como atalhos para utilitarios GNU. Sao wrappers das ferramentas basicas de um sistema GNU/Linux.
+    content: Aliases de shell para GNU Core Utilities. Atalhos para utilitarios basicos de gerenciamento de arquivos.
   - name: twitter:title
-    content: Os alias GNU Core Utilities - Dotfiles (PT)
+    content: Aliases GNU | Dotfiles
   - name: og:title
-    content: Os alias GNU Core Utilities - Dotfiles (PT)
+    content: Aliases GNU | Dotfiles
   - name: og:description
-    content: Os alias GNU Core Utilities fornecem comandos poderosos como atalhos para utilitarios GNU. Sao wrappers das ferramentas basicas de um sistema GNU/Linux.
+    content: Aliases de shell para GNU Core Utilities. Atalhos para utilitarios basicos de gerenciamento de arquivos.
   - name: og:image:alt
-    content: Dotfiles - Simplesmente projetado para sua vida no shell
+    content: Dotfiles - Simply designed to fit your shell life
   - name: og:locale
-    content: pt_PT
+    content: pt_BR
 ---
-# Alias Gnu
 
-Gerenciar alias Gnu. Parte da configuracao **Universal Dotfiles**.
+# Aliases GNU
 
-![Dotfiles banner][banner]
+Atalhos para GNU Core Utilities em sistemas macOS.
 
-## 📖 Descricao
+## Visao Geral
 
-Esses alias sao definidos em `gnu.aliases.sh` e sao carregados automaticamente pelo `chezmoi`.
+Estes aliases sao definidos em `gnu.aliases.sh` e carregados automaticamente pelo Chezmoi. Eles fornecem comandos abreviados para o conjunto de utilitarios Unix basicos.
 
-## ⚡ Alias
+## Referencia
 
-Colecao de alias para GNU Coreutils, um conjunto de utilitarios Unix basicos.
-Eles oferecem comandos abreviados para uso rapido.
+### Utilitarios de Gerenciamento de Arquivos
 
-### Utilitarios basicos de gerenciamento de arquivos
-- `basename` Strip directory and suffix from filenames.
-- `cp` Copy files and directories.
-- `dirname` Strip non-directory suffix from filenames.
-- `ln` Create links between files.
-- `loname` Print the name of the link.
-- `ls` List directory contents.
-- `mkdir` Create directories.
-- `mkfifo` Make named pipes (FIFOs).
-- `mknod` Make block or character special files.
-- `mv` Move or rename files or directories.
-- `pathchk` Check file name validity and portability.
-- `pwd` Print working directory name.
-- `readlink` Print resolved symbolic links or canonical file names.
-- `realpath` Print the resolved physical path of the specified path.
-- `rm` Remove files or directories.
-- `rmdir` Remove empty directories.
-- `unlink` Remove files or directories.
-### Utilitarios de manipulacao de conteudo
-- `awk` Pattern scanning and processing language.
-- `cat` Concatenate and display files.
-- `csplit` Split a file into context-determined pieces.
-- `cut` Remove sections from each line of files.
-- `diff` Compare files line by line.
-- `fold` Wrap each input line to fit in specified width.
-- `grep` Print lines matching a pattern.
-- `head` Output the first part of files.
-- `nl` Number lines of files.
-- `paste` Merge lines of files.
-- `patch` Apply a diff file to an original.
-- `ptx` Produce a permuted index of file contents.
-- `sed` Stream editor for filtering and transforming text.
-- `sort` Sort lines of text files.
-- `split` Split a file into pieces.
-- `tail` Output the last part of files.
-- `tr` Translate or delete characters.
-### Utilitarios de checksum e criptografia
-- `b2sum` Print or check BLAKE2 message digests.
-- `cksum` Print CRC checksum and byte counts.
-- `sha1sum` Print or check SHA1 message digests.
-- `sha224sum` Print or check SHA224 message digests.
-- `sha256sum` Print or check SHA256 message digests.
-- `sha384sum` Print or check SHA384 message digests.
-- `sha512sum` Print or check SHA512 message digests.
-### Outros utilitarios
-- `base32` Print or convert base32 data.
-- `base64` Encode or decode base64 data.
-- `basenc` Encode or decode base64, base32,
+| Alias | Descricao |
+|-------|-------------|
+| `basename` | Remover diretorio e sufixo de nomes de arquivo |
+| `cp` | Copiar arquivos e diretorios |
+| `dirname` | Remover sufixo nao-diretorio de nomes de arquivo |
+| `ln` | Criar links entre arquivos |
+| `ls` | Listar conteudo de diretorios |
+| `mkdir` | Criar diretorios |
+| `mv` | Mover ou renomear arquivos ou diretorios |
+| `pwd` | Imprimir nome do diretorio de trabalho |
+| `readlink` | Imprimir links simbolicos resolvidos |
+| `realpath` | Imprimir caminho fisico resolvido |
+| `rm` | Remover arquivos ou diretorios |
+| `rmdir` | Remover diretorios vazios |
 
-[banner]: https://kura.pro/dotfiles/v2/images/titles/title-dotfiles.svg
+### Utilitarios de Manipulacao de Conteudo
+
+| Alias | Descricao |
+|-------|-------------|
+| `awk` | Linguagem de varredura e processamento de padroes |
+| `cat` | Concatenar e exibir arquivos |
+| `cut` | Remover secoes de cada linha de arquivos |
+| `diff` | Comparar arquivos linha por linha |
+| `grep` | Imprimir linhas que correspondem a um padrao |
+| `head` | Exibir primeira parte de arquivos |
+| `sed` | Editor de fluxo para filtrar e transformar texto |
+| `sort` | Ordenar linhas de arquivos de texto |
+| `tail` | Exibir ultima parte de arquivos |
+| `tr` | Traduzir ou deletar caracteres |
+
+### Utilitarios de Checksum e Criptografia
+
+| Alias | Descricao |
+|-------|-------------|
+| `b2sum` | Imprimir ou verificar digests BLAKE2 |
+| `cksum` | Imprimir checksum CRC e contagem de bytes |
+| `sha1sum` | Imprimir ou verificar digests SHA1 |
+| `sha256sum` | Imprimir ou verificar digests SHA256 |
+| `sha512sum` | Imprimir ou verificar digests SHA512 |
+
+### Outros Utilitarios
+
+| Alias | Descricao |
+|-------|-------------|
+| `base64` | Codificar ou decodificar dados base64 |
+| `base32` | Imprimir ou converter dados base32 |

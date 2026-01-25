@@ -1,51 +1,55 @@
 ---
-description: Die Update-Aliase erstellen hilfreiche Kurzbefehle fuer das Aktualisieren des Betriebssystems und installierter Software. Sie sichern und verbessern die aktuelle Dotfiles-Installation, um Sicherheitsluecken zu vermeiden, neue Funktionen hinzuzufuegen und kritische Bugs zu beheben.
+description: Shell-Aliase zum Aktualisieren von Betriebssystem und Software auf macOS und Linux. Pakete, Toolchains und Abhaengigkeiten aktuell halten.
 lang: de-DE
-metaTitle: Die Update-Aliase - Dotfiles (DE)
+metaTitle: Update Aliase - Dotfiles (DE)
 permalink: /de/aliases/update/
+sidebar: true
 
 meta:
   - name: keywords
-    content: aliases, update, linux, macos, shell, terminal, windows
+    content: update aliase, system update, paket update, homebrew update, dotfiles, shell
   - name: twitter:card
-    content: Die Update-Aliase erstellen hilfreiche Kurzbefehle fuer das Aktualisieren des Betriebssystems und installierter Software. Sie sichern und verbessern die aktuelle Dotfiles-Installation, um Sicherheitsluecken zu vermeiden, neue Funktionen hinzuzufuegen und kritische Bugs zu beheben.
-  - name: twitter:description
-    content: Die Update-Aliase erstellen hilfreiche Kurzbefehle fuer das Aktualisieren des Betriebssystems und installierter Software. Sie sichern und verbessern die aktuelle Dotfiles-Installation, um Sicherheitsluecken zu vermeiden, neue Funktionen hinzuzufuegen und kritische Bugs zu beheben.
+    content: summary
   - name: twitter:title
-    content: Die Update-Aliase - Dotfiles (DE)
+    content: Update Aliase - Dotfiles
+  - name: twitter:description
+    content: Shell-Aliase zum Aktualisieren von Betriebssystem und Software auf macOS und Linux.
   - name: og:title
-    content: Die Update-Aliase - Dotfiles (DE)
+    content: Update Aliase - Dotfiles
   - name: og:description
-    content: Die Update-Aliase erstellen hilfreiche Kurzbefehle fuer das Aktualisieren des Betriebssystems und installierter Software. Sie sichern und verbessern die aktuelle Dotfiles-Installation, um Sicherheitsluecken zu vermeiden, neue Funktionen hinzuzufuegen und kritische Bugs zu beheben.
+    content: Shell-Aliase zum Aktualisieren von Betriebssystem und Software auf macOS und Linux.
   - name: og:image:alt
-    content: Dotfiles - Einfach entworfen fuer dein Shell-Leben
+    content: Dotfiles - Simply designed to fit your shell life
   - name: og:locale
     content: de_DE
 ---
-# Update-Aliase
 
-Update-Aliase verwalten. Teil der **Universal Dotfiles** Konfiguration.
+# Update Aliase
 
-![Dotfiles banner][banner]
+Halten Sie Ihr System und Ihre Entwicklungswerkzeuge auf dem neuesten Stand.
 
-## 📖 Beschreibung
+## Uebersicht
 
-Diese Aliase sind in `update.aliases.sh` definiert und werden automatisch von `chezmoi` geladen.
+Diese Aliase sind in `update.aliases.sh` definiert und werden automatisch von Chezmoi geladen. Sie bieten plattformspezifische Befehle zum Aktualisieren von Betriebssystemkomponenten und installierter Software.
 
-## ⚡ Aliase
+## Referenz
 
-Dieser Code bietet Alias-Saetze fuer das Aktualisieren verschiedener Software auf
-macOS und Linux.
 ### macOS
-- `upd` aktualisiert macOS-Software, Homebrew-Pakete, Homebrew Casks, Mac
-   App Store Apps, die Rust stable Toolchain, Ruby Gems, Python-Pakete
-   und Node.js-Pakete.
-### Linux
-- `open` oeffnet eine Datei oder URL in der bevorzugten App.
-- `pbcopy` kopiert in die Zwischenablage.
-- `pbpaste` fuegt aus der Zwischenablage ein.
-- `upd` aktualisiert Linux-Pakete, bereinigt den Paket-Cache, aktualisiert pnpm
-  Pakete, aktualisiert die Rust stable Toolchain, aktualisiert Ruby Gems,
-  aktualisiert Python-Pakete und aktualisiert Node.js-Pakete.
 
-[banner]: https://kura.pro/dotfiles/v2/images/titles/title-dotfiles.svg
+| Alias | Beschreibung |
+|:---|:---|
+| `upd` | Aktualisiert macOS-Software, Homebrew-Pakete, Homebrew Casks, Mac App Store Apps, Rust Stable Toolchain, Ruby Gems, Python-Pakete und Node.js-Pakete |
+
+### Linux
+
+| Alias | Beschreibung |
+|:---|:---|
+| `upd` | Aktualisiert Linux-Pakete, bereinigt den Paket-Cache, aktualisiert pnpm-Pakete, Rust Stable Toolchain, Ruby Gems, Python-Pakete und Node.js-Pakete |
+
+### Hilfsprogramme (Linux)
+
+| Alias | Beschreibung |
+|:---|:---|
+| `open` | Datei oder URL in der bevorzugten Anwendung oeffnen |
+| `pbcopy` | In die Zwischenablage kopieren |
+| `pbpaste` | Aus der Zwischenablage einfuegen |

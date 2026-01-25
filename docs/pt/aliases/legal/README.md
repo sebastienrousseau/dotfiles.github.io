@@ -1,38 +1,52 @@
 ---
-description: alias legais para Dotfiles
-lang: pt-PT
-metaTitle: alias legais - Dotfiles
+title: "Aliases Legais: Compliance Open Source e Licencas"
+description: "Aliases de shell para compliance open source, scans de licenca e atribuicao. Ferramentas para verificacao de licencas e geracao de NOTICE."
+lang: pt-BR
+metaTitle: "Aliases Legais | Dotfiles"
 permalink: /pt/aliases/legal/
+sidebar: true
+meta:
+  - name: keywords
+    content: "aliases legais, licencas, open source, fossology, trivy, aliases shell, dotfiles"
 ---
-# Alias legais e licencas
+
+# Aliases Legais e Licencas
 
 Ferramentas para compliance open source, scans de licenca e atribuicao.
 
-## ⚖️ Alias
+## Visao Geral
 
-### License Scanning
-| Alias | Description | Type |
-|-------|-------------|------|
+Estes aliases sao definidos em `legal.aliases.sh` e carregados automaticamente pelo Chezmoi.
+
+## Referencia
+
+### Scan de Licenca
+
+| Alias | Descricao | Tipo |
+|-------|-----------|------|
 | `fossology-start` | Iniciar servidor FOSSology local na porta 8081 | Docker |
 | `fossology-stop` | Parar servidor FOSSology | Docker |
 | `license-scan` | Scan rapido de licenca (Trivy) | Binary |
 
-### Copyright Headers
-| Alias | Description | Type |
-|-------|-------------|------|
+### Headers de Copyright
+
+| Alias | Descricao | Tipo |
+|-------|-----------|------|
 | `add-headers` | Adicionar headers MIT recursivamente | Docker (google/addlicense) |
 
-### Attribution
-| Alias | Description | Type |
-|-------|-------------|------|
+### Atribuicao
+
+| Alias | Descricao | Tipo |
+|-------|-----------|------|
 | `gen-notice` | Gerar arquivo `NOTICE` | Docker |
 
-### Contribution
-| Alias | Description | Type |
-|-------|-------------|------|
+### Contribuicao
+
+| Alias | Descricao | Tipo |
+|-------|-----------|------|
 | `check-cla` | Monitorar checks de PR (incluindo CLA) | CLI (`gh`) |
 
-## 📦 Requisitos
+## Requisitos
 
 - **Docker**
 - **GitHub CLI (`gh`)**

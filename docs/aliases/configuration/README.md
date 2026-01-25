@@ -1,55 +1,69 @@
 ---
-description: The Configuration aliases are aliases for opening the configuration files for the terminal and the shell.
+title: "Configuration Aliases: Quick Access to Config Files"
+description: "Open shell, Git, SSH, and server configuration files instantly with these shell aliases for Bash and Zsh."
 lang: en-GB
-metaTitle: The Configuration aliases - Dotfiles (UK)
+metaTitle: "Configuration Aliases | Dotfiles"
 permalink: /aliases/configuration/
-
+sidebar: true
 meta:
   - name: keywords
-    content: aliases, configuration, dotfiles, linux, macos, shell, terminal, windows
+    content: "configuration aliases, shell config, dotfiles, bash aliases, zsh aliases, git config, ssh config"
   - name: twitter:card
-    content: The Configuration aliases are aliases for opening the configuration files for the terminal and the shell.
-  - name: twitter:description
-    content: The Configuration aliases are aliases for opening the configuration files for the terminal and the shell.
+    content: summary
   - name: twitter:title
-    content: The Configuration aliases - Dotfiles (UK)
+    content: Configuration Aliases | Dotfiles
+  - name: twitter:description
+    content: Open shell, Git, SSH, and server configuration files instantly with these shell aliases.
   - name: og:title
-    content: The Configuration aliases - Dotfiles (UK)
+    content: Configuration Aliases | Dotfiles
   - name: og:description
-    content: The Configuration aliases are aliases for opening the configuration files for the terminal and the shell.
+    content: Open shell, Git, SSH, and server configuration files instantly with these shell aliases.
   - name: og:image:alt
     content: Dotfiles - Simply designed to fit your shell life
   - name: og:locale
     content: en_GB
 ---
+
 # Configuration Aliases
 
-Manage Configuration aliases. Part of the **Universal Dotfiles** configuration.
+Open configuration files in your default editor with a single command.
 
-![Dotfiles banner][banner]
+## Overview
 
-## 📖 Description
+Configuration aliases provide shortcuts to open frequently edited configuration files. These aliases are defined in `configuration.aliases.sh` and loaded automatically by chezmoi.
 
-These aliases are defined in `configuration.aliases.sh` and are automatically loaded by `chezmoi`.
+Each alias launches the corresponding file in your system's default text editor, eliminating the need to remember file paths or type lengthy commands.
 
-## ⚡ Aliases
+## Reference
 
-This code provides a set of command aliases to open important
-configuration files in default text editors quickly and easily. The
-following aliases are included:
-- `apconf` opens the Apache configuration file in the default text
-  editor.
-- `bshrc` opens the Bash configuration file in the default text editor.
-- `bshp` opens the Bash profile in the default text editor.
-- `dockcomp` opens the Docker Compose file in the default text editor.
-- `eddir` opens the current directory in the default text editor.
-- `gcfg` opens the Git configuration file in the default text editor.
-- `gign` opens the Git ignore file in the default text editor.
-- `hosts` opens the hosts file in the default text editor.
-- `ngconf` opens the Nginx configuration file in the default text
-  editor.
-- `sshconf` opens the SSH configuration file in the default text editor.
-- `zshrc` opens the Zsh configuration file in the default text editor.
-- `zshp` opens the Zsh profile in the default text editor.
+### Shell Configuration
 
-[banner]: https://kura.pro/dotfiles/v2/images/titles/title-dotfiles.svg
+| Alias | Description |
+|-------|-------------|
+| `bshrc` | Open Bash configuration file (~/.bashrc) |
+| `bshp` | Open Bash profile (~/.bash_profile) |
+| `zshrc` | Open Zsh configuration file (~/.zshrc) |
+| `zshp` | Open Zsh profile (~/.zprofile) |
+
+### Version Control
+
+| Alias | Description |
+|-------|-------------|
+| `gcfg` | Open Git configuration file (~/.gitconfig) |
+| `gign` | Open Git ignore file (~/.gitignore) |
+
+### Network and Servers
+
+| Alias | Description |
+|-------|-------------|
+| `apconf` | Open Apache configuration file |
+| `ngconf` | Open Nginx configuration file |
+| `sshconf` | Open SSH configuration file (~/.ssh/config) |
+| `hosts` | Open hosts file (/etc/hosts) |
+
+### Development Tools
+
+| Alias | Description |
+|-------|-------------|
+| `dockcomp` | Open Docker Compose file |
+| `eddir` | Open current directory in default editor |

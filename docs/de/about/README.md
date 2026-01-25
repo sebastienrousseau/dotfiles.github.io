@@ -1,92 +1,105 @@
 ---
-description: Die nächste Generation von Konfigurationsdateien, verwaltet von Chezmoi. Hochleistungsfähig, sicher und AI-nativ.
+description: Die nächste Generation der Shell-Konfiguration. Hochleistungsfähig, sicher und AI-nativ. Verwaltet von Chezmoi.
 lang: de-DE
-metaTitle: Über - Dotfiles (DE)
+metaTitle: Über Dotfiles - Dotfiles (DE)
 permalink: /de/about/
+sidebar: true
 
 meta:
   - name: keywords
-    content: chezmoi, dotfiles, konfiguration, automatisierung, macos, linux, rust, zellij
+    content: chezmoi, dotfiles, konfiguration, automatisierung, macos, linux, rust, zellij, shell, terminal
+  - name: twitter:card
+    content: summary
+  - name: twitter:description
+    content: Die nächste Generation der Shell-Konfiguration. Hochleistungsfähig, sicher und AI-nativ. Verwaltet von Chezmoi.
+  - name: twitter:title
+    content: Über Dotfiles
+  - name: og:title
+    content: Über Dotfiles
+  - name: og:description
+    content: Die nächste Generation der Shell-Konfiguration. Hochleistungsfähig, sicher und AI-nativ. Verwaltet von Chezmoi.
+  - name: og:image:alt
+    content: Dotfiles - Simply designed to fit your shell life
+  - name: og:locale
+    content: de_DE
 ---
 
-# Über Dotfiles v0.2.471
+# Über Dotfiles
 
-## Einführung
+Der moderne Standard für Shell-Konfiguration. Basiert auf **Chezmoi** für sichere, plattformübergreifende Umgebungsverwaltung.
 
-Dotfiles repräsentiert den modernen Standard für die Umgebungskonfiguration. Es basiert auf **Chezmoi** und bietet eine sichere, zuverlässige und plattformübergreifende Möglichkeit, Ihre Shell, Anwendungen und Geheimnisse zu verwalten.
+## Entdecken
 
-Im Gegensatz zu alten Dotfiles, die auf komplexen Makefiles oder Symlink-Skripten basieren, verwendet Dotfiles einen vorlagenbasierten Ansatz, der atomar und schnell ist.
+Dotfiles v0.2.474 transformiert Ihr Terminal in einen leistungsstarken, einheitlichen Arbeitsbereich. Im Gegensatz zu alten Dotfiles, die auf komplexen Makefiles oder Symlink-Skripten basieren, verwendet Dotfiles einen vorlagenbasierten Ansatz, der atomar, schnell und reproduzierbar ist.
 
-## Was ist neu in v0.2.471
+### Was ist neu
 
-- **Moderner Kern**: Wir haben alte Unix-Tools durch leistungsstarke Rust-Alternativen ersetzt:
-  - **Atuin** (ersetzt `history`)
-  - **Yazi** (ersetzt `ls`/`ranger`)
-  - **Zellij** (ersetzt `tmux`)
-  - **Ghostty** (Modernes GPU-beschleunigtes Terminal)
-  - **NeoVim** (Moderner Vim-basierter Editor)
-- **Native Sicherheit**: Vollständig native SSH-Signierung (schlüssellos/ohne Eigentümer) ohne Drittanbieter-Agenten.
-- **Interaktiver Modus**: Neuer Befehl `dot learn`, um Sie durch die Funktionen zu führen.
+- **Moderner Kern** — Hochleistungs-Rust-Alternativen ersetzen alte Unix-Tools:
+  - **Atuin** für Shell-Verlauf
+  - **Yazi** für Dateiverwaltung
+  - **Zellij** für Terminal-Multiplexing
+  - **Ghostty** für GPU-beschleunigtes Terminal
+  - **NeoVim** für modernes Editieren
+- **Native Sicherheit** — Vollständig native SSH-Signierung ohne Drittanbieter-Agenten
+- **Interaktiver Modus** — Neuer `dot learn` Befehl führt Sie durch die Funktionen
 
 ## Erste Schritte
 
-### :one: Voraussetzungen
+### Voraussetzungen
 
 - **macOS**, **Linux (Ubuntu/Debian)** oder **Windows (WSL)**
-- **Curl** (zum Herunterladen des Installers)
-- **Git**
-- **Chezmoi** (wird bei Bedarf durch das Skript installiert)
+- **Curl** und **Git**
+- **Chezmoi** (wird automatisch installiert)
 - **Nerd Font** (für Terminal-Icons)
 
-### :two: Installation (Einzeilig)
+### Installation
 
-Die gesamte Suite wird mit einem einzigen Befehl über Chezmoi installiert:
+Führen Sie einen einzigen Befehl aus, um die gesamte Suite zu installieren:
 
 ```bash
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/sebastienrousseau/dotfiles/v0.2.471/install.sh)"
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/sebastienrousseau/dotfiles/v0.2.474/install.sh)"
 ```
 
-Dieser Befehl wird:
+Der Installer wird:
 
-1.  Die `chezmoi`-Binärdatei installieren.
-2.  Das Repository klonen.
-3.  **Automatisch** erforderliche Pakete installieren (über Homebrew auf macOS oder Apt auf Linux).
-4.  Die Konfiguration anwenden.
+1. Die `chezmoi`-Binärdatei installieren
+2. Das Repository klonen
+3. Erforderliche Pakete über Homebrew (macOS) oder Apt (Linux) installieren
+4. Ihre Konfiguration anwenden
 
-### :three: Nach der Installation
+### Erkunden
 
-Nach der Installation starten Sie Ihr Terminal neu und geben dann ein:
+Nach der Installation starten Sie Ihr Terminal neu und führen Sie aus:
 
 ```bash
 dot learn
 ```
 
-Dies startet die interaktive Tour, um Sie mit Ihrer neuen Umgebung vertraut zu machen.
+Dies startet eine interaktive Tour durch Ihre neue Umgebung.
 
-## Was ist enthalten
+## Anpassen
 
-Ihre Konfiguration wird in `~/.local/share/chezmoi` verwaltet.
+Ihre Konfiguration befindet sich in `~/.local/share/chezmoi`:
 
-```bash
+```
 ~/.local/share/chezmoi
-├── dot_zshenv              # Einstiegspunkt der Shell (XDG-Bootloader)
-├── dot_config/             # XDG-Basiskonfiguration (auf ~/.config abgebildet)
-│   ├── atuin/              # Shell-Verlauf (config.toml)
-│   ├── ghostty/            # Terminal-Emulator (config)
-│   ├── git/                # Git-Konfiguration (config)
-│   ├── yazi/               # Dateimanager (yazi.toml)
-│   ├── zellij/             # Multiplexer (config.kdl)
-│   ├── zsh/                # Zsh-Konfiguration (.zshrc)
-│   └── shell/              # Gemeinsame Shell-Konfiguration (Aliases, Pfade)
-├── provision/              # Lifecycle-Skripte (Pakete, Schriftarten)
+├── dot_zshenv              # Shell-Einstiegspunkt
+├── dot_config/             # XDG-Basiskonfiguration (~/.config)
+│   ├── atuin/              # Shell-Verlauf
+│   ├── ghostty/            # Terminal-Emulator
+│   ├── git/                # Git-Konfiguration
+│   ├── yazi/               # Dateimanager
+│   ├── zellij/             # Terminal-Multiplexer
+│   ├── zsh/                # Zsh-Konfiguration
+│   └── shell/              # Gemeinsame Aliase und Pfade
+├── provision/              # Lifecycle-Skripte
 ├── install.sh              # Universeller Installer
-├── README.md               # Dokumentation
-└── docs/                   # Detaillierte Dokumentation
+└── docs/                   # Dokumentation
 ```
 
 ## Beitragen
 
-Wir freuen uns über Beiträge! Bitte lesen Sie unseren [Verhaltenskodex][code-of-conduct-url] und unsere [Beitragsrichtlinien][contributing-url].
+Treten Sie der Community bei. Lesen Sie unseren [Verhaltenskodex][code-of-conduct-url] und unsere [Beitragsrichtlinien][contributing-url].
 
 [code-of-conduct-url]: https://github.com/sebastienrousseau/dotfiles/blob/master/.github/CODE-OF-CONDUCT.md
 [contributing-url]: https://github.com/sebastienrousseau/dotfiles/blob/master/.github/CONTRIBUTING.md

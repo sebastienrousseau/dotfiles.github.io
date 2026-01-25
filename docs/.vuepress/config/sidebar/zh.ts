@@ -1,14 +1,66 @@
 import type { SidebarConfig } from "@vuepress/theme-default";
-import { aliases } from "../aliases/zh";
-import { about } from "../about/zh";
 
-export const zhSidebar: SidebarConfig = [
-  about,
-  ["/zh/paths/", "路径"],
-  ["/zh/functions/", "函数"],
-  {
-    title: "别名",
-    collapsable: false,
-    children: aliases.children,
-  },
-];
+export const zhSidebar: SidebarConfig = {
+  "/zh/": [
+    {
+      title: "入门指南",
+      collapsable: false,
+      children: [
+        "/zh/about/",
+        "/zh/functions/",
+        "/zh/paths/",
+      ],
+    },
+    {
+      title: "别名",
+      collapsable: false,
+      children: [
+        "/zh/aliases/",
+        "/zh/aliases/ai/",
+        "/zh/aliases/archives/",
+        "/zh/aliases/cd/",
+        "/zh/aliases/chmod/",
+        "/zh/aliases/clear/",
+        "/zh/aliases/compliance/",
+        "/zh/aliases/configuration/",
+        "/zh/aliases/default/",
+        "/zh/aliases/diagnostics/",
+        "/zh/aliases/dig/",
+        "/zh/aliases/disk-usage/",
+        "/zh/aliases/docker/",
+        "/zh/aliases/editor/",
+        "/zh/aliases/find/",
+        "/zh/aliases/fonts/",
+        "/zh/aliases/gcloud/",
+        "/zh/aliases/git/",
+        "/zh/aliases/gnu/",
+        "/zh/aliases/go/",
+        "/zh/aliases/heroku/",
+        "/zh/aliases/installer/",
+        "/zh/aliases/interactive/",
+        "/zh/aliases/kubernetes/",
+        "/zh/aliases/legal/",
+        "/zh/aliases/macOS/",
+        "/zh/aliases/make/",
+        "/zh/aliases/mkdir/",
+        "/zh/aliases/modern/",
+        "/zh/aliases/npm/",
+        "/zh/aliases/permission/",
+        "/zh/aliases/pnpm/",
+        "/zh/aliases/ps/",
+        "/zh/aliases/python/",
+        "/zh/aliases/rsync/",
+        "/zh/aliases/rust/",
+        "/zh/aliases/security/",
+        "/zh/aliases/subversion/",
+        "/zh/aliases/sudo/",
+        "/zh/aliases/terraform/",
+        "/zh/aliases/tmux/",
+        "/zh/aliases/update/",
+        "/zh/aliases/uuid/",
+        "/zh/aliases/wget/",
+        "/zh/aliases/yarn/",
+      ],
+    },
+  ],
+};

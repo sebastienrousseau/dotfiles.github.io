@@ -1,43 +1,42 @@
 ---
-description: Os alias Sudo sao uma colecao de alias que permitem interagir com o comando `sudo`. Sudo e uma ferramenta que permite executar comandos como outro usuario.
-lang: pt-PT
-metaTitle: Alias de Sudo - Dotfiles (PT)
+title: "Aliases de Sudo: Operacoes de Superusuario"
+description: "Aliases de shell para sudo. Atalhos para executar comandos como superusuario."
+lang: pt-BR
+metaTitle: "Aliases de Sudo | Dotfiles"
 permalink: /pt/aliases/sudo/
-
+sidebar: true
 meta:
   - name: keywords
-    content: aliases, sudo, linux, macos, shell, terminal, windows
+    content: "aliases sudo, superusuario, root, aliases shell, dotfiles"
   - name: twitter:card
-    content: Os alias Sudo sao uma colecao de alias que permitem interagir com o comando `sudo`. Sudo e uma ferramenta que permite executar comandos como outro usuario.
+    content: summary
   - name: twitter:description
-    content: Os alias Sudo sao uma colecao de alias que permitem interagir com o comando `sudo`. Sudo e uma ferramenta que permite executar comandos como outro usuario.
+    content: Aliases de shell para sudo. Atalhos para executar comandos como superusuario.
   - name: twitter:title
-    content: Alias de Sudo - Dotfiles (PT)
+    content: Aliases de Sudo | Dotfiles
   - name: og:title
-    content: Alias de Sudo - Dotfiles (PT)
+    content: Aliases de Sudo | Dotfiles
   - name: og:description
-    content: Os alias Sudo sao uma colecao de alias que permitem interagir com o comando `sudo`. Sudo e uma ferramenta que permite executar comandos como outro usuario.
+    content: Aliases de shell para sudo. Atalhos para executar comandos como superusuario.
   - name: og:image:alt
-    content: Dotfiles - Simplesmente projetado para sua vida no shell
+    content: Dotfiles - Simply designed to fit your shell life
   - name: og:locale
-    content: pt_PT
+    content: pt_BR
 ---
-# Alias de Sudo
 
-Gerenciar alias de Sudo. Parte da configuracao **Universal Dotfiles**.
+# Aliases de Sudo
 
-![Dotfiles banner][banner]
+Atalhos para operacoes de superusuario.
 
-## 📖 Descricao
+## Visao Geral
 
-Esses alias sao definidos em `sudo.aliases.sh` e sao carregados automaticamente pelo `chezmoi`.
+Estes aliases sao definidos em `sudo.aliases.sh` e carregados automaticamente pelo Chezmoi.
 
-## ⚡ Alias
+## Referencia
 
-Este codigo fornece um conjunto de alias para o comando `sudo`.
-- `root` Executar comando como superusuario.
-- `s` Executar comando como superusuario.
-- `su` Executar comando como superusuario.
-- `sudo` Executar comando como superusuario.
-
-[banner]: https://kura.pro/dotfiles/v2/images/titles/title-dotfiles.svg
+| Alias | Descricao |
+|-------|-------------|
+| `root` | Executar comando como superusuario |
+| `s` | Executar comando como superusuario |
+| `su` | Executar comando como superusuario |
+| `sudo` | Executar comando como superusuario |

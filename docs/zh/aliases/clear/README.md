@@ -1,46 +1,47 @@
 ---
-description: Clear 别名可用多种方式清屏。
+description: 用于清除终端屏幕和显示目录内容、历史记录和树视图的 shell 别名。
 lang: zh-CN
-metaTitle: Clear 别名 - Dotfiles (ZH)
-permalink: /zh/aliases/clear/
+metaTitle: Clear 别名 - Dotfiles (CN)
+permalink: /aliases/clear/
+sidebar: true
 
 meta:
+  - name: keywords
+    content: clear 别名, 终端清除, shell 别名, dotfiles, 屏幕清除
   - name: twitter:card
-    content: Clear 别名可用多种方式清屏。
+    content: summary
   - name: twitter:description
-    content: Clear 别名可用多种方式清屏。
+    content: 用于清除终端屏幕和显示目录内容、历史记录和树视图的 shell 别名。
   - name: twitter:title
-    content: Clear 别名 - Dotfiles (ZH)
+    content: Clear 别名 - Dotfiles
   - name: og:title
-    content: Clear 别名 - Dotfiles (ZH)
+    content: Clear 别名 - Dotfiles
   - name: og:description
-    content: Clear 别名可用多种方式清屏。
+    content: 用于清除终端屏幕和显示目录内容、历史记录和树视图的 shell 别名。
   - name: og:image:alt
-    content: Dotfiles - 为你的 Shell 生活而设计
+    content: Dotfiles - 为你的 Shell 生活精心设计
   - name: og:locale
     content: zh_CN
 ---
+
 # Clear 别名
 
-管理 Clear 别名。**Universal Dotfiles** 配置的一部分。
+使用快速屏幕清除快捷方式简化终端工作流。
 
-![Dotfiles banner][banner]
+## 概述
 
-## 📖 描述
+clear 别名提供了重置终端显示的高效方式，同时可选择显示有用的上下文（如目录内容、命令历史或文件树）。这些别名定义在 `clear.aliases.sh` 中，由 chezmoi 自动加载。
 
-这些别名定义在 `clear.aliases.sh` 中，并由 `chezmoi` 自动加载。
+## 参考
 
-## ⚡ 别名
-
-以下别名用于提高清屏与信息查看效率：
-- `c` 清屏。
-- `cdw` 进入 workspace 目录。
-- `cl` `c` 的别名。
-- `clc` 清屏并列出当前目录内容。
-- `clh` 清屏并输出命令历史。
-- `clp` 清屏并输出当前目录。
-- `clt` 清屏并输出目录树。
-- `cpl` 清屏并输出当前目录与内容。
-- `cplt` 清屏并输出当前目录与目录树。
-
-[banner]: https://kura.pro/dotfiles/v2/images/titles/title-dotfiles.svg
+| 别名 | 描述 |
+|:---|:---|
+| `c` | 清除终端屏幕 |
+| `cdw` | 切换到工作区目录 |
+| `cl` | 清除终端屏幕（`c` 的别名） |
+| `clc` | 清除屏幕并列出目录内容 |
+| `clh` | 清除屏幕并显示命令历史 |
+| `clp` | 清除屏幕并打印工作目录 |
+| `clt` | 清除屏幕并显示目录树 |
+| `cpl` | 清除屏幕并显示工作目录及内容 |
+| `cplt` | 清除屏幕并显示工作目录及树 |

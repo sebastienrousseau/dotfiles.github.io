@@ -1,49 +1,50 @@
 ---
-description: Los alias de Dig permiten consultar informacion sobre varios registros DNS, incluyendo direcciones de host, intercambios de correo y servidores de nombres.
+title: "Alias Dig: atajos DNS para el terminal"
+description: "Simplifica las consultas DNS con alias dig. Busca IPv4, IPv6 y registros DNS más rápido."
 lang: es-ES
-metaTitle: Alias de Dig - Dotfiles (ES)
-permalink: /es/aliases/dig/
-
+metaTitle: "Alias Dig | Dotfiles"
+permalink: /aliases/dig/
+sidebar: true
 meta:
+  - name: keywords
+    content: "alias dig, consulta dns, alias shell, dotfiles, búsqueda ipv4, búsqueda ipv6"
   - name: twitter:card
-    content: Los alias de Dig permiten consultar informacion sobre varios registros DNS, incluyendo direcciones de host, intercambios de correo y servidores de nombres.
+    content: "Simplifica las consultas DNS con alias dig. Busca IPv4, IPv6 y registros DNS más rápido."
   - name: twitter:description
-    content: Los alias de Dig permiten consultar informacion sobre varios registros DNS, incluyendo direcciones de host, intercambios de correo y servidores de nombres.
+    content: "Simplifica las consultas DNS con alias dig. Busca IPv4, IPv6 y registros DNS más rápido."
   - name: twitter:title
-    content: Alias de Dig - Dotfiles (ES)
+    content: "Alias Dig | Dotfiles"
   - name: og:title
-    content: Alias de Dig - Dotfiles (ES)
+    content: "Alias Dig | Dotfiles"
   - name: og:description
-    content: Los alias de Dig permiten consultar informacion sobre varios registros DNS, incluyendo direcciones de host, intercambios de correo y servidores de nombres.
+    content: "Simplifica las consultas DNS con alias dig. Busca IPv4, IPv6 y registros DNS más rápido."
   - name: og:image:alt
-    content: Dotfiles - Simplemente disenado para adaptarse a tu vida en el shell
+    content: "Dotfiles - Diseñado para tu vida en el shell"
   - name: og:locale
     content: es_ES
 ---
-# Alias de Dig
 
-Gestionar alias de Dig. Parte de la configuracion **Universal Dotfiles**.
+# Alias Dig
 
-![Dotfiles banner][banner]
+Simplifica las búsquedas DNS con un conjunto conciso de alias de shell.
 
-## 📖 Descripcion
+## Descubrir
 
-Estos alias estan definidos en `dig.aliases.sh` y se cargan automaticamente por `chezmoi`.
+Estos alias simplifican el trabajo con DNS (Domain Name System) usando `dig` en sistemas Unix. Definidos en `dig.aliases.sh`, se cargan automáticamente por chezmoi como parte de Universal Dotfiles.
 
-## ⚡ Alias
+## Referencia
 
-Este codigo proporciona un conjunto de alias de comandos para simplificar el trabajo con busquedas DNS
-(Domain Name System) usando el comando dig en un sistema basado en Unix.
-Los siguientes alias estan incluidos:
-- `d`: ejecuta el comando dig con opciones por defecto.
-- `d4`: realiza una busqueda DNS para una direccion IPv4.
-- `d6`: realiza una busqueda DNS para una direccion IPv6.
-- `dga`: realiza una busqueda DNS para todos los registros.
-- `dgs`: realiza una busqueda DNS para una respuesta corta.
-- `digg`: realiza una consulta dig con el DNS de Google.
-- `ip4`: obtiene tu direccion IPv4 publica.
-- `ip6`: obtiene tu direccion IPv6 publica.
-- `ips`: obtiene tus direcciones IPv4 e IPv6 publicas.
-- `wip`: obtiene tu direccion IP publica.
+La siguiente tabla lista todos los alias dig y sus funciones.
 
-[banner]: https://kura.pro/dotfiles/v2/images/titles/title-dotfiles.svg
+| Alias  | Descripción                                |
+|--------|--------------------------------------------|
+| `d`    | Ejecuta dig con opciones por defecto       |
+| `d4`   | Consulta DNS para una dirección IPv4       |
+| `d6`   | Consulta DNS para una dirección IPv6       |
+| `dga`  | Consulta DNS para todos los registros      |
+| `dgs`  | Consulta DNS con respuesta corta           |
+| `digg` | Consulta dig usando Google DNS             |
+| `ip4`  | Obtiene tu IPv4 pública                    |
+| `ip6`  | Obtiene tu IPv6 pública                    |
+| `ips`  | Obtiene IPv4 e IPv6 públicas               |
+| `wip`  | Obtiene tu IP pública                      |

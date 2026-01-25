@@ -1,51 +1,69 @@
 ---
-description: Os alias de Configuration abrem arquivos de configuracao do terminal e shell.
-lang: pt-PT
-metaTitle: Alias de Configuration - Dotfiles (PT)
+title: "Aliases de Configuracao: Acesso Rapido a Arquivos de Config"
+description: "Abra arquivos de configuracao de shell, Git, SSH e servidor instantaneamente com estes aliases de shell para Bash e Zsh."
+lang: pt-BR
+metaTitle: "Aliases de Configuracao | Dotfiles"
 permalink: /pt/aliases/configuration/
-
+sidebar: true
 meta:
   - name: keywords
-    content: aliases, configuration, dotfiles, linux, macos, shell, terminal, windows
+    content: "aliases configuracao, config shell, dotfiles, aliases bash, aliases zsh, config git, config ssh"
   - name: twitter:card
-    content: Os alias de Configuration abrem arquivos de configuracao do terminal e shell.
-  - name: twitter:description
-    content: Os alias de Configuration abrem arquivos de configuracao do terminal e shell.
+    content: summary
   - name: twitter:title
-    content: Alias de Configuration - Dotfiles (PT)
+    content: Aliases de Configuracao | Dotfiles
+  - name: twitter:description
+    content: Abra arquivos de configuracao de shell, Git, SSH e servidor instantaneamente com estes aliases de shell.
   - name: og:title
-    content: Alias de Configuration - Dotfiles (PT)
+    content: Aliases de Configuracao | Dotfiles
   - name: og:description
-    content: Os alias de Configuration abrem arquivos de configuracao do terminal e shell.
+    content: Abra arquivos de configuracao de shell, Git, SSH e servidor instantaneamente com estes aliases de shell.
   - name: og:image:alt
-    content: Dotfiles - Simplesmente projetado para sua vida no shell
+    content: Dotfiles - Simply designed to fit your shell life
   - name: og:locale
-    content: pt_PT
+    content: pt_BR
 ---
-# Alias de Configuration
 
-Gerenciar alias de Configuration. Parte da configuracao **Universal Dotfiles**.
+# Aliases de Configuracao
 
-![Dotfiles banner][banner]
+Abra arquivos de configuracao no seu editor padrao com um unico comando.
 
-## 📖 Descricao
+## Visao Geral
 
-Esses alias sao definidos em `configuration.aliases.sh` e sao carregados automaticamente pelo `chezmoi`.
+Os aliases de configuracao fornecem atalhos para abrir arquivos de configuracao editados frequentemente. Estes aliases sao definidos em `configuration.aliases.sh` e carregados automaticamente pelo chezmoi.
 
-## ⚡ Alias
+Cada alias inicia o arquivo correspondente no editor de texto padrao do seu sistema, eliminando a necessidade de lembrar caminhos de arquivo ou digitar comandos longos.
 
-Alias para abrir arquivos importantes no editor padrao:
-- `apconf` abre configuracao do Apache.
-- `bshrc` abre configuracao do Bash.
-- `bshp` abre Bash profile.
-- `dockcomp` abre arquivo Docker Compose.
-- `eddir` abre diretorio atual no editor.
-- `gcfg` abre configuracao do Git.
-- `gign` abre Git ignore.
-- `hosts` abre arquivo hosts.
-- `ngconf` abre configuracao do Nginx.
-- `sshconf` abre configuracao do SSH.
-- `zshrc` abre configuracao do Zsh.
-- `zshp` abre Zsh profile.
+## Referencia
 
-[banner]: https://kura.pro/dotfiles/v2/images/titles/title-dotfiles.svg
+### Configuracao de Shell
+
+| Alias | Descricao |
+|-------|-------------|
+| `bshrc` | Abrir arquivo de configuracao do Bash (~/.bashrc) |
+| `bshp` | Abrir perfil do Bash (~/.bash_profile) |
+| `zshrc` | Abrir arquivo de configuracao do Zsh (~/.zshrc) |
+| `zshp` | Abrir perfil do Zsh (~/.zprofile) |
+
+### Controle de Versao
+
+| Alias | Descricao |
+|-------|-------------|
+| `gcfg` | Abrir arquivo de configuracao do Git (~/.gitconfig) |
+| `gign` | Abrir arquivo de ignore do Git (~/.gitignore) |
+
+### Rede e Servidores
+
+| Alias | Descricao |
+|-------|-------------|
+| `apconf` | Abrir arquivo de configuracao do Apache |
+| `ngconf` | Abrir arquivo de configuracao do Nginx |
+| `sshconf` | Abrir arquivo de configuracao do SSH (~/.ssh/config) |
+| `hosts` | Abrir arquivo hosts (/etc/hosts) |
+
+### Ferramentas de Desenvolvimento
+
+| Alias | Descricao |
+|-------|-------------|
+| `dockcomp` | Abrir arquivo Docker Compose |
+| `eddir` | Abrir diretorio atual no editor padrao |

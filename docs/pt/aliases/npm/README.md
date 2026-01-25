@@ -1,57 +1,55 @@
 ---
-description: Os alias de NPM sao uma colecao de alias que permitem interagir com a ferramenta de linha de comando `npm`. Npm e um gerenciador de pacotes para JavaScript.
-lang: pt-PT
-metaTitle: Os alias de NPM - Dotfiles (PT)
+title: "Aliases de NPM: Atalhos para o Gerenciador de Pacotes Node.js"
+description: "Aliases de shell para NPM. Atalhos para install, build, test, publish e outros comandos npm."
+lang: pt-BR
+metaTitle: "Aliases de NPM | Dotfiles"
 permalink: /pt/aliases/npm/
-
+sidebar: true
 meta:
   - name: keywords
-    content: aliases, npm, node, node package manager, package manager, linux, macos, shell, terminal, windows
+    content: "aliases npm, node, gerenciador pacotes, javascript, aliases shell, dotfiles"
   - name: twitter:card
-    content: Os alias de NPM sao uma colecao de alias que permitem interagir com a ferramenta de linha de comando `npm`. Npm e um gerenciador de pacotes para JavaScript.
+    content: summary
   - name: twitter:description
-    content: Os alias de NPM sao uma colecao de alias que permitem interagir com a ferramenta de linha de comando `npm`. Npm e um gerenciador de pacotes para JavaScript.
+    content: Aliases de shell para NPM. Atalhos para install, build, test, publish e outros comandos npm.
   - name: twitter:title
-    content: Os alias de NPM - Dotfiles (PT)
+    content: Aliases de NPM | Dotfiles
   - name: og:title
-    content: Os alias de NPM - Dotfiles (PT)
+    content: Aliases de NPM | Dotfiles
   - name: og:description
-    content: Os alias de NPM sao uma colecao de alias que permitem interagir com a ferramenta de linha de comando `npm`. Npm e um gerenciador de pacotes para JavaScript.
+    content: Aliases de shell para NPM. Atalhos para install, build, test, publish e outros comandos npm.
   - name: og:image:alt
-    content: Dotfiles - Simplesmente projetado para sua vida no shell
+    content: Dotfiles - Simply designed to fit your shell life
   - name: og:locale
-    content: pt_PT
+    content: pt_BR
 ---
-# Alias de Npm
 
-Gerenciar alias de Npm. Parte da configuracao **Universal Dotfiles**.
+# Aliases de NPM
 
-![Dotfiles banner][banner]
+Atalhos para o gerenciador de pacotes Node.js.
 
-## 📖 Descricao
+## Visao Geral
 
-Esses alias sao definidos em `npm.aliases.sh` e sao carregados automaticamente pelo `chezmoi`.
+Estes aliases sao definidos em `npm.aliases.sh` e carregados automaticamente pelo Chezmoi.
 
-## ⚡ Alias
+## Referencia
 
-Este codigo fornece um conjunto de alias para o gerenciador de pacotes
-[npm](https://www.npmjs.com/).
-- `npa` Auditar pacotes npm.
-- `npb` Script de build npm.
-- `npc` Cache de pacotes npm.
-- `npd` Script de dev npm.
-- `npg` Pacote npm global.
-- `npi` Instalar pacote npm.
-- `npl` Listar pacotes npm.
-- `npp` Publicar pacote npm.
-- `nprm` Remover pacote npm.
-- `npr` Executar script npm.
-- `nprw` Executar script npm em modo watch.
-- `nps` Iniciar script npm.
-- `npsv` Servir script npm.
-- `npt` Testar script npm.
-- `npu` Atualizar pacote npm.
-- `npx` Executar pacote npm.
-- `npy` Por que um pacote npm esta instalado.
-
-[banner]: https://kura.pro/dotfiles/v2/images/titles/title-dotfiles.svg
+| Alias | Descricao |
+|-------|-------------|
+| `npa` | Auditar pacotes npm |
+| `npb` | Script de build npm |
+| `npc` | Cache de pacotes npm |
+| `npd` | Script de dev npm |
+| `npg` | Pacote npm global |
+| `npi` | Instalar pacote npm |
+| `npl` | Listar pacotes npm |
+| `npp` | Publicar pacote npm |
+| `nprm` | Remover pacote npm |
+| `npr` | Executar script npm |
+| `nprw` | Executar script npm em modo watch |
+| `nps` | Iniciar script npm |
+| `npsv` | Servir script npm |
+| `npt` | Testar script npm |
+| `npu` | Atualizar pacote npm |
+| `npx` | Executar pacote npm |
+| `npy` | Por que um pacote npm esta instalado |

@@ -1,53 +1,98 @@
 ---
-description: The Default aliases are aliases that are not specific to any particular command. They are common aliases that are used in many different contexts and are listed here for convenience.
+title: "Default Aliases: Essential Shell Shortcuts"
+description: "Essential shell aliases for navigation, system control, and daily tasks. Simplify your terminal workflow with these universal shortcuts."
 lang: en-GB
-metaTitle: Default aliases - Dotfiles (UK)
+metaTitle: "Default Aliases | Dotfiles"
 permalink: /aliases/default/
-
+sidebar: true
 meta:
+  - name: keywords
+    content: "default aliases, shell aliases, terminal shortcuts, dotfiles, bash aliases"
   - name: twitter:card
-    content: The Default aliases are aliases that are not specific to any particular command. They are common aliases that are used in many different contexts and are listed here for convenience.
-  - name: twitter:description
-    content: The Default aliases are aliases that are not specific to any particular command. They are common aliases that are used in many different contexts and are listed here for convenience.
+    content: summary
   - name: twitter:title
-    content: Default aliases - Dotfiles (UK)
+    content: Default Aliases | Dotfiles
+  - name: twitter:description
+    content: Essential shell aliases for navigation, system control, and daily tasks.
   - name: og:title
-    content: Default aliases - Dotfiles (UK)
+    content: Default Aliases | Dotfiles
   - name: og:description
-    content: The Default aliases are aliases that are not specific to any particular command. They are common aliases that are used in many different contexts and are listed here for convenience.
+    content: Essential shell aliases for navigation, system control, and daily tasks.
   - name: og:image:alt
     content: Dotfiles - Simply designed to fit your shell life
   - name: og:locale
     content: en_GB
 ---
+
 # Default Aliases
 
-Manage Default aliases. Part of the **Universal Dotfiles** configuration.
+Essential shell shortcuts for everyday terminal tasks.
 
 ![Dotfiles banner][banner]
 
-## 📖 Description
+## Overview
 
-These aliases are defined in `default.aliases.sh` and are automatically loaded by `chezmoi`.
+The default aliases provide a collection of universal shell shortcuts that streamline common terminal operations. These aliases are defined in `default.aliases.sh` and are automatically loaded by chezmoi across all supported shells.
 
-## ⚡ Aliases
+These shortcuts cover general utilities, exit commands, network diagnostics, system monitoring, and file system navigation.
 
-This code provides a set of command aliases to make common tasks and
-commands more convenient and faster to execute. These aliases range from
-general purpose to system monitoring and file system navigation.
-Some of the most useful aliases include:
-- `c`: shortcut for the `clear` command to clear the terminal screen.
-- `p`: shortcut for the `pwd` command to display the current working
-  directory.
-- `h`: lists all recently used commands.
-- `path`: displays the `$PATH` variable on new lines.
-- `quit`: shortcut for the `exit` command to exit the shell.
-- `halt`, `poweroff`, `reboot`: system shutdown and reboot commands.
-- `srv`: starts a simple HTTP server.
-- `top`: allows the user to interactively monitor the system's vital
-  resources or server's processes in real-time.
-- `qfind`: quickly search for files.
-- `clc`: clear the terminal screen and print the contents of the current
-  directory.
+## Reference
+
+### General
+
+| Alias | Command | Description |
+|-------|---------|-------------|
+| `da` | `date "+%Y-%m-%d %A %T %Z"` | Display current date and time |
+| `p` | `pwd` | Print working directory |
+| `path` | `echo ${PATH//:/\\n}` | Display PATH variable on newlines |
+| `r` | `reload` | Reload the shell |
+| `t` | `tail -f` | Follow file output in real time |
+| `wk` | `date +%V` | Show current week number |
+
+### Exit and Shutdown
+
+| Alias | Command | Description |
+|-------|---------|-------------|
+| `q` | `exit` | Exit the shell |
+| `quit` | `exit` | Exit the shell |
+| `bye` | `exit` | Exit the shell |
+| `:q` | `exit` | Exit the shell (vim style) |
+| `halt` | `sudo /sbin/halt` | Halt the system |
+| `poweroff` | `sudo /sbin/shutdown` | Power off the system |
+| `reboot` | `sudo /sbin/reboot` | Reboot the system |
+
+### History
+
+| Alias | Command | Description |
+|-------|---------|-------------|
+| `h` | `history` | View command history |
+| `history` | `fc -il 1` | Show history with ISO 8601 timestamps |
+
+### Network
+
+| Alias | Command | Description |
+|-------|---------|-------------|
+| `ifconfig` | `sudo ifconfig` | Configure network interfaces |
+| `ipinfo` | `ipconfig getpacket en0` | Get network parameters for en0 |
+| `nls` | `sudo lsof -i -P \| grep LISTEN` | Show active network listeners |
+| `op` | `sudo lsof -i -P` | List open ports |
+| `ping` | `ping -c 5` | Ping with 5 packet limit |
+| `ports` | `netstat -tulan` | List all listening ports |
+
+### System Monitoring
+
+| Alias | Command | Description |
+|-------|---------|-------------|
+| `top` | `sudo btop` | Interactive process monitor |
+| `spd` | `sudo rm -rf /private/var/log/asl/*` | Clear ASL log files |
+
+### Utilities
+
+| Alias | Command | Description |
+|-------|---------|-------------|
+| `ctf` | `ls -1 \| wc -l` | Count files in current directory |
+| `qfind` | `find . -name` | Quick file search |
+| `reload` | `exec $SHELL -l` | Reload the shell |
+| `wth` | `curl -s "wttr.in/?format=3"` | Get current weather |
 
 [banner]: https://kura.pro/dotfiles/v2/images/titles/title-dotfiles.svg

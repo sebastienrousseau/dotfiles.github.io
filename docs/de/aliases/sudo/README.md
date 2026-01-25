@@ -1,43 +1,42 @@
 ---
-description: Die Sudo-Aliase sind eine Sammlung von Aliasen, mit denen du mit dem Befehl `sudo` interagieren kannst. Sudo ist ein Tool, mit dem du Befehle als anderer Benutzer ausfuehren kannst.
+description: Shell-Aliase fuer sudo zum Ausfuehren von Befehlen mit Superuser-Rechten. Root-Zugriff sicher verwalten.
 lang: de-DE
-metaTitle: Die Sudo-Aliase - Dotfiles (DE)
+metaTitle: Sudo Aliase - Dotfiles (DE)
 permalink: /de/aliases/sudo/
+sidebar: true
 
 meta:
   - name: keywords
-    content: aliases, sudo, linux, macos, shell, terminal, windows
+    content: sudo aliase, root zugriff, superuser, shell aliase, dotfiles
   - name: twitter:card
-    content: Die Sudo-Aliase sind eine Sammlung von Aliasen, mit denen du mit dem Befehl `sudo` interagieren kannst. Sudo ist ein Tool, mit dem du Befehle als anderer Benutzer ausfuehren kannst.
-  - name: twitter:description
-    content: Die Sudo-Aliase sind eine Sammlung von Aliasen, mit denen du mit dem Befehl `sudo` interagieren kannst. Sudo ist ein Tool, mit dem du Befehle als anderer Benutzer ausfuehren kannst.
+    content: summary
   - name: twitter:title
-    content: Die Sudo-Aliase - Dotfiles (DE)
+    content: Sudo Aliase - Dotfiles
+  - name: twitter:description
+    content: Shell-Aliase fuer sudo zum Ausfuehren von Befehlen mit Superuser-Rechten.
   - name: og:title
-    content: Die Sudo-Aliase - Dotfiles (DE)
+    content: Sudo Aliase - Dotfiles
   - name: og:description
-    content: Die Sudo-Aliase sind eine Sammlung von Aliasen, mit denen du mit dem Befehl `sudo` interagieren kannst. Sudo ist ein Tool, mit dem du Befehle als anderer Benutzer ausfuehren kannst.
+    content: Shell-Aliase fuer sudo zum Ausfuehren von Befehlen mit Superuser-Rechten.
   - name: og:image:alt
-    content: Dotfiles - Einfach entworfen fuer dein Shell-Leben
+    content: Dotfiles - Simply designed to fit your shell life
   - name: og:locale
     content: de_DE
 ---
-# Sudo-Aliase
 
-Sudo-Aliase verwalten. Teil der **Universal Dotfiles** Konfiguration.
+# Sudo Aliase
 
-![Dotfiles banner][banner]
+Verknuepfungen zum Ausfuehren von Befehlen mit erhoehten Rechten.
 
-## 📖 Beschreibung
+## Uebersicht
 
-Diese Aliase sind in `sudo.aliases.sh` definiert und werden automatisch von `chezmoi` geladen.
+Diese Aliase sind in `sudo.aliases.sh` definiert und werden automatisch von Chezmoi geladen. Sie bieten schnellen Zugriff zum Ausfuehren von Befehlen als Superuser.
 
-## ⚡ Aliase
+## Referenz
 
-Dieser Code stellt eine Reihe von Aliasen fuer den Befehl `sudo` bereit.
-- `root` Befehl als Superuser ausfuehren.
-- `s` Befehl als Superuser ausfuehren.
-- `su` Befehl als Superuser ausfuehren.
-- `sudo` Befehl als Superuser ausfuehren.
-
-[banner]: https://kura.pro/dotfiles/v2/images/titles/title-dotfiles.svg
+| Alias | Beschreibung |
+|:---|:---|
+| `root` | Befehl als Superuser ausfuehren |
+| `s` | Befehl als Superuser ausfuehren |
+| `su` | Befehl als Superuser ausfuehren |
+| `sudo` | Befehl als Superuser ausfuehren |

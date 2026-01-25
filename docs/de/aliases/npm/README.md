@@ -1,57 +1,55 @@
 ---
-description: Die NPM-Aliase sind eine Sammlung von Aliasen, die die Arbeit mit dem `npm` CLI-Tool erleichtern. Npm ist ein Paketmanager fuer die Programmiersprache JavaScript.
+description: Shell-Aliase fuer npm-Paketverwaltung. Installieren, aktualisieren, auditieren und veroeffentlichen mit einpraegsamen Befehlen.
 lang: de-DE
-metaTitle: Die NPM-Aliase - Dotfiles (DE)
+metaTitle: NPM Aliase - Dotfiles (DE)
 permalink: /de/aliases/npm/
+sidebar: true
 
 meta:
   - name: keywords
-    content: aliases, npm, node, node package manager, package manager, linux, macos, shell, terminal, windows
+    content: npm aliase, node package manager, npm verknuepfungen, javascript pakete, dotfiles, shell
   - name: twitter:card
-    content: Die NPM-Aliase sind eine Sammlung von Aliasen, die die Arbeit mit dem `npm` CLI-Tool erleichtern. Npm ist ein Paketmanager fuer die Programmiersprache JavaScript.
-  - name: twitter:description
-    content: Die NPM-Aliase sind eine Sammlung von Aliasen, die die Arbeit mit dem `npm` CLI-Tool erleichtern. Npm ist ein Paketmanager fuer die Programmiersprache JavaScript.
+    content: summary
   - name: twitter:title
-    content: Die NPM-Aliase - Dotfiles (DE)
+    content: NPM Aliase - Dotfiles
+  - name: twitter:description
+    content: Shell-Aliase fuer npm-Paketverwaltung. Installieren, aktualisieren, auditieren und veroeffentlichen.
   - name: og:title
-    content: Die NPM-Aliase - Dotfiles (DE)
+    content: NPM Aliase - Dotfiles
   - name: og:description
-    content: Die NPM-Aliase sind eine Sammlung von Aliasen, die die Arbeit mit dem `npm` CLI-Tool erleichtern. Npm ist ein Paketmanager fuer die Programmiersprache JavaScript.
+    content: Shell-Aliase fuer npm-Paketverwaltung. Installieren, aktualisieren, auditieren und veroeffentlichen.
   - name: og:image:alt
-    content: Dotfiles - Einfach entworfen fuer dein Shell-Leben
+    content: Dotfiles - Simply designed to fit your shell life
   - name: og:locale
     content: de_DE
 ---
-# Npm-Aliase
 
-Npm-Aliase verwalten. Teil der **Universal Dotfiles** Konfiguration.
+# NPM Aliase
 
-![Dotfiles banner][banner]
+Beschleunigen Sie Ihre Node.js-Entwicklung mit Verknuepfungen fuer npm-Befehle.
 
-## 📖 Beschreibung
+## Uebersicht
 
-Diese Aliase sind in `npm.aliases.sh` definiert und werden automatisch von `chezmoi` geladen.
+Diese Aliase sind in `npm.aliases.sh` definiert und werden automatisch von Chezmoi geladen. Sie bieten schnellen Zugriff auf gaengige npm-Operationen einschliesslich Paketverwaltung, Skriptausfuehrung und Projektwartung.
 
-## ⚡ Aliase
+## Referenz
 
-Dieser Code stellt eine Reihe von Aliasen fuer den Paketmanager
-[npm](https://www.npmjs.com/) bereit.
-- `npa` npm-Pakete auditieren.
-- `npb` npm Build-Skript.
-- `npc` npm Paket-Cache.
-- `npd` npm Dev-Skript.
-- `npg` Globales npm-Paket.
-- `npi` npm-Paket installieren.
-- `npl` npm-Pakete auflisten.
-- `npp` npm-Paket veroeffentlichen.
-- `nprm` npm-Paket entfernen.
-- `npr` npm-Skript ausfuehren.
-- `nprw` npm-Skript im Watch-Modus ausfuehren.
-- `nps` npm-Skript starten.
-- `npsv` npm-Skript serven.
-- `npt` npm-Skript testen.
-- `npu` npm-Paket aktualisieren.
-- `npx` npm-Paket ausfuehren.
-- `npy` Warum ein npm-Paket installiert ist.
-
-[banner]: https://kura.pro/dotfiles/v2/images/titles/title-dotfiles.svg
+| Alias | Beschreibung |
+|:---|:---|
+| `npa` | npm-Pakete auf Sicherheitsluecken auditieren |
+| `npb` | npm build-Skript ausfuehren |
+| `npc` | npm-Paket-Cache verwalten |
+| `npd` | npm dev-Skript ausfuehren |
+| `npg` | Globales npm-Paket installieren |
+| `npi` | npm-Paket installieren |
+| `npl` | Installierte npm-Pakete auflisten |
+| `npp` | npm-Paket auf Registry veroeffentlichen |
+| `npr` | Beliebiges npm-Skript ausfuehren |
+| `nprm` | npm-Paket aus dem Projekt entfernen |
+| `nprw` | npm-Skript im Watch-Modus ausfuehren |
+| `nps` | npm start-Skript ausfuehren |
+| `npsv` | npm serve-Skript ausfuehren |
+| `npt` | npm test-Skript ausfuehren |
+| `npu` | npm-Paket aktualisieren |
+| `npx` | npm-Paket ausfuehren, ohne es global zu installieren |
+| `npy` | Anzeigen, warum ein npm-Paket installiert ist |

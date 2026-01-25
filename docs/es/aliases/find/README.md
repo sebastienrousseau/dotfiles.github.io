@@ -1,59 +1,70 @@
 ---
-description: Los alias Find estan disenados para buscar archivos en una jerarquia de directorios y realizar acciones sobre los archivos encontrados.
+title: "Alias Find: búsqueda rápida de archivos"
+description: "Agiliza la búsqueda con alias basados en fd. Salida colorida y comandos intuitivos."
 lang: es-ES
-metaTitle: Alias de Find - Dotfiles (ES)
-permalink: /es/aliases/find/
-
+metaTitle: "Alias Find | Dotfiles"
+permalink: /aliases/find/
+sidebar: true
 meta:
   - name: keywords
-    content: aliases, code, editor, environment, gedit, nano, notepad++, text, vi, vim
+    content: "alias find, comando fd, búsqueda de archivos, alias shell, dotfiles, find unix"
   - name: twitter:card
-    content: Los alias Find estan disenados para buscar archivos en una jerarquia de directorios y realizar acciones sobre los archivos encontrados.
-  - name: twitter:description
-    content: Los alias Find estan disenados para buscar archivos en una jerarquia de directorios y realizar acciones sobre los archivos encontrados.
+    content: summary
   - name: twitter:title
-    content: Alias de Find - Dotfiles (ES)
+    content: Alias Find | Dotfiles
+  - name: twitter:description
+    content: Agiliza la búsqueda con alias basados en fd. Salida colorida y comandos intuitivos.
   - name: og:title
-    content: Alias de Find - Dotfiles (ES)
+    content: Alias Find | Dotfiles
   - name: og:description
-    content: Los alias Find estan disenados para buscar archivos en una jerarquia de directorios y realizar acciones sobre los archivos encontrados.
+    content: Agiliza la búsqueda con alias basados en fd. Salida colorida y comandos intuitivos.
   - name: og:image:alt
-    content: Dotfiles - Simplemente disenado para adaptarse a tu vida en el shell
+    content: Dotfiles - Diseñado para tu vida en el shell
   - name: og:locale
     content: es_ES
 ---
-# Alias de Find
 
-Gestionar los alias de Find. Parte de la configuracion **Universal Dotfiles**.
+# Alias Find
+
+Atajos potentes para buscar archivos con fd, la alternativa moderna a find.
 
 ![Dotfiles banner][banner]
 
-## 📖 Descripcion
+## Descubrir
 
-Estos alias estan definidos en `find.aliases.sh` y se cargan automaticamente por `chezmoi`.
+Estos alias ofrecen una interfaz simplificada para `fd`, una alternativa rápida y amigable a `find`. Definidos en `find.aliases.sh`, se cargan automáticamente por chezmoi y ofrecen salida colorida, sintaxis intuitiva y comandos memorables para búsquedas comunes.
 
-## ⚡ Alias
+Cuando `fd` está disponible, la orden `find` se aliasa automáticamente para usar `fd`, ofreciendo mejor rendimiento y una sintaxis más simple por defecto.
 
-Este codigo proporciona un conjunto de alias para la utilidad `fd`, que es
-una alternativa a `find` en sistemas basados en Unix.
-`fd` es una herramienta simple, rapida y facil de usar que permite buscar
-archivos y directorios en una ruta dada. Estos alias facilitan el uso de `fd`
-con comandos simples y memorables para casos de uso comunes.
-Estos son algunos de los alias disponibles:
-- `fd` es el alias por defecto para `fd --color always` que lista todos los archivos
-  con salida colorizada.
-- `fda` lista todos los archivos con rutas absolutas.
-- `fdc` lista todos los archivos con busqueda sin distinguir mayusculas.
-- `fdd` lista todos los archivos con detalles.
-- `fde` lista todos los archivos con una extension especificada.
-- `fdf` lista todos los archivos siguiendo enlaces simbolicos.
-- `fdh` muestra la ayuda de `fd`.
-- `fdh` lista todos los archivos, incluidos los ocultos.
-- `fdn` lista todos los archivos que coinciden con un glob especificado.
-- `fdo` lista todos los archivos con informacion del propietario.
-- `fds` lista todos los archivos con tamano.
-- `fdu` lista todos los archivos con reglas de exclusion.
-- `fdv` muestra la version de `fd`.
-- `fdx` ejecuta un comando para cada resultado de busqueda.
+## Referencia
+
+### Comandos principales
+
+| Alias | Comando | Descripción |
+|-------|---------|-------------|
+| `fd` | `fd --color always` | Buscar archivos con salida colorida |
+| `find` | `fd` | Usar fd como reemplazo de find |
+
+### Opciones de búsqueda
+
+| Alias | Comando | Descripción |
+|-------|---------|-------------|
+| `fda` | `fd --absolute-path` | Mostrar resultados con rutas absolutas |
+| `fdc` | `fd --ignore-case` | Búsqueda sin distinguir mayúsculas |
+| `fdd` | `fd --list-details` | Mostrar detalles de archivo |
+| `fde` | `fd --extension` | Filtrar por extensión |
+| `fdf` | `fd --follow` | Seguir enlaces simbólicos |
+| `fdh` | `fd --hidden` | Incluir archivos ocultos |
+| `fdn` | `fd --glob` | Coincidir con patrones glob |
+| `fdo` | `fd --owner` | Filtrar por propietario |
+| `fds` | `fd --size` | Filtrar por tamaño |
+| `fdu` | `fd --exclude` | Excluir patrones |
+| `fdx` | `fd --exec` | Ejecutar un comando por resultado |
+
+### Comandos utilitarios
+
+| Alias | Comando | Descripción |
+|-------|---------|-------------|
+| `fdv` | `fd --version` | Mostrar versión de fd |
 
 [banner]: https://kura.pro/dotfiles/v2/images/titles/title-dotfiles.svg

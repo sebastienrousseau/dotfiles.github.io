@@ -1,48 +1,47 @@
 ---
-description: Die Make-Aliase sind eine Sammlung von Aliasen, die die Arbeit mit dem `make` CLI-Tool erleichtern. Make steuert die Erzeugung von Executables und anderen Artefakten.
+description: Verknuepfungs-Aliase fuer Make-Befehle. Vereinfachen Sie Builds, Tests und Projektautomatisierung.
 lang: de-DE
-metaTitle: Die Make-Aliase - Dotfiles (DE)
+metaTitle: Make Aliase - Dotfiles (DE)
 permalink: /de/aliases/make/
+sidebar: true
 
 meta:
   - name: keywords
-    content: aliases, make, makefile, linux, macos, shell, terminal, windows
+    content: make aliase, makefile verknuepfungen, build automatisierung, dotfiles, shell
   - name: twitter:card
-    content: Die Make-Aliase sind eine Sammlung von Aliasen, die die Arbeit mit dem `make` CLI-Tool erleichtern. Make steuert die Erzeugung von Executables und anderen Artefakten.
-  - name: twitter:description
-    content: Die Make-Aliase sind eine Sammlung von Aliasen, die die Arbeit mit dem `make` CLI-Tool erleichtern. Make steuert die Erzeugung von Executables und anderen Artefakten.
+    content: summary
   - name: twitter:title
-    content: Die Make-Aliase - Dotfiles (DE)
+    content: Make Aliase - Dotfiles
+  - name: twitter:description
+    content: Verknuepfungs-Aliase fuer Make-Befehle. Vereinfachen Sie Builds, Tests und Projektautomatisierung.
   - name: og:title
-    content: Die Make-Aliase - Dotfiles (DE)
+    content: Make Aliase - Dotfiles
   - name: og:description
-    content: Die Make-Aliase sind eine Sammlung von Aliasen, die die Arbeit mit dem `make` CLI-Tool erleichtern. Make steuert die Erzeugung von Executables und anderen Artefakten.
+    content: Verknuepfungs-Aliase fuer Make-Befehle. Vereinfachen Sie Builds, Tests und Projektautomatisierung.
   - name: og:image:alt
-    content: Dotfiles - Einfach entworfen fuer dein Shell-Leben
+    content: Dotfiles - Simply designed to fit your shell life
   - name: og:locale
     content: de_DE
 ---
-# Make-Aliase
 
-Make-Aliase verwalten. Teil der **Universal Dotfiles** Konfiguration.
+# Make Aliase
 
-![Dotfiles banner][banner]
+Vereinfachen Sie Ihren Build-Workflow mit Kurzbefehlen fuer Make.
 
-## 📖 Beschreibung
+## Uebersicht
 
-Diese Aliase sind in `make.aliases.sh` definiert und werden automatisch von `chezmoi` geladen.
+Diese Aliase bieten schnellen Zugriff auf gaengige Make-Targets. In `make.aliases.sh` definiert und automatisch von Chezmoi als Teil der Universal Dotfiles-Konfiguration geladen.
 
-## ⚡ Aliase
+## Referenz
 
-Dieser Code stellt eine Reihe von Aliasen fuer den Befehl `make` bereit.
-- `mk` - Make.
-- `mkc` - Make clean.
-- `mkd` - Make doc.
-- `mkf` - Make format.
-- `mkh` - Make help.
-- `mki` - Make install.
-- `mka` - Make all.
-- `mkr` - Make run.
-- `mkt` - Make test.
-
-[banner]: https://kura.pro/dotfiles/v2/images/titles/title-dotfiles.svg
+| Alias | Befehl | Beschreibung |
+|:---|:---|:---|
+| `mk` | `make` | Standard-Make-Target ausfuehren |
+| `mka` | `make all` | Alle Targets bauen |
+| `mkc` | `make clean` | Build-Artefakte bereinigen |
+| `mkd` | `make doc` | Dokumentation generieren |
+| `mkf` | `make format` | Quelldateien formatieren |
+| `mkh` | `make help` | Hilfe-Informationen anzeigen |
+| `mki` | `make install` | Projekt installieren |
+| `mkr` | `make run` | Projekt ausfuehren |
+| `mkt` | `make test` | Tests ausfuehren |

@@ -2,7 +2,7 @@
 description: Shell-Funktionen von Dotfiles zur Verbesserung Ihres Terminal-Erlebnisses.
 lang: de-DE
 metaTitle: Funktionen - Dotfiles (DE)
-permalink: /de/functions/
+permalink: /functions/
 
 meta:
   - name: keywords

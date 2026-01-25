@@ -1,37 +1,50 @@
 ---
-description: alias modernos para Dotfiles
-lang: pt-PT
-metaTitle: alias modernos - Dotfiles
+title: "Aliases Modernos: Substituicoes Rust para Ferramentas Unix"
+description: "Aliases de shell para ferramentas modernas baseadas em Rust. Use eza, bat e ripgrep como substituicoes para ls, cat e grep."
+lang: pt-BR
+metaTitle: "Aliases Modernos | Dotfiles"
 permalink: /pt/aliases/modern/
+sidebar: true
+meta:
+  - name: keywords
+    content: "aliases modernos, eza, bat, ripgrep, rust, aliases shell, dotfiles"
 ---
-# Alias de Modern Tooling
 
-Gerenciar alias Modern Tooling. Parte da configuracao **Universal Dotfiles**.
+# Aliases de Modern Tooling
 
-![Dotfiles banner][banner]
+Substituicoes modernas para ferramentas Unix legadas (baseadas em Rust).
 
-## 📖 Descricao
+## Visao Geral
 
-Esses alias sao definidos em `modern.aliases.sh` e sao carregados automaticamente pelo `chezmoi`.
-Eles fornecem substituicoes modernas para ferramentas Unix legadas (Rust).
+Estes aliases sao definidos em `modern.aliases.sh` e carregados automaticamente pelo Chezmoi.
 
-## ⚡ Alias
+## Referencia
 
-### File Listing (eza)
+### Listagem de Arquivos (eza)
+
 Se `eza` estiver instalado (substitui `ls`):
-- `ls` - Listar arquivos (`eza --icons`)
-- `ll` - Lista longa (`eza -alF`)
-- `la` - Listar tudo (`eza -a`)
-- `lt` - Arvore (`eza --tree`)
+
+| Alias | Descricao |
+|-------|-------------|
+| `ls` | Listar arquivos (`eza --icons`) |
+| `ll` | Lista longa (`eza -alF`) |
+| `la` | Listar tudo (`eza -a`) |
+| `lt` | Arvore (`eza --tree`) |
 
 *(Usa `ls` padrao se `eza` nao estiver instalado)*
 
-### File Content (bat)
+### Conteudo de Arquivo (bat)
+
 Se `bat` estiver instalado (substitui `cat`):
-- `cat` - Mostrar conteudo com syntax highlight
 
-### Searching (rg)
+| Alias | Descricao |
+|-------|-------------|
+| `cat` | Mostrar conteudo com syntax highlight |
+
+### Busca (rg)
+
 Se `rg` estiver instalado (substitui `grep`):
-- `grep` - Busca com Ripgrep
 
-[banner]: https://kura.pro/dotfiles/v2/images/titles/title-dotfiles.svg
+| Alias | Descricao |
+|-------|-------------|
+| `grep` | Busca com Ripgrep |

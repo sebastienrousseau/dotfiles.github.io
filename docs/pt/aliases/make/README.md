@@ -1,47 +1,47 @@
 ---
-description: Os alias de Make permitem interagir com o comando `make`. Make controla a geracao de executaveis e outros arquivos.
-lang: pt-PT
-metaTitle: Os alias de Make - Dotfiles (PT)
+title: "Aliases de Make: Atalhos para GNU Make"
+description: "Aliases de shell para GNU Make. Atalhos para build, clean, install, test e outros targets comuns do Makefile."
+lang: pt-BR
+metaTitle: "Aliases de Make | Dotfiles"
 permalink: /pt/aliases/make/
-
+sidebar: true
 meta:
   - name: keywords
-    content: aliases, make, makefile, linux, macos, shell, terminal, windows
+    content: "aliases make, makefile, build, aliases shell, dotfiles"
   - name: twitter:card
-    content: Os alias de Make permitem interagir com o comando `make`. Make controla a geracao de executaveis e outros arquivos.
+    content: summary
   - name: twitter:description
-    content: Os alias de Make permitem interagir com o comando `make`. Make controla a geracao de executaveis e outros arquivos.
+    content: Aliases de shell para GNU Make. Atalhos para build, clean, install, test e outros targets.
   - name: twitter:title
-    content: Os alias de Make - Dotfiles (PT)
+    content: Aliases de Make | Dotfiles
   - name: og:title
-    content: Os alias de Make - Dotfiles (PT)
+    content: Aliases de Make | Dotfiles
   - name: og:description
-    content: Os alias de Make permitem interagir com o comando `make`. Make controla a geracao de executaveis e outros arquivos.
+    content: Aliases de shell para GNU Make. Atalhos para build, clean, install, test e outros targets.
   - name: og:image:alt
-    content: Dotfiles - Simplesmente projetado para sua vida no shell
+    content: Dotfiles - Simply designed to fit your shell life
   - name: og:locale
-    content: pt_PT
+    content: pt_BR
 ---
-# Alias de Make
 
-Gerenciar alias de Make. Parte da configuracao **Universal Dotfiles**.
+# Aliases de Make
 
-![Dotfiles banner][banner]
+Atalhos para utilitarios GNU Make.
 
-## 📖 Descricao
+## Visao Geral
 
-Esses alias sao definidos em `make.aliases.sh` e sao carregados automaticamente pelo `chezmoi`.
+Estes aliases sao definidos em `make.aliases.sh` e carregados automaticamente pelo Chezmoi.
 
-## ⚡ Alias
+## Referencia
 
-- `mk` - Make.
-- `mkc` - Make clean.
-- `mkd` - Make doc.
-- `mkf` - Make format.
-- `mkh` - Make help.
-- `mki` - Make install.
-- `mka` - Make all.
-- `mkr` - Make run.
-- `mkt` - Make test.
-
-[banner]: https://kura.pro/dotfiles/v2/images/titles/title-dotfiles.svg
+| Alias | Descricao |
+|-------|-------------|
+| `mk` | Make |
+| `mkc` | Make clean |
+| `mkd` | Make doc |
+| `mkf` | Make format |
+| `mkh` | Make help |
+| `mki` | Make install |
+| `mka` | Make all |
+| `mkr` | Make run |
+| `mkt` | Make test |

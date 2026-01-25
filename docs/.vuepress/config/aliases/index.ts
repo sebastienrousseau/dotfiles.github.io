@@ -1,2 +1,2 @@
-export { aliases } from "./en";
-export { aliases } from "./fr";
+export { aliases as enAliases } from "./en";
+export { alias as frAliases } from "./fr";

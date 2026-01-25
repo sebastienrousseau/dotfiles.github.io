@@ -1,18 +1,30 @@
 ---
-description: alias de diagnostico para Dotfiles
+title: "Alias Diagnostics: salud del sistema y auto-reparación"
+description: "Alias shell para diagnósticos, chequeos de salud, detección de deriva y auto-reparación."
 lang: es-ES
-metaTitle: alias de diagnostico - Dotfiles
-permalink: /es/aliases/diagnostics/
+metaTitle: "Alias Diagnostics | Dotfiles"
+permalink: /aliases/diagnostics/
+sidebar: true
+meta:
+  - name: keywords
+    content: "alias diagnostics, chequeo salud sistema, dotfiles doctor, chezmoi verify, auto-reparación shell"
 ---
-# Alias de diagnostico
 
-Herramientas para autocuracion y comprobaciones de salud del sistema.
+# Alias Diagnostics
 
-## 🩺 Salud y reparacion
+Herramientas de auto-reparación y control de salud del sistema.
 
-| Alias | Descripcion |
+## Descubrir
+
+Los alias diagnostics proporcionan comandos para monitorizar la salud del sistema, detectar deriva de configuración y reparar el entorno dotfiles. Estas utilidades se integran con chezmoi para mantener la coherencia entre el estado local y el gestionado.
+
+## Referencia
+
+### Salud y reparación
+
+| Alias | Descripción |
 |-------|-------------|
-| `doc`, `dot-doctor` | Ejecutar el script de comprobacion de salud del sistema (`doctor.sh`). |
-| `drift`, `dot-drift` | Verificar si los archivos locales han derivado del estado gestionado (`chezmoi verify`). |
-| `heal`, `dot-heal` | Aplicar el estado gestionado para reparar la deriva (`chezmoi apply`). |
-| `doc-full` | Ejecutar doctor con informacion extendida de depuracion de rutas. |
+| `doc`, `dot-doctor` | Ejecutar el script de salud (`doctor.sh`). |
+| `drift`, `dot-drift` | Verificar deriva de archivos locales (`chezmoi verify`). |
+| `heal`, `dot-heal` | Aplicar el estado gestionado para reparar deriva (`chezmoi apply`). |
+| `doc-full` | Ejecutar doctor con información de depuración ampliada. |

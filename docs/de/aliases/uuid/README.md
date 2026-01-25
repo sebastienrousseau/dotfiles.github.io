@@ -1,40 +1,39 @@
 ---
-description: Die UUID-Aliase erstellen hilfreiche Kurzbefehle fuer den Befehl `uuidgen`. Der Befehl uuidgen erzeugt einen Universally Unique IDentifier (UUID), einen 128-Bit-Wert, der ueber Raum und Zeit eindeutig ist.
+description: Shell-Aliase zum Generieren von UUIDs. Universally Unique Identifier erstellen und in die Zwischenablage kopieren.
 lang: de-DE
-metaTitle: Die UUID-Aliase - Dotfiles (DE)
+metaTitle: UUID Aliase - Dotfiles (DE)
 permalink: /de/aliases/uuid/
+sidebar: true
 
 meta:
   - name: keywords
-    content: aliases, uuid, linux, macos, shell, terminal, windows
+    content: uuid aliase, uuid generieren, uuidgen, eindeutige bezeichner, dotfiles, shell
   - name: twitter:card
-    content: Die UUID-Aliase erstellen hilfreiche Kurzbefehle fuer den Befehl `uuidgen`. Der Befehl uuidgen erzeugt einen Universally Unique IDentifier (UUID), einen 128-Bit-Wert, der ueber Raum und Zeit eindeutig ist.
-  - name: twitter:description
-    content: Die UUID-Aliase erstellen hilfreiche Kurzbefehle fuer den Befehl `uuidgen`. Der Befehl uuidgen erzeugt einen Universally Unique IDentifier (UUID), einen 128-Bit-Wert, der ueber Raum und Zeit eindeutig ist.
+    content: summary
   - name: twitter:title
-    content: Die UUID-Aliase - Dotfiles (DE)
+    content: UUID Aliase - Dotfiles
+  - name: twitter:description
+    content: Shell-Aliase zum Generieren von UUIDs und Kopieren in die Zwischenablage.
   - name: og:title
-    content: Die UUID-Aliase - Dotfiles (DE)
+    content: UUID Aliase - Dotfiles
   - name: og:description
-    content: Die UUID-Aliase erstellen hilfreiche Kurzbefehle fuer den Befehl `uuidgen`. Der Befehl uuidgen erzeugt einen Universally Unique IDentifier (UUID), einen 128-Bit-Wert, der ueber Raum und Zeit eindeutig ist.
+    content: Shell-Aliase zum Generieren von UUIDs und Kopieren in die Zwischenablage.
   - name: og:image:alt
-    content: Dotfiles - Einfach entworfen fuer dein Shell-Leben
+    content: Dotfiles - Simply designed to fit your shell life
   - name: og:locale
     content: de_DE
 ---
-# UUID-Aliase
 
-UUID-Aliase verwalten. Teil der **Universal Dotfiles** Konfiguration.
+# UUID Aliase
 
-![Dotfiles banner][banner]
+Universally Unique Identifier schnell generieren.
 
-## 📖 Beschreibung
+## Uebersicht
 
-Diese Aliase sind in `uuid.aliases.sh` definiert und werden automatisch von `chezmoi` geladen.
+Diese Aliase sind in `uuid.aliases.sh` definiert und werden automatisch von Chezmoi geladen. Sie bieten schnellen Zugriff auf UUID-Generierung mit automatischem Kopieren in die Zwischenablage.
 
-## ⚡ Aliase
+## Referenz
 
-Dieser Code stellt eine Reihe von Aliasen fuer den Befehl `uuidgen` bereit.
-- `uuid` UUID erzeugen und in die Zwischenablage kopieren.
-
-[banner]: https://kura.pro/dotfiles/v2/images/titles/title-dotfiles.svg
+| Alias | Beschreibung |
+|:---|:---|
+| `uuid` | UUID generieren und in die Zwischenablage kopieren |

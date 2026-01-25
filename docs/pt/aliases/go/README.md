@@ -1,26 +1,30 @@
 ---
-description: alias de Go para Dotfiles
-lang: pt-PT
-metaTitle: alias de Go - Dotfiles
+title: "Aliases de Go: Atalhos para Desenvolvimento Go"
+description: "Aliases de shell para desenvolvimento Go. Atalhos para go run, go build, go test e go mod tidy."
+lang: pt-BR
+metaTitle: "Aliases de Go | Dotfiles"
 permalink: /pt/aliases/go/
+sidebar: true
+meta:
+  - name: keywords
+    content: "aliases go, golang, go build, go test, aliases shell, dotfiles"
 ---
-# Alias de Go
 
-Gerenciar alias da linguagem Go. Parte da configuracao **Universal Dotfiles**.
+# Aliases de Go
 
-![Dotfiles banner][banner]
+Atalhos para desenvolvimento com a linguagem Go.
 
-## 📖 Descricao
+## Visao Geral
 
-Esses alias sao definidos em `go.aliases.sh` e sao carregados automaticamente pelo `chezmoi`.
+Estes aliases sao definidos em `go.aliases.sh` e carregados automaticamente pelo Chezmoi.
 
-## ⚡ Alias
+## Referencia
 
-- `go` - Atalho do Go
-- `gor` - `go run`
-- `gob` - `go build`
-- `got` - `go test`
-- `gomt` - `go mod tidy`
-- `goget` - `go get`
-
-[banner]: https://kura.pro/dotfiles/v2/images/titles/title-dotfiles.svg
+| Alias | Descricao |
+|-------|-------------|
+| `go` | Atalho do Go |
+| `gor` | `go run` |
+| `gob` | `go build` |
+| `got` | `go test` |
+| `gomt` | `go mod tidy` |
+| `goget` | `go get` |

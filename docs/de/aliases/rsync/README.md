@@ -1,41 +1,39 @@
 ---
-description: Die Rsync-Aliase sind eine Sammlung von Aliasen, die die Arbeit mit dem `rsync` CLI-Tool erleichtern. Rsync synchronisiert Dateien und Verzeichnisse zwischen zwei Orten.
+description: Shell-Aliase fuer rsync-Dateisynchronisation. Dateien und Verzeichnisse effizient zwischen Standorten kopieren.
 lang: de-DE
-metaTitle: Die Rsync-Aliase - Dotfiles (DE)
+metaTitle: Rsync Aliase - Dotfiles (DE)
 permalink: /de/aliases/rsync/
+sidebar: true
 
 meta:
   - name: keywords
-    content: aliases, rsync, linux, macos, shell, terminal, windows
+    content: rsync aliase, dateisynchronisation, backup aliase, dotfiles, shell
   - name: twitter:card
-    content: Die Rsync-Aliase sind eine Sammlung von Aliasen, die die Arbeit mit dem `rsync` CLI-Tool erleichtern. Rsync synchronisiert Dateien und Verzeichnisse zwischen zwei Orten.
-  - name: twitter:description
-    content: Die Rsync-Aliase sind eine Sammlung von Aliasen, die die Arbeit mit dem `rsync` CLI-Tool erleichtern. Rsync synchronisiert Dateien und Verzeichnisse zwischen zwei Orten.
+    content: summary
   - name: twitter:title
-    content: Die Rsync-Aliase - Dotfiles (DE)
+    content: Rsync Aliase - Dotfiles
+  - name: twitter:description
+    content: Shell-Aliase fuer rsync-Dateisynchronisation. Dateien effizient kopieren.
   - name: og:title
-    content: Die Rsync-Aliase - Dotfiles (DE)
+    content: Rsync Aliase - Dotfiles
   - name: og:description
-    content: Die Rsync-Aliase sind eine Sammlung von Aliasen, die die Arbeit mit dem `rsync` CLI-Tool erleichtern. Rsync synchronisiert Dateien und Verzeichnisse zwischen zwei Orten.
+    content: Shell-Aliase fuer rsync-Dateisynchronisation. Dateien effizient kopieren.
   - name: og:image:alt
-    content: Dotfiles - Einfach entworfen fuer dein Shell-Leben
+    content: Dotfiles - Simply designed to fit your shell life
   - name: og:locale
     content: de_DE
 ---
-# Rsync-Aliase
 
-Rsync-Aliase verwalten. Teil der **Universal Dotfiles** Konfiguration.
+# Rsync Aliase
 
-![Dotfiles banner][banner]
+Effiziente Dateisynchronisation zwischen Standorten.
 
-## 📖 Beschreibung
+## Uebersicht
 
-Diese Aliase sind in `rsync.aliases.sh` definiert und werden automatisch von `chezmoi` geladen.
+Diese Aliase sind in `rsync.aliases.sh` definiert und werden automatisch von Chezmoi geladen. Sie bieten schnellen Zugriff auf rsync mit gaengigen Optionen fuer Fortschrittsanzeige und ausfuehrliche Ausgabe.
 
-## ⚡ Aliase
+## Referenz
 
-Dieser Code stellt eine Reihe von Aliasen fuer den Befehl `rsync` bereit.
-- `rs` Rsync mit verbose und Fortschritt.
-- `rs` Rsync mit verbose und Fortschritt.
-
-[banner]: https://kura.pro/dotfiles/v2/images/titles/title-dotfiles.svg
+| Alias | Beschreibung |
+|:---|:---|
+| `rs` | rsync mit ausfuehrlicher Ausgabe und Fortschrittsanzeige |

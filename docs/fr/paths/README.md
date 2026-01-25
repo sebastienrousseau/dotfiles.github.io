@@ -1,48 +1,56 @@
 ---
-description: Comment Dotfiles gère la hiérarchie de votre variable \$PATH pour charger les bons outils dans le bon ordre.
+description: Comment Dotfiles gère votre hiérarchie PATH pour charger les bons outils dans le bon ordre.
 lang: fr-FR
-metaTitle: Chemins - Dotfiles (FR)
-permalink: /fr/paths/
+metaTitle: Paths - Dotfiles (FR)
+permalink: /paths/
 
 meta:
   - name: keywords
-    content: path, environnement, variables, hiérarchie, dotfiles, chezmoi
+    content: path, environnement, variables, hiérarchie, dotfiles, chezmoi, shell, configuration
+  - name: twitter:card
+    content: summary
+  - name: twitter:description
+    content: Comment Dotfiles gère votre hiérarchie PATH pour charger les bons outils dans le bon ordre.
+  - name: twitter:title
+    content: Paths - Dotfiles
+  - name: og:title
+    content: Paths - Dotfiles
+  - name: og:description
+    content: Comment Dotfiles gère votre hiérarchie PATH pour charger les bons outils dans le bon ordre.
+  - name: og:image:alt
+    content: Dotfiles - Conçus pour s'adapter à votre vie de shell
+  - name: og:locale
+    content: fr_FR
 ---
-<img
-  src="https://kura.pro/dotfiles/v2/images/logos/dotfiles.svg"
-  alt="logo dotfiles"
-  width="66"
-  align="right"
-/>
 
-# Configuration du PATH Dotfiles (v0.2.471)
+# Paths
 
-Simplement conçu pour s'adapter à votre vie de shell 🐚
+Gestion modulaire du `PATH`. Assurez-vous que les bons outils se chargent dans le bon ordre.
 
-![Dotfiles banner][banner]
+## Découvrir
 
-Ce répertoire gère votre variable système `PATH` à l'aide de scripts modulaires.
+Les configurations de chemins sont séparées en fichiers prioritaires. Lors de `chezmoi apply` :
 
-## 📖 Fonctionnement
+1. Les fichiers de ce répertoire sont parcourus par ordre alphabétique
+2. Le contenu est agrégé dans `~/.config/shell/paths.sh`
+3. Ce fichier est sourcé par `.zshrc` au démarrage
 
-Les configurations de chemins sont réparties en fichiers ordonnés par priorité. `chezmoi` les agrège par ordre alphabétique.
-
-1. `dot_config/shell/paths.sh.tmpl` parcourt ce répertoire.
-2. Le contenu est agrégé dans `~/.config/shell/paths.sh`.
-3. Ce fichier est sourcé par `.zshrc` au démarrage.
-
-## 🔑 Liste des scripts
+## Référence
 
 | Script | Description |
-| :--- | :--- |
-| `00-default.paths.sh` | Définit les chemins système de base (`/usr/bin`, `/sbin`, etc.) et Homebrew. Chargé en premier. |
-| `99-custom.paths.sh` | Définit les chemins utilisateurs (SDKs de langages, binaires locaux). Chargé en dernier pour garantir la priorité. |
+|:---|:---|
+| `00-default.paths.sh` | Chemins système de base (`/usr/bin`, `/sbin`) et Homebrew. Chargé en premier. |
+| `99-custom.paths.sh` | Chemins utilisateur personnalisés (SDK, bin locaux). Chargé en dernier pour la priorité. |
 
-## 🛠 Utilisation
+## Premiers pas
 
 ### Ajouter un chemin utilisateur
-1. Modifiez `99-custom.paths.sh` ou créez un nouveau fichier (ex. `50-monprojet.paths.sh`).
-2. Ajoutez `export PATH="$PATH:/chemin/vers/repertoire"`.
+
+1. Modifiez `99-custom.paths.sh` ou créez un nouveau fichier (par exemple `50-monprojet.paths.sh`)
+2. Ajoutez votre chemin :
+   ```bash
+   export PATH="$PATH:/chemin/vers/dir"
+   ```
 3. Appliquez les changements :
    ```bash
    chezmoi apply
@@ -51,7 +59,3 @@ Les configurations de chemins sont réparties en fichiers ordonnés par priorit�
    ```bash
    echo $PATH
    ```
-
-<!-- markdownlint-enable MD013-->
-
-[banner]: https://kura.pro/dotfiles/v2/images/titles/title-dotfiles.svg

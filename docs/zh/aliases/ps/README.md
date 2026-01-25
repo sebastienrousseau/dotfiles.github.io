@@ -1,42 +1,41 @@
 ---
-description: PS 别名用于与 `ps` 交互。Ps 输出进程快照。
+description: 用于监控和管理运行中进程的进程状态别名。ps 命令的快捷方式。
 lang: zh-CN
-metaTitle: PS 别名 - Dotfiles (ZH)
-permalink: /zh/aliases/ps/
+metaTitle: PS 别名 - Dotfiles (CN)
+permalink: /aliases/ps/
+sidebar: true
 
 meta:
   - name: keywords
-    content: aliases, ps, process, processes, linux, macos, shell, terminal, windows
+    content: ps, 进程, 进程状态, shell 别名, dotfiles, 系统监控
   - name: twitter:card
-    content: PS 别名用于与 `ps` 交互。Ps 输出进程快照。
+    content: summary
   - name: twitter:description
-    content: PS 别名用于与 `ps` 交互。Ps 输出进程快照。
+    content: 用于监控和管理运行中进程的进程状态别名。ps 命令的快捷方式。
   - name: twitter:title
-    content: PS 别名 - Dotfiles (ZH)
+    content: PS 别名 - Dotfiles
   - name: og:title
-    content: PS 别名 - Dotfiles (ZH)
+    content: PS 别名 - Dotfiles
   - name: og:description
-    content: PS 别名用于与 `ps` 交互。Ps 输出进程快照。
+    content: 用于监控和管理运行中进程的进程状态别名。ps 命令的快捷方式。
   - name: og:image:alt
-    content: Dotfiles - 为你的 Shell 生活而设计
+    content: Dotfiles - 为你的 Shell 生活精心设计
   - name: og:locale
     content: zh_CN
 ---
-# Ps 别名
 
-管理 Ps 别名。**Universal Dotfiles** 配置的一部分。
+# PS 别名
 
-![Dotfiles banner][banner]
+使用简单的快捷方式监控和管理运行中的进程。
 
-## 📖 描述
+## 概述
 
-这些别名定义在 `ps.aliases.sh` 中，并由 `chezmoi` 自动加载。
+这些别名定义在 `ps.aliases.sh` 中，由 Chezmoi 自动加载。
 
-## ⚡ 别名
+## 参考
 
-`ps` 相关别名：
-- `pid` 显示 uid、pid、ppid、CPU 使用、启动时间、tty、CPU 时间和命令。
-- `ps` 显示全部进程。
-- `psa` 列出全部进程。
-
-[banner]: https://kura.pro/dotfiles/v2/images/titles/title-dotfiles.svg
+| 别名 | 描述 |
+|:---|:---|
+| `pid` | 显示 UID、PID、父 PID、CPU 使用率、启动时间、TTY 和命令 |
+| `ps` | 显示所有进程 |
+| `psa` | 列出所有进程 |

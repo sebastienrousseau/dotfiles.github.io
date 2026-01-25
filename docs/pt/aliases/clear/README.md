@@ -1,46 +1,47 @@
 ---
-description: Os alias de clear limpam a tela de varias formas.
-lang: pt-PT
-metaTitle: Alias de Clear - Dotfiles (PT)
+title: "Aliases de Clear: Gerenciamento de Tela do Terminal"
+description: "Aliases de shell para limpar a tela do terminal e exibir conteudo de diretorio, historico e visualizacoes em arvore."
+lang: pt-BR
+metaTitle: "Aliases de Clear | Dotfiles"
 permalink: /pt/aliases/clear/
-
+sidebar: true
 meta:
+  - name: keywords
+    content: "aliases clear, limpar terminal, aliases shell, dotfiles, limpar tela"
   - name: twitter:card
-    content: Os alias de clear limpam a tela de varias formas.
+    content: summary
   - name: twitter:description
-    content: Os alias de clear limpam a tela de varias formas.
+    content: Aliases de shell para limpar a tela do terminal e exibir conteudo de diretorio, historico e visualizacoes em arvore.
   - name: twitter:title
-    content: Alias de Clear - Dotfiles (PT)
+    content: Aliases de Clear | Dotfiles
   - name: og:title
-    content: Alias de Clear - Dotfiles (PT)
+    content: Aliases de Clear | Dotfiles
   - name: og:description
-    content: Os alias de clear limpam a tela de varias formas.
+    content: Aliases de shell para limpar a tela do terminal e exibir conteudo de diretorio, historico e visualizacoes em arvore.
   - name: og:image:alt
-    content: Dotfiles - Simplesmente projetado para sua vida no shell
+    content: Dotfiles - Simply designed to fit your shell life
   - name: og:locale
-    content: pt_PT
+    content: pt_BR
 ---
-# Alias de Clear
 
-Gerenciar alias de Clear. Parte da configuracao **Universal Dotfiles**.
+# Aliases de Clear
 
-![Dotfiles banner][banner]
+Simplifique seu fluxo de trabalho no terminal com atalhos rapidos de limpeza de tela.
 
-## 📖 Descricao
+## Visao Geral
 
-Esses alias sao definidos em `clear.aliases.sh` e sao carregados automaticamente pelo `chezmoi`.
+Os aliases de clear fornecem maneiras eficientes de redefinir a exibicao do seu terminal enquanto opcionalmente mostram contexto util como conteudo de diretorio, historico de comandos ou arvores de arquivos. Estes aliases sao definidos em `clear.aliases.sh` e sao carregados automaticamente pelo chezmoi.
 
-## ⚡ Alias
+## Referencia
 
-Alias para facilitar o uso do terminal:
-- `c` limpa a tela.
-- `cdw` muda para o diretorio workspace.
-- `cl` alias para `c`.
-- `clc` limpa a tela e lista conteudo do diretorio.
-- `clh` limpa a tela e mostra historico.
-- `clp` limpa a tela e mostra o diretorio atual.
-- `clt` limpa a tela e mostra a arvore.
-- `cpl` limpa a tela e mostra diretorio atual e conteudo.
-- `cplt` limpa a tela e mostra diretorio atual e arvore.
-
-[banner]: https://kura.pro/dotfiles/v2/images/titles/title-dotfiles.svg
+| Alias | Descricao |
+|-------|-------------|
+| `c` | Limpar a tela do terminal |
+| `cdw` | Mudar para o diretorio de trabalho |
+| `cl` | Limpar a tela do terminal (alias para `c`) |
+| `clc` | Limpar tela e listar conteudo do diretorio |
+| `clh` | Limpar tela e exibir historico de comandos |
+| `clp` | Limpar tela e imprimir diretorio de trabalho |
+| `clt` | Limpar tela e exibir arvore de diretorios |
+| `cpl` | Limpar tela e mostrar diretorio de trabalho com conteudo |
+| `cplt` | Limpar tela e mostrar diretorio de trabalho com arvore |

@@ -1,16 +1,26 @@
 ---
-description: 安装别名用于 Dotfiles
+description: 用于本地引导 dotfiles 和通过 SSH 将配置部署到远程服务器的 shell 别名。
 lang: zh-CN
-metaTitle: 安装别名 - Dotfiles
-permalink: /zh/aliases/installer/
+metaTitle: Installer 别名 - Dotfiles (CN)
+permalink: /aliases/installer/
+sidebar: true
+
+meta:
+  - name: keywords
+    content: 安装器别名, dotfiles 引导, 远程部署, shell 别名, dot-install, dot-teleport
 ---
-# 安装别名
 
-用于引导安装与远程部署的工具。
+# Installer 别名
 
-## 🚀 命令
+用于引导和远程部署的工具。
 
-| Alias | 说明 |
-|-------|------|
-| `dot-install` | 本地运行 `install.sh` 引导脚本。 |
+## 概述
+
+安装器别名提供了在本地设置 dotfiles 环境和将配置部署到远程服务器的简化命令。
+
+## 参考
+
+| 别名 | 描述 |
+|:---|:---|
+| `dot-install` | 在本地运行 `install.sh` 引导脚本。 |
 | `dot-teleport` | 将配置传送到远程服务器（`dot-teleport user@host`）。 |

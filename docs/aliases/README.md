@@ -1,53 +1,41 @@
 ---
-description: Aliases allow you to create shortcuts for shell commands that you use frequently. This allows you to be more productive and efficient by reducing the amount of typing you have to do when using the shell regularly.
+description: Shell aliases that create shortcuts for frequently used commands. Boost productivity by reducing typing in your daily workflow.
 lang: en-GB
 metaTitle: Aliases - Dotfiles (UK)
 permalink: /aliases/
 
 meta:
   - name: keywords
-    content: aliases, archives, cd, chmod, clear, commands, default, dig, dotfiles, du, editor, find, gcloud, git, gnu, heroku, interactive, jekyll, list, make, mkdir, npm, pnpm, ps, rsync, rust, shell, subversion, sudo, tmux, typing, update, uuid, wget
+    content: aliases, shell, bash, zsh, shortcuts, commands, dotfiles, chezmoi, productivity, terminal
   - name: twitter:card
-    content: Aliases allow you to create shortcuts for shell commands that you use frequently. This allows you to be more productive and efficient by reducing the amount of typing you have to do when using the shell regularly.
+    content: summary
   - name: twitter:description
-    content: Aliases allow you to create shortcuts for shell commands that you use frequently. This allows you to be more productive and efficient by reducing the amount of typing you have to do when using the shell regularly.
+    content: Shell aliases that create shortcuts for frequently used commands. Boost productivity by reducing typing in your daily workflow.
   - name: twitter:title
-    content: Aliases - Dotfiles (UK)
+    content: Aliases - Dotfiles
   - name: og:title
-    content: Aliases - Dotfiles (UK)
+    content: Aliases - Dotfiles
   - name: og:description
-    content: Aliases allow you to create shortcuts for shell commands that you use frequently. This allows you to be more productive and efficient by reducing the amount of typing you have to do when using the shell regularly.
+    content: Shell aliases that create shortcuts for frequently used commands. Boost productivity by reducing typing in your daily workflow.
   - name: og:image:alt
     content: Dotfiles - Simply designed to fit your shell life
   - name: og:locale
     content: en_GB
 ---
-<img
-  src="https://kura.pro/dotfiles/v2/images/logos/dotfiles.svg"
-  align="right"
-/>
 
-# Dotfiles Aliases (v0.2.471)
+# Aliases
 
-Simply designed to fit your shell life 🐚
+Modular shell aliases managed by **Chezmoi**. Type less, do more.
 
-![Dotfiles banner][banner]
+## Discover
 
-This directory contains modular alias definitions managed by **chezmoi**.
+Aliases are organised into small, focused files — one for each tool or workflow. During `chezmoi apply`, all alias files are aggregated into `~/.config/shell/aliases.sh` and sourced by your shell.
 
-## 📖 How it Works
+## Get started
 
-Aliases are split into small, manageable files (e.g., `git/git.aliases.sh`, `docker/docker.aliases.sh`).
+### Add an alias
 
-During `chezmoi apply`, the main template `dot_config/shell/aliases.sh.tmpl`:
-1. Scans this directory for `**/*.aliases.sh` files.
-2. Aggregates them into a single `~/.config/shell/aliases.sh` file.
-3. This aggregated file is sourced by your `.zshrc`.
-
-## 🛠 Usage
-
-### Adding a New Alias
-1. Create a new directory or file (e.g., `mytool/mytool.aliases.sh`).
+1. Create a new file (e.g., `mytool/mytool.aliases.sh`)
 2. Define your aliases:
    ```bash
    alias mycmd="echo 'Hello World'"
@@ -57,53 +45,57 @@ During `chezmoi apply`, the main template `dot_config/shell/aliases.sh.tmpl`:
    chezmoi apply
    ```
 
-## 🔧 Component List
+## Reference
+
+Browse aliases by category:
 
 <!-- markdownlint-disable MD013-->
 
-| Directory       | Description                                      | Link                      |
-| :-------------- | :----------------------------------------------- | :------------------------ |
-| `archives`      | Compress and extract files and directories.      | [View README](archives/README.md) |
-| `cd`            | Navigate the file system.                        | [View README](cd/README.md)       |
-| `chmod`         | Change file and directory permissions.           | [View README](chmod/README.md)    |
-| `clear`         | Clear the terminal screen.                       | [View README](clear/README.md)    |
-| `compliance`    | Regulatory compliance (SOC2) and privacy tools.  | [View README](compliance/README.md) |
-| `configuration` | Manage dotfiles and shell configurations.        | [View README](configuration/README.md) |
-| `default`       | Set up default shell aliases and configurations. | [View README](default/README.md)  |
-| `dig`           | Query DNS name servers.                          | [View README](dig/README.md)      |
-| `diagnostics`   | Self-healing and health checks (doctor, drift).  | [View README](diagnostics/README.md) |
-| `disk-usage`    | Display disk usage information.                  | [View README](disk-usage/README.md) |
-| `editor`        | Configure default text editors.                  | [View README](editor/README.md)   |
-| `find`          | Search files and directories using `find`.       | [View README](find/README.md)     |
-| `fonts`         | Font cache management.                           | [View README](fonts/README.md)    |
-| `gcloud`        | Manage Google Cloud SDK tools.                   | [View README](gcloud/README.md)   |
-| `git`           | Manage Git aliases and configurations.           | [View README](git/README.md)      |
-| `gnu`           | Manage GNU core utilities.                       | [View README](gnu/README.md)      |
-| `heroku`        | Manage Heroku CLI.                               | [View README](heroku/README.md)   |
-| `immutability`  | Lock/Unlock critical files (`chflags`/`chattr`). | [View README](immutability/README.md) |
-| `installer`     | Bootstrap and remote deployment tools.           | [View README](installer/README.md) |
-| `interactive`   | Configure interactive shell behavior.            | [View README](interactive/README.md) |
-| `kubernetes`    | Manage Kubernetes, Helm, and K9s aliases.        | [View README](kubernetes/README.md) |
-| `legal`         | License scanning and compliance tools.           | [View README](legal/README.md)      |
-| `macOS`         | Manage macOS-specific shell settings.            | [View README](macOS/README.md)    |
-| `make`          | Manage GNU Make aliases and utilities.           | [View README](make/README.md)     |
-| `mkdir`         | Create directories with custom options.          | [View README](mkdir/README.md)    |
-| `modern`        | Modern Rust-based tool replacements (ls, cat).   | [View README](modern/README.md)   |
-| `npm`           | Manage Node.js package manager aliases.          | [View README](npm/README.md)      |
-| `permission`    | Configure file and directory permissions.         | [View README](permission/README.md) |
-| `pnpm`          | Manage pnpm package manager aliases.             | [View README](pnpm/README.md)     |
-| `ps`            | Manage process status commands.                  | [View README](ps/README.md)       |
-| `python`        | Configure Python aliases and utilities.          | [View README](python/README.md)   |
-| `rsync`         | Configure rsync for efficient file transfers.    | [View README](rsync/README.md)    |
-| `rust`          | Manage Rust programming tools and configurations.| [View README](rust/README.md)     |
-| `security`      | Immutability and signing configuration.          | [View README](security/README.md) |
-| `subversion`    | Configure Subversion (SVN) version control.       | [View README](subversion/README.md) |
-| `sudo`          | Manage superuser operations.                     | [View README](sudo/README.md)     |
-| `tmux`          | Configure tmux terminal multiplexer.             | [View README](tmux/README.md)     |
-| `update`        | Update dotfiles and related configurations.       | [View README](update/README.md)   |
-| `uuid`          | Generate UUIDs for various use cases.            | [View README](uuid/README.md)     |
-| `wget`          | Manage wget command-line tool.                   | [View README](wget/README.md)     |
+| Category | Description |
+| :--- | :--- |
+| [AI](ai/) | AI assistant and LLM tool shortcuts |
+| [Archives](archives/) | Compress and extract files |
+| [CD](cd/) | Navigate the file system |
+| [Chmod](chmod/) | Change file permissions |
+| [Clear](clear/) | Clear the terminal screen |
+| [Compliance](compliance/) | SOC2 and privacy tools |
+| [Configuration](configuration/) | Manage dotfiles and shell config |
+| [Default](default/) | Default shell aliases |
+| [Diagnostics](diagnostics/) | Self-healing and health checks |
+| [Dig](dig/) | Query DNS servers |
+| [Disk Usage](disk-usage/) | Display disk usage information |
+| [Docker](docker/) | Container management |
+| [Editor](editor/) | Configure text editors |
+| [Find](find/) | Search files and directories |
+| [Fonts](fonts/) | Font cache management |
+| [GCloud](gcloud/) | Google Cloud SDK tools |
+| [Git](git/) | Git version control |
+| [GNU](gnu/) | GNU core utilities |
+| [Go](go/) | Go language tools |
+| [Heroku](heroku/) | Heroku CLI |
+| [Installer](installer/) | Bootstrap and deployment |
+| [Interactive](interactive/) | Interactive shell behaviour |
+| [Kubernetes](kubernetes/) | Kubernetes, Helm, K9s |
+| [Legal](legal/) | License scanning tools |
+| [macOS](macOS/) | macOS-specific settings |
+| [Make](make/) | GNU Make utilities |
+| [Mkdir](mkdir/) | Create directories |
+| [Modern](modern/) | Rust-based tool replacements |
+| [NPM](npm/) | Node.js package manager |
+| [Permission](permission/) | File permissions |
+| [PNPM](pnpm/) | PNPM package manager |
+| [PS](ps/) | Process status |
+| [Python](python/) | Python utilities |
+| [Rsync](rsync/) | Efficient file transfer |
+| [Rust](rust/) | Rust programming tools |
+| [Security](security/) | Immutability and signing |
+| [Subversion](subversion/) | SVN version control |
+| [Sudo](sudo/) | Superuser operations |
+| [Terraform](terraform/) | Infrastructure as code |
+| [Tmux](tmux/) | Terminal multiplexer |
+| [Update](update/) | Update dotfiles |
+| [UUID](uuid/) | Generate UUIDs |
+| [Wget](wget/) | Command-line downloader |
+| [Yarn](yarn/) | Yarn package manager |
 
 <!-- markdownlint-enable MD013-->
-
-[banner]: https://kura.pro/dotfiles/v2/images/titles/title-dotfiles.svg

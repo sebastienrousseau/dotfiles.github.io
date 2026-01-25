@@ -1,76 +1,64 @@
 ---
-description: Os alias de Subversion permitem interagir com o comando `svn`. Subversion e um sistema de controle de versao.
-lang: pt-PT
-metaTitle: Os alias de Subversion - Dotfiles (PT)
+title: "Aliases de Subversion: Atalhos para SVN"
+description: "Aliases de shell para Subversion (SVN). Atalhos para checkout, commit, update, status e outros comandos svn."
+lang: pt-BR
+metaTitle: "Aliases de Subversion | Dotfiles"
 permalink: /pt/aliases/subversion/
-
+sidebar: true
 meta:
   - name: keywords
-    content: aliases, subversion, svn, linux, macos, shell, terminal, windows
+    content: "aliases subversion, svn, controle versao, aliases shell, dotfiles"
   - name: twitter:card
-    content: Os alias de Subversion permitem interagir com o comando `svn`. Subversion e um sistema de controle de versao.
+    content: summary
   - name: twitter:description
-    content: Os alias de Subversion permitem interagir com o comando `svn`. Subversion e um sistema de controle de versao.
+    content: Aliases de shell para Subversion (SVN). Atalhos para checkout, commit, update, status e outros comandos.
   - name: twitter:title
-    content: Os alias de Subversion - Dotfiles (PT)
+    content: Aliases de Subversion | Dotfiles
   - name: og:title
-    content: Os alias de Subversion - Dotfiles (PT)
+    content: Aliases de Subversion | Dotfiles
   - name: og:description
-    content: Os alias de Subversion permitem interagir com o comando `svn`. Subversion e um sistema de controle de versao.
+    content: Aliases de shell para Subversion (SVN). Atalhos para checkout, commit, update, status e outros comandos.
   - name: og:image:alt
-    content: Dotfiles - Simplesmente projetado para sua vida no shell
+    content: Dotfiles - Simply designed to fit your shell life
   - name: og:locale
-    content: pt_PT
+    content: pt_BR
 ---
-# Alias de Subversion
 
-Gerenciar alias de Subversion. Parte da configuracao **Universal Dotfiles**.
+# Aliases de Subversion
 
-![Dotfiles banner][banner]
+Atalhos para controle de versao com Subversion.
 
-## 📖 Descricao
+## Visao Geral
 
-Esses alias sao definidos em `subversion.aliases.sh` e sao carregados automaticamente pelo `chezmoi`.
+Estes aliases sao definidos em `subversion.aliases.sh` e carregados automaticamente pelo Chezmoi.
 
-## ⚡ Alias
+## Referencia
 
-Alias para Subversion CLI.
-- `sad` Adicionar arquivos/diretorios ao controle de versao.
-- `sau` Gerenciar credenciais em cache.
-- `sbl` Mostrar quando cada linha foi alterada.
-- `scg` Associar/desassociar changelist.
-- `sci` Enviar mudancas ao repositorio.
-- `scl` Recuperar de operacao interrompida.
-- `sco` Fazer checkout de working copy.
-- `scp` Copiar arquivos/diretorios.
-- `sct` Exibir conteudo de arquivos/URLs.
-- `sdi` Mostrar diferencas locais.
-- `sdl` Remover arquivos/diretorios do controle de versao.
-- `shp` Mostrar uso do programa.
-- `sin` Mostrar informacao local/remota.
-- `sip` Commit de arquivo nao versionado.
-- `slg` Mostrar logs.
-- `slk` Bloquear paths/URLs no repositorio.
-- `sls` Listar entradas do repositorio.
-- `smd` Criar diretorio versionado.
-- `smg` Mesclar mudancas.
-- `smgi` Mostrar info de merge.
-- `smv` Mover/renomear item.
-- `sp` Definir propriedade.
-- `spdl` Remover propriedade.
-- `spdt` Editar propriedade.
-- `spgt` Mostrar propriedade.
-- `sph` Aplicar patch.
-- `spls` Listar propriedades.
-- `srl` Relocar working copy.
-- `srs` Resolver conflitos.
-- `srsd` Remover estado de conflito.
-- `srv` Restaurar estado pristine.
-- `sst` Mostrar status.
-- `ssw` Atualizar para outra URL.
-- `sulk` Desbloquear paths/URLs.
-- `sup` Atualizar do repositorio.
-- `supg` Atualizar formato de metadados.
-- `sxp` Criar copia nao versionada.
-
-[banner]: https://kura.pro/dotfiles/v2/images/titles/title-dotfiles.svg
+| Alias | Descricao |
+|-------|-------------|
+| `sad` | Adicionar arquivos/diretorios ao controle de versao |
+| `sau` | Gerenciar credenciais em cache |
+| `sbl` | Mostrar quando cada linha foi alterada |
+| `scg` | Associar/desassociar changelist |
+| `sci` | Enviar mudancas ao repositorio |
+| `scl` | Recuperar de operacao interrompida |
+| `sco` | Fazer checkout de working copy |
+| `scp` | Copiar arquivos/diretorios |
+| `sct` | Exibir conteudo de arquivos/URLs |
+| `sdi` | Mostrar diferencas locais |
+| `sdl` | Remover arquivos/diretorios do controle de versao |
+| `shp` | Mostrar uso do programa |
+| `sin` | Mostrar informacao local/remota |
+| `sip` | Commit de arquivo nao versionado |
+| `slg` | Mostrar logs |
+| `slk` | Bloquear paths/URLs no repositorio |
+| `sls` | Listar entradas do repositorio |
+| `smd` | Criar diretorio versionado |
+| `smg` | Mesclar mudancas |
+| `smgi` | Mostrar info de merge |
+| `smv` | Mover/renomear item |
+| `sst` | Mostrar status |
+| `ssw` | Atualizar para outra URL |
+| `sulk` | Desbloquear paths/URLs |
+| `sup` | Atualizar do repositorio |
+| `sxp` | Criar copia nao versionada |

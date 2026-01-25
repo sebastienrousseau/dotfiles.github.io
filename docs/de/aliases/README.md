@@ -1,153 +1,102 @@
 ---
-description: Aliases ermöglichen Ihnen das Erstellen von Verknüpfungen für Shell-Befehle, die Sie häufig verwenden. Dies ermöglicht Ihnen, produktiver und effizienter zu sein, indem Sie die Menge an Schreibarbeit reduzieren, die Sie beim regelmäßigen Verwenden der Shell leisten müssen.
+description: Shell-Aliase erstellen Verknüpfungen für häufig verwendete Befehle. Steigern Sie Ihre Produktivität durch weniger Tipparbeit.
 lang: de-DE
-metaTitle: Aliases - Dotfiles (DE)
+metaTitle: Aliase - Dotfiles (DE)
 permalink: /de/aliases/
+sidebar: true
+
+meta:
+  - name: keywords
+    content: aliase, shell, bash, zsh, verknüpfungen, befehle, dotfiles, chezmoi, produktivität, terminal
+  - name: twitter:card
+    content: summary
+  - name: twitter:description
+    content: Shell-Aliase erstellen Verknüpfungen für häufig verwendete Befehle. Steigern Sie Ihre Produktivität durch weniger Tipparbeit.
+  - name: twitter:title
+    content: Aliase - Dotfiles
+  - name: og:title
+    content: Aliase - Dotfiles
+  - name: og:description
+    content: Shell-Aliase erstellen Verknüpfungen für häufig verwendete Befehle. Steigern Sie Ihre Produktivität durch weniger Tipparbeit.
+  - name: og:image:alt
+    content: Dotfiles - Simply designed to fit your shell life
+  - name: og:locale
+    content: de_DE
 ---
 
-# Aliases
+# Aliase
 
-Aliases ermöglichen es Ihnen, Verknüpfungen für Shell-Befehle zu erstellen, die Sie häufig verwenden. Dies ermöglicht Ihnen, produktiver und effizienter zu sein, indem Sie die Menge an Schreibarbeit reduzieren, die Sie leisten müssen, wenn Sie die Shell regelmäßig verwenden. Anstatt beispielsweise `git status` einzugeben, könnten Sie `gst` eingeben, um das gleiche Ergebnis zu erhalten.
+Modulare Shell-Aliase verwaltet von **Chezmoi**. Weniger tippen, mehr erreichen.
 
-Dies ist eine großartige Möglichkeit, Zeit zu sparen und die Menge an Schreibarbeit, die Sie täglich bei der Verwendung des Terminals leisten müssen, erheblich zu reduzieren, was Ihnen hilft, produktiver und effizienter zu sein.
+## Entdecken
 
-## Voreinstellungen
+Aliase sind in kleine, fokussierte Dateien organisiert — eine für jedes Tool oder jeden Workflow. Während `chezmoi apply` werden alle Alias-Dateien zu `~/.config/shell/aliases.sh` zusammengefasst und von Ihrer Shell geladen.
 
-Dotfiles verfügt über eine Sammlung von Konfigurationsvoreinstellungen und diversen Rezepten, mit denen Sie beginnen können.
+## Erste Schritte
 
-### Automatische Systemerkennung
+### Alias hinzufügen
 
-Dotfiles enthält eine Dienstprogrammfunktion zur Erkennung des aktuellen `ls`-Flavors, der verwendet wird, um beim Einrichten der richtigen `LS_COLORS`-Umgebungsvariablen für Ihr System zu helfen.
+1. Erstellen Sie eine neue Datei (z.B. `mytool/mytool.aliases.sh`)
+2. Definieren Sie Ihre Aliase:
+   ```bash
+   alias mycmd="echo 'Hello World'"
+   ```
+3. Änderungen anwenden:
+   ```bash
+   chezmoi apply
+   ```
 
-Die Umgebungsvariable `LS_COLORS` wird vom Befehl `ls` verwendet, um die Ausgabe des Befehls einzufärben.
+## Referenz
 
-### Überprüfen Sie integrierte Aliases
+Aliase nach Kategorie durchsuchen:
 
-Geben Sie den folgenden Alias-Befehl in Ihr Terminal ein:
+<!-- markdownlint-disable MD013-->
 
-```bash
-alias
-```
+| Kategorie | Beschreibung |
+| :--- | :--- |
+| [AI](ai/) | KI-Assistenten und LLM-Tool-Verknüpfungen |
+| [Archives](archives/) | Dateien komprimieren und entpacken |
+| [CD](cd/) | Im Dateisystem navigieren |
+| [Chmod](chmod/) | Dateiberechtigungen ändern |
+| [Clear](clear/) | Terminalbildschirm löschen |
+| [Compliance](compliance/) | SOC2- und Datenschutz-Tools |
+| [Configuration](configuration/) | Dotfiles und Shell-Konfiguration verwalten |
+| [Default](default/) | Standard-Shell-Aliase |
+| [Diagnostics](diagnostics/) | Selbstheilung und Gesundheitsprüfungen |
+| [Dig](dig/) | DNS-Server abfragen |
+| [Disk Usage](disk-usage/) | Festplattennutzung anzeigen |
+| [Docker](docker/) | Container-Verwaltung |
+| [Editor](editor/) | Texteditoren konfigurieren |
+| [Find](find/) | Dateien und Verzeichnisse suchen |
+| [Fonts](fonts/) | Schriftarten-Cache-Verwaltung |
+| [GCloud](gcloud/) | Google Cloud SDK-Tools |
+| [Git](git/) | Git-Versionskontrolle |
+| [GNU](gnu/) | GNU Core Utilities |
+| [Go](go/) | Go-Sprachtools |
+| [Heroku](heroku/) | Heroku CLI |
+| [Installer](installer/) | Bootstrap und Bereitstellung |
+| [Interactive](interactive/) | Interaktives Shell-Verhalten |
+| [Kubernetes](kubernetes/) | Kubernetes, Helm, K9s |
+| [Legal](legal/) | Lizenz-Scanning-Tools |
+| [macOS](macOS/) | macOS-spezifische Einstellungen |
+| [Make](make/) | GNU Make-Dienstprogramme |
+| [Mkdir](mkdir/) | Verzeichnisse erstellen |
+| [Modern](modern/) | Rust-basierte Tool-Ersetzungen |
+| [NPM](npm/) | Node.js-Paketmanager |
+| [Permission](permission/) | Dateiberechtigungen |
+| [PNPM](pnpm/) | PNPM-Paketmanager |
+| [PS](ps/) | Prozessstatus |
+| [Python](python/) | Python-Dienstprogramme |
+| [Rsync](rsync/) | Effiziente Dateiübertragung |
+| [Rust](rust/) | Rust-Programmiertools |
+| [Security](security/) | Unveränderlichkeit und Signierung |
+| [Subversion](subversion/) | SVN-Versionskontrolle |
+| [Sudo](sudo/) | Superuser-Operationen |
+| [Terraform](terraform/) | Infrastructure as Code |
+| [Tmux](tmux/) | Terminal-Multiplexer |
+| [Update](update/) | Dotfiles aktualisieren |
+| [UUID](uuid/) | UUIDs generieren |
+| [Wget](wget/) | Kommandozeilen-Downloader |
+| [Yarn](yarn/) | Yarn-Paketmanager |
 
-### GNU Find Dienstprogramm-Aliases
-
-macOS-Systeme basieren auf BSD und nicht auf GNU/Linux wie RedHat, Debian und Ubuntu. Infolgedessen sind viele der Befehlszeilentools, die mit macOS geliefert werden, nicht zu 100% kompatibel. Beispielsweise unterstützt der Befehl `find` unter macOS nicht die Option `-printf`, die vom Befehl `locate` verwendet wird. Dies bedeutet, dass der Befehl `locate` unter macOS nicht funktioniert. Um dies zu beheben, können Sie die GNU-Versionen dieser Befehle installieren, die vollständig mit den Linux-Versionen kompatibel sind.
-
-Die GNU Find Utilities sind die grundlegenden Verzeichnissuchprogramme des GNU-Betriebssystems. Diese Programme werden normalerweise in Verbindung mit anderen Programmen verwendet, um anderen Befehlen modulare und leistungsstarke Verzeichnissuch- und Dateisuchfunktionen bereitzustellen.
-
-Die mit diesem Paket gelieferten Tools sind:
-
-- find - Suche nach Dateien in einer Verzeichnishierarchie
-- locate - Dateien in Datenbanken auflisten, die einem Muster entsprechen
-- updatedb - Aktualisieren einer Dateinamendatenbank
-- xargs - Befehlszeilen aus Standardeingabe erstellen und ausführen
-
-Geben Sie den folgenden Alias-Befehl in Ihr Terminal ein:
-
-```bash
-brew install findutils
-```
-
-### Die Dotfiles Aliases
-
-Die in Dotfiles bereitgestellten Dateien enthalten einige meinungsstarke Aliases, die Sie möglicherweise nützlich finden. Diese sind im Verzeichnis `./dist/lib/aliases` definiert und werden automatisch geladen, wenn Sie eine neue Shell-Sitzung starten.
-
-Die Aliases werden entweder von der Datei `~/.bashrc` geladen, wenn Sie die Bash-Shell verwenden, oder in der Datei `~/.zshrc`, wenn Sie die Zsh-Shell verwenden.
-
-Sie wurden nach logischen Kategorien gruppiert:
-
-- [ai][ai] - Aliases für KI.
-- [archives][archives] - Aliases für die Arbeit mit Archiven.
-- [cd][cd] - Aliases für die Arbeit mit Verzeichnissen.
-- [chmod][chmod] - Aliases für die Arbeit mit Dateiberechtigungen.
-- [clear][clear] - Aliases zum Löschen des Terminalbildschirms.
-- [compliance][compliance] - Aliases für Compliance.
-- [configuration][configuration] - Aliases für Konfiguration.
-- [default][default] - Die Standard-Aliases, die für alle Benutzer geladen werden.
-- [diagnostics][diagnostics] - Aliases für Diagnose.
-- [dig][dig] - Aliases für die Arbeit mit DNS.
-- [docker][docker] - Aliases für Docker.
-- [dot][dot] - Die vereinheitlichte CLI zur Verwaltung Ihrer Dotfiles.
-- [du][du] - Aliases für die Arbeit mit Festplattennutzung.
-- [editor][editor] - Aliases für die Arbeit mit dem Editor.
-- [find][find] - Aliases für die Arbeit mit dem `fd`-Befehl.
-- [fonts][fonts] - Aliases für Schriftarten.
-- [gcloud][gcloud] - Aliases für die Arbeit mit dem `gcloud`-Befehl.
-- [git][git] - Aliases für die Arbeit mit Git.
-- [gnu][gnu] - Aliases für die Arbeit mit GNU Core-Dienstprogrammen.
-- [go][go] - Aliases für Go.
-- [installer][installer] - Aliases für Installer.
-- [interactive][interactive] - Aliases für die Arbeit mit interaktiven Befehlen.
-- [jekyll][jekyll] - Aliases für die Arbeit mit Jekyll.
-- [kubernetes][kubernetes] - Aliases für Kubernetes.
-- [legal][legal] - Rechtliche Aliases.
-- [list][list] - Aliases für die Arbeit mit dem `ls`-Befehl.
-- [macOS][macos] - Aliases für macOS.
-- [make][make] - Aliases für die Arbeit mit dem `make`-Befehl.
-- [mkdir][mkdir] - Aliases für die Arbeit mit dem `mkdir`-Befehl.
-- [modern][modern] - Modernes Unix.
-- [modern-core][modern-core] - Hochleistungswerkzeuge (Atuin, Yazi, Zellij).
-- [npm][npm] - Aliases für die Arbeit mit dem `npm`-Befehl.
-- [permission][permission] - Aliases für Berechtigungen.
-- [pnpm][pnpm] - Aliases für die Arbeit mit dem `pnpm`-Befehl.
-- [ps][ps] - Aliases für die Arbeit mit dem `ps`-Befehl.
-- [python][python] - Aliases für Python.
-- [rsync][rsync] - Aliases für die Arbeit mit dem `rsync`-Befehl.
-- [rust][rust] - Aliases für die Arbeit mit der Programmiersprache Rust.
-- [security][security] - Sicherheits-Aliases.
-- [subversion][subversion] - Aliases für die Arbeit mit Subversion.
-- [sudo][sudo] - Aliases für die Arbeit mit dem `sudo`-Befehl.
-- [terraform][terraform] - Aliases für Terraform.
-- [tmux][tmux] - Aliases für die Arbeit mit dem `tmux`-Befehl.
-- [update][update] - Aliases für die Arbeit mit dem `update`-Befehl.
-- [uuid][uuid] - Aliases für die Arbeit mit dem `uuid`-Befehl.
-- [wget][wget] - Aliases für die Arbeit mit dem `wget`-Befehl.
-- [yarn][yarn] - Aliases für die Arbeit mit Yarn.
-
-[ai]: ./ai/
-[archives]: ./archives/
-[cd]: ./cd/
-[chmod]: ./chmod/
-[clear]: ./clear/
-[compliance]: ./compliance/
-[configuration]: ./configuration/
-[default]: ./default/
-[diagnostics]: ./diagnostics/
-[dig]: ./dig/
-[docker]: ./docker/
-[dot]: ./dot/
-[du]: ./du/
-[editor]: ./editor/
-[find]: ./find/
-[fonts]: ./fonts/
-[gcloud]: ./gcloud/
-[git]: ./git/
-[gnu]: ./gnu/
-[go]: ./go/
-[installer]: ./installer/
-[interactive]: ./interactive/
-[jekyll]: ./jekyll/
-[kubernetes]: ./kubernetes/
-[legal]: ./legal/
-[list]: ./list/
-[macos]: ./macOS/
-[make]: ./make/
-[mkdir]: ./mkdir/
-[modern]: ./modern/
-[modern-core]: ./modern-core/
-[npm]: ./npm/
-[permission]: ./permission/
-[pnpm]: ./pnpm/
-[ps]: ./ps/
-[python]: ./python/
-[rsync]: ./rsync/
-[rust]: ./rust/
-[security]: ./security/
-[subversion]: ./subversion/
-[sudo]: ./sudo/
-[terraform]: ./terraform/
-[tmux]: ./tmux/
-[update]: ./update/
-[uuid]: ./uuid/
-[wget]: ./wget/
-[yarn]: ./yarn/
+<!-- markdownlint-enable MD013-->

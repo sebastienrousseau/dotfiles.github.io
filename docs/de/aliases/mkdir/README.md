@@ -1,45 +1,44 @@
 ---
-description: Die Mkdir-Aliase sind eine Sammlung von Aliasen, die die Arbeit mit dem `mkdir` CLI-Tool erleichtern. Mkdir erstellt Verzeichnisse.
+description: Shell-Aliase fuer mkdir, die Verzeichniserstellung mit Datums- und Zeitbenennungskonventionen vereinfachen.
 lang: de-DE
-metaTitle: Die Mkdir-Aliase - Dotfiles (DE)
+metaTitle: Mkdir Aliase - Dotfiles (DE)
 permalink: /de/aliases/mkdir/
+sidebar: true
 
 meta:
   - name: keywords
-    content: aliases, mkdir, linux, macos, shell, terminal, windows
+    content: mkdir aliase, verzeichniserstellung, shell verknuepfungen, dotfiles, terminal
   - name: twitter:card
-    content: Die Mkdir-Aliase sind eine Sammlung von Aliasen, die die Arbeit mit dem `mkdir` CLI-Tool erleichtern. Mkdir erstellt Verzeichnisse.
-  - name: twitter:description
-    content: Die Mkdir-Aliase sind eine Sammlung von Aliasen, die die Arbeit mit dem `mkdir` CLI-Tool erleichtern. Mkdir erstellt Verzeichnisse.
+    content: summary
   - name: twitter:title
-    content: Die Mkdir-Aliase - Dotfiles (DE)
+    content: Mkdir Aliase - Dotfiles
+  - name: twitter:description
+    content: Shell-Aliase fuer mkdir mit Datums- und Zeitbenennungskonventionen.
   - name: og:title
-    content: Die Mkdir-Aliase - Dotfiles (DE)
+    content: Mkdir Aliase - Dotfiles
   - name: og:description
-    content: Die Mkdir-Aliase sind eine Sammlung von Aliasen, die die Arbeit mit dem `mkdir` CLI-Tool erleichtern. Mkdir erstellt Verzeichnisse.
+    content: Shell-Aliase fuer mkdir mit Datums- und Zeitbenennungskonventionen.
   - name: og:image:alt
-    content: Dotfiles - Einfach entworfen fuer dein Shell-Leben
+    content: Dotfiles - Simply designed to fit your shell life
   - name: og:locale
     content: de_DE
 ---
-# Mkdir-Aliase
 
-Mkdir-Aliase verwalten. Teil der **Universal Dotfiles** Konfiguration.
+# Mkdir Aliase
 
-![Dotfiles banner][banner]
+Optimieren Sie die Verzeichniserstellung mit intelligenten Benennungskonventionen.
 
-## 📖 Beschreibung
+## Uebersicht
 
-Diese Aliase sind in `mkdir.aliases.sh` definiert und werden automatisch von `chezmoi` geladen.
+Die mkdir-Aliase bieten Verknuepfungen zum Erstellen von Verzeichnissen mit automatischen Datums- und Zeitstempeln. Diese Aliase sind in `mkdir.aliases.sh` definiert und werden automatisch von Chezmoi geladen.
 
-## ⚡ Aliase
+## Referenz
 
-Dieser Code stellt eine Reihe von Aliasen fuer den Befehl `mkdir` bereit.
-- `mde` Beispielverzeichnis mit aktuellem Datum erstellen.
-- `md` Verzeichnis erstellen.
-- `mdd` Verzeichnis mit Datum erstellen.
-- `mdn` Notiz-Verzeichnis mit aktuellem Datum erstellen.
-- `mdw` Arbeitsverzeichnis mit aktuellem Datum erstellen.
-- `mdt` Verzeichnis mit Uhrzeit erstellen.
-
-[banner]: https://kura.pro/dotfiles/v2/images/titles/title-dotfiles.svg
+| Alias | Beschreibung |
+|:---|:---|
+| `md` | Verzeichnis erstellen |
+| `mdd` | Verzeichnis mit Datum erstellen |
+| `mdt` | Verzeichnis mit Uhrzeit erstellen |
+| `mde` | Beispielverzeichnis mit aktuellem Datum erstellen |
+| `mdn` | Notiz-Verzeichnis mit aktuellem Datum erstellen |
+| `mdw` | Arbeitsverzeichnis mit aktuellem Datum erstellen |

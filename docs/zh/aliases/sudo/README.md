@@ -1,43 +1,42 @@
 ---
-description: Sudo 别名用于与 `sudo` 命令交互。Sudo 是一款允许以其他用户身份运行命令的工具。
+description: 用于以超级用户身份运行命令的 Sudo shell 别名。提升权限的快捷方式。
 lang: zh-CN
-metaTitle: Sudo 别名 - Dotfiles (ZH)
-permalink: /zh/aliases/sudo/
+metaTitle: Sudo 别名 - Dotfiles (CN)
+permalink: /aliases/sudo/
+sidebar: true
 
 meta:
   - name: keywords
-    content: aliases, sudo, linux, macos, shell, terminal, windows
+    content: sudo, 超级用户, root, shell 别名, dotfiles, 权限
   - name: twitter:card
-    content: Sudo 别名用于与 `sudo` 命令交互。Sudo 是一款允许以其他用户身份运行命令的工具。
+    content: summary
   - name: twitter:description
-    content: Sudo 别名用于与 `sudo` 命令交互。Sudo 是一款允许以其他用户身份运行命令的工具。
+    content: 用于以超级用户身份运行命令的 Sudo shell 别名。提升权限的快捷方式。
   - name: twitter:title
-    content: Sudo 别名 - Dotfiles (ZH)
+    content: Sudo 别名 - Dotfiles
   - name: og:title
-    content: Sudo 别名 - Dotfiles (ZH)
+    content: Sudo 别名 - Dotfiles
   - name: og:description
-    content: Sudo 别名用于与 `sudo` 命令交互。Sudo 是一款允许以其他用户身份运行命令的工具。
+    content: 用于以超级用户身份运行命令的 Sudo shell 别名。提升权限的快捷方式。
   - name: og:image:alt
-    content: Dotfiles - 为你的 Shell 生活而设计
+    content: Dotfiles - 为你的 Shell 生活精心设计
   - name: og:locale
     content: zh_CN
 ---
+
 # Sudo 别名
 
-管理 Sudo 别名。**Universal Dotfiles** 配置的一部分。
+以提升的权限执行命令。
 
-![Dotfiles banner][banner]
+## 概述
 
-## 📖 描述
+这些别名定义在 `sudo.aliases.sh` 中，由 Chezmoi 自动加载。
 
-这些别名定义在 `sudo.aliases.sh` 中，并由 `chezmoi` 自动加载。
+## 参考
 
-## ⚡ 别名
-
-此代码提供一组 `sudo` 命令别名。
-- `root` 以超级用户运行命令。
-- `s` 以超级用户运行命令。
-- `su` 以超级用户运行命令。
-- `sudo` 以超级用户运行命令。
-
-[banner]: https://kura.pro/dotfiles/v2/images/titles/title-dotfiles.svg
+| 别名 | 描述 |
+|:---|:---|
+| `root` | 以超级用户身份执行命令 |
+| `s` | 以超级用户身份执行命令 |
+| `su` | 以超级用户身份执行命令 |
+| `sudo` | 以超级用户身份执行命令 |

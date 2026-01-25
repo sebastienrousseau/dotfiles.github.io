@@ -1,203 +1,118 @@
 ---
-description: Die Change-Directory-Aliase sind eine Sammlung von Aliasen, die die Arbeit mit dem `cd` CLI-Tool erleichtern. Cd wechselt das aktuelle Verzeichnis.
+description: Verzeichnisnavigations-Aliase mit Lesezeichen, Verlaufsverfolgung und intelligenten Verknüpfungen. Navigieren Sie schneller durch Ihr Dateisystem.
 lang: de-DE
-metaTitle: Change-Directory-Aliase - Dotfiles (DE)
+metaTitle: CD Aliase - Dotfiles (DE)
 permalink: /de/aliases/cd/
+sidebar: true
 
 meta:
   - name: keywords
-    content: aliases, cd, chdir, change directory, directory, linux, macos, shell, terminal, windows
+    content: cd, verzeichnis, navigation, lesezeichen, shell aliase, dotfiles, terminal
   - name: twitter:card
-    content: Die Change-Directory-Aliase sind eine Sammlung von Aliasen, die die Arbeit mit dem `cd` CLI-Tool erleichtern. Cd wechselt das aktuelle Verzeichnis.
+    content: summary
   - name: twitter:description
-    content: Die Change-Directory-Aliase sind eine Sammlung von Aliasen, die die Arbeit mit dem `cd` CLI-Tool erleichtern. Cd wechselt das aktuelle Verzeichnis.
+    content: Verzeichnisnavigations-Aliase mit Lesezeichen, Verlaufsverfolgung und intelligenten Verknüpfungen. Navigieren Sie schneller durch Ihr Dateisystem.
   - name: twitter:title
-    content: Change-Directory-Aliase - Dotfiles (DE)
+    content: CD Aliase - Dotfiles
   - name: og:title
-    content: Change-Directory-Aliase - Dotfiles (DE)
+    content: CD Aliase - Dotfiles
   - name: og:description
-    content: Die Change-Directory-Aliase sind eine Sammlung von Aliasen, die die Arbeit mit dem `cd` CLI-Tool erleichtern. Cd wechselt das aktuelle Verzeichnis.
+    content: Verzeichnisnavigations-Aliase mit Lesezeichen, Verlaufsverfolgung und intelligenten Verknüpfungen. Navigieren Sie schneller durch Ihr Dateisystem.
   - name: og:image:alt
-    content: Dotfiles - Einfach entworfen fuer dein Shell-Leben
+    content: Dotfiles - Simply designed to fit your shell life
   - name: og:locale
     content: de_DE
 ---
-# Cd-Aliase
 
-Cd-Aliase verwalten. Teil der **Universal Dotfiles** Konfiguration.
+# CD Aliase
 
-![Dotfiles banner][banner]
+Navigieren Sie schneller durch Ihr Dateisystem. Lesezeichen, Verlauf und intelligente Verknüpfungen.
 
-## 📖 Beschreibung
+## Übersicht
 
-Diese Aliase sind in `cd.aliases.sh` definiert und werden automatisch von `chezmoi` geladen.
+Diese Aliase sind in `cd.aliases.sh` definiert und werden automatisch von Chezmoi geladen.
 
-## ⚡ Aliase
+## Referenz
 
----
-## 🚀 Einfuehrung
-Dieses Repository enthaelt robuste Shell-Aliase und Skripte, die deine
-CLI-Erfahrung verbessern. Das erweiterte Navigationssystem bietet:
-- **Intelligente Verzeichnis-Historie**
-- **Persistentes Bookmark-System**
-- **Projekt-Root-Erkennung**
-- **Cross-Platform-Kompatibilitaet**
-- **Dynamische Fehlerbehandlung**
-- **Automatisches Verzeichnis-Listing**
-- **Performance-Optimierung fuer grosse Verzeichnisse**
-- **Erhoehte Sicherheit und Validierung**
----
-## 🛠️ Features
-### 🌟 Navigations-Kurzbefehle
-| Alias           | Beschreibung                         |
-|------------------|--------------------------------------|
-| `-`             | Zum vorherigen Verzeichnis wechseln  |
-| `..`, `...`     | Eine oder zwei Ebenen nach oben      |
-| `....`, `.....` | Drei oder vier Ebenen nach oben      |
-| `hom`           | Zum Home-Verzeichnis (`~`)           |
----
-### 📂 Benutzerdefinierte Verzeichnisse
-Schneller Zugriff auf haeufig genutzte Verzeichnisse:
-| Alias | Verzeichnis-Pfad        | Beschreibung            |
-|-------|--------------------------|------------------------|
-| `app` | `${HOME}/Applications`  | Applications-Verz.     |
-| `cod` | `${HOME}/Code`          | Code-Verzeichnis       |
-| `dsk` | `${HOME}/Desktop`       | Desktop-Verzeichnis    |
-| `doc` | `${HOME}/Documents`     | Documents-Verzeichnis  |
-| `dot` | `${HOME}/.dotfiles`     | Dotfiles-Verzeichnis   |
-| `dwn` | `${HOME}/Downloads`     | Downloads-Verzeichnis  |
-| `mus` | `${HOME}/Music`         | Music-Verzeichnis      |
-| `pic` | `${HOME}/Pictures`      | Pictures-Verzeichnis   |
-| `vid` | `${HOME}/Videos`        | Videos-Verzeichnis     |
----
-### 📌 Bookmark-System
-Persistente Bookmarks fuer beliebige Verzeichnisse:
-| Command             | Alias | Beschreibung                   |
-|---------------------|-------|-------------------------------|
-| `bookmark [name]`   | `bm`  | Bookmark erstellen            |
-| `bookmark_list`     | `bml` | Alle Bookmarks auflisten      |
-| `bookmark_update`   | `bmu` | Bookmark aktualisieren        |
-| `bookmark_remove`   | `bmr` | Bookmark loeschen             |
-| `goto <name>`       | `bmg` | Zum Bookmark wechseln         |
+### Navigationsverknüpfungen
+
+| Alias | Beschreibung |
+|:---|:---|
+| `-` | Zum vorherigen Verzeichnis wechseln |
+| `..` | Eine Ebene nach oben |
+| `...` | Zwei Ebenen nach oben |
+| `....` | Drei Ebenen nach oben |
+| `.....` | Vier Ebenen nach oben |
+| `hom` | Zum Home-Verzeichnis navigieren |
+
+### Verzeichnisverknüpfungen
+
+| Alias | Pfad | Beschreibung |
+|:---|:---|:---|
+| `app` | `~/Applications` | Anwendungen |
+| `cod` | `~/Code` | Code-Verzeichnis |
+| `dsk` | `~/Desktop` | Schreibtisch |
+| `doc` | `~/Documents` | Dokumente |
+| `dot` | `~/.dotfiles` | Dotfiles |
+| `dwn` | `~/Downloads` | Downloads |
+| `mus` | `~/Music` | Musik |
+| `pic` | `~/Pictures` | Bilder |
+| `vid` | `~/Videos` | Videos |
+
+### Systemverzeichnisse
+
+| Alias | Pfad | Beschreibung |
+|:---|:---|:---|
+| `etc` | `/etc` | Systemkonfiguration |
+| `var` | `/var` | Variable Dateien |
+| `tmp` | `/tmp` | Temporäre Dateien |
+| `usr` | `/usr` | Benutzerprogramme |
+
+### Lesezeichen
+
+| Befehl | Alias | Beschreibung |
+|:---|:---|:---|
+| `bookmark [name]` | `bm` | Lesezeichen erstellen |
+| `bookmark_list` | `bml` | Lesezeichen auflisten |
+| `bookmark_update` | `bmu` | Lesezeichen aktualisieren |
+| `bookmark_remove` | `bmr` | Lesezeichen löschen |
+| `goto <name>` | `bmg` | Zu Lesezeichen gehen |
+
 ```bash
-# Bookmark fuer aktuelles Verzeichnis
-bm work-project
-# Zum Bookmark wechseln
-bmg work-project
-# Alle Bookmarks anzeigen
-bml
+bm work-project      # Lesezeichen erstellen
+bmg work-project     # Zu Lesezeichen navigieren
+bml                  # Alle Lesezeichen auflisten
 ```
----
-### 🕒 Verzeichnis-Historie
-Zuletzt besuchte Verzeichnisse anzeigen und anspringen:
-| Command      | Alias | Beschreibung                      |
-|--------------|-------|----------------------------------|
-| `dirhistory` | `dh`  | Historie anzeigen und navigieren |
-| `lwd`        | `ld`  | Zum letzten Arbeitsverzeichnis   |
----
-### 🏗️ Erweiterte Navigation
-| Command          | Alias | Beschreibung                                 |
-|------------------|-------|---------------------------------------------|
-| `mkcd <dir>`     | `mcd` | Verzeichnis erstellen und direkt betreten   |
-| `proj`           | `pr`  | Zum Projekt-Root wechseln (Git, npm, etc.)  |
-| `pushd`          | `pd`  | Verzeichnis auf Stack legen                 |
-| `popd`           |       | Verzeichnis vom Stack nehmen                |
-| `dirs`           |       | Stack mit Indizes anzeigen                  |
----
-### 🔧 Systemverzeichnisse
-Schnell zu wichtigen Systemverzeichnissen wechseln:
-| Alias | Verzeichnis-Pfad | Beschreibung                 |
-|-------|-----------------|-----------------------------|
-| `etc` | `/etc`          | Systemkonfiguration          |
-| `var` | `/var`          | Variable Dateien             |
-| `tmp` | `/tmp`          | Temporaere Dateien           |
-| `usr` | `/usr`          | Benutzerprogramme            |
----
-### ⚙️ Erweiterte Anpassung
-- **Cross-Platform-Support**: macOS, Linux und andere Unix-Systeme
-- **Konfigurierbare Optionen** via Umgebungsvariablen:
-  ```bash
-  # In .bashrc oder .zshrc
-  export SHOW_HIDDEN_FILES=true        # Versteckte Dateien anzeigen
-  export ENABLE_COLOR_OUTPUT=true      # Farbausgabe aktivieren
-  export ENABLE_DIR_GROUPING=true      # Verzeichnisse zuerst
-  export AUTO_LIST_AFTER_CD=true       # Listing nach Navigation
-  export LARGE_DIR_THRESHOLD=1000      # Listing bei grossen Verzeichnissen auslassen
-  export MAX_RECENT_DIRS=15            # Anzahl Historie-Eintraege
-  export RESTORE_LAST_DIR=true         # Letztes Verzeichnis beim Start
-  ```
-- **Tab Completion** fuer Bookmarks und Befehle
-- **Help-System**: `cdhelp`
-- **Version**: `cdversion`
----
-## 📦 Installation
-1. **Repository klonen**:
-```bash
-git clone https://github.com/sebastienrousseau/dotfiles.git
-```
-2. **Skript in Shell-Konfiguration einbinden**:
-```bash
-echo 'source /path/to/dotfiles/cd.aliases.sh' >> ~/.bashrc
-```
-3. **Shell neu laden**:
-```bash
-source ~/.bashrc
-```
----
-## 🧑‍💻 Beispiele
-```bash
-# In ein Verzeichnis wechseln
-cd ~/projects/website
-# Verzeichnis erstellen und wechseln
-mcd ~/projects/new-project
-# Bookmark anlegen
-bm website
-# Bookmarks anzeigen
-bml
-# Zu Bookmark wechseln
-bmg website
-# Projekt-Root finden
-pr
-# Struktur erstellen und wechseln
-mcd ~/projects/app/src/components
-# Historie anzeigen
-dh
-# Zum letzten Verzeichnis
-ld
-# Verzeichnis auf Stack legen
-pd ~/downloads
-# Zurueck auf Stack
-popd
-# Version anzeigen
-cdversion
-# Hilfe anzeigen
-cdhelp
-```
----
-## 🛡️ Security Features
-Die erweiterte Version umfasst bessere Sicherheit und Validierung:
-- **Verzeichnis-Validierung**: Existenz und Rechte vor Navigation pruefen
-- **Bookmark-Validierung**: Schutz vor Injection durch Name-Checks
-- **Sichere Dateioperationen**: Verhindert Korruption
-- **Input Sanitation**: Eingaben werden validiert
----
-## 📋 Performance-Optimierungen
-- **Grosse Verzeichnisse**: Listing wird ausgelassen
-- **Effiziente Bookmark-Speicherung**
-- **Duplikatvermeidung** in der Historie
-- **Optimierte Dateioperationen**
----
-## 📚 Dokumentation
-Fuer erweiterte Konfiguration und Beispiele `cdhelp` ausfuehren oder die
-[offizielle Dokumentation](https://dotfiles.io) besuchen.
----
-## 🛡️ License
-Dieses Projekt ist unter der
-[MIT License](https://opensource.org/licenses/MIT) lizenziert.
----
-## 👨‍💻 Author
-Created with ♥ by [Sebastien Rousseau](https://sebastienrousseau.com)
-- Website: [https://sebastienrousseau.com](https://sebastienrousseau.com)
-- GitHub: [https://github.com/sebastienrousseau](https://github.com/sebastienrousseau)
 
-[banner]: https://kura.pro/dotfiles/v2/images/titles/title-dotfiles.svg
+### Verlauf
+
+| Befehl | Alias | Beschreibung |
+|:---|:---|:---|
+| `dirhistory` | `dh` | Verzeichnisverlauf anzeigen |
+| `lwd` | `ld` | Zum letzten Verzeichnis zurückkehren |
+
+### Erweitert
+
+| Befehl | Alias | Beschreibung |
+|:---|:---|:---|
+| `mkcd <dir>` | `mcd` | Verzeichnis erstellen und betreten |
+| `proj` | `pr` | Zum Projektstamm gehen |
+| `pushd` | `pd` | Verzeichnis auf Stapel legen |
+| `popd` | — | Vom Stapel entfernen |
+| `dirs` | — | Verzeichnisstapel auflisten |
+
+## Konfiguration
+
+Passen Sie das Verhalten mit Umgebungsvariablen an:
+
+```bash
+export SHOW_HIDDEN_FILES=true
+export ENABLE_COLOR_OUTPUT=true
+export AUTO_LIST_AFTER_CD=true
+export MAX_RECENT_DIRS=15
+export RESTORE_LAST_DIR=true
+```
+
+## Hilfe
+
+Führen Sie `cdhelp` aus, um alle Befehle anzuzeigen, oder `cdversion` für Versionsinformationen.

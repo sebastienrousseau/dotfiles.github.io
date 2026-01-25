@@ -1,14 +1,26 @@
 ---
-description: diagnostics aliases for Dotfiles
+title: "Diagnostics Aliases: System Health and Self-Healing Commands"
+description: "Shell aliases for system diagnostics, health checks, drift detection, and self-healing in your dotfiles environment."
 lang: en-GB
-metaTitle: diagnostics aliases - Dotfiles
+metaTitle: "Diagnostics Aliases | Dotfiles"
 permalink: /aliases/diagnostics/
+sidebar: true
+meta:
+  - name: keywords
+    content: "diagnostics aliases, system health check, dotfiles doctor, chezmoi verify, self-healing shell"
 ---
+
 # Diagnostics Aliases
 
 Tools for self-healing and system health checks.
 
-## 🩺 Health & Repair
+## Overview
+
+The diagnostics aliases provide commands for monitoring system health, detecting configuration drift, and automatically repairing your dotfiles environment. These utilities integrate with chezmoi to ensure your local files remain in sync with your managed state.
+
+## Reference
+
+### Health and Repair
 
 | Alias | Description |
 |-------|-------------|

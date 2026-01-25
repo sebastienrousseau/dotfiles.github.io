@@ -1,32 +1,45 @@
 ---
-description: Disk-Usage-Aliase fuer Dotfiles
+description: Shell-Aliase für Festplattennutzungsüberwachung. Dateigrößen anzeigen, große Verzeichnisse finden und Speicher effizient verwalten.
 lang: de-DE
-metaTitle: Disk-Usage-Aliase - Dotfiles
+metaTitle: Disk Usage Aliase - Dotfiles (DE)
 permalink: /de/aliases/disk-usage/
+sidebar: true
+
+meta:
+  - name: keywords
+    content: disk usage aliase, du befehl, speicherüberwachung, dateigröße, dotfiles, shell, bash, zsh
+  - name: twitter:card
+    content: summary
+  - name: twitter:description
+    content: Shell-Aliase für Festplattennutzungsüberwachung. Dateigrößen anzeigen, große Verzeichnisse finden und Speicher effizient verwalten.
+  - name: twitter:title
+    content: Disk Usage Aliase - Dotfiles
+  - name: og:title
+    content: Disk Usage Aliase - Dotfiles
+  - name: og:description
+    content: Shell-Aliase für Festplattennutzungsüberwachung. Dateigrößen anzeigen, große Verzeichnisse finden und Speicher effizient verwalten.
+  - name: og:image:alt
+    content: Dotfiles - Simply designed to fit your shell life
+  - name: og:locale
+    content: de_DE
 ---
-# Disk-Usage-Aliase
 
-Disk-Usage-Aliase verwalten. Teil der **Universal Dotfiles** Konfiguration.
+# Disk Usage Aliase
 
-![Dotfiles banner][banner]
+Schnelle Überwachung und Analyse des Speicherverbrauchs in Ihrem Dateisystem.
 
-## 📖 Beschreibung
+## Übersicht
 
-Diese Aliase sind in `disk-usage.aliases.sh` definiert und werden automatisch von `chezmoi` geladen.
+Diese Aliase sind in `disk-usage.aliases.sh` definiert und werden automatisch von Chezmoi geladen.
 
-## ⚡ Aliase
+## Referenz
 
-Diese Aliase erleichtern die Analyse der Plattennutzung mit `du`-Varianten,
-sortiert nach Groesse und fuer schnelle Diagnosen gedacht.
-- `du` `du -h` im aktuellen Verzeichnis ausfuehren.
-- `du1` Plattennutzung der ersten Ebene, nach Groesse sortiert.
-- `ducks` Die 10 groessten Speicherfresser im aktuellen Verzeichnis.
-- `duf` Plattennutzung von Dateien mit Tiefe 1.
-- `dufi` Wie `duf`, absteigend sortiert.
-- `duh` Gesamtnutzung des aktuellen Verzeichnisses, lesbar.
-- `dui` Plattennutzung und Inode, sortiert.
-- `dul` Verzeichnisse nach Groesse sortiert.
-- `duls` Nutzung im aktuellen Verzeichnis, nach Groesse sortiert.
-- `dus` Plattennutzung des aktuellen Verzeichnisses, nach Groesse sortiert.
-
-[banner]: https://kura.pro/dotfiles/v2/images/titles/title-dotfiles.svg
+| Alias | Beschreibung |
+|:---|:---|
+| `du` | Festplattennutzung des aktuellen Verzeichnisses anzeigen |
+| `du1` | Dateigröße von Dateien und Verzeichnissen im aktuellen Verzeichnis |
+| `duh` | Dateigröße in menschenlesbarem Format anzeigen |
+| `ducks` | Die 10 größten Dateien und Verzeichnisse im aktuellen Verzeichnis |
+| `dus` | Dateigröße in menschenlesbarem Format, nach Größe sortiert |
+| `dusym` | Dateigröße einschließlich Symlinks anzeigen |
+| `dut` | Gesamtgröße des aktuellen Verzeichnisses anzeigen |

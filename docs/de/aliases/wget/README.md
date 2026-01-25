@@ -1,43 +1,42 @@
 ---
-description: Die Wget-Aliase erstellen hilfreiche Kurzbefehle fuer den Befehl `wget`. Wget ist ein Tool, das Dateien aus dem Internet herunterlaedt.
+description: Shell-Aliase fuer wget Dateidownloads. Dateien aus dem Internet mit Resume-Unterstuetzung herunterladen.
 lang: de-DE
-metaTitle: Die Wget-Aliase - Dotfiles (DE)
+metaTitle: Wget Aliase - Dotfiles (DE)
 permalink: /de/aliases/wget/
+sidebar: true
 
 meta:
   - name: keywords
-    content: aliases, wget, linux, macos, shell, terminal, windows
+    content: wget aliase, datei download, wget resume, wget verknuepfungen, dotfiles, shell
   - name: twitter:card
-    content: Die Wget-Aliase erstellen hilfreiche Kurzbefehle fuer den Befehl `wget`. Wget ist ein Tool, das Dateien aus dem Internet herunterlaedt.
-  - name: twitter:description
-    content: Die Wget-Aliase erstellen hilfreiche Kurzbefehle fuer den Befehl `wget`. Wget ist ein Tool, das Dateien aus dem Internet herunterlaedt.
+    content: summary
   - name: twitter:title
-    content: Die Wget-Aliase - Dotfiles (DE)
+    content: Wget Aliase - Dotfiles
+  - name: twitter:description
+    content: Shell-Aliase fuer wget Dateidownloads mit Resume-Unterstuetzung.
   - name: og:title
-    content: Die Wget-Aliase - Dotfiles (DE)
+    content: Wget Aliase - Dotfiles
   - name: og:description
-    content: Die Wget-Aliase erstellen hilfreiche Kurzbefehle fuer den Befehl `wget`. Wget ist ein Tool, das Dateien aus dem Internet herunterlaedt.
+    content: Shell-Aliase fuer wget Dateidownloads mit Resume-Unterstuetzung.
   - name: og:image:alt
-    content: Dotfiles - Einfach entworfen fuer dein Shell-Leben
+    content: Dotfiles - Simply designed to fit your shell life
   - name: og:locale
     content: de_DE
 ---
-# Wget-Aliase
 
-Wget-Aliase verwalten. Teil der **Universal Dotfiles** Konfiguration.
+# Wget Aliase
 
-![Dotfiles banner][banner]
+Dateien effizient aus dem Internet herunterladen.
 
-## 📖 Beschreibung
+## Uebersicht
 
-Diese Aliase sind in `wget.aliases.sh` definiert und werden automatisch von `chezmoi` geladen.
+Diese Aliase sind in `wget.aliases.sh` definiert und werden automatisch von Chezmoi geladen. Sie bieten schnellen Zugriff auf wget mit gaengigen Optionen fuer Dateidownloads.
 
-## ⚡ Aliase
+## Referenz
 
-Dieser Code stellt eine Reihe von Aliasen fuer den Befehl `wget` bereit.
-- `wg` wget.
-- `wgc` wget mit Resume.
-- `wge` wget mit robots=off.
-- `wget` wget mit Resume.
-
-[banner]: https://kura.pro/dotfiles/v2/images/titles/title-dotfiles.svg
+| Alias | Beschreibung |
+|:---|:---|
+| `wg` | wget |
+| `wgc` | wget mit Resume-Unterstuetzung |
+| `wge` | wget mit robots=off |
+| `wget` | wget mit Resume-Unterstuetzung |

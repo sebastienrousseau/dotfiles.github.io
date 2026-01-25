@@ -1,40 +1,55 @@
 ---
-description: 权限别名用于 Dotfiles
+description: chmod、chown 和 chgrp 命令的 shell 别名。使用数字快捷方式（如 755、644 和 777）快速设置文件权限。
 lang: zh-CN
-metaTitle: 权限别名 - Dotfiles
-permalink: /zh/aliases/permission/
+metaTitle: Permission 别名 - Dotfiles (CN)
+permalink: /aliases/permission/
+sidebar: true
+
+meta:
+  - name: keywords
+    content: 权限别名, chmod 快捷方式, 文件权限, chown, chgrp, dotfiles, shell
 ---
-# 权限别名
 
-管理权限别名。**Universal Dotfiles** 配置的一部分。
+# Permission 别名
 
-![Dotfiles banner][banner]
+在 shell 环境中管理文件和目录权限的快捷方式。
 
-## 📖 描述
+## 概述
 
-这些别名定义在 `permission.aliases.sh` 中，并由 `chezmoi` 自动加载。
+这些别名定义在 `permission.aliases.sh` 中，由 chezmoi 自动加载。它们提供对常见权限模式和所有权命令的快速访问。
 
-## ⚡ 别名
+## 参考
 
-此代码提供文件权限相关别名。
-- `000` 用户/组/其他均无读写执行权限。
-- `400` 用户可执行，其余无读写。
-- `444` 所有人可读，不可写/执行。
-- `600` 用户可读写。
-- `644` 用户可写，所有人可读。
-- `666` 所有人可读写。
-- `755` 用户可读写执行，组/其他可读执行。
-- `764` 用户与组可读写，其他可读。
-- `777` 所有人可读写执行。
-- `chgrp` 修改组所有权。
-- `chgrpr` 递归修改组所有权。
-- `chgrpu` 递归修改组为当前用户。
-- `chmod` 修改文件模式位。
-- `chmodr` 递归修改文件模式位。
-- `chmodu` 递归修改为当前用户。
-- `chmox` 使文件可执行。
-- `chown` 修改所有者和组。
-- `chownr` 递归修改所有者和组。
-- `chownu` 递归修改为当前用户。
+### 数字权限快捷方式
 
-[banner]: https://kura.pro/dotfiles/v2/images/titles/title-dotfiles.svg
+| 别名 | 描述 |
+|:---|:---|
+| `000` | 将权限设置为用户、组和其他人都没有读写执行权限 |
+| `400` | 将权限设置为无读写，但仅允许用户执行 |
+| `444` | 将权限设置为无写入或执行，但允许所有人读取 |
+| `600` | 将权限设置为仅用户读写 |
+| `644` | 将权限设置为所有人可读，但仅用户可写 |
+| `666` | 将权限设置为所有人可读写 |
+| `755` | 将权限设置为用户读写执行，组和其他人读执行 |
+| `764` | 将权限设置为用户和组读写，其他人只读 |
+| `777` | 将权限设置为所有人读写执行 |
+
+### 文件模式命令
+
+| 别名 | 描述 |
+|:---|:---|
+| `chmod` | 更改文件模式位 |
+| `chmodr` | 递归更改文件模式位 |
+| `chmodu` | 递归更改文件模式位为当前用户 |
+| `chmox` | 使文件可执行 |
+
+### 所有权命令
+
+| 别名 | 描述 |
+|:---|:---|
+| `chown` | 更改文件所有者和组 |
+| `chownr` | 递归更改文件所有者和组 |
+| `chownu` | 递归更改文件所有者和组为当前用户 |
+| `chgrp` | 更改文件或目录的组所有权 |
+| `chgrpr` | 递归更改文件或目录的组所有权 |
+| `chgrpu` | 递归更改文件或目录的组所有权为当前用户 |

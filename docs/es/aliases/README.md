@@ -1,153 +1,101 @@
 ---
-description: Los alias le permiten crear accesos directos para los comandos de shell que utiliza con frecuencia. Esto le permite ser más productivo y eficiente al reducir la cantidad de escritura que tiene que hacer cuando usa el shell regularmente.
+description: Alias de shell que crean atajos para comandos frecuentes. Aumenta la productividad reduciendo la escritura.
 lang: es-ES
 metaTitle: Alias - Dotfiles (ES)
-permalink: /es/aliases/
+permalink: /aliases/
+
+meta:
+  - name: keywords
+    content: alias, shell, bash, zsh, atajos, comandos, dotfiles, chezmoi, productividad, terminal
+  - name: twitter:card
+    content: summary
+  - name: twitter:description
+    content: Alias de shell que crean atajos para comandos frecuentes. Aumenta la productividad reduciendo la escritura.
+  - name: twitter:title
+    content: Alias - Dotfiles
+  - name: og:title
+    content: Alias - Dotfiles
+  - name: og:description
+    content: Alias de shell que crean atajos para comandos frecuentes. Aumenta la productividad reduciendo la escritura.
+  - name: og:image:alt
+    content: Dotfiles - Diseñado para tu vida en el shell
+  - name: og:locale
+    content: es_ES
 ---
 
 # Alias
 
-Los alias le permiten crear accesos directos para los comandos de shell que utiliza con frecuencia. Esto le permite ser más productivo y eficiente al reducir la cantidad de escritura que tiene que hacer cuando usa el shell regularmente. Por ejemplo, en lugar de escribir `git status`, podría escribir `gst` para obtener el mismo resultado.
+Alias modulares gestionados por **Chezmoi**. Escribe menos, haz más.
 
-Esta es una excelente manera de ahorrar tiempo y reducir considerablemente la cantidad de escritura que tiene que hacer al usar la terminal a diario, lo que le ayuda a ser más productivo y eficiente.
+## Descubrir
 
-## Preajustes
+Los alias se organizan en archivos pequeños y enfocados — uno por herramienta o flujo de trabajo. Durante `chezmoi apply`, todos los archivos de alias se agregan en `~/.config/shell/aliases.sh` y se cargan en tu shell.
 
-Dotfiles tiene una colección de preajustes de configuración y diversas recetas con las que puede comenzar.
+## Empezar
 
-### Detección automática del sistema
+### Añadir un alias
 
-Dotfiles contiene una función de utilidad para detectar el sabor de `ls` actual que está en uso para ayudar a configurar las variables de entorno `LS_COLORS` correctas para su sistema.
+1. Crea un nuevo archivo (por ejemplo `miherramienta/miherramienta.aliases.sh`)
+2. Define tus alias:
+   ```bash
+   alias micmd="echo 'Hello World'"
+   ```
+3. Aplica los cambios:
+   ```bash
+   chezmoi apply
+   ```
 
-La variable de entorno `LS_COLORS` es utilizada por el comando `ls` para colorear la salida del comando.
+## Referencia
 
-### Comprobar alias integrados
+Explora alias por categoría:
 
-Escriba el siguiente comando alias en su terminal:
+<!-- markdownlint-disable MD013-->
 
-```bash
-alias
-```
+| Categoría | Descripción |
+| :--- | :--- |
+| [IA](ai/) | Atajos para asistentes IA y herramientas LLM |
+| [Archives](archives/) | Comprimir y extraer archivos |
+| [CD](cd/) | Navegar por el sistema de archivos |
+| [Chmod](chmod/) | Cambiar permisos de archivos |
+| [Clear](clear/) | Limpiar la pantalla del terminal |
+| [Compliance](compliance/) | Herramientas SOC2 y privacidad |
+| [Configuration](configuration/) | Gestionar dotfiles y configuración del shell |
+| [Default](default/) | Alias por defecto del shell |
+| [Diagnostics](diagnostics/) | Auto-reparación y chequeos de salud |
+| [Dig](dig/) | Consultar servidores DNS |
+| [Disk Usage](disk-usage/) | Mostrar uso de disco |
+| [Docker](docker/) | Gestión de contenedores |
+| [Editor](editor/) | Configurar editores de texto |
+| [Find](find/) | Buscar archivos y directorios |
+| [Fonts](fonts/) | Gestión de caché de fuentes |
+| [GCloud](gcloud/) | Herramientas Google Cloud SDK |
+| [Git](git/) | Control de versiones Git |
+| [GNU](gnu/) | Utilidades GNU |
+| [Go](go/) | Herramientas de Go |
+| [Heroku](heroku/) | CLI de Heroku |
+| [Installer](installer/) | Bootstrap y despliegue |
+| [Interactive](interactive/) | Comportamiento interactivo del shell |
+| [Kubernetes](kubernetes/) | Kubernetes, Helm, K9s |
+| [Legal](legal/) | Herramientas de licencias |
+| [macOS](macOS/) | Ajustes específicos de macOS |
+| [Make](make/) | Utilidades GNU Make |
+| [Mkdir](mkdir/) | Crear directorios |
+| [Modern](modern/) | Reemplazos basados en Rust |
+| [NPM](npm/) | Gestor de paquetes Node.js |
+| [Permission](permission/) | Permisos de archivos |
+| [PNPM](pnpm/) | Gestor de paquetes PNPM |
+| [PS](ps/) | Estado de procesos |
+| [Python](python/) | Utilidades Python |
+| [Rsync](rsync/) | Transferencia eficiente de archivos |
+| [Rust](rust/) | Herramientas Rust |
+| [Security](security/) | Inmutabilidad y firma |
+| [Subversion](subversion/) | Control de versiones SVN |
+| [Sudo](sudo/) | Operaciones de superusuario |
+| [Terraform](terraform/) | Infraestructura como código |
+| [Tmux](tmux/) | Multiplexor de terminal |
+| [Update](update/) | Actualizar dotfiles |
+| [UUID](uuid/) | Generar UUIDs |
+| [Wget](wget/) | Descargador en línea de comandos |
+| [Yarn](yarn/) | Gestor de paquetes Yarn |
 
-### Alias de utilidades GNU Find
-
-Los sistemas macOS se basan en BSD, en lugar de en GNU/Linux, como RedHat, Debian y Ubuntu. Como resultado, muchas de las herramientas de línea de comandos que se envían con macOS no son 100% compatibles. Por ejemplo, el comando `find` en macOS no admite la opción `-printf`, que utiliza el comando `locate`. Esto significa que el comando `locate` no funciona en macOS. Para solucionar esto, puede instalar las versiones GNU de estos comandos, que son totalmente compatibles con las versiones de Linux.
-
-Las Utilidades de Búsqueda GNU son las utilidades básicas de búsqueda de directorios del sistema operativo GNU. Estos programas se utilizan normalmente junto con otros programas para proporcionar capacidades modulares y potentes de búsqueda de directorios y localización de archivos a otros comandos.
-
-Las herramientas suministradas con este paquete son:
-
-- find - buscar archivos en una jerarquía de directorios
-- locate - listar archivos en bases de datos que coinciden con un patrón
-- updatedb - actualizar una base de datos de nombres de archivo
-- xargs - construir y ejecutar líneas de comando desde la entrada estándar
-
-Escriba el siguiente comando alias en su terminal:
-
-```bash
-brew install findutils
-```
-
-### Los alias de Dotfiles
-
-Los archivos proporcionados en Dotfiles contienen algunos alias obstinados que puede encontrar útiles. Estos se definen en el directorio `./dist/lib/aliases` y se cargan automáticamente cuando inicia una nueva sesión de shell.
-
-Los alias se cargan mediante el archivo `~/.bashrc` si está utilizando el shell Bash, o en el archivo `~/.zshrc` si está utilizando el shell Zsh.
-
-Se han agrupado por categorías lógicas:
-
-- [ai][ai] - Alias para inteligencia artificial.
-- [archives][archives] - Alias para trabajar con archivos.
-- [cd][cd] - Alias para trabajar con directorios.
-- [chmod][chmod] - Alias para trabajar con permisos de archivos.
-- [clear][clear] - Alias para limpiar la pantalla del terminal.
-- [compliance][compliance] - Alias para cumplimiento.
-- [configuration][configuration] - Alias para configuración.
-- [default][default] - Los alias predeterminados que se cargan para todos los usuarios.
-- [diagnostics][diagnostics] - Alias para diagnóstico.
-- [dig][dig] - Alias para trabajar con DNS.
-- [docker][docker] - Alias para Docker.
-- [dot][dot] - La CLI unificada para administrar sus dotfiles.
-- [du][du] - Alias para trabajar con uso de disco.
-- [editor][editor] - Alias para trabajar con el editor.
-- [find][find] - Alias para trabajar con el comando `fd`.
-- [fonts][fonts] - Alias para fuentes.
-- [gcloud][gcloud] - Alias para trabajar con el comando `gcloud`.
-- [git][git] - Alias para trabajar con Git.
-- [gnu][gnu] - Alias para trabajar con utilidades centrales de GNU.
-- [go][go] - Alias para Go.
-- [installer][installer] - Alias para instaladores.
-- [interactive][interactive] - Alias para trabajar con comandos interactivos.
-- [jekyll][jekyll] - Alias para trabajar con Jekyll.
-- [kubernetes][kubernetes] - Alias para Kubernetes.
-- [legal][legal] - Alias legales.
-- [list][list] - Alias para trabajar con el comando `ls`.
-- [macOS][macos] - Alias para macOS.
-- [make][make] - Alias para trabajar con el comando `make`.
-- [mkdir][mkdir] - Alias para trabajar con el comando `mkdir`.
-- [modern][modern] - Unix Moderno.
-- [modern-core][modern-core] - Herramientas de alto rendimiento (Atuin, Yazi, Zellij).
-- [npm][npm] - Alias para trabajar con el comando `npm`.
-- [permission][permission] - Alias para permisos.
-- [pnpm][pnpm] - Alias para trabajar con el comando `pnpm`.
-- [ps][ps] - Alias para trabajar con el comando `ps`.
-- [python][python] - Alias para trabajar con Python.
-- [rsync][rsync] - Alias para trabajar con el comando `rsync`.
-- [rust][rust] - Alias para trabajar con el lenguaje de programación Rust.
-- [security][security] - Alias de seguridad.
-- [subversion][subversion] - Alias para trabajar con Subversion.
-- [sudo][sudo] - Alias para trabajar con el comando `sudo`.
-- [terraform][terraform] - Alias para Terraform.
-- [tmux][tmux] - Alias para trabajar con el comando `tmux`.
-- [update][update] - Alias para trabajar con el comando `update`.
-- [uuid][uuid] - Alias para trabajar con el comando `uuid`.
-- [wget][wget] - Alias para trabajar con el comando `wget`.
-- [yarn][yarn] - Alias para trabajar con Yarn.
-
-[ai]: ./ai/
-[archives]: ./archives/
-[cd]: ./cd/
-[chmod]: ./chmod/
-[clear]: ./clear/
-[compliance]: ./compliance/
-[configuration]: ./configuration/
-[default]: ./default/
-[diagnostics]: ./diagnostics/
-[dig]: ./dig/
-[docker]: ./docker/
-[dot]: ./dot/
-[du]: ./du/
-[editor]: ./editor/
-[find]: ./find/
-[fonts]: ./fonts/
-[gcloud]: ./gcloud/
-[git]: ./git/
-[gnu]: ./gnu/
-[go]: ./go/
-[installer]: ./installer/
-[interactive]: ./interactive/
-[jekyll]: ./jekyll/
-[kubernetes]: ./kubernetes/
-[legal]: ./legal/
-[list]: ./list/
-[macos]: ./macOS/
-[make]: ./make/
-[mkdir]: ./mkdir/
-[modern]: ./modern/
-[modern-core]: ./modern-core/
-[npm]: ./npm/
-[permission]: ./permission/
-[pnpm]: ./pnpm/
-[ps]: ./ps/
-[python]: ./python/
-[rsync]: ./rsync/
-[rust]: ./rust/
-[security]: ./security/
-[subversion]: ./subversion/
-[sudo]: ./sudo/
-[terraform]: ./terraform/
-[tmux]: ./tmux/
-[update]: ./update/
-[uuid]: ./uuid/
-[wget]: ./wget/
-[yarn]: ./yarn/
+<!-- markdownlint-enable MD013-->

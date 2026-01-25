@@ -1,21 +1,33 @@
 ---
-description: alias de seguranca para Dotfiles
-lang: pt-PT
-metaTitle: alias de seguranca - Dotfiles
+title: "Aliases de Seguranca: Imutabilidade e Protecao de Arquivos"
+description: "Aliases de shell para seguranca. Bloqueie e desbloqueie arquivos de configuracao criticos para evitar alteracoes acidentais."
+lang: pt-BR
+metaTitle: "Aliases de Seguranca | Dotfiles"
 permalink: /pt/aliases/security/
+sidebar: true
+meta:
+  - name: keywords
+    content: "aliases seguranca, imutabilidade, chflags, chattr, aliases shell, dotfiles"
 ---
-# Alias de seguranca
+
+# Aliases de Seguranca
 
 Ferramentas para endurecer o ambiente e gerenciar imutabilidade de configuracao.
 
-## 🔒 Imutabilidade
+## Visao Geral
+
+Estes aliases sao definidos em `security.aliases.sh` e carregados automaticamente pelo Chezmoi.
+
+## Referencia
+
+### Imutabilidade
 
 | Alias | Descricao |
-|-------|-----------|
-| `lock-configs` | Bloqueia arquivos criticos (`.zshrc`, etc.) para evitar alteracoes (`chflags uchg` / `chattr +i`). |
-| `unlock-configs` | Desbloqueia arquivos criticos para edicao. |
-| `check-locks` | Verifica o status de bloqueio de arquivos criticos. |
+|-------|-------------|
+| `lock-configs` | Bloqueia arquivos criticos (`.zshrc`, etc.) para evitar alteracoes (`chflags uchg` / `chattr +i`) |
+| `unlock-configs` | Desbloqueia arquivos criticos para edicao |
+| `check-locks` | Verifica o status de bloqueio de arquivos criticos |
 
-## 🔑 Assinatura Git
+### Assinatura Git
 
-(Veja [Alias de Git](../git/README.md) para configuracao de assinatura)
+Veja [Aliases de Git](../git/) para configuracao de assinatura.

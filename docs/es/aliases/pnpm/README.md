@@ -1,69 +1,99 @@
 ---
-description: Los alias de PNpm son una coleccion de alias que permiten interactuar con la herramienta de linea de comandos `pnpm`. Pnpm es un gestor de paquetes rapido y eficiente en espacio de disco.
+title: "Alias Pnpm: atajos para gestión rápida de paquetes"
+description: "Optimiza flujos pnpm con alias para instalar, compilar, probar y gestionar dependencias Node.js."
 lang: es-ES
-metaTitle: Los alias de PNpm - Dotfiles (ES)
-permalink: /es/aliases/pnpm/
-
+metaTitle: "Pnpm Aliases | Dotfiles"
+permalink: /aliases/pnpm/
+sidebar: true
 meta:
   - name: keywords
-    content: aliases, pnpm, package manager, node, npm, yarn, linux, macos, shell, terminal, windows
+    content: "alias pnpm, gestor de paquetes, node.js, alternativa a npm, dotfiles, shell"
   - name: twitter:card
-    content: Los alias de PNpm son una coleccion de alias que permiten interactuar con la herramienta de linea de comandos `pnpm`. Pnpm es un gestor de paquetes rapido y eficiente en espacio de disco.
-  - name: twitter:description
-    content: Los alias de PNpm son una coleccion de alias que permiten interactuar con la herramienta de linea de comandos `pnpm`. Pnpm es un gestor de paquetes rapido y eficiente en espacio de disco.
+    content: summary
   - name: twitter:title
-    content: Los alias de PNpm - Dotfiles (ES)
+    content: "Pnpm Aliases | Dotfiles"
+  - name: twitter:description
+    content: "Optimiza flujos pnpm con alias para instalar, compilar, probar y gestionar dependencias Node.js."
   - name: og:title
-    content: Los alias de PNpm - Dotfiles (ES)
+    content: "Pnpm Aliases | Dotfiles"
   - name: og:description
-    content: Los alias de PNpm son una coleccion de alias que permiten interactuar con la herramienta de linea de comandos `pnpm`. Pnpm es un gestor de paquetes rapido y eficiente en espacio de disco.
+    content: "Optimiza flujos pnpm con alias para instalar, compilar, probar y gestionar dependencias Node.js."
   - name: og:image:alt
-    content: Dotfiles - Simplemente disenado para adaptarse a tu vida en el shell
+    content: Dotfiles - Diseñado para tu vida en el shell
   - name: og:locale
     content: es_ES
 ---
-# Alias de Pnpm
 
-Gestionar alias de Pnpm. Parte de la configuracion **Universal Dotfiles**.
+# Alias Pnpm
+
+Atajos para el gestor de paquetes rápido y eficiente en disco.
 
 ![Dotfiles banner][banner]
 
-## 📖 Descripcion
+## Descubrir
 
-Estos alias estan definidos en `pnpm.aliases.sh` y se cargan automaticamente por `chezmoi`.
+Estos alias se definen en `pnpm.aliases.sh` y se cargan automáticamente por chezmoi. Proporcionan acceso rápido a comandos [pnpm](https://pnpm.io/) comunes para la gestión de paquetes Node.js.
 
-## ⚡ Alias
+## Referencia
 
-Este codigo proporciona un conjunto de alias para [pnpm](https://pnpm.js.org/).
-- `pni` Inicializar un proyecto nuevo.
-- `pnin` Instalar las dependencias del proyecto.
-- `pnb` Compilar el proyecto.
-- `pnrun` Ejecutar un script del proyecto.
-- `pnd` Ejecutar el proyecto en modo dev.
-- `pns` Ejecutar el proyecto en modo serve.
-- `pnst` Iniciar el proyecto.
-- `pnln` Lint del proyecto.
-- `pnls` Listar todas las dependencias.
-- `pnout` Comprobar dependencias desactualizadas.
-- `pnt` Probar el proyecto.
-- `pntc` Probar el proyecto con cobertura.
-- `pndoc` Generar documentacion del proyecto.
-- `pnpub` Publicar el proyecto.
-- `pnwhy` Ver por que una dependencia esta instalada.
-- `pnui` Actualizar una dependencia de forma interactiva.
-- `pnuil` Actualizar una dependencia de forma interactiva a la ultima version.
-- `pnup` Actualizar una dependencia.
-- `pnad` Agregar una dependencia de desarrollo al proyecto.
-- `pnap` Agregar una dependencia peer al proyecto.
-- `pnrm` Eliminar una dependencia del proyecto.
-- `pnun` Desinstalar dependencias del proyecto.
-- `pnga` Agregar una dependencia global.
-- `pngls` Listar dependencias globales.
-- `pngrm` Eliminar una dependencia global.
-- `pngu` Actualizar una dependencia global.
-- `pnh` Mostrar la ayuda.
-- `pnc` Crear un proyecto nuevo.
-- `pnsv` Ejecutar el proyecto en modo servidor.
-- `pnx` Atajo para pnpx.
+### Inicialización del proyecto
+
+| Alias | Descripción |
+|-------|-------------|
+| `pni` | Inicializar un nuevo proyecto |
+| `pnc` | Crear un nuevo proyecto |
+| `pnin` | Instalar dependencias del proyecto |
+| `pnun` | Desinstalar dependencias del proyecto |
+
+### Desarrollo
+
+| Alias | Descripción |
+|-------|-------------|
+| `pnb` | Compilar el proyecto |
+| `pnrun` | Ejecutar un script del proyecto |
+| `pnd` | Ejecutar el proyecto en modo dev |
+| `pns` | Ejecutar el proyecto en modo serve |
+| `pnst` | Iniciar el proyecto |
+| `pnsv` | Ejecutar el proyecto en modo server |
+
+### Pruebas y calidad
+
+| Alias | Descripción |
+|-------|-------------|
+| `pnt` | Probar el proyecto |
+| `pntc` | Probar con cobertura |
+| `pnln` | Lint del proyecto |
+| `pndoc` | Generar documentación del proyecto |
+
+### Gestión de dependencias
+
+| Alias | Descripción |
+|-------|-------------|
+| `pnls` | Listar todas las dependencias |
+| `pnout` | Comprobar dependencias desactualizadas |
+| `pnwhy` | Ver por qué una dependencia está instalada |
+| `pnad` | Añadir dependencia dev |
+| `pnap` | Añadir dependencia peer |
+| `pnrm` | Eliminar dependencia |
+| `pnup` | Actualizar dependencia |
+| `pnui` | Actualizar dependencia de forma interactiva |
+| `pnuil` | Actualizar dependencia interactiva a latest |
+
+### Paquetes globales
+
+| Alias | Descripción |
+|-------|-------------|
+| `pnga` | Añadir dependencia global |
+| `pngls` | Listar dependencias globales |
+| `pngrm` | Eliminar dependencia global |
+| `pngu` | Actualizar dependencia global |
+
+### Publicación y utilidades
+
+| Alias | Descripción |
+|-------|-------------|
+| `pnpub` | Publicar el proyecto |
+| `pnx` | Atajo a pnpx |
+| `pnh` | Mostrar ayuda |
 
 [banner]: https://kura.pro/dotfiles/v2/images/titles/title-dotfiles.svg

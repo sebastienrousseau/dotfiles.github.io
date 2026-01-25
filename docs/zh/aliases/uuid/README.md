@@ -1,40 +1,39 @@
 ---
-description: UUID 别名为 `uuidgen` 命令提供实用快捷方式。uuidgen 生成 Universally Unique IDentifier (UUID)，这是 128 位、在时空中保证唯一的值。
+description: 用于生成唯一标识符的 UUID shell 别名。创建和复制 UUID 的快捷方式。
 lang: zh-CN
-metaTitle: UUID 别名 - Dotfiles (ZH)
-permalink: /zh/aliases/uuid/
+metaTitle: UUID 别名 - Dotfiles (CN)
+permalink: /aliases/uuid/
+sidebar: true
 
 meta:
   - name: keywords
-    content: aliases, uuid, linux, macos, shell, terminal, windows
+    content: uuid, 唯一标识符, uuidgen, shell 别名, dotfiles
   - name: twitter:card
-    content: UUID 别名为 `uuidgen` 命令提供实用快捷方式。uuidgen 生成 Universally Unique IDentifier (UUID)，这是 128 位、在时空中保证唯一的值。
+    content: summary
   - name: twitter:description
-    content: UUID 别名为 `uuidgen` 命令提供实用快捷方式。uuidgen 生成 Universally Unique IDentifier (UUID)，这是 128 位、在时空中保证唯一的值。
+    content: 用于生成唯一标识符的 UUID shell 别名。创建和复制 UUID 的快捷方式。
   - name: twitter:title
-    content: UUID 别名 - Dotfiles (ZH)
+    content: UUID 别名 - Dotfiles
   - name: og:title
-    content: UUID 别名 - Dotfiles (ZH)
+    content: UUID 别名 - Dotfiles
   - name: og:description
-    content: UUID 别名为 `uuidgen` 命令提供实用快捷方式。uuidgen 生成 Universally Unique IDentifier (UUID)，这是 128 位、在时空中保证唯一的值。
+    content: 用于生成唯一标识符的 UUID shell 别名。创建和复制 UUID 的快捷方式。
   - name: og:image:alt
-    content: Dotfiles - 为你的 Shell 生活而设计
+    content: Dotfiles - 为你的 Shell 生活精心设计
   - name: og:locale
     content: zh_CN
 ---
+
 # UUID 别名
 
-管理 UUID 别名。**Universal Dotfiles** 配置的一部分。
+生成通用唯一标识符。
 
-![Dotfiles banner][banner]
+## 概述
 
-## 📖 描述
+这些别名定义在 `uuid.aliases.sh` 中，由 Chezmoi 自动加载。
 
-这些别名定义在 `uuid.aliases.sh` 中，并由 `chezmoi` 自动加载。
+## 参考
 
-## ⚡ 别名
-
-此代码提供 `uuidgen` 的一组别名。
-- `uuid` 生成 UUID 并复制到剪贴板。
-
-[banner]: https://kura.pro/dotfiles/v2/images/titles/title-dotfiles.svg
+| 别名 | 描述 |
+|:---|:---|
+| `uuid` | 生成 UUID 并复制到剪贴板 |

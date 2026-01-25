@@ -1,60 +1,70 @@
 ---
-description: The Find aliases, are designed to search for files in a directory hierarchy and perform actions on the files that are found.
+title: "Find Aliases: Fast File Search Commands"
+description: "Streamline file searches with fd-based aliases. Fast, colorized output and intuitive commands for Unix systems."
 lang: en-GB
-metaTitle: Find aliases - Dotfiles (UK)
+metaTitle: "Find Aliases | Dotfiles"
 permalink: /aliases/find/
-
+sidebar: true
 meta:
   - name: keywords
-    content: aliases, code, editor, environment, gedit, nano, notepad++, text, vi, vim
+    content: "find aliases, fd command, file search, shell aliases, dotfiles, unix find"
   - name: twitter:card
-    content: The Find aliases, are designed to search for files in a directory hierarchy and perform actions on the files that are found.
-  - name: twitter:description
-    content: The Find aliases, are designed to search for files in a directory hierarchy and perform actions on the files that are found.
+    content: summary
   - name: twitter:title
-    content: Find aliases - Dotfiles (UK)
+    content: Find Aliases | Dotfiles
+  - name: twitter:description
+    content: Streamline file searches with fd-based aliases. Fast, colorized output and intuitive commands for Unix systems.
   - name: og:title
-    content: Find aliases - Dotfiles (UK)
+    content: Find Aliases | Dotfiles
   - name: og:description
-    content: The Find aliases, are designed to search for files in a directory hierarchy and perform actions on the files that are found.
+    content: Streamline file searches with fd-based aliases. Fast, colorized output and intuitive commands for Unix systems.
   - name: og:image:alt
     content: Dotfiles - Simply designed to fit your shell life
   - name: og:locale
     content: en_GB
 ---
+
 # Find Aliases
 
-Manage Find aliases. Part of the **Universal Dotfiles** configuration.
+Powerful file search shortcuts using fd, the modern alternative to find.
 
 ![Dotfiles banner][banner]
 
-## 📖 Description
+## Overview
 
-These aliases are defined in `find.aliases.sh` and are automatically loaded by `chezmoi`.
+These aliases provide a streamlined interface to `fd`, a fast and user-friendly alternative to the traditional `find` command. Defined in `find.aliases.sh`, they are automatically loaded by chezmoi and offer colorized output, intuitive syntax, and memorable commands for common file search operations.
 
-## ⚡ Aliases
+When `fd` is available on your system, the `find` command is automatically aliased to use `fd` instead, giving you improved performance and a simpler syntax by default.
 
-This code provides a set of command aliases for the `fd` utility that is
-an alternative to the `find` command on Unix-based systems.
-`fd` is a simple, fast, and user-friendly tool that can be used to
-search for files and directories in a given path. These aliases make it
-easier to use `fd` by providing simple and memorable commands for common
-use cases.
-Here are some of the available aliases:
-- `fd` is the default alias for `fd --color always` that lists all files
-  with colorized output.
-- `fda` lists all files with absolute paths.
-- `fdc` lists all files with case-insensitive search.
-- `fdd` lists all files with details.
-- `fde` lists all files with a specified extension.
-- `fdf` lists all files while following symbolic links.
-- `fdh` shows help for `fd`.
-- `fdh` lists all files, including hidden files.
-- `fdn` lists all files that match a specified glob.
-- `fdo` lists all files with owner information.
-- `fds` lists all files with size.
-- `fdu` lists all files with exclusion rules.
-- `fdv` shows the version of `fd`.
-- `fdx` executes a command for each search result.
+## Reference
+
+### Core Commands
+
+| Alias | Command | Description |
+|-------|---------|-------------|
+| `fd` | `fd --color always` | Search files with colorized output |
+| `find` | `fd` | Use fd as the default find replacement |
+
+### Search Options
+
+| Alias | Command | Description |
+|-------|---------|-------------|
+| `fda` | `fd --absolute-path` | Display results with absolute paths |
+| `fdc` | `fd --ignore-case` | Perform case-insensitive search |
+| `fdd` | `fd --list-details` | Show detailed file information |
+| `fde` | `fd --extension` | Filter by file extension |
+| `fdf` | `fd --follow` | Follow symbolic links during search |
+| `fdh` | `fd --hidden` | Include hidden files in results |
+| `fdn` | `fd --glob` | Match files using glob patterns |
+| `fdo` | `fd --owner` | Filter by file owner |
+| `fds` | `fd --size` | Filter by file size |
+| `fdu` | `fd --exclude` | Exclude files matching a pattern |
+| `fdx` | `fd --exec` | Execute a command for each result |
+
+### Utility Commands
+
+| Alias | Command | Description |
+|-------|---------|-------------|
+| `fdv` | `fd --version` | Display fd version information |
 
 [banner]: https://kura.pro/dotfiles/v2/images/titles/title-dotfiles.svg

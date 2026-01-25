@@ -1,51 +1,51 @@
 ---
-description: The Update aliases create helpful shortcut aliases for updating the operating system and software installed. It helps secure and enhance the current Dotfiles installation to protect against security vulnerabilities, add new features and fix critical bugs.
+description: System update aliases for macOS and Linux. Keep your operating system and packages current.
 lang: en-GB
-metaTitle: The Update aliases - Dotfiles (UK)
+metaTitle: Update Aliases - Dotfiles (UK)
 permalink: /aliases/update/
+sidebar: true
 
 meta:
   - name: keywords
-    content: aliases, update, linux, macos, shell, terminal, windows
+    content: update, system update, package update, shell aliases, dotfiles, maintenance
   - name: twitter:card
-    content: The Update aliases create helpful shortcut aliases for updating the operating system and software installed. It helps secure and enhance the current Dotfiles installation to protect against security vulnerabilities, add new features and fix critical bugs.
+    content: summary
   - name: twitter:description
-    content: The Update aliases create helpful shortcut aliases for updating the operating system and software installed. It helps secure and enhance the current Dotfiles installation to protect against security vulnerabilities, add new features and fix critical bugs.
+    content: System update aliases for macOS and Linux. Keep your operating system and packages current.
   - name: twitter:title
-    content: The Update aliases - Dotfiles (UK)
+    content: Update Aliases - Dotfiles
   - name: og:title
-    content: The Update aliases - Dotfiles (UK)
+    content: Update Aliases - Dotfiles
   - name: og:description
-    content: The Update aliases create helpful shortcut aliases for updating the operating system and software installed. It helps secure and enhance the current Dotfiles installation to protect against security vulnerabilities, add new features and fix critical bugs.
+    content: System update aliases for macOS and Linux. Keep your operating system and packages current.
   - name: og:image:alt
     content: Dotfiles - Simply designed to fit your shell life
   - name: og:locale
     content: en_GB
 ---
+
 # Update Aliases
 
-Manage Update aliases. Part of the **Universal Dotfiles** configuration.
+Keep your system and packages up to date.
 
-![Dotfiles banner][banner]
+## Overview
 
-## 📖 Description
+These aliases are defined in `update.aliases.sh` and loaded automatically by Chezmoi.
 
-These aliases are defined in `update.aliases.sh` and are automatically loaded by `chezmoi`.
+## Reference
 
-## ⚡ Aliases
-
-This code provides a set of aliases for updating various software on
-macOS and Linux.
 ### macOS
-- `upd` updates macOS software, Homebrew packages, Homebrew Casks, Mac
-   App Store apps, Rust stable toolchain, Ruby gems, Python packages,
-   and Node.js packages.
-### Linux
-- `open` opens a file or URL in the user's preferred application.
-- `pbcopy` copies to clipboard.
-- `pbpaste` pastes from clipboard.
-- `upd` updates Linux packages, cleans up package cache, updates pnpm
-  packages, updates Rust stable toolchain, updates Ruby gems, updates
-  Python packages, and updates Node.js packages.
 
-[banner]: https://kura.pro/dotfiles/v2/images/titles/title-dotfiles.svg
+| Alias | Description |
+|:---|:---|
+| `upd` | Update macOS software, Homebrew, Casks, App Store, Rust, Ruby, Python, and Node.js |
+
+### Linux
+
+| Alias | Description |
+|:---|:---|
+| `open` | Open file or URL in preferred application |
+| `pbcopy` | Copy to clipboard |
+| `pbpaste` | Paste from clipboard |
+| `upd` | Update Linux packages, pnpm, Rust, Ruby, Python, and Node.js |
+

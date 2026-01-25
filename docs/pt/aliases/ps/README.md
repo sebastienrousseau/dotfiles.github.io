@@ -1,42 +1,41 @@
 ---
-description: Os alias de PS permitem interagir com o comando `ps`. Ps reporta um snapshot de processos.
-lang: pt-PT
-metaTitle: Os alias de PS - Dotfiles (PT)
+title: "Aliases de PS: Atalhos para Status de Processos"
+description: "Aliases de shell para o comando ps. Visualize processos em execucao com comandos simples."
+lang: pt-BR
+metaTitle: "Aliases de PS | Dotfiles"
 permalink: /pt/aliases/ps/
-
+sidebar: true
 meta:
   - name: keywords
-    content: aliases, ps, process, processes, linux, macos, shell, terminal, windows
+    content: "aliases ps, processos, status, aliases shell, dotfiles"
   - name: twitter:card
-    content: Os alias de PS permitem interagir com o comando `ps`. Ps reporta um snapshot de processos.
+    content: summary
   - name: twitter:description
-    content: Os alias de PS permitem interagir com o comando `ps`. Ps reporta um snapshot de processos.
+    content: Aliases de shell para o comando ps. Visualize processos em execucao com comandos simples.
   - name: twitter:title
-    content: Os alias de PS - Dotfiles (PT)
+    content: Aliases de PS | Dotfiles
   - name: og:title
-    content: Os alias de PS - Dotfiles (PT)
+    content: Aliases de PS | Dotfiles
   - name: og:description
-    content: Os alias de PS permitem interagir com o comando `ps`. Ps reporta um snapshot de processos.
+    content: Aliases de shell para o comando ps. Visualize processos em execucao com comandos simples.
   - name: og:image:alt
-    content: Dotfiles - Simplesmente projetado para sua vida no shell
+    content: Dotfiles - Simply designed to fit your shell life
   - name: og:locale
-    content: pt_PT
+    content: pt_BR
 ---
-# Alias de Ps
 
-Gerenciar alias de Ps. Parte da configuracao **Universal Dotfiles**.
+# Aliases de PS
 
-![Dotfiles banner][banner]
+Atalhos para visualizar status de processos.
 
-## 📖 Descricao
+## Visao Geral
 
-Esses alias sao definidos em `ps.aliases.sh` e sao carregados automaticamente pelo `chezmoi`.
+Estes aliases sao definidos em `ps.aliases.sh` e carregados automaticamente pelo Chezmoi.
 
-## ⚡ Alias
+## Referencia
 
-Alias para [ps](https://www.gnu.org/software/ps/).
-- `pid` Exibe uid, pid, parent pid, uso de CPU, tempo, tty e comando.
-- `ps` Exibir todos os processos.
-- `psa` Listar todos os processos.
-
-[banner]: https://kura.pro/dotfiles/v2/images/titles/title-dotfiles.svg
+| Alias | Descricao |
+|-------|-------------|
+| `pid` | Exibe uid, pid, parent pid, uso de CPU, tempo, tty e comando |
+| `ps` | Exibir todos os processos |
+| `psa` | Listar todos os processos |

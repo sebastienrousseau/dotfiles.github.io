@@ -1,40 +1,39 @@
 ---
-description: Los alias UUID crean atajos utiles para el comando `uuidgen`. El comando uuidgen genera un Universally Unique IDentifier (UUID), un valor de 128 bits garantizado como unico en espacio y tiempo.
+description: Alias de UUID para generar identificadores unicos universales. Genera UUIDs de 128 bits y los copia al portapapeles automaticamente.
 lang: es-ES
 metaTitle: Alias de UUID - Dotfiles (ES)
 permalink: /es/aliases/uuid/
+sidebar: true
 
 meta:
   - name: keywords
-    content: aliases, uuid, linux, macos, shell, terminal, windows
+    content: alias uuid, uuidgen, identificador unico, generador uuid, portapapeles, dotfiles, shell
   - name: twitter:card
-    content: Los alias UUID crean atajos utiles para el comando `uuidgen`. El comando uuidgen genera un Universally Unique IDentifier (UUID), un valor de 128 bits garantizado como unico en espacio y tiempo.
+    content: summary
   - name: twitter:description
-    content: Los alias UUID crean atajos utiles para el comando `uuidgen`. El comando uuidgen genera un Universally Unique IDentifier (UUID), un valor de 128 bits garantizado como unico en espacio y tiempo.
+    content: Alias de UUID para generar identificadores unicos universales. Genera UUIDs de 128 bits y los copia al portapapeles.
   - name: twitter:title
-    content: Alias de UUID - Dotfiles (ES)
+    content: Alias de UUID - Dotfiles
   - name: og:title
-    content: Alias de UUID - Dotfiles (ES)
+    content: Alias de UUID - Dotfiles
   - name: og:description
-    content: Los alias UUID crean atajos utiles para el comando `uuidgen`. El comando uuidgen genera un Universally Unique IDentifier (UUID), un valor de 128 bits garantizado como unico en espacio y tiempo.
+    content: Alias de UUID para generar identificadores unicos universales. Genera UUIDs de 128 bits y los copia al portapapeles.
   - name: og:image:alt
     content: Dotfiles - Simplemente disenado para adaptarse a tu vida en el shell
   - name: og:locale
     content: es_ES
 ---
-# Alias de Uuid
 
-Gestionar los alias de Uuid. Parte de la configuracion **Universal Dotfiles**.
+# Alias de UUID
 
-![Dotfiles banner][banner]
+Atajos para generar identificadores unicos universales (UUID).
 
-## 📖 Descripcion
+## Descripcion
 
-Estos alias estan definidos en `uuid.aliases.sh` y se cargan automaticamente por `chezmoi`.
+Estos alias estan definidos en `uuid.aliases.sh` y se cargan automaticamente por chezmoi. Proporcionan generacion rapida de UUIDs, valores de 128 bits garantizados como unicos en espacio y tiempo.
 
-## ⚡ Alias
+## Referencia
 
-Este codigo proporciona un conjunto de alias para el comando `uuidgen`.
-- `uuid` Generar un UUID y copiarlo al portapapeles.
-
-[banner]: https://kura.pro/dotfiles/v2/images/titles/title-dotfiles.svg
+| Alias | Descripcion |
+|:---|:---|
+| `uuid` | Generar un UUID y copiarlo al portapapeles |

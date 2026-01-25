@@ -1,44 +1,44 @@
 ---
-description: Mkdir 别名用于与 `mkdir` 交互。Mkdir 用于创建目录。
+description: 使用日期和时间命名约定简化目录创建的 mkdir shell 别名。
 lang: zh-CN
-metaTitle: Mkdir 别名 - Dotfiles (ZH)
-permalink: /zh/aliases/mkdir/
+metaTitle: Mkdir 别名 - Dotfiles (CN)
+permalink: /aliases/mkdir/
+sidebar: true
 
 meta:
   - name: keywords
-    content: aliases, mkdir, linux, macos, shell, terminal, windows
+    content: mkdir 别名, 目录创建, shell 快捷方式, dotfiles, 终端
   - name: twitter:card
-    content: Mkdir 别名用于与 `mkdir` 交互。Mkdir 用于创建目录。
-  - name: twitter:description
-    content: Mkdir 别名用于与 `mkdir` 交互。Mkdir 用于创建目录。
+    content: summary
   - name: twitter:title
-    content: Mkdir 别名 - Dotfiles (ZH)
+    content: Mkdir 别名 - Dotfiles
+  - name: twitter:description
+    content: 使用日期和时间命名约定简化目录创建的 mkdir shell 别名。
   - name: og:title
-    content: Mkdir 别名 - Dotfiles (ZH)
+    content: Mkdir 别名 - Dotfiles
   - name: og:description
-    content: Mkdir 别名用于与 `mkdir` 交互。Mkdir 用于创建目录。
+    content: 使用日期和时间命名约定简化目录创建的 mkdir shell 别名。
   - name: og:image:alt
-    content: Dotfiles - 为你的 Shell 生活而设计
+    content: Dotfiles - 为你的 Shell 生活精心设计
   - name: og:locale
     content: zh_CN
 ---
+
 # Mkdir 别名
 
-管理 Mkdir 别名。**Universal Dotfiles** 配置的一部分。
+使用智能命名约定简化目录创建。
 
-![Dotfiles banner][banner]
+## 概述
 
-## 📖 描述
+mkdir 别名提供了创建带有自动日期和时间戳目录的快捷方式。这些别名定义在 `mkdir.aliases.sh` 中，由 chezmoi 自动加载。
 
-这些别名定义在 `mkdir.aliases.sh` 中，并由 `chezmoi` 自动加载。
+## 参考
 
-## ⚡ 别名
-
-- `mde` 使用当前日期创建示例目录。
-- `md` 创建目录。
-- `mdd` 用日期创建目录。
-- `mdn` 用日期创建笔记目录。
-- `mdw` 用日期创建工作目录。
-- `mdt` 用时间创建目录。
-
-[banner]: https://kura.pro/dotfiles/v2/images/titles/title-dotfiles.svg
+| 别名 | 描述 |
+|:---|:---|
+| `md` | 创建目录 |
+| `mdd` | 创建带日期的目录 |
+| `mdt` | 创建带时间的目录 |
+| `mde` | 创建带当前日期的示例目录 |
+| `mdn` | 创建带当前日期的笔记目录 |
+| `mdw` | 创建带当前日期的工作目录 |

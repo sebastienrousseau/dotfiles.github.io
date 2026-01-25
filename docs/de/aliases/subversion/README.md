@@ -1,76 +1,119 @@
 ---
-description: Die Subversion-Aliase sind eine Sammlung von Aliasen, die die Arbeit mit dem `svn` Befehl erleichtern. Subversion ist ein Versionskontrollsystem.
+description: Shell-Aliase fuer Subversion (SVN) Versionskontrolle. Checkout, Commit, Update und Merge mit einpraegsamen Befehlen.
 lang: de-DE
-metaTitle: Die Subversion-Aliase - Dotfiles (DE)
+metaTitle: Subversion Aliase - Dotfiles (DE)
 permalink: /de/aliases/subversion/
+sidebar: true
 
 meta:
   - name: keywords
-    content: aliases, subversion, svn, linux, macos, shell, terminal, windows
+    content: subversion aliase, svn verknuepfungen, versionskontrolle, svn befehle, dotfiles, shell
   - name: twitter:card
-    content: Die Subversion-Aliase sind eine Sammlung von Aliasen, die die Arbeit mit dem `svn` Befehl erleichtern. Subversion ist ein Versionskontrollsystem.
-  - name: twitter:description
-    content: Die Subversion-Aliase sind eine Sammlung von Aliasen, die die Arbeit mit dem `svn` Befehl erleichtern. Subversion ist ein Versionskontrollsystem.
+    content: summary
   - name: twitter:title
-    content: Die Subversion-Aliase - Dotfiles (DE)
+    content: Subversion Aliase - Dotfiles
+  - name: twitter:description
+    content: Shell-Aliase fuer Subversion (SVN) Versionskontrolle. Checkout, Commit, Update und Merge.
   - name: og:title
-    content: Die Subversion-Aliase - Dotfiles (DE)
+    content: Subversion Aliase - Dotfiles
   - name: og:description
-    content: Die Subversion-Aliase sind eine Sammlung von Aliasen, die die Arbeit mit dem `svn` Befehl erleichtern. Subversion ist ein Versionskontrollsystem.
+    content: Shell-Aliase fuer Subversion (SVN) Versionskontrolle. Checkout, Commit, Update und Merge.
   - name: og:image:alt
-    content: Dotfiles - Einfach entworfen fuer dein Shell-Leben
+    content: Dotfiles - Simply designed to fit your shell life
   - name: og:locale
     content: de_DE
 ---
-# Subversion-Aliase
 
-Subversion-Aliase verwalten. Teil der **Universal Dotfiles** Konfiguration.
+# Subversion Aliase
 
-![Dotfiles banner][banner]
+Optimieren Sie Ihren SVN-Workflow mit einpraegsamen Shell-Verknuepfungen.
 
-## 📖 Beschreibung
+## Uebersicht
 
-Diese Aliase sind in `subversion.aliases.sh` definiert und werden automatisch von `chezmoi` geladen.
+Diese Aliase sind in `subversion.aliases.sh` definiert und werden automatisch von Chezmoi geladen. Sie bieten schnellen Zugriff auf gaengige Subversion-Operationen fuer Versionskontrolle und Repository-Verwaltung.
 
-## ⚡ Aliase
+## Referenz
 
-Dieser Code bietet Alias-Befehle fuer die Subversion-CLI.
-- `sad` Neue Dateien und Verzeichnisse unter Versionskontrolle stellen.
-- `sau` Gecachte Auth-Credentials verwalten.
-- `sbl` Zeigen, wann jede Zeile zuletzt (oder naechstes) geaendert wurde.
-- `scg` Changelist CLNAME mit Dateien verknuepfen oder loesen.
-- `sci` Aenderungen aus der Working Copy ins Repository senden.
-- `scl` Unterbrochene Operationen beheben oder unerwuenschte Dateien entfernen.
-- `sco` Working Copy aus einem Repository auschecken.
-- `scp` Dateien/Verzeichnisse kopieren (Working Copy oder Repo).
-- `sct` Inhalt angegebener Dateien oder URLs ausgeben.
-- `sdi` Lokale Aenderungen oder Diff zwischen Revisionen/Paths anzeigen.
-- `sdl` Dateien/Verzeichnisse aus Versionskontrolle entfernen.
-- `shp` Usage fuer Programm oder Subcommands anzeigen.
-- `sin` Infos zu lokalem oder Remote-Item anzeigen.
-- `sip` Unversionierte Datei/Tree ins Repo committen.
-- `slg` Log-Messages fuer Revisionen/Paths anzeigen.
-- `slk` Paths/URLs im Repo locken.
-- `sls` Verzeichniseintraege im Repo anzeigen.
-- `smd` Neues Verzeichnis unter Versionskontrolle erstellen.
-- `smg` Changes in Working Copy mergen.
-- `smgi` Merge-Infos anzeigen.
-- `smv` Item in Working Copy/Repo verschieben (rename).
-- `sp` Property-Wert setzen.
-- `spdl` Property entfernen.
-- `spdt` Property mit externem Editor bearbeiten.
-- `spgt` Property-Wert ausgeben.
-- `sph` Patch auf Working Copy anwenden.
-- `spls` Alle Properties auflisten.
-- `srl` Working Copy auf andere Repo-Root-URL umstellen.
-- `srs` Konflikte in Working Copy aufloesen.
-- `srsd` Konfliktstatus entfernen.
-- `srv` Working Copy auf pristine Zustand zuruecksetzen.
-- `sst` Status der Working Copy anzeigen.
-- `ssw` Working Copy auf andere URL im Repo aktualisieren.
-- `sulk` Lock fuer Paths/URLs aufheben.
-- `sup` Aenderungen aus dem Repo holen.
-- `supg` Metadatenformat der Working Copy upgraden.
-- `sxp` Unversionierte Kopie eines Trees erstellen.
+### Grundlegende Operationen
 
-[banner]: https://kura.pro/dotfiles/v2/images/titles/title-dotfiles.svg
+| Alias | Beschreibung |
+|:---|:---|
+| `sco` | Working Copy aus einem Repository auschecken |
+| `sup` | Aenderungen aus dem Repository holen |
+| `sci` | Aenderungen aus der Working Copy ins Repository senden |
+| `sst` | Status der Working Copy anzeigen |
+| `sin` | Informationen zu lokalem oder Remote-Item anzeigen |
+
+### Dateiverwaltung
+
+| Alias | Beschreibung |
+|:---|:---|
+| `sad` | Neue Dateien und Verzeichnisse unter Versionskontrolle stellen |
+| `sdl` | Dateien/Verzeichnisse aus Versionskontrolle entfernen |
+| `smv` | Item in Working Copy oder Repository verschieben (umbenennen) |
+| `scp` | Dateien/Verzeichnisse kopieren (Working Copy oder Repository) |
+| `smd` | Neues Verzeichnis unter Versionskontrolle erstellen |
+
+### Diff und Log
+
+| Alias | Beschreibung |
+|:---|:---|
+| `sdi` | Lokale Aenderungen oder Unterschiede zwischen Revisionen anzeigen |
+| `slg` | Log-Nachrichten fuer Revisionen/Pfade anzeigen |
+| `sbl` | Zeigen, wann jede Zeile zuletzt geaendert wurde |
+| `sct` | Inhalt angegebener Dateien oder URLs ausgeben |
+
+### Branches und Merging
+
+| Alias | Beschreibung |
+|:---|:---|
+| `smg` | Aenderungen in Working Copy mergen |
+| `smgi` | Merge-Informationen anzeigen |
+| `ssw` | Working Copy auf andere URL im Repository aktualisieren |
+
+### Wiederherstellung
+
+| Alias | Beschreibung |
+|:---|:---|
+| `srv` | Working Copy auf pristinen Zustand zuruecksetzen |
+| `srs` | Konflikte in Working Copy aufloesen |
+| `srsd` | Konfliktstatus entfernen |
+
+### Properties
+
+| Alias | Beschreibung |
+|:---|:---|
+| `sp` | Property-Wert setzen |
+| `spgt` | Property-Wert ausgeben |
+| `spls` | Alle Properties auflisten |
+| `spdl` | Property entfernen |
+| `spdt` | Property mit externem Editor bearbeiten |
+
+### Locking
+
+| Alias | Beschreibung |
+|:---|:---|
+| `slk` | Pfade/URLs im Repository sperren |
+| `sulk` | Sperre fuer Pfade/URLs aufheben |
+
+### Repository-Verwaltung
+
+| Alias | Beschreibung |
+|:---|:---|
+| `sls` | Verzeichniseintraege im Repository anzeigen |
+| `sip` | Unversionierte Datei/Baum ins Repository committen |
+| `sxp` | Unversionierte Kopie eines Baums erstellen |
+| `scl` | Unterbrochene Operationen beheben oder unerwuenschte Dateien entfernen |
+| `supg` | Metadatenformat der Working Copy upgraden |
+
+### Authentifizierung
+
+| Alias | Beschreibung |
+|:---|:---|
+| `sau` | Gecachte Auth-Credentials verwalten |
+
+### Hilfe
+
+| Alias | Beschreibung |
+|:---|:---|
+| `shp` | Usage fuer Programm oder Unterbefehle anzeigen |

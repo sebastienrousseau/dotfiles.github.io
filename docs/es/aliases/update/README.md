@@ -1,51 +1,50 @@
 ---
-description: Los alias de Update crean atajos utiles para actualizar el sistema operativo y el software instalado. Ayudan a asegurar y mejorar la instalacion actual de Dotfiles para proteger contra vulnerabilidades de seguridad, agregar nuevas funciones y corregir errores criticos.
+description: Alias de Update para actualizar sistema operativo y software. Mantiene dotfiles, paquetes y toolchains actualizados con un solo comando.
 lang: es-ES
 metaTitle: Alias de Update - Dotfiles (ES)
 permalink: /es/aliases/update/
+sidebar: true
 
 meta:
   - name: keywords
-    content: aliases, update, linux, macos, shell, terminal, windows
+    content: alias update, actualizacion sistema, homebrew, apt, paquetes, dotfiles, shell
   - name: twitter:card
-    content: Los alias de Update crean atajos utiles para actualizar el sistema operativo y el software instalado. Ayudan a asegurar y mejorar la instalacion actual de Dotfiles para proteger contra vulnerabilidades de seguridad, agregar nuevas funciones y corregir errores criticos.
+    content: summary
   - name: twitter:description
-    content: Los alias de Update crean atajos utiles para actualizar el sistema operativo y el software instalado. Ayudan a asegurar y mejorar la instalacion actual de Dotfiles para proteger contra vulnerabilidades de seguridad, agregar nuevas funciones y corregir errores criticos.
+    content: Alias de Update para actualizar sistema operativo y software. Mantiene dotfiles, paquetes y toolchains actualizados.
   - name: twitter:title
-    content: Alias de Update - Dotfiles (ES)
+    content: Alias de Update - Dotfiles
   - name: og:title
-    content: Alias de Update - Dotfiles (ES)
+    content: Alias de Update - Dotfiles
   - name: og:description
-    content: Los alias de Update crean atajos utiles para actualizar el sistema operativo y el software instalado. Ayudan a asegurar y mejorar la instalacion actual de Dotfiles para proteger contra vulnerabilidades de seguridad, agregar nuevas funciones y corregir errores criticos.
+    content: Alias de Update para actualizar sistema operativo y software. Mantiene dotfiles, paquetes y toolchains actualizados.
   - name: og:image:alt
     content: Dotfiles - Simplemente disenado para adaptarse a tu vida en el shell
   - name: og:locale
     content: es_ES
 ---
+
 # Alias de Update
 
-Gestionar los alias de Update. Parte de la configuracion **Universal Dotfiles**.
+Atajos para actualizar sistema operativo y software instalado.
 
-![Dotfiles banner][banner]
+## Descripcion
 
-## 📖 Descripcion
+Estos alias estan definidos en `update.aliases.sh` y se cargan automaticamente por chezmoi. Proporcionan comandos unificados para mantener tu sistema actualizado, incluyendo paquetes del sistema, toolchains de desarrollo y gestores de paquetes.
 
-Estos alias estan definidos en `update.aliases.sh` y se cargan automaticamente por `chezmoi`.
+## Referencia
 
-## ⚡ Alias
-
-Este codigo proporciona un conjunto de alias para actualizar diversos software en
-macOS y Linux.
 ### macOS
-- `upd` actualiza el software de macOS, los paquetes Homebrew, los Homebrew Casks, las apps del Mac
-   App Store, la toolchain Rust estable, las gemas de Ruby, los paquetes de Python,
-   y los paquetes de Node.js.
-### Linux
-- `open` abre un archivo o URL en la aplicacion preferida del usuario.
-- `pbcopy` copia al portapapeles.
-- `pbpaste` pega desde el portapapeles.
-- `upd` actualiza paquetes de Linux, limpia la cache de paquetes, actualiza paquetes pnpm,
-  actualiza la toolchain Rust estable, actualiza gemas de Ruby, actualiza paquetes de Python,
-  y actualiza paquetes de Node.js.
 
-[banner]: https://kura.pro/dotfiles/v2/images/titles/title-dotfiles.svg
+| Alias | Descripcion |
+|:---|:---|
+| `upd` | Actualizar software de macOS, paquetes Homebrew, Homebrew Casks, apps del Mac App Store, toolchain Rust estable, gemas Ruby, paquetes Python y paquetes Node.js |
+
+### Linux
+
+| Alias | Descripcion |
+|:---|:---|
+| `upd` | Actualizar paquetes Linux, limpiar cache de paquetes, actualizar pnpm, toolchain Rust estable, gemas Ruby, paquetes Python y paquetes Node.js |
+| `open` | Abrir archivo o URL en la aplicacion preferida del usuario |
+| `pbcopy` | Copiar al portapapeles |
+| `pbpaste` | Pegar desde el portapapeles |

@@ -1,96 +1,103 @@
 ---
-description: The GNU Core Utilities aliases, provide powerful commands that create shortcuts to frequently used Core utilities commands. All of these functions and aliases are wrappers around the GNU Core Utilities which are the basic, fundamental tools of a GNU/Linux system.
+title: "GNU Coreutils Aliases: Shell Shortcuts for Linux"
+description: "Streamline your workflow with GNU Coreutils aliases for file management, text processing, and checksum utilities."
 lang: en-GB
-metaTitle: The GNU Core Utilities aliases - Dotfiles (UK)
+metaTitle: "GNU Coreutils Aliases | Dotfiles"
 permalink: /aliases/gnu/
-
+sidebar: true
 meta:
   - name: keywords
-    content: aliases, git, gitconfig, gitconfig, git, configuration, dotfiles, linux, macos, shell, windows, bash, zsh
+    content: gnu coreutils, shell aliases, linux utilities, file management, dotfiles
   - name: twitter:card
-    content: The GNU Core Utilities aliases, provide powerful commands that create shortcuts to frequently used Core utilities commands. All of these functions and aliases are wrappers around the GNU Core Utilities which are the basic, fundamental tools of a GNU/Linux system.
-  - name: twitter:description
-    content: The GNU Core Utilities aliases, provide powerful commands that create shortcuts to frequently used Core utilities commands. All of these functions and aliases are wrappers around the GNU Core Utilities which are the basic, fundamental tools of a GNU/Linux system.
+    content: summary
   - name: twitter:title
-    content: The GNU Core Utilities aliases - Dotfiles (UK)
+    content: GNU Coreutils Aliases | Dotfiles
+  - name: twitter:description
+    content: Streamline your workflow with GNU Coreutils aliases for file management, text processing, and checksum utilities.
   - name: og:title
-    content: The GNU Core Utilities aliases - Dotfiles (UK)
+    content: GNU Coreutils Aliases | Dotfiles
   - name: og:description
-    content: The GNU Core Utilities aliases, provide powerful commands that create shortcuts to frequently used Core utilities commands. All of these functions and aliases are wrappers around the GNU Core Utilities which are the basic, fundamental tools of a GNU/Linux system.
+    content: Streamline your workflow with GNU Coreutils aliases for file management, text processing, and checksum utilities.
   - name: og:image:alt
     content: Dotfiles - Simply designed to fit your shell life
   - name: og:locale
     content: en_GB
 ---
-# Gnu Aliases
 
-Manage Gnu aliases. Part of the **Universal Dotfiles** configuration.
+# GNU Coreutils Aliases
+
+Shortcuts to essential Unix utilities for faster command-line workflows.
 
 ![Dotfiles banner][banner]
 
-## 📖 Description
+## Overview
 
-These aliases are defined in `gnu.aliases.sh` and are automatically loaded by `chezmoi`.
+GNU Coreutils aliases provide shorthand commands for standard Unix utilities. Defined in `gnu.aliases.sh` and loaded automatically by chezmoi, these aliases simplify file operations, text processing, and data verification tasks.
 
-## ⚡ Aliases
+## Reference
 
-This is a collection of aliases for the GNU Coreutils package, which is
-a set of standard Unix utilities often included in Linux distributions.
-These aliases allow for easier use of these utilities by providing
-shorthand commands that replace the full utility name with a shorter
-alias.
-The aliases in this collection cover a wide range of utilities, from
-basic file manipulation commands like "cp" and "rm" to more advanced
-text processing commands like "awk" and "sed". There are also aliases
-for various checksum and hash utilities like "md5sum" and "sha256sum".
+### File Management
 
-### Basic file management utilities
-- `basename` Strip directory and suffix from filenames.
-- `cp` Copy files and directories.
-- `dirname` Strip non-directory suffix from filenames.
-- `ln` Create links between files.
-- `loname` Print the name of the link.
-- `ls` List directory contents.
-- `mkdir` Create directories.
-- `mkfifo` Make named pipes (FIFOs).
-- `mknod` Make block or character special files.
-- `mv` Move or rename files or directories.
-- `pathchk` Check file name validity and portability.
-- `pwd` Print working directory name.
-- `readlink` Print resolved symbolic links or canonical file names.
-- `realpath` Print the resolved physical path of the specified path.
-- `rm` Remove files or directories.
-- `rmdir` Remove empty directories.
-- `unlink` Remove files or directories.
-### File content manipulation utilities
-- `awk` Pattern scanning and processing language.
-- `cat` Concatenate and display files.
-- `csplit` Split a file into context-determined pieces.
-- `cut` Remove sections from each line of files.
-- `diff` Compare files line by line.
-- `fold` Wrap each input line to fit in specified width.
-- `grep` Print lines matching a pattern.
-- `head` Output the first part of files.
-- `nl` Number lines of files.
-- `paste` Merge lines of files.
-- `patch` Apply a diff file to an original.
-- `ptx` Produce a permuted index of file contents.
-- `sed` Stream editor for filtering and transforming text.
-- `sort` Sort lines of text files.
-- `split` Split a file into pieces.
-- `tail` Output the last part of files.
-- `tr` Translate or delete characters.
-### File checksum and encryption utilities
-- `b2sum` Print or check BLAKE2 message digests.
-- `cksum` Print CRC checksum and byte counts.
-- `sha1sum` Print or check SHA1 message digests.
-- `sha224sum` Print or check SHA224 message digests.
-- `sha256sum` Print or check SHA256 message digests.
-- `sha384sum` Print or check SHA384 message digests.
-- `sha512sum` Print or check SHA512 message digests.
-### Other file utilities
-- `base32` Print or convert base32 data.
-- `base64` Encode or decode base64 data.
-- `basenc` Encode or decode base64, base32,
+| Alias | Description |
+|-------|-------------|
+| `basename` | Strip directory and suffix from filenames |
+| `cp` | Copy files and directories |
+| `dirname` | Strip non-directory suffix from filenames |
+| `ln` | Create links between files |
+| `loname` | Print the name of the link |
+| `ls` | List directory contents |
+| `mkdir` | Create directories |
+| `mkfifo` | Make named pipes (FIFOs) |
+| `mknod` | Make block or character special files |
+| `mv` | Move or rename files or directories |
+| `pathchk` | Check file name validity and portability |
+| `pwd` | Print working directory name |
+| `readlink` | Print resolved symbolic links or canonical file names |
+| `realpath` | Print the resolved physical path |
+| `rm` | Remove files or directories |
+| `rmdir` | Remove empty directories |
+| `unlink` | Remove files or directories |
+
+### Text Processing
+
+| Alias | Description |
+|-------|-------------|
+| `awk` | Pattern scanning and processing language |
+| `cat` | Concatenate and display files |
+| `csplit` | Split a file into context-determined pieces |
+| `cut` | Remove sections from each line of files |
+| `diff` | Compare files line by line |
+| `fold` | Wrap each input line to fit in specified width |
+| `grep` | Print lines matching a pattern |
+| `head` | Output the first part of files |
+| `nl` | Number lines of files |
+| `paste` | Merge lines of files |
+| `patch` | Apply a diff file to an original |
+| `ptx` | Produce a permuted index of file contents |
+| `sed` | Stream editor for filtering and transforming text |
+| `sort` | Sort lines of text files |
+| `split` | Split a file into pieces |
+| `tail` | Output the last part of files |
+| `tr` | Translate or delete characters |
+
+### Checksum Utilities
+
+| Alias | Description |
+|-------|-------------|
+| `b2sum` | Print or check BLAKE2 message digests |
+| `cksum` | Print CRC checksum and byte counts |
+| `sha1sum` | Print or check SHA1 message digests |
+| `sha224sum` | Print or check SHA224 message digests |
+| `sha256sum` | Print or check SHA256 message digests |
+| `sha384sum` | Print or check SHA384 message digests |
+| `sha512sum` | Print or check SHA512 message digests |
+
+### Encoding Utilities
+
+| Alias | Description |
+|-------|-------------|
+| `base32` | Print or convert base32 data |
+| `base64` | Encode or decode base64 data |
+| `basenc` | Encode or decode data in various formats |
 
 [banner]: https://kura.pro/dotfiles/v2/images/titles/title-dotfiles.svg

@@ -1,50 +1,61 @@
 ---
-description: Cómo Dotfiles gestiona tu jerarquía de \$PATH para asegurar que se carguen las herramientas correctas en el orden correcto.
+description: Cómo Dotfiles gestiona tu jerarquía PATH para cargar las herramientas correctas en el orden correcto.
 lang: es-ES
-metaTitle: Rutas (Paths) - Dotfiles (ES)
-permalink: /es/paths/
+metaTitle: Paths - Dotfiles (ES)
+permalink: /paths/
 
 meta:
   - name: keywords
-    content: ruta, entorno, variables, jerarquía, dotfiles, chezmoi
+    content: path, entorno, variables, jerarquía, dotfiles, chezmoi, shell, configuración
+  - name: twitter:card
+    content: summary
+  - name: twitter:description
+    content: Cómo Dotfiles gestiona tu jerarquía PATH para cargar las herramientas correctas en el orden correcto.
+  - name: twitter:title
+    content: Paths - Dotfiles
+  - name: og:title
+    content: Paths - Dotfiles
+  - name: og:description
+    content: Cómo Dotfiles gestiona tu jerarquía PATH para cargar las herramientas correctas en el orden correcto.
+  - name: og:image:alt
+    content: Dotfiles - Diseñado para tu vida en el shell
+  - name: og:locale
+    content: es_ES
 ---
 
-# Gestión de Rutas (Path)
+# Paths
 
-Uno de los roles más críticos de Dotfiles es gestionar tu variable de entorno `$PATH`. Esto determina qué versión de una herramienta se ejecuta cuando escribes un comando.
+Gestión modular del `PATH`. Asegura que las herramientas correctas se carguen en el orden correcto.
 
-Nos adherimos a una jerarquía estricta para asegurar consistencia entre macOS y Linux.
+## Descubrir
 
-## La Jerarquía
+Las configuraciones de ruta se dividen en archivos por prioridad. Durante `chezmoi apply`:
 
-De mayor prioridad (verificado primero) a menor:
+1. Los archivos del directorio se recorren alfabéticamente
+2. El contenido se agrega en `~/.config/shell/paths.sh`
+3. Se carga desde `.zshrc` al iniciar
 
-1.  **Binarios Locales** (`~/.local/bin`)
-    - **Prioridad**: 1
-    - **Propósito**: Scripts de usuario personalizados, CLI `dot`, y herramientas instaladas vía `pipx` u otros gestores de paquetes de nivel de usuario.
-    - **Razón**: Te permite anular herramientas del sistema o Homebrew con tus propias versiones.
+## Referencia
 
-2.  **Binarios de Aplicaciones** (macOS)
-    - **Prioridad**: 2
-    - **Propósito**: Binarios de aplicaciones instaladas (ej., VS Code, iTerm).
+| Script | Descripción |
+|:---|:---|
+| `00-default.paths.sh` | Rutas base del sistema (`/usr/bin`, `/sbin`) y Homebrew. Se carga primero. |
+| `99-custom.paths.sh` | Rutas personalizadas del usuario (SDKs, bins locales). Se carga al final para prioridad. |
 
-3.  **Tiempos de Ejecución de Lenguajes**
-    - **Node.js**: `~/.node_modules/bin`
-    - **Go**: `~/go/bin`
-    - **Rust (Cargo)**: `~/.cargo/bin`
-    - **Ruby (Gemas de Usuario)**: `~/.gem/ruby/bin`
-    - **Python (Pipx)**: `~/.local/share/pipx`
+## Empezar
 
-4.  **Homebrew** (`/opt/homebrew/bin`)
-    - **Prioridad**: 3
-    - **Propósito**: Gestor de paquetes principal para macOS/Linux.
-    - **Nota**: Cargamos Homebrew intencionalmente _antes_ de las rutas del sistema para permitir actualizar herramientas del sistema (como `git` o `curl`).
+### Añadir una ruta de usuario
 
-5.  **Rutas del Sistema** (`/usr/bin`, `/bin`)
-    - **Prioridad**: La más baja
-    - **Propósito**: Herramientas predeterminadas del sistema operativo.
-    - **Razón**: Respaldo para utilidades fundamentales.
-
-## Deduplicación
-
-Dotfiles deduplica automáticamente tu `$PATH` mientras preserva el orden de precedencia. Esto evita que la variable `$PATH` crezca indefinidamente al generar shells anidado.
+1. Edita `99-custom.paths.sh` o crea un archivo nuevo (por ejemplo `50-miproyecto.paths.sh`)
+2. Añade tu ruta:
+   ```bash
+   export PATH="$PATH:/ruta/a/dir"
+   ```
+3. Aplica los cambios:
+   ```bash
+   chezmoi apply
+   ```
+4. Verifica:
+   ```bash
+   echo $PATH
+   ```

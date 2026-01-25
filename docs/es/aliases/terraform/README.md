@@ -1,34 +1,56 @@
 ---
-description: alias de Terraform para Dotfiles
+description: Alias de Terraform y Ansible para infraestructura como codigo. Atajos para init, plan, apply, destroy y operaciones de playbooks.
 lang: es-ES
-metaTitle: alias de Terraform - Dotfiles
+metaTitle: Alias de Terraform - Dotfiles (ES)
 permalink: /es/aliases/terraform/
+sidebar: true
+
+meta:
+  - name: keywords
+    content: alias terraform, infraestructura codigo, iac, ansible, opentofu, dotfiles, shell
+  - name: twitter:card
+    content: summary
+  - name: twitter:description
+    content: Alias de Terraform y Ansible para infraestructura como codigo. Atajos para init, plan, apply, destroy y playbooks.
+  - name: twitter:title
+    content: Alias de Terraform - Dotfiles
+  - name: og:title
+    content: Alias de Terraform - Dotfiles
+  - name: og:description
+    content: Alias de Terraform y Ansible para infraestructura como codigo. Atajos para init, plan, apply, destroy y playbooks.
+  - name: og:image:alt
+    content: Dotfiles - Simplemente disenado para adaptarse a tu vida en el shell
+  - name: og:locale
+    content: es_ES
 ---
+
 # Alias de Terraform
 
-Gestionar alias de Infraestructura como Codigo (Terraform, OpenTofu, Ansible). Parte de la configuracion **Universal Dotfiles**.
+Atajos para Infraestructura como Codigo (Terraform, OpenTofu, Ansible).
 
-![Dotfiles banner][banner]
+## Descripcion
 
-## 📖 Descripcion
+Estos alias estan definidos en `terraform.aliases.sh` y se cargan automaticamente por chezmoi. Simplifican comandos comunes de gestion de infraestructura.
 
-Estos alias estan definidos en `terraform.aliases.sh` y se cargan automaticamente por `chezmoi`.
+## Referencia
 
-## ⚡ Alias
+### Terraform
 
-### terraform
-- `tf` - Atajo de Terraform
-- `tfi` - Init
-- `tfp` - Plan
-- `tfa` - Apply
-- `tfaa` - Apply (auto-approve)
-- `tfd` - Destroy
-- `tff` - Format
-- `tfv` - Validate
+| Alias | Descripcion |
+|:---|:---|
+| `tf` | Atajo de Terraform |
+| `tfi` | Init |
+| `tfp` | Plan |
+| `tfa` | Apply |
+| `tfaa` | Apply (auto-approve) |
+| `tfd` | Destroy |
+| `tff` | Format |
+| `tfv` | Validate |
 
-### ansible
-- `ans` - Atajo de Ansible
-- `ansp` - Ansible Playbook
-- `anslint` - Ansible Lint
+### Ansible
 
-[banner]: https://kura.pro/dotfiles/v2/images/titles/title-dotfiles.svg
+| Alias | Descripcion |
+|:---|:---|
+| `ans` | Atajo de Ansible |
+| `ansp` | Ansible Playbook |
+| `anslint` | Ansible Lint |
