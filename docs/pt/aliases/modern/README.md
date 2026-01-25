@@ -1,44 +1,50 @@
 ---
-description: Aliases modernos para Dotfiles
+title: "Aliases Modernos: Substituicoes Rust para Ferramentas Unix"
+description: "Aliases de shell para ferramentas modernas baseadas em Rust. Use eza, bat e ripgrep como substituicoes para ls, cat e grep."
 lang: pt-BR
-metaTitle: Aliases Modernos - Dotfiles (BR)
+metaTitle: "Aliases Modernos | Dotfiles"
 permalink: /pt/aliases/modern/
+sidebar: true
+meta:
+  - name: keywords
+    content: "aliases modernos, eza, bat, ripgrep, rust, aliases shell, dotfiles"
 ---
 
-# Aliases de Ferramentas Modernas
+# Aliases de Modern Tooling
 
-Gerencie aliases de Ferramentas Modernas. Parte da configuração **Universal Dotfiles**.
+Substituicoes modernas para ferramentas Unix legadas (baseadas em Rust).
 
-![Dotfiles banner][banner]
+## Visao Geral
 
-## 📖 Descrição
+Estes aliases sao definidos em `modern.aliases.sh` e carregados automaticamente pelo Chezmoi.
 
-Esses aliases são definidos em `modern.aliases.sh` e são carregados automaticamente pelo `chezmoi`.
-Eles fornecem substituições modernas para ferramentas Unix legadas (baseadas em Rust).
-
-## ⚡ Aliases
+## Referencia
 
 ### Listagem de Arquivos (eza)
 
-Se `eza` estiver instalado (substituindo `ls`):
+Se `eza` estiver instalado (substitui `ls`):
 
-- `ls` - Listar arquivos (`eza --icons`)
-- `ll` - Lista longa (`eza -alF`)
-- `la` - Listar tudo (`eza -a`)
-- `lt` - Listar árvore (`eza --tree`)
+| Alias | Descricao |
+|-------|-------------|
+| `ls` | Listar arquivos (`eza --icons`) |
+| `ll` | Lista longa (`eza -alF`) |
+| `la` | Listar tudo (`eza -a`) |
+| `lt` | Arvore (`eza --tree`) |
 
-_(Recorre ao `ls` padrão se `eza` estiver ausente)_
+*(Usa `ls` padrao se `eza` nao estiver instalado)*
 
-### Conteúdo de Arquivo (bat)
+### Conteudo de Arquivo (bat)
 
-Se `bat` estiver instalado (substituindo `cat`):
+Se `bat` estiver instalado (substitui `cat`):
 
-- `cat` - Exibir conteúdo de arquivo com destaque de sintaxe
+| Alias | Descricao |
+|-------|-------------|
+| `cat` | Mostrar conteudo com syntax highlight |
 
-### Pesquisa (rg)
+### Busca (rg)
 
-Se `rg` estiver instalado (substituindo `grep`):
+Se `rg` estiver instalado (substitui `grep`):
 
-- `grep` - Pesquisar com Ripgrep
-
-[banner]: https://kura.pro/dotfiles/v2/images/titles/title-dotfiles.svg
+| Alias | Descricao |
+|-------|-------------|
+| `grep` | Busca com Ripgrep |

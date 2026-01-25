@@ -1,63 +1,200 @@
 ---
-description: Rust 别名是一组别名，允许您与 `rustup` 和 `cargo` 命令交互。它们旨在与 `rustup` 工具链管理器和 `cargo` 包管理器一起使用。
+description: 用于 Cargo 和 Rustup 的 Rust 开发别名。构建、测试和管理 Rust 项目的快捷方式。
 lang: zh-CN
 metaTitle: Rust 别名 - Dotfiles (CN)
-permalink: /zh/aliases/rust/
+permalink: /aliases/rust/
+sidebar: true
+
+meta:
+  - name: keywords
+    content: rust, cargo, rustup, shell 别名, dotfiles, rust 开发
+  - name: twitter:card
+    content: summary
+  - name: twitter:description
+    content: 用于 Cargo 和 Rustup 的 Rust 开发别名。构建、测试和管理 Rust 项目的快捷方式。
+  - name: twitter:title
+    content: Rust 别名 - Dotfiles
+  - name: og:title
+    content: Rust 别名 - Dotfiles
+  - name: og:description
+    content: 用于 Cargo 和 Rustup 的 Rust 开发别名。构建、测试和管理 Rust 项目的快捷方式。
+  - name: og:image:alt
+    content: Dotfiles - 为你的 Shell 生活精心设计
+  - name: og:locale
+    content: zh_CN
 ---
 
 # Rust 别名
 
-`rust.aliases.sh` 文件为 [Rust](https://www.rust-lang.org/) 创建了有用的快捷别名。
+使用 Cargo 和 Rustup 进行 Rust 开发的快捷方式。
 
-Rust 别名是一组别名，允许您与 `rustup` 和 `cargo` 命令交互。它们旨在与 `rustup` 工具链管理器和 `cargo` 包管理器一起使用。
+## 概述
 
-## Rust
+这些别名定义在 `rust.aliases.sh` 中，由 Chezmoi 自动加载。
 
-[Rust](https://www.rust-lang.org/zh-CN/) 是一种专注于性能和安全性的编程语言，特别是安全并发。Rust 在语法上类似于 C++，但旨在提供更好的内存安全性，同时保持高性能。
+## 参考
 
-| 别名 | 命令                         | 描述                  |
-| ---- | ---------------------------- | --------------------- |
-| ru   | `rustup update`              | Rustup 更新。         |
-| rca  | `rustup component add`       | Rustup 添加组件。     |
-| rcl  | `rustup component list`      | Rustup 列出组件。     |
-| rcr  | `rustup component remove`    | Rustup 删除组件。     |
-| rde  | `rustup default`             | Rustup 默认。         |
-| rnn  | `rustup run nightly`         | 运行 rustup nightly。 |
-| rns  | `rustup run stable`          | 运行 rustup stable。  |
-| rtaa | `rustup target add`          | Rustup 添加目标。     |
-| rtal | `rustup target list`         | Rustup 列出目标。     |
-| rtar | `rustup target remove`       | Rustup 删除目标。     |
-| rti  | `rustup toolchain install`   | Rustup 安装工具链。   |
-| rtl  | `rustup toolchain list`      | Rustup 列出工具链。   |
-| rtu  | `rustup toolchain uninstall` | Rustup 卸载工具链。   |
-| ruc  | `rustup update nightly`      | 更新 rustup nightly。 |
-| rus  | `rustup update stable`       | 更新 rustup stable。  |
+### 基本命令
 
-## Cargo
+| 别名 | 描述 |
+|:---|:---|
+| `cg` | Cargo 快捷方式 |
+| `cgn` | 创建新的二进制项目 |
+| `cgni` | 创建新的库项目 |
+| `cginit` | 在当前目录初始化项目 |
 
-[Cargo](https://doc.rust-lang.org/cargo/) 是 Rust 包管理器。它用于构建、测试和打包 Rust 项目。Cargo 包含在 Rustup 中。
+### 构建和运行
 
-| 别名   | 命令                 | 描述             |
-| ------ | -------------------- | ---------------- |
-| cg     | `cargo`              | Cargo 快捷方式。 |
-| cgb    | `cg build`           | Cargo 构建。     |
-| cgbh   | `cg bench`           | Cargo 基准测试。 |
-| cgbr   | `cg build --release` | Cargo 发布构建。 |
-| cgc    | `cg check`           | Cargo 检查。     |
-| cgcl   | `cg clean`           | Cargo 清理。     |
-| cgcy   | `cg clippy`          | Cargo clippy。   |
-| cgd    | `cg doc --open`      | Cargo 文档。     |
-| cgdr   | `cg doc --release`   | Cargo 发布文档。 |
-| cgf    | `cg fmt`             | Cargo 格式化。   |
-| cgi    | `cg install`         | Cargo 安装。     |
-| cginit | `cg init`            | Cargo 初始化。   |
-| cgn    | `cg new`             | Cargo 新建。     |
-| cgp    | `cg publish`         | Cargo 发布。     |
-| cgr    | `cg run`             | Cargo 运行。     |
-| cgrr   | `cg run --release`   | Cargo 发布运行。 |
-| cgs    | `cg search`          | Cargo 搜索。     |
-| cgt    | `cg test`            | Cargo 测试。     |
-| cgtr   | `cg test --release`  | Cargo 发布测试。 |
-| cgtt   | `cg tree`            | Cargo 树。       |
-| cgu    | `cg update`          | Cargo 更新。     |
-| cgun   | `cg uninstall`       | Cargo 卸载。     |
+| 别名 | 描述 |
+|:---|:---|
+| `cgb` | 构建调试版本 |
+| `cgbr` | 构建发布版本 |
+| `cgr` | 运行调试版本 |
+| `cgrr` | 运行发布版本 |
+| `cgw` | 监视并重新构建 |
+
+### 测试和基准测试
+
+| 别名 | 描述 |
+|:---|:---|
+| `cgt` | 运行测试 |
+| `cgtr` | 在发布模式下运行测试 |
+| `cgbh` | 运行基准测试 |
+| `cgta` | 测试所有目标 |
+| `cgtt` | 单线程测试 |
+
+### 代码质量
+
+| 别名 | 描述 |
+|:---|:---|
+| `cgc` | 检查编译 |
+| `cgcl` | 清理构建产物 |
+| `cgcy` | 运行 clippy lint 检查 |
+| `cgf` | 格式化代码 |
+| `cgfa` | 格式化所有代码 |
+| `cgfx` | 自动修复代码问题 |
+| `cgaud` | 安全漏洞检查 |
+
+### 文档
+
+| 别名 | 描述 |
+|:---|:---|
+| `cgd` | 构建并打开文档 |
+| `cgdr` | 构建发布文档 |
+| `cgdo` | 文档私有项 |
+
+### 依赖
+
+| 别名 | 描述 |
+|:---|:---|
+| `cga` | 添加依赖项 |
+| `cgad` | 添加开发依赖项 |
+| `cgu` | 更新依赖项 |
+| `cgo` | 检查过时的依赖项 |
+| `cgv` | 供应商依赖项 |
+| `cgtree` | 显示依赖树 |
+
+### 交叉编译
+
+| 别名 | 描述 |
+|:---|:---|
+| `cgx` | 使用 Zig 构建 |
+| `cgxw` | 交叉编译 |
+| `cgxt` | 针对特定平台 |
+
+### 分析和性能分析
+
+| 别名 | 描述 |
+|:---|:---|
+| `cgfl` | 生成火焰图 |
+| `cgbl` | 二进制大小分析 |
+| `cgl` | 代码覆盖率 |
+| `cgm` | 模块结构 |
+| `cgex` | 展开宏 |
+
+### 包管理
+
+| 别名 | 描述 |
+|:---|:---|
+| `cgi` | 安装二进制文件 |
+| `cgun` | 卸载二进制文件 |
+| `cgp` | 发布到 crates.io |
+| `cgs` | 搜索 crates.io |
+| `cgcp` | 创建发布包 |
+
+### 高级构建
+
+| 别名 | 描述 |
+|:---|:---|
+| `cgba` | 构建所有目标 |
+| `cgbt` | 构建所有功能 |
+| `cgbp` | 使用特定配置文件构建 |
+
+### 项目模板
+
+| 别名 | 描述 |
+|:---|:---|
+| `cgnb` | 从模板新建二进制文件 |
+| `cgnl` | 从模板新建库 |
+| `cgnt` | 从自定义模板新建 |
+
+### Rustup 更新
+
+| 别名 | 描述 |
+|:---|:---|
+| `ru` | 更新所有工具链 |
+| `rus` | 更新稳定工具链 |
+| `run` | 更新 nightly 工具链 |
+| `rti` | 安装特定工具链 |
+
+### 组件管理
+
+| 别名 | 描述 |
+|:---|:---|
+| `rca` | 添加组件 |
+| `rcl` | 列出组件 |
+| `rcr` | 移除组件 |
+
+### 工具链管理
+
+| 别名 | 描述 |
+|:---|:---|
+| `rtl` | 列出已安装的工具链 |
+| `rtu` | 卸载工具链 |
+| `rde` | 设置默认工具链 |
+
+### 目标管理
+
+| 别名 | 描述 |
+|:---|:---|
+| `rtaa` | 添加编译目标 |
+| `rtal` | 列出可用目标 |
+| `rtar` | 移除编译目标 |
+
+### 环境运行
+
+| 别名 | 描述 |
+|:---|:---|
+| `rns` | 使用 stable 运行命令 |
+| `rnn` | 使用 nightly 运行命令 |
+
+### 文档和帮助
+
+| 别名 | 描述 |
+|:---|:---|
+| `rdo` | 打开 Rust 文档 |
+
+### 覆盖管理
+
+| 别名 | 描述 |
+|:---|:---|
+| `rpr` | 设置目录工具链 |
+| `rpl` | 列出目录覆盖 |
+| `rpn` | 移除目录覆盖 |
+
+### 工具链信息
+
+| 别名 | 描述 |
+|:---|:---|
+| `rws` | 显示活动的 rustc 路径 |
+| `rsh` | 显示工具链信息 |

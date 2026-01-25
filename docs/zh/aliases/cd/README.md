@@ -1,35 +1,118 @@
 ---
-description: 切换目录别名是一组别名，允许您与 `cd` 命令行工具有更方便的交互。Cd 是一个更改当前目录的工具。
+description: 带有书签、历史记录跟踪和智能快捷方式的目录导航别名。更快地导航文件系统。
 lang: zh-CN
-metaTitle: 切换目录别名 - Dotfiles (CN)
-permalink: /zh/aliases/cd/
+metaTitle: CD 别名 - Dotfiles (CN)
+permalink: /aliases/cd/
+sidebar: true
+
+meta:
+  - name: keywords
+    content: cd, 目录, 导航, 书签, shell 别名, dotfiles, 终端
+  - name: twitter:card
+    content: summary
+  - name: twitter:description
+    content: 带有书签、历史记录跟踪和智能快捷方式的目录导航别名。更快地导航文件系统。
+  - name: twitter:title
+    content: CD 别名 - Dotfiles
+  - name: og:title
+    content: CD 别名 - Dotfiles
+  - name: og:description
+    content: 带有书签、历史记录跟踪和智能快捷方式的目录导航别名。更快地导航文件系统。
+  - name: og:image:alt
+    content: Dotfiles - 为你的 Shell 生活精心设计
+  - name: og:locale
+    content: zh_CN
 ---
 
-# 切换目录别名
+# CD 别名
 
-`cd.aliases.sh` 文件为终端导航创建了有用的快捷别名。
+更快地导航文件系统。书签、历史记录和智能快捷方式。
 
-切换目录别名是一组别名，允许您与 `cd` 命令行工具有更方便的交互。Cd 是一个更改当前目录的工具。
+## 概述
 
-## 导航
+这些别名定义在 `cd.aliases.sh` 中，由 Chezmoi 自动加载。
 
-cd 命令，也称为 chdir（更改目录），是一个命令行 shell 命令，用于在各种操作系统中更改当前工作目录。
+## 参考
 
-| 别名  | 命令                          | 描述                                   |
-| ----- | ----------------------------- | -------------------------------------- |
-| -     | `cd -`                        | 切换到上一个目录的快捷方式。           |
-| ..    | `cd ..`                       | 切换到父目录的快捷方式。               |
-| ...   | `cd ../..`                    | 切换到祖父母目录的快捷方式。           |
-| ....  | `cd ../../..`                 | 切换到曾祖父母目录的快捷方式。         |
-| ..... | `cd ../../../..`              | 切换到高祖父母目录的快捷方式。         |
-| ~     | `cd ~`                        | 切换到主目录的快捷方式。               |
-| app   | `cd ${HOME}/Applications; ls` | 切换到应用程序目录的快捷方式。         |
-| cod   | `cd ${HOME}/Code; ls`         | 切换到代码目录并列出其内容的快捷方式。 |
-| des   | `cd ${HOME}/Desktop; ls`      | 切换到桌面目录并列出其内容的快捷方式。 |
-| doc   | `cd ${HOME}/Documents; ls`    | 切换到文档目录并列出其内容的快捷方式。 |
-| dot   | `cd ${HOME}/.dotfiles; ls`    | 切换到 dotfiles 目录的快捷方式。       |
-| dow   | `cd ${HOME}/Downloads; ls`    | 切换到下载目录并列出其内容的快捷方式。 |
-| hom   | `cd ${HOME}/; ls`             | 切换到主目录并列出其内容的快捷方式。   |
-| mus   | `cd ${HOME}/Music; ls`        | 切换到音乐目录并列出其内容的快捷方式。 |
-| pic   | `cd ${HOME}/Pictures; ls`     | 切换到图片目录并列出其内容的快捷方式。 |
-| vid   | `cd ${HOME}/Videos; ls`       | 切换到视频目录并列出其内容的快捷方式。 |
+### 导航快捷方式
+
+| 别名 | 描述 |
+|:---|:---|
+| `-` | 切换到上一个目录 |
+| `..` | 上一级 |
+| `...` | 上两级 |
+| `....` | 上三级 |
+| `.....` | 上四级 |
+| `hom` | 导航到主目录 |
+
+### 目录快捷方式
+
+| 别名 | 路径 | 描述 |
+|:---|:---|:---|
+| `app` | `~/Applications` | 应用程序 |
+| `cod` | `~/Code` | 代码目录 |
+| `dsk` | `~/Desktop` | 桌面 |
+| `doc` | `~/Documents` | 文档 |
+| `dot` | `~/.dotfiles` | Dotfiles |
+| `dwn` | `~/Downloads` | 下载 |
+| `mus` | `~/Music` | 音乐 |
+| `pic` | `~/Pictures` | 图片 |
+| `vid` | `~/Videos` | 视频 |
+
+### 系统目录
+
+| 别名 | 路径 | 描述 |
+|:---|:---|:---|
+| `etc` | `/etc` | 系统配置 |
+| `var` | `/var` | 可变文件 |
+| `tmp` | `/tmp` | 临时文件 |
+| `usr` | `/usr` | 用户程序 |
+
+### 书签
+
+| 命令 | 别名 | 描述 |
+|:---|:---|:---|
+| `bookmark [name]` | `bm` | 创建书签 |
+| `bookmark_list` | `bml` | 列出书签 |
+| `bookmark_update` | `bmu` | 更新书签 |
+| `bookmark_remove` | `bmr` | 删除书签 |
+| `goto <name>` | `bmg` | 转到书签 |
+
+```bash
+bm work-project      # 创建书签
+bmg work-project     # 导航到书签
+bml                  # 列出所有书签
+```
+
+### 历史记录
+
+| 命令 | 别名 | 描述 |
+|:---|:---|:---|
+| `dirhistory` | `dh` | 显示目录历史 |
+| `lwd` | `ld` | 返回上一个目录 |
+
+### 高级
+
+| 命令 | 别名 | 描述 |
+|:---|:---|:---|
+| `mkcd <dir>` | `mcd` | 创建并进入目录 |
+| `proj` | `pr` | 转到项目根目录 |
+| `pushd` | `pd` | 将目录推入堆栈 |
+| `popd` | — | 从堆栈弹出 |
+| `dirs` | — | 列出目录堆栈 |
+
+## 配置
+
+使用环境变量自定义行为：
+
+```bash
+export SHOW_HIDDEN_FILES=true
+export ENABLE_COLOR_OUTPUT=true
+export AUTO_LIST_AFTER_CD=true
+export MAX_RECENT_DIRS=15
+export RESTORE_LAST_DIR=true
+```
+
+## 帮助
+
+运行 `cdhelp` 查看所有命令或 `cdversion` 查看版本信息。

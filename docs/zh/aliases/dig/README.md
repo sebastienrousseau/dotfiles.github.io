@@ -1,30 +1,50 @@
 ---
-description: Dig 别名允许查询有关各种 DNS 记录的信息，包括主机地址、邮件交换和名称服务器。
+description: 使用 dig 别名简化 DNS 查询。使用这些 shell 快捷方式更快地查找 IPv4、IPv6 和 DNS 记录。
 lang: zh-CN
 metaTitle: Dig 别名 - Dotfiles (CN)
-permalink: /zh/aliases/dig/
+permalink: /aliases/dig/
+sidebar: true
+
+meta:
+  - name: keywords
+    content: dig 别名, dns 查找, shell 别名, dotfiles, ipv4 查找, ipv6 查找
+  - name: twitter:card
+    content: summary
+  - name: twitter:description
+    content: 使用 dig 别名简化 DNS 查询。使用这些 shell 快捷方式更快地查找 IPv4、IPv6 和 DNS 记录。
+  - name: twitter:title
+    content: Dig 别名 - Dotfiles
+  - name: og:title
+    content: Dig 别名 - Dotfiles
+  - name: og:description
+    content: 使用 dig 别名简化 DNS 查询。使用这些 shell 快捷方式更快地查找 IPv4、IPv6 和 DNS 记录。
+  - name: og:image:alt
+    content: Dotfiles - 为你的 Shell 生活精心设计
+  - name: og:locale
+    content: zh_CN
 ---
 
 # Dig 别名
 
-`dig.aliases.sh` 文件为 `dig` 命令创建了有用的快捷别名。
+使用简洁的 shell 别名简化 DNS 查找。
 
-`dig` (domain information groper) 是一个灵活的工具，用于询问 DNS 名称服务器。
-它执行 DNS 查找并显示从被查询的名称服务器返回的应答。它主要用于解决 DNS 问题和查找有关域的信息，例如 IP 地址。
+## 概述
 
-## Dig
+这些别名简化了在 Unix 系统上使用 `dig` 命令进行 DNS（域名系统）查询的工作。定义在 `dig.aliases.sh` 中，作为 Universal Dotfiles 配置的一部分由 chezmoi 自动加载。
 
-[Dig](https://zh.wikipedia.org/wiki/Dig) 是一个执行 DNS 查找并显示从被查询的名称服务器返回的应答的命令。
+## 参考
 
-| 别名 | 命令                                                                    | 描述                             |
-| ---- | ----------------------------------------------------------------------- | -------------------------------- |
-| d    | `$(which dig)`                                                          | 使用默认选项运行 dig 命令。      |
-| d4   | `$(which dig) +short -4`                                                | 对 IPv4 地址执行 DNS 查找。      |
-| d6   | `$(which dig) +short -6`                                                | 对 IPv6 地址执行 DNS 查找。      |
-| dga  | `$(which dig) +all ANY`                                                 | 查询所有记录的 DNS 查找。        |
-| dgs  | `$(which dig) +short`                                                   | 执行简短应答的 DNS 查找。        |
-| digg | `$(which dig) @8.8.8.8 +nocmd any +multiline +noall +answer`            | 使用 Google 的 DNS 进行 Dig。    |
-| ip4  | `$(which dig) +short myip.opendns.com @resolver1.opendns.com -4`        | 获取您的公共 IPv4 地址。         |
-| ip6  | `$(which dig) -6 AAAA +short myip.opendns.com. @resolver1.opendns.com.` | 获取您的公共 IPv6 地址。         |
-| ips  | `ip4; ip6`                                                              | 获取您的公共 IPv4 和 IPv6 地址。 |
-| wip  | `$(which dig) +short myip.opendns.com @resolver1.opendns.com`           | 获取您的公共 IP 地址。           |
+下表列出了所有可用的 dig 别名及其功能。
+
+| 别名 | 描述 |
+|:---|:---|
+| `d` | 使用默认选项运行 dig 命令 |
+| `d4` | 执行 IPv4 地址的 DNS 查找 |
+| `d6` | 执行 IPv6 地址的 DNS 查找 |
+| `dga` | 执行所有记录的 DNS 查找 |
+| `dgs` | 执行简短答案的 DNS 查找 |
+| `digg` | 使用 Google DNS 执行 dig 查询 |
+| `ip4` | 获取你的公网 IPv4 地址 |
+| `ip6` | 获取你的公网 IPv6 地址 |
+| `ips` | 获取你的公网 IPv4 和 IPv6 地址 |
+| `wip` | 获取你的公网 IP 地址 |

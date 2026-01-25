@@ -1,73 +1,99 @@
 ---
-description: The PNpm aliases are a collection of aliases that allow you to interact with the `pnpm` command line tool. Pnpm is a fast, disk space efficient package manager.
+title: "Pnpm Aliases: Fast Package Management Shortcuts"
+description: "Streamline pnpm workflows with aliases for installing, building, testing, and managing Node.js dependencies."
 lang: en-GB
-metaTitle: The PNpm aliases - Dotfiles (UK)
+metaTitle: "Pnpm Aliases | Dotfiles"
 permalink: /aliases/pnpm/
-
+sidebar: true
 meta:
   - name: keywords
-    content: aliases, pnpm, package manager, node, npm, yarn, linux, macos, shell, terminal, windows
+    content: "pnpm aliases, package manager, node.js, npm alternative, dotfiles, shell"
   - name: twitter:card
-    content: The PNpm aliases are a collection of aliases that allow you to interact with the `pnpm` command line tool. Pnpm is a fast, disk space efficient package manager.
-  - name: twitter:description
-    content: The PNpm aliases are a collection of aliases that allow you to interact with the `pnpm` command line tool. Pnpm is a fast, disk space efficient package manager.
+    content: summary
   - name: twitter:title
-    content: The PNpm aliases - Dotfiles (UK)
+    content: "Pnpm Aliases | Dotfiles"
+  - name: twitter:description
+    content: "Streamline pnpm workflows with aliases for installing, building, testing, and managing Node.js dependencies."
   - name: og:title
-    content: The PNpm aliases - Dotfiles (UK)
+    content: "Pnpm Aliases | Dotfiles"
   - name: og:description
-    content: The PNpm aliases are a collection of aliases that allow you to interact with the `pnpm` command line tool. Pnpm is a fast, disk space efficient package manager.
+    content: "Streamline pnpm workflows with aliases for installing, building, testing, and managing Node.js dependencies."
   - name: og:image:alt
     content: Dotfiles - Simply designed to fit your shell life
   - name: og:locale
     content: en_GB
 ---
 
-# PNpm aliases
+# Pnpm Aliases
 
-This `pnpm.aliases.sh` file creates helpful shortcut aliases for many
-commonly used [PNpm](https://pnpm.io) commands.
+Shortcuts for the fast, disk-efficient package manager.
 
-The PNpm aliases are a collection of aliases that allow you to interact with the
-`pnpm` command line tool. Pnpm is a fast, disk space efficient package manager.
+![Dotfiles banner][banner]
 
-## PNpm
+## Overview
 
-[PNpm](https://pnpm.io) is a package manager for JavaScript and Node.js. It
-is fast, disk space efficient, and reliable.
+These aliases are defined in `pnpm.aliases.sh` and are automatically loaded by chezmoi. They provide quick access to common [pnpm](https://pnpm.io/) commands for Node.js package management.
 
-| Alias | Command                              | Description                                              |
-| ----- | ------------------------------------ | -------------------------------------------------------- |
-| pna   | `pnpm add`                           | Add a package to the project                             |
-| pnad  | `pnpm add --save-dev`                | Add a package to the project as a development dependency |
-| pnap  | `pnpm add --save-peer`               | Add a package to the project as a peer dependency        |
-| pnau  | `pnpm audit`                         | Audit the project for vulnerabilities                    |
-| pnb   | `pnpm run build`                     | Build the project                                        |
-| pnc   | `pnpm create`                        | Create a new project                                     |
-| pnd   | `pnpm run dev`                       | Run the project in development mode                      |
-| pndoc | `pnpm run doc`                       | Generate documentation for the project                   |
-| pnga  | `pnpm add --global`                  | Add a package to the global store                        |
-| pngls | `pnpm list --global`                 | List packages in the global store                        |
-| pngrm | `pnpm remove --global`               | Remove a package from the global store                   |
-| pngu  | `pnpm update --global`               | Update a package in the global store                     |
-| pnh   | `pnpm help`                          | Show help for a command                                  |
-| pni   | `pnpm init`                          | Initialize a new project                                 |
-| pnin  | `pnpm install`                       | Install the project's dependencies                       |
-| pnln  | `pnpm run lint`                      | Runs `pnpm run lint`                                     |
-| pnls  | `pnpm list`                          | List packages in the project                             |
-| pnout | `pnpm outdated`                      | Check for outdated packages                              |
-| pnp   | `pnpm`                               | Run a PNpm command                                       |
-| pnpub | `pnpm publish`                       | Publish the project                                      |
-| pnrm  | `pnpm remove`                        | Remove a package from the project                        |
-| pnrun | `pnpm run`                           | Run a script in the project                              |
-| pns   | `pnpm run serve`                     | Run the project in production mode                       |
-| pnst  | `pnpm start`                         | Start the project                                        |
-| pnsv  | `pnpm server`                        | Start the project's development server                   |
-| pnt   | `pnpm test`                          | Run the project's tests                                  |
-| pntc  | `pnpm test --coverage`               | Run the project's tests with coverage                    |
-| pnui  | `pnpm update --interactive`          | Update packages interactively                            |
-| pnuil | `pnpm update --interactive --latest` | Update packages interactively to the latest version      |
-| pnun  | `pnpm uninstall`                     | Remove a package from the project                        |
-| pnup  | `pnpm update`                        | Update packages in the project                           |
-| pnwhy | `pnpm why`                           | Show why a package is installed                          |
-| pnx   | `pnpx`                               | Run a PNpx command                                       |
+## Reference
+
+### Project Initialisation
+
+| Alias | Description |
+|-------|-------------|
+| `pni` | Initialise a new project |
+| `pnc` | Create a new project |
+| `pnin` | Install project dependencies |
+| `pnun` | Uninstall project dependencies |
+
+### Development
+
+| Alias | Description |
+|-------|-------------|
+| `pnb` | Build the project |
+| `pnrun` | Run a script from the project |
+| `pnd` | Run the project in dev mode |
+| `pns` | Run the project in serve mode |
+| `pnst` | Start the project |
+| `pnsv` | Run the project in server mode |
+
+### Testing and Quality
+
+| Alias | Description |
+|-------|-------------|
+| `pnt` | Test the project |
+| `pntc` | Test the project with coverage |
+| `pnln` | Lint the project |
+| `pndoc` | Generate project documentation |
+
+### Dependency Management
+
+| Alias | Description |
+|-------|-------------|
+| `pnls` | List all dependencies |
+| `pnout` | Check for outdated dependencies |
+| `pnwhy` | Check why a dependency is installed |
+| `pnad` | Add a dev dependency |
+| `pnap` | Add a peer dependency |
+| `pnrm` | Remove a dependency |
+| `pnup` | Update a dependency |
+| `pnui` | Update a dependency interactively |
+| `pnuil` | Update a dependency interactively to latest |
+
+### Global Packages
+
+| Alias | Description |
+|-------|-------------|
+| `pnga` | Add a global dependency |
+| `pngls` | List all global dependencies |
+| `pngrm` | Remove a global dependency |
+| `pngu` | Update a global dependency |
+
+### Publishing and Utilities
+
+| Alias | Description |
+|-------|-------------|
+| `pnpub` | Publish the project |
+| `pnx` | Shortcut to pnpx |
+| `pnh` | Show help |
+
+[banner]: https://kura.pro/dotfiles/v2/images/titles/title-dotfiles.svg

@@ -1,42 +1,66 @@
 ---
-description: Die Find-Aliase sind dazu konzipiert, nach Dateien in einer Verzeichnishierarchie zu suchen und Aktionen an den gefundenen Dateien durchzuführen.
+description: Dateisuche optimieren mit fd-basierten Aliasen. Schnelle, farbige Ausgabe und intuitive Befehle fuer Unix-Systeme.
 lang: de-DE
 metaTitle: Find Aliase - Dotfiles (DE)
 permalink: /de/aliases/find/
+sidebar: true
+
+meta:
+  - name: keywords
+    content: find aliase, fd befehl, dateisuche, shell aliase, dotfiles, unix find
+  - name: twitter:card
+    content: summary
+  - name: twitter:title
+    content: Find Aliase - Dotfiles
+  - name: twitter:description
+    content: Dateisuche optimieren mit fd-basierten Aliasen. Schnelle, farbige Ausgabe und intuitive Befehle.
+  - name: og:title
+    content: Find Aliase - Dotfiles
+  - name: og:description
+    content: Dateisuche optimieren mit fd-basierten Aliasen. Schnelle, farbige Ausgabe und intuitive Befehle.
+  - name: og:image:alt
+    content: Dotfiles - Simply designed to fit your shell life
+  - name: og:locale
+    content: de_DE
 ---
 
 # Find Aliase
 
-Die Datei `find.aliases.sh` erstellt hilfreiche Shortcut-Aliase für den Befehl `fd`
-. Der Befehl `fd` ist eine plattformübergreifende Alternative zu `find`.
+Leistungsstarke Dateisuche-Verknuepfungen mit fd, der modernen Alternative zu find.
 
-Traditionell wird der Befehl `find` verwendet, um nach Dateien in einer
-Verzeichnishierarchie zu suchen und Aktionen an den gefundenen Dateien durchzuführen.
+## Uebersicht
 
-Wir haben uns entschieden, den Befehl `find` durch den Befehl `fd` zu ersetzen, der eine
-einfachere, schnellere und benutzerfreundlichere Alternative zu `find` ist.
+Diese Aliase bieten eine optimierte Schnittstelle zu `fd`, einer schnellen und benutzerfreundlichen Alternative zum traditionellen `find`-Befehl. In `find.aliases.sh` definiert, werden sie automatisch von Chezmoi geladen und bieten farbige Ausgabe, intuitive Syntax und einpraegsame Befehle fuer gaengige Dateisuchoperationen.
 
-## Find
+Wenn `fd` auf Ihrem System verfuegbar ist, wird der `find`-Befehl automatisch als Alias fuer `fd` gesetzt, was Ihnen verbesserte Leistung und eine einfachere Syntax standardmaessig bietet.
 
-[fd](https://github.com/sharkdp/fd) ist eine einfache, schnelle und benutzerfreundliche
-Alternative zu `find`. Während es nicht darauf abzielt, alle leistungsstarken
-Funktionen von find zu unterstützen, bietet es vernünftige (meine Meinung nach) Standardwerte für die Mehrheit der
-Anwendungsfälle.
+## Referenz
 
-| Alias | Befehl               | Beschreibung                                                                |
-| ----- | -------------------- | --------------------------------------------------------------------------- |
-| fd    | `fd --color always`  | Ausgabe immer standardmäßig einfärben.                                      |
-| fda   | `fd --absolute-path` | Alle Dateien mit absolutem Pfad auflisten.                                  |
-| fdc   | `fd --ignore-case`   | Alle Dateien mit Groß-/Kleinschreibung ignorieren auflisten.                |
-| fdd   | `fd --list-details`  | Alle Dateien mit Details auflisten.                                         |
-| fde   | `fd --extension`     | Alle Dateien mit Endung auflisten.                                          |
-| fdf   | `fd --follow`        | Alle Dateien auflisten und Symlinks folgen.                                 |
-| fdh   | `fd --help`          | Hilfe auflisten.                                                            |
-| fdh   | `fd --hidden`        | Alle Dateien mit versteckten Dateien auflisten.                             |
-| fdn   | `fd --glob`          | Alle Dateien mit Glob-Muster auflisten.                                     |
-| fdo   | `fd --owner`         | Alle Dateien mit Eigentümer auflisten.                                      |
-| fds   | `fd --size`          | Alle Dateien mit Größe auflisten.                                           |
-| fdu   | `fd --exclude`       | Alle Dateien mit Ausschluss auflisten.                                      |
-| fdv   | `fd --version`       | Version auflisten.                                                          |
-| fdx   | `fd --exec`          | Einen Befehl für jedes Suchergebnis ausführen.                              |
-| find  | `fd`                 | fd ist eine einfache, schnelle und benutzerfreundliche Alternative zu find. |
+### Kernbefehle
+
+| Alias | Befehl | Beschreibung |
+|:---|:---|:---|
+| `fd` | `fd --color always` | Dateien mit farbiger Ausgabe suchen |
+| `find` | `fd` | fd als Standard-find-Ersatz verwenden |
+
+### Suchoptionen
+
+| Alias | Befehl | Beschreibung |
+|:---|:---|:---|
+| `fda` | `fd --absolute-path` | Ergebnisse mit absoluten Pfaden anzeigen |
+| `fdc` | `fd --ignore-case` | Gross-/Kleinschreibung ignorieren |
+| `fdd` | `fd --list-details` | Detaillierte Dateiinformationen anzeigen |
+| `fde` | `fd --extension` | Nach Dateierweiterung filtern |
+| `fdf` | `fd --follow` | Symbolischen Links bei Suche folgen |
+| `fdh` | `fd --hidden` | Versteckte Dateien in Ergebnissen einschliessen |
+| `fdn` | `fd --glob` | Dateien mit Glob-Mustern abgleichen |
+| `fdo` | `fd --owner` | Nach Dateieigentuemer filtern |
+| `fds` | `fd --size` | Nach Dateigroesse filtern |
+| `fdu` | `fd --exclude` | Dateien ausschliessen, die einem Muster entsprechen |
+| `fdx` | `fd --exec` | Befehl fuer jedes Ergebnis ausfuehren |
+
+### Hilfsbefehle
+
+| Alias | Befehl | Beschreibung |
+|:---|:---|:---|
+| `fdv` | `fd --version` | fd-Versionsinformationen anzeigen |

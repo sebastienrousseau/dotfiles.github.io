@@ -1,47 +1,58 @@
 ---
-description: Alias de Kubernetes para Dotfiles
+title: "Alias Kubernetes: simplifica la gestión de clusters"
+description: "Acelera flujos Kubernetes con alias de kubectl, Helm y k9s. Gestiona pods, contextos y namespaces."
 lang: es-ES
-metaTitle: Alias de Kubernetes - Dotfiles (ES)
-permalink: /es/aliases/kubernetes/
+metaTitle: "Alias Kubernetes | Dotfiles"
+permalink: /aliases/kubernetes/
+sidebar: true
+meta:
+  - name: keywords
+    content: "alias kubernetes, atajos kubectl, alias helm, k9s, dotfiles, shell"
 ---
 
-# Alias de Kubernetes
+# Alias Kubernetes
 
-Gestiona alias de Kubernetes. Parte de la configuración de **Universal Dotfiles**.
+Simplifica tus flujos Kubernetes con alias concisos para kubectl, Helm y gestión de clúster.
 
-![Banner de Dotfiles][banner]
+![Dotfiles banner](https://kura.pro/dotfiles/v2/images/titles/title-dotfiles.svg "Dotfiles banner")
 
-## 📖 Descripción
+## Descubrir
 
-Estos alias están definidos en `kubernetes.aliases.sh` y son cargados automáticamente por `chezmoi`.
+Estos alias se definen en `kubernetes.aliases.sh` y se cargan automáticamente por chezmoi. Reducen pulsaciones para operaciones comunes y ayudan a gestionar clústeres, pods y releases más rápido.
 
-## ⚡ Alias
+## Referencia
 
-### Core
+### Núcleo
 
-- `k` - Atajo para kubectl
-- `kg` - `kubectl get`
-- `kgp` - `kubectl get pods`
-- `kga` - `kubectl get all`
-- `kd` - `kubectl describe`
-- `kdel` - `kubectl delete`
-- `kl` - `kubectl logs`
-- `kex` - `kubectl exec -it`
+| Alias | Comando | Descripción |
+|-------|---------|-------------|
+| `k` | `kubectl` | Atajo de kubectl |
+| `kg` | `kubectl get` | Obtener recursos |
+| `kgp` | `kubectl get pods` | Obtener pods |
+| `kga` | `kubectl get all` | Obtener todos los recursos |
+| `kd` | `kubectl describe` | Describir recursos |
+| `kdel` | `kubectl delete` | Eliminar recursos |
+| `kl` | `kubectl logs` | Ver logs |
+| `kex` | `kubectl exec -it` | Ejecutar shell interactivo |
 
 ### Contexto
 
-- `kcx` - Listar contextos
-- `kuse` - Cambiar contexto
-- `kns` - Cambiar namespace
+| Alias | Comando | Descripción |
+|-------|---------|-------------|
+| `kcx` | - | Listar contextos |
+| `kuse` | - | Cambiar de contexto |
+| `kns` | - | Cambiar de namespace |
 
 ### Helm
 
-- `h` - Atajo para Helm
-- `hls` - Listar releases
-- `hi` - Instalar chart
+| Alias | Comando | Descripción |
+|-------|---------|-------------|
+| `h` | `helm` | Atajo de Helm |
+| `hls` | `helm list` | Listar releases |
+| `hi` | `helm install` | Instalar chart |
 
 ### UI
 
-- `k9` - Interfaz de terminal k9s
-
-[banner]: https://kura.pro/dotfiles/v2/images/titles/title-dotfiles.svg
+| Alias | Comando | Descripción |
+|-------|---------|-------------|
+| `k9` | `k9s` | UI de terminal k9s |

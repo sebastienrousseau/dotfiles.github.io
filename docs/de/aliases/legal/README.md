@@ -1,44 +1,67 @@
 ---
-description: Rechtliche Aliase für Dotfiles
+description: Shell-Aliase fuer License-Scanning, Copyright-Header und Attribution-Verwaltung in Ihren Dotfiles.
 lang: de-DE
-metaTitle: Rechtliche Aliase - Dotfiles (DE)
+metaTitle: Legal Aliase - Dotfiles (DE)
 permalink: /de/aliases/legal/
+sidebar: true
+
+meta:
+  - name: keywords
+    content: legal aliase, license scanning, copyright header, open source compliance, dotfiles
+  - name: twitter:card
+    content: summary
+  - name: twitter:title
+    content: Legal Aliase - Dotfiles
+  - name: twitter:description
+    content: Shell-Aliase fuer License-Scanning, Copyright-Header und Attribution-Verwaltung.
+  - name: og:title
+    content: Legal Aliase - Dotfiles
+  - name: og:description
+    content: Shell-Aliase fuer License-Scanning, Copyright-Header und Attribution-Verwaltung.
+  - name: og:image:alt
+    content: Dotfiles - Simply designed to fit your shell life
+  - name: og:locale
+    content: de_DE
 ---
 
-# Rechtliche & Lizenzierungs-Aliase
+# Legal Aliase
 
-Tools zur Verwaltung von Open-Source-Compliance, Lizenz-Scans und Attribution.
+Shell-Werkzeuge zur Verwaltung von Open-Source-Compliance, License-Scanning und Attribution.
 
-## ⚖️ Aliase
+## Uebersicht
 
-### Lizenz-Scanning
+Die Legal-Aliase bieten einen optimierten Workflow zur Aufrechterhaltung der Open-Source-Compliance in Ihren Projekten. Diese Werkzeuge behandeln License-Scanning, Copyright-Header-Verwaltung und Abhaengigkeits-Attribution.
 
-| Alias             | Beschreibung                                                  | Typ    |
-| ----------------- | ------------------------------------------------------------- | ------ |
-| `fossology-start` | Starte lokalen FOSSology-Server auf Port 8081                 | Docker |
-| `fossology-stop`  | Stoppe FOSSology-Server                                       | Docker |
-| `license-scan`    | Schneller Lizenzscan des aktuellen Verzeichnisses (via Trivy) | Binary |
+## Referenz
 
-### Copyright-Header
+### License Scanning
 
-| Alias         | Beschreibung                                               | Typ                        |
-| ------------- | ---------------------------------------------------------- | -------------------------- |
-| `add-headers` | Füge rekursiv MIT-Lizenzheader zu allen Quelldateien hinzu | Docker (google/addlicense) |
+| Alias | Beschreibung | Typ |
+|:---|:---|:---|
+| `fossology-start` | Lokalen FOSSology-Server auf Port 8081 starten | Docker |
+| `fossology-stop` | FOSSology-Server stoppen | Docker |
+| `license-scan` | Schneller License-Scan des aktuellen Verzeichnisses via Trivy | Binary |
+
+### Copyright Header
+
+| Alias | Beschreibung | Typ |
+|:---|:---|:---|
+| `add-headers` | Rekursiv MIT-Lizenz-Header zu allen Quelldateien hinzufuegen | Docker (google/addlicense) |
 
 ### Attribution
 
-| Alias        | Beschreibung                                                                   | Typ    |
-| ------------ | ------------------------------------------------------------------------------ | ------ |
-| `gen-notice` | Generiere eine `NOTICE`-Datei für Abhängigkeiten (Go-Unterstützung anfänglich) | Docker |
+| Alias | Beschreibung | Typ |
+|:---|:---|:---|
+| `gen-notice` | NOTICE-Datei fuer Abhaengigkeiten generieren (zunaechst Go-Unterstuetzung) | Docker |
 
-### Beitrag
+### Contribution
 
-| Alias       | Beschreibung                               | Typ        |
-| ----------- | ------------------------------------------ | ---------- |
-| `check-cla` | Überwache GitHub PR-Checks (inklusive CLA) | CLI (`gh`) |
+| Alias | Beschreibung | Typ |
+|:---|:---|:---|
+| `check-cla` | GitHub PR-Checks einschliesslich CLA-Status beobachten | CLI (gh) |
 
-## 📦 Anforderungen
+## Anforderungen
 
-- **Docker**: Zur Isolierung von Compliance-Tools.
-- **GitHub CLI (`gh`)**: Für PR/CLA-Überprüfung.
-- **Trivy**: Automatisch installiert/vorgeschlagen für schnelles Scannen.
+- **Docker** - Erforderlich fuer Isolation von Compliance-Werkzeugen
+- **GitHub CLI (gh)** - Erforderlich fuer PR- und CLA-Pruefung
+- **Trivy** - Automatisch installiert oder vorgeschlagen fuer schnelles Scanning

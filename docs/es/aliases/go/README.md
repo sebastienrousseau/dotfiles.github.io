@@ -1,27 +1,32 @@
 ---
-description: Alias de Go para Dotfiles
+title: "Alias Go: simplifica tu flujo de trabajo Go"
+description: "Alias shell para desarrollo en Go. Ejecuta, compila, prueba y gestiona módulos con atajos."
 lang: es-ES
-metaTitle: Alias de Go - Dotfiles (ES)
-permalink: /es/aliases/go/
+metaTitle: "Alias Go | Dotfiles"
+permalink: /aliases/go/
+sidebar: true
+meta:
+  - name: keywords
+    content: "alias go, atajos shell go, desarrollo go, dotfiles, comandos golang"
 ---
 
-# Alias de Go
+# Alias Go
 
-Gestiona alias del lenguaje Go. Parte de la configuración de **Universal Dotfiles**.
+Simplifica tu flujo de trabajo Go con atajos intuitivos.
 
-![Banner de Dotfiles][banner]
+![Dotfiles banner](https://kura.pro/dotfiles/v2/images/titles/title-dotfiles.svg "Dotfiles banner")
 
-## 📖 Descripción
+## Descubrir
 
-Estos alias están definidos en `go.aliases.sh` y son cargados automáticamente por `chezmoi`.
+Estos alias se definen en `go.aliases.sh` y se cargan automáticamente por chezmoi. Ofrecen acceso rápido a comandos Go comunes para ejecutar, compilar, probar y gestionar módulos.
 
-## ⚡ Alias
+## Referencia
 
-- `go` - Atajo para Go
-- `gor` - `go run`
-- `gob` - `go build`
-- `got` - `go test`
-- `gomt` - `go mod tidy`
-- `goget` - `go get`
-
-[banner]: https://kura.pro/dotfiles/v2/images/titles/title-dotfiles.svg
+| Alias    | Comando       | Descripción                        |
+|----------|---------------|------------------------------------|
+| `go`     | `go`          | Atajo de Go                        |
+| `gor`    | `go run`      | Ejecutar programa Go               |
+| `gob`    | `go build`    | Compilar paquete Go                |
+| `got`    | `go test`     | Ejecutar pruebas Go                |
+| `gomt`   | `go mod tidy` | Limpiar dependencias del módulo    |
+| `goget`  | `go get`      | Descargar e instalar paquetes Go   |

@@ -1,46 +1,55 @@
 ---
-description: Die Update-Aliase erstellen hilfreiche Shortcut-Aliase zum Aktualisieren des Betriebssystems und der installierten Software. Sie helfen dabei, die aktuelle Dotfiles-Installation zu sichern und zu verbessern.
+description: Shell-Aliase zum Aktualisieren von Betriebssystem und Software auf macOS und Linux. Pakete, Toolchains und Abhaengigkeiten aktuell halten.
 lang: de-DE
 metaTitle: Update Aliase - Dotfiles (DE)
 permalink: /de/aliases/update/
+sidebar: true
+
+meta:
+  - name: keywords
+    content: update aliase, system update, paket update, homebrew update, dotfiles, shell
+  - name: twitter:card
+    content: summary
+  - name: twitter:title
+    content: Update Aliase - Dotfiles
+  - name: twitter:description
+    content: Shell-Aliase zum Aktualisieren von Betriebssystem und Software auf macOS und Linux.
+  - name: og:title
+    content: Update Aliase - Dotfiles
+  - name: og:description
+    content: Shell-Aliase zum Aktualisieren von Betriebssystem und Software auf macOS und Linux.
+  - name: og:image:alt
+    content: Dotfiles - Simply designed to fit your shell life
+  - name: og:locale
+    content: de_DE
 ---
 
 # Update Aliase
 
-Die Datei `update.aliases.sh` erstellt hilfreiche Shortcut-Aliase zum Aktualisieren des
-Betriebssystems und der Software.
+Halten Sie Ihr System und Ihre Entwicklungswerkzeuge auf dem neuesten Stand.
 
-Die Updates helfen dabei, die aktuelle Dotfiles-Installation zu sichern und zu verbessern,
-um vor Sicherheitslücken zu schützen, neue Funktionen hinzuzufügen und kritische Fehler zu beheben.
+## Uebersicht
 
-## Update
+Diese Aliase sind in `update.aliases.sh` definiert und werden automatisch von Chezmoi geladen. Sie bieten plattformspezifische Befehle zum Aktualisieren von Betriebssystemkomponenten und installierter Software.
 
-Für eine bessere Kontrolle wird der Update-Prozess in einem einzigen Befehl zusammengefasst, der
-Folgendes tut:
-
-1. Aktualisierung des Betriebssystems und der Softwarepakete,
-2. Aktualisierung auf die neueste Version von Dotfiles.
-3. Dies wird auch die `update.aliases.sh` Datei aktualisieren, sodass Sie immer
-   die neueste Version des Updaters haben.
-
-## Plattformen
-
-### Linux
-
-Der `upd` Alias wurde angepasst, um unter Linux zu funktionieren. Er aktualisiert Debian-basierte
-Linux-Distributionen über den `apt` Paketmanager und andere Abhängigkeiten über
-pnpm, rustup (Rust) und gem (Ruby).
-
-| Alias | Befehl                                                                                                             | Beschreibung                                             |
-| ----- | ------------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------- |
-| upd   | `sudo apt update && sudo apt upgrade -y && pnpm up && rustup update stable && sudo gem update && sudo gem cleanup` | Update-Befehl für Debian-basierte Linux-Betriebssysteme. |
+## Referenz
 
 ### macOS
 
-Der `upd` Alias ist auch für macOS verfügbar. Er aktualisiert macOS über das
-`softwareupdate` Befehlszeilentool und verwaltet seine Abhängigkeiten mit pnpm,
-Homebrew, mas, rustup und gem Paketmanagern.
+| Alias | Beschreibung |
+|:---|:---|
+| `upd` | Aktualisiert macOS-Software, Homebrew-Pakete, Homebrew Casks, Mac App Store Apps, Rust Stable Toolchain, Ruby Gems, Python-Pakete und Node.js-Pakete |
 
-| Alias | Befehl                                                                                                                                                                                             | Beschreibung             |
-| ----- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------ |
-| upd   | `sudo softwareupdate -i -a && pnpm up && rustup update stable && brew cu -ayi && brew doctor && brew update && brew upgrade && brew cleanup && mas upgrade && sudo gem update && sudo gem cleanup` | Aktualisiere das System. |
+### Linux
+
+| Alias | Beschreibung |
+|:---|:---|
+| `upd` | Aktualisiert Linux-Pakete, bereinigt den Paket-Cache, aktualisiert pnpm-Pakete, Rust Stable Toolchain, Ruby Gems, Python-Pakete und Node.js-Pakete |
+
+### Hilfsprogramme (Linux)
+
+| Alias | Beschreibung |
+|:---|:---|
+| `open` | Datei oder URL in der bevorzugten Anwendung oeffnen |
+| `pbcopy` | In die Zwischenablage kopieren |
+| `pbpaste` | Aus der Zwischenablage einfuegen |

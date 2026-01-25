@@ -1,24 +1,39 @@
 ---
-description: Os aliases de UUID criam atalhos úteis para o comando `uuidgen`. O comando uuidgen gera um Identificador Único Universal (UUID), um valor de 128 bits garantido como único no espaço e no tempo.
+title: "Aliases de UUID: Geracao de Identificadores Unicos"
+description: "Aliases de shell para gerar UUIDs. Crie identificadores unicos universais e copie para a area de transferencia."
 lang: pt-BR
-metaTitle: Aliases de UUID - Dotfiles (BR)
+metaTitle: "Aliases de UUID | Dotfiles"
 permalink: /pt/aliases/uuid/
+sidebar: true
+meta:
+  - name: keywords
+    content: "aliases uuid, identificador unico, uuidgen, aliases shell, dotfiles"
+  - name: twitter:card
+    content: summary
+  - name: twitter:description
+    content: Aliases de shell para gerar UUIDs. Crie identificadores unicos universais e copie para a area de transferencia.
+  - name: twitter:title
+    content: Aliases de UUID | Dotfiles
+  - name: og:title
+    content: Aliases de UUID | Dotfiles
+  - name: og:description
+    content: Aliases de shell para gerar UUIDs. Crie identificadores unicos universais e copie para a area de transferencia.
+  - name: og:image:alt
+    content: Dotfiles - Simply designed to fit your shell life
+  - name: og:locale
+    content: pt_BR
 ---
 
 # Aliases de UUID
 
-O arquivo `uuid.aliases.sh` cria aliases de atalho úteis para gerar
-[UUIDs](https://pt.wikipedia.org/wiki/Universally_unique_identifier).
+Gere identificadores unicos universais (UUIDs).
 
-Os aliases de UUID criam atalhos úteis para o comando `uuidgen`.
-O comando uuidgen gera um Identificador Único Universal (UUID), um
-valor de 128 bits garantido como único no espaço e no tempo.
+## Visao Geral
 
-## UUID
+Estes aliases sao definidos em `uuid.aliases.sh` e carregados automaticamente pelo Chezmoi.
 
-[UUID](https://pt.wikipedia.org/wiki/Universally_unique_identifier) é um número de 128 bits
-usado para identificar informações em sistemas de computador.
+## Referencia
 
-| Alias | Comando                                                                            | Descrição                                              |
-| ----- | ---------------------------------------------------------------------------------- | ------------------------------------------------------ |
-| uuid  | `uuidgen \| tr -d '\n' \| tr '[:upper:]' '[:lower:]' \| pbcopy && pbpaste && echo` | Gerar um UUID e copiá-lo para a área de transferência. |
+| Alias | Descricao |
+|-------|-------------|
+| `uuid` | Gerar um UUID e copiar para a area de transferencia |

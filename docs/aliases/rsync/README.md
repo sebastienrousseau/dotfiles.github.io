@@ -1,39 +1,40 @@
 ---
-description: The Rsync aliases are a collection of aliases that allow you to interact with the `rsync` command line tool. Rsync is a tool which synchronises files and directories between two locations.
+description: Rsync shell aliases for file synchronisation. Quick shortcuts to sync files and directories between locations.
 lang: en-GB
-metaTitle: The Rsync aliases - Dotfiles (UK)
+metaTitle: Rsync Aliases - Dotfiles (UK)
 permalink: /aliases/rsync/
+sidebar: true
 
 meta:
   - name: keywords
-    content: aliases, rsync, linux, macos, shell, terminal, windows
+    content: rsync, sync, file transfer, shell aliases, dotfiles, backup
   - name: twitter:card
-    content: The Rsync aliases are a collection of aliases that allow you to interact with the `rsync` command line tool. Rsync is a tool which synchronises files and directories between two locations.
+    content: summary
   - name: twitter:description
-    content: The Rsync aliases are a collection of aliases that allow you to interact with the `rsync` command line tool. Rsync is a tool which synchronises files and directories between two locations.
+    content: Rsync shell aliases for file synchronisation. Quick shortcuts to sync files and directories between locations.
   - name: twitter:title
-    content: The Rsync aliases - Dotfiles (UK)
+    content: Rsync Aliases - Dotfiles
   - name: og:title
-    content: The Rsync aliases - Dotfiles (UK)
+    content: Rsync Aliases - Dotfiles
   - name: og:description
-    content: The Rsync aliases are a collection of aliases that allow you to interact with the `rsync` command line tool. Rsync is a tool which synchronises files and directories between two locations.
+    content: Rsync shell aliases for file synchronisation. Quick shortcuts to sync files and directories between locations.
   - name: og:image:alt
     content: Dotfiles - Simply designed to fit your shell life
   - name: og:locale
     content: en_GB
 ---
 
-# Rsync aliases
+# Rsync Aliases
 
-The `rsync.aliases.sh` file creates helpful shortcut aliases for
-[rsync](https://en.wikipedia.org/wiki/Rsync).
+Synchronise files and directories between locations with progress tracking.
 
-## Rsync
+## Overview
 
-[Rsync](https://en.wikipedia.org/wiki/Rsync) is a command that copies files and
-directories to another location.
+These aliases are defined in `rsync.aliases.sh` and loaded automatically by Chezmoi.
 
-| Alias | Command      | Description                      |
-| ----- | ------------ | -------------------------------- |
-| rs    | `rsync -avz` | Rsync with verbose and progress. |
-| rsync | `rs`         | Rsync with verbose and progress. |
+## Reference
+
+| Alias | Description |
+|:---|:---|
+| `rs` | Rsync with verbose output and progress display |
+

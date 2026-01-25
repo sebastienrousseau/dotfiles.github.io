@@ -1,24 +1,69 @@
 ---
-description: 配置别名用于打开终端和 shell 的配置文件。
+description: 使用 shell 别名即时打开 shell、Git、SSH 和服务器配置文件。
 lang: zh-CN
-metaTitle: 配置别名 - Dotfiles (CN)
-permalink: /zh/aliases/configuration/
+metaTitle: Configuration 别名 - Dotfiles (CN)
+permalink: /aliases/configuration/
+sidebar: true
+
+meta:
+  - name: keywords
+    content: 配置别名, shell 配置, dotfiles, bash 别名, zsh 别名, git 配置, ssh 配置
+  - name: twitter:card
+    content: summary
+  - name: twitter:title
+    content: Configuration 别名 - Dotfiles
+  - name: twitter:description
+    content: 使用 shell 别名即时打开 shell、Git、SSH 和服务器配置文件。
+  - name: og:title
+    content: Configuration 别名 - Dotfiles
+  - name: og:description
+    content: 使用 shell 别名即时打开 shell、Git、SSH 和服务器配置文件。
+  - name: og:image:alt
+    content: Dotfiles - 为你的 Shell 生活精心设计
+  - name: og:locale
+    content: zh_CN
 ---
 
-# 配置别名
+# Configuration 别名
 
-`configuration.aliases.sh` 文件创建了有用的快捷别名，用于打开终端和 shell 的配置文件。
+使用单个命令在默认编辑器中打开配置文件。
 
-> [!TIP]
-> **v0.2.471 新功能**: 您现在可以使用 `dot` 命令来管理您的配置。
-> 尝试 `dot learn`进行交互式导览，或 `dot doctor` 验证您的设置。
+## 概述
 
-## 配置
+配置别名提供了打开常用编辑配置文件的快捷方式。这些别名定义在 `configuration.aliases.sh` 中，由 chezmoi 自动加载。
 
-| 别名  | 命令                             | 描述                                   |
-| ----- | -------------------------------- | -------------------------------------- |
-| bshp  | `${=EDITOR} $HOME/.bash_profile` | 在默认文本编辑器中打开 Bash profile。  |
-| bshrc | `${=EDITOR} $HOME/.bashrc`       | 在默认文本编辑器中打开 Bash 配置文件。 |
-| gcfg  | `${=EDITOR} $HOME/.gitconfig`    | 在默认文本编辑器中打开 Git 配置文件。  |
-| gign  | `${=EDITOR} $HOME/.gitignore`    | 在默认文本编辑器中打开 Git 忽略文件。  |
-| zshrc | `${=EDITOR} $HOME/.zshrc`        | 在默认文本编辑器中打开 Zsh 配置文件。  |
+每个别名都会在系统默认文本编辑器中启动相应文件，无需记住文件路径或输入冗长的命令。
+
+## 参考
+
+### Shell 配置
+
+| 别名 | 描述 |
+|:---|:---|
+| `bshrc` | 打开 Bash 配置文件 (~/.bashrc) |
+| `bshp` | 打开 Bash profile (~/.bash_profile) |
+| `zshrc` | 打开 Zsh 配置文件 (~/.zshrc) |
+| `zshp` | 打开 Zsh profile (~/.zprofile) |
+
+### 版本控制
+
+| 别名 | 描述 |
+|:---|:---|
+| `gcfg` | 打开 Git 配置文件 (~/.gitconfig) |
+| `gign` | 打开 Git ignore 文件 (~/.gitignore) |
+
+### 网络和服务器
+
+| 别名 | 描述 |
+|:---|:---|
+| `apconf` | 打开 Apache 配置文件 |
+| `ngconf` | 打开 Nginx 配置文件 |
+| `sshconf` | 打开 SSH 配置文件 (~/.ssh/config) |
+| `hosts` | 打开 hosts 文件 (/etc/hosts) |
+
+### 开发工具
+
+| 别名 | 描述 |
+|:---|:---|
+| `dockcomp` | 打开 Docker Compose 文件 |
+| `eddir` | 在默认编辑器中打开当前目录 |

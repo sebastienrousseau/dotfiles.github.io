@@ -1,14 +1,66 @@
 import type { SidebarConfig } from "@vuepress/theme-default";
-import { aliases } from "../aliases/pt";
-import { about } from "../about/pt";
 
-export const ptSidebar: SidebarConfig = [
-  about,
-  ["/pt/paths/", "Caminhos"],
-  ["/pt/functions/", "Funções"],
-  {
-    title: "Aliases",
-    collapsable: false,
-    children: aliases.children,
-  },
-];
+export const ptSidebar: SidebarConfig = {
+  "/pt/": [
+    {
+      title: "Primeiros Passos",
+      collapsable: false,
+      children: [
+        "/pt/about/",
+        "/pt/functions/",
+        "/pt/paths/",
+      ],
+    },
+    {
+      title: "Alias",
+      collapsable: false,
+      children: [
+        "/pt/aliases/",
+        "/pt/aliases/ai/",
+        "/pt/aliases/archives/",
+        "/pt/aliases/cd/",
+        "/pt/aliases/chmod/",
+        "/pt/aliases/clear/",
+        "/pt/aliases/compliance/",
+        "/pt/aliases/configuration/",
+        "/pt/aliases/default/",
+        "/pt/aliases/diagnostics/",
+        "/pt/aliases/dig/",
+        "/pt/aliases/disk-usage/",
+        "/pt/aliases/docker/",
+        "/pt/aliases/editor/",
+        "/pt/aliases/find/",
+        "/pt/aliases/fonts/",
+        "/pt/aliases/gcloud/",
+        "/pt/aliases/git/",
+        "/pt/aliases/gnu/",
+        "/pt/aliases/go/",
+        "/pt/aliases/heroku/",
+        "/pt/aliases/installer/",
+        "/pt/aliases/interactive/",
+        "/pt/aliases/kubernetes/",
+        "/pt/aliases/legal/",
+        "/pt/aliases/macOS/",
+        "/pt/aliases/make/",
+        "/pt/aliases/mkdir/",
+        "/pt/aliases/modern/",
+        "/pt/aliases/npm/",
+        "/pt/aliases/permission/",
+        "/pt/aliases/pnpm/",
+        "/pt/aliases/ps/",
+        "/pt/aliases/python/",
+        "/pt/aliases/rsync/",
+        "/pt/aliases/rust/",
+        "/pt/aliases/security/",
+        "/pt/aliases/subversion/",
+        "/pt/aliases/sudo/",
+        "/pt/aliases/terraform/",
+        "/pt/aliases/tmux/",
+        "/pt/aliases/update/",
+        "/pt/aliases/uuid/",
+        "/pt/aliases/wget/",
+        "/pt/aliases/yarn/",
+      ],
+    },
+  ],
+};

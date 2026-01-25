@@ -1,25 +1,44 @@
 ---
-description: Mkdir 别名是一组别名，允许您与 `mkdir` 命令行工具交互。Mkdir 是一个创建目录的工具。
+description: 使用日期和时间命名约定简化目录创建的 mkdir shell 别名。
 lang: zh-CN
 metaTitle: Mkdir 别名 - Dotfiles (CN)
-permalink: /zh/aliases/mkdir/
+permalink: /aliases/mkdir/
+sidebar: true
+
+meta:
+  - name: keywords
+    content: mkdir 别名, 目录创建, shell 快捷方式, dotfiles, 终端
+  - name: twitter:card
+    content: summary
+  - name: twitter:title
+    content: Mkdir 别名 - Dotfiles
+  - name: twitter:description
+    content: 使用日期和时间命名约定简化目录创建的 mkdir shell 别名。
+  - name: og:title
+    content: Mkdir 别名 - Dotfiles
+  - name: og:description
+    content: 使用日期和时间命名约定简化目录创建的 mkdir shell 别名。
+  - name: og:image:alt
+    content: Dotfiles - 为你的 Shell 生活精心设计
+  - name: og:locale
+    content: zh_CN
 ---
 
 # Mkdir 别名
 
-`mkdir.aliases.sh` 文件为创建目录创建了有用的快捷别名。
+使用智能命名约定简化目录创建。
 
-Mkdir 别名是一组别名，允许您与 `mkdir` 命令行工具交互。Mkdir 是一个创建目录的工具。
+## 概述
 
-## Mkdir
+mkdir 别名提供了创建带有自动日期和时间戳目录的快捷方式。这些别名定义在 `mkdir.aliases.sh` 中，由 chezmoi 自动加载。
 
-[Mkdir](https://zh.wikipedia.org/wiki/Mkdir) 是一个创建目录的命令。mkdir 实用程序使用模式“rwxrwxrwx”(0777)，按指定的顺序创建作为操作数命名的目录。
+## 参考
 
-| 别名 | 命令                        | 描述                           |
-| ---- | --------------------------- | ------------------------------ |
-| mcd  | `mkdir -pv && cd`           | 创建目录并进入该目录。         |
-| mcdp | `mkdir -pv && cd`           | 创建目录和父目录并进入该目录。 |
-| md   | `mkd`                       | 创建目录。                     |
-| mdd  | `mkdir -pv $(date +%Y%m%d)` | 使用日期创建目录。             |
-| mdp  | `mkdir -pv`                 | 创建目录和父目录。             |
-| mdt  | `mkdir -pv $(date +%h%m%s)` | 使用时间创建目录。             |
+| 别名 | 描述 |
+|:---|:---|
+| `md` | 创建目录 |
+| `mdd` | 创建带日期的目录 |
+| `mdt` | 创建带时间的目录 |
+| `mde` | 创建带当前日期的示例目录 |
+| `mdn` | 创建带当前日期的笔记目录 |
+| `mdw` | 创建带当前日期的工作目录 |

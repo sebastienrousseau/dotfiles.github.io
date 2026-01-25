@@ -1,20 +1,39 @@
 ---
-description: Los alias de UUID crean atajos útiles para el comando `uuidgen`. El comando uuidgen genera un Identificador Único Universal (UUID), un valor de 128 bits garantizado para ser único tanto en el espacio como en el tiempo.
+description: Alias de UUID para generar identificadores unicos universales. Genera UUIDs de 128 bits y los copia al portapapeles automaticamente.
 lang: es-ES
 metaTitle: Alias de UUID - Dotfiles (ES)
 permalink: /es/aliases/uuid/
+sidebar: true
+
+meta:
+  - name: keywords
+    content: alias uuid, uuidgen, identificador unico, generador uuid, portapapeles, dotfiles, shell
+  - name: twitter:card
+    content: summary
+  - name: twitter:description
+    content: Alias de UUID para generar identificadores unicos universales. Genera UUIDs de 128 bits y los copia al portapapeles.
+  - name: twitter:title
+    content: Alias de UUID - Dotfiles
+  - name: og:title
+    content: Alias de UUID - Dotfiles
+  - name: og:description
+    content: Alias de UUID para generar identificadores unicos universales. Genera UUIDs de 128 bits y los copia al portapapeles.
+  - name: og:image:alt
+    content: Dotfiles - Simplemente disenado para adaptarse a tu vida en el shell
+  - name: og:locale
+    content: es_ES
 ---
 
 # Alias de UUID
 
-El archivo `uuid.aliases.sh` crea atajos útiles para generar [UUIDs](https://es.wikipedia.org/wiki/Identificador_%C3%BAnico_universal).
+Atajos para generar identificadores unicos universales (UUID).
 
-Los alias de UUID crean atajos útiles para el comando `uuidgen`. El comando uuidgen genera un Identificador Único Universal (UUID), un valor de 128 bits garantizado para ser único tanto en el espacio como en el tiempo.
+## Descripcion
 
-## UUID
+Estos alias estan definidos en `uuid.aliases.sh` y se cargan automaticamente por chezmoi. Proporcionan generacion rapida de UUIDs, valores de 128 bits garantizados como unicos en espacio y tiempo.
 
-[UUID](https://es.wikipedia.org/wiki/Identificador_%C3%BAnico_universal) es un número de 128 bits utilizado para identificar información en sistemas informáticos.
+## Referencia
 
-| Alias | Comando                                                                            | Descripción                                 |
-| ----- | ---------------------------------------------------------------------------------- | ------------------------------------------- |
-| uuid  | `uuidgen \| tr -d '\n' \| tr '[:upper:]' '[:lower:]' \| pbcopy && pbpaste && echo` | Generar un UUID y copiarlo al portapapeles. |
+| Alias | Descripcion |
+|:---|:---|
+| `uuid` | Generar un UUID y copiarlo al portapapeles |

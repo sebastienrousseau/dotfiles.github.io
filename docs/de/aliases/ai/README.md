@@ -1,31 +1,50 @@
 ---
-description: AI Aliase für Dotfiles
+description: KI- und LLM-Shell-Aliase für GitHub Copilot und Ollama. Optimieren Sie Ihren KI-gestützten Entwicklungsworkflow.
 lang: de-DE
 metaTitle: AI Aliase - Dotfiles (DE)
 permalink: /de/aliases/ai/
+sidebar: true
+
+meta:
+  - name: keywords
+    content: ki, llm, github copilot, ollama, shell aliase, dotfiles, künstliche intelligenz, code assistent
+  - name: twitter:card
+    content: summary
+  - name: twitter:description
+    content: KI- und LLM-Shell-Aliase für GitHub Copilot und Ollama. Optimieren Sie Ihren KI-gestützten Entwicklungsworkflow.
+  - name: twitter:title
+    content: AI Aliase - Dotfiles
+  - name: og:title
+    content: AI Aliase - Dotfiles
+  - name: og:description
+    content: KI- und LLM-Shell-Aliase für GitHub Copilot und Ollama. Optimieren Sie Ihren KI-gestützten Entwicklungsworkflow.
+  - name: og:image:alt
+    content: Dotfiles - Simply designed to fit your shell life
+  - name: og:locale
+    content: de_DE
 ---
 
 # AI Aliase
 
-Verwalten Sie KI (AI) & LLM Aliase (GitHub Copilot, Ollama). Teil der **Universal Dotfiles** Konfiguration.
+Verknüpfungen für KI- und LLM-Tools. Beschleunigen Sie Ihren KI-gestützten Workflow.
 
-![Dotfiles banner][banner]
+## Übersicht
 
-## 📖 Beschreibung
+Diese Aliase sind in `ai.aliases.sh` definiert und werden automatisch von Chezmoi geladen.
 
-Diese Aliase sind in `ai.aliases.sh` definiert und werden automatisch von `chezmoi` geladen.
-
-## ⚡ Aliase
+## Referenz
 
 ### GitHub Copilot
 
-- `ghcp` - Copilot Kurzbefehl
-- `ghs` - Code vorschlagen
-- `ghe` - Code erklären
+| Alias | Beschreibung |
+|:---|:---|
+| `ghcp` | Copilot-Verknüpfung |
+| `ghs` | Code vorschlagen |
+| `ghe` | Code erklären |
 
-### Ollama (Lokales LLM)
+### Ollama
 
-- `ol` - Ollama Kurzbefehl
-- `olr` - Modell ausführen
-
-[banner]: https://kura.pro/dotfiles/v2/images/titles/title-dotfiles.svg
+| Alias | Beschreibung |
+|:---|:---|
+| `ol` | Ollama-Verknüpfung |
+| `olr` | Modell ausführen |

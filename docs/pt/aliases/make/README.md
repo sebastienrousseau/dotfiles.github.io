@@ -1,32 +1,47 @@
 ---
-description: Os aliases do Make são uma coleção de aliases que permitem interagir com a ferramenta de linha de comando `make`. Make é uma ferramenta que controla a geração de executáveis e outros arquivos não-fonte de um programa a partir dos arquivos fonte do programa.
+title: "Aliases de Make: Atalhos para GNU Make"
+description: "Aliases de shell para GNU Make. Atalhos para build, clean, install, test e outros targets comuns do Makefile."
 lang: pt-BR
-metaTitle: Aliases do Make - Dotfiles (BR)
+metaTitle: "Aliases de Make | Dotfiles"
 permalink: /pt/aliases/make/
+sidebar: true
+meta:
+  - name: keywords
+    content: "aliases make, makefile, build, aliases shell, dotfiles"
+  - name: twitter:card
+    content: summary
+  - name: twitter:description
+    content: Aliases de shell para GNU Make. Atalhos para build, clean, install, test e outros targets.
+  - name: twitter:title
+    content: Aliases de Make | Dotfiles
+  - name: og:title
+    content: Aliases de Make | Dotfiles
+  - name: og:description
+    content: Aliases de shell para GNU Make. Atalhos para build, clean, install, test e outros targets.
+  - name: og:image:alt
+    content: Dotfiles - Simply designed to fit your shell life
+  - name: og:locale
+    content: pt_BR
 ---
 
-# Aliases do Make
+# Aliases de Make
 
-O arquivo `make.aliases.sh` cria aliases de atalho úteis para executar comandos
-`make`.
+Atalhos para utilitarios GNU Make.
 
-## Make
+## Visao Geral
 
-[Make](<https://en.wikipedia.org/wiki/Make_(software)>) é uma ferramenta que controla
-a geração de executáveis e outros arquivos não-fonte de um programa a partir dos
-arquivos fonte do programa.
+Estes aliases sao definidos em `make.aliases.sh` e carregados automaticamente pelo Chezmoi.
 
-Make obtém seu conhecimento de como construir seu programa de um arquivo chamado
-`Makefile`, que lista cada um dos arquivos não-fonte e como calculá-lo a partir de
-outros arquivos.
+## Referencia
 
-| Alias | Comando        | Descrição                       |
-| ----- | -------------- | ------------------------------- |
-| mk    | `make`         | Executar `make` sem argumentos. |
-| mkc   | `make clean`   | Executar `make clean`.          |
-| mkd   | `make doc`     | Executar `make doc`.            |
-| mkf   | `make format`  | Executar `make format`.         |
-| mkh   | `make help`    | Executar `make help`.           |
-| mki   | `make install` | Executar `make install`.        |
-| mkr   | `make run`     | Executar `make run`.            |
-| mkt   | `make test`    | Executar `make test`.           |
+| Alias | Descricao |
+|-------|-------------|
+| `mk` | Make |
+| `mkc` | Make clean |
+| `mkd` | Make doc |
+| `mkf` | Make format |
+| `mkh` | Make help |
+| `mki` | Make install |
+| `mka` | Make all |
+| `mkr` | Make run |
+| `mkt` | Make test |

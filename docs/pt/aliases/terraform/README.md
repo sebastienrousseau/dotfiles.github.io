@@ -1,37 +1,42 @@
 ---
-description: Aliases do Terraform para Dotfiles
+title: "Aliases de Terraform: Infraestrutura como Codigo"
+description: "Aliases de shell para Terraform e Ansible. Atalhos para init, plan, apply, destroy e validacao de infraestrutura."
 lang: pt-BR
-metaTitle: Aliases do Terraform - Dotfiles (BR)
+metaTitle: "Aliases de Terraform | Dotfiles"
 permalink: /pt/aliases/terraform/
+sidebar: true
+meta:
+  - name: keywords
+    content: "aliases terraform, iac, ansible, infraestrutura, aliases shell, dotfiles"
 ---
 
-# Aliases do Terraform
+# Aliases de Terraform
 
-Gerencie aliases de Infraestrutura como Código (Terraform, OpenTofu, Ansible). Parte da configuração **Universal Dotfiles**.
+Atalhos para infraestrutura como codigo com Terraform e Ansible.
 
-![Dotfiles banner][banner]
+## Visao Geral
 
-## 📖 Descrição
+Estes aliases sao definidos em `terraform.aliases.sh` e carregados automaticamente pelo Chezmoi.
 
-Esses aliases são definidos em `terraform.aliases.sh` e são carregados automaticamente pelo `chezmoi`.
+## Referencia
 
-## ⚡ Aliases
+### Terraform
 
-### terraform
+| Alias | Descricao |
+|-------|-------------|
+| `tf` | Atalho do Terraform |
+| `tfi` | Init |
+| `tfp` | Plan |
+| `tfa` | Apply |
+| `tfaa` | Apply (auto-approve) |
+| `tfd` | Destroy |
+| `tff` | Format |
+| `tfv` | Validate |
 
-- `tf` - Atalho do Terraform
-- `tfi` - Init
-- `tfp` - Plan
-- `tfa` - Apply
-- `tfaa` - Apply (auto-aprovação)
-- `tfd` - Destroy
-- `tff` - Format
-- `tfv` - Validate
+### Ansible
 
-### ansible
-
-- `ans` - Atalho do Ansible
-- `ansp` - Playbook do Ansible
-- `anslint` - Ansible Lint
-
-[banner]: https://kura.pro/dotfiles/v2/images/titles/title-dotfiles.svg
+| Alias | Descricao |
+|-------|-------------|
+| `ans` | Atalho do Ansible |
+| `ansp` | Ansible Playbook |
+| `anslint` | Ansible Lint |

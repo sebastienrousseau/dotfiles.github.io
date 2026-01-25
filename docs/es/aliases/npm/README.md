@@ -1,32 +1,71 @@
 ---
-description: Los alias de NPM son una colección de alias que te permiten interactuar con el comando `npm`. NPM es un gestor de paquetes para el lenguaje JavaScript.
+title: "Alias NPM: simplifica la gestión de paquetes Node"
+description: "Acelera flujos npm con alias para install, build, test y publish."
 lang: es-ES
-metaTitle: Alias de NPM - Dotfiles (ES)
-permalink: /es/aliases/npm/
+metaTitle: "NPM Aliases | Dotfiles"
+permalink: /aliases/npm/
+sidebar: true
+meta:
+  - name: keywords
+    content: alias npm, gestor de paquetes node, atajos npm, alias shell, dotfiles, comandos npm
+  - name: twitter:card
+    content: summary
+  - name: twitter:title
+    content: NPM Aliases | Dotfiles
+  - name: twitter:description
+    content: Acelera flujos npm con alias para install, build, test y publish.
+  - name: og:title
+    content: NPM Aliases | Dotfiles
+  - name: og:description
+    content: Acelera flujos npm con alias para install, build, test y publish.
+  - name: og:image:alt
+    content: Dotfiles - Diseñado para tu vida en el shell
+  - name: og:locale
+    content: es_ES
 ---
 
-# Alias de NPM
+# Alias NPM
 
-El archivo `npm.aliases.sh` crea atajos útiles para [npm](https://www.npmjs.com/).
+Simplifica el desarrollo Node.js con comandos abreviados para el gestor npm.
 
-## NPM
+![Dotfiles banner][banner]
 
-[npm](https://www.npmjs.com/) es un gestor de paquetes para el lenguaje de programación JavaScript. Es el gestor de paquetes predeterminado para el entorno de ejecución JavaScript Node.js.
+## Descubrir
 
-| Alias | Comando         | Descripción                                 |
-| ----- | --------------- | ------------------------------------------- |
-| npb   | `npm build`     | Script de compilación npm.                  |
-| npc   | `npm cache`     | Caché de paquetes npm.                      |
-| npd   | `npm dev`       | Script de desarrollo npm.                   |
-| npg   | `npm global`    | Paquete npm global.                         |
-| npi   | `npm install`   | Instalar paquete npm.                       |
-| npl   | `npm list`      | Listar paquetes npm.                        |
-| npp   | `npm publish`   | Publicar paquete npm.                       |
-| npr   | `npm run`       | Ejecutar script npm.                        |
-| nprw  | `npm run watch` | Ejecutar script npm en modo watch.          |
-| nps   | `npm start`     | Iniciar script npm.                         |
-| npsv  | `npm serve`     | Servir script npm.                          |
-| npt   | `npm test`      | Probar script npm.                          |
-| npu   | `npm update`    | Actualizar paquete npm.                     |
-| npx   | `npm exec`      | Ejecutar paquete npm.                       |
-| npy   | `npm why`       | Explicar por qué se instala un paquete npm. |
+Estos alias se definen en `npm.aliases.sh` y se cargan automáticamente por chezmoi. Proporcionan acceso rápido a operaciones npm comunes.
+
+## Referencia
+
+### Gestión de paquetes
+
+| Alias | Comando | Descripción |
+|-------|---------|-------------|
+| `npi` | `npm install` | Instalar paquete npm |
+| `npg` | `npm install -g` | Instalar paquete npm global |
+| `nprm` | `npm uninstall` | Eliminar paquete npm |
+| `npu` | `npm update` | Actualizar paquete npm |
+| `npl` | `npm list` | Listar paquetes npm |
+| `npc` | `npm cache` | Gestionar caché npm |
+
+### Scripts
+
+| Alias | Comando | Descripción |
+|-------|---------|-------------|
+| `npr` | `npm run` | Ejecutar script npm |
+| `nps` | `npm start` | Iniciar script npm |
+| `npb` | `npm run build` | Build de script npm |
+| `npd` | `npm run dev` | Script npm de dev |
+| `npt` | `npm test` | Probar script npm |
+| `nprw` | `npm run watch` | Script npm watch |
+| `npsv` | `npm run serve` | Script npm serve |
+
+### Publicación y análisis
+
+| Alias | Comando | Descripción |
+|-------|---------|-------------|
+| `npp` | `npm publish` | Publicar paquete npm |
+| `npa` | `npm audit` | Auditar paquetes npm |
+| `npx` | `npm exec` | Ejecutar paquete npm |
+| `npy` | `npm why` | Por qué un paquete npm |
+
+[banner]: https://kura.pro/dotfiles/v2/images/titles/title-dotfiles.svg

@@ -1,2 +1,2 @@
 export { about } from "./en";
-export { apropos } from "./fr";
+export { about as frAbout } from "./fr";

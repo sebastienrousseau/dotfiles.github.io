@@ -1,37 +1,99 @@
 ---
-description: Chmod 别名允许更改文件或目录的权限（或访问模式）。
+description: 使用 chmod 别名简化文件和目录权限管理。常见权限模式（如 755、644 等）的快捷方式。
 lang: zh-CN
 metaTitle: Chmod 别名 - Dotfiles (CN)
-permalink: /zh/aliases/chmod/
+permalink: /aliases/chmod/
+sidebar: true
+
+meta:
+  - name: keywords
+    content: chmod 别名, 文件权限, shell 快捷方式, dotfiles, unix 权限
+  - name: twitter:card
+    content: summary
+  - name: twitter:title
+    content: Chmod 别名 - Dotfiles
+  - name: twitter:description
+    content: 使用 chmod 别名简化文件和目录权限管理。
+  - name: og:title
+    content: Chmod 别名 - Dotfiles
+  - name: og:description
+    content: 使用 chmod 别名简化文件和目录权限管理。
+  - name: og:image:alt
+    content: Dotfiles - 为你的 Shell 生活精心设计
+  - name: og:locale
+    content: zh_CN
 ---
 
 # Chmod 别名
 
-`chmod.aliases.sh` 文件创建了有用的快捷别名，用于更改文件权限。
+管理文件和目录权限的快捷方式。
 
-## 权限
+## 概述
 
-chmod 实用程序根据 mode 操作数的指定修改列出文件的文件模式位。
-它也可用于修改与列出文件关联的访问控制列表 (ACL)。
+chmod 别名提供了从命令行管理文件和目录权限的简化方式。无需记住数字权限代码，使用直观的别名如 `chmod_755` 或 `chmod_u+x` 快速设置所需的访问模式。
 
-| 别名   | 命令                | 描述                                                                                                                                                                  |
-| ------ | ------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 000    | `chmod -R 000`      | (chmod a-rwx) 设置权限，以便 (U)ser/所有者无法读取、无法写入且无法执行。(G)roup 无法读取、无法写入且无法执行。(O)thers 无法读取、无法写入且无法执行。                 |
-| 400    | `chmod -R 400`      | (chmod a-rw) 设置权限，以便 (U)ser/所有者无法读取、无法写入但可以执行。(G)roup 无法读取、无法写入但可以执行。(O)thers 无法读取、无法写入但可以执行。                  |
-| 444    | `chmod -R 444`      | (chmod a-r) 设置权限，以便 (U)ser/所有者无法读取、无法写入但可以执行。(G)roup 无法读取、无法写入但可以执行。(O)thers 无法读取、无法写入但可以执行。                   |
-| 600    | `chmod -R 600`      | (chmod a+rwx,u-x,g-rwx,o-rwx) 设置权限，以便 (U)ser/所有者可以读取、可以写入但无法执行。(G)roup 无法读取、无法写入且无法执行。(O)thers 无法读取、无法写入且无法执行。 |
-| 644    | `chmod -R 644`      | (chmod a+rwx,u-x,g-wx,o-wx) 设置权限，以便 (U)ser/所有者可以读取、可以写入但无法执行。(G)roup 可以读取、无法写入且无法执行。(O)thers 可以读取、无法写入且无法执行。   |
-| 666    | `chmod -R 666`      | (chmod a+rwx,u-x,g-x,o-x) 设置权限，以便 (U)ser/所有者可以读取、可以写入但无法执行。(G)roup 可以读取、可以写入但无法执行。(O)thers 可以读取、可以写入但无法执行。     |
-| 755    | `chmod -R 755`      | (chmod a+rwx,g-w,o-w) 设置权限，以便 (U)ser/所有者可以读取、可以写入且可以执行。(G)roup 可以读取、无法写入但可以执行。(O)thers 可以读取、无法写入但可以执行。         |
-| 764    | `chmod -R 764`      | (chmod a+rwx,g-x,o-wx) 设置权限，以便 (U)ser/所有者可以读取、可以写入且可以执行。(G)roup 可以读取、可以写入但无法执行。(O)thers 可以读取、无法写入且无法执行。        |
-| 777    | `chmod -R 777`      | (chmod a+rwx) 设置权限，以便 (U)ser/所有者可以读取、可以写入且可以执行。(G)roup 可以读取、可以写入且可以执行。(O)thers 可以读取、可以写入且可以执行。                 |
-| chgrp  | `chgrp -v`          | 更改文件 or 目录的组所有权。                                                                                                                                          |
-| chgrpr | `chgrp -Rv`         | 递归更改文件或目录的组所有权。                                                                                                                                        |
-| chgrpu | `chgrp -Rv ${USER}` | 递归更改文件或目录的组所有权为当前用户。                                                                                                                              |
-| chmod  | `chmod -v`          | 更改文件模式位。                                                                                                                                                      |
-| chmodr | `chmod -Rv`         | 递归更改文件模式位。                                                                                                                                                  |
-| chmodu | `chmod -Rv u+rwX`   | 递归更改文件模式位为当前用户。                                                                                                                                        |
-| chmox  | `chmod +x`          | 使文件可执行。                                                                                                                                                        |
-| chown  | `chown -v`          | 更改文件所有者和组。                                                                                                                                                  |
-| chownr | `chown -Rv`         | 递归更改文件所有者和组。                                                                                                                                              |
-| chownu | `chown -Rv ${USER}` | 递归更改文件所有者和组为当前用户。                                                                                                                                    |
+这些别名定义在 `chmod.aliases.sh` 中，由 chezmoi 自动加载。
+
+## 参考
+
+### 常用权限别名
+
+| 别名 | 权限 | 描述 |
+|:---|:---|:---|
+| `chmod_000` | `----------` | 任何人都没有权限 |
+| `chmod_400` | `r--------` | 所有者只读 |
+| `chmod_444` | `r--r--r--` | 所有人只读 |
+| `chmod_600` | `rw-------` | 所有者读写 |
+| `chmod_644` | `rw-r--r--` | 所有者读写，其他人只读 |
+| `chmod_666` | `rw-rw-rw-` | 所有人读写 |
+| `chmod_755` | `rwxr-xr-x` | 所有者完全权限，其他人读执行 |
+| `chmod_764` | `rwxrw-r--` | 所有者完全权限，组读写 |
+| `chmod_777` | `rwxrwxrwx` | 所有人完全权限 |
+
+### 所有者权限别名
+
+| 别名 | 描述 |
+|:---|:---|
+| `chmod_u+x` | 为所有者添加执行权限 |
+| `chmod_u-x` | 移除所有者的执行权限 |
+| `chmod_u+w` | 为所有者添加写入权限 |
+| `chmod_u-w` | 移除所有者的写入权限 |
+| `chmod_u+r` | 为所有者添加读取权限 |
+| `chmod_u-r` | 移除所有者的读取权限 |
+
+### 组权限别名
+
+| 别名 | 描述 |
+|:---|:---|
+| `chmod_g+x` | 为组添加执行权限 |
+| `chmod_g-x` | 移除组的执行权限 |
+| `chmod_g+w` | 为组添加写入权限 |
+| `chmod_g-w` | 移除组的写入权限 |
+| `chmod_g+r` | 为组添加读取权限 |
+| `chmod_g-r` | 移除组的读取权限 |
+
+### 其他人权限别名
+
+| 别名 | 描述 |
+|:---|:---|
+| `chmod_o+x` | 为其他人添加执行权限 |
+| `chmod_o-x` | 移除其他人的执行权限 |
+| `chmod_o+w` | 为其他人添加写入权限 |
+| `chmod_o-w` | 移除其他人的写入权限 |
+| `chmod_o+r` | 为其他人添加读取权限 |
+| `chmod_o-r` | 移除其他人的读取权限 |
+
+### 文件类型别名
+
+| 别名 | 描述 |
+|:---|:---|
+| `chmod_755d` | 将所有目录权限设置为 `rwxr-xr-x` |
+| `chmod_644f` | 将所有文件权限设置为 `rw-r--r--` |
+
+### 递归权限函数
+
+`change_permission` 函数递归应用权限并带有确认提示：
+
+```bash
+change_permission 755 /path/to/directory -R
+```

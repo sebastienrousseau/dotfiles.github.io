@@ -1,47 +1,56 @@
 ---
-description: Aliases de kubernetes para Dotfiles
+title: "Aliases de Kubernetes: Atalhos para kubectl, Helm e K9s"
+description: "Aliases de shell para Kubernetes, Helm e K9s. Gerencie pods, deployments, servicos e clusters com comandos curtos."
 lang: pt-BR
-metaTitle: Aliases de Kubernetes - Dotfiles (BR)
+metaTitle: "Aliases de Kubernetes | Dotfiles"
 permalink: /pt/aliases/kubernetes/
+sidebar: true
+meta:
+  - name: keywords
+    content: "aliases kubernetes, kubectl, helm, k9s, aliases shell, dotfiles"
 ---
 
 # Aliases de Kubernetes
 
-Gerencie aliases do Kubernetes. Parte da configuração **Universal Dotfiles**.
+Gerencie clusters Kubernetes com comandos curtos.
 
-![Dotfiles banner][banner]
+## Visao Geral
 
-## 📖 Descrição
+Estes aliases sao definidos em `kubernetes.aliases.sh` e carregados automaticamente pelo Chezmoi.
 
-Esses aliases são definidos em `kubernetes.aliases.sh` e são carregados automaticamente pelo `chezmoi`.
+## Referencia
 
-## ⚡ Aliases
+### Core
 
-### core
+| Alias | Descricao |
+|-------|-------------|
+| `k` | Atalho do kubectl |
+| `kg` | `kubectl get` |
+| `kgp` | `kubectl get pods` |
+| `kga` | `kubectl get all` |
+| `kd` | `kubectl describe` |
+| `kdel` | `kubectl delete` |
+| `kl` | `kubectl logs` |
+| `kex` | `kubectl exec -it` |
 
-- `k` - Atalho para kubectl
-- `kg` - `kubectl get`
-- `kgp` - `kubectl get pods`
-- `kga` - `kubectl get all`
-- `kd` - `kubectl describe`
-- `kdel` - `kubectl delete`
-- `kl` - `kubectl logs`
-- `kex` - `kubectl exec -it`
+### Contexto
 
-### contexto
+| Alias | Descricao |
+|-------|-------------|
+| `kcx` | Listar contextos |
+| `kuse` | Trocar contexto |
+| `kns` | Trocar namespace |
 
-- `kcx` - Listar contextos
-- `kuse` - Alternar contexto
-- `kns` - Alternar namespace
+### Helm
 
-### helm
+| Alias | Descricao |
+|-------|-------------|
+| `h` | Atalho do Helm |
+| `hls` | Listar releases |
+| `hi` | Instalar chart |
 
-- `h` - Atalho para Helm
-- `hls` - Listar releases
-- `hi` - Instalar chart
+### UI
 
-### ui
-
-- `k9` - Interface de terminal k9s
-
-[banner]: https://kura.pro/dotfiles/v2/images/titles/title-dotfiles.svg
+| Alias | Descricao |
+|-------|-------------|
+| `k9` | K9s UI terminal |

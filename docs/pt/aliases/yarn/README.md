@@ -1,27 +1,30 @@
 ---
-description: Aliases do Yarn para Dotfiles
+title: "Aliases de Yarn: Gerenciador de Pacotes JavaScript"
+description: "Aliases de shell para Yarn. Atalhos para install, add, run e outros comandos yarn."
 lang: pt-BR
-metaTitle: Aliases do Yarn - Dotfiles (BR)
+metaTitle: "Aliases de Yarn | Dotfiles"
 permalink: /pt/aliases/yarn/
+sidebar: true
+meta:
+  - name: keywords
+    content: "aliases yarn, gerenciador pacotes, javascript, aliases shell, dotfiles"
 ---
 
-# Aliases do Yarn
+# Aliases de Yarn
 
-Gerencie aliases do Yarn (JavaScript). Parte da configuração **Universal Dotfiles**.
+Atalhos para o gerenciador de pacotes Yarn.
 
-![Dotfiles banner][banner]
+## Visao Geral
 
-## 📖 Descrição
+Estes aliases sao definidos em `yarn.aliases.sh` e carregados automaticamente pelo Chezmoi.
 
-Esses aliases são definidos em `yarn.aliases.sh` e são carregados automaticamente pelo `chezmoi`.
+## Referencia
 
-## ⚡ Aliases
-
-- `y` - Atalho do Yarn
-- `yi` - Instalar
-- `ya` - Adicionar dependência
-- `yad` - Adicionar dependência dev
-- `yrun` - Executar script
-- `ystem` - Iniciar
-
-[banner]: https://kura.pro/dotfiles/v2/images/titles/title-dotfiles.svg
+| Alias | Descricao |
+|-------|-------------|
+| `y` | Atalho do Yarn |
+| `yi` | Instalar |
+| `ya` | Adicionar dependencia |
+| `yad` | Adicionar dependencia de desenvolvimento |
+| `yrun` | Executar script |
+| `ystem` | Iniciar |

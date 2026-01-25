@@ -5,7 +5,7 @@ heroText: 简单设计，适应您的 Shell 生活。
 home: true
 lang: zh-CN
 metaTitle: Dotfiles - 简单设计，适应您的 Shell 生活 (CN)
-permalink: /zh/
+permalink: /
 subtitle: 适用于 macOS、Linux 和 Windows 的下一代 Bash 配置文件。Dotfiles 让您用 Shell 做比以往更多的事情。
 tagline: 适用于 macOS、Linux 和 Windows 的下一代 Bash 配置文件。Dotfiles 让您用 Shell 做比以往更多的事情。
 title: Dotfiles - 简单设计，适应您的 Shell 生活 (CN)
@@ -22,5 +22,19 @@ footer: Copyright © Sebastien Rousseau 2015-2026. 保留所有权利。
 
 meta:
   - name: keywords
-    content: bash, 配置, dotfiles, linux, macos, shell, 终端, windows
+    content: bash, 配置, dotfiles, linux, macos, shell, 终端, windows, 可定制, 开发, rust, zellij, yazi, atuin
+  - name: twitter:card
+    content: summary_large_image
+  - name: twitter:description
+    content: 适用于 macOS、Linux 和 Windows 的下一代 Bash 配置文件。Dotfiles 让您用 Shell 做比以往更多的事情。
+  - name: twitter:title
+    content: Dotfiles - 简单设计，适应您的 Shell 生活 (CN)
+  - name: og:title
+    content: Dotfiles - 简单设计，适应您的 Shell 生活 (CN)
+  - name: og:description
+    content: 适用于 macOS、Linux 和 Windows 的下一代 Bash 配置文件。Dotfiles 让您用 Shell 做比以往更多的事情。
+  - name: og:image:alt
+    content: 简单设计，适应您的 Shell 生活
+  - name: og:locale
+    content: zh_CN
 ---

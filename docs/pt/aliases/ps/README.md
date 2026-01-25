@@ -1,25 +1,41 @@
 ---
-description: Os aliases do PS são uma coleção de aliases que permitem interagir com a ferramenta de linha de comando `ps`. Ps é uma ferramenta que relata um instantâneo dos processos atuais.
+title: "Aliases de PS: Atalhos para Status de Processos"
+description: "Aliases de shell para o comando ps. Visualize processos em execucao com comandos simples."
 lang: pt-BR
-metaTitle: Aliases do PS - Dotfiles (BR)
+metaTitle: "Aliases de PS | Dotfiles"
 permalink: /pt/aliases/ps/
+sidebar: true
+meta:
+  - name: keywords
+    content: "aliases ps, processos, status, aliases shell, dotfiles"
+  - name: twitter:card
+    content: summary
+  - name: twitter:description
+    content: Aliases de shell para o comando ps. Visualize processos em execucao com comandos simples.
+  - name: twitter:title
+    content: Aliases de PS | Dotfiles
+  - name: og:title
+    content: Aliases de PS | Dotfiles
+  - name: og:description
+    content: Aliases de shell para o comando ps. Visualize processos em execucao com comandos simples.
+  - name: og:image:alt
+    content: Dotfiles - Simply designed to fit your shell life
+  - name: og:locale
+    content: pt_BR
 ---
 
-# Aliases do PS
+# Aliases de PS
 
-O arquivo `ps.aliases.sh` cria aliases de atalho úteis para trabalhar com
-processos.
+Atalhos para visualizar status de processos.
 
-Os aliases do PS são uma coleção de aliases que permitem interagir com
-a ferramenta de linha de comando `ps`. Ps é uma ferramenta que relata um instantâneo dos processos atuais.
+## Visao Geral
 
-## PS
+Estes aliases sao definidos em `ps.aliases.sh` e carregados automaticamente pelo Chezmoi.
 
-[PS](<https://pt.wikipedia.org/wiki/Ps_(Unix)>) é um comando que lista os
-processos em execução no sistema.
+## Referencia
 
-| Alias | Comando  | Descrição                                                                                                                                |
-| ----- | -------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
-| pid   | `ps -f`  | Exibir o uid, pid, pid pai, uso recente da CPU, hora de início do processo, tty de controle, uso decorrido da CPU e o comando associado. |
-| ps    | `ps -ef` | Exibir todos os processos.                                                                                                               |
-| psa   | `ps aux` | Listar todos os processos.                                                                                                               |
+| Alias | Descricao |
+|-------|-------------|
+| `pid` | Exibe uid, pid, parent pid, uso de CPU, tempo, tty e comando |
+| `ps` | Exibir todos os processos |
+| `psa` | Listar todos os processos |

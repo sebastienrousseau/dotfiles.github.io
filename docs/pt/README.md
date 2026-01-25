@@ -5,7 +5,7 @@ heroText: Simplesmente projetado para se adequar à sua vida no shell.
 home: true
 lang: pt-BR
 metaTitle: Dotfiles - Simplesmente projetado para se adequar à sua vida no shell (BR)
-permalink: /pt/
+permalink: /
 subtitle: A próxima geração de arquivos de configuração Bash para macOS, Linux e Windows. Dotfiles oferece novas maneiras de fazer mais do que nunca com seu shell.
 tagline: A próxima geração de arquivos de configuração Bash para macOS, Linux e Windows. Dotfiles oferece novas maneiras de fazer mais do que nunca com seu shell.
 title: Dotfiles - Simplesmente projetado para se adequar à sua vida no shell (BR)
@@ -22,5 +22,19 @@ footer: Copyright © Sebastien Rousseau 2015-2026. Todos os direitos reservados.
 
 meta:
   - name: keywords
-    content: bash, configuração, dotfiles, linux, macos, shell, terminal, windows
+    content: bash, configuração, dotfiles, linux, macos, shell, terminal, windows, personalizável, desenvolvimento, rust, zellij, yazi, atuin
+  - name: twitter:card
+    content: summary_large_image
+  - name: twitter:description
+    content: A próxima geração de arquivos de configuração Bash para macOS, Linux e Windows. Dotfiles oferece novas maneiras de fazer mais do que nunca com seu shell.
+  - name: twitter:title
+    content: Dotfiles - Simplesmente projetado para se adequar à sua vida no shell (BR)
+  - name: og:title
+    content: Dotfiles - Simplesmente projetado para se adequar à sua vida no shell (BR)
+  - name: og:description
+    content: A próxima geração de arquivos de configuração Bash para macOS, Linux e Windows. Dotfiles oferece novas maneiras de fazer mais do que nunca com seu shell.
+  - name: og:image:alt
+    content: Simplesmente projetado para se adequar à sua vida no shell
+  - name: og:locale
+    content: pt_BR
 ---

@@ -1,35 +1,55 @@
 ---
-description: Os aliases do NPM são uma coleção de aliases que permitem interagir com a ferramenta de linha de comando `npm`. Npm é um gerenciador de pacotes para a linguagem de programação JavaScript.
+title: "Aliases de NPM: Atalhos para o Gerenciador de Pacotes Node.js"
+description: "Aliases de shell para NPM. Atalhos para install, build, test, publish e outros comandos npm."
 lang: pt-BR
-metaTitle: Aliases do NPM - Dotfiles (BR)
+metaTitle: "Aliases de NPM | Dotfiles"
 permalink: /pt/aliases/npm/
+sidebar: true
+meta:
+  - name: keywords
+    content: "aliases npm, node, gerenciador pacotes, javascript, aliases shell, dotfiles"
+  - name: twitter:card
+    content: summary
+  - name: twitter:description
+    content: Aliases de shell para NPM. Atalhos para install, build, test, publish e outros comandos npm.
+  - name: twitter:title
+    content: Aliases de NPM | Dotfiles
+  - name: og:title
+    content: Aliases de NPM | Dotfiles
+  - name: og:description
+    content: Aliases de shell para NPM. Atalhos para install, build, test, publish e outros comandos npm.
+  - name: og:image:alt
+    content: Dotfiles - Simply designed to fit your shell life
+  - name: og:locale
+    content: pt_BR
 ---
 
-# Aliases do NPM
+# Aliases de NPM
 
-O arquivo `npm.aliases.sh` cria aliases de atalho úteis
-para [npm](https://www.npmjs.com/).
+Atalhos para o gerenciador de pacotes Node.js.
 
-## NPM
+## Visao Geral
 
-[npm](https://www.npmjs.com/) é um gerenciador de pacotes para a linguagem de
-programação JavaScript. É o gerenciador de pacotes padrão para o ambiente de
-execução JavaScript Node.js.
+Estes aliases sao definidos em `npm.aliases.sh` e carregados automaticamente pelo Chezmoi.
 
-| Alias | Comando         | Descrição                  |
-| ----- | --------------- | -------------------------- |
-| npb   | `npm build`     | Script de build npm.       |
-| npc   | `npm cache`     | Cache de pacote npm.       |
-| npd   | `npm dev`       | Script dev npm.            |
-| npg   | `npm global`    | Pacote npm global.         |
-| npi   | `npm install`   | Instalar pacote npm.       |
-| npl   | `npm list`      | Listar pacotes npm.        |
-| npp   | `npm publish`   | Publicar pacote npm.       |
-| npr   | `npm run`       | Executar script npm.       |
-| nprw  | `npm run watch` | Executar script npm watch. |
-| nps   | `npm start`     | Iniciar script npm.        |
-| npsv  | `npm serve`     | Servir script npm.         |
-| npt   | `npm test`      | Testar script npm.         |
-| npu   | `npm update`    | Atualizar pacote npm.      |
-| npx   | `npm exec`      | Executar pacote npm.       |
-| npy   | `npm why`       | Por que pacote npm.        |
+## Referencia
+
+| Alias | Descricao |
+|-------|-------------|
+| `npa` | Auditar pacotes npm |
+| `npb` | Script de build npm |
+| `npc` | Cache de pacotes npm |
+| `npd` | Script de dev npm |
+| `npg` | Pacote npm global |
+| `npi` | Instalar pacote npm |
+| `npl` | Listar pacotes npm |
+| `npp` | Publicar pacote npm |
+| `nprm` | Remover pacote npm |
+| `npr` | Executar script npm |
+| `nprw` | Executar script npm em modo watch |
+| `nps` | Iniciar script npm |
+| `npsv` | Servir script npm |
+| `npt` | Testar script npm |
+| `npu` | Atualizar pacote npm |
+| `npx` | Executar pacote npm |
+| `npy` | Por que um pacote npm esta instalado |

@@ -1,19 +1,39 @@
 ---
-description: Los alias de rsync son una colección de alias que te permiten interactuar con la herramienta de línea de comandos `rsync`. Rsync es una herramienta que sincroniza archivos y directorios entre dos ubicaciones.
+description: Alias rsync para sincronización de archivos. Atajos rápidos para sincronizar archivos y directorios.
 lang: es-ES
-metaTitle: Alias de Rsync - Dotfiles (ES)
-permalink: /es/aliases/rsync/
+metaTitle: Aliases Rsync - Dotfiles (ES)
+permalink: /aliases/rsync/
+sidebar: true
+
+meta:
+  - name: keywords
+    content: rsync, sincronización, transferencia de archivos, alias shell, dotfiles, backup
+  - name: twitter:card
+    content: summary
+  - name: twitter:description
+    content: Alias rsync para sincronización de archivos. Atajos rápidos para sincronizar archivos y directorios.
+  - name: twitter:title
+    content: Aliases Rsync - Dotfiles
+  - name: og:title
+    content: Aliases Rsync - Dotfiles
+  - name: og:description
+    content: Alias rsync para sincronización de archivos. Atajos rápidos para sincronizar archivos y directorios.
+  - name: og:image:alt
+    content: Dotfiles - Diseñado para tu vida en el shell
+  - name: og:locale
+    content: es_ES
 ---
 
-# Alias de Rsync
+# Alias Rsync
 
-El archivo `rsync.aliases.sh` crea atajos útiles para [rsync](https://es.wikipedia.org/wiki/Rsync).
+Sincroniza archivos y directorios entre ubicaciones con seguimiento de progreso.
 
-## Rsync
+## Descubrir
 
-[Rsync](https://es.wikipedia.org/wiki/Rsync) es un comando que copia archivos y directorios a otra ubicación.
+Estos alias se definen en `rsync.aliases.sh` y se cargan automáticamente por Chezmoi.
 
-| Alias | Comando      | Descripción                                    |
-| ----- | ------------ | ---------------------------------------------- |
-| rs    | `rsync -avz` | Rsync con modo detallado (verbose) y progreso. |
-| rsync | `rs`         | Rsync con modo detallado (verbose) y progreso. |
+## Referencia
+
+| Alias | Descripción |
+|:---|:---|
+| `rs` | Rsync con salida detallada y progreso |

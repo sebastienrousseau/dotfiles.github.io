@@ -1,75 +1,158 @@
 ---
-description: Fonctions shell fournies par Dotfiles pour améliorer votre expérience terminal.
+description: Fonctions shell qui améliorent votre expérience terminal. Utilitaires pour les API, les fichiers et les opérations système.
 lang: fr-FR
 metaTitle: Fonctions - Dotfiles (FR)
-permalink: /fr/functions/
+permalink: /functions/
 
 meta:
   - name: keywords
-    content: fonctions, shell, bash, zsh, dotfiles, productivité
+    content: fonctions, shell, bash, zsh, dotfiles, productivité, utilitaires, api, fichiers, système
+  - name: twitter:card
+    content: summary
+  - name: twitter:description
+    content: Fonctions shell qui améliorent votre expérience terminal. Utilitaires pour les API, les fichiers et les opérations système.
+  - name: twitter:title
+    content: Fonctions - Dotfiles
+  - name: og:title
+    content: Fonctions - Dotfiles
+  - name: og:description
+    content: Fonctions shell qui améliorent votre expérience terminal. Utilitaires pour les API, les fichiers et les opérations système.
+  - name: og:image:alt
+    content: Dotfiles - Conçus pour s'adapter à votre vie de shell
+  - name: og:locale
+    content: fr_FR
 ---
 
 # Fonctions
 
-Dotfiles inclut une collection de fonctions utilitaires pour accélérer votre flux de travail. Celles-ci sont automatiquement chargées dans votre environnement shell.
+Utilitaires shell pour augmenter votre productivité sur macOS, Linux et Windows.
 
-## API & Réseau
+## Découvrir
 
-| Fonction     | Description                                      |
-| :----------- | :----------------------------------------------- |
-| `apihealth`  | Vérifier la santé d'un point de terminaison API. |
-| `apilatency` | Mesurer la latence API.                          |
-| `apiload`    | Test de charge API simple.                       |
-| `curlheader` | Obtenir les en-têtes HTTP avec curl.             |
-| `curlstatus` | Obtenir le code de statut HTTP.                  |
-| `curltime`   | Mesurer le temps de requête curl.                |
-| `httpdebug`  | Déboguer le trafic HTTP.                         |
-| `whoisport`  | Vérifier qui utilise un port spécifique.         |
+Les fonctions sont définies dans des fichiers `.sh` séparés. Lors de `chezmoi apply`, elles sont agrégées dans `~/.config/shell/functions.sh` puis chargées par votre shell.
 
-## Gestion de Fichiers
+## Premiers pas
 
-| Fonction          | Description                                                   |
-| :---------------- | :------------------------------------------------------------ |
-| `cdls`            | Changer de répertoire et lister le contenu.                   |
-| `extract`         | Extraire n'importe quel format d'archive (tar, zip, gz, etc). |
-| `freespace`       | Vérifier l'espace disque libre.                               |
-| `hiddenfiles`     | Lister les fichiers cachés.                                   |
-| `showhiddenfiles` | Basculer les fichiers cachés dans le Finder (macOS).          |
-| `size`            | Obtenir la taille d'un répertoire.                            |
-| `zipf`            | Compresser un fichier ou un répertoire.                       |
-| `backup`          | Sauvegarder un fichier avec un horodatage.                    |
+### Ajouter une fonction
 
-## Traitement de Texte
+1. Créez un nouveau fichier `.sh` (par exemple `mafonction.sh`)
+2. Ajoutez la définition de votre fonction
+3. Appliquez les changements :
+   ```bash
+   chezmoi apply
+   ```
 
-| Fonction       | Description                              |
-| :------------- | :--------------------------------------- |
-| `encode64`     | Encoder en Base64.                       |
-| `hexdump`      | Hexdump d'un fichier.                    |
-| `kebabcase`    | Convertir une chaîne en kebab-case.      |
-| `lowercase`    | Convertir une chaîne en minuscules.      |
-| `sentencecase` | Convertir une chaîne en Casse de phrase. |
-| `snakecase`    | Convertir une chaîne en snake_case.      |
-| `titlecase`    | Convertir une chaîne en Casse De Titre.  |
-| `uppercase`    | Convertir une chaîne en MAJUSCULES.      |
+## Référence
 
-## Système & Utilitaires
+### Tests d’API
 
-| Fonction    | Description                                   |
-| :---------- | :-------------------------------------------- |
-| `caffeine`  | Empêcher le système de dormir (macOS).        |
-| `genpass`   | Générer un mot de passe sécurisé.             |
-| `sysinfo`   | Afficher les informations système.            |
-| `stopwatch` | Un chronomètre terminal simple.               |
-| `matrix`    | L'effet de pluie numérique Matrix.            |
-| `myproc`    | Lister mes processus.                         |
-| `kill`      | Tuer des processus interactivement (via fzf). |
+| Fonction | Description | Utilisation |
+|:---|:---|:---|
+| `apihealth` | Vérifier la santé d’une ou plusieurs API | `apihealth [OPTIONS] URL [URL ...]` |
+| `apilatency` | Mesurer la latence d’une API | `apilatency URL [COUNT] [INTERVAL]` |
+| `apiload` | Effectuer un test de charge simple | `apiload URL [REQUESTS] [DELAY]` |
+| `httpdebug` | Déboguer des requêtes HTTP avec timings | `httpdebug [options] [url]` |
 
-## Navigation
+### Utilitaires HTTP
 
-| Fonction      | Description                                     |
-| :------------ | :---------------------------------------------- |
-| `goto`        | Navigation rapide vers les répertoires favoris. |
-| `prependpath` | Ajouter un répertoire au début du $PATH.        |
+| Fonction | Description | Utilisation |
+|:---|:---|:---|
+| `curlheader` | Afficher les en-têtes HTTP | `curlheader [header] [url]` |
+| `curlstatus` | Vérifier le code de statut HTTP | `curlstatus [url]` |
+| `curltime` | Mesurer les métriques de timing HTTP | `curltime [url]` |
+| `view-source` | Afficher le code source d’un site | `view-source URL` |
+| `whoisport` | Trouver le processus qui utilise un port | `whoisport PORT` |
 
-> [!TIP]
-> Utilisez `type <nom_fonction>` dans votre terminal pour voir le code source de n'importe quelle fonction !
+### Gestion des fichiers
+
+| Fonction | Description | Utilisation |
+|:---|:---|:---|
+| `backup` | Créer des sauvegardes horodatées | `backup [--max-size SIZE] [--keep N] <files...>` |
+| `encode64` / `decode64` | Encodage et décodage Base64 | `encode64 "string"` |
+| `extract` | Extraire des archives | `extract [file]` |
+| `hexdump` | Afficher un fichier en hexadécimal | `hexdump [file] [lines]` |
+| `ren` | Renommer des extensions par lot | `ren OLD_EXT NEW_EXT` |
+| `size` | Vérifier la taille d’un fichier ou dossier | `size [file/directory]` |
+| `zipf` | Créer des archives ZIP | `zipf [folder]` |
+
+### Nommage de fichiers
+
+| Fonction | Description | Utilisation |
+|:---|:---|:---|
+| `kebabcase` | Convertir en kebab-case | `kebabcase <files...>` |
+| `lowercase` | Convertir en minuscules | `lowercase <files...>` |
+| `sentencecase` | Convertir en casse phrase | `sentencecase <files...>` |
+| `snakecase` | Convertir en snake_case | `snakecase <files...>` |
+| `titlecase` | Convertir en Title Case | `titlecase <files...>` |
+| `uppercase` | Convertir en MAJUSCULES | `uppercase <files...>` |
+
+### Utilitaires système
+
+| Fonction | Description | Utilisation |
+|:---|:---|:---|
+| `caffeine` | Empêcher la mise en veille | `caffeine [command]` |
+| `environment` | Détecter l’environnement OS | `environment` |
+| `freespace` | Nettoyer l’espace libérable | `freespace [disk]` |
+| `hiddenfiles` | Afficher/masquer les fichiers cachés | `hiddenfiles [show|hide]` |
+| `hostinfo` | Afficher les infos de l’hôte | `hostinfo` |
+| `hstats` | Statistiques d’usage des commandes | `hstats` |
+| `last` | Lister les fichiers récemment modifiés | `last [minutes]` |
+| `logout` | Déconnexion multiplateforme | `logout [--force]` |
+| `myproc` | Lister les processus utilisateur | `myproc` |
+| `stopwatch` | Chronomètre terminal | `stopwatch` |
+| `sysinfo` | Afficher les infos système | `sysinfo` |
+
+### Commandes Caffeine
+
+Empêche la mise en veille ou l’activation de l’économiseur d’écran.
+
+| Commande | Description |
+|:---|:---|
+| `caffeine daemon` | Démarrer le daemon caffeine |
+| `caffeine status` | Vérifier si le daemon tourne |
+| `caffeine start` | Garder l’écran éveillé |
+| `caffeine stop` | Autoriser la mise en veille |
+| `caffeine toggle` | Basculer l’écran éveillé |
+| `caffeine shutdown` | Arrêter le daemon |
+
+Fonctionne sur macOS (`caffeinate`), Linux (`xdg-screensaver`) et Windows (PowerShell).
+
+### Sécurité
+
+| Fonction | Description | Utilisation |
+|:---|:---|:---|
+| `genpass` | Générer des mots de passe robustes | `genpass [num_blocks] [separator]` |
+| `keygen` | Générer des paires de clés SSH | `keygen [name] [email] [type] [bits]` |
+
+### Navigation
+
+| Fonction | Description | Utilisation |
+|:---|:---|:---|
+| `cdls` | Changer de répertoire et lister | `cdls [directory]` |
+| `goto` | Navigation rapide | `goto [directory]` |
+| `mount_read_only` | Monter en lecture seule comme lecture/écriture | `mount_read_only [image]` |
+| `rd` | Supprimer un répertoire | `rd [directory]` |
+| `remove_disk` | Éjecter un disque en toute sécurité | `remove_disk [disk]` |
+
+### Divers
+
+| Fonction | Description | Utilisation |
+|:---|:---|:---|
+| `matrix` | Effets Matrix dans le terminal | `matrix [options]` |
+| `prependpath` | Ajouter un dossier au PATH | `prependpath [directory]` |
+| `ql` | Ouvrir dans Quick Look (macOS) | `ql [file]` |
+| `vscode` | Ouvrir dans VS Code | `vscode [file]` |
+
+## Compatibilité
+
+- **macOS** — Support complet avec utilitaires spécifiques
+- **Linux** — Compatible avec les distributions courantes
+- **Windows** — Support via WSL, Cygwin ou Git Bash
+
+## Aide
+
+Chaque fonction inclut une aide via `--help` :
+
+```bash
+apihealth --help
+```

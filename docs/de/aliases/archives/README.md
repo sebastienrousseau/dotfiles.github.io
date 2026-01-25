@@ -1,95 +1,117 @@
 ---
-description: Die Archiv-Aliase sind in der Lage, Archive in einer Vielzahl von Formaten zu erstellen und zu verarbeiten.
+description: Archiv- und Komprimierungsaliase für tar, zip, 7z und mehr. Entpacken, komprimieren und verwalten Sie Archive mit einfachen Befehlen.
 lang: de-DE
-metaTitle: Archiv Aliase - Dotfiles (DE)
+metaTitle: Archives Aliase - Dotfiles (DE)
 permalink: /de/aliases/archives/
+sidebar: true
+
+meta:
+  - name: keywords
+    content: archive, komprimierung, tar, zip, 7z, gzip, entpacken, shell aliase, dotfiles
+  - name: twitter:card
+    content: summary
+  - name: twitter:description
+    content: Archiv- und Komprimierungsaliase für tar, zip, 7z und mehr. Entpacken, komprimieren und verwalten Sie Archive mit einfachen Befehlen.
+  - name: twitter:title
+    content: Archives Aliase - Dotfiles
+  - name: og:title
+    content: Archives Aliase - Dotfiles
+  - name: og:description
+    content: Archiv- und Komprimierungsaliase für tar, zip, 7z und mehr. Entpacken, komprimieren und verwalten Sie Archive mit einfachen Befehlen.
+  - name: og:image:alt
+    content: Dotfiles - Simply designed to fit your shell life
+  - name: og:locale
+    content: de_DE
 ---
 
-# Archiv Aliase
+# Archives Aliase
 
-Die Datei `archives.aliases.sh` erstellt hilfreiche Shortcut-Aliase zum Archivieren
-von Dateien und Verzeichnissen. Die Aliase können Archive in einer Vielzahl von
-Formaten erstellen und verarbeiten.
+Komprimieren, entpacken und verwalten Sie Archive. Unterstützung für alle gängigen Formate.
 
-## 7-Zip
+## Übersicht
 
-[7-Zip](http://www.7-zip.org/) ist ein Dateiarchivierer mit einer hohen Kompressionsrate.
+Diese Aliase sind in `archives.aliases.sh` definiert und werden automatisch von Chezmoi geladen.
 
-| Alias | Befehl | Beschreibung                                                                     |
-| ----- | ------ | -------------------------------------------------------------------------------- |
-| c7z   | `7z a` | Komprimiere ein ganzes Verzeichnis (inkl. Unterverzeichnisse) in eine 7z-Datei.  |
-| e7z   | `7z x` | Extrahiere ein ganzes Verzeichnis (inkl. Unterverzeichnisse) aus einer 7z-Datei. |
+## Referenz
 
-## Bzip2
+### Universelles Entpacken
 
-[Bzip2](http://www.bzip.org/) ist ein frei verfügbarer, patentfreier, hochwertiger
-Datenkompressor.
+Der `extract`-Befehl (Kurzform `x`) erkennt und entpackt automatisch jedes Archiv:
 
-| Alias | Befehl    | Beschreibung                               |
-| ----- | --------- | ------------------------------------------ |
-| cbz2  | `bzip2`   | Komprimiere eine Datei in eine bz2-Datei.  |
-| ebz2  | `bunzip2` | Extrahiere eine Datei aus einer bz2-Datei. |
+```bash
+extract archive.tar.gz
+```
 
-## Gzip
+**Unterstützte Formate:** `.tar.bz2`, `.tbz2`, `.tar.gz`, `.tgz`, `.tar.xz`, `.tar.zst`, `.tar`, `.bz2`, `.gz`, `.rar`, `.zip`, `.Z`, `.7z`, `.zst`, `.xz`, `.lz4`, `.lha`, `.lzh`, `.arj`, `.arc`, `.dms`
 
-[Gzip](https://www.gnu.org/software/gzip/) ist ein beliebtes Datenkompressionsprogramm
-als Ersatz für compress.
+### Komprimieren
 
-| Alias | Befehl   | Beschreibung                              |
-| ----- | -------- | ----------------------------------------- |
-| cgz   | `gzip`   | Komprimiere eine Datei in eine gz-Datei.  |
-| egz   | `gunzip` | Extrahiere eine Datei aus einer gz-Datei. |
+Erstellen Sie Archive mit dem `compress`-Befehl (Kurzform `ac`):
 
-## Jar
+```bash
+compress tgz file1 file2 directory output.tar.gz
+compress zip -l 9 important_files backup.zip
+```
 
-[Jar](https://docs.oracle.com/javase/tutorial/deployment/jar/) ist ein Dateiformat,
-das verwendet wird, um viele Dateien in einer einzigen Datei zusammenzufassen, um Anwendungssoftware oder
-Bibliotheken auf der Java-Plattform zu verteilen.
+**Unterstützte Formate:** `tar`, `tgz`, `tbz2`, `txz`, `tzst`, `zip`, `7z`, `gz`, `bz2`, `xz`, `zst`, `lz4`, `rar`
 
-| Alias | Befehl     | Beschreibung                                                                      |
-| ----- | ---------- | --------------------------------------------------------------------------------- |
-| cjar  | `jar -cvf` | Komprimiere ein ganzes Verzeichnis (inkl. Unterverzeichnisse) in eine jar-Datei.  |
-| ejar  | `jar -xvf` | Extrahiere ein ganzes Verzeichnis (inkl. Unterverzeichnisse) aus einer jar-Datei. |
+### Backup
 
-## Tar
+Erstellen Sie zeitgestempelte Backups mit `backup` (Kurzform `bak`):
 
-[Tar](https://www.gnu.org/software/tar/) ist ein Computerprogramm, das verwendet wird, um
-viele Dateien zusammen in einer einzigen Datei zu speichern.
+```bash
+backup important_folder
+backup database.sql zip
+```
 
-| Alias | Befehl      | Beschreibung                                                                         |
-| ----- | ----------- | ------------------------------------------------------------------------------------ |
-| ctar  | `tar -cvf`  | Komprimiere ein ganzes Verzeichnis (inkl. Unterverzeichnisse) in eine tar-Datei.     |
-| etar  | `tar -xvf`  | Extrahiere ein ganzes Verzeichnis (inkl. Unterverzeichnisse) aus einer tar-Datei.    |
-| ctgz  | `tar -cvzf` | Komprimiere ein ganzes Verzeichnis (inkl. Unterverzeichnisse) in eine tar.gz-Datei.  |
-| etgz  | `tar -xvzf` | Extrahiere ein ganzes Verzeichnis (inkl. Unterverzeichnisse) aus einer tar.gz-Datei. |
+### Inhalt auflisten
 
-## Xz
+Archivinhalt anzeigen mit `list_archive` (Kurzform `lar`):
 
-[Xz](https://tukaani.org/xz/) ist eine Allzweck-Datenkompressionssoftware
-mit einer hohen Kompressionsrate.
+```bash
+list_archive backup.tar.gz
+```
 
-| Alias | Befehl     | Beschreibung                                                                     |
-| ----- | ---------- | -------------------------------------------------------------------------------- |
-| cxz   | `xz -zcvf` | Komprimiere ein ganzes Verzeichnis (inkl. Unterverzeichnisse) in eine xz-Datei.  |
-| exz   | `xz -zxvf` | Extrahiere ein ganzes Verzeichnis (inkl. Unterverzeichnisse) aus einer xz-Datei. |
+### Archiv-Tools
 
-## Zip
+| Alias | Beschreibung |
+|:---|:---|
+| `c7z` | 7z-Archiv erstellen |
+| `x7z` | 7z-Archiv entpacken |
+| `l7z` | 7z-Inhalt auflisten |
+| `ctar` | Tar-Archiv erstellen |
+| `xtar` | Tar-Archiv entpacken |
+| `ltar` | Tar-Inhalt auflisten |
+| `ctgz` | Tar.gz-Archiv erstellen |
+| `xtgz` | Tar.gz-Archiv entpacken |
+| `ltgz` | Tar.gz-Inhalt auflisten |
+| `ctbz` | Tar.bz2-Archiv erstellen |
+| `xtbz` | Tar.bz2-Archiv entpacken |
+| `ltbz` | Tar.bz2-Inhalt auflisten |
+| `ctxz` | Tar.xz-Archiv erstellen |
+| `xtxz` | Tar.xz-Archiv entpacken |
+| `ltxz` | Tar.xz-Inhalt auflisten |
+| `ctzst` | Tar.zst-Archiv erstellen |
+| `xtzst` | Tar.zst-Archiv entpacken |
+| `ltzst` | Tar.zst-Inhalt auflisten |
+| `czip` | Zip-Archiv erstellen |
+| `xzip` | Zip-Archiv entpacken |
+| `lzip` | Zip-Inhalt auflisten |
+| `crar` | Rar-Archiv erstellen |
+| `xrar` | Rar-Archiv entpacken |
+| `lrar` | Rar-Inhalt auflisten |
 
-[Zip](<https://de.wikipedia.org/wiki/ZIP_(Dateiformat)>) ist ein Dateiformat, das verwendet wird, um
-eine einzelne Datei auszugeben, die eine oder mehrere Dateien enthält.
+### Komprimierungs-Tools
 
-| Alias | Befehl   | Beschreibung                                                                      |
-| ----- | -------- | --------------------------------------------------------------------------------- |
-| cz    | `zip -r` | Komprimiere ein ganzes Verzeichnis (inkl. Unterverzeichnisse) in eine zip-Datei.  |
-| ez    | `unzip`  | Extrahiere ein ganzes Verzeichnis (inkl. Unterverzeichnisse) aus einer zip-Datei. |
-
-## Zstd
-
-[Zstd](https://facebook.github.io/zstd/) ist ein schneller verlustfreier Kompressionsalgorithmus,
-der auf Echtzeit-Kompressionsszenarien auf zlib-Niveau und bessere
-Kompressionsraten abzielt.
-
-| Alias | Befehl       | Beschreibung                                                                      |
-| ----- | ------------ | --------------------------------------------------------------------------------- |
-| czstd | `zstd -zcvf` | Komprimiere ein ganzes Verzeichnis (inkl. Unterverzeichnisse) in eine zst-Datei.  |
-| ezstd | `zstd -zxvf` | Extrahiere ein ganzes Verzeichnis (inkl. Unterverzeichnisse) aus einer zst-Datei. |
+| Alias | Beschreibung |
+|:---|:---|
+| `cgz` | Mit gzip komprimieren |
+| `xgz` | Gzip entpacken |
+| `cbz` | Mit bzip2 komprimieren |
+| `xbz` | Bzip2 entpacken |
+| `cxz` | Mit xz komprimieren |
+| `xxz` | Xz entpacken |
+| `czst` | Mit zstd komprimieren |
+| `xzst` | Zstd entpacken |
+| `clz4` | Mit lz4 komprimieren |
+| `xlz4` | Lz4 entpacken |

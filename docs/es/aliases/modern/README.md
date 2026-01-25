@@ -1,44 +1,52 @@
 ---
-description: Alias modernos para Dotfiles
+title: "Alias Modern: reemplazos Unix basados en Rust"
+description: "Alias modernos para eza, bat y ripgrep. Sustituye utilidades Unix heredadas por alternativas Rust más rápidas."
 lang: es-ES
-metaTitle: Alias Modernos - Dotfiles (ES)
-permalink: /es/aliases/modern/
+metaTitle: "Alias Modern | Dotfiles"
+permalink: /aliases/modern/
+sidebar: true
+meta:
+  - name: keywords
+    content: "alias modern, eza, bat, ripgrep, herramientas cli rust, dotfiles, shell"
 ---
 
-# Alias de Herramientas Modernas
+# Alias Modern
 
-Gestiona alias de Herramientas Modernas. Parte de la configuración de **Universal Dotfiles**.
+Reemplazos más rápidos e inteligentes para comandos Unix heredados.
 
-![Banner de Dotfiles][banner]
+## Descubrir
 
-## 📖 Descripción
+Los alias modern definidos en `modern.aliases.sh` proporcionan alternativas Rust a las herramientas Unix tradicionales. Estos alias se cargan automáticamente por `chezmoi` y vuelven a los comandos estándar si las herramientas modernas no están disponibles.
 
-Estos alias están definidos en `modern.aliases.sh` y son cargados automáticamente por `chezmoi`.
-Proporcionan reemplazos modernos para herramientas Unix heredadas (basadas en Rust).
+## Referencia
 
-## ⚡ Alias
+### Listado de archivos con eza
 
-### Listado de Archivos (eza)
+Reemplaza `ls` cuando `eza` está instalado.
 
-Si `eza` está instalado (reemplazando a `ls`):
+| Alias | Comando | Descripción |
+|-------|---------|-------------|
+| `ls` | `eza --icons` | Listar archivos con iconos |
+| `ll` | `eza -alF` | Formato de lista larga |
+| `la` | `eza -a` | Listar todos los archivos, incluidos ocultos |
+| `lt` | `eza --tree` | Mostrar árbol de directorios |
 
-- `ls` - Listar archivos (`eza --icons`)
-- `ll` - Listado largo (`eza -alF`)
-- `la` - Listar todo (`eza -a`)
-- `lt` - Listar árbol (`eza --tree`)
+Vuelve a `ls` si `eza` no está instalado.
 
-_(Recurre al `ls` estándar si `eza` no está disponible)_
+### Contenido de archivos con bat
 
-### Contenido de Archivos (bat)
+Reemplaza `cat` cuando `bat` está instalado.
 
-Si `bat` está instalado (reemplazando a `cat`):
+| Alias | Comando | Descripción |
+|-------|---------|-------------|
+| `cat` | `bat` | Mostrar contenido con resaltado de sintaxis |
 
-- `cat` - Mostrar contenido del archivo con resaltado de sintaxis
+### Búsqueda con ripgrep
 
-### Búsqueda (rg)
+Reemplaza `grep` cuando `rg` está instalado.
 
-Si `rg` está instalado (reemplazando a `grep`):
-
-- `grep` - Buscar con Ripgrep
+| Alias | Comando | Descripción |
+|-------|---------|-------------|
+| `grep` | `rg` | Buscar contenido con Ripgrep |
 
 [banner]: https://kura.pro/dotfiles/v2/images/titles/title-dotfiles.svg

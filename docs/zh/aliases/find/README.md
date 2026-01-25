@@ -1,38 +1,51 @@
 ---
-description: 查找别名旨在搜索目录层次结构中的文件，并对找到的文件执行操作。
+description: 使用 fd 的 find 别名加速文件和目录搜索。比传统 find 更快的 Rust 替代品。
 lang: zh-CN
-metaTitle: 查找别名 - Dotfiles (CN)
-permalink: /zh/aliases/find/
+metaTitle: Find 别名 - Dotfiles (CN)
+permalink: /aliases/find/
+sidebar: true
+
+meta:
+  - name: keywords
+    content: find 别名, fd 命令, 文件搜索, 目录搜索, dotfiles, shell, rust
+  - name: twitter:card
+    content: summary
+  - name: twitter:description
+    content: 使用 fd 的 find 别名加速文件和目录搜索。比传统 find 更快的 Rust 替代品。
+  - name: twitter:title
+    content: Find 别名 - Dotfiles
+  - name: og:title
+    content: Find 别名 - Dotfiles
+  - name: og:description
+    content: 使用 fd 的 find 别名加速文件和目录搜索。比传统 find 更快的 Rust 替代品。
+  - name: og:image:alt
+    content: Dotfiles - 为你的 Shell 生活精心设计
+  - name: og:locale
+    content: zh_CN
 ---
 
-# 查找别名
+# Find 别名
 
-`find.aliases.sh` 文件为 `fd` 命令创建了有用的快捷别名。
-`fd` 命令是 `find` 的跨平台替代品。
+使用 `fd` 更快更简单地搜索文件 — 传统 `find` 的现代替代品。
 
-传统上，`find` 命令用于搜索目录层次结构中的文件，并对找到的文件执行操作。
+## 概述
 
-我们决定用 `fd` 命令替换 `find` 命令，它是 `find` 的一个更简单、更快速且用户友好的替代品。
+这些别名定义在 `find.aliases.sh` 中，由 chezmoi 自动加载。它们包装了 `fd` 命令，这是一个用 Rust 编写的简单、快速且用户友好的 `find` 替代品。
 
-## 查找 (Find)
+## 参考
 
-[fd](https://github.com/sharkdp/fd) 是 `find` 的一个简单、快速且用户友好的替代品。
-虽然它并不旨在支持 find 的所有强大功能，但它为大多数用例提供了合理的（固执己见的）默认设置。
-
-| 别名 | 命令                 | 描述                                            |
-| ---- | -------------------- | ----------------------------------------------- |
-| fd   | `fd --color always`  | 默认情况下始终着色输出。                        |
-| fda  | `fd --absolute-path` | 列出所有文件的绝对路径。                        |
-| fdc  | `fd --ignore-case`   | 不区分大小写地列出所有文件。                    |
-| fdd  | `fd --list-details`  | 列出所有文件的详细信息。                        |
-| fde  | `fd --extension`     | 列出具有特定扩展名的所有文件。                  |
-| fdf  | `fd --follow`        | 列出所有文件并跟随符号链接。                    |
-| fdh  | `fd --help`          | 列出帮助信息。                                  |
-| fdh  | `fd --hidden`        | 列出所有文件，包括隐藏文件。                    |
-| fdn  | `fd --glob`          | 使用 glob 模式列出所有文件。                    |
-| fdo  | `fd --owner`         | 列出具有特定所有者的所有文件。                  |
-| fds  | `fd --size`          | 列出具有特定大小的所有文件。                    |
-| fdu  | `fd --exclude`       | 列出所有文件，排除特定模式。                    |
-| fdv  | `fd --version`       | 列出版本信息。                                  |
-| fdx  | `fd --exec`          | 对每个搜索结果执行命令。                        |
-| find | `fd`                 | fd 是 find 的一个简单、快速且用户友好的替代品。 |
+| 别名 | 描述 |
+|:---|:---|
+| `fd` | 带颜色输出运行 fd |
+| `fda` | 列出带绝对路径的文件 |
+| `fdc` | 不区分大小写搜索 |
+| `fdd` | 列出带详情的文件 |
+| `fde` | 按指定扩展名搜索 |
+| `fdf` | 跟随符号链接 |
+| `fdh` | 显示 fd 帮助 |
+| `fdn` | 列出匹配 glob 模式的文件 |
+| `fdo` | 列出带所有者信息的文件 |
+| `fds` | 列出带大小的文件 |
+| `fdu` | 使用排除规则列出文件 |
+| `fdv` | 显示 fd 版本 |
+| `fdx` | 对每个结果执行命令 |

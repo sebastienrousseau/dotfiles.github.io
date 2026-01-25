@@ -1,44 +1,52 @@
 ---
-description: modern aliases for Dotfiles
+title: "Modern Tooling Aliases: Rust-Based Unix Replacements"
+description: "Modern shell aliases for eza, bat, and ripgrep. Replace legacy Unix tools with faster Rust-based alternatives."
 lang: en-GB
-metaTitle: modern aliases - Dotfiles
+metaTitle: "Modern Tooling Aliases | Dotfiles"
 permalink: /aliases/modern/
+sidebar: true
+meta:
+  - name: keywords
+    content: "modern aliases, eza, bat, ripgrep, rust cli tools, dotfiles, shell"
 ---
 
 # Modern Tooling Aliases
 
-Manage Modern Tooling aliases. Part of the **Universal Dotfiles** configuration.
+Faster, smarter replacements for legacy Unix commands.
 
-![Dotfiles banner][banner]
+## Overview
 
-## 📖 Description
+The modern aliases defined in `modern.aliases.sh` provide Rust-based alternatives to traditional Unix tools. These aliases are automatically loaded by `chezmoi` and gracefully fall back to standard commands when modern tools are unavailable.
 
-These aliases are defined in `modern.aliases.sh` and are automatically loaded by `chezmoi`.
-They provide modern replacements for legacy Unix tools (Rust-based).
+## Reference
 
-## ⚡ Aliases
+### File Listing with eza
 
-### File Listing (eza)
+Replaces `ls` when `eza` is installed.
 
-If `eza` is installed (replacing `ls`):
+| Alias | Command | Description |
+|-------|---------|-------------|
+| `ls` | `eza --icons` | List files with icons |
+| `ll` | `eza -alF` | Long list format |
+| `la` | `eza -a` | List all files including hidden |
+| `lt` | `eza --tree` | Display directory tree |
 
-- `ls` - List files (`eza --icons`)
-- `ll` - Long list (`eza -alF`)
-- `la` - List all (`eza -a`)
-- `lt` - List tree (`eza --tree`)
+Falls back to standard `ls` if `eza` is not installed.
 
-_(Falls back to standard `ls` if `eza` is missing)_
+### File Content with bat
 
-### File Content (bat)
+Replaces `cat` when `bat` is installed.
 
-If `bat` is installed (replacing `cat`):
+| Alias | Command | Description |
+|-------|---------|-------------|
+| `cat` | `bat` | Display file content with syntax highlighting |
 
-- `cat` - Display file content with syntax highlighting
+### Searching with ripgrep
 
-### Searching (rg)
+Replaces `grep` when `rg` is installed.
 
-If `rg` is installed (replacing `grep`):
-
-- `grep` - Search with Ripgrep
+| Alias | Command | Description |
+|-------|---------|-------------|
+| `grep` | `rg` | Search file contents with Ripgrep |
 
 [banner]: https://kura.pro/dotfiles/v2/images/titles/title-dotfiles.svg

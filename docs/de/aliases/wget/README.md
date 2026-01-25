@@ -1,27 +1,42 @@
 ---
-description: Die Wget-Aliase erstellen hilfreiche Shortcut-Aliase für den `wget` Befehl. Wget ist ein Tool, das Dateien aus dem Internet herunterlädt.
+description: Shell-Aliase fuer wget Dateidownloads. Dateien aus dem Internet mit Resume-Unterstuetzung herunterladen.
 lang: de-DE
 metaTitle: Wget Aliase - Dotfiles (DE)
 permalink: /de/aliases/wget/
+sidebar: true
+
+meta:
+  - name: keywords
+    content: wget aliase, datei download, wget resume, wget verknuepfungen, dotfiles, shell
+  - name: twitter:card
+    content: summary
+  - name: twitter:title
+    content: Wget Aliase - Dotfiles
+  - name: twitter:description
+    content: Shell-Aliase fuer wget Dateidownloads mit Resume-Unterstuetzung.
+  - name: og:title
+    content: Wget Aliase - Dotfiles
+  - name: og:description
+    content: Shell-Aliase fuer wget Dateidownloads mit Resume-Unterstuetzung.
+  - name: og:image:alt
+    content: Dotfiles - Simply designed to fit your shell life
+  - name: og:locale
+    content: de_DE
 ---
 
 # Wget Aliase
 
-Diese `wget.aliases.sh` Datei erstellt hilfreiche Shortcut-Aliase für viele häufig
-verwendete [wget](https://www.gnu.org/software/wget/) Befehle.
+Dateien effizient aus dem Internet herunterladen.
 
-Die Wget-Aliase erstellen hilfreiche Shortcut-Aliase für den `wget` Befehl. Wget ist
-ein Tool, das Dateien aus dem Internet herunterlädt.
+## Uebersicht
 
-## Wget
+Diese Aliase sind in `wget.aliases.sh` definiert und werden automatisch von Chezmoi geladen. Sie bieten schnellen Zugriff auf wget mit gaengigen Optionen fuer Dateidownloads.
 
-GNU [Wget](https://www.gnu.org/software/wget/) ist ein freies Dienstprogramm für
-den nicht-interaktiven Download von Dateien aus dem Web. Es unterstützt HTTP, HTTPS und
-FTP-Protokolle sowie den Abruf über HTTP-Proxies.
+## Referenz
 
-| Alias | Befehl             | Beschreibung                                      |
-| ----- | ------------------ | ------------------------------------------------- |
-| wg    | `wget`             | Lade eine Datei herunter.                         |
-| wgc   | `wg`               | Setze eine teilweise heruntergeladene Datei fort. |
-| wge   | `wg -e robots=off` | Lade eine Datei herunter, ignoriere robots.txt.   |
-| wget  | `wget -c`          | Setze eine teilweise heruntergeladene Datei fort. |
+| Alias | Beschreibung |
+|:---|:---|
+| `wg` | wget |
+| `wgc` | wget mit Resume-Unterstuetzung |
+| `wge` | wget mit robots=off |
+| `wget` | wget mit Resume-Unterstuetzung |

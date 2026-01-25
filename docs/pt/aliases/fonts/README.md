@@ -1,22 +1,31 @@
 ---
-description: Aliases de fontes para Dotfiles
+title: "Aliases de Fontes: Gerenciamento de Cache de Fontes"
+description: "Aliases de shell para gerenciar fontes do sistema e atualizar cache de fontes no Linux e macOS."
 lang: pt-BR
-metaTitle: Aliases de Fontes - Dotfiles (BR)
+metaTitle: "Aliases de Fontes | Dotfiles"
 permalink: /pt/aliases/fonts/
+sidebar: true
+meta:
+  - name: keywords
+    content: "aliases fontes, cache fontes, fc-cache, aliases shell, dotfiles"
 ---
 
 # Aliases de Fontes
 
-Aliases para gerenciar fontes do sistema e caches.
+Gerencie fontes do sistema e cache de fontes.
 
-## 🔡 Comandos
+## Visao Geral
 
-| Alias          | Descrição                                               |
-| -------------- | ------------------------------------------------------- |
-| `update-fonts` | Atualiza o cache de fontes do sistema (`fc-cache -fv`). |
-| `list-fonts`   | Lista todas as famílias de fontes instaladas.           |
+Estes aliases sao definidos em `fonts.aliases.sh` e carregados automaticamente pelo Chezmoi.
 
-## 📦 Fontes Instaladas
+## Referencia
 
-- **JetBrainsMono Nerd Font**: Fonte principal do terminal.
-- **Symbols Nerd Font**: Ícone de fallback.
+| Alias | Descricao |
+|-------|-------------|
+| `update-fonts` | Atualiza cache de fontes (`fc-cache -fv`) |
+| `list-fonts` | Lista familias de fontes instaladas |
+
+## Fontes Instaladas
+
+- **JetBrainsMono Nerd Font**: Fonte principal do terminal
+- **Symbols Nerd Font**: Fallback de icones

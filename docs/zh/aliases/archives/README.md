@@ -1,85 +1,117 @@
 ---
-description: 归档别名能够创建和处理各种格式的归档。
+description: 用于处理 tar、zip、7z 等格式的归档和压缩别名。使用简单命令提取、压缩和管理归档。
 lang: zh-CN
-metaTitle: 归档别名 - Dotfiles (CN)
-permalink: /zh/aliases/archives/
+metaTitle: Archives 别名 - Dotfiles (CN)
+permalink: /aliases/archives/
+sidebar: true
+
+meta:
+  - name: keywords
+    content: 归档, 压缩, tar, zip, 7z, gzip, 提取, shell 别名, dotfiles
+  - name: twitter:card
+    content: summary
+  - name: twitter:description
+    content: 用于处理 tar、zip、7z 等格式的归档和压缩别名。使用简单命令提取、压缩和管理归档。
+  - name: twitter:title
+    content: Archives 别名 - Dotfiles
+  - name: og:title
+    content: Archives 别名 - Dotfiles
+  - name: og:description
+    content: 用于处理 tar、zip、7z 等格式的归档和压缩别名。使用简单命令提取、压缩和管理归档。
+  - name: og:image:alt
+    content: Dotfiles - 为你的 Shell 生活精心设计
+  - name: og:locale
+    content: zh_CN
 ---
 
-# 归档别名
+# Archives 别名
 
-`archives.aliases.sh` 文件创建了有用的快捷别名，用于归档文件和目录。
-这些别名能够创建和处理各种格式的归档。
+压缩、提取和管理归档。支持所有主要格式。
 
-## 7-Zip
+## 概述
 
-[7-Zip](http://www.7-zip.org/) 是一个具有高压缩比的文件归档器。
+这些别名定义在 `archives.aliases.sh` 中，由 Chezmoi 自动加载。
 
-| 别名 | 命令   | 描述                                     |
-| ---- | ------ | ---------------------------------------- |
-| c7z  | `7z a` | 将整个目录（包括子目录）压缩为 7z 文件。 |
-| e7z  | `7z x` | 从 7z 文件中提取整个目录（包括子目录）。 |
+## 参考
 
-## Bzip2
+### 通用提取
 
-[Bzip2](http://www.bzip.org/) 是一个免费可用、无专利、高质量的数据压缩器。
+`extract` 命令（简写 `x`）自动检测并提取任何归档：
 
-| 别名 | 命令      | 描述                    |
-| ---- | --------- | ----------------------- |
-| cbz2 | `bzip2`   | 将文件压缩为 bz2 文件。 |
-| ebz2 | `bunzip2` | 从 bz2 文件中提取文件。 |
+```bash
+extract archive.tar.gz
+```
 
-## Gzip
+**支持的格式：** `.tar.bz2`、`.tbz2`、`.tar.gz`、`.tgz`、`.tar.xz`、`.tar.zst`、`.tar`、`.bz2`、`.gz`、`.rar`、`.zip`、`.Z`、`.7z`、`.zst`、`.xz`、`.lz4`、`.lha`、`.lzh`、`.arj`、`.arc`、`.dms`
 
-[Gzip](https://www.gnu.org/software/gzip/) 是一个流行的数据压缩程序，作为 compress 的替代品。
+### 压缩
 
-| 别名 | 命令     | 描述                   |
-| ---- | -------- | ---------------------- |
-| cgz  | `gzip`   | 将文件压缩为 gz 文件。 |
-| egz  | `gunzip` | 从 gz 文件中提取文件。 |
+使用 `compress` 命令（简写 `ac`）创建归档：
 
-## Jar
+```bash
+compress tgz file1 file2 directory output.tar.gz
+compress zip -l 9 important_files backup.zip
+```
 
-[Jar](https://docs.oracle.com/javase/tutorial/deployment/jar/) 是一种文件格式，用于将许多文件聚合到一个文件中，以便在 Java 平台上分发应用软件或库。
+**支持的格式：** `tar`、`tgz`、`tbz2`、`txz`、`tzst`、`zip`、`7z`、`gz`、`bz2`、`xz`、`zst`、`lz4`、`rar`
 
-| 别名 | 命令       | 描述                                      |
-| ---- | ---------- | ----------------------------------------- |
-| cjar | `jar -cvf` | 将整个目录（包括子目录）压缩为 jar 文件。 |
-| ejar | `jar -xvf` | 从 jar 文件中提取整个目录（包括子目录）。 |
+### 备份
 
-## Tar
+使用 `backup`（简写 `bak`）创建带时间戳的备份：
 
-[Tar](https://www.gnu.org/software/tar/) 是一个用于将许多文件存储在单个文件中的计算机程序。
+```bash
+backup important_folder
+backup database.sql zip
+```
 
-| 别名 | 命令        | 描述                                         |
-| ---- | ----------- | -------------------------------------------- |
-| ctar | `tar -cvf`  | 将整个目录（包括子目录）压缩为 tar 文件。    |
-| etar | `tar -xvf`  | 从 tar 文件中提取整个目录（包括子目录）。    |
-| ctgz | `tar -cvzf` | 将整个目录（包括子目录）压缩为 tar.gz 文件。 |
-| etgz | `tar -xvzf` | 从 tar.gz 文件中提取整个目录（包括子目录）。 |
+### 列出内容
 
-## Xz
+使用 `list_archive`（简写 `lar`）查看归档内容：
 
-[Xz](https://tukaani.org/xz/) 是一个通用的数据压缩软件，具有高压缩比。
+```bash
+list_archive backup.tar.gz
+```
 
-| 别名 | 命令       | 描述                                     |
-| ---- | ---------- | ---------------------------------------- |
-| cxz  | `xz -zcvf` | 将整个目录（包括子目录）压缩为 xz 文件。 |
-| exz  | `xz -zxvf` | 从 xz 文件中提取整个目录（包括子目录）。 |
+### 归档工具
 
-## Zip
+| 别名 | 描述 |
+|:---|:---|
+| `c7z` | 创建 7z 归档 |
+| `x7z` | 提取 7z 归档 |
+| `l7z` | 列出 7z 内容 |
+| `ctar` | 创建 tar 归档 |
+| `xtar` | 提取 tar 归档 |
+| `ltar` | 列出 tar 内容 |
+| `ctgz` | 创建 tar.gz 归档 |
+| `xtgz` | 提取 tar.gz 归档 |
+| `ltgz` | 列出 tar.gz 内容 |
+| `ctbz` | 创建 tar.bz2 归档 |
+| `xtbz` | 提取 tar.bz2 归档 |
+| `ltbz` | 列出 tar.bz2 内容 |
+| `ctxz` | 创建 tar.xz 归档 |
+| `xtxz` | 提取 tar.xz 归档 |
+| `ltxz` | 列出 tar.xz 内容 |
+| `ctzst` | 创建 tar.zst 归档 |
+| `xtzst` | 提取 tar.zst 归档 |
+| `ltzst` | 列出 tar.zst 内容 |
+| `czip` | 创建 zip 归档 |
+| `xzip` | 提取 zip 归档 |
+| `lzip` | 列出 zip 内容 |
+| `crar` | 创建 rar 归档 |
+| `xrar` | 提取 rar 归档 |
+| `lrar` | 列出 rar 内容 |
 
-[Zip](https://zh.wikipedia.org/wiki/Zip) 是一种文件格式，用于输出包含一个或多个文件的单个文件。
+### 压缩工具
 
-| 别名 | 命令     | 描述                                      |
-| ---- | -------- | ----------------------------------------- |
-| cz   | `zip -r` | 将整个目录（包括子目录）压缩为 zip 文件。 |
-| ez   | `unzip`  | 从 zip 文件中提取整个目录（包括子目录）。 |
-
-## Zstd
-
-[Zstd](https://facebook.github.io/zstd/) 是一种快速无损压缩算法，针对 zlib 级别的实时压缩场景和更好的压缩比。
-
-| 别名  | 命令         | 描述                                      |
-| ----- | ------------ | ----------------------------------------- |
-| czstd | `zstd -zcvf` | 将整个目录（包括子目录）压缩为 zst 文件。 |
-| ezstd | `zstd -zxvf` | 从 zst 文件中提取整个目录（包括子目录）。 |
+| 别名 | 描述 |
+|:---|:---|
+| `cgz` | 使用 gzip 压缩 |
+| `xgz` | 提取 gzip |
+| `cbz` | 使用 bzip2 压缩 |
+| `xbz` | 提取 bzip2 |
+| `cxz` | 使用 xz 压缩 |
+| `xxz` | 提取 xz |
+| `czst` | 使用 zstd 压缩 |
+| `xzst` | 提取 zstd |
+| `clz4` | 使用 lz4 压缩 |
+| `xlz4` | 提取 lz4 |

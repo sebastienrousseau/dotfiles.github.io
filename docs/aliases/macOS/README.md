@@ -1,42 +1,64 @@
 ---
-description: macOS aliases for Dotfiles
+title: "macOS Aliases: Shell Shortcuts for Mac"
+description: "Shell aliases for macOS system management, Finder control, and maintenance tasks in Dotfiles."
 lang: en-GB
-metaTitle: macOS aliases - Dotfiles
+metaTitle: "macOS Aliases | Dotfiles"
 permalink: /aliases/macOS/
+sidebar: true
+meta:
+  - name: keywords
+    content: "macOS aliases, shell shortcuts, Finder aliases, Mac terminal, dotfiles"
 ---
 
 # macOS Aliases
 
-Manage macOS aliases. Part of the **Universal Dotfiles** configuration.
+Shell shortcuts for macOS system management and maintenance.
 
-![Dotfiles banner][banner]
+## Overview
 
-## 📖 Description
+These aliases are defined in `macOS.aliases.sh` and are automatically loaded by chezmoi. They provide quick access to common macOS operations including Finder control, system maintenance, and developer tools.
 
-These aliases are defined in `macOS.aliases.sh` and are automatically loaded by `chezmoi`.
+## Reference
 
-## ⚡ Aliases
+### System Management
 
-This code provides a set of aliases for macOS.
+| Alias | Description |
+|-------|-------------|
+| `lockScreen` | Lock the screen |
+| `wifiOn` | Turn on Wi-Fi |
+| `wifiOff` | Turn off Wi-Fi |
+| `vp` | Verify macOS Permissions |
+| `vv` | Verify macOS Volume |
 
-- `clds` Recursively delete .DS_Store files.
-- `clls` Clean up LaunchServices to remove duplicates in the
-  'Open With' menu.
-- `finderHideHidden` Hide hidden files in Finder.
-- `finderShowHidden` Show hidden files in Finder.
-- `hideDesktopIcons` Hide all icons on the Desktop.
-- `iphone` Open the device simulators.
-- `lockScreen` Lock the screen of the mac.
-- `ofd` Open the current directory in a Finder window.
-- `purge` Purging Xcode DerivedData.
-- `safariSafeMode` Launch Safari in Safe Mode.
-- `showDesktopIcons` Show all icons on the Desktop.
-- `screensaverDesktop` Run a screensaver on the Desktop.
-- `trash` Empty the Trash on all mounted volumes and the main HDD.
-- `vp` Verify macOS Permissions.
-- `vv` Verify macOS Volume.
-- `wifiOn` Turn on Wi-Fi.
-- `wifiOff` Turn off Wi-Fi.
-- `xcode` Launch XCode app in macOS.
+### Finder
 
-[banner]: https://kura.pro/dotfiles/v2/images/titles/title-dotfiles.svg
+| Alias | Description |
+|-------|-------------|
+| `ofd` | Open the current directory in Finder |
+| `finderShowHidden` | Show hidden files in Finder |
+| `finderHideHidden` | Hide hidden files in Finder |
+| `showDesktopIcons` | Show all icons on the Desktop |
+| `hideDesktopIcons` | Hide all icons on the Desktop |
+
+### Cleanup
+
+| Alias | Description |
+|-------|-------------|
+| `clds` | Recursively delete .DS_Store files |
+| `clls` | Clean up LaunchServices to remove duplicates in the Open With menu |
+| `trash` | Empty the Trash on all mounted volumes and the main HDD |
+
+### Developer Tools
+
+| Alias | Description |
+|-------|-------------|
+| `xcode` | Launch Xcode |
+| `purge` | Purge Xcode DerivedData |
+| `iphone` | Open device simulators |
+| `safariSafeMode` | Launch Safari in Safe Mode |
+
+### Display
+
+| Alias | Description |
+|-------|-------------|
+| `screensaverDesktop` | Run a screensaver on the Desktop |

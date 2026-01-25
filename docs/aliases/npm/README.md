@@ -1,53 +1,71 @@
 ---
-description: The NPM aliases are a collection of aliases that allow you to interact with the `npm` command line tool. Npm is a package manager for the JavaScript programming language.
+title: "NPM Aliases: Streamline Your Node Package Management"
+description: "Speed up npm workflows with intuitive shell aliases for install, build, test, and publish commands."
 lang: en-GB
-metaTitle: The NPM aliases - Dotfiles (UK)
+metaTitle: "NPM Aliases | Dotfiles"
 permalink: /aliases/npm/
-
+sidebar: true
 meta:
   - name: keywords
-    content: aliases, npm, node, node package manager, package manager, linux, macos, shell, terminal, windows
+    content: npm aliases, node package manager, npm shortcuts, shell aliases, dotfiles, npm commands
   - name: twitter:card
-    content: The NPM aliases are a collection of aliases that allow you to interact with the `npm` command line tool. Npm is a package manager for the JavaScript programming language.
-  - name: twitter:description
-    content: The NPM aliases are a collection of aliases that allow you to interact with the `npm` command line tool. Npm is a package manager for the JavaScript programming language.
+    content: summary
   - name: twitter:title
-    content: The NPM aliases - Dotfiles (UK)
+    content: NPM Aliases | Dotfiles
+  - name: twitter:description
+    content: Speed up npm workflows with intuitive shell aliases for install, build, test, and publish commands.
   - name: og:title
-    content: The NPM aliases - Dotfiles (UK)
+    content: NPM Aliases | Dotfiles
   - name: og:description
-    content: The NPM aliases are a collection of aliases that allow you to interact with the `npm` command line tool. Npm is a package manager for the JavaScript programming language.
+    content: Speed up npm workflows with intuitive shell aliases for install, build, test, and publish commands.
   - name: og:image:alt
     content: Dotfiles - Simply designed to fit your shell life
   - name: og:locale
     content: en_GB
 ---
 
-# NPM aliases
+# NPM Aliases
 
-The `npm.aliases.sh` file creates helpful shortcut aliases
-for [npm](https://www.npmjs.com/).
+Simplify your Node.js development with shorthand commands for the npm package manager.
 
-## NPM
+![Dotfiles banner][banner]
 
-[npm](https://www.npmjs.com/) is a package manager for the JavaScript
-programming language. It is the default package manager for the JavaScript
-runtime environment Node.js.
+## Overview
 
-| Alias | Command         | Description           |
-| ----- | --------------- | --------------------- |
-| npb   | `npm build`     | Build npm script.     |
-| npc   | `npm cache`     | Cache npm package.    |
-| npd   | `npm dev`       | Dev npm script.       |
-| npg   | `npm global`    | Global npm package.   |
-| npi   | `npm install`   | Install npm package.  |
-| npl   | `npm list`      | List npm packages.    |
-| npp   | `npm publish`   | Publish npm package.  |
-| npr   | `npm run`       | Run npm script.       |
-| nprw  | `npm run watch` | Run npm script watch. |
-| nps   | `npm start`     | Start npm script.     |
-| npsv  | `npm serve`     | Serve npm script.     |
-| npt   | `npm test`      | Test npm script.      |
-| npu   | `npm update`    | Update npm package.   |
-| npx   | `npm exec`      | Exec npm package.     |
-| npy   | `npm why`       | Why npm package.      |
+These aliases are defined in `npm.aliases.sh` and are automatically loaded by chezmoi. They provide quick access to common npm operations.
+
+## Reference
+
+### Package Management
+
+| Alias | Command | Description |
+|-------|---------|-------------|
+| `npi` | `npm install` | Install npm package |
+| `npg` | `npm install -g` | Global npm package |
+| `nprm` | `npm uninstall` | Remove npm package |
+| `npu` | `npm update` | Update npm package |
+| `npl` | `npm list` | List npm packages |
+| `npc` | `npm cache` | Cache npm package |
+
+### Scripts
+
+| Alias | Command | Description |
+|-------|---------|-------------|
+| `npr` | `npm run` | Run npm script |
+| `nps` | `npm start` | Start npm script |
+| `npb` | `npm run build` | Build npm script |
+| `npd` | `npm run dev` | Dev npm script |
+| `npt` | `npm test` | Test npm script |
+| `nprw` | `npm run watch` | Run npm script watch |
+| `npsv` | `npm run serve` | Serve npm script |
+
+### Publishing and Analysis
+
+| Alias | Command | Description |
+|-------|---------|-------------|
+| `npp` | `npm publish` | Publish npm package |
+| `npa` | `npm audit` | Audit npm packages |
+| `npx` | `npm exec` | Exec npm package |
+| `npy` | `npm why` | Why npm package |
+
+[banner]: https://kura.pro/dotfiles/v2/images/titles/title-dotfiles.svg

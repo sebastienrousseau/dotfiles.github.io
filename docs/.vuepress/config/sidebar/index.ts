@@ -1,2 +1,15 @@
 export { enSidebar } from "./en";
 export { frSidebar } from "./fr";
+export { esSidebar } from "./es";
+export { deSidebar } from "./de";
+export { zhSidebar } from "./zh";
+export { ptSidebar } from "./pt";
+export { jaSidebar } from "./ja";
+export { koSidebar } from "./ko";
+export { ruSidebar } from "./ru";
+export { itSidebar } from "./it";
+export { arSidebar } from "./ar";
+export { heSidebar } from "./he";
+export { hiSidebar } from "./hi";
+export { nlSidebar } from "./nl";
+export { idSidebar } from "./id";

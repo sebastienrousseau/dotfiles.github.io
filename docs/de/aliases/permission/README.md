@@ -1,46 +1,74 @@
 ---
-description: Berechtigungs-Aliase für Dotfiles
+description: Shell-Aliase zum Verwalten von Dateiberechtigungen mit chmod und chown. Schnelle Zugriffssteuerung mit numerischen Kuerzeln.
 lang: de-DE
-metaTitle: Berechtigungs-Aliase - Dotfiles (DE)
+metaTitle: Permission Aliase - Dotfiles (DE)
 permalink: /de/aliases/permission/
+sidebar: true
+
+meta:
+  - name: keywords
+    content: permission aliase, chmod aliase, chown aliase, dateiberechtigungen, dotfiles, shell
+  - name: twitter:card
+    content: summary
+  - name: twitter:title
+    content: Permission Aliase - Dotfiles
+  - name: twitter:description
+    content: Shell-Aliase zum Verwalten von Dateiberechtigungen mit chmod und chown.
+  - name: og:title
+    content: Permission Aliase - Dotfiles
+  - name: og:description
+    content: Shell-Aliase zum Verwalten von Dateiberechtigungen mit chmod und chown.
+  - name: og:image:alt
+    content: Dotfiles - Simply designed to fit your shell life
+  - name: og:locale
+    content: de_DE
 ---
 
-# Berechtigungs-Aliase
+# Permission Aliase
 
-Verwalten Sie Berechtigungs-Aliase. Teil der **Universal Dotfiles** Konfiguration.
+Schnelle Berechtigungsverwaltung mit numerischen Kuerzeln.
 
-![Dotfiles banner][banner]
+## Uebersicht
 
-## 📖 Beschreibung
+Diese Aliase sind in `permission.aliases.sh` definiert und werden automatisch von Chezmoi geladen. Sie bieten schnellen Zugriff auf gaengige Berechtigungseinstellungen ueber numerische Oktal-Kuerzel sowie Befehle zur Verwaltung von Dateibesitz.
 
-Diese Aliase sind in `permission.aliases.sh` definiert und werden automatisch von `chezmoi` geladen.
+## Referenz
 
-## ⚡ Aliase
+### Numerische Berechtigungskuerzel
 
-Dieser Code stellt eine Reihe von Aliasen für Dateiberechtigungen bereit.
+| Alias | Beschreibung |
+|:---|:---|
+| `000` | Keine Lese-, Schreib- oder Ausfuehrrechte fuer jemanden |
+| `400` | Nur Lesen fuer Besitzer |
+| `444` | Nur Lesen fuer alle |
+| `600` | Lesen und Schreiben nur fuer Besitzer |
+| `644` | Lesen fuer alle, Schreiben nur fuer Besitzer |
+| `666` | Lesen und Schreiben fuer alle |
+| `755` | Voller Zugriff fuer Besitzer, Lesen/Ausfuehren fuer andere |
+| `764` | Lesen/Schreiben fuer Besitzer und Gruppe, Lesen fuer andere |
+| `777` | Voller Zugriff fuer alle |
 
-- `000` Setze Berechtigungen auf kein Lesen, Schreiben oder Ausführen für Benutzer, Gruppe
-  und andere.
-- `400` Setze Berechtigungen auf kein Lesen oder Schreiben, aber erlaube Ausführen nur für den Benutzer.
-- `444` Setze Berechtigungen auf kein Schreiben oder Ausführen, aber erlaube Lesen für alle.
-- `600` Setze Berechtigungen auf Lesen und Schreiben nur für den Benutzer.
-- `644` Setze Berechtigungen auf Lesen für alle, aber Schreiben nur für den Benutzer.
-- `666` Setze Berechtigungen auf Lesen und Schreiben für alle.
-- `755` Setze Berechtigungen auf Lesen, Schreiben und Ausführen für den Benutzer, aber nur
-  Lesen und Ausführen für Gruppe und andere.
-- `764` Setze Berechtigungen auf Lesen und Schreiben für Benutzer und Gruppe, aber nur
-  Lesen für andere.
-- `777` Setze Berechtigungen auf Lesen, Schreiben und Ausführen für alle.
-- `chgrp` Ändere die Gruppenzugehörigkeit von Dateien oder Verzeichnissen.
-- `chgrpr` Ändere die Gruppenzugehörigkeit von Dateien oder Verzeichnissen rekursiv.
-- `chgrpu` Ändere die Gruppenzugehörigkeit von Dateien oder Verzeichnissen rekursiv auf
-  den aktuellen Benutzer.
-- `chmod` Ändere Dateimodus-Bits.
-- `chmodr` Ändere Dateimodus-Bits rekursiv.
-- `chmodu` Ändere Dateimodus-Bits rekursiv auf den aktuellen Benutzer.
-- `chmox` Mache eine Datei ausführbar.
-- `chown` Ändere Dateieigentümer und Gruppe.
-- `chownr` Ändere Dateieigentümer und Gruppe rekursiv.
-- `chownu` Ändere Dateieigentümer und Gruppe rekursiv auf den aktuellen Benutzer.
+### chmod-Befehle
 
-[banner]: https://kura.pro/dotfiles/v2/images/titles/title-dotfiles.svg
+| Alias | Beschreibung |
+|:---|:---|
+| `chmod` | Dateimodus-Bits aendern |
+| `chmodr` | Dateimodus-Bits rekursiv aendern |
+| `chmodu` | Dateimodus-Bits rekursiv fuer aktuellen Benutzer aendern |
+| `chmox` | Datei ausfuehrbar machen |
+
+### chown-Befehle
+
+| Alias | Beschreibung |
+|:---|:---|
+| `chown` | Dateibesitzer und -gruppe aendern |
+| `chownr` | Dateibesitzer und -gruppe rekursiv aendern |
+| `chownu` | Dateibesitzer und -gruppe rekursiv auf aktuellen Benutzer setzen |
+
+### chgrp-Befehle
+
+| Alias | Beschreibung |
+|:---|:---|
+| `chgrp` | Gruppenbesitz aendern |
+| `chgrpr` | Gruppenbesitz rekursiv aendern |
+| `chgrpu` | Gruppenbesitz rekursiv auf aktuelle Benutzergruppe setzen |

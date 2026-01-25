@@ -10,7 +10,7 @@ subtitle: La nouvelle génération de fichiers de configuration Bash pour macOS,
 tagline: La nouvelle génération de fichiers de configuration Bash pour macOS, Linux et Windows. Une collection de scripts, d'alias, de fonctions que vous pouvez utiliser pour personnaliser votre shell.
 title: Les Dotfiles - Conçus pour s'adapter à votre vie de shell. (FR)
 actionText: En savoir plus →
-actionLink: /fr/apropos/
+actionLink: /fr/about/
 features:
   - title: Noyau Moderne
     details: "Propulsé par Rust : Atuin (Historique), Yazi (Fichiers), Zellij (Multiplexeur), et Ghostty (Terminal)."
@@ -22,9 +22,9 @@ footer: Copyright © Sebastien Rousseau 2015-2026. Tous droits réservés.
 
 meta:
   - name: keywords
-    content: bash, configuration, dotfiles, linux, macos, shell, terminal, windows
+    content: bash, configuration, dotfiles, linux, macos, shell, terminal, windows, personalisables, développement, rust, zellij, yazi, atuin
   - name: twitter:card
-    content: La nouvelle génération de fichiers de configuration Bash pour macOS, Linux et Windows. Une collection de scripts, d'alias, de fonctions que vous pouvez utiliser pour personnaliser votre shell.
+    content: summary_large_image
   - name: twitter:description
     content: La nouvelle génération de fichiers de configuration Bash pour macOS, Linux et Windows. Une collection de scripts, d'alias, de fonctions que vous pouvez utiliser pour personnaliser votre shell.
   - name: twitter:title

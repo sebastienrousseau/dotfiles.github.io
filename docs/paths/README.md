@@ -1,50 +1,61 @@
 ---
-description: How Dotfiles manages your \$PATH hierarchy to ensure the right tools are loaded in the right order.
+description: How Dotfiles manages your PATH hierarchy to ensure the right tools are loaded in the right order.
 lang: en-GB
 metaTitle: Paths - Dotfiles (UK)
 permalink: /paths/
 
 meta:
   - name: keywords
-    content: path, environment, variables, hierarchy, dotfiles, chezmoi
+    content: path, environment, variables, hierarchy, dotfiles, chezmoi, shell, configuration
+  - name: twitter:card
+    content: summary
+  - name: twitter:description
+    content: How Dotfiles manages your PATH hierarchy to ensure the right tools are loaded in the right order.
+  - name: twitter:title
+    content: Paths - Dotfiles
+  - name: og:title
+    content: Paths - Dotfiles
+  - name: og:description
+    content: How Dotfiles manages your PATH hierarchy to ensure the right tools are loaded in the right order.
+  - name: og:image:alt
+    content: Dotfiles - Simply designed to fit your shell life
+  - name: og:locale
+    content: en_GB
 ---
 
-# Path Management
+# Paths
 
-One of the most critical roles of Dotfiles is managing your `$PATH` environment variable. This determines which version of a tool is executed when you type a command.
+Modular `PATH` management. Ensure the right tools load in the right order.
 
-We adhere to a strict hierarchy to ensure consistency across macOS and Linux.
+## Discover
 
-## The Hierarchy
+Path configurations are split into priority-based files. During `chezmoi apply`:
 
-From highest priority (checked first) to lowest:
+1. Files in this directory are scanned alphabetically
+2. Content is aggregated into `~/.config/shell/paths.sh`
+3. Sourced by `.zshrc` at startup
 
-1.  **Local Binaries** (`~/.local/bin`)
-    - **Priority**: 1
-    - **Purpose**: Custom user scripts, `dot` CLI, and tools installed via `pipx` or other user-level package managers.
-    - **Reason**: Allows you to override system or Homebrew tools with your own versions.
+## Reference
 
-2.  **Application Binaries** (macOS)
-    - **Priority**: 2
-    - **Purpose**: Binaries from installed applications (e.g., VS Code, iTerm).
+| Script | Description |
+|:---|:---|
+| `00-default.paths.sh` | Base system paths (`/usr/bin`, `/sbin`) and Homebrew. Loaded first. |
+| `99-custom.paths.sh` | Custom user paths (language SDKs, local bins). Loaded last for precedence. |
 
-3.  **Language Runtimes**
-    - **Node.js**: `~/.node_modules/bin`
-    - **Go**: `~/go/bin`
-    - **Rust (Cargo)**: `~/.cargo/bin`
-    - **Ruby (User Gems)**: `~/.gem/ruby/bin`
-    - **Python (Pipx)**: `~/.local/share/pipx`
+## Get started
 
-4.  **Homebrew** (`/opt/homebrew/bin`)
-    - **Priority**: 3
-    - **Purpose**: Main package manager for macOS/Linux.
-    - **Note**: We purposely load Homebrew _before_ system paths to allow upgrading system tools (like `git` or `curl`).
+### Add a user path
 
-5.  **System Paths** (`/usr/bin`, `/bin`)
-    - **Priority**: Lowest
-    - **Purpose**: Default operating system tools.
-    - **Reason**: Fallback for fundamental utilities.
-
-## Deduplication
-
-Dotfiles automatically deduplicates your `$PATH` while preserving the order of precedence. This prevents the `$PATH` variable from growing indefinitely when spawning nested shells.
+1. Edit `99-custom.paths.sh` or create a new file (e.g., `50-myproject.paths.sh`)
+2. Add your path:
+   ```bash
+   export PATH="$PATH:/path/to/dir"
+   ```
+3. Apply changes:
+   ```bash
+   chezmoi apply
+   ```
+4. Verify:
+   ```bash
+   echo $PATH
+   ```

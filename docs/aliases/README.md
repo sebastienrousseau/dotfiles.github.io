@@ -1,22 +1,22 @@
 ---
-description: Aliases allow you to create shortcuts for shell commands that you use frequently. This allows you to be more productive and efficient by reducing the amount of typing you have to do when using the shell regularly.
+description: Shell aliases that create shortcuts for frequently used commands. Boost productivity by reducing typing in your daily workflow.
 lang: en-GB
 metaTitle: Aliases - Dotfiles (UK)
 permalink: /aliases/
 
 meta:
   - name: keywords
-    content: aliases, archives, cd, chmod, clear, commands, default, dig, dotfiles, du, editor, find, gcloud, git, gnu, heroku, interactive, jekyll, list, make, mkdir, npm, pnpm, ps, rsync, rust, shell, subversion, sudo, tmux, typing, update, uuid, wget
+    content: aliases, shell, bash, zsh, shortcuts, commands, dotfiles, chezmoi, productivity, terminal
   - name: twitter:card
-    content: Aliases allow you to create shortcuts for shell commands that you use frequently. This allows you to be more productive and efficient by reducing the amount of typing you have to do when using the shell regularly.
+    content: summary
   - name: twitter:description
-    content: Aliases allow you to create shortcuts for shell commands that you use frequently. This allows you to be more productive and efficient by reducing the amount of typing you have to do when using the shell regularly.
+    content: Shell aliases that create shortcuts for frequently used commands. Boost productivity by reducing typing in your daily workflow.
   - name: twitter:title
-    content: Aliases - Dotfiles (UK)
+    content: Aliases - Dotfiles
   - name: og:title
-    content: Aliases - Dotfiles (UK)
+    content: Aliases - Dotfiles
   - name: og:description
-    content: Aliases allow you to create shortcuts for shell commands that you use frequently. This allows you to be more productive and efficient by reducing the amount of typing you have to do when using the shell regularly.
+    content: Shell aliases that create shortcuts for frequently used commands. Boost productivity by reducing typing in your daily workflow.
   - name: og:image:alt
     content: Dotfiles - Simply designed to fit your shell life
   - name: og:locale
@@ -25,139 +25,77 @@ meta:
 
 # Aliases
 
-Aliases allow you to create shortcuts for shell commands that you use
-frequently. This allows you to be more productive and efficient by reducing the
-amount of typing you have to do when using the shell regularly. As an example,
-instead of typing `git status` you could type `gst` to obtain the same result.
+Modular shell aliases managed by **Chezmoi**. Type less, do more.
 
-This is a great way to save time and reduce considerably the amount of typing
-you have to do when using the terminal on a daily basis which helps you to be
-more productive and efficient.
+## Discover
 
-## Presets
+Aliases are organised into small, focused files — one for each tool or workflow. During `chezmoi apply`, all alias files are aggregated into `~/.config/shell/aliases.sh` and sourced by your shell.
 
-Dotfiles has a collection of configuration presets and diverse recipes that you
-can use to get started with.
+## Get started
 
-### Automatic System detection
+### Add an alias
 
-Dotfiles contains a utility function for detecting the current `ls` flavor that
-is in use in order to help setting up the right `LS_COLORS` environment
-variables to your system.
+1. Create a new file (e.g., `mytool/mytool.aliases.sh`)
+2. Define your aliases:
+   ```bash
+   alias mycmd="echo 'Hello World'"
+   ```
+3. Apply changes:
+   ```bash
+   chezmoi apply
+   ```
 
-The `LS_COLORS` environment variable is used by the `ls` command to colorize the
-output of the command.
+## Reference
 
-### Check built-in aliases
+Browse aliases by category:
 
-Type the following alias command in your terminal:
+<!-- markdownlint-disable MD013-->
 
-```bash
-alias
-```
+| Category | Description |
+| :--- | :--- |
+| [AI](ai/) | AI assistant and LLM tool shortcuts |
+| [Archives](archives/) | Compress and extract files |
+| [CD](cd/) | Navigate the file system |
+| [Chmod](chmod/) | Change file permissions |
+| [Clear](clear/) | Clear the terminal screen |
+| [Compliance](compliance/) | SOC2 and privacy tools |
+| [Configuration](configuration/) | Manage dotfiles and shell config |
+| [Default](default/) | Default shell aliases |
+| [Diagnostics](diagnostics/) | Self-healing and health checks |
+| [Dig](dig/) | Query DNS servers |
+| [Disk Usage](disk-usage/) | Display disk usage information |
+| [Docker](docker/) | Container management |
+| [Editor](editor/) | Configure text editors |
+| [Find](find/) | Search files and directories |
+| [Fonts](fonts/) | Font cache management |
+| [GCloud](gcloud/) | Google Cloud SDK tools |
+| [Git](git/) | Git version control |
+| [GNU](gnu/) | GNU core utilities |
+| [Go](go/) | Go language tools |
+| [Heroku](heroku/) | Heroku CLI |
+| [Installer](installer/) | Bootstrap and deployment |
+| [Interactive](interactive/) | Interactive shell behaviour |
+| [Kubernetes](kubernetes/) | Kubernetes, Helm, K9s |
+| [Legal](legal/) | License scanning tools |
+| [macOS](macOS/) | macOS-specific settings |
+| [Make](make/) | GNU Make utilities |
+| [Mkdir](mkdir/) | Create directories |
+| [Modern](modern/) | Rust-based tool replacements |
+| [NPM](npm/) | Node.js package manager |
+| [Permission](permission/) | File permissions |
+| [PNPM](pnpm/) | PNPM package manager |
+| [PS](ps/) | Process status |
+| [Python](python/) | Python utilities |
+| [Rsync](rsync/) | Efficient file transfer |
+| [Rust](rust/) | Rust programming tools |
+| [Security](security/) | Immutability and signing |
+| [Subversion](subversion/) | SVN version control |
+| [Sudo](sudo/) | Superuser operations |
+| [Terraform](terraform/) | Infrastructure as code |
+| [Tmux](tmux/) | Terminal multiplexer |
+| [Update](update/) | Update dotfiles |
+| [UUID](uuid/) | Generate UUIDs |
+| [Wget](wget/) | Command-line downloader |
+| [Yarn](yarn/) | Yarn package manager |
 
-### GNU Find utilities aliases
-
-macOS systems are based on BSD, rather than on GNU/Linux like RedHat, Debian,
-and Ubuntu. As a result, a lot of the command line tools that ship with macOS
-aren’t 100% compatible. For example, the `find` command on macOS doesn’t support
-the `-printf` option, which is used by the `locate` command. This means that the
-`locate` command doesn’t work on macOS. To fix this, you can install the GNU
-versions of these commands, which are fully compatible with the Linux versions.
-
-The GNU Find Utilities are the basic directory searching utilities of the GNU
-operating system. These programs are typically used in conjunction with other
-programs to provide modular and powerful directory search and file locating
-capabilities to other commands.
-
-The tools supplied with this package are:
-
-- find - search for files in a directory hierarchy
-- locate - list files in databases that match a pattern
-- updatedb - update a file name database
-- xargs - build and execute command lines from standard input
-
-Type the following alias command in your terminal:
-
-```bash
-brew install findutils
-```
-
-### The Dotfiles aliases
-
-The files provided in Dotfiles contain a few opinionated aliases that you might
-find useful. These are defined in the `./dist/lib/aliases` directory and loaded
-automatically when you start a new shell session.
-
-The aliases are loaded either by the `~/.bashrc` file if you are using the Bash
-shell, or in the `~/.zshrc` file if you are using the Zsh shell.
-
-They have been grouped by logical categories:
-
-- [archives][archives] - Aliases for working with archives.
-- [cd][cd] - Aliases for working with directories.
-- [chmod][chmod] - Aliases for working with file permissions.
-- [clear][clear] - Aliases for clearing the terminal screen.
-- [default][default] - The default aliases that are loaded for all users,
-  regardless of the shell they are using, and of the operating system they are
-  on,
-- [default][default] - The default aliases that are loaded for all users,
-  regardless of the shell they are using, and of the operating system they are
-  on,
-- [dig][dig] - Aliases for working with DNS.
-- [dot][dot] - The unified CLI for managing your dotfiles.
-- [du][du] - Aliases for working with disk usage.
-- [editor][editor] - Aliases for working with the editor.
-- [find][find] - Aliases for working with the `fd` command.
-- [gcloud][gcloud] - Aliases for working with the `gcloud` command.
-- [git][git] - Aliases for working with Git.
-- [gnu][gnu] - Aliases for working with GNU Core utilities.
-
-- [interactive][interactive] - Aliases for working with interactive commands.
-- [jekyll][jekyll] - Aliases for working with Jekyll.
-- [list][list] - Aliases for working with the `ls` command.
-- [make][make] - Aliases for working with the `make` command.
-- [mkdir][mkdir] - Aliases for working with the `mkdir` command.
-- [modern-core][modern-core] - High-performance tools (Atuin, Yazi, Zellij).
-- [npm][npm] - Aliases for working with the `npm` command.
-- [pnpm][pnpm] - Aliases for working with the `pnpm` command.
-- [ps][ps] - Aliases for working with the `ps` command.
-- [rsync][rsync] - Aliases for working with the `rsync` command.
-- [rust][rust] - Aliases for working with the Rust programming language.
-- [subversion][subversion] - Aliases for working with Subversion.
-- [sudo][sudo] - Aliases for working with the `sudo` command.
-- [tmux][tmux] - Aliases for working with the `tmux` command.
-- [update][update] - Aliases for working with the `update` command.
-- [uuid][uuid] - Aliases for working with the `uuid` command.
-- [wget][wget] - Aliases for working with the `wget` command.
-
-[archives]: ./archives/
-[cd]: ./cd/
-[chmod]: ./chmod/
-[clear]: ./clear/
-[default]: ./default/
-[dig]: ./dig/
-[dot]: ./dot/
-[du]: ./du/
-[editor]: ./editor/
-[find]: ./find/
-[gcloud]: ./gcloud/
-[git]: ./git/
-[gnu]: ./gnu/
-[interactive]: ./interactive/
-[jekyll]: ./jekyll/
-[list]: ./list/
-[make]: ./make/
-[mkdir]: ./mkdir/
-[modern-core]: ./modern-core/
-[npm]: ./npm/
-[pnpm]: ./pnpm/
-[ps]: ./ps/
-[rsync]: ./rsync/
-[rust]: ./rust/
-[subversion]: ./subversion/
-[sudo]: ./sudo/
-[tmux]: ./tmux/
-[update]: ./update/
-[uuid]: ./uuid/
-[wget]: ./wget/
+<!-- markdownlint-enable MD013-->

@@ -1,29 +1,44 @@
 ---
-description: Die Mkdir-Aliase sind eine Sammlung von Aliasen, die es Ihnen ermöglichen, mit dem `mkdir` Kommandozeilen-Tool zu interagieren. Mkdir ist ein Tool, das ein Verzeichnis erstellt.
+description: Shell-Aliase fuer mkdir, die Verzeichniserstellung mit Datums- und Zeitbenennungskonventionen vereinfachen.
 lang: de-DE
 metaTitle: Mkdir Aliase - Dotfiles (DE)
 permalink: /de/aliases/mkdir/
+sidebar: true
+
+meta:
+  - name: keywords
+    content: mkdir aliase, verzeichniserstellung, shell verknuepfungen, dotfiles, terminal
+  - name: twitter:card
+    content: summary
+  - name: twitter:title
+    content: Mkdir Aliase - Dotfiles
+  - name: twitter:description
+    content: Shell-Aliase fuer mkdir mit Datums- und Zeitbenennungskonventionen.
+  - name: og:title
+    content: Mkdir Aliase - Dotfiles
+  - name: og:description
+    content: Shell-Aliase fuer mkdir mit Datums- und Zeitbenennungskonventionen.
+  - name: og:image:alt
+    content: Dotfiles - Simply designed to fit your shell life
+  - name: og:locale
+    content: de_DE
 ---
 
 # Mkdir Aliase
 
-Die Datei `mkdir.aliases.sh` erstellt hilfreiche Shortcut-Aliase zum Erstellen von
-Verzeichnissen.
+Optimieren Sie die Verzeichniserstellung mit intelligenten Benennungskonventionen.
 
-Die Mkdir-Aliase sind eine Sammlung von Aliasen, die es Ihnen ermöglichen, mit
-dem `mkdir` Kommandozeilen-Tool zu interagieren. Mkdir ist ein Tool, das ein Verzeichnis erstellt.
+## Uebersicht
 
-## Mkdir
+Die mkdir-Aliase bieten Verknuepfungen zum Erstellen von Verzeichnissen mit automatischen Datums- und Zeitstempeln. Diese Aliase sind in `mkdir.aliases.sh` definiert und werden automatisch von Chezmoi geladen.
 
-[Mkdir](https://de.wikipedia.org/wiki/Mkdir) ist ein Befehl, der ein
-Verzeichnis erstellt. Das mkdir-Dienstprogramm erstellt die als Operanden benannten Verzeichnisse in der
-angegebenen Reihenfolge unter Verwendung des Modus „rwxrwxrwx“ (0777).
+## Referenz
 
-| Alias | Befehl                      | Beschreibung                                        |
-| ----- | --------------------------- | --------------------------------------------------- |
-| mcd   | `mkdir -pv && cd`           | Erstelle Verzeichnis und wechsle hinein.            |
-| mcdp  | `mkdir -pv && cd`           | Erstelle Verzeichnis und Eltern und wechsle hinein. |
-| md    | `mkd`                       | Erstelle Verzeichnis.                               |
-| mdd   | `mkdir -pv $(date +%Y%m%d)` | Erstelle Verzeichnis mit Datum.                     |
-| mdp   | `mkdir -pv`                 | Erstelle Verzeichnis und Eltern.                    |
-| mdt   | `mkdir -pv $(date +%h%m%s)` | Erstelle Verzeichnis mit Uhrzeit.                   |
+| Alias | Beschreibung |
+|:---|:---|
+| `md` | Verzeichnis erstellen |
+| `mdd` | Verzeichnis mit Datum erstellen |
+| `mdt` | Verzeichnis mit Uhrzeit erstellen |
+| `mde` | Beispielverzeichnis mit aktuellem Datum erstellen |
+| `mdn` | Notiz-Verzeichnis mit aktuellem Datum erstellen |
+| `mdw` | Arbeitsverzeichnis mit aktuellem Datum erstellen |

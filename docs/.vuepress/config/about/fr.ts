@@ -1,6 +1,6 @@
-export const apropos = {
+export const about = {
   ariaLabel: "À propos des Dotfiles",
   title: "À propos des Dotfiles",
-  path: "/fr/apropos/",
+  path: "/fr/about/",
   collapsable: false,
 };

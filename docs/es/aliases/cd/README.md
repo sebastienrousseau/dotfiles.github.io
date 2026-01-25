@@ -1,53 +1,118 @@
 ---
-description: Los alias de Change Directory son una colección de atajos que te permiten interactuar con la herramienta de línea de comandos `cd`. Cd es una herramienta que cambia el directorio actual.
+description: Alias de navegación con marcadores, historial y atajos inteligentes. Recorre tu sistema más rápido.
 lang: es-ES
-metaTitle: Alias de Change Directory - Dotfiles (ES)
-permalink: /es/aliases/cd/
+metaTitle: Alias CD - Dotfiles (ES)
+permalink: /aliases/cd/
+sidebar: true
 
 meta:
   - name: keywords
-    content: alias, cd, chdir, cambiar directorio, directorio, linux, macos, shell, terminal, windows
+    content: cd, directorio, navegación, marcadores, alias shell, dotfiles, terminal
   - name: twitter:card
-    content: Los alias de Change Directory son una colección de atajos que te permiten interactuar con la herramienta de línea de comandos `cd`. Cd es una herramienta que cambia el directorio actual.
+    content: summary
   - name: twitter:description
-    content: Los alias de Change Directory son una colección de atajos que te permiten interactuar con la herramienta de línea de comandos `cd`. Cd es una herramienta que cambia el directorio actual.
+    content: Alias de navegación con marcadores, historial y atajos inteligentes. Recorre tu sistema más rápido.
   - name: twitter:title
-    content: Alias de Change Directory - Dotfiles (ES)
+    content: Alias CD - Dotfiles
   - name: og:title
-    content: Alias de Change Directory - Dotfiles (ES)
+    content: Alias CD - Dotfiles
   - name: og:description
-    content: Los alias de Change Directory son una colección de atajos que te permiten interactuar con la herramienta de línea de comandos `cd`. Cd es una herramienta que cambia el directorio actual.
+    content: Alias de navegación con marcadores, historial y atajos inteligentes. Recorre tu sistema más rápido.
   - name: og:image:alt
-    content: Dotfiles - Simplemente diseñado para adaptarse a tu vida en el shell
+    content: Dotfiles - Diseñado para tu vida en el shell
   - name: og:locale
     content: es_ES
 ---
 
-# Alias de Change Directory
+# Alias CD
 
-El archivo `cd.aliases.sh` crea atajos útiles para navegar por la terminal.
+Navega más rápido por tu sistema de archivos. Marcadores, historial y atajos inteligentes.
 
-Los alias de Change Directory son una colección de atajos que te permiten interactuar con la herramienta de línea de comandos `cd`. Cd es una herramienta que cambia el directorio actual.
+## Descubrir
 
-## Navegación
+Estos alias se definen en `cd.aliases.sh` y se cargan automáticamente por Chezmoi.
 
-El comando cd, también conocido como chdir (change directory), es un comando de línea de comandos utilizado para cambiar el directorio de trabajo actual en varios sistemas operativos.
+## Referencia
 
-| Alias | Comando                       | Descripción                                                  |
-| ----- | ----------------------------- | ------------------------------------------------------------ |
-| -     | `cd -`                        | Atajo para ir al directorio anterior.                        |
-| ..    | `cd ..`                       | Atajo para ir al directorio padre.                           |
-| ...   | `cd ../..`                    | Atajo para ir al directorio abuelo.                          |
-| ....  | `cd ../../..`                 | Atajo para ir al directorio bisabuelo.                       |
-| ..... | `cd ../../../..`              | Atajo para ir al directorio tatarabuelo.                     |
-| ~     | `cd ~`                        | Atajo para ir al directorio de inicio (home).                |
-| app   | `cd ${HOME}/Applications; ls` | Atajo para ir al directorio Applications.                    |
-| cod   | `cd ${HOME}/Code; ls`         | Atajo para ir al directorio Code y listar su contenido.      |
-| des   | `cd ${HOME}/Desktop; ls`      | Atajo para ir al directorio Desktop y listar su contenido.   |
-| doc   | `cd ${HOME}/Documents; ls`    | Atajo para ir al directorio Documents y listar su contenido. |
-| dot   | `cd ${HOME}/.dotfiles; ls`    | Atajo para ir al directorio .dotfiles.                       |
-| dow   | `cd ${HOME}/Downloads; ls`    | Atajo para ir al directorio Downloads y listar su contenido. |
-| hom   | `cd ${HOME}/; ls`             | Atajo para ir al directorio home y listar su contenido.      |
-| mus   | `cd ${HOME}/Music; ls`        | Atajo para ir al directorio Music y listar su contenido.     |
-| pic   | `cd ${HOME}/Pictures; ls`     | Atajo para ir al directorio Pictures y listar su contenido.  |
-| vid   | `cd ${HOME}/Videos; ls`       | Atajo para ir al directorio Videos y listar su contenido.    |
+### Atajos de navegación
+
+| Alias | Descripción |
+|:---|:---|
+| `-` | Cambiar al directorio anterior |
+| `..` | Subir un nivel |
+| `...` | Subir dos niveles |
+| `....` | Subir tres niveles |
+| `.....` | Subir cuatro niveles |
+| `hom` | Ir al directorio personal |
+
+### Atajos de directorios
+
+| Alias | Ruta | Descripción |
+|:---|:---|:---|
+| `app` | `~/Applications` | Aplicaciones |
+| `cod` | `~/Code` | Directorio de código |
+| `dsk` | `~/Desktop` | Escritorio |
+| `doc` | `~/Documents` | Documentos |
+| `dot` | `~/.dotfiles` | Dotfiles |
+| `dwn` | `~/Downloads` | Descargas |
+| `mus` | `~/Music` | Música |
+| `pic` | `~/Pictures` | Imágenes |
+| `vid` | `~/Videos` | Vídeos |
+
+### Directorios del sistema
+
+| Alias | Ruta | Descripción |
+|:---|:---|:---|
+| `etc` | `/etc` | Configuración del sistema |
+| `var` | `/var` | Archivos variables |
+| `tmp` | `/tmp` | Archivos temporales |
+| `usr` | `/usr` | Programas de usuario |
+
+### Marcadores
+
+| Comando | Alias | Descripción |
+|:---|:---|:---|
+| `bookmark [name]` | `bm` | Crear marcador |
+| `bookmark_list` | `bml` | Listar marcadores |
+| `bookmark_update` | `bmu` | Actualizar marcador |
+| `bookmark_remove` | `bmr` | Eliminar marcador |
+| `goto <name>` | `bmg` | Ir al marcador |
+
+```bash
+bm work-project      # Crear marcador
+bmg work-project     # Ir al marcador
+bml                  # Listar todos los marcadores
+```
+
+### Historial
+
+| Comando | Alias | Descripción |
+|:---|:---|:---|
+| `dirhistory` | `dh` | Mostrar historial de directorios |
+| `lwd` | `ld` | Volver al último directorio |
+
+### Avanzado
+
+| Comando | Alias | Descripción |
+|:---|:---|:---|
+| `mkcd <dir>` | `mcd` | Crear y entrar en un directorio |
+| `proj` | `pr` | Ir a la raíz del proyecto |
+| `pushd` | `pd` | Apilar un directorio |
+| `popd` | — | Desapilar un directorio |
+| `dirs` | — | Listar la pila de directorios |
+
+## Configuración
+
+Personaliza el comportamiento con variables de entorno:
+
+```bash
+export SHOW_HIDDEN_FILES=true
+export ENABLE_COLOR_OUTPUT=true
+export AUTO_LIST_AFTER_CD=true
+export MAX_RECENT_DIRS=15
+export RESTORE_LAST_DIR=true
+```
+
+## Ayuda
+
+Ejecuta `cdhelp` para ver todos los comandos o `cdversion` para la versión.

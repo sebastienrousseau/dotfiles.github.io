@@ -1,72 +1,98 @@
 ---
-description: The Default aliases are aliases that are not specific to any particular command. They are common aliases that are used in many different contexts and are listed here for convenience.
+title: "Default Aliases: Essential Shell Shortcuts"
+description: "Essential shell aliases for navigation, system control, and daily tasks. Simplify your terminal workflow with these universal shortcuts."
 lang: en-GB
-metaTitle: Default aliases - Dotfiles (UK)
+metaTitle: "Default Aliases | Dotfiles"
 permalink: /aliases/default/
-
+sidebar: true
 meta:
+  - name: keywords
+    content: "default aliases, shell aliases, terminal shortcuts, dotfiles, bash aliases"
   - name: twitter:card
-    content: The Default aliases are aliases that are not specific to any particular command. They are common aliases that are used in many different contexts and are listed here for convenience.
-  - name: twitter:description
-    content: The Default aliases are aliases that are not specific to any particular command. They are common aliases that are used in many different contexts and are listed here for convenience.
+    content: summary
   - name: twitter:title
-    content: Default aliases - Dotfiles (UK)
+    content: Default Aliases | Dotfiles
+  - name: twitter:description
+    content: Essential shell aliases for navigation, system control, and daily tasks.
   - name: og:title
-    content: Default aliases - Dotfiles (UK)
+    content: Default Aliases | Dotfiles
   - name: og:description
-    content: The Default aliases are aliases that are not specific to any particular command. They are common aliases that are used in many different contexts and are listed here for convenience.
+    content: Essential shell aliases for navigation, system control, and daily tasks.
   - name: og:image:alt
     content: Dotfiles - Simply designed to fit your shell life
   - name: og:locale
     content: en_GB
 ---
 
-# Default aliases
+# Default Aliases
 
-The `default.aliases.sh` file creates helpful shortcut aliases for many commonly
-used commands.
+Essential shell shortcuts for everyday terminal tasks.
 
-## Default
+![Dotfiles banner][banner]
 
-The Default aliases are aliases that are not specific to any particular command.
-They are common aliases that are used in many different contexts and are listed
-here for convenience. The aliases are listed in alphabetical order for easy use.
+## Overview
 
-| Alias    | Command                              | Description                                                                                                                             |
-| -------- | ------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------- |
-| :q       | `quit`                               | Shortcut for the `exit` command.                                                                                                        |
-| bye      | `quit`                               | Shortcut for the `exit` command.                                                                                                        |
-| ctf      | `echo $(ls -1                        | wc -l)`                                                                                                                                 | Count the number of files in the current directory. |
-| curl     | `curl --compressed`                  | Use compression when transferring data.                                                                                                 |
-| da       | `date "+%Y-%m-%d %A %T %Z"`          | Display the current date and time.                                                                                                      |
-| h        | `history`                            | Lists all recently used commands.                                                                                                       |
-| halt     | `sudo /sbin/halt`                    | Shutdown the system.                                                                                                                    |
-| ifconfig | `sudo ifconfig`                      | Append sudo to ifconfig (configure network interface parameters) command.                                                               |
-| ipinfo   | `ipconfig getpacket en0`             | Get network interface parameters for en0.                                                                                               |
-| moon     | `curl -s "wttr.in/?format=%m"`       | Get the moon phase.                                                                                                                     |
-| nls      | `sudo lsof -i -P                     | grep LISTEN`                                                                                                                            | how only active network listeners.                  |
-| now      | `date +"%T"`                         | Show the current time.                                                                                                                  |
-| op       | `sudo lsof -i -P`                    | List of open ports.                                                                                                                     |
-| p        | `pwd`                                | Shortcut for `pwd` which returns working directory name.                                                                                |
-| path     | `echo ${PATH//:/\\n}`                | Display the $PATH variable on newlines.                                                                                                 |
-| pid      | `ps -f`                              | Display the uid, pid, parent pid, recent CPU usage, process start time, controlling tty, elapsed CPU usage, and the associated command. |
-| ping     | `ping -c 5`                          | Limit Ping to 5 ECHO_REQUEST packets.                                                                                                   |
-| please   | `sudo -`                             | Execute a command as the superuser.                                                                                                     |
-| ports    | `netstat -tulan`                     | List all listening ports.                                                                                                               |
-| poweroff | `sudo /sbin/shutdown`                | Power off the system.                                                                                                                   |
-| ps       | `ps auxwww`                          | Getting full path of executables.                                                                                                       |
-| q        | `quit`                               | Shortcut for the `exit` command.                                                                                                        |
-| qfind    | `find . -name`                       | Quickly search for file.                                                                                                                |
-| quit     | `exit`                               | Shortcut for the`exit` command.                                                                                                         |
-| r        | `reload`                             | Reload the shell.                                                                                                                       |
-| reboot   | `sudo /sbin/reboot`                  | Reboot the system.                                                                                                                      |
-| reload   | `exec $SHELL -l`                     | Reload the shell.                                                                                                                       |
-| shutdown | `sudo shutdown -h now'`              | Shutdown the system.                                                                                                                    |
-| spd      | `sudo rm -rf /private/var/log/asl/*` | Remove all log files in /private/var/log/asl.                                                                                           |
-| srv      | `python3 -m http.server`             | Start a simple HTTP server.                                                                                                             |
-| t        | `tail -f`                            | Prints the last 10 lines of a text or log file, and then waits for new additions to the file to print it in real time.                  |
-| top      | `sudo btop`                          | Allows the user to interactively monitor the system's vital resources or server's processes in real time.                               |
-| tree     | `tree --dirsfirst`                   | Display a directory tree.                                                                                                               |
-| wk       | `date +%V`                           | Show the current week number.                                                                                                           |
-| wth      | `curl -s "wttr.in/?format=3"`        | Get the weather.                                                                                                                        |
-| x        | `quit`                               | Shortcut for the`exit` command.                                                                                                         |
+The default aliases provide a collection of universal shell shortcuts that streamline common terminal operations. These aliases are defined in `default.aliases.sh` and are automatically loaded by chezmoi across all supported shells.
+
+These shortcuts cover general utilities, exit commands, network diagnostics, system monitoring, and file system navigation.
+
+## Reference
+
+### General
+
+| Alias | Command | Description |
+|-------|---------|-------------|
+| `da` | `date "+%Y-%m-%d %A %T %Z"` | Display current date and time |
+| `p` | `pwd` | Print working directory |
+| `path` | `echo ${PATH//:/\\n}` | Display PATH variable on newlines |
+| `r` | `reload` | Reload the shell |
+| `t` | `tail -f` | Follow file output in real time |
+| `wk` | `date +%V` | Show current week number |
+
+### Exit and Shutdown
+
+| Alias | Command | Description |
+|-------|---------|-------------|
+| `q` | `exit` | Exit the shell |
+| `quit` | `exit` | Exit the shell |
+| `bye` | `exit` | Exit the shell |
+| `:q` | `exit` | Exit the shell (vim style) |
+| `halt` | `sudo /sbin/halt` | Halt the system |
+| `poweroff` | `sudo /sbin/shutdown` | Power off the system |
+| `reboot` | `sudo /sbin/reboot` | Reboot the system |
+
+### History
+
+| Alias | Command | Description |
+|-------|---------|-------------|
+| `h` | `history` | View command history |
+| `history` | `fc -il 1` | Show history with ISO 8601 timestamps |
+
+### Network
+
+| Alias | Command | Description |
+|-------|---------|-------------|
+| `ifconfig` | `sudo ifconfig` | Configure network interfaces |
+| `ipinfo` | `ipconfig getpacket en0` | Get network parameters for en0 |
+| `nls` | `sudo lsof -i -P \| grep LISTEN` | Show active network listeners |
+| `op` | `sudo lsof -i -P` | List open ports |
+| `ping` | `ping -c 5` | Ping with 5 packet limit |
+| `ports` | `netstat -tulan` | List all listening ports |
+
+### System Monitoring
+
+| Alias | Command | Description |
+|-------|---------|-------------|
+| `top` | `sudo btop` | Interactive process monitor |
+| `spd` | `sudo rm -rf /private/var/log/asl/*` | Clear ASL log files |
+
+### Utilities
+
+| Alias | Command | Description |
+|-------|---------|-------------|
+| `ctf` | `ls -1 \| wc -l` | Count files in current directory |
+| `qfind` | `find . -name` | Quick file search |
+| `reload` | `exec $SHELL -l` | Reload the shell |
+| `wth` | `curl -s "wttr.in/?format=3"` | Get current weather |
+
+[banner]: https://kura.pro/dotfiles/v2/images/titles/title-dotfiles.svg

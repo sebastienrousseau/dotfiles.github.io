@@ -1,25 +1,69 @@
 ---
-description: Os aliases de Configuração são aliases para abrir os arquivos de configuração para o terminal e o shell.
+title: "Aliases de Configuracao: Acesso Rapido a Arquivos de Config"
+description: "Abra arquivos de configuracao de shell, Git, SSH e servidor instantaneamente com estes aliases de shell para Bash e Zsh."
 lang: pt-BR
-metaTitle: Aliases de Configuração - Dotfiles (BR)
+metaTitle: "Aliases de Configuracao | Dotfiles"
 permalink: /pt/aliases/configuration/
+sidebar: true
+meta:
+  - name: keywords
+    content: "aliases configuracao, config shell, dotfiles, aliases bash, aliases zsh, config git, config ssh"
+  - name: twitter:card
+    content: summary
+  - name: twitter:title
+    content: Aliases de Configuracao | Dotfiles
+  - name: twitter:description
+    content: Abra arquivos de configuracao de shell, Git, SSH e servidor instantaneamente com estes aliases de shell.
+  - name: og:title
+    content: Aliases de Configuracao | Dotfiles
+  - name: og:description
+    content: Abra arquivos de configuracao de shell, Git, SSH e servidor instantaneamente com estes aliases de shell.
+  - name: og:image:alt
+    content: Dotfiles - Simply designed to fit your shell life
+  - name: og:locale
+    content: pt_BR
 ---
 
-# Aliases de Configuração
+# Aliases de Configuracao
 
-O arquivo `configuration.aliases.sh` cria aliases de atalho úteis para abrir
-os arquivos de configuração para o terminal e o shell.
+Abra arquivos de configuracao no seu editor padrao com um unico comando.
 
-> [!TIP]
-> **Novo na v0.2.471**: Agora você pode usar o comando `dot` para gerenciar sua configuração.
-> Tente `dot learn` para um tour interativo ou `dot doctor` para verificar sua configuração.
+## Visao Geral
 
-## Configuração
+Os aliases de configuracao fornecem atalhos para abrir arquivos de configuracao editados frequentemente. Estes aliases sao definidos em `configuration.aliases.sh` e carregados automaticamente pelo chezmoi.
 
-| Alias | Comando                          | Descrição                                                       |
-| ----- | -------------------------------- | --------------------------------------------------------------- |
-| bshp  | `${=EDITOR} $HOME/.bash_profile` | Abrir o perfil Bash no editor de texto padrão.                  |
-| bshrc | `${=EDITOR} $HOME/.bashrc`       | Abrir o arquivo de configuração Bash no editor de texto padrão. |
-| gcfg  | `${=EDITOR} $HOME/.gitconfig`    | Abrir o arquivo de configuração Git no editor de texto padrão.  |
-| gign  | `${=EDITOR} $HOME/.gitignore`    | Abrir o arquivo git ignore no editor de texto padrão.           |
-| zshrc | `${=EDITOR} $HOME/.zshrc`        | Abrir o arquivo de configuração Zsh no editor de texto padrão.  |
+Cada alias inicia o arquivo correspondente no editor de texto padrao do seu sistema, eliminando a necessidade de lembrar caminhos de arquivo ou digitar comandos longos.
+
+## Referencia
+
+### Configuracao de Shell
+
+| Alias | Descricao |
+|-------|-------------|
+| `bshrc` | Abrir arquivo de configuracao do Bash (~/.bashrc) |
+| `bshp` | Abrir perfil do Bash (~/.bash_profile) |
+| `zshrc` | Abrir arquivo de configuracao do Zsh (~/.zshrc) |
+| `zshp` | Abrir perfil do Zsh (~/.zprofile) |
+
+### Controle de Versao
+
+| Alias | Descricao |
+|-------|-------------|
+| `gcfg` | Abrir arquivo de configuracao do Git (~/.gitconfig) |
+| `gign` | Abrir arquivo de ignore do Git (~/.gitignore) |
+
+### Rede e Servidores
+
+| Alias | Descricao |
+|-------|-------------|
+| `apconf` | Abrir arquivo de configuracao do Apache |
+| `ngconf` | Abrir arquivo de configuracao do Nginx |
+| `sshconf` | Abrir arquivo de configuracao do SSH (~/.ssh/config) |
+| `hosts` | Abrir arquivo hosts (/etc/hosts) |
+
+### Ferramentas de Desenvolvimento
+
+| Alias | Descricao |
+|-------|-------------|
+| `dockcomp` | Abrir arquivo Docker Compose |
+| `eddir` | Abrir diretorio atual no editor padrao |

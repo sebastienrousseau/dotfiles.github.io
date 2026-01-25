@@ -1,39 +1,99 @@
 ---
-description: Os aliases de Chmod permitem alterar as permissões (ou modo de acesso) de um arquivo ou diretório.
+title: "Aliases de Chmod: Atalhos de Permissao de Arquivo para Shell"
+description: "Simplifique o gerenciamento de permissoes de arquivos e diretorios com aliases de chmod. Atalhos rapidos para padroes comuns de permissao como 755, 644 e mais."
 lang: pt-BR
-metaTitle: Aliases de Chmod - Dotfiles (BR)
+metaTitle: "Aliases de Chmod | Dotfiles"
 permalink: /pt/aliases/chmod/
+sidebar: true
+meta:
+  - name: keywords
+    content: "aliases chmod, permissoes de arquivo, atalhos shell, dotfiles, permissoes unix"
+  - name: twitter:card
+    content: summary
+  - name: twitter:title
+    content: Aliases de Chmod | Dotfiles
+  - name: twitter:description
+    content: Simplifique o gerenciamento de permissoes de arquivos e diretorios com aliases de chmod.
+  - name: og:title
+    content: Aliases de Chmod | Dotfiles
+  - name: og:description
+    content: Simplifique o gerenciamento de permissoes de arquivos e diretorios com aliases de chmod.
+  - name: og:image:alt
+    content: Dotfiles - Simply designed to fit your shell life
+  - name: og:locale
+    content: pt_BR
 ---
 
 # Aliases de Chmod
 
-O arquivo `chmod.aliases.sh` cria aliases de atalho úteis para alterar
-permissões de arquivo.
+Atalhos para gerenciar permissoes de arquivos e diretorios.
 
-## Permissão
+## Visao Geral
 
-O utilitário chmod modifica os bits de modo de arquivo dos arquivos listados conforme especificado
-pelo operando de modo. Também pode ser usado para modificar as Listas de Controle de Acesso
-(ACLs) associadas aos arquivos listados.
+Os aliases de chmod fornecem uma maneira simplificada de gerenciar permissoes de arquivos e diretorios pela linha de comando. Em vez de lembrar codigos de permissao numericos, use aliases intuitivos como `chmod_755` ou `chmod_u+x` para definir rapidamente o modo de acesso que voce precisa.
 
-| Alias  | Comando             | Descrição                                                                                                                                                                                                                                                    |
-| ------ | ------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| 000    | `chmod -R 000`      | (chmod a-rwx) define permissões para que, (U)ario / dono não possa ler, não possa escrever e não possa executar. (G)rupo não possa ler, não possa escrever e não possa executar. (O)utros não possam ler, não possam escrever e não possam executar.         |
-| 400    | `chmod -R 400`      | (chmod a-rw) define permissões para que, (U)ario / dono não possa ler, não possa escrever e possa executar. (G)rupo não possa ler, não possa escrever e possa executar. (O)utros não possam ler, não possam escrever e possam executar.                      |
-| 444    | `chmod -R 444`      | (chmod a-r) define permissões para que, (U)ario / dono não possa ler, não possa escrever e possa executar. (G)rupo não possa ler, não possa escrever e possa executar. (O)utros não possam ler, não possam escrever e possam executar.                       |
-| 600    | `chmod -R 600`      | (chmod a+rwx,u-x,g-rwx,o-rwx) define permissões para que, (U)ario / dono possa ler, possa escrever e não possa executar. (G)rupo não possa ler, não possa escrever e não possa executar. (O)utros não possam ler, não possam escrever e não possam executar. |
-| 644    | `chmod -R 644`      | (chmod a+rwx,u-x,g-wx,o-wx) define permissões para que, (U)ario / dono possa ler, possa escrever e não possa executar. (G)rupo possa ler, não possa escrever e não possa executar. (O)utros possam ler, não possam escrever e não possam executar.           |
-| 666    | `chmod -R 666`      | (chmod a+rwx,u-x,g-x,o-x) define permissões para que, (U)ario / dono possa ler, possa escrever e não possa executar. (G)rupo possa ler, possa escrever e não possa executar. (O)utros possam ler, possam escrever e não possam executar.                     |
-| 755    | `chmod -R 755`      | (chmod a+rwx,g-w,o-w) define permissões para que, (U)ario / dono possa ler, possa escrever e possa executar. (G)rupo possa ler, não possa escrever e possa executar. (O)utros possam ler, não possam escrever e possam executar.                             |
-| 764    | `chmod -R 764`      | (chmod a+rwx,g-x,o-wx) define permissões para que, (U)ario / dono possa ler, possa escrever e possa executar. (G)rupo possa ler, possa escrever e não possa executar. (O)utros possam ler, não possam escrever e não possam executar.                        |
-| 777    | `chmod -R 777`      | (chmod a+rwx) define permissões para que, (U)ario / dono possa ler, possa escrever e possa executar. (G)rupo possa ler, possa escrever e possa executar. (O)utros possam ler, possam escrever e possam executar.                                             |
-| chgrp  | `chgrp -v`          | Alterar a propriedade do grupo de arquivos ou diretórios.                                                                                                                                                                                                    |
-| chgrpr | `chgrp -Rv`         | Alterar a propriedade do grupo de arquivos ou diretórios recursivamente.                                                                                                                                                                                     |
-| chgrpu | `chgrp -Rv ${USER}` | Alterar a propriedade do grupo de arquivos ou diretórios recursivamente para o usuário atual.                                                                                                                                                                |
-| chmod  | `chmod -v`          | Alterar bits de modo de arquivo.                                                                                                                                                                                                                             |
-| chmodr | `chmod -Rv`         | Alterar bits de modo de arquivo recursivamente.                                                                                                                                                                                                              |
-| chmodu | `chmod -Rv u+rwX`   | Alterar bits de modo de arquivo recursivamente para o usuário atual.                                                                                                                                                                                         |
-| chmox  | `chmod +x`          | Tornar um arquivo executável.                                                                                                                                                                                                                                |
-| chown  | `chown -v`          | Alterar proprietário e grupo do arquivo.                                                                                                                                                                                                                     |
-| chownr | `chown -Rv`         | Alterar proprietário e grupo do arquivo recursivamente.                                                                                                                                                                                                      |
-| chownu | `chown -Rv ${USER}` | Alterar proprietário e grupo do arquivo recursivamente para o usuário atual.                                                                                                                                                                                 |
+Estes aliases sao definidos em `chmod.aliases.sh` e sao carregados automaticamente pelo chezmoi.
+
+## Referencia
+
+### Aliases de Permissao Comuns
+
+| Alias | Permissoes | Descricao |
+|-------|-------------|-------------|
+| `chmod_000` | `----------` | Sem permissoes para ninguem |
+| `chmod_400` | `r--------` | Somente leitura para o proprietario |
+| `chmod_444` | `r--r--r--` | Somente leitura para todos |
+| `chmod_600` | `rw-------` | Leitura/escrita para o proprietario |
+| `chmod_644` | `rw-r--r--` | Leitura/escrita para o proprietario, somente leitura para outros |
+| `chmod_666` | `rw-rw-rw-` | Leitura/escrita para todos |
+| `chmod_755` | `rwxr-xr-x` | Total para proprietario, leitura/execucao para outros |
+| `chmod_764` | `rwxrw-r--` | Total para proprietario, leitura/escrita para o grupo |
+| `chmod_777` | `rwxrwxrwx` | Permissoes totais para todos |
+
+### Aliases de Permissao do Proprietario
+
+| Alias | Descricao |
+|-------|-------------|
+| `chmod_u+x` | Adicionar permissao de execucao para o proprietario |
+| `chmod_u-x` | Remover permissao de execucao para o proprietario |
+| `chmod_u+w` | Adicionar permissao de escrita para o proprietario |
+| `chmod_u-w` | Remover permissao de escrita para o proprietario |
+| `chmod_u+r` | Adicionar permissao de leitura para o proprietario |
+| `chmod_u-r` | Remover permissao de leitura para o proprietario |
+
+### Aliases de Permissao do Grupo
+
+| Alias | Descricao |
+|-------|-------------|
+| `chmod_g+x` | Adicionar permissao de execucao para o grupo |
+| `chmod_g-x` | Remover permissao de execucao para o grupo |
+| `chmod_g+w` | Adicionar permissao de escrita para o grupo |
+| `chmod_g-w` | Remover permissao de escrita para o grupo |
+| `chmod_g+r` | Adicionar permissao de leitura para o grupo |
+| `chmod_g-r` | Remover permissao de leitura para o grupo |
+
+### Aliases de Permissao de Outros
+
+| Alias | Descricao |
+|-------|-------------|
+| `chmod_o+x` | Adicionar permissao de execucao para outros |
+| `chmod_o-x` | Remover permissao de execucao para outros |
+| `chmod_o+w` | Adicionar permissao de escrita para outros |
+| `chmod_o-w` | Remover permissao de escrita para outros |
+| `chmod_o+r` | Adicionar permissao de leitura para outros |
+| `chmod_o-r` | Remover permissao de leitura para outros |
+
+### Aliases de Tipo de Arquivo
+
+| Alias | Descricao |
+|-------|-------------|
+| `chmod_755d` | Definir permissoes de todos os diretorios para `rwxr-xr-x` |
+| `chmod_644f` | Definir permissoes de todos os arquivos para `rw-r--r--` |
+
+### Funcao de Permissao Recursiva
+
+A funcao `change_permission` aplica permissoes recursivamente com um prompt de confirmacao:
+
+```bash
+change_permission 755 /path/to/directory -R
+```

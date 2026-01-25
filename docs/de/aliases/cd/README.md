@@ -1,35 +1,118 @@
 ---
-description: Die Verzeichnisfwechsel-Aliase sind eine Sammlung von Aliasen, die es Ihnen ermöglichen, mit dem Befehlszeilenwerkzeug `cd` zu interagieren. Cd ist ein Werkzeug, das das aktuelle Verzeichnis wechselt.
+description: Verzeichnisnavigations-Aliase mit Lesezeichen, Verlaufsverfolgung und intelligenten Verknüpfungen. Navigieren Sie schneller durch Ihr Dateisystem.
 lang: de-DE
-metaTitle: Verzeichniswechsel-Aliase - Dotfiles (DE)
+metaTitle: CD Aliase - Dotfiles (DE)
 permalink: /de/aliases/cd/
+sidebar: true
+
+meta:
+  - name: keywords
+    content: cd, verzeichnis, navigation, lesezeichen, shell aliase, dotfiles, terminal
+  - name: twitter:card
+    content: summary
+  - name: twitter:description
+    content: Verzeichnisnavigations-Aliase mit Lesezeichen, Verlaufsverfolgung und intelligenten Verknüpfungen. Navigieren Sie schneller durch Ihr Dateisystem.
+  - name: twitter:title
+    content: CD Aliase - Dotfiles
+  - name: og:title
+    content: CD Aliase - Dotfiles
+  - name: og:description
+    content: Verzeichnisnavigations-Aliase mit Lesezeichen, Verlaufsverfolgung und intelligenten Verknüpfungen. Navigieren Sie schneller durch Ihr Dateisystem.
+  - name: og:image:alt
+    content: Dotfiles - Simply designed to fit your shell life
+  - name: og:locale
+    content: de_DE
 ---
 
-# Verzeichniswechsel Aliase
+# CD Aliase
 
-Die Datei `cd.aliases.sh` erstellt hilfreiche Shortcut-Aliase für die Navigation im Terminal.
+Navigieren Sie schneller durch Ihr Dateisystem. Lesezeichen, Verlauf und intelligente Verknüpfungen.
 
-Die Verzeichniswechsel-Aliase sind eine Sammlung von Aliasen, die es Ihnen ermöglichen, mit dem Befehlszeilenwerkzeug `cd` zu interagieren. Cd ist ein Werkzeug, das das aktuelle Verzeichnis wechselt.
+## Übersicht
 
-## Navigation
+Diese Aliase sind in `cd.aliases.sh` definiert und werden automatisch von Chezmoi geladen.
 
-Der `cd`-Befehl, auch bekannt als chdir (change directory), ist ein Befehlszeilen-Shell-Befehl, der verwendet wird, um das aktuelle Arbeitsverzeichnis in verschiedenen Betriebssystemen zu ändern.
+## Referenz
 
-| Alias | Befehl                        | Beschreibung                                             |
-| ----- | ----------------------------- | -------------------------------------------------------- |
-| -     | `cd -`                        | Shortcut zum vorherigen Verzeichnis.                     |
-| ..    | `cd ..`                       | Shortcut zum übergeordneten Verzeichnis.                 |
-| ...   | `cd ../..`                    | Shortcut zum Großeltern-Verzeichnis.                     |
-| ....  | `cd ../../..`                 | Shortcut zum Urgroßeltern-Verzeichnis.                   |
-| ..... | `cd ../../../..`              | Shortcut zum Ururgroßeltern-Verzeichnis.                 |
-| ~     | `cd ~`                        | Shortcut zum Home-Verzeichnis.                           |
-| app   | `cd ${HOME}/Applications; ls` | Shortcut zum Applications-Verzeichnis.                   |
-| cod   | `cd ${HOME}/Code; ls`         | Shortcut zum Code-Verzeichnis und Inhalt auflisten.      |
-| des   | `cd ${HOME}/Desktop; ls`      | Shortcut zum Desktop-Verzeichnis und Inhalt auflisten.   |
-| doc   | `cd ${HOME}/Documents; ls`    | Shortcut zum Documents-Verzeichnis und Inhalt auflisten. |
-| dot   | `cd ${HOME}/.dotfiles; ls`    | Shortcut zum dotfiles-Verzeichnis.                       |
-| dow   | `cd ${HOME}/Downloads; ls`    | Shortcut zum Downloads-Verzeichnis und Inhalt auflisten. |
-| hom   | `cd ${HOME}/; ls`             | Shortcut zum Home-Verzeichnis und Inhalt auflisten.      |
-| mus   | `cd ${HOME}/Music; ls`        | Shortcut zum Music-Verzeichnis und Inhalt auflisten.     |
-| pic   | `cd ${HOME}/Pictures; ls`     | Shortcut zum Pictures-Verzeichnis und Inhalt auflisten.  |
-| vid   | `cd ${HOME}/Videos; ls`       | Shortcut zum Videos-Verzeichnis und Inhalt auflisten.    |
+### Navigationsverknüpfungen
+
+| Alias | Beschreibung |
+|:---|:---|
+| `-` | Zum vorherigen Verzeichnis wechseln |
+| `..` | Eine Ebene nach oben |
+| `...` | Zwei Ebenen nach oben |
+| `....` | Drei Ebenen nach oben |
+| `.....` | Vier Ebenen nach oben |
+| `hom` | Zum Home-Verzeichnis navigieren |
+
+### Verzeichnisverknüpfungen
+
+| Alias | Pfad | Beschreibung |
+|:---|:---|:---|
+| `app` | `~/Applications` | Anwendungen |
+| `cod` | `~/Code` | Code-Verzeichnis |
+| `dsk` | `~/Desktop` | Schreibtisch |
+| `doc` | `~/Documents` | Dokumente |
+| `dot` | `~/.dotfiles` | Dotfiles |
+| `dwn` | `~/Downloads` | Downloads |
+| `mus` | `~/Music` | Musik |
+| `pic` | `~/Pictures` | Bilder |
+| `vid` | `~/Videos` | Videos |
+
+### Systemverzeichnisse
+
+| Alias | Pfad | Beschreibung |
+|:---|:---|:---|
+| `etc` | `/etc` | Systemkonfiguration |
+| `var` | `/var` | Variable Dateien |
+| `tmp` | `/tmp` | Temporäre Dateien |
+| `usr` | `/usr` | Benutzerprogramme |
+
+### Lesezeichen
+
+| Befehl | Alias | Beschreibung |
+|:---|:---|:---|
+| `bookmark [name]` | `bm` | Lesezeichen erstellen |
+| `bookmark_list` | `bml` | Lesezeichen auflisten |
+| `bookmark_update` | `bmu` | Lesezeichen aktualisieren |
+| `bookmark_remove` | `bmr` | Lesezeichen löschen |
+| `goto <name>` | `bmg` | Zu Lesezeichen gehen |
+
+```bash
+bm work-project      # Lesezeichen erstellen
+bmg work-project     # Zu Lesezeichen navigieren
+bml                  # Alle Lesezeichen auflisten
+```
+
+### Verlauf
+
+| Befehl | Alias | Beschreibung |
+|:---|:---|:---|
+| `dirhistory` | `dh` | Verzeichnisverlauf anzeigen |
+| `lwd` | `ld` | Zum letzten Verzeichnis zurückkehren |
+
+### Erweitert
+
+| Befehl | Alias | Beschreibung |
+|:---|:---|:---|
+| `mkcd <dir>` | `mcd` | Verzeichnis erstellen und betreten |
+| `proj` | `pr` | Zum Projektstamm gehen |
+| `pushd` | `pd` | Verzeichnis auf Stapel legen |
+| `popd` | — | Vom Stapel entfernen |
+| `dirs` | — | Verzeichnisstapel auflisten |
+
+## Konfiguration
+
+Passen Sie das Verhalten mit Umgebungsvariablen an:
+
+```bash
+export SHOW_HIDDEN_FILES=true
+export ENABLE_COLOR_OUTPUT=true
+export AUTO_LIST_AFTER_CD=true
+export MAX_RECENT_DIRS=15
+export RESTORE_LAST_DIR=true
+```
+
+## Hilfe
+
+Führen Sie `cdhelp` aus, um alle Befehle anzuzeigen, oder `cdversion` für Versionsinformationen.

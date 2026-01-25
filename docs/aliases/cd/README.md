@@ -1,58 +1,118 @@
 ---
-description: The Change Directory aliases are a collection of aliases that allow you to interact with the `cd` command line tool. Cd is a tool which changes the current directory.
+description: Directory navigation aliases with bookmarks, history tracking, and smart shortcuts. Navigate your filesystem faster.
 lang: en-GB
-metaTitle: Change Directory aliases - Dotfiles (UK)
+metaTitle: CD Aliases - Dotfiles (UK)
 permalink: /aliases/cd/
+sidebar: true
 
 meta:
   - name: keywords
-    content: aliases, cd, chdir, change directory, directory, linux, macos, shell, terminal, windows
+    content: cd, directory, navigation, bookmarks, shell aliases, dotfiles, terminal
   - name: twitter:card
-    content: The Change Directory aliases are a collection of aliases that allow you to interact with the `cd` command line tool. Cd is a tool which changes the current directory.
+    content: summary
   - name: twitter:description
-    content: The Change Directory aliases are a collection of aliases that allow you to interact with the `cd` command line tool. Cd is a tool which changes the current directory.
+    content: Directory navigation aliases with bookmarks, history tracking, and smart shortcuts. Navigate your filesystem faster.
   - name: twitter:title
-    content: Change Directory aliases - Dotfiles (UK)
+    content: CD Aliases - Dotfiles
   - name: og:title
-    content: Change Directory aliases - Dotfiles (UK)
+    content: CD Aliases - Dotfiles
   - name: og:description
-    content: The Change Directory aliases are a collection of aliases that allow you to interact with the `cd` command line tool. Cd is a tool which changes the current directory.
+    content: Directory navigation aliases with bookmarks, history tracking, and smart shortcuts. Navigate your filesystem faster.
   - name: og:image:alt
     content: Dotfiles - Simply designed to fit your shell life
   - name: og:locale
     content: en_GB
 ---
 
-# Change Directory aliases
+# CD Aliases
 
-The `cd.aliases.sh` file creates helpful shortcut aliases for
-navigating the terminal.
+Navigate your filesystem faster. Bookmarks, history, and smart shortcuts.
 
-The Change Directory aliases are a collection of aliases that allow you to
-interact with the `cd` command line tool. Cd is a tool which changes the current
-directory.
+## Overview
 
-## Navigation
+These aliases are defined in `cd.aliases.sh` and loaded automatically by Chezmoi.
 
-The cd command, also known as chdir (change directory), is a command-line shell
-command used to change the current working directory in various operating
-systems.
+## Reference
 
-| Alias | Command                       | Description                                                      |
-| ----- | ----------------------------- | ---------------------------------------------------------------- |
-| -     | `cd -`                        | Shortcut to go to previous directory.                            |
-| ..    | `cd ..`                       | Shortcut to go to parent directory.                              |
-| ...   | `cd ../..`                    | Shortcut to go to grandparent directory.                         |
-| ....  | `cd ../../..`                 | Shortcut to go to great-grandparent directory.                   |
-| ..... | `cd ../../../..`              | Shortcut to go to great-great-grandparent directory.             |
-| ~     | `cd ~`                        | Shortcut to go to home directory.                                |
-| app   | `cd ${HOME}/Applications; ls` | Shortcut to go to the Applications directory.                    |
-| cod   | `cd ${HOME}/Code; ls`         | Shortcut to go to the Code directory and list its contents.      |
-| des   | `cd ${HOME}/Desktop; ls`      | Shortcut to go to the Desktop directory and list its contents.   |
-| doc   | `cd ${HOME}/Documents; ls`    | Shortcut to go to the Documents directory and list its contents. |
-| dot   | `cd ${HOME}/.dotfiles; ls`    | Shortcut to go to the dotfiles directory.                        |
-| dow   | `cd ${HOME}/Downloads; ls`    | Shortcut to go to the Downloads directory and list its contents. |
-| hom   | `cd ${HOME}/; ls`             | Shortcut to go to home directory and list its contents.          |
-| mus   | `cd ${HOME}/Music; ls`        | Shortcut to go to the Music directory and list its contents.     |
-| pic   | `cd ${HOME}/Pictures; ls`     | Shortcut to go to the Pictures directory and list its contents.  |
-| vid   | `cd ${HOME}/Videos; ls`       | Shortcut to go to the Videos directory and list its contents.    |
+### Navigation shortcuts
+
+| Alias | Description |
+|:---|:---|
+| `-` | Switch to previous directory |
+| `..` | Go up one level |
+| `...` | Go up two levels |
+| `....` | Go up three levels |
+| `.....` | Go up four levels |
+| `hom` | Navigate to home directory |
+
+### Directory shortcuts
+
+| Alias | Path | Description |
+|:---|:---|:---|
+| `app` | `~/Applications` | Applications |
+| `cod` | `~/Code` | Code directory |
+| `dsk` | `~/Desktop` | Desktop |
+| `doc` | `~/Documents` | Documents |
+| `dot` | `~/.dotfiles` | Dotfiles |
+| `dwn` | `~/Downloads` | Downloads |
+| `mus` | `~/Music` | Music |
+| `pic` | `~/Pictures` | Pictures |
+| `vid` | `~/Videos` | Videos |
+
+### System directories
+
+| Alias | Path | Description |
+|:---|:---|:---|
+| `etc` | `/etc` | System configuration |
+| `var` | `/var` | Variable files |
+| `tmp` | `/tmp` | Temporary files |
+| `usr` | `/usr` | User programs |
+
+### Bookmarks
+
+| Command | Alias | Description |
+|:---|:---|:---|
+| `bookmark [name]` | `bm` | Create bookmark |
+| `bookmark_list` | `bml` | List bookmarks |
+| `bookmark_update` | `bmu` | Update bookmark |
+| `bookmark_remove` | `bmr` | Delete bookmark |
+| `goto <name>` | `bmg` | Go to bookmark |
+
+```bash
+bm work-project      # Create bookmark
+bmg work-project     # Navigate to bookmark
+bml                  # List all bookmarks
+```
+
+### History
+
+| Command | Alias | Description |
+|:---|:---|:---|
+| `dirhistory` | `dh` | Show directory history |
+| `lwd` | `ld` | Return to last directory |
+
+### Advanced
+
+| Command | Alias | Description |
+|:---|:---|:---|
+| `mkcd <dir>` | `mcd` | Create and enter directory |
+| `proj` | `pr` | Go to project root |
+| `pushd` | `pd` | Push directory to stack |
+| `popd` | — | Pop from stack |
+| `dirs` | — | List directory stack |
+
+## Configuration
+
+Customise behaviour with environment variables:
+
+```bash
+export SHOW_HIDDEN_FILES=true
+export ENABLE_COLOR_OUTPUT=true
+export AUTO_LIST_AFTER_CD=true
+export MAX_RECENT_DIRS=15
+export RESTORE_LAST_DIR=true
+```
+
+## Help
+
+Run `cdhelp` to view all commands or `cdversion` for version info.

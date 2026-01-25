@@ -1,51 +1,103 @@
 ---
-description: Los alias de Chmod permiten cambiar los permisos (o modo de acceso) de un archivo o directorio.
+title: "Alias Chmod: atajos de permisos para el shell"
+description: "Simplifica la gestión de permisos con alias chmod. Atajos para patrones comunes como 755, 644 y más."
 lang: es-ES
-metaTitle: Alias de Chmod - Dotfiles (ES)
-permalink: /es/aliases/chmod/
+metaTitle: "Alias Chmod | Dotfiles"
+permalink: /aliases/chmod/
+sidebar: true
 meta:
+  - name: keywords
+    content: "alias chmod, permisos de archivos, atajos shell, dotfiles, permisos unix"
   - name: twitter:card
-    content: Los alias de Chmod permiten cambiar los permisos (o modo de acceso) de un archivo o directorio.
-  - name: twitter:description
-    content: Los alias de Chmod permiten cambiar los permisos (o modo de acceso) de un archivo o directorio.
+    content: summary
   - name: twitter:title
-    content: Alias de Chmod - Dotfiles (ES)
+    content: Alias Chmod | Dotfiles
+  - name: twitter:description
+    content: Simplifica la gestión de permisos con alias chmod.
   - name: og:title
-    content: Alias de Chmod - Dotfiles (ES)
+    content: Alias Chmod | Dotfiles
   - name: og:description
-    content: Los alias de Chmod permiten cambiar los permisos (o modo de acceso) de un archivo o directorio.
+    content: Simplifica la gestión de permisos con alias chmod.
   - name: og:image:alt
-    content: Dotfiles - Simplemente diseñado para adaptarse a tu vida en el shell
+    content: Dotfiles - Diseñado para tu vida en el shell
   - name: og:locale
     content: es_ES
 ---
 
-# Alias de Chmod
+# Alias Chmod
 
-El archivo `chmod.aliases.sh` crea atajos útiles para cambiar los permisos de archivos.
+Atajos para gestionar permisos de archivos y directorios.
 
-## Permisos
+![Dotfiles banner][banner]
 
-La utilidad chmod modifica los bits de modo de archivo de los archivos listados según lo especificado por el operando de modo. También se puede utilizar para modificar las Listas de Control de Acceso (ACL) asociadas con los archivos listados.
+## Descubrir
 
-| Alias  | Comando             | Descripción                                                                                                                                                                                                                      |
-| ------ | ------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 000    | `chmod -R 000`      | (chmod a-rwx) establece permisos para que el (U)suario/dueño no pueda leer, escribir ni ejecutar. El (G)rupo no pueda leer, escribir ni ejecutar. (O)tros no puedan leer, escribir ni ejecutar.                                  |
-| 400    | `chmod -R 400`      | (chmod a-rw) establece permisos para que el (U)suario/dueño no pueda leer, ni escribir, pero pueda ejecutar. (G)rupo no pueda leer, ni escribir, pero pueda ejecutar. (O)tros no puedan leer, ni escribir, pero puedan ejecutar. |
-| 444    | `chmod -R 444`      | (chmod a-r) establece permisos para que el (U)suario/dueño no pueda leer, ni escribir, pero pueda ejecutar. (G)rupo no pueda leer, ni escribir, pero pueda ejecutar. (O)tros no puedan leer, ni escribir, pero puedan ejecutar.  |
-| 600    | `chmod -R 600`      | (chmod a+rwx,u-x,g-rwx,o-rwx) establece permisos para que el (U)suario/dueño pueda leer, escribir, pero no ejecutar. (G)rupo no pueda leer, escribir ni ejecutar. (O)tros no puedan leer, escribir ni ejecutar.                  |
-| 644    | `chmod -R 644`      | (chmod a+rwx,u-x,g-wx,o-wx) establece permisos para que el (U)suario/dueño pueda leer, escribir, pero no ejecutar. (G)rupo pueda leer, pero no escribir ni ejecutar. (O)tros puedan leer, pero no escribir ni ejecutar.          |
-| 666    | `chmod -R 666`      | (chmod a+rwx,u-x,g-x,o-x) establece permisos para que el (U)suario/dueño pueda leer, escribir, pero no ejecutar. (G)rupo pueda leer, escribir, pero no ejecutar. (O)tros puedan leer, escribir, pero no ejecutar.                |
-| 755    | `chmod -R 755`      | (chmod a+rwx,g-w,o-w) establece permisos para que el (U)suario/dueño pueda leer, escribir y ejecutar. (G)rupo pueda leer, pero no escribir, y ejecutar. (O)tros puedan leer, pero no escribir, y ejecutar.                       |
-| 764    | `chmod -R 764`      | (chmod a+rwx,g-x,o-wx) establece permisos para que el (U)suario/dueño pueda leer, escribir y ejecutar. (G)rupo pueda leer, escribir, pero no ejecutar. (O)tros puedan leer, pero no escribir, ni ejecutar.                       |
-| 777    | `chmod -R 777`      | (chmod a+rwx) establece permisos para que el (U)suario/dueño pueda leer, escribir y ejecutar. (G)rupo pueda leer, escribir y ejecutar. (O)tros puedan leer, escribir y ejecutar.                                                 |
-| chgrp  | `chgrp -v`          | Cambiar la propiedad de grupo de archivos o directorios.                                                                                                                                                                         |
-| chgrpr | `chgrp -Rv`         | Cambiar la propiedad de grupo de archivos o directorios recursivamente.                                                                                                                                                          |
-| chgrpu | `chgrp -Rv ${USER}` | Cambiar la propiedad de grupo de archivos o directorios recursivamente al usuario actual.                                                                                                                                        |
-| chmod  | `chmod -v`          | Cambiar los bits de modo de archivo.                                                                                                                                                                                             |
-| chmodr | `chmod -Rv`         | Cambiar los bits de modo de archivo recursivamente.                                                                                                                                                                              |
-| chmodu | `chmod -Rv u+rwX`   | Cambiar los bits de modo de archivo recursivamente para el usuario actual.                                                                                                                                                       |
-| chmox  | `chmod +x`          | Hacer un archivo ejecutable.                                                                                                                                                                                                     |
-| chown  | `chown -v`          | Cambiar el propietario y grupo del archivo.                                                                                                                                                                                      |
-| chownr | `chown -Rv`         | Cambiar el propietario y grupo del archivo recursivamente.                                                                                                                                                                       |
-| chownu | `chown -Rv ${USER}` | Cambiar el propietario y grupo del archivo recursivamente al usuario actual.                                                                                                                                                     |
+Los alias chmod ofrecen una forma rápida de gestionar permisos desde la línea de comandos. En lugar de memorizar códigos numéricos, usa alias intuitivos como `chmod_755` o `chmod_u+x` para establecer el acceso necesario.
+
+Estos alias se definen en `chmod.aliases.sh` y se cargan automáticamente por chezmoi.
+
+## Referencia
+
+### Alias de permisos comunes
+
+| Alias | Permisos | Descripción |
+|-------|-------------|-------------|
+| `chmod_000` | `----------` | Sin permisos para nadie |
+| `chmod_400` | `r--------` | Solo lectura para el propietario |
+| `chmod_444` | `r--r--r--` | Solo lectura para todos |
+| `chmod_600` | `rw-------` | Lectura/escritura para el propietario |
+| `chmod_644` | `rw-r--r--` | Lectura/escritura para el propietario, lectura para otros |
+| `chmod_666` | `rw-rw-rw-` | Lectura/escritura para todos |
+| `chmod_755` | `rwxr-xr-x` | Total para propietario, lectura/ejecución para otros |
+| `chmod_764` | `rwxrw-r--` | Total para propietario, lectura/escritura para grupo |
+| `chmod_777` | `rwxrwxrwx` | Todos los permisos para todos |
+
+### Alias de permisos del propietario
+
+| Alias | Descripción |
+|-------|-------------|
+| `chmod_u+x` | Añadir ejecución para el propietario |
+| `chmod_u-x` | Quitar ejecución para el propietario |
+| `chmod_u+w` | Añadir escritura para el propietario |
+| `chmod_u-w` | Quitar escritura para el propietario |
+| `chmod_u+r` | Añadir lectura para el propietario |
+| `chmod_u-r` | Quitar lectura para el propietario |
+
+### Alias de permisos del grupo
+
+| Alias | Descripción |
+|-------|-------------|
+| `chmod_g+x` | Añadir ejecución para el grupo |
+| `chmod_g-x` | Quitar ejecución para el grupo |
+| `chmod_g+w` | Añadir escritura para el grupo |
+| `chmod_g-w` | Quitar escritura para el grupo |
+| `chmod_g+r` | Añadir lectura para el grupo |
+| `chmod_g-r` | Quitar lectura para el grupo |
+
+### Alias de permisos para otros
+
+| Alias | Descripción |
+|-------|-------------|
+| `chmod_o+x` | Añadir ejecución para otros |
+| `chmod_o-x` | Quitar ejecución para otros |
+| `chmod_o+w` | Añadir escritura para otros |
+| `chmod_o-w` | Quitar escritura para otros |
+| `chmod_o+r` | Añadir lectura para otros |
+| `chmod_o-r` | Quitar lectura para otros |
+
+### Alias por tipo de archivo
+
+| Alias | Descripción |
+|-------|-------------|
+| `chmod_755d` | Establecer permisos de directorios a `rwxr-xr-x` |
+| `chmod_644f` | Establecer permisos de archivos a `rw-r--r--` |
+
+### Función recursiva
+
+La función `change_permission` aplica permisos de forma recursiva con confirmación:
+
+```bash
+change_permission 755 /path/to/directory -R
+```
+
+[banner]: https://kura.pro/dotfiles/v2/images/titles/title-dotfiles.svg

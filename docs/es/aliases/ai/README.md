@@ -1,31 +1,50 @@
 ---
-description: Alias de inteligencia artificial para Dotfiles
+description: Alias de IA y LLM para GitHub Copilot y Ollama. Simplifica tu flujo de trabajo con asistencia IA.
 lang: es-ES
-metaTitle: Alias de IA - Dotfiles (ES)
-permalink: /es/aliases/ai/
+metaTitle: Alias IA - Dotfiles (ES)
+permalink: /aliases/ai/
+sidebar: true
+
+meta:
+  - name: keywords
+    content: ia, llm, github copilot, ollama, alias shell, dotfiles, inteligencia artificial, asistente de código
+  - name: twitter:card
+    content: summary
+  - name: twitter:description
+    content: Alias de IA y LLM para GitHub Copilot y Ollama. Simplifica tu flujo de trabajo con asistencia IA.
+  - name: twitter:title
+    content: Alias IA - Dotfiles
+  - name: og:title
+    content: Alias IA - Dotfiles
+  - name: og:description
+    content: Alias de IA y LLM para GitHub Copilot y Ollama. Simplifica tu flujo de trabajo con asistencia IA.
+  - name: og:image:alt
+    content: Dotfiles - Diseñado para tu vida en el shell
+  - name: og:locale
+    content: es_ES
 ---
 
-# Alias de IA
+# Alias IA
 
-Gestiona alias de IA y LLM (GitHub Copilot, Ollama). Parte de la configuración de **Universal Dotfiles**.
+Atajos para herramientas de IA y LLM. Acelera tu flujo de trabajo asistido por IA.
 
-![Dotfiles banner][banner]
+## Descubrir
 
-## 📖 Descripción
+Estos alias se definen en `ai.aliases.sh` y se cargan automáticamente por Chezmoi.
 
-Estos alias están definidos en `ai.aliases.sh` y son cargados automáticamente por `chezmoi`.
-
-## ⚡ Alias
+## Referencia
 
 ### GitHub Copilot
 
-- `ghcp` - Atajo para Copilot
-- `ghs` - Sugerir código
-- `ghe` - Explicar código
+| Alias | Descripción |
+|:---|:---|
+| `ghcp` | Atajo de Copilot |
+| `ghs` | Sugerir código |
+| `ghe` | Explicar código |
 
-### Ollama (LLM Local)
+### Ollama
 
-- `ol` - Atajo para Ollama
-- `olr` - Ejecutar modelo
-
-[banner]: https://kura.pro/dotfiles/v2/images/titles/title-dotfiles.svg
+| Alias | Descripción |
+|:---|:---|
+| `ol` | Atajo de Ollama |
+| `olr` | Ejecutar modelo |

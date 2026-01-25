@@ -1,34 +1,48 @@
 ---
-description: Die Dig-Aliase ermöglichen das Abfragen von Informationen über verschiedene DNS-Datensätze, einschließlich Host-Adressen, Mail-Exchanges und Nameserver.
+description: Vereinfachen Sie DNS-Abfragen mit dig-Aliase. Suchen Sie IPv4-, IPv6- und DNS-Records schneller mit diesen Shell-Verknüpfungen.
 lang: de-DE
 metaTitle: Dig Aliase - Dotfiles (DE)
 permalink: /de/aliases/dig/
+sidebar: true
+
+meta:
+  - name: keywords
+    content: dig aliase, dns lookup, shell aliase, dotfiles, ipv4 lookup, ipv6 lookup
+  - name: twitter:card
+    content: summary
+  - name: twitter:description
+    content: Vereinfachen Sie DNS-Abfragen mit dig-Aliase. Suchen Sie IPv4-, IPv6- und DNS-Records schneller.
+  - name: twitter:title
+    content: Dig Aliase - Dotfiles
+  - name: og:title
+    content: Dig Aliase - Dotfiles
+  - name: og:description
+    content: Vereinfachen Sie DNS-Abfragen mit dig-Aliase. Suchen Sie IPv4-, IPv6- und DNS-Records schneller.
+  - name: og:image:alt
+    content: Dotfiles - Simply designed to fit your shell life
+  - name: og:locale
+    content: de_DE
 ---
 
 # Dig Aliase
 
-Die Datei `dig.aliases.sh` erstellt hilfreiche Shortcut-Aliase für den Befehl `dig`.
+Optimieren Sie DNS-Abfragen mit einer kompakten Sammlung von Shell-Aliase.
 
-`dig` (domain information groper) ist ein flexibles Werkzeug zum Abfragen von DNS-
-Nameservern. Es führt DNS-Lookups durch und zeigt die Antworten an, die von den
-abgefragten Nameservern zurückgegeben wurden. Es wird hauptsächlich verwendet, um DNS-
-Probleme zu beheben und Informationen über eine Domain wie die IP-Adresse zu finden.
+## Übersicht
 
-## Dig
+Diese Aliase sind in `dig.aliases.sh` definiert und werden automatisch von Chezmoi geladen.
 
-[Dig](<https://de.wikipedia.org/wiki/Dig_(Unix)>) ist ein Befehl, der DNS-
-Lookups durchführt und die Antworten anzeigt, die von den abgefragten Nameservern
-zurückgegeben wurden.
+## Referenz
 
-| Alias | Befehl                                                                  | Beschreibung                                         |
-| ----- | ----------------------------------------------------------------------- | ---------------------------------------------------- |
-| d     | `$(which dig)`                                                          | Führe den dig-Befehl mit den Standardoptionen aus.   |
-| d4    | `$(which dig) +short -4`                                                | Führe einen DNS-Lookup für eine IPv4-Adresse durch.  |
-| d6    | `$(which dig) +short -6`                                                | Führe einen DNS-Lookup für eine IPv6-Adresse durch.  |
-| dga   | `$(which dig) +all ANY`                                                 | Führe einen DNS-Lookup für alle Datensätze durch.    |
-| dgs   | `$(which dig) +short`                                                   | Führe einen DNS-Lookup für eine kurze Antwort durch. |
-| digg  | `$(which dig) @8.8.8.8 +nocmd any +multiline +noall +answer`            | Dig mit Googles DNS.                                 |
-| ip4   | `$(which dig) +short myip.opendns.com @resolver1.opendns.com -4`        | Hole deine öffentliche IPv4-Adresse.                 |
-| ip6   | `$(which dig) -6 AAAA +short myip.opendns.com. @resolver1.opendns.com.` | Hole deine öffentliche IPv6-Adresse.                 |
-| ips   | `ip4; ip6`                                                              | Hole deine öffentlichen IPv4- und IPv6-Adressen.     |
-| wip   | `$(which dig) +short myip.opendns.com @resolver1.opendns.com`           | Hole deine öffentliche IP-Adresse.                   |
+| Alias | Beschreibung |
+|:---|:---|
+| `d` | Dig-Befehl mit Standardoptionen ausführen |
+| `d4` | DNS-Abfrage für IPv4-Adresse |
+| `d6` | DNS-Abfrage für IPv6-Adresse |
+| `dga` | DNS-Abfrage für alle Records |
+| `dgs` | DNS-Abfrage für kurze Antwort |
+| `digg` | Dig-Abfrage mit Google DNS |
+| `ip4` | Öffentliche IPv4-Adresse abrufen |
+| `ip6` | Öffentliche IPv6-Adresse abrufen |
+| `ips` | Öffentliche IPv4- und IPv6-Adressen abrufen |
+| `wip` | Öffentliche IP-Adresse abrufen |

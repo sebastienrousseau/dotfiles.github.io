@@ -1,45 +1,43 @@
 ---
-description: The Sudo aliases are a collection of aliases that allow you to interact with the `sudo` command. Sudo is a tool which allows you to run commands as another user.
+description: Sudo shell aliases for running commands as superuser. Quick shortcuts for elevated privileges.
 lang: en-GB
-metaTitle: The Sudo aliases - Dotfiles (UK)
+metaTitle: Sudo Aliases - Dotfiles (UK)
 permalink: /aliases/sudo/
+sidebar: true
 
 meta:
   - name: keywords
-    content: aliases, sudo, linux, macos, shell, terminal, windows
+    content: sudo, superuser, root, shell aliases, dotfiles, privileges
   - name: twitter:card
-    content: The Sudo aliases are a collection of aliases that allow you to interact with the `sudo` command. Sudo is a tool which allows you to run commands as another user.
+    content: summary
   - name: twitter:description
-    content: The Sudo aliases are a collection of aliases that allow you to interact with the `sudo` command. Sudo is a tool which allows you to run commands as another user.
+    content: Sudo shell aliases for running commands as superuser. Quick shortcuts for elevated privileges.
   - name: twitter:title
-    content: The Sudo aliases - Dotfiles (UK)
+    content: Sudo Aliases - Dotfiles
   - name: og:title
-    content: The Sudo aliases - Dotfiles (UK)
+    content: Sudo Aliases - Dotfiles
   - name: og:description
-    content: The Sudo aliases are a collection of aliases that allow you to interact with the `sudo` command. Sudo is a tool which allows you to run commands as another user.
+    content: Sudo shell aliases for running commands as superuser. Quick shortcuts for elevated privileges.
   - name: og:image:alt
     content: Dotfiles - Simply designed to fit your shell life
   - name: og:locale
     content: en_GB
 ---
 
-# Sudo aliases
+# Sudo Aliases
 
-The `sudo.aliases.sh` file creates helpful shortcut aliases for using `sudo`
-with commands.
+Execute commands with elevated privileges.
 
-The Sudo aliases are a collection of aliases that allow you to interact with
-the `sudo` command. Sudo is a tool which allows you to run commands as another
-user.
+## Overview
 
-## Sudo
+These aliases are defined in `sudo.aliases.sh` and loaded automatically by Chezmoi.
 
-[Sudo](https://en.wikipedia.org/wiki/Sudo) is a command that allows users to
-execute commands as another user.
+## Reference
 
-| Alias | Command   | Description                         |
-| ----- | --------- | ----------------------------------- |
-| root  | `s`       | Execute a command as the superuser. |
-| s     | `sudo -i` | Execute a command as the superuser. |
-| su    | `sudo su` | Execute a command as the superuser. |
-| sudo  | `s`       | Execute a command as the superuser. |
+| Alias | Description |
+|:---|:---|
+| `root` | Execute command as superuser |
+| `s` | Execute command as superuser |
+| `su` | Execute command as superuser |
+| `sudo` | Execute command as superuser |
+

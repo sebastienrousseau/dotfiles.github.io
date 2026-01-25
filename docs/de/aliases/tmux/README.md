@@ -1,36 +1,80 @@
 ---
-description: Die Tmux-Aliase sind eine Sammlung von Aliasen, die es Ihnen ermöglichen, mit dem `tmux` Befehl zu interagieren. Tmux ist ein Tool, das es Ihnen ermöglicht, mehrere Terminalsitzungen in einem einzigen Fenster auszuführen.
+description: Shell-Aliase fuer tmux Terminal-Multiplexer. Sessions, Fenster und Panes effizient verwalten.
 lang: de-DE
 metaTitle: Tmux Aliase - Dotfiles (DE)
 permalink: /de/aliases/tmux/
+sidebar: true
+
+meta:
+  - name: keywords
+    content: tmux aliase, terminal multiplexer, tmux session, tmux verknuepfungen, dotfiles, shell
+  - name: twitter:card
+    content: summary
+  - name: twitter:title
+    content: Tmux Aliase - Dotfiles
+  - name: twitter:description
+    content: Shell-Aliase fuer tmux Terminal-Multiplexer. Sessions, Fenster und Panes verwalten.
+  - name: og:title
+    content: Tmux Aliase - Dotfiles
+  - name: og:description
+    content: Shell-Aliase fuer tmux Terminal-Multiplexer. Sessions, Fenster und Panes verwalten.
+  - name: og:image:alt
+    content: Dotfiles - Simply designed to fit your shell life
+  - name: og:locale
+    content: de_DE
 ---
 
 # Tmux Aliase
 
-Diese `tmux.aliases.sh` Datei erstellt hilfreiche Shortcut-Aliase für viele
-häufig verwendete [tmux](https://github.com/tmux/tmux/wiki) Befehle.
+Leistungsstarke Terminal-Multiplexing mit intuitiven Verknuepfungen.
 
-Die Tmux-Aliase sind eine Sammlung von Aliasen, die es Ihnen ermöglichen, mit dem
-`tmux` Befehl zu interagieren. Tmux ist ein Tool, das es Ihnen ermöglicht, mehrere Terminal-
-Sitzungen in einem einzigen Fenster auszuführen.
+## Uebersicht
 
-> [!NOTE]
-> **Modern Core**: In v0.2.471+ haben wir [Zellij](/aliases/modern-core/#zellij) als moderne, Rust-basierte Alternative zu Tmux eingeführt.
-> Tmux wird weiterhin unterstützt, aber Zellij wird für neue Benutzer empfohlen.
+Diese Aliase sind in `tmux.aliases.sh` definiert und werden automatisch von Chezmoi geladen. Sie bieten schnellen Zugriff auf tmux Session-Verwaltung und Navigation.
 
-## Tmux
+## Referenz
 
-[Tmux](https://github.com/tmux/tmux/wiki) ist ein Terminal-Multiplexer. Er lässt Sie
-einfach zwischen mehreren Programmen in einem Terminal wechseln, sie abtrennen (sie laufen
-im Hintergrund weiter) und sie an einem anderen Terminal wieder anhängen.
+### Session-Verwaltung
 
-| Alias | Befehl                   | Beschreibung                             |
-| ----- | ------------------------ | ---------------------------------------- |
-| tm    | `tmux`                   | Starte tmux.                             |
-| tma   | `tmux attach-session`    | Hänge an eine tmux-Sitzung an.           |
-| tmat  | `tmux attach-session -t` | Hänge an eine tmux-Sitzung mit Namen an. |
-| tmks  | `tmux kill-session -a`   | Beende alle tmux-Sitzungen.              |
-| tml   | `tmux list-sessions`     | Liste tmux-Sitzungen auf.                |
-| tmn   | `tmux new-session`       | Starte eine neue tmux-Sitzung.           |
-| tmns  | `tmux new -s`            | Starte eine neue tmux-Sitzung mit Namen. |
-| tms   | `tmux new-session -s`    | Starte eine neue tmux-Sitzung.           |
+| Alias | Beschreibung |
+|:---|:---|
+| `tm` | tmux starten |
+| `tma` | Letzte Session anhaengen |
+| `tmat` | Bestimmte Session anhaengen |
+| `tmn` | Neue unbenannte Session |
+| `tms` | Neue benannte Session |
+| `tml` | Alle Sessions auflisten |
+| `tmks` | Alle Sessions ausser der aktuellen beenden |
+| `tmka` | Alle Sessions beenden (Server) |
+
+### Fenster und Panes
+
+| Alias | Beschreibung |
+|:---|:---|
+| `tmls` | Fenster auflisten |
+| `tmlp` | Panes auflisten |
+
+### Konfiguration
+
+| Alias | Beschreibung |
+|:---|:---|
+| `tmr` | tmux-Konfiguration neu laden |
+| `tmi` | tmux-Info anzeigen |
+
+## Schluesselmerkmale
+
+- Modernes Farbschema mit OS-spezifischer Statusleiste
+- Intuitive Keybindings mit `Ctrl+a` als Prefix-Taste
+- Umfassende Fenster- und Pane-Verwaltung
+- Session-Persistenz mit tmux-resurrect und tmux-continuum
+- Scrollbares Hilfe-Menue (`Ctrl+a ?`)
+- Mausunterstuetzung fuer einfache Navigation
+
+## Navigation
+
+Druecken Sie `Ctrl+a ?`, um alle Keybindings zu sehen. Wichtige Funktionen:
+
+- **Fensterverwaltung** - Splitten, erstellen, navigieren und umbenennen
+- **Pane-Navigation** - Zwischen Panes mit Vim-Keys h/j/k/l wechseln
+- **Session-Verwaltung** - Sessions erstellen, umbenennen und wechseln
+- **Copy-Mode** - Vim-aehnliche Auswahl, Suche und Clipboard-Integration

@@ -1,19 +1,39 @@
 ---
-description: Rsync 别名是一组别名，允许您与 `rsync` 命令行工具交互。Rsync 是一个在两个位置之间同步文件和目录的工具。
+description: 用于文件同步的 Rsync shell 别名。在不同位置之间同步文件和目录的快捷方式。
 lang: zh-CN
 metaTitle: Rsync 别名 - Dotfiles (CN)
-permalink: /zh/aliases/rsync/
+permalink: /aliases/rsync/
+sidebar: true
+
+meta:
+  - name: keywords
+    content: rsync, 同步, 文件传输, shell 别名, dotfiles, 备份
+  - name: twitter:card
+    content: summary
+  - name: twitter:description
+    content: 用于文件同步的 Rsync shell 别名。在不同位置之间同步文件和目录的快捷方式。
+  - name: twitter:title
+    content: Rsync 别名 - Dotfiles
+  - name: og:title
+    content: Rsync 别名 - Dotfiles
+  - name: og:description
+    content: 用于文件同步的 Rsync shell 别名。在不同位置之间同步文件和目录的快捷方式。
+  - name: og:image:alt
+    content: Dotfiles - 为你的 Shell 生活精心设计
+  - name: og:locale
+    content: zh_CN
 ---
 
 # Rsync 别名
 
-`rsync.aliases.sh` 文件为 [rsync](https://zh.wikipedia.org/wiki/Rsync) 创建了有用的快捷别名。
+在不同位置之间同步文件和目录，并显示进度。
 
-## Rsync
+## 概述
 
-[Rsync](https://zh.wikipedia.org/wiki/Rsync) 是一个将文件和目录复制到另一个位置的命令。
+这些别名定义在 `rsync.aliases.sh` 中，由 Chezmoi 自动加载。
 
-| 别名  | 命令         | 描述                         |
-| ----- | ------------ | ---------------------------- |
-| rs    | `rsync -avz` | 带有详细信息和进度的 Rsync。 |
-| rsync | `rs`         | 带有详细信息和进度的 Rsync。 |
+## 参考
+
+| 别名 | 描述 |
+|:---|:---|
+| `rs` | 带详细输出和进度显示的 Rsync |

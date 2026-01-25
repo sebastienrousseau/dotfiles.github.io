@@ -1,45 +1,43 @@
 ---
-description: The Wget aliases create helpful shortcut aliases for the `wget` command. Wget is a tool which downloads files from the internet.
+description: Wget shell aliases for downloading files. Quick shortcuts for web retrieval with resume support.
 lang: en-GB
-metaTitle: The Wget aliases - Dotfiles (UK)
+metaTitle: Wget Aliases - Dotfiles (UK)
 permalink: /aliases/wget/
+sidebar: true
 
 meta:
   - name: keywords
-    content: aliases, wget, linux, macos, shell, terminal, windows
+    content: wget, download, web retrieval, shell aliases, dotfiles
   - name: twitter:card
-    content: The Wget aliases create helpful shortcut aliases for the `wget` command. Wget is a tool which downloads files from the internet.
+    content: summary
   - name: twitter:description
-    content: The Wget aliases create helpful shortcut aliases for the `wget` command. Wget is a tool which downloads files from the internet.
+    content: Wget shell aliases for downloading files. Quick shortcuts for web retrieval with resume support.
   - name: twitter:title
-    content: The Wget aliases - Dotfiles (UK)
+    content: Wget Aliases - Dotfiles
   - name: og:title
-    content: The Wget aliases - Dotfiles (UK)
+    content: Wget Aliases - Dotfiles
   - name: og:description
-    content: The Wget aliases create helpful shortcut aliases for the `wget` command. Wget is a tool which downloads files from the internet.
+    content: Wget shell aliases for downloading files. Quick shortcuts for web retrieval with resume support.
   - name: og:image:alt
     content: Dotfiles - Simply designed to fit your shell life
   - name: og:locale
     content: en_GB
 ---
 
-# Wget aliases
+# Wget Aliases
 
-This `wget.aliases.sh` file creates helpful shortcut aliases for many commonly
-used [wget](https://www.gnu.org/software/wget/) commands.
+Download files from the web with resume support.
 
-The Wget aliases create helpful shortcut aliases for the `wget` command. Wget is
-a tool which downloads files from the internet.
+## Overview
 
-## Wget
+These aliases are defined in `wget.aliases.sh` and loaded automatically by Chezmoi.
 
-GNU [Wget](https://www.gnu.org/software/wget/) is a free utility for
-non-interactive download of files from the Web. It supports HTTP, HTTPS, and
-FTP protocols, as well as retrieval through HTTP proxies.
+## Reference
 
-| Alias | Command            | Description                           |
-| ----- | ------------------ | ------------------------------------- |
-| wg    | `wget`             | Download a file.                      |
-| wgc   | `wg`               | Continue a partially-downloaded file. |
-| wge   | `wg -e robots=off` | Download a file, ignoring robots.txt. |
-| wget  | `wget -c`          | Continue a partially-downloaded file. |
+| Alias | Description |
+|:---|:---|
+| `wg` | Wget shortcut |
+| `wgc` | Wget with continue |
+| `wge` | Wget with robots=off |
+| `wget` | Wget with continue |
+

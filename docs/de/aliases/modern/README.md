@@ -1,44 +1,64 @@
 ---
-description: Moderne Aliase für Dotfiles
+description: Moderne Shell-Aliase fuer eza, bat und ripgrep. Ersetzen Sie klassische Unix-Tools durch schnellere Rust-basierte Alternativen.
 lang: de-DE
-metaTitle: Moderne Aliase - Dotfiles (DE)
+metaTitle: Modern Tooling Aliase - Dotfiles (DE)
 permalink: /de/aliases/modern/
+sidebar: true
+
+meta:
+  - name: keywords
+    content: moderne aliase, eza, bat, ripgrep, rust cli tools, dotfiles, shell
+  - name: twitter:card
+    content: summary
+  - name: twitter:title
+    content: Modern Tooling Aliase - Dotfiles
+  - name: twitter:description
+    content: Moderne Shell-Aliase fuer eza, bat und ripgrep als Ersatz fuer klassische Unix-Tools.
+  - name: og:title
+    content: Modern Tooling Aliase - Dotfiles
+  - name: og:description
+    content: Moderne Shell-Aliase fuer eza, bat und ripgrep als Ersatz fuer klassische Unix-Tools.
+  - name: og:image:alt
+    content: Dotfiles - Simply designed to fit your shell life
+  - name: og:locale
+    content: de_DE
 ---
 
-# Moderne Tooling Aliase
+# Modern Tooling Aliase
 
-Verwalten Sie Aliase für moderne Tools. Teil der **Universal Dotfiles** Konfiguration.
+Schnellere, intelligentere Ersatztools fuer klassische Unix-Befehle.
 
-![Dotfiles banner][banner]
+## Uebersicht
 
-## 📖 Beschreibung
+Die modernen Aliase in `modern.aliases.sh` bieten Rust-basierte Alternativen zu traditionellen Unix-Tools. Diese Aliase werden automatisch von `chezmoi` geladen und fallen elegant auf Standardbefehle zurueck, wenn moderne Tools nicht verfuegbar sind.
 
-Diese Aliase sind in `modern.aliases.sh` definiert und werden automatisch von `chezmoi` geladen.
-Sie bieten moderne Ersatzwerkzeuge für traditionelle Unix-Tools (Rust-basiert).
+## Referenz
 
-## ⚡ Aliase
+### Dateilisting mit eza
 
-### Dateilistung (eza)
+Ersetzt `ls` wenn `eza` installiert ist.
 
-Wenn `eza` installiert ist (ersetzt `ls`):
+| Alias | Befehl | Beschreibung |
+|:---|:---|:---|
+| `ls` | `eza --icons` | Dateien mit Icons auflisten |
+| `ll` | `eza -alF` | Langes Listenformat |
+| `la` | `eza -a` | Alle Dateien einschliesslich versteckter auflisten |
+| `lt` | `eza --tree` | Verzeichnisbaum anzeigen |
 
-- `ls` - Dateien auflisten (`eza --icons`)
-- `ll` - Lange Liste (`eza -alF`)
-- `la` - Alle auflisten (`eza -a`)
-- `lt` - Baumstruktur auflisten (`eza --tree`)
+Faellt auf Standard-`ls` zurueck, wenn `eza` nicht installiert ist.
 
-_(Greift auf Standard-`ls` zurück, falls `eza` fehlt)_
+### Dateiinhalte mit bat
 
-### Dateiinhalt (bat)
+Ersetzt `cat` wenn `bat` installiert ist.
 
-Wenn `bat` installiert ist (ersetzt `cat`):
+| Alias | Befehl | Beschreibung |
+|:---|:---|:---|
+| `cat` | `bat` | Dateiinhalt mit Syntax-Highlighting anzeigen |
 
-- `cat` - Dateiinhalt mit Syntax-Highlighting anzeigen
+### Suche mit ripgrep
 
-### Suchen (rg)
+Ersetzt `grep` wenn `rg` installiert ist.
 
-Wenn `rg` installiert ist (ersetzt `grep`):
-
-- `grep` - Suchen mit Ripgrep
-
-[banner]: https://kura.pro/dotfiles/v2/images/titles/title-dotfiles.svg
+| Alias | Befehl | Beschreibung |
+|:---|:---|:---|
+| `grep` | `rg` | Dateiinhalte mit Ripgrep durchsuchen |

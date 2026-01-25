@@ -1,27 +1,47 @@
 ---
-description: Make 别名是一组别名，允许您与 `make` 命令行工具有更方便的交互。Make 是一个从程序的源文件控制生成可执行文件和其他非源文件的工具。
+description: Make 命令的快捷别名。简化构建、测试和项目自动化。
 lang: zh-CN
 metaTitle: Make 别名 - Dotfiles (CN)
-permalink: /zh/aliases/make/
+permalink: /aliases/make/
+sidebar: true
+
+meta:
+  - name: keywords
+    content: make 别名, makefile 快捷方式, 构建自动化, dotfiles, shell
+  - name: twitter:card
+    content: summary
+  - name: twitter:title
+    content: Make 别名 - Dotfiles
+  - name: twitter:description
+    content: Make 命令的快捷别名。简化构建、测试和项目自动化。
+  - name: og:title
+    content: Make 别名 - Dotfiles
+  - name: og:description
+    content: Make 命令的快捷别名。简化构建、测试和项目自动化。
+  - name: og:image:alt
+    content: Dotfiles - 为你的 Shell 生活精心设计
+  - name: og:locale
+    content: zh_CN
 ---
 
 # Make 别名
 
-`make.aliases.sh` 文件为运行 `make` 命令创建了有用的快捷别名。
+使用 Make 的简写命令简化构建工作流。
 
-## Make
+## 概述
 
-[Make](https://zh.wikipedia.org/wiki/Make) 是一个从程序的源文件控制生成可执行文件和其他非源文件的工具。
+这些别名提供对常用 Make 目标的快速访问。定义在 `make.aliases.sh` 中，由 chezmoi 自动加载，作为 Universal Dotfiles 配置的一部分。
 
-Make 从一个名为 `Makefile` 的文件中获取如何构建程序的知识，该文件列出了每个非源文件以及如何从其他文件计算它。
+## 参考
 
-| 别名 | 命令           | 描述                    |
-| ---- | -------------- | ----------------------- |
-| mk   | `make`         | 运行不带参数的 `make`。 |
-| mkc  | `make clean`   | 运行 `make clean`。     |
-| mkd  | `make doc`     | 运行 `make doc`。       |
-| mkf  | `make format`  | 运行 `make format`。    |
-| mkh  | `make help`    | 运行 `make help`。      |
-| mki  | `make install` | 运行 `make install`。   |
-| mkr  | `make run`     | 运行 `make run`。       |
-| mkt  | `make test`    | 运行 `make test`。      |
+| 别名 | 命令 | 描述 |
+|:---|:---|:---|
+| `mk` | `make` | 运行默认 Make 目标 |
+| `mka` | `make all` | 构建所有目标 |
+| `mkc` | `make clean` | 清理构建产物 |
+| `mkd` | `make doc` | 生成文档 |
+| `mkf` | `make format` | 格式化源文件 |
+| `mkh` | `make help` | 显示帮助信息 |
+| `mki` | `make install` | 安装项目 |
+| `mkr` | `make run` | 运行项目 |
+| `mkt` | `make test` | 运行测试 |

@@ -1,56 +1,94 @@
 ---
-description: Os aliases Padrão são aliases que não são específicos para nenhum comando específico. Eles são aliases comuns usados em muitos contextos diferentes e estão listados aqui para conveniência.
+title: "Aliases Padrao: Atalhos Essenciais de Shell"
+description: "Aliases de shell essenciais para navegacao, controle do sistema e tarefas diarias. Simplifique seu fluxo de trabalho no terminal com estes atalhos universais."
 lang: pt-BR
-metaTitle: Aliases Padrão - Dotfiles (BR)
+metaTitle: "Aliases Padrao | Dotfiles"
 permalink: /pt/aliases/default/
+sidebar: true
+meta:
+  - name: keywords
+    content: "aliases padrao, aliases shell, atalhos terminal, dotfiles, aliases bash"
+  - name: twitter:card
+    content: summary
+  - name: twitter:title
+    content: Aliases Padrao | Dotfiles
+  - name: twitter:description
+    content: Aliases de shell essenciais para navegacao, controle do sistema e tarefas diarias.
+  - name: og:title
+    content: Aliases Padrao | Dotfiles
+  - name: og:description
+    content: Aliases de shell essenciais para navegacao, controle do sistema e tarefas diarias.
+  - name: og:image:alt
+    content: Dotfiles - Simply designed to fit your shell life
+  - name: og:locale
+    content: pt_BR
 ---
 
-# Aliases Padrão
+# Aliases Padrao
 
-O arquivo `default.aliases.sh` cria aliases de atalho úteis para muitos comandos
-frequentemente usados.
+Atalhos de shell essenciais para tarefas diarias do terminal.
 
-## Padrão
+## Visao Geral
 
-Os aliases Padrão são aliases que não são específicos para nenhum comando particular.
-Eles são aliases comuns que são usados em muitos contextos diferentes e são listados
-aqui para conveniência. Os aliases são listados em ordem alfabética para facilitar o uso.
+Os aliases padrao fornecem uma colecao de atalhos de shell universais que simplificam operacoes comuns do terminal. Estes aliases sao definidos em `default.aliases.sh` e sao carregados automaticamente pelo chezmoi em todos os shells suportados.
 
-| Alias    | Comando                              | Descrição                                                                                                                                |
-| -------- | ------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------- |
-| :q       | `quit`                               | Atalho para o comando `exit`.                                                                                                            |
-| bye      | `quit`                               | Atalho para o comando `exit`.                                                                                                            |
-| ctf      | `echo $(ls -1 \| wc -l)`             | Contar o número de arquivos no diretório atual.                                                                                          |
-| curl     | `curl --compressed`                  | Usar compressão ao transferir dados.                                                                                                     |
-| da       | `date "+%Y-%m-%d %A %T %Z"`          | Exibir a data e hora atuais.                                                                                                             |
-| h        | `history`                            | Lista todos os comandos usados recentemente.                                                                                             |
-| halt     | `sudo /sbin/halt`                    | Desligar o sistema.                                                                                                                      |
-| ifconfig | `sudo ifconfig`                      | Adicionar sudo ao comando ifconfig (configurar parâmetros de interface de rede).                                                         |
-| ipinfo   | `ipconfig getpacket en0`             | Obter parâmetros de interface de rede para en0.                                                                                          |
-| moon     | `curl -s "wttr.in/?format=%m"`       | Obter a fase da lua.                                                                                                                     |
-| nls      | `sudo lsof -i -P \| grep LISTEN`     | Mostrar apenas ouvintes de rede ativos.                                                                                                  |
-| now      | `date +"%T"`                         | Mostrar a hora atual.                                                                                                                    |
-| op       | `sudo lsof -i -P`                    | Lista de portas abertas.                                                                                                                 |
-| p        | `pwd`                                | Atalho para `pwd` que retorna o nome do diretório de trabalho.                                                                           |
-| path     | `echo ${PATH//:/\\n}`                | Exibir a variável $PATH em novas linhas.                                                                                                 |
-| pid      | `ps -f`                              | Exibir o uid, pid, pid pai, uso recente da CPU, hora de início do processo, tty de controle, uso decorrido da CPU e o comando associado. |
-| ping     | `ping -c 5`                          | Limitar Ping a 5 pacotes ECHO_REQUEST.                                                                                                   |
-| please   | `sudo -`                             | Executar um comando como superusuário.                                                                                                   |
-| ports    | `netstat -tulan`                     | Listar todas as portas de escuta.                                                                                                        |
-| poweroff | `sudo /sbin/shutdown`                | Desligar o sistema.                                                                                                                      |
-| ps       | `ps auxwww`                          | Obtendo caminho completo de executáveis.                                                                                                 |
-| q        | `quit`                               | Atalho para o comando `exit`.                                                                                                            |
-| qfind    | `find . -name`                       | Pesquisar arquivo rapidamente.                                                                                                           |
-| quit     | `exit`                               | Atalho para o comando `exit`.                                                                                                            |
-| r        | `reload`                             | Recarregar o shell.                                                                                                                      |
-| reboot   | `sudo /sbin/reboot`                  | Reinicializar o sistema.                                                                                                                 |
-| reload   | `exec $SHELL -l`                     | Recarregar o shell.                                                                                                                      |
-| shutdown | `sudo shutdown -h now'`              | Desligar o sistema.                                                                                                                      |
-| spd      | `sudo rm -rf /private/var/log/asl/*` | Remover todos os arquivos de log em /private/var/log/asl.                                                                                |
-| srv      | `python3 -m http.server`             | Iniciar um servidor HTTP simples.                                                                                                        |
-| t        | `tail -f`                            | Imprime as últimas 10 linhas de um arquivo de texto ou log e aguarda novas adições ao arquivo para imprimi-lo em tempo real.             |
-| top      | `sudo btop`                          | Permite ao usuário monitorar interativamente os recursos vitais do sistema ou processos do servidor em tempo real.                       |
-| tree     | `tree --dirsfirst`                   | Exibir uma árvore de diretórios.                                                                                                         |
-| wk       | `date +%V`                           | Mostrar o número da semana atual.                                                                                                        |
-| wth      | `curl -s "wttr.in/?format=3"`        | Obter o clima.                                                                                                                           |
-| x        | `quit`                               | Atalho para o comando `exit`.                                                                                                            |
+Estes atalhos cobrem utilitarios gerais, comandos de saida, diagnosticos de rede, monitoramento do sistema e navegacao do sistema de arquivos.
+
+## Referencia
+
+### Geral
+
+| Alias | Comando | Descricao |
+|-------|---------|-------------|
+| `da` | `date "+%Y-%m-%d %A %T %Z"` | Exibir data e hora atuais |
+| `p` | `pwd` | Imprimir diretorio de trabalho |
+| `path` | `echo ${PATH//:/\\n}` | Exibir variavel PATH em novas linhas |
+| `r` | `reload` | Recarregar o shell |
+| `t` | `tail -f` | Acompanhar saida de arquivo em tempo real |
+| `wk` | `date +%V` | Mostrar numero da semana atual |
+
+### Saida e Desligamento
+
+| Alias | Comando | Descricao |
+|-------|---------|-------------|
+| `q` | `exit` | Sair do shell |
+| `quit` | `exit` | Sair do shell |
+| `bye` | `exit` | Sair do shell |
+| `:q` | `exit` | Sair do shell (estilo vim) |
+| `halt` | `sudo /sbin/halt` | Parar o sistema |
+| `poweroff` | `sudo /sbin/shutdown` | Desligar o sistema |
+| `reboot` | `sudo /sbin/reboot` | Reiniciar o sistema |
+
+### Historico
+
+| Alias | Comando | Descricao |
+|-------|---------|-------------|
+| `h` | `history` | Ver historico de comandos |
+| `history` | `fc -il 1` | Mostrar historico com timestamps ISO 8601 |
+
+### Rede
+
+| Alias | Comando | Descricao |
+|-------|---------|-------------|
+| `ifconfig` | `sudo ifconfig` | Configurar interfaces de rede |
+| `ipinfo` | `ipconfig getpacket en0` | Obter parametros de rede para en0 |
+| `nls` | `sudo lsof -i -P \| grep LISTEN` | Mostrar ouvintes de rede ativos |
+| `op` | `sudo lsof -i -P` | Listar portas abertas |
+| `ping` | `ping -c 5` | Ping com limite de 5 pacotes |
+| `ports` | `netstat -tulan` | Listar todas as portas em escuta |
+
+### Monitoramento do Sistema
+
+| Alias | Comando | Descricao |
+|-------|---------|-------------|
+| `top` | `sudo btop` | Monitor de processos interativo |
+| `spd` | `sudo rm -rf /private/var/log/asl/*` | Limpar arquivos de log ASL |
+
+### Utilitarios
+
+| Alias | Comando | Descricao |
+|-------|---------|-------------|
+| `ctf` | `ls -1 \| wc -l` | Contar arquivos no diretorio atual |
+| `qfind` | `find . -name` | Busca rapida de arquivos |
+| `reload` | `exec $SHELL -l` | Recarregar o shell |
+| `wth` | `curl -s "wttr.in/?format=3"` | Obter clima atual |

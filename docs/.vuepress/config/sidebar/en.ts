@@ -1,15 +1,66 @@
 import type { SidebarConfig } from "@vuepress/theme-default";
 
-import { aliases } from "../aliases/en";
-import { about } from "../about/en";
-
-export const enSidebar: SidebarConfig = [
-  about,
-  ["/paths/", "Path Management"],
-  ["/functions/", "Shell Functions"],
-  {
-    title: "Aliases",
-    collapsable: false,
-    children: aliases.children,
-  },
-];
+export const enSidebar: SidebarConfig = {
+  "/": [
+    {
+      title: "Getting Started",
+      collapsable: false,
+      children: [
+        "/about/",
+        "/functions/",
+        "/paths/",
+      ],
+    },
+    {
+      title: "Aliases",
+      collapsable: false,
+      children: [
+        "/aliases/",
+        "/aliases/ai/",
+        "/aliases/archives/",
+        "/aliases/cd/",
+        "/aliases/chmod/",
+        "/aliases/clear/",
+        "/aliases/compliance/",
+        "/aliases/configuration/",
+        "/aliases/default/",
+        "/aliases/diagnostics/",
+        "/aliases/dig/",
+        "/aliases/disk-usage/",
+        "/aliases/docker/",
+        "/aliases/editor/",
+        "/aliases/find/",
+        "/aliases/fonts/",
+        "/aliases/gcloud/",
+        "/aliases/git/",
+        "/aliases/gnu/",
+        "/aliases/go/",
+        "/aliases/heroku/",
+        "/aliases/installer/",
+        "/aliases/interactive/",
+        "/aliases/kubernetes/",
+        "/aliases/legal/",
+        "/aliases/macOS/",
+        "/aliases/make/",
+        "/aliases/mkdir/",
+        "/aliases/modern/",
+        "/aliases/npm/",
+        "/aliases/permission/",
+        "/aliases/pnpm/",
+        "/aliases/ps/",
+        "/aliases/python/",
+        "/aliases/rsync/",
+        "/aliases/rust/",
+        "/aliases/security/",
+        "/aliases/subversion/",
+        "/aliases/sudo/",
+        "/aliases/terraform/",
+        "/aliases/tmux/",
+        "/aliases/update/",
+        "/aliases/uuid/",
+        "/aliases/wget/",
+        "/aliases/yarn/",
+      ],
+    },
+  ],
+};

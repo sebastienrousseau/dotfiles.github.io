@@ -1,23 +1,42 @@
 ---
-description: Los alias de Sudo son una colección de alias que te permiten interactuar con el comando `sudo`. Sudo es una herramienta que te permite ejecutar comandos como otro usuario.
+description: Alias de Sudo para operaciones de superusuario. Atajos para ejecutar comandos con privilegios elevados.
 lang: es-ES
 metaTitle: Alias de Sudo - Dotfiles (ES)
 permalink: /es/aliases/sudo/
+sidebar: true
+
+meta:
+  - name: keywords
+    content: alias sudo, superusuario, root, privilegios, administrador, dotfiles, shell
+  - name: twitter:card
+    content: summary
+  - name: twitter:description
+    content: Alias de Sudo para operaciones de superusuario. Atajos para ejecutar comandos con privilegios elevados.
+  - name: twitter:title
+    content: Alias de Sudo - Dotfiles
+  - name: og:title
+    content: Alias de Sudo - Dotfiles
+  - name: og:description
+    content: Alias de Sudo para operaciones de superusuario. Atajos para ejecutar comandos con privilegios elevados.
+  - name: og:image:alt
+    content: Dotfiles - Simplemente disenado para adaptarse a tu vida en el shell
+  - name: og:locale
+    content: es_ES
 ---
 
 # Alias de Sudo
 
-El archivo `sudo.aliases.sh` crea atajos útiles para usar `sudo` con comandos.
+Atajos para operaciones de superusuario.
 
-Los alias de Sudo son una colección de alias que te permiten interactuar con el comando `sudo`. Sudo es una herramienta que te permite ejecutar comandos como otro usuario.
+## Descripcion
 
-## Sudo
+Estos alias estan definidos en `sudo.aliases.sh` y se cargan automaticamente por chezmoi. Proporcionan atajos rapidos para ejecutar comandos como superusuario.
 
-[Sudo](https://es.wikipedia.org/wiki/Sudo) es un comando que permite a los usuarios ejecutar comandos como otro usuario (normalmente el superusuario o root).
+## Referencia
 
-| Alias | Comando   | Descripción                                                |
-| ----- | --------- | ---------------------------------------------------------- |
-| root  | `s`       | Ejecutar un comando como superusuario.                     |
-| s     | `sudo -i` | Ejecutar un comando como superusuario (shell interactiva). |
-| su    | `sudo su` | Ejecutar un comando como superusuario (cambiar usuario).   |
-| sudo  | `s`       | Ejecutar un comando como superusuario.                     |
+| Alias | Descripcion |
+|:---|:---|
+| `root` | Ejecutar comando como superusuario |
+| `s` | Ejecutar comando como superusuario |
+| `su` | Ejecutar comando como superusuario |
+| `sudo` | Ejecutar comando como superusuario |

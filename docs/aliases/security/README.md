@@ -1,22 +1,44 @@
 ---
-description: security aliases for Dotfiles
+description: Security aliases for file immutability and configuration protection. Lock and unlock critical shell files.
 lang: en-GB
-metaTitle: security aliases - Dotfiles
+metaTitle: Security Aliases - Dotfiles (UK)
 permalink: /aliases/security/
+sidebar: true
+
+meta:
+  - name: keywords
+    content: security, immutability, file lock, shell aliases, dotfiles, configuration protection
+  - name: twitter:card
+    content: summary
+  - name: twitter:description
+    content: Security aliases for file immutability and configuration protection. Lock and unlock critical shell files.
+  - name: twitter:title
+    content: Security Aliases - Dotfiles
+  - name: og:title
+    content: Security Aliases - Dotfiles
+  - name: og:description
+    content: Security aliases for file immutability and configuration protection. Lock and unlock critical shell files.
+  - name: og:image:alt
+    content: Dotfiles - Simply designed to fit your shell life
+  - name: og:locale
+    content: en_GB
 ---
 
 # Security Aliases
 
-Tools for hardening the environment and managing configuration immutability.
+Protect critical configuration files with immutability controls.
 
-## 🔒 Immutability
+## Overview
 
-| Alias            | Description                                                                                   |
-| ---------------- | --------------------------------------------------------------------------------------------- |
-| `lock-configs`   | Locks critical files (`.zshrc`, etc.) to prevent modification (`chflags uchg` / `chattr +i`). |
-| `unlock-configs` | Unlocks critical files for editing.                                                           |
-| `check-locks`    | Checks the lock status of critical files.                                                     |
+These aliases are defined in `security.aliases.sh` and loaded automatically by Chezmoi.
 
-## 🔑 Git Signing
+## Reference
 
-(See [Git Aliases](../git/README.md) for signing configuration)
+### Immutability
+
+| Alias | Description |
+|:---|:---|
+| `lock-configs` | Lock critical files to prevent modification |
+| `unlock-configs` | Unlock critical files for editing |
+| `check-locks` | Check the lock status of critical files |
+

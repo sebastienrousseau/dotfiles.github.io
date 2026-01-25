@@ -1,88 +1,201 @@
 ---
-description: The Rust aliases are a collection of aliases that allow you to interact with the `rustup` and `cargo` commands. They are designed to be used with the `rustup` toolchain manager and the `cargo` package manager.
+description: Rust development aliases for Cargo and Rustup. Shortcuts for building, testing, and managing Rust projects.
 lang: en-GB
-metaTitle: The Rust aliases - Dotfiles (UK)
+metaTitle: Rust Aliases - Dotfiles (UK)
 permalink: /aliases/rust/
+sidebar: true
 
 meta:
   - name: keywords
-    content: aliases, cargo, rust, rustup, linux, macos, shell, terminal, windows
+    content: rust, cargo, rustup, shell aliases, dotfiles, rust development
   - name: twitter:card
-    content: The Rust aliases are a collection of aliases that allow you to interact with the `rustup` and `cargo` commands. They are designed to be used with the `rustup` toolchain manager and the `cargo` package manager.
+    content: summary
   - name: twitter:description
-    content: The Rust aliases are a collection of aliases that allow you to interact with the `rustup` and `cargo` commands. They are designed to be used with the `rustup` toolchain manager and the `cargo` package manager.
+    content: Rust development aliases for Cargo and Rustup. Shortcuts for building, testing, and managing Rust projects.
   - name: twitter:title
-    content: The Rust aliases - Dotfiles (UK)
+    content: Rust Aliases - Dotfiles
   - name: og:title
-    content: The Rust aliases - Dotfiles (UK)
+    content: Rust Aliases - Dotfiles
   - name: og:description
-    content: The Rust aliases are a collection of aliases that allow you to interact with the `rustup` and `cargo` commands. They are designed to be used with the `rustup` toolchain manager and the `cargo` package manager.
+    content: Rust development aliases for Cargo and Rustup. Shortcuts for building, testing, and managing Rust projects.
   - name: og:image:alt
     content: Dotfiles - Simply designed to fit your shell life
   - name: og:locale
     content: en_GB
 ---
 
-# Rust aliases
+# Rust Aliases
 
-The `rust.aliases.sh` file creates helpful shortcut aliases for
-[Rust](https://www.rust-lang.org/).
+Shortcuts for Rust development using Cargo and Rustup.
 
-The Rust aliases are a collection of aliases that allow you to interact with the
-`rustup` and `cargo` commands. They are designed to be used with the `rustup`
-toolchain manager and the `cargo` package manager.
+## Overview
 
-## Rust
+These aliases are defined in `rust.aliases.sh` and loaded automatically by Chezmoi.
 
-[Rust](https://www.rust-lang.org/) is a programming language that is focused on
-performance and safety, especially safe concurrency. Rust is syntactically
-similar to C++, but is designed to provide better memory safety while
-maintaining high performance.
+## Reference
 
-| Alias | Command                      | Description                 |
-| ----- | ---------------------------- | --------------------------- |
-| ru    | `rustup update`              | Rustup update.              |
-| rca   | `rustup component add`       | Rustup component add.       |
-| rcl   | `rustup component list`      | Rustup component list.      |
-| rcr   | `rustup component remove`    | Rustup component remove.    |
-| rde   | `rustup default`             | Rustup default.             |
-| rnn   | `rustup run nightly`         | Run rustup nightly.         |
-| rns   | `rustup run stable`          | Run rustup stable.          |
-| rtaa  | `rustup target add`          | Rustup target add.          |
-| rtal  | `rustup target list`         | Rustup target list.         |
-| rtar  | `rustup target remove`       | Rustup target remove.       |
-| rti   | `rustup toolchain install`   | Rustup toolchain install.   |
-| rtl   | `rustup toolchain list`      | Rustup toolchain list.      |
-| rtu   | `rustup toolchain uninstall` | Rustup toolchain uninstall. |
-| ruc   | `rustup update nightly`      | Update rustup nightly.      |
-| rus   | `rustup update stable`       | Update rustup stable.       |
+### Basic Commands
 
-## Cargo
+| Alias | Description |
+|:---|:---|
+| `cg` | Cargo shortcut |
+| `cgn` | Create new binary project |
+| `cgni` | Create new library project |
+| `cginit` | Initialise project in current directory |
 
-[Cargo](https://doc.rust-lang.org/cargo/) is the Rust package manager. It is
-used to build, test, and package Rust projects. Cargo is included with Rustup.
+### Build and Run
 
-| Alias  | Command              | Description          |
-| ------ | -------------------- | -------------------- |
-| cg     | `cargo`              | Cargo shortcut.      |
-| cgb    | `cg build`           | Cargo build.         |
-| cgbh   | `cg bench`           | Cargo bench.         |
-| cgbr   | `cg build --release` | Cargo build release. |
-| cgc    | `cg check`           | Cargo check.         |
-| cgcl   | `cg clean`           | Cargo clean.         |
-| cgcy   | `cg clippy`          | Cargo clippy.        |
-| cgd    | `cg doc --open`      | Cargo doc.           |
-| cgdr   | `cg doc --release`   | Cargo doc release.   |
-| cgf    | `cg fmt`             | Cargo format.        |
-| cgi    | `cg install`         | Cargo install.       |
-| cginit | `cg init`            | Cargo init.          |
-| cgn    | `cg new`             | Cargo new.           |
-| cgp    | `cg publish`         | Cargo publish.       |
-| cgr    | `cg run`             | Cargo run.           |
-| cgrr   | `cg run --release`   | Cargo run release.   |
-| cgs    | `cg search`          | Cargo search.        |
-| cgt    | `cg test`            | Cargo test.          |
-| cgtr   | `cg test --release`  | Cargo test release.  |
-| cgtt   | `cg tree`            | Cargo tree.          |
-| cgu    | `cg update`          | Cargo update.        |
-| cgun   | `cg uninstall`       | Cargo uninstall.     |
+| Alias | Description |
+|:---|:---|
+| `cgb` | Build debug |
+| `cgbr` | Build release |
+| `cgr` | Run debug |
+| `cgrr` | Run release |
+| `cgw` | Watch and rebuild |
+
+### Testing and Benchmarking
+
+| Alias | Description |
+|:---|:---|
+| `cgt` | Run tests |
+| `cgtr` | Run tests in release mode |
+| `cgbh` | Run benchmarks |
+| `cgta` | Test all targets |
+| `cgtt` | Single threaded tests |
+
+### Code Quality
+
+| Alias | Description |
+|:---|:---|
+| `cgc` | Check compilation |
+| `cgcl` | Clean build artifacts |
+| `cgcy` | Run clippy lints |
+| `cgf` | Format code |
+| `cgfa` | Format all code |
+| `cgfx` | Auto-fix code issues |
+| `cgaud` | Security vulnerabilities check |
+
+### Documentation
+
+| Alias | Description |
+|:---|:---|
+| `cgd` | Build and open documentation |
+| `cgdr` | Build release documentation |
+| `cgdo` | Document private items |
+
+### Dependencies
+
+| Alias | Description |
+|:---|:---|
+| `cga` | Add dependency |
+| `cgad` | Add dev dependency |
+| `cgu` | Update dependencies |
+| `cgo` | Check outdated dependencies |
+| `cgv` | Vendor dependencies |
+| `cgtree` | Display dependency tree |
+
+### Cross Compilation
+
+| Alias | Description |
+|:---|:---|
+| `cgx` | Build using Zig |
+| `cgxw` | Cross compilation |
+| `cgxt` | Target specific platform |
+
+### Analysis and Profiling
+
+| Alias | Description |
+|:---|:---|
+| `cgfl` | Generate flamegraph |
+| `cgbl` | Binary size analysis |
+| `cgl` | Code coverage |
+| `cgm` | Module structure |
+| `cgex` | Expand macros |
+
+### Package Management
+
+| Alias | Description |
+|:---|:---|
+| `cgi` | Install binary |
+| `cgun` | Uninstall binary |
+| `cgp` | Publish to crates.io |
+| `cgs` | Search crates.io |
+| `cgcp` | Create release package |
+
+### Advanced Build
+
+| Alias | Description |
+|:---|:---|
+| `cgba` | Build all targets |
+| `cgbt` | Build with all features |
+| `cgbp` | Build with specific profile |
+
+### Project Templates
+
+| Alias | Description |
+|:---|:---|
+| `cgnb` | New binary from template |
+| `cgnl` | New library from template |
+| `cgnt` | New from custom template |
+
+### Rustup Updates
+
+| Alias | Description |
+|:---|:---|
+| `ru` | Update all toolchains |
+| `rus` | Update stable toolchain |
+| `run` | Update nightly toolchain |
+| `rti` | Install specific toolchain |
+
+### Components Management
+
+| Alias | Description |
+|:---|:---|
+| `rca` | Add component |
+| `rcl` | List components |
+| `rcr` | Remove component |
+
+### Toolchain Management
+
+| Alias | Description |
+|:---|:---|
+| `rtl` | List installed toolchains |
+| `rtu` | Uninstall toolchain |
+| `rde` | Set default toolchain |
+
+### Target Management
+
+| Alias | Description |
+|:---|:---|
+| `rtaa` | Add compilation target |
+| `rtal` | List available targets |
+| `rtar` | Remove compilation target |
+
+### Environment Running
+
+| Alias | Description |
+|:---|:---|
+| `rns` | Run command with stable |
+| `rnn` | Run command with nightly |
+
+### Documentation and Help
+
+| Alias | Description |
+|:---|:---|
+| `rdo` | Open Rust documentation |
+
+### Override Management
+
+| Alias | Description |
+|:---|:---|
+| `rpr` | Set directory toolchain |
+| `rpl` | List directory overrides |
+| `rpn` | Remove directory override |
+
+### Toolchain Information
+
+| Alias | Description |
+|:---|:---|
+| `rws` | Show active rustc path |
+| `rsh` | Show toolchain info |
+

@@ -1,41 +1,52 @@
 ---
-description: Os aliases de Find são projetados para procurar arquivos em uma hierarquia de diretórios e executar ações nos arquivos encontrados.
+title: "Aliases de Find: Busca de Arquivos com fd"
+description: "Aliases de shell para busca de arquivos usando fd, uma alternativa moderna e rapida ao find. Busque arquivos e diretorios facilmente."
 lang: pt-BR
-metaTitle: Aliases de Find - Dotfiles (BR)
+metaTitle: "Aliases de Find | Dotfiles"
 permalink: /pt/aliases/find/
+sidebar: true
+meta:
+  - name: keywords
+    content: "aliases find, fd, busca arquivos, aliases shell, dotfiles"
+  - name: twitter:card
+    content: summary
+  - name: twitter:description
+    content: Aliases de shell para busca de arquivos usando fd, uma alternativa moderna e rapida ao find.
+  - name: twitter:title
+    content: Aliases de Find | Dotfiles
+  - name: og:title
+    content: Aliases de Find | Dotfiles
+  - name: og:description
+    content: Aliases de shell para busca de arquivos usando fd, uma alternativa moderna e rapida ao find.
+  - name: og:image:alt
+    content: Dotfiles - Simply designed to fit your shell life
+  - name: og:locale
+    content: pt_BR
 ---
 
 # Aliases de Find
 
-O arquivo `find.aliases.sh` cria aliases de atalho úteis para o comando `fd`
-. O comando `fd` é uma alternativa multiplataforma ao `find`.
+Busque arquivos e diretorios com fd, uma alternativa moderna ao find.
 
-Tradicionalmente, o comando `find` é usado para procurar arquivos em uma hierarquia de diretórios
-e executar ações nos arquivos encontrados.
+## Visao Geral
 
-Decidimos substituir o comando `find` pelo comando `fd` que é
-uma alternativa mais simples, rápida e amigável ao usuário para o `find`.
+Estes aliases sao definidos em `find.aliases.sh` e carregados automaticamente pelo Chezmoi. Eles utilizam `fd`, uma ferramenta simples, rapida e amigavel para buscar arquivos e diretorios.
 
-## Find
+## Referencia
 
-[fd](https://github.com/sharkdp/fd) é uma alternativa simples, rápida e amigável ao usuário
-para o `find`. Embora não pretenda suportar toda a poderosa funcionalidade do find,
-ele fornece padrões sensatos (opinativos) para a maioria dos casos de uso.
-
-| Alias | Comando              | Descrição                                                              |
-| ----- | -------------------- | ---------------------------------------------------------------------- |
-| fd    | `fd --color always`  | sempre colorir a saída por padrão.                                     |
-| fda   | `fd --absolute-path` | listar todos os arquivos com caminho absoluto.                         |
-| fdc   | `fd --ignore-case`   | listar todos os arquivos com busca insensível a maiúsculas/minúsculas. |
-| fdd   | `fd --list-details`  | listar todos os arquivos com detalhes.                                 |
-| fde   | `fd --extension`     | listar todos os arquivos com extensão.                                 |
-| fdf   | `fd --follow`        | listar todos os arquivos seguindo links simbólicos.                    |
-| fdh   | `fd --help`          | listar todos os arquivos com ajuda.                                    |
-| fdh   | `fd --hidden`        | listar todos os arquivos com arquivos ocultos.                         |
-| fdn   | `fd --glob`          | listar todos os arquivos com glob.                                     |
-| fdo   | `fd --owner`         | listar todos os arquivos com proprietário.                             |
-| fds   | `fd --size`          | listar todos os arquivos com tamanho.                                  |
-| fdu   | `fd --exclude`       | listar todos os arquivos com exclusão.                                 |
-| fdv   | `fd --version`       | listar todos os arquivos com versão.                                   |
-| fdx   | `fd --exec`          | Executar um comando para cada resultado de pesquisa.                   |
-| find  | `fd`                 | fd é uma alternativa simples, rápida e amigável ao find.               |
+| Alias | Descricao |
+|-------|-------------|
+| `fd` | Alias padrao para `fd --color always`, lista com cores |
+| `fda` | Lista arquivos com caminhos absolutos |
+| `fdc` | Busca sem diferenciar maiusculas |
+| `fdd` | Lista arquivos com detalhes |
+| `fde` | Lista arquivos com extensao especifica |
+| `fdf` | Lista arquivos seguindo links simbolicos |
+| `fdh` | Mostra ajuda do `fd` |
+| `fdh` | Lista arquivos, incluindo ocultos |
+| `fdn` | Lista arquivos que combinam com glob |
+| `fdo` | Lista arquivos com informacao do proprietario |
+| `fds` | Lista arquivos com tamanho |
+| `fdu` | Lista arquivos com regras de exclusao |
+| `fdv` | Mostra versao do `fd` |
+| `fdx` | Executa um comando para cada resultado |

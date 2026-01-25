@@ -1,50 +1,51 @@
 ---
-description: The Make aliases are a collection of aliases that allow you to interact with the `make` command line tool. Make is a tool which controls the generation of executables and other non-source files of a program from the program's source files.
+title: "Make Aliases: Streamline Your Build Workflow"
+description: "Shortcut aliases for Make commands. Simplify builds, tests, and project automation."
 lang: en-GB
-metaTitle: The Make aliases - Dotfiles (UK)
+metaTitle: Make Aliases | Dotfiles
 permalink: /aliases/make/
-
+sidebar: true
 meta:
   - name: keywords
-    content: aliases, make, makefile, linux, macos, shell, terminal, windows
+    content: make aliases, makefile shortcuts, build automation, dotfiles, shell
   - name: twitter:card
-    content: The Make aliases are a collection of aliases that allow you to interact with the `make` command line tool. Make is a tool which controls the generation of executables and other non-source files of a program from the program's source files.
-  - name: twitter:description
-    content: The Make aliases are a collection of aliases that allow you to interact with the `make` command line tool. Make is a tool which controls the generation of executables and other non-source files of a program from the program's source files.
+    content: summary
   - name: twitter:title
-    content: The Make aliases - Dotfiles (UK)
+    content: Make Aliases | Dotfiles
+  - name: twitter:description
+    content: Shortcut aliases for Make commands. Simplify builds, tests, and project automation.
   - name: og:title
-    content: The Make aliases - Dotfiles (UK)
+    content: Make Aliases | Dotfiles
   - name: og:description
-    content: The Make aliases are a collection of aliases that allow you to interact with the `make` command line tool. Make is a tool which controls the generation of executables and other non-source files of a program from the program's source files.
+    content: Shortcut aliases for Make commands. Simplify builds, tests, and project automation.
   - name: og:image:alt
     content: Dotfiles - Simply designed to fit your shell life
   - name: og:locale
     content: en_GB
 ---
 
-# Make aliases
+# Make Aliases
 
-The `make.aliases.sh` file creates helpful shortcut aliases for running `make`
-commands.
+Simplify your build workflow with shorthand commands for Make.
 
-## Make
+![Dotfiles banner][banner]
 
-[Make](<https://en.wikipedia.org/wiki/Make_(software)>) is a tool which controls
-the generation of executables and other non-source files of a program from the
-program's source files.
+## Overview
 
-Make gets its knowledge of how to build your program from a file called the
-`Makefile`, which lists each of the non-source files and how to compute it from
-other files.
+These aliases provide quick access to common Make targets. Defined in `make.aliases.sh` and automatically loaded by chezmoi as part of the Universal Dotfiles configuration.
 
-| Alias | Command        | Description                   |
-| ----- | -------------- | ----------------------------- |
-| mk    | `make`         | Run `make` with no arguments. |
-| mkc   | `make clean`   | Run `make clean`.             |
-| mkd   | `make doc`     | Run `make doc`.               |
-| mkf   | `make format`  | Run `make format`.            |
-| mkh   | `make help`    | Run `make help`.              |
-| mki   | `make install` | Run `make install`.           |
-| mkr   | `make run`     | Run `make run`.               |
-| mkt   | `make test`    | Run `make test`.              |
+## Reference
+
+| Alias | Command | Description |
+|-------|---------|-------------|
+| `mk` | `make` | Run default Make target |
+| `mka` | `make all` | Build all targets |
+| `mkc` | `make clean` | Clean build artifacts |
+| `mkd` | `make doc` | Generate documentation |
+| `mkf` | `make format` | Format source files |
+| `mkh` | `make help` | Display help information |
+| `mki` | `make install` | Install the project |
+| `mkr` | `make run` | Run the project |
+| `mkt` | `make test` | Run tests |
+
+[banner]: https://kura.pro/dotfiles/v2/images/titles/title-dotfiles.svg

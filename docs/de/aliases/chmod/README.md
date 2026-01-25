@@ -1,39 +1,97 @@
 ---
-description: Die Chmod-Aliase ermöglichen das Ändern der Berechtigungen (oder des Zugriffsmodus) einer Datei oder eines Verzeichnisses.
+description: Vereinfachen Sie die Verwaltung von Datei- und Verzeichnisberechtigungen mit chmod-Aliase. Schnelle Verknüpfungen für gängige Berechtigungsmuster wie 755, 644 und mehr.
 lang: de-DE
 metaTitle: Chmod Aliase - Dotfiles (DE)
 permalink: /de/aliases/chmod/
+sidebar: true
+
+meta:
+  - name: keywords
+    content: chmod aliase, dateiberechtigungen, shell verknüpfungen, dotfiles, unix berechtigungen
+  - name: twitter:card
+    content: summary
+  - name: twitter:description
+    content: Vereinfachen Sie die Verwaltung von Datei- und Verzeichnisberechtigungen mit chmod-Aliase.
+  - name: twitter:title
+    content: Chmod Aliase - Dotfiles
+  - name: og:title
+    content: Chmod Aliase - Dotfiles
+  - name: og:description
+    content: Vereinfachen Sie die Verwaltung von Datei- und Verzeichnisberechtigungen mit chmod-Aliase.
+  - name: og:image:alt
+    content: Dotfiles - Simply designed to fit your shell life
+  - name: og:locale
+    content: de_DE
 ---
 
 # Chmod Aliase
 
-Die Datei `chmod.aliases.sh` erstellt hilfreiche Shortcut-Aliase zum Ändern
-von Dateiberechtigungen.
+Verknüpfungen zur Verwaltung von Datei- und Verzeichnisberechtigungen.
 
-## Berechtigung
+## Übersicht
 
-Das chmod-Dienstprogramm ändert die Dateimodus-Bits der aufgelisteten Dateien wie
-durch den Modus-Operanden angegeben. Es kann auch verwendet werden, um die Access Control Lists
-(ACLs) zu ändern, die mit den aufgelisteten Dateien verknüpft sind.
+Diese Aliase sind in `chmod.aliases.sh` definiert und werden automatisch von Chezmoi geladen.
 
-| Alias  | Befehl              | Beschreibung                                                                                                                                                                                                                                                  |
-| ------ | ------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 000    | `chmod -R 000`      | (chmod a-rwx) setzt Berechtigungen so, dass (U)ser / Eigentümer nicht lesen, nicht schreiben und nicht ausführen kann. (G)roup nicht lesen, nicht schreiben und nicht ausführen kann. (O)thers nicht lesen, nicht schreiben und nicht ausführen können.       |
-| 400    | `chmod -R 400`      | (chmod a-rw) setzt Berechtigungen so, dass (U)ser / Eigentümer nicht lesen, nicht schreiben, aber ausführen kann. (G)roup nicht lesen, nicht schreiben, aber ausführen kann. (O)thers nicht lesen, nicht schreiben, aber ausführen können.                    |
-| 444    | `chmod -R 444`      | (chmod a-r) setzt Berechtigungen so, dass (U)ser / Eigentümer nicht lesen, nicht schreiben, aber ausführen kann. (G)roup nicht lesen, nicht schreiben, aber ausführen kann. (O)thers nicht lesen, nicht schreiben, aber ausführen können.                     |
-| 600    | `chmod -R 600`      | (chmod a+rwx,u-x,g-rwx,o-rwx) setzt Berechtigungen so, dass (U)ser / Eigentümer lesen, schreiben, aber nicht ausführen kann. (G)roup nicht lesen, nicht schreiben und nicht ausführen kann. (O)thers nicht lesen, nicht schreiben und nicht ausführen können. |
-| 644    | `chmod -R 644`      | (chmod a+rwx,u-x,g-wx,o-wx) setzt Berechtigungen so, dass (U)ser / Eigentümer lesen, schreiben, aber nicht ausführen kann. (G)roup lesen, nicht schreiben und nicht ausführen kann. (O)thers lesen, nicht schreiben und nicht ausführen können.               |
-| 666    | `chmod -R 666`      | (chmod a+rwx,u-x,g-x,o-x) setzt Berechtigungen so, dass (U)ser / Eigentümer lesen, schreiben, aber nicht ausführen kann. (G)roup lesen, schreiben, aber nicht ausführen kann. (O)thers lesen, schreiben, aber nicht ausführen können.                         |
-| 755    | `chmod -R 755`      | (chmod a+rwx,g-w,o-w) setzt Berechtigungen so, dass (U)ser / Eigentümer lesen, schreiben und ausführen kann. (G)roup lesen, nicht schreiben, aber ausführen kann. (O)thers lesen, nicht schreiben, aber ausführen können.                                     |
-| 764    | `chmod -R 764`      | (chmod a+rwx,g-x,o-wx) setzt Berechtigungen so, dass (U)ser / Eigentümer lesen, schreiben und ausführen kann. (G)roup lesen, schreiben, aber nicht ausführen kann. (O)thers lesen, nicht schreiben und nicht ausführen können.                                |
-| 777    | `chmod -R 777`      | (chmod a+rwx) setzt Berechtigungen so, dass (U)ser / Eigentümer lesen, schreiben und ausführen kann. (G)roup lesen, schreiben und ausführen kann. (O)thers lesen, schreiben und ausführen können.                                                             |
-| chgrp  | `chgrp -v`          | Ändere Gruppenzugehörigkeit von Dateien oder Verzeichnissen.                                                                                                                                                                                                  |
-| chgrpr | `chgrp -Rv`         | Ändere Gruppenzugehörigkeit von Dateien oder Verzeichnissen rekursiv.                                                                                                                                                                                         |
-| chgrpu | `chgrp -Rv ${USER}` | Ändere Gruppenzugehörigkeit von Dateien oder Verzeichnissen rekursiv auf den aktuellen Benutzer.                                                                                                                                                              |
-| chmod  | `chmod -v`          | Ändere Dateimodus-Bits.                                                                                                                                                                                                                                       |
-| chmodr | `chmod -Rv`         | Ändere Dateimodus-Bits rekursiv.                                                                                                                                                                                                                              |
-| chmodu | `chmod -Rv u+rwX`   | Ändere Dateimodus-Bits rekursiv auf den aktuellen Benutzer.                                                                                                                                                                                                   |
-| chmox  | `chmod +x`          | Mache eine Datei ausführbar.                                                                                                                                                                                                                                  |
-| chown  | `chown -v`          | Ändere Dateieigentümer und Gruppe.                                                                                                                                                                                                                            |
-| chownr | `chown -Rv`         | Ändere Dateieigentümer und Gruppe rekursiv.                                                                                                                                                                                                                   |
-| chownu | `chown -Rv ${USER}` | Ändere Dateieigentümer und Gruppe rekursiv auf den aktuellen Benutzer.                                                                                                                                                                                        |
+## Referenz
+
+### Gängige Berechtigungsaliase
+
+| Alias | Berechtigungen | Beschreibung |
+|:---|:---|:---|
+| `chmod_000` | `----------` | Keine Berechtigungen für niemanden |
+| `chmod_400` | `r--------` | Nur Lesen für den Eigentümer |
+| `chmod_444` | `r--r--r--` | Nur Lesen für alle |
+| `chmod_600` | `rw-------` | Lesen/Schreiben für den Eigentümer |
+| `chmod_644` | `rw-r--r--` | Lesen/Schreiben für Eigentümer, nur Lesen für andere |
+| `chmod_666` | `rw-rw-rw-` | Lesen/Schreiben für alle |
+| `chmod_755` | `rwxr-xr-x` | Voll für Eigentümer, Lesen/Ausführen für andere |
+| `chmod_764` | `rwxrw-r--` | Voll für Eigentümer, Lesen/Schreiben für Gruppe |
+| `chmod_777` | `rwxrwxrwx` | Volle Berechtigungen für alle |
+
+### Eigentümer-Berechtigungsaliase
+
+| Alias | Beschreibung |
+|:---|:---|
+| `chmod_u+x` | Ausführberechtigung für Eigentümer hinzufügen |
+| `chmod_u-x` | Ausführberechtigung für Eigentümer entfernen |
+| `chmod_u+w` | Schreibberechtigung für Eigentümer hinzufügen |
+| `chmod_u-w` | Schreibberechtigung für Eigentümer entfernen |
+| `chmod_u+r` | Leseberechtigung für Eigentümer hinzufügen |
+| `chmod_u-r` | Leseberechtigung für Eigentümer entfernen |
+
+### Gruppen-Berechtigungsaliase
+
+| Alias | Beschreibung |
+|:---|:---|
+| `chmod_g+x` | Ausführberechtigung für Gruppe hinzufügen |
+| `chmod_g-x` | Ausführberechtigung für Gruppe entfernen |
+| `chmod_g+w` | Schreibberechtigung für Gruppe hinzufügen |
+| `chmod_g-w` | Schreibberechtigung für Gruppe entfernen |
+| `chmod_g+r` | Leseberechtigung für Gruppe hinzufügen |
+| `chmod_g-r` | Leseberechtigung für Gruppe entfernen |
+
+### Andere-Berechtigungsaliase
+
+| Alias | Beschreibung |
+|:---|:---|
+| `chmod_o+x` | Ausführberechtigung für andere hinzufügen |
+| `chmod_o-x` | Ausführberechtigung für andere entfernen |
+| `chmod_o+w` | Schreibberechtigung für andere hinzufügen |
+| `chmod_o-w` | Schreibberechtigung für andere entfernen |
+| `chmod_o+r` | Leseberechtigung für andere hinzufügen |
+| `chmod_o-r` | Leseberechtigung für andere entfernen |
+
+### Dateityp-Aliase
+
+| Alias | Beschreibung |
+|:---|:---|
+| `chmod_755d` | Berechtigungen aller Verzeichnisse auf `rwxr-xr-x` setzen |
+| `chmod_644f` | Berechtigungen aller Dateien auf `rw-r--r--` setzen |
+
+### Rekursive Berechtigungsfunktion
+
+Die `change_permission`-Funktion wendet Berechtigungen rekursiv mit einer Bestätigungsaufforderung an:
+
+```bash
+change_permission 755 /path/to/directory -R
+```

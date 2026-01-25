@@ -1,22 +1,37 @@
 ---
-description: Alias de fuentes para Dotfiles
+title: "Alias Fonts: gestionar fuentes del sistema"
+description: "Alias shell para gestionar fuentes y cachés. Actualiza la caché y lista familias instaladas."
 lang: es-ES
-metaTitle: Alias de Fuentes - Dotfiles (ES)
-permalink: /es/aliases/fonts/
+metaTitle: "Alias Fonts | Dotfiles"
+permalink: /aliases/fonts/
+sidebar: true
+meta:
+  - name: keywords
+    content: "alias fuentes, caché de fuentes, fc-cache, listar fuentes, dotfiles, shell"
 ---
 
-# Alias de Fuentes
+# Alias Fonts
 
-Alias para gestionar caché y fuentes del sistema.
+Alias de shell para gestionar fuentes del sistema y sus cachés.
 
-## 🔡 Comandos
+## Descubrir
 
-| Alias          | Descripción                                                 |
-| -------------- | ----------------------------------------------------------- |
-| `update-fonts` | Actualiza la caché de fuentes del sistema (`fc-cache -fv`). |
-| `list-fonts`   | Lista todas las familias de fuentes instaladas.             |
+Los alias fonts ofrecen atajos para tareas comunes de gestión de fuentes. Estas órdenes simplifican la actualización de la caché tras instalar nuevas fuentes y la lista de familias disponibles.
 
-## 📦 Fuentes Instaladas
+## Referencia
 
-- **JetBrainsMono Nerd Font**: Fuente principal de la terminal.
-- **Symbols Nerd Font**: Fuente de iconos de respaldo.
+### Comandos
+
+| Alias | Comando | Descripción |
+|-------|---------|-------------|
+| `update-fonts` | `fc-cache -fv` | Actualiza la caché de fuentes del sistema |
+| `list-fonts` | — | Lista todas las familias de fuentes instaladas |
+
+### Fuentes instaladas
+
+Las siguientes fuentes se configuran por defecto:
+
+| Fuente | Uso |
+|------|---------|
+| JetBrainsMono Nerd Font | Fuente principal del terminal |
+| Symbols Nerd Font | Fuente de respaldo para iconos |

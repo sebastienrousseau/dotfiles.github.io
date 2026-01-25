@@ -1,42 +1,42 @@
 ---
-description: Aliases de macOS para Dotfiles
+title: "Aliases de macOS: Configuracoes Especificas do macOS"
+description: "Aliases de shell para macOS. Gerencie Finder, LaunchServices, Wi-Fi, lixeira e outras configuracoes do sistema."
 lang: pt-BR
-metaTitle: Aliases de macOS - Dotfiles (BR)
+metaTitle: "Aliases de macOS | Dotfiles"
 permalink: /pt/aliases/macOS/
+sidebar: true
+meta:
+  - name: keywords
+    content: "aliases macos, finder, launchservices, wifi, aliases shell, dotfiles"
 ---
 
 # Aliases de macOS
 
-Gerencie aliases do macOS. Parte da configuração **Universal Dotfiles**.
+Configuracoes e utilitarios especificos do macOS.
 
-![Dotfiles banner][banner]
+## Visao Geral
 
-## 📖 Descrição
+Estes aliases sao definidos em `macOS.aliases.sh` e carregados automaticamente pelo Chezmoi.
 
-Esses aliases são definidos em `macOS.aliases.sh` e são carregados automaticamente pelo `chezmoi`.
+## Referencia
 
-## ⚡ Aliases
-
-Este código fornece um conjunto de aliases para macOS.
-
-- `clds` Excluir recursivamente arquivos .DS_Store.
-- `clls` Limpar LaunchServices para remover duplicatas no
-  menu 'Abrir com'.
-- `finderHideHidden` Ocultar arquivos ocultos no Finder.
-- `finderShowHidden` Mostrar arquivos ocultos no Finder.
-- `hideDesktopIcons` Ocultar todos os ícones na área de trabalho.
-- `iphone` Abrir os simuladores de dispositivos.
-- `lockScreen` Bloquear a tela do mac.
-- `ofd` Abrir o diretório atual em uma janela do Finder.
-- `purge` Purgar Xcode DerivedData.
-- `safariSafeMode` Iniciar Safari em modo seguro.
-- `showDesktopIcons` Mostrar todos os ícones na área de trabalho.
-- `screensaverDesktop` Executar um protetor de tela na área de trabalho.
-- `trash` Esvaziar a lixeira em todos os volumes montados e no HDD principal.
-- `vp` Verificar permissões do macOS.
-- `vv` Verificar volume do macOS.
-- `wifiOn` Ligar Wi-Fi.
-- `wifiOff` Desligar Wi-Fi.
-- `xcode` Iniciar o aplicativo XCode no macOS.
-
-[banner]: https://kura.pro/dotfiles/v2/images/titles/title-dotfiles.svg
+| Alias | Descricao |
+|-------|-------------|
+| `clds` | Remover .DS_Store recursivamente |
+| `clls` | Limpar LaunchServices para remover duplicados em "Open With" |
+| `finderHideHidden` | Ocultar arquivos ocultos no Finder |
+| `finderShowHidden` | Mostrar arquivos ocultos no Finder |
+| `hideDesktopIcons` | Ocultar icones no Desktop |
+| `iphone` | Abrir simuladores de device |
+| `lockScreen` | Bloquear tela do mac |
+| `ofd` | Abrir diretorio atual no Finder |
+| `purge` | Limpar DerivedData do Xcode |
+| `safariSafeMode` | Iniciar Safari em modo seguro |
+| `showDesktopIcons` | Mostrar icones no Desktop |
+| `screensaverDesktop` | Rodar screensaver no Desktop |
+| `trash` | Esvaziar lixeira em todos os volumes |
+| `vp` | Verificar permissoes do macOS |
+| `vv` | Verificar volume do macOS |
+| `wifiOn` | Ligar Wi-Fi |
+| `wifiOff` | Desligar Wi-Fi |
+| `xcode` | Abrir XCode |

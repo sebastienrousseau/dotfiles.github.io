@@ -1,22 +1,33 @@
 ---
-description: Aliases de segurança para Dotfiles
+title: "Aliases de Seguranca: Imutabilidade e Protecao de Arquivos"
+description: "Aliases de shell para seguranca. Bloqueie e desbloqueie arquivos de configuracao criticos para evitar alteracoes acidentais."
 lang: pt-BR
-metaTitle: Aliases de segurança - Dotfiles (BR)
+metaTitle: "Aliases de Seguranca | Dotfiles"
 permalink: /pt/aliases/security/
+sidebar: true
+meta:
+  - name: keywords
+    content: "aliases seguranca, imutabilidade, chflags, chattr, aliases shell, dotfiles"
 ---
 
-# Aliases de Segurança
+# Aliases de Seguranca
 
-Ferramentas para fortalecer o ambiente e gerenciar a imutabilidade da configuração.
+Ferramentas para endurecer o ambiente e gerenciar imutabilidade de configuracao.
 
-## 🔒 Imutabilidade
+## Visao Geral
 
-| Alias            | Descrição                                                                                            |
-| ---------------- | ---------------------------------------------------------------------------------------------------- |
-| `lock-configs`   | Bloqueia arquivos críticos (`.zshrc`, etc.) para evitar modificações (`chflags uchg` / `chattr +i`). |
-| `unlock-configs` | Desbloqueia arquivos críticos para edição.                                                           |
-| `check-locks`    | Verifica o status de bloqueio de arquivos críticos.                                                  |
+Estes aliases sao definidos em `security.aliases.sh` e carregados automaticamente pelo Chezmoi.
 
-## 🔑 Assinatura Git
+## Referencia
 
-(Veja [Aliases do Git](../git/README.md) para configuração de assinatura)
+### Imutabilidade
+
+| Alias | Descricao |
+|-------|-------------|
+| `lock-configs` | Bloqueia arquivos criticos (`.zshrc`, etc.) para evitar alteracoes (`chflags uchg` / `chattr +i`) |
+| `unlock-configs` | Desbloqueia arquivos criticos para edicao |
+| `check-locks` | Verifica o status de bloqueio de arquivos criticos |
+
+### Assinatura Git
+
+Veja [Aliases de Git](../git/) para configuracao de assinatura.

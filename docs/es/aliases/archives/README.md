@@ -1,101 +1,117 @@
 ---
-description: Los alias de archivos comprimidos son capaces de crear y manejar archivos en una variedad de formatos.
+description: Alias de архивado y compresión para tar, zip, 7z y más. Extrae, comprime y gestiona archivos fácilmente.
 lang: es-ES
-metaTitle: Alias de Archivos Comprimidos - Dotfiles (ES)
-permalink: /es/aliases/archives/
+metaTitle: Alias Archives - Dotfiles (ES)
+permalink: /aliases/archives/
+sidebar: true
+
 meta:
   - name: keywords
-    content: 7-zip, alias, archivos, bash, bzip2, dotfiles, gzip, jar, linux, macos, shell, tar, unzip, windows, xz, zip, zstd
+    content: archives, compresión, tar, zip, 7z, gzip, extract, alias shell, dotfiles
   - name: twitter:card
-    content: Los alias de archivos comprimidos son capaces de crear y manejar archivos en una variedad de formatos.
+    content: summary
   - name: twitter:description
-    content: Los alias de archivos comprimidos son capaces de crear y manejar archivos en una variedad de formatos.
+    content: Alias de archivado y compresión para tar, zip, 7z y más. Extrae, comprime y gestiona archivos fácilmente.
   - name: twitter:title
-    content: Alias de Archivos Comprimidos - Dotfiles (ES)
+    content: Alias Archives - Dotfiles
   - name: og:title
-    content: Alias de Archivos Comprimidos - Dotfiles (ES)
+    content: Alias Archives - Dotfiles
   - name: og:description
-    content: Los alias de archivos comprimidos son capaces de crear y manejar archivos en una variedad de formatos.
+    content: Alias de archivado y compresión para tar, zip, 7z y más. Extrae, comprime y gestiona archivos fácilmente.
   - name: og:image:alt
-    content: Dotfiles - Simplemente diseñado para adaptarse a tu vida en el shell
+    content: Dotfiles - Diseñado para tu vida en el shell
   - name: og:locale
     content: es_ES
 ---
 
-# Alias de Archivos Comprimidos
+# Alias Archives
 
-El archivo `archives.aliases.sh` crea atajos útiles para archivar archivos y directorios. Los alias son capaces de crear y manejar archivos en una variedad de formatos.
+Comprime, extrae y gestiona archivos. Soporte para los formatos principales.
 
-## 7-Zip
+## Descubrir
 
-[7-Zip](http://www.7-zip.org/) es un archivador de archivos con una alta relación de compresión.
+Estos alias se definen en `archives.aliases.sh` y se cargan automáticamente por Chezmoi.
 
-| Alias | Comando | Descripción                                                                   |
-| ----- | ------- | ----------------------------------------------------------------------------- |
-| c7z   | `7z a`  | Comprimir un directorio completo (incluyendo subdirectorios) a un archivo 7z. |
-| e7z   | `7z x`  | Extraer un directorio completo (incluyendo subdirectorios) de un archivo 7z.  |
+## Referencia
 
-## Bzip2
+### Extracción universal
 
-[Bzip2](http://www.bzip.org/) es un compresor de datos gratuito, libre de patentes y de alta calidad.
+El comando `extract` (atajo `x`) detecta el formato y extrae automáticamente:
 
-| Alias | Comando   | Descripción                            |
-| ----- | --------- | -------------------------------------- |
-| cbz2  | `bzip2`   | Comprimir un archivo a un archivo bz2. |
-| ebz2  | `bunzip2` | Extraer un archivo de un archivo bz2.  |
+```bash
+extract archive.tar.gz
+```
 
-## Gzip
+**Formatos compatibles:** `.tar.bz2`, `.tbz2`, `.tar.gz`, `.tgz`, `.tar.xz`, `.tar.zst`, `.tar`, `.bz2`, `.gz`, `.rar`, `.zip`, `.Z`, `.7z`, `.zst`, `.xz`, `.lz4`, `.lha`, `.lzh`, `.arj`, `.arc`, `.dms`
 
-[Gzip](https://www.gnu.org/software/gzip/) es un programa de compresión de datos popular como reemplazo de compress.
+### Compresión
 
-| Alias | Comando  | Descripción                           |
-| ----- | -------- | ------------------------------------- |
-| cgz   | `gzip`   | Comprimir un archivo a un archivo gz. |
-| egz   | `gunzip` | Extraer un archivo de un archivo gz.  |
+Crea archivos con `compress` (atajo `ac`):
 
-## Jar
+```bash
+compress tgz file1 file2 directory output.tar.gz
+compress zip -l 9 important_files backup.zip
+```
 
-[Jar](https://docs.oracle.com/javase/tutorial/deployment/jar/) es un formato de archivo utilizado para agregar muchos archivos en uno solo para distribuir software de aplicación o bibliotecas en la plataforma Java.
+**Formatos compatibles:** `tar`, `tgz`, `tbz2`, `txz`, `tzst`, `zip`, `7z`, `gz`, `bz2`, `xz`, `zst`, `lz4`, `rar`
 
-| Alias | Comando    | Descripción                                                                    |
-| ----- | ---------- | ------------------------------------------------------------------------------ |
-| cjar  | `jar -cvf` | Comprimir un directorio completo (incluyendo subdirectorios) a un archivo jar. |
-| ejar  | `jar -xvf` | Extraer un directorio completo (incluyendo subdirectorios) de un archivo jar.  |
+### Copia de seguridad
 
-## Tar
+Crea copias con timestamp con `backup` (atajo `bak`):
 
-[Tar](https://www.gnu.org/software/tar/) es un programa informático utilizado para almacenar muchos archivos juntos en un solo archivo.
+```bash
+backup important_folder
+backup database.sql zip
+```
 
-| Alias | Comando     | Descripción                                                                       |
-| ----- | ----------- | --------------------------------------------------------------------------------- |
-| ctar  | `tar -cvf`  | Comprimir un directorio completo (incluyendo subdirectorios) a un archivo tar.    |
-| etar  | `tar -xvf`  | Extraer un directorio completo (incluyendo subdirectorios) de un archivo tar.     |
-| ctgz  | `tar -cvzf` | Comprimir un directorio completo (incluyendo subdirectorios) a un archivo tar.gz. |
-| etgz  | `tar -xvzf` | Extraer un directorio completo (incluyendo subdirectorios) de un archivo tar.gz.  |
+### Listar contenido
 
-## Xz
+Ver el contenido de un archivo con `list_archive` (atajo `lar`):
 
-[Xz](https://tukaani.org/xz/) es un software de compresión de datos de propósito general con una alta relación de compresión.
+```bash
+list_archive backup.tar.gz
+```
 
-| Alias | Comando    | Descripción                                                                   |
-| ----- | ---------- | ----------------------------------------------------------------------------- |
-| cxz   | `xz -zcvf` | Comprimir un directorio completo (incluyendo subdirectorios) a un archivo xz. |
-| exz   | `xz -zxvf` | Extraer un directorio completo (incluyendo subdirectorios) de un archivo xz.  |
+### Herramientas de archivo
 
-## Zip
+| Alias | Descripción |
+|:---|:---|
+| `c7z` | Crear archivo 7z |
+| `x7z` | Extraer archivo 7z |
+| `l7z` | Listar contenido 7z |
+| `ctar` | Crear archivo tar |
+| `xtar` | Extraer archivo tar |
+| `ltar` | Listar contenido tar |
+| `ctgz` | Crear archivo tar.gz |
+| `xtgz` | Extraer archivo tar.gz |
+| `ltgz` | Listar contenido tar.gz |
+| `ctbz` | Crear archivo tar.bz2 |
+| `xtbz` | Extraer archivo tar.bz2 |
+| `ltbz` | Listar contenido tar.bz2 |
+| `ctxz` | Crear archivo tar.xz |
+| `xtxz` | Extraer archivo tar.xz |
+| `ltxz` | Listar contenido tar.xz |
+| `ctzst` | Crear archivo tar.zst |
+| `xtzst` | Extraer archivo tar.zst |
+| `ltzst` | Listar contenido tar.zst |
+| `czip` | Crear archivo zip |
+| `xzip` | Extraer archivo zip |
+| `lzip` | Listar contenido zip |
+| `crar` | Crear archivo rar |
+| `xrar` | Extraer archivo rar |
+| `lrar` | Listar contenido rar |
 
-[Zip](<https://en.wikipedia.org/wiki/Zip_(file_format)>) es un formato de archivo utilizado para generar un solo archivo que contiene uno o más archivos.
+### Herramientas de compresión
 
-| Alias | Comando  | Descripción                                                                    |
-| ----- | -------- | ------------------------------------------------------------------------------ |
-| cz    | `zip -r` | Comprimir un directorio completo (incluyendo subdirectorios) a un archivo zip. |
-| ez    | `unzip`  | Extraer un directorio completo (incluyendo subdirectorios) de un archivo zip.  |
-
-## Zstd
-
-[Zstd](https://facebook.github.io/zstd/) es un algoritmo de compresión sin pérdida rápido, con el objetivo de escenarios de compresión en tiempo real a nivel de zlib y mejores relaciones de compresión.
-
-| Alias | Comando      | Descripción                                                                    |
-| ----- | ------------ | ------------------------------------------------------------------------------ |
-| czstd | `zstd -zcvf` | Comprimir un directorio completo (incluyendo subdirectorios) a un archivo zst. |
-| ezstd | `zstd -zxvf` | Extraer un directorio completo (incluyendo subdirectorios) de un archivo zst.  |
+| Alias | Descripción |
+|:---|:---|
+| `cgz` | Comprimir con gzip |
+| `xgz` | Extraer gzip |
+| `cbz` | Comprimir con bzip2 |
+| `xbz` | Extraer bzip2 |
+| `cxz` | Comprimir con xz |
+| `xxz` | Extraer xz |
+| `czst` | Comprimir con zstd |
+| `xzst` | Extraer zstd |
+| `clz4` | Comprimir con lz4 |
+| `xlz4` | Extraer lz4 |

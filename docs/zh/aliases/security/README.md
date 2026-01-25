@@ -1,22 +1,43 @@
 ---
-description: Dotfiles 的安全别名
+description: 用于文件不可变性和配置保护的安全别名。锁定和解锁关键 shell 文件。
 lang: zh-CN
-metaTitle: 安全别名 - Dotfiles (CN)
-permalink: /zh/aliases/security/
+metaTitle: Security 别名 - Dotfiles (CN)
+permalink: /aliases/security/
+sidebar: true
+
+meta:
+  - name: keywords
+    content: 安全, 不可变性, 文件锁定, shell 别名, dotfiles, 配置保护
+  - name: twitter:card
+    content: summary
+  - name: twitter:description
+    content: 用于文件不可变性和配置保护的安全别名。锁定和解锁关键 shell 文件。
+  - name: twitter:title
+    content: Security 别名 - Dotfiles
+  - name: og:title
+    content: Security 别名 - Dotfiles
+  - name: og:description
+    content: 用于文件不可变性和配置保护的安全别名。锁定和解锁关键 shell 文件。
+  - name: og:image:alt
+    content: Dotfiles - 为你的 Shell 生活精心设计
+  - name: og:locale
+    content: zh_CN
 ---
 
-# 安全别名
+# Security 别名
 
-用于加固环境和管理配置不变性的工具。
+使用不可变性控制保护关键配置文件。
 
-## 🔒 不变性 (Immutability)
+## 概述
 
-| 别名             | 描述                                                                   |
-| ---------------- | ---------------------------------------------------------------------- |
-| `lock-configs`   | 锁定关键文件 (`.zshrc` 等) 以防止修改 (`chflags uchg` / `chattr +i`)。 |
-| `unlock-configs` | 解锁关键文件以进行编辑。                                               |
-| `check-locks`    | 检查关键文件的锁定状态。                                               |
+这些别名定义在 `security.aliases.sh` 中，由 Chezmoi 自动加载。
 
-## 🔑 Git 签名
+## 参考
 
-（有关签名配置，请参见 [Git 别名](../git/README.md)）
+### 不可变性
+
+| 别名 | 描述 |
+|:---|:---|
+| `lock-configs` | 锁定关键文件以防止修改 |
+| `unlock-configs` | 解锁关键文件以进行编辑 |
+| `check-locks` | 检查关键文件的锁定状态 |

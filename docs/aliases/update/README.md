@@ -1,64 +1,51 @@
 ---
-description: The Update aliases create helpful shortcut aliases for updating the operating system and software installed. It helps secure and enhance the current Dotfiles installation to protect against security vulnerabilities, add new features and fix critical bugs.
+description: System update aliases for macOS and Linux. Keep your operating system and packages current.
 lang: en-GB
-metaTitle: The Update aliases - Dotfiles (UK)
+metaTitle: Update Aliases - Dotfiles (UK)
 permalink: /aliases/update/
+sidebar: true
 
 meta:
   - name: keywords
-    content: aliases, update, linux, macos, shell, terminal, windows
+    content: update, system update, package update, shell aliases, dotfiles, maintenance
   - name: twitter:card
-    content: The Update aliases create helpful shortcut aliases for updating the operating system and software installed. It helps secure and enhance the current Dotfiles installation to protect against security vulnerabilities, add new features and fix critical bugs.
+    content: summary
   - name: twitter:description
-    content: The Update aliases create helpful shortcut aliases for updating the operating system and software installed. It helps secure and enhance the current Dotfiles installation to protect against security vulnerabilities, add new features and fix critical bugs.
+    content: System update aliases for macOS and Linux. Keep your operating system and packages current.
   - name: twitter:title
-    content: The Update aliases - Dotfiles (UK)
+    content: Update Aliases - Dotfiles
   - name: og:title
-    content: The Update aliases - Dotfiles (UK)
+    content: Update Aliases - Dotfiles
   - name: og:description
-    content: The Update aliases create helpful shortcut aliases for updating the operating system and software installed. It helps secure and enhance the current Dotfiles installation to protect against security vulnerabilities, add new features and fix critical bugs.
+    content: System update aliases for macOS and Linux. Keep your operating system and packages current.
   - name: og:image:alt
     content: Dotfiles - Simply designed to fit your shell life
   - name: og:locale
     content: en_GB
 ---
 
-# Update aliases
+# Update Aliases
 
-The `update.aliases.sh` file creates helpful shortcut aliases for updating the
-operating system and software.
+Keep your system and packages up to date.
 
-The updates help secure and enhance the current Dotfiles installation to protect
-against security vulnerabilities, add new features and fix critical bugs.
+## Overview
 
-## Update
+These aliases are defined in `update.aliases.sh` and loaded automatically by Chezmoi.
 
-For greater control, the update process is combined into a single command that
-will:
-
-1. Update the operating system and software packages,
-2. Update to the latest version of Dotfiles.
-3. This will also update the `update.aliases.sh` file, so you will always have
-   the latest version of the updater.
-
-## Platforms
-
-### Linux
-
-The `upd` alias has been adapted to work on Linux. It will update Debian-based
-Linux distributions, via the `apt` package manager and other dependencies via
-pnpm, rustup (Rust), and gem (Ruby).
-
-| Alias | Command                                                                                                            | Description                                              |
-| ----- | ------------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------- |
-| upd   | `sudo apt update && sudo apt upgrade -y && pnpm up && rustup update stable && sudo gem update && sudo gem cleanup` | Update command for Debian-based Linux operating systems. |
+## Reference
 
 ### macOS
 
-The `upd` alias is also available for macOS. It will update macOS, via the
-`softwareupdate` command line tool, and manage its dependencies using pnpm,
-Homebrew, mas, rustup, and gem package managers.
+| Alias | Description |
+|:---|:---|
+| `upd` | Update macOS software, Homebrew, Casks, App Store, Rust, Ruby, Python, and Node.js |
 
-| Alias | Command                                                                                                                                                                                            | Description        |
-| ----- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------ |
-| upd   | `sudo softwareupdate -i -a && pnpm up && rustup update stable && brew cu -ayi && brew doctor && brew update && brew upgrade && brew cleanup && mas upgrade && sudo gem update && sudo gem cleanup` | Update the system. |
+### Linux
+
+| Alias | Description |
+|:---|:---|
+| `open` | Open file or URL in preferred application |
+| `pbcopy` | Copy to clipboard |
+| `pbpaste` | Paste from clipboard |
+| `upd` | Update Linux packages, pnpm, Rust, Ruby, Python, and Node.js |
+

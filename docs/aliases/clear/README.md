@@ -1,51 +1,47 @@
 ---
-description: The clear aliases are able to clear the screen in a variety of ways.
+title: "Clear Aliases: Terminal Screen Management"
+description: "Shell aliases for clearing the terminal screen and displaying directory contents, history, and tree views."
 lang: en-GB
-metaTitle: Clear aliases - Dotfiles (UK)
+metaTitle: "Clear Aliases | Dotfiles"
 permalink: /aliases/clear/
-
+sidebar: true
 meta:
+  - name: keywords
+    content: "clear aliases, terminal clear, shell aliases, dotfiles, screen clear"
   - name: twitter:card
-    content: The clear aliases are able to clear the screen in a variety of ways.
+    content: summary
   - name: twitter:description
-    content: The clear aliases are able to clear the screen in a variety of ways.
+    content: Shell aliases for clearing the terminal screen and displaying directory contents, history, and tree views.
   - name: twitter:title
-    content: Clear aliases - Dotfiles (UK)
+    content: Clear Aliases | Dotfiles
   - name: og:title
-    content: Clear aliases - Dotfiles (UK)
+    content: Clear Aliases | Dotfiles
   - name: og:description
-    content: The clear aliases are able to clear the screen in a variety of ways.
+    content: Shell aliases for clearing the terminal screen and displaying directory contents, history, and tree views.
   - name: og:image:alt
     content: Dotfiles - Simply designed to fit your shell life
   - name: og:locale
     content: en_GB
 ---
 
-# Clear aliases
+# Clear Aliases
 
-The `clear.aliases.sh` file creates helpful shortcut aliases for clearing the
-terminal screen. The aliases are able to clear the screen in a variety of ways.
+Streamline your terminal workflow with quick screen-clearing shortcuts.
 
-## Clear
+## Overview
 
-[Clear](<https://en.wikipedia.org/wiki/Clear_(command)>) is a command that clears
-the terminal screen.
+The clear aliases provide efficient ways to reset your terminal display while optionally showing useful context like directory contents, command history, or file trees. These aliases are defined in `clear.aliases.sh` and are automatically loaded by chezmoi.
 
-| Alias  | Command                                         | Description                                                                                                  |
-| ------ | ----------------------------------------------- | ------------------------------------------------------------------------------------------------------------ |
-| c      | `clear`                                         | Clear the terminal screen.                                                                                   |
-| cl     | `c`                                             | Clear the terminal screen.                                                                                   |
-| clc    | `clear && cat`                                  | Clear the terminal screen and print the contents of the current directory.                                   |
-| clcat  | `clc`                                           | Clear the terminal screen and print the contents of the current directory.                                   |
-| clh    | `clear && history`                              | Clear the terminal screen and print the command history.                                                     |
-| clhist | `clh`                                           | Clear the terminal screen and print the command history.                                                     |
-| clp    | `clear && pwd`                                  | Clear the terminal screen and print the current working directory.                                           |
-| clpwd  | `clp`                                           | Clear the terminal screen and print the current working directory.                                           |
-| clr    | `c`                                             | Clear the terminal screen.                                                                                   |
-| cls    | `c`                                             | Clear the terminal screen.                                                                                   |
-| clt    | `clear && tree`                                 | Clear the terminal screen and print the directory tree.                                                      |
-| cltree | `clt`                                           | Clear the terminal screen and print the directory tree.                                                      |
-| ct     | `clear && tree ./`                              | Clear the terminal screen and print the directory tree.                                                      |
-| ctree  | `ct`                                            | Clear the terminal screen and print the directory tree.                                                      |
-| cpl    | `clear && pwd && echo '' && ls -a && echo ''`   | Clear the terminal screen and print the current working directory and the contents of the current directory. |
-| cplt   | `clear && pwd && echo '' && tree ./ && echo ''` | Clear the terminal screen and print the current working directory and the directory tree.                    |
+## Reference
+
+| Alias | Description |
+|-------|-------------|
+| `c` | Clear the terminal screen |
+| `cdw` | Change to the workspace directory |
+| `cl` | Clear the terminal screen (alias for `c`) |
+| `clc` | Clear screen and list directory contents |
+| `clh` | Clear screen and display command history |
+| `clp` | Clear screen and print working directory |
+| `clt` | Clear screen and display directory tree |
+| `cpl` | Clear screen and show working directory with contents |
+| `cplt` | Clear screen and show working directory with tree |

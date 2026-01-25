@@ -1,26 +1,43 @@
 ---
-description: Python Aliase für Dotfiles
+description: Shell-Aliase fuer Python-Entwicklung mit pip, virtualenv und dem modernen uv-Paketmanager.
 lang: de-DE
 metaTitle: Python Aliase - Dotfiles (DE)
 permalink: /de/aliases/python/
+sidebar: true
+
+meta:
+  - name: keywords
+    content: python aliase, pip aliase, virtualenv, uv paketmanager, dotfiles, shell
+  - name: twitter:card
+    content: summary
+  - name: twitter:title
+    content: Python Aliase - Dotfiles
+  - name: twitter:description
+    content: Shell-Aliase fuer Python-Entwicklung mit pip, virtualenv und uv.
+  - name: og:title
+    content: Python Aliase - Dotfiles
+  - name: og:description
+    content: Shell-Aliase fuer Python-Entwicklung mit pip, virtualenv und uv.
+  - name: og:image:alt
+    content: Dotfiles - Simply designed to fit your shell life
+  - name: og:locale
+    content: de_DE
 ---
 
 # Python Aliase
 
-Verwalten Sie Python-Aliase. Teil der **Universal Dotfiles** Konfiguration.
+Optimieren Sie Ihre Python-Entwicklung mit praktischen Shell-Verknuepfungen.
 
-![Dotfiles banner][banner]
+## Uebersicht
 
-## 📖 Beschreibung
+Diese Aliase sind in `python.aliases.sh` definiert und werden automatisch von Chezmoi geladen. Sie bieten schnellen Zugriff auf Python-Interpreter, Paketverwaltung und virtuelle Umgebungen.
 
-Diese Aliase sind in `python.aliases.sh` definiert und werden automatisch von `chezmoi` geladen.
+## Referenz
 
-## ⚡ Aliase
-
-- `py` - python
-- `pip` - pip3
-- `v` - virtualenv
-- `uv` - uv Paketmanager
-- `uvpi` - `uv pip install`
-
-[banner]: https://kura.pro/dotfiles/v2/images/titles/title-dotfiles.svg
+| Alias | Befehl | Beschreibung |
+|:---|:---|:---|
+| `py` | `python` | Python-Interpreter |
+| `pip` | `pip3` | Python 3-Paketinstaller |
+| `v` | `virtualenv` | Virtuelle Umgebung erstellen |
+| `uv` | `uv` | Moderner Python-Paketmanager |
+| `uvpi` | `uv pip install` | Pakete mit uv installieren |

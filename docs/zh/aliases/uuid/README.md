@@ -1,21 +1,39 @@
 ---
-description: UUID 别名可以为 `uuidgen` 命令创建有用的快捷方式。uuidgen 命令生成通用唯一标识符 (UUID)，这是一个在空间和时间上保证唯一的 128 位值。
+description: 用于生成唯一标识符的 UUID shell 别名。创建和复制 UUID 的快捷方式。
 lang: zh-CN
 metaTitle: UUID 别名 - Dotfiles (CN)
-permalink: /zh/aliases/uuid/
+permalink: /aliases/uuid/
+sidebar: true
+
+meta:
+  - name: keywords
+    content: uuid, 唯一标识符, uuidgen, shell 别名, dotfiles
+  - name: twitter:card
+    content: summary
+  - name: twitter:description
+    content: 用于生成唯一标识符的 UUID shell 别名。创建和复制 UUID 的快捷方式。
+  - name: twitter:title
+    content: UUID 别名 - Dotfiles
+  - name: og:title
+    content: UUID 别名 - Dotfiles
+  - name: og:description
+    content: 用于生成唯一标识符的 UUID shell 别名。创建和复制 UUID 的快捷方式。
+  - name: og:image:alt
+    content: Dotfiles - 为你的 Shell 生活精心设计
+  - name: og:locale
+    content: zh_CN
 ---
 
 # UUID 别名
 
-`uuid.aliases.sh` 文件为生成 [UUID](https://zh.wikipedia.org/wiki/通用唯一识别码) 创建了有用的快捷别名。
+生成通用唯一标识符。
 
-UUID 别名为 `uuidgen` 命令创建了有用的快捷别名。
-`uuidgen` 命令生成通用唯一标识符 (UUID)，这是一个在空间和时间上保证唯一的 128 位值。
+## 概述
 
-## UUID
+这些别名定义在 `uuid.aliases.sh` 中，由 Chezmoi 自动加载。
 
-[UUID](https://zh.wikipedia.org/wiki/通用唯一识别码) 是一个 128 位数字，用于识别计算机系统中的信息。
+## 参考
 
-| 别名 | 命令                                                                               | 描述                           |
-| ---- | ---------------------------------------------------------------------------------- | ------------------------------ |
-| uuid | `uuidgen \| tr -d '\n' \| tr '[:upper:]' '[:lower:]' \| pbcopy && pbpaste && echo` | 生成 UUID 并将其复制到剪贴板。 |
+| 别名 | 描述 |
+|:---|:---|
+| `uuid` | 生成 UUID 并复制到剪贴板 |

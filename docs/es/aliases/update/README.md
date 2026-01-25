@@ -1,38 +1,50 @@
 ---
-description: Los alias de actualización crean atajos útiles para actualizar el sistema operativo y el software instalado. Ayudan a asegurar y mejorar la instalación actual de Dotfiles para proteger contra vulnerabilidades de seguridad, agregar nuevas funciones y corregir errores críticos.
+description: Alias de Update para actualizar sistema operativo y software. Mantiene dotfiles, paquetes y toolchains actualizados con un solo comando.
 lang: es-ES
-metaTitle: Alias de Actualización - Dotfiles (ES)
+metaTitle: Alias de Update - Dotfiles (ES)
 permalink: /es/aliases/update/
+sidebar: true
+
+meta:
+  - name: keywords
+    content: alias update, actualizacion sistema, homebrew, apt, paquetes, dotfiles, shell
+  - name: twitter:card
+    content: summary
+  - name: twitter:description
+    content: Alias de Update para actualizar sistema operativo y software. Mantiene dotfiles, paquetes y toolchains actualizados.
+  - name: twitter:title
+    content: Alias de Update - Dotfiles
+  - name: og:title
+    content: Alias de Update - Dotfiles
+  - name: og:description
+    content: Alias de Update para actualizar sistema operativo y software. Mantiene dotfiles, paquetes y toolchains actualizados.
+  - name: og:image:alt
+    content: Dotfiles - Simplemente disenado para adaptarse a tu vida en el shell
+  - name: og:locale
+    content: es_ES
 ---
 
-# Alias de Actualización
+# Alias de Update
 
-El archivo `update.aliases.sh` crea atajos útiles para actualizar el sistema operativo y el software.
+Atajos para actualizar sistema operativo y software instalado.
 
-Las actualizaciones ayudan a asegurar y mejorar la instalación actual de Dotfiles para proteger contra vulnerabilidades de seguridad, agregar nuevas funciones y corregir errores críticos.
+## Descripcion
 
-## Actualizar
+Estos alias estan definidos en `update.aliases.sh` y se cargan automaticamente por chezmoi. Proporcionan comandos unificados para mantener tu sistema actualizado, incluyendo paquetes del sistema, toolchains de desarrollo y gestores de paquetes.
 
-Para un mayor control, el proceso de actualización se combina en un solo comando que:
-
-1. Actualizará los paquetes del sistema operativo y el software.
-2. Actualizará a la última versión de Dotfiles.
-3. Esto también actualizará el archivo `update.aliases.sh`, por lo que siempre tendrás la última versión del actualizador.
-
-## Plataformas
-
-### Linux
-
-El alias `upd` se ha adaptado para funcionar en Linux. Actualizará las distribuciones de Linux basadas en Debian, a través del gestor de paquetes `apt` y otras dependencias mediante pnpm, rustup (Rust) y gem (Ruby).
-
-| Alias | Comando                                                                                                            | Descripción                                                                |
-| ----- | ------------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------- |
-| upd   | `sudo apt update && sudo apt upgrade -y && pnpm up && rustup update stable && sudo gem update && sudo gem cleanup` | Comando de actualización para sistemas operativos Linux basados en Debian. |
+## Referencia
 
 ### macOS
 
-El alias `upd` también está disponible para macOS. Actualizará macOS, a través de la herramienta de línea de comandos `softwareupdate`, y gestionará sus dependencias utilizando los gestores de paquetes pnpm, Homebrew, mas, rustup y gem.
+| Alias | Descripcion |
+|:---|:---|
+| `upd` | Actualizar software de macOS, paquetes Homebrew, Homebrew Casks, apps del Mac App Store, toolchain Rust estable, gemas Ruby, paquetes Python y paquetes Node.js |
 
-| Alias | Comando                                                                                                                                                                                            | Descripción            |
-| ----- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------- |
-| upd   | `sudo softwareupdate -i -a && pnpm up && rustup update stable && brew cu -ayi && brew doctor && brew update && brew upgrade && brew cleanup && mas upgrade && sudo gem update && sudo gem cleanup` | Actualizar el sistema. |
+### Linux
+
+| Alias | Descripcion |
+|:---|:---|
+| `upd` | Actualizar paquetes Linux, limpiar cache de paquetes, actualizar pnpm, toolchain Rust estable, gemas Ruby, paquetes Python y paquetes Node.js |
+| `open` | Abrir archivo o URL en la aplicacion preferida del usuario |
+| `pbcopy` | Copiar al portapapeles |
+| `pbpaste` | Pegar desde el portapapeles |

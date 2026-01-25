@@ -2,14 +2,14 @@
 description: A próxima geração de arquivos de configuração, gerenciada pelo Chezmoi. Alto desempenho, seguro e nativo de IA.
 lang: pt-BR
 metaTitle: Sobre - Dotfiles (BR)
-permalink: /pt/about/
+permalink: /about/
 
 meta:
   - name: keywords
     content: chezmoi, dotfiles, configuração, automação, macos, linux, rust, zellij
 ---
 
-# Sobre Dotfiles v0.2.471
+# Sobre Dotfiles v0.2.474
 
 ## Introdução
 
@@ -17,13 +17,14 @@ Dotfiles representa o padrão moderno para configuração de ambiente. É constr
 
 Ao contrário de dotfiles legados que dependem de Makefiles complexos ou scripts de link simbólico, Dotfiles usa uma abordagem baseada em modelo que é atômica e rápida.
 
-## O que há de novo na v0.2.471
+## O que há de novo na v0.2.474
 
 - **Núcleo Moderno**: Substituímos ferramentas Unix legadas por alternativas Rust de alto desempenho:
   - **Atuin** (substitui `history`)
   - **Yazi** (substitui `ls`/`ranger`)
   - **Zellij** (substitui `tmux`)
   - **Ghostty** (Terminal moderno acelerado por GPU)
+  - **NeoVim** (Editor moderno baseado em Vim)
 - **Segurança Nativa**: Assinatura SSH totalmente nativa (Keyless/Proprietary-free) sem agentes de terceiros.
 - **Modo Interativo**: Novo comando `dot learn` para guiá-lo pelos recursos.
 
@@ -31,28 +32,30 @@ Ao contrário de dotfiles legados que dependem de Makefiles complexos ou scripts
 
 ### :one: Pré-requisitos
 
-- **macOS** ou **Linux** (Debian/Ubuntu/Fedora/Arch)
+- **macOS**, **Linux (Ubuntu/Debian)** ou **Windows (WSL)**
 - **Curl** (para baixar o instalador)
-- **Git** (gerenciado automaticamente)
+- **Git**
+- **Chezmoi** (instalado pelo script se estiver ausente)
+- **Nerd Font** (para ícones no terminal)
 
 ### :two: Instalação (Uma Linha)
 
 Todo o pacote é instalado por meio de um único comando usando Chezmoi:
 
 ```bash
-sh -c "$(curl -fsLS get.chezmoi.io)" -- init --apply sebastienrousseau
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/sebastienrousseau/dotfiles/v0.2.474/install.sh)"
 ```
 
 Este comando irá:
 
 1.  Instalar o binário `chezmoi`.
-2.  Clonar o repositório para `~/.local/share/chezmoi`.
-3.  Calcular a diferença entre seu estado atual e o estado desejado.
-4.  Aplicar a configuração (instalando pacotes, fontes e ferramentas).
+2.  Clonar o repositório.
+3.  **Instalar automaticamente** os pacotes necessários (via Homebrew no macOS ou Apt no Linux).
+4.  Aplicar a configuração.
 
 ### :three: Pós-instalação
 
-Uma vez instalado, basta digitar:
+Uma vez instalado, reinicie seu terminal e então digite:
 
 ```bash
 dot learn
@@ -66,12 +69,19 @@ Sua configuração é gerenciada em `~/.local/share/chezmoi`.
 
 ```bash
 ~/.local/share/chezmoi
-├── dot_config/          # ~/.config (Ghostty, Zellij, Starship, etc.)
-├── dot_local/           # ~/.local (Scripts personalizados, bin)
-├── dot_ssh/             # Segurança SSH
-├── dot_zshrc.tmpl       # Configuração Zsh
-├── provision/           # Scripts de instalação (Darwin/Linux)
-└── docs/                # Documentação
+├── dot_zshenv              # Ponto de entrada do shell (bootloader XDG)
+├── dot_config/             # Configuração base XDG (mapeada para ~/.config)
+│   ├── atuin/              # Histórico do shell (config.toml)
+│   ├── ghostty/            # Emulador de terminal (config)
+│   ├── git/                # Configuração do Git (config)
+│   ├── yazi/               # Gerenciador de arquivos (yazi.toml)
+│   ├── zellij/             # Multiplexador (config.kdl)
+│   ├── zsh/                # Configuração do Zsh (.zshrc)
+│   └── shell/              # Configuração compartilhada do shell (aliases, caminhos)
+├── provision/              # Scripts de ciclo de vida (pacotes, fontes)
+├── install.sh              # Instalador universal
+├── README.md               # Documentação
+└── docs/                   # Documentação detalhada
 ```
 
 ## Contribuindo

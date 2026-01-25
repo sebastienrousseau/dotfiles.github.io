@@ -1,94 +1,117 @@
 ---
-description: Os aliases de arquivos são capazes de criar e manipular arquivos em uma variedade de formatos.
+description: Aliases de arquivamento e compactacao para manipular tar, zip, 7z e mais. Extrair, compactar e gerenciar arquivos com comandos simples.
 lang: pt-BR
-metaTitle: Aliases de Arquivos - Dotfiles (BR)
+metaTitle: Aliases de Arquivos - Dotfiles (PT)
 permalink: /pt/aliases/archives/
+sidebar: true
+
+meta:
+  - name: keywords
+    content: arquivos, compactacao, tar, zip, 7z, gzip, extrair, aliases shell, dotfiles
+  - name: twitter:card
+    content: summary
+  - name: twitter:description
+    content: Aliases de arquivamento e compactacao para manipular tar, zip, 7z e mais. Extrair, compactar e gerenciar arquivos com comandos simples.
+  - name: twitter:title
+    content: Aliases de Arquivos - Dotfiles
+  - name: og:title
+    content: Aliases de Arquivos - Dotfiles
+  - name: og:description
+    content: Aliases de arquivamento e compactacao para manipular tar, zip, 7z e mais. Extrair, compactar e gerenciar arquivos com comandos simples.
+  - name: og:image:alt
+    content: Dotfiles - Simply designed to fit your shell life
+  - name: og:locale
+    content: pt_BR
 ---
 
 # Aliases de Arquivos
 
-O arquivo `archives.aliases.sh` cria aliases de atalho úteis para arquivamento
-de arquivos e diretórios. Os aliases são capazes de criar e manipular arquivos em uma
-variedade de formatos.
+Compactar, extrair e gerenciar arquivos. Suporte para todos os principais formatos.
 
-## 7-Zip
+## Visao Geral
 
-[7-Zip](http://www.7-zip.org/) é um compactador de arquivos com uma alta taxa de compressão.
+Estes aliases sao definidos em `archives.aliases.sh` e carregados automaticamente pelo Chezmoi.
 
-| Alias | Comando | Descrição                                                                    |
-| ----- | ------- | ---------------------------------------------------------------------------- |
-| c7z   | `7z a`  | Compactar um diretório inteiro (incluindo subdiretórios) para um arquivo 7z. |
-| e7z   | `7z x`  | Extrair um diretório inteiro (incluindo subdiretórios) de um arquivo 7z.     |
+## Referencia
 
-## Bzip2
+### Extracao universal
 
-[Bzip2](http://www.bzip.org/) é um compressor de dados de alta qualidade, livremente disponível e sem patentes.
+O comando `extract` (atalho `x`) detecta e extrai automaticamente qualquer arquivo:
 
-| Alias | Comando   | Descrição                                 |
-| ----- | --------- | ----------------------------------------- |
-| cbz2  | `bzip2`   | Compactar um arquivo para um arquivo bz2. |
-| ebz2  | `bunzip2` | Extrair um arquivo de um arquivo bz2.     |
+```bash
+extract archive.tar.gz
+```
 
-## Gzip
+**Formatos suportados:** `.tar.bz2`, `.tbz2`, `.tar.gz`, `.tgz`, `.tar.xz`, `.tar.zst`, `.tar`, `.bz2`, `.gz`, `.rar`, `.zip`, `.Z`, `.7z`, `.zst`, `.xz`, `.lz4`, `.lha`, `.lzh`, `.arj`, `.arc`, `.dms`
 
-[Gzip](https://www.gnu.org/software/gzip/) é um programa popular de compressão de dados
-como um substituto para o compress.
+### Compactar
 
-| Alias | Comando  | Descrição                                |
-| ----- | -------- | ---------------------------------------- |
-| cgz   | `gzip`   | Compactar um arquivo para um arquivo gz. |
-| egz   | `gunzip` | Extrair um arquivo de um arquivo gz.     |
+Crie arquivos com o comando `compress` (atalho `ac`):
 
-## Jar
+```bash
+compress tgz file1 file2 directory output.tar.gz
+compress zip -l 9 important_files backup.zip
+```
 
-[Jar](https://docs.oracle.com/javase/tutorial/deployment/jar/) é um formato de arquivo
-usado para agregar muitos arquivos em um arquivo para distribuir software de aplicação ou
-bibliotecas na plataforma Java.
+**Formatos suportados:** `tar`, `tgz`, `tbz2`, `txz`, `tzst`, `zip`, `7z`, `gz`, `bz2`, `xz`, `zst`, `lz4`, `rar`
 
-| Alias | Comando    | Descrição                                                                     |
-| ----- | ---------- | ----------------------------------------------------------------------------- |
-| cjar  | `jar -cvf` | Compactar um diretório inteiro (incluindo subdiretórios) para um arquivo jar. |
-| ejar  | `jar -xvf` | Extrair um diretório inteiro (incluindo subdiretórios) de um arquivo jar.     |
+### Backup
 
-## Tar
+Crie backups com data e hora usando `backup` (atalho `bak`):
 
-[Tar](https://www.gnu.org/software/tar/) é um programa de computador usado para armazenar
-muitos arquivos juntos em um único arquivo.
+```bash
+backup important_folder
+backup database.sql zip
+```
 
-| Alias | Comando     | Descrição                                                                        |
-| ----- | ----------- | -------------------------------------------------------------------------------- |
-| ctar  | `tar -cvf`  | Compactar um diretório inteiro (incluindo subdiretórios) para um arquivo tar.    |
-| etar  | `tar -xvf`  | Extrair um diretório inteiro (incluindo subdiretórios) de um arquivo tar.        |
-| ctgz  | `tar -cvzf` | Compactar um diretório inteiro (incluindo subdiretórios) para um arquivo tar.gz. |
-| etgz  | `tar -xvzf` | Extrair um diretório inteiro (incluindo subdiretórios) de um arquivo tar.gz.     |
+### Listar conteudo
 
-## Xz
+Visualize o conteudo do arquivo com `list_archive` (atalho `lar`):
 
-[Xz](https://tukaani.org/xz/) é um software de compressão de dados de uso geral
-com uma alta taxa de compressão.
+```bash
+list_archive backup.tar.gz
+```
 
-| Alias | Comando    | Descrição                                                                    |
-| ----- | ---------- | ---------------------------------------------------------------------------- |
-| cxz   | `xz -zcvf` | Compactar um diretório inteiro (incluindo subdiretórios) para um arquivo xz. |
-| exz   | `xz -zxvf` | Extrair um diretório inteiro (incluindo subdiretórios) de um arquivo xz.     |
+### Ferramentas de arquivo
 
-## Zip
+| Alias | Descricao |
+|:---|:---|
+| `c7z` | Criar arquivo 7z |
+| `x7z` | Extrair arquivo 7z |
+| `l7z` | Listar conteudo 7z |
+| `ctar` | Criar arquivo tar |
+| `xtar` | Extrair arquivo tar |
+| `ltar` | Listar conteudo tar |
+| `ctgz` | Criar arquivo tar.gz |
+| `xtgz` | Extrair arquivo tar.gz |
+| `ltgz` | Listar conteudo tar.gz |
+| `ctbz` | Criar arquivo tar.bz2 |
+| `xtbz` | Extrair arquivo tar.bz2 |
+| `ltbz` | Listar conteudo tar.bz2 |
+| `ctxz` | Criar arquivo tar.xz |
+| `xtxz` | Extrair arquivo tar.xz |
+| `ltxz` | Listar conteudo tar.xz |
+| `ctzst` | Criar arquivo tar.zst |
+| `xtzst` | Extrair arquivo tar.zst |
+| `ltzst` | Listar conteudo tar.zst |
+| `czip` | Criar arquivo zip |
+| `xzip` | Extrair arquivo zip |
+| `lzip` | Listar conteudo zip |
+| `crar` | Criar arquivo rar |
+| `xrar` | Extrair arquivo rar |
+| `lrar` | Listar conteudo rar |
 
-[Zip](https://pt.wikipedia.org/wiki/ZIP) é um formato de arquivo usado para
-gerar um único arquivo contendo um ou mais arquivos.
+### Ferramentas de compactacao
 
-| Alias | Comando  | Descrição                                                                     |
-| ----- | -------- | ----------------------------------------------------------------------------- |
-| cz    | `zip -r` | Compactar um diretório inteiro (incluindo subdiretórios) para um arquivo zip. |
-| ez    | `unzip`  | Extrair um diretório inteiro (incluindo subdiretórios) de um arquivo zip.     |
-
-## Zstd
-
-[Zstd](https://facebook.github.io/zstd/) é um algoritmo de compressão rápida sem perdas,
-visando cenários de compressão em tempo real no nível zlib e melhores
-taxas de compressão.
-
-| Alias | Comando      | Descrição                                                                     |
-| ----- | ------------ | ----------------------------------------------------------------------------- |
-| czstd | `zstd -zcvf` | Compactar um diretório inteiro (incluindo subdiretórios) para um arquivo zst. |
-| ezstd | `zstd -zxvf` | Extrair um diretório inteiro (incluindo subdiretórios) de um arquivo zst.     |
+| Alias | Descricao |
+|:---|:---|
+| `cgz` | Compactar com gzip |
+| `xgz` | Extrair gzip |
+| `cbz` | Compactar com bzip2 |
+| `xbz` | Extrair bzip2 |
+| `cxz` | Compactar com xz |
+| `xxz` | Extrair xz |
+| `czst` | Compactar com zstd |
+| `xzst` | Extrair zstd |
+| `clz4` | Compactar com lz4 |
+| `xlz4` | Extrair lz4 |

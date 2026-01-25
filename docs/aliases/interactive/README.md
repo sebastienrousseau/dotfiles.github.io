@@ -1,50 +1,71 @@
 ---
-description: The Interactive aliases are a collection of aliases that allow you to interact with your shell and terminal in a more interactive way.
+title: "Interactive Aliases: Safe Shell Commands with Confirmation Prompts"
+description: "Shell aliases that add interactive prompts before destructive operations like rm, mv, and cp. Prevent accidental file deletion."
 lang: en-GB
-metaTitle: Interactive aliases - Dotfiles (UK)
+metaTitle: "Interactive Aliases | Dotfiles"
 permalink: /aliases/interactive/
-
+sidebar: true
 meta:
   - name: keywords
-    content: aliases, bash, cp, interactive, linux, ln, macos, mv, rm, shell, terminal, windows
+    content: interactive aliases, shell safety, rm confirmation, cp interactive, mv prompt, dotfiles, bash aliases
   - name: twitter:card
-    content: The Interactive aliases are a collection of aliases that allow you to interact with your shell and terminal in a more interactive way.
-  - name: twitter:description
-    content: The Interactive aliases are a collection of aliases that allow you to interact with your shell and terminal in a more interactive way.
+    content: summary
   - name: twitter:title
-    content: Interactive aliases - Dotfiles (UK)
+    content: Interactive Aliases | Dotfiles
+  - name: twitter:description
+    content: Shell aliases that add interactive prompts before destructive operations like rm, mv, and cp.
   - name: og:title
-    content: Interactive aliases - Dotfiles (UK)
+    content: Interactive Aliases | Dotfiles
   - name: og:description
-    content: The Interactive aliases are a collection of aliases that allow you to interact with your shell and terminal in a more interactive way.
+    content: Shell aliases that add interactive prompts before destructive operations like rm, mv, and cp.
   - name: og:image:alt
     content: Dotfiles - Simply designed to fit your shell life
   - name: og:locale
     content: en_GB
 ---
 
-# Interactive aliases
+# Interactive Aliases
 
-The `interactive.aliases.sh` file creates helpful shortcut aliases for enabling
-interactive mode to critical common functionality in the terminal.
+Safe shell commands with confirmation prompts before destructive operations.
 
-The Interactive aliases are a collection of aliases that allow you to interact
-with your shell and terminal in a more interactive way.
+![Dotfiles banner][banner]
 
-## Interactive mode
+## Overview
 
-[Interactive mode](https://en.wikipedia.org/wiki/Interactive_mode) is a mode in
-which the user is prompted for input before the command is executed.
+Interactive aliases add confirmation prompts to common shell commands that can permanently modify or delete files. Defined in `interactive.aliases.sh` and automatically loaded by chezmoi, these aliases help prevent accidental data loss by requiring user confirmation before executing potentially destructive operations.
 
-This is a useful feature for commands such as `cp`, `mv`, `rm`, and `ln` that
-can be used to overwrite files or directories.
+## Reference
 
-| Alias | Command                 | Description                                                  |
-| ----- | ----------------------- | ------------------------------------------------------------ |
-| bin   | `rm -fr ${HOME}/.Trash` | Remove all files in the trash.                               |
-| cp    | `cp -vi`                | Copy files and directories.                                  |
-| del   | `rm -rfvi`              | Remove a file or directory.                                  |
-| ln    | `ln -vi`                | Interactive symbolic link.                                   |
-| mv    | `mv -vi`                | Move files interactively (ask before overwrite) and verbose. |
-| rm    | `rm -vi`                | Prompts for every file before removing.                      |
-| zap   | `rm -vi`                | Remove files interactively (ask before overwrite).           |
+### File Operations
+
+| Alias | Description |
+|-------|-------------|
+| `cp` | Copy files and directories interactively with verbose output. Prompts before overwriting existing files. |
+| `mv` | Move or rename files interactively with verbose output. Prompts before overwriting existing files. |
+| `ln` | Create symbolic links interactively with verbose output. Prompts before overwriting existing links. |
+
+### File Removal
+
+| Alias | Description |
+|-------|-------------|
+| `rm` | Remove files or directories interactively with verbose output. Prompts before each removal. |
+| `del` | Remove files or directories interactively and recursively with verbose output. Prompts before each removal. |
+| `zap` | Alias for `rm`. Removes files or directories interactively with verbose output. |
+
+### Trash Management
+
+| Alias | Description |
+|-------|-------------|
+| `bin` | Remove all files in the trash directory (`~/.Trash`) forcefully and recursively. |
+
+### Permissions and Utilities
+
+| Alias | Description |
+|-------|-------------|
+| `chmod` | Change file or directory permissions with verbose output. |
+| `chown` | Change file or directory owner and group with verbose output. |
+| `diff` | Compare and show differences between two files in unified format. |
+| `grep` | Search for a pattern in files or output, showing line numbers and case-insensitively. |
+| `mkdir` | Create a new directory with parent directories as needed and verbose output. |
+
+[banner]: https://kura.pro/dotfiles/v2/images/titles/title-dotfiles.svg
