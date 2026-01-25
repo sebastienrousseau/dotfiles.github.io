@@ -40,29 +40,30 @@ This repository powers [dotfiles.io](https://dotfiles.io), the official document
 
 ## Supported Languages
 
-| Flag | Language | Code | Path |
-|------|----------|------|------|
-| 🇬🇧 | English | en-GB | `/` |
-| 🇫🇷 | Français | fr-FR | `/fr/` |
-| 🇪🇸 | Español | es-ES | `/es/` |
-| 🇩🇪 | Deutsch | de-DE | `/de/` |
-| 🇧🇷 | Português | pt-BR | `/pt/` |
-| 🇨🇳 | 简体中文 | zh-CN | `/zh/` |
-| 🇯🇵 | 日本語 | ja-JP | `/ja/` |
-| 🇰🇷 | 한국어 | ko-KR | `/ko/` |
-| 🇷🇺 | Русский | ru-RU | `/ru/` |
-| 🇮🇹 | Italiano | it-IT | `/it/` |
-| 🇸🇦 | العربية | ar-SA | `/ar/` |
-| 🇮🇱 | עברית | he-IL | `/he/` |
-| 🇮🇳 | हिंदी | hi-IN | `/hi/` |
-| 🇳🇱 | Nederlands | nl-NL | `/nl/` |
-| 🇮🇩 | Bahasa Indonesia | id-ID | `/id/` |
+| Flag | Language         | Code  | Path   |
+| ---- | ---------------- | ----- | ------ |
+| 🇬🇧   | English          | en-GB | `/`    |
+| 🇫🇷   | Français         | fr-FR | `/fr/` |
+| 🇪🇸   | Español          | es-ES | `/es/` |
+| 🇩🇪   | Deutsch          | de-DE | `/de/` |
+| 🇧🇷   | Português        | pt-BR | `/pt/` |
+| 🇨🇳   | 简体中文         | zh-CN | `/zh/` |
+| 🇯🇵   | 日本語           | ja-JP | `/ja/` |
+| 🇰🇷   | 한국어           | ko-KR | `/ko/` |
+| 🇷🇺   | Русский          | ru-RU | `/ru/` |
+| 🇮🇹   | Italiano         | it-IT | `/it/` |
+| 🇸🇦   | العربية          | ar-SA | `/ar/` |
+| 🇮🇱   | עברית            | he-IL | `/he/` |
+| 🇮🇳   | हिंदी            | hi-IN | `/hi/` |
+| 🇳🇱   | Nederlands       | nl-NL | `/nl/` |
+| 🇮🇩   | Bahasa Indonesia | id-ID | `/id/` |
 
 ---
 
 ## Quick Start
 
 **Prerequisites**
+
 - Node.js v18+
 - pnpm
 
@@ -104,6 +105,7 @@ pnpm run build
 ```
 
 Build output is generated in `docs/.vuepress/dist/`. The build process:
+
 - Compiles all 736 pages across 15 locales
 - Generates sitemap.xml
 - Creates PWA service worker
@@ -166,6 +168,7 @@ This repository is automatically deployed to [GitHub Pages](https://pages.github
 5. Open a Pull Request
 
 Please ensure:
+
 - All 15 locales are updated simultaneously for content changes
 - `pnpm run build` passes without errors
 - Front matter follows the [schema guidelines](CLAUDE.md)
