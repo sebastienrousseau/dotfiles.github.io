@@ -40,6 +40,7 @@ export const nlSidebar: SidebarConfig = {
         "/nl/aliases/interactive/",
         "/nl/aliases/kubernetes/",
         "/nl/aliases/legal/",
+        "/nl/aliases/lua/",
         "/nl/aliases/macOS/",
         "/nl/aliases/make/",
         "/nl/aliases/mkdir/",

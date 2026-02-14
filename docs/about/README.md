@@ -29,7 +29,7 @@ The modern standard for shell configuration. Built on **Chezmoi** for secure, cr
 
 ## Discover
 
-Dotfiles v0.2.474 transforms your terminal into a powerful, unified workspace. Unlike legacy dotfiles that rely on complex Makefiles or symlink scripts, Dotfiles uses a template-based approach that is atomic, fast, and reproducible.
+Dotfiles v0.2.481 transforms your terminal into a powerful, unified workspace. Unlike legacy dotfiles that rely on complex Makefiles or symlink scripts, Dotfiles uses a template-based approach that is atomic, fast, and reproducible.
 
 ### What's new
 
@@ -56,7 +56,7 @@ Dotfiles v0.2.474 transforms your terminal into a powerful, unified workspace. U
 Run a single command to install the entire suite:
 
 ```bash
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/sebastienrousseau/dotfiles/v0.2.474/install.sh)"
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/sebastienrousseau/dotfiles/v0.2.481/install.sh)"
 ```
 
 The installer will:

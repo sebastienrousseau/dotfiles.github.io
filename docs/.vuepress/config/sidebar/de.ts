@@ -40,6 +40,7 @@ export const deSidebar: SidebarConfig = {
         "/de/aliases/interactive/",
         "/de/aliases/kubernetes/",
         "/de/aliases/legal/",
+        "/de/aliases/lua/",
         "/de/aliases/macOS/",
         "/de/aliases/make/",
         "/de/aliases/mkdir/",

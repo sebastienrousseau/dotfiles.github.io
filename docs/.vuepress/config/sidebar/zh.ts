@@ -40,6 +40,7 @@ export const zhSidebar: SidebarConfig = {
         "/zh/aliases/interactive/",
         "/zh/aliases/kubernetes/",
         "/zh/aliases/legal/",
+        "/zh/aliases/lua/",
         "/zh/aliases/macOS/",
         "/zh/aliases/make/",
         "/zh/aliases/mkdir/",

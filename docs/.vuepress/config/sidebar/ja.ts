@@ -40,6 +40,7 @@ export const jaSidebar: SidebarConfig = {
         "/ja/alias/interactive/",
         "/ja/alias/kubernetes/",
         "/ja/alias/legal/",
+        "/ja/alias/lua/",
         "/ja/alias/macOS/",
         "/ja/alias/make/",
         "/ja/alias/mkdir/",

@@ -40,6 +40,7 @@ export const itSidebar: SidebarConfig = {
         "/it/aliases/interactive/",
         "/it/aliases/kubernetes/",
         "/it/aliases/legal/",
+        "/it/aliases/lua/",
         "/it/aliases/macOS/",
         "/it/aliases/make/",
         "/it/aliases/mkdir/",

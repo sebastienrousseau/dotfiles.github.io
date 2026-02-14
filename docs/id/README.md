@@ -1,14 +1,14 @@
 ---
-description: Generasi baru file konfigurasi Bash untuk macOS, Linux, dan Windows. Koleksi skrip, alias, dan fungsi yang dapat Anda gunakan untuk menyesuaikan shell Anda.
+description: Shell Anda, Di Mana Saja. Distribusi shell lintas platform yang dikelola oleh Chezmoi dengan Zsh, Neovim, dan tmux untuk macOS, Linux, dan WSL.
 heroImage: https://kura.pro/dotfiles/v2/images/banners/banner-dotfiles.svg
-heroText: Dirancang sederhana untuk menyesuaikan kehidupan shell Anda.
+heroText: Shell Anda, Di Mana Saja.
 home: true
 lang: id-ID
-metaTitle: Dotfiles - Dirancang sederhana untuk menyesuaikan kehidupan shell Anda
+metaTitle: Dotfiles - Shell Anda, Di Mana Saja
 permalink: /id/
-subtitle: Generasi baru file konfigurasi Bash untuk macOS, Linux, dan Windows. Dotfiles memberi Anda cara baru untuk melakukan lebih banyak dari sebelumnya dengan shell Anda.
-tagline: Generasi baru file konfigurasi Bash untuk macOS, Linux, dan Windows. Dotfiles memberi Anda cara baru untuk melakukan lebih banyak dari sebelumnya dengan shell Anda.
-title: Dotfiles - Dirancang sederhana untuk menyesuaikan kehidupan shell Anda
+subtitle: Distribusi shell lintas platform yang dikelola oleh Chezmoi. Siapkan seluruh lingkungan pengembangan Anda dalam hitungan menit dan pertahankan agar identik di setiap mesin.
+tagline: Distribusi shell lintas platform yang dikelola oleh Chezmoi. Siapkan seluruh lingkungan pengembangan Anda dalam hitungan menit dan pertahankan agar identik di setiap mesin.
+title: Dotfiles - Shell Anda, Di Mana Saja
 actionText: Baca selengkapnya →
 actionLink: /id/about/
 features:
@@ -16,25 +16,25 @@ features:
     details: "Didukung oleh Rust: Atuin (Riwayat), Yazi (File), Zellij (Multiplexer), dan Ghostty (Terminal)."
   - title: Keamanan yang Diperkuat
     details: "Penandatanganan SSH native dan kepatuhan XDG langsung tersedia. Tanpa dependensi proprietary."
-  - title: Dapat Disesuaikan
-    details: "Temukan semua detail Dotfiles dan pilih yang Anda sukai sesuai keinginan Anda"
+  - title: Pendekatan Infrastruktur
+    details: "Zsh, Neovim, dan tmux dikonfigurasi dengan default yang masuk akal. Desain idempoten — jalankan sekali atau seratus kali."
 footer: Hak Cipta © Sebastien Rousseau 2015-2026. Semua hak dilindungi.
 
 meta:
   - name: keywords
-    content: bash, konfigurasi, dotfiles, linux, macos, shell, terminal, windows
+    content: dotfiles, zsh, neovim, tmux, chezmoi, shell, terminal, linux, macos, wsl, atuin, yazi, zellij, ghostty
   - name: twitter:card
     content: summary_large_image
   - name: twitter:description
-    content: Generasi baru file konfigurasi Bash untuk macOS, Linux, dan Windows. Dotfiles memberi Anda cara baru untuk melakukan lebih banyak dari sebelumnya dengan shell Anda.
+    content: Shell Anda, Di Mana Saja. Distribusi shell lintas platform yang dikelola oleh Chezmoi untuk macOS, Linux, dan WSL.
   - name: twitter:title
-    content: Dotfiles - Dirancang sederhana untuk menyesuaikan kehidupan shell Anda
+    content: Dotfiles - Shell Anda, Di Mana Saja
   - name: og:title
-    content: Dotfiles - Dirancang sederhana untuk menyesuaikan kehidupan shell Anda
+    content: Dotfiles - Shell Anda, Di Mana Saja
   - name: og:description
-    content: Generasi baru file konfigurasi Bash untuk macOS, Linux, dan Windows. Dotfiles memberi Anda cara baru untuk melakukan lebih banyak dari sebelumnya dengan shell Anda.
+    content: Shell Anda, Di Mana Saja. Distribusi shell lintas platform yang dikelola oleh Chezmoi untuk macOS, Linux, dan WSL.
   - name: og:image:alt
-    content: Dotfiles - Dirancang sederhana untuk menyesuaikan kehidupan shell Anda.
+    content: Dotfiles - Shell Anda, Di Mana Saja.
   - name: og:locale
     content: id_ID
 ---

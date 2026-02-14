@@ -40,6 +40,7 @@ export const heSidebar: SidebarConfig = {
         "/he/aliases/interactive/",
         "/he/aliases/kubernetes/",
         "/he/aliases/legal/",
+        "/he/aliases/lua/",
         "/he/aliases/macOS/",
         "/he/aliases/make/",
         "/he/aliases/mkdir/",

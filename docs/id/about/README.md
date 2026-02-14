@@ -29,7 +29,7 @@ Standar modern untuk konfigurasi shell. Dibangun di atas **Chezmoi** untuk manaj
 
 ## Temukan
 
-Dotfiles v0.2.474 mengubah terminal Anda menjadi ruang kerja yang kuat dan terpadu. Berbeda dengan dotfiles lama yang bergantung pada Makefile kompleks atau skrip symlink, Dotfiles menggunakan pendekatan berbasis template yang atomik, cepat, dan dapat direproduksi.
+Dotfiles v0.2.481 mengubah terminal Anda menjadi ruang kerja yang kuat dan terpadu. Berbeda dengan dotfiles lama yang bergantung pada Makefile kompleks atau skrip symlink, Dotfiles menggunakan pendekatan berbasis template yang atomik, cepat, dan dapat direproduksi.
 
 ### Yang Baru
 
@@ -56,7 +56,7 @@ Dotfiles v0.2.474 mengubah terminal Anda menjadi ruang kerja yang kuat dan terpa
 Jalankan satu perintah untuk menginstal seluruh suite:
 
 ```bash
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/sebastienrousseau/dotfiles/v0.2.474/install.sh)"
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/sebastienrousseau/dotfiles/v0.2.481/install.sh)"
 ```
 
 Installer akan:

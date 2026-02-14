@@ -40,6 +40,7 @@ export const enSidebar: SidebarConfig = {
         "/aliases/interactive/",
         "/aliases/kubernetes/",
         "/aliases/legal/",
+        "/aliases/lua/",
         "/aliases/macOS/",
         "/aliases/make/",
         "/aliases/mkdir/",

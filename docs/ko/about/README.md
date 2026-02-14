@@ -29,7 +29,7 @@ meta:
 
 ## 발견하기
 
-Dotfiles v0.2.474는 터미널을 강력하고 통합된 작업 공간으로 변환합니다. 복잡한 Makefile이나 심볼릭 링크 스크립트에 의존하는 레거시 dotfiles와 달리, Dotfiles는 원자적이고 빠르며 재현 가능한 템플릿 기반 접근 방식을 사용합니다.
+Dotfiles v0.2.481는 터미널을 강력하고 통합된 작업 공간으로 변환합니다. 복잡한 Makefile이나 심볼릭 링크 스크립트에 의존하는 레거시 dotfiles와 달리, Dotfiles는 원자적이고 빠르며 재현 가능한 템플릿 기반 접근 방식을 사용합니다.
 
 ### 새로운 기능
 
@@ -56,7 +56,7 @@ Dotfiles v0.2.474는 터미널을 강력하고 통합된 작업 공간으로 변
 단일 명령으로 전체 스위트를 설치합니다:
 
 ```bash
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/sebastienrousseau/dotfiles/v0.2.474/install.sh)"
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/sebastienrousseau/dotfiles/v0.2.481/install.sh)"
 ```
 
 설치 프로그램은 다음을 수행합니다:

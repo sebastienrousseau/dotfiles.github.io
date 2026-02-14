@@ -40,6 +40,7 @@ export const arSidebar: SidebarConfig = {
         "/ar/aliases/interactive/",
         "/ar/aliases/kubernetes/",
         "/ar/aliases/legal/",
+        "/ar/aliases/lua/",
         "/ar/aliases/macOS/",
         "/ar/aliases/make/",
         "/ar/aliases/mkdir/",

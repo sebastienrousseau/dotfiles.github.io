@@ -29,7 +29,7 @@ meta:
 
 ## גלה
 
-Dotfiles v0.2.474 הופך את הטרמינל שלך לסביבת עבודה עוצמתית ומאוחדת. בניגוד ל-dotfiles מדור קודם המסתמכים על Makefiles מורכבים או סקריפטי symlink, Dotfiles משתמש בגישה מבוססת תבניות שהיא אטומית, מהירה וניתנת לשחזור.
+Dotfiles v0.2.481 הופך את הטרמינל שלך לסביבת עבודה עוצמתית ומאוחדת. בניגוד ל-dotfiles מדור קודם המסתמכים על Makefiles מורכבים או סקריפטי symlink, Dotfiles משתמש בגישה מבוססת תבניות שהיא אטומית, מהירה וניתנת לשחזור.
 
 ### מה חדש
 
@@ -56,7 +56,7 @@ Dotfiles v0.2.474 הופך את הטרמינל שלך לסביבת עבודה ע
 הרץ פקודה אחת להתקנת הסט המלא:
 
 ```bash
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/sebastienrousseau/dotfiles/v0.2.474/install.sh)"
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/sebastienrousseau/dotfiles/v0.2.481/install.sh)"
 ```
 
 המתקין יבצע:
