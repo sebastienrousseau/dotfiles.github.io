@@ -40,6 +40,7 @@ export const ruSidebar: SidebarConfig = {
         "/ru/alias/interactive/",
         "/ru/alias/kubernetes/",
         "/ru/alias/legal/",
+        "/ru/alias/lua/",
         "/ru/alias/macOS/",
         "/ru/alias/make/",
         "/ru/alias/mkdir/",

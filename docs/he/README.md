@@ -1,14 +1,14 @@
 ---
-description: הדור הבא של קבצי תצורת Bash עבור macOS, Linux ו-Windows. אוסף של סקריפטים, כינויים ופונקציות להתאמה אישית של המעטפת שלך.
+description: המעטפת שלך, בכל מקום. הפצת מעטפת חוצת פלטפורמות המנוהלת על ידי Chezmoi עם Zsh, Neovim ו-tmux עבור macOS, Linux ו-WSL.
 heroImage: https://kura.pro/dotfiles/v2/images/banners/banner-dotfiles.svg
-heroText: מעוצב בפשטות להתאים לחיי המעטפת שלך.
+heroText: המעטפת שלך, בכל מקום.
 home: true
 lang: he-IL
-metaTitle: Dotfiles - מעוצב בפשטות להתאים לחיי המעטפת שלך
+metaTitle: Dotfiles - המעטפת שלך, בכל מקום
 permalink: /he/
-subtitle: הדור הבא של קבצי תצורת Bash עבור macOS, Linux ו-Windows. Dotfiles נותן לך דרכים חדשות לעשות יותר מאי פעם עם המעטפת שלך.
-tagline: הדור הבא של קבצי תצורת Bash עבור macOS, Linux ו-Windows. Dotfiles נותן לך דרכים חדשות לעשות יותר מאי פעם עם המעטפת שלך.
-title: Dotfiles - מעוצב בפשטות להתאים לחיי המעטפת שלך
+subtitle: הפצת מעטפת חוצת פלטפורמות המנוהלת על ידי Chezmoi. הגדר את כל סביבת הפיתוח שלך בדקות ושמור אותה זהה בכל מחשב.
+tagline: הפצת מעטפת חוצת פלטפורמות המנוהלת על ידי Chezmoi. הגדר את כל סביבת הפיתוח שלך בדקות ושמור אותה זהה בכל מחשב.
+title: Dotfiles - המעטפת שלך, בכל מקום
 actionText: קרא עוד ←
 actionLink: /he/about/
 features:
@@ -16,25 +16,25 @@ features:
     details: "מופעל על ידי Rust: Atuin (היסטוריה), Yazi (קבצים), Zellij (מרבב), ו-Ghostty (טרמינל)."
   - title: אבטחה מוקשחת
     details: "חתימת SSH מקורית ותאימות XDG מובנית. ללא תלויות קנייניות."
-  - title: ניתן להתאמה אישית
-    details: "גלה את כל הפרטים של Dotfiles ובחר את אלה שאתה מעדיף לפי הרצונות שלך"
+  - title: גישת תשתית
+    details: "Zsh, Neovim ו-tmux מוגדרים עם ברירות מחדל הגיוניות. עיצוב אידמפוטנטי — הרץ פעם או מאה פעמים."
 footer: כל הזכויות שמורות © Sebastien Rousseau 2015-2026.
 
 meta:
   - name: keywords
-    content: bash, תצורה, dotfiles, linux, macos, shell, terminal, windows
+    content: dotfiles, zsh, neovim, tmux, chezmoi, shell, terminal, linux, macos, wsl, atuin, yazi, zellij, ghostty
   - name: twitter:card
     content: summary_large_image
   - name: twitter:description
-    content: הדור הבא של קבצי תצורת Bash עבור macOS, Linux ו-Windows. Dotfiles נותן לך דרכים חדשות לעשות יותר מאי פעם עם המעטפת שלך.
+    content: המעטפת שלך, בכל מקום. הפצת מעטפת חוצת פלטפורמות המנוהלת על ידי Chezmoi עבור macOS, Linux ו-WSL.
   - name: twitter:title
-    content: Dotfiles - מעוצב בפשטות להתאים לחיי המעטפת שלך
+    content: Dotfiles - המעטפת שלך, בכל מקום
   - name: og:title
-    content: Dotfiles - מעוצב בפשטות להתאים לחיי המעטפת שלך
+    content: Dotfiles - המעטפת שלך, בכל מקום
   - name: og:description
-    content: הדור הבא של קבצי תצורת Bash עבור macOS, Linux ו-Windows. Dotfiles נותן לך דרכים חדשות לעשות יותר מאי פעם עם המעטפת שלך.
+    content: המעטפת שלך, בכל מקום. הפצת מעטפת חוצת פלטפורמות המנוהלת על ידי Chezmoi עבור macOS, Linux ו-WSL.
   - name: og:image:alt
-    content: Dotfiles - מעוצב בפשטות להתאים לחיי המעטפת שלך.
+    content: Dotfiles - המעטפת שלך, בכל מקום.
   - name: og:locale
     content: he_IL
 ---

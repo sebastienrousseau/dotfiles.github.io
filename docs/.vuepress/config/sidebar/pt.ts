@@ -40,6 +40,7 @@ export const ptSidebar: SidebarConfig = {
         "/pt/aliases/interactive/",
         "/pt/aliases/kubernetes/",
         "/pt/aliases/legal/",
+        "/pt/aliases/lua/",
         "/pt/aliases/macOS/",
         "/pt/aliases/make/",
         "/pt/aliases/mkdir/",

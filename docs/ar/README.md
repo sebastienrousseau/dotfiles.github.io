@@ -1,14 +1,14 @@
 ---
-description: الجيل القادم من ملفات تكوين Bash لنظام macOS و Linux و Windows. مجموعة من السكربتات والأسماء المستعارة والوظائف لتخصيص الشل الخاص بك.
+description: شلّك، في كل مكان. توزيعة شل عابرة للمنصات مُدارة بواسطة Chezmoi مع Zsh و Neovim و tmux لنظام macOS و Linux و WSL.
 heroImage: https://kura.pro/dotfiles/v2/images/banners/banner-dotfiles.svg
-heroText: مصممة ببساطة لتناسب حياة الشل الخاصة بك.
+heroText: شلّك، في كل مكان.
 home: true
 lang: ar-SA
-metaTitle: Dotfiles - مصممة ببساطة لتناسب حياة الشل الخاصة بك
+metaTitle: Dotfiles - شلّك، في كل مكان
 permalink: /ar/
-subtitle: الجيل القادم من ملفات تكوين Bash لنظام macOS و Linux و Windows. يمنحك Dotfiles طرقًا جديدة لفعل المزيد مع الشل الخاص بك.
-tagline: الجيل القادم من ملفات تكوين Bash لنظام macOS و Linux و Windows. يمنحك Dotfiles طرقًا جديدة لفعل المزيد مع الشل الخاص بك.
-title: Dotfiles - مصممة ببساطة لتناسب حياة الشل الخاصة بك
+subtitle: توزيعة شل عابرة للمنصات مُدارة بواسطة Chezmoi. قم بإعداد بيئة التطوير بالكامل في دقائق واحتفظ بها متطابقة على كل جهاز.
+tagline: توزيعة شل عابرة للمنصات مُدارة بواسطة Chezmoi. قم بإعداد بيئة التطوير بالكامل في دقائق واحتفظ بها متطابقة على كل جهاز.
+title: Dotfiles - شلّك، في كل مكان
 actionText: اقرأ المزيد ←
 actionLink: /ar/about/
 features:
@@ -16,25 +16,25 @@ features:
     details: "مدعوم بـ Rust: Atuin (التاريخ)، Yazi (الملفات)، Zellij (المضاعف)، و Ghostty (الطرفية)."
   - title: أمان معزز
     details: "توقيع SSH الأصلي والتوافق مع XDG جاهز للاستخدام. بدون تبعيات مملوكة."
-  - title: قابل للتخصيص
-    details: "اكتشف جميع تفاصيل Dotfiles واختر ما تفضله حسب رغباتك"
+  - title: نهج البنية التحتية
+    details: "Zsh و Neovim و tmux مُهيأة بإعدادات افتراضية معقولة. تصميم متساوي القوة — شغّله مرة أو مئة مرة."
 footer: حقوق النشر © Sebastien Rousseau 2015-2026. جميع الحقوق محفوظة.
 
 meta:
   - name: keywords
-    content: bash, تكوين, dotfiles, linux, macos, shell, terminal, windows
+    content: dotfiles, zsh, neovim, tmux, chezmoi, shell, terminal, linux, macos, wsl, atuin, yazi, zellij, ghostty
   - name: twitter:card
     content: summary_large_image
   - name: twitter:description
-    content: الجيل القادم من ملفات تكوين Bash لنظام macOS و Linux و Windows. يمنحك Dotfiles طرقًا جديدة لفعل المزيد مع الشل الخاص بك.
+    content: شلّك، في كل مكان. توزيعة شل عابرة للمنصات مُدارة بواسطة Chezmoi لنظام macOS و Linux و WSL.
   - name: twitter:title
-    content: Dotfiles - مصممة ببساطة لتناسب حياة الشل الخاصة بك
+    content: Dotfiles - شلّك، في كل مكان
   - name: og:title
-    content: Dotfiles - مصممة ببساطة لتناسب حياة الشل الخاصة بك
+    content: Dotfiles - شلّك، في كل مكان
   - name: og:description
-    content: الجيل القادم من ملفات تكوين Bash لنظام macOS و Linux و Windows. يمنحك Dotfiles طرقًا جديدة لفعل المزيد مع الشل الخاص بك.
+    content: شلّك، في كل مكان. توزيعة شل عابرة للمنصات مُدارة بواسطة Chezmoi لنظام macOS و Linux و WSL.
   - name: og:image:alt
-    content: Dotfiles - مصممة ببساطة لتناسب حياة الشل الخاصة بك.
+    content: Dotfiles - شلّك، في كل مكان.
   - name: og:locale
     content: ar_SA
 ---

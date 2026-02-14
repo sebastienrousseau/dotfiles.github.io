@@ -1,40 +1,40 @@
 ---
-description: A próxima geração de arquivos de configuração Bash para macOS, Linux e Windows. Uma coleção de scripts, aliases e funções para personalizar seu shell.
+description: Seu Shell, em Todo Lugar. Uma distribuição shell multiplataforma gerenciada pelo Chezmoi com Zsh, Neovim e tmux para macOS, Linux e WSL.
 heroImage: https://kura.pro/dotfiles/v2/images/banners/banner-dotfiles.svg
-heroText: Simplesmente projetado para se adequar à sua vida no shell.
+heroText: Seu Shell, em Todo Lugar.
 home: true
 lang: pt-BR
-metaTitle: Dotfiles - Simplesmente projetado para se adequar à sua vida no shell (BR)
+metaTitle: Dotfiles - Seu Shell, em Todo Lugar
 permalink: /
-subtitle: A próxima geração de arquivos de configuração Bash para macOS, Linux e Windows. Dotfiles oferece novas maneiras de fazer mais do que nunca com seu shell.
-tagline: A próxima geração de arquivos de configuração Bash para macOS, Linux e Windows. Dotfiles oferece novas maneiras de fazer mais do que nunca com seu shell.
-title: Dotfiles - Simplesmente projetado para se adequar à sua vida no shell (BR)
-actionText: Leia mais →
+subtitle: Uma distribuição shell multiplataforma gerenciada pelo Chezmoi. Configure todo o seu ambiente de desenvolvimento em minutos e mantenha-o idêntico em cada máquina.
+tagline: Uma distribuição shell multiplataforma gerenciada pelo Chezmoi. Configure todo o seu ambiente de desenvolvimento em minutos e mantenha-o idêntico em cada máquina.
+title: Dotfiles - Seu Shell, em Todo Lugar
+actionText: Saiba mais →
 actionLink: /pt/about/
 features:
   - title: Núcleo Moderno
-    details: "Com tecnologia Rust: Atuin (Histórico), Yazi (Arquivos), Zellij (Multiplexador) e Ghostty (Terminal)."
+    details: "Powered by Rust: Atuin (Histórico), Yazi (Arquivos), Zellij (Multiplexador) e Ghostty (Terminal)."
   - title: Segurança Reforçada
-    details: "Assinatura SSH Nativa e Conformidade XDG pronta para uso. Sem dependências proprietárias."
-  - title: Personalizável
-    details: "Descubra todos os detalhes dos Dotfiles e escolha os que preferir de acordo com seus desejos."
+    details: "Assinatura SSH nativa e conformidade XDG prontos para uso. Sem dependências proprietárias."
+  - title: Abordagem de Infraestrutura
+    details: "Zsh, Neovim e tmux configurados com padrões sensatos. Idempotente por design — execute uma ou cem vezes."
 footer: Copyright © Sebastien Rousseau 2015-2026. Todos os direitos reservados.
 
 meta:
   - name: keywords
-    content: bash, configuração, dotfiles, linux, macos, shell, terminal, windows, personalizável, desenvolvimento, rust, zellij, yazi, atuin
+    content: dotfiles, zsh, neovim, tmux, chezmoi, shell, terminal, linux, macos, wsl, atuin, yazi, zellij, ghostty
   - name: twitter:card
     content: summary_large_image
   - name: twitter:description
-    content: A próxima geração de arquivos de configuração Bash para macOS, Linux e Windows. Dotfiles oferece novas maneiras de fazer mais do que nunca com seu shell.
+    content: Seu Shell, em Todo Lugar. Uma distribuição shell multiplataforma gerenciada pelo Chezmoi para macOS, Linux e WSL.
   - name: twitter:title
-    content: Dotfiles - Simplesmente projetado para se adequar à sua vida no shell (BR)
+    content: Dotfiles - Seu Shell, em Todo Lugar
   - name: og:title
-    content: Dotfiles - Simplesmente projetado para se adequar à sua vida no shell (BR)
+    content: Dotfiles - Seu Shell, em Todo Lugar
   - name: og:description
-    content: A próxima geração de arquivos de configuração Bash para macOS, Linux e Windows. Dotfiles oferece novas maneiras de fazer mais do que nunca com seu shell.
+    content: Seu Shell, em Todo Lugar. Uma distribuição shell multiplataforma gerenciada pelo Chezmoi para macOS, Linux e WSL.
   - name: og:image:alt
-    content: Simplesmente projetado para se adequar à sua vida no shell
+    content: Dotfiles - Seu Shell, em Todo Lugar.
   - name: og:locale
     content: pt_BR
 ---

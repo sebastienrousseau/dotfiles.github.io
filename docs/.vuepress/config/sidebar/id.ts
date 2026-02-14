@@ -40,6 +40,7 @@ export const idSidebar: SidebarConfig = {
         "/id/aliases/interactive/",
         "/id/aliases/kubernetes/",
         "/id/aliases/legal/",
+        "/id/aliases/lua/",
         "/id/aliases/macOS/",
         "/id/aliases/make/",
         "/id/aliases/mkdir/",

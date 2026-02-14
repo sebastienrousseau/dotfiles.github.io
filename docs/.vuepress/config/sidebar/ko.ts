@@ -40,6 +40,7 @@ export const koSidebar: SidebarConfig = {
         "/ko/alias/interactive/",
         "/ko/alias/kubernetes/",
         "/ko/alias/legal/",
+        "/ko/alias/lua/",
         "/ko/alias/macOS/",
         "/ko/alias/make/",
         "/ko/alias/mkdir/",

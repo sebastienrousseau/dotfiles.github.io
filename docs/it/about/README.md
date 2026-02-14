@@ -29,7 +29,7 @@ Lo standard moderno per la configurazione shell. Costruito su **Chezmoi** per un
 
 ## Scopri
 
-Dotfiles v0.2.474 trasforma il tuo terminale in uno spazio di lavoro potente e unificato. A differenza dei dotfiles legacy che si affidano a Makefile complessi o script di symlink, Dotfiles utilizza un approccio basato su template che e atomico, veloce e riproducibile.
+Dotfiles v0.2.481 trasforma il tuo terminale in uno spazio di lavoro potente e unificato. A differenza dei dotfiles legacy che si affidano a Makefile complessi o script di symlink, Dotfiles utilizza un approccio basato su template che e atomico, veloce e riproducibile.
 
 ### Novita
 
@@ -56,7 +56,7 @@ Dotfiles v0.2.474 trasforma il tuo terminale in uno spazio di lavoro potente e u
 Esegui un singolo comando per installare l'intera suite:
 
 ```bash
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/sebastienrousseau/dotfiles/v0.2.474/install.sh)"
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/sebastienrousseau/dotfiles/v0.2.481/install.sh)"
 ```
 
 L'installer:

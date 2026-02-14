@@ -29,7 +29,7 @@ meta:
 
 ## اكتشف
 
-Dotfiles v0.2.474 يحوّل طرفيتك إلى مساحة عمل قوية وموحدة. على عكس ملفات dotfiles التقليدية التي تعتمد على Makefiles معقدة أو سكريبتات الروابط الرمزية، يستخدم Dotfiles نهجًا قائمًا على القوالب يتميز بالذرية والسرعة وقابلية إعادة الإنتاج.
+Dotfiles v0.2.481 يحوّل طرفيتك إلى مساحة عمل قوية وموحدة. على عكس ملفات dotfiles التقليدية التي تعتمد على Makefiles معقدة أو سكريبتات الروابط الرمزية، يستخدم Dotfiles نهجًا قائمًا على القوالب يتميز بالذرية والسرعة وقابلية إعادة الإنتاج.
 
 ### ما الجديد
 
@@ -56,7 +56,7 @@ Dotfiles v0.2.474 يحوّل طرفيتك إلى مساحة عمل قوية وم
 نفّذ أمرًا واحدًا لتثبيت المجموعة الكاملة:
 
 ```bash
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/sebastienrousseau/dotfiles/v0.2.474/install.sh)"
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/sebastienrousseau/dotfiles/v0.2.481/install.sh)"
 ```
 
 سيقوم المُثبّت بما يلي:
