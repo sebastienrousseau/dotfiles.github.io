@@ -1,0 +1,25 @@
+{
+	"$schema": "https://json.schemastore.org/web-manifest-combined.json",
+	"background_color": "#000",
+	"description": "The next generation of Bash configuration files for macOS, Linux and Windows. Dotfiles gives you new ways to do more than ever with your shell.",
+	"display": "standalone",
+	"icons": [
+		{
+			"sizes": "192x192",
+			"src": "/icons/dotfiles-192x192.png",
+			"type": "image/png"
+		},
+		{
+			"sizes": "512x512",
+			"src": "/icons/dotfiles-512x512.png",
+			"type": "image/png"
+		}
+	],
+	"lang": "en_gb",
+	"name": "Dotfiles",
+	"orientation": "portrait-primary",
+	"scope": "https://dotfiles.io/",
+	"short_name": "Dotfiles",
+	"start_url": "https://dotfiles.io/",
+	"theme_color": "#9e00a3"
+}
