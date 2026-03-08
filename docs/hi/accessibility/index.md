@@ -1,6 +1,6 @@
 ---
 title: अभिगम्यता | Dotfiles (हिंदी)
-description: Dotfiles दस्तावेज़ीकरण के लिए अभिगम्यता जानकारी।
+description: खोजें dotfiles दस्तावेज़ीकरण के लिए अभिगम्यता जानकारी। macOS, Linux और WSL पर Dotfiles के माध्यम से संगत।
 lang: hi-IN
 author: Sebastien Rousseau
 lastUpdated: true

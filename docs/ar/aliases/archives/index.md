@@ -1,6 +1,6 @@
 ---
 title: اختصارات الأرشيف | Dotfiles
-description: اختصارات الأرشيف والضغط للتعامل مع tar وzip و7z والمزيد. استخرج واضغط وأدر الأرشيفات بأوامر بسيطة.
+description: اختصارات الأرشيف والضغط للتعامل مع tar وzip و7z والمزيد. استخرج واضغط وأدر الأرشيفات بأوامر بسيطة. متوافق مع macOS وLinux وWSL عبر Dotfiles.
 lang: ar-SA
 author: Sebastien Rousseau
 lastUpdated: true

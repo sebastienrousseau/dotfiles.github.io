@@ -1,6 +1,6 @@
 ---
 title: "Alias Git: simplifica tu flujo de trabajo de control de versiones"
-description: Más de 80 alias Git para commits, ramas, diffs y remotos más rápidos. Acelera tus tareas diarias.
+description: Más de 80 alias Git para commits, ramas, diffs y remotos más rápidos. Acelera tus tareas diarias. Compatible con macOS, Linux y WSL a través de Dotfiles.
 lang: es-ES
 author: Sebastien Rousseau
 lastUpdated: true

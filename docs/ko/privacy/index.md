@@ -1,6 +1,6 @@
 ---
 title: 개인정보 보호 | Dotfiles (한국어)
-description: Dotfiles 문서의 개인정보 보호 정책.
+description: Dotfiles 문서의 개인정보 보호 정책. macOS, Linux, WSL 호환. Dotfiles로 관리.
 lang: ko-KR
 author: Sebastien Rousseau
 lastUpdated: true

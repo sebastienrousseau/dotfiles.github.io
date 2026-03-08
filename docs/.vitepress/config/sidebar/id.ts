@@ -11,6 +11,8 @@ export const idSidebar = {
         "/id/paths/",
         "/id/compatibility/",
         "/id/guides/secret-management/",
+        "/id/guides/ssh-signing/",
+        "/id/guides/gpg-configuration/",
       ],
     },
     {

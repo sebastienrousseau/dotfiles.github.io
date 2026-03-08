@@ -1,6 +1,6 @@
 ---
 title: التواصل | Dotfiles (العربية)
-description: معلومات التواصل مع مشرفي Dotfiles.
+description: تواصل مع مشرفي Dotfiles للدعم الفني والإبلاغ عن الأخطاء وطلبات الميزات. روابط المستودع ومتتبع المشكلات وقنوات المجتمع. متوافق مع macOS وLinux وWSL.
 lang: ar-SA
 author: Sebastien Rousseau
 lastUpdated: true

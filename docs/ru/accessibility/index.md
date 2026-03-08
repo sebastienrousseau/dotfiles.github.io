@@ -1,6 +1,6 @@
 ---
 title: Доступность | Dotfiles (Русский)
-description: Информация о доступности документации Dotfiles.
+description: Изучите информация о доступности документации Dotfiles. Совместимо с macOS, Linux и WSL через Dotfiles.
 lang: ru-RU
 author: Sebastien Rousseau
 lastUpdated: true

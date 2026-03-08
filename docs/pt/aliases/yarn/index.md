@@ -1,6 +1,6 @@
 ---
 title: "Aliases de Yarn: Gerenciador de Pacotes JavaScript"
-description: Aliases de shell para Yarn. Atalhos para install, add, run e outros comandos yarn.
+description: Aliases de shell para Yarn. Atalhos para install, add, run e outros comandos yarn. Compatível com macOS, Linux e WSL via Dotfiles.
 lang: pt-BR
 author: Sebastien Rousseau
 lastUpdated: true

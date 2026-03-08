@@ -1,6 +1,6 @@
 ---
 title: "Lua उपनाम: Lua REPL इंटरप्रेटर तक त्वरित पहुँच"
-description: Lua विकास के लिए शेल उपनाम। सरल शॉर्टकट के साथ Lua, LuaJIT और Lua 5.1 REPL लॉन्च करें।
+description: Lua विकास के लिए शेल उपनाम। सरल शॉर्टकट के साथ Lua, LuaJIT और Lua 5.1 REPL लॉन्च करें। macOS, Linux और WSL पर Dotfiles के माध्यम से संगत।
 lang: hi
 author: Sebastien Rousseau
 lastUpdated: true

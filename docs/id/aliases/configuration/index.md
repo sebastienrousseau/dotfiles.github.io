@@ -1,6 +1,6 @@
 ---
 title: Alias Configuration | Dotfiles
-description: Alias shell untuk Bash dan Zsh yang langsung membuka file konfigurasi shell, Git, SSH, dan server.
+description: Alias shell untuk Bash dan Zsh yang langsung membuka file konfigurasi shell, Git, SSH, dan server. Kompatibel dengan macOS, Linux, dan WSL melalui Dotfiles.
 lang: id-ID
 author: Sebastien Rousseau
 lastUpdated: true

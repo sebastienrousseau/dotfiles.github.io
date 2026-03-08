@@ -1,6 +1,6 @@
 ---
 title: Liên hệ | Dotfiles (Tiếng Việt)
-description: Thông tin liên hệ người bảo trì Dotfiles.
+description: Khám phá thông tin liên hệ người bảo trì Dotfiles. Tương thích với macOS, Linux và WSL qua Dotfiles.
 lang: vi-VN
 author: Sebastien Rousseau
 lastUpdated: true

@@ -1,6 +1,6 @@
 ---
 title: शर्तें | Dotfiles (हिंदी)
-description: Dotfiles दस्तावेज़ीकरण के उपयोग की शर्तें।
+description: खोजें dotfiles दस्तावेज़ीकरण के उपयोग की शर्तें। macOS, Linux और WSL पर Dotfiles के माध्यम से संगत।
 lang: hi-IN
 author: Sebastien Rousseau
 lastUpdated: true

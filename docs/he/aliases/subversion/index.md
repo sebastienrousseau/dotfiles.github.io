@@ -1,6 +1,6 @@
 ---
 title: קיצורי Subversion | Dotfiles
-description: קיצורי מעטפת Subversion לניהול גרסאות SVN. קיצורי דרך מהירים לביצוע commits, עדכונים וניהול מאגרים.
+description: קיצורי מעטפת Subversion לניהול גרסאות SVN. קיצורי דרך מהירים לביצוע commits, עדכונים וניהול מאגרים. תואם ל-macOS, Linux ו-WSL דרך Dotfiles.
 lang: he-IL
 author: Sebastien Rousseau
 lastUpdated: true

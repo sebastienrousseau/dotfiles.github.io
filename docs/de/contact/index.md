@@ -1,6 +1,6 @@
 ---
 title: Kontakt | Dotfiles (Deutsch)
-description: Kontaktinformationen der Dotfiles-Betreuer.
+description: Entdecken Sie kontaktinformationen der Dotfiles-Betreuer. Kompatibel mit macOS, Linux und WSL via Dotfiles.
 lang: de-DE
 author: Sebastien Rousseau
 lastUpdated: true

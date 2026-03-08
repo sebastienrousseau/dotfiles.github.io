@@ -1,6 +1,6 @@
 ---
 title: "اختصارات Modern Tooling: بدائل Unix المبنية بـ Rust"
-description: اختصارات شل حديثة لـ eza وbat وripgrep. استبدل أدوات Unix القديمة ببدائل Rust الأسرع.
+description: اختصارات شل حديثة لـ eza وbat وripgrep. استبدل أدوات Unix القديمة ببدائل Rust الأسرع. متوافق مع macOS وLinux وWSL عبر Dotfiles.
 lang: ar-SA
 author: Sebastien Rousseau
 lastUpdated: true

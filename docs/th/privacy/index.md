@@ -1,6 +1,6 @@
 ---
 title: ความเป็นส่วนตัว | Dotfiles (ไทย)
-description: นโยบายความเป็นส่วนตัวสำหรับเอกสาร Dotfiles
+description: สำรวจนโยบายความเป็นส่วนตัวสำหรับเอกสาร Dotfiles รองรับ macOS, Linux และ WSL ผ่าน Dotfiles
 lang: th-TH
 author: Sebastien Rousseau
 lastUpdated: true

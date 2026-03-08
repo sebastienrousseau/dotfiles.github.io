@@ -1,6 +1,6 @@
 ---
 title: "Alias Permission: atajos de permisos para el shell"
-description: Alias shell para chmod, chown y chgrp. Configura permisos rápidamente con atajos numéricos.
+description: Alias shell para chmod, chown y chgrp. Configura permisos rápidamente con atajos numéricos. Compatible con macOS, Linux y WSL a través de Dotfiles.
 lang: es-ES
 author: Sebastien Rousseau
 lastUpdated: true

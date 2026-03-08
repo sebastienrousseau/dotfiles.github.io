@@ -1,6 +1,6 @@
 ---
 title: Alias Installer | Dotfiles
-description: Alias Installer untuk Dotfiles
+description: Jelajahi alias Installer untuk Dotfiles Kompatibel dengan macOS, Linux, dan WSL melalui Dotfiles.
 lang: id-ID
 author: Sebastien Rousseau
 lastUpdated: true

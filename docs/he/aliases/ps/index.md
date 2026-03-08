@@ -1,6 +1,6 @@
 ---
 title: קיצורי PS | Dotfiles
-description: קיצורי סטטוס תהליכים לניטור וניהול תהליכים פעילים. קיצורים מהירים לפקודת ps.
+description: קיצורי סטטוס תהליכים לניטור וניהול תהליכים פעילים. קיצורים מהירים לפקודת ps. תואם ל-macOS, Linux ו-WSL דרך Dotfiles.
 lang: he-IL
 author: Sebastien Rousseau
 lastUpdated: true

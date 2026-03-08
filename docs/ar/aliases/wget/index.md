@@ -1,6 +1,6 @@
 ---
 title: اختصارات Wget | Dotfiles
-description: اختصارات Wget للشل لتنزيل الملفات. مختصرات سريعة لاسترداد الويب مع دعم الاستئناف.
+description: اختصارات Wget للشل لتنزيل الملفات. مختصرات سريعة لاسترداد الويب مع دعم الاستئناف. متوافق مع macOS وLinux وWSL عبر Dotfiles.
 lang: ar-SA
 author: Sebastien Rousseau
 lastUpdated: true

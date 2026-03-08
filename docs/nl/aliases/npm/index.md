@@ -1,6 +1,6 @@
 ---
 title: "NPM-aliassen: Stroomlijn je Node-pakketbeheer"
-description: Versnel npm-workflows met intuitive shell-aliassen voor install, build, test en publish-commando's.
+description: Versnel npm-workflows met intuitive shell-aliassen voor install, build, test en publish-commando's. Compatibel met macOS, Linux en WSL via Dotfiles.
 lang: nl-NL
 author: Sebastien Rousseau
 lastUpdated: true

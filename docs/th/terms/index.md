@@ -1,6 +1,6 @@
 ---
 title: เงื่อนไข | Dotfiles (ไทย)
-description: เงื่อนไขการใช้งานสำหรับเอกสาร Dotfiles
+description: สำรวจเงื่อนไขการใช้งานสำหรับเอกสาร Dotfiles รองรับ macOS, Linux และ WSL ผ่าน Dotfiles
 lang: th-TH
 author: Sebastien Rousseau
 lastUpdated: true

@@ -1,6 +1,6 @@
 ---
 title: Matriks Kompatibilitas Lintas Platform | Dotfiles
-description: Dukungan platform yang diuji untuk shell, alat, terminal, dan kategori alias di Dotfiles v0.2.495.
+description: Dukungan platform yang diuji untuk shell, alat, terminal, dan kategori alias di Dotfiles v0.2.495. Kompatibel dengan macOS, Linux, dan WSL melalui Dotfiles.
 lang: id-ID
 author: Sebastien Rousseau
 lastUpdated: true

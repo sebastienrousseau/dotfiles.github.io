@@ -1,6 +1,6 @@
 ---
 title: קיצורי אבטחה | Dotfiles
-description: קיצורי אבטחה להגנה על קבצי תצורה ושמירה על אי-שינוי קבצים. נעל ושחרר קבצי מעטפת קריטיים.
+description: קיצורי אבטחה להגנה על קבצי תצורה ושמירה על אי-שינוי קבצים. נעל ושחרר קבצי מעטפת קריטיים. תואם ל-macOS, Linux ו-WSL דרך Dotfiles.
 lang: he-IL
 author: Sebastien Rousseau
 lastUpdated: true

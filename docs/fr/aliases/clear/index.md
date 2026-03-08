@@ -1,6 +1,6 @@
 ---
 title: "Alias Clear : gestion de l’écran du terminal"
-description: Alias shell pour effacer l’écran et afficher le contenu des dossiers, l’historique et les arbres.
+description: Alias shell pour effacer l’écran et afficher le contenu des dossiers, l’historique et les arbres. Compatible avec macOS, Linux et WSL via Dotfiles.
 lang: fr-FR
 author: Sebastien Rousseau
 lastUpdated: true

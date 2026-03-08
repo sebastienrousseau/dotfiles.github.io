@@ -1,6 +1,6 @@
 ---
 title: Contact | Dotfiles (Nederlands)
-description: Contactgegevens van de Dotfiles-beheerders.
+description: Ontdek contactgegevens van de Dotfiles-beheerders. Compatibel met macOS, Linux en WSL via Dotfiles.
 lang: nl-NL
 author: Sebastien Rousseau
 lastUpdated: true

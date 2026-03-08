@@ -1,6 +1,6 @@
 ---
 title: יצירת קשר | Dotfiles (עברית)
-description: פרטי יצירת קשר עם מתחזקי Dotfiles.
+description: גלה פרטי יצירת קשר עם מתחזקי Dotfiles. תואם ל-macOS, Linux ו-WSL דרך Dotfiles.
 lang: he-IL
 author: Sebastien Rousseau
 lastUpdated: true

@@ -1,6 +1,6 @@
 ---
 title: Aliases UUID | Dotfiles
-description: Alias UUID pour générer des identifiants uniques. Raccourci pour créer et copier des UUID.
+description: Alias UUID pour générer des identifiants uniques. Raccourci pour créer et copier des UUID. Compatible avec macOS, Linux et WSL via Dotfiles.
 lang: fr-FR
 author: Sebastien Rousseau
 lastUpdated: true

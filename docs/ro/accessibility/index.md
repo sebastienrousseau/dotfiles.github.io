@@ -1,6 +1,6 @@
 ---
 title: Accesibilitate | Dotfiles (Română)
-description: Informații de accesibilitate pentru documentația Dotfiles.
+description: Informații de accesibilitate pentru documentația Dotfiles. Compatibil cu macOS, Linux și WSL prin Dotfiles.
 lang: ro-RO
 author: Sebastien Rousseau
 lastUpdated: true

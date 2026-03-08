@@ -1,6 +1,6 @@
 ---
 title: Termeni | Dotfiles (Română)
-description: Termeni de utilizare pentru documentația Dotfiles.
+description: Termeni de utilizare pentru documentația Dotfiles. Compatibil cu macOS, Linux și WSL prin Dotfiles.
 lang: ro-RO
 author: Sebastien Rousseau
 lastUpdated: true

@@ -136,5 +136,5 @@ permalink: /ko/compatibility/
 ## 관련 페이지
 
 - [소개](/ko/about/)
-- [별칭](/ko/alias/)
+- [별칭](/ko/aliases/)
 - [시크릿 관리 모범 사례](/ko/guides/secret-management/)

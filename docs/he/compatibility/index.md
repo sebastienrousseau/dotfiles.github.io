@@ -1,6 +1,6 @@
 ---
 title: מטריצת תאימות חוצת פלטפורמות | Dotfiles
-description: תמיכה בפלטפורמות שנבדקו עבור shells, כלים, מסופים וקטגוריות alias ב-Dotfiles v0.2.495.
+description: תמיכה בפלטפורמות שנבדקו עבור shells, כלים, מסופים וקטגוריות alias ב-Dotfiles v0.2.495. תואם ל-macOS, Linux ו-WSL דרך Dotfiles.
 lang: he-IL
 author: Sebastien Rousseau
 lastUpdated: true

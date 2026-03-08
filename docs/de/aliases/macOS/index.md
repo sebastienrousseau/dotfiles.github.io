@@ -1,6 +1,6 @@
 ---
 title: macOS Aliase | Dotfiles
-description: Shell-Aliase fuer macOS-Systemverwaltung, Finder-Steuerung und Wartungsaufgaben in Dotfiles.
+description: Shell-Aliase fuer macOS-Systemverwaltung, Finder-Steuerung und Wartungsaufgaben in Dotfiles. Kompatibel mit macOS, Linux und WSL via Dotfiles.
 lang: de-DE
 author: Sebastien Rousseau
 lastUpdated: true

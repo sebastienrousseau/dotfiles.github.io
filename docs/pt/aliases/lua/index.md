@@ -1,6 +1,6 @@
 ---
 title: "Aliases Lua: Acesso rápido aos interpretadores Lua REPL"
-description: Aliases shell para desenvolvimento Lua. Inicie Lua, LuaJIT e Lua 5.1 REPL com atalhos simples.
+description: Aliases shell para desenvolvimento Lua. Inicie Lua, LuaJIT e Lua 5.1 REPL com atalhos simples. Compatível com macOS, Linux e WSL via Dotfiles.
 lang: pt-BR
 author: Sebastien Rousseau
 lastUpdated: true

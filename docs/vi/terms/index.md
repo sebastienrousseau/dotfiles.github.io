@@ -1,6 +1,6 @@
 ---
 title: Điều khoản | Dotfiles (Tiếng Việt)
-description: Điều khoản sử dụng cho tài liệu Dotfiles.
+description: Khám phá điều khoản sử dụng cho tài liệu Dotfiles. Tương thích với macOS, Linux và WSL qua Dotfiles.
 lang: vi-VN
 author: Sebastien Rousseau
 lastUpdated: true

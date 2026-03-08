@@ -1,6 +1,6 @@
 ---
 title: "Alias Legal : outils de conformité open source"
-description: Alias shell pour le scan de licences, les en-têtes de copyright et la gestion des attributions.
+description: Alias shell pour le scan de licences, les en-têtes de copyright et la gestion des attributions. Compatible avec macOS, Linux et WSL via Dotfiles.
 lang: fr-FR
 author: Sebastien Rousseau
 lastUpdated: true

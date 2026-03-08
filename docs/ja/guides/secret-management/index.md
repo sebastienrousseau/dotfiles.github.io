@@ -218,4 +218,4 @@ Chezmoiが機密ファイルを管理するのを防止：
 
 - [概要](/ja/about/)
 - [互換性マトリックス](/ja/compatibility/)
-- [セキュリティエイリアス](/ja/alias/security/)
+- [セキュリティエイリアス](/ja/aliases/security/)

@@ -1,6 +1,6 @@
 ---
 title: "اختصارات NPM: بسّط إدارة حزم Node"
-description: سرّع سير عمل npm مع اختصارات شل بديهية لأوامر install وbuild وtest وpublish.
+description: سرّع سير عمل npm مع اختصارات شل بديهية لأوامر install وbuild وtest وpublish. متوافق مع macOS وLinux وWSL عبر Dotfiles.
 lang: ar-SA
 author: Sebastien Rousseau
 lastUpdated: true

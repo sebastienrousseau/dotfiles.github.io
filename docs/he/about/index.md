@@ -1,6 +1,6 @@
 ---
 title: אודות Dotfiles
-description: הדור הבא של תצורת מעטפת. ביצועים גבוהים, מאובטח ומותאם לבינה מלאכותית. מנוהל על ידי Chezmoi.
+description: הדור הבא של תצורת מעטפת. ביצועים גבוהים, מאובטח ומותאם לבינה מלאכותית. מנוהל על ידי Chezmoi. תואם ל-macOS, Linux ו-WSL דרך Dotfiles.
 lang: he-IL
 author: Sebastien Rousseau
 lastUpdated: true

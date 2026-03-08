@@ -1,6 +1,6 @@
 ---
 title: Disk Usage 别名 | Dotfiles
-description: 用于磁盘使用监控的 shell 别名。显示文件大小、查找大目录并高效管理存储。
+description: 用于磁盘使用监控的 shell 别名。显示文件大小、查找大目录并高效管理存储。 兼容 macOS、Linux 和 WSL。通过 Dotfiles 管理。
 lang: zh-CN
 author: Sebastien Rousseau
 lastUpdated: true

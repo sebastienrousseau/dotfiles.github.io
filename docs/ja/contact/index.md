@@ -1,6 +1,6 @@
 ---
 title: お問い合わせ | Dotfiles (日本語)
-description: Dotfilesメンテナーの連絡先情報。
+description: Dotfilesメンテナーの連絡先情報。 macOS・Linux・WSL対応。Dotfilesで管理。
 lang: ja-JP
 author: Sebastien Rousseau
 lastUpdated: true

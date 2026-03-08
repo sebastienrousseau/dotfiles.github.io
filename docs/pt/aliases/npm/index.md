@@ -1,6 +1,6 @@
 ---
 title: "Aliases de NPM: Atalhos para o Gerenciador de Pacotes Node.js"
-description: Aliases de shell para NPM. Atalhos para install, build, test, publish e outros comandos npm.
+description: Aliases de shell para NPM. Atalhos para install, build, test, publish e outros comandos npm. Compatível com macOS, Linux e WSL via Dotfiles.
 lang: pt-BR
 author: Sebastien Rousseau
 lastUpdated: true

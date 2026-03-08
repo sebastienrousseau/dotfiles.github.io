@@ -11,6 +11,8 @@ export const trSidebar = {
         "/tr/paths/",
         "/tr/compatibility/",
         "/tr/guides/secret-management/",
+        "/tr/guides/ssh-signing/",
+        "/tr/guides/gpg-configuration/",
       ],
     },
     {

@@ -1,6 +1,6 @@
 ---
 title: Конфиденциальность | Dotfiles (Русский)
-description: Политика конфиденциальности документации Dotfiles.
+description: Политика конфиденциальности документации Dotfiles. Совместимо с macOS, Linux и WSL через Dotfiles.
 lang: ru-RU
 author: Sebastien Rousseau
 lastUpdated: true

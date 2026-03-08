@@ -1,6 +1,6 @@
 ---
 title: "Alias Make : simplifiez votre workflow de build"
-description: Alias de raccourci pour Make. Simplifiez les builds, tests et automatisations.
+description: Alias de raccourci pour Make. Simplifiez les builds, tests et automatisations. Compatible avec macOS, Linux et WSL via Dotfiles.
 lang: fr-FR
 author: Sebastien Rousseau
 lastUpdated: true

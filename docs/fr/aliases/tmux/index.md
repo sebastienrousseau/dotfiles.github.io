@@ -1,6 +1,6 @@
 ---
 title: Aliases Tmux | Dotfiles
-description: Alias tmux pour le multiplexage terminal. Raccourcis pour sessions, fenêtres et panneaux.
+description: Alias tmux pour le multiplexage terminal. Raccourcis pour sessions, fenêtres et panneaux. Compatible avec macOS, Linux et WSL via Dotfiles.
 lang: fr-FR
 author: Sebastien Rousseau
 lastUpdated: true

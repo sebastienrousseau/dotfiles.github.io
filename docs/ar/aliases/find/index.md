@@ -1,6 +1,6 @@
 ---
 title: "اختصارات Find: أوامر بحث سريعة عن الملفات"
-description: بسّط عمليات البحث عن الملفات مع اختصارات fd. مخرجات سريعة وملونة وأوامر بديهية لأنظمة Unix.
+description: بسّط عمليات البحث عن الملفات مع اختصارات fd. مخرجات سريعة وملونة وأوامر بديهية لأنظمة Unix. متوافق مع macOS وLinux وWSL عبر Dotfiles.
 lang: ar-SA
 author: Sebastien Rousseau
 lastUpdated: true

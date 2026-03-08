@@ -1,6 +1,6 @@
 ---
 title: Khả năng tiếp cận | Dotfiles (Tiếng Việt)
-description: Thông tin khả năng tiếp cận cho tài liệu Dotfiles.
+description: Thông tin khả năng tiếp cận cho tài liệu Dotfiles. Tương thích với macOS, Linux và WSL qua Dotfiles.
 lang: vi-VN
 author: Sebastien Rousseau
 lastUpdated: true

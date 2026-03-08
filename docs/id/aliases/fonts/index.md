@@ -1,6 +1,6 @@
 ---
 title: Alias Fonts | Dotfiles
-description: Alias shell untuk mengelola font sistem dan cache font.
+description: Alias shell untuk mengelola font sistem dan cache font. Kompatibel dengan macOS, Linux, dan WSL melalui Dotfiles.
 lang: id-ID
 author: Sebastien Rousseau
 lastUpdated: true

@@ -1,6 +1,6 @@
 ---
 title: Acessibilidade | Dotfiles (Português)
-description: Informações de acessibilidade para a documentação Dotfiles.
+description: Informações de acessibilidade para a documentação Dotfiles. Compatível com macOS, Linux e WSL via Dotfiles.
 lang: pt-BR
 author: Sebastien Rousseau
 lastUpdated: true

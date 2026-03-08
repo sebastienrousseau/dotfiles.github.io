@@ -1,6 +1,6 @@
 ---
 title: "اختصارات Go: بسّط سير عمل تطوير Go"
-description: اختصارات شل لتطوير Go. شغّل وابنِ واختبر وأدر وحدات Go بمختصرات بسيطة.
+description: اختصارات شل لتطوير Go. شغّل وابنِ واختبر وأدر وحدات Go بمختصرات بسيطة. متوافق مع macOS وLinux وWSL عبر Dotfiles.
 lang: ar-SA
 author: Sebastien Rousseau
 lastUpdated: true

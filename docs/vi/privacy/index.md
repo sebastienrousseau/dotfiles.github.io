@@ -1,6 +1,6 @@
 ---
 title: Quyền riêng tư | Dotfiles (Tiếng Việt)
-description: Chính sách quyền riêng tư cho tài liệu Dotfiles.
+description: Khám phá chính sách quyền riêng tư cho tài liệu Dotfiles. Tương thích với macOS, Linux và WSL qua Dotfiles.
 lang: vi-VN
 author: Sebastien Rousseau
 lastUpdated: true

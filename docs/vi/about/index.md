@@ -1,6 +1,6 @@
 ---
 title: Giới Thiệu Dotfiles | Dotfiles
-description: Tổng quan kỹ thuật về Dotfiles v0.2.495.
+description: Khám phá tổng quan kỹ thuật về Dotfiles v0.2.495. Tương thích với macOS, Linux và WSL qua Dotfiles.
 lang: vi-VN
 author: Sebastien Rousseau
 lastUpdated: true

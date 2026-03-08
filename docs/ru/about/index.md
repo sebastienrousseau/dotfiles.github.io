@@ -62,6 +62,6 @@ dot doctor
 
 ## Связанные страницы
 
-- [Алиасы](/ru/alias/)
+- [Алиасы](/ru/aliases/)
 - [Функции](/ru/functions/)
 - [Пути](/ru/paths/)

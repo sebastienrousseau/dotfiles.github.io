@@ -1,6 +1,6 @@
 ---
 title: "اختصارات macOS: مختصرات الشل لـ Mac"
-description: اختصارات شل لإدارة نظام macOS والتحكم في Finder ومهام الصيانة في Dotfiles.
+description: اختصارات شل لإدارة نظام macOS والتحكم في Finder ومهام الصيانة في Dotfiles. متوافق مع macOS وLinux وWSL عبر Dotfiles.
 lang: ar-SA
 author: Sebastien Rousseau
 lastUpdated: true

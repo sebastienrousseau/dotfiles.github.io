@@ -1,6 +1,6 @@
 ---
 title: Bí Danh | Dotfiles
-description: Tổng quan và phụ lục cho 45 danh mục bí danh trong Dotfiles v0.2.495.
+description: Tổng quan và phụ lục cho 45 danh mục bí danh trong Dotfiles v0.2.495. Tương thích với macOS, Linux và WSL qua Dotfiles.
 lang: vi-VN
 author: Sebastien Rousseau
 lastUpdated: true

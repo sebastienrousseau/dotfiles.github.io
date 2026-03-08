@@ -1,6 +1,6 @@
 ---
 title: Аліаси дозволів | Dotfiles
-description: Короткі команди дозволів та власників. Огляд для Dotfiles v0.2.495.
+description: Короткі команди дозволів та власників. Огляд для Dotfiles v0.2.495. Сумісно з macOS, Linux та WSL через Dotfiles.
 lang: uk-UA
 author: Sebastien Rousseau
 lastUpdated: true

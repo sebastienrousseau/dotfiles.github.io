@@ -1,6 +1,6 @@
 ---
 title: "קיצורי Go: ייעל את זרימת העבודה בפיתוח Go"
-description: קיצורי מעטפת לפיתוח Go. הרץ, בנה, בדוק ונהל מודולי Go עם קיצורים פשוטים.
+description: קיצורי מעטפת לפיתוח Go. הרץ, בנה, בדוק ונהל מודולי Go עם קיצורים פשוטים. תואם ל-macOS, Linux ו-WSL דרך Dotfiles.
 lang: he-IL
 author: Sebastien Rousseau
 lastUpdated: true

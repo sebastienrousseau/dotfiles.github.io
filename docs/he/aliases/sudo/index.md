@@ -1,6 +1,6 @@
 ---
 title: קיצורי Sudo | Dotfiles
-description: קיצורי מעטפת sudo להרצת פקודות כמשתמש-על. קיצורי דרך מהירים להרשאות מוגברות.
+description: קיצורי מעטפת sudo להרצת פקודות כמשתמש-על. קיצורי דרך מהירים להרשאות מוגברות. תואם ל-macOS, Linux ו-WSL דרך Dotfiles.
 lang: he-IL
 author: Sebastien Rousseau
 lastUpdated: true

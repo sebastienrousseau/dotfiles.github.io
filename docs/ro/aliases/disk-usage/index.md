@@ -1,6 +1,6 @@
 ---
 title: Aliasuri Utilizare Disc | Dotfiles
-description: Comenzi scurte pentru utilizarea discului. Prezentare generală pentru Dotfiles v0.2.495.
+description: Comenzi scurte pentru utilizarea discului. Prezentare generală pentru Dotfiles v0.2.495. Compatibil cu macOS, Linux și WSL prin Dotfiles.
 lang: ro-RO
 author: Sebastien Rousseau
 lastUpdated: true

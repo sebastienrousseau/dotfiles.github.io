@@ -1,6 +1,6 @@
 ---
 title: "Mkdir एलियास: डायरेक्टरी क्रिएशन शॉर्टकट"
-description: mkdir के लिए शेल एलियास जो तिथि और समय नेमिंग कन्वेंशन के साथ डायरेक्टरी क्रिएशन को सरल करते हैं।
+description: mkdir के लिए शेल एलियास जो तिथि और समय नेमिंग कन्वेंशन के साथ डायरेक्टरी क्रिएशन को सरल करते हैं। macOS, Linux और WSL पर Dotfiles के माध्यम से संगत।
 lang: hi-IN
 author: Sebastien Rousseau
 lastUpdated: true

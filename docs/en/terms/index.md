@@ -1,6 +1,6 @@
 ---
 title: Terms of Use | Dotfiles
-description: Terms of use for Dotfiles documentation and associated open-source content.
+description: Terms of use for Dotfiles documentation. Licensing, copyright, acceptable use policy, and content restrictions for this open-source project.
 lang: en-GB
 author: Sebastien Rousseau
 lastUpdated: true

@@ -1,6 +1,6 @@
 ---
 title: "Aliases de Tmux: Multiplexador de Terminal"
-description: Aliases de shell para tmux. Gerencie sessões, janelas e panes do terminal com comandos curtos.
+description: Aliases de shell para tmux. Gerencie sessões, janelas e panes do terminal com comandos curtos. Compatível com macOS, Linux e WSL via Dotfiles.
 lang: pt-BR
 author: Sebastien Rousseau
 lastUpdated: true

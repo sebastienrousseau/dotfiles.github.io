@@ -1,6 +1,6 @@
 ---
 title: Tentang Dotfiles
-description: Konfigurasi shell generasi berikutnya. Performa tinggi, aman, dan AI-native. Dikelola oleh Chezmoi.
+description: Konfigurasi shell generasi berikutnya. Performa tinggi, aman, dan AI-native. Dikelola oleh Chezmoi. Kompatibel dengan macOS, Linux, dan WSL melalui Dotfiles.
 lang: id-ID
 author: Sebastien Rousseau
 lastUpdated: true

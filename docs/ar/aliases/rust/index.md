@@ -1,6 +1,6 @@
 ---
 title: اختصارات Rust | Dotfiles
-description: اختصارات تطوير Rust لـ Cargo وRustup. مختصرات للبناء والاختبار وإدارة مشاريع Rust.
+description: اختصارات تطوير Rust لـ Cargo وRustup. مختصرات للبناء والاختبار وإدارة مشاريع Rust. متوافق مع macOS وLinux وWSL عبر Dotfiles.
 lang: ar-SA
 author: Sebastien Rousseau
 lastUpdated: true

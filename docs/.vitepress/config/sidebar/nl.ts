@@ -11,6 +11,8 @@ export const nlSidebar = {
         "/nl/paths/",
         "/nl/compatibility/",
         "/nl/guides/secret-management/",
+        "/nl/guides/ssh-signing/",
+        "/nl/guides/gpg-configuration/",
       ],
     },
     {

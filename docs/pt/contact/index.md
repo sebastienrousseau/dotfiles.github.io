@@ -1,6 +1,6 @@
 ---
 title: Contato | Dotfiles (Português)
-description: Informações de contato dos mantenedores do Dotfiles.
+description: Informações de contato dos mantenedores do Dotfiles. Compatível com macOS, Linux e WSL via Dotfiles.
 lang: pt-BR
 author: Sebastien Rousseau
 lastUpdated: true

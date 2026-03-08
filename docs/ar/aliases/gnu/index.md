@@ -1,6 +1,6 @@
 ---
 title: "اختصارات GNU Coreutils: مختصرات الشل لـ Linux"
-description: بسّط سير عملك مع اختصارات GNU Coreutils لإدارة الملفات ومعالجة النصوص وأدوات التحقق.
+description: بسّط سير عملك مع اختصارات GNU Coreutils لإدارة الملفات ومعالجة النصوص وأدوات التحقق. متوافق مع macOS وLinux وWSL عبر Dotfiles.
 lang: ar-SA
 author: Sebastien Rousseau
 lastUpdated: true

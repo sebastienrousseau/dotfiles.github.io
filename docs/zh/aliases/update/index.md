@@ -1,6 +1,6 @@
 ---
 title: Update 别名 | Dotfiles
-description: 用于 macOS 和 Linux 的系统更新别名。保持操作系统和软件包最新。
+description: 用于 macOS 和 Linux 的系统更新别名。保持操作系统和软件包最新。 兼容 macOS、Linux 和 WSL。通过 Dotfiles 管理。
 lang: zh-CN
 author: Sebastien Rousseau
 lastUpdated: true

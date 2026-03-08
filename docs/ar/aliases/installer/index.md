@@ -1,6 +1,6 @@
 ---
 title: "اختصارات Installer: تمهيد ونشر Dotfiles"
-description: اختصارات شل لتمهيد dotfiles محليًا ونشر الإعدادات إلى خوادم بعيدة عبر SSH.
+description: اختصارات شل لتمهيد dotfiles محليًا ونشر الإعدادات إلى خوادم بعيدة عبر SSH. متوافق مع macOS وLinux وWSL عبر Dotfiles.
 lang: ar-SA
 author: Sebastien Rousseau
 lastUpdated: true

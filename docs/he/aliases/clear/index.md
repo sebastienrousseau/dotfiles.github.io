@@ -1,6 +1,6 @@
 ---
 title: "קיצורי Clear: ניהול מסך טרמינל"
-description: קיצורי מעטפת לניקוי מסך הטרמינל והצגת תוכן תיקיות, היסטוריה ותצוגות עץ.
+description: קיצורי מעטפת לניקוי מסך הטרמינל והצגת תוכן תיקיות, היסטוריה ותצוגות עץ. תואם ל-macOS, Linux ו-WSL דרך Dotfiles.
 lang: he-IL
 author: Sebastien Rousseau
 lastUpdated: true

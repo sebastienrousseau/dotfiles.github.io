@@ -1,6 +1,6 @@
 ---
 title: Yollar | Dotfiles
-description: Dotfiles v0.2.495 tarafından sağlanan PATH öncelik sırası ve girişleri.
+description: Dotfiles v0.2.495 tarafından sağlanan PATH öncelik sırası ve girişleri. macOS, Linux ve WSL ile Dotfiles üzerinden uyumlu.
 lang: tr-TR
 author: Sebastien Rousseau
 lastUpdated: true

@@ -1,6 +1,6 @@
 ---
 title: Configuration 别名 | Dotfiles
-description: 使用 shell 别名即时打开 shell、Git、SSH 和服务器配置文件。
+description: 使用 shell 别名即时打开 shell、Git、SSH 和服务器配置文件。 兼容 macOS、Linux 和 WSL。通过 Dotfiles 管理。
 lang: zh-CN
 author: Sebastien Rousseau
 lastUpdated: true

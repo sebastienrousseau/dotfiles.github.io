@@ -1,6 +1,6 @@
 ---
 title: Bí Danh Python | Dotfiles
-description: Lệnh Python rút gọn. Tổng quan cho Dotfiles v0.2.495.
+description: Lệnh Python rút gọn. Tổng quan cho Dotfiles v0.2.495. Tương thích với macOS, Linux và WSL qua Dotfiles.
 lang: vi-VN
 author: Sebastien Rousseau
 lastUpdated: true

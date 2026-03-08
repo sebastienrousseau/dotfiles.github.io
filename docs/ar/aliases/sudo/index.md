@@ -1,6 +1,6 @@
 ---
 title: اختصارات Sudo | Dotfiles
-description: اختصارات Sudo للشل لتشغيل الأوامر كمستخدم جذر. مختصرات سريعة للصلاحيات المرتفعة.
+description: اختصارات Sudo للشل لتشغيل الأوامر كمستخدم جذر. مختصرات سريعة للصلاحيات المرتفعة. متوافق مع macOS وLinux وWSL عبر Dotfiles.
 lang: ar-SA
 author: Sebastien Rousseau
 lastUpdated: true

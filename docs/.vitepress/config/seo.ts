@@ -83,12 +83,7 @@ const HREFLANG_BY_KEY: Record<string, string> = {
   ro: 'ro',
 }
 
-// ja/ko/ru use /alias/ instead of /aliases/
-const ALIAS_SEGMENT: Record<string, string> = {
-  ja: 'alias',
-  ko: 'alias',
-  ru: 'alias',
-}
+// All locales now use /aliases/ (ja/ko/ru were migrated from /alias/)
 
 type Frontmatter = Record<string, string | number | boolean | undefined>
 
@@ -201,15 +196,7 @@ export function buildHreflangTags(routePath: string): Array<[string, Record<stri
   const tags: Array<[string, Record<string, string>]> = []
 
   for (const [key, hreflang] of Object.entries(HREFLANG_BY_KEY)) {
-    // Translate /aliases/ ↔ /alias/ for ja/ko/ru
-    let localSuffix = pathSuffix
-    const currentAliasSegment = ALIAS_SEGMENT[currentLocale] || 'aliases'
-    const targetAliasSegment = ALIAS_SEGMENT[key] || 'aliases'
-    if (currentAliasSegment !== targetAliasSegment) {
-      localSuffix = localSuffix.replace(`/${currentAliasSegment}/`, `/${targetAliasSegment}/`)
-    }
-
-    const href = toAbsoluteUrl(`/${key}${localSuffix}`)
+    const href = toAbsoluteUrl(`/${key}${pathSuffix}`)
     tags.push(['link', { rel: 'alternate', hreflang, href }])
   }
 

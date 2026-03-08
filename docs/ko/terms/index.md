@@ -1,6 +1,6 @@
 ---
 title: 이용약관 | Dotfiles (한국어)
-description: Dotfiles 문서의 이용약관.
+description: Dotfiles 문서의 이용약관. macOS, Linux, WSL 호환. Dotfiles로 관리.
 lang: ko-KR
 author: Sebastien Rousseau
 lastUpdated: true

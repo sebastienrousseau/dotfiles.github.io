@@ -11,6 +11,8 @@ export const deSidebar = {
         "/de/paths/",
         "/de/compatibility/",
         "/de/guides/secret-management/",
+        "/de/guides/ssh-signing/",
+        "/de/guides/gpg-configuration/",
       ],
     },
     {

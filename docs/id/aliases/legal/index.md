@@ -1,6 +1,6 @@
 ---
 title: Alias Legal | Dotfiles
-description: Alias Legal untuk Dotfiles
+description: Jelajahi alias Legal untuk Dotfiles Kompatibel dengan macOS, Linux, dan WSL melalui Dotfiles.
 lang: id-ID
 author: Sebastien Rousseau
 lastUpdated: true

@@ -1,6 +1,6 @@
 ---
 title: シェル関数 | Dotfiles
-description: ターミナル体験を向上させるDotfilesのシェル関数。
+description: ターミナル体験を向上させるDotfilesのシェル関数。 macOS・Linux・WSL対応。Dotfilesで管理。
 lang: ja-JP
 author: Sebastien Rousseau
 lastUpdated: true

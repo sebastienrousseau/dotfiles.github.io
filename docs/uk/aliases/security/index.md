@@ -1,6 +1,6 @@
 ---
 title: Аліаси безпеки | Dotfiles
-description: Короткі команди безпеки. Огляд для Dotfiles v0.2.495.
+description: Короткі команди безпеки. Огляд для Dotfiles v0.2.495. Сумісно з macOS, Linux та WSL через Dotfiles.
 lang: uk-UA
 author: Sebastien Rousseau
 lastUpdated: true

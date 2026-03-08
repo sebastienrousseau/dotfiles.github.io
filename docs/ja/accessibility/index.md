@@ -1,6 +1,6 @@
 ---
 title: アクセシビリティ | Dotfiles (日本語)
-description: Dotfilesドキュメントのアクセシビリティ情報。
+description: Dotfilesドキュメントのアクセシビリティ情報。 macOS・Linux・WSL対応。Dotfilesで管理。
 lang: ja-JP
 author: Sebastien Rousseau
 lastUpdated: true

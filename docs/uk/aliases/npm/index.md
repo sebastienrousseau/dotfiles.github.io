@@ -1,6 +1,6 @@
 ---
 title: Аліаси NPM | Dotfiles
-description: Короткі команди npm. Огляд для Dotfiles v0.2.495.
+description: Дослідіть короткі команди npm. Огляд для Dotfiles v0.2.495. Сумісно з macOS, Linux та WSL через Dotfiles.
 lang: uk-UA
 author: Sebastien Rousseau
 lastUpdated: true

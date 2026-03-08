@@ -1,6 +1,6 @@
 ---
 title: Legal 别名 | Dotfiles
-description: 用于许可证扫描、版权头和 dotfiles 中归属管理的 shell 别名。
+description: 用于许可证扫描、版权头和 dotfiles 中归属管理的 shell 别名。 兼容 macOS、Linux 和 WSL。通过 Dotfiles 管理。
 lang: zh-CN
 author: Sebastien Rousseau
 lastUpdated: true

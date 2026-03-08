@@ -1,6 +1,6 @@
 ---
 title: Voorwaarden | Dotfiles (Nederlands)
-description: Gebruiksvoorwaarden voor de Dotfiles-documentatie.
+description: Gebruiksvoorwaarden voor de Dotfiles-documentatie. Compatibel met macOS, Linux en WSL via Dotfiles.
 lang: nl-NL
 author: Sebastien Rousseau
 lastUpdated: true

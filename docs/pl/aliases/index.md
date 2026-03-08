@@ -1,6 +1,6 @@
 ---
 title: Aliasy | Dotfiles
-description: Przeglad i dodatki dla 45 kategorii aliasow w Dotfiles v0.2.495.
+description: Przeglad i dodatki dla 45 kategorii aliasow w Dotfiles v0.2.495. Kompatybilny z macOS, Linux i WSL przez Dotfiles.
 lang: pl-PL
 author: Sebastien Rousseau
 lastUpdated: true

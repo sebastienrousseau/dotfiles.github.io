@@ -1,6 +1,6 @@
 ---
 title: Mkdir 别名 | Dotfiles
-description: 使用日期和时间命名约定简化目录创建的 mkdir shell 别名。
+description: 使用日期和时间命名约定简化目录创建的 mkdir shell 别名。 兼容 macOS、Linux 和 WSL。通过 Dotfiles 管理。
 lang: zh-CN
 author: Sebastien Rousseau
 lastUpdated: true

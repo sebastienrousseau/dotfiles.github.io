@@ -1,6 +1,6 @@
 ---
 title: Alias Python | Dotfiles
-description: Alias shell per sviluppo Python. Scorciatoie per python, pip, virtualenv e gestore pacchetti uv.
+description: Alias shell per sviluppo Python. Scorciatoie per python, pip, virtualenv e gestore pacchetti uv. Compatibile con macOS, Linux e WSL tramite Dotfiles.
 lang: it-IT
 author: Sebastien Rousseau
 lastUpdated: true

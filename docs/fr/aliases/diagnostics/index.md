@@ -1,6 +1,6 @@
 ---
 title: "Alias Diagnostics : santé système et auto-réparation"
-description: Alias shell pour diagnostics système, contrôle de santé, détection de dérive et auto-réparation.
+description: Alias shell pour diagnostics système, contrôle de santé, détection de dérive et auto-réparation. Compatible avec macOS, Linux et WSL via Dotfiles.
 lang: fr-FR
 author: Sebastien Rousseau
 lastUpdated: true

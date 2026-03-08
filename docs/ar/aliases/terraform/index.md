@@ -1,6 +1,6 @@
 ---
 title: اختصارات Terraform | Dotfiles
-description: اختصارات Terraform وAnsible للشل للبنية التحتية كرمز. مختصرات سريعة لسير عمل IaC.
+description: اختصارات Terraform وAnsible للشل للبنية التحتية كرمز. مختصرات سريعة لسير عمل IaC. متوافق مع macOS وLinux وWSL عبر Dotfiles.
 lang: ar-SA
 author: Sebastien Rousseau
 lastUpdated: true

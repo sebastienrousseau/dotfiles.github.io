@@ -1,6 +1,6 @@
 ---
 title: "Go एलियास: अपने Go डेवलपमेंट वर्कफ़्लो को सुव्यवस्थित करें"
-description: Go डेवलपमेंट के लिए शेल एलियास। सरल शॉर्टकट के साथ रन, बिल्ड, टेस्ट, और Go मॉड्यूल प्रबंधित करें।
+description: Go डेवलपमेंट के लिए शेल एलियास। सरल शॉर्टकट के साथ रन, बिल्ड, टेस्ट, और Go मॉड्यूल प्रबंधित करें। macOS, Linux और WSL पर Dotfiles के माध्यम से संगत।
 lang: hi-IN
 author: Sebastien Rousseau
 lastUpdated: true

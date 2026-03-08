@@ -1,6 +1,6 @@
 ---
 title: נתיבים | Dotfiles
-description: כיצד Dotfiles מנהל את היררכיית ה-PATH שלך כדי להבטיח שהכלים הנכונים נטענים בסדר הנכון.
+description: כיצד Dotfiles מנהל את היררכיית ה-PATH שלך כדי להבטיח שהכלים הנכונים נטענים בסדר הנכון. תואם ל-macOS, Linux ו-WSL דרך Dotfiles.
 lang: he-IL
 author: Sebastien Rousseau
 lastUpdated: true

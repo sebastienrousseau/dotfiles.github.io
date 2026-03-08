@@ -1,6 +1,6 @@
 ---
 title: "Juridische aliassen: Open Source compliance-tools"
-description: Shell-aliassen voor licentiescanning, copyright-headers en attributiebeheer in je dotfiles.
+description: Shell-aliassen voor licentiescanning, copyright-headers en attributiebeheer in je dotfiles. Compatibel met macOS, Linux en WSL via Dotfiles.
 lang: nl-NL
 author: Sebastien Rousseau
 lastUpdated: true

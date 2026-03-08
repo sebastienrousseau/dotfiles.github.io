@@ -1,6 +1,6 @@
 ---
 title: Kontak | Dotfiles (Bahasa Indonesia)
-description: Informasi kontak pengelola Dotfiles.
+description: Jelajahi informasi kontak pengelola Dotfiles. Kompatibel dengan macOS, Linux, dan WSL melalui Dotfiles.
 lang: id-ID
 author: Sebastien Rousseau
 lastUpdated: true

@@ -1,6 +1,6 @@
 ---
 title: Alias Wget | Dotfiles
-description: Alias shell per wget. Scorciatoie per download file da linea di comando con ripresa automatica.
+description: Alias shell per wget. Scorciatoie per download file da linea di comando con ripresa automatica. Compatibile con macOS, Linux e WSL tramite Dotfiles.
 lang: it-IT
 author: Sebastien Rousseau
 lastUpdated: true

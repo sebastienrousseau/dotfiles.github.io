@@ -1,6 +1,6 @@
 ---
 title: 路徑 | Dotfiles
-description: Dotfiles v0.2.495 的 PATH 優先順序概覽與路徑項目。
+description: Dotfiles v0.2.495 的 PATH 優先順序概覽與路徑項目。 相容 macOS、Linux 和 WSL。透過 Dotfiles 管理。
 lang: zh-TW
 author: Sebastien Rousseau
 lastUpdated: true

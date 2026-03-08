@@ -11,6 +11,8 @@ export const itSidebar = {
         "/it/paths/",
         "/it/compatibility/",
         "/it/guides/secret-management/",
+        "/it/guides/ssh-signing/",
+        "/it/guides/gpg-configuration/",
       ],
     },
     {

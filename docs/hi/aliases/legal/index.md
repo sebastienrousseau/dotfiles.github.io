@@ -1,6 +1,6 @@
 ---
 title: "Legal एलियास: ओपन सोर्स अनुपालन टूल्स"
-description: आपकी dotfiles में लाइसेंस स्कैनिंग, कॉपीराइट हेडर, और एट्रिब्यूशन मैनेजमेंट के लिए शेल एलियास।
+description: आपकी dotfiles में लाइसेंस स्कैनिंग, कॉपीराइट हेडर, और एट्रिब्यूशन मैनेजमेंट के लिए शेल एलियास। macOS, Linux और WSL पर Dotfiles के माध्यम से संगत।
 lang: hi-IN
 author: Sebastien Rousseau
 lastUpdated: true

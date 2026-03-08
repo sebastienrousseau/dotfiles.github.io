@@ -1,6 +1,6 @@
 ---
 title: Update-aliassen | Dotfiles
-description: Systeemupdate-aliassen voor macOS en Linux. Houd je besturingssysteem en pakketten actueel.
+description: Systeemupdate-aliassen voor macOS en Linux. Houd je besturingssysteem en pakketten actueel. Compatibel met macOS, Linux en WSL via Dotfiles.
 lang: nl-NL
 author: Sebastien Rousseau
 lastUpdated: true

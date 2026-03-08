@@ -1,6 +1,6 @@
 ---
 title: Aliasy Uprawnien | Dotfiles
-description: Skrocone polecenia uprawnien i wlasciciela. Przeglad dla Dotfiles v0.2.495.
+description: Skrocone polecenia uprawnien i wlasciciela. Przeglad dla Dotfiles v0.2.495. Kompatybilny z macOS, Linux i WSL przez Dotfiles.
 lang: pl-PL
 author: Sebastien Rousseau
 lastUpdated: true

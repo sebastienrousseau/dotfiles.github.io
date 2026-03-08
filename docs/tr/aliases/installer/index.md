@@ -1,6 +1,6 @@
 ---
 title: Yükleyici Takma Adları | Dotfiles
-description: Kısa yükleme komutları. Dotfiles v0.2.495 genel bakış.
+description: Kısa yükleme komutları. Dotfiles v0.2.495 genel bakış. macOS, Linux ve WSL ile Dotfiles üzerinden uyumlu.
 lang: tr-TR
 author: Sebastien Rousseau
 lastUpdated: true

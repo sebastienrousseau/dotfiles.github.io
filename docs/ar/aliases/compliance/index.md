@@ -1,6 +1,6 @@
 ---
 title: "اختصارات Compliance: ضوابط الخصوصية والتدقيق"
-description: اختصارات شل للامتثال التنظيمي وتطبيق الخصوصية وتدقيق الإعدادات في بيئة طرفيتك.
+description: اختصارات شل للامتثال التنظيمي وتطبيق الخصوصية وتدقيق الإعدادات في بيئة طرفيتك. متوافق مع macOS وLinux وWSL عبر Dotfiles.
 lang: ar-SA
 author: Sebastien Rousseau
 lastUpdated: true

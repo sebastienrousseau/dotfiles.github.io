@@ -1,6 +1,6 @@
 ---
 title: Tmux Aliase | Dotfiles
-description: Shell-Aliase fuer tmux Terminal-Multiplexer. Sessions, Fenster und Panes effizient verwalten.
+description: Shell-Aliase fuer tmux Terminal-Multiplexer. Sessions, Fenster und Panes effizient verwalten. Kompatibel mit macOS, Linux und WSL via Dotfiles.
 lang: de-DE
 author: Sebastien Rousseau
 lastUpdated: true

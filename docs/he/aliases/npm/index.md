@@ -1,6 +1,6 @@
 ---
 title: "קיצורי NPM: ייעל את ניהול חבילות Node"
-description: האץ זרימות עבודה של npm עם קיצורי מעטפת אינטואיטיביים לפקודות install, build, test ו-publish.
+description: האץ זרימות עבודה של npm עם קיצורי מעטפת אינטואיטיביים לפקודות install, build, test ו-publish. תואם ל-macOS, Linux ו-WSL דרך Dotfiles.
 lang: he-IL
 author: Sebastien Rousseau
 lastUpdated: true

@@ -1,6 +1,6 @@
 ---
 title: CD 别名 | Dotfiles
-description: 带有书签、历史记录跟踪和智能快捷方式的目录导航别名。更快地导航文件系统。
+description: 带有书签、历史记录跟踪和智能快捷方式的目录导航别名。更快地导航文件系统。 兼容 macOS、Linux 和 WSL。通过 Dotfiles 管理。
 lang: zh-CN
 author: Sebastien Rousseau
 lastUpdated: true

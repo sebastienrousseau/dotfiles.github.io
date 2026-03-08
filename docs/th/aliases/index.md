@@ -1,6 +1,6 @@
 ---
 title: นามแฝง | Dotfiles
-description: ภาพรวมและภาคผนวกสำหรับ 45 หมวดหมู่นามแฝงใน Dotfiles v0.2.495
+description: ภาพรวมและภาคผนวกสำหรับ 45 หมวดหมู่นามแฝงใน Dotfiles v0.2.495 รองรับ macOS, Linux และ WSL ผ่าน Dotfiles
 lang: th-TH
 author: Sebastien Rousseau
 lastUpdated: true

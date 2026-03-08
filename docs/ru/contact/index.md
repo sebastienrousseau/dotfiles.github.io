@@ -1,6 +1,6 @@
 ---
 title: Контакты | Dotfiles (Русский)
-description: Контактная информация сопровождающих Dotfiles.
+description: Изучите контактная информация сопровождающих Dotfiles. Совместимо с macOS, Linux и WSL через Dotfiles.
 lang: ru-RU
 author: Sebastien Rousseau
 lastUpdated: true

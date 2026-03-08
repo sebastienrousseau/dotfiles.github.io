@@ -1,6 +1,6 @@
 ---
 title: "Make एलियास: अपने बिल्ड वर्कफ़्लो को सुव्यवस्थित करें"
-description: Make कमांड के लिए शॉर्टकट एलियास। बिल्ड, टेस्ट, और प्रोजेक्ट ऑटोमेशन सरल करें।
+description: Make कमांड के लिए शॉर्टकट एलियास। बिल्ड, टेस्ट, और प्रोजेक्ट ऑटोमेशन सरल करें। macOS, Linux और WSL पर Dotfiles के माध्यम से संगत।
 lang: hi-IN
 author: Sebastien Rousseau
 lastUpdated: true

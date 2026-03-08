@@ -218,4 +218,4 @@ Chezmoi가 민감한 파일을 관리하지 못하도록 방지:
 
 - [소개](/ko/about/)
 - [호환성 매트릭스](/ko/compatibility/)
-- [보안 별칭](/ko/alias/security/)
+- [보안 별칭](/ko/aliases/security/)

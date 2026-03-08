@@ -1,6 +1,6 @@
 ---
 title: Koşullar | Dotfiles (Türkçe)
-description: Dotfiles belgeleri için kullanım koşulları.
+description: Keşfedin dotfiles belgeleri için kullanım koşulları. macOS, Linux ve WSL ile Dotfiles üzerinden uyumlu.
 lang: tr-TR
 author: Sebastien Rousseau
 lastUpdated: true

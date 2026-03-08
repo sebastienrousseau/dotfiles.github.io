@@ -1,6 +1,6 @@
 ---
 title: ฟังก์ชัน | Dotfiles
-description: เอกสารอ้างอิงฟังก์ชันเชลล์สาธารณะจาก Dotfiles v0.2.495
+description: เอกสารอ้างอิงฟังก์ชันเชลล์สาธารณะจาก Dotfiles v0.2.495 รองรับ macOS, Linux และ WSL ผ่าน Dotfiles
 lang: th-TH
 author: Sebastien Rousseau
 lastUpdated: true

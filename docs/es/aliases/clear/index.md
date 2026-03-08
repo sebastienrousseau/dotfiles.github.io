@@ -1,6 +1,6 @@
 ---
 title: "Alias Clear: gestión de pantalla del terminal"
-description: Alias shell para limpiar la pantalla y mostrar contenido de directorios, historial y árboles.
+description: Alias shell para limpiar la pantalla y mostrar contenido de directorios, historial y árboles. Compatible con macOS, Linux y WSL a través de Dotfiles.
 lang: es-ES
 author: Sebastien Rousseau
 lastUpdated: true

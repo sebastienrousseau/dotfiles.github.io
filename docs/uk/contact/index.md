@@ -1,6 +1,6 @@
 ---
 title: Контакти | Dotfiles (Українська)
-description: Контактна інформація супровідників Dotfiles.
+description: Дослідіть контактна інформація супровідників Dotfiles. Сумісно з macOS, Linux та WSL через Dotfiles.
 lang: uk-UA
 author: Sebastien Rousseau
 lastUpdated: true

@@ -1,6 +1,6 @@
 ---
 title: Інтерактивні аліаси | Dotfiles
-description: Короткі інтерактивні команди оболонки. Огляд для Dotfiles v0.2.495.
+description: Короткі інтерактивні команди оболонки. Огляд для Dotfiles v0.2.495. Сумісно з macOS, Linux та WSL через Dotfiles.
 lang: uk-UA
 author: Sebastien Rousseau
 lastUpdated: true

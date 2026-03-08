@@ -1,6 +1,6 @@
 ---
 title: "Alias Lua: Accesso rapido agli interpreti Lua REPL"
-description: Alias shell per lo sviluppo Lua. Avvia Lua, LuaJIT e Lua 5.1 REPL con semplici scorciatoie.
+description: Alias shell per lo sviluppo Lua. Avvia Lua, LuaJIT e Lua 5.1 REPL con semplici scorciatoie. Compatibile con macOS, Linux e WSL tramite Dotfiles.
 lang: it-IT
 author: Sebastien Rousseau
 lastUpdated: true

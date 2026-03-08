@@ -1,6 +1,6 @@
 ---
 title: קיצורי Wget | Dotfiles
-description: קיצורי מעטפת wget להורדת קבצים. קיצורי דרך מהירים לאחזור מהרשת עם תמיכה בהמשך הורדה.
+description: קיצורי מעטפת wget להורדת קבצים. קיצורי דרך מהירים לאחזור מהרשת עם תמיכה בהמשך הורדה. תואם ל-macOS, Linux ו-WSL דרך Dotfiles.
 lang: he-IL
 author: Sebastien Rousseau
 lastUpdated: true

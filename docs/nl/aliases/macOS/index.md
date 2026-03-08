@@ -1,6 +1,6 @@
 ---
 title: "macOS-aliassen: Shell-snelkoppelingen voor Mac"
-description: Shell-aliassen voor macOS-systeembeheer, Finder-besturing en onderhoudstaken in Dotfiles.
+description: Shell-aliassen voor macOS-systeembeheer, Finder-besturing en onderhoudstaken in Dotfiles. Compatibel met macOS, Linux en WSL via Dotfiles.
 lang: nl-NL
 author: Sebastien Rousseau
 lastUpdated: true

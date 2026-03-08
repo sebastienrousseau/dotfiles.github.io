@@ -1,6 +1,6 @@
 ---
 title: Alias Permission | Dotfiles
-description: Alias Permission untuk Dotfiles
+description: Jelajahi alias Permission untuk Dotfiles Kompatibel dengan macOS, Linux, dan WSL melalui Dotfiles.
 lang: id-ID
 author: Sebastien Rousseau
 lastUpdated: true

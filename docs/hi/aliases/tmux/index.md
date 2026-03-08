@@ -1,6 +1,6 @@
 ---
 title: "Tmux एलियास: टर्मिनल मल्टीप्लेक्सर शॉर्टकट"
-description: टर्मिनल मल्टीप्लेक्सिंग के लिए Tmux शेल एलियास। सेशन, विंडो और पेन के लिए त्वरित शॉर्टकट।
+description: टर्मिनल मल्टीप्लेक्सिंग के लिए Tmux शेल एलियास। सेशन, विंडो और पेन के लिए त्वरित शॉर्टकट। macOS, Linux और WSL पर Dotfiles के माध्यम से संगत।
 lang: hi-IN
 author: Sebastien Rousseau
 lastUpdated: true

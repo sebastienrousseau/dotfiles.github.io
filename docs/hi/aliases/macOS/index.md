@@ -1,6 +1,6 @@
 ---
 title: "macOS एलियास: Mac के लिए शेल शॉर्टकट"
-description: Dotfiles में macOS सिस्टम मैनेजमेंट, Finder कंट्रोल, और मेंटेनेंस कार्यों के लिए शेल एलियास।
+description: Dotfiles में macOS सिस्टम मैनेजमेंट, Finder कंट्रोल, और मेंटेनेंस कार्यों के लिए शेल एलियास। macOS, Linux और WSL पर Dotfiles के माध्यम से संगत।
 lang: hi-IN
 author: Sebastien Rousseau
 lastUpdated: true

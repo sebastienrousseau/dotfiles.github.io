@@ -1,6 +1,6 @@
 ---
 title: Dostępność | Dotfiles (Polski)
-description: Informacje o dostępności dokumentacji Dotfiles.
+description: Odkryj informacje o dostępności dokumentacji Dotfiles. Kompatybilny z macOS, Linux i WSL przez Dotfiles.
 lang: pl-PL
 author: Sebastien Rousseau
 lastUpdated: true

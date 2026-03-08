@@ -1,6 +1,6 @@
 ---
 title: "Aliases de Sudo: Operações de Superusuario"
-description: Aliases de shell para sudo. Atalhos para executar comandos como superusuario.
+description: Aliases de shell para sudo. Atalhos para executar comandos como superusuario. Compatível com macOS, Linux e WSL via Dotfiles.
 lang: pt-BR
 author: Sebastien Rousseau
 lastUpdated: true

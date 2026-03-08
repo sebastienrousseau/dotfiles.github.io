@@ -11,6 +11,8 @@ export const ptSidebar = {
         "/pt/paths/",
         "/pt/compatibility/",
         "/pt/guides/secret-management/",
+        "/pt/guides/ssh-signing/",
+        "/pt/guides/gpg-configuration/",
       ],
     },
     {

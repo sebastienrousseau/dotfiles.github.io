@@ -1,6 +1,6 @@
 ---
 title: Аліаси Git | Dotfiles
-description: Короткі команди Git. Огляд для Dotfiles v0.2.495.
+description: Дослідіть короткі команди Git. Огляд для Dotfiles v0.2.495. Сумісно з macOS, Linux та WSL через Dotfiles.
 lang: uk-UA
 author: Sebastien Rousseau
 lastUpdated: true

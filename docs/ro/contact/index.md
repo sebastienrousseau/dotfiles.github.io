@@ -1,6 +1,6 @@
 ---
 title: Contact | Dotfiles (Română)
-description: Informații de contact ale întreținătorilor Dotfiles.
+description: Informații de contact ale întreținătorilor Dotfiles. Compatibil cu macOS, Linux și WSL prin Dotfiles.
 lang: ro-RO
 author: Sebastien Rousseau
 lastUpdated: true

@@ -1,6 +1,6 @@
 ---
 title: שיטות עבודה מומלצות לניהול סודות | Dotfiles
-description: כיצד לנהל בבטחה סודות, מפתחות API ואישורים בקובצי ה-dotfiles שלך באמצעות age, SOPS ו-1Password CLI.
+description: כיצד לנהל בבטחה סודות, מפתחות API ואישורים בקובצי ה-dotfiles שלך באמצעות age, SOPS ו-1Password CLI. תואם ל-macOS, Linux ו-WSL דרך Dotfiles.
 lang: he-IL
 author: Sebastien Rousseau
 lastUpdated: true

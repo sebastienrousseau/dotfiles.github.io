@@ -1,6 +1,6 @@
 ---
 title: Aliases Update | Dotfiles
-description: Alias de mise à jour système pour macOS et Linux. Gardez votre OS et vos paquets à jour.
+description: Alias de mise à jour système pour macOS et Linux. Gardez votre OS et vos paquets à jour. Compatible avec macOS, Linux et WSL via Dotfiles.
 lang: fr-FR
 author: Sebastien Rousseau
 lastUpdated: true

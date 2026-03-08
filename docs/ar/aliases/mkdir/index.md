@@ -1,6 +1,6 @@
 ---
 title: "اختصارات Mkdir: مختصرات إنشاء المجلدات"
-description: اختصارات شل لـ mkdir تبسط إنشاء المجلدات باتفاقيات تسمية التاريخ والوقت.
+description: اختصارات شل لـ mkdir تبسط إنشاء المجلدات باتفاقيات تسمية التاريخ والوقت. متوافق مع macOS وLinux وWSL عبر Dotfiles.
 lang: ar-SA
 author: Sebastien Rousseau
 lastUpdated: true

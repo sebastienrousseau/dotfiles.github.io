@@ -1,6 +1,6 @@
 ---
 title: קיצורי CD | Dotfiles
-description: קיצורי ניווט בתיקיות עם סימניות, מעקב היסטוריה וקיצורי דרך חכמים. נווט במערכת הקבצים שלך מהר יותר.
+description: קיצורי ניווט בתיקיות עם סימניות, מעקב היסטוריה וקיצורי דרך חכמים. נווט במערכת הקבצים שלך מהר יותר. תואם ל-macOS, Linux ו-WSL דרך Dotfiles.
 lang: he-IL
 author: Sebastien Rousseau
 lastUpdated: true

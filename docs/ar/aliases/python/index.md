@@ -1,6 +1,6 @@
 ---
 title: اختصارات Python | Dotfiles
-description: اختصارات Python للشل للمفسر وpip وvirtualenv ومدير حزم uv. بسّط سير عمل Python الخاص بك.
+description: اختصارات Python للشل للمفسر وpip وvirtualenv ومدير حزم uv. بسّط سير عمل Python الخاص بك. متوافق مع macOS وLinux وWSL عبر Dotfiles.
 lang: ar-SA
 author: Sebastien Rousseau
 lastUpdated: true

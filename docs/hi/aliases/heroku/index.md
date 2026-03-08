@@ -1,6 +1,6 @@
 ---
 title: "Heroku एलियास: Heroku CLI के लिए शेल शॉर्टकट"
-description: ऐप्स, डेटाबेस, पाइपलाइन, और डिप्लॉयमेंट के लिए 200+ शेल एलियास के साथ Heroku वर्कफ़्लो तेज़ करें।
+description: ऐप्स, डेटाबेस, पाइपलाइन, और डिप्लॉयमेंट के लिए 200+ शेल एलियास के साथ Heroku वर्कफ़्लो तेज़ करें। macOS, Linux और WSL पर Dotfiles के माध्यम से संगत।
 lang: hi-IN
 author: Sebastien Rousseau
 lastUpdated: true

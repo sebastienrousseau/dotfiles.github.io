@@ -1,6 +1,6 @@
 ---
 title: קיצורי ארכיונים | Dotfiles
-description: קיצורי ארכיון ודחיסה לטיפול ב-tar, zip, 7z ועוד. חלץ, דחוס ונהל ארכיונים בפקודות פשוטות.
+description: קיצורי ארכיון ודחיסה לטיפול ב-tar, zip, 7z ועוד. חלץ, דחוס ונהל ארכיונים בפקודות פשוטות. תואם ל-macOS, Linux ו-WSL דרך Dotfiles.
 lang: he-IL
 author: Sebastien Rousseau
 lastUpdated: true

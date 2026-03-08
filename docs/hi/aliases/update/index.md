@@ -1,6 +1,6 @@
 ---
 title: "Update एलियास: सिस्टम अपडेट कमांड"
-description: macOS और Linux के लिए सिस्टम अपडेट एलियास। अपने ऑपरेटिंग सिस्टम और पैकेज को अपडेट रखें।
+description: macOS और Linux के लिए सिस्टम अपडेट एलियास। अपने ऑपरेटिंग सिस्टम और पैकेज को अपडेट रखें। macOS, Linux और WSL पर Dotfiles के माध्यम से संगत।
 lang: hi-IN
 author: Sebastien Rousseau
 lastUpdated: true

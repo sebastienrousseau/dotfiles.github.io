@@ -1,6 +1,6 @@
 ---
 title: "Alias Configuration : accès rapide aux fichiers de config"
-description: Ouvrez instantanément les fichiers de configuration shell, Git, SSH et serveur avec ces alias.
+description: Ouvrez instantanément les fichiers de configuration shell, Git, SSH et serveur avec ces alias. Compatible avec macOS, Linux et WSL via Dotfiles.
 lang: fr-FR
 author: Sebastien Rousseau
 lastUpdated: true

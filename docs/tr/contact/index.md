@@ -1,6 +1,6 @@
 ---
 title: İletişim | Dotfiles (Türkçe)
-description: Dotfiles bakımcılarının iletişim bilgileri.
+description: Keşfedin dotfiles bakımcılarının iletişim bilgileri. macOS, Linux ve WSL ile Dotfiles üzerinden uyumlu.
 lang: tr-TR
 author: Sebastien Rousseau
 lastUpdated: true

@@ -1,6 +1,6 @@
 ---
 title: קיצורי Yarn | Dotfiles
-description: קיצורי מעטפת Yarn לניהול חבילות JavaScript. קיצורי דרך מהירים להתקנה וניהול תלויות.
+description: קיצורי מעטפת Yarn לניהול חבילות JavaScript. קיצורי דרך מהירים להתקנה וניהול תלויות. תואם ל-macOS, Linux ו-WSL דרך Dotfiles.
 lang: he-IL
 author: Sebastien Rousseau
 lastUpdated: true

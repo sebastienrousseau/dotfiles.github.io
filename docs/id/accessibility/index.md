@@ -1,6 +1,6 @@
 ---
 title: Aksesibilitas | Dotfiles (Bahasa Indonesia)
-description: Informasi aksesibilitas untuk dokumentasi Dotfiles.
+description: Informasi aksesibilitas untuk dokumentasi Dotfiles. Kompatibel dengan macOS, Linux, dan WSL melalui Dotfiles.
 lang: id-ID
 author: Sebastien Rousseau
 lastUpdated: true

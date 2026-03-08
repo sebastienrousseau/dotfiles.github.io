@@ -1,6 +1,6 @@
 ---
 title: 別名 | Dotfiles
-description: Dotfiles v0.2.495 中 45 個別名分類的概覽與附錄。
+description: Dotfiles v0.2.495 中 45 個別名分類的概覽與附錄。 相容 macOS、Linux 和 WSL。透過 Dotfiles 管理。
 lang: zh-TW
 author: Sebastien Rousseau
 lastUpdated: true

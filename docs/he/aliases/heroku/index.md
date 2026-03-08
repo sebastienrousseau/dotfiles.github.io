@@ -1,6 +1,6 @@
 ---
 title: "קיצורי Heroku: קיצורי מעטפת ל-Heroku CLI"
-description: האץ זרימות עבודה של Heroku עם למעלה מ-200 קיצורי מעטפת לאפליקציות, מסדי נתונים, pipelines ופריסות.
+description: האץ זרימות עבודה של Heroku עם למעלה מ-200 קיצורי מעטפת לאפליקציות, מסדי נתונים, pipelines ופריסות. תואם ל-macOS, Linux ו-WSL דרך Dotfiles.
 lang: he-IL
 author: Sebastien Rousseau
 lastUpdated: true

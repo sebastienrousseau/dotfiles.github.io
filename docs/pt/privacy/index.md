@@ -1,6 +1,6 @@
 ---
 title: Privacidade | Dotfiles (Português)
-description: Política de privacidade para a documentação Dotfiles.
+description: Política de privacidade para a documentação Dotfiles. Compatível com macOS, Linux e WSL via Dotfiles.
 lang: pt-BR
 author: Sebastien Rousseau
 lastUpdated: true

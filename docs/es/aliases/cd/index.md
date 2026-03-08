@@ -1,6 +1,6 @@
 ---
 title: Alias CD | Dotfiles
-description: Alias de navegación con marcadores, historial y atajos inteligentes. Recorre tu sistema más rápido.
+description: Alias de navegación con marcadores, historial y atajos inteligentes. Recorre tu sistema más rápido. Compatible con macOS, Linux y WSL a través de Dotfiles.
 lang: es-ES
 author: Sebastien Rousseau
 lastUpdated: true

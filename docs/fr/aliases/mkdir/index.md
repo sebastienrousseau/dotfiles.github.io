@@ -1,6 +1,6 @@
 ---
 title: "Alias Mkdir : raccourcis de création de répertoires"
-description: Alias shell pour mkdir afin de créer des répertoires avec des conventions de nommage date/heure.
+description: Alias shell pour mkdir afin de créer des répertoires avec des conventions de nommage date/heure. Compatible avec macOS, Linux et WSL via Dotfiles.
 lang: fr-FR
 author: Sebastien Rousseau
 lastUpdated: true

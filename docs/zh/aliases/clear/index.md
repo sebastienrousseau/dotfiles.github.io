@@ -1,6 +1,6 @@
 ---
 title: Clear 别名 | Dotfiles
-description: 用于清除终端屏幕和显示目录内容、历史记录和树视图的 shell 别名。
+description: 用于清除终端屏幕和显示目录内容、历史记录和树视图的 shell 别名。 兼容 macOS、Linux 和 WSL。通过 Dotfiles 管理。
 lang: zh-CN
 author: Sebastien Rousseau
 lastUpdated: true

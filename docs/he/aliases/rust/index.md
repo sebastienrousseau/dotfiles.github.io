@@ -1,6 +1,6 @@
 ---
 title: קיצורי Rust | Dotfiles
-description: קיצורי פיתוח Rust ל-Cargo ו-Rustup. קיצורים לבנייה, בדיקה וניהול פרויקטי Rust.
+description: קיצורי פיתוח Rust ל-Cargo ו-Rustup. קיצורים לבנייה, בדיקה וניהול פרויקטי Rust. תואם ל-macOS, Linux ו-WSL דרך Dotfiles.
 lang: he-IL
 author: Sebastien Rousseau
 lastUpdated: true

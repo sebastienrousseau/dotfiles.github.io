@@ -1,6 +1,6 @@
 ---
 title: 條款 | Dotfiles (繁體中文)
-description: Dotfiles 文件的使用條款。
+description: Dotfiles 文件的使用條款。 相容 macOS、Linux 和 WSL。透過 Dotfiles 管理。
 lang: zh-TW
 author: Sebastien Rousseau
 lastUpdated: true

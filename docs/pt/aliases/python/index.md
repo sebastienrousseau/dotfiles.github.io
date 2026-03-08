@@ -1,6 +1,6 @@
 ---
 title: "Aliases de Python: Atalhos para Desenvolvimento Python"
-description: Aliases de shell para desenvolvimento Python. Atalhos para python, pip, virtualenv e uv.
+description: Aliases de shell para desenvolvimento Python. Atalhos para python, pip, virtualenv e uv. Compatível com macOS, Linux e WSL via Dotfiles.
 lang: pt-BR
 author: Sebastien Rousseau
 lastUpdated: true

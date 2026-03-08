@@ -1,6 +1,6 @@
 ---
 title: קיצורי עדכון | Dotfiles
-description: קיצורי עדכון מערכת עבור macOS ו-Linux. שמור על מערכת ההפעלה והחבילות שלך מעודכנים.
+description: קיצורי עדכון מערכת עבור macOS ו-Linux. שמור על מערכת ההפעלה והחבילות שלך מעודכנים. תואם ל-macOS, Linux ו-WSL דרך Dotfiles.
 lang: he-IL
 author: Sebastien Rousseau
 lastUpdated: true

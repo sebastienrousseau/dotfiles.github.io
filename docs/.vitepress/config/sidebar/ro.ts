@@ -11,6 +11,8 @@ export const roSidebar = {
         "/ro/paths/",
         "/ro/compatibility/",
         "/ro/guides/secret-management/",
+        "/ro/guides/ssh-signing/",
+        "/ro/guides/gpg-configuration/",
       ],
     },
     {

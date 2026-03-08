@@ -1,6 +1,6 @@
 ---
 title: Alias Terraform | Dotfiles
-description: Alias Terraform untuk Dotfiles
+description: Jelajahi alias Terraform untuk Dotfiles Kompatibel dengan macOS, Linux, dan WSL melalui Dotfiles.
 lang: id-ID
 author: Sebastien Rousseau
 lastUpdated: true

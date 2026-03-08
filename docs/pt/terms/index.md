@@ -1,6 +1,6 @@
 ---
 title: Termos | Dotfiles (Português)
-description: Termos de uso para a documentação Dotfiles.
+description: Descubra termos de uso para a documentação Dotfiles. Compatível com macOS, Linux e WSL via Dotfiles.
 lang: pt-BR
 author: Sebastien Rousseau
 lastUpdated: true

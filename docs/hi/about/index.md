@@ -1,6 +1,6 @@
 ---
 title: Dotfiles के बारे में
-description: Chezmoi द्वारा प्रबंधित अगली पीढ़ी की शेल कॉन्फ़िगरेशन। उच्च प्रदर्शन, सुरक्षित, और AI-नेटिव।
+description: Chezmoi द्वारा प्रबंधित अगली पीढ़ी की शेल कॉन्फ़िगरेशन। उच्च प्रदर्शन, सुरक्षित, और AI-नेटिव। macOS, Linux और WSL पर Dotfiles के माध्यम से संगत।
 lang: hi-IN
 author: Sebastien Rousseau
 lastUpdated: true

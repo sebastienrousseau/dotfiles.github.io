@@ -1,6 +1,6 @@
 ---
 title: اختصارات Rsync | Dotfiles
-description: اختصارات Rsync للشل لمزامنة الملفات. مختصرات سريعة لمزامنة الملفات والمجلدات بين المواقع.
+description: اختصارات Rsync للشل لمزامنة الملفات. مختصرات سريعة لمزامنة الملفات والمجلدات بين المواقع. متوافق مع macOS وLinux وWSL عبر Dotfiles.
 lang: ar-SA
 author: Sebastien Rousseau
 lastUpdated: true

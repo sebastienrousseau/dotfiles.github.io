@@ -1,6 +1,6 @@
 ---
 title: الشروط | Dotfiles (العربية)
-description: شروط استخدام وثائق Dotfiles.
+description: شروط استخدام وثائق Dotfiles. معلومات الترخيص وحقوق النشر وسياسة الاستخدام المقبول والقيود. مشروع مفتوح المصدر. متوافق مع macOS وLinux وWSL.
 lang: ar-SA
 author: Sebastien Rousseau
 lastUpdated: true

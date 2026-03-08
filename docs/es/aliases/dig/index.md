@@ -1,6 +1,6 @@
 ---
 title: "Alias Dig: atajos DNS para el terminal"
-description: Simplifica las consultas DNS con alias dig. Busca IPv4, IPv6 y registros DNS más rápido.
+description: Simplifica las consultas DNS con alias dig. Busca IPv4, IPv6 y registros DNS más rápido. Compatible con macOS, Linux y WSL a través de Dotfiles.
 lang: es-ES
 author: Sebastien Rousseau
 lastUpdated: true

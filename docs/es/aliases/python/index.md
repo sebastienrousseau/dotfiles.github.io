@@ -1,6 +1,6 @@
 ---
 title: Aliases Python | Dotfiles
-description: Alias Python para intérprete, pip, virtualenv y gestor uv. Simplifica tu flujo de trabajo Python.
+description: Alias Python para intérprete, pip, virtualenv y gestor uv. Simplifica tu flujo de trabajo Python. Compatible con macOS, Linux y WSL a través de Dotfiles.
 lang: es-ES
 author: Sebastien Rousseau
 lastUpdated: true

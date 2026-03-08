@@ -1,6 +1,6 @@
 ---
 title: "קיצורי macOS: קיצורי מעטפת ל-Mac"
-description: קיצורי מעטפת לניהול מערכת macOS, שליטה ב-Finder ומשימות תחזוקה ב-Dotfiles.
+description: קיצורי מעטפת לניהול מערכת macOS, שליטה ב-Finder ומשימות תחזוקה ב-Dotfiles. תואם ל-macOS, Linux ו-WSL דרך Dotfiles.
 lang: he-IL
 author: Sebastien Rousseau
 lastUpdated: true

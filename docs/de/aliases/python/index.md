@@ -1,6 +1,6 @@
 ---
 title: Python Aliase | Dotfiles
-description: Shell-Aliase fuer Python-Entwicklung mit pip, virtualenv und dem modernen uv-Paketmanager.
+description: Shell-Aliase fuer Python-Entwicklung mit pip, virtualenv und dem modernen uv-Paketmanager. Kompatibel mit macOS, Linux und WSL via Dotfiles.
 lang: de-DE
 author: Sebastien Rousseau
 lastUpdated: true

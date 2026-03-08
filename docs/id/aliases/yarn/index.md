@@ -1,6 +1,6 @@
 ---
 title: Alias Yarn | Dotfiles
-description: Alias Yarn untuk Dotfiles
+description: Jelajahi alias Yarn untuk Dotfiles Kompatibel dengan macOS, Linux, dan WSL melalui Dotfiles.
 lang: id-ID
 author: Sebastien Rousseau
 lastUpdated: true

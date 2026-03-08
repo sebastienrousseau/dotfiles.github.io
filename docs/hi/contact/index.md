@@ -1,6 +1,6 @@
 ---
 title: संपर्क | Dotfiles (हिंदी)
-description: Dotfiles अनुरक्षकों की संपर्क जानकारी।
+description: खोजें dotfiles अनुरक्षकों की संपर्क जानकारी। macOS, Linux और WSL पर Dotfiles के माध्यम से संगत।
 lang: hi-IN
 author: Sebastien Rousseau
 lastUpdated: true

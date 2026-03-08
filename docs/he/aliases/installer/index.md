@@ -1,6 +1,6 @@
 ---
 title: "קיצורי Installer: אתחול ופריסת Dotfiles שלך"
-description: קיצורי מעטפת לאתחול dotfiles מקומי ופריסת תצורות לשרתים מרוחקים דרך SSH.
+description: קיצורי מעטפת לאתחול dotfiles מקומי ופריסת תצורות לשרתים מרוחקים דרך SSH. תואם ל-macOS, Linux ו-WSL דרך Dotfiles.
 lang: he-IL
 author: Sebastien Rousseau
 lastUpdated: true

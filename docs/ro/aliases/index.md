@@ -1,6 +1,6 @@
 ---
 title: Aliasuri | Dotfiles
-description: Prezentare generală și anexe pentru cele 45 de categorii de aliasuri din Dotfiles v0.2.495.
+description: Prezentare generală și anexe pentru cele 45 de categorii de aliasuri din Dotfiles v0.2.495. Compatibil cu macOS, Linux și WSL prin Dotfiles.
 lang: ro-RO
 author: Sebastien Rousseau
 lastUpdated: true

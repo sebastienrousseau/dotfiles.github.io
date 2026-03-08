@@ -1,6 +1,6 @@
 ---
 title: "Alias Find: búsqueda rápida de archivos"
-description: Agiliza la búsqueda con alias basados en fd. Salida colorida y comandos intuitivos.
+description: Agiliza la búsqueda con alias basados en fd. Salida colorida y comandos intuitivos. Compatible con macOS, Linux y WSL a través de Dotfiles.
 lang: es-ES
 author: Sebastien Rousseau
 lastUpdated: true

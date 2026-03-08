@@ -1,6 +1,6 @@
 ---
 title: Privacy Policy | Dotfiles
-description: Privacy policy for Dotfiles documentation, including analytics, logs, and contact information.
+description: Privacy policy for Dotfiles documentation. Learn about data collection, cookies, analytics, and your rights. No personal data is collected or shared.
 lang: en-GB
 author: Sebastien Rousseau
 lastUpdated: true

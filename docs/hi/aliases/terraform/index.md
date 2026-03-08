@@ -1,6 +1,6 @@
 ---
 title: "Terraform एलियास: इन्फ्रास्ट्रक्चर एज़ कोड वर्कफ़्लो"
-description: Terraform और Ansible के लिए शेल एलियास। IaC वर्कफ़्लो के लिए त्वरित शॉर्टकट।
+description: Terraform और Ansible के लिए शेल एलियास। IaC वर्कफ़्लो के लिए त्वरित शॉर्टकट। macOS, Linux और WSL पर Dotfiles के माध्यम से संगत।
 lang: hi-IN
 author: Sebastien Rousseau
 lastUpdated: true

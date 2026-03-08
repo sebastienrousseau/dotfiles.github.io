@@ -1,6 +1,6 @@
 ---
 title: Prywatność | Dotfiles (Polski)
-description: Polityka prywatności dokumentacji Dotfiles.
+description: Odkryj polityka prywatności dokumentacji Dotfiles. Kompatybilny z macOS, Linux i WSL przez Dotfiles.
 lang: pl-PL
 author: Sebastien Rousseau
 lastUpdated: true

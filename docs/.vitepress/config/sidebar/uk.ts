@@ -11,6 +11,8 @@ export const ukSidebar = {
         "/uk/paths/",
         "/uk/compatibility/",
         "/uk/guides/secret-management/",
+        "/uk/guides/ssh-signing/",
+        "/uk/guides/gpg-configuration/",
       ],
     },
     {

@@ -1,6 +1,6 @@
 ---
 title: "קיצורי Mkdir: קיצורי יצירת תיקיות"
-description: קיצורי מעטפת ל-mkdir המפשטים יצירת תיקיות עם מוסכמות שמות תאריך ושעה.
+description: קיצורי מעטפת ל-mkdir המפשטים יצירת תיקיות עם מוסכמות שמות תאריך ושעה. תואם ל-macOS, Linux ו-WSL דרך Dotfiles.
 lang: he-IL
 author: Sebastien Rousseau
 lastUpdated: true

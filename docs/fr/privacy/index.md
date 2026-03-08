@@ -1,6 +1,6 @@
 ---
 title: Confidentialité | Dotfiles (Français)
-description: Politique de confidentialité pour la documentation Dotfiles.
+description: Politique de confidentialité pour la documentation Dotfiles. Compatible avec macOS, Linux et WSL via Dotfiles.
 lang: fr-FR
 author: Sebastien Rousseau
 lastUpdated: true

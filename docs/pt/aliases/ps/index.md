@@ -1,6 +1,6 @@
 ---
 title: "Aliases de PS: Atalhos para Status de Processos"
-description: Aliases de shell para o comando ps. Visualize processos em execução com comandos simples.
+description: Aliases de shell para o comando ps. Visualize processos em execução com comandos simples. Compatível com macOS, Linux e WSL via Dotfiles.
 lang: pt-BR
 author: Sebastien Rousseau
 lastUpdated: true

@@ -1,6 +1,6 @@
 ---
 title: "Alias Heroku: atajos shell para la CLI de Heroku"
-description: Acelera flujos Heroku con 200+ alias para apps, bases de datos, pipelines y despliegues.
+description: Acelera flujos Heroku con 200+ alias para apps, bases de datos, pipelines y despliegues. Compatible con macOS, Linux y WSL a través de Dotfiles.
 lang: es-ES
 author: Sebastien Rousseau
 lastUpdated: true

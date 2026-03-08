@@ -136,5 +136,5 @@ permalink: /ru/compatibility/
 ## Связанные страницы
 
 - [О проекте](/ru/about/)
-- [Алиасы](/ru/alias/)
+- [Алиасы](/ru/aliases/)
 - [Лучшие практики управления секретами](/ru/guides/secret-management/)

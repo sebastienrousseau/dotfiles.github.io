@@ -1,6 +1,6 @@
 ---
 title: "קיצורי Find: פקודות חיפוש קבצים מהירות"
-description: ייעל חיפושי קבצים עם קיצורים מבוססי fd. פלט מהיר וצבעוני ופקודות אינטואיטיביות למערכות Unix.
+description: ייעל חיפושי קבצים עם קיצורים מבוססי fd. פלט מהיר וצבעוני ופקודות אינטואיטיביות למערכות Unix. תואם ל-macOS, Linux ו-WSL דרך Dotfiles.
 lang: he-IL
 author: Sebastien Rousseau
 lastUpdated: true

@@ -1,6 +1,6 @@
 ---
 title: "קיצורי Compliance: בקרות פרטיות וביקורת"
-description: קיצורי מעטפת לתאימות רגולטורית, אכיפת פרטיות וביקורת תצורה בסביבת הטרמינל שלך.
+description: קיצורי מעטפת לתאימות רגולטורית, אכיפת פרטיות וביקורת תצורה בסביבת הטרמינל שלך. תואם ל-macOS, Linux ו-WSL דרך Dotfiles.
 lang: he-IL
 author: Sebastien Rousseau
 lastUpdated: true

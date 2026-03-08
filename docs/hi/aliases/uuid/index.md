@@ -1,6 +1,6 @@
 ---
 title: "UUID एलियास: यूनिक आइडेंटिफ़ायर जनरेट करें"
-description: यूनिक आइडेंटिफ़ायर जनरेट करने के लिए UUID शेल एलियास। UUID बनाने और कॉपी करने का त्वरित शॉर्टकट।
+description: यूनिक आइडेंटिफ़ायर जनरेट करने के लिए UUID शेल एलियास। UUID बनाने और कॉपी करने का त्वरित शॉर्टकट। macOS, Linux और WSL पर Dotfiles के माध्यम से संगत।
 lang: hi-IN
 author: Sebastien Rousseau
 lastUpdated: true

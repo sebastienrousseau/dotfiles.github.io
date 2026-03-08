@@ -136,5 +136,5 @@ permalink: /ja/compatibility/
 ## 関連ページ
 
 - [概要](/ja/about/)
-- [エイリアス](/ja/alias/)
+- [エイリアス](/ja/aliases/)
 - [シークレット管理のベストプラクティス](/ja/guides/secret-management/)

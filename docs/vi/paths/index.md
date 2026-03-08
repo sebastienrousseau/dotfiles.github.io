@@ -1,6 +1,6 @@
 ---
 title: Đường Dẫn | Dotfiles
-description: Tổng quan thứ tự ưu tiên PATH và các mục từ Dotfiles v0.2.495.
+description: Tổng quan thứ tự ưu tiên PATH và các mục từ Dotfiles v0.2.495. Tương thích với macOS, Linux và WSL qua Dotfiles.
 lang: vi-VN
 author: Sebastien Rousseau
 lastUpdated: true

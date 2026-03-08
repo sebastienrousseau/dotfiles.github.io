@@ -1,6 +1,6 @@
 ---
 title: Alias NPM | Dotfiles
-description: Alias shell per npm. Scorciatoie per npm install, run, test, publish e gestione pacchetti Node.js.
+description: Alias shell per npm. Scorciatoie per npm install, run, test, publish e gestione pacchetti Node.js. Compatibile con macOS, Linux e WSL tramite Dotfiles.
 lang: it-IT
 author: Sebastien Rousseau
 lastUpdated: true

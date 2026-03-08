@@ -1,6 +1,6 @@
 ---
 title: Legal Aliase | Dotfiles
-description: Shell-Aliase fuer License-Scanning, Copyright-Header und Attribution-Verwaltung in Ihren Dotfiles.
+description: Shell-Aliase fuer License-Scanning, Copyright-Header und Attribution-Verwaltung in Ihren Dotfiles. Kompatibel mit macOS, Linux und WSL via Dotfiles.
 lang: de-DE
 author: Sebastien Rousseau
 lastUpdated: true

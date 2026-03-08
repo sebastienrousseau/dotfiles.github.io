@@ -11,6 +11,8 @@ export const thSidebar = {
         "/th/paths/",
         "/th/compatibility/",
         "/th/guides/secret-management/",
+        "/th/guides/ssh-signing/",
+        "/th/guides/gpg-configuration/",
       ],
     },
     {

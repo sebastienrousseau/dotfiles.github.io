@@ -1,6 +1,6 @@
 ---
 title: Dotfiles v0.2.495 | Dotfiles
-description: การกำหนดค่าเชลล์ข้ามแพลตฟอร์มสำหรับ macOS, Linux และ WSL
+description: การกำหนดค่าเชลล์ข้ามแพลตฟอร์มสำหรับ macOS, Linux และ WSL รองรับ macOS, Linux และ WSL ผ่าน Dotfiles
 lang: th-TH
 author: Sebastien Rousseau
 lastUpdated: true

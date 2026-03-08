@@ -1,6 +1,6 @@
 ---
 title: Условия | Dotfiles (Русский)
-description: Условия использования документации Dotfiles.
+description: Изучите условия использования документации Dotfiles. Совместимо с macOS, Linux и WSL через Dotfiles.
 lang: ru-RU
 author: Sebastien Rousseau
 lastUpdated: true

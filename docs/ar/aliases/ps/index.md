@@ -1,6 +1,6 @@
 ---
 title: اختصارات PS | Dotfiles
-description: اختصارات حالة العمليات لمراقبة وإدارة العمليات الجارية. مختصرات سريعة لأمر ps.
+description: اختصارات حالة العمليات لمراقبة وإدارة العمليات الجارية. مختصرات سريعة لأمر ps. متوافق مع macOS وLinux وWSL عبر Dotfiles.
 lang: ar-SA
 author: Sebastien Rousseau
 lastUpdated: true

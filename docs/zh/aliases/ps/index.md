@@ -1,6 +1,6 @@
 ---
 title: PS 别名 | Dotfiles
-description: 用于监控和管理运行中进程的进程状态别名。ps 命令的快捷方式。
+description: 用于监控和管理运行中进程的进程状态别名。ps 命令的快捷方式。 兼容 macOS、Linux 和 WSL。通过 Dotfiles 管理。
 lang: zh-CN
 author: Sebastien Rousseau
 lastUpdated: true

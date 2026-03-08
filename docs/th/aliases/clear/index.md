@@ -1,6 +1,6 @@
 ---
 title: นามแฝง Clear | Dotfiles
-description: คำสั่งล้างหน้าจอแบบสั้น ภาพรวมสำหรับ Dotfiles v0.2.495
+description: คำสั่งล้างหน้าจอแบบสั้น ภาพรวมสำหรับ Dotfiles v0.2.495 รองรับ macOS, Linux และ WSL ผ่าน Dotfiles
 lang: th-TH
 author: Sebastien Rousseau
 lastUpdated: true

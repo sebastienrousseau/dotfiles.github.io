@@ -11,6 +11,8 @@ export const frSidebar = {
         "/fr/paths/",
         "/fr/compatibility/",
         "/fr/guides/secret-management/",
+        "/fr/guides/ssh-signing/",
+        "/fr/guides/gpg-configuration/",
       ],
     },
     {

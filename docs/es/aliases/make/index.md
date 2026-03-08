@@ -1,6 +1,6 @@
 ---
 title: "Alias Make: simplifica tu flujo de build"
-description: Alias de atajo para Make. Simplifica builds, pruebas y automatización.
+description: Alias de atajo para Make. Simplifica builds, pruebas y automatización. Compatible con macOS, Linux y WSL a través de Dotfiles.
 lang: es-ES
 author: Sebastien Rousseau
 lastUpdated: true

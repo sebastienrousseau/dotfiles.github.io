@@ -1,6 +1,6 @@
 ---
 title: Alias PNPM | Dotfiles
-description: Alias shell per pnpm. Scorciatoie per gestore pacchetti veloce ed efficiente per progetti Node.js.
+description: Alias shell per pnpm. Scorciatoie per gestore pacchetti veloce ed efficiente per progetti Node.js. Compatibile con macOS, Linux e WSL tramite Dotfiles.
 lang: it-IT
 author: Sebastien Rousseau
 lastUpdated: true

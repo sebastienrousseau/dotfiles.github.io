@@ -1,6 +1,6 @@
 ---
 title: "اختصارات Heroku: مختصرات الشل لـ Heroku CLI"
-description: سرّع سير عمل Heroku مع أكثر من 200 اختصار شل للتطبيقات وقواعد البيانات والخطوط والنشر.
+description: سرّع سير عمل Heroku مع أكثر من 200 اختصار شل للتطبيقات وقواعد البيانات والخطوط والنشر. متوافق مع macOS وLinux وWSL عبر Dotfiles.
 lang: ar-SA
 author: Sebastien Rousseau
 lastUpdated: true

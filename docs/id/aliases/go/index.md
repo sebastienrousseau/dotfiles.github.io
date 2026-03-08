@@ -1,6 +1,6 @@
 ---
 title: Alias Go | Dotfiles
-description: Alias Go untuk Dotfiles
+description: Jelajahi alias Go untuk Dotfiles Kompatibel dengan macOS, Linux, dan WSL melalui Dotfiles.
 lang: id-ID
 author: Sebastien Rousseau
 lastUpdated: true

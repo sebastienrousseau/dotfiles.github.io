@@ -1,6 +1,6 @@
 ---
 title: "Alias macOS: atajos shell para Mac"
-description: Alias shell para gestión del sistema macOS, control de Finder y tareas de mantenimiento.
+description: Alias shell para gestión del sistema macOS, control de Finder y tareas de mantenimiento. Compatible con macOS, Linux y WSL a través de Dotfiles.
 lang: es-ES
 author: Sebastien Rousseau
 lastUpdated: true

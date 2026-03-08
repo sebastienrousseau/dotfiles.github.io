@@ -1,6 +1,6 @@
 ---
 title: "اختصارات Google Cloud: بسّط سير عمل gcloud CLI"
-description: اختصارات لـ Google Cloud SDK. أدر Compute Engine وIAM وCloud SQL والمزيد بأوامر سهلة التذكر.
+description: اختصارات لـ Google Cloud SDK. أدر Compute Engine وIAM وCloud SQL والمزيد بأوامر سهلة التذكر. متوافق مع macOS وLinux وWSL عبر Dotfiles.
 lang: ar-SA
 author: Sebastien Rousseau
 lastUpdated: true

@@ -1,6 +1,6 @@
 ---
 title: Aliases Terraform | Dotfiles
-description: Alias Terraform et Ansible pour l’Infrastructure as Code. Raccourcis pour les workflows IaC.
+description: Alias Terraform et Ansible pour l’Infrastructure as Code. Raccourcis pour les workflows IaC. Compatible avec macOS, Linux et WSL via Dotfiles.
 lang: fr-FR
 author: Sebastien Rousseau
 lastUpdated: true

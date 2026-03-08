@@ -11,6 +11,8 @@ export const zhtwSidebar = {
         "/zh-tw/paths/",
         "/zh-tw/compatibility/",
         "/zh-tw/guides/secret-management/",
+        "/zh-tw/guides/ssh-signing/",
+        "/zh-tw/guides/gpg-configuration/",
       ],
     },
     {

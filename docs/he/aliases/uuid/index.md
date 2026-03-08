@@ -1,6 +1,6 @@
 ---
 title: קיצורי UUID | Dotfiles
-description: קיצורי מעטפת UUID ליצירת מזהים ייחודיים. קיצור דרך מהיר ליצירה והעתקה של UUIDs.
+description: קיצורי מעטפת UUID ליצירת מזהים ייחודיים. קיצור דרך מהיר ליצירה והעתקה של UUIDs. תואם ל-macOS, Linux ו-WSL דרך Dotfiles.
 lang: he-IL
 author: Sebastien Rousseau
 lastUpdated: true

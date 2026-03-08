@@ -1,6 +1,6 @@
 ---
 title: "קיצורי Configuration: גישה מהירה לקבצי תצורה"
-description: פתח קבצי תצורת מעטפת, Git, SSH ושרתים מיידית עם קיצורי מעטפת אלה ל-Bash ו-Zsh.
+description: פתח קבצי תצורת מעטפת, Git, SSH ושרתים מיידית עם קיצורי מעטפת אלה ל-Bash ו-Zsh. תואם ל-macOS, Linux ו-WSL דרך Dotfiles.
 lang: he-IL
 author: Sebastien Rousseau
 lastUpdated: true

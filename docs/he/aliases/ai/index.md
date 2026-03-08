@@ -1,6 +1,6 @@
 ---
 title: קיצורי AI | Dotfiles
-description: קיצורי מעטפת AI ו-LLM עבור GitHub Copilot ו-Ollama. ייעל את זרימת העבודה שלך בפיתוח בעזרת AI.
+description: קיצורי מעטפת AI ו-LLM עבור GitHub Copilot ו-Ollama. ייעל את זרימת העבודה שלך בפיתוח בעזרת AI. תואם ל-macOS, Linux ו-WSL דרך Dotfiles.
 lang: he-IL
 author: Sebastien Rousseau
 lastUpdated: true

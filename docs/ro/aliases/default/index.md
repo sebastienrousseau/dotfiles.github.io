@@ -1,6 +1,6 @@
 ---
 title: Aliasuri Implicite | Dotfiles
-description: Aliasuri shell zilnice principale. Prezentare generală pentru Dotfiles v0.2.495.
+description: Aliasuri shell zilnice principale. Prezentare generală pentru Dotfiles v0.2.495. Compatibil cu macOS, Linux și WSL prin Dotfiles.
 lang: ro-RO
 author: Sebastien Rousseau
 lastUpdated: true

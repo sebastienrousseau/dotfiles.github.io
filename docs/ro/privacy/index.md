@@ -1,6 +1,6 @@
 ---
 title: Confidențialitate | Dotfiles (Română)
-description: Politica de confidențialitate pentru documentația Dotfiles.
+description: Politica de confidențialitate pentru documentația Dotfiles. Compatibil cu macOS, Linux și WSL prin Dotfiles.
 lang: ro-RO
 author: Sebastien Rousseau
 lastUpdated: true

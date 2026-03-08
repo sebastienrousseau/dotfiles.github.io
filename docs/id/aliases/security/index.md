@@ -1,6 +1,6 @@
 ---
 title: Alias Security | Dotfiles
-description: Alias Security untuk Dotfiles
+description: Jelajahi alias Security untuk Dotfiles Kompatibel dengan macOS, Linux, dan WSL melalui Dotfiles.
 lang: id-ID
 author: Sebastien Rousseau
 lastUpdated: true

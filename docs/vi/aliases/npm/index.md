@@ -1,6 +1,6 @@
 ---
 title: Bí Danh NPM | Dotfiles
-description: Lệnh npm rút gọn. Tổng quan cho Dotfiles v0.2.495.
+description: Lệnh npm rút gọn. Tổng quan cho Dotfiles v0.2.495. Tương thích với macOS, Linux và WSL qua Dotfiles.
 lang: vi-VN
 author: Sebastien Rousseau
 lastUpdated: true

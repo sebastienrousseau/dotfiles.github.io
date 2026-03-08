@@ -1,6 +1,6 @@
 ---
 title: Funkcje | Dotfiles
-description: Referencja publicznych funkcji powloki z Dotfiles v0.2.495.
+description: Referencja publicznych funkcji powloki z Dotfiles v0.2.495. Kompatybilny z macOS, Linux i WSL przez Dotfiles.
 lang: pl-PL
 author: Sebastien Rousseau
 lastUpdated: true

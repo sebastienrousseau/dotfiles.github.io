@@ -1,6 +1,6 @@
 ---
 title: "קיצורי Google Cloud: ייעל את זרימת העבודה עם gcloud CLI"
-description: קיצורים ל-Google Cloud SDK. נהל Compute Engine, IAM, Cloud SQL ועוד עם פקודות קלות לזכירה.
+description: קיצורים ל-Google Cloud SDK. נהל Compute Engine, IAM, Cloud SQL ועוד עם פקודות קלות לזכירה. תואם ל-macOS, Linux ו-WSL דרך Dotfiles.
 lang: he-IL
 author: Sebastien Rousseau
 lastUpdated: true

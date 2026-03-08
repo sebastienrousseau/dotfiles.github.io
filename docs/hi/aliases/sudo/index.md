@@ -1,6 +1,6 @@
 ---
 title: Sudo एलियास | Dotfiles
-description: सुपरयूजर के रूप में कमांड चलाने के लिए Sudo शेल एलियास। एलिवेटेड प्रिविलेज के लिए त्वरित शॉर्टकट।
+description: सुपरयूजर के रूप में कमांड चलाने के लिए Sudo शेल एलियास। एलिवेटेड प्रिविलेज के लिए त्वरित शॉर्टकट। macOS, Linux और WSL पर Dotfiles के माध्यम से संगत।
 lang: hi-IN
 author: Sebastien Rousseau
 lastUpdated: true

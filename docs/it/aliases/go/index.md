@@ -1,6 +1,6 @@
 ---
 title: Alias Go | Dotfiles
-description: Alias shell per sviluppo Go. Scorciatoie per go run, go build, go test e gestione moduli Go.
+description: Alias shell per sviluppo Go. Scorciatoie per go run, go build, go test e gestione moduli Go. Compatibile con macOS, Linux e WSL tramite Dotfiles.
 lang: it-IT
 author: Sebastien Rousseau
 lastUpdated: true

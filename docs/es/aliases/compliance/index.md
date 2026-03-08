@@ -1,6 +1,6 @@
 ---
 title: "Alias Compliance: privacidad y controles de auditoría"
-description: Alias shell para cumplimiento normativo, privacidad y auditoría de configuración en el terminal.
+description: Alias shell para cumplimiento normativo, privacidad y auditoría de configuración en el terminal. Compatible con macOS, Linux y WSL a través de Dotfiles.
 lang: es-ES
 author: Sebastien Rousseau
 lastUpdated: true

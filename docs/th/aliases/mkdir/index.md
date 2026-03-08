@@ -1,6 +1,6 @@
 ---
 title: นามแฝง Mkdir | Dotfiles
-description: คำสั่งสร้างโฟลเดอร์แบบสั้น ภาพรวมสำหรับ Dotfiles v0.2.495
+description: คำสั่งสร้างโฟลเดอร์แบบสั้น ภาพรวมสำหรับ Dotfiles v0.2.495 รองรับ macOS, Linux และ WSL ผ่าน Dotfiles
 lang: th-TH
 author: Sebastien Rousseau
 lastUpdated: true

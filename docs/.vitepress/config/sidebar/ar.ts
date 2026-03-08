@@ -11,6 +11,8 @@ export const arSidebar = {
         "/ar/paths/",
         "/ar/compatibility/",
         "/ar/guides/secret-management/",
+        "/ar/guides/ssh-signing/",
+        "/ar/guides/gpg-configuration/",
       ],
     },
     {

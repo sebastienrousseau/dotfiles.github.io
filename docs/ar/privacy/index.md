@@ -1,6 +1,6 @@
 ---
 title: الخصوصية | Dotfiles (العربية)
-description: سياسة الخصوصية لوثائق Dotfiles.
+description: سياسة الخصوصية لوثائق Dotfiles. معلومات حول جمع البيانات وملفات تعريف الارتباط وحقوق المستخدمين. لا يتم جمع بيانات شخصية. متوافق مع macOS وLinux وWSL.
 lang: ar-SA
 author: Sebastien Rousseau
 lastUpdated: true

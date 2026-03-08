@@ -1,6 +1,6 @@
 ---
 title: "קיצורי Modern Tooling: תחליפי Unix מבוססי Rust"
-description: קיצורי מעטפת מודרניים ל-eza, bat ו-ripgrep. החלף כלי Unix מדור קודם בחלופות Rust מהירות יותר.
+description: קיצורי מעטפת מודרניים ל-eza, bat ו-ripgrep. החלף כלי Unix מדור קודם בחלופות Rust מהירות יותר. תואם ל-macOS, Linux ו-WSL דרך Dotfiles.
 lang: he-IL
 author: Sebastien Rousseau
 lastUpdated: true

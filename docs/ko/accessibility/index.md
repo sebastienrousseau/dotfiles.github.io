@@ -1,6 +1,6 @@
 ---
 title: 접근성 | Dotfiles (한국어)
-description: Dotfiles 문서의 접근성 정보.
+description: Dotfiles 문서의 접근성 정보. macOS, Linux, WSL 호환. Dotfiles로 관리.
 lang: ko-KR
 author: Sebastien Rousseau
 lastUpdated: true

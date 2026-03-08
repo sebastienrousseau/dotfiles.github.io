@@ -1,6 +1,6 @@
 ---
 title: プライバシー | Dotfiles (日本語)
-description: Dotfilesドキュメントのプライバシーポリシー。
+description: Dotfilesドキュメントのプライバシーポリシー。 macOS・Linux・WSL対応。Dotfilesで管理。
 lang: ja-JP
 author: Sebastien Rousseau
 lastUpdated: true

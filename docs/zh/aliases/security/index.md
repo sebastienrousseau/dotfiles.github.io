@@ -1,6 +1,6 @@
 ---
 title: Security 别名 | Dotfiles
-description: 用于文件不可变性和配置保护的安全别名。锁定和解锁关键 shell 文件。
+description: 用于文件不可变性和配置保护的安全别名。锁定和解锁关键 shell 文件。 兼容 macOS、Linux 和 WSL。通过 Dotfiles 管理。
 lang: zh-CN
 author: Sebastien Rousseau
 lastUpdated: true

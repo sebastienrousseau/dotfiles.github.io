@@ -1,6 +1,6 @@
 ---
 title: Конфіденційність | Dotfiles (Українська)
-description: Політика конфіденційності документації Dotfiles.
+description: Дослідіть політика конфіденційності документації Dotfiles. Сумісно з macOS, Linux та WSL через Dotfiles.
 lang: uk-UA
 author: Sebastien Rousseau
 lastUpdated: true

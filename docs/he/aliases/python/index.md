@@ -1,6 +1,6 @@
 ---
 title: קיצורי Python | Dotfiles
-description: קיצורי מעטפת Python למפרש, pip, virtualenv ומנהל חבילות uv. פשט את זרימת העבודה שלך ב-Python.
+description: קיצורי מעטפת Python למפרש, pip, virtualenv ומנהל חבילות uv. פשט את זרימת העבודה שלך ב-Python. תואם ל-macOS, Linux ו-WSL דרך Dotfiles.
 lang: he-IL
 author: Sebastien Rousseau
 lastUpdated: true

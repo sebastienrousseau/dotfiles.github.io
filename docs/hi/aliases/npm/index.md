@@ -1,6 +1,6 @@
 ---
 title: "NPM एलियास: अपने Node पैकेज मैनेजमेंट को सुव्यवस्थित करें"
-description: install, build, test, और publish कमांड के लिए सहज शेल एलियास के साथ npm वर्कफ़्लो तेज़ करें।
+description: install, build, test, और publish कमांड के लिए सहज शेल एलियास के साथ npm वर्कफ़्लो तेज़ करें। macOS, Linux और WSL पर Dotfiles के माध्यम से संगत।
 lang: hi-IN
 author: Sebastien Rousseau
 lastUpdated: true

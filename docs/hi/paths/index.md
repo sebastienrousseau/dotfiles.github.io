@@ -1,6 +1,6 @@
 ---
 title: पाथ | Dotfiles
-description: Dotfiles आपकी PATH पदानुक्रम को कैसे प्रबंधित करता है ताकि सही टूल्स सही क्रम में लोड हों।
+description: Dotfiles आपकी PATH पदानुक्रम को कैसे प्रबंधित करता है ताकि सही टूल्स सही क्रम में लोड हों। macOS, Linux और WSL पर Dotfiles के माध्यम से संगत।
 lang: hi-IN
 author: Sebastien Rousseau
 lastUpdated: true

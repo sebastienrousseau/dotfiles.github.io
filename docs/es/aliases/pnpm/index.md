@@ -1,6 +1,6 @@
 ---
 title: "Alias Pnpm: atajos para gestión rápida de paquetes"
-description: Optimiza flujos pnpm con alias para instalar, compilar, probar y gestionar dependencias Node.js.
+description: Optimiza flujos pnpm con alias para instalar, compilar, probar y gestionar dependencias Node.js. Compatible con macOS, Linux y WSL a través de Dotfiles.
 lang: es-ES
 author: Sebastien Rousseau
 lastUpdated: true

@@ -56,16 +56,23 @@ function hasNavItems(nav: unknown): nav is Array<{ text: string; link: string }>
   return Array.isArray(nav) && nav.length >= 6
 }
 
-function fallbackNav(prefix: string, aliasSegment = 'aliases') {
+function fallbackNav(prefix: string) {
   const locale = prefix.replace(/\//g, '') || 'en'
   const t = getUiStrings(locale).nav
   return [
     { text: t.about, link: `${prefix}about/` },
     { text: t.functions, link: `${prefix}functions/` },
     { text: t.paths, link: `${prefix}paths/` },
-    { text: t.aliases, link: `${prefix}${aliasSegment}/` },
+    { text: t.aliases, link: `${prefix}aliases/` },
     { text: t.compatibility, link: `${prefix}compatibility/` },
-    { text: t.guides, link: `${prefix}guides/secret-management/` },
+    {
+      text: t.guides,
+      items: [
+        { text: 'Secret Management', link: `${prefix}guides/secret-management/` },
+        { text: 'SSH Signing', link: `${prefix}guides/ssh-signing/` },
+        { text: 'GPG Configuration', link: `${prefix}guides/gpg-configuration/` },
+      ],
+    },
   ]
 }
 
@@ -328,12 +335,12 @@ export default defineConfig({
     ja: {
       label: '🇯🇵 日本語', link: '/ja/', lang: 'ja-JP', title: 'Dotfiles',
       description: 'macOS、Linux、WSL向けのクロスプラットフォームシェル設定。Chezmoi、Zsh、Neovim、tmuxで管理。',
-      themeConfig: { nav: withLocalizedLegalNav(fallbackNav('/ja/', 'alias') as NavItem[]), sidebar: { '/ja/': convertSidebar(jaSidebar['/ja/']) } },
+      themeConfig: { nav: withLocalizedLegalNav(fallbackNav('/ja/') as NavItem[]), sidebar: { '/ja/': convertSidebar(jaSidebar['/ja/']) } },
     },
     ko: {
       label: '🇰🇷 한국어', link: '/ko/', lang: 'ko-KR', title: 'Dotfiles',
       description: 'macOS, Linux, WSL을 위한 크로스 플랫폼 셸 구성. Chezmoi, Zsh, Neovim, tmux로 관리.',
-      themeConfig: { nav: withLocalizedLegalNav(fallbackNav('/ko/', 'alias') as NavItem[]), sidebar: { '/ko/': convertSidebar(koSidebar['/ko/']) } },
+      themeConfig: { nav: withLocalizedLegalNav(fallbackNav('/ko/') as NavItem[]), sidebar: { '/ko/': convertSidebar(koSidebar['/ko/']) } },
     },
     nl: {
       label: '🇳🇱 Nederlands', link: '/nl/', lang: 'nl-NL', title: 'Dotfiles',
@@ -348,7 +355,7 @@ export default defineConfig({
     ru: {
       label: '🇷🇺 Русский', link: '/ru/', lang: 'ru-RU', title: 'Dotfiles',
       description: 'Кроссплатформенная конфигурация оболочки для macOS, Linux и WSL. Управляется Chezmoi с Zsh, Neovim и tmux.',
-      themeConfig: { nav: withLocalizedLegalNav(fallbackNav('/ru/', 'alias') as NavItem[]), sidebar: { '/ru/': convertSidebar(ruSidebar['/ru/']) } },
+      themeConfig: { nav: withLocalizedLegalNav(fallbackNav('/ru/') as NavItem[]), sidebar: { '/ru/': convertSidebar(ruSidebar['/ru/']) } },
     },
     zh: {
       label: '🇨🇳 简体中文', link: '/zh/', lang: 'zh-CN', title: 'Dotfiles',

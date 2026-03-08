@@ -1,6 +1,6 @@
 ---
 title: Aliasuri Go | Dotfiles
-description: Comenzi scurte pentru instrumentele Go. Prezentare generală pentru Dotfiles v0.2.495.
+description: Comenzi scurte pentru instrumentele Go. Prezentare generală pentru Dotfiles v0.2.495. Compatibil cu macOS, Linux și WSL prin Dotfiles.
 lang: ro-RO
 author: Sebastien Rousseau
 lastUpdated: true

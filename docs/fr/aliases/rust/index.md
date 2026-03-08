@@ -1,6 +1,6 @@
 ---
 title: Aliases Rust | Dotfiles
-description: Alias Rust pour Cargo et Rustup. Raccourcis pour compiler, tester et gérer les projets Rust.
+description: Alias Rust pour Cargo et Rustup. Raccourcis pour compiler, tester et gérer les projets Rust. Compatible avec macOS, Linux et WSL via Dotfiles.
 lang: fr-FR
 author: Sebastien Rousseau
 lastUpdated: true

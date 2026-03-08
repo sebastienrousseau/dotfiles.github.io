@@ -1,6 +1,6 @@
 ---
 title: مصفوفة التوافق عبر المنصات | Dotfiles
-description: دعم المنصات المختبرة للأصداف والأدوات والمحطات وفئات الأسماء المستعارة في Dotfiles v0.2.495.
+description: دعم المنصات المختبرة للأصداف والأدوات والمحطات وفئات الأسماء المستعارة في Dotfiles v0.2.495. متوافق مع macOS وLinux وWSL عبر Dotfiles.
 lang: ar-SA
 author: Sebastien Rousseau
 lastUpdated: true

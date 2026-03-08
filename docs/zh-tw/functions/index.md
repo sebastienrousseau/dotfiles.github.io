@@ -1,6 +1,6 @@
 ---
 title: 函式 | Dotfiles
-description: Dotfiles v0.2.495 中的公開 Shell 函式參考。
+description: Dotfiles v0.2.495 中的公開 Shell 函式參考。 相容 macOS、Linux 和 WSL。透過 Dotfiles 管理。
 lang: zh-TW
 author: Sebastien Rousseau
 lastUpdated: true

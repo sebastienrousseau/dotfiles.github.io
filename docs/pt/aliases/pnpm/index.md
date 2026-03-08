@@ -1,6 +1,6 @@
 ---
 title: "Aliases de PNPM: Atalhos para o Gerenciador de Pacotes PNPM"
-description: Aliases de shell para PNPM. Atalhos para install, build, dev, test e outros comandos pnpm.
+description: Aliases de shell para PNPM. Atalhos para install, build, dev, test e outros comandos pnpm. Compatível com macOS, Linux e WSL via Dotfiles.
 lang: pt-BR
 author: Sebastien Rousseau
 lastUpdated: true

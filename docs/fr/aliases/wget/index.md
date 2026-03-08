@@ -1,6 +1,6 @@
 ---
 title: Aliases Wget | Dotfiles
-description: Alias wget pour télécharger des fichiers. Raccourcis pour la récupération web avec reprise.
+description: Alias wget pour télécharger des fichiers. Raccourcis pour la récupération web avec reprise. Compatible avec macOS, Linux et WSL via Dotfiles.
 lang: fr-FR
 author: Sebastien Rousseau
 lastUpdated: true

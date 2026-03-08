@@ -1,6 +1,6 @@
 ---
 title: क्रॉस-प्लेटफ़ॉर्म संगतता मैट्रिक्स | Dotfiles
-description: Dotfiles v0.2.495 में शेल, टूल, टर्मिनल और एलियास श्रेणियों के लिए परीक्षित प्लेटफ़ॉर्म समर्थन।
+description: Dotfiles v0.2.495 में शेल, टूल, टर्मिनल और एलियास श्रेणियों के लिए परीक्षित प्लेटफ़ॉर्म समर्थन। macOS, Linux और WSL पर Dotfiles के माध्यम से संगत।
 lang: hi-IN
 author: Sebastien Rousseau
 lastUpdated: true

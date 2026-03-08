@@ -1,6 +1,6 @@
 ---
 title: "اختصارات Lua: الوصول السريع لمفسرات Lua REPL"
-description: اختصارات الصدفة لتطوير Lua. قم بتشغيل Lua و LuaJIT و Lua 5.1 REPL باختصارات بسيطة.
+description: اختصارات الصدفة لتطوير Lua. قم بتشغيل Lua و LuaJIT و Lua 5.1 REPL باختصارات بسيطة. متوافق مع macOS وLinux وWSL عبر Dotfiles.
 lang: ar
 author: Sebastien Rousseau
 lastUpdated: true

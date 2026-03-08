@@ -1,6 +1,6 @@
 ---
 title: Alias IA | Dotfiles
-description: Alias IA et LLM pour GitHub Copilot et Ollama. Simplifiez votre workflow d’assistance par IA.
+description: Alias IA et LLM pour GitHub Copilot et Ollama. Simplifiez votre workflow d’assistance par IA. Compatible avec macOS, Linux et WSL via Dotfiles.
 lang: fr-FR
 author: Sebastien Rousseau
 lastUpdated: true

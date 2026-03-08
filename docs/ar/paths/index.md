@@ -1,6 +1,6 @@
 ---
 title: المسارات | Dotfiles
-description: كيف يُدير Dotfiles تسلسل PATH الخاص بك لضمان تحميل الأدوات الصحيحة بالترتيب الصحيح.
+description: كيف يُدير Dotfiles تسلسل PATH الخاص بك لضمان تحميل الأدوات الصحيحة بالترتيب الصحيح. متوافق مع macOS وLinux وWSL عبر Dotfiles.
 lang: ar-SA
 author: Sebastien Rousseau
 lastUpdated: true

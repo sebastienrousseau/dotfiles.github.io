@@ -1,6 +1,6 @@
 ---
 title: "اختصارات Configuration: وصول سريع لملفات الإعدادات"
-description: افتح ملفات إعدادات الشل وGit وSSH والخادم فورًا مع اختصارات الشل هذه لـ Bash وZsh.
+description: افتح ملفات إعدادات الشل وGit وSSH والخادم فورًا مع اختصارات الشل هذه لـ Bash وZsh. متوافق مع macOS وLinux وWSL عبر Dotfiles.
 lang: ar-SA
 author: Sebastien Rousseau
 lastUpdated: true

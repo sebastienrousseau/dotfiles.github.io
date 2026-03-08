@@ -1,6 +1,6 @@
 ---
 title: الدوال | Dotfiles
-description: دوال الشل التي تُحسّن تجربتك مع الطرفية. أدوات لاختبار API وإدارة الملفات وعمليات النظام والمزيد.
+description: دوال الشل التي تُحسّن تجربتك مع الطرفية. أدوات لاختبار API وإدارة الملفات وعمليات النظام والمزيد. متوافق مع macOS وLinux وWSL عبر Dotfiles.
 lang: ar-SA
 author: Sebastien Rousseau
 lastUpdated: true

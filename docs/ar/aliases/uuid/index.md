@@ -1,6 +1,6 @@
 ---
 title: اختصارات UUID | Dotfiles
-description: اختصارات UUID للشل لتوليد معرفات فريدة. مختصر سريع لإنشاء ونسخ UUIDs.
+description: اختصارات UUID للشل لتوليد معرفات فريدة. مختصر سريع لإنشاء ونسخ UUIDs. متوافق مع macOS وLinux وWSL عبر Dotfiles.
 lang: ar-SA
 author: Sebastien Rousseau
 lastUpdated: true

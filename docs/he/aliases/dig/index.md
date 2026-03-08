@@ -1,6 +1,6 @@
 ---
 title: "קיצורי Dig: קיצורי חיפוש DNS לטרמינל"
-description: פשט שאילתות DNS עם קיצורי dig. חפש כתובות IPv4, IPv6 ורשומות DNS מהר יותר עם קיצורי מעטפת אלה.
+description: פשט שאילתות DNS עם קיצורי dig. חפש כתובות IPv4, IPv6 ורשומות DNS מהר יותר עם קיצורי מעטפת אלה. תואם ל-macOS, Linux ו-WSL דרך Dotfiles.
 lang: he-IL
 author: Sebastien Rousseau
 lastUpdated: true

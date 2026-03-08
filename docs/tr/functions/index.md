@@ -1,6 +1,6 @@
 ---
 title: Fonksiyonlar | Dotfiles
-description: Dotfiles v0.2.495 tarafından sağlanan genel kabuk fonksiyonları referansı.
+description: Dotfiles v0.2.495 tarafından sağlanan genel kabuk fonksiyonları referansı. macOS, Linux ve WSL ile Dotfiles üzerinden uyumlu.
 lang: tr-TR
 author: Sebastien Rousseau
 lastUpdated: true

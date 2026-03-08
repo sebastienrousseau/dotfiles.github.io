@@ -1,6 +1,6 @@
 ---
 title: "Make-aliassen: Stroomlijn je build-workflow"
-description: Snelkoppeling-aliassen voor Make-commando's. Vereenvoudig builds, tests en projectautomatisering.
+description: Snelkoppeling-aliassen voor Make-commando's. Vereenvoudig builds, tests en projectautomatisering. Compatibel met macOS, Linux en WSL via Dotfiles.
 lang: nl-NL
 author: Sebastien Rousseau
 lastUpdated: true

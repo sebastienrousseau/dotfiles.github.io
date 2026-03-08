@@ -1,6 +1,6 @@
 ---
 title: Paths | Dotfiles
-description: Comment Dotfiles gère votre hiérarchie PATH pour charger les bons outils dans le bon ordre.
+description: Comment Dotfiles gère votre hiérarchie PATH pour charger les bons outils dans le bon ordre. Compatible avec macOS, Linux et WSL via Dotfiles.
 lang: fr-FR
 author: Sebastien Rousseau
 lastUpdated: true

@@ -1,6 +1,6 @@
 ---
 title: Kubernetes Takma Adları | Dotfiles
-description: Kısa kubectl ve Helm komutları. Dotfiles v0.2.495 genel bakış.
+description: Kısa kubectl ve Helm komutları. Dotfiles v0.2.495 genel bakış. macOS, Linux ve WSL ile Dotfiles üzerinden uyumlu.
 lang: tr-TR
 author: Sebastien Rousseau
 lastUpdated: true

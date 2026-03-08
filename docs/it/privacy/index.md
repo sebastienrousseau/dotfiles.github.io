@@ -1,6 +1,6 @@
 ---
 title: Privacy | Dotfiles (Italiano)
-description: Informativa sulla privacy per la documentazione Dotfiles.
+description: Informativa sulla privacy per la documentazione Dotfiles. Compatibile con macOS, Linux e WSL tramite Dotfiles.
 lang: it-IT
 author: Sebastien Rousseau
 lastUpdated: true

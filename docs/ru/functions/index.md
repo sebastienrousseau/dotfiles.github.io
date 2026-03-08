@@ -1,6 +1,6 @@
 ---
 title: Функции оболочки | Dotfiles
-description: Функции оболочки Dotfiles для улучшения работы с терминалом.
+description: Функции оболочки Dotfiles для улучшения работы с терминалом. Совместимо с macOS, Linux и WSL через Dotfiles.
 lang: ru-RU
 author: Sebastien Rousseau
 lastUpdated: true

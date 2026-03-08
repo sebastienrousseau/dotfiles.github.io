@@ -1,6 +1,6 @@
 ---
 title: "Aliases de Wget: Downloader de Linha de Comando"
-description: Aliases de shell para wget. Baixe arquivos da internet com comandos simples e suporte a retomada.
+description: Aliases de shell para wget. Baixe arquivos da internet com comandos simples e suporte a retomada. Compatível com macOS, Linux e WSL via Dotfiles.
 lang: pt-BR
 author: Sebastien Rousseau
 lastUpdated: true

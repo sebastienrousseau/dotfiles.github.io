@@ -1,6 +1,6 @@
 ---
 title: Kontakt | Dotfiles (Polski)
-description: Dane kontaktowe opiekunów Dotfiles.
+description: Odkryj dane kontaktowe opiekunów Dotfiles. Kompatybilny z macOS, Linux i WSL przez Dotfiles.
 lang: pl-PL
 author: Sebastien Rousseau
 lastUpdated: true

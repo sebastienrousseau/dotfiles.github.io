@@ -1,6 +1,6 @@
 ---
 title: "اختصارات Clear: إدارة شاشة الطرفية"
-description: اختصارات شل لمسح شاشة الطرفية وعرض محتويات المجلد والسجل وعروض الشجرة.
+description: اختصارات شل لمسح شاشة الطرفية وعرض محتويات المجلد والسجل وعروض الشجرة. متوافق مع macOS وLinux وWSL عبر Dotfiles.
 lang: ar-SA
 author: Sebastien Rousseau
 lastUpdated: true

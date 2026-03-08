@@ -1,6 +1,6 @@
 ---
 title: קיצורי Tmux | Dotfiles
-description: קיצורי מעטפת tmux לריבוי טרמינלים. קיצורי דרך מהירים לסשנים, חלונות ופאנלים.
+description: קיצורי מעטפת tmux לריבוי טרמינלים. קיצורי דרך מהירים לסשנים, חלונות ופאנלים. תואם ל-macOS, Linux ו-WSL דרך Dotfiles.
 lang: he-IL
 author: Sebastien Rousseau
 lastUpdated: true

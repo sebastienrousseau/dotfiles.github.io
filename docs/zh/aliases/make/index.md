@@ -1,6 +1,6 @@
 ---
 title: Make 别名 | Dotfiles
-description: Make 命令的快捷别名。简化构建、测试和项目自动化。
+description: Make 命令的快捷别名。简化构建、测试和项目自动化。 兼容 macOS、Linux 和 WSL。通过 Dotfiles 管理。
 lang: zh-CN
 author: Sebastien Rousseau
 lastUpdated: true

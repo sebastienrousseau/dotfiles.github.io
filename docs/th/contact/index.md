@@ -1,6 +1,6 @@
 ---
 title: ติดต่อ | Dotfiles (ไทย)
-description: ข้อมูลติดต่อผู้ดูแล Dotfiles
+description: สำรวจข้อมูลติดต่อผู้ดูแล Dotfiles รองรับ macOS, Linux และ WSL ผ่าน Dotfiles
 lang: th-TH
 author: Sebastien Rousseau
 lastUpdated: true

@@ -1,6 +1,6 @@
 ---
 title: การเข้าถึง | Dotfiles (ไทย)
-description: ข้อมูลการเข้าถึงสำหรับเอกสาร Dotfiles
+description: สำรวจข้อมูลการเข้าถึงสำหรับเอกสาร Dotfiles รองรับ macOS, Linux และ WSL ผ่าน Dotfiles
 lang: th-TH
 author: Sebastien Rousseau
 lastUpdated: true

@@ -193,8 +193,8 @@ for (const file of htmlFiles) {
 
       // 6. SoftwareSourceCode on alias sub-pages
       const isAliasSubpage =
-        (relPath.includes('/aliases/') || relPath.includes('/alias/')) &&
-        !/\/alias(es)?\/index\.html$/.test(relPath)
+        relPath.includes('/aliases/') &&
+        !/\/aliases\/index\.html$/.test(relPath)
       if (isAliasSubpage) {
         const hasSoftware = graph.some((n) => n['@type'] === 'SoftwareSourceCode')
         if (!hasSoftware) {
@@ -252,11 +252,7 @@ for (const file of htmlFiles) {
   }
 
   // ─── 12. Internal link integrity ──────────────────────────────
-  // ja/ko/ru use /alias/ (singular) while all others use /aliases/ (plural).
-  // VitePress's locale switcher generates cross-locale links using the current
-  // page's path segment, which produces /ja/aliases/ instead of /ja/alias/.
-  // These are a known VitePress limitation, not real broken links.
-  const ALIAS_SINGULAR_LOCALES = new Set(['ja', 'ko', 'ru'])
+  // All locales now use /aliases/ (ja/ko/ru migrated from /alias/)
 
   const anchors = [...html.matchAll(/<a[^>]*href="([^"]*)"[^>]*>/g)]
   for (const [, href] of anchors) {
@@ -266,17 +262,8 @@ for (const file of htmlFiles) {
     let target = href.split('#')[0].split('?')[0]
     if (!target.startsWith('/')) continue // skip relative
 
-    // Handle alias/aliases path difference for ja/ko/ru.
-    // ja/ko/ru use /alias/ (singular); all others use /aliases/ (plural).
-    // VitePress locale switcher doesn't adjust paths between locales.
     const localeMatch = target.match(/^\/([a-z]{2}(?:-[a-z]{2})?)\//)
-    if (localeMatch) {
-      if (ALIAS_SINGULAR_LOCALES.has(localeMatch[1])) {
-        target = target.replace(/\/aliases\//, '/alias/')
-      } else {
-        target = target.replace(/\/alias\//, '/aliases/')
-      }
-    }
+
 
     // Check existence
     if (htmlSet.has(target)) continue
@@ -294,10 +281,7 @@ for (const file of htmlFiles) {
     if (localeMatch && LOCALE_KEYS.has(localeMatch[1])) {
       const pathAfterLocale = target.slice(localeMatch[0].length)
       const existsInAnyLocale = [...LOCALE_KEYS].some((loc) => {
-        const adjusted = loc === 'ja' || loc === 'ko' || loc === 'ru'
-          ? pathAfterLocale.replace(/^aliases\//, 'alias/')
-          : pathAfterLocale.replace(/^alias\//, 'aliases/')
-        const base = `/${loc}/${adjusted}`
+        const base = `/${loc}/${pathAfterLocale}`
         return htmlSet.has(base) ||
                htmlSet.has(base + '.html') ||
                htmlSet.has(base + '/') ||

@@ -11,6 +11,8 @@ export const esSidebar = {
         "/es/paths/",
         "/es/compatibility/",
         "/es/guides/secret-management/",
+        "/es/guides/ssh-signing/",
+        "/es/guides/gpg-configuration/",
       ],
     },
     {

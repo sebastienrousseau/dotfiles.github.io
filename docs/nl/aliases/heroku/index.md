@@ -1,6 +1,6 @@
 ---
 title: "Heroku-aliassen: Shell-snelkoppelingen voor de Heroku CLI"
-description: Versnel Heroku-workflows met 200+ shell-aliassen voor apps, databases, pipelines en deployments.
+description: Versnel Heroku-workflows met 200+ shell-aliassen voor apps, databases, pipelines en deployments. Compatibel met macOS, Linux en WSL via Dotfiles.
 lang: nl-NL
 author: Sebastien Rousseau
 lastUpdated: true

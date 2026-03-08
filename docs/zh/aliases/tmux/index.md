@@ -1,6 +1,6 @@
 ---
 title: Tmux 别名 | Dotfiles
-description: 用于终端复用的 Tmux shell 别名。会话、窗口和窗格的快捷方式。
+description: 用于终端复用的 Tmux shell 别名。会话、窗口和窗格的快捷方式。 兼容 macOS、Linux 和 WSL。通过 Dotfiles 管理。
 lang: zh-CN
 author: Sebastien Rousseau
 lastUpdated: true

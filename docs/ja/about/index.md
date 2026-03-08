@@ -1,6 +1,6 @@
 ---
 title: 概要 | Dotfiles
-description: Chezmoiで管理される次世代の設定ファイル。高性能、安全、AIネイティブ。
+description: Chezmoiで管理される次世代の設定ファイル。高性能、安全、AIネイティブ。 macOS・Linux・WSL対応。Dotfilesで管理。
 lang: ja-JP
 author: Sebastien Rousseau
 lastUpdated: true
@@ -62,6 +62,6 @@ dot doctor
 
 ## 関連ページ
 
-- [エイリアス](/ja/alias/)
+- [エイリアス](/ja/aliases/)
 - [関数](/ja/functions/)
 - [パス](/ja/paths/)

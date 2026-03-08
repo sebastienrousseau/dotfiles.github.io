@@ -1,6 +1,6 @@
 ---
 title: Warunki | Dotfiles (Polski)
-description: Warunki użytkowania dokumentacji Dotfiles.
+description: Odkryj warunki użytkowania dokumentacji Dotfiles. Kompatybilny z macOS, Linux i WSL przez Dotfiles.
 lang: pl-PL
 author: Sebastien Rousseau
 lastUpdated: true

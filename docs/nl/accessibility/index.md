@@ -1,6 +1,6 @@
 ---
 title: Toegankelijkheid | Dotfiles (Nederlands)
-description: Toegankelijkheidsinformatie voor de Dotfiles-documentatie.
+description: Toegankelijkheidsinformatie voor de Dotfiles-documentatie. Compatibel met macOS, Linux en WSL via Dotfiles.
 lang: nl-NL
 author: Sebastien Rousseau
 lastUpdated: true

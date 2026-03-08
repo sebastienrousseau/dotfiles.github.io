@@ -1,6 +1,6 @@
 ---
 title: "Aliases de Mkdir: Atalhos para Criacao de Diretorios"
-description: Aliases de shell para criação de diretorios. Crie diretorios com data e hora automaticamente.
+description: Aliases de shell para criação de diretorios. Crie diretorios com data e hora automaticamente. Compatível com macOS, Linux e WSL via Dotfiles.
 lang: pt-BR
 author: Sebastien Rousseau
 lastUpdated: true

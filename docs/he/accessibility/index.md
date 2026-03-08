@@ -1,6 +1,6 @@
 ---
 title: נגישות | Dotfiles (עברית)
-description: מידע נגישות לתיעוד Dotfiles.
+description: גלה מידע נגישות לתיעוד Dotfiles. תואם ל-macOS, Linux ו-WSL דרך Dotfiles.
 lang: he-IL
 author: Sebastien Rousseau
 lastUpdated: true

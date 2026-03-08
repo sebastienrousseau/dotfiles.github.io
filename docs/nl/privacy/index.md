@@ -1,6 +1,6 @@
 ---
 title: Privacy | Dotfiles (Nederlands)
-description: Privacybeleid voor de Dotfiles-documentatie.
+description: Ontdek privacybeleid voor de Dotfiles-documentatie. Compatibel met macOS, Linux en WSL via Dotfiles.
 lang: nl-NL
 author: Sebastien Rousseau
 lastUpdated: true

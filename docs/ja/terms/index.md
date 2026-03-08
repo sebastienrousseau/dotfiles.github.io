@@ -1,6 +1,6 @@
 ---
 title: 利用規約 | Dotfiles (日本語)
-description: Dotfilesドキュメントの利用規約。
+description: Dotfilesドキュメントの利用規約。 macOS・Linux・WSL対応。Dotfilesで管理。
 lang: ja-JP
 author: Sebastien Rousseau
 lastUpdated: true

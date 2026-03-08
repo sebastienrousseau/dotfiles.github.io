@@ -1,6 +1,6 @@
 ---
 title: "Alias Interactivos: comandos seguros con confirmación"
-description: Alias shell que añaden confirmaciones antes de rm, mv y cp. Evita borrados accidentales.
+description: Alias shell que añaden confirmaciones antes de rm, mv y cp. Evita borrados accidentales. Compatible con macOS, Linux y WSL a través de Dotfiles.
 lang: es-ES
 author: Sebastien Rousseau
 lastUpdated: true

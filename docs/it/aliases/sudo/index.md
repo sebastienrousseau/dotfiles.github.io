@@ -1,6 +1,6 @@
 ---
 title: Alias Sudo | Dotfiles
-description: Alias shell per operazioni superuser. Scorciatoie per sudo ed esecuzione comandi come root.
+description: Alias shell per operazioni superuser. Scorciatoie per sudo ed esecuzione comandi come root. Compatibile con macOS, Linux e WSL tramite Dotfiles.
 lang: it-IT
 author: Sebastien Rousseau
 lastUpdated: true

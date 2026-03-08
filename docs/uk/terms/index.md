@@ -1,6 +1,6 @@
 ---
 title: Умови | Dotfiles (Українська)
-description: Умови використання документації Dotfiles.
+description: Дослідіть умови використання документації Dotfiles. Сумісно з macOS, Linux та WSL через Dotfiles.
 lang: uk-UA
 author: Sebastien Rousseau
 lastUpdated: true

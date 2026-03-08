@@ -1,6 +1,6 @@
 ---
 title: "קיצורי Disk Usage: נטר אחסון עם פקודות מעטפת"
-description: קיצורי מעטפת לניטור שימוש בדיסק. הצג גדלי קבצים, מצא תיקיות גדולות ונהל אחסון ביעילות.
+description: קיצורי מעטפת לניטור שימוש בדיסק. הצג גדלי קבצים, מצא תיקיות גדולות ונהל אחסון ביעילות. תואם ל-macOS, Linux ו-WSL דרך Dotfiles.
 lang: he-IL
 author: Sebastien Rousseau
 lastUpdated: true

@@ -11,6 +11,8 @@ export const zhSidebar = {
         "/zh/paths/",
         "/zh/compatibility/",
         "/zh/guides/secret-management/",
+        "/zh/guides/ssh-signing/",
+        "/zh/guides/gpg-configuration/",
       ],
     },
     {

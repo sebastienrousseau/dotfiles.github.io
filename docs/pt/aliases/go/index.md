@@ -1,6 +1,6 @@
 ---
 title: "Aliases de Go: Atalhos para Desenvolvimento Go"
-description: Aliases de shell para desenvolvimento Go. Atalhos para go run, go build, go test e go mod tidy.
+description: Aliases de shell para desenvolvimento Go. Atalhos para go run, go build, go test e go mod tidy. Compatível com macOS, Linux e WSL via Dotfiles.
 lang: pt-BR
 author: Sebastien Rousseau
 lastUpdated: true

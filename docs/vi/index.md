@@ -1,6 +1,6 @@
 ---
 title: Dotfiles v0.2.495 | Dotfiles
-description: Cấu hình shell đa nền tảng cho macOS, Linux và WSL.
+description: Cấu hình shell đa nền tảng cho macOS, Linux và WSL. Tương thích với macOS, Linux và WSL qua Dotfiles.
 lang: vi-VN
 author: Sebastien Rousseau
 lastUpdated: true

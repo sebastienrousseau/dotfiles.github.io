@@ -1,6 +1,6 @@
 ---
 title: קיצורי Rsync | Dotfiles
-description: קיצורי מעטפת Rsync לסנכרון קבצים. קיצורים מהירים לסנכרון קבצים ותיקיות בין מיקומים.
+description: קיצורי מעטפת Rsync לסנכרון קבצים. קיצורים מהירים לסנכרון קבצים ותיקיות בין מיקומים. תואם ל-macOS, Linux ו-WSL דרך Dotfiles.
 lang: he-IL
 author: Sebastien Rousseau
 lastUpdated: true

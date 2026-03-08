@@ -1,6 +1,6 @@
 ---
 title: "Alias Compliance : confidentialité et contrôle d’audit"
-description: Alias shell pour la conformité, la confidentialité et l’audit de configuration dans le terminal.
+description: Alias shell pour la conformité, la confidentialité et l’audit de configuration dans le terminal. Compatible avec macOS, Linux et WSL via Dotfiles.
 lang: fr-FR
 author: Sebastien Rousseau
 lastUpdated: true

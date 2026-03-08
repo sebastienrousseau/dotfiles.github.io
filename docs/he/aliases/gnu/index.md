@@ -1,6 +1,6 @@
 ---
 title: "קיצורי GNU Coreutils: קיצורי מעטפת ללינוקס"
-description: ייעל את זרימת העבודה שלך עם קיצורי GNU Coreutils לניהול קבצים, עיבוד טקסט וכלי checksum.
+description: ייעל את זרימת העבודה שלך עם קיצורי GNU Coreutils לניהול קבצים, עיבוד טקסט וכלי checksum. תואם ל-macOS, Linux ו-WSL דרך Dotfiles.
 lang: he-IL
 author: Sebastien Rousseau
 lastUpdated: true

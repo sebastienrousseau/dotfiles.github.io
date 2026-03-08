@@ -1,6 +1,6 @@
 ---
 title: "קיצורי Legal: כלי תאימות קוד פתוח"
-description: קיצורי מעטפת לסריקת רישיונות, כותרות זכויות יוצרים וניהול ייחוס ב-dotfiles שלך.
+description: קיצורי מעטפת לסריקת רישיונות, כותרות זכויות יוצרים וניהול ייחוס ב-dotfiles שלך. תואם ל-macOS, Linux ו-WSL דרך Dotfiles.
 lang: he-IL
 author: Sebastien Rousseau
 lastUpdated: true

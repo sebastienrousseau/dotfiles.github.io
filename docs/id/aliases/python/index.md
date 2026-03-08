@@ -1,6 +1,6 @@
 ---
 title: Alias Python | Dotfiles
-description: Alias Python untuk Dotfiles
+description: Jelajahi alias Python untuk Dotfiles Kompatibel dengan macOS, Linux, dan WSL melalui Dotfiles.
 lang: id-ID
 author: Sebastien Rousseau
 lastUpdated: true

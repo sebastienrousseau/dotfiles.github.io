@@ -1,6 +1,6 @@
 ---
 title: "اختصارات Interactive: أوامر شل آمنة مع مطالبات التأكيد"
-description: اختصارات شل تضيف مطالبات تفاعلية قبل العمليات المدمرة مثل rm وmv وcp. منع حذف الملفات بالخطأ.
+description: اختصارات شل تضيف مطالبات تفاعلية قبل العمليات المدمرة مثل rm وmv وcp. منع حذف الملفات بالخطأ. متوافق مع macOS وLinux وWSL عبر Dotfiles.
 lang: ar-SA
 author: Sebastien Rousseau
 lastUpdated: true

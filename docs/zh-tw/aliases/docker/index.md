@@ -1,6 +1,6 @@
 ---
 title: Docker 別名 | Dotfiles
-description: Docker 指令簡寫。Dotfiles v0.2.495 概覽。
+description: Docker 指令簡寫。Dotfiles v0.2.495 概覽。 相容 macOS、Linux 和 WSL。透過 Dotfiles 管理。
 lang: zh-TW
 author: Sebastien Rousseau
 lastUpdated: true

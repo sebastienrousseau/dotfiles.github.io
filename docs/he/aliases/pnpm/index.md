@@ -1,6 +1,6 @@
 ---
 title: "קיצורי Pnpm: קיצורי ניהול חבילות מהיר"
-description: ייעל זרימות עבודה של pnpm עם קיצורים להתקנה, בנייה, בדיקה וניהול תלויות Node.js.
+description: ייעל זרימות עבודה של pnpm עם קיצורים להתקנה, בנייה, בדיקה וניהול תלויות Node.js. תואם ל-macOS, Linux ו-WSL דרך Dotfiles.
 lang: he-IL
 author: Sebastien Rousseau
 lastUpdated: true

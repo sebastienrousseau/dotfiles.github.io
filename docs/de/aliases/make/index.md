@@ -1,6 +1,6 @@
 ---
 title: Make Aliase | Dotfiles
-description: Verknuepfungs-Aliase fuer Make-Befehle. Vereinfachen Sie Builds, Tests und Projektautomatisierung.
+description: Verknuepfungs-Aliase fuer Make-Befehle. Vereinfachen Sie Builds, Tests und Projektautomatisierung. Kompatibel mit macOS, Linux und WSL via Dotfiles.
 lang: de-DE
 author: Sebastien Rousseau
 lastUpdated: true

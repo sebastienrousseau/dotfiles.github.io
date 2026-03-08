@@ -1,6 +1,6 @@
 ---
 title: اختصارات Tmux | Dotfiles
-description: اختصارات Tmux للشل لتعدد الطرفيات. مختصرات سريعة للجلسات والنوافذ والأجزاء.
+description: اختصارات Tmux للشل لتعدد الطرفيات. مختصرات سريعة للجلسات والنوافذ والأجزاء. متوافق مع macOS وLinux وWSL عبر Dotfiles.
 lang: ar-SA
 author: Sebastien Rousseau
 lastUpdated: true

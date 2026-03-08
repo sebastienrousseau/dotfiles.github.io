@@ -1,6 +1,6 @@
 ---
 title: "Alias NPM : simplifiez la gestion des paquets Node"
-description: Accélérez les workflows npm avec des alias pour install, build, test et publish.
+description: Accélérez les workflows npm avec des alias pour install, build, test et publish. Compatible avec macOS, Linux et WSL via Dotfiles.
 lang: fr-FR
 author: Sebastien Rousseau
 lastUpdated: true

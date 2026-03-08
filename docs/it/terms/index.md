@@ -1,6 +1,6 @@
 ---
 title: Termini d'uso | Dotfiles (Italiano)
-description: Termini d'uso per la documentazione Dotfiles.
+description: Scopri termini d'uso per la documentazione Dotfiles. Compatibile con macOS, Linux e WSL tramite Dotfiles.
 lang: it-IT
 author: Sebastien Rousseau
 lastUpdated: true

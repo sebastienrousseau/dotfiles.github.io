@@ -1,6 +1,6 @@
 ---
 title: Ketentuan | Dotfiles (Bahasa Indonesia)
-description: Ketentuan penggunaan untuk dokumentasi Dotfiles.
+description: Jelajahi ketentuan penggunaan untuk dokumentasi Dotfiles. Kompatibel dengan macOS, Linux, dan WSL melalui Dotfiles.
 lang: id-ID
 author: Sebastien Rousseau
 lastUpdated: true

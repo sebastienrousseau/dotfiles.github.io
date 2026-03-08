@@ -1,6 +1,6 @@
 ---
 title: "اختصارات Pnpm: مختصرات إدارة الحزم السريعة"
-description: بسّط سير عمل pnpm مع اختصارات للتثبيت والبناء والاختبار وإدارة تبعيات Node.js.
+description: بسّط سير عمل pnpm مع اختصارات للتثبيت والبناء والاختبار وإدارة تبعيات Node.js. متوافق مع macOS وLinux وWSL عبر Dotfiles.
 lang: ar-SA
 author: Sebastien Rousseau
 lastUpdated: true

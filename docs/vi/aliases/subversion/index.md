@@ -1,6 +1,6 @@
 ---
 title: Bí Danh Subversion | Dotfiles
-description: Lệnh SVN rút gọn. Tổng quan cho Dotfiles v0.2.495.
+description: Lệnh SVN rút gọn. Tổng quan cho Dotfiles v0.2.495. Tương thích với macOS, Linux và WSL qua Dotfiles.
 lang: vi-VN
 author: Sebastien Rousseau
 lastUpdated: true

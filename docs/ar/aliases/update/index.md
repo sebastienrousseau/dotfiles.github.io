@@ -1,6 +1,6 @@
 ---
 title: اختصارات Update | Dotfiles
-description: اختصارات تحديث النظام لـ macOS وLinux. حافظ على تحديث نظام التشغيل والحزم الخاصة بك.
+description: اختصارات تحديث النظام لـ macOS وLinux. حافظ على تحديث نظام التشغيل والحزم الخاصة بك. متوافق مع macOS وLinux وWSL عبر Dotfiles.
 lang: ar-SA
 author: Sebastien Rousseau
 lastUpdated: true

@@ -1,6 +1,6 @@
 ---
 title: Bí Danh Mkdir | Dotfiles
-description: Lệnh tạo thư mục rút gọn. Tổng quan cho Dotfiles v0.2.495.
+description: Lệnh tạo thư mục rút gọn. Tổng quan cho Dotfiles v0.2.495. Tương thích với macOS, Linux và WSL qua Dotfiles.
 lang: vi-VN
 author: Sebastien Rousseau
 lastUpdated: true

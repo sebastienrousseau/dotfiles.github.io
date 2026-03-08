@@ -11,6 +11,8 @@ export const viSidebar = {
         "/vi/paths/",
         "/vi/compatibility/",
         "/vi/guides/secret-management/",
+        "/vi/guides/ssh-signing/",
+        "/vi/guides/gpg-configuration/",
       ],
     },
     {

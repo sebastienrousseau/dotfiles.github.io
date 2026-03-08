@@ -1,6 +1,6 @@
 ---
 title: "Alias macOS : raccourcis shell pour Mac"
-description: Alias shell pour la gestion système macOS, le Finder et les tâches de maintenance dans Dotfiles.
+description: Alias shell pour la gestion système macOS, le Finder et les tâches de maintenance dans Dotfiles. Compatible avec macOS, Linux et WSL via Dotfiles.
 lang: fr-FR
 author: Sebastien Rousseau
 lastUpdated: true

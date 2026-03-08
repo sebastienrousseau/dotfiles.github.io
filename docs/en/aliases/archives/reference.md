@@ -1,6 +1,6 @@
 ---
 title: Archives Reference Appendix | Dotfiles
-description: Complete alias and helper function reference for Archives in Dotfiles v0.2.495.
+description: Complete alias and helper function reference for Archives in Dotfiles v0.2.495. Includes every shortcut, usage example, and shell function for macOS, Linux, and WSL.
 lang: en-GB
 author: Sebastien Rousseau
 lastUpdated: true

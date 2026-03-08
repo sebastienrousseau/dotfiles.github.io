@@ -1,6 +1,6 @@
 ---
 title: Aliasuri GNU | Dotfiles
-description: Comenzi scurte pentru utilitare GNU. Prezentare generală pentru Dotfiles v0.2.495.
+description: Comenzi scurte pentru utilitare GNU. Prezentare generală pentru Dotfiles v0.2.495. Compatibil cu macOS, Linux și WSL prin Dotfiles.
 lang: ro-RO
 author: Sebastien Rousseau
 lastUpdated: true

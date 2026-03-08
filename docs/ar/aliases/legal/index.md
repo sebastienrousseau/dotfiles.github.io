@@ -1,6 +1,6 @@
 ---
 title: "اختصارات Legal: أدوات الامتثال للمصادر المفتوحة"
-description: اختصارات شل لفحص التراخيص وعناوين حقوق النشر وإدارة الإسناد في dotfiles الخاصة بك.
+description: اختصارات شل لفحص التراخيص وعناوين حقوق النشر وإدارة الإسناد في dotfiles الخاصة بك. متوافق مع macOS وLinux وWSL عبر Dotfiles.
 lang: ar-SA
 author: Sebastien Rousseau
 lastUpdated: true

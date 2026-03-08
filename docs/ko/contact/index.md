@@ -1,6 +1,6 @@
 ---
 title: 연락처 | Dotfiles (한국어)
-description: Dotfiles 관리자 연락처 정보.
+description: Dotfiles 관리자 연락처 정보. macOS, Linux, WSL 호환. Dotfiles로 관리.
 lang: ko-KR
 author: Sebastien Rousseau
 lastUpdated: true

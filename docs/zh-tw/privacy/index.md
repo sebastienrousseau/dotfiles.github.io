@@ -1,6 +1,6 @@
 ---
 title: 隱私 | Dotfiles (繁體中文)
-description: Dotfiles 文件的隱私政策。
+description: Dotfiles 文件的隱私政策。 相容 macOS、Linux 和 WSL。透過 Dotfiles 管理。
 lang: zh-TW
 author: Sebastien Rousseau
 lastUpdated: true

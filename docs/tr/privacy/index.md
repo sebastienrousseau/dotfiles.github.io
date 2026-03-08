@@ -1,6 +1,6 @@
 ---
 title: Gizlilik | Dotfiles (Türkçe)
-description: Dotfiles belgeleri için gizlilik politikası.
+description: Keşfedin dotfiles belgeleri için gizlilik politikası. macOS, Linux ve WSL ile Dotfiles üzerinden uyumlu.
 lang: tr-TR
 author: Sebastien Rousseau
 lastUpdated: true

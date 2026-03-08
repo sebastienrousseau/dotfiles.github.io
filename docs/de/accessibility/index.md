@@ -1,6 +1,6 @@
 ---
 title: Barrierefreiheit | Dotfiles (Deutsch)
-description: Barrierefreiheitsinformationen für die Dotfiles-Dokumentation.
+description: Barrierefreiheitsinformationen für die Dotfiles-Dokumentation. Kompatibel mit macOS, Linux und WSL via Dotfiles.
 lang: de-DE
 author: Sebastien Rousseau
 lastUpdated: true

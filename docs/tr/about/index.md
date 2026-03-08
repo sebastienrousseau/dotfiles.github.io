@@ -1,6 +1,6 @@
 ---
 title: Dotfiles Hakkında | Dotfiles
-description: Dotfiles v0.2.495 teknik genel bakış.
+description: Keşfedin dotfiles v0.2.495 teknik genel bakış. macOS, Linux ve WSL ile Dotfiles üzerinden uyumlu.
 lang: tr-TR
 author: Sebastien Rousseau
 lastUpdated: true

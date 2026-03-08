@@ -1,6 +1,6 @@
 ---
 title: תנאי שימוש | Dotfiles (עברית)
-description: תנאי שימוש לתיעוד Dotfiles.
+description: גלה תנאי שימוש לתיעוד Dotfiles. תואם ל-macOS, Linux ו-WSL דרך Dotfiles.
 lang: he-IL
 author: Sebastien Rousseau
 lastUpdated: true

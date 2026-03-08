@@ -1,6 +1,6 @@
 ---
 title: "اختصارات Make: بسّط سير عمل البناء"
-description: اختصارات لأوامر Make. بسّط البناء والاختبارات وأتمتة المشاريع.
+description: اختصارات لأوامر Make. بسّط البناء والاختبارات وأتمتة المشاريع. متوافق مع macOS وLinux وWSL عبر Dotfiles.
 lang: ar-SA
 author: Sebastien Rousseau
 lastUpdated: true

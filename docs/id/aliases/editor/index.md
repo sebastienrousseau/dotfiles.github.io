@@ -1,6 +1,6 @@
 ---
 title: Alias Editor | Dotfiles
-description: Alias shell untuk editor teks. Mendukung Neovim, VS Code, Vim, Nano, Emacs, dan lainnya.
+description: Alias shell untuk editor teks. Mendukung Neovim, VS Code, Vim, Nano, Emacs, dan lainnya. Kompatibel dengan macOS, Linux, dan WSL melalui Dotfiles.
 lang: id-ID
 author: Sebastien Rousseau
 lastUpdated: true

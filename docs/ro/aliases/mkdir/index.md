@@ -1,6 +1,6 @@
 ---
 title: Aliasuri Mkdir | Dotfiles
-description: Comenzi scurte pentru crearea directoarelor. Prezentare generală pentru Dotfiles v0.2.495.
+description: Comenzi scurte pentru crearea directoarelor. Prezentare generală pentru Dotfiles v0.2.495. Compatibil cu macOS, Linux și WSL prin Dotfiles.
 lang: ro-RO
 author: Sebastien Rousseau
 lastUpdated: true

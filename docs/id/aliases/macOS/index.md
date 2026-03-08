@@ -1,6 +1,6 @@
 ---
 title: Alias macOS | Dotfiles
-description: Alias macOS untuk Dotfiles
+description: Jelajahi alias macOS untuk Dotfiles Kompatibel dengan macOS, Linux, dan WSL melalui Dotfiles.
 lang: id-ID
 author: Sebastien Rousseau
 lastUpdated: true

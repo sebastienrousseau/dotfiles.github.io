@@ -1,6 +1,6 @@
 ---
 title: Erişilebilirlik | Dotfiles (Türkçe)
-description: Dotfiles belgeleri için erişilebilirlik bilgileri.
+description: Dotfiles belgeleri için erişilebilirlik bilgileri. macOS, Linux ve WSL ile Dotfiles üzerinden uyumlu.
 lang: tr-TR
 author: Sebastien Rousseau
 lastUpdated: true

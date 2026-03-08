@@ -1,6 +1,6 @@
 ---
 title: "Configuration एलियास: कॉन्फ़िग फाइलों तक त्वरित पहुंच"
-description: Bash और Zsh के लिए इन शेल एलियास के साथ शेल, Git, SSH, और सर्वर कॉन्फ़िगरेशन फाइलें तुरंत खोलें।
+description: Bash और Zsh के लिए इन शेल एलियास के साथ शेल, Git, SSH, और सर्वर कॉन्फ़िगरेशन फाइलें तुरंत खोलें। macOS, Linux और WSL पर Dotfiles के माध्यम से संगत।
 lang: hi-IN
 author: Sebastien Rousseau
 lastUpdated: true

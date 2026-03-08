@@ -1,6 +1,6 @@
 ---
 title: إمكانية الوصول | Dotfiles (العربية)
-description: معلومات إمكانية الوصول لوثائق Dotfiles.
+description: معلومات إمكانية الوصول لوثائق Dotfiles. معايير WCAG AAA والتوافق مع قارئات الشاشة والقيود المعروفة ومعلومات الاتصال. متوافق مع macOS وLinux وWSL.
 lang: ar-SA
 author: Sebastien Rousseau
 lastUpdated: true

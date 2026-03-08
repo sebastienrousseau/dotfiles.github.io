@@ -1,6 +1,6 @@
 ---
 title: Alias Kubernetes | Dotfiles
-description: Alias Kubernetes untuk Dotfiles
+description: Jelajahi alias Kubernetes untuk Dotfiles Kompatibel dengan macOS, Linux, dan WSL melalui Dotfiles.
 lang: id-ID
 author: Sebastien Rousseau
 lastUpdated: true

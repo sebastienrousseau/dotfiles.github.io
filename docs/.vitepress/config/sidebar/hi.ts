@@ -11,6 +11,8 @@ export const hiSidebar = {
         "/hi/paths/",
         "/hi/compatibility/",
         "/hi/guides/secret-management/",
+        "/hi/guides/ssh-signing/",
+        "/hi/guides/gpg-configuration/",
       ],
     },
     {

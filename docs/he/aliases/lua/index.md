@@ -1,6 +1,6 @@
 ---
 title: "קיצורי Lua: גישה מהירה למפרשי Lua REPL"
-description: קיצורי מעטפת לפיתוח Lua. הפעל Lua, LuaJIT ו-Lua 5.1 REPL עם קיצורים פשוטים.
+description: קיצורי מעטפת לפיתוח Lua. הפעל Lua, LuaJIT ו-Lua 5.1 REPL עם קיצורים פשוטים. תואם ל-macOS, Linux ו-WSL דרך Dotfiles.
 lang: he
 author: Sebastien Rousseau
 lastUpdated: true

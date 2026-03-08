@@ -1,6 +1,6 @@
 ---
 title: "Aliases de Fontes: Gerenciamento de Cache de Fontes"
-description: Aliases de shell para gerenciar fontes do sistema e atualizar cache de fontes no Linux e macOS.
+description: Aliases de shell para gerenciar fontes do sistema e atualizar cache de fontes no Linux e macOS. Compatível com macOS, Linux e WSL via Dotfiles.
 lang: pt-BR
 author: Sebastien Rousseau
 lastUpdated: true

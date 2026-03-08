@@ -218,4 +218,4 @@ key.txt
 
 - [О проекте](/ru/about/)
 - [Матрица совместимости](/ru/compatibility/)
-- [Алиасы безопасности](/ru/alias/security/)
+- [Алиасы безопасности](/ru/aliases/security/)

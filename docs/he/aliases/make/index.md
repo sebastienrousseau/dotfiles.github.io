@@ -1,6 +1,6 @@
 ---
 title: "קיצורי Make: ייעל את זרימת העבודה בבנייה"
-description: קיצורים לפקודות Make. פשט בניות, בדיקות ואוטומציית פרויקטים.
+description: קיצורים לפקודות Make. פשט בניות, בדיקות ואוטומציית פרויקטים. תואם ל-macOS, Linux ו-WSL דרך Dotfiles.
 lang: he-IL
 author: Sebastien Rousseau
 lastUpdated: true

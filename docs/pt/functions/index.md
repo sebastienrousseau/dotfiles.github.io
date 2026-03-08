@@ -1,6 +1,6 @@
 ---
 title: Funções | Dotfiles
-description: Funções de shell fornecidas por Dotfiles para aprimorar sua experiência no terminal.
+description: Funções de shell fornecidas por Dotfiles para aprimorar sua experiência no terminal. Compatível com macOS, Linux e WSL via Dotfiles.
 lang: pt-BR
 author: Sebastien Rousseau
 lastUpdated: true

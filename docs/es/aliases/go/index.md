@@ -1,6 +1,6 @@
 ---
 title: "Alias Go: simplifica tu flujo de trabajo Go"
-description: Alias shell para desarrollo en Go. Ejecuta, compila, prueba y gestiona módulos con atajos.
+description: Alias shell para desarrollo en Go. Ejecuta, compila, prueba y gestiona módulos con atajos. Compatible con macOS, Linux y WSL a través de Dotfiles.
 lang: es-ES
 author: Sebastien Rousseau
 lastUpdated: true

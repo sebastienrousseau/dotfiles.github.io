@@ -1,6 +1,6 @@
 ---
 title: "קיצורי Diagnostics: פקודות תקינות מערכת ותיקון עצמי"
-description: קיצורי מעטפת לאבחון מערכת, בדיקות תקינות, זיהוי סטייה ותיקון עצמי בסביבת ה-dotfiles שלך.
+description: קיצורי מעטפת לאבחון מערכת, בדיקות תקינות, זיהוי סטייה ותיקון עצמי בסביבת ה-dotfiles שלך. תואם ל-macOS, Linux ו-WSL דרך Dotfiles.
 lang: he-IL
 author: Sebastien Rousseau
 lastUpdated: true

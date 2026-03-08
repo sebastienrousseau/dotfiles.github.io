@@ -1,6 +1,6 @@
 ---
 title: פונקציות | Dotfiles
-description: פונקציות מעטפת המשפרות את חוויית הטרמינל שלך. כלים לבדיקת API, ניהול קבצים, פעולות מערכת ועוד.
+description: פונקציות מעטפת המשפרות את חוויית הטרמינל שלך. כלים לבדיקת API, ניהול קבצים, פעולות מערכת ועוד. תואם ל-macOS, Linux ו-WSL דרך Dotfiles.
 lang: he-IL
 author: Sebastien Rousseau
 lastUpdated: true

@@ -1,6 +1,6 @@
 ---
 title: Takma Adlar | Dotfiles
-description: Dotfiles v0.2.495'teki 45 takma ad kategorisine genel bakış ve ekler.
+description: Dotfiles v0.2.495'teki 45 takma ad kategorisine genel bakış ve ekler. macOS, Linux ve WSL ile Dotfiles üzerinden uyumlu.
 lang: tr-TR
 author: Sebastien Rousseau
 lastUpdated: true

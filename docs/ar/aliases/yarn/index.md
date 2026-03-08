@@ -1,6 +1,6 @@
 ---
 title: اختصارات Yarn | Dotfiles
-description: اختصارات Yarn للشل لإدارة حزم JavaScript. مختصرات سريعة لتثبيت وإدارة التبعيات.
+description: اختصارات Yarn للشل لإدارة حزم JavaScript. مختصرات سريعة لتثبيت وإدارة التبعيات. متوافق مع macOS وLinux وWSL عبر Dotfiles.
 lang: ar-SA
 author: Sebastien Rousseau
 lastUpdated: true

@@ -1,6 +1,6 @@
 ---
 title: "Alias Kubernetes: simplifica la gestión de clusters"
-description: Acelera flujos Kubernetes con alias de kubectl, Helm y k9s. Gestiona pods, contextos y namespaces.
+description: Acelera flujos Kubernetes con alias de kubectl, Helm y k9s. Gestiona pods, contextos y namespaces. Compatible con macOS, Linux y WSL a través de Dotfiles.
 lang: es-ES
 author: Sebastien Rousseau
 lastUpdated: true

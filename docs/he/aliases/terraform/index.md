@@ -1,6 +1,6 @@
 ---
 title: קיצורי Terraform | Dotfiles
-description: קיצורי מעטפת Terraform ו-Ansible לתשתית כקוד. קיצורי דרך מהירים לזרימות עבודה IaC.
+description: קיצורי מעטפת Terraform ו-Ansible לתשתית כקוד. קיצורי דרך מהירים לזרימות עבודה IaC. תואם ל-macOS, Linux ו-WSL דרך Dotfiles.
 lang: he-IL
 author: Sebastien Rousseau
 lastUpdated: true

@@ -1,6 +1,6 @@
 ---
 title: "اختصارات Docker: بسّط سير عمل الحاويات"
-description: اختصارات Docker شاملة للحاويات والصور والأحجام والشبكات وCompose وSwarm. عزز إنتاجيتك بأوامر قصيرة.
+description: اختصارات Docker شاملة للحاويات والصور والأحجام والشبكات وCompose وSwarm. عزز إنتاجيتك بأوامر قصيرة. متوافق مع macOS وLinux وWSL عبر Dotfiles.
 lang: ar-SA
 author: Sebastien Rousseau
 lastUpdated: true

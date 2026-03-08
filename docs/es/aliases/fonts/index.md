@@ -1,6 +1,6 @@
 ---
 title: "Alias Fonts: gestionar fuentes del sistema"
-description: Alias shell para gestionar fuentes y cachés. Actualiza la caché y lista familias instaladas.
+description: Alias shell para gestionar fuentes y cachés. Actualiza la caché y lista familias instaladas. Compatible con macOS, Linux y WSL a través de Dotfiles.
 lang: es-ES
 author: Sebastien Rousseau
 lastUpdated: true

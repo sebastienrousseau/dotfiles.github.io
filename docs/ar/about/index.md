@@ -1,6 +1,6 @@
 ---
 title: حول Dotfiles
-description: الجيل التالي من إعدادات الشل. أداء عالٍ وآمن ومُحسّن للذكاء الاصطناعي. يُدار بواسطة Chezmoi.
+description: الجيل التالي من إعدادات الشل. أداء عالٍ وآمن ومُحسّن للذكاء الاصطناعي. يُدار بواسطة Chezmoi. متوافق مع macOS وLinux وWSL عبر Dotfiles.
 lang: ar-SA
 author: Sebastien Rousseau
 lastUpdated: true

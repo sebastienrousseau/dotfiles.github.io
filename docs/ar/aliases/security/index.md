@@ -1,6 +1,6 @@
 ---
 title: اختصارات Security | Dotfiles
-description: اختصارات أمنية لثبات الملفات وحماية الإعدادات. قفل وإلغاء قفل ملفات الشل الحرجة.
+description: اختصارات أمنية لثبات الملفات وحماية الإعدادات. قفل وإلغاء قفل ملفات الشل الحرجة. متوافق مع macOS وLinux وWSL عبر Dotfiles.
 lang: ar-SA
 author: Sebastien Rousseau
 lastUpdated: true

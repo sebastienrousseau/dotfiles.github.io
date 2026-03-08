@@ -1,6 +1,6 @@
 ---
 title: Hàm | Dotfiles
-description: Tham khảo hàm shell công khai từ Dotfiles v0.2.495.
+description: Tham khảo hàm shell công khai từ Dotfiles v0.2.495. Tương thích với macOS, Linux và WSL qua Dotfiles.
 lang: vi-VN
 author: Sebastien Rousseau
 lastUpdated: true

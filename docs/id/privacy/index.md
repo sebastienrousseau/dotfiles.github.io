@@ -1,6 +1,6 @@
 ---
 title: Privasi | Dotfiles (Bahasa Indonesia)
-description: Kebijakan privasi untuk dokumentasi Dotfiles.
+description: Jelajahi kebijakan privasi untuk dokumentasi Dotfiles. Kompatibel dengan macOS, Linux, dan WSL melalui Dotfiles.
 lang: id-ID
 author: Sebastien Rousseau
 lastUpdated: true

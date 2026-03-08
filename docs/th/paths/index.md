@@ -1,6 +1,6 @@
 ---
 title: พาธ | Dotfiles
-description: ภาพรวมลำดับความสำคัญ PATH และรายการที่มาจาก Dotfiles v0.2.495
+description: ภาพรวมลำดับความสำคัญ PATH และรายการที่มาจาก Dotfiles v0.2.495 รองรับ macOS, Linux และ WSL ผ่าน Dotfiles
 lang: th-TH
 author: Sebastien Rousseau
 lastUpdated: true
