@@ -1,3 +1,4 @@
+/* eslint-disable no-console -- Node CLI script, not browser code */
 import { spawn } from 'node:child_process'
 import http from 'node:http'
 
@@ -8,6 +9,7 @@ const urls = [`${base}/`, `${base}/en/`, `${base}/aliases/`, `${base}/fr/aliases
 const MAX_RETRIES = 2
 const DELAY_MS = 2000
 
+/** Wait until the VitePress preview server responds with a non-5xx status. */
 function waitForServer(timeoutMs = 30000) {
   const start = Date.now()
   return new Promise((resolve, reject) => {
@@ -30,10 +32,12 @@ function waitForServer(timeoutMs = 30000) {
   })
 }
 
+/** Return a promise that resolves after `ms` milliseconds. */
 function delay(ms) {
   return new Promise((resolve) => setTimeout(resolve, ms))
 }
 
+/** Spawn `@axe-core/cli` against `url` and resolve on exit code 0. */
 function runAxe(url) {
   return new Promise((resolve, reject) => {
     const axe = spawn('npx', ['@axe-core/cli', url, '--exit'], { stdio: 'inherit', shell: true })
@@ -50,7 +54,7 @@ try {
   await waitForServer()
 
   for (const url of urls) {
-    let lastErr
+    let lastErr = null
     for (let attempt = 0; attempt <= MAX_RETRIES; attempt++) {
       try {
         if (attempt > 0) {
