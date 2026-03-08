@@ -1,6 +1,6 @@
 ---
 title: Disk Usage Aliases | Dotfiles
-description: Short disk usage commands. Overview for Dotfiles v0.2.495.
+description: Monitor disk usage with aliases in Dotfiles v0.2.495. Quick commands for du, df, and ncdu storage analysis on macOS, Linux, and WSL.
 lang: en-GB
 author: Sebastien Rousseau
 lastUpdated: true

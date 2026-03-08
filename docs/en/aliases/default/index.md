@@ -1,6 +1,6 @@
 ---
 title: Default Aliases | Dotfiles
-description: Main daily shell aliases. Overview for Dotfiles v0.2.495.
+description: Explore default shell aliases in Dotfiles v0.2.495. Essential daily-use shortcuts for ls, cp, mv, and rm across macOS, Linux, and WSL.
 lang: en-GB
 author: Sebastien Rousseau
 lastUpdated: true

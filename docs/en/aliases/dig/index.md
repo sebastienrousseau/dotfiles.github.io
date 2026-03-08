@@ -1,6 +1,6 @@
 ---
 title: Dig Aliases | Dotfiles
-description: Short DNS query commands. Overview for Dotfiles v0.2.495.
+description: Explore DNS aliases in Dotfiles v0.2.495. Concise dig and nslookup commands for domain resolution and record queries on macOS, Linux, and WSL.
 lang: en-GB
 author: Sebastien Rousseau
 lastUpdated: true

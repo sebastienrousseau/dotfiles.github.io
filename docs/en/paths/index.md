@@ -1,6 +1,6 @@
 ---
 title: Paths | Dotfiles
-description: PATH precedence overview and entries sourced from Dotfiles v0.2.495.
+description: Explore PATH configuration in Dotfiles v0.2.495. Understand precedence, custom entries, and environment variable management across macOS, Linux, and WSL.
 lang: en-GB
 author: Sebastien Rousseau
 lastUpdated: true

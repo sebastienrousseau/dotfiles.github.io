@@ -1,6 +1,6 @@
 ---
 title: Go Aliases | Dotfiles
-description: Short Go tool commands. Overview for Dotfiles v0.2.495.
+description: Explore Go aliases in Dotfiles v0.2.495. Short commands for build, test, run, and module management in Go projects on macOS, Linux, and WSL.
 lang: en-GB
 author: Sebastien Rousseau
 lastUpdated: true

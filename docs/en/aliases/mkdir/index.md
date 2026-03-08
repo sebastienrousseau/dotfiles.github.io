@@ -1,6 +1,6 @@
 ---
 title: Mkdir Aliases | Dotfiles
-description: Short folder create commands. Overview for Dotfiles v0.2.495.
+description: Discover mkdir aliases in Dotfiles v0.2.495. Quick folder creation shortcuts with parent-directory support on macOS, Linux, and WSL.
 lang: en-GB
 author: Sebastien Rousseau
 lastUpdated: true

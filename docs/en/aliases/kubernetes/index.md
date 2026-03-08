@@ -1,6 +1,6 @@
 ---
 title: Kubernetes Aliases | Dotfiles
-description: Short kubectl and Helm commands. Overview for Dotfiles v0.2.495.
+description: Explore Kubernetes aliases in Dotfiles v0.2.495. Short kubectl and Helm commands for pod, deployment, and service management on any platform.
 lang: en-GB
 author: Sebastien Rousseau
 lastUpdated: true

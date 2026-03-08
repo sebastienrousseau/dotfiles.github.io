@@ -1,6 +1,6 @@
 ---
 title: Python Aliases | Dotfiles
-description: Short Python commands. Overview for Dotfiles v0.2.495.
+description: Explore Python aliases in Dotfiles v0.2.495. Short commands for pip, venv, pytest, and package management on macOS, Linux, and WSL.
 lang: en-GB
 author: Sebastien Rousseau
 lastUpdated: true

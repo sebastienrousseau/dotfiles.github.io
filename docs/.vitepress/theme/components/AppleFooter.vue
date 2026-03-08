@@ -2,17 +2,19 @@
 import { computed } from 'vue'
 import { useRoute } from 'vitepress'
 import { LOCALE_KEYS } from '../../config/seo'
+import { getUiStrings } from '../../config/i18n'
 
 const route = useRoute()
 const currentYear = new Date().getFullYear()
 
-// Detect locale prefix from current route (e.g. "/fr/about/" → "/fr")
-const localePrefix = computed(() => {
+const locale = computed(() => {
   const segments = route.path.split('/').filter(Boolean)
   const first = segments[0]
-  if (first && LOCALE_KEYS.has(first)) return `/${first}`
-  return '/en'
+  return first && LOCALE_KEYS.has(first) ? first : 'en'
 })
+
+const localePrefix = computed(() => `/${locale.value}`)
+const t = computed(() => getUiStrings(locale.value).footer)
 
 function localLink(path: string): string {
   return `${localePrefix.value}${path}`
@@ -24,58 +26,58 @@ function localLink(path: string): string {
     <div class="apple-footer-inner">
       <nav class="apple-footer-nav" aria-label="Footer navigation">
         <div class="apple-footer-column">
-          <h3 class="apple-footer-title">Documentation</h3>
+          <h3 class="apple-footer-title">{{ t.documentation }}</h3>
           <ul>
-            <li><a :href="localLink('/about/')">About</a></li>
-            <li><a :href="localLink('/functions/')">Functions</a></li>
-            <li><a :href="localLink('/paths/')">Paths</a></li>
-            <li><a :href="localLink('/aliases/')">Aliases</a></li>
+            <li><a :href="localLink('/about/')">{{ t.about }}</a></li>
+            <li><a :href="localLink('/functions/')">{{ t.functions }}</a></li>
+            <li><a :href="localLink('/paths/')">{{ t.paths }}</a></li>
+            <li><a :href="localLink('/aliases/')">{{ t.aliases }}</a></li>
           </ul>
         </div>
         <div class="apple-footer-column">
-          <h3 class="apple-footer-title">Resources</h3>
+          <h3 class="apple-footer-title">{{ t.resources }}</h3>
           <ul>
             <li>
               <a
                 href="https://github.com/sebastienrousseau/dotfiles.github.io"
                 target="_blank"
                 rel="noopener noreferrer"
-              >GitHub<span class="visually-hidden"> (opens in new tab)</span></a>
+              >{{ t.github }}<span class="visually-hidden"> (opens in new tab)</span></a>
             </li>
             <li>
               <a
                 href="https://github.com/sebastienrousseau/dotfiles.github.io/issues"
                 target="_blank"
                 rel="noopener noreferrer"
-              >Issues<span class="visually-hidden"> (opens in new tab)</span></a>
+              >{{ t.issues }}<span class="visually-hidden"> (opens in new tab)</span></a>
             </li>
             <li>
               <a
                 href="https://github.com/sebastienrousseau/dotfiles.github.io/releases"
                 target="_blank"
                 rel="noopener noreferrer"
-              >Releases<span class="visually-hidden"> (opens in new tab)</span></a>
+              >{{ t.releases }}<span class="visually-hidden"> (opens in new tab)</span></a>
             </li>
           </ul>
         </div>
         <div class="apple-footer-column">
-          <h3 class="apple-footer-title">Legal</h3>
+          <h3 class="apple-footer-title">{{ t.legal }}</h3>
           <ul>
-            <li><a :href="localLink('/accessibility/')">Accessibility</a></li>
-            <li><a :href="localLink('/privacy/')">Privacy</a></li>
-            <li><a :href="localLink('/terms/')">Terms</a></li>
-            <li><a :href="localLink('/contact/')">Contact</a></li>
+            <li><a :href="localLink('/accessibility/')">{{ t.accessibility }}</a></li>
+            <li><a :href="localLink('/privacy/')">{{ t.privacy }}</a></li>
+            <li><a :href="localLink('/terms/')">{{ t.terms }}</a></li>
+            <li><a :href="localLink('/contact/')">{{ t.contact }}</a></li>
           </ul>
         </div>
       </nav>
       <div class="apple-footer-divider" aria-hidden="true"></div>
       <div class="apple-footer-bottom">
         <p class="apple-footer-copyright">
-          Copyright &copy; Dotfiles 2015&ndash;{{ currentYear }}. All rights reserved.
+          {{ t.copyright }} &copy; Dotfiles 2015&ndash;{{ currentYear }}.
         </p>
         <ul class="apple-footer-legal" aria-label="Legal links">
-          <li><a :href="localLink('/privacy/')">Privacy Policy</a></li>
-          <li><a :href="localLink('/terms/')">Terms of Use</a></li>
+          <li><a :href="localLink('/privacy/')">{{ t.privacyPolicy }}</a></li>
+          <li><a :href="localLink('/terms/')">{{ t.termsOfUse }}</a></li>
         </ul>
       </div>
     </div>

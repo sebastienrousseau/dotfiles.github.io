@@ -1,6 +1,6 @@
 ---
 title: Aliases | Dotfiles
-description: Overview and appendices for 45 alias categories in Dotfiles v0.2.495.
+description: Browse all 45 alias categories in Dotfiles v0.2.495. Over 1,200 shell shortcuts for Git, Docker, Kubernetes, and more on macOS, Linux, and WSL.
 lang: en-GB
 author: Sebastien Rousseau
 lastUpdated: true
@@ -19,10 +19,7 @@ permalink: /en/aliases/
 
 # Aliases
 
-Each alias group has two pages:
-
-- **Overview** with quick examples.
-- **Reference appendix** with the full list.
+Dotfiles ships over 1 200 shell aliases organised into 45 categories covering Git, Docker, Kubernetes, AI tooling, Rust, Python, and more. Each alias group has two pages: an **overview** with quick usage examples and a **reference appendix** listing every alias, its expansion, and supported shells so you can find exactly the shortcut you need.
 
 ## Category map
 

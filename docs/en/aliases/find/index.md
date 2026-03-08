@@ -1,6 +1,6 @@
 ---
 title: Find Aliases | Dotfiles
-description: Short file search commands. Overview for Dotfiles v0.2.495.
+description: Search files with find aliases in Dotfiles v0.2.495. Concise commands for recursive search, filtering, and pattern matching on macOS, Linux, and WSL.
 lang: en-GB
 author: Sebastien Rousseau
 lastUpdated: true

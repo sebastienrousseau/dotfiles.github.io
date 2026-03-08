@@ -3,6 +3,13 @@
    All color ratios verified against 7:1 (normal text) / 4.5:1 (large text)
    ========================================================================== */
 
+/* ---------- Font-display safeguard (Lighthouse) ---------- */
+@font-face {
+  font-family: fallback-sans;
+  src: local('system-ui');
+  font-display: swap;
+}
+
 /* ---------- Design Tokens: Light Mode ---------- */
 :root {
   color-scheme: light;
@@ -184,7 +191,7 @@ a:hover {
 .skip-link {
   position: fixed;
   top: 8px;
-  left: 8px;
+  inset-inline-start: 8px;
   z-index: 9999;
   background: #1d1d1f;
   color: #ffffff;
@@ -376,12 +383,31 @@ a:hover {
   padding-top: 1rem;
 }
 
+.VPHomeHero {
+  background: url('/images/hero-bg.webp') center/cover no-repeat;
+  position: relative;
+}
+
+.VPHomeHero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.82);
+  z-index: 0;
+}
+
+.dark .VPHomeHero::before {
+  background: rgba(0, 0, 0, 0.78);
+}
+
 .VPHomeHero .container {
   max-width: 980px;
   margin: 0 auto;
   padding: 5rem 24px 0;
   display: block;
   text-align: center;
+  position: relative;
+  z-index: 1;
 }
 
 .VPHomeHero .main {

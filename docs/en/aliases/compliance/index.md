@@ -1,6 +1,6 @@
 ---
 title: Compliance Aliases | Dotfiles
-description: Short compliance commands. Overview for Dotfiles v0.2.495.
+description: Explore compliance aliases in Dotfiles v0.2.495. Short commands for policy checks, audit logging, and regulatory scanning on macOS, Linux, and WSL.
 lang: en-GB
 author: Sebastien Rousseau
 lastUpdated: true

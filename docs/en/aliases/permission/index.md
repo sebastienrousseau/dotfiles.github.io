@@ -1,6 +1,6 @@
 ---
 title: Permission Aliases | Dotfiles
-description: Short permission and owner commands. Overview for Dotfiles v0.2.495.
+description: Manage permission aliases in Dotfiles v0.2.495. Short commands for chmod, chown, and ACL management across macOS, Linux, and WSL.
 lang: en-GB
 author: Sebastien Rousseau
 lastUpdated: true

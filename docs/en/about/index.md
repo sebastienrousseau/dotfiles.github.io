@@ -1,6 +1,6 @@
 ---
 title: About Dotfiles | Dotfiles
-description: Technical overview of Dotfiles v0.2.495.
+description: Learn how Dotfiles v0.2.495 delivers security-first shell configuration with Chezmoi, 1,200+ aliases, and Rust-powered CLI tools for macOS, Linux, and WSL.
 lang: en-GB
 author: Sebastien Rousseau
 lastUpdated: true
@@ -19,7 +19,7 @@ permalink: /en/about/
 
 # About Dotfiles
 
-Dotfiles v0.2.495 is a cross-platform shell configuration managed by Chezmoi.
+Dotfiles v0.2.495 is a cross-platform shell configuration framework managed by Chezmoi, providing security-first defaults for Bash, Zsh, and Fish across macOS, Linux, and WSL2. It bundles over 1 200 aliases, modern Rust-based CLI replacements, and automated secret management so developers can set up a fully configured terminal environment in minutes.
 
 ## Install
 

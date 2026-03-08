@@ -1,6 +1,6 @@
 ---
 title: Archives Aliases | Dotfiles
-description: Short archive command names. Overview for Dotfiles v0.2.495.
+description: Explore archive aliases in Dotfiles v0.2.495. Concise commands for tar, zip, gzip, and bzip2 operations across macOS, Linux, and WSL environments.
 lang: en-GB
 author: Sebastien Rousseau
 lastUpdated: true

@@ -2,6 +2,7 @@ import { defineConfig } from 'vitepress'
 import { sharedHead } from './config/head'
 import { buildJsonLd } from './config/schema'
 import { DEFAULT_AUTHOR, DEFAULT_TWITTER, buildHreflangTags, resolvePageMeta, slugToTitle, SITE_NAME, SITE_URL } from './config/seo'
+import { getUiStrings } from './config/i18n'
 
 import { arNavbar } from './config/nav/ar'
 import { deNavbar } from './config/nav/de'
@@ -50,17 +51,21 @@ import { thSidebar } from './config/sidebar/th'
 import { roSidebar } from './config/sidebar/ro'
 
 function hasNavItems(nav: unknown): nav is Array<{ text: string; link: string }> {
-  return Array.isArray(nav) && nav.length > 0
+  // Require at least 2 items — single-item legacy navs should use the
+  // full translated fallbackNav instead.
+  return Array.isArray(nav) && nav.length >= 6
 }
 
 function fallbackNav(prefix: string, aliasSegment = 'aliases') {
+  const locale = prefix.replace(/\//g, '') || 'en'
+  const t = getUiStrings(locale).nav
   return [
-    { text: 'About', link: `${prefix}about/` },
-    { text: 'Functions', link: `${prefix}functions/` },
-    { text: 'Paths', link: `${prefix}paths/` },
-    { text: 'Aliases', link: `${prefix}${aliasSegment}/` },
-    { text: 'Compatibility', link: `${prefix}compatibility/` },
-    { text: 'Guides', link: `${prefix}guides/secret-management/` },
+    { text: t.about, link: `${prefix}about/` },
+    { text: t.functions, link: `${prefix}functions/` },
+    { text: t.paths, link: `${prefix}paths/` },
+    { text: t.aliases, link: `${prefix}${aliasSegment}/` },
+    { text: t.compatibility, link: `${prefix}compatibility/` },
+    { text: t.guides, link: `${prefix}guides/secret-management/` },
   ]
 }
 
@@ -135,6 +140,13 @@ export default defineConfig({
     }
 
     fm.title = fm.title || meta.title
+
+    // Set pageData.title so VitePress's auto-generated <title> includes
+    // the locale suffix (e.g. "(FR)") — meta.title already contains it.
+    // Use :title to suppress VitePress's default " | SiteName" suffix
+    // since meta.title already includes "| Dotfiles".
+    pageData.title = meta.title
+    pageData.titleTemplate = ':title'
     fm.description = fm.description || meta.description
     fm.lang = fm.lang || meta.locale
     fm.author = fm.author || DEFAULT_AUTHOR
@@ -175,6 +187,15 @@ export default defineConfig({
     }
   },
   transformHead({ pageData }) {
+    // Root index.md → instant redirect to /en/ (the root locale's link
+    // is '/en/' which confuses VitePress's locale-switcher path math).
+    if (pageData.relativePath === 'index.md') {
+      return [
+        ['meta', { 'http-equiv': 'refresh', content: '0;url=/en/' }],
+        ['link', { rel: 'canonical', href: `${SITE_URL}/en/` }],
+      ]
+    }
+
     const fm = pageData.frontmatter as Record<string, string | undefined>
     const meta = resolvePageMeta(pageData)
     const jsonLd = buildJsonLd(meta, pageData.frontmatter, meta.title, pageData.lastUpdated)
@@ -183,7 +204,6 @@ export default defineConfig({
     const hreflangTags = buildHreflangTags(meta.routePath)
 
     return [
-      ['title', {}, meta.title],
       ['meta', { name: 'description', content: meta.description }],
       ['link', { rel: 'canonical', href: meta.canonical }],
       ['meta', { name: 'robots', content: meta.robots }],
@@ -217,66 +237,8 @@ export default defineConfig({
   themeConfig: {
     siteTitle: 'Dotfiles',
     langMenuLabel: 'Languages',
-    nav: withLocalizedLegalNav([
-      { text: 'About', link: '/en/about/' },
-      { text: 'Functions', link: '/en/functions/' },
-      { text: 'Paths', link: '/en/paths/' },
-      { text: 'Aliases', link: '/en/aliases/' },
-      { text: 'Compatibility', link: '/en/compatibility/' },
-      { text: 'Guides', link: '/en/guides/secret-management/' },
-      {
-        text: 'Languages',
-        items: [
-          { text: 'English', link: '/en/' },
-          { text: 'العربية', link: '/ar/' },
-          { text: 'Deutsch', link: '/de/' },
-          { text: 'Español', link: '/es/' },
-          { text: 'Français', link: '/fr/' },
-          { text: 'עברית', link: '/he/' },
-          { text: 'हिंदी', link: '/hi/' },
-          { text: 'Bahasa Indonesia', link: '/id/' },
-          { text: 'Italiano', link: '/it/' },
-          { text: '日本語', link: '/ja/' },
-          { text: '한국어', link: '/ko/' },
-          { text: 'Nederlands', link: '/nl/' },
-          { text: 'Português', link: '/pt/' },
-          { text: 'Русский', link: '/ru/' },
-          { text: '简体中文', link: '/zh/' },
-          { text: 'Tiếng Việt', link: '/vi/' },
-          { text: 'Türkçe', link: '/tr/' },
-          { text: 'Polski', link: '/pl/' },
-          { text: 'Українська', link: '/uk/' },
-          { text: '繁體中文', link: '/zh-tw/' },
-          { text: 'ไทย', link: '/th/' },
-          { text: 'Română', link: '/ro/' },
-        ],
-      },
-    ]),
-    sidebar: {
-      '/': convertSidebar(enSidebar['/']),
-      '/en/': convertSidebar(prefixLegacySidebar(enSidebar['/'], '/en')),
-      '/ar/': convertSidebar(arSidebar['/ar/']),
-      '/de/': convertSidebar(deSidebar['/de/']),
-      '/es/': convertSidebar(esSidebar['/es/']),
-      '/fr/': convertSidebar(frSidebar['/fr/']),
-      '/he/': convertSidebar(heSidebar['/he/']),
-      '/hi/': convertSidebar(hiSidebar['/hi/']),
-      '/id/': convertSidebar(idSidebar['/id/']),
-      '/it/': convertSidebar(itSidebar['/it/']),
-      '/ja/': convertSidebar(jaSidebar['/ja/']),
-      '/ko/': convertSidebar(koSidebar['/ko/']),
-      '/nl/': convertSidebar(nlSidebar['/nl/']),
-      '/pt/': convertSidebar(ptSidebar['/pt/']),
-      '/ru/': convertSidebar(ruSidebar['/ru/']),
-      '/zh/': convertSidebar(zhSidebar['/zh/']),
-      '/vi/': convertSidebar(viSidebar['/vi/']),
-      '/tr/': convertSidebar(trSidebar['/tr/']),
-      '/pl/': convertSidebar(plSidebar['/pl/']),
-      '/uk/': convertSidebar(ukSidebar['/uk/']),
-      '/zh-tw/': convertSidebar(zhtwSidebar['/zh-tw/']),
-      '/th/': convertSidebar(thSidebar['/th/']),
-      '/ro/': convertSidebar(roSidebar['/ro/']),
-    },
+    nav: fallbackNav('/en/'),
+    sidebar: convertSidebar(prefixLegacySidebar(enSidebar['/'], '/en')),
     search: {
       provider: 'local',
       options: {
@@ -316,262 +278,117 @@ export default defineConfig({
       copyright: '',
     },
     socialLinks: [{ icon: 'github', link: 'https://github.com/sebastienrousseau/dotfiles.github.io' }],
-    locales: {
-      root: {
-        label: 'English',
-        link: '/',
-        nav: withLocalizedLegalNav((hasNavItems(enNavbar) ? enNavbar : fallbackNav('/en/')) as NavItem[]),
-        sidebar: convertSidebar(prefixLegacySidebar(enSidebar['/'], '/en')),
-      },
-      en: {
-        label: 'English',
-        link: '/en/',
-        nav: withLocalizedLegalNav((hasNavItems(enNavbar) ? enNavbar : fallbackNav('/en/')) as NavItem[]),
-        sidebar: convertSidebar(prefixLegacySidebar(enSidebar['/'], '/en')),
-      },
-      ar: {
-        label: 'العربية',
-        link: '/ar/',
-        nav: withLocalizedLegalNav((hasNavItems(arNavbar) ? arNavbar : fallbackNav('/ar/')) as NavItem[]),
-        sidebar: convertSidebar(arSidebar['/ar/']),
-      },
-      de: {
-        label: 'Deutsch',
-        link: '/de/',
-        nav: withLocalizedLegalNav((hasNavItems(deNavbar) ? deNavbar : fallbackNav('/de/')) as NavItem[]),
-        sidebar: convertSidebar(deSidebar['/de/']),
-      },
-      es: {
-        label: 'Español',
-        link: '/es/',
-        nav: withLocalizedLegalNav((hasNavItems(esNavbar) ? esNavbar : fallbackNav('/es/')) as NavItem[]),
-        sidebar: convertSidebar(esSidebar['/es/']),
-      },
-      fr: {
-        label: 'Français',
-        link: '/fr/',
-        nav: withLocalizedLegalNav((hasNavItems(frNavbar) ? frNavbar : fallbackNav('/fr/')) as NavItem[]),
-        sidebar: convertSidebar(frSidebar['/fr/']),
-      },
-      he: {
-        label: 'עברית',
-        link: '/he/',
-        nav: withLocalizedLegalNav((hasNavItems(heNavbar) ? heNavbar : fallbackNav('/he/')) as NavItem[]),
-        sidebar: convertSidebar(heSidebar['/he/']),
-      },
-      hi: {
-        label: 'हिंदी',
-        link: '/hi/',
-        nav: withLocalizedLegalNav((hasNavItems(hiNavbar) ? hiNavbar : fallbackNav('/hi/')) as NavItem[]),
-        sidebar: convertSidebar(hiSidebar['/hi/']),
-      },
-      id: {
-        label: 'Bahasa Indonesia',
-        link: '/id/',
-        nav: withLocalizedLegalNav((hasNavItems(idNavbar) ? idNavbar : fallbackNav('/id/')) as NavItem[]),
-        sidebar: convertSidebar(idSidebar['/id/']),
-      },
-      it: {
-        label: 'Italiano',
-        link: '/it/',
-        nav: withLocalizedLegalNav((hasNavItems(itNavbar) ? itNavbar : fallbackNav('/it/')) as NavItem[]),
-        sidebar: convertSidebar(itSidebar['/it/']),
-      },
-      ja: {
-        label: '日本語',
-        link: '/ja/',
-        nav: withLocalizedLegalNav((hasNavItems(jaNavbar) ? jaNavbar : fallbackNav('/ja/', 'alias')) as NavItem[]),
-        sidebar: convertSidebar(jaSidebar['/ja/']),
-      },
-      ko: {
-        label: '한국어',
-        link: '/ko/',
-        nav: withLocalizedLegalNav((hasNavItems(koNavbar) ? koNavbar : fallbackNav('/ko/', 'alias')) as NavItem[]),
-        sidebar: convertSidebar(koSidebar['/ko/']),
-      },
-      nl: {
-        label: 'Nederlands',
-        link: '/nl/',
-        nav: withLocalizedLegalNav((hasNavItems(nlNavbar) ? nlNavbar : fallbackNav('/nl/')) as NavItem[]),
-        sidebar: convertSidebar(nlSidebar['/nl/']),
-      },
-      pt: {
-        label: 'Português',
-        link: '/pt/',
-        nav: withLocalizedLegalNav((hasNavItems(ptNavbar) ? ptNavbar : fallbackNav('/pt/')) as NavItem[]),
-        sidebar: convertSidebar(ptSidebar['/pt/']),
-      },
-      ru: {
-        label: 'Русский',
-        link: '/ru/',
-        nav: withLocalizedLegalNav((hasNavItems(ruNavbar) ? ruNavbar : fallbackNav('/ru/', 'alias')) as NavItem[]),
-        sidebar: convertSidebar(ruSidebar['/ru/']),
-      },
-      zh: {
-        label: '简体中文',
-        link: '/zh/',
-        nav: withLocalizedLegalNav((hasNavItems(zhNavbar) ? zhNavbar : fallbackNav('/zh/')) as NavItem[]),
-        sidebar: convertSidebar(zhSidebar['/zh/']),
-      },
-      vi: {
-        label: 'Tiếng Việt',
-        link: '/vi/',
-        nav: withLocalizedLegalNav((hasNavItems(viNavbar) ? viNavbar : fallbackNav('/vi/')) as NavItem[]),
-        sidebar: convertSidebar(viSidebar['/vi/']),
-      },
-      tr: {
-        label: 'Türkçe',
-        link: '/tr/',
-        nav: withLocalizedLegalNav((hasNavItems(trNavbar) ? trNavbar : fallbackNav('/tr/')) as NavItem[]),
-        sidebar: convertSidebar(trSidebar['/tr/']),
-      },
-      pl: {
-        label: 'Polski',
-        link: '/pl/',
-        nav: withLocalizedLegalNav((hasNavItems(plNavbar) ? plNavbar : fallbackNav('/pl/')) as NavItem[]),
-        sidebar: convertSidebar(plSidebar['/pl/']),
-      },
-      uk: {
-        label: 'Українська',
-        link: '/uk/',
-        nav: withLocalizedLegalNav((hasNavItems(ukNavbar) ? ukNavbar : fallbackNav('/uk/')) as NavItem[]),
-        sidebar: convertSidebar(ukSidebar['/uk/']),
-      },
-      'zh-tw': {
-        label: '繁體中文',
-        link: '/zh-tw/',
-        nav: withLocalizedLegalNav((hasNavItems(zhtwNavbar) ? zhtwNavbar : fallbackNav('/zh-tw/')) as NavItem[]),
-        sidebar: convertSidebar(zhtwSidebar['/zh-tw/']),
-      },
-      th: {
-        label: 'ไทย',
-        link: '/th/',
-        nav: withLocalizedLegalNav((hasNavItems(thNavbar) ? thNavbar : fallbackNav('/th/')) as NavItem[]),
-        sidebar: convertSidebar(thSidebar['/th/']),
-      },
-      ro: {
-        label: 'Română',
-        link: '/ro/',
-        nav: withLocalizedLegalNav((hasNavItems(roNavbar) ? roNavbar : fallbackNav('/ro/')) as NavItem[]),
-        sidebar: convertSidebar(roSidebar['/ro/']),
-      },
-    },
   },
   locales: {
     root: {
-      lang: 'en-GB',
-      title: 'Dotfiles',
+      label: '🇬🇧 English', link: '/en/', lang: 'en-GB', title: 'Dotfiles',
       description: 'Cross-platform shell configuration for macOS, Linux, and WSL. Managed by Chezmoi with Zsh, Neovim, and tmux.',
-    },
-    en: {
-      lang: 'en-GB',
-      title: 'Dotfiles',
-      description: 'Cross-platform shell configuration for macOS, Linux, and WSL. Managed by Chezmoi with Zsh, Neovim, and tmux.',
+      themeConfig: { nav: withLocalizedLegalNav(fallbackNav('/en/') as NavItem[]), sidebar: { '/': convertSidebar(enSidebar['/']), '/en/': convertSidebar(prefixLegacySidebar(enSidebar['/'], '/en')) } },
     },
     ar: {
-      lang: 'ar-SA',
-      title: 'Dotfiles',
+      label: '🇸🇦 العربية', link: '/ar/', lang: 'ar-SA', title: 'Dotfiles',
       description: 'تكوين شل عابر للمنصات لنظام macOS و Linux و WSL. مُدار بواسطة Chezmoi مع Zsh و Neovim و tmux.',
+      themeConfig: { nav: withLocalizedLegalNav(fallbackNav('/ar/') as NavItem[]), sidebar: { '/ar/': convertSidebar(arSidebar['/ar/']) } },
     },
     de: {
-      lang: 'de-DE',
-      title: 'Dotfiles',
+      label: '🇩🇪 Deutsch', link: '/de/', lang: 'de-DE', title: 'Dotfiles',
       description: 'Plattformübergreifende Shell-Konfiguration für macOS, Linux und WSL. Verwaltet mit Chezmoi, Zsh, Neovim und tmux.',
+      themeConfig: { nav: withLocalizedLegalNav(fallbackNav('/de/') as NavItem[]), sidebar: { '/de/': convertSidebar(deSidebar['/de/']) } },
     },
     es: {
-      lang: 'es-ES',
-      title: 'Dotfiles',
+      label: '🇪🇸 Español', link: '/es/', lang: 'es-ES', title: 'Dotfiles',
       description: 'Configuración de shell multiplataforma para macOS, Linux y WSL. Gestionada con Chezmoi, Zsh, Neovim y tmux.',
+      themeConfig: { nav: withLocalizedLegalNav(fallbackNav('/es/') as NavItem[]), sidebar: { '/es/': convertSidebar(esSidebar['/es/']) } },
     },
     fr: {
-      lang: 'fr-FR',
-      title: 'Dotfiles',
+      label: '🇫🇷 Français', link: '/fr/', lang: 'fr-FR', title: 'Dotfiles',
       description: 'Configuration shell multiplateforme pour macOS, Linux et WSL. Gérée par Chezmoi avec Zsh, Neovim et tmux.',
+      themeConfig: { nav: withLocalizedLegalNav(fallbackNav('/fr/') as NavItem[]), sidebar: { '/fr/': convertSidebar(frSidebar['/fr/']) } },
     },
     he: {
-      lang: 'he-IL',
-      title: 'Dotfiles',
+      label: '🇮🇱 עברית', link: '/he/', lang: 'he-IL', title: 'Dotfiles',
       description: 'תצורת של חוצה פלטפורמות עבור macOS, Linux ו-WSL. מנוהל על ידי Chezmoi עם Zsh, Neovim ו-tmux.',
+      themeConfig: { nav: withLocalizedLegalNav(fallbackNav('/he/') as NavItem[]), sidebar: { '/he/': convertSidebar(heSidebar['/he/']) } },
     },
     hi: {
-      lang: 'hi-IN',
-      title: 'Dotfiles',
+      label: '🇮🇳 हिंदी', link: '/hi/', lang: 'hi-IN', title: 'Dotfiles',
       description: 'macOS, Linux और WSL के लिए क्रॉस-प्लेटफ़ॉर्म शेल कॉन्फ़िगरेशन। Chezmoi, Zsh, Neovim और tmux द्वारा प्रबंधित।',
+      themeConfig: { nav: withLocalizedLegalNav(fallbackNav('/hi/') as NavItem[]), sidebar: { '/hi/': convertSidebar(hiSidebar['/hi/']) } },
     },
     id: {
-      lang: 'id-ID',
-      title: 'Dotfiles',
+      label: '🇮🇩 Bahasa Indonesia', link: '/id/', lang: 'id-ID', title: 'Dotfiles',
       description: 'Konfigurasi shell lintas platform untuk macOS, Linux, dan WSL. Dikelola dengan Chezmoi, Zsh, Neovim, dan tmux.',
+      themeConfig: { nav: withLocalizedLegalNav(fallbackNav('/id/') as NavItem[]), sidebar: { '/id/': convertSidebar(idSidebar['/id/']) } },
     },
     it: {
-      lang: 'it-IT',
-      title: 'Dotfiles',
+      label: '🇮🇹 Italiano', link: '/it/', lang: 'it-IT', title: 'Dotfiles',
       description: 'Configurazione shell multipiattaforma per macOS, Linux e WSL. Gestita con Chezmoi, Zsh, Neovim e tmux.',
+      themeConfig: { nav: withLocalizedLegalNav(fallbackNav('/it/') as NavItem[]), sidebar: { '/it/': convertSidebar(itSidebar['/it/']) } },
     },
     ja: {
-      lang: 'ja-JP',
-      title: 'Dotfiles',
+      label: '🇯🇵 日本語', link: '/ja/', lang: 'ja-JP', title: 'Dotfiles',
       description: 'macOS、Linux、WSL向けのクロスプラットフォームシェル設定。Chezmoi、Zsh、Neovim、tmuxで管理。',
+      themeConfig: { nav: withLocalizedLegalNav(fallbackNav('/ja/', 'alias') as NavItem[]), sidebar: { '/ja/': convertSidebar(jaSidebar['/ja/']) } },
     },
     ko: {
-      lang: 'ko-KR',
-      title: 'Dotfiles',
+      label: '🇰🇷 한국어', link: '/ko/', lang: 'ko-KR', title: 'Dotfiles',
       description: 'macOS, Linux, WSL을 위한 크로스 플랫폼 셸 구성. Chezmoi, Zsh, Neovim, tmux로 관리.',
+      themeConfig: { nav: withLocalizedLegalNav(fallbackNav('/ko/', 'alias') as NavItem[]), sidebar: { '/ko/': convertSidebar(koSidebar['/ko/']) } },
     },
     nl: {
-      lang: 'nl-NL',
-      title: 'Dotfiles',
+      label: '🇳🇱 Nederlands', link: '/nl/', lang: 'nl-NL', title: 'Dotfiles',
       description: 'Cross-platform shellconfiguratie voor macOS, Linux en WSL. Beheerd met Chezmoi, Zsh, Neovim en tmux.',
+      themeConfig: { nav: withLocalizedLegalNav(fallbackNav('/nl/') as NavItem[]), sidebar: { '/nl/': convertSidebar(nlSidebar['/nl/']) } },
     },
     pt: {
-      lang: 'pt-BR',
-      title: 'Dotfiles',
+      label: '🇧🇷 Português', link: '/pt/', lang: 'pt-BR', title: 'Dotfiles',
       description: 'Configuração de shell multiplataforma para macOS, Linux e WSL. Gerenciada com Chezmoi, Zsh, Neovim e tmux.',
+      themeConfig: { nav: withLocalizedLegalNav(fallbackNav('/pt/') as NavItem[]), sidebar: { '/pt/': convertSidebar(ptSidebar['/pt/']) } },
     },
     ru: {
-      lang: 'ru-RU',
-      title: 'Dotfiles',
+      label: '🇷🇺 Русский', link: '/ru/', lang: 'ru-RU', title: 'Dotfiles',
       description: 'Кроссплатформенная конфигурация оболочки для macOS, Linux и WSL. Управляется Chezmoi с Zsh, Neovim и tmux.',
+      themeConfig: { nav: withLocalizedLegalNav(fallbackNav('/ru/', 'alias') as NavItem[]), sidebar: { '/ru/': convertSidebar(ruSidebar['/ru/']) } },
     },
     zh: {
-      lang: 'zh-CN',
-      title: 'Dotfiles',
+      label: '🇨🇳 简体中文', link: '/zh/', lang: 'zh-CN', title: 'Dotfiles',
       description: '适用于 macOS、Linux 和 WSL 的跨平台 Shell 配置。使用 Chezmoi、Zsh、Neovim 和 tmux 管理。',
+      themeConfig: { nav: withLocalizedLegalNav(fallbackNav('/zh/') as NavItem[]), sidebar: { '/zh/': convertSidebar(zhSidebar['/zh/']) } },
     },
     vi: {
-      lang: 'vi-VN',
-      title: 'Dotfiles',
+      label: '🇻🇳 Tiếng Việt', link: '/vi/', lang: 'vi-VN', title: 'Dotfiles',
       description: 'Cấu hình shell đa nền tảng cho macOS, Linux và WSL. Quản lý bởi Chezmoi với Zsh, Neovim và tmux.',
+      themeConfig: { nav: withLocalizedLegalNav(fallbackNav('/vi/') as NavItem[]), sidebar: { '/vi/': convertSidebar(viSidebar['/vi/']) } },
     },
     tr: {
-      lang: 'tr-TR',
-      title: 'Dotfiles',
+      label: '🇹🇷 Türkçe', link: '/tr/', lang: 'tr-TR', title: 'Dotfiles',
       description: 'macOS, Linux ve WSL için çapraz platform kabuk yapılandırması. Chezmoi, Zsh, Neovim ve tmux ile yönetilir.',
+      themeConfig: { nav: withLocalizedLegalNav(fallbackNav('/tr/') as NavItem[]), sidebar: { '/tr/': convertSidebar(trSidebar['/tr/']) } },
     },
     pl: {
-      lang: 'pl-PL',
-      title: 'Dotfiles',
+      label: '🇵🇱 Polski', link: '/pl/', lang: 'pl-PL', title: 'Dotfiles',
       description: 'Wieloplatformowa konfiguracja powłoki dla macOS, Linux i WSL. Zarządzana przez Chezmoi z Zsh, Neovim i tmux.',
+      themeConfig: { nav: withLocalizedLegalNav(fallbackNav('/pl/') as NavItem[]), sidebar: { '/pl/': convertSidebar(plSidebar['/pl/']) } },
     },
     uk: {
-      lang: 'uk-UA',
-      title: 'Dotfiles',
+      label: '🇺🇦 Українська', link: '/uk/', lang: 'uk-UA', title: 'Dotfiles',
       description: 'Кросплатформна конфігурація оболонки для macOS, Linux та WSL. Керується Chezmoi з Zsh, Neovim та tmux.',
+      themeConfig: { nav: withLocalizedLegalNav(fallbackNav('/uk/') as NavItem[]), sidebar: { '/uk/': convertSidebar(ukSidebar['/uk/']) } },
     },
     'zh-tw': {
-      lang: 'zh-TW',
-      title: 'Dotfiles',
+      label: '🇹🇼 繁體中文', link: '/zh-tw/', lang: 'zh-TW', title: 'Dotfiles',
       description: '適用於 macOS、Linux 和 WSL 的跨平台 Shell 配置。使用 Chezmoi、Zsh、Neovim 和 tmux 管理。',
+      themeConfig: { nav: withLocalizedLegalNav(fallbackNav('/zh-tw/') as NavItem[]), sidebar: { '/zh-tw/': convertSidebar(zhtwSidebar['/zh-tw/']) } },
     },
     th: {
-      lang: 'th-TH',
-      title: 'Dotfiles',
+      label: '🇹🇭 ไทย', link: '/th/', lang: 'th-TH', title: 'Dotfiles',
       description: 'การกำหนดค่าเชลล์ข้ามแพลตฟอร์มสำหรับ macOS, Linux และ WSL จัดการโดย Chezmoi พร้อม Zsh, Neovim และ tmux',
+      themeConfig: { nav: withLocalizedLegalNav(fallbackNav('/th/') as NavItem[]), sidebar: { '/th/': convertSidebar(thSidebar['/th/']) } },
     },
     ro: {
-      lang: 'ro-RO',
-      title: 'Dotfiles',
+      label: '🇷🇴 Română', link: '/ro/', lang: 'ro-RO', title: 'Dotfiles',
       description: 'Configurare shell cross-platform pentru macOS, Linux și WSL. Gestionată cu Chezmoi, Zsh, Neovim și tmux.',
+      themeConfig: { nav: withLocalizedLegalNav(fallbackNav('/ro/') as NavItem[]), sidebar: { '/ro/': convertSidebar(roSidebar['/ro/']) } },
     },
   },
 })

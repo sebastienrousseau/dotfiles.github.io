@@ -1,6 +1,6 @@
 ---
 title: Modern Aliases | Dotfiles
-description: Short modern tool commands. Overview for Dotfiles v0.2.495.
+description: Discover modern CLI aliases in Dotfiles v0.2.495. Replace legacy tools with bat, eza, fd, ripgrep, and zoxide on macOS, Linux, and WSL.
 lang: en-GB
 author: Sebastien Rousseau
 lastUpdated: true

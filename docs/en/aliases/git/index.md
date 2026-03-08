@@ -1,6 +1,6 @@
 ---
 title: Git Aliases | Dotfiles
-description: Short Git commands. Overview for Dotfiles v0.2.495.
+description: Explore Git aliases in Dotfiles v0.2.495. Short, memorable commands for commit, branch, merge, and rebase workflows on macOS, Linux, and WSL.
 lang: en-GB
 author: Sebastien Rousseau
 lastUpdated: true

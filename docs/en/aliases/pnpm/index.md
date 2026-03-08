@@ -1,6 +1,6 @@
 ---
 title: PNPM Aliases | Dotfiles
-description: Short pnpm commands. Overview for Dotfiles v0.2.495.
+description: Discover pnpm aliases in Dotfiles v0.2.495. Quick commands for package installation, script execution, and workspace management on macOS, Linux, and WSL.
 lang: en-GB
 author: Sebastien Rousseau
 lastUpdated: true

@@ -19,7 +19,7 @@ permalink: /en/guides/secret-management/
 
 # Secret Management Best Practices
 
-Keep secrets out of your dotfiles repository. This guide covers three tested methods for managing credentials safely with Chezmoi.
+Keep secrets out of your dotfiles repository. This step-by-step guide covers three production-tested methods for managing API keys, tokens, and credentials safely with Chezmoi: age encryption for local-first security, SOPS for structured YAML/JSON secret storage, and 1Password CLI for zero-disk-exposure retrieval at apply time.
 
 ## Why This Matters
 

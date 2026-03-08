@@ -1,6 +1,6 @@
 ---
 title: Make Aliases | Dotfiles
-description: Short make commands. Overview for Dotfiles v0.2.495.
+description: Explore make aliases in Dotfiles v0.2.495. Short commands for build targets, clean, and parallel compilation on macOS, Linux, and WSL.
 lang: en-GB
 author: Sebastien Rousseau
 lastUpdated: true

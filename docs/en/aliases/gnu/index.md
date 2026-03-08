@@ -1,6 +1,6 @@
 ---
 title: Gnu Aliases | Dotfiles
-description: Short GNU utility commands. Overview for Dotfiles v0.2.495.
+description: Discover GNU utility aliases in Dotfiles v0.2.495. Short commands for coreutils, grep, sed, and awk on macOS (with Homebrew) and Linux.
 lang: en-GB
 author: Sebastien Rousseau
 lastUpdated: true

@@ -1,6 +1,6 @@
 ---
 title: Docker Aliases | Dotfiles
-description: Short Docker command names. Overview for Dotfiles v0.2.495.
+description: Discover Docker aliases in Dotfiles v0.2.495. Concise shortcuts for container, image, volume, and network management on macOS, Linux, and WSL.
 lang: en-GB
 author: Sebastien Rousseau
 lastUpdated: true

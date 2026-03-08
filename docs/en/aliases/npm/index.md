@@ -1,6 +1,6 @@
 ---
 title: NPM Aliases | Dotfiles
-description: Short npm commands. Overview for Dotfiles v0.2.495.
+description: Discover npm aliases in Dotfiles v0.2.495. Quick commands for package installation, publishing, and script execution on macOS, Linux, and WSL.
 lang: en-GB
 author: Sebastien Rousseau
 lastUpdated: true

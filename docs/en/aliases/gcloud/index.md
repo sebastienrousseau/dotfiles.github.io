@@ -1,6 +1,6 @@
 ---
 title: Gcloud Aliases | Dotfiles
-description: Short gcloud commands. Overview for Dotfiles v0.2.495.
+description: Discover gcloud aliases in Dotfiles v0.2.495. Short commands for Google Cloud project, compute, and storage management on macOS, Linux, and WSL.
 lang: en-GB
 author: Sebastien Rousseau
 lastUpdated: true

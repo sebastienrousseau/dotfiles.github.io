@@ -1,6 +1,6 @@
 ---
 title: Contact | Dotfiles
-description: Contact details for Dotfiles documentation, maintainer profile, and repository links.
+description: Contact the Dotfiles maintainer for support, bug reports, and feature requests. Find repository links, issue tracker, and community channels.
 lang: en-GB
 author: Sebastien Rousseau
 lastUpdated: true

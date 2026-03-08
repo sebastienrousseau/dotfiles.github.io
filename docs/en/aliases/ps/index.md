@@ -1,6 +1,6 @@
 ---
 title: PS Aliases | Dotfiles
-description: Short process list commands. Overview for Dotfiles v0.2.495.
+description: Explore process management aliases in Dotfiles v0.2.495. Quick ps and kill commands for process listing and signal handling on macOS, Linux, and WSL.
 lang: en-GB
 author: Sebastien Rousseau
 lastUpdated: true

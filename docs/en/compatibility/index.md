@@ -1,6 +1,6 @@
 ---
 title: Cross-Platform Compatibility Matrix | Dotfiles
-description: Tested platform support for shells, tools, terminals, and alias categories in Dotfiles v0.2.495.
+description: Check cross-platform compatibility for Dotfiles v0.2.495. Tested support matrix for shells, terminals, CLI tools, and alias categories on macOS, Linux, and WSL.
 lang: en-GB
 author: Sebastien Rousseau
 lastUpdated: true
@@ -19,7 +19,7 @@ permalink: /en/compatibility/
 
 # Cross-Platform Compatibility Matrix
 
-This page documents tested platform support for Dotfiles v0.2.495 across macOS, Linux, and WSL2.
+This page documents tested platform support for Dotfiles v0.2.495 across macOS Sonoma and later, Ubuntu 24.04, and WSL2. Every shell, tool, terminal emulator, and alias category listed below has been verified on real hardware, with badges indicating full support, partial support, or known incompatibilities to help you plan your setup.
 
 ## Badge Legend
 

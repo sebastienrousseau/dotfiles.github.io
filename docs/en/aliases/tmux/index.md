@@ -1,6 +1,6 @@
 ---
 title: Tmux Aliases | Dotfiles
-description: Short tmux commands. Overview for Dotfiles v0.2.495.
+description: Configure tmux aliases in Dotfiles v0.2.495. Quick session, window, and pane management shortcuts for terminal multiplexing on macOS, Linux, and WSL.
 lang: en-GB
 author: Sebastien Rousseau
 lastUpdated: true

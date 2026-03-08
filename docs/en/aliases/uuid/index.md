@@ -1,6 +1,6 @@
 ---
 title: UUID Aliases | Dotfiles
-description: Short UUID commands. Overview for Dotfiles v0.2.495.
+description: Generate UUIDs with aliases in Dotfiles v0.2.495. Short commands for v4 UUID creation and clipboard integration on macOS, Linux, and WSL.
 lang: en-GB
 author: Sebastien Rousseau
 lastUpdated: true

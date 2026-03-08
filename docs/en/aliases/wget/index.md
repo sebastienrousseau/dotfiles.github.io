@@ -1,6 +1,6 @@
 ---
 title: Wget Aliases | Dotfiles
-description: Short download commands. Overview for Dotfiles v0.2.495.
+description: Discover wget aliases in Dotfiles v0.2.495. Concise download shortcuts with resume support and rate limiting on macOS, Linux, and WSL.
 lang: en-GB
 author: Sebastien Rousseau
 lastUpdated: true

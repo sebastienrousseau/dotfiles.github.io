@@ -1,6 +1,6 @@
 ---
 title: Update Aliases | Dotfiles
-description: Short update commands. Overview for Dotfiles v0.2.495.
+description: Explore update aliases in Dotfiles v0.2.495. One-command system and package updates for Homebrew, apt, and dnf on macOS, Linux, and WSL.
 lang: en-GB
 author: Sebastien Rousseau
 lastUpdated: true

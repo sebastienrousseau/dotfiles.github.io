@@ -32,6 +32,31 @@ const LOCALE_BY_KEY: Record<string, string> = {
 
 export const LOCALE_KEYS = new Set(Object.keys(LOCALE_BY_KEY).filter((k) => k !== 'root'))
 
+export const LOCALE_HOME_LABELS: Record<string, string> = {
+  en: 'Home',
+  ar: 'الرئيسية',
+  de: 'Startseite',
+  es: 'Inicio',
+  fr: 'Accueil',
+  he: 'דף הבית',
+  hi: 'मुखपृष्ठ',
+  id: 'Beranda',
+  it: 'Home',
+  ja: 'ホーム',
+  ko: '홈',
+  nl: 'Home',
+  pt: 'Início',
+  ru: 'Главная',
+  zh: '首页',
+  vi: 'Trang chủ',
+  tr: 'Ana Sayfa',
+  pl: 'Strona główna',
+  uk: 'Головна',
+  'zh-tw': '首頁',
+  th: 'หน้าแรก',
+  ro: 'Acasă',
+}
+
 // Mapping from locale key to the hreflang value (BCP-47 language tag)
 const HREFLANG_BY_KEY: Record<string, string> = {
   en: 'en',

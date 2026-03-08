@@ -1,6 +1,6 @@
 ---
 title: Editor Aliases | Dotfiles
-description: Short edit commands. Overview for Dotfiles v0.2.495.
+description: Configure editor aliases in Dotfiles v0.2.495. Short commands for launching Neovim, VS Code, and other editors across macOS, Linux, and WSL.
 lang: en-GB
 author: Sebastien Rousseau
 lastUpdated: true

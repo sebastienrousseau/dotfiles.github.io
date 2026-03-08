@@ -1,6 +1,6 @@
 ---
 title: Lua Aliases | Dotfiles
-description: Short Lua commands. Overview for Dotfiles v0.2.495.
+description: Discover Lua aliases in Dotfiles v0.2.495. Short commands for script execution, LuaRocks package management, and testing on macOS, Linux, and WSL.
 lang: en-GB
 author: Sebastien Rousseau
 lastUpdated: true

@@ -1,6 +1,6 @@
 ---
 title: Fonts Aliases | Dotfiles
-description: Short font cache commands. Overview for Dotfiles v0.2.495.
+description: Manage font cache aliases in Dotfiles v0.2.495. Quick commands for font installation, cache refresh, and listing on macOS, Linux, and WSL.
 lang: en-GB
 author: Sebastien Rousseau
 lastUpdated: true

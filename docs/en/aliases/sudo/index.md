@@ -1,6 +1,6 @@
 ---
 title: Sudo Aliases | Dotfiles
-description: Short sudo commands. Overview for Dotfiles v0.2.495.
+description: Explore sudo aliases in Dotfiles v0.2.495. Concise privilege-escalation shortcuts and safe administrative commands on macOS, Linux, and WSL.
 lang: en-GB
 author: Sebastien Rousseau
 lastUpdated: true

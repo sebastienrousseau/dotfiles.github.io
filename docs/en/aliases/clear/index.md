@@ -1,6 +1,6 @@
 ---
 title: Clear Aliases | Dotfiles
-description: Short screen clear commands. Overview for Dotfiles v0.2.495.
+description: Discover screen clear aliases in Dotfiles v0.2.495. Quick terminal reset and scrollback clearing commands for Zsh and Bash on macOS, Linux, and WSL.
 lang: en-GB
 author: Sebastien Rousseau
 lastUpdated: true

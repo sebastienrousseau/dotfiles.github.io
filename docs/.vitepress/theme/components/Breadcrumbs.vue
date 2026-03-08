@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { computed } from 'vue'
 import { useData, useRoute } from 'vitepress'
-import { LOCALE_KEYS, slugToTitle } from '../../config/seo'
+import { LOCALE_HOME_LABELS, LOCALE_KEYS, slugToTitle } from '../../config/seo'
 
 const route = useRoute()
 const { frontmatter } = useData()
@@ -34,7 +34,7 @@ const items = computed(() => {
 <template>
   <nav v-if="items.length" aria-label="Breadcrumb" class="vp-breadcrumb">
     <ol>
-      <li><a :href="`${localePrefix}/`">Home</a></li>
+      <li><a :href="`${localePrefix}/`">{{ LOCALE_HOME_LABELS[localePrefix.slice(1)] ?? 'Home' }}</a></li>
       <li v-for="item in items" :key="item.link">
         <span aria-hidden="true" class="sep">&#x203A;</span>
         <a v-if="!item.isLast" :href="item.link">{{ item.text }}</a>

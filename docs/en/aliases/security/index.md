@@ -1,6 +1,6 @@
 ---
 title: Security Aliases | Dotfiles
-description: Short security commands. Overview for Dotfiles v0.2.495.
+description: Discover security aliases in Dotfiles v0.2.495. Short commands for SSH key management, encryption, and vulnerability scanning on macOS, Linux, and WSL.
 lang: en-GB
 author: Sebastien Rousseau
 lastUpdated: true

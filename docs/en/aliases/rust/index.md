@@ -1,6 +1,6 @@
 ---
 title: Rust Aliases | Dotfiles
-description: Short Rust commands. Overview for Dotfiles v0.2.495.
+description: Discover Rust aliases in Dotfiles v0.2.495. Quick commands for cargo build, test, clippy, and cross-compilation on macOS, Linux, and WSL.
 lang: en-GB
 author: Sebastien Rousseau
 lastUpdated: true

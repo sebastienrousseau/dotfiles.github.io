@@ -1,6 +1,6 @@
 ---
 title: Cd Aliases | Dotfiles
-description: Short folder move commands. Overview for Dotfiles v0.2.495.
+description: Navigate faster with cd aliases in Dotfiles v0.2.495. Quick directory-switching shortcuts for common project paths on macOS, Linux, and WSL.
 lang: en-GB
 author: Sebastien Rousseau
 lastUpdated: true

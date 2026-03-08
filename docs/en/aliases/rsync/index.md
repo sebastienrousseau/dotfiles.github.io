@@ -1,6 +1,6 @@
 ---
 title: Rsync Aliases | Dotfiles
-description: Short sync commands. Overview for Dotfiles v0.2.495.
+description: Explore rsync aliases in Dotfiles v0.2.495. Concise file synchronization shortcuts with progress, compression, and incremental support on any platform.
 lang: en-GB
 author: Sebastien Rousseau
 lastUpdated: true

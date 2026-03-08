@@ -1,6 +1,6 @@
 ---
 title: Legal Aliases | Dotfiles
-description: Short legal check commands. Overview for Dotfiles v0.2.495.
+description: Explore legal check aliases in Dotfiles v0.2.495. Short commands for license scanning, compliance auditing, and SBOM generation on macOS, Linux, and WSL.
 lang: en-GB
 author: Sebastien Rousseau
 lastUpdated: true

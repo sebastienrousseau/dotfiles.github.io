@@ -1,6 +1,6 @@
 ---
 title: Yarn Aliases | Dotfiles
-description: Short Yarn commands. Overview for Dotfiles v0.2.495.
+description: Explore Yarn aliases in Dotfiles v0.2.495. Quick commands for package installation, script execution, and workspace management on macOS, Linux, and WSL.
 lang: en-GB
 author: Sebastien Rousseau
 lastUpdated: true

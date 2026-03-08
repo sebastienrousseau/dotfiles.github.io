@@ -1,6 +1,6 @@
 ---
 title: Dotfiles v0.2.495 | Dotfiles
-description: Cross-platform shell configuration for macOS, Linux, and WSL.
+description: Install cross-platform shell configuration for macOS, Linux, and WSL. Managed by Chezmoi with 1,200+ aliases, Zsh, Neovim, and tmux. Set up your terminal in minutes.
 lang: en-GB
 author: Sebastien Rousseau
 lastUpdated: true

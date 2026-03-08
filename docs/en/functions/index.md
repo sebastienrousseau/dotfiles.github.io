@@ -1,6 +1,6 @@
 ---
 title: Functions | Dotfiles
-description: Public shell function reference sourced from Dotfiles v0.2.495.
+description: Browse public shell functions in Dotfiles v0.2.495. Reusable Zsh and Bash utilities for file management, string processing, and system automation.
 lang: en-GB
 author: Sebastien Rousseau
 lastUpdated: true

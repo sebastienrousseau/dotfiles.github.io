@@ -1,6 +1,6 @@
 ---
 title: Configuration Aliases | Dotfiles
-description: Short config commands. Overview for Dotfiles v0.2.495.
+description: Discover configuration aliases in Dotfiles v0.2.495. Short commands for dotfile management, shell reload, and environment setup on macOS, Linux, and WSL.
 lang: en-GB
 author: Sebastien Rousseau
 lastUpdated: true

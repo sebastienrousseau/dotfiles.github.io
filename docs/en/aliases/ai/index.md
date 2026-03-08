@@ -1,6 +1,6 @@
 ---
 title: AI Aliases | Dotfiles
-description: Short AI command names. Overview for Dotfiles v0.2.495.
+description: Explore AI tool aliases in Dotfiles v0.2.495. Short commands for ChatGPT, Claude, and Copilot integrations across macOS, Linux, and WSL.
 lang: en-GB
 author: Sebastien Rousseau
 lastUpdated: true

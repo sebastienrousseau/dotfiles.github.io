@@ -1,6 +1,6 @@
 ---
 title: Installer Aliases | Dotfiles
-description: Short install commands. Overview for Dotfiles v0.2.495.
+description: Explore installer aliases in Dotfiles v0.2.495. Streamlined package installation commands for Homebrew, apt, and dnf on macOS, Linux, and WSL.
 lang: en-GB
 author: Sebastien Rousseau
 lastUpdated: true

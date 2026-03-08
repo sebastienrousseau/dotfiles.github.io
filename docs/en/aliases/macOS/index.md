@@ -1,6 +1,6 @@
 ---
 title: macOS Aliases | Dotfiles
-description: Short macOS commands. Overview for Dotfiles v0.2.495.
+description: Explore macOS-specific aliases in Dotfiles v0.2.495. Short commands for Finder, Spotlight, system preferences, and Homebrew on Apple Silicon and Intel.
 lang: en-GB
 author: Sebastien Rousseau
 lastUpdated: true

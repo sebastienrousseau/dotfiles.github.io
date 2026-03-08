@@ -1,6 +1,6 @@
 ---
 title: Chmod Aliases | Dotfiles
-description: Short permission commands. Overview for Dotfiles v0.2.495.
+description: Discover chmod aliases in Dotfiles v0.2.495. Concise shortcuts for file permission management and ownership control on macOS, Linux, and WSL.
 lang: en-GB
 author: Sebastien Rousseau
 lastUpdated: true
