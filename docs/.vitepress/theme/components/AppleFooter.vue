@@ -26,7 +26,7 @@ function localLink(path: string): string {
     <div class="apple-footer-inner">
       <nav class="apple-footer-nav" aria-label="Footer navigation">
         <div class="apple-footer-column">
-          <h3 class="apple-footer-title">{{ t.documentation }}</h3>
+          <p class="apple-footer-title">{{ t.documentation }}</p>
           <ul>
             <li><a :href="localLink('/about/')">{{ t.about }}</a></li>
             <li><a :href="localLink('/functions/')">{{ t.functions }}</a></li>
@@ -35,7 +35,7 @@ function localLink(path: string): string {
           </ul>
         </div>
         <div class="apple-footer-column">
-          <h3 class="apple-footer-title">{{ t.resources }}</h3>
+          <p class="apple-footer-title">{{ t.resources }}</p>
           <ul>
             <li>
               <a
@@ -61,7 +61,7 @@ function localLink(path: string): string {
           </ul>
         </div>
         <div class="apple-footer-column">
-          <h3 class="apple-footer-title">{{ t.legal }}</h3>
+          <p class="apple-footer-title">{{ t.legal }}</p>
           <ul>
             <li><a :href="localLink('/accessibility/')">{{ t.accessibility }}</a></li>
             <li><a :href="localLink('/privacy/')">{{ t.privacy }}</a></li>
