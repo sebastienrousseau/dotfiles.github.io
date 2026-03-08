@@ -5,6 +5,8 @@ const HOST = '127.0.0.1'
 const PORT = 4173
 const base = `http://${HOST}:${PORT}`
 const urls = [`${base}/`, `${base}/en/`, `${base}/aliases/`, `${base}/fr/aliases/`]
+const MAX_RETRIES = 2
+const DELAY_MS = 2000
 
 function waitForServer(timeoutMs = 30000) {
   const start = Date.now()
@@ -28,6 +30,17 @@ function waitForServer(timeoutMs = 30000) {
   })
 }
 
+function delay(ms) {
+  return new Promise((resolve) => setTimeout(resolve, ms))
+}
+
+function runAxe(url) {
+  return new Promise((resolve, reject) => {
+    const axe = spawn('npx', ['@axe-core/cli', url, '--exit'], { stdio: 'inherit', shell: true })
+    axe.on('exit', (code) => (code === 0 ? resolve() : reject(new Error(`axe failed for ${url}`))))
+  })
+}
+
 const preview = spawn('npm', ['run', 'preview', '--', '--host', HOST, '--port', String(PORT)], {
   stdio: 'inherit',
   shell: true,
@@ -37,10 +50,23 @@ try {
   await waitForServer()
 
   for (const url of urls) {
-    await new Promise((resolve, reject) => {
-      const axe = spawn('npx', ['@axe-core/cli', url, '--exit'], { stdio: 'inherit', shell: true })
-      axe.on('exit', (code) => (code === 0 ? resolve() : reject(new Error(`axe failed for ${url}`))))
-    })
+    let lastErr
+    for (let attempt = 0; attempt <= MAX_RETRIES; attempt++) {
+      try {
+        if (attempt > 0) {
+          console.log(`Retrying ${url} (attempt ${attempt + 1}/${MAX_RETRIES + 1})...`)
+          await delay(DELAY_MS)
+        }
+        await runAxe(url)
+        lastErr = null
+        break
+      } catch (err) {
+        lastErr = err
+      }
+    }
+    if (lastErr) throw lastErr
+    // Brief pause between URLs to let Chrome clean up
+    await delay(1000)
   }
 
   console.log('Axe audit passed.')
