@@ -30,6 +30,9 @@ Dotfiles PATH sırasını tek bir şablonda ayarlar ve girişleri önceliğe gö
 
 ## Tanımlı Girişler
 
+- `"/usr/bin"`
+- `"/bin"`
+- `"/sbin"`
 - `"/opt/homebrew/sbin"`
 - `"/opt/homebrew/bin"`
 - `"/opt/homebrew/opt/ruby/bin"`
@@ -37,15 +40,12 @@ Dotfiles PATH sırasını tek bir şablonda ayarlar ve girişleri önceliğe gö
 - `"${PIPX_BIN_DIR}"`
 - `"${HOME}/.cargo/bin"`
 - `"${HOME}/go/bin"`
-- `"${BUN_INSTALL}/bin"`
 - `"${HOME}/.node_modules/bin"`
-- `"${HOME}/.luarocks/bin"`
 - `"/Library/Apple/usr/bin"`
 - `"/Library/TeX/texbin"`
 - `"/Applications/Topaz Photo AI.app/Contents/Resources/bin"`
 - `"/Applications/Little Snitch.app/Contents/Components"`
 - `"/Applications/iTerm.app/Contents/Resources/utilities"`
-- `"/Applications/Visual Studio Code.app/Contents/Resources/app/bin"`
+- `"/home/linuxbrew/.linuxbrew/bin"`
 - `"${HOME}/.local/bin"`
-- `"${HOME}/.local/share/mise/shims"`
 - `"${HOME}/bin"`

@@ -67,6 +67,7 @@ meta:
 | :--- | :--- |
 | [AI](ai/) | اختصارات مساعد الذكاء الاصطناعي وأدوات LLM |
 | [Archives](archives/) | ضغط واستخراج الملفات |
+| [Benchmarks](benchmarks/) | أوامر قياس الأداء |
 | [CD](cd/) | التنقل في نظام الملفات |
 | [Chmod](chmod/) | تغيير صلاحيات الملفات |
 | [Clear](clear/) | مسح شاشة الطرفية |
@@ -103,10 +104,12 @@ meta:
 | [Security](security/) | الثبات والتوقيع |
 | [Subversion](subversion/) | التحكم في الإصدارات SVN |
 | [Sudo](sudo/) | عمليات المستخدم الجذر |
+| [System](system/) | إدارة النظام |
 | [Terraform](terraform/) | البنية التحتية كرمز |
 | [Tmux](tmux/) | مضاعف الطرفية |
 | [Update](update/) | تحديث dotfiles |
 | [UUID](uuid/) | توليد UUIDs |
+| [Vagrant](vagrant/) | أوامر Vagrant |
 | [Wget](wget/) | تنزيل من سطر الأوامر |
 | [Yarn](yarn/) | مدير حزم Yarn |
 

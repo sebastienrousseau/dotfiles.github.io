@@ -67,6 +67,7 @@ Blader door aliassen per categorie:
 | :--- | :--- |
 | [AI](ai/) | AI-assistent en LLM-tool snelkoppelingen |
 | [Archives](archives/) | Bestanden comprimeren en uitpakken |
+| [Benchmarks](benchmarks/) | Benchmarking-commando's |
 | [CD](cd/) | Navigeren door het bestandssysteem |
 | [Chmod](chmod/) | Bestandsrechten wijzigen |
 | [Clear](clear/) | Terminalscherm wissen |
@@ -103,10 +104,12 @@ Blader door aliassen per categorie:
 | [Security](security/) | Onveranderlijkheid en ondertekening |
 | [Subversion](subversion/) | SVN-versiebeheer |
 | [Sudo](sudo/) | Superuser-operaties |
+| [System](system/) | Systeembeheer |
 | [Terraform](terraform/) | Infrastructure as Code |
 | [Tmux](tmux/) | Terminal-multiplexer |
 | [Update](update/) | Dotfiles bijwerken |
 | [UUID](uuid/) | UUID's genereren |
+| [Vagrant](vagrant/) | Vagrant-commando's |
 | [Wget](wget/) | Commandoregel-downloader |
 | [Yarn](yarn/) | Yarn pakketbeheerder |
 

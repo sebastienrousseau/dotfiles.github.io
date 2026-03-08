@@ -67,6 +67,7 @@ meta:
 | :--- | :--- |
 | [AI](ai/) | AIアシスタントとLLMツールのショートカット |
 | [Archives](archives/) | ファイルの圧縮と展開 |
+| [Benchmarks](benchmarks/) | ベンチマークコマンド |
 | [CD](cd/) | ファイルシステムのナビゲーション |
 | [Chmod](chmod/) | ファイル権限の変更 |
 | [Clear](clear/) | ターミナル画面のクリア |
@@ -103,10 +104,12 @@ meta:
 | [Security](security/) | 不変性と署名 |
 | [Subversion](subversion/) | SVNバージョン管理 |
 | [Sudo](sudo/) | スーパーユーザー操作 |
+| [System](system/) | システム管理 |
 | [Terraform](terraform/) | Infrastructure as Code |
 | [Tmux](tmux/) | ターミナルマルチプレクサ |
 | [Update](update/) | dotfilesの更新 |
 | [UUID](uuid/) | UUIDの生成 |
+| [Vagrant](vagrant/) | Vagrantコマンド |
 | [Wget](wget/) | コマンドラインダウンローダー |
 | [Yarn](yarn/) | Yarnパッケージマネージャー |
 

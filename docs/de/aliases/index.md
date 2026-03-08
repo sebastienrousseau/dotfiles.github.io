@@ -68,6 +68,7 @@ Aliase nach Kategorie durchsuchen:
 | :--- | :--- |
 | [AI](ai/) | KI-Assistenten und LLM-Tool-Verknüpfungen |
 | [Archives](archives/) | Dateien komprimieren und entpacken |
+| [Benchmarks](benchmarks/) | Benchmarking-Befehle |
 | [CD](cd/) | Im Dateisystem navigieren |
 | [Chmod](chmod/) | Dateiberechtigungen ändern |
 | [Clear](clear/) | Terminalbildschirm löschen |
@@ -104,10 +105,12 @@ Aliase nach Kategorie durchsuchen:
 | [Security](security/) | Unveränderlichkeit und Signierung |
 | [Subversion](subversion/) | SVN-Versionskontrolle |
 | [Sudo](sudo/) | Superuser-Operationen |
+| [System](system/) | Systemverwaltung |
 | [Terraform](terraform/) | Infrastructure as Code |
 | [Tmux](tmux/) | Terminal-Multiplexer |
 | [Update](update/) | Dotfiles aktualisieren |
 | [UUID](uuid/) | UUIDs generieren |
+| [Vagrant](vagrant/) | Vagrant-Befehle |
 | [Wget](wget/) | Kommandozeilen-Downloader |
 | [Yarn](yarn/) | Yarn-Paketmanager |
 

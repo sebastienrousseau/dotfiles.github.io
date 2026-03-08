@@ -67,6 +67,7 @@ meta:
 | :--- | :--- |
 | [AI](ai/) | AI असिस्टेंट और LLM टूल शॉर्टकट |
 | [Archives](archives/) | फाइलों को कंप्रेस और एक्सट्रैक्ट करें |
+| [Benchmarks](benchmarks/) | बेंचमार्किंग कमांड |
 | [CD](cd/) | फाइल सिस्टम नेविगेट करें |
 | [Chmod](chmod/) | फाइल अनुमतियां बदलें |
 | [Clear](clear/) | टर्मिनल स्क्रीन साफ करें |
@@ -103,10 +104,12 @@ meta:
 | [Security](security/) | इम्यूटेबिलिटी और साइनिंग |
 | [Subversion](subversion/) | SVN वर्जन कंट्रोल |
 | [Sudo](sudo/) | सुपरयूजर ऑपरेशन |
+| [System](system/) | सिस्टम प्रशासन |
 | [Terraform](terraform/) | Infrastructure as Code |
 | [Tmux](tmux/) | टर्मिनल मल्टीप्लेक्सर |
 | [Update](update/) | dotfiles अपडेट करें |
 | [UUID](uuid/) | UUID जनरेट करें |
+| [Vagrant](vagrant/) | Vagrant कमांड |
 | [Wget](wget/) | कमांड-लाइन डाउनलोडर |
 | [Yarn](yarn/) | Yarn पैकेज मैनेजर |
 

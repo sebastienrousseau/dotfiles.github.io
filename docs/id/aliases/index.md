@@ -67,6 +67,7 @@ Jelajahi alias berdasarkan kategori:
 | :--- | :--- |
 | [AI](ai/) | Pintasan asisten AI dan alat LLM |
 | [Archives](archives/) | Kompres dan ekstrak file |
+| [Benchmarks](benchmarks/) | Perintah benchmarking |
 | [CD](cd/) | Navigasi sistem file |
 | [Chmod](chmod/) | Ubah izin file |
 | [Clear](clear/) | Bersihkan layar terminal |
@@ -103,10 +104,12 @@ Jelajahi alias berdasarkan kategori:
 | [Security](security/) | Immutability dan penandatanganan |
 | [Subversion](subversion/) | Kontrol versi SVN |
 | [Sudo](sudo/) | Operasi superuser |
+| [System](system/) | Administrasi sistem |
 | [Terraform](terraform/) | Infrastructure as code |
 | [Tmux](tmux/) | Multiplexer terminal |
 | [Update](update/) | Perbarui dotfiles |
 | [UUID](uuid/) | Generate UUID |
+| [Vagrant](vagrant/) | Perintah Vagrant |
 | [Wget](wget/) | Pengunduh baris perintah |
 | [Yarn](yarn/) | Manajer paket Yarn |
 

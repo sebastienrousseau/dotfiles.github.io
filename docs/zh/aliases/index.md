@@ -67,6 +67,7 @@ meta:
 | :--- | :--- |
 | [AI](ai/) | AI 助手和 LLM 工具快捷方式 |
 | [Archives](archives/) | 压缩和解压文件 |
+| [Benchmarks](benchmarks/) | 基准测试命令 |
 | [CD](cd/) | 文件系统导航 |
 | [Chmod](chmod/) | 更改文件权限 |
 | [Clear](clear/) | 清除终端屏幕 |
@@ -103,10 +104,12 @@ meta:
 | [Security](security/) | 不可变性和签名 |
 | [Subversion](subversion/) | SVN 版本控制 |
 | [Sudo](sudo/) | 超级用户操作 |
+| [System](system/) | 系统管理 |
 | [Terraform](terraform/) | 基础设施即代码 |
 | [Tmux](tmux/) | 终端复用器 |
 | [Update](update/) | 更新 dotfiles |
 | [UUID](uuid/) | 生成 UUID |
+| [Vagrant](vagrant/) | Vagrant 命令 |
 | [Wget](wget/) | 命令行下载器 |
 | [Yarn](yarn/) | Yarn 包管理器 |
 

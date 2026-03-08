@@ -57,12 +57,14 @@ This page lists public shell functions generated from `.chezmoitemplates/functio
 | `logout()` | `.chezmoitemplates/functions/logout.sh` |
 | `lowercase()` | `.chezmoitemplates/functions/lowercase.sh` |
 | `matrix()` | `.chezmoitemplates/functions/matrix.sh` |
+| `mount_read_only()` | `.chezmoitemplates/functions/mount_read_only.sh` |
 | `myproc()` | `.chezmoitemplates/functions/myproc.sh` |
 | `pipes()` | `.chezmoitemplates/functions/pipes.sh` |
 | `prependpath()` | `.chezmoitemplates/functions/prependpath.sh` |
 | `ql()` | `.chezmoitemplates/functions/ql.sh` |
 | `rainbow()` | `.chezmoitemplates/functions/rainbow.sh` |
 | `rd()` | `.chezmoitemplates/functions/rd.sh` |
+| `remove_disk()` | `.chezmoitemplates/functions/remove_disk.sh` |
 | `ren()` | `.chezmoitemplates/functions/ren.sh` |
 | `sentencecase()` | `.chezmoitemplates/functions/sentencecase.sh` |
 | `showhiddenfiles()` | `.chezmoitemplates/functions/showhiddenfiles.sh` |

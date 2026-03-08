@@ -114,3 +114,84 @@ dot learn
 
 [code-of-conduct-url]: https://github.com/sebastienrousseau/dotfiles/blob/master/.github/CODE-OF-CONDUCT.md
 [contributing-url]: https://github.com/sebastienrousseau/dotfiles/blob/master/.github/CONTRIBUTING.md
+
+## الأوامر الأساسية
+
+يوفر سطر أوامر `dot` ما يصل إلى 53 أمرًا منظمة حسب الفئة.
+
+### الأساسية
+
+- `dot apply` — يطبق تغييرات التكوين.
+- `dot sync` — يجلب أحدث حالة للمستودع ويطبقها.
+- `dot update` — يحدث المستودع ويسخن ذاكرة التخزين المؤقت.
+- `dot add` — يضيف ملفات جديدة إلى مصدر Chezmoi.
+- `dot diff` — يعرض التغييرات المعلقة قبل التطبيق.
+- `dot status` — يعرض حالة الملفات المُدارة.
+- `dot remove` — يلغي إدارة ملف ويحذف إدخال المصدر.
+- `dot cd` — يفتح Shell في مجلد مصدر Chezmoi.
+- `dot edit` — يفتح ملفًا مُدارًا في المحرر.
+- `dot clean-cache` — يمسح ذاكرة التخزين المؤقت المؤقتة.
+- `dot prewarm` — يملأ ذاكرة التخزين المؤقت مسبقًا لبدء Shell أسرع.
+
+### التشخيص
+
+- `dot doctor` — يتحقق من المسارات والأدوات وحالة Shell.
+- `dot heal` — يصلح الحالة المفقودة أو التالفة تلقائيًا.
+- `dot health` — يشغل فحصًا صحيًا خفيفًا.
+- `dot verify` — يتحقق من سلامة الملفات مقابل المصدر.
+- `dot scorecard` — يطبع نتيجة جودة التكوين.
+- `dot snapshot` — يلتقط الحالة الحالية للمقارنة لاحقًا.
+- `dot smoke-test` — يتحقق من سلاسل الأدوات الأساسية بالكامل.
+- `dot chaos` — يحقن أخطاء لاختبار الإصلاح الذاتي.
+- `dot bundle` — يصدّر حزمة تكوين محمولة.
+- `dot rollback` — يعود إلى لقطة سابقة.
+- `dot drift` — يكتشف التغييرات غير المتوقعة على الملفات المُدارة.
+- `dot history` — يعرض سجل تاريخ apply/sync.
+- `dot benchmark` — يقيس وقت بدء Shell.
+- `dot perf` — يحلل بطء تهيئة Shell.
+
+### المظهر
+
+- `dot theme` — يبدل نظام ألوان الطرفية.
+- `dot wallpaper` — يعين خلفية سطح المكتب (macOS).
+- `dot fonts` — يثبت أو يحدث Nerd Fonts.
+- `dot tune` — يضبط كثافة الواجهة ونمط سطر الأوامر.
+
+### الأمان
+
+- `dot backup` — ينشئ نسخًا احتياطية مشفرة للتكوين.
+- `dot encrypt-check` — يتحقق من تشفير المفاتيح السرية في حالة السكون.
+- `dot firewall` — يُكوّن قواعد جدار الحماية.
+- `dot telemetry` — يتحكم في بيانات الاستخدام المجهولة.
+- `dot dns-doh` — يفعّل DNS-over-HTTPS.
+- `dot lock-screen` — يقفل الشاشة فورًا.
+- `dot usb-safety` — يقيد التركيب التلقائي لتخزين USB.
+
+### المفاتيح السرية
+
+- `dot secrets-init` — يهيئ الواجهة الخلفية للمفاتيح السرية (age / GPG).
+- `dot secrets` — يسرد إدخالات المفاتيح السرية المشفرة.
+- `dot secrets-create` — ينشئ مفتاحًا سريًا مشفرًا جديدًا.
+- `dot ssh-key` — يولد أو يدوّر أزواج مفاتيح SSH.
+- `dot ssh-cert` — يطلب شهادة SSH من مرجع مصدق.
+
+### الذكاء الاصطناعي
+
+- `dot ai` — يفتح جلسة مساعد ذكاء اصطناعي تفاعلية.
+- `dot ai-setup` — يُكوّن مفاتيح API لمزودي الذكاء الاصطناعي.
+- `dot ai-query` — يرسل طلبًا واحدًا إلى نموذج ذكاء اصطناعي.
+- أغلفة أدوات الذكاء الاصطناعي: `cl`, `gemini`, `kiro`, `sgpt`, `ollama`, `opencode`, `aider`.
+
+### الأدوات
+
+- `dot tools` — يسرد بدائل CLI المضمنة وحالتها.
+- `dot new` — ينشئ ملف اختصار أو دالة جديد.
+- `dot sandbox` — يفتح Shell رمل للاستخدام مرة واحدة.
+- `dot keys` — يعرض اختصارات لوحة المفاتيح الحالية.
+- `dot learn` — يبدأ البرنامج التعليمي التفاعلي.
+
+### معلومات وصفية
+
+- `dot upgrade` — يرقّي Dotfiles إلى أحدث إصدار.
+- `dot packages` — يسرد الحزم المثبتة المُدارة بواسطة Dotfiles.
+- `dot version` / `dot help` — يعرض معلومات الإصدار أو الاستخدام

@@ -108,6 +108,87 @@ La tua configurazione risiede in `~/.local/share/chezmoi`:
 └── docs/                   # Documentazione
 ```
 
+## Comandi principali
+
+La CLI `dot` offre 53 comandi organizzati per categoria.
+
+### Nucleo
+
+- `dot apply` — applica le modifiche alla configurazione.
+- `dot sync` — recupera lo stato più recente del repository e lo applica.
+- `dot update` — aggiorna il repository e preriscalda le cache.
+- `dot add` — aggiunge nuovi file nel sorgente Chezmoi.
+- `dot diff` — mostra le modifiche in sospeso prima dell'applicazione.
+- `dot status` — visualizza lo stato dei file gestiti.
+- `dot remove` — rimuove un file dalla gestione e cancella la voce sorgente.
+- `dot cd` — apre una shell nella directory sorgente di Chezmoi.
+- `dot edit` — apre un file gestito nel tuo editor.
+- `dot clean-cache` — svuota le cache transitorie.
+- `dot prewarm` — precarica le cache per un avvio più veloce della shell.
+
+### Diagnostica
+
+- `dot doctor` — valida percorsi, strumenti e stato della shell.
+- `dot heal` — ripara automaticamente lo stato mancante o danneggiato.
+- `dot health` — esegue un controllo di salute leggero.
+- `dot verify` — verifica l'integrità dei file rispetto al sorgente.
+- `dot scorecard` — mostra un punteggio di qualità della configurazione.
+- `dot snapshot` — cattura lo stato attuale per confronto successivo.
+- `dot smoke-test` — valida le toolchain principali end-to-end.
+- `dot chaos` — inietta errori per testare l'auto-riparazione.
+- `dot bundle` — esporta un bundle di configurazione portabile.
+- `dot rollback` — ripristina uno snapshot precedente.
+- `dot drift` — rileva modifiche non autorizzate ai file gestiti.
+- `dot history` — mostra il registro cronologico di apply/sync.
+- `dot benchmark` — misura il tempo di avvio della shell.
+- `dot perf` — profila l'inizializzazione lenta della shell.
+
+### Aspetto
+
+- `dot theme` — cambia lo schema colori del terminale.
+- `dot wallpaper` — imposta lo sfondo del desktop (macOS).
+- `dot fonts` — installa o aggiorna i Nerd Fonts.
+- `dot tune` — regola la densità dell'interfaccia e lo stile del prompt.
+
+### Sicurezza
+
+- `dot backup` — crea backup cifrati della configurazione.
+- `dot encrypt-check` — verifica la cifratura dei segreti a riposo.
+- `dot firewall` — configura le regole del firewall dell'host.
+- `dot telemetry` — controlla la telemetria di utilizzo anonima.
+- `dot dns-doh` — abilita DNS-over-HTTPS.
+- `dot lock-screen` — blocca immediatamente lo schermo.
+- `dot usb-safety` — limita il montaggio automatico di dispositivi USB.
+
+### Segreti
+
+- `dot secrets-init` — inizializza il backend dei segreti (age / GPG).
+- `dot secrets` — elenca le voci di segreti cifrati.
+- `dot secrets-create` — crea un nuovo segreto cifrato.
+- `dot ssh-key` — genera o ruota le coppie di chiavi SSH.
+- `dot ssh-cert` — richiede un certificato SSH da una CA.
+
+### IA
+
+- `dot ai` — apre una sessione interattiva di assistente IA.
+- `dot ai-setup` — configura le chiavi API per i fornitori di IA.
+- `dot ai-query` — invia un prompt singolo a un modello di IA.
+- Wrapper di strumenti IA: `cl`, `gemini`, `kiro`, `sgpt`, `ollama`, `opencode`, `aider`.
+
+### Strumenti
+
+- `dot tools` — elenca le sostituzioni CLI incluse e il loro stato.
+- `dot new` — crea un nuovo file di alias o funzione.
+- `dot sandbox` — apre una shell sandbox usa e getta.
+- `dot keys` — mostra le scorciatoie da tastiera attuali.
+- `dot learn` — avvia il tutorial interattivo.
+
+### Meta
+
+- `dot upgrade` — aggiorna Dotfiles all'ultima versione.
+- `dot packages` — elenca i pacchetti installati gestiti da Dotfiles.
+- `dot version` / `dot help` — mostra informazioni su versione o utilizzo.
+
 ## Contribuisci
 
 Unisciti alla community. Consulta il nostro [Codice di Condotta][code-of-conduct-url] e le [Linee Guida per Contribuire][contributing-url].

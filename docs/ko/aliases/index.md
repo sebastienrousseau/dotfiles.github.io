@@ -67,6 +67,7 @@ meta:
 | :--- | :--- |
 | [AI](ai/) | AI 어시스턴트 및 LLM 도구 단축키 |
 | [Archives](archives/) | 파일 압축 및 해제 |
+| [Benchmarks](benchmarks/) | 벤치마킹 명령어 |
 | [CD](cd/) | 파일 시스템 탐색 |
 | [Chmod](chmod/) | 파일 권한 변경 |
 | [Clear](clear/) | 터미널 화면 지우기 |
@@ -103,10 +104,12 @@ meta:
 | [Security](security/) | 불변성 및 서명 |
 | [Subversion](subversion/) | SVN 버전 관리 |
 | [Sudo](sudo/) | 슈퍼유저 작업 |
+| [System](system/) | 시스템 관리 |
 | [Terraform](terraform/) | 인프라 코드화 |
 | [Tmux](tmux/) | 터미널 멀티플렉서 |
 | [Update](update/) | dotfiles 업데이트 |
 | [UUID](uuid/) | UUID 생성 |
+| [Vagrant](vagrant/) | Vagrant 명령어 |
 | [Wget](wget/) | 명령줄 다운로더 |
 | [Yarn](yarn/) | Yarn 패키지 관리자 |
 

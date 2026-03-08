@@ -67,6 +67,7 @@ Sfoglia gli alias per categoria:
 | :--- | :--- |
 | [AI](ai/) | Scorciatoie per assistenti AI e strumenti LLM |
 | [Archives](archives/) | Comprimi ed estrai file |
+| [Benchmarks](benchmarks/) | Comandi di benchmarking |
 | [CD](cd/) | Naviga nel file system |
 | [Chmod](chmod/) | Modifica i permessi dei file |
 | [Clear](clear/) | Pulisci lo schermo del terminale |
@@ -103,10 +104,12 @@ Sfoglia gli alias per categoria:
 | [Security](security/) | Immutabilita e firma |
 | [Subversion](subversion/) | Controllo versione SVN |
 | [Sudo](sudo/) | Operazioni superuser |
+| [System](system/) | Amministrazione di sistema |
 | [Terraform](terraform/) | Infrastructure as code |
 | [Tmux](tmux/) | Multiplexer terminale |
 | [Update](update/) | Aggiorna dotfiles |
 | [UUID](uuid/) | Genera UUID |
+| [Vagrant](vagrant/) | Comandi Vagrant |
 | [Wget](wget/) | Downloader da linea di comando |
 | [Yarn](yarn/) | Gestore pacchetti Yarn |
 

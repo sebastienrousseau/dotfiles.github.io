@@ -67,6 +67,7 @@ meta:
 | :--- | :--- |
 | [AI](ai/) | קיצורי דרך לעוזרי AI וכלי LLM |
 | [Archives](archives/) | דחיסה וחילוץ קבצים |
+| [Benchmarks](benchmarks/) | פקודות בנצ'מרק |
 | [CD](cd/) | ניווט במערכת הקבצים |
 | [Chmod](chmod/) | שינוי הרשאות קבצים |
 | [Clear](clear/) | ניקוי מסך הטרמינל |
@@ -103,10 +104,12 @@ meta:
 | [Security](security/) | אי-שינוי וחתימה |
 | [Subversion](subversion/) | בקרת גרסאות SVN |
 | [Sudo](sudo/) | פעולות superuser |
+| [System](system/) | ניהול מערכת |
 | [Terraform](terraform/) | תשתית כקוד |
 | [Tmux](tmux/) | מרבב טרמינלים |
 | [Update](update/) | עדכון dotfiles |
 | [UUID](uuid/) | יצירת UUIDs |
+| [Vagrant](vagrant/) | פקודות Vagrant |
 | [Wget](wget/) | הורדה משורת הפקודה |
 | [Yarn](yarn/) | מנהל חבילות Yarn |
 

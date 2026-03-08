@@ -67,6 +67,7 @@ meta:
 | :--- | :--- |
 | [AI](ai/) | Ярлыки для AI-ассистентов и LLM-инструментов |
 | [Archives](archives/) | Сжатие и распаковка файлов |
+| [Benchmarks](benchmarks/) | Команды бенчмаркинга |
 | [CD](cd/) | Навигация по файловой системе |
 | [Chmod](chmod/) | Изменение прав доступа к файлам |
 | [Clear](clear/) | Очистка экрана терминала |
@@ -103,10 +104,12 @@ meta:
 | [Security](security/) | Неизменяемость и подписание |
 | [Subversion](subversion/) | Система контроля версий SVN |
 | [Sudo](sudo/) | Операции суперпользователя |
+| [System](system/) | Системное администрирование |
 | [Terraform](terraform/) | Инфраструктура как код |
 | [Tmux](tmux/) | Терминальный мультиплексор |
 | [Update](update/) | Обновление dotfiles |
 | [UUID](uuid/) | Генерация UUID |
+| [Vagrant](vagrant/) | Команды Vagrant |
 | [Wget](wget/) | Загрузчик командной строки |
 | [Yarn](yarn/) | Менеджер пакетов Yarn |
 

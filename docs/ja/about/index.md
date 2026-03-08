@@ -65,3 +65,84 @@ dot doctor
 - [エイリアス](/ja/aliases/)
 - [関数](/ja/functions/)
 - [パス](/ja/paths/)
+
+## コアコマンド
+
+`dot` CLI は 53 のコマンドをカテゴリ別に提供します。
+
+### コア
+
+- `dot apply` — 設定変更を適用します.
+- `dot sync` — 最新のリポジトリ状態を取得して適用します.
+- `dot update` — リポジトリを更新しキャッシュをウォームアップします.
+- `dot add` — 新しいファイルを Chezmoi ソースに追加します.
+- `dot diff` — 適用前の保留中の変更を表示します.
+- `dot status` — 管理対象ファイルのステータスを表示します.
+- `dot remove` — ファイルの管理を解除しソースエントリを削除します.
+- `dot cd` — Chezmoi ソースディレクトリ内でシェルを開きます.
+- `dot edit` — 管理対象ファイルをエディタで開きます.
+- `dot clean-cache` — 一時キャッシュを消去します.
+- `dot prewarm` — シェルの高速起動のためにキャッシュを事前準備します.
+
+### 診断
+
+- `dot doctor` — パス、ツール、シェルの状態を検証します.
+- `dot heal` — 欠落または破損した状態を自動的に修復します.
+- `dot health` — 軽量なヘルスプローブを実行します.
+- `dot verify` — ソースに対するファイルの整合性を確認します.
+- `dot scorecard` — 設定品質スコアを表示します.
+- `dot snapshot` — 後の比較のために現在の状態をキャプチャします.
+- `dot smoke-test` — コアツールチェーンをエンドツーエンドで検証します.
+- `dot chaos` — 自己修復をテストするために障害を注入します.
+- `dot bundle` — ポータブルな設定バンドルをエクスポートします.
+- `dot rollback` — 以前のスナップショットに戻します.
+- `dot drift` — 管理対象ファイルへの予期しない変更を検出します.
+- `dot history` — apply/sync の履歴ログを表示します.
+- `dot benchmark` — シェルの起動時間を測定します.
+- `dot perf` — シェル初期化の遅延をプロファイリングします.
+
+### 外観
+
+- `dot theme` — ターミナルのカラースキームを切り替えます.
+- `dot wallpaper` — デスクトップの壁紙を設定します（macOS）.
+- `dot fonts` — Nerd Fonts をインストールまたは更新します.
+- `dot tune` — UI の密度とプロンプトスタイルを調整します.
+
+### セキュリティ
+
+- `dot backup` — 暗号化された設定バックアップを作成します.
+- `dot encrypt-check` — 保存時のシークレット暗号化を検証します.
+- `dot firewall` — ホストファイアウォールルールを設定します.
+- `dot telemetry` — 匿名使用テレメトリを制御します.
+- `dot dns-doh` — DNS-over-HTTPS を有効にします.
+- `dot lock-screen` — 画面を即座にロックします.
+- `dot usb-safety` — USB マスストレージの自動マウントを制限します.
+
+### シークレット
+
+- `dot secrets-init` — シークレットバックエンドを初期化します（age / GPG）.
+- `dot secrets` — 暗号化されたシークレットエントリを一覧表示します.
+- `dot secrets-create` — 新しい暗号化シークレットを作成します.
+- `dot ssh-key` — SSH 鍵ペアを生成またはローテーションします.
+- `dot ssh-cert` — CA から SSH 証明書を要求します.
+
+### AI
+
+- `dot ai` — インタラクティブな AI アシスタントセッションを開きます.
+- `dot ai-setup` — AI プロバイダの API キーを設定します.
+- `dot ai-query` — AI モデルにワンショットプロンプトを送信します.
+- AI ツールラッパー: `cl`, `gemini`, `kiro`, `sgpt`, `ollama`, `opencode`, `aider`.
+
+### ツール
+
+- `dot tools` — バンドルされた CLI 代替ツールとそのステータスを一覧表示します.
+- `dot new` — 新しいエイリアスまたは関数ファイルを作成します.
+- `dot sandbox` — 使い捨てサンドボックスシェルを開きます.
+- `dot keys` — 現在のキーバインドを表示します.
+- `dot learn` — インタラクティブチュートリアルを開始します.
+
+### メタ
+
+- `dot upgrade` — Dotfiles を最新リリースにアップグレードします.
+- `dot packages` — Dotfiles が管理するインストール済みパッケージを一覧表示します.
+- `dot version` / `dot help` — バージョンまたは使用方法の情報を表示します

@@ -1,6 +1,6 @@
 ---
 title: Aliases | Dotfiles
-description: Browse all 45 alias categories in Dotfiles v0.2.495. Over 1,200 shell shortcuts for Git, Docker, Kubernetes, and more on macOS, Linux, and WSL.
+description: Browse all 48 alias categories in Dotfiles v0.2.495. Over 1,250 shell shortcuts for Git, Docker, Kubernetes, and more on macOS, Linux, and WSL.
 lang: en-GB
 author: Sebastien Rousseau
 lastUpdated: true
@@ -19,7 +19,7 @@ permalink: /en/aliases/
 
 # Aliases
 
-Dotfiles ships over 1 200 shell aliases organised into 45 categories covering Git, Docker, Kubernetes, AI tooling, Rust, Python, and more. Each alias group has two pages: an **overview** with quick usage examples and a **reference appendix** listing every alias, its expansion, and supported shells so you can find exactly the shortcut you need.
+Dotfiles ships over 1 250 shell aliases organised into 48 categories covering Git, Docker, Kubernetes, AI tooling, Rust, Python, and more. Each alias group has two pages: an **overview** with quick usage examples and a **reference appendix** listing every alias, its expansion, and supported shells so you can find exactly the shortcut you need.
 
 ## Category map
 
@@ -27,6 +27,7 @@ Dotfiles ships over 1 200 shell aliases organised into 45 categories covering Gi
 | :--- | ---: | ---: | :--- | :--- |
 | AI | 46 | 0 | [Open](./ai/) | [Open](./ai/reference.md) |
 | Archives | 40 | 3 | [Open](./archives/) | [Open](./archives/reference.md) |
+| Benchmarks | 2 | 0 | [Open](./benchmarks/) | [Open](./benchmarks/reference.md) |
 | Cd | 16 | 6 | [Open](./cd/) | [Open](./cd/reference.md) |
 | Chmod | 17 | 0 | [Open](./chmod/) | [Open](./chmod/reference.md) |
 | Clear | 8 | 0 | [Open](./clear/) | [Open](./clear/reference.md) |
@@ -64,9 +65,11 @@ Dotfiles ships over 1 200 shell aliases organised into 45 categories covering Gi
 | Security | 98 | 61 | [Open](./security/) | [Open](./security/reference.md) |
 | Subversion | 74 | 0 | [Open](./subversion/) | [Open](./subversion/reference.md) |
 | Sudo | 5 | 0 | [Open](./sudo/) | [Open](./sudo/reference.md) |
+| System | 24 | 0 | [Open](./system/) | [Open](./system/reference.md) |
 | Terraform | 17 | 0 | [Open](./terraform/) | [Open](./terraform/reference.md) |
 | Tmux | 11 | 1 | [Open](./tmux/) | [Open](./tmux/reference.md) |
 | Update | 0 | 2 | [Open](./update/) | [Open](./update/reference.md) |
 | UUID | 1 | 0 | [Open](./uuid/) | [Open](./uuid/reference.md) |
+| Vagrant | 1 | 0 | [Open](./vagrant/) | [Open](./vagrant/reference.md) |
 | Wget | 4 | 0 | [Open](./wget/) | [Open](./wget/reference.md) |
 | Yarn | 21 | 0 | [Open](./yarn/) | [Open](./yarn/reference.md) |

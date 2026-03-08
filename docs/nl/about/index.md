@@ -108,6 +108,87 @@ Je configuratie bevindt zich in `~/.local/share/chezmoi`:
 └── docs/                   # Documentatie
 ```
 
+## Kerncommando's
+
+De `dot`-CLI biedt 53 opdrachten, georganiseerd per categorie.
+
+### Kern
+
+- `dot apply` — past configuratiewijzigingen toe.
+- `dot sync` — haalt de nieuwste repositorystatus op en past deze toe.
+- `dot update` — werkt de repository bij en warmt caches op.
+- `dot add` — voegt nieuwe bestanden toe aan de Chezmoi-bron.
+- `dot diff` — toont openstaande wijzigingen vóór toepassing.
+- `dot status` — toont de status van beheerde bestanden.
+- `dot remove` — verwijdert een bestand uit beheer en wist de bronvermelding.
+- `dot cd` — opent een shell in de Chezmoi-bronmap.
+- `dot edit` — opent een beheerd bestand in uw editor.
+- `dot clean-cache` — wist tijdelijke caches.
+- `dot prewarm` — vult caches vooraf voor snellere shellstart.
+
+### Diagnostiek
+
+- `dot doctor` — valideert paden, tools en shellstatus.
+- `dot heal` — repareert ontbrekende of defecte status automatisch.
+- `dot health` — voert een lichtgewicht gezondheidscontrole uit.
+- `dot verify` — controleert bestandsintegriteit tegen de bron.
+- `dot scorecard` — toont een configuratiekwaliteitsscore.
+- `dot snapshot` — legt de huidige status vast voor latere vergelijking.
+- `dot smoke-test` — valideert kerntoolchains volledig.
+- `dot chaos` — injecteert fouten om zelfherstel te testen.
+- `dot bundle` — exporteert een draagbaar configuratiepakket.
+- `dot rollback` — keert terug naar een eerder snapshot.
+- `dot drift` — detecteert onverwachte wijzigingen aan beheerde bestanden.
+- `dot history` — toont het apply/sync-geschiedenislogboek.
+- `dot benchmark` — meet de shellstarttijd.
+- `dot perf` — profileert trage shellinitialisatie.
+
+### Uiterlijk
+
+- `dot theme` — wisselt het kleurenschema van de terminal.
+- `dot wallpaper` — stelt het bureaublad achtergrondafbeelding in (macOS).
+- `dot fonts` — installeert of werkt Nerd Fonts bij.
+- `dot tune` — past UI-dichtheid en promptstijl aan.
+
+### Beveiliging
+
+- `dot backup` — maakt versleutelde configuratieback-ups.
+- `dot encrypt-check` — verifieert geheimversleuteling in rust.
+- `dot firewall` — configureert host-firewallregels.
+- `dot telemetry` — beheert anonieme gebruikstelemetrie.
+- `dot dns-doh` — schakelt DNS-over-HTTPS in.
+- `dot lock-screen` — vergrendelt het scherm onmiddellijk.
+- `dot usb-safety` — beperkt automatisch koppelen van USB-massaopslag.
+
+### Geheimen
+
+- `dot secrets-init` — initialiseert de geheimen-backend (age / GPG).
+- `dot secrets` — toont versleutelde geheimvermeldingen.
+- `dot secrets-create` — maakt een nieuw versleuteld geheim aan.
+- `dot ssh-key` — genereert of roteert SSH-sleutelparen.
+- `dot ssh-cert` — vraagt een SSH-certificaat aan bij een CA.
+
+### AI
+
+- `dot ai` — opent een interactieve AI-assistentsessie.
+- `dot ai-setup` — configureert API-sleutels voor AI-providers.
+- `dot ai-query` — stuurt een eenmalige prompt naar een AI-model.
+- AI-toolwrappers: `cl`, `gemini`, `kiro`, `sgpt`, `ollama`, `opencode`, `aider`.
+
+### Gereedschap
+
+- `dot tools` — toont meegeleverde CLI-vervangers en hun status.
+- `dot new` — maakt een nieuw alias- of functiebestand aan.
+- `dot sandbox` — opent een wegwerp-sandbox-shell.
+- `dot keys` — toont huidige sneltoetsen.
+- `dot learn` — start de interactieve tutorial.
+
+### Meta
+
+- `dot upgrade` — upgradet Dotfiles naar de nieuwste versie.
+- `dot packages` — toont geïnstalleerde pakketten beheerd door Dotfiles.
+- `dot version` / `dot help` — toont versie- of gebruiksinformatie
+
 ## Bijdragen
 
 Word lid van de community. Bekijk onze [Gedragscode][code-of-conduct-url] en [Bijdrage-richtlijnen][contributing-url].

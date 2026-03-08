@@ -114,3 +114,84 @@ Bergabunglah dengan komunitas. Tinjau [Kode Etik][code-of-conduct-url] dan [Pand
 
 [code-of-conduct-url]: https://github.com/sebastienrousseau/dotfiles/blob/master/.github/CODE-OF-CONDUCT.md
 [contributing-url]: https://github.com/sebastienrousseau/dotfiles/blob/master/.github/CONTRIBUTING.md
+
+## Perintah inti
+
+CLI `dot` menyediakan 53 perintah yang diorganisir berdasarkan kategori.
+
+### Inti
+
+- `dot apply` — menerapkan perubahan konfigurasi.
+- `dot sync` — mengambil status repo terbaru dan menerapkannya.
+- `dot update` — memperbarui repo dan menghangatkan cache.
+- `dot add` — menambahkan file baru ke sumber Chezmoi.
+- `dot diff` — menampilkan perubahan yang tertunda sebelum diterapkan.
+- `dot status` — menampilkan status file yang dikelola.
+- `dot remove` — menghapus file dari pengelolaan dan menghapus entri sumber.
+- `dot cd` — membuka shell di direktori sumber Chezmoi.
+- `dot edit` — membuka file yang dikelola di editor Anda.
+- `dot clean-cache` — membersihkan cache sementara.
+- `dot prewarm` — mengisi cache terlebih dahulu untuk startup shell yang lebih cepat.
+
+### Diagnostik
+
+- `dot doctor` — memvalidasi path, alat, dan status shell.
+- `dot heal` — memperbaiki status yang hilang atau rusak secara otomatis.
+- `dot health` — menjalankan pemeriksaan kesehatan ringan.
+- `dot verify` — memeriksa integritas file terhadap sumber.
+- `dot scorecard` — menampilkan skor kualitas konfigurasi.
+- `dot snapshot` — menangkap status saat ini untuk perbandingan nanti.
+- `dot smoke-test` — memvalidasi toolchain inti secara end-to-end.
+- `dot chaos` — menyuntikkan kesalahan untuk menguji penyembuhan diri.
+- `dot bundle` — mengekspor bundel konfigurasi portabel.
+- `dot rollback` — mengembalikan ke snapshot sebelumnya.
+- `dot drift` — mendeteksi perubahan tak terduga pada file yang dikelola.
+- `dot history` — menampilkan log riwayat apply/sync.
+- `dot benchmark` — mengukur waktu startup shell.
+- `dot perf` — memprofilkan inisialisasi shell yang lambat.
+
+### Tampilan
+
+- `dot theme` — mengubah skema warna terminal.
+- `dot wallpaper` — mengatur wallpaper desktop (macOS).
+- `dot fonts` — menginstal atau memperbarui Nerd Fonts.
+- `dot tune` — menyesuaikan kepadatan UI dan gaya prompt.
+
+### Keamanan
+
+- `dot backup` — membuat cadangan konfigurasi terenkripsi.
+- `dot encrypt-check` — memverifikasi enkripsi rahasia saat disimpan.
+- `dot firewall` — mengonfigurasi aturan firewall host.
+- `dot telemetry` — mengontrol telemetri penggunaan anonim.
+- `dot dns-doh` — mengaktifkan DNS-over-HTTPS.
+- `dot lock-screen` — mengunci layar segera.
+- `dot usb-safety` — membatasi auto-mount penyimpanan massal USB.
+
+### Rahasia
+
+- `dot secrets-init` — menginisialisasi backend rahasia (age / GPG).
+- `dot secrets` — menampilkan daftar entri rahasia terenkripsi.
+- `dot secrets-create` — membuat rahasia terenkripsi baru.
+- `dot ssh-key` — menghasilkan atau merotasi pasangan kunci SSH.
+- `dot ssh-cert` — meminta sertifikat SSH dari CA.
+
+### AI
+
+- `dot ai` — membuka sesi asisten AI interaktif.
+- `dot ai-setup` — mengonfigurasi kunci API untuk penyedia AI.
+- `dot ai-query` — mengirim prompt sekali pakai ke model AI.
+- Wrapper alat AI: `cl`, `gemini`, `kiro`, `sgpt`, `ollama`, `opencode`, `aider`.
+
+### Alat
+
+- `dot tools` — menampilkan pengganti CLI yang disertakan dan statusnya.
+- `dot new` — membuat file alias atau fungsi baru.
+- `dot sandbox` — membuka shell sandbox sekali pakai.
+- `dot keys` — menampilkan binding tombol saat ini.
+- `dot learn` — memulai tutorial interaktif.
+
+### Meta
+
+- `dot upgrade` — memperbarui Dotfiles ke rilis terbaru.
+- `dot packages` — menampilkan paket yang diinstal yang dikelola oleh Dotfiles.
+- `dot version` / `dot help` — menampilkan informasi versi atau penggunaan
