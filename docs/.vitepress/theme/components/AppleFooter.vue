@@ -22,11 +22,11 @@ function localLink(path: string): string {
 </script>
 
 <template>
-  <footer class="apple-footer" role="contentinfo">
-    <div class="apple-footer-inner">
-      <nav class="apple-footer-nav" aria-label="Footer navigation">
-        <div class="apple-footer-column">
-          <p class="apple-footer-title">{{ t.documentation }}</p>
+  <footer class="dot-footer" role="contentinfo">
+    <div class="dot-footer-inner">
+      <nav class="dot-footer-nav" aria-label="Footer navigation">
+        <div class="dot-footer-column">
+          <p class="dot-footer-title">{{ t.documentation }}</p>
           <ul>
             <li><a :href="localLink('/about/')">{{ t.about }}</a></li>
             <li><a :href="localLink('/functions/')">{{ t.functions }}</a></li>
@@ -34,8 +34,8 @@ function localLink(path: string): string {
             <li><a :href="localLink('/aliases/')">{{ t.aliases }}</a></li>
           </ul>
         </div>
-        <div class="apple-footer-column">
-          <p class="apple-footer-title">{{ t.resources }}</p>
+        <div class="dot-footer-column">
+          <p class="dot-footer-title">{{ t.resources }}</p>
           <ul>
             <li>
               <a
@@ -60,8 +60,8 @@ function localLink(path: string): string {
             </li>
           </ul>
         </div>
-        <div class="apple-footer-column">
-          <p class="apple-footer-title">{{ t.legal }}</p>
+        <div class="dot-footer-column">
+          <p class="dot-footer-title">{{ t.legal }}</p>
           <ul>
             <li><a :href="localLink('/accessibility/')">{{ t.accessibility }}</a></li>
             <li><a :href="localLink('/privacy/')">{{ t.privacy }}</a></li>
@@ -70,12 +70,12 @@ function localLink(path: string): string {
           </ul>
         </div>
       </nav>
-      <div class="apple-footer-divider" aria-hidden="true"></div>
-      <div class="apple-footer-bottom">
-        <p class="apple-footer-copyright">
+      <div class="dot-footer-divider" aria-hidden="true"></div>
+      <div class="dot-footer-bottom">
+        <p class="dot-footer-copyright">
           {{ t.copyright }} &copy; Dotfiles 2015&ndash;{{ currentYear }}.
         </p>
-        <ul class="apple-footer-legal" aria-label="Legal links">
+        <ul class="dot-footer-legal" aria-label="Legal links">
           <li><a :href="localLink('/privacy/')">{{ t.privacyPolicy }}</a></li>
           <li><a :href="localLink('/terms/')">{{ t.termsOfUse }}</a></li>
         </ul>
@@ -85,7 +85,7 @@ function localLink(path: string): string {
 </template>
 
 <style scoped>
-.apple-footer {
+.dot-footer {
   background: var(--apple-footer-bg);
   color: var(--apple-footer-text);
   font-size: 13px;
@@ -93,26 +93,26 @@ function localLink(path: string): string {
   padding: 1.5rem 0 1rem;
 }
 
-.apple-footer-inner {
+.dot-footer-inner {
   max-width: 980px;
   margin: 0 auto;
   padding: 0 22px;
 }
 
-.apple-footer-nav {
+.dot-footer-nav {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
   padding-bottom: 1rem;
 }
 
-.apple-footer-column ul {
+.dot-footer-column ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-.apple-footer-title {
+.dot-footer-title {
   font-size: 13px;
   font-weight: 600;
   color: var(--apple-footer-title);
@@ -120,11 +120,11 @@ function localLink(path: string): string {
   letter-spacing: 0;
 }
 
-.apple-footer-column li {
+.dot-footer-column li {
   margin: 0;
 }
 
-.apple-footer-column a {
+.dot-footer-column a {
   color: var(--apple-footer-link);
   text-decoration: none;
   display: inline-block;
@@ -132,18 +132,18 @@ function localLink(path: string): string {
   min-height: 44px;
 }
 
-.apple-footer-column a:hover {
+.dot-footer-column a:hover {
   color: var(--apple-text-primary);
   text-decoration: underline;
 }
 
-.apple-footer-divider {
+.dot-footer-divider {
   height: 1px;
   background: var(--apple-divider);
   margin: 0.5rem 0 1rem;
 }
 
-.apple-footer-bottom {
+.dot-footer-bottom {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -151,12 +151,12 @@ function localLink(path: string): string {
   gap: 0.5rem 1rem;
 }
 
-.apple-footer-copyright {
+.dot-footer-copyright {
   margin: 0;
   color: var(--apple-footer-text);
 }
 
-.apple-footer-legal {
+.dot-footer-legal {
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem 1.25rem;
@@ -165,12 +165,12 @@ function localLink(path: string): string {
   padding: 0;
 }
 
-.apple-footer-legal a {
+.dot-footer-legal a {
   color: var(--apple-footer-link);
   text-decoration: none;
 }
 
-.apple-footer-legal a:hover {
+.dot-footer-legal a:hover {
   color: var(--apple-text-primary);
   text-decoration: underline;
 }
@@ -190,24 +190,24 @@ function localLink(path: string): string {
 
 /* Tablet */
 @media (max-width: 1068px) {
-  .apple-footer-inner {
+  .dot-footer-inner {
     max-width: 692px;
   }
 }
 
 /* Mobile — match VitePress hamburger breakpoint */
 @media (max-width: 768px) {
-  .apple-footer-nav {
+  .dot-footer-nav {
     grid-template-columns: repeat(2, 1fr);
     gap: 1.5rem;
   }
 
-  .apple-footer-inner {
+  .dot-footer-inner {
     width: 87.5%;
     padding: 0;
   }
 
-  .apple-footer-bottom {
+  .dot-footer-bottom {
     flex-direction: column;
   }
 }

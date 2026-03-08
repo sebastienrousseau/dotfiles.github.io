@@ -4,9 +4,9 @@ import { buildJsonLd } from './config/schema'
 import { DEFAULT_AUTHOR, DEFAULT_TWITTER, buildHreflangTags, resolvePageMeta, slugToTitle, SITE_NAME, SITE_URL } from './config/seo'
 import { getUiStrings } from './config/i18n'
 
+import { enNavbar } from './config/nav/en'
 import { arNavbar } from './config/nav/ar'
 import { deNavbar } from './config/nav/de'
-import { enNavbar } from './config/nav/en'
 import { esNavbar } from './config/nav/es'
 import { frNavbar } from './config/nav/fr'
 import { heNavbar } from './config/nav/he'
@@ -16,20 +16,20 @@ import { itNavbar } from './config/nav/it'
 import { jaNavbar } from './config/nav/ja'
 import { koNavbar } from './config/nav/ko'
 import { nlNavbar } from './config/nav/nl'
-import { ptNavbar } from './config/nav/pt'
-import { ruNavbar } from './config/nav/ru'
-import { zhNavbar } from './config/nav/zh'
-import { viNavbar } from './config/nav/vi'
-import { trNavbar } from './config/nav/tr'
 import { plNavbar } from './config/nav/pl'
-import { ukNavbar } from './config/nav/uk'
-import { zhtwNavbar } from './config/nav/zh-tw'
-import { thNavbar } from './config/nav/th'
+import { ptNavbar } from './config/nav/pt'
 import { roNavbar } from './config/nav/ro'
+import { ruNavbar } from './config/nav/ru'
+import { thNavbar } from './config/nav/th'
+import { trNavbar } from './config/nav/tr'
+import { ukNavbar } from './config/nav/uk'
+import { viNavbar } from './config/nav/vi'
+import { zhNavbar } from './config/nav/zh'
+import { zhtwNavbar } from './config/nav/zh-tw'
 
+import { enSidebar } from './config/sidebar/en'
 import { arSidebar } from './config/sidebar/ar'
 import { deSidebar } from './config/sidebar/de'
-import { enSidebar } from './config/sidebar/en'
 import { esSidebar } from './config/sidebar/es'
 import { frSidebar } from './config/sidebar/fr'
 import { heSidebar } from './config/sidebar/he'
@@ -39,16 +39,16 @@ import { itSidebar } from './config/sidebar/it'
 import { jaSidebar } from './config/sidebar/ja'
 import { koSidebar } from './config/sidebar/ko'
 import { nlSidebar } from './config/sidebar/nl'
-import { ptSidebar } from './config/sidebar/pt'
-import { ruSidebar } from './config/sidebar/ru'
-import { zhSidebar } from './config/sidebar/zh'
-import { viSidebar } from './config/sidebar/vi'
-import { trSidebar } from './config/sidebar/tr'
 import { plSidebar } from './config/sidebar/pl'
-import { ukSidebar } from './config/sidebar/uk'
-import { zhtwSidebar } from './config/sidebar/zh-tw'
-import { thSidebar } from './config/sidebar/th'
+import { ptSidebar } from './config/sidebar/pt'
 import { roSidebar } from './config/sidebar/ro'
+import { ruSidebar } from './config/sidebar/ru'
+import { thSidebar } from './config/sidebar/th'
+import { trSidebar } from './config/sidebar/tr'
+import { ukSidebar } from './config/sidebar/uk'
+import { viSidebar } from './config/sidebar/vi'
+import { zhSidebar } from './config/sidebar/zh'
+import { zhtwSidebar } from './config/sidebar/zh-tw'
 
 function hasNavItems(nav: unknown): nav is Array<{ text: string; link: string }> {
   // Require at least 2 items — single-item legacy navs should use the
@@ -263,16 +263,16 @@ export default defineConfig({
           ja: { translations: { button: { buttonText: '検索' } } },
           ko: { translations: { button: { buttonText: '검색' } } },
           nl: { translations: { button: { buttonText: 'Zoeken' } } },
-          pt: { translations: { button: { buttonText: 'Pesquisar' } } },
-          ru: { translations: { button: { buttonText: 'Поиск' } } },
-          zh: { translations: { button: { buttonText: '搜索' } } },
-          vi: { translations: { button: { buttonText: 'Tìm kiếm' } } },
-          tr: { translations: { button: { buttonText: 'Ara' } } },
           pl: { translations: { button: { buttonText: 'Szukaj' } } },
-          uk: { translations: { button: { buttonText: 'Пошук' } } },
-          'zh-tw': { translations: { button: { buttonText: '搜尋' } } },
-          th: { translations: { button: { buttonText: 'ค้นหา' } } },
+          pt: { translations: { button: { buttonText: 'Pesquisar' } } },
           ro: { translations: { button: { buttonText: 'Căutare' } } },
+          ru: { translations: { button: { buttonText: 'Поиск' } } },
+          th: { translations: { button: { buttonText: 'ค้นหา' } } },
+          tr: { translations: { button: { buttonText: 'Ara' } } },
+          uk: { translations: { button: { buttonText: 'Пошук' } } },
+          vi: { translations: { button: { buttonText: 'Tìm kiếm' } } },
+          zh: { translations: { button: { buttonText: '搜索' } } },
+          'zh-tw': { translations: { button: { buttonText: '搜尋' } } },
         },
       },
     },
@@ -352,50 +352,50 @@ export default defineConfig({
       description: 'Configuração de shell multiplataforma para macOS, Linux e WSL. Gerenciada com Chezmoi, Zsh, Neovim e tmux.',
       themeConfig: { nav: withLocalizedLegalNav(fallbackNav('/pt/') as NavItem[]), sidebar: { '/pt/': convertSidebar(ptSidebar['/pt/']) } },
     },
-    ru: {
-      label: '🇷🇺 Русский', link: '/ru/', lang: 'ru-RU', title: 'Dotfiles',
-      description: 'Кроссплатформенная конфигурация оболочки для macOS, Linux и WSL. Управляется Chezmoi с Zsh, Neovim и tmux.',
-      themeConfig: { nav: withLocalizedLegalNav(fallbackNav('/ru/') as NavItem[]), sidebar: { '/ru/': convertSidebar(ruSidebar['/ru/']) } },
-    },
-    zh: {
-      label: '🇨🇳 简体中文', link: '/zh/', lang: 'zh-CN', title: 'Dotfiles',
-      description: '适用于 macOS、Linux 和 WSL 的跨平台 Shell 配置。使用 Chezmoi、Zsh、Neovim 和 tmux 管理。',
-      themeConfig: { nav: withLocalizedLegalNav(fallbackNav('/zh/') as NavItem[]), sidebar: { '/zh/': convertSidebar(zhSidebar['/zh/']) } },
-    },
-    vi: {
-      label: '🇻🇳 Tiếng Việt', link: '/vi/', lang: 'vi-VN', title: 'Dotfiles',
-      description: 'Cấu hình shell đa nền tảng cho macOS, Linux và WSL. Quản lý bởi Chezmoi với Zsh, Neovim và tmux.',
-      themeConfig: { nav: withLocalizedLegalNav(fallbackNav('/vi/') as NavItem[]), sidebar: { '/vi/': convertSidebar(viSidebar['/vi/']) } },
-    },
-    tr: {
-      label: '🇹🇷 Türkçe', link: '/tr/', lang: 'tr-TR', title: 'Dotfiles',
-      description: 'macOS, Linux ve WSL için çapraz platform kabuk yapılandırması. Chezmoi, Zsh, Neovim ve tmux ile yönetilir.',
-      themeConfig: { nav: withLocalizedLegalNav(fallbackNav('/tr/') as NavItem[]), sidebar: { '/tr/': convertSidebar(trSidebar['/tr/']) } },
-    },
     pl: {
       label: '🇵🇱 Polski', link: '/pl/', lang: 'pl-PL', title: 'Dotfiles',
       description: 'Wieloplatformowa konfiguracja powłoki dla macOS, Linux i WSL. Zarządzana przez Chezmoi z Zsh, Neovim i tmux.',
       themeConfig: { nav: withLocalizedLegalNav(fallbackNav('/pl/') as NavItem[]), sidebar: { '/pl/': convertSidebar(plSidebar['/pl/']) } },
     },
-    uk: {
-      label: '🇺🇦 Українська', link: '/uk/', lang: 'uk-UA', title: 'Dotfiles',
-      description: 'Кросплатформна конфігурація оболонки для macOS, Linux та WSL. Керується Chezmoi з Zsh, Neovim та tmux.',
-      themeConfig: { nav: withLocalizedLegalNav(fallbackNav('/uk/') as NavItem[]), sidebar: { '/uk/': convertSidebar(ukSidebar['/uk/']) } },
+    ro: {
+      label: '🇷🇴 Română', link: '/ro/', lang: 'ro-RO', title: 'Dotfiles',
+      description: 'Configurare shell cross-platform pentru macOS, Linux și WSL. Gestionată cu Chezmoi, Zsh, Neovim și tmux.',
+      themeConfig: { nav: withLocalizedLegalNav(fallbackNav('/ro/') as NavItem[]), sidebar: { '/ro/': convertSidebar(roSidebar['/ro/']) } },
     },
-    'zh-tw': {
-      label: '🇹🇼 繁體中文', link: '/zh-tw/', lang: 'zh-TW', title: 'Dotfiles',
-      description: '適用於 macOS、Linux 和 WSL 的跨平台 Shell 配置。使用 Chezmoi、Zsh、Neovim 和 tmux 管理。',
-      themeConfig: { nav: withLocalizedLegalNav(fallbackNav('/zh-tw/') as NavItem[]), sidebar: { '/zh-tw/': convertSidebar(zhtwSidebar['/zh-tw/']) } },
+    ru: {
+      label: '🇷🇺 Русский', link: '/ru/', lang: 'ru-RU', title: 'Dotfiles',
+      description: 'Кроссплатформенная конфигурация оболочки для macOS, Linux и WSL. Управляется Chezmoi с Zsh, Neovim и tmux.',
+      themeConfig: { nav: withLocalizedLegalNav(fallbackNav('/ru/') as NavItem[]), sidebar: { '/ru/': convertSidebar(ruSidebar['/ru/']) } },
     },
     th: {
       label: '🇹🇭 ไทย', link: '/th/', lang: 'th-TH', title: 'Dotfiles',
       description: 'การกำหนดค่าเชลล์ข้ามแพลตฟอร์มสำหรับ macOS, Linux และ WSL จัดการโดย Chezmoi พร้อม Zsh, Neovim และ tmux',
       themeConfig: { nav: withLocalizedLegalNav(fallbackNav('/th/') as NavItem[]), sidebar: { '/th/': convertSidebar(thSidebar['/th/']) } },
     },
-    ro: {
-      label: '🇷🇴 Română', link: '/ro/', lang: 'ro-RO', title: 'Dotfiles',
-      description: 'Configurare shell cross-platform pentru macOS, Linux și WSL. Gestionată cu Chezmoi, Zsh, Neovim și tmux.',
-      themeConfig: { nav: withLocalizedLegalNav(fallbackNav('/ro/') as NavItem[]), sidebar: { '/ro/': convertSidebar(roSidebar['/ro/']) } },
+    tr: {
+      label: '🇹🇷 Türkçe', link: '/tr/', lang: 'tr-TR', title: 'Dotfiles',
+      description: 'macOS, Linux ve WSL için çapraz platform kabuk yapılandırması. Chezmoi, Zsh, Neovim ve tmux ile yönetilir.',
+      themeConfig: { nav: withLocalizedLegalNav(fallbackNav('/tr/') as NavItem[]), sidebar: { '/tr/': convertSidebar(trSidebar['/tr/']) } },
+    },
+    uk: {
+      label: '🇺🇦 Українська', link: '/uk/', lang: 'uk-UA', title: 'Dotfiles',
+      description: 'Кросплатформна конфігурація оболонки для macOS, Linux та WSL. Керується Chezmoi з Zsh, Neovim та tmux.',
+      themeConfig: { nav: withLocalizedLegalNav(fallbackNav('/uk/') as NavItem[]), sidebar: { '/uk/': convertSidebar(ukSidebar['/uk/']) } },
+    },
+    vi: {
+      label: '🇻🇳 Tiếng Việt', link: '/vi/', lang: 'vi-VN', title: 'Dotfiles',
+      description: 'Cấu hình shell đa nền tảng cho macOS, Linux và WSL. Quản lý bởi Chezmoi với Zsh, Neovim và tmux.',
+      themeConfig: { nav: withLocalizedLegalNav(fallbackNav('/vi/') as NavItem[]), sidebar: { '/vi/': convertSidebar(viSidebar['/vi/']) } },
+    },
+    zh: {
+      label: '🇨🇳 简体中文', link: '/zh/', lang: 'zh-CN', title: 'Dotfiles',
+      description: '适用于 macOS、Linux 和 WSL 的跨平台 Shell 配置。使用 Chezmoi、Zsh、Neovim 和 tmux 管理。',
+      themeConfig: { nav: withLocalizedLegalNav(fallbackNav('/zh/') as NavItem[]), sidebar: { '/zh/': convertSidebar(zhSidebar['/zh/']) } },
+    },
+    'zh-tw': {
+      label: '🇹🇼 繁體中文', link: '/zh-tw/', lang: 'zh-TW', title: 'Dotfiles',
+      description: '適用於 macOS、Linux 和 WSL 的跨平台 Shell 配置。使用 Chezmoi、Zsh、Neovim 和 tmux 管理。',
+      themeConfig: { nav: withLocalizedLegalNav(fallbackNav('/zh-tw/') as NavItem[]), sidebar: { '/zh-tw/': convertSidebar(zhtwSidebar['/zh-tw/']) } },
     },
   },
 })

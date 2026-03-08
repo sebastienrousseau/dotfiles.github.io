@@ -85,45 +85,45 @@ export const UI_STRINGS: Record<string, UiStrings> = {
     nav: { about: 'Over', functions: 'Functies', paths: 'Paden', aliases: 'Aliassen', compatibility: 'Compatibiliteit', guides: 'Handleidingen' },
     footer: { documentation: 'Documentatie', about: 'Over', functions: 'Functies', paths: 'Paden', aliases: 'Aliassen', resources: 'Bronnen', github: 'GitHub', issues: 'Problemen', releases: 'Releases', legal: 'Juridisch', accessibility: 'Toegankelijkheid', privacy: 'Privacy', terms: 'Voorwaarden', contact: 'Contact', copyright: 'Auteursrecht', privacyPolicy: 'Privacybeleid', termsOfUse: 'Gebruiksvoorwaarden' },
   },
+  pl: {
+    nav: { about: 'O projekcie', functions: 'Funkcje', paths: 'Sciezki', aliases: 'Aliasy', compatibility: 'Kompatybilnosc', guides: 'Poradniki' },
+    footer: { documentation: 'Dokumentacja', about: 'O projekcie', functions: 'Funkcje', paths: 'Sciezki', aliases: 'Aliasy', resources: 'Zasoby', github: 'GitHub', issues: 'Problemy', releases: 'Wydania', legal: 'Informacje prawne', accessibility: 'Dostepnosc', privacy: 'Prywatnosc', terms: 'Regulamin', contact: 'Kontakt', copyright: 'Prawa autorskie', privacyPolicy: 'Polityka prywatnosci', termsOfUse: 'Warunki uzytkowania' },
+  },
   pt: {
     nav: { about: 'Sobre', functions: 'Funcoes', paths: 'Caminhos', aliases: 'Alias', compatibility: 'Compatibilidade', guides: 'Guias' },
     footer: { documentation: 'Documentacao', about: 'Sobre', functions: 'Funcoes', paths: 'Caminhos', aliases: 'Alias', resources: 'Recursos', github: 'GitHub', issues: 'Problemas', releases: 'Lancamentos', legal: 'Legal', accessibility: 'Acessibilidade', privacy: 'Privacidade', terms: 'Termos', contact: 'Contato', copyright: 'Direitos autorais', privacyPolicy: 'Politica de privacidade', termsOfUse: 'Termos de uso' },
+  },
+  ro: {
+    nav: { about: 'Despre', functions: 'Functii', paths: 'Cai', aliases: 'Aliasuri', compatibility: 'Compatibilitate', guides: 'Ghiduri' },
+    footer: { documentation: 'Documentatie', about: 'Despre', functions: 'Functii', paths: 'Cai', aliases: 'Aliasuri', resources: 'Resurse', github: 'GitHub', issues: 'Probleme', releases: 'Lansari', legal: 'Legal', accessibility: 'Accesibilitate', privacy: 'Confidentialitate', terms: 'Termeni', contact: 'Contact', copyright: 'Drepturi de autor', privacyPolicy: 'Politica de confidentialitate', termsOfUse: 'Termeni de utilizare' },
   },
   ru: {
     nav: { about: 'О проекте', functions: 'Функции', paths: 'Пути', aliases: 'Псевдонимы', compatibility: 'Совместимость', guides: 'Руководства' },
     footer: { documentation: 'Документация', about: 'О проекте', functions: 'Функции', paths: 'Пути', aliases: 'Псевдонимы', resources: 'Ресурсы', github: 'GitHub', issues: 'Проблемы', releases: 'Релизы', legal: 'Правовая информация', accessibility: 'Доступность', privacy: 'Конфиденциальность', terms: 'Условия', contact: 'Контакты', copyright: 'Авторские права', privacyPolicy: 'Политика конфиденциальности', termsOfUse: 'Условия использования' },
   },
-  zh: {
-    nav: { about: '关于', functions: '函数', paths: '路径', aliases: '别名', compatibility: '兼容性', guides: '指南' },
-    footer: { documentation: '文档', about: '关于', functions: '函数', paths: '路径', aliases: '别名', resources: '资源', github: 'GitHub', issues: '问题', releases: '发布', legal: '法律信息', accessibility: '无障碍', privacy: '隐私', terms: '条款', contact: '联系', copyright: '版权', privacyPolicy: '隐私政策', termsOfUse: '使用条款' },
-  },
-  vi: {
-    nav: { about: 'Gioi thieu', functions: 'Ham', paths: 'Duong dan', aliases: 'Bi danh', compatibility: 'Tuong thich', guides: 'Huong dan' },
-    footer: { documentation: 'Tai lieu', about: 'Gioi thieu', functions: 'Ham', paths: 'Duong dan', aliases: 'Bi danh', resources: 'Tai nguyen', github: 'GitHub', issues: 'Van de', releases: 'Phat hanh', legal: 'Phap ly', accessibility: 'Tro nang', privacy: 'Quyen rieng tu', terms: 'Dieu khoan', contact: 'Lien he', copyright: 'Ban quyen', privacyPolicy: 'Chinh sach quyen rieng tu', termsOfUse: 'Dieu khoan su dung' },
+  th: {
+    nav: { about: 'เกี่ยวกับ', functions: 'ฟังก์ชัน', paths: 'เส้นทาง', aliases: 'นามแฝง', compatibility: 'ความเข้ากันได้', guides: 'คู่มือ' },
+    footer: { documentation: 'เอกสาร', about: 'เกี่ยวกับ', functions: 'ฟังก์ชัน', paths: 'เส้นทาง', aliases: 'นามแฝง', resources: 'ทรัพยากร', github: 'GitHub', issues: 'ปัญหา', releases: 'รุ่น', legal: 'กฎหมาย', accessibility: 'การเข้าถึง', privacy: 'ความเป็นส่วนตัว', terms: 'เงื่อนไข', contact: 'ติดต่อ', copyright: 'ลิขสิทธิ์', privacyPolicy: 'นโยบายความเป็นส่วนตัว', termsOfUse: 'เงื่อนไขการใช้งาน' },
   },
   tr: {
     nav: { about: 'Hakkinda', functions: 'Fonksiyonlar', paths: 'Yollar', aliases: 'Takma Adlar', compatibility: 'Uyumluluk', guides: 'Rehberler' },
     footer: { documentation: 'Dokumantasyon', about: 'Hakkinda', functions: 'Fonksiyonlar', paths: 'Yollar', aliases: 'Takma Adlar', resources: 'Kaynaklar', github: 'GitHub', issues: 'Sorunlar', releases: 'Surumler', legal: 'Yasal', accessibility: 'Erisilebilirlik', privacy: 'Gizlilik', terms: 'Kosullar', contact: 'Iletisim', copyright: 'Telif hakki', privacyPolicy: 'Gizlilik Politikasi', termsOfUse: 'Kullanim Kosullari' },
   },
-  pl: {
-    nav: { about: 'O projekcie', functions: 'Funkcje', paths: 'Sciezki', aliases: 'Aliasy', compatibility: 'Kompatybilnosc', guides: 'Poradniki' },
-    footer: { documentation: 'Dokumentacja', about: 'O projekcie', functions: 'Funkcje', paths: 'Sciezki', aliases: 'Aliasy', resources: 'Zasoby', github: 'GitHub', issues: 'Problemy', releases: 'Wydania', legal: 'Informacje prawne', accessibility: 'Dostepnosc', privacy: 'Prywatnosc', terms: 'Regulamin', contact: 'Kontakt', copyright: 'Prawa autorskie', privacyPolicy: 'Polityka prywatnosci', termsOfUse: 'Warunki uzytkowania' },
-  },
   uk: {
     nav: { about: 'Про проект', functions: 'Функцii', paths: 'Шляхи', aliases: 'Аліаси', compatibility: 'Сумісність', guides: 'Посібники' },
     footer: { documentation: 'Документація', about: 'Про проект', functions: 'Функцii', paths: 'Шляхи', aliases: 'Аліаси', resources: 'Ресурси', github: 'GitHub', issues: 'Проблеми', releases: 'Релізи', legal: 'Правова інформація', accessibility: 'Доступність', privacy: 'Конфіденційність', terms: 'Умови', contact: 'Контакти', copyright: 'Авторські права', privacyPolicy: 'Політика конфіденційності', termsOfUse: 'Умови використання' },
   },
+  vi: {
+    nav: { about: 'Gioi thieu', functions: 'Ham', paths: 'Duong dan', aliases: 'Bi danh', compatibility: 'Tuong thich', guides: 'Huong dan' },
+    footer: { documentation: 'Tai lieu', about: 'Gioi thieu', functions: 'Ham', paths: 'Duong dan', aliases: 'Bi danh', resources: 'Tai nguyen', github: 'GitHub', issues: 'Van de', releases: 'Phat hanh', legal: 'Phap ly', accessibility: 'Tro nang', privacy: 'Quyen rieng tu', terms: 'Dieu khoan', contact: 'Lien he', copyright: 'Ban quyen', privacyPolicy: 'Chinh sach quyen rieng tu', termsOfUse: 'Dieu khoan su dung' },
+  },
+  zh: {
+    nav: { about: '关于', functions: '函数', paths: '路径', aliases: '别名', compatibility: '兼容性', guides: '指南' },
+    footer: { documentation: '文档', about: '关于', functions: '函数', paths: '路径', aliases: '别名', resources: '资源', github: 'GitHub', issues: '问题', releases: '发布', legal: '法律信息', accessibility: '无障碍', privacy: '隐私', terms: '条款', contact: '联系', copyright: '版权', privacyPolicy: '隐私政策', termsOfUse: '使用条款' },
+  },
   'zh-tw': {
     nav: { about: '關於', functions: '函式', paths: '路徑', aliases: '別名', compatibility: '相容性', guides: '指南' },
     footer: { documentation: '文件', about: '關於', functions: '函式', paths: '路徑', aliases: '別名', resources: '資源', github: 'GitHub', issues: '問題', releases: '發布', legal: '法律資訊', accessibility: '無障礙', privacy: '隱私', terms: '條款', contact: '聯絡', copyright: '版權', privacyPolicy: '隱私權政策', termsOfUse: '使用條款' },
-  },
-  th: {
-    nav: { about: 'เกี่ยวกับ', functions: 'ฟังก์ชัน', paths: 'เส้นทาง', aliases: 'นามแฝง', compatibility: 'ความเข้ากันได้', guides: 'คู่มือ' },
-    footer: { documentation: 'เอกสาร', about: 'เกี่ยวกับ', functions: 'ฟังก์ชัน', paths: 'เส้นทาง', aliases: 'นามแฝง', resources: 'ทรัพยากร', github: 'GitHub', issues: 'ปัญหา', releases: 'รุ่น', legal: 'กฎหมาย', accessibility: 'การเข้าถึง', privacy: 'ความเป็นส่วนตัว', terms: 'เงื่อนไข', contact: 'ติดต่อ', copyright: 'ลิขสิทธิ์', privacyPolicy: 'นโยบายความเป็นส่วนตัว', termsOfUse: 'เงื่อนไขการใช้งาน' },
-  },
-  ro: {
-    nav: { about: 'Despre', functions: 'Functii', paths: 'Cai', aliases: 'Aliasuri', compatibility: 'Compatibilitate', guides: 'Ghiduri' },
-    footer: { documentation: 'Documentatie', about: 'Despre', functions: 'Functii', paths: 'Cai', aliases: 'Aliasuri', resources: 'Resurse', github: 'GitHub', issues: 'Probleme', releases: 'Lansari', legal: 'Legal', accessibility: 'Accesibilitate', privacy: 'Confidentialitate', terms: 'Termeni', contact: 'Contact', copyright: 'Drepturi de autor', privacyPolicy: 'Politica de confidentialitate', termsOfUse: 'Termeni de utilizare' },
   },
 }
 
