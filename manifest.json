@@ -1,0 +1,24 @@
+{
+  "name": "Dotfiles",
+  "short_name": "Dotfiles",
+  "description": "The next generation of Bash configuration files for macOS, Linux and Windows.",
+  "lang": "en-GB",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#EEFBFB",
+  "theme_color": "#12232E",
+  "icons": [
+    {
+      "src": "/icons/dotfiles-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/icons/dotfiles-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
