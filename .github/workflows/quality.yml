@@ -34,6 +34,9 @@ jobs:
       - name: Lint content accessibility (links/alt/headings)
         run: npm run lint:content:a11y
 
+      - name: Sync Chrome & ChromeDriver
+        run: npx browser-driver-manager install chrome
+
       - name: Axe audit
         run: npm run test:axe
 
