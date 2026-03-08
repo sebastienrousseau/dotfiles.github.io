@@ -41,7 +41,7 @@ De moderne standaard voor shell-configuratie. Gebouwd op **Chezmoi** voor veilig
 
 ## Ontdek
 
-Dotfiles v0.2.481 transformeert je terminal in een krachtige, uniforme werkruimte. In tegenstelling tot oudere dotfiles die afhankelijk zijn van complexe Makefiles of symlink-scripts, gebruikt Dotfiles een template-gebaseerde aanpak die atomair, snel en reproduceerbaar is.
+Dotfiles v0.2.495 transformeert je terminal in een krachtige, uniforme werkruimte. In tegenstelling tot oudere dotfiles die afhankelijk zijn van complexe Makefiles of symlink-scripts, gebruikt Dotfiles een template-gebaseerde aanpak die atomair, snel en reproduceerbaar is.
 
 ### Wat is nieuw
 
@@ -68,7 +68,7 @@ Dotfiles v0.2.481 transformeert je terminal in een krachtige, uniforme werkruimt
 Voer een enkel commando uit om de volledige suite te installeren:
 
 ```bash
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/sebastienrousseau/dotfiles/v0.2.481/install.sh)"
+bash -c "$(curl -fsSL https://raw.githubusercontent.com/sebastienrousseau/dotfiles/main/install.sh)"
 ```
 
 De installer zal:

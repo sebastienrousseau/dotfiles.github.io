@@ -21,7 +21,7 @@ meta:
     content: chezmoi, dotfiles, configuração, automação, macos, linux, rust, zellij
 ---
 
-# Sobre Dotfiles v0.2.481
+# Sobre Dotfiles v0.2.495
 
 ## Introdução
 
@@ -29,7 +29,7 @@ Dotfiles representa o padrão moderno para configuração de ambiente. É constr
 
 Ao contrário de dotfiles legados que dependem de Makefiles complexos ou scripts de link simbólico, Dotfiles usa uma abordagem baseada em modelo que é atômica e rápida.
 
-## O que há de novo na v0.2.481
+## O que há de novo na v0.2.495
 
 - **Núcleo Moderno**: Substituímos ferramentas Unix legadas por alternativas Rust de alto desempenho:
   - **Atuin** (substitui `history`)
@@ -55,7 +55,7 @@ Ao contrário de dotfiles legados que dependem de Makefiles complexos ou scripts
 Todo o pacote é instalado por meio de um único comando usando Chezmoi:
 
 ```bash
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/sebastienrousseau/dotfiles/v0.2.481/install.sh)"
+bash -c "$(curl -fsSL https://raw.githubusercontent.com/sebastienrousseau/dotfiles/main/install.sh)"
 ```
 
 Este comando irá:
