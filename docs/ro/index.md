@@ -1,0 +1,52 @@
+---
+title: Dotfiles v0.2.495 | Dotfiles
+description: Configurare shell cross-platform pentru macOS, Linux și WSL. Gestionată cu Chezmoi, Zsh, Neovim și tmux.
+lang: ro-RO
+author: Sebastien Rousseau
+lastUpdated: true
+image: /logo.png
+imageAlt: Dotfiles - Shell-ul Tău, Oriunde
+canonical: /ro/
+robots: index, follow
+draft: false
+noindex: false
+sitemap: true
+breadcrumbTitle: Dotfiles
+pageType: home
+schemaType: WebSite
+heroText: Shell-ul Tău, Oriunde.
+home: true
+metaTitle: Dotfiles - Shell-ul Tău, Oriunde
+permalink: /ro/
+subtitle: Configurare shell cross-platform gestionată cu Chezmoi.
+tagline: Configurare shell cross-platform gestionată cu Chezmoi.
+actionText: Explorează Dotfiles
+actionLink: /ro/about/
+features:
+  - title: Nucleu Modern
+    details: "Alimentat de Rust: Atuin (Istoric), Yazi (Fișiere), Zellij (Multiplexor) și Ghostty (Terminal)."
+  - title: Securitate Întărită
+    details: Semnare SSH nativă și conformitate XDG din fabrică. Fără dependențe proprietare.
+  - title: Abordare Infrastructurală
+    details: Zsh, Neovim și tmux configurate cu valori implicite sănătoase. Idempotent prin design — rulați o dată sau de o sută de ori.
+  - title: Cross-Platform
+    details: O singură configurare pentru macOS, Linux și WSL. Gestionată cu Chezmoi pentru portabilitate perfectă între mașini.
+footer: Copyright © Sebastien Rousseau 2015-2026. Toate drepturile rezervate.
+meta:
+  - name: keywords
+    content: dotfiles, zsh, neovim, tmux, chezmoi, shell, terminal, linux, macos, wsl, atuin, yazi, zellij, ghostty
+  - name: twitter:card
+    content: summary_large_image
+  - name: twitter:description
+    content: Shell-ul Tău, Oriunde. O distribuție shell cross-platform gestionată cu Chezmoi pentru macOS, Linux și WSL.
+  - name: twitter:title
+    content: Dotfiles - Shell-ul Tău, Oriunde
+  - name: og:title
+    content: Dotfiles - Shell-ul Tău, Oriunde
+  - name: og:description
+    content: Shell-ul Tău, Oriunde. O distribuție shell cross-platform gestionată cu Chezmoi pentru macOS, Linux și WSL.
+  - name: og:image:alt
+    content: Dotfiles - Shell-ul Tău, Oriunde.
+  - name: og:locale
+    content: ro_RO
+---

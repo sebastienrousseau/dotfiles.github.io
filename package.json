@@ -1,22 +1,24 @@
 {
-	"scripts": {
-		"dev": "vuepress dev docs --debug",
-		"build": "vuepress build docs",
-		"docs:dev": "vuepress dev docs --debug",
-		"docs:build": "vuepress build docs",
-		"deploy": "vuepress build && gh-pages -d .vuepress/dist"
-	},
-	"devDependencies": {
-		"@vuepress/plugin-google-analytics": "^1.9.8",
-		"@vuepress/plugin-pwa": "1.9.7",
-		"chalk": "^2.4.2",
-		"commander": "^2.20.3",
-		"esm": "^3.2.25",
-		"vuepress": "^1.9.8",
-		"vuepress-html-webpack-plugin": "^3.2.0",
-		"vuepress-plugin-code-copy": "^1.0.6",
-		"vuepress-plugin-sitemap": "^2.3.1",
-		"vuepress-theme-default-prefers-color-scheme": "^2.0.0",
-		"webpack": "^4.46.0"
-	}
+  "type": "module",
+  "scripts": {
+    "dev": "vitepress dev docs",
+    "build": "vitepress build docs",
+    "preview": "vitepress preview docs",
+    "content:normalize": "node scripts/normalize-frontmatter.mjs",
+    "docs:sync:en": "node scripts/sync-en-docs-from-dotfiles.mjs",
+    "docs:audit:en": "node scripts/audit-en-docs.mjs",
+    "lint:content:a11y": "node scripts/lint-content-a11y.mjs",
+    "validate:manifest": "node scripts/validate-manifest.mjs",
+    "validate:seo": "node scripts/validate-dist-seo.mjs",
+    "test:axe": "node scripts/run-axe-ci.mjs",
+    "test:lighthouse": "lhci autorun --collect.staticDistDir=docs/.vitepress/dist --upload.target=temporary-public-storage",
+    "test:quality": "npm run build && npm run validate:manifest && npm run validate:seo && npm run lint:content:a11y",
+    "deploy": "vitepress build docs && gh-pages -d docs/.vitepress/dist"
+  },
+  "devDependencies": {
+    "@axe-core/cli": "^4.11.0",
+    "@lhci/cli": "^0.15.1",
+    "gh-pages": "^6.3.0",
+    "vitepress": "^1.6.3"
+  }
 }

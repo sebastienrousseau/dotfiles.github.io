@@ -1,0 +1,24 @@
+{
+  "name": "Dotfiles",
+  "short_name": "Dotfiles",
+  "description": "Cross-platform shell configuration for macOS, Linux, and WSL. Managed by Chezmoi.",
+  "lang": "en-GB",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#f5f5f7",
+  "theme_color": "#1d1d1f",
+  "icons": [
+    {
+      "src": "/icons/dotfiles-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/icons/dotfiles-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

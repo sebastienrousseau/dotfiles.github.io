@@ -2,9 +2,9 @@ name: CI
 
 on:
   push:
-    branches: [main, "feat/**"]
+    branches: [main, 'feat/**']
   pull_request:
-    branches: [main, "feat/**"]
+    branches: [main, 'feat/**']
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
@@ -17,19 +17,14 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Setup pnpm
-        uses: pnpm/action-setup@v4
-        with:
-          version: 9
-
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: '20'
-          cache: 'pnpm'
+          cache: 'npm'
 
       - name: Install dependencies
-        run: pnpm install --frozen-lockfile
+        run: npm install
 
-      - name: Build VuePress site
-        run: pnpm run build
+      - name: Build VitePress site
+        run: npm run build

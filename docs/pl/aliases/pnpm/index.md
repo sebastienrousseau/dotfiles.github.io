@@ -1,0 +1,57 @@
+---
+title: Aliasy PNPM | Dotfiles
+description: Skrocone polecenia pnpm. Przeglad dla Dotfiles v0.2.495.
+lang: pl-PL
+author: Sebastien Rousseau
+lastUpdated: true
+image: /logo.png
+imageAlt: Aliasy PNPM | Dotfiles preview
+canonical: /pl/aliases/pnpm/
+robots: index, follow
+draft: false
+noindex: false
+sitemap: true
+breadcrumbTitle: Aliasy PNPM
+pageType: docs
+schemaType: WebPage
+permalink: /pl/aliases/pnpm/
+---
+
+# Aliasy PNPM
+
+Skrocone polecenia pnpm.
+
+Ta strona przedstawia jedna grupe aliasow i jej typowe skroty polecen.
+Przeczytaj ja najpierw, aby zrozumiec konwencje nazewnictwa, oczekiwane dane wejsciowe i bezpieczne wzorce wykonywania.
+Nastepnie otworz dodatek referencyjny, aby zobaczyc pelny spis polecen i dokladna skladnie.
+Te aliasy redukuja powtarzalne wpisywanie i zapewniaja spojne zachowanie przeplywy pracy na macOS, Linux i WSL.
+
+## Kiedy uzywac
+
+Uzyj tej strony przed codziennym uzywaniem powloki, gdy potrzebujesz przewidywalnych wzorcow polecen.
+
+## Co zawiera
+
+- Aliasy: 33
+- Funkcje pomocnicze: 0
+- Pliki zrodlowe: 1
+
+## Szybkie przyklady
+
+- `pna` -> `pnpm add`
+- `pnad` -> `pnpm add --save-dev`
+- `pnap` -> `pnpm add --save-peer`
+- `pnau` -> `pnpm audit`
+- `pnb` -> `pnpm run build`
+- `pnc` -> `pnpm create`
+- `pnd` -> `pnpm run dev`
+- `pndoc` -> `pnpm run doc`
+- `pnga` -> `pnpm add --global`
+- `pngls` -> `pnpm list --global`
+- `pngrm` -> `pnpm remove --global`
+- `pngu` -> `pnpm update --global`
+
+## Nastepny krok
+
+Otworz pelna liste:
+

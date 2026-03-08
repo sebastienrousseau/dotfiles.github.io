@@ -1,0 +1,57 @@
+---
+title: Аліаси Git | Dotfiles
+description: Короткі команди Git. Огляд для Dotfiles v0.2.495.
+lang: uk-UA
+author: Sebastien Rousseau
+lastUpdated: true
+image: /logo.png
+imageAlt: Аліаси Git | Dotfiles preview
+canonical: /uk/aliases/git/
+robots: index, follow
+draft: false
+noindex: false
+sitemap: true
+breadcrumbTitle: Аліаси Git
+pageType: docs
+schemaType: WebPage
+permalink: /uk/aliases/git/
+---
+
+# Аліаси Git
+
+Короткі команди Git.
+
+Ця сторінка знайомить з однією групою аліасів та її поширеними скороченнями команд.
+Прочитайте її спочатку, щоб зрозуміти угоди про іменування, очікувані вхідні дані та безпечні шаблони виконання.
+Потім відкрийте довідковий додаток для повного переліку команд та точного синтаксису.
+Ці аліаси зменшують повторний набір та зберігають послідовну поведінку робочого процесу на macOS, Linux та WSL.
+
+## Коли використовувати
+
+Використовуйте цю сторінку перед щоденною роботою в оболонці, коли вам потрібні передбачувані шаблони команд.
+
+## Що включено
+
+- Аліаси: 84
+- Допоміжні функції: 7
+- Файли джерел: 2
+
+## Швидкі приклади
+
+- `check-signing` → `git config --list | grep "gpg\|signing"`
+- `ci` → `git commit`
+- `enable-signing` → `enable_signing_fn`
+- `g` → `git`
+- `ga` → `git add`
+- `gaa` → `git add --all`
+- `gad` → `git add .`
+- `gau` → `git add --update`
+- `gb` → `git branch`
+- `gbd` → `git branch -d`
+- `gbl` → `git branch -l`
+- `gbr` → `git branch -r`
+
+## Наступний крок
+
+Відкрити повний перелік:
+

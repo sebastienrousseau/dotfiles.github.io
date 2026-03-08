@@ -1,0 +1,41 @@
+name: Quality
+
+on:
+  pull_request:
+    branches: [main, "feat/**"]
+  push:
+    branches: [main]
+
+jobs:
+  audits:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: "npm"
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build
+        run: npm run build
+
+      - name: Validate manifest
+        run: npm run validate:manifest
+
+      - name: Validate SEO metadata and JSON-LD
+        run: npm run validate:seo
+
+      - name: Lint content accessibility (links/alt/headings)
+        run: npm run lint:content:a11y
+
+      - name: Axe audit
+        run: npm run test:axe
+
+      - name: Lighthouse CI
+        run: npm run test:lighthouse

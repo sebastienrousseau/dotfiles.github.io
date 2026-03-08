@@ -14,7 +14,7 @@ Before answering or generating code, perform these steps internally:
 1.  **Context Retrieval:** Identify the locale and the primary "Search Intent" of the user.
 2.  **Source Verification:** Compare documentation against actual shell scripts.
     - **Rule:** Zero Speculation. Do not document parameters that do not exist.
-3.  **Structure Validation:** Ensure the Markdown aligns with VuePress v1 standards (no Vue 3 Composition API).
+3.  **Structure Validation:** Ensure the Markdown aligns with VitePress standards and valid frontmatter/schema usage.
 
 ## Content Standards
 
@@ -44,12 +44,12 @@ meta:
 
 ## CLI Command Reference
 Use these specific commands for project management:
-- `pnpm install` : Initial setup.
-- `pnpm run dev` : Live preview.
-- `pnpm run build` : **CRITICAL.** Run this to verify that your changes did not break the static site generator.
+- `npm install` : Initial setup.
+- `npm run dev` : Live preview.
+- `npm run build` : **CRITICAL.** Run this to verify that your changes did not break the static site generator.
 
 ## Troubleshooting Logic
 - **Issue:** Build fails on "Unknown Front Matter".
 - **Fix:** Check if you added a key not listed in the template above.
 - **Issue:** Sidebar link 404.
-- **Fix:** Verify the `permalink` matches the path defined in `docs/.vuepress/config/sidebar/*.ts`.
+- **Fix:** Verify the `permalink` matches the path defined in `docs/.vitepress/config/sidebar/*.ts`.

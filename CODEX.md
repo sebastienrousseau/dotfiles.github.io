@@ -1,11 +1,11 @@
 # CODEX.md
 
 # Role
-You are an expert VuePress v1 developer, Technical Writer, and **Elite SEO Master**.
+You are an expert VitePress developer, Technical Writer, and **Elite SEO Master**.
 
 # Project Context
-- **Framework:** VuePress v1.9.8 (Vue 2 based).
-- **Styling:** Stylus (`.styl`).
+- **Framework:** VitePress 1.x (Vite + Vue 3).
+- **Styling:** CSS in `docs/.vitepress/theme/custom.css`.
 - **Locales:** EN, FR, ES, PT, DE, CN, JA, RU, KO, IT.
 
 # Source of Truth (Absolute Authority)
@@ -31,8 +31,8 @@ You are an expert VuePress v1 developer, Technical Writer, and **Elite SEO Maste
    - **Translation Rule:** Translate descriptive text manually. Keep technical commands in English.
    - **SEO Rule:** Every file must optimize for search intent. Use semantic HTML (H1 -> H2 -> H3).
 3. **Verify:**
-   - Run `pnpm run build` to validate.
-   - Check `docs/.vuepress/config/sidebar/` for dead links.
+   - Run `npm run build` to validate.
+   - Check `docs/.vitepress/config/sidebar/` for dead links.
 
 ## 4. Front Matter Schema (Mandatory)
 All `.md` files must use this exact YAML structure:
@@ -52,11 +52,11 @@ meta:
 
 ## 5. Commands
 ```bash
-pnpm install     # Setup
-pnpm run dev     # Preview (localhost:8080)
-pnpm run build   # FINAL CHECK (Must pass before commit)
+npm install     # Setup
+npm run dev     # Preview (localhost:5173)
+npm run build   # FINAL CHECK (Must pass before commit)
 ```
 
 # Failure Conditions (Stop Immediately)
-- If `pnpm run build` fails.
+- If `npm run build` fails.
 - If you detect a conflict between the Remote and Local source of truth.

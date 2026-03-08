@@ -1,0 +1,51 @@
+---
+title: "Aliases de UUID: Geracao de Identificadores Unicos"
+description: Aliases de shell para gerar UUIDs. Crie identificadores unicos universais e copie para a area de transferencia.
+lang: pt-BR
+author: Sebastien Rousseau
+lastUpdated: true
+image: /logo.png
+imageAlt: "Aliases de UUID: Geracao de Identificadores Unicos preview"
+canonical: /pt/aliases/uuid/
+robots: index, follow
+draft: false
+noindex: false
+sitemap: true
+breadcrumbTitle: "Aliases de UUID: Geracao de Identificadores Unicos"
+pageType: docs
+schemaType: WebPage
+metaTitle: Aliases de UUID | Dotfiles
+permalink: /pt/aliases/uuid/
+sidebar: true
+meta:
+  - name: keywords
+    content: aliases uuid, identificador unico, uuidgen, aliases shell, dotfiles
+  - name: twitter:card
+    content: summary
+  - name: twitter:description
+    content: Aliases de shell para gerar UUIDs. Crie identificadores unicos universais e copie para a area de transferencia.
+  - name: twitter:title
+    content: Aliases de UUID | Dotfiles
+  - name: og:title
+    content: Aliases de UUID | Dotfiles
+  - name: og:description
+    content: Aliases de shell para gerar UUIDs. Crie identificadores unicos universais e copie para a area de transferencia.
+  - name: og:image:alt
+    content: Dotfiles - Simply designed to fit your shell life
+  - name: og:locale
+    content: pt_BR
+---
+
+# Aliases de UUID
+
+Gere identificadores unicos universais (UUIDs).
+
+## Visão Geral
+
+Estes aliases são definidos em `uuid.aliases.sh` e carregados automaticamente pelo Chezmoi.
+
+## Referência
+
+| Alias | Descrição |
+|-------|-------------|
+| `uuid` | Gerar um UUID e copiar para a area de transferencia |

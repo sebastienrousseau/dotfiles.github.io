@@ -10,7 +10,7 @@
 
 ## Overview
 
-This repository powers [dotfiles.io](https://dotfiles.io), the official documentation site for the [Dotfiles / Trusted Shell Platform](https://github.com/sebastienrousseau/dotfiles). Built with VuePress v1.9.8, it provides comprehensive guides for installation, configuration, aliases, functions, and advanced usage across **15 languages**.
+This repository powers [dotfiles.io](https://dotfiles.io), the official documentation site for the [Dotfiles / Trusted Shell Platform](https://github.com/sebastienrousseau/dotfiles). Built with VitePress, it provides comprehensive guides for installation, configuration, aliases, functions, and advanced usage across **15 languages**.
 
 ---
 
@@ -65,7 +65,7 @@ This repository powers [dotfiles.io](https://dotfiles.io), the official document
 **Prerequisites**
 
 - Node.js v18+
-- pnpm
+- npm
 
 ```bash
 # Clone the repository
@@ -73,13 +73,13 @@ git clone https://github.com/sebastienrousseau/dotfiles.github.io.git
 cd dotfiles.github.io
 
 # Install dependencies
-pnpm install
+npm install
 
 # Start development server
-pnpm run dev
+npm run dev
 ```
 
-Open [http://localhost:8080](http://localhost:8080) to view the site.
+Open [http://localhost:5173](http://localhost:5173) to view the site.
 
 ---
 
@@ -87,10 +87,10 @@ Open [http://localhost:8080](http://localhost:8080) to view the site.
 
 ```bash
 # Start local development server with hot reload
-pnpm run dev
+npm run dev
 
 # Lint code and markdown
-pnpm run lint
+npm run build
 ```
 
 The development server watches for changes and automatically rebuilds.
@@ -101,15 +101,15 @@ The development server watches for changes and automatically rebuilds.
 
 ```bash
 # Production build
-pnpm run build
+npm run build
 ```
 
-Build output is generated in `docs/.vuepress/dist/`. The build process:
+Build output is generated in `docs/.vitepress/dist/`. The build process:
 
 - Compiles all 736 pages across 15 locales
 - Generates sitemap.xml
-- Creates PWA service worker
-- Minifies HTML, CSS, and JavaScript
+- Generates static HTML for all locales
+- Produces an XML sitemap
 
 ---
 
@@ -118,14 +118,14 @@ Build output is generated in `docs/.vuepress/dist/`. The build process:
 ```text
 dotfiles.github.io/
 ├── docs/
-│   ├── .vuepress/
-│   │   ├── config.ts           # Main VuePress configuration
+│   ├── .vitepress/
+│   │   ├── config.ts           # Main VitePress configuration
 │   │   ├── config/
 │   │   │   ├── head/           # SEO meta tags
 │   │   │   ├── nav/            # Navigation configs (15 locales)
 │   │   │   └── sidebar/        # Sidebar configs (15 locales)
 │   │   ├── public/             # Static assets (favicons, manifest)
-│   │   └── styles/             # Stylus stylesheets
+│   │   └── theme/              # Theme overrides and CSS
 │   ├── about/                  # About page (EN)
 │   ├── aliases/                # Alias documentation (EN)
 │   ├── functions/              # Functions documentation (EN)
@@ -170,7 +170,7 @@ This repository is automatically deployed to [GitHub Pages](https://pages.github
 Please ensure:
 
 - All 15 locales are updated simultaneously for content changes
-- `pnpm run build` passes without errors
+- `npm run build` passes without errors
 - Front matter follows the [schema guidelines](CLAUDE.md)
 
 ---
