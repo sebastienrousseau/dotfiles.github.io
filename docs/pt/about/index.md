@@ -55,7 +55,7 @@ Ao contrário de dotfiles legados que dependem de Makefiles complexos ou scripts
 Todo o pacote é instalado por meio de um único comando usando Chezmoi:
 
 ```bash
-bash -c "$(curl -fsSL https://raw.githubusercontent.com/sebastienrousseau/dotfiles/main/install.sh)"
+bash -c "$(curl -fsSL https://raw.githubusercontent.com/sebastienrousseau/dotfiles/master/install.sh)"
 ```
 
 Este comando irá:

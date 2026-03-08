@@ -68,7 +68,7 @@ Dotfiles v0.2.495는 터미널을 강력하고 통합된 작업 공간으로 변
 단일 명령으로 전체 스위트를 설치합니다:
 
 ```bash
-bash -c "$(curl -fsSL https://raw.githubusercontent.com/sebastienrousseau/dotfiles/main/install.sh)"
+bash -c "$(curl -fsSL https://raw.githubusercontent.com/sebastienrousseau/dotfiles/master/install.sh)"
 ```
 
 설치 프로그램은 다음을 수행합니다:

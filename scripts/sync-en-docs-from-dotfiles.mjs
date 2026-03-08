@@ -366,7 +366,7 @@ function updateAboutPage() {
   lines.push('## Install')
   lines.push('')
   lines.push('```bash')
-  lines.push('bash -c "$(curl -fsSL https://raw.githubusercontent.com/sebastienrousseau/dotfiles/main/install.sh)"')
+  lines.push('bash -c "$(curl -fsSL https://raw.githubusercontent.com/sebastienrousseau/dotfiles/master/install.sh)"')
   lines.push('```')
   lines.push('')
   lines.push('## Verify')

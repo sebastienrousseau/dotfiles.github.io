@@ -68,7 +68,7 @@ Dotfiles v0.2.495 הופך את הטרמינל שלך לסביבת עבודה ע
 הרץ פקודה אחת להתקנת הסט המלא:
 
 ```bash
-bash -c "$(curl -fsSL https://raw.githubusercontent.com/sebastienrousseau/dotfiles/main/install.sh)"
+bash -c "$(curl -fsSL https://raw.githubusercontent.com/sebastienrousseau/dotfiles/master/install.sh)"
 ```
 
 המתקין יבצע:

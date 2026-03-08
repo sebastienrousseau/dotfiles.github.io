@@ -24,7 +24,7 @@ Dotfiles v0.2.495 este o configurare shell cross-platform gestionată cu Chezmoi
 ## Instalare
 
 ```bash
-bash -c "$(curl -fsSL https://raw.githubusercontent.com/sebastienrousseau/dotfiles/main/install.sh)"
+bash -c "$(curl -fsSL https://raw.githubusercontent.com/sebastienrousseau/dotfiles/master/install.sh)"
 ```
 
 ## Verificare

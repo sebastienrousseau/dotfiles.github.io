@@ -68,7 +68,7 @@ Dotfiles v0.2.495 transformeert je terminal in een krachtige, uniforme werkruimt
 Voer een enkel commando uit om de volledige suite te installeren:
 
 ```bash
-bash -c "$(curl -fsSL https://raw.githubusercontent.com/sebastienrousseau/dotfiles/main/install.sh)"
+bash -c "$(curl -fsSL https://raw.githubusercontent.com/sebastienrousseau/dotfiles/master/install.sh)"
 ```
 
 De installer zal:

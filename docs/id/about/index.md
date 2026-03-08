@@ -68,7 +68,7 @@ Dotfiles v0.2.495 mengubah terminal Anda menjadi ruang kerja yang kuat dan terpa
 Jalankan satu perintah untuk menginstal seluruh suite:
 
 ```bash
-bash -c "$(curl -fsSL https://raw.githubusercontent.com/sebastienrousseau/dotfiles/main/install.sh)"
+bash -c "$(curl -fsSL https://raw.githubusercontent.com/sebastienrousseau/dotfiles/master/install.sh)"
 ```
 
 Installer akan:

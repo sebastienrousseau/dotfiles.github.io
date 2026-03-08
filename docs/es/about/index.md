@@ -68,7 +68,7 @@ Dotfiles v0.2.495 transforma tu terminal en un espacio de trabajo unificado y po
 Ejecuta un solo comando para instalar toda la suite:
 
 ```bash
-bash -c "$(curl -fsSL https://raw.githubusercontent.com/sebastienrousseau/dotfiles/main/install.sh)"
+bash -c "$(curl -fsSL https://raw.githubusercontent.com/sebastienrousseau/dotfiles/master/install.sh)"
 ```
 
 El instalador:

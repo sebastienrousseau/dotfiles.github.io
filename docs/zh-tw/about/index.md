@@ -24,7 +24,7 @@ Dotfiles v0.2.495 是由 Chezmoi 管理的跨平台 Shell 配置。
 ## 安裝
 
 ```bash
-bash -c "$(curl -fsSL https://raw.githubusercontent.com/sebastienrousseau/dotfiles/main/install.sh)"
+bash -c "$(curl -fsSL https://raw.githubusercontent.com/sebastienrousseau/dotfiles/master/install.sh)"
 ```
 
 ## 驗證

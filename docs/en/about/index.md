@@ -24,7 +24,7 @@ Dotfiles v0.2.495 is a cross-platform shell configuration framework managed by C
 ## Install
 
 ```bash
-bash -c "$(curl -fsSL https://raw.githubusercontent.com/sebastienrousseau/dotfiles/main/install.sh)"
+bash -c "$(curl -fsSL https://raw.githubusercontent.com/sebastienrousseau/dotfiles/master/install.sh)"
 ```
 
 ## Verify
