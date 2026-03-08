@@ -57,8 +57,7 @@ function delay(ms) {
 /** Spawn `@axe-core/cli` against `url` and resolve on exit code 0. */
 function runAxe(url) {
   return new Promise((resolve, reject) => {
-    const disableFlags = DISABLED_RULES.flatMap((r) => ['--disable', r])
-    const axe = spawn('npx', ['@axe-core/cli', url, '--exit', ...disableFlags], { stdio: 'inherit', shell: true })
+    const axe = spawn('npx', ['@axe-core/cli', url, '--exit', '--disable', DISABLED_RULES.join(',')], { stdio: 'inherit', shell: true })
     axe.on('exit', (code) => (code === 0 ? resolve() : reject(new Error(`axe failed for ${url}`))))
   })
 }
