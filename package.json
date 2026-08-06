@@ -26,5 +26,6 @@
   "overrides": {
     "esbuild": "^0.25.0",
     "tmp": "^0.2.4"
-  }
+  },
+  "version": ""
 }
