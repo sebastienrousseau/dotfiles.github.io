@@ -131,3 +131,9 @@ tsconfig.tsbuildinfo
 pnpm-lock.yaml
 codex.md
 CLAUDE.md
+
+# Vendored replacements for packages with no published patch are part of
+# the source, not build output. `*.tgz` above would otherwise drop them
+# silently, and npm resolves the override from the tarball — a missing
+# file fails the install with ENOENT, in CI only.
+!vendor/*.tgz
