@@ -1,0 +1,24 @@
+{
+  "name": "nanoid",
+  "version": "3.3.18",
+  "description": "Vendored, minimal nanoid. Replaces the upstream 3.x line, which has no published fix for GHSA-2v37-7h3g-55p8.",
+  "license": "MIT",
+  "main": "index.cjs",
+  "module": "index.js",
+  "types": "index.d.ts",
+  "type": "module",
+  "exports": {
+    ".": {
+      "require": { "types": "./index.d.cts", "default": "./index.cjs" },
+      "import": { "types": "./index.d.ts", "default": "./index.js" },
+      "default": "./index.js"
+    },
+    "./non-secure": {
+      "require": { "types": "./non-secure/index.d.cts", "default": "./non-secure/index.cjs" },
+      "import": { "types": "./non-secure/index.d.ts", "default": "./non-secure/index.js" },
+      "default": "./non-secure/index.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": ["index.cjs", "index.js", "index.d.ts", "index.d.cts", "non-secure"]
+}
