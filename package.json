@@ -33,5 +33,6 @@
     "tmp": "^0.2.4",
     "vite": "^6.4.3"
   },
-  "version": ""
+  "version": "",
+  "license": "Apache-2.0 OR MIT"
 }
