@@ -1,0 +1,25 @@
+{
+  "capabilities": {
+    "prompts": {
+      "listChanged": false
+    },
+    "resources": {
+      "listChanged": false
+    },
+    "tools": {
+      "listChanged": false
+    }
+  },
+  "prompts": [],
+  "protocolVersion": "2025-03-26",
+  "resources": [],
+  "serverInfo": {
+    "name": "Dotfiles",
+    "version": "0.0.56"
+  },
+  "tools": [],
+  "transport": {
+    "type": "http",
+    "url": "https://dotfiles.io/.well-known/mcp"
+  }
+}

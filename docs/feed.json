@@ -1,0 +1,294 @@
+{
+  "feed_url": "http://127.0.0.1:8000/feed.json",
+  "home_page_url": "http://127.0.0.1:8000/",
+  "items": [
+    {
+      "authors": [
+        {
+          "name": "Sebastien Rousseau"
+        }
+      ],
+      "content_html": "The requested documentation page could not be found.",
+      "date_modified": "",
+      "date_published": "",
+      "id": "http://127.0.0.1:8000/404/",
+      "language": "en-GB",
+      "tags": [],
+      "title": "Page Not Found (404) | Dotfiles",
+      "url": "http://127.0.0.1:8000/404/"
+    },
+    {
+      "authors": [
+        {
+          "name": "Sebastien Rousseau"
+        }
+      ],
+      "content_html": "Background and credentials of Sebastien Rousseau, systems architect and open-source author.",
+      "date_modified": "",
+      "date_published": "",
+      "id": "http://127.0.0.1:8000/about/",
+      "language": "en-GB",
+      "tags": [],
+      "title": "About Sebastien Rousseau & Dotfiles",
+      "url": "http://127.0.0.1:8000/about/"
+    },
+    {
+      "authors": [
+        {
+          "name": "Sebastien Rousseau"
+        }
+      ],
+      "content_html": "Accessibility statement declaring WCAG 2.2 Level AAA compliance.",
+      "date_modified": "",
+      "date_published": "",
+      "id": "http://127.0.0.1:8000/accessibility/",
+      "language": "en-GB",
+      "tags": [],
+      "title": "Accessibility Statement: WCAG 2.2 Level AAA Compliance",
+      "url": "http://127.0.0.1:8000/accessibility/"
+    },
+    {
+      "authors": [
+        {
+          "name": "Sebastien Rousseau"
+        }
+      ],
+      "content_html": "Comprehensive list of shell aliases and utility functions for Rust, Docker, Git, and Kubernetes.",
+      "date_modified": "",
+      "date_published": "",
+      "id": "http://127.0.0.1:8000/aliases/",
+      "language": "en-GB",
+      "tags": [],
+      "title": "Developer Aliases & Productivity Functions",
+      "url": "http://127.0.0.1:8000/aliases/"
+    },
+    {
+      "authors": [
+        {
+          "name": "Sebastien Rousseau"
+        }
+      ],
+      "content_html": "Empirical startup benchmarks comparing this configuration against Oh-My-Zsh and Prezto.",
+      "date_modified": "",
+      "date_published": "",
+      "id": "http://127.0.0.1:8000/benchmarks/",
+      "language": "en-GB",
+      "tags": [],
+      "title": "Performance Benchmarks: Shell Startup & Execution Latency",
+      "url": "http://127.0.0.1:8000/benchmarks/"
+    },
+    {
+      "authors": [
+        {
+          "name": "Sebastien Rousseau"
+        }
+      ],
+      "content_html": "Release notes and version log for Dotfiles starting at v0.0.1.",
+      "date_modified": "",
+      "date_published": "",
+      "id": "http://127.0.0.1:8000/changelog/",
+      "language": "en-GB",
+      "tags": [],
+      "title": "Changelog & Semantic Version History",
+      "url": "http://127.0.0.1:8000/changelog/"
+    },
+    {
+      "authors": [
+        {
+          "name": "Sebastien Rousseau"
+        }
+      ],
+      "content_html": "Get in touch with suggestions for Dotfiles.",
+      "date_modified": "",
+      "date_published": "",
+      "id": "http://127.0.0.1:8000/contact/",
+      "language": "en-GB",
+      "tags": [],
+      "title": "Contact & Feedback",
+      "url": "http://127.0.0.1:8000/contact/"
+    },
+    {
+      "authors": [
+        {
+          "name": "Sebastien Rousseau"
+        }
+      ],
+      "content_html": "Guidelines for submitting improvements, aliases, and fixes.",
+      "date_modified": "",
+      "date_published": "",
+      "id": "http://127.0.0.1:8000/contributing/",
+      "language": "en-GB",
+      "tags": [],
+      "title": "Contributing to Dotfiles",
+      "url": "http://127.0.0.1:8000/contributing/"
+    },
+    {
+      "authors": [
+        {
+          "name": "Sebastien Rousseau"
+        }
+      ],
+      "content_html": "Complete Neovim setup with native LSP, Treesitter syntax highlighting, and Telescope fuzzy search.",
+      "date_modified": "",
+      "date_published": "",
+      "id": "http://127.0.0.1:8000/editor/",
+      "language": "en-GB",
+      "tags": [],
+      "title": "Neovim IDE: Modular Lua Configuration",
+      "url": "http://127.0.0.1:8000/editor/"
+    },
+    {
+      "authors": [
+        {
+          "name": "Sebastien Rousseau"
+        }
+      ],
+      "content_html": "Answers to common questions about installation, package management, and customization.",
+      "date_modified": "",
+      "date_published": "",
+      "id": "http://127.0.0.1:8000/faqs/",
+      "language": "en-GB",
+      "tags": [],
+      "title": "Frequently Asked Questions (FAQ): Dotfiles",
+      "url": "http://127.0.0.1:8000/faqs/"
+    },
+    {
+      "authors": [
+        {
+          "name": "Sebastien Rousseau"
+        }
+      ],
+      "content_html": "Hardened Git config featuring SSH/GPG commit signing, Delta side-by-side diffs, and workflow aliases.",
+      "date_modified": "",
+      "date_published": "",
+      "id": "http://127.0.0.1:8000/git/",
+      "language": "en-GB",
+      "tags": [],
+      "title": "Git Configuration & Cryptographic Commit Signing",
+      "url": "http://127.0.0.1:8000/git/"
+    },
+    {
+      "authors": [
+        {
+          "name": "Sebastien Rousseau"
+        }
+      ],
+      "content_html": "Step-by-step installation guide for automated and manual dotfiles deployment with Homebrew Brewfile.",
+      "date_modified": "",
+      "date_published": "",
+      "id": "http://127.0.0.1:8000/installation/",
+      "language": "en-GB",
+      "tags": [],
+      "title": "Installation & Setup Guide: macOS & Linux",
+      "url": "http://127.0.0.1:8000/installation/"
+    },
+    {
+      "authors": [
+        {
+          "name": "Sebastien Rousseau"
+        }
+      ],
+      "content_html": "Details on native Rust static site generation.",
+      "date_modified": "",
+      "date_published": "",
+      "id": "http://127.0.0.1:8000/made-with-ssg/",
+      "language": "en-GB",
+      "tags": [],
+      "title": "Made with Static Site Generator (SSG)",
+      "url": "http://127.0.0.1:8000/made-with-ssg/"
+    },
+    {
+      "authors": [
+        {
+          "name": "Sebastien Rousseau"
+        }
+      ],
+      "content_html": "Service worker offline fallback page.",
+      "date_modified": "",
+      "date_published": "",
+      "id": "http://127.0.0.1:8000/offline/",
+      "language": "en-GB",
+      "tags": [],
+      "title": "Offline Access: Dotfiles",
+      "url": "http://127.0.0.1:8000/offline/"
+    },
+    {
+      "authors": [
+        {
+          "name": "Sebastien Rousseau"
+        }
+      ],
+      "content_html": "Privacy policy declaring zero tracking cookies and completely local computation.",
+      "date_modified": "",
+      "date_published": "",
+      "id": "http://127.0.0.1:8000/privacy/",
+      "language": "en-GB",
+      "tags": [],
+      "title": "Privacy Policy: Zero-Cookie Architecture",
+      "url": "http://127.0.0.1:8000/privacy/"
+    },
+    {
+      "authors": [
+        {
+          "name": "Sebastien Rousseau"
+        }
+      ],
+      "content_html": "Secret management patterns using 1Password CLI and environment isolation with zero plaintext tokens.",
+      "date_modified": "",
+      "date_published": "",
+      "id": "http://127.0.0.1:8000/security/",
+      "language": "en-GB",
+      "tags": [],
+      "title": "Security Architecture: Zero Secrets & Credential Safety",
+      "url": "http://127.0.0.1:8000/security/"
+    },
+    {
+      "authors": [
+        {
+          "name": "Sebastien Rousseau"
+        }
+      ],
+      "content_html": "Deep dive into Zsh configuration, Starship cross-shell prompt, and sub-20ms startup optimization.",
+      "date_modified": "",
+      "date_published": "",
+      "id": "http://127.0.0.1:8000/shell/",
+      "language": "en-GB",
+      "tags": [],
+      "title": "Shell Architecture: Zsh & Starship Configuration",
+      "url": "http://127.0.0.1:8000/shell/"
+    },
+    {
+      "authors": [
+        {
+          "name": "Sebastien Rousseau"
+        }
+      ],
+      "content_html": "Terms governing Dotfiles under Apache-2.0 and MIT licenses.",
+      "date_modified": "",
+      "date_published": "",
+      "id": "http://127.0.0.1:8000/terms/",
+      "language": "en-GB",
+      "tags": [],
+      "title": "Terms of Use & Open Source License",
+      "url": "http://127.0.0.1:8000/terms/"
+    },
+    {
+      "authors": [
+        {
+          "name": "Sebastien Rousseau"
+        }
+      ],
+      "content_html": "Thank you for your message.",
+      "date_modified": "",
+      "date_published": "",
+      "id": "http://127.0.0.1:8000/thanks/",
+      "language": "en-GB",
+      "tags": [],
+      "title": "Thank You | Dotfiles",
+      "url": "http://127.0.0.1:8000/thanks/"
+    }
+  ],
+  "language": "en-GB",
+  "title": "MySsgSite",
+  "version": "https://jsonfeed.org/version/1.1"
+}

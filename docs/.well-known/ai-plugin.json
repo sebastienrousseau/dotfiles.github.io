@@ -1,0 +1,18 @@
+{
+  "api": {
+    "is_user_authenticated": false,
+    "type": "openapi",
+    "url": "https://dotfiles.io/openapi.yaml"
+  },
+  "auth": {
+    "type": "none"
+  },
+  "contact_email": "support@dotfiles.io",
+  "description_for_human": "Curated, high-velocity zsh, tmux, git, and neovim configurations optimized for Apple Silicon and Linux.",
+  "description_for_model": "Curated, high-velocity zsh, tmux, git, and neovim configurations optimized for Apple Silicon and Linux.",
+  "legal_info_url": "https://dotfiles.io/legal",
+  "logo_url": "https://dotfiles.io/favicon.ico",
+  "name_for_human": "Dotfiles | Minimalist macOS & Linux Developer Environment",
+  "name_for_model": "dotfiles",
+  "schema_version": "v1"
+}

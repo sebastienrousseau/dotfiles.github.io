@@ -1,0 +1,37 @@
+# SPDX-License-Identifier: Apache-2.0 OR MIT
+# Auto-detect text files and perform LF line-ending normalization
+* text=auto eol=lf
+
+# Web source files
+*.html text eol=lf diff=html
+*.css text eol=lf diff=css
+*.js text eol=lf
+*.mjs text eol=lf
+*.json text eol=lf
+*.md text eol=lf
+*.toml text eol=lf
+*.yaml text eol=lf
+*.yml text eol=lf
+*.sh text eol=lf
+*.txt text eol=lf
+
+# Media & Pre-compressed binary assets
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.webp binary
+*.avif binary
+*.ico binary
+*.svg text eol=lf
+*.woff binary
+*.woff2 binary
+*.ttf binary
+*.otf binary
+*.eot binary
+*.gz binary
+*.br binary
+*.zst binary
+*.pdf binary
+*.zip binary
+*.tar binary

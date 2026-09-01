@@ -1,0 +1,19 @@
+# ssg edge-headers: Netlify _headers
+# ----------------------------------
+# PQC posture: TLS 1.3 with the X25519+ML-KEM-768 hybrid
+# key-exchange suite (RFC 9420 / draft-ietf-tls-hybrid-design).
+# Cloudflare auto-negotiates as of mid-2026; Netlify is
+# behind an opt-in in the platform dashboard; Vercel surfaces
+# the suite once the upstream CDN (Cloudflare/AWS) enables it.
+# Configure at the platform level — this file is documentation
+# of the recommended posture, not a runtime knob.
+# Cloudflare:    https://developers.cloudflare.com/ssl/post-quantum-cryptography/
+# Netlify:       https://docs.netlify.com/edge-functions/overview/
+# Vercel:        https://vercel.com/docs/edge-network/headers
+
+/*
+  Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
+  Content-Security-Policy: default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' https: data:; font-src 'self' https:; connect-src 'self'; frame-ancestors 'none'
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: camera=(), geolocation=(), microphone=()

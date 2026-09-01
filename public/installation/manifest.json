@@ -1,0 +1,19 @@
+{
+  "background_color": "#ffffff",
+  "description": "Step-by-step installation guide for automated and manual dotfiles deployment with Homebrew Brewfile.",
+  "display": "standalone",
+  "icons": [
+    {
+      "purpose": "any maskable",
+      "sizes": "512x512",
+      "src": "",
+      "type": "image/svg+xml"
+    }
+  ],
+  "name": "Dotfiles",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "short_name": "dotfiles",
+  "start_url": ".",
+  "theme_color": null
+}

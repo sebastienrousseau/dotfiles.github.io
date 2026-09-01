@@ -1,0 +1,21 @@
+{
+  "api": "ssg-agent-api",
+  "counts": {
+    "posts": 19,
+    "topics": 0
+  },
+  "links": {
+    "index": "http://127.0.0.1:8000/api/agents/index.json",
+    "person": "http://127.0.0.1:8000/api/agents/person.json",
+    "posts": "http://127.0.0.1:8000/api/agents/posts.json",
+    "topics": "http://127.0.0.1:8000/api/agents/topics.json"
+  },
+  "site": {
+    "description": "A site built with SSG",
+    "language": "en-GB",
+    "name": "MySsgSite",
+    "title": "",
+    "url": "http://127.0.0.1:8000"
+  },
+  "version": "0.0.56"
+}

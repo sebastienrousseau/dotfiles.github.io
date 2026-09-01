@@ -1,0 +1,21 @@
+{
+  "defaults": {
+    "standard": "WCAG2AAA",
+    "runners": [
+      "axe",
+      "htmlcs"
+    ],
+    "level": "error",
+    "timeout": 20000,
+    "wait": 500,
+    "chromeLaunchConfig": {
+      "args": [
+        "--no-sandbox",
+        "--disable-setuid-sandbox"
+      ]
+    }
+  },
+  "urls": [
+    "http://127.0.0.1:8000/index.html"
+  ]
+}

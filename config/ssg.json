@@ -1,0 +1,30 @@
+{
+  "$schema": "https://raw.githubusercontent.com/sebastienrousseau/static-site-generator/main/ssg.schema.json",
+  "site_name": "Dotfiles",
+  "site_title": "Dotfiles \u2014 High Performance Zero-JS System",
+  "site_description": "Zero-JavaScript static documentation and platform for Dotfiles, conforming strictly to WCAG 2.2 Level AAA.",
+  "language": "en-GB",
+  "base_url": "https://dotfiles.github.io",
+  "content_dir": "docs",
+  "output_dir": "public",
+  "template_dir": "templates",
+  "security": {
+    "sri_algorithm": "sha384"
+  },
+  "edge_headers": {
+    "targets": [
+      "cloudflare",
+      "netlify",
+      "vercel"
+    ],
+    "overrides": {
+      "Content-Security-Policy": "default-src 'none'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; frame-ancestors 'none'; base-uri 'self'; form-action 'none';",
+      "Strict-Transport-Security": "max-age=63072000; includeSubDomains; preload",
+      "X-Content-Type-Options": "nosniff",
+      "X-Frame-Options": "DENY",
+      "Referrer-Policy": "no-referrer"
+    }
+  },
+  "theme": "velocity",
+  "cdn": "https://cloudcdn.pro"
+}

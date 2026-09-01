@@ -1,0 +1,6 @@
+# RFC 9116 Coordinated Vulnerability Disclosure Metadata
+Contact: mailto:sebastian.rousseau@gmail.com
+Expires: 2027-12-31T00:00:00.000Z
+Preferred-Languages: en, fr
+Canonical: https://dotfiles.github.io/.well-known/security.txt
+Policy: https://github.com/sebastienrousseau/dotfiles.github.io/security/policy
