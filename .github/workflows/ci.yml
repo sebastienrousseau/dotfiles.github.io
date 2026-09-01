@@ -10,7 +10,7 @@ permissions:
 
 jobs:
   validate:
-    name: Validate & audit
+    name: Build Docs
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
