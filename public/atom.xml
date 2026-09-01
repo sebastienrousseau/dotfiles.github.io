@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>MySsgSite</title>
+  <link href="http://127.0.0.1:8000/atom.xml" rel="self" type="application/atom+xml"/>
+  <link href="http://127.0.0.1:8000"/>
+  <id>http://127.0.0.1:8000</id>
+  <updated></updated>
+  <entry>
+    <title>Page Not Found (404) | Dotfiles</title>
+    <link href="http://127.0.0.1:8000/404/"/>
+    <id>http://127.0.0.1:8000/404/</id>
+    <updated></updated>
+    <published></published>
+    <summary>The requested documentation page could not be found.</summary>
+    <author><name>Sebastien Rousseau</name></author>
+  </entry>
+  <entry>
+    <title>About Sebastien Rousseau &amp; Dotfiles</title>
+    <link href="http://127.0.0.1:8000/about/"/>
+    <id>http://127.0.0.1:8000/about/</id>
+    <updated></updated>
+    <published></published>
+    <summary>Background and credentials of Sebastien Rousseau, systems architect and open-source author.</summary>
+    <author><name>Sebastien Rousseau</name></author>
+  </entry>
+  <entry>
+    <title>Accessibility Statement: WCAG 2.2 Level AAA Compliance</title>
+    <link href="http://127.0.0.1:8000/accessibility/"/>
+    <id>http://127.0.0.1:8000/accessibility/</id>
+    <updated></updated>
+    <published></published>
+    <summary>Accessibility statement declaring WCAG 2.2 Level AAA compliance.</summary>
+    <author><name>Sebastien Rousseau</name></author>
+  </entry>
+  <entry>
+    <title>Developer Aliases &amp; Productivity Functions</title>
+    <link href="http://127.0.0.1:8000/aliases/"/>
+    <id>http://127.0.0.1:8000/aliases/</id>
+    <updated></updated>
+    <published></published>
+    <summary>Comprehensive list of shell aliases and utility functions for Rust, Docker, Git, and Kubernetes.</summary>
+    <author><name>Sebastien Rousseau</name></author>
+  </entry>
+  <entry>
+    <title>Performance Benchmarks: Shell Startup &amp; Execution Latency</title>
+    <link href="http://127.0.0.1:8000/benchmarks/"/>
+    <id>http://127.0.0.1:8000/benchmarks/</id>
+    <updated></updated>
+    <published></published>
+    <summary>Empirical startup benchmarks comparing this configuration against Oh-My-Zsh and Prezto.</summary>
+    <author><name>Sebastien Rousseau</name></author>
+  </entry>
+  <entry>
+    <title>Changelog &amp; Semantic Version History</title>
+    <link href="http://127.0.0.1:8000/changelog/"/>
+    <id>http://127.0.0.1:8000/changelog/</id>
+    <updated></updated>
+    <published></published>
+    <summary>Release notes and version log for Dotfiles starting at v0.0.1.</summary>
+    <author><name>Sebastien Rousseau</name></author>
+  </entry>
+  <entry>
+    <title>Contact &amp; Feedback</title>
+    <link href="http://127.0.0.1:8000/contact/"/>
+    <id>http://127.0.0.1:8000/contact/</id>
+    <updated></updated>
+    <published></published>
+    <summary>Get in touch with suggestions for Dotfiles.</summary>
+    <author><name>Sebastien Rousseau</name></author>
+  </entry>
+  <entry>
+    <title>Contributing to Dotfiles</title>
+    <link href="http://127.0.0.1:8000/contributing/"/>
+    <id>http://127.0.0.1:8000/contributing/</id>
+    <updated></updated>
+    <published></published>
+    <summary>Guidelines for submitting improvements, aliases, and fixes.</summary>
+    <author><name>Sebastien Rousseau</name></author>
+  </entry>
+  <entry>
+    <title>Neovim IDE: Modular Lua Configuration</title>
+    <link href="http://127.0.0.1:8000/editor/"/>
+    <id>http://127.0.0.1:8000/editor/</id>
+    <updated></updated>
+    <published></published>
+    <summary>Complete Neovim setup with native LSP, Treesitter syntax highlighting, and Telescope fuzzy search.</summary>
+    <author><name>Sebastien Rousseau</name></author>
+  </entry>
+  <entry>
+    <title>Frequently Asked Questions (FAQ): Dotfiles</title>
+    <link href="http://127.0.0.1:8000/faqs/"/>
+    <id>http://127.0.0.1:8000/faqs/</id>
+    <updated></updated>
+    <published></published>
+    <summary>Answers to common questions about installation, package management, and customization.</summary>
+    <author><name>Sebastien Rousseau</name></author>
+  </entry>
+  <entry>
+    <title>Git Configuration &amp; Cryptographic Commit Signing</title>
+    <link href="http://127.0.0.1:8000/git/"/>
+    <id>http://127.0.0.1:8000/git/</id>
+    <updated></updated>
+    <published></published>
+    <summary>Hardened Git config featuring SSH/GPG commit signing, Delta side-by-side diffs, and workflow aliases.</summary>
+    <author><name>Sebastien Rousseau</name></author>
+  </entry>
+  <entry>
+    <title>Installation &amp; Setup Guide: macOS &amp; Linux</title>
+    <link href="http://127.0.0.1:8000/installation/"/>
+    <id>http://127.0.0.1:8000/installation/</id>
+    <updated></updated>
+    <published></published>
+    <summary>Step-by-step installation guide for automated and manual dotfiles deployment with Homebrew Brewfile.</summary>
+    <author><name>Sebastien Rousseau</name></author>
+  </entry>
+  <entry>
+    <title>Made with Static Site Generator (SSG)</title>
+    <link href="http://127.0.0.1:8000/made-with-ssg/"/>
+    <id>http://127.0.0.1:8000/made-with-ssg/</id>
+    <updated></updated>
+    <published></published>
+    <summary>Details on native Rust static site generation.</summary>
+    <author><name>Sebastien Rousseau</name></author>
+  </entry>
+  <entry>
+    <title>Offline Access: Dotfiles</title>
+    <link href="http://127.0.0.1:8000/offline/"/>
+    <id>http://127.0.0.1:8000/offline/</id>
+    <updated></updated>
+    <published></published>
+    <summary>Service worker offline fallback page.</summary>
+    <author><name>Sebastien Rousseau</name></author>
+  </entry>
+  <entry>
+    <title>Privacy Policy: Zero-Cookie Architecture</title>
+    <link href="http://127.0.0.1:8000/privacy/"/>
+    <id>http://127.0.0.1:8000/privacy/</id>
+    <updated></updated>
+    <published></published>
+    <summary>Privacy policy declaring zero tracking cookies and completely local computation.</summary>
+    <author><name>Sebastien Rousseau</name></author>
+  </entry>
+  <entry>
+    <title>Security Architecture: Zero Secrets &amp; Credential Safety</title>
+    <link href="http://127.0.0.1:8000/security/"/>
+    <id>http://127.0.0.1:8000/security/</id>
+    <updated></updated>
+    <published></published>
+    <summary>Secret management patterns using 1Password CLI and environment isolation with zero plaintext tokens.</summary>
+    <author><name>Sebastien Rousseau</name></author>
+  </entry>
+  <entry>
+    <title>Shell Architecture: Zsh &amp; Starship Configuration</title>
+    <link href="http://127.0.0.1:8000/shell/"/>
+    <id>http://127.0.0.1:8000/shell/</id>
+    <updated></updated>
+    <published></published>
+    <summary>Deep dive into Zsh configuration, Starship cross-shell prompt, and sub-20ms startup optimization.</summary>
+    <author><name>Sebastien Rousseau</name></author>
+  </entry>
+  <entry>
+    <title>Terms of Use &amp; Open Source License</title>
+    <link href="http://127.0.0.1:8000/terms/"/>
+    <id>http://127.0.0.1:8000/terms/</id>
+    <updated></updated>
+    <published></published>
+    <summary>Terms governing Dotfiles under Apache-2.0 and MIT licenses.</summary>
+    <author><name>Sebastien Rousseau</name></author>
+  </entry>
+  <entry>
+    <title>Thank You | Dotfiles</title>
+    <link href="http://127.0.0.1:8000/thanks/"/>
+    <id>http://127.0.0.1:8000/thanks/</id>
+    <updated></updated>
+    <published></published>
+    <summary>Thank you for your message.</summary>
+    <author><name>Sebastien Rousseau</name></author>
+  </entry>
+</feed>

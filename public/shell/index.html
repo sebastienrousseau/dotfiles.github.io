@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en-GB" data-theme-mode="system">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <title>Shell Architecture: Zsh &amp; Starship Configuration | Dotfiles</title>
+  
+  <meta name="author" content="Sebastien Rousseau">
+  <meta name="description" content="Deep dive into Zsh configuration, Starship cross-shell prompt, and sub-20ms startup optimization.">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'  https://cdn.jsdelivr.net; connect-src 'self' https://formspree.io; img-src 'self' data: https: https://cloudcdn.pro; style-src 'self'  https://cdn.jsdelivr.net; font-src 'self'; form-action 'self' https://formspree.io;" />
+  
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Dotfiles">
+  <meta property="og:locale" content="en_GB">
+  <meta property="og:title" content="Shell Architecture: Zsh &amp; Starship Configuration | Dotfiles">
+  <meta property="og:description" content="Deep dive into Zsh configuration, Starship cross-shell prompt, and sub-20ms startup optimization.">
+  <meta property="og:image" content="https://cloudcdn.pro/stocks/images/quantum-computer-room-1200.webp">
+  <meta property="og:url" content="https://dotfiles.io/">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Shell Architecture: Zsh &amp; Starship Configuration | Dotfiles">
+  <meta name="twitter:description" content="Deep dive into Zsh configuration, Starship cross-shell prompt, and sub-20ms startup optimization.">
+  <meta name="twitter:image" content="https://cloudcdn.pro/stocks/images/quantum-computer-room-1200.webp">
+
+  <link rel="alternate" href="https://dotfiles.io/" hreflang="en" />
+  
+  <link rel="icon" type="image/svg+xml" href="https://cloudcdn.pro/cmn/v1/logos/cmn.svg" />
+  <link rel="icon" type="image/x-icon" href="/favicon.ico" sizes="16x16 32x32" />
+  <link rel="apple-touch-icon" href="https://cloudcdn.pro/cmn/v1/icons/192x192.png" sizes="192x192" />
+  <link rel="manifest" href="/manifest.json" />
+  <link rel="alternate" type="application/rss+xml" href="/rss.xml" />
+  <link rel="stylesheet" href="/styles.css">
+
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://dotfiles.io/#software",
+      "name": "Dotfiles",
+      "applicationCategory": "DeveloperApplication",
+      "operatingSystem": "macOS, Linux",
+      "license": "https://opensource.org/licenses/Apache-2.0",
+      "author": {
+        "@type": "Person",
+        "name": "Sebastien Rousseau",
+        "url": "https://sebastienrousseau.com"
+      },
+      "url": "https://dotfiles.io/",
+      "logo": "https://cloudcdn.pro/cmn/v1/logos/cmn.svg",
+      "description": "Curated, high-velocity zsh, tmux, git, and neovim configurations optimized for Apple Silicon and Linux with sub-20ms shell startup."
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://dotfiles.io/#website",
+      "url": "https://dotfiles.io/",
+      "name": "Dotfiles",
+      "publisher": {
+        "@type": "Person",
+        "name": "Sebastien Rousseau",
+        "url": "https://sebastienrousseau.com"
+      },
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://dotfiles.io/?s={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://dotfiles.io/#webpage",
+      "url": "https://dotfiles.io/",
+      "name": "Dotfiles | Minimalist macOS & Linux Developer Environment",
+      "description": "Curated, high-velocity zsh, tmux, git, and neovim configurations optimized for Apple Silicon and Linux with sub-20ms shell startup.",
+      "isPartOf": {
+        "@id": "https://dotfiles.io/#website"
+      }
+    }
+  ]
+}
+  </script>
+  <link rel="alternate" type="application/atom+xml" title="Atom Feed" href="https://dotfiles.io/atom.xml"/>
+  <link rel="alternate" type="application/feed+json" title="JSON Feed" href="https://dotfiles.io/feed.json"/>
+<link rel="canonical" href="https://dotfiles.io/shell/"><link rel="sbom" type="application/vnd.cyclonedx+json" href="/sbom.cdx.json">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <nav class="navbar" aria-label="Main Navigation">
+    <div class="navbar-container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="/" aria-label="Dotfiles Homepage">
+          <img src="https://cloudcdn.pro/cmn/v1/logos/cmn.svg" alt="Dotfiles Logo" width="32" height="32" class="d-inline-block" />
+          <span class="navbar-brand-text">Dotfiles</span>
+        </a>
+
+        <!-- Mobile actions -->
+        <div class="navbar-actions d-flex d-lg-none">
+          <button type="button" class="btn search-trigger" id="searchTriggerMobile" aria-label="Search">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+          </button>
+
+          <div class="theme-switcher" role="radiogroup" aria-label="Theme mode">
+            <button type="button" class="theme-btn" data-theme-mode="light" aria-label="Light mode">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+            </button>
+            <button type="button" class="theme-btn" data-theme-mode="dark" aria-label="Dark mode">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+            </button>
+            <button type="button" class="theme-btn active" data-theme-mode="system" aria-label="System mode">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+            </button>
+          </div>
+
+          <button type="button" class="navbar-toggle" id="navbarToggle" aria-expanded="false" aria-controls="navbarMenu" aria-label="Toggle navigation menu">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+          </button>
+        </div>
+      </div>
+
+      <div class="navbar-menu" id="navbarMenu"><ul class="nav-list"><li class="nav-item"><a class="nav-link" href="/installation/index.html">Installation</a></li><li class="nav-item"><a class="nav-link" href="/shell/index.html">Shell & Zsh</a></li><li class="nav-item"><a class="nav-link" href="/editor/index.html">Neovim</a></li><li class="nav-item"><a class="nav-link" href="/git/index.html">Git & Signing</a></li><li class="nav-item"><a class="nav-link" href="/aliases/index.html">Aliases</a></li><li class="nav-item"><a class="nav-link" href="/security/index.html">Security</a></li><li class="nav-item"><a class="nav-link" href="/faqs/index.html">FAQ</a></li><li class="nav-item nav-item-cta"><a class="btn btn-dark ms-lg-2" href="/installation/index.html">Install Script</a></li></ul></div>
+
+      <!-- Desktop actions -->
+      <div class="navbar-actions d-none d-lg-flex">
+        <button type="button" class="btn search-trigger" id="searchTrigger" aria-label="Search">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+          <span>Search</span>
+          <kbd class="search-kbd">⌘K</kbd>
+        </button>
+
+        <div class="theme-switcher" role="radiogroup" aria-label="Theme mode">
+          <button type="button" class="theme-btn" data-theme-mode="light" aria-label="Light mode">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+          </button>
+          <button type="button" class="theme-btn" data-theme-mode="dark" aria-label="Dark mode">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+          </button>
+          <button type="button" class="theme-btn active" data-theme-mode="system" aria-label="System mode">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <main id="main" class="content-wrapper" aria-label="Main content">
+    <div lang="en"><h1>Shell Architecture: Zsh &amp; Starship</h1>
+<p>Achieving instant interactive prompt rendering without sluggish plugin managers.</p>
+<h2>Key Performance Techniques</h2>
+<ol>
+<li><strong>Lazy Loading:</strong> Heavy completions (NVM, SDKMAN, Pyenv, Kubectl) are loaded on-demand only when their commands are first invoked.</li>
+<li><strong>Compiled Zsh Bytecode:</strong> The <code>.zshrc</code> and functions are pre-compiled into <code>.zwc</code> wordcode for instant execution.</li>
+<li><strong>Starship Prompt:</strong> Written in Rust, evaluating Git status asynchronously without blocking keystroke input.</li>
+</ol>
+</div>
+  </main>
+
+  <div class="text-center py-4">
+    <a href="#main" class="btn btn-outline-dark" aria-label="Back to the top">Back to the top ↑</a>
+  </div>
+
+  <footer><div class="container-xxl"><div class="row g-4"><div class="col-lg-3 col-md-6"><h2 class="h5 fw-bold mb-3">Core Configurations</h2><ul class="list-unstyled d-flex flex-column gap-2"><li><a href="/installation/index.html">Installation Guide</a></li><li><a href="/shell/index.html">Zsh & Starship Setup</a></li><li><a href="/editor/index.html">Neovim Lua IDE</a></li><li><a href="/git/index.html">Git SSH Signing</a></li><li><a href="/aliases/index.html">CLI Aliases</a></li></ul></div><div class="col-lg-3 col-md-6"><h2 class="h5 fw-bold mb-3">Architecture & Speed</h2><ul class="list-unstyled d-flex flex-column gap-2"><li><a href="/benchmarks/index.html">Startup Benchmarks</a></li><li><a href="/security/index.html">Zero Secrets & Security</a></li><li><a href="/installation/index.html#brewfile">Brewfile Packages</a></li><li><a href="/contact/index.html">Feedback</a></li></ul></div><div class="col-lg-3 col-md-6"><h2 class="h5 fw-bold mb-3">Open Source & Author</h2><ul class="list-unstyled d-flex flex-column gap-2"><li><a href="/about/index.html">About Sebastien Rousseau</a></li><li><a href="/changelog/index.html">Release Changelog</a></li><li><a href="/contributing/index.html">Contributing Guide</a></li><li><a href="/faqs/index.html">Questions & Answers</a></li><li><a href="/made-with-ssg/index.html">Made with SSG</a></li></ul></div><div class="col-lg-3 col-md-6"><h2 class="h5 fw-bold mb-3">Legal & Feeds</h2><ul class="list-unstyled d-flex flex-column gap-2"><li><a href="/accessibility/index.html">Accessibility (WCAG AAA)</a></li><li><a href="/terms/index.html">Terms of Use</a></li><li><a href="/privacy/index.html">Privacy Policy</a></li><li><a href="/rss.xml">RSS Feed</a></li><li><a href="/atom.xml">Atom Feed</a></li><li><a href="/feed.json">JSON Feed</a></li><li><a href="/sitemap.xml">Sitemap</a></li></ul></div></div><div class="text-center pt-4 mt-4 border-top text-muted small">© 2026 Dotfiles. Minimalist macOS & Linux developer environment. All releases Sigstore-signed.</div></div></footer>
+
+  <div id="searchModal" class="search-modal" role="dialog" aria-modal="true" aria-label="Site Search">
+    <div class="search-backdrop"></div>
+    <div class="search-dialog">
+      <div class="search-header">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+        <input type="search" id="searchInput" class="search-input" placeholder="Search configs, Zsh, Neovim, aliases..." aria-label="Search query" autocomplete="off">
+        <button type="button" class="search-close" id="searchClose" aria-label="Close search">✕</button>
+      </div>
+      <div id="searchResults" class="search-results" role="listbox">
+        <div class="search-empty">Type to search...</div>
+      </div>
+    </div>
+  </div>
+
+  <script src="/main.1dd33063.js" integrity="sha384-PZndwZBSayx7R7I8QNl0hu5d/jreN9qs9MFEGcVkBST/64qQLSgbHYadE36VBHyG" crossorigin="anonymous" defer></script>
+
+<!-- SSG Search Widget -->
+<div id="ssg-search-widget">
+<link rel="stylesheet" href="/_csp/ab0ff800df72e7d4.css" integrity="sha384-5/lyYdum7VUqasmpxZRYN9CrkRVxSizBemRDvsbiNqMKv2LpzAGqYf1RVnJOlg3X" crossorigin="anonymous">
+<!-- Search trigger button -->
+<button id="ssg-search-btn" type="button" aria-label="Search">
+<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+<span>Search</span>
+<kbd>K</kbd>
+</button>
+<!-- Search modal -->
+<div id="ssg-search-overlay" role="dialog" aria-label="Search">
+<div id="ssg-search-box">
+<div id="ssg-search-header">
+<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+<input id="ssg-search-input" type="search" placeholder="Search documentation..." autocomplete="off" aria-label="Search"/>
+</div>
+<div id="ssg-search-results" aria-live="polite"></div>
+<div id="ssg-sr-status" role="status" aria-live="polite" aria-atomic="true"></div>
+<div class="ssg-search-footer"><span><kbd>Esc</kbd> close</span><span><kbd>&uarr;</kbd><kbd>&darr;</kbd> navigate</span><span><kbd>Enter</kbd> open</span></div>
+</div>
+</div>
+<script src="/_csp/61bc2fae7f71ccad.js" integrity="sha384-0oRzEmXgr9FJ6ttOmzhFx2dsSPgkO2fWLDzcLRT0sq5M9fYUce/wBPOMY7XmqkLT" crossorigin="anonymous"></script>
+</div>
+</body>
+</html>

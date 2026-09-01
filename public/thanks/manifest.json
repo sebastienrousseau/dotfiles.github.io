@@ -1,0 +1,12 @@
+{
+  "background_color": "#ffffff",
+  "description": "Thank you for your message.",
+  "display": "standalone",
+  "icons": [],
+  "name": "Dotfiles",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "short_name": "dotfiles",
+  "start_url": ".",
+  "theme_color": null
+}

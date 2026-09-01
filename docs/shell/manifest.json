@@ -1,0 +1,12 @@
+{
+  "background_color": "#ffffff",
+  "description": "Deep dive into Zsh configuration, Starship cross-shell prompt, and sub-20ms startup optimization.",
+  "display": "standalone",
+  "icons": [],
+  "name": "Dotfiles",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "short_name": "dotfiles",
+  "start_url": ".",
+  "theme_color": null
+}

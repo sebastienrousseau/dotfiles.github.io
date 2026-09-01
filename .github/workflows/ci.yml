@@ -2,29 +2,48 @@ name: CI
 
 on:
   push:
-    branches: [main, 'feat/**']
+    branches: [main, "feat/**"]
   pull_request:
-    branches: [main, 'feat/**']
 
-concurrency:
-  group: ${{ github.workflow }}-${{ github.ref }}
-  cancel-in-progress: true
+permissions:
+  contents: read
 
 jobs:
-  build:
+  validate:
     name: Build Docs
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
 
-      - name: Setup Node.js
+      - name: Set up Node
         uses: actions/setup-node@v4
         with:
-          node-version: '20'
-          cache: 'npm'
+          node-version: "20"
 
-      - name: Install dependencies
-        run: npm install
+      - name: HTML validation (recommended + WCAG rules)
+        run: npx --yes html-validate@10 "docs/**/*.html"
 
-      - name: Build VitePress site
-        run: npm run build
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: WCAG AAA contrast audit
+        run: python3 audit/contrast.py
+
+      - name: Structure & self-hosting guardrails
+        run: |
+          fail=0
+          for f in $(find docs -name '*.html'); do
+            n=$(grep -o '<h1' "$f" | wc -l)
+            [ "$n" -eq 1 ] || { echo "::error file=$f::expected exactly one <h1>, found $n"; fail=1; }
+            grep -q 'rel="canonical"' "$f" || { echo "::error file=$f::missing canonical"; fail=1; }
+            grep -q 'Content-Security-Policy' "$f" || { echo "::error file=$f::missing CSP"; fail=1; }
+            grep -q 'class="skip-link"' "$f" || { echo "::error file=$f::missing skip link"; fail=1; }
+            if grep -qoE 'style="[^"]' "$f"; then echo "::error file=$f::inline style attribute (CSP forbids)"; fail=1; fi
+            if grep -oE '(src|href)="https?://[^"]+\.(css|js|woff2?|png|jpg|jpeg|webp|gif)"' "$f" | grep -v 'cloudcdn.pro'; then
+              echo "::error file=$f::external asset reference (site must be self-hosted or from trusted cdn)"; fail=1
+            fi
+          done
+          if [ "$fail" -eq 0 ]; then echo "All structure & self-hosting guardrails passed."; fi
+          exit $fail
