@@ -15,7 +15,7 @@ permissions:
 
 jobs:
   quality-gate:
-    name: WCAG 2.2 AAA & Lighthouse Quality Gate
+    name: audits
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Code
