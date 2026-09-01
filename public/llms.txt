@@ -1,0 +1,13 @@
+# Dotfiles
+> Minimalist macOS & Linux developer environment featuring Zsh, Starship, Neovim, Tmux, and Homebrew automated setup.
+
+## Core Documentation & Resources
+- Homepage: https://dotfiles.io/
+- Installation: https://dotfiles.io/installation/index.html
+- Shell & Zsh: https://dotfiles.io/shell/index.html
+- Neovim IDE: https://dotfiles.io/editor/index.html
+- Git & Signing: https://dotfiles.io/git/index.html
+- Aliases: https://dotfiles.io/aliases/index.html
+- Security: https://dotfiles.io/security/index.html
+- Benchmarks: https://dotfiles.io/benchmarks/index.html
+- About Sebastien Rousseau: https://dotfiles.io/about/index.html

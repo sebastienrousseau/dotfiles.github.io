@@ -1,0 +1,20 @@
+# Generated site-level configuration for dotfiles.github.io
+site_name = "Dotfiles"
+site_title = "Dotfiles | Minimalist macOS & Linux Developer Environment"
+site_description = "Curated, high-velocity zsh, tmux, git, and neovim configurations optimized for Apple Silicon and Linux."
+base_url = "https://dotfiles.io"
+language = "en-GB"
+
+content_dir = "_posts"
+template_dir = "_layouts"
+output_dir = "docs"
+
+[agents]
+agents_txt = true
+ai_plugin = true
+
+[agents.mcp]
+enabled = true
+
+[edge_headers]
+targets = ["netlify", "cloudflare", "vercel"]

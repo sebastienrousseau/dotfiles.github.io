@@ -1,0 +1,27 @@
+<!-- SPDX-License-Identifier: Apache-2.0 OR MIT -->
+{% extends "base.html" %}
+
+{% block content %}
+<article class="prose">
+  <header>
+    <h1>{{ page.title }}</h1>
+    {% if page.date %}<p><time datetime="{{ page.date }}">{{ page.date }}</time></p>{% endif %}
+  </header>
+
+  <div class="post-body">
+    {{ content | safe }}
+  </div>
+
+  {% if page.tags %}
+  <footer>
+    <nav aria-label="Article Tags">
+      <ul class="tags-list">
+        {% for tag in page.tags %}
+        <li><a href="/tags/{{ tag | slugify }}/">{{ tag }}</a></li>
+        {% endfor %}
+      </ul>
+    </nav>
+  </footer>
+  {% endif %}
+</article>
+{% endblock %}

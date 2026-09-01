@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://dotfiles.io/faqs/index.html/sitemap.xml

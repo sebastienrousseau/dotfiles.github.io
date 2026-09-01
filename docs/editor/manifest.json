@@ -1,0 +1,19 @@
+{
+  "background_color": "#ffffff",
+  "description": "Complete Neovim setup with native LSP, Treesitter syntax highlighting, and Telescope fuzzy search.",
+  "display": "standalone",
+  "icons": [
+    {
+      "purpose": "any maskable",
+      "sizes": "512x512",
+      "src": "",
+      "type": "image/svg+xml"
+    }
+  ],
+  "name": "Dotfiles",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "short_name": "dotfiles",
+  "start_url": ".",
+  "theme_color": null
+}

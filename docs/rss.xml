@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Dotfiles: Minimalist macOS &amp; Linux Developer Environment</title>
+    <link>https://dotfiles.io/</link>
+    <description>Curated, high-velocity zsh, tmux, git, and neovim configurations optimized for Apple Silicon and Linux with sub-20ms shell startup.</description>
+    <atom:link href="http://127.0.0.1:8000/rss.xml" rel="self" type="application/rss+xml"/>
+    <language>en</language>
+    <item>
+      <title>About Sebastien Rousseau & Dotfiles</title>
+      <link>http://127.0.0.1:8000/about/</link>
+      <description>Background and credentials of Sebastien Rousseau, systems architect and open-source author.</description>
+      <guid isPermaLink="true">http://127.0.0.1:8000/about/</guid>
+      <pubDate></pubDate>
+      <author>Sebastien Rousseau</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/quantum-computer-room-1200.webp" type="image/webp" length="0"/>
+    </item>
+    <item>
+      <title>Accessibility Statement: WCAG 2.2 Level AAA Compliance</title>
+      <link>http://127.0.0.1:8000/accessibility/</link>
+      <description>Accessibility statement declaring WCAG 2.2 Level AAA compliance.</description>
+      <guid isPermaLink="true">http://127.0.0.1:8000/accessibility/</guid>
+      <pubDate></pubDate>
+      <author>Sebastien Rousseau</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/quantum-computer-room-1200.webp" type="image/webp" length="0"/>
+    </item>
+    <item>
+      <title>Changelog & Semantic Version History</title>
+      <link>http://127.0.0.1:8000/changelog/</link>
+      <description>Release notes and version log for Dotfiles starting at v0.0.1.</description>
+      <guid isPermaLink="true">http://127.0.0.1:8000/changelog/</guid>
+      <pubDate></pubDate>
+      <author>Sebastien Rousseau</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/quantum-computer-room-1200.webp" type="image/webp" length="0"/>
+    </item>
+    <item>
+      <title>Contact & Feedback</title>
+      <link>http://127.0.0.1:8000/contact/</link>
+      <description>Get in touch with suggestions for Dotfiles.</description>
+      <guid isPermaLink="true">http://127.0.0.1:8000/contact/</guid>
+      <pubDate></pubDate>
+      <author>Sebastien Rousseau</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/quantum-computer-room-1200.webp" type="image/webp" length="0"/>
+    </item>
+    <item>
+      <title>Contributing to Dotfiles</title>
+      <link>http://127.0.0.1:8000/contributing/</link>
+      <description>Guidelines for submitting improvements, aliases, and fixes.</description>
+      <guid isPermaLink="true">http://127.0.0.1:8000/contributing/</guid>
+      <pubDate></pubDate>
+      <author>Sebastien Rousseau</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/quantum-computer-room-1200.webp" type="image/webp" length="0"/>
+    </item>
+    <item>
+      <title>Developer Aliases & Productivity Functions</title>
+      <link>http://127.0.0.1:8000/aliases/</link>
+      <description>Comprehensive list of shell aliases and utility functions for Rust, Docker, Git, and Kubernetes.</description>
+      <guid isPermaLink="true">http://127.0.0.1:8000/aliases/</guid>
+      <pubDate></pubDate>
+      <author>Sebastien Rousseau</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/quantum-computer-room-1200.webp" type="image/webp" length="0"/>
+    </item>
+    <item>
+      <title>Frequently Asked Questions (FAQ): Dotfiles</title>
+      <link>http://127.0.0.1:8000/faqs/</link>
+      <description>Answers to common questions about installation, package management, and customization.</description>
+      <guid isPermaLink="true">http://127.0.0.1:8000/faqs/</guid>
+      <pubDate></pubDate>
+      <author>Sebastien Rousseau</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/quantum-computer-room-1200.webp" type="image/webp" length="0"/>
+    </item>
+    <item>
+      <title>Git Configuration & Cryptographic Commit Signing</title>
+      <link>http://127.0.0.1:8000/git/</link>
+      <description>Hardened Git config featuring SSH/GPG commit signing, Delta side-by-side diffs, and workflow aliases.</description>
+      <guid isPermaLink="true">http://127.0.0.1:8000/git/</guid>
+      <pubDate></pubDate>
+      <author>Sebastien Rousseau</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/quantum-computer-room-1200.webp" type="image/webp" length="0"/>
+    </item>
+    <item>
+      <title>Installation & Setup Guide: macOS & Linux</title>
+      <link>http://127.0.0.1:8000/installation/</link>
+      <description>Step-by-step installation guide for automated and manual dotfiles deployment with Homebrew Brewfile.</description>
+      <guid isPermaLink="true">http://127.0.0.1:8000/installation/</guid>
+      <pubDate></pubDate>
+      <author>Sebastien Rousseau</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/quantum-computer-room-1200.webp" type="image/webp" length="0"/>
+    </item>
+    <item>
+      <title>Made with Static Site Generator (SSG)</title>
+      <link>http://127.0.0.1:8000/made-with-ssg/</link>
+      <description>Details on native Rust static site generation.</description>
+      <guid isPermaLink="true">http://127.0.0.1:8000/made-with-ssg/</guid>
+      <pubDate></pubDate>
+      <author>Sebastien Rousseau</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/quantum-computer-room-1200.webp" type="image/webp" length="0"/>
+    </item>
+    <item>
+      <title>Neovim IDE: Modular Lua Configuration</title>
+      <link>http://127.0.0.1:8000/editor/</link>
+      <description>Complete Neovim setup with native LSP, Treesitter syntax highlighting, and Telescope fuzzy search.</description>
+      <guid isPermaLink="true">http://127.0.0.1:8000/editor/</guid>
+      <pubDate></pubDate>
+      <author>Sebastien Rousseau</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/quantum-computer-room-1200.webp" type="image/webp" length="0"/>
+    </item>
+    <item>
+      <title>Offline Access: Dotfiles</title>
+      <link>http://127.0.0.1:8000/offline/</link>
+      <description>Service worker offline fallback page.</description>
+      <guid isPermaLink="true">http://127.0.0.1:8000/offline/</guid>
+      <pubDate></pubDate>
+      <author>Sebastien Rousseau</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/quantum-computer-room-1200.webp" type="image/webp" length="0"/>
+    </item>
+    <item>
+      <title>Page Not Found (404) | Dotfiles</title>
+      <link>http://127.0.0.1:8000/404/</link>
+      <description>The requested documentation page could not be found.</description>
+      <guid isPermaLink="true">http://127.0.0.1:8000/404/</guid>
+      <pubDate></pubDate>
+      <author>Sebastien Rousseau</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/quantum-computer-room-1200.webp" type="image/webp" length="0"/>
+    </item>
+    <item>
+      <title>Performance Benchmarks: Shell Startup & Execution Latency</title>
+      <link>http://127.0.0.1:8000/benchmarks/</link>
+      <description>Empirical startup benchmarks comparing this configuration against Oh-My-Zsh and Prezto.</description>
+      <guid isPermaLink="true">http://127.0.0.1:8000/benchmarks/</guid>
+      <pubDate></pubDate>
+      <author>Sebastien Rousseau</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/quantum-computer-room-1200.webp" type="image/webp" length="0"/>
+    </item>
+    <item>
+      <title>Privacy Policy: Zero-Cookie Architecture</title>
+      <link>http://127.0.0.1:8000/privacy/</link>
+      <description>Privacy policy declaring zero tracking cookies and completely local computation.</description>
+      <guid isPermaLink="true">http://127.0.0.1:8000/privacy/</guid>
+      <pubDate></pubDate>
+      <author>Sebastien Rousseau</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/quantum-computer-room-1200.webp" type="image/webp" length="0"/>
+    </item>
+    <item>
+      <title>Security Architecture: Zero Secrets & Credential Safety</title>
+      <link>http://127.0.0.1:8000/security/</link>
+      <description>Secret management patterns using 1Password CLI and environment isolation with zero plaintext tokens.</description>
+      <guid isPermaLink="true">http://127.0.0.1:8000/security/</guid>
+      <pubDate></pubDate>
+      <author>Sebastien Rousseau</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/quantum-computer-room-1200.webp" type="image/webp" length="0"/>
+    </item>
+    <item>
+      <title>Shell Architecture: Zsh & Starship Configuration</title>
+      <link>http://127.0.0.1:8000/shell/</link>
+      <description>Deep dive into Zsh configuration, Starship cross-shell prompt, and sub-20ms startup optimization.</description>
+      <guid isPermaLink="true">http://127.0.0.1:8000/shell/</guid>
+      <pubDate></pubDate>
+      <author>Sebastien Rousseau</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/quantum-computer-room-1200.webp" type="image/webp" length="0"/>
+    </item>
+    <item>
+      <title>Terms of Use & Open Source License</title>
+      <link>http://127.0.0.1:8000/terms/</link>
+      <description>Terms governing Dotfiles under Apache-2.0 and MIT licenses.</description>
+      <guid isPermaLink="true">http://127.0.0.1:8000/terms/</guid>
+      <pubDate></pubDate>
+      <author>Sebastien Rousseau</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/quantum-computer-room-1200.webp" type="image/webp" length="0"/>
+    </item>
+    <item>
+      <title>Thank You | Dotfiles</title>
+      <link>http://127.0.0.1:8000/thanks/</link>
+      <description>Thank you for your message.</description>
+      <guid isPermaLink="true">http://127.0.0.1:8000/thanks/</guid>
+      <pubDate></pubDate>
+      <author>Sebastien Rousseau</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/quantum-computer-room-1200.webp" type="image/webp" length="0"/>
+    </item>
+  </channel>
+</rss>

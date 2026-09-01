@@ -1,0 +1,17 @@
+{
+  "author": "Sebastien Rousseau",
+  "banner": "https://cloudcdn.pro/stocks/images/quantum-computer-room-1200.webp",
+  "banner_alt": "Dotfiles — Minimalist macOS & Linux Developer Environment",
+  "date": "2026-09-01",
+  "description": "Curated, high-velocity zsh, tmux, git, and neovim configurations optimized for Apple Silicon and Linux with sub-20ms shell startup.",
+  "keywords": "dotfiles, zsh config, starship prompt, neovim lua, tmux config, brewfile macos, git signing ssh",
+  "language": "en-GB",
+  "layout": "index",
+  "logo": "https://cloudcdn.pro/cmn/v1/logos/cmn.svg",
+  "name": "Dotfiles",
+  "permalink": "https://dotfiles.io/",
+  "reading_time": 3,
+  "short_name": "dotfiles",
+  "title": "Dotfiles: Minimalist macOS & Linux Developer Environment",
+  "word_count": 764
+}

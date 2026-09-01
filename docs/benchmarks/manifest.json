@@ -1,0 +1,19 @@
+{
+  "background_color": "#ffffff",
+  "description": "Empirical startup benchmarks comparing this configuration against Oh-My-Zsh and Prezto.",
+  "display": "standalone",
+  "icons": [
+    {
+      "purpose": "any maskable",
+      "sizes": "512x512",
+      "src": "",
+      "type": "image/svg+xml"
+    }
+  ],
+  "name": "Dotfiles",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "short_name": "dotfiles",
+  "start_url": ".",
+  "theme_color": null
+}
