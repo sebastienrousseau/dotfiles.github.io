@@ -1,0 +1,125 @@
+{
+  "wcag_version": "2.2",
+  "pages_scanned": 20,
+  "criteria": [
+    {
+      "criterion": "1.1.1",
+      "level": "A",
+      "title": "Non-text Content",
+      "status": "automated",
+      "all_pages_pass": true
+    },
+    {
+      "criterion": "1.3.1",
+      "level": "A",
+      "title": "Info and Relationships",
+      "status": "automated",
+      "all_pages_pass": true
+    },
+    {
+      "criterion": "1.4.3",
+      "level": "AA",
+      "title": "Contrast (Minimum)",
+      "status": "runtime",
+      "all_pages_pass": false
+    },
+    {
+      "criterion": "1.4.10",
+      "level": "AA",
+      "title": "Reflow",
+      "status": "runtime",
+      "all_pages_pass": false
+    },
+    {
+      "criterion": "1.4.11",
+      "level": "AA",
+      "title": "Non-text Contrast",
+      "status": "runtime",
+      "all_pages_pass": false
+    },
+    {
+      "criterion": "1.4.12",
+      "level": "AA",
+      "title": "Text Spacing",
+      "status": "runtime",
+      "all_pages_pass": false
+    },
+    {
+      "criterion": "2.3.1",
+      "level": "A",
+      "title": "Three Flashes or Below Threshold",
+      "status": "automated",
+      "all_pages_pass": true
+    },
+    {
+      "criterion": "2.4.4",
+      "level": "A",
+      "title": "Link Purpose (In Context)",
+      "status": "automated",
+      "all_pages_pass": true
+    },
+    {
+      "criterion": "2.4.11",
+      "level": "AA",
+      "title": "Focus Not Obscured (Minimum)",
+      "status": "runtime",
+      "all_pages_pass": false
+    },
+    {
+      "criterion": "2.4.13",
+      "level": "AAA",
+      "title": "Focus Appearance",
+      "status": "automated",
+      "all_pages_pass": true
+    },
+    {
+      "criterion": "2.5.7",
+      "level": "AA",
+      "title": "Dragging Movements",
+      "status": "manual",
+      "all_pages_pass": false
+    },
+    {
+      "criterion": "2.5.8",
+      "level": "AA",
+      "title": "Target Size (Minimum)",
+      "status": "automated",
+      "all_pages_pass": true
+    },
+    {
+      "criterion": "3.1.1",
+      "level": "A",
+      "title": "Language of Page",
+      "status": "automated",
+      "all_pages_pass": true
+    },
+    {
+      "criterion": "3.2.6",
+      "level": "A",
+      "title": "Consistent Help",
+      "status": "manual",
+      "all_pages_pass": false
+    },
+    {
+      "criterion": "3.3.7",
+      "level": "A",
+      "title": "Redundant Entry",
+      "status": "not-applicable",
+      "all_pages_pass": false
+    },
+    {
+      "criterion": "3.3.8",
+      "level": "AA",
+      "title": "Accessible Authentication (Minimum)",
+      "status": "not-applicable",
+      "all_pages_pass": false
+    },
+    {
+      "criterion": "4.1.3",
+      "level": "AA",
+      "title": "Status Messages",
+      "status": "runtime",
+      "all_pages_pass": false
+    }
+  ]
+}

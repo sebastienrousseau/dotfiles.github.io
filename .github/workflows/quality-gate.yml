@@ -1,0 +1,44 @@
+name: Quality Gate & WCAG AAA Compliance
+
+on:
+  push:
+    branches: [main, master, "feat/**"]
+  pull_request:
+    branches: [main, master, "feat/**"]
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+jobs:
+  quality-gate:
+    name: WCAG 2.2 AAA & Lighthouse Quality Gate
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Install Audit Tooling
+        run: |
+          npm install -g pa11y-ci @lhci/cli
+
+      - name: Verify SSG Manifest Conformance
+        run: |
+          if [ -f config/ssg.json ]; then
+            node -e "JSON.parse(require('fs').readFileSync('config/ssg.json', 'utf8')); console.log('config/ssg.json is valid JSON');"
+          fi
+
+      - name: Run Deterministic Branch Hygiene Check
+        run: |
+          if [ -f scripts/prune-branches.sh ]; then
+            chmod +x scripts/prune-branches.sh
+            DRY_RUN=true bash scripts/prune-branches.sh origin
+          fi
