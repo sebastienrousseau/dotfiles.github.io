@@ -1,29 +1,22 @@
 # SPDX-License-Identifier: Apache-2.0 OR MIT
-# Semantic Version: v0.0.1
-.PHONY: all build audit test contrast validate compress prune clean help
+.PHONY: all build serve validate clean help
 
 all: build
 
 help:
-	@echo "Available Makefile targets:"
-	@echo "  make build      - Compile static site using Rust static-site-generator"
-	@echo "  make audit      - Run WCAG 2.2 AAA and regression tests"
-	@echo "  make contrast   - Verify color tokens against WCAG 2.2 AAA math ratios"
-	@echo "  make validate   - Validate Markdown frontmatter schema integrity"
-	@echo "  make clean      - Remove build artifacts and temporary files"
+	@echo "make build     Build dotfiles.io with ssg and the Voxt theme into _site/"
+	@echo "make serve     Build, then serve at http://127.0.0.1:8000/"
+	@echo "make validate  Build, then validate the HTML (needs npx)"
+	@echo "make clean     Remove _site/"
 
 build:
-	@if command -v ssg >/dev/null 2>&1; then 		ssg build --content _posts --template _layouts --output public; 		python3 scripts/post-build.py; 	elif [ -f build.sh ]; then 		bash build.sh; 	else 		echo "Notice: Standard SSG layout ready. Run 'cargo install ssg' to compile."; 	fi
+	python3 scripts/build-site.py
 
-audit: contrast validate
-	@/usr/bin/python3 scripts/regression-test.py
+serve:
+	python3 scripts/build-site.py --serve 8000
 
-contrast:
-	@/usr/bin/python3 scripts/audit-contrast.py
-
-validate:
-	@/usr/bin/python3 scripts/validate-frontmatter.py
+validate: build
+	npx --yes html-validate@10 --config .htmlvalidate.json "_site/**/*.html"
 
 clean:
-	@rm -rf public docs dist .cache coverage *.log
-	@echo "Workspace cleaned."
+	rm -rf _site

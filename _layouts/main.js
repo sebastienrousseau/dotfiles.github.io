@@ -1,242 +1,98 @@
-/* ==========================================================================
-   Bank Statement Parser — Enterprise Client Interaction Engine
-   ========================================================================== */
-
-'use strict';
-
 (function () {
-  /* 1. Theme Switcher Engine */
-  var storedTheme = 'system';
-  try {
-    storedTheme = localStorage.getItem('theme-mode') || 'system';
-  } catch (e) {}
+  "use strict";
+  if (window.__theme_inited) return;
+  window.__theme_inited = true;
 
-  function applyTheme(mode) {
-    var effectiveTheme = mode;
-    if (mode === 'system') {
-      var isDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
-      effectiveTheme = isDark ? 'dark' : 'light';
-    }
-    document.documentElement.setAttribute('data-theme-mode', mode);
-    document.documentElement.setAttribute('data-theme', effectiveTheme);
-    try {
-      localStorage.setItem('theme-mode', mode);
-    } catch (e) {}
+  /* Older SSG releases emit the search trigger at a fixed viewport position
+     instead of replacing the declared header slot. Normalise both generator
+     behaviours before interaction begins. */
+  var searchSlot = document.querySelector("[data-ssg-search]");
+  var searchButton = document.getElementById("ssg-search-btn");
+  if (searchSlot && searchButton) searchSlot.replaceWith(searchButton);
 
-    var buttons = document.querySelectorAll('.theme-btn');
-    buttons.forEach(function (btn) {
-      if (btn.getAttribute('data-theme-mode') === mode) {
-        btn.classList.add('active');
-      } else {
-        btn.classList.remove('active');
-      }
-    });
+  /* Three states, not two: "system" is the absence of data-theme, so a
+     visitor can hand the choice back to the operating system. The previous
+     two-way switch stamped data-theme on the first click and never removed
+     it. The mode icon is rendered by CSS so its dimensions are reserved
+     before this deferred script runs, preventing a header layout shift. */
+  var ORDER = ["system", "light", "dark"];
+
+  function currentMode() {
+    var set = document.documentElement.getAttribute("data-theme");
+    return set === "light" || set === "dark" ? set : "system";
   }
 
-  applyTheme(storedTheme);
-
-  if (window.matchMedia) {
-    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', function () {
-      var cur = 'system';
-      try {
-        cur = localStorage.getItem('theme-mode') || 'system';
-      } catch (e) {}
-      if (cur === 'system') {
-        applyTheme('system');
-      }
-    });
+  function labelFor(mode, btn, state) {
+    if (mode === "system") return state ? state.getAttribute("data-label-system") || "System" : "System";
+    return btn.getAttribute("data-label-" + mode) || (mode === "light" ? "Light" : "Dark");
   }
 
-  /* 2. Main Application Initializer */
-  function initApp() {
-    applyTheme(storedTheme);
-
-    var themeButtons = document.querySelectorAll('.theme-btn');
-    themeButtons.forEach(function (btn) {
-      btn.addEventListener('click', function (e) {
-        e.preventDefault();
-        var mode = btn.getAttribute('data-theme-mode');
-        if (mode) applyTheme(mode);
-      });
-    });
-
-    /* Mobile Navbar Toggle */
-    var navToggle = document.getElementById('navbarToggle');
-    var navMenu = document.getElementById('navbarMenu');
-    if (navToggle && navMenu) {
-      navToggle.addEventListener('click', function (e) {
-        e.stopPropagation();
-        var isExpanded = navToggle.getAttribute('aria-expanded') === 'true';
-        navToggle.setAttribute('aria-expanded', String(!isExpanded));
-        navMenu.classList.toggle('open');
-      });
+  function setMode(mode) {
+    if (mode === "system") {
+      document.documentElement.removeAttribute("data-theme");
+      try { localStorage.removeItem("theme"); } catch (e) {}
+    } else {
+      document.documentElement.setAttribute("data-theme", mode);
+      try { localStorage.setItem("theme", mode); } catch (e) {}
     }
-
-    /* Apple FAQ Accordion Controller */
-    var expandBtn = document.getElementById('faqExpandAllBtn');
-    var faqItems = document.querySelectorAll('.apple-faq-item');
-    if (expandBtn && faqItems.length > 0) {
-      var isAllExpanded = false;
-
-      function updateBtnState() {
-        var allOpen = true;
-        faqItems.forEach(function (item) {
-          if (!item.hasAttribute('open')) allOpen = false;
-        });
-        isAllExpanded = allOpen;
-        expandBtn.setAttribute('aria-expanded', String(isAllExpanded));
-        var label = expandBtn.querySelector('.apple-faq-btn-text');
-        var chevron = expandBtn.querySelector('.apple-faq-expand-chevron');
-        if (label) label.textContent = isAllExpanded ? 'Collapse all' : 'Expand all';
-        if (chevron) chevron.style.transform = isAllExpanded ? 'rotate(180deg)' : 'rotate(0deg)';
-      }
-
-      expandBtn.addEventListener('click', function (e) {
-        e.preventDefault();
-        var newState = !isAllExpanded;
-        faqItems.forEach(function (item) {
-          if (newState) {
-            item.setAttribute('open', '');
-          } else {
-            item.removeAttribute('open');
-          }
-        });
-        updateBtnState();
-      });
-
-      faqItems.forEach(function (item) {
-        item.addEventListener('toggle', updateBtnState);
-      });
-    }
-
-    /* Search Modal Engine */
-    var searchIndex = null;
-    var isFetching = false;
-    var modal = document.getElementById('searchModal');
-    var input = document.getElementById('searchInput');
-    var results = document.getElementById('searchResults');
-    var closeBtn = document.getElementById('searchClose');
-
-    function escapeHtml(str) {
-      if (!str) return '';
-      return String(str)
-        .replace(/&/g, '&amp;')
-        .replace(/</g, '&lt;')
-        .replace(/>/g, '&gt;')
-        .replace(/"/g, '&quot;');
-    }
-
-    async function loadSearch() {
-      if (searchIndex || isFetching) return;
-      isFetching = true;
-      try {
-        var res = await fetch('/search-index.json');
-        if (res.ok) {
-          var data = await res.json();
-          searchIndex = Array.isArray(data) ? data : (data.entries || []);
-        } else {
-          searchIndex = [];
-        }
-      } catch (e) {
-        searchIndex = [];
-      } finally {
-        isFetching = false;
-      }
-    }
-
-    function openSearch() {
-      if (!modal) return;
-      modal.classList.add('active');
-      loadSearch();
-      setTimeout(function () {
-        if (input) {
-          input.focus();
-          if (input.value.trim()) {
-            input.dispatchEvent(new Event('input'));
-          }
-        }
-      }, 50);
-    }
-
-    function closeSearch() {
-      if (!modal) return;
-      modal.classList.remove('active');
-      if (input) input.value = '';
-      if (results) results.innerHTML = '<div class="search-empty">Type to search...</div>';
-    }
-
-    var triggers = document.querySelectorAll('#searchTrigger, #searchTriggerMobile, .search-trigger');
-    triggers.forEach(function (btn) {
-      btn.addEventListener('click', function (e) {
-        e.preventDefault();
-        openSearch();
-      });
-    });
-
-    if (closeBtn) closeBtn.addEventListener('click', closeSearch);
-    if (modal) {
-      var backdrop = modal.querySelector('.search-backdrop');
-      if (backdrop) backdrop.addEventListener('click', closeSearch);
-    }
-
-    window.addEventListener('keydown', function (e) {
-      if ((e.metaKey || e.ctrlKey) && e.key === 'k') {
-        e.preventDefault();
-        openSearch();
-      } else if (e.key === 'Escape' && modal && modal.classList.contains('active')) {
-        closeSearch();
-      }
-    });
-
-    if (input) {
-      input.addEventListener('input', function () {
-        var query = input.value.trim().toLowerCase();
-        if (!query) {
-          results.innerHTML = '<div class="search-empty">Type to search...</div>';
-          return;
-        }
-        if (!searchIndex) {
-          results.innerHTML = '<div class="search-empty">Loading search index...</div>';
-          loadSearch().then(function () {
-            input.dispatchEvent(new Event('input'));
-          });
-          return;
-        }
-        if (searchIndex.length === 0) {
-          results.innerHTML = '<div class="search-empty">No results found for "' + escapeHtml(query) + '"</div>';
-          return;
-        }
-
-        var tokens = query.split(/\s+/).filter(Boolean);
-        var matches = searchIndex.filter(function (item) {
-          var t = (item.title || '').toLowerCase();
-          var d = (item.description || '').toLowerCase();
-          var c = (item.content || '').toLowerCase();
-          var u = (item.url || '').toLowerCase();
-          var target = t + ' ' + d + ' ' + c + ' ' + u;
-          return tokens.every(function (tok) {
-            return target.includes(tok);
-          });
-        }).slice(0, 10);
-
-        if (matches.length === 0) {
-          results.innerHTML = '<div class="search-empty">No results found for "' + escapeHtml(query) + '"</div>';
-          return;
-        }
-
-        results.innerHTML = matches.map(function (item) {
-          return '<a class="search-item" href="' + item.url + '">' +
-            '<div class="search-item-title">' + escapeHtml(item.title) + '</div>' +
-            '<div class="search-item-desc">' + escapeHtml((item.description || item.content || '').replace(/<[^>]+>/g, '').slice(0, 140)) + '...</div>' +
-            '</a>';
-        }).join('');
-      });
-    }
+    var btn = document.getElementById("mode-toggle");
+    if (!btn) return;
+    var state = document.getElementById("mode-state");
+    if (state) state.textContent = labelFor(mode, btn, state);
   }
 
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', initApp);
-  } else {
-    initApp();
-  }
+  setMode(currentMode());
+
+  document.addEventListener("click", function (e) {
+    var btn = e.target.closest("#mode-toggle");
+    if (!btn) return;
+    setMode(ORDER[(ORDER.indexOf(currentMode()) + 1) % ORDER.length]);
+  });
+
+
+  document.addEventListener("click", function (e) {
+    var toggle = e.target.closest("#navToggle");
+    if (!toggle) return;
+    var menu = document.getElementById("navMenu");
+    if (menu) {
+      var expanded = toggle.getAttribute("aria-expanded") === "true";
+      toggle.setAttribute("aria-expanded", String(!expanded));
+      menu.classList.toggle("is-open");
+    }
+  });
+
+  document.addEventListener("keydown", function (e) {
+    if (e.key === "Escape") {
+      var menu = document.getElementById("navMenu");
+      var toggle = document.getElementById("navToggle");
+      if (menu && menu.classList.contains("is-open")) {
+        menu.classList.remove("is-open");
+        if (toggle) {
+          toggle.setAttribute("aria-expanded", "false");
+          toggle.focus();
+        }
+      }
+    }
+  });
+
+  document.addEventListener("click", function (e) {
+    var link = e.target.closest('a[href^="#"]');
+    if (!link) return;
+    var href = link.getAttribute("href");
+    if (!href || href === "#") return;
+    var target = document.querySelector(href);
+    if (target) {
+      e.preventDefault();
+      target.scrollIntoView({ behavior: "smooth" });
+      if (history.pushState) {
+        history.pushState(null, null, href);
+      }
+      var menu = document.getElementById("navMenu");
+      var toggle = document.getElementById("navToggle");
+      if (menu && menu.classList.contains("is-open")) {
+        menu.classList.remove("is-open");
+        if (toggle) toggle.setAttribute("aria-expanded", "false");
+      }
+    }
+  });
 })();

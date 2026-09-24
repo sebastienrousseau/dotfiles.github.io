@@ -1,0 +1,47 @@
+<header class="site-header" role="banner">
+  <div class="container header-inner">
+    <a class="brand" href="{{site_path}}" aria-label="{{label_home}}">
+      <img src="{{site_path}}assets/logo.svg" alt="{{logo_alt}}" class="brand-logo" width="32" height="32" />
+      <span class="brand-text">{{name}}</span>
+    </a>
+    <button
+      class="nav-toggle"
+      id="navToggle"
+      type="button"
+      aria-expanded="false"
+      aria-controls="navMenu"
+      aria-label="{{label_menu_toggle}}"
+    >
+      <span class="visually-hidden">{{label_menu}}</span>
+      <span class="nav-toggle-icon" aria-hidden="true">☰</span>
+    </button>
+    <nav class="nav-menu" id="navMenu" aria-label="{{label_nav}}">
+      <a class="nav-link" href="{{site_path}}#features">{{nav_features}}</a>
+      <a class="nav-link" href="{{site_path}}#quickstart">{{nav_install}}</a>
+      <a class="nav-link" href="{{site_path}}#platforms">{{nav_platforms}}</a>
+      <a class="nav-link" href="{{site_path}}#security">{{nav_security}}</a>
+      <a class="nav-link" href="{{site_path}}#faq">{{nav_faq}}</a>
+      <a class="nav-link" href="https://doc.dotfiles.io/">{{nav_docs}}</a>
+    </nav>
+    <div class="header-actions">
+      <!-- Search trigger slot. The generator replaces this element with
+           the search button (see SEARCH_SLOT_ATTR in src/plugins/search.rs);
+           with no slot the button is position:fixed in the viewport corner
+           and cannot align with this header. -->
+      <span data-ssg-search></span>
+      <button
+        class="theme-toggle"
+        id="mode-toggle"
+        type="button"
+        data-label-light="{{label_theme_light}}"
+        data-label-dark="{{label_theme_dark}}"
+      >
+        <span class="visually-hidden">{{label_theme}}</span>
+        <span class="visually-hidden" id="mode-state" data-label-system="{{label_theme_system}}">{{label_theme_system}}</span>
+        <span class="theme-icon" aria-hidden="true"></span>
+      </button>
+      <a class="btn btn-outline btn-sm" href="{{repo_url}}" target="_blank" rel="noopener noreferrer" aria-label="{{label_github}}">GitHub</a>
+      <a class="btn btn-primary btn-sm" href="{{locale_path}}#quickstart">{{cta_primary}}</a>
+    </div>
+  </div>
+</header>
