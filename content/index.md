@@ -66,12 +66,13 @@ dot doctor    &#35; then check the machine</code></pre>
           <tr><th scope="col">System</th><th scope="col">Version</th><th scope="col">Architecture</th><th scope="col">Status</th></tr>
         </thead>
         <tbody>
-          <tr><td>macOS</td><td>14 (Sonoma) or later</td><td>Apple Silicon and Intel</td><td>Supported, CI tested on Intel</td></tr>
-          <tr><td>Ubuntu</td><td>22.04 or later</td><td>x86_64 and aarch64</td><td>Supported, CI tested on x86_64</td></tr>
+          <tr><td>macOS</td><td>14 (Sonoma) or later</td><td>Apple Silicon and Intel</td><td>Supported, CI tested on Apple Silicon</td></tr>
+          <tr><td>Ubuntu</td><td>22.04 or later</td><td>x86_64 and aarch64</td><td>Supported, CI tested on 24.04 x86_64</td></tr>
           <tr><td>Debian</td><td>12 or later</td><td>x86_64</td><td>Supported</td></tr>
           <tr><td>WSL2</td><td>Ubuntu 22.04 or later</td><td>x86_64</td><td>Supported, with a clipboard bridge</td></tr>
           <tr><td>NixOS</td><td>23.11 or later</td><td>x86_64 and aarch64</td><td>Supported, via the Nix flake</td></tr>
-          <tr><td>Fedora, Arch Linux</td><td>39 or later, rolling</td><td>x86_64</td><td>Community, not CI tested</td></tr>
+          <tr><td>Windows</td><td>10 or 11</td><td>x86_64</td><td>PowerShell 7.4 LTS or later, CI tested</td></tr>
+          <tr><td>Fedora, Arch Linux</td><td>41 or later, rolling</td><td>x86_64</td><td>Community, not CI tested</td></tr>
         </tbody>
       </table>
     </div>
@@ -82,9 +83,10 @@ dot doctor    &#35; then check the machine</code></pre>
         </thead>
         <tbody>
           <tr><td>zsh</td><td>5.8</td><td>Full</td></tr>
-          <tr><td>bash</td><td>5.0</td><td>Full</td></tr>
+          <tr><td>bash</td><td>5.0 (3.2 for the dot CLI)</td><td>Full</td></tr>
           <tr><td>fish (default)</td><td>4.0</td><td>Core CLI and aliases</td></tr>
           <tr><td>nushell</td><td>0.98</td><td>Core CLI and aliases</td></tr>
+          <tr><td>PowerShell</td><td>7.4 LTS</td><td>Core CLI and aliases</td></tr>
         </tbody>
       </table>
     </div>
