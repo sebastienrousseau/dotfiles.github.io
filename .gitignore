@@ -137,3 +137,6 @@ CLAUDE.md
 # silently, and npm resolves the override from the tarball — a missing
 # file fails the install with ENOENT, in CI only.
 !vendor/*.tgz
+
+# Local ssg build output (scripts/build-site.py)
+/_site/
