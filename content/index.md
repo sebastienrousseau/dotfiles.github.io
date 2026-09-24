@@ -5,7 +5,7 @@ description: "Chezmoi-managed dotfiles for macOS, Linux, WSL and PowerShell: one
 headline: "One configuration for every shell"
 lead: "Chezmoi-managed dotfiles for macOS, Linux and WSL, with PowerShell parity. The same aliases, prompt and tools across bash, zsh, fish and nushell, driven by one dot command and installed from releases you can verify."
 badge_tag: "Latest"
-badge_text: "v0.2.522 · Apache-2.0 OR MIT"
+badge_text: "v0.2.523 · Apache-2.0 OR MIT"
 cta_primary: "Install"
 cta_docs: "Read the docs"
 ---
@@ -48,8 +48,8 @@ cta_docs: "Read the docs"
     <h2 class="section-title text-center">Install</h2>
     <p class="section-desc text-center">Download the installer for the latest release, check it against its SHA-256, then run it. You need <code>git</code> and <code>curl</code>; on Linux without <code>shasum</code>, use <code>sha256sum -c -</code> for the check.</p>
     <pre><code>r=https://github.com/sebastienrousseau/dotfiles/releases/download
-curl -fsSL -o install.sh "$r/v0.2.522/dotfiles-install-0.2.522.sh"
-sum=07ef5a3fbf3a98d7cb4cf6dc787ecce516121ca5a33b5ac793645bdcab6eaf03
+curl -fsSL -o install.sh "$r/v0.2.523/dotfiles-install-0.2.523.sh"
+sum=6e01971dc11493a4738a8058f8ecc0942c181d2b4b70da59d536400482fbba32
 echo "$sum  install.sh" | shasum -a 256 -c - &amp;&amp; bash install.sh
 dot doctor    &#35; then check the machine</code></pre>
     <p class="section-desc text-center">The installer fetches a checksum-verified chezmoi, clones the release to <code>~/.dotfiles</code>, applies it and puts <code>dot</code> on your <code>PATH</code>. Homebrew, Scoop, AUR, npm and Nix routes are in the <a href="https://doc.dotfiles.io/guides/INSTALL/">install guide</a>.</p>
@@ -104,7 +104,7 @@ dot doctor    &#35; then check the machine</code></pre>
       </div>
       <div class="card">
         <h3>Provenance and signatures</h3>
-        <p>The <code>dot</code> CLI archives carry SLSA provenance signed by the release workflow, and Sigstore bundles cover the installer and archives. Check provenance with <code>gh attestation verify dot-0.2.522.tar.gz --repo sebastienrousseau/dotfiles</code>.</p>
+        <p>The <code>dot</code> CLI archives carry SLSA provenance signed by the release workflow, and Sigstore bundles cover the installer and archives. Check provenance with <code>gh attestation verify dot-0.2.523.tar.gz --repo sebastienrousseau/dotfiles</code>.</p>
       </div>
       <div class="card">
         <h3>SBOMs and signed commits</h3>

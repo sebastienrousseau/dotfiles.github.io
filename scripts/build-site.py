@@ -29,7 +29,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 SITE_URL = "https://dotfiles.io/"
-RELEASE = "v0.2.522"
+RELEASE = "v0.2.523"
 
 SITE = {
     "name": ".dotfiles",
