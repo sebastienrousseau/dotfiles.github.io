@@ -59,6 +59,8 @@ SITE = {
     "nav_security": "Security",
     "nav_faq": "FAQ",
     "nav_docs": "Docs",
+    "cta_primary": "Install",
+    "cta_docs": "Read the docs",
     "footer_desc": "Chezmoi-managed dotfiles for macOS, Linux, WSL and PowerShell.",
     "footer_copy": f"© 2015–{date.today().year} Sebastien Rousseau. Apache-2.0 OR MIT.",
 }
