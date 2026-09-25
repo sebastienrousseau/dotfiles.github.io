@@ -1,0 +1,21 @@
+# Keeps the SHA-pinned GitHub Actions in .github/workflows current.
+# ssg itself is pinned by version and SHA-256 in pages.yml, matching the
+# dotfiles repository's docs build; bump both together.
+version: 2
+updates:
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      day: "monday"
+      time: "06:00"
+      timezone: "UTC"
+    commit-message:
+      prefix: "ci"
+    open-pull-requests-limit: 5
+    labels:
+      - "dependencies"
+    groups:
+      github-actions:
+        patterns:
+          - "*"
