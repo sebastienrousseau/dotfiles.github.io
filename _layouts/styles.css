@@ -844,6 +844,20 @@ pre {
   text-align: left;
 }
 
+/* Inline code: the site's monospace stack, a touch smaller than the text
+   around it and on a subtle chip, so `~/.dotfiles` or `dot` reads as code
+   rather than as oversized words in the browser's fallback font. */
+:not(pre) > code {
+  font-family: var(--font-mono);
+  font-size: 0.875em;
+  padding: 0.1em 0.35em;
+  border-radius: 0.3em;
+  background: var(--bg-subtle);
+  border: 1px solid var(--border);
+  margin: 0;
+  white-space: nowrap;
+}
+
 pre code {
   font-family: inherit;
   font-size: inherit;
