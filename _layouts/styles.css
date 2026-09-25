@@ -1,385 +1,584 @@
-/* SPDX-License-Identifier: Apache-2.0 OR MIT */
-/* WCAG 2.2 AAA Design System */
+/* Lucid — documentation theme for SSG.
+ *
+ * Colour is expressed only through the tokens below. Every pair the theme
+ * actually renders is asserted at WCAG AAA (7:1 text, 3:1 non-text) by
+ * scripts/contrast.py, so a colour change that breaks contrast fails the
+ * build rather than reaching a reader. Nothing here hard-codes a hex value
+ * outside these two blocks.
+ */
 
-:root {
-  --bg: #090a0f;
-  --bg-subtle: #11141f;
-  --bg-card: #151928;
-  --bg-card-hover: #1c2236;
-  --border: #5d6375;
-  --border-strong: #7c8192;
-  --fg: #ffffff;
-  --fg-muted: #e5e7eb;
-  --fg-subtle: #a6aab6;
-  --primary: #69adff;
-  --primary-hover: #93c5fd;
-  --primary-ink: #090a0f;
-  --primary-glow: rgba(96, 165, 250, 0.25);
-  --accent: #c084fc;
-  --success: #34d399;
-  --focus: #69adff;
-  --radius-sm: 8px;
-  --radius-md: 14px;
-  --radius-lg: 20px;
-  --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-  /* Safari resolves ui-monospace to SF Mono. Chrome and Firefox do not
-     support it, and Menlo (the next macOS font) draws hyphens nearly
-     cell-wide, so `-fsSL` and `-c -` read as dashes: Monaco comes first
-     on macOS for them, then the Windows and Linux faces. */
-  --font-mono: ui-monospace, Monaco, Consolas, "DejaVu Sans Mono", "Liberation Mono", Menlo, monospace;
+:root,
+:root[data-theme="light"] {
+  --bg: #ffffff;
+  --surface: #f4f6f9;
+  --surface-soft: #e7ebf1;
+  --ink: #0d1117;
+  --ink-soft: #232a35;
+  --ink-muted: #3d4553;
+  --accent: #08417f;
+  --accent-hover: #052c57;
+  --accent-ink: #ffffff;
+  --accent-soft: #dce8f7;
+  --on-accent-soft: #08417f;
+  --focus: #08417f;
+  --line: #5f6976;
+  color-scheme: light;
+}
+
+:root[data-theme="dark"] {
+  --bg: #0b0e14;
+  --surface: #141922;
+  --surface-soft: #1d2430;
+  --ink: #f2f5f9;
+  --ink-soft: #d3dae4;
+  --ink-muted: #adb7c5;
+  --accent: #93bef7;
+  --accent-hover: #bcd8fc;
+  --accent-ink: #06101d;
+  --accent-soft: #1b2a3f;
+  --on-accent-soft: #c6dbf7;
+  --focus: #93bef7;
+  --line: #7d8b9f;
   color-scheme: dark;
 }
 
-[data-theme="light"] {
-  --bg: #ffffff;
-  --bg-subtle: #f9fafb;
-  --bg-card: #f3f4f6;
-  --bg-card-hover: #e5e7eb;
-  --border: #878d9b;
-  --border-strong: #6a707f;
-  --fg: #090a0f;
-  --fg-muted: #1f2937;
-  --fg-subtle: #484e60;
-  --primary: #1641bd;
-  --primary-hover: #1e40af;
-  --primary-ink: #ffffff;
-  --primary-glow: rgba(29, 78, 216, 0.15);
-  --accent: #6b21a8;
-  --success: #065f46;
-  --focus: #1641bd;
-  color-scheme: light;
-}
-
-/* ---------------------------------------------------------------------
-   Follow the operating system.
-
-   Voxt is dark-first: the unqualified `:root` above is the dark
-   palette. Until now the only way to get light was to ask for it
-   explicitly, and `theme-init.js` was stamping `data-theme` on every
-   load so it always looked deliberate.
-
-   Now that the script stamps nothing unless a choice was stored, a
-   viewer whose system is set to light needs this block or they get dark
-   regardless — the script change and this one only work as a pair.
-
-   Guarded on `:not([data-theme="dark"])` so an explicit dark choice
-   still wins on a light OS.
-   --------------------------------------------------------------------- */
-@media (prefers-color-scheme: light) {
-  :root:not([data-theme="dark"]) {
-  --bg: #ffffff;
-  --bg-subtle: #f9fafb;
-  --bg-card: #f3f4f6;
-  --bg-card-hover: #e5e7eb;
-  --border: #878d9b;
-  --border-strong: #6a707f;
-  --fg: #090a0f;
-  --fg-muted: #1f2937;
-  --fg-subtle: #484e60;
-  --primary: #1641bd;
-  --primary-hover: #1e40af;
-  --primary-ink: #ffffff;
-  --primary-glow: rgba(29, 78, 216, 0.15);
-  --accent: #6b21a8;
-  --success: #065f46;
-  --focus: #1641bd;
-  color-scheme: light;
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0b0e14;
+    --surface: #141922;
+    --surface-soft: #1d2430;
+    --ink: #f2f5f9;
+    --ink-soft: #d3dae4;
+    --ink-muted: #adb7c5;
+    --accent: #93bef7;
+    --accent-hover: #bcd8fc;
+    --accent-ink: #06101d;
+    --accent-soft: #1b2a3f;
+    --on-accent-soft: #c6dbf7;
+    --focus: #93bef7;
+    --line: #7d8b9f;
   }
+  color-scheme: dark;
 }
 
-*, *::before, *::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+:root {
+  --sans: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  /* Chrome and Firefox do not support ui-monospace/SFMono-Regular, and Menlo
+     draws hyphens nearly cell-wide (`-fsSL` reads as a dash): Monaco first. */
+  --mono: ui-monospace, Monaco, Consolas, "DejaVu Sans Mono", "Liberation Mono", Menlo, monospace;
+  --r: 8px;
+  --gap: 1.5rem;
+  --shell: 76rem;
+  --read: 42rem;
+  /* Both are fallbacks. main.js measures the real masthead and the
+   * generator's injected search button and overwrites them, so the offsets
+   * stay correct when a translation makes a label longer or the generator
+   * changes its button. Nothing here depends on JavaScript for correctness:
+   * these defaults are sized for the widest case. */
+  --search-gutter: 10rem;
+  --masthead-h: 4rem;
 }
 
-html, body {
-  max-width: 100%;
-  overflow-x: clip;
-}
+*, *::before, *::after { box-sizing: border-box; }
+body, h1, h2, h3, h4, p, ul, ol, dl, dd, figure, pre { margin: 0; }
+ul[class], ol[class] { list-style: none; padding: 0; }
 
 html {
-  font-family: var(--font-sans);
-  background-color: var(--bg);
-  color: var(--fg);
-  scroll-behavior: smooth;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--sans);
+  /* 1.5 line-height and 0.12em paragraph spacing are WCAG 1.4.12; the
+   * body size is 17px so the reading column lands near 66 characters
+   * without the reader needing to zoom. */
+  font-size: 106.25%;
   line-height: 1.6;
+  -webkit-text-size-adjust: 100%;
+  /* 2.4.11/2.4.12: anything scrolled to - an anchor, a TOC click, or a
+   * focus ring - must clear the sticky masthead. Setting it on the scroll
+   * container covers every such scroll at once. */
+  scroll-padding-top: calc(var(--masthead-h) + 1rem);
 }
 
-body {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+body { min-height: 100vh; display: flex; flex-direction: column; }
+main { flex: 1; }
+
+/* Focus is never removed, only restyled, and the ring clears 3:1 against
+ * both grounds — checked as --focus in the contrast gate. */
+:focus-visible {
+  outline: 3px solid var(--focus);
+  outline-offset: 2px;
+  border-radius: 2px;
 }
+
+a { color: var(--accent); text-underline-offset: 0.18em; }
+a:hover { color: var(--accent-hover); }
 
 .skip-link {
   position: absolute;
-  top: -999px;
-  left: 1rem;
-  background: var(--primary);
-  color: var(--primary-ink);
-  padding: 0.65rem 1.25rem;
-  border-radius: var(--radius-sm);
-  z-index: 100;
-  font-weight: 800;
-  min-height: 2.75rem;
-  min-width: 2.75rem;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
+  left: 0.5rem;
+  top: -4rem;
+  z-index: 20;
+  background: var(--accent);
+  color: var(--accent-ink);
+  padding: 0.75rem 1.25rem;
+  border-radius: var(--r);
+  font-weight: 700;
   text-decoration: none;
 }
-.skip-link:focus {
-  top: 1rem;
-}
+.skip-link:focus { top: 0.5rem; }
 
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  white-space: nowrap;
-  border: 0;
-}
+.lu-shell { width: 100%; max-width: var(--shell); margin: 0 auto; padding: 0 1.25rem; }
+.lu-shell-narrow { max-width: var(--read); }
 
-.container {
-  width: 100%;
-  max-width: 1160px;
-  margin: 0 auto;
-  padding: 0 1rem;
-}
-
-@media (min-width: 640px) {
-  .container {
-    padding: 0 1.5rem;
-  }
-}
-
-.narrow {
-  max-width: 760px;
-}
-
-.text-center {
-  text-align: center;
-}
-
-.font-mono {
-  font-family: var(--font-mono);
-}
-
-/* --- Header & Navigation --- */
-.site-header {
-  position: sticky;
-  top: 0;
-  z-index: 50;
+/* ---------- masthead ---------- */
+.masthead {
+  border-bottom: 1px solid var(--line);
   background: var(--bg);
-  border-bottom: 1px solid var(--border);
+  /* main.js drops this to static when the masthead wraps tall enough that
+   * sticking it would cost more viewport than it saves. */
+  position: var(--masthead-pos, sticky);
+  top: 0;
+  z-index: 10;
 }
-
-.header-inner {
+/* The masthead is full-bleed rather than held to the content shell. The
+ * generator injects its search control as position:fixed at the viewport's
+ * top-right, so a header stopping at the shell edge left an unbalanced gap
+ * beside it and read as left-aligned. --search-gutter reserves that strip so
+ * the two never collide. */
+.masthead-in {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  min-height: 4.5rem;
-  padding: 0.5rem 0;
-  gap: 1rem;
+  gap: var(--gap);
   flex-wrap: wrap;
+  min-height: 4rem;
+  max-width: none;
+  padding-inline: clamp(1rem, 2.5vw, 2rem);
+  padding-inline-end: calc(clamp(1rem, 2.5vw, 2rem) + var(--search-gutter));
 }
+/* The generator injects its search control as position:fixed at the top-right
+ * of the viewport, where it floats above whatever happens to be scrolled
+ * under it. Measured at 320 and 390 wide, that covered the focused "Next"
+ * pager link and the criteria table - a 2.4.12 failure a keyboard user meets
+ * on the second tab. A viewport-fixed control can always cover something, so
+ * the fix is to move it into the masthead's tool row, which is where a
+ * search control belongs. Once it is in normal flow it cannot cover anything,
+ * and the reserved --search-gutter strip is no longer needed either - main.js
+ * zeroes it after the move, which also stops the header wrapping to a second
+ * row at around 900px wide.
+ *
+ * !important is needed and is scoped to these three declarations: the
+ * generator's stylesheet is injected at the end of <body>, so it wins on
+ * source order against an equally specific id selector. */
+#ssg-search-btn,
+#ssg-search-btn * {
+  position: static !important;
+  inset: auto !important;
+  margin: 0 !important;
+  /* Now that it sits among the header controls it must be one of them, in
+   * both palettes. The generator's own label colour measures 6.95:1 against
+   * its ground - below the 7:1 that 1.4.6 requires, and invisible until the
+   * button moved into the header where the suite could see it. */
+  color: var(--ink-soft) !important;
+}
+#ssg-search-btn {
+  min-height: 44px;
+  min-width: 44px;
+  padding: 0 0.9rem !important;
+  border: 1px solid var(--line) !important;
+  border-radius: var(--r) !important;
+  background: var(--surface) !important;
+  font: inherit !important;
+  font-size: 0.875rem !important;
+  font-weight: 600;
+  cursor: pointer;
+}
+#ssg-search-btn svg { color: var(--ink-soft) !important; }
 
 .brand {
-  display: flex;
-  align-items: center;
-  gap: 0.75rem;
-  text-decoration: none;
-  color: var(--fg);
-  font-weight: 700;
-  font-size: 1.25rem;
-  flex-shrink: 0;
-}
-
-.nav-menu {
-  display: flex;
-  gap: 1.5rem;
-  flex-wrap: wrap;
-}
-
-.nav-link {
-  color: var(--fg-muted);
-  text-decoration: none;
-  font-size: 0.9375rem;
-  font-weight: 600;
-  padding: 0.5rem 0.5rem;
-  min-height: 2.75rem;
-  min-width: 2.75rem;
   display: inline-flex;
   align-items: center;
-  justify-content: center;
-  transition: color 0.2s;
+  gap: 0.6rem;
+  color: var(--ink);
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.0625rem;
+  padding: 0.6rem 0;
+  min-height: 44px;
 }
-
-.nav-link:hover,
-.nav-link.active {
-  color: var(--primary);
-  text-decoration: underline;
-  text-underline-offset: 4px;
+.brand-mark { display: block; color: var(--accent); flex: none; }
+.site-nav { margin-inline-end: auto; }.nav-list { display: flex; gap: 0.35rem; flex-wrap: wrap; }.nav-list a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  padding: 0 0.7rem;
+  border-radius: var(--r);
+  color: var(--ink-soft);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.9375rem;
+}.nav-list a:hover { background: var(--surface); color: var(--accent-hover); text-decoration: underline; }.nav-list a[aria-current] {
+  background: var(--accent-soft);
+  color: var(--on-accent-soft);
+  font-weight: 700;
 }
-
-.nav-toggle {
-  display: none;
-  background: var(--bg-card);
-  border: 1px solid var(--border);
-  color: var(--fg);
-  padding: 0.5rem 0.75rem;
-  border-radius: var(--radius-sm);
+.masthead-tools { display: flex; align-items: center; gap: 0.5rem; flex-wrap: wrap; }
+.nav-btn, .mode-btn {
+  min-height: 44px;
+  min-width: 44px;
+  padding: 0 0.9rem;
+  border: 1px solid var(--line);
+  border-radius: var(--r);
+  background: var(--surface);
+  color: var(--ink-soft);
+  font: inherit;
+  font-size: 0.875rem;
+  font-weight: 600;
   cursor: pointer;
-  font-size: 1.25rem;
-  min-height: 2.75rem;
-  min-width: 2.75rem;
 }
+.nav-btn:hover, .mode-btn:hover { background: var(--surface-soft); color: var(--accent-hover); }
+.nav-btn { display: none; }
+.mode-btn-state { color: var(--ink-muted); font-weight: 400; }
+.mode-btn-state::before { content: " — "; }
 
-@media (max-width: 768px) {
-  .nav-toggle {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .nav-menu {
-    display: none;
-    position: absolute;
-    top: 4.5rem;
-    left: 0;
-    right: 0;
-    background: var(--bg-card);
-    border-bottom: 2px solid var(--border-strong);
-    flex-direction: column;
-    padding: 1.5rem;
-    gap: 1rem;
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
-  }
-
-  .nav-menu.is-open {
-    display: flex;
-  }
-}
-
-.header-actions {
+/* ---------- hero ---------- */
+.hero { padding: clamp(3rem, 8vw, 6rem) 0 clamp(2rem, 5vw, 3.5rem); }
+/* The hero keeps the shell's width and centring so its left edge lines up
+ * with every band below; the measure is narrowed on the children instead.
+ * Overriding the container's max-width pinned it to the viewport edge and
+ * put the hero on a different left edge from the rest of the page. */
+.hero-in > * { max-width: 54rem; }
+.eyebrow {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--ink-muted);
+  margin-bottom: 1rem;
   display: flex;
   align-items: center;
-  gap: 0.5rem;
+  gap: 0.6rem;
   flex-wrap: wrap;
 }
-
-.header-actions > [data-ssg-search] {
-  flex: 0 0 2.75rem;
-  width: 2.75rem;
-  height: 2.75rem;
+.eyebrow-tag {
+  background: var(--accent-soft);
+  color: var(--on-accent-soft);
+  border-radius: 2rem;
+  padding: 0.2rem 0.7rem;
+  font-weight: 700;
+  font-size: 0.8125rem;
+}
+.hero-h {
+  font-size: clamp(2.1rem, 5.5vw, 3.4rem);
+  line-height: 1.12;
+  letter-spacing: -0.02em;
+  font-weight: 800;
+  text-wrap: balance;
+}
+.hero-lead {
+  font-size: clamp(1.0625rem, 2vw, 1.25rem);
+  color: var(--ink-soft);
+  margin-top: 1.1rem;
+  max-width: 40rem;
+}
+.hero-actions { display: flex; flex-wrap: wrap; gap: 0.75rem; margin-top: 2rem; }
+.hero-in > .hero-photo {
+  max-width: 72rem;
+  margin-top: 3rem;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: var(--r);
+  background: var(--surface);
+}
+.hero-photo img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1200 / 742;
+  object-fit: cover;
 }
 
-.header-actions > #ssg-search-btn {
-  position: static;
-  inset: auto;
-  flex: 0 0 2.75rem;
-  justify-content: center;
-  width: 2.75rem;
-  height: 2.75rem;
-  min-width: 2.75rem;
-  min-height: 2.75rem;
-  padding: 0;
-  box-shadow: none;
-}
-
-.header-actions > #ssg-search-btn span,
-.header-actions > #ssg-search-btn kbd {
-  display: none;
-}
-
-@media (max-width: 640px) {
-  .header-actions .btn {
-    display: none;
-  }
-}
-
-.theme-toggle {
-  background: var(--bg-card);
-  border: 1px solid var(--border);
-  color: var(--fg);
-  width: 2.75rem;
-  height: 2.75rem;
-  border-radius: 50%;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.2rem;
-  min-height: 2.75rem;
-  min-width: 2.75rem;
-}
-
-/* --- Buttons --- */
 .btn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  min-height: 44px;
+  padding: 0 1.4rem;
+  border-radius: var(--r);
+  border: 1px solid transparent;
   font-weight: 700;
   text-decoration: none;
-  border-radius: 2rem;
-  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
-  cursor: pointer;
-  border: 1px solid transparent;
-  min-height: 2.75rem;
-  min-width: 2.75rem;
+  font-size: 0.9375rem;
+}
+.btn-primary { background: var(--accent); color: var(--accent-ink); }
+.btn-primary:hover { background: var(--accent-hover); color: var(--accent-ink); }
+.btn-quiet { background: var(--surface); color: var(--ink); border-color: var(--line); }
+.btn-quiet:hover { background: var(--surface-soft); color: var(--ink); }
+
+/* ---------- bands ---------- */
+.band { padding: clamp(2.5rem, 6vw, 4rem) 0; border-top: 1px solid var(--line); }
+.band-soft { background: var(--surface); }
+.band-h { font-size: clamp(1.5rem, 3vw, 2rem); letter-spacing: -0.015em; text-wrap: balance; }
+.band-lead { color: var(--ink-soft); margin-top: 0.75rem; max-width: var(--read); }
+.band-cta { margin-top: 2rem; }
+
+.snippet { margin-top: 1.75rem; border: 1px solid var(--line); border-radius: var(--r); overflow: hidden; }
+.snippet-h {
+  background: var(--surface-soft);
+  color: var(--ink-soft);
+  font-family: var(--mono);
+  font-size: 0.8125rem;
+  padding: 0.6rem 1rem;
+  border-bottom: 1px solid var(--line);
+  /* Skeletonic caps every <p> at 65ch; the caption bar spans the snippet. */
+  max-width: none;
+}
+.snippet-body { margin: 0; padding: 1.1rem; overflow-x: auto; background: var(--surface); }
+.snippet-body code { font-family: var(--mono); font-size: 0.875rem; color: var(--ink); white-space: pre; }
+
+.cards { display: grid; gap: var(--gap); margin-top: 2rem; grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr)); }
+.card { background: var(--bg); border: 1px solid var(--line); border-radius: var(--r); padding: 1.4rem; }
+.card-h { font-size: 1.0625rem; margin-bottom: 0.5rem; }
+.card p { color: var(--ink-soft); font-size: 0.9375rem; }
+
+.facts { display: grid; gap: var(--gap); margin-top: 2rem; grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr)); }
+.fact { border-inline-start: 3px solid var(--accent); padding-inline-start: 1rem; }
+.fact-t { font-size: 1.5rem; font-weight: 800; letter-spacing: -0.02em; }
+.fact-d { color: var(--ink-soft); font-size: 0.9375rem; margin-top: 0.25rem; }
+
+/* ---------- documentation layout (USWDS documentation page) ---------- */
+.doc-shell {
+  display: grid;
+  gap: clamp(1.5rem, 4vw, 3rem);
+  padding-top: 2.5rem;
+  padding-bottom: 4rem;
+  grid-template-columns: 14rem minmax(0, 1fr) 13rem;
+}
+.doc-side, .doc-toc { align-self: start; position: sticky; top: 5rem; }
+/* Also applied to a <p> now (see doc.html): the sidebar label is not a
+   heading, so its weight and margins are stated rather than inherited from
+   an element default. */
+.side-h {
+  font-weight: 700;
+  margin-top: 0;
+  font-size: 0.8125rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--ink-muted);
+  margin-bottom: 0.75rem;
+}
+.side-list, .toc-list { display: flex; flex-direction: column; }
+/* .dotfiles: the side navigation carries several sections (upstream Lucid
+ * has one), so each later section label is set apart from the list above. */
+.side-list + .side-h { margin-top: 1.75rem; }
+.side-list a, .toc-list a {
+  display: block;
+  padding: 0.6rem 0.75rem;
+  min-height: 44px;
+  color: var(--ink-soft);
+  text-decoration: none;
+  border-inline-start: 2px solid var(--line);
+  font-size: 0.9375rem;
+}
+.side-list a:hover, .toc-list a:hover { background: var(--surface); color: var(--accent-hover); text-decoration: underline; }
+.side-list a[aria-current] {
+  background: var(--accent-soft);
+  color: var(--on-accent-soft);
+  border-inline-start-color: var(--accent);
+  font-weight: 700;
 }
 
-.btn-sm {
-  padding: 0.4rem 1.1rem;
+.crumbs { font-size: 0.875rem; margin-bottom: 1.25rem; }
+.crumbs ol { display: flex; flex-wrap: wrap; gap: 0.5rem; list-style: none; padding: 0; }
+.crumbs li + li::before { content: "/"; color: var(--ink-muted); margin-inline-end: 0.5rem; }
+/* Navigation, not a sentence, so WCAG 2.5.5's inline exception does not
+ * apply: these need the full 44px target like every other control. */
+.crumbs a, .crumbs [aria-current] {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  padding-inline: 0.15rem;
+}
+.crumbs a { color: var(--accent); }
+.crumbs [aria-current] { color: var(--ink-muted); }
+.crumbs li + li::before { align-self: center; }
+
+.doc-h { font-size: clamp(1.85rem, 4vw, 2.5rem); letter-spacing: -0.02em; line-height: 1.2; text-wrap: balance; }
+.doc-lead { font-size: 1.125rem; color: var(--ink-soft); margin-top: 0.85rem; }
+
+.prose { margin-top: 2rem; max-width: var(--read); }
+/* 1.4.8 Visual Presentation (AAA): paragraph spacing at least 1.5x the line
+ * spacing. Line-height is 1.6, so the gap must clear 2.4em; 2.5em leaves a
+ * margin for rounding.
+ *
+ * Matched on descendants rather than direct children: the generator wraps
+ * rendered Markdown in its own element, so `.prose > * + *` matched the
+ * wrapper and left every paragraph inside it at 0. The rule looked right in
+ * the stylesheet and did nothing on the page. :where() keeps specificity at
+ * zero so the heading rules below still win. */
+.prose :where(p, ul, ol, pre, blockquote, table, dl, figure)
+  + :where(p, ul, ol, pre, blockquote, table, dl, figure) {
+  margin-top: 2.5em;
+}
+.prose li + li { margin-top: 0.4rem; }
+.prose h2 { font-size: 1.4rem; margin-top: 2.5rem; letter-spacing: -0.01em; scroll-margin-top: calc(var(--masthead-h) + 1rem); }
+.prose h3 { font-size: 1.125rem; margin-top: 1.75rem; scroll-margin-top: calc(var(--masthead-h) + 1rem); }
+/* A heading introduces the block beneath it, so the gap below is smaller than
+ * the gap between paragraphs — but it is not zero, which is what the
+ * sibling rule above left it at. */
+.prose :where(h2, h3, h4) + * { margin-top: 0.9em; }
+.prose p, .prose li { color: var(--ink-soft); }
+.prose ul, .prose ol { padding-inline-start: 1.4rem; }
+.prose li + li { margin-top: 0.4rem; }
+.prose code {
+  font-family: var(--mono);
+  font-size: 0.9em;
+  background: var(--surface-soft);
+  color: var(--ink);
+  padding: 0.1em 0.35em;
+  border-radius: 4px;
+}
+.prose pre {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--r);
+  padding: 1.1rem;
+  /* A scrolling code block is a scrollable region, and a scrollable region
+   * that is not focusable cannot be reached from a keyboard at all - axe
+   * reports it as serious, and it is 2.1.1. The French accessibility page
+   * tripped it, because its comments are longer than the English ones, which
+   * is exactly the kind of difference a theme claiming to work in any
+   * language must not be sensitive to.
+   *
+   * Adding tabindex from script would satisfy the checker while leaving a
+   * reader without JavaScript unable to reach the same content. Wrapping
+   * removes the scrollable region instead, so there is nothing to reach: it
+   * holds with scripting off, and it means no sample can ever scroll
+   * sideways, which is 1.4.10 as well.
+   *
+   * overflow-x stays as a backstop for content that cannot wrap at all. */
+  overflow-x: auto;
+}
+.prose pre code,
+.prose pre code span,
+.snippet-body code {
+  /* break-spaces rather than pre-wrap: both preserve indentation, but
+   * pre-wrap lets a run of trailing spaces hang outside the content box, and
+   * the aligned comments in these samples have plenty. That measured 385px
+   * inside a 414px viewport, reaching x=426, while the pre itself reported
+   * scrollWidth equal to clientWidth - so nothing was clipped, and a check
+   * comparing width against the viewport saw nothing wrong. */
+  white-space: break-spaces;
+  overflow-wrap: anywhere;
+}
+.prose pre code { background: none; padding: 0; font-size: 0.875rem; }
+/* The syntax highlighter labels tokens with scope names — "shell", "source",
+ * "meta", "variable" — and any of them may collide with a layout class. One
+ * did: `.shell` gave every token in a bash block 21px of horizontal padding,
+ * so `ssg --version` rendered as `ssg  --  version`. Token spans carry colour
+ * and weight, never geometry, so neutralising box properties here makes the
+ * whole class of collision impossible rather than fixing the instance. */
+.prose pre code span {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  display: inline;
+  max-width: none;
+  letter-spacing: inherit;
+  word-spacing: inherit;
+}
+.prose blockquote {
+  border-inline-start: 3px solid var(--accent);
+  padding-inline-start: 1rem;
+  color: var(--ink-soft);
+}
+/* 1.4.10 Reflow: a table's min-content width is the longest unbreakable run
+ * in its cells, which pushed the French criteria table past a 320px
+ * viewport. Allowing breaks anywhere lets the columns shrink to the
+ * container instead of forcing the page to scroll sideways. */
+.ssg-table-scroll, .table-wrap, .snippet-body, [tabindex]:not([tabindex="-1"]) {
+  scroll-margin-top: calc(var(--masthead-h) + 1rem);
+}
+.prose table { width: 100%; border-collapse: collapse; }
+.prose th, .prose td { overflow-wrap: anywhere; min-width: 0; }
+.prose th, .prose td { text-align: start; padding: 0.6rem 0.75rem; border-bottom: 1px solid var(--line); font-size: 0.9375rem; }
+.prose th { color: var(--ink); font-weight: 700; background: var(--surface); }
+.prose td { color: var(--ink-soft); }
+
+.pager { display: grid; gap: 1rem; margin-top: 3.5rem; grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr)); }
+.pager-link {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  min-height: 44px;
+  padding: 0.9rem 1.1rem;
+  border: 1px solid var(--line);
+  border-radius: var(--r);
+  text-decoration: none;
+  background: var(--bg);
+}
+.pager-link:hover { background: var(--surface); }
+.pager-next { text-align: end; }
+.pager-dir { font-size: 0.8125rem; color: var(--ink-muted); }
+.pager-name { color: var(--accent); font-weight: 700; }
+
+/* ---------- footer ---------- */
+.footer { border-top: 1px solid var(--line); background: var(--surface); padding: 3rem 0 1.5rem; }
+.footer-in { display: flex; flex-wrap: wrap; gap: 2.5rem; justify-content: space-between; }
+.footer-name { display: block; font-weight: 800; }
+.footer-note { color: var(--ink-soft); font-size: 0.9375rem; margin-top: 0.4rem; max-width: 32rem; }
+.footer-h { font-size: 0.8125rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--ink-muted); margin-bottom: 0.6rem; }
+.footer-nav ul { list-style: none; padding: 0; }
+.footer-nav a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  color: var(--ink-soft);
+  font-size: 0.9375rem;
+}
+.footer-nav a:hover { color: var(--accent-hover); }
+.footer-legal { margin-top: 2rem; padding-top: 1.25rem; border-top: 1px solid var(--line); }
+.footer-legal p { color: var(--ink-muted); font-size: 0.875rem; }
+/* Attribution link. Same treatment as the footer navigation so the touch
+   target stays at the 44px AAA minimum and the colour pair is one already
+   verified by the contrast gate. */
+.footer-credit { margin-top: 0.25rem; }
+.footer-credit a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  color: var(--ink-soft);
   font-size: 0.875rem;
 }
+.footer-credit a:hover { color: var(--accent-hover); }
 
-.btn-lg {
-  padding: 0.8rem 1.85rem;
-  font-size: 1rem;
+/* ---------- narrow viewports ---------- *
+ * The sidebar and contents collapse into the reading order rather than
+ * disappearing: at 320px and at 200% zoom the page reflows to one column
+ * with no horizontal scrolling (WCAG 1.4.10). */
+@media (max-width: 64rem) {
+  .doc-shell { grid-template-columns: minmax(0, 1fr); }
+  .doc-side, .doc-toc { position: static; }
+  .doc-toc { order: -1; border: 1px solid var(--line); border-radius: var(--r); padding: 1rem; }
 }
 
-.btn-primary {
-  background: var(--primary);
-  color: var(--primary-ink);
-  box-shadow: 0 4px 14px var(--primary-glow);
+/* Below the reading width a code block wraps rather than scrolls. Sideways
+ * scrolling inside a paragraph of shell commands is exactly the interaction
+ * 1.4.10 exists to remove, and these samples are short enough to wrap
+ * without losing their shape. */
+@media (max-width: 30rem) {
+  .prose pre { overflow-x: visible; }
 }
 
-.btn-primary:hover {
-  background: var(--primary-hover);
-  transform: translateY(-1px);
-}
-
-.btn-secondary {
-  background: var(--bg-card);
-  color: var(--fg);
-  border-color: var(--border-strong);
-}
-
-.btn-secondary:hover {
-  background: var(--bg-card-hover);
-  transform: translateY(-1px);
-}
-
-.btn-outline {
-  background: transparent;
-  color: var(--fg);
-  border-color: var(--border);
-}
-
-.btn-outline:hover {
-  background: var(--bg-card);
-}
-
-:focus,
-:focus-visible {
-  outline: 3px solid var(--focus);
-  outline-offset: 2px;
+@media (max-width: 48rem) {
+  .masthead-in { padding-inline-end: clamp(1rem, 2.5vw, 2rem); }
+  .masthead-tools { padding-inline-end: var(--search-gutter); }
+  .nav-btn { display: inline-flex; align-items: center; justify-content: center; }
+  .site-nav { display: none; width: 100%; }
+  .site-nav.is-open { display: block; }
+  .nav-list { flex-direction: column; }
+  .masthead-in { padding-bottom: 0.5rem; }
+  /* Fallback for the no-JavaScript case, where --masthead-pos is never set:
+   * below this width the masthead wraps to several rows and is not worth
+   * sticking. */
+  .masthead { position: relative; }
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -391,655 +590,38 @@ body {
   }
 }
 
-.hero-section {
-  padding: 4rem 0 2.5rem;
-  position: relative;
-  overflow: hidden;
-}
-
-.pill-badge {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.6rem;
-  padding: 0.3rem 0.8rem 0.3rem 0.4rem;
-  background: var(--bg-card);
-  border: 1px solid var(--border);
-  border-radius: 2rem;
-  margin-bottom: 1.5rem;
-  max-width: 100%;
-}
-
-.pill-tag {
-  background: var(--primary);
-  color: var(--primary-ink);
-  font-size: 0.75rem;
-  font-weight: 800;
-  padding: 0.15rem 0.5rem;
-  border-radius: 1rem;
-  text-transform: uppercase;
-  flex-shrink: 0;
-}
-
-.pill-text {
-  font-size: 0.875rem;
-  color: var(--fg-muted);
-  font-weight: 600;
-  overflow-wrap: break-word;
-}
-
-.hero-title {
-  font-size: clamp(2.2rem, 4.5vw, 3.8rem);
-  font-weight: 800;
-  line-height: 1.18;
-  letter-spacing: -0.03em;
-  margin-bottom: 1.25rem;
-  color: var(--fg);
-  overflow-wrap: break-word;
-  word-break: break-word;
-}
-
-.hero-lead {
-  font-size: 1.15rem;
-  color: var(--fg-muted);
-  max-width: 65ch;
-  margin: 0 auto 2rem;
-  line-height: 1.7;
-  overflow-wrap: break-word;
-  word-break: break-word;
-}
-
-.hero-cta-group {
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-  margin-bottom: 3rem;
-  flex-wrap: wrap;
-}
-
-.hero-photo {
-  max-width: 1080px;
-  width: 100%;
-  margin: 0 auto 2rem;
-  overflow: hidden;
-  border: 1px solid var(--border-strong);
-  border-radius: var(--radius-lg);
-  background: #090d13;
-  box-shadow: 0 24px 70px rgba(0, 0, 0, 0.45);
-}
-
-.hero-photo img {
-  display: block;
-  width: 100%;
-  height: auto;
-  aspect-ratio: 1200 / 742;
-  object-fit: cover;
-}
-
-/* --- Authentic 4-Pane TMUX IDE Terminal Grid --- */
-.terminal-preview-card {
-  max-width: 1080px;
-  width: 100%;
-  margin: 0 auto;
-  background: #090d13;
-  border: 1px solid var(--border-strong);
-  border-radius: var(--radius-lg);
-  box-shadow: 0 24px 70px rgba(0, 0, 0, 0.6);
-  overflow: hidden;
-  text-align: left;
-  box-sizing: border-box;
-}
-
-.terminal-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0.65rem 1.25rem;
-  background: #111620;
-  border-bottom: 1px solid var(--border);
-  gap: 0.75rem;
-  flex-wrap: wrap;
-}
-
-.window-dots {
-  display: flex;
-  gap: 0.4rem;
-  align-items: center;
-}
-
-.dot {
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  display: inline-block;
-}
-.dot-red { background: #ef4444; }
-.dot-yellow { background: #eab308; }
-.dot-green { background: #22c55e; }
-
-.terminal-tab-bar {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  flex-wrap: wrap;
-}
-
-.tmux-win-badge {
-  color: #58a6ff;
-  font-weight: 700;
-  font-size: 0.8125rem;
-}
-
-.tab-item {
-  font-size: 0.8125rem;
-  color: #9ea6ae;
-  padding: 0.2rem 0.6rem;
-  border-radius: 4px;
-}
-
-.tab-item.active-tab {
-  background: #090d13;
-  color: #58a6ff;
-  font-weight: 700;
-  border: 1px solid var(--border);
-}
-
-.badge-status {
-  font-size: 0.8125rem;
-  color: #34d399;
-  font-weight: 700;
-}
-
-/* 4-Pane Grid Layout */
-.tmux-grid {
-  display: grid;
-  grid-template-columns: 210px 1fr 270px;
-  min-height: 440px;
-  background: #090d13;
-}
-
-@media (max-width: 900px) {
-  .tmux-grid {
-    /* minmax(0, 1fr) rather than 1fr: a grid item defaults to
-     * min-width:auto, so a 1fr track cannot shrink below the intrinsic
-     * width of its content. The pane contents are file paths and terminal
-     * lines that do not wrap, so at 320px the track resolved to 566px
-     * inside a 286px grid and pushed the page sideways. */
-    grid-template-columns: minmax(0, 1fr);
-    min-height: auto;
-  }
-}
-
-.tmux-pane {
-  /* Same reason as the track above: these are flex and grid children, and
-   * both default to a minimum of their content size. */
-  min-width: 0;
-  background: #090d13;
-  border-right: 1px solid var(--border);
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
-}
-
-.tmux-pane:last-child {
-  border-right: 0;
-}
-
-.tmux-center-col {
-  min-width: 0;
-  display: flex;
-  flex-direction: column;
-  border-right: 1px solid var(--border);
-  background: #090d13;
-}
-
-@media (max-width: 900px) {
-  .tmux-pane, .tmux-center-col {
-    border-right: 0;
-    border-bottom: 1px solid var(--border);
-  }
-}
-
-.pane-editor {
-  border-right: 0;
-  border-bottom: 1px solid var(--border);
-  flex: 1.4;
-}
-
-.pane-terminal {
-  border-right: 0;
-  border-bottom: 0;
-  flex: 1;
-}
-
-.pane-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0.35rem 0.85rem;
-  background: #121822;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-  font-size: 0.72rem;
-  color: #9ea6ae;
-  font-weight: 600;
-}
-
-.pane-title {
-  color: #c9d1d9;
-}
-
-.pane-file, .pane-badge {
-  font-size: 0.7rem;
-  color: #58a6ff;
-}
-
-.ai-badge {
-  background: #352e4e;
-  color: #d9b6ff;
-  padding: 0.1rem 0.4rem;
-  border-radius: 4px;
-}
-
-.pane-content {
-  padding: 0.85rem 1rem;
-  font-size: clamp(0.78rem, 1vw, 0.86rem);
-  line-height: 1.65;
-  overflow-x: auto;
-  max-width: 100%;
-}
-
-.explorer-content {
-  color: #9ea6ae;
-  font-size: 0.78rem;
-  line-height: 1.7;
-}
-
-.tree-node {
-  padding: 0.1rem 0;
-  white-space: pre;
-}
-
-.tree-node.dir {
-  color: #79c0ff;
-  font-weight: 600;
-}
-
-.tree-node.file {
-  color: #c9d1d9;
-}
-
-.tree-node.active {
-  color: #74b5ff;
-  font-weight: 700;
-  background: #152436;
-  border-radius: 3px;
-}
-
-.editor-code {
-  font-size: clamp(0.78rem, 1vw, 0.86rem);
-  line-height: 1.65;
-  color: #f0f6fc;
-  margin: 0;
-  padding: 0;
-  background: transparent;
-  border: 0;
-  box-shadow: none;
-  display: block;
-}
-
-.terminal-content {
-  background: #090d13;
-  color: #9ea6ae;
-  font-size: 0.78rem;
-  line-height: 1.65;
-}
-
-.ai-content {
-  background: #0d111a;
-  color: #c9d1d9;
-  font-size: 0.76rem;
-  line-height: 1.6;
-}
-
-.ai-prompt {
-  color: #d2a8ff;
-  font-weight: 700;
-  margin-bottom: 0.4rem;
-}
-
-.ai-sym {
-  color: #ff7b72;
-}
-
-.ai-tool {
-  color: #79c0ff;
-  margin-bottom: 0.35rem;
-}
-
-.ai-res {
-  color: #7ee787;
-  margin-bottom: 0.6rem;
-}
-
-.cli-line {
-  color: #f0f6fc;
-  margin-bottom: 0.2rem;
-}
-
-.cli-out {
-  color: #9ea6ae;
-  margin-bottom: 0.4rem;
-}
-
-.cli-ok {
-  color: #7ee787;
-  font-weight: 700;
-  margin-bottom: 0;
-}
-
-.code-kw { color: #ff7b72; font-weight: 700; }
-.code-fn { color: #d2a8ff; font-weight: 600; }
-.code-type { color: #79c0ff; }
-.code-str { color: #a5d6ff; }
-.code-comment { color: #9ea6ae; font-style: italic; }
-.code-num { color: #79c0ff; }
-
-/* TMUX Status Bar at Bottom */
-.tmux-status-bar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0.35rem 1rem;
-  background: #0253af;
-  color: #ffffff;
-  font-size: 0.74rem;
-  font-weight: 700;
-  letter-spacing: 0.01em;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-}
-
-.status-center {
-  color: #ffffff;
-  font-weight: 500;
-}
-
-/* --- Section Structure --- */
-.section {
-  padding: 4.5rem 0;
-  border-top: 1px solid var(--border);
-}
-
-.section-title {
-  font-size: 2.25rem;
-  font-weight: 800;
-  margin-bottom: 1rem;
-  letter-spacing: -0.02em;
-  color: var(--fg);
-  overflow-wrap: break-word;
-  word-break: break-word;
-}
-
-.section-desc {
-  font-size: 1.125rem;
-  color: var(--fg-muted);
-  max-width: 60ch;
-  margin: 0 auto 3rem;
-  line-height: 1.7;
-  overflow-wrap: break-word;
-  word-break: break-word;
-}
-
-.grid-2x2 {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
-  gap: 1.25rem;
-  width: 100%;
-}
-
-.card {
-  background: var(--bg-card);
-  border: 1px solid var(--border);
-  border-radius: var(--radius-md);
-  padding: 1.75rem;
-  transition: transform 0.2s, border-color 0.2s;
-  overflow: hidden;
-  max-width: 100%;
-}
-
-.card:hover {
-  border-color: var(--border-strong);
-  transform: translateY(-2px);
-}
-
-.card h3 {
-  font-size: 1.25rem;
-  font-weight: 800;
-  margin-bottom: 0.75rem;
-  color: var(--fg);
-  overflow-wrap: break-word;
-}
-
-.card p {
-  color: var(--fg-muted);
-  font-size: 1rem;
-  line-height: 1.65;
-  overflow-wrap: break-word;
-}
-
-pre {
-  background: #0d0f18;
-  border: 1px solid var(--border-strong);
-  padding: 1.5rem;
-  border-radius: var(--radius-md);
-  overflow-x: auto;
-  font-family: var(--font-mono);
-  font-size: 0.875rem;
-  line-height: 1.7;
-  margin: 1.5rem 0;
-  color: #f9fafb;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
-  max-width: 100%;
-  /* Wrap long tokens (URLs, checksums) inside the box instead of hiding
-     them behind a scrollbar. Soft wraps add no newlines, so a copied
-     command is unchanged. */
-  white-space: pre-wrap;
-  overflow-wrap: anywhere;
-  word-break: normal;
-  text-align: left;
-}
-
-/* Inline code: the site's monospace stack, a touch smaller than the text
-   around it and on a subtle chip, so `~/.dotfiles` or `dot` reads as code
-   rather than as oversized words in the browser's fallback font. */
-:not(pre) > code {
-  font-family: var(--font-mono);
-  font-size: 0.875em;
-  padding: 0.1em 0.35em;
-  border-radius: 0.3em;
-  background: var(--bg-subtle);
-  border: 1px solid var(--border);
-  margin: 0;
-  white-space: nowrap;
-}
-
-pre code {
-  font-family: inherit;
-  font-size: inherit;
-  color: inherit;
-  display: block;
-  max-width: 100%;
-  white-space: inherit;
-}
-
-.table-responsive {
-  overflow-x: auto;
-  margin: 2rem 0;
-  max-width: 100%;
-}
-
-table {
-  width: 100%;
-  border-collapse: collapse;
-  text-align: left;
-}
-
-th, td {
-  padding: 1rem 1.25rem;
-  border-bottom: 1px solid var(--border);
-  font-size: 1rem;
-}
-
-th {
-  background: var(--bg-card);
-  color: var(--fg);
-  font-weight: 700;
-}
-
-td {
-  color: var(--fg-muted);
-}
-
-.suite-link {
-  color: var(--primary);
-  text-decoration: underline;
-  text-underline-offset: 3px;
-  font-weight: 700;
-}
-.suite-link:hover {
-  color: var(--primary-hover);
-}
-
-.faq-stack {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-  margin-top: 2rem;
-}
-
-.site-footer {
-  border-top: 1px solid var(--border);
-  background: var(--bg-subtle);
-  padding: 4rem 0 2rem;
-  margin-top: auto;
-}
-
-.footer-inner {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 2.5rem;
-}
-
-.footer-brand {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  margin-bottom: 0.75rem;
-}
-
-.version-tag {
-  background: var(--bg-card);
-  border: 1px solid var(--border);
-  font-size: 0.8125rem;
-  font-family: var(--font-mono);
-  font-weight: 700;
-  padding: 0.2rem 0.6rem;
-  border-radius: 1rem;
-  color: var(--primary);
-}
-
-.footer-desc {
-  color: var(--fg-muted);
-  font-size: 0.9375rem;
-  max-width: 35ch;
-  margin-bottom: 0.5rem;
-  overflow-wrap: break-word;
-}
-
-.footer-copy {
-  color: var(--fg-subtle);
-  font-size: 0.875rem;
-}
-
-.footer-links {
-  display: flex;
-  gap: 3rem;
-  flex-wrap: wrap;
-}
-
-.footer-col h2 {
-  font-size: 0.875rem;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  color: var(--fg-subtle);
-  font-weight: 800;
-  margin-bottom: 0.75rem;
-}
-
-.footer-col a {
-  display: block;
-  color: var(--fg-muted);
-  text-decoration: none;
-  font-size: 0.9375rem;
-  margin-bottom: 0.5rem;
-  transition: color 0.2s;
-}
-
-.footer-col a:hover {
-  color: var(--primary);
-  text-decoration: underline;
-}
-
-/* --- Degraded (No-JS) & Print Support --- */
-.no-js .nav-toggle {
-  display: none !important;
-}
-
-.no-js .nav-menu {
-  display: flex !important;
-  position: static !important;
-  flex-direction: row !important;
-  gap: 1.5rem !important;
-  padding: 0 !important;
-  background: transparent !important;
-  border: 0 !important;
-  box-shadow: none !important;
-}
-
 @media print {
-  header.site-header, .site-header, .skip-link, button, .nav-toggle, .theme-toggle, .btn {
-    position: static !important;
-  }
-  .nav-toggle, .theme-toggle, .skip-link {
-    display: none !important;
-  }
-}
-
-/* Attribution link. The colour is inherited from the footer so the pair is one
-   the contrast gate already verifies in styles.css, rather than a new literal
-   that nothing checks. The 44px box meets the AAA target-size minimum. */
-.made-with-ssg {
-  display: inline-flex;
-  align-items: center;
-  min-height: 2.75rem;
-  color: inherit;
+  .masthead, .footer, .pager, .doc-side, .doc-toc, .skip-link { display: none; }
+  .doc-shell { display: block; }
+  a[href^="http"]::after { content: " (" attr(href) ")"; font-size: 0.85em; }
 }
 
 /* ---------------------------------------------------------------------
-   Increase Contrast. Voxt's own vocabulary: `--fg-*` for text,
-   `--border*` for edges. See the house themes for the reasoning.
+   Increase Contrast (macOS / iOS "Increase Contrast", and the same user
+   preference on other platforms).
+
+   Tokens only, so every rule that already consumes them follows. Muted
+   and soft inks collapse onto the full-strength ink, and the hairline
+   rules become the border colour, which is the part that disappears
+   first for anyone who asked for more contrast.
    --------------------------------------------------------------------- */
 @media (prefers-contrast: more) {
   :root,
-  [data-theme="light"] {
-    --fg-muted: var(--fg);
-    --fg-subtle: var(--fg);
-    --border: var(--border-strong);
+  :root[data-theme="light"],
+  :root[data-theme="dark"] {
+    --ink-soft: var(--ink);
+    --ink-muted: var(--ink);
+    --rule: var(--line);
   }
 }
 
 /* ---------------------------------------------------------------------
-   Forced colours. As above: keep the affordances colour was carrying.
+   Forced colours (Invert Colors, Windows High Contrast, and similar).
+
+   The OS replaces the palette wholesale here, so the job is not to
+   restyle but to make sure nothing that was carried by colour alone
+   disappears with it. Focus rings and borders get explicit system
+   colours; links get LinkText so they stay identifiable as links.
    --------------------------------------------------------------------- */
 @media (forced-colors: active) {
   :focus-visible {
@@ -1052,6 +634,8 @@ td {
   a:visited {
     color: VisitedText;
   }
+  /* A button distinguished only by its background becomes invisible
+     when the background is forced; give it an edge that is not. */
   .btn,
   .btn-primary {
     border: 1px solid ButtonText;
@@ -1081,177 +665,25 @@ td {
    their XYZ luminance.
    --------------------------------------------------------------------- */
 @media (color-gamut: p3) {
-  [data-theme="light"] {
-    --primary: color(display-p3 0.0896 0.2048 0.7918);
-    --primary-hover: color(display-p3 0.1183 0.211 0.7313);
-    --accent: color(display-p3 0.4014 0.0131 0.6959);
-    --focus: color(display-p3 0.0896 0.2048 0.7918);
+  :root,
+  :root[data-theme="light"] {
+    --accent: color(display-p3 0.0587 0.2417 0.5249);
+    --accent-hover: color(display-p3 0.034 0.1638 0.3599);
+    --focus: color(display-p3 0.0587 0.2417 0.5249);
   }
-  :root {
-    --primary: color(display-p3 0.4549 0.6702 1.0);
-    --primary-hover: color(display-p3 0.5999 0.7673 0.9979);
-    --accent: color(display-p3 0.7273 0.5072 0.997);
-    --focus: color(display-p3 0.4549 0.6702 1.0);
+
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --accent: color(display-p3 0.5846 0.7395 0.9918);
+      --accent-hover: color(display-p3 0.7449 0.8444 0.9979);
+      --focus: color(display-p3 0.5846 0.7395 0.9918);
+    }
   }
-}
-
-/* Animated terminal used on the voxt landing page.
- *
- * These rules used to live in an inline <style> in base.html, alongside a
- * stale copy of this entire stylesheet. Because the CSP pass extracts inline
- * styles into a sheet loaded after this one, that copy silently won every
- * overlapping rule - which is why the skip link stayed white on blue at
- * 2.54:1 no matter what this file said. One stylesheet, one source of truth. */
-/* --- Realistic Animated Terminal (inspired by iso20022-mcp) --- */
-.mcp-term {
-  margin: 0 auto;
-  max-width: 960px;
-  background: #0d1117;
-  border: 1px solid var(--border-strong);
-  border-radius: var(--radius-lg);
-  overflow: hidden;
-  box-shadow: 0 30px 90px rgba(0, 0, 0, 0.65);
-  text-align: left;
-}
-.mcp-term-bar {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  background: #161b22;
-  border-bottom: 1px solid var(--border);
-  padding: 12px 16px;
-}
-.mcp-term-dot {
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  flex: none;
-}
-.mcp-term-dot.dot-red { background: #ef4444; }
-.mcp-term-dot.dot-yellow { background: #eab308; }
-.mcp-term-dot.dot-green { background: #22c55e; }
-.mcp-term-title {
-  font-family: var(--font-mono);
-  font-size: 0.8125rem;
-  letter-spacing: 0.04em;
-  color: #c9d1d9;
-  margin-left: 8px;
-  font-weight: 600;
-}
-.mcp-term-body {
-  margin: 0;
-  padding: clamp(18px, 2.4vw, 28px);
-  overflow-x: auto;
-  background: transparent;
-  border: 0;
-  box-shadow: none;
-}
-.mcp-term-body code {
-  display: block;
-  font-family: var(--font-mono);
-  font-size: clamp(0.85rem, 1.15vw, 0.95rem);
-  line-height: 1.85;
-  color: #f0f6fc;
-  background: transparent;
-  padding: 0;
-  white-space: pre;
-}
-.mcp-tl {
-  display: block;
-  min-width: 0;
-}
-.mcp-tl-ps {
-  color: #7ee787;
-  font-weight: 700;
-}
-.mcp-tl-ask .mcp-tl-ps {
-  color: #79c0ff;
-  font-weight: 700;
-}
-.mcp-tl-out {
-  color: #9ea7b3;
-}
-.mcp-tl-ok {
-  color: #7ee787;
-  font-weight: 700;
-}
-.mcp-tl-caret::after {
-  content: "\258B";
-  color: #79c0ff;
-  animation: mcpblink 1.1s step-end infinite;
-}
-@keyframes mcptype {
-  from { width: 0; }
-  to { width: var(--tw); }
-}
-@keyframes mcpfade {
-  from { opacity: 0; }
-  to { opacity: 1; }
-}
-@keyframes mcpblink {
-  50% { opacity: 0; }
-}
-.mcp-tl-typed {
-  overflow: hidden;
-  white-space: nowrap;
-  width: var(--tw);
-  animation: mcptype var(--td) steps(var(--ts), end) both;
-  animation-delay: var(--ta);
-}
-.mcp-tl-fade {
-  animation: mcpfade 0.3s ease both;
-  animation-delay: var(--ta);
-}
-.mcp-tl-t1 { --tw: 10ch; --ts: 10; --td: 0.4s; --ta: 0.2s; }
-.mcp-tl-f2 { --ta: 0.8s; }
-.mcp-tl-t3 { --tw: 72ch; --ts: 72; --td: 1.8s; --ta: 1.4s; }
-.mcp-tl-f4 { --ta: 3.4s; }
-.mcp-tl-t5 { --tw: 58ch; --ts: 58; --td: 1.5s; --ta: 4.0s; }
-.mcp-tl-f6 { --ta: 5.7s; }
-.mcp-tl-f7 { --ta: 6.3s; }
-
-/* WCAG 2.5.5 Target Size (Enhanced, AAA) — 44x44 CSS px.
- *
- * Footer and navigation links are lists of controls, not running text, so
- * 2.5.5's "inline" exception does not cover them; a 17px-tall footer link is
- * a real failure. The rules below are the same treatment Lucid has always
- * used, applied here after the browser gate was widened from three themes to
- * all nine and found these. */
-footer a,
-.brand,
-.suite-link,
-.made-with-ssg,
-.taxonomy-page-list a,
-.taxonomy-term-list a {
-  display: inline-flex;
-  align-items: center;
-  /* min-width, not justify-content: centring would pull short labels like
-     "RSS" away from the left edge the rest of the column lines up on. The
-     target grows to the right; the text stays where it was. */
-  min-height: 2.75rem;
-  min-width: 2.75rem;
-}
-
-.nav-link {
-  min-width: 2.75rem;
-  justify-content: center;
-}
-
-.skip-link {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 2.75rem;
-  min-width: 2.75rem;
-}
-
-/* WCAG 2.4.11/2.4.12 Focus Not Obscured. The header is sticky, so scrolling to
-   a focused control - or to a fragment - can park it underneath. Lucid, Quill
-   and Stablo have always set this; the browser gate only covered those three,
-   so the other six never showed the symptom. 8.5rem clears this header at its
-   tallest (121px, measured across the widths the reflow gate uses). */
-html {
-  scroll-padding-top: 8.5rem;
+  :root[data-theme="dark"] {
+    --accent: color(display-p3 0.5846 0.7395 0.9918);
+    --accent-hover: color(display-p3 0.7449 0.8444 0.9979);
+    --focus: color(display-p3 0.5846 0.7395 0.9918);
+  }
 }
 
 /* Bilingual safety net.
@@ -1261,24 +693,6 @@ html {
    only acts when a word genuinely does not fit, so it changes nothing for
    copy that already fits. */
 h1, h2, h3, h4, p, li, dd, dt, figcaption { overflow-wrap: break-word; }
-
-/* A grid or flex item's automatic minimum size is its min-content width, so
-   one long word can push its track wider than the viewport however narrow
-   the column is meant to be. Prism's French home page overflowed by three
-   pixels at 320px on CI and not at all locally: the same markup, different
-   font metrics, a min-content floor that landed either side of the track on
-   each platform. `min-width: 0` removes the floor so the track honours the
-   column instead of the longest word. */
-.hero-copy, .hero-stage, .eyebrow-hero, .hero-lead, .cta-row { min-width: 0; }
-
-/* `overflow-wrap: break-word` stops a long word painting outside its box but
-   deliberately does not change the element's min-content size, so a grid
-   track sized from that content is still as wide as the longest word —
-   which is why the rule above was not enough on its own. `anywhere` is the
-   one that reduces min-content, and it still only breaks a word that cannot
-   otherwise fit. French "L'infrastructure" at hero size is 254px against a
-   288px column here, and wider than that on CI's font metrics. */
-.hero-copy :is(h1, h2, p) { overflow-wrap: anywhere; }
 
 /* A sticky masthead can cover whatever the keyboard scrolls to, which is
    what WCAG 2.4.11 and 2.4.12 forbid. Reserving its height as scroll
@@ -1310,7 +724,7 @@ html { scroll-padding-block-start: 5.5rem; }
   align-items: center;
   justify-content: center;
   gap: .5rem;
-  min-height: 2.75rem;
+  min-height: 44px;
   padding: .5rem 1rem;
   border: 1px solid color-mix(in srgb, currentColor 30%, transparent);
   border-radius: 999px;
@@ -1359,7 +773,7 @@ html { scroll-padding-block-start: 5.5rem; }
 .ap-lang-menu-grid { display: grid; gap: .125rem; }
 .ap-lang-item {
   display: block;
-  min-height: 2.75rem;
+  min-height: 44px;
   padding: .6rem .75rem;
   border-radius: .35rem;
   color: inherit;

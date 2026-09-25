@@ -1,31 +1,12 @@
-<footer class="site-footer">
-  <div class="container footer-inner">
-    <div class="footer-left">
-      <div class="footer-brand">
-        <span class="brand-text">{{name}}</span>
-        <span class="version-tag">{{release}}</span>
-      </div>
-      <p class="footer-desc">{{footer_desc}}</p>
-      <p class="footer-copy">{{footer_copy}}</p>
-      <p class="footer-credit"><a class="made-with-ssg" href="https://static-site-generator.com/">Made with SSG</a>, the <a href="https://themes.static-site-generator.com/voxt/">Voxt</a> theme and <a href="https://skeletonic.com/">Skeletonic CSS</a>.</p>
+<footer class="footer site-footer">
+  <div class="lu-shell footer-in">
+    <div class="footer-about">
+      <strong class="footer-name">{{name}}</strong>
+      <p class="footer-note">{{footer_note}}</p>
     </div>
-    <div class="footer-links">
-      <div class="footer-col">
-        <h2>{{label_docs}}</h2>
-        <a href="https://doc.dotfiles.io/">doc.dotfiles.io</a>
-        <a href="https://doc.dotfiles.io/guides/INSTALL/">Install guide</a>
-        <a href="https://doc.dotfiles.io/manual/">The manual</a>
-        <a href="https://doc.dotfiles.io/reference/UTILS/">dot CLI reference</a>
-      </div>
-      <div class="footer-col">
-        <h2>{{label_project}}</h2>
-        <a href="https://github.com/sebastienrousseau/dotfiles">GitHub</a>
-        <a href="https://github.com/sebastienrousseau/dotfiles/releases">Releases</a>
-        <a href="https://github.com/sebastienrousseau/dotfiles/blob/main/CONTRIBUTING.md">{{label_contributing}}</a>
-        <a href="https://github.com/sebastienrousseau/dotfiles/blob/main/SECURITY.md">{{label_security_policy}}</a>
-        <a href="{{site_path}}privacy/">Privacy</a>
-        <a href="{{site_path}}accessibility/">Accessibility</a>
-      </div>
-    </div>
+  </div>
+  <div class="lu-shell footer-legal">
+    <p>{{copyright}}</p>
+    <p class="footer-credit"><a class="made-with-ssg" href="https://static-site-generator.com/">Made with SSG</a>, the <a href="https://themes.static-site-generator.com/lucid/">Lucid</a> theme and <a href="https://skeletonic.com/">Skeletonic CSS</a>.</p>
   </div>
 </footer>

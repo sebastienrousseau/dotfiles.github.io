@@ -1,9 +1,13 @@
 {{#extends "base"}}
 {{#block "main"}}
-<section class="section">
-  <div class="container narrow prose">
-    <h1>{{title}}</h1>
-    {{!content}}
+<article class="band">
+  <div class="lu-shell lu-shell-narrow">
+    <p class="eyebrow">{{eyebrow}}</p>
+    <h1 class="doc-h">{{headline}}</h1>
+    <p class="doc-lead">{{lead}}</p>
+    <div class="prose">
+      {{!content}}
+    </div>
   </div>
-</section>
+</article>
 {{/block}}

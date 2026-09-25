@@ -1,6 +1,6 @@
 name: Pages
 
-# Builds dotfiles.io with ssg and the vendored Voxt theme
+# Builds dotfiles.io with ssg and the Lucid theme shared with doc.dotfiles.io
 # (scripts/build-site.py: every internal link resolves and no page loads a
 # third-party origin), validates the HTML, and deploys to GitHub Pages
 # (custom domain: dotfiles.io). Pull requests build and validate only;
@@ -22,7 +22,7 @@ concurrency:
 
 jobs:
   build:
-    name: Build and validate (ssg + Voxt)
+    name: Build and validate
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
@@ -43,6 +43,23 @@ jobs:
           mkdir -p "$RUNNER_TEMP/ssg"
           tar -xzf "$RUNNER_TEMP/$asset" -C "$RUNNER_TEMP/ssg" ssg
           echo "$RUNNER_TEMP/ssg" >>"$GITHUB_PATH"
+
+      - name: Shared theme matches doc.dotfiles.io
+        # dotfiles.io and doc.dotfiles.io use one Lucid theme. Every file
+        # except header.html and index.html must equal the copy in the
+        # dotfiles repository (docs/site/themes/lucid/_layouts on main).
+        run: |
+          set -euo pipefail
+          src=https://raw.githubusercontent.com/sebastienrousseau/dotfiles/main/docs/site/themes/lucid/_layouts
+          drift=0
+          for f in base.html footer.html page.html 404.html main.js styles.css skeletonic.min.css theme-init.js assets/logo.svg; do
+            curl --proto '=https' --tlsv1.2 -fsSL "$src/$f" -o "$RUNNER_TEMP/theme-file"
+            if ! cmp -s "$RUNNER_TEMP/theme-file" "_layouts/$f"; then
+              echo "::error file=_layouts/$f::differs from the doc.dotfiles.io theme; copy it from the dotfiles repository"
+              drift=1
+            fi
+          done
+          exit "$drift"
 
       - name: Build the site and check links and origins
         # python3 (standard library only) is preinstalled on the runner.

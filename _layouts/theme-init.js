@@ -1,22 +1,20 @@
-/*!
- * Runs before first paint so a stored choice applies without a flash of the
- * wrong palette.
- *
- * Only an explicit choice is stamped onto <html>. With nothing stored the
- * attribute is deliberately left off so the stylesheet's prefers-color-scheme
- * block decides and the page follows the OS. The previous version always
- * stamped a value, which meant "system" could never be the current state:
- * the mode control had no way to express it.
- */
+// SPDX-License-Identifier: Apache-2.0 OR MIT
+// Copyright (c) 2026 Sebastien Rousseau
+// Vendored from ssg-themes.github.io themes/lucid (see ../LICENSE-APACHE, ../LICENSE-MIT).
+/* Applied before first paint so a stored preference never flashes the wrong
+ * ground. Absence of a stored value is meaningful: it means "follow the
+ * system", so nothing is written to the element and the prefers-color-scheme
+ * media query in the stylesheet stays in charge. */
 (function () {
-  var root = document.documentElement;
-  root.classList.remove("no-js");
+  var el = document.documentElement;
+  el.classList.remove("no-js");
   try {
-    var saved = localStorage.getItem("theme");
-    if (saved === "dark" || saved === "light") {
-      root.setAttribute("data-theme", saved);
+    var stored = localStorage.getItem("lucid-theme");
+    if (stored === "light" || stored === "dark") {
+      el.setAttribute("data-theme", stored);
     }
   } catch (e) {
-    /* Private browsing or blocked storage: follow the OS. */
+    /* Private browsing can throw on access; following the system is the
+     * correct fallback, so there is nothing to recover. */
   }
 })();
