@@ -22,7 +22,11 @@
   --radius-md: 14px;
   --radius-lg: 20px;
   --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  /* Safari resolves ui-monospace to SF Mono. Chrome and Firefox do not
+     support it, and Menlo (the next macOS font) draws hyphens nearly
+     cell-wide, so `-fsSL` and `-c -` read as dashes: Monaco comes first
+     on macOS for them, then the Windows and Linux faces. */
+  --font-mono: ui-monospace, Monaco, Consolas, "DejaVu Sans Mono", "Liberation Mono", Menlo, monospace;
   color-scheme: dark;
 }
 
