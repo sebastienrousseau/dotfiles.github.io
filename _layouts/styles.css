@@ -829,12 +829,19 @@ pre {
   border-radius: var(--radius-md);
   overflow-x: auto;
   font-family: var(--font-mono);
-  font-size: 1rem;
+  font-size: 0.875rem;
   line-height: 1.7;
   margin: 1.5rem 0;
   color: #f9fafb;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
   max-width: 100%;
+  /* Wrap long tokens (URLs, checksums) inside the box instead of hiding
+     them behind a scrollbar. Soft wraps add no newlines, so a copied
+     command is unchanged. */
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  word-break: normal;
+  text-align: left;
 }
 
 pre code {
@@ -843,7 +850,7 @@ pre code {
   color: inherit;
   display: block;
   max-width: 100%;
-  overflow-x: auto;
+  white-space: inherit;
 }
 
 .table-responsive {
