@@ -1,98 +1,126 @@
+// SPDX-License-Identifier: Apache-2.0 OR MIT
+// Copyright (c) 2026 Sebastien Rousseau
+// Vendored from ssg-themes.github.io themes/lucid (see ../LICENSE-APACHE, ../LICENSE-MIT).
+/* Progressive enhancement only. Without JavaScript the navigation is a
+ * plain list and the colour scheme follows the system: nothing here is
+ * required to read the documentation. */
 (function () {
   "use strict";
-  if (window.__theme_inited) return;
-  window.__theme_inited = true;
 
-  /* Older SSG releases emit the search trigger at a fixed viewport position
-     instead of replacing the declared header slot. Normalise both generator
-     behaviours before interaction begins. */
-  var searchSlot = document.querySelector("[data-ssg-search]");
-  var searchButton = document.getElementById("ssg-search-btn");
-  if (searchSlot && searchButton) searchSlot.replaceWith(searchButton);
+  var root = document.documentElement;
 
-  /* Three states, not two: "system" is the absence of data-theme, so a
-     visitor can hand the choice back to the operating system. The previous
-     two-way switch stamped data-theme on the first click and never removed
-     it. The mode icon is rendered by CSS so its dimensions are reserved
-     before this deferred script runs, preventing a header layout shift. */
-  var ORDER = ["system", "light", "dark"];
+  /* ---- measured layout chrome -------------------------------------------
+   * Two offsets cannot be known from the stylesheet. The masthead's height
+   * depends on how many rows it wraps to, which depends on the length of the
+   * translated labels; and the generator injects its search button after load
+   * as position:fixed, so its size is not ours to declare. Both were
+   * hardcoded in rem, and both were wrong: the masthead measured 69px at
+   * 1280 and 236px at 320 while headings assumed a fixed 5.5rem, so a
+   * contents link on a phone landed the heading underneath the header.
+   * Measuring them keeps 2.4.11 and 2.4.12 true at any width, in any
+   * language, without the theme needing to know either in advance. */
+  function syncChrome() {
+    var head = document.querySelector(".masthead");
+    if (head) {
+      var h = head.getBoundingClientRect().height;
+      root.style.setProperty("--masthead-h", Math.ceil(h) + "px");
+      // A sticky bar taller than a quarter of the viewport takes more
+      // reading room than the convenience is worth. It becomes relative
+      // rather than static so it still positions the search button.
+      root.style.setProperty(
+        "--masthead-pos",
+        h > window.innerHeight * 0.25 ? "relative" : "sticky"
+      );
+    }
+    var btn = document.getElementById("ssg-search-btn");
+    var tools = document.querySelector(".masthead-tools");
+    if (btn && tools && btn.parentNode !== tools) {
+      // Adopting the button into the header takes it out of the fixed layer,
+      // so it can no longer sit on top of focused content, and frees the
+      // strip the header was reserving for it.
+      tools.appendChild(btn);
+      root.style.setProperty("--search-gutter", "0px");
+    }
+  }
 
-  function currentMode() {
-    var set = document.documentElement.getAttribute("data-theme");
+  syncChrome();
+  window.addEventListener("resize", syncChrome, { passive: true });
+  if (window.ResizeObserver && document.querySelector(".masthead")) {
+    new ResizeObserver(syncChrome).observe(document.querySelector(".masthead"));
+  }
+  // The search button is injected after load, so watch for it rather than
+  // assuming it is present when this runs.
+  if (window.MutationObserver) {
+    var mo = new MutationObserver(function () {
+      if (document.getElementById("ssg-search-btn")) { syncChrome(); mo.disconnect(); }
+    });
+    mo.observe(document.body, { childList: true, subtree: true });
+    setTimeout(function () { mo.disconnect(); }, 10000);
+  }
+
+  /* 2.4.12 for elements taller than the viewport.
+   *
+   * scroll-padding-top only applies when the browser decides to scroll at
+   * all. An element taller than the screen is always partly in view, so on
+   * focus the browser judges it visible and does not scroll - leaving its top
+   * edge, and the start of its focus ring, underneath the sticky masthead.
+   * The generator turns any wide table into a focusable scroll region, and
+   * the criteria tables on this theme's own accessibility page are exactly
+   * that shape, so this is reachable by the second tab on a real page.
+   *
+   * Nudging on focusin covers the case the CSS property cannot. */
+  document.addEventListener("focusin", function (event) {
+    var el = event.target;
+    if (!el || typeof el.getBoundingClientRect !== "function") return;
+    var head = document.querySelector(".masthead");
+    if (!head) return;
+    var pos = window.getComputedStyle(head).position;
+    if (pos !== "sticky" && pos !== "fixed") return;
+    var clear = head.getBoundingClientRect().bottom + 8;
+    var top = el.getBoundingClientRect().top;
+    if (top < clear) window.scrollBy(0, top - clear);
+  });
+
+  var toggle = document.getElementById("nav-toggle");
+  var nav = document.getElementById("site-nav");
+  if (toggle && nav) {
+    toggle.addEventListener("click", function () {
+      var open = nav.classList.toggle("is-open");
+      toggle.setAttribute("aria-expanded", open ? "true" : "false");
+    });
+  }
+
+  var mode = document.getElementById("mode-toggle");
+  var state = document.getElementById("mode-state");
+  if (!mode || !state) return;
+
+  // The cycle includes "system" deliberately: a two-way switch gives no way
+  // back to following the operating system once it has been touched.
+  var order = ["system", "light", "dark"];
+  var labels = {
+    system: state.textContent.trim(),
+    light: mode.getAttribute("data-label-light") || "Light",
+    dark: mode.getAttribute("data-label-dark") || "Dark"
+  };
+
+  function current() {
+    var set = root.getAttribute("data-theme");
     return set === "light" || set === "dark" ? set : "system";
   }
 
-  function labelFor(mode, btn, state) {
-    if (mode === "system") return state ? state.getAttribute("data-label-system") || "System" : "System";
-    return btn.getAttribute("data-label-" + mode) || (mode === "light" ? "Light" : "Dark");
-  }
-
-  function setMode(mode) {
-    if (mode === "system") {
-      document.documentElement.removeAttribute("data-theme");
-      try { localStorage.removeItem("theme"); } catch (e) {}
+  function apply(next) {
+    if (next === "system") {
+      root.removeAttribute("data-theme");
+      try { localStorage.removeItem("lucid-theme"); } catch (e) {}
     } else {
-      document.documentElement.setAttribute("data-theme", mode);
-      try { localStorage.setItem("theme", mode); } catch (e) {}
+      root.setAttribute("data-theme", next);
+      try { localStorage.setItem("lucid-theme", next); } catch (e) {}
     }
-    var btn = document.getElementById("mode-toggle");
-    if (!btn) return;
-    var state = document.getElementById("mode-state");
-    if (state) state.textContent = labelFor(mode, btn, state);
+    state.textContent = labels[next];
   }
 
-  setMode(currentMode());
-
-  document.addEventListener("click", function (e) {
-    var btn = e.target.closest("#mode-toggle");
-    if (!btn) return;
-    setMode(ORDER[(ORDER.indexOf(currentMode()) + 1) % ORDER.length]);
-  });
-
-
-  document.addEventListener("click", function (e) {
-    var toggle = e.target.closest("#navToggle");
-    if (!toggle) return;
-    var menu = document.getElementById("navMenu");
-    if (menu) {
-      var expanded = toggle.getAttribute("aria-expanded") === "true";
-      toggle.setAttribute("aria-expanded", String(!expanded));
-      menu.classList.toggle("is-open");
-    }
-  });
-
-  document.addEventListener("keydown", function (e) {
-    if (e.key === "Escape") {
-      var menu = document.getElementById("navMenu");
-      var toggle = document.getElementById("navToggle");
-      if (menu && menu.classList.contains("is-open")) {
-        menu.classList.remove("is-open");
-        if (toggle) {
-          toggle.setAttribute("aria-expanded", "false");
-          toggle.focus();
-        }
-      }
-    }
-  });
-
-  document.addEventListener("click", function (e) {
-    var link = e.target.closest('a[href^="#"]');
-    if (!link) return;
-    var href = link.getAttribute("href");
-    if (!href || href === "#") return;
-    var target = document.querySelector(href);
-    if (target) {
-      e.preventDefault();
-      target.scrollIntoView({ behavior: "smooth" });
-      if (history.pushState) {
-        history.pushState(null, null, href);
-      }
-      var menu = document.getElementById("navMenu");
-      var toggle = document.getElementById("navToggle");
-      if (menu && menu.classList.contains("is-open")) {
-        menu.classList.remove("is-open");
-        if (toggle) toggle.setAttribute("aria-expanded", "false");
-      }
-    }
+  state.textContent = labels[current()];
+  mode.addEventListener("click", function () {
+    apply(order[(order.indexOf(current()) + 1) % order.length]);
   });
 })();

@@ -1,112 +1,17 @@
 {{#extends "base"}}
 {{#block "main"}}
-<section id="hero" class="hero-section">
-  <div class="container hero-container text-center">
-    <div class="pill-badge">
-      <span class="pill-tag">{{badge_tag}}</span>
-      <span class="pill-text">{{badge_text}}</span>
-    </div>
-    <h1 class="hero-title">{{headline}}</h1>
+<!-- dotfiles.io home: Lucid's landing hero (as on doc.dotfiles.io), then
+     the bands in content/index.md, written with Lucid's own classes. -->
+<section class="hero" aria-labelledby="hero-h">
+  <div class="lu-shell hero-in">
+    <p class="eyebrow"><span class="eyebrow-tag">{{hero_tag}}</span> {{hero_tagline}}</p>
+    <h1 id="hero-h" class="hero-h">{{headline}}</h1>
     <p class="hero-lead">{{lead}}</p>
-    <div class="hero-cta-group">
-      <a class="btn btn-primary btn-lg" href="#quickstart">{{cta_primary}}</a>
-      <a class="btn btn-secondary btn-lg" href="https://doc.dotfiles.io/">{{cta_docs}}</a>
-    </div>
-    <!-- A .dotfiles session. Every line is real: the repository layout, the
-         top of defaults/.chezmoidata.toml, and output of `dot doctor` and
-         `dot ai tools` from a working install (paths shortened). -->
-    <figure id="terminal" class="terminal-preview-card" aria-label="A terminal session using .dotfiles">
-      <figcaption class="terminal-header">
-        <div class="window-dots">
-          <span class="dot dot-red" aria-hidden="true"></span>
-          <span class="dot dot-yellow" aria-hidden="true"></span>
-          <span class="dot dot-green" aria-hidden="true"></span>
-        </div>
-        <div class="terminal-tab-bar font-mono">
-          <span class="tmux-win-badge">[dotfiles]</span>
-          <span class="tab-item active-tab">0:dot*</span>
-          <span class="tab-item">1:nvim</span>
-          <span class="tab-item">2:ai</span>
-        </div>
-        <div class="terminal-actions">
-          <span class="badge-status font-mono">● {{release}} · fish · macOS</span>
-        </div>
-      </figcaption>
-      <div class="tmux-grid">
-        <div class="tmux-pane pane-explorer font-mono">
-          <div class="pane-header">
-            <span class="pane-title">1: Explorer</span>
-            <span class="pane-badge">~/.dotfiles</span>
-          </div>
-          <div class="pane-content explorer-content">
-<div class="tree-node dir">▼ bin/</div>
-<div class="tree-node file">  dot</div>
-<div class="tree-node dir">▼ defaults/</div>
-<div class="tree-node file active">▶ .chezmoidata.toml</div>
-<div class="tree-node dir">▶ lib/dot/</div>
-<div class="tree-node dir">▶ scripts/</div>
-<div class="tree-node dir">▶ tests/</div>
-<div class="tree-node file">install.sh</div>
-          </div>
-        </div>
-        <div class="tmux-center-col">
-          <div class="tmux-pane pane-editor font-mono">
-            <div class="pane-header">
-              <span class="pane-title">2: Neovim</span>
-              <span class="pane-file">defaults/.chezmoidata.toml</span>
-            </div>
-            <div class="pane-content editor-content" tabindex="0" role="region" aria-label="Editor">
-              <pre class="editor-code font-mono"><code><span class="code-comment"># Active profile - change this to switch configurations</span>
-profile = <span class="code-type">"laptop"</span>
-<span class="code-comment"># Visual theme; "auto" follows the OS appearance</span>
-theme_family = <span class="code-type">"maui"</span>
-theme_mode = <span class="code-type">"auto"</span> <span class="code-comment"># auto, dark, or light</span>
-default_shell = <span class="code-type">"fish"</span> <span class="code-comment"># zsh, fish, or nu</span>
-
-<span class="code-kw">[features]</span></code></pre>
-            </div>
-          </div>
-          <div class="tmux-pane pane-terminal font-mono">
-            <div class="pane-header">
-              <span class="pane-title">3: Shell</span>
-              <span class="pane-badge">fish</span>
-            </div>
-            <div class="pane-content terminal-content font-mono" tabindex="0" role="region" aria-label="Terminal">
-<div class="cli-line"><span class="mcp-tl-ps">$ </span>dot doctor</div>
-<div class="cli-out">== Core Shells ==</div>
-<div class="cli-out cli-ok">✓ zsh    /opt/homebrew/bin/zsh</div>
-<div class="cli-out cli-ok">✓ fish   /opt/homebrew/bin/fish</div>
-<div class="cli-out cli-ok">✓ nu     ~/.local/share/mise/…/nu (mise)</div>
-<div class="cli-out cli-ok">✓ chezmoi  ~/.local/share/mise/…/chezmoi</div>
-            </div>
-          </div>
-        </div>
-        <div class="tmux-pane pane-ai font-mono">
-          <div class="pane-header">
-            <span class="pane-title">4: dot ai tools</span>
-            <span class="pane-badge ai-badge">AI CLIs</span>
-          </div>
-          <div class="pane-content ai-content font-mono" tabindex="0" role="region" aria-label="AI tools">
-<div class="ai-prompt"><span class="ai-sym">&gt;</span> Probing 19 AI tools</div>
-<div class="ai-res">✓ Claude Code</div>
-<div class="ai-res">✓ Codex CLI</div>
-<div class="ai-res">✓ Copilot CLI</div>
-<div class="ai-res">✓ Goose</div>
-<div class="ai-res">✓ Kimi CLI</div>
-          </div>
-        </div>
-      </div>
-      <div class="tmux-status-bar font-mono">
-        <span class="status-left">[dotfiles] 0:dot* 1:nvim 2:ai</span>
-        <span class="status-center">chezmoi · mise · starship</span>
-        <span class="status-right">{{release}}</span>
-      </div>
-    </figure>
+    <p class="hero-actions">
+      <a class="btn btn-primary" href="{{root}}#install">{{cta_primary}}</a>
+      <a class="btn btn-quiet" href="{{docs_url}}">{{cta_secondary}}</a>
+    </p>
   </div>
 </section>
-<!-- Content sections rendered from Markdown -->
-<div class="content-sections">
-  {{!content}}
-</div>
-
+{{!content}}
 {{/block}}

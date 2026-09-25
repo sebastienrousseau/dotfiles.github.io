@@ -4,7 +4,7 @@
 all: build
 
 help:
-	@echo "make build     Build dotfiles.io with ssg and the Voxt theme into _site/"
+	@echo "make build     Build dotfiles.io with ssg and the Lucid theme into _site/"
 	@echo "make serve     Build, then serve at http://127.0.0.1:8000/"
 	@echo "make validate  Build, then validate the HTML (needs npx)"
 	@echo "make clean     Remove _site/"

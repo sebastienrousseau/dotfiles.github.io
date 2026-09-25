@@ -1,47 +1,44 @@
-<header class="site-header" role="banner">
-  <div class="container header-inner">
-    <a class="brand" href="{{site_path}}" aria-label="{{label_home}}">
-      <img src="{{site_path}}assets/logo.svg" alt="{{logo_alt}}" class="brand-logo" width="32" height="32" />
-      <span class="brand-text">{{name}}</span>
+<header class="masthead">
+  <div class="lu-shell masthead-in">
+    <a class="brand" href="{{root}}">
+      <!-- The .dotfiles terminal mark (Material Design Icons "console",
+           Apache-2.0), inlined so it cannot 404. Decorative: the brand name
+           follows it as text. -->
+      <svg class="brand-mark" width="28" height="28" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+        <path fill="currentColor" d="M20,19V7H4V19H20M20,3A2,2 0 0,1 22,5V19A2,2 0 0,1 20,21H4A2,2 0 0,1 2,19V5C2,3.89 2.9,3 4,3H20M13,17V15H18V17H13M9.58,13L5.57,9H8.4L11.7,12.3C12.09,12.69 12.09,13.33 11.7,13.72L8.42,17H5.59L9.58,13Z" />
+      </svg>
+      <span class="brand-name">{{name}}</span>
     </a>
+
     <button
-      class="nav-toggle"
-      id="navToggle"
+      class="nav-btn"
       type="button"
+      id="nav-toggle"
       aria-expanded="false"
-      aria-controls="navMenu"
-      aria-label="{{label_menu_toggle}}"
-    >
-      <span class="visually-hidden">{{label_menu}}</span>
-      <span class="nav-toggle-icon" aria-hidden="true">☰</span>
-    </button>
-    <nav class="nav-menu" id="navMenu" aria-label="{{label_nav}}">
-      <a class="nav-link" href="{{site_path}}#features">{{nav_features}}</a>
-      <a class="nav-link" href="{{site_path}}#quickstart">{{nav_install}}</a>
-      <a class="nav-link" href="{{site_path}}#platforms">{{nav_platforms}}</a>
-      <a class="nav-link" href="{{site_path}}#security">{{nav_security}}</a>
-      <a class="nav-link" href="{{site_path}}#faq">{{nav_faq}}</a>
-      <a class="nav-link" href="https://doc.dotfiles.io/">{{nav_docs}}</a>
+      aria-controls="site-nav"
+    >{{label_menu}}</button>
+
+    <nav class="site-nav" id="site-nav" aria-label="{{label_nav}}">
+      <ul class="nav-list">
+        <li><a href="{{root}}#features">{{nav_features}}</a></li>
+        <li><a href="{{root}}#install">{{nav_install}}</a></li>
+        <li><a href="{{root}}#platforms">{{nav_platforms}}</a></li>
+        <li><a href="{{docs_url}}">{{nav_docs}}</a></li>
+        <li><a href="{{repo_url}}">{{nav_repo}}</a></li>
+      </ul>
     </nav>
-    <div class="header-actions">
-      <!-- Search trigger slot. The generator replaces this element with
-           the search button (see SEARCH_SLOT_ATTR in src/plugins/search.rs);
-           with no slot the button is position:fixed in the viewport corner
-           and cannot align with this header. -->
+
+    <div class="masthead-tools">
+      <!-- Search trigger slot: the generator replaces this element with its
+           search button. -->
       <span data-ssg-search></span>
-      <button
-        class="theme-toggle"
-        id="mode-toggle"
-        type="button"
+      <button class="theme-toggle" type="button" id="mode-toggle"
         data-label-light="{{label_theme_light}}"
-        data-label-dark="{{label_theme_dark}}"
-      >
+        data-label-dark="{{label_theme_dark}}">
         <span class="visually-hidden">{{label_theme}}</span>
         <span class="visually-hidden" id="mode-state" data-label-system="{{label_theme_system}}">{{label_theme_system}}</span>
         <span class="theme-icon" aria-hidden="true"></span>
       </button>
-      <a class="btn btn-outline btn-sm" href="{{repo_url}}" target="_blank" rel="noopener noreferrer" aria-label="{{label_github}}">GitHub</a>
-      <a class="btn btn-primary btn-sm" href="{{locale_path}}#quickstart">{{cta_primary}}</a>
     </div>
   </div>
 </header>

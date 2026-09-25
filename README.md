@@ -9,7 +9,10 @@ repository's `docs/`.
 ## Build
 
 The site is built with [ssg](https://static-site-generator.com/) 0.0.63 or
-later and the vendored Voxt theme in `_layouts/`.
+later and the Lucid theme in `_layouts/`, the same theme as
+[doc.dotfiles.io](https://doc.dotfiles.io/) (its source is
+`docs/site/themes/lucid` in the dotfiles repository; only `header.html` and
+`index.html` differ).
 
 ```bash
 cargo install ssg --locked   # or put an ssg release binary on PATH
@@ -32,7 +35,7 @@ deploys `main` to GitHub Pages with a pinned, checksum-verified ssg.
 | Path | Contents |
 |------|----------|
 | `content/` | Page sources: home, privacy, accessibility, 404 |
-| `_layouts/` | The Voxt theme: layouts, CSS, scripts, logo, favicon |
+| `_layouts/` | The Lucid theme shared with doc.dotfiles.io, plus this site's header and home layout |
 | `scripts/build-site.py` | Build and checks (Python standard library only) |
 | `CNAME` | The custom domain, `dotfiles.io` |
 

@@ -3,6 +3,8 @@ layout: page
 title: "Privacy"
 description: "What dotfiles.io collects: nothing."
 headline: "Privacy"
+eyebrow: ".dotfiles"
+lead: "dotfiles.io collects nothing about you."
 ---
 
 dotfiles.io is a static website. It sets no cookies, runs no analytics, and loads nothing from a third-party origin: every stylesheet, script and image is served from this domain, and the page's Content Security Policy enforces that.

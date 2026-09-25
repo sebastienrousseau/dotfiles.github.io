@@ -26,49 +26,34 @@
     <meta property="og:description" content="{{description}}" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="{{permalink}}" />
-    <meta property="og:image" content="{{site_url}}images/screenshot.png" />
-    <meta property="og:image:width" content="1500" />
-    <meta property="og:image:height" content="1000" />
-    <meta property="og:image:alt" content="{{title}}" />
-    <meta name="twitter:card" content="summary_large_image" />
+    <meta property="og:locale" content="{{language}}" />
+    <meta name="twitter:card" content="summary" />
     <meta name="twitter:title" content="{{title}}" />
     <meta name="twitter:description" content="{{description}}" />
-    <meta name="twitter:image" content="{{site_url}}images/screenshot.png" />
 
     <link rel="canonical" href="{{permalink}}" />
-    <link rel="icon" href="{{site_path}}favicon.ico" sizes="any" />
-    <link rel="icon" href="{{site_path}}assets/logo.svg" type="image/svg+xml" />
+    <link rel="icon" href="{{base_path}}assets/logo.svg" type="image/svg+xml" />
     <meta name="color-scheme" content="light dark" />
-    <meta name="theme-color" content="#090a0f" />
+    <meta name="theme-color" content="#ffffff" />
 
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@graph": [
         {
-          "@type": "SoftwareApplication",
-          "@id": "{{site_url}}#software",
-          "name": "{{name}}",
-          "applicationCategory": "DeveloperApplication",
-          "operatingSystem": "Linux, macOS, Windows",
-          "offers": {
-            "@type": "Offer",
-            "price": "0",
-            "priceCurrency": "USD"
-          },
+          "@type": "TechArticle",
+          "@id": "{{permalink}}#article",
+          "headline": "{{headline}}",
           "description": "{{description}}",
-          "softwareVersion": "v0.0.4",
-          "author": {
-            "@type": "Person",
-            "name": "{{author}}",
-            "url": "{{site_url}}"
-          }
+          "inLanguage": "{{language}}",
+          "url": "{{permalink}}",
+          "author": { "@type": "Organization", "name": "{{author}}" }
         },
         {
-          "@type": "WebPage",
-          "@id": "{{permalink}}#webpage",
-          "url": "{{permalink}}",
-          "name": "{{title}}",
+          "@type": "WebSite",
+          "@id": "{{site_url}}#website",
+          "url": "{{site_url}}",
+          "name": "{{name}}",
           "description": "{{description}}",
           "inLanguage": "{{language}}"
         }
@@ -79,18 +64,17 @@
     <!-- Skeletonic Stylus core, loaded before the theme's own
          stylesheet so its @layer skeletonic.* blocks are declared
          first and the theme wins every overlap. -->
-    <link rel="stylesheet" href="{{site_path}}skeletonic.min.css" />
-    <link rel="stylesheet" href="{{site_path}}styles.css" />
-
-    <script src="{{site_path}}theme-init.js"></script>
+    <link rel="stylesheet" href="{{base_path}}skeletonic.min.css" />
+    <link rel="stylesheet" href="{{base_path}}styles.css" />
+    <script src="{{base_path}}theme-init.js"></script>
   </head>
   <body>
-    <a class="skip-link" href="#main">Skip to main content</a>
+    <a class="skip-link" href="#main">{{label_skip}}</a>
     {{> header}}
-    <main id="main" role="main">
+    <main id="main">
       {{#block "main"}}{{/block}}
     </main>
     {{> footer}}
-    <script src="{{site_path}}main.js" defer></script>
+    <script src="{{base_path}}main.js" defer></script>
   </body>
 </html>
