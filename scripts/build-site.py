@@ -32,7 +32,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 SITE_URL = "https://dotfiles.io/"
-RELEASE = "v0.2.525"
+RELEASE = "v0.2.526"
 
 SITE = {
     # The fields Lucid's layouts read, matching the doc.dotfiles.io build
