@@ -2,7 +2,7 @@
 layout: index
 title: ".dotfiles — one configuration for every shell, signed and verifiable"
 description: "Chezmoi-managed dotfiles for macOS, Linux, WSL and PowerShell: one configuration across bash, zsh, fish and nushell, a dot CLI, light and dark themes, and releases you can verify."
-hero_tag: "v0.2.523"
+hero_tag: "v0.2.524"
 hero_tagline: "Apache-2.0 OR MIT"
 headline: "One configuration for every shell"
 lead: "Chezmoi-managed dotfiles for macOS, Linux and WSL, with PowerShell parity. The same aliases, prompt and tools across bash, zsh, fish and nushell, driven by one dot command and installed from releases you can verify."
@@ -30,10 +30,10 @@ cta_secondary: "Read the docs"
     <h2 id="install-h" class="band-h">Install</h2>
     <p class="band-lead">Download the installer for the latest release, check it against its SHA-256, then run it. You need <code>git</code> and <code>curl</code>; on Linux without <code>shasum</code>, use <code>sha256sum -c -</code> for the check.</p>
     <div class="snippet">
-      <p class="snippet-h" id="install-cap">Install v0.2.523</p>
+      <p class="snippet-h" id="install-cap">Install v0.2.524</p>
       <pre class="snippet-body" tabindex="0" role="group" aria-labelledby="install-cap"><code>r=https://github.com/sebastienrousseau/dotfiles/releases/download
-curl -fsSL -o install.sh "$r/v0.2.523/dotfiles-install-0.2.523.sh"
-sum=6e01971dc11493a4738a8058f8ecc0942c181d2b4b70da59d536400482fbba32
+curl -fsSL -o install.sh "$r/v0.2.524/dotfiles-install-0.2.524.sh"
+sum=fdf39188d796da8f62ab9bf52cf8a529ec128e26739de9e179f2bdff44ca487a
 echo "$sum  install.sh" | shasum -a 256 -c - &amp;&amp; bash install.sh
 dot doctor    &#35; then check the machine</code></pre>
     </div>
@@ -84,7 +84,7 @@ dot doctor    &#35; then check the machine</code></pre>
     <p class="band-lead">Every release ships the evidence to check it. The <a href="https://doc.dotfiles.io/security/VERIFY_RELEASE/">release verification guide</a> walks through each step.</p>
     <ul class="cards">
       <li class="card"><h3 class="card-h">Checksums</h3><p>The installer and every archive have a published SHA-256. The install command above refuses to run a file that does not match.</p></li>
-      <li class="card"><h3 class="card-h">Provenance and signatures</h3><p>The <code>dot</code> CLI archives carry SLSA provenance signed by the release workflow, and Sigstore bundles cover the installer and archives. Check provenance with <code>gh attestation verify dot-0.2.523.tar.gz --repo sebastienrousseau/dotfiles</code>.</p></li>
+      <li class="card"><h3 class="card-h">Provenance and signatures</h3><p>The <code>dot</code> CLI archives carry SLSA provenance signed by the release workflow, and Sigstore bundles cover the installer and archives. Check provenance with <code>gh attestation verify dot-0.2.524.tar.gz --repo sebastienrousseau/dotfiles</code>.</p></li>
       <li class="card"><h3 class="card-h">SBOMs and signed commits</h3><p>Each release attaches SPDX and CycloneDX software bills of materials. Commits are signed and carry a Developer Certificate of Origin sign-off; CI rejects a change without one.</p></li>
     </ul>
   </div>
