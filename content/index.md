@@ -56,7 +56,7 @@ dot doctor    &#35; then check the machine</code></pre>
             <tr><td>Debian</td><td>12 or later</td><td>x86_64</td><td>Supported</td></tr>
             <tr><td>WSL2</td><td>Ubuntu 22.04 or later</td><td>x86_64</td><td>Supported, with a clipboard bridge</td></tr>
             <tr><td>NixOS</td><td>23.11 or later</td><td>x86_64 and aarch64</td><td>Supported, via the Nix flake</td></tr>
-            <tr><td>Windows</td><td>10 or 11</td><td>x86_64</td><td>PowerShell 7.4 LTS or later, CI tested</td></tr>
+            <tr><td>Windows</td><td>10 or 11</td><td>x86_64</td><td>PowerShell 7.5 or later, CI tested</td></tr>
             <tr><td>Fedora, Arch Linux</td><td>41 or later, rolling</td><td>x86_64</td><td>Community, not CI tested</td></tr>
           </tbody>
         </table>
@@ -70,7 +70,7 @@ dot doctor    &#35; then check the machine</code></pre>
             <tr><td>bash</td><td>5.0 (3.2 for the dot CLI)</td><td>Full</td></tr>
             <tr><td>fish (default)</td><td>4.0</td><td>Core CLI and aliases</td></tr>
             <tr><td>nushell</td><td>0.98</td><td>Core CLI and aliases</td></tr>
-            <tr><td>PowerShell</td><td>7.4 LTS</td><td>Core CLI and aliases</td></tr>
+            <tr><td>PowerShell</td><td>7.5</td><td>Core CLI and aliases</td></tr>
           </tbody>
         </table>
       </div>
@@ -99,7 +99,7 @@ dot doctor    &#35; then check the machine</code></pre>
       <h3>Which shell do I get?</h3>
       <p>Fish is the default login shell. Set <code>default_shell</code> to <code>zsh</code>, <code>fish</code> or <code>nu</code>; bash is configured either way.</p>
       <h3>Does it work on Windows?</h3>
-      <p>Through WSL2, and natively in PowerShell 7.4 LTS or later, which has its own <code>dot</code> and aliases. It is also packaged for Scoop.</p>
+      <p>Through WSL2, and natively in PowerShell 7.5 or later, which has its own <code>dot</code> and aliases. It is also packaged for Scoop.</p>
       <h3>Where do secrets go?</h3>
       <p>Outside the repository. <code>dot secrets</code> keeps them in the macOS Keychain, <code>pass</code>, or an age-encrypted local store.</p>
       <h3>Does it collect data?</h3>
