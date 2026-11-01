@@ -23,7 +23,9 @@ make validate                # build, then html-validate (needs npx)
 
 `scripts/build-site.py` merges the site-wide fields into each page in
 `content/`, runs ssg, and fails if an internal link is broken or a page
-references a third-party origin.
+references a third-party origin. It also serves the not-found page as
+`/404.html` (noindex, out of the feeds), writes the one `/sitemap.xml`, and
+fails if a sitemap, feed or hreflang URL is not a page in the build.
 
 ## Deploy
 
