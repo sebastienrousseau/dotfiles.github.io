@@ -33,11 +33,6 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 SITE_URL = "https://dotfiles.io/"
 RELEASE = "v0.2.530"
-AUTHOR_URL = "https://sebastienrousseau.com/"
-COPYRIGHT_YEARS = f"© 2015–{date.today().year}"
-AUTHOR_NAME = "Sebastien Rousseau"
-COPYRIGHT_HOLDER = f"{COPYRIGHT_YEARS} {AUTHOR_NAME}"
-COPYRIGHT_LICENCE = "Licensed under Apache-2.0 OR MIT."
 
 SITE = {
     # The fields Lucid's layouts read, matching the doc.dotfiles.io build
@@ -66,14 +61,7 @@ SITE = {
     "label_theme_light": "Light",
     "label_theme_dark": "Dark",
     "footer_note": "Chezmoi-managed dotfiles for macOS, Linux, WSL and PowerShell — signed, attested and multi-shell. Documentation at doc.dotfiles.io.",
-    "copyright": f"{COPYRIGHT_HOLDER}. {COPYRIGHT_LICENCE}",
-    # The footer prints the parts apart so it can link the author's name
-    # to the author's own site (rel="author"); the feeds keep the plain
-    # line.
-    "copyright_years": COPYRIGHT_YEARS,
-    "author_name": AUTHOR_NAME,
-    "copyright_licence": COPYRIGHT_LICENCE,
-    "author_url": AUTHOR_URL,
+    "copyright": f"© 2015–{date.today().year} Sebastien Rousseau. Licensed under Apache-2.0 OR MIT.",
 }
 
 FRONT = re.compile(r"\A---\n(.*?)\n---\n", re.DOTALL)
@@ -86,7 +74,6 @@ ALLOWED_EXTERNAL = (
     "https://skeletonic.com/",
     "https://docs.github.com/",
     "https://dotfiles.io/",
-    AUTHOR_URL,
 )
 
 
@@ -143,6 +130,24 @@ def check(site: Path) -> list[str]:
     return problems
 
 
+def write_sitemap(out: Path) -> None:
+    base = SITE_URL.rstrip("/")
+    urls = sorted(
+        f"{base}/" if p.parent == out else f"{base}/{p.parent.relative_to(out).as_posix()}/"
+        for p in out.rglob("index.html")
+        if not {"_csp", "404", "offline", "thanks"} & set(p.relative_to(out).parts)
+    )
+    items = "\n".join(
+        f"  <url>\n    <loc>{u}</loc>\n    <changefreq>weekly</changefreq>\n  </url>"
+        for u in urls
+    )
+    (out / "sitemap.xml").write_text(
+        f'<?xml version="1.0" encoding="UTF-8"?>\n'
+        f'<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n{items}\n</urlset>\n',
+        encoding="utf-8",
+    )
+
+
 def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__.split("\n\n")[0])
     ap.add_argument("--out", default=str(ROOT / "_site"))
@@ -173,6 +178,7 @@ def main() -> int:
             src = ROOT / "_layouts" / extra if extra == "favicon.ico" else ROOT / extra
             if src.is_file():
                 shutil.copy2(src, work_p / "out" / extra)
+        write_sitemap(work_p / "out")
         # ssg injects a code-highlighting sheet whose colours follow
         # prefers-color-scheme rather than Lucid's theme toggle; Lucid styles
         # code itself, so drop it as the doc.dotfiles.io build does.
